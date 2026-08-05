@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Lamb coloring page with four story partitions">
+  <rect width="800" height="1000" fill="#fffef9"/>
+  <rect x="28" y="28" width="744" height="944" rx="14" fill="none" stroke="#3f3428" stroke-width="2.5"/>
+
+  <path d="M400 430 L220 250" fill="none" stroke="#b9a894" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M400 430 L580 250" fill="none" stroke="#b9a894" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M400 520 L220 720" fill="none" stroke="#b9a894" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M400 520 L580 720" fill="none" stroke="#b9a894" stroke-width="2" stroke-dasharray="5 6"/>
+
+  <g transform="translate(400 475)" fill="none" stroke="#3f3428" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="8" cy="18" rx="72" ry="52"/>
+    <ellipse cx="-48" cy="-48" rx="30" ry="34"/>
+    <ellipse cx="-62" cy="-72" rx="24" ry="20"/>
+    <path d="M-48 -88c16-16 30-8 24 10"/>
+    <circle cx="-74" cy="-72" r="3.5" fill="#3f3428"/>
+    <path d="M-84 -60c6 6 14 7 22 2"/>
+    <path d="M-40 8c10-14 22-14 32-1 10-14 24-14 34 0 9-12 22-12 31 2"/>
+    <path d="M-28 55 v40 M-2 62 v36 M32 62 v36 M56 52 v42"/>
+    <text x="0" y="120" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#3f3428" stroke="none">The Lamb</text>
+  </g>
+
+  <g fill="none" stroke="#3f3428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <text x="160" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5c4d3d" stroke="none">1 - Genesis 22</text>
+    <path d="M90 210 h140 l-20 -70 h-100z"/>
+    <path d="M120 140 v-35 M160 140 v-45 M200 140 v-30"/>
+    <ellipse cx="230" cy="165" rx="28" ry="18"/>
+    <circle cx="250" cy="148" r="12"/>
+    <path d="M210 155 c-18 -8 -22 -28 -8 -40"/>
+    <path d="M95 220 L70 250 M220 220 L245 250" opacity="0.7"/>
+  </g>
+
+  <g fill="none" stroke="#3f3428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <text x="640" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5c4d3d" stroke="none">2 - Exodus 12</text>
+    <path d="M560 220 v-110 h120 v110"/>
+    <path d="M560 110 h120" stroke-width="5"/>
+    <path d="M560 110 v40 M680 110 v40" stroke-width="4"/>
+    <path d="M600 220 v-70 h40 v70"/>
+    <circle cx="710" cy="95" r="16"/>
+    <path d="M545 235 h150" opacity="0.5"/>
+  </g>
+
+  <g fill="none" stroke="#3f3428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <text x="160" y="620" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5c4d3d" stroke="none">3 - Isaiah 53</text>
+    <path d="M80 820 c40 -60 120 -60 160 0"/>
+    <ellipse cx="150" cy="760" rx="40" ry="28"/>
+    <circle cx="115" cy="735" r="16"/>
+    <path d="M95 730 h-25 M175 770 L210 800"/>
+    <path d="M210 690 v130" stroke-dasharray="4 5"/>
+    <circle cx="210" cy="680" r="10"/>
+  </g>
+
+  <g fill="none" stroke="#3f3428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <text x="640" y="620" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5c4d3d" stroke="none">4 - Revelation 5</text>
+    <rect x="560" y="700" width="70" height="90" rx="4"/>
+    <path d="M570 720 h50 M570 740 h50 M570 760 h40"/>
+    <ellipse cx="680" cy="760" rx="36" ry="26"/>
+    <circle cx="655" cy="735" r="15"/>
+    <path d="M680 734 l8 -28 l8 28z"/>
+    <circle cx="688" cy="708" r="7"/>
+  </g>
+
+  <text x="400" y="955" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8a6a45" stroke="none">One image through Scripture - color as you learn each node</text>
+</svg>

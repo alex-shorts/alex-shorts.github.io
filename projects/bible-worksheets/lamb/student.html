@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Lamb — Student Worksheet</title>
+  <link rel="stylesheet" href="student.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <button type="button" id="save-btn">Save HTML</button>
+    <button type="button" class="secondary" onclick="window.print()">Print</button>
+    <span class="hint">Student sheet only — edit tinted text, Save, then Print (Letter, backgrounds on).</span>
+  </div>
+
+  <div class="sheet">
+    <!-- PAGE 1: worksheet -->
+    <section class="page">
+      <header class="mast">
+        <p class="series" contenteditable="true">Biblical Imagery</p>
+        <h1 class="theme" contenteditable="true">The Lamb</h1>
+      </header>
+
+      <section class="copywork">
+        <p class="verse-ref" contenteditable="true">John 1:29 · ESV</p>
+        <p class="verse-trace" contenteditable="true">Behold, the Lamb of God, who takes away the sin of the world!</p>
+        <div class="hand-lines" aria-label="Copy the verse four times">
+          <div class="hand-line"></div>
+          <div class="hand-line"></div>
+          <div class="hand-line"></div>
+          <div class="hand-line"></div>
+        </div>
+      </section>
+
+      <section class="map" aria-label="Imagery map">
+        <aside class="anchor">
+          <p class="anchor-label" contenteditable="true">Main image</p>
+          <img src="main-motif.svg" alt="The Lamb" />
+          <p class="anchor-meaning" contenteditable="true">God provides a spotless substitute so judgment can pass over and sin can be taken away.</p>
+        </aside>
+
+        <div class="rail" aria-hidden="true">
+          <span class="rail-hint">Draw lines</span>
+        </div>
+
+        <div class="nodes">
+          <article class="node">
+            <span class="node-num">1</span>
+            <h2 class="node-title" contenteditable="true">The Lord Will Provide</h2>
+            <p class="node-ref" contenteditable="true">Genesis 22:1–14</p>
+            <ol class="node-q">
+              <li contenteditable="true">What does God provide in Isaac’s place?</li>
+              <li contenteditable="true">How is the ram acting as a substitute?</li>
+            </ol>
+            <div class="node-connect">
+              <span>Connects by</span>
+              <span class="blank" contenteditable="true"></span>
+            </div>
+          </article>
+
+          <article class="node">
+            <span class="node-num">2</span>
+            <h2 class="node-title" contenteditable="true">Passover Blood</h2>
+            <p class="node-ref" contenteditable="true">Exodus 12:1–13</p>
+            <ol class="node-q">
+              <li contenteditable="true">Where does the lamb’s blood go?</li>
+              <li contenteditable="true">What happens when the Lord sees it?</li>
+            </ol>
+            <div class="node-connect">
+              <span>Connects by</span>
+              <span class="blank" contenteditable="true"></span>
+            </div>
+          </article>
+
+          <article class="node">
+            <span class="node-num">3</span>
+            <h2 class="node-title" contenteditable="true">Silent for Us</h2>
+            <p class="node-ref" contenteditable="true">Isaiah 53:4–7</p>
+            <ol class="node-q">
+              <li contenteditable="true">What does the servant carry for us?</li>
+              <li contenteditable="true">How is he “like a lamb”?</li>
+            </ol>
+            <div class="node-connect">
+              <span>Connects by</span>
+              <span class="blank" contenteditable="true"></span>
+            </div>
+          </article>
+
+          <article class="node">
+            <span class="node-num">4</span>
+            <h2 class="node-title" contenteditable="true">Worthy Is the Lamb</h2>
+            <p class="node-ref" contenteditable="true">Revelation 5:6–12</p>
+            <ol class="node-q">
+              <li contenteditable="true">How can the Lamb be slain and standing?</li>
+              <li contenteditable="true">Why is he called worthy?</li>
+            </ol>
+            <div class="node-connect">
+              <span>Connects by</span>
+              <span class="blank" contenteditable="true"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="catechism">
+        <p class="catechism-label" contenteditable="true">New City Catechism · Q20</p>
+        <p class="qa"><strong>Q:</strong> <span contenteditable="true">Who is the Redeemer?</span></p>
+        <p class="qa"><strong>A:</strong> <span contenteditable="true">The only Redeemer is the Lord Jesus Christ.</span></p>
+      </footer>
+    </section>
+
+    <!-- PAGE 2: coloring -->
+    <section class="page coloring-page">
+      <header class="mast">
+        <p class="series" contenteditable="true">Biblical Imagery</p>
+        <h1 class="theme" contenteditable="true">The Lamb · Color</h1>
+      </header>
+      <div class="coloring-frame">
+        <img src="coloring.png" alt="Coloring page: The Lamb story grid with four narrative panels" />
+      </div>
+    </section>
+  </div>
+
+  <script src="edit.js"></script>
+</body>
+</html>

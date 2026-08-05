@@ -1,0 +1,405 @@
+/* Student worksheet — Letter 8.5×11, 0.5in margins, muted earth */
+@page {
+  size: letter;
+  margin: 0;
+}
+
+:root {
+  --ink: #2e261e;
+  --ink-soft: #5a4c3c;
+  --mute: #8a7b68;
+  --rule: #c9b9a4;
+  --dot: #b7a690;
+  --paper: #f6f0e6;
+  --paper-deep: #ebe2d3;
+  --panel: #e8dfcf;
+  --oak: #7a5a3a;
+  --clay: #9a6a4e;
+  --moss: #6f7a66;
+  --margin: 0.38in;
+  --page-w: 8.5in;
+  --page-h: 11in;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #fff8ee 0%, transparent 55%),
+    #d4cbbd;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.55rem 0.8rem;
+  background: #2a241e;
+  color: #f4eee5;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 13px;
+}
+
+.toolbar button {
+  border: 0;
+  border-radius: 4px;
+  padding: 0.4rem 0.75rem;
+  background: var(--clay);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toolbar button.secondary { background: #564c42; }
+.toolbar .hint { opacity: 0.85; }
+
+.sheet {
+  width: var(--page-w);
+  margin: 0.35in auto 0.6in;
+}
+
+.page {
+  width: var(--page-w);
+  height: var(--page-h);
+  padding: var(--margin);
+  background:
+    linear-gradient(180deg, #f8f2e9 0%, var(--paper) 38%, var(--paper-deep) 100%);
+  color: var(--ink);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 28px rgba(46, 38, 30, 0.16);
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+}
+
+.page:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+
+/* —— Mast —— */
+.mast {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.2in;
+  margin-bottom: 0.06in;
+}
+
+.series {
+  margin: 0;
+  font-size: 8.5pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oak);
+}
+
+.theme {
+  margin: 0;
+  font-size: 16pt;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1;
+}
+
+/* —— Copywork (compact) —— */
+.copywork {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.06in 0 0.07in;
+  margin-bottom: 0.08in;
+}
+
+.verse-ref {
+  margin: 0 0 0.03in;
+  font-size: 8.5pt;
+  color: var(--mute);
+  letter-spacing: 0.04em;
+}
+
+.verse-trace {
+  margin: 0 0 0.05in;
+  font-family: "Zaner-Bloser Cursive", "Segoe Script", "Lucida Handwriting", cursive;
+  font-size: 13pt;
+  line-height: 1.15;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--oak);
+  paint-order: stroke fill;
+}
+
+.hand-lines {
+  display: grid;
+  gap: 0.06in;
+}
+
+.hand-line {
+  position: relative;
+  height: 0.22in;
+  border-bottom: 1.3px solid var(--dot);
+}
+
+.hand-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+  border-top: 1px dotted color-mix(in srgb, var(--dot) 70%, transparent);
+}
+
+.hand-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 1px solid color-mix(in srgb, var(--dot) 45%, transparent);
+}
+
+/* —— Typology map —— */
+.map {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.95in 1fr;
+  gap: 0.12in;
+  min-height: 0;
+  align-items: stretch;
+}
+
+.anchor {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 0.08in;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  min-height: 0;
+}
+
+.anchor-label {
+  margin: 0 0 0.05in;
+  font-size: 8pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oak);
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05in;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.stack-item {
+  margin: 0;
+  position: relative;
+  flex: 1 1 0;
+  min-height: 0;
+  border: 1px solid color-mix(in srgb, var(--rule) 85%, transparent);
+  border-radius: 6px;
+  background: #ebe4d7;
+  overflow: hidden;
+}
+
+.stack-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.stack-item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0.03in 0.05in;
+  font-size: 6.5pt;
+  line-height: 1.15;
+  color: var(--ink);
+  text-align: left;
+  background: color-mix(in srgb, #fffcf6 88%, transparent);
+}
+
+.tradition { display: none; }
+
+.anchor-meaning {
+  margin: 0.06in 0 0;
+  font-size: 8pt;
+  line-height: 1.25;
+  color: var(--ink-soft);
+}
+
+/* Rail removed — nodes sit beside a narrower image stack */
+.rail { display: none; }
+
+.nodes {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.07in;
+  min-height: 0;
+}
+
+.node {
+  position: relative;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.55);
+  padding: 0.05in 0.09in 0.05in 0.24in;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+.node-num {
+  position: absolute;
+  left: 0.05in;
+  top: 0.06in;
+  width: 0.16in;
+  height: 0.16in;
+  border-radius: 50%;
+  border: 1px solid var(--oak);
+  color: var(--oak);
+  font-size: 7pt;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+.node-head {
+  margin: 0 0 0.02in;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.04in 0.1in;
+  line-height: 1.1;
+}
+
+.node-title {
+  margin: 0;
+  font-size: 10pt;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.node-ref {
+  margin: 0;
+  font-size: 8pt;
+  font-weight: 400;
+  color: var(--clay);
+  white-space: nowrap;
+}
+
+.node-q {
+  margin: 0;
+  padding-left: 0.12in;
+  font-size: 7.25pt;
+  line-height: 1.18;
+  color: var(--ink-soft);
+}
+
+.node-q li { margin: 0 0 0.01in; }
+
+/* Handwriting lines for a short connection / summary */
+.node-summary {
+  margin-top: auto;
+  padding-top: 0.02in;
+  display: grid;
+  gap: 0.12in;
+}
+
+.node-summary .summary-line {
+  border-bottom: 1.25px dotted var(--dot);
+  min-height: 0.14in;
+}
+
+/* —— Catechism (compact) —— */
+.catechism {
+  margin-top: 0.06in;
+  padding-top: 0.05in;
+  border-top: 1px solid var(--rule);
+  flex: 0 0 auto;
+}
+
+.catechism-label {
+  margin: 0 0 0.02in;
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--oak);
+}
+
+.catechism .qa {
+  margin: 0.015in 0;
+  font-size: 8pt;
+  line-height: 1.2;
+}
+
+.catechism strong {
+  color: var(--oak);
+  font-weight: 600;
+}
+
+/* —— Coloring page (art fills Letter; no mast titles) —— */
+.coloring-page {
+  padding: 0.12in;
+}
+
+.coloring-frame {
+  flex: 1;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-height: 0;
+}
+
+.coloring-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+}
+
+[contenteditable="true"] { outline: none; }
+[contenteditable="true"]:hover,
+[contenteditable="true"]:focus {
+  background: rgba(154, 106, 78, 0.09);
+  border-radius: 3px;
+}
+
+@media print {
+  body { background: #fff; }
+  .toolbar { display: none !important; }
+  .sheet { margin: 0; }
+  .page { box-shadow: none; }
+  [contenteditable="true"]:hover,
+  [contenteditable="true"]:focus { background: transparent; }
+}
