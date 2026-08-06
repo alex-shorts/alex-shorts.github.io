@@ -1,11 +1,7 @@
-# Living tree (family preview)
+﻿# Living tree
 
-Interactive Shorts / Anderson family graph — open in a browser.
+Family tree preview for Mom review.
 
-**Password:** `Shorts`
+Open: [prototype/living-tree/](prototype/living-tree/)
 
-## Open
-
-https://alex-shorts.github.io/projects/living-tree/
-
-Pan and zoom the map, click a person for details, use **Primary** to set the tree root.
+Soft password gate in the app (not real auth). Works offline once loaded.

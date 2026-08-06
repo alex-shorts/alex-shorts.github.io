@@ -5763,4 +5763,4 @@ window.__PEOPLE_INDEX__ = {
                                                     ]
                                     }
                }
-}
+};
