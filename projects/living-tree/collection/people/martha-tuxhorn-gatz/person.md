@@ -11,9 +11,17 @@ burial: Olive Lawn Memorial Park, La Mirada, Los Angeles County, California, USA
 parents: [leo_tuxhorn, ida_tuxhorn]
 spouses: [irvin]
 children: [gloria]
-object_ids: []
+object_ids: [FT-0005]
 confidence: Confirmed
+verified: true
 status: cataloged
+sources:
+  - label: "Find A Grave 168568524"
+    url: "https://www.findagrave.com/memorial/168568524/martha_t-gatz"
+  - label: "Find A Grave 116548697"
+    url: "https://www.findagrave.com/memorial/116548697/martha-gatz"
+  - label: "Conejo Mountain obituary (FT-0005)"
+    url: "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
 media:
   - file: media/memorial-mcpherson-2013.jpg
     kind: headstone
@@ -33,19 +41,18 @@ media:
     captured_at: 2026-08-06
     note: "Inscription OCR — MARTHA T. GATZ / KANSAS / NOVEMBER 21 1967"
 ---
-
 ## Summary
 
-Mother of Gloria Martha (Gatz) Shorts, née Tuxhorn. Named in Gloria’s obituary (C19). Dates and burial locked Round 4 (C24). Parents Leo Lewis Tuxhorn × Ida L. Achilles locked Round 5 (C29). Siblings Carrie Williams, Florence Graves, Henry Tuxhorn, Wilma Prather — track in tree (C30).
+Mother of Gloria Martha (Gatz) Shorts, née Tuxhorn. Named in Gloria’s obituary (C19). Dates and burial locked Round 4 (C24). Parents Leo Lewis Tuxhorn × Ida L. Achilles locked Round 5 (C29). Siblings Carrie Williams, Florence Graves, Henry Tuxhorn, Wilma Prather — **Probable C56-C59** (person folders + media).
 
 ## Assertions
 
-| Claim | Confidence | Basis |
-| --- | --- | --- |
-| Mother of Gloria; husband Irvin Carl; maiden Tuxhorn | Confirmed | Family C19 + Gloria obit |
-| 17 Jun 1897 – 21 Nov 1967 | Confirmed | Family C24 + FAG + Olive Lawn stone death date |
-| Buried Olive Lawn; memorial stone McPherson KS | Confirmed | Family C24 + dual FAG memorials |
-| Parents Leo Lewis × Ida L. Achilles Tuxhorn | Probable | FAG family links (C29) |
+| Claim | Confidence | Source | Source URL | Notes |
+| --- | --- | --- | --- | --- |
+| Mother of Gloria; husband Irvin Carl; maiden Tuxhorn | Confirmed | Family C19 + Gloria obit |  |  |
+| 17 Jun 1897 – 21 Nov 1967 | Confirmed | Family C24 + FAG + Olive Lawn stone death date |  |  |
+| Buried Olive Lawn; memorial stone McPherson KS | Confirmed | Family C24 + dual FAG memorials |  |  |
+| Parents Leo Lewis x Ida L. Achilles Tuxhorn | Confirmed | Family C29 + FAG family links |  |  |
 
 ## Sources
 
@@ -55,4 +62,4 @@ Mother of Gloria Martha (Gatz) Shorts, née Tuxhorn. Named in Gloria’s obituar
 
 ## Open questions
 
-Promote Tuxhorn siblings after Round 5; Kansas census cluster.
+Kansas census cluster; C55 Ida parents harden.

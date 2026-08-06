@@ -13,22 +13,25 @@ spouses: [anderson_grandma]
 children: [heidi]
 object_ids: []
 confidence: Probable
+verified: false
 status: living-private
+sources:
+  - label: "Family knowledge (Alex, 2026-08-06)"
+    url: ""
 media: []
 ---
-
 ## Summary
 
 Maternal grandfather of Alexander Martin Shorts. Family previously named him **John Anderson**; Alex (2026-08-06) believes middle name is **Martin** (“I think”) and that he is **not deceased**. Do **not** run death/obituary digs. Maternal grandmother (C15) still unknown.
 
 ## Assertions
 
-| Claim | Confidence | Basis |
-| --- | --- | --- |
-| Maternal grandfather named John Anderson | Confirmed | Family (earlier) |
-| Middle name Martin → John Martin Anderson | Probable | Alex “I think” (C25) — lock Confirmed when family reconfirms |
-| Living (no deceased) | Probable | Alex “no deceased” — treat as living-private |
-| Spouse (maternal grandma) | Unknown | C15 blocked |
+| Claim | Confidence | Source | Source URL | Notes |
+| --- | --- | --- | --- | --- |
+| Maternal grandfather named John Anderson | Confirmed | Family (earlier) |  |  |
+| Middle name Martin → John Martin Anderson | Probable | Alex “I think” (C25) — lock Confirmed when family reconfirms |  |  |
+| Living (no deceased) | Probable | Alex “no deceased” — treat as living-private |  |  |
+| Spouse (maternal grandma) | Unknown | C15 blocked |  |  |
 
 ## Sources
 

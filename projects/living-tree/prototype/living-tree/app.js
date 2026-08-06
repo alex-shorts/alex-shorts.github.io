@@ -1,21 +1,46 @@
 /**
- * Living-tree — physics graph from collection/people/index.json
- * Soft generation bands + curved spline links (no hard elbows).
+ * Share view — physics living tree + museum panel from collection/.
+ * Classic script (no modules) so file:// double-click works.
  */
-import {
-  GEN_COLORS,
-  defaultVisible,
-  getFocusId,
-  getPeople,
-  loadPeopleIndex,
-  neighborIds,
-  objects,
-  portraitUrl,
-} from "./data.js";
+(function () {
+  const {
+    GEN_COLORS,
+    childConfidence,
+    defaultVisible,
+    directLineIds,
+    edgeClass,
+    expectedDnaShares,
+    formatDnaShare,
+    getFocusId,
+    setFocusId,
+    getPeople,
+    loadObjectArtifact,
+    loadPeopleIndex,
+    neighborIds,
+    personMediaArtifacts,
+    portraitUrl,
+    spouseConfidence,
+  } = window.ShareData;
 
-const CARD_W = 88;
-const CARD_H = 112;
-const CARD_RX = 12;
+  const CARD_W = 88;
+  const CARD_H = 112;
+  const CARD_RX = 12;
+  /** Married (ongoing): slight card overlap to read as a union. */
+  const SPOUSE_OVERLAP = 14;
+  const SPOUSE_GAP = CARD_W - SPOUSE_OVERLAP;
+  /** Non-spouses: center-to-center minimum — cards never overlap. */
+  const MIN_X_GAP = CARD_W + 20;
+  /** Divorced blood co-parents: grouped, no card overlap. */
+  const ENDED_SPOUSE_GAP = MIN_X_GAP;
+  /** Prior spouse (remarriage): offset beside the current union. */
+  const PRIOR_SPOUSE_GAP = CARD_W + 52;
+  /** Perspective: prior partners (+ their parents) sit further back. */
+  const STEP_BACK_DY = 56;
+  const STEP_BACK_SCALE = 0.78;
+  /** Extra air between distinct family units so parent→child edges can stay uncrossed. */
+  const FAMILY_GAP = CARD_W + 56;
+  const SIB_GAP = FAMILY_GAP;
+  const MIN_Y_GAP = CARD_H + 72;
 
 const svg = d3.select("#graph");
 const gRoot = svg.append("g").attr("class", "viewport");
@@ -29,10 +54,17 @@ const legend = document.getElementById("legend");
 
 let visible = new Set();
 let selectedId = null;
+let defaultFocusId = null;
 let width = 0;
 let height = 0;
-let physicsOn = true;
+let physicsOn = false;
 const nodePos = new Map();
+const objectCache = new Map();
+/** primaryId → Map(personId → expected DNA %) */
+let dnaByPrimary = null;
+let dnaPrimaryId = null;
+/** Collateral siblings fan beside their line sibling (not in the spine packing). */
+const SPRAWL_GAP = CARD_W + 18;
 
 const zoom = d3
   .zoom()
@@ -49,28 +81,156 @@ const simulation = d3
     d3
       .forceLink()
       .id((d) => d.id)
-      .distance((d) => (d.kind === "spouse" ? CARD_W + 28 : 120))
-      .strength((d) => (d.kind === "spouse" ? 0.9 : 0.28))
+      .distance((d) => {
+        if (d.kind !== "spouse") return 130;
+        const a = typeof d.source === "object" ? d.source.id : d.source;
+        const b = typeof d.target === "object" ? d.target.id : d.target;
+        return unionGap(a, b, getPeople());
+      })
+      .strength((d) => (d.kind === "spouse" ? 0.95 : 0.12))
   )
-  .force("charge", d3.forceManyBody().strength(-480))
+  .force("charge", d3.forceManyBody().strength(-280))
+  .force("collide", forceCardCollide)
   .force(
-    "collide",
-    d3.forceCollide().radius(() => Math.hypot(CARD_W, CARD_H) / 2 + 8)
+    "x",
+    d3
+      .forceX()
+      .x((d) => d.targetX ?? width / 2)
+      .strength((d) => (d.onDirectLine ? 0.55 : 0.22))
   )
-  .force("x", d3.forceX().strength(0.04))
   .force(
     "y",
     d3
       .forceY()
       .y((d) => genY(d.generation))
-      .strength(0.22)
+      .strength(0.35)
   )
+  .force("lineParents", forceLineParents)
   .on("tick", ticked);
 
+function areSpouses(aId, bId, people) {
+  return (
+    (people[aId]?.spouses || []).includes(bId) || (people[bId]?.spouses || []).includes(aId)
+  );
+}
+
+function shareChildren(aId, bId, people) {
+  const kids = new Set(people[aId]?.children || []);
+  return (people[bId]?.children || []).some((c) => kids.has(c));
+}
+
+function spouseLinkEnded(aId, bId, people) {
+  const a = people[aId];
+  const b = people[bId];
+  const fromA = (a?.spouseLinks || []).find((l) => l.id === bId);
+  const fromB = (b?.spouseLinks || []).find((l) => l.id === aId);
+  if (fromA?.ended || fromB?.ended) return true;
+  // Remarriage with no shared children ⇒ prior union (e.g. Earl × Mayme)
+  const multi =
+    (a?.spouses || []).length > 1 || (b?.spouses || []).length > 1;
+  return multi && !shareChildren(aId, bId, people);
+}
+
+/** Ongoing marriage ⇒ overlap; divorced co-parents ⇒ side-by-side; prior spouse ⇒ tucked close. */
+function unionGap(aId, bId, people) {
+  if (!areSpouses(aId, bId, people)) return MIN_X_GAP;
+  if (!spouseLinkEnded(aId, bId, people)) return SPOUSE_GAP;
+  return shareChildren(aId, bId, people) ? ENDED_SPOUSE_GAP : PRIOR_SPOUSE_GAP;
+}
+
+function isPriorSpouse(aId, bId, people) {
+  return (
+    areSpouses(aId, bId, people) &&
+    spouseLinkEnded(aId, bId, people) &&
+    !shareChildren(aId, bId, people)
+  );
+}
+
+function isOverlapUnion(aId, bId, people) {
+  return areSpouses(aId, bId, people) && !spouseLinkEnded(aId, bId, people);
+}
+
+/** Blood co-parents or an ongoing marriage — keep as one layout unit. */
+function isCoupleUnit(aId, bId, people) {
+  if (!areSpouses(aId, bId, people)) return false;
+  return shareChildren(aId, bId, people) || isOverlapUnion(aId, bId, people);
+}
+
+function pickSpousePartner(personId, candidateIds, people) {
+  const score = (sid) => {
+    const shared = shareChildren(personId, sid, people);
+    const overlap = isOverlapUnion(personId, sid, people);
+    if (shared && overlap) return 4;
+    if (shared) return 3; // divorced blood parents still group
+    if (overlap) return 2;
+    return 0;
+  };
+  return candidateIds
+    .slice()
+    .sort((a, b) => score(b) - score(a) || a.localeCompare(b))
+    .find((sid) => score(sid) > 0);
+}
+
+/** Same-row collide: ongoing spouses share SPOUSE_GAP; ended spouses use ENDED_SPOUSE_GAP. */
+function forceCardCollide(alpha) {
+  const people = getPeople();
+  const nodes = simulation.nodes();
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      const a = nodes[i];
+      const b = nodes[j];
+      if (a.generation !== b.generation) continue;
+      // Stacked siblings / perspective step-backs don't shove the spine
+      if (a.stackCollapsed || b.stackCollapsed) continue;
+      if (a.stepBack || b.stepBack) continue;
+      const dx = b.x - a.x;
+      const gap = Math.abs(dx);
+      if (gap < 1e-6) {
+        b.x += MIN_X_GAP;
+        continue;
+      }
+      const want = areSpouses(a.id, b.id, people)
+        ? unionGap(a.id, b.id, people)
+        : MIN_X_GAP;
+      if (gap >= want) continue;
+      const push = ((want - gap) / 2) * alpha;
+      const s = dx < 0 ? -1 : 1;
+      a.vx -= push * s;
+      b.vx += push * s;
+    }
+  }
+}
+
+/** Keep mom/dad midpoint over the direct-line child only (not sibling group). */
+function forceLineParents(alpha) {
+  const people = getPeople();
+  const focusId = getFocusId();
+  const line = directLineIds(focusId, people);
+  const map = new Map(simulation.nodes().map((n) => [n.id, n]));
+  for (const id of line) {
+    const child = map.get(id);
+    if (!child) continue;
+    const parents = (people[id]?.parents || []).map((pid) => map.get(pid)).filter(Boolean);
+    if (parents.length < 2) continue;
+    const left = parents[0].x <= parents[1].x ? parents[0] : parents[1];
+    const right = left === parents[0] ? parents[1] : parents[0];
+    const mid = (left.x + right.x) / 2;
+    const pull = (child.x - mid) * 0.55 * alpha;
+    left.vx += pull;
+    right.vx += pull;
+    const curSep = right.x - left.x;
+    const want = areSpouses(left.id, right.id, people)
+      ? unionGap(left.id, right.id, people)
+      : ENDED_SPOUSE_GAP;
+    const fix = (want - curSep) * 0.45 * alpha;
+    left.vx -= fix / 2;
+    right.vx += fix / 2;
+  }
+}
+
 function genY(gen) {
-  const band = height * 0.13;
-  const top = height * 0.2;
-  return top + gen * band;
+  const row = Math.max(height * 0.12, MIN_Y_GAP);
+  return height * 0.1 + gen * row;
 }
 
 function coupleKey(a, b) {
@@ -94,37 +254,34 @@ function escapeHtml(s) {
 }
 
 function hiddenNeighborCount(id) {
-  const people = getPeople();
-  const p = people[id];
+  const p = getPeople()[id];
   if (!p) return 0;
   let n = 0;
-  for (const nid of neighborIds(p)) {
-    if (!visible.has(nid)) n += 1;
-  }
+  for (const nid of neighborIds(p)) if (!visible.has(nid)) n += 1;
   return n;
 }
 
 function resolveNode(ref, map) {
-  if (typeof ref === "object") return ref;
-  return map.get(ref);
+  return typeof ref === "object" ? ref : map.get(ref);
 }
 
 function coupleMid(a, b) {
   return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
 }
 
-/** Smooth cubic parent → child */
 function splineChild(ox, oy, tx, ty) {
-  const dy = Math.max(32, Math.abs(ty - oy) * 0.5);
+  const gap = Math.max(24, ty - oy);
+  const dy = Math.max(40, gap * 0.55);
   return `M${ox},${oy} C${ox},${oy + dy} ${tx},${ty - dy} ${tx},${ty}`;
 }
 
-/** Soft arc between spouses */
-function splineSpouse(ax, ay, bx, by) {
+function splineSpouse(ax, ay, bx, by, { distant = false } = {}) {
   const mx = (ax + bx) / 2;
   const my = (ay + by) / 2;
-  const spread = Math.abs(bx - ax);
-  const bow = Math.min(26, 10 + spread * 0.07);
+  const span = Math.hypot(bx - ax, by - ay);
+  const bow = distant
+    ? Math.min(72, 28 + span * 0.22)
+    : Math.min(26, 10 + Math.abs(bx - ax) * 0.07);
   return `M${ax},${ay} Q${mx},${my + bow} ${bx},${by}`;
 }
 
@@ -155,34 +312,30 @@ function buildGraph() {
       const key = coupleKey(node.id, sid);
       if (seenSpouse.has(key)) continue;
       seenSpouse.add(key);
-      links.push({ source: node.id, target: sid, kind: "spouse", couple: key });
+      const other = people[sid];
+      links.push({
+        source: node.id,
+        target: sid,
+        kind: "spouse",
+        couple: key,
+        confidence: spouseConfidence(node, other),
+      });
     }
   }
 
+  // One spline per parent → child (father and mother both draw, any confidence)
   for (const node of nodes) {
-    const parents = (node.parents || []).filter((pid) => idSet.has(pid));
-    if (!parents.length) continue;
-    if (parents.length >= 2) {
-      const key = `child:${coupleKey(parents[0], parents[1])}->${node.id}`;
+    for (const pid of node.parents || []) {
+      if (!idSet.has(pid)) continue;
+      const key = `child:${pid}->${node.id}`;
       if (seenChild.has(key)) continue;
       seenChild.add(key);
       links.push({
-        source: parents[0],
+        source: pid,
         target: node.id,
         kind: "child",
-        parents,
-        couple: coupleKey(parents[0], parents[1]),
+        confidence: childConfidence(node, [pid]),
       });
-      const skey = coupleKey(parents[0], parents[1]);
-      if (!seenSpouse.has(skey)) {
-        seenSpouse.add(skey);
-        links.push({ source: parents[0], target: parents[1], kind: "spouse", couple: skey });
-      }
-    } else {
-      const key = `child:${parents[0]}->${node.id}`;
-      if (seenChild.has(key)) continue;
-      seenChild.add(key);
-      links.push({ source: parents[0], target: node.id, kind: "child", parents });
     }
   }
 
@@ -193,24 +346,10 @@ function ticked() {
   const map = new Map(simulation.nodes().map((n) => [n.id, n]));
 
   gLinks.selectAll("path.child").attr("d", (d) => {
+    const parent = resolveNode(d.source, map);
     const child = resolveNode(d.target, map);
-    if (!child) return "";
-    let ox;
-    let oy;
-    if (d.parents?.length === 2) {
-      const a = map.get(d.parents[0]);
-      const b = map.get(d.parents[1]);
-      if (!a || !b) return "";
-      const mid = coupleMid(a, b);
-      ox = mid.x;
-      oy = mid.y + CARD_H * 0.35;
-    } else {
-      const parent = resolveNode(d.source, map);
-      if (!parent) return "";
-      ox = parent.x;
-      oy = parent.y + CARD_H / 2;
-    }
-    return splineChild(ox, oy, child.x, child.y - CARD_H / 2);
+    if (!parent || !child) return "";
+    return splineChild(parent.x, parent.y + CARD_H / 2, child.x, child.y - CARD_H / 2);
   });
 
   const spouseLinks = simulation.force("link").links().filter((d) => d.kind === "spouse");
@@ -221,36 +360,72 @@ function ticked() {
   uEnter.append("circle").attr("class", "union-dot").attr("r", 4);
 
   gUnions.selectAll("g.union").each(function (d) {
+    const people = getPeople();
     const a = resolveNode(d.source, map);
     const b = resolveNode(d.target, map);
     if (!a || !b) return;
     const mid = coupleMid(a, b);
-    d3.select(this).select(".spouse-link").attr("d", splineSpouse(a.x, a.y, b.x, b.y));
+    const cls = edgeClass(d.confidence);
+    const collateral = !(a.lineRelevant || b.lineRelevant);
+    const ended = spouseLinkEnded(a.id, b.id, people);
+    const distant = ended || a.stepBack || b.stepBack;
+    d3.select(this)
+      .attr(
+        "class",
+        `union ${cls}${collateral ? " collateral" : ""}${ended ? " ended" : ""}${
+          distant ? " distant" : ""
+        }`
+      )
+      .select(".spouse-link")
+      .attr("class", `spouse-link ${cls}${ended ? " ended" : ""}${distant ? " distant" : ""}`)
+      .attr("d", splineSpouse(a.x, a.y, b.x, b.y, { distant }));
     d3.select(this)
       .select(".union-dot")
       .attr("cx", mid.x)
-      .attr("cy", mid.y + CARD_H * 0.35);
+      .attr("cy", mid.y + (distant ? CARD_H * 0.55 : CARD_H * 0.35))
+      .attr("r", distant ? 2.5 : 4);
   });
 
-  gNodes.selectAll("g.node").attr("transform", (d) => `translate(${d.x},${d.y})`);
-
+  gNodes.selectAll("g.node").attr("transform", nodeTransform);
   for (const d of simulation.nodes()) {
     nodePos.set(d.id, { x: d.x, y: d.y, vx: d.vx, vy: d.vy });
   }
 }
 
+function nodeTransform(d) {
+  const s = d.stepBack ? STEP_BACK_SCALE : 1;
+  return `translate(${d.x},${d.y}) scale(${s})`;
+}
+
+function dnaShareFor(id) {
+  const primary = getFocusId();
+  if (!dnaByPrimary || dnaPrimaryId !== primary) {
+    dnaByPrimary = expectedDnaShares(primary, getPeople());
+    dnaPrimaryId = primary;
+  }
+  return dnaByPrimary.get(id) ?? 0;
+}
+
 function cardHtml(d) {
   const c = GEN_COLORS[d.generation] || GEN_COLORS[2];
-  const heritage = d.objectIds?.length || 0;
-  const img = portraitUrl(d);
+  const n = (d.objectIds?.length || 0) + (d.media?.length || 0);
   const unknown = d.confidence === "Unknown" || d.id === "anderson_grandma";
+  const isPrimary = d.id === getFocusId();
+  const dnaLabel = isPrimary ? "100%" : formatDnaShare(dnaShareFor(d.id));
   return `
     <div xmlns="http://www.w3.org/1999/xhtml" class="person-card${unknown ? " unknown" : ""}${
-      d.id === getFocusId() ? " focus" : ""
+      isPrimary ? " focus" : ""
     }" style="--fill:${c.fill};--soft:${c.soft}">
       <div class="photo-wrap">
-        <img src="${img}" alt="" loading="lazy" />
-        ${heritage ? `<span class="obj-badge">${heritage}</span>` : ""}
+        <img src="${portraitUrl(d)}" alt="" loading="lazy" />
+        ${n ? `<span class="obj-badge">${n}</span>` : ""}
+        ${
+          dnaLabel
+            ? `<span class="dna-badge" title="Expected shared DNA with primary">${escapeHtml(
+                dnaLabel
+              )}</span>`
+            : ""
+        }
       </div>
       <div class="card-meta">
         <div class="card-name">${escapeHtml(shortName(d.name))}</div>
@@ -262,35 +437,45 @@ function cardHtml(d) {
 
 function render() {
   const graph = buildGraph();
-
+  const hard = !physicsOn || graph.nodes.every((n) => !nodePos.has(n.id));
+  layoutAligned(graph.nodes, { hard });
   simulation.nodes(graph.nodes);
   simulation.force("link").links(graph.links);
   simulation.force("y").y((d) => genY(d.generation));
-  simulation.force("x").x(width / 2);
+  simulation.force("x").x((d) => d.targetX ?? width / 2);
 
   const childLinks = graph.links.filter((d) => d.kind === "child");
-  const linkSel = gLinks.selectAll("path.child").data(childLinks, (d) => {
+  const linkKey = (d) => {
+    const s = typeof d.source === "object" ? d.source.id : d.source;
     const t = typeof d.target === "object" ? d.target.id : d.target;
-    return `${d.couple || d.parents?.[0]}->${t}`;
-  });
-  linkSel.exit().transition().duration(180).attr("opacity", 0).remove();
-  linkSel
-    .enter()
-    .append("path")
-    .attr("class", "link child")
-    .attr("opacity", 0)
-    .transition()
-    .duration(280)
-    .attr("opacity", null);
+    return `${s}->${t}`;
+  };
+  const linkSel = gLinks.selectAll("path.child").data(childLinks, linkKey);
+  linkSel.exit().remove();
+  const linkEnter = linkSel.enter().append("path").attr("class", "link child");
+  const relevantIds = new Set(graph.nodes.filter((n) => n.lineRelevant).map((n) => n.id));
+  const nodeById = new Map(graph.nodes.map((n) => [n.id, n]));
+  linkEnter
+    .merge(linkSel)
+    .attr("class", (d) => {
+      const sid = typeof d.source === "object" ? d.source.id : d.source;
+      const tid = typeof d.target === "object" ? d.target.id : d.target;
+      const tnode = nodeById.get(tid);
+      const snode = nodeById.get(sid);
+      const collateral = !relevantIds.has(tid);
+      const hidden = tnode?.stackCollapsed || snode?.stackCollapsed ? " stack-hidden" : "";
+      return `link child ${edgeClass(d.confidence)}${collateral ? " collateral" : ""}${hidden}`;
+    });
+  // ponytail: child paths must carry class on enter or selectAll("path.child") skips them
+  console.assert(childLinks.length > 0, "expected parent→child links");
 
   const nodeSel = gNodes.selectAll("g.node").data(graph.nodes, (d) => d.id);
-  nodeSel.exit().transition().duration(180).attr("opacity", 0).remove();
+  nodeSel.exit().remove();
 
   const enter = nodeSel
     .enter()
     .append("g")
     .attr("class", "node")
-    .attr("opacity", 0)
     .call(
       d3
         .drag()
@@ -321,7 +506,6 @@ function render() {
 
   enter
     .append("foreignObject")
-    .attr("class", "card-fo")
     .attr("x", -CARD_W / 2)
     .attr("y", -CARD_H / 2)
     .attr("width", CARD_W)
@@ -342,7 +526,6 @@ function render() {
       d3.select(this).append("text").text("+");
     });
 
-  enter.transition().duration(280).attr("opacity", 1);
   enter.on("click", (event, d) => {
     event.stopPropagation();
     selectPerson(d.id);
@@ -355,82 +538,595 @@ function render() {
     this.style.setProperty("--soft", c.soft);
     d3.select(this).select(".fo-root").html(cardHtml(d));
   });
-  merged
-    .select(".expand-btn")
-    .attr("display", (d) => (hiddenNeighborCount(d.id) > 0 ? null : "none"));
+  merged.select(".expand-btn").attr("display", (d) => (hiddenNeighborCount(d.id) > 0 ? null : "none"));
   merged.classed("selected", (d) => d.id === selectedId);
-
+  merged.classed("collateral", (d) => !d.lineRelevant);
+  merged.classed("step-back", (d) => !!d.stepBack);
+  merged.classed("stack-host", (d) => (d.stackCount || 0) > 0);
+  merged.classed("stack-collapsed", (d) => !!d.stackCollapsed);
+  merged.classed("sprawled", (d) => !!d.sprawled);
+  // Step-back / stacks behind; spine couples on top
+  merged.sort((a, b) => {
+    const za = a.stepBack || a.stackCollapsed ? 0 : a.sprawled ? 1 : 2;
+    const zb = b.stepBack || b.stackCollapsed ? 0 : b.sprawled ? 1 : 2;
+    if (za !== zb) return za - zb;
+    return a.x - b.x || a.id.localeCompare(b.id);
+  });
   applyHighlight();
 
-  if (physicsOn) {
-    simulation.alpha(0.75).restart();
-  } else {
+  if (physicsOn) simulation.alpha(0.75).restart();
+  else {
     simulation.stop();
-    layoutStatic(graph.nodes);
     ticked();
   }
 }
 
-function layoutStatic(nodes) {
-  for (const d of nodes) {
-    d.y = genY(d.generation);
-    d.vy = 0;
+/**
+ * Pedigree layout for the direct line (+ spouses). Collateral siblings sprawl
+ * beside their line sibling so they don't stretch the spine packing.
+ */
+function layoutAligned(nodes, { hard = true } = {}) {
+  const people = getPeople();
+  const focusId = getFocusId();
+  const byId = new Map(nodes.map((n) => [n.id, n]));
+  const line = directLineIds(focusId, people);
+  const xOf = new Map();
+
+  for (const n of nodes) {
+    n.y = genY(n.generation);
+    n.vy = 0;
+    n.vx = 0;
+    n.onDirectLine = line.has(n.id);
+    n.lineRelevant =
+      line.has(n.id) || (people[n.id]?.spouses || []).some((sid) => line.has(sid));
+    n.stackHost = null;
+    n.stackIndex = 0;
+    n.stackCount = 0;
+    n.stackCollapsed = false;
+    n.sprawled = false;
+    n.stepBackHost = null;
+    n.stepBackIndex = 0;
+    n.stepBack = false;
   }
-  const byGen = d3.group(nodes, (d) => d.generation);
-  for (const [, group] of byGen) {
-    const placed = new Set();
-    const units = [];
-    for (const person of group) {
-      if (placed.has(person.id)) continue;
-      const spouseIds = (person.spouses || []).filter((sid) => group.some((g) => g.id === sid));
-      if (spouseIds.length) {
-        const partners = [person, ...spouseIds.map((sid) => group.find((g) => g.id === sid)).filter(Boolean)];
-        partners.forEach((p) => placed.add(p.id));
-        units.push(partners);
-      } else {
-        placed.add(person.id);
-        units.push([person]);
-      }
+
+  // Prior spouses (ended, not blood co-parent) tuck beside the line partner
+  for (const n of nodes) {
+    if (!line.has(n.id)) continue;
+    let idx = 0;
+    for (const sid of people[n.id]?.spouses || []) {
+      const s = byId.get(sid);
+      if (!s || s.stepBackHost) continue;
+      if (!isPriorSpouse(n.id, sid, people)) continue;
+      s.stepBackHost = n.id;
+      s.stepBackIndex = ++idx;
     }
-    const gap = 22;
-    const unitWidths = units.map((u) => u.length * CARD_W + (u.length - 1) * 16);
-    const total = unitWidths.reduce((a, b) => a + b, 0) + gap * Math.max(0, units.length - 1);
-    let x = width / 2 - total / 2;
-    units.forEach((unit, ui) => {
-      unit.forEach((p, i) => {
-        p.x = x + CARD_W / 2 + i * (CARD_W + 16);
-        p.vx = 0;
-      });
-      x += unitWidths[ui] + gap;
+  }
+
+  // Collateral siblings sprawl beside their line sibling
+  const buckets = new Map();
+  for (const n of nodes) {
+    const key = (people[n.id]?.parents || []).slice().sort().join("|");
+    if (!key) continue;
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(n);
+  }
+  for (const [, sibs] of buckets) {
+    if (sibs.length < 2) continue;
+    const host = sibs.find((s) => line.has(s.id)) || sibs.find((s) => s.lineRelevant);
+    if (!host) continue;
+    const others = sibs
+      .filter((s) => s.id !== host.id && !s.lineRelevant && !s.stepBackHost)
+      .sort(
+        (a, b) =>
+          String(people[a.id]?.years || "").localeCompare(String(people[b.id]?.years || "")) ||
+          a.id.localeCompare(b.id)
+      );
+    if (!others.length) continue;
+    host.stackCount = others.length;
+    others.forEach((s, i) => {
+      s.stackHost = host.id;
+      s.stackIndex = i + 1;
     });
   }
+
+  function visibleOf(list) {
+    return (list || []).filter((id) => byId.has(id));
+  }
+  function parentsOf(id) {
+    return visibleOf(people[id]?.parents);
+  }
+  function childrenOf(id) {
+    return visibleOf(people[id]?.children);
+  }
+  function spousesOf(id) {
+    // Current / blood co-parent only — prior spouses seat as step-back satellites
+    return visibleOf(people[id]?.spouses).filter((sid) => {
+      const n = byId.get(sid);
+      return n?.lineRelevant && !n.stepBackHost && !n.stackHost;
+    });
+  }
+  function setX(id, x, { force = true } = {}) {
+    if (!byId.has(id) || byId.get(id).stackHost || byId.get(id).stepBackHost) return;
+    if (!force && xOf.has(id)) return;
+    xOf.set(id, x);
+  }
+  function placeSpouses(id, { inLaws = true } = {}) {
+    const base = xOf.get(id);
+    if (base == null) return;
+    const sps = spousesOf(id).filter((s) => !xOf.has(s));
+    sps.sort((a, b) => {
+      const rank = (sid) =>
+        (shareChildren(id, sid, people) ? 2 : 0) + (isOverlapUnion(id, sid, people) ? 1 : 0);
+      return rank(b) - rank(a) || a.localeCompare(b);
+    });
+    let cursor = base;
+    for (const sid of sps) {
+      cursor += unionGap(id, sid, people);
+      setX(sid, cursor);
+      if (inLaws) placeParentsAbove(sid, { soft: true });
+    }
+    // Seed prior spouses on the opposite side so their parents layout above them
+    const priors = visibleOf(people[id]?.spouses)
+      .filter((sid) => byId.get(sid)?.stepBackHost === id)
+      .sort((a, b) => byId.get(a).stepBackIndex - byId.get(b).stepBackIndex);
+    for (const sid of priors) {
+      xOf.set(sid, base - PRIOR_SPOUSE_GAP * byId.get(sid).stepBackIndex);
+      if (inLaws) placeParentsAbove(sid, { soft: true });
+    }
+  }
+  function placeCouple(p0, p1, cx, opts) {
+    const gap = unionGap(p0, p1, people);
+    setX(p0, cx - gap / 2, opts);
+    setX(p1, cx + gap / 2, opts);
+  }
+
+  const spanMemo = new Map();
+  function ancestorSpan(id, stack = new Set()) {
+    if (spanMemo.has(id)) return spanMemo.get(id);
+    if (stack.has(id)) return FAMILY_GAP;
+    stack.add(id);
+    const self =
+      FAMILY_GAP +
+      spousesOf(id).reduce((sum, sid) => sum + unionGap(id, sid, people), 0);
+    const pars = parentsOf(id);
+    let w = self;
+    if (pars.length === 1) w = Math.max(self, ancestorSpan(pars[0], stack));
+    else if (pars.length >= 2) {
+      w = Math.max(
+        self,
+        ancestorSpan(pars[0], new Set(stack)) + FAMILY_GAP + ancestorSpan(pars[1], new Set(stack))
+      );
+    }
+    stack.delete(id);
+    spanMemo.set(id, w);
+    return w;
+  }
+
+  function placeParentsAbove(id, { soft = false } = {}) {
+    const cx = xOf.get(id);
+    if (cx == null) return;
+    if (!soft && !line.has(id)) return;
+    const pars = parentsOf(id);
+    if (!pars.length) return;
+    const opts = soft ? { force: false } : { force: true };
+    if (pars.length === 1) {
+      setX(pars[0], cx, opts);
+      placeSpouses(pars[0], { inLaws: !soft });
+      placeParentsAbove(pars[0], { soft });
+      return;
+    }
+    // Fan parental branches left/right first (non-crossing order), then snap the
+    // married pair together on the child — grandparents keep the wide seats.
+    const w0 = ancestorSpan(pars[0]);
+    const w1 = ancestorSpan(pars[1]);
+    const total = w0 + FAMILY_GAP + w1;
+    const leftCx = cx - total / 2 + w0 / 2;
+    const rightCx = cx + total / 2 - w1 / 2;
+    setX(pars[0], leftCx, { force: true });
+    setX(pars[1], rightCx, { force: true });
+    placeParentsAbove(pars[0], { soft });
+    placeParentsAbove(pars[1], { soft });
+    if (areSpouses(pars[0], pars[1], people)) {
+      placeCouple(pars[0], pars[1], cx, { force: true });
+    } else {
+      placeSpouses(pars[0], { inLaws: !soft });
+      placeSpouses(pars[1], { inLaws: !soft });
+    }
+  }
+
+  function placeDescendants(id) {
+    const kids = childrenOf(id).filter((c) => {
+      const n = byId.get(c);
+      return n && n.lineRelevant && !n.stackHost;
+    });
+    if (!kids.length) return;
+    const sps = spousesOf(id).filter((s) => xOf.has(s));
+    const mid = sps.length ? (xOf.get(id) + xOf.get(sps[0])) / 2 : xOf.get(id);
+    const lineKids = kids.filter((c) => line.has(c));
+    const spine = lineKids.length ? lineKids : kids.slice(0, 1);
+    if (spine.length === 1) {
+      if (!xOf.has(spine[0])) {
+        setX(spine[0], mid);
+        placeSpouses(spine[0]);
+      }
+      placeDescendants(spine[0]);
+      return;
+    }
+    const start = mid - ((spine.length - 1) * SIB_GAP) / 2;
+    spine.forEach((kid, i) => {
+      if (!xOf.has(kid)) setX(kid, start + i * SIB_GAP);
+      placeSpouses(kid);
+      placeDescendants(kid);
+    });
+  }
+
+  setX(focusId, 0);
+  placeSpouses(focusId);
+  placeParentsAbove(focusId);
+  placeDescendants(focusId);
+
+  const byGen = d3.group(
+    nodes.filter((n) => !xOf.has(n.id) && !n.stackHost && !n.stepBackHost),
+    (d) => d.generation
+  );
+  for (const [, group] of byGen) {
+    const placed = nodes.filter(
+      (n) =>
+        n.generation === group[0].generation &&
+        xOf.has(n.id) &&
+        !n.stepBackHost &&
+        !n.stackHost
+    );
+    let x = placed.length ? Math.max(...placed.map((n) => xOf.get(n.id))) + SIB_GAP * 2 : 0;
+    for (const person of group) {
+      if (xOf.has(person.id) || person.stackHost || person.stepBackHost) continue;
+      setX(person.id, x);
+      placeSpouses(person.id);
+      x +=
+        SIB_GAP +
+        spousesOf(person.id).reduce((sum, sid) => sum + unionGap(person.id, sid, people), 0);
+    }
+  }
+
+  for (const n of nodes) {
+    if (n.stackHost || n.stepBackHost) continue;
+    n.x = xOf.has(n.id) ? xOf.get(n.id) : 0;
+    n.y = genY(n.generation);
+  }
+  // Keep seeded prior-spouse x for parent barycenters during untangle
+  for (const n of nodes) {
+    if (!n.stepBackHost || !xOf.has(n.id)) continue;
+    n.x = xOf.get(n.id);
+    n.y = genY(n.generation);
+  }
+
+  untangleGenerations(
+    nodes.filter((n) => !n.stackHost && !n.stepBackHost),
+    people,
+    line
+  );
+
+  const focusNode = byId.get(focusId);
+  const shift = width / 2 - (focusNode?.x ?? 0);
+  for (const n of nodes) {
+    if (n.stackHost || n.stepBackHost) continue;
+    n.x += shift;
+    n.y = genY(n.generation);
+    n.targetX = n.x;
+    if (hard || !nodePos.has(n.id)) {
+      n.vx = 0;
+      n.vy = 0;
+      nodePos.set(n.id, { x: n.x, y: n.y, vx: 0, vy: 0 });
+    } else {
+      const prev = nodePos.get(n.id);
+      n.x = prev.x;
+      n.y = prev.y ?? n.y;
+      n.vx = prev.vx ?? 0;
+      n.vy = prev.vy ?? 0;
+    }
+  }
+
+  function primarySpouseOf(host) {
+    return (people[host.id]?.spouses || [])
+      .map((id) => byId.get(id))
+      .find((s) => s && !s.stepBackHost && !s.stackHost);
+  }
+  function sideAwayFromPrimary(host) {
+    const primary = primarySpouseOf(host);
+    if (!primary) return -1;
+    return primary.x >= host.x ? -1 : 1;
+  }
+
+  // Tuck prior spouses close beside the current union, a step back in perspective
+  const parentNudgeGens = new Set();
+  for (const n of nodes) {
+    if (!n.stepBackHost) continue;
+    const host = byId.get(n.stepBackHost);
+    if (!host) continue;
+    const dir = sideAwayFromPrimary(host);
+    n.x = host.x + dir * PRIOR_SPOUSE_GAP * n.stepBackIndex;
+    n.y = genY(n.generation) + STEP_BACK_DY;
+    n.stepBack = true;
+    n.targetX = n.x;
+    n.vx = 0;
+    n.vy = 0;
+    nodePos.set(n.id, { x: n.x, y: n.y, vx: 0, vy: 0 });
+
+    const pars = (people[n.id]?.parents || []).map((id) => byId.get(id)).filter(Boolean);
+    if (!pars.length) continue;
+    // In-law parents of a prior spouse match her step-back scale
+    const parkParent = (p, x) => {
+      p.x = x;
+      p.y = genY(p.generation) + STEP_BACK_DY * 0.45;
+      p.stepBack = true;
+      p.targetX = p.x;
+      p.vx = 0;
+      p.vy = 0;
+      nodePos.set(p.id, { x: p.x, y: p.y, vx: 0, vy: 0 });
+      parentNudgeGens.add(p.generation);
+    };
+    if (pars.length >= 2) {
+      const gap = areSpouses(pars[0].id, pars[1].id, people)
+        ? unionGap(pars[0].id, pars[1].id, people)
+        : ENDED_SPOUSE_GAP;
+      // Scale gap with card shrink so the couple still reads as a pair
+      const visualGap = gap * STEP_BACK_SCALE;
+      const left = pars[0].x <= pars[1].x ? pars[0] : pars[1];
+      const right = left === pars[0] ? pars[1] : pars[0];
+      parkParent(left, n.x - visualGap / 2);
+      parkParent(right, n.x + visualGap / 2);
+    } else {
+      parkParent(pars[0], n.x);
+    }
+  }
+
+  // Expand the rest of those rows around the shrunk in-law parents
+  for (const g of parentNudgeGens) {
+    const group = nodes.filter(
+      (n) => n.generation === g && !n.stackHost && !n.stepBackHost && !n.stepBack
+    );
+    if (group.length < 2) continue;
+    const units = coupleUnits(group, people, line);
+    for (const u of units) u.ideal = (u.left.x + u.right.x) / 2;
+    placeUnitsToIdeals(units);
+    for (const u of units) {
+      for (const p of u.couple ? [u.left, u.right] : [u.left]) {
+        p.y = genY(p.generation);
+        p.targetX = p.x;
+        nodePos.set(p.id, { x: p.x, y: p.y, vx: 0, vy: 0 });
+      }
+    }
+  }
+
+  // Sprawl collateral siblings past prior spouses on the open side
+  for (const n of nodes) {
+    if (!n.stackHost) continue;
+    const host = byId.get(n.stackHost);
+    if (!host) continue;
+    n.sprawled = true;
+    n.stackCollapsed = false;
+    const dir = sideAwayFromPrimary(host);
+    const priorCount = nodes.filter((p) => p.stepBackHost === host.id).length;
+    n.x = host.x + dir * (PRIOR_SPOUSE_GAP * priorCount + SPRAWL_GAP * n.stackIndex);
+    n.y = host.y;
+    n.targetX = n.x;
+    n.vx = 0;
+    n.vy = 0;
+    nodePos.set(n.id, { x: n.x, y: n.y, vx: 0, vy: 0 });
+  }
 }
+
+/**
+ * Layered crossing reduction: keep couple units, order each generation by the
+ * barycenter of connected people in the adjacent generation, then pack with
+ * FAMILY_GAP and pull toward those people without reordering.
+ */
+function untangleGenerations(nodes, people, line) {
+  const byGen = d3.group(nodes, (d) => d.generation);
+  const gens = [...byGen.keys()].sort((a, b) => a - b);
+  if (!gens.length) return;
+  if (gens.length < 2) {
+    packUnitsInOrder(coupleUnits(byGen.get(gens[0]) || [], people, line), 0);
+    return;
+  }
+
+  const unitsByGen = new Map();
+  const unitOf = new Map();
+  for (const g of gens) {
+    const units = coupleUnits(byGen.get(g), people, line);
+    units.forEach((u, i) => {
+      u.order = i;
+      u.key = u.left.id;
+      unitOf.set(u.left.id, u);
+      if (u.couple) unitOf.set(u.right.id, u);
+    });
+    unitsByGen.set(g, units);
+  }
+
+  /** Person slot inside a couple unit — keeps in-law parents on the matching spouse side. */
+  function personOrder(id) {
+    const u = unitOf.get(id);
+    if (!u) return 0;
+    if (!u.couple || u.left.id === id) return u.order;
+    return u.order + 0.45;
+  }
+
+  function neighborPersonIds(unit, via) {
+    const ids = [];
+    for (const member of unit.couple ? [unit.left, unit.right] : [unit.left]) {
+      let list = [];
+      if (via === "parents") list = people[member.id]?.parents || [];
+      else if (via === "children") list = people[member.id]?.children || [];
+      else if (via === "spouses") list = people[member.id]?.spouses || [];
+      for (const id of list) if (unitOf.has(id)) ids.push(id);
+    }
+    return ids;
+  }
+
+  function personX(id) {
+    const u = unitOf.get(id);
+    if (!u) return 0;
+    return u.left.id === id ? u.left.x : u.right.x;
+  }
+
+  function blendSpouseBary(u) {
+    const sps = neighborPersonIds(u, "spouses");
+    if (!sps.length) return;
+    const spouseBary = d3.mean(sps, personOrder);
+    if (!Number.isFinite(u.bary)) u.bary = spouseBary;
+    else u.bary = u.bary * 0.8 + spouseBary * 0.2;
+  }
+
+  for (let iter = 0; iter < 12; iter++) {
+    // Down: children follow average parent person-slot
+    for (let gi = 1; gi < gens.length; gi++) {
+      const units = unitsByGen.get(gens[gi]);
+      for (const u of units) {
+        const pars = neighborPersonIds(u, "parents");
+        u.bary = pars.length ? d3.mean(pars, personOrder) : u.order;
+        blendSpouseBary(u);
+      }
+      units.sort((a, b) => a.bary - b.bary || a.key.localeCompare(b.key));
+      units.forEach((u, i) => (u.order = i));
+    }
+    // Up: parents follow the specific child spouse they connect to
+    for (let gi = gens.length - 2; gi >= 0; gi--) {
+      const units = unitsByGen.get(gens[gi]);
+      for (const u of units) {
+        const kids = neighborPersonIds(u, "children");
+        u.bary = kids.length ? d3.mean(kids, personOrder) : u.order;
+        blendSpouseBary(u);
+      }
+      units.sort((a, b) => a.bary - b.bary || a.key.localeCompare(b.key));
+      units.forEach((u, i) => (u.order = i));
+    }
+  }
+
+  // Seed X from order with generous family gaps
+  for (const g of gens) packUnitsInOrder(unitsByGen.get(g), 0);
+
+  // Pull toward the actual people on the other end (not couple midpoints)
+  for (let pass = 0; pass < 8; pass++) {
+    for (let gi = gens.length - 2; gi >= 0; gi--) {
+      const units = unitsByGen.get(gens[gi]);
+      for (const u of units) {
+        const kids = neighborPersonIds(u, "children");
+        if (!kids.length) continue;
+        u.ideal = d3.mean(kids, personX);
+      }
+      placeUnitsToIdeals(units);
+    }
+    for (let gi = 1; gi < gens.length; gi++) {
+      const units = unitsByGen.get(gens[gi]);
+      for (const u of units) {
+        const pars = neighborPersonIds(u, "parents");
+        if (!pars.length) continue;
+        u.ideal = d3.mean(pars, personX);
+      }
+      placeUnitsToIdeals(units);
+    }
+  }
+}
+
+function coupleUnits(group, people, line = new Set()) {
+  const used = new Set();
+  const units = [];
+  const inGen = new Map(group.map((n) => [n.id, n]));
+  for (const n of group) {
+    if (used.has(n.id)) continue;
+    const candidates = (people[n.id]?.spouses || []).filter((s) => inGen.has(s) && !used.has(s));
+    const spouseId = pickSpousePartner(n.id, candidates, people);
+    if (spouseId && isCoupleUnit(n.id, spouseId, people)) {
+      const a = n;
+      const b = inGen.get(spouseId);
+      // Bloodline spouse on the left so in-law parents seat on the matching side
+      let left;
+      let right;
+      if (line.has(a.id) && !line.has(b.id)) {
+        left = a;
+        right = b;
+      } else if (line.has(b.id) && !line.has(a.id)) {
+        left = b;
+        right = a;
+      } else {
+        left = a.x <= b.x ? a : b;
+        right = left === a ? b : a;
+      }
+      used.add(left.id);
+      used.add(right.id);
+      const gap = unionGap(left.id, right.id, people);
+      units.push({ left, right, couple: true, gap, overlap: gap < MIN_X_GAP });
+    } else {
+      used.add(n.id);
+      units.push({ left: n, right: n, couple: false, gap: 0, overlap: false });
+    }
+  }
+  units.sort(
+    (u, v) =>
+      (u.left.x + u.right.x) / 2 - (v.left.x + v.right.x) / 2 || u.left.id.localeCompare(v.left.id)
+  );
+  return units;
+}
+
+function packUnitsInOrder(units, startX) {
+  let cursor = startX;
+  for (const u of units) {
+    if (u.couple) {
+      const gap = u.gap || SPOUSE_GAP;
+      u.left.x = cursor;
+      u.right.x = cursor + gap;
+      cursor = u.right.x + FAMILY_GAP;
+    } else {
+      u.left.x = cursor;
+      cursor = cursor + FAMILY_GAP;
+    }
+    u.ideal = (u.left.x + u.right.x) / 2;
+  }
+}
+
+/** Move units toward ideal midpoints without changing their order. */
+function placeUnitsToIdeals(units) {
+  if (!units?.length) return;
+  const mids = units.map((u) => {
+    const fall = (u.left.x + u.right.x) / 2;
+    return Number.isFinite(u.ideal) ? u.ideal : fall;
+  });
+  const half = (u) => (u.couple ? (u.gap || SPOUSE_GAP) / 2 : 0);
+  const minSep = (a, b) => half(a) + FAMILY_GAP + half(b);
+  for (let i = 1; i < units.length; i++) {
+    const sep = minSep(units[i - 1], units[i]);
+    if (mids[i] < mids[i - 1] + sep) mids[i] = mids[i - 1] + sep;
+  }
+  for (let i = units.length - 2; i >= 0; i--) {
+    const sep = minSep(units[i], units[i + 1]);
+    if (mids[i] > mids[i + 1] - sep) mids[i] = mids[i + 1] - sep;
+  }
+  units.forEach((u, i) => {
+    if (u.couple) {
+      const gap = u.gap || SPOUSE_GAP;
+      u.left.x = mids[i] - gap / 2;
+      u.right.x = mids[i] + gap / 2;
+    } else {
+      u.left.x = mids[i];
+    }
+  });
+}
+
 
 function applyHighlight() {
   const people = getPeople();
   const hot = new Set();
   if (selectedId && people[selectedId]) {
     hot.add(selectedId);
-    for (const id of neighborIds(people[selectedId])) {
-      if (visible.has(id)) hot.add(id);
-    }
+    for (const id of neighborIds(people[selectedId])) if (visible.has(id)) hot.add(id);
   }
   gNodes.selectAll("g.node").classed("dim", (d) => selectedId && !hot.has(d.id));
   gNodes.selectAll("g.node").classed("selected", (d) => d.id === selectedId);
-  gLinks.selectAll("path.child").classed("hot", (d) => {
-    if (!selectedId) return false;
-    const t = typeof d.target === "object" ? d.target.id : d.target;
-    return hot.has(t) || (d.parents || []).some((p) => hot.has(p));
-  });
   gLinks.selectAll("path.child").classed("dim", (d) => {
     if (!selectedId) return false;
-    const t = typeof d.target === "object" ? d.target.id : d.target;
-    return !(hot.has(t) || (d.parents || []).some((p) => hot.has(p)));
-  });
-  gUnions.selectAll("g.union").classed("hot", (d) => {
     const s = typeof d.source === "object" ? d.source.id : d.source;
     const t = typeof d.target === "object" ? d.target.id : d.target;
-    return selectedId && hot.has(s) && hot.has(t);
+    return !(hot.has(s) || hot.has(t));
   });
   gUnions.selectAll("g.union").classed("dim", (d) => {
     if (!selectedId) return false;
@@ -441,8 +1137,7 @@ function applyHighlight() {
 }
 
 function expandNode(id) {
-  const people = getPeople();
-  const p = people[id];
+  const p = getPeople()[id];
   let added = 0;
   for (const nid of neighborIds(p)) {
     if (!visible.has(nid)) {
@@ -459,148 +1154,14 @@ function selectPerson(id) {
   selectedId = id;
   applyHighlight();
   openPanel(id);
-  gNodes.selectAll("g.node").classed("selected", (d) => d.id === id);
-}
-
-function openPanel(id) {
-  const people = getPeople();
-  const p = people[id];
-  if (!p) return;
-  const c = GEN_COLORS[p.generation] || GEN_COLORS[2];
-  const objs = (p.objectIds || []).map((oid) => objects[oid]).filter(Boolean);
-  const img = portraitUrl(p);
-  const kin = [
-    ...(p.parents || []).map((k) => ({ id: k, rel: "Parent" })),
-    ...(p.spouses || []).map((k) => ({ id: k, rel: "Spouse" })),
-    ...(p.children || []).map((k) => ({ id: k, rel: "Child" })),
-  ];
-
-  panel.hidden = false;
-  panelBody.innerHTML = `
-    <div class="panel-hero">
-      <img class="zoomable" src="${img}" alt="${escapeHtml(p.name)}" data-lightbox-src="${escapeHtml(
-        img
-      )}" data-lightbox-caption="${escapeHtml(p.name)}" />
-      <div>
-        <p class="eyebrow" style="color:${c.fill}">${c.label}</p>
-        <h2>${escapeHtml(p.name)}</h2>
-        <p class="meta">${escapeHtml(p.years || "dates TBD")}${p.status ? ` · ${escapeHtml(p.status)}` : ""}</p>
-        <p class="confidence conf-${escapeHtml((p.confidence || "Unknown").toLowerCase())}">${escapeHtml(
-          p.confidence || "Unknown"
-        )}${p.aka ? ` · ${escapeHtml(p.aka)}` : ""}</p>
-      </div>
-    </div>
-    <p class="summary">${escapeHtml(p.summary)}</p>
-    <h3>Family</h3>
-    <div class="kin-row">
-      ${
-        kin
-          .map(
-            (k) =>
-              `<button type="button" class="kin-chip" data-id="${k.id}">${k.rel}: ${escapeHtml(
-                people[k.id]?.name || k.id
-              )}${visible.has(k.id) ? "" : " ⊕"}</button>`
-          )
-          .join("") || `<p class="empty-objects">No kin links.</p>`
-      }
-    </div>
-    <h3>Heritage objects</h3>
-    ${
-      objs.length
-        ? `<ul class="object-list">${objs.map((o) => renderObjectItem(o)).join("")}</ul>`
-        : `<p class="empty-objects">No objects linked yet.</p>`
-    }
-  `;
-  wirePanelInteractions();
-}
-
-function wirePanelInteractions() {
-  panelBody.querySelectorAll(".kin-chip").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const kid = btn.getAttribute("data-id");
-      if (!visible.has(kid)) {
-        visible.add(kid);
-        render();
-      }
-      selectPerson(kid);
-      centerOn(kid);
-    });
-  });
-
-  panelBody.querySelectorAll(".zoomable, .object-unfold-media").forEach((el) => {
-    el.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      openLightbox(
-        el.getAttribute("data-lightbox-src") || el.getAttribute("src"),
-        el.getAttribute("data-lightbox-caption") || el.getAttribute("alt") || ""
-      );
-    });
-  });
-
-  panelBody.querySelectorAll("details.object-card").forEach((det) => {
-    det.addEventListener("toggle", async () => {
-      if (!det.open) return;
-      const bodyEl = det.querySelector(".object-body[data-body-path]");
-      if (!bodyEl || bodyEl.dataset.loaded === "1") return;
-      bodyEl.textContent = "Loading…";
-      try {
-        const res = await fetch(bodyEl.getAttribute("data-body-path"));
-        bodyEl.textContent = stripMarkdownLite(await res.text());
-        bodyEl.dataset.loaded = "1";
-      } catch {
-        bodyEl.textContent = "Could not load contents.";
-      }
-    });
-  });
-}
-
-function renderObjectItem(o) {
-  const thumb = o.thumb
-    ? `<img class="object-thumb" src="${escapeHtml(o.thumb)}" alt="" />`
-    : `<div class="object-thumb" style="display:grid;place-items:center;font-size:0.65rem;font-weight:800;opacity:0.45">${escapeHtml(
-        (o.type || "?").slice(0, 8)
-      )}</div>`;
-  const source = o.sourceUrl
-    ? `<a class="object-source" href="${escapeHtml(o.sourceUrl)}" target="_blank" rel="noopener">Source</a>`
-    : "";
-  const unfoldMedia = o.thumb
-    ? `<img class="object-unfold-media" src="${escapeHtml(o.thumb)}" alt="${escapeHtml(
-        o.title
-      )}" data-lightbox-src="${escapeHtml(o.thumb)}" data-lightbox-caption="${escapeHtml(o.title)}" />`
-    : "";
-  const unfoldText = o.bodyPath
-    ? `<pre class="object-body" data-body-path="${escapeHtml(o.bodyPath)}"></pre>`
-    : `<p class="oblurb">${escapeHtml(o.blurb || "No further contents captured yet.")}</p>`;
-
-  return `<li>
-    <details class="object-card">
-      <summary>
-        <div class="object-head">
-          ${thumb}
-          <div>
-            <span class="oid">${escapeHtml(o.id)} · ${escapeHtml(o.type)}</span>
-            <span class="otitle">${escapeHtml(o.title)}</span>
-            <p class="oblurb">${escapeHtml(o.blurb || "")}</p>
-            <p class="object-hint">Click to unfold</p>
-          </div>
-        </div>
-      </summary>
-      <div class="object-unfold">
-        ${unfoldMedia}
-        ${unfoldText}
-        ${source}
-      </div>
-    </details>
-  </li>`;
 }
 
 function stripMarkdownLite(md) {
   return String(md)
+    .replace(/^---[\s\S]*?---\n*/, "")
     .replace(/^#.+\n+/gm, "")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-    .replace(/^---\n+/gm, "")
     .trim();
 }
 
@@ -614,6 +1175,245 @@ function openLightbox(src, caption) {
 function closeLightbox() {
   document.getElementById("lightbox").hidden = true;
   document.getElementById("lightbox-img").removeAttribute("src");
+}
+
+async function openPanel(id) {
+  const people = getPeople();
+  const p = people[id];
+  if (!p) return;
+  const c = GEN_COLORS[p.generation] || GEN_COLORS[2];
+  const primary = people[getFocusId()];
+  const isPrimary = id === getFocusId();
+  const dnaPct = dnaShareFor(id);
+  const dnaLabel = isPrimary ? "100% (primary)" : formatDnaShare(dnaPct);
+  const kin = [
+    ...(p.parents || []).map((k) => ({ id: k, rel: "Parent" })),
+    ...(p.spouses || []).map((k) => ({ id: k, rel: "Spouse" })),
+    ...(p.children || []).map((k) => ({ id: k, rel: "Child" })),
+  ];
+
+  panel.hidden = false;
+  panelBody.innerHTML = `
+    <div class="panel-hero">
+      <img class="zoomable" src="${portraitUrl(p)}" alt="${escapeHtml(p.name)}" data-src="${escapeHtml(
+        portraitUrl(p)
+      )}" data-caption="${escapeHtml(p.name)}" />
+      <div>
+        <p class="eyebrow" style="color:${c.fill}">${c.label}</p>
+        <h2>${escapeHtml(p.name)}</h2>
+        <p class="meta">${escapeHtml(p.years || "dates TBD")}${p.status ? ` · ${escapeHtml(p.status)}` : ""}</p>
+        <p class="confidence">${escapeHtml(p.confidence)}${p.aka ? ` · ${escapeHtml(p.aka)}` : ""}</p>
+        <p class="dna-line">${
+          dnaLabel
+            ? `<strong>${escapeHtml(dnaLabel)}</strong> expected shared DNA with ${escapeHtml(
+                primary?.name || "primary"
+              )}`
+            : `No blood path to ${escapeHtml(primary?.name || "primary")} (marriage / in-law)`
+        }</p>
+        ${
+          isPrimary
+            ? `<p class="dna-note">Primary for tree + DNA%</p>`
+            : `<button type="button" class="tool primary-btn" id="btn-make-primary">Set as primary</button>`
+        }
+      </div>
+    </div>
+    <p class="summary">${escapeHtml(p.summary)}</p>
+    <h3>Family</h3>
+    <div class="kin-row">
+      ${
+        kin
+          .map(
+            (k) =>
+              `<button type="button" class="kin-chip" data-id="${k.id}">${k.rel}: ${escapeHtml(
+                people[k.id]?.name || k.id
+              )}${visible.has(k.id) ? "" : " ⊕"}</button>`
+          )
+          .join("") || `<p class="empty">No kin links.</p>`
+      }
+    </div>
+    <h3>Artifacts</h3>
+    <div id="artifacts" class="artifacts"><p class="empty">Loading…</p></div>
+  `;
+
+  wirePanelChrome();
+  const makePrimary = document.getElementById("btn-make-primary");
+  if (makePrimary) {
+    makePrimary.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setPrimaryPerson(id);
+    });
+  }
+  await fillArtifacts(p);
+}
+
+function wirePanelChrome() {
+  panelBody.querySelectorAll(".kin-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const kid = btn.getAttribute("data-id");
+      if (!visible.has(kid)) {
+        visible.add(kid);
+        render();
+      }
+      selectPerson(kid);
+      centerOn(kid);
+    });
+  });
+  panelBody.querySelectorAll(".zoomable").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openLightbox(el.getAttribute("data-src") || el.src, el.getAttribute("data-caption") || "");
+    });
+  });
+}
+
+function fillPrimarySelect() {
+  const sel = document.getElementById("primary-select");
+  if (!sel) return;
+  const people = getPeople();
+  const focus = getFocusId();
+  const rows = Object.values(people)
+    .slice()
+    .sort((a, b) => a.name.localeCompare(b.name));
+  sel.innerHTML = rows
+    .map(
+      (p) =>
+        `<option value="${p.id}"${p.id === focus ? " selected" : ""}>${escapeHtml(p.name)}${
+          p.years ? ` · ${escapeHtml(p.years)}` : ""
+        }</option>`
+    )
+    .join("");
+}
+
+function updatePrimaryLede() {
+  const people = getPeople();
+  const p = people[getFocusId()];
+  const el = document.querySelector(".lede");
+  if (!el || !p) return;
+  el.textContent = `Shorts / Anderson · ${Object.keys(people).length} people · primary ${p.name} · DNA% vs primary`;
+}
+
+function setPrimaryPerson(id) {
+  if (!getPeople()[id]) return;
+  const changed = setFocusId(id);
+  dnaByPrimary = null;
+  dnaPrimaryId = null;
+  if (changed) {
+    nodePos.clear();
+    visible = defaultVisible(getPeople());
+  }
+  fillPrimarySelect();
+  updatePrimaryLede();
+  selectedId = id;
+  render();
+  openPanel(id);
+  if (changed) setTimeout(fitView, 400);
+  else centerOn(id);
+}
+
+async function fillArtifacts(person) {
+  const host = document.getElementById("artifacts");
+  if (!host) return;
+
+  const media = personMediaArtifacts(person);
+  const objects = [];
+  for (const oid of person.objectIds || []) {
+    if (!objectCache.has(oid)) objectCache.set(oid, await loadObjectArtifact(oid));
+    const obj = objectCache.get(oid);
+    if (obj) objects.push(obj);
+  }
+
+  const groups = { photo: [], document: [], audio: [], video: [] };
+
+  for (const m of media) {
+    groups.photo.push(`
+      <li class="artifact">
+        <button type="button" class="artifact-thumb zoomable" data-src="${escapeHtml(m.src)}" data-caption="${escapeHtml(
+          m.title
+        )}">
+          <img src="${escapeHtml(m.src)}" alt="" loading="lazy" />
+        </button>
+        <div>
+          <span class="atype">photo</span>
+          <span class="atitle">${escapeHtml(m.title)}</span>
+        </div>
+      </li>`);
+  }
+
+  for (const o of objects) {
+    const docType = ["obituary", "book", "genealogy", "document"].includes(o.type) ? "document" : o.type;
+    if (o.photos?.length) {
+      for (const src of o.photos) {
+        groups.photo.push(`
+          <li class="artifact">
+            <button type="button" class="artifact-thumb zoomable" data-src="${escapeHtml(src)}" data-caption="${escapeHtml(
+              o.title
+            )}">
+              <img src="${escapeHtml(src)}" alt="" loading="lazy" onerror="this.closest('li').remove()" />
+            </button>
+            <div>
+              <span class="atype">photo · ${escapeHtml(o.id)}</span>
+              <span class="atitle">${escapeHtml(o.title)}</span>
+            </div>
+          </li>`);
+      }
+    }
+    if (o.audio) {
+      groups.audio.push(`
+        <li class="artifact">
+          <div>
+            <span class="atype">audio · ${escapeHtml(o.id)}</span>
+            <span class="atitle">${escapeHtml(o.title)}</span>
+            <audio controls preload="none" src="${escapeHtml(
+              o.audio
+            )}" onerror="this.closest('li').remove()"></audio>
+          </div>
+        </li>`);
+    }
+    for (const src of o.videos || []) {
+      groups.video.push(`
+        <li class="artifact">
+          <div>
+            <span class="atype">video · ${escapeHtml(o.id)}</span>
+            <span class="atitle">${escapeHtml(o.title)}</span>
+            <video controls preload="none" src="${escapeHtml(
+              src
+            )}" onerror="this.closest('li').remove()"></video>
+          </div>
+        </li>`);
+    }
+    // Documents / obituaries always offer unfoldable text
+    if (docType === "document" || o.type === "obituary" || o.type === "book" || !o.photos?.length) {
+      groups.document.push(`
+        <li class="artifact">
+          <details class="artifact-doc">
+            <summary>
+              <span class="atype">${escapeHtml(o.type)} · ${escapeHtml(o.id)}</span>
+              <span class="atitle">${escapeHtml(o.title)}</span>
+            </summary>
+            <pre class="artifact-body">${escapeHtml(stripMarkdownLite(o.bodyText))}</pre>
+            ${
+              o.sourceUrl
+                ? `<a class="asource" href="${escapeHtml(o.sourceUrl)}" target="_blank" rel="noopener">Source</a>`
+                : ""
+            }
+          </details>
+        </li>`);
+    }
+  }
+
+  const order = [
+    ["photo", "Photos"],
+    ["document", "Documents"],
+    ["audio", "Audio"],
+    ["video", "Video"],
+  ];
+  const html = order
+    .filter(([key]) => groups[key].length)
+    .map(([key, label]) => `<h4>${label}</h4><ul class="artifact-list">${groups[key].join("")}</ul>`)
+    .join("");
+
+  host.innerHTML = html || `<p class="empty">No artifacts linked yet.</p>`;
+  wirePanelChrome();
 }
 
 function centerOn(id) {
@@ -656,13 +1456,7 @@ function fitView() {
 }
 
 function resetFocus() {
-  const people = getPeople();
-  visible = defaultVisible(people, getFocusId());
-  nodePos.clear();
-  selectedId = getFocusId();
-  render();
-  selectPerson(getFocusId());
-  setTimeout(fitView, 450);
+  setPrimaryPerson(defaultFocusId || getFocusId());
 }
 
 function buildLegend() {
@@ -682,6 +1476,7 @@ function resize() {
   height = rect.height;
   svg.attr("viewBox", `0 0 ${width} ${height}`);
   if (visible.size) {
+    nodePos.clear();
     render();
     buildLegend();
   }
@@ -699,7 +1494,6 @@ document.getElementById("panel-close").addEventListener("click", () => {
   selectedId = null;
   applyHighlight();
 });
-
 document.getElementById("lightbox-close").addEventListener("click", (e) => {
   e.stopPropagation();
   closeLightbox();
@@ -710,34 +1504,47 @@ document.getElementById("lightbox").addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLightbox();
 });
-
 document.getElementById("btn-reset").addEventListener("click", resetFocus);
 document.getElementById("btn-fit").addEventListener("click", fitView);
-
-const physicsEl = document.getElementById("toggle-physics");
-if (physicsEl) {
-  physicsEl.addEventListener("change", (e) => {
-    physicsOn = e.target.checked;
-    render();
-  });
-}
+document.getElementById("toggle-physics").addEventListener("change", (e) => {
+  physicsOn = e.target.checked;
+  if (!physicsOn) nodePos.clear(); // hard snap to aligned layout
+  render();
+});
+document.getElementById("primary-select").addEventListener("change", (e) => {
+  setPrimaryPerson(e.target.value);
+});
 
 async function boot() {
   try {
-    await loadPeopleIndex();
-    const people = getPeople();
-    visible = defaultVisible(people, getFocusId());
-    document.querySelector(".lede").textContent =
-      `Shorts / Anderson · physics graph · collection/people · focus ${
-        people[getFocusId()]?.name || getFocusId()
-      }`;
+    const { people, focusId } = await loadPeopleIndex();
+    // ponytail: one load self-check
+    console.assert(Object.keys(people).length > 0, "people index empty");
+    console.assert(people[focusId], `focus ${focusId} missing from index`);
+    if (!Object.keys(people).length || !people[focusId]) {
+      throw new Error("People index failed self-check (empty or missing focus).");
+    }
+    const shares = expectedDnaShares(focusId, people);
+    const parentId = (people[focusId].parents || [])[0];
+    if (parentId) {
+      console.assert(
+        Math.abs((shares.get(parentId) || 0) - 50) < 0.2,
+        "parent of primary should be ~50% DNA"
+      );
+    }
+
+    defaultFocusId = focusId;
+    visible = defaultVisible(people);
+    fillPrimarySelect();
+    updatePrimaryLede();
     resize();
-    selectPerson(getFocusId());
+    // Show full graph undimmed first — selection dims most parent→child edges
+    selectedId = null;
     setTimeout(fitView, 550);
   } catch (err) {
     console.error(err);
     panel.hidden = false;
-    panelBody.innerHTML = `<p class="summary">Could not load people index. Use <code>npm run prototype:tree</code> from repo root.</p><pre class="object-body">${escapeHtml(
+    panelBody.innerHTML = `<p class="summary">Could not load people data. Keep <code>people-data.js</code> beside this page, or run <code>npm run prototype:tree</code>.</p><pre class="artifact-body">${escapeHtml(
       String(err)
     )}</pre>`;
   }
@@ -745,3 +1552,4 @@ async function boot() {
 
 window.addEventListener("resize", resize);
 boot();
+})();

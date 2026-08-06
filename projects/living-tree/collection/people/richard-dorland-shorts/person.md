@@ -11,9 +11,17 @@ burial: Conejo Mountain Memorial Park, Camarillo, Ventura County, California, US
 parents: [earl, annabelle]
 spouses: [gloria]
 children: [william, carla, gigi]
-object_ids: []
+object_ids: [FT-0004, FT-0005]
 confidence: Confirmed
+verified: true
 status: cataloged
+sources:
+  - label: "Find A Grave 65483876"
+    url: "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+  - label: "Ventura County Star 28 Oct 2009 (FT-0004)"
+    url: "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+  - label: "Gloria Conejo Mountain obituary (FT-0005)"
+    url: "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
 media:
   - file: media/memorial-fag-2011.gif
     kind: headstone
@@ -21,30 +29,29 @@ media:
     source_url: https://images.findagrave.com/photos/2011/40/65483876_129738501279.gif
     captured_at: 2026-08-06
 ---
-
 ## Summary
 
 Paternal grandfather of Alexander Martin Shorts. Born Rochester, NY; family to Southern California 1929; South Gate High School 1941; WWII U.S. Army Air Corps (Operations Specialist; Panama); later fireman (Arcadia → Huntington Park → Burbank Captain). Married Gloria Gatz 22 Oct 1950 (59 years).
 
 ## Assertions
 
-| Claim | Confidence | Basis |
-| --- | --- | --- |
-| Same person as Dad’s father Richard | Confirmed | Family (C6) |
-| Dorland; 29 Jul 1922 – 23 Oct 2009; Rochester birth | Confirmed | Family C12c + FAG + VC Star 28 Oct 2009 |
-| Parents Earl Stanley × Annabelle Lucretia | Confirmed | Family C21 + VC Star |
-| SoCal 1929; South Gate HS 1941; WWII AAC; fireman | Confirmed | Family C22 + VC Star + stone |
-| Married Gloria 22 Oct 1950 | Confirmed | Family Round 3 |
-| Discharged 1945 (year only; no reason stated in obit) | Confirmed | VC Star 28 Oct 2009 on FAG |
-| Discharge reason = postwar demobilization / points | Probable | Silence of sources + standard AAF drawdown after V-J Day; no medical/disciplinary claim |
-| Had ≥1 younger sibling (Earl × Annabelle) | Confirmed | Alex pack C37 (VC Star “first son”; may refine) — **names unknown (C38)** |
-| Sibling names / birth order | Unknown | C38 deferred gap — Alex accepted “update later”; do not invent |
+| Claim | Confidence | Source | Source URL | Notes |
+| --- | --- | --- | --- | --- |
+| Same person as Dad’s father Richard | Confirmed | Family pack C6 | | |
+| Dorland; 29 Jul 1922 – 23 Oct 2009; Rochester birth | Confirmed | Ventura County Star 28 Oct 2009 (FT-0004) | https://www.findagrave.com/memorial/65483876/richard-dorland-shorts | Family C12c + FAG |
+| Parents Earl Stanley × Annabelle Lucretia | Confirmed | Ventura County Star 28 Oct 2009 (FT-0004) | https://www.findagrave.com/memorial/65483876/richard-dorland-shorts | Family C21 |
+| SoCal 1929; South Gate HS 1941; WWII AAC; fireman | Confirmed | Ventura County Star 28 Oct 2009 (FT-0004) | https://www.findagrave.com/memorial/65483876/richard-dorland-shorts | Family C22 + stone |
+| Married Gloria 22 Oct 1950 | Confirmed | Ventura County Star 28 Oct 2009 (FT-0004) | https://www.findagrave.com/memorial/65483876/richard-dorland-shorts | Family Round 3; also FT-0005 |
+| Discharged 1945 (year only; no reason stated in obit) | Confirmed | Ventura County Star 28 Oct 2009 (FT-0004) | https://www.findagrave.com/memorial/65483876/richard-dorland-shorts | |
+| Discharge reason = postwar demobilization / points | Probable | Inference from FT-0004 silence + standard AAF drawdown | | No medical/disciplinary claim in sources |
+| Had ≥1 younger sibling (Earl × Annabelle) | Confirmed | Ventura County Star (“first son”) FT-0004 | https://www.findagrave.com/memorial/65483876/richard-dorland-shorts | Pack C37; names unknown C38 |
+| Sibling names / birth order | Unknown | | | C38 deferred — do not invent |
 
 ## Sources
 
 - [Find A Grave 65483876](https://www.findagrave.com/memorial/65483876/richard-dorland-shorts)
-- Ventura County Star (CA), 28 Oct 2009 — research-captured text in [`obituary.md`](obituary.md)
-- Gloria’s Conejo Mountain obituary (surviving spouse context)
+- Ventura County Star (CA), 28 Oct 2009 — [`FT-0004`](../../objects/FT-0004/entry.md) (pointer: [`obituary.md`](obituary.md))
+- Gloria’s Conejo Mountain obituary — [`FT-0005`](../../objects/FT-0005/entry.md) (surviving spouse context)
 
 ## Notes
 

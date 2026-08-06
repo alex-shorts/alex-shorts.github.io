@@ -13,7 +13,11 @@ spouses: [frederick_tuxhorn]
 children: [leo_tuxhorn]
 object_ids: []
 confidence: Confirmed
+verified: true
 status: cataloged
+sources:
+  - label: "Find A Grave 48237384"
+    url: "https://www.findagrave.com/memorial/48237384/elizabeth-tuxhorn"
 media:
   - file: media/headstone-inman-2010.jpg
     kind: headstone
@@ -26,17 +30,16 @@ media:
     source_url: https://images.findagrave.com/photos/2010/101/48237384_127110150485.jpg
     captured_at: 2026-08-06
 ---
-
 ## Summary
 
 Mother of Leo Lewis Tuxhorn (**C36 Confirmed**). Elizabeth Birkenbeuel Tuxhorn, 25 Nov 1833 – 26 Nov 1911, Inman North Cemetery. Widow of Frederick William August Tuxhorn.
 
 ## Assertions
 
-| Claim | Confidence | Basis |
-| --- | --- | --- |
-| Mother of Leo; maiden Birkenbeuel | Confirmed | Alex C36 + FAG 48237384 ↔ 48237387 |
-| 25 Nov 1833 – 26 Nov 1911; Inman North | Confirmed | Alex C36 + FAG + stone photos |
+| Claim | Confidence | Source | Source URL | Notes |
+| --- | --- | --- | --- | --- |
+| Mother of Leo; maiden Birkenbeuel | Confirmed | Alex C36 + FAG 48237384 â†” 48237387 |  |  |
+| 25 Nov 1833 – 26 Nov 1911; Inman North | Confirmed | Alex C36 + FAG + stone photos |  |  |
 
 ## Sources
 
@@ -44,4 +47,4 @@ Mother of Leo Lewis Tuxhorn (**C36 Confirmed**). Elizabeth Birkenbeuel Tuxhorn, 
 
 ## Open questions
 
-Birkenbeuel origin; OCR stone inscription fully.
+Birkenbeuel/Birkenbuel parents still unknown (**C177** / **C200** — GEDBAS parents blank; FAG no Parents; MyHeritage Sophia Heimann × Peter William **rejected** **C201**). Peru LaSalle FAN only (**C203** Possible — Elvina *1875 Peru; Margaret×Kellenbach / William d. at sea — not Probable parents). Unlock: KS death cert Nov 1911 (**C207**) or IL marriage / German baptism (**C208**). FS blocked (**C205**). Pioneer: Elizabeth (Birkenbuel), Groveland 1876. See [`fs-ascent-elizabeth-birkenbeuel-parents.md`](../../../docs/research/people/proposals/fs-ascent-elizabeth-birkenbeuel-parents.md).

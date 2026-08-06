@@ -5,15 +5,43 @@ name: Irvin Carl Gatz
 aka:
 birth: 1891-07-31
 death: 1956-03-13
-birth_place:
-death_place:
+birth_place: Kansas, USA
+death_place: Los Angeles, California, United States
 burial: Olive Lawn Memorial Park, La Mirada, Los Angeles County, California, USA (body); McPherson Cemetery, McPherson, Kansas, USA (memorial / cenotaph)
-parents: []
+parents: [charles_c_gatz, minnie_kruse]
 spouses: [martha]
 children: [gloria]
-object_ids: []
+object_ids: [FT-0005]
 confidence: Confirmed
+verified: true
 status: cataloged
+sources:
+  - label: "Find A Grave 168568492"
+    url: "https://www.findagrave.com/memorial/168568492/irvin_carl-gatz"
+  - label: "Find A Grave 116548657"
+    url: "https://www.findagrave.com/memorial/116548657/irvin_carl-gatz"
+  - label: "Conejo Mountain obituary (FT-0005)"
+    url: "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+  - label: "Find A Grave 116548952"
+    url: "https://www.findagrave.com/memorial/116548952/charles_c-gatz"
+  - label: "Find A Grave 116548907"
+    url: "https://www.findagrave.com/memorial/116548907/minnie-gatz"
+  - label: "USGenWeb McPherson 1900 ED map — Jackson Twp ED 133 / T623-488 (browse target)"
+    url: "https://www.us-census.org/states/kansas/teams/mcpherson1900.htm"
+  - label: "1900 US Census — Irvin Gatz (person ark MMYS-34K)"
+    url: "https://www.familysearch.org/ark:/61903/1:1:MMYS-34K"
+  - label: "1900 US Census — C C × Minnie Gatz household (MMYS-34F)"
+    url: "https://www.familysearch.org/ark:/61903/1:1:MMYS-34F"
+  - label: "1900 census image S3HY-DHFW-26L (one-entry opened 2026-08-06)"
+    url: "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+  - label: "1910 US Census — Irvin Gates / Charley C × Minnie, Groveland McPherson (M2CL-YL9)"
+    url: "https://www.familysearch.org/ark:/61903/1:1:M2CL-YL9"
+  - label: "FamilySearch community person Irwin Carl Gatz GSHK-JXT"
+    url: "https://www.familysearch.org/tree/person/details/GSHK-JXT"
+  - label: "FamilySearch wave: docs/research/people/proposals/familysearch-wave.md (one-entry Irvin/Gatz 1900)"
+    url: ""
+  - label: "Free-sources wave: docs/research/people/proposals/free-sources-wave.md"
+    url: ""
 media:
   - file: media/memorial-mcpherson-2013.jpg
     kind: headstone
@@ -32,27 +60,11 @@ media:
     source_url: https://images.findagrave.com/photos/2019/220/168568492_18851245-8b9c-4a05-8115-ee019d5cf5af.jpeg
     captured_at: 2026-08-06
     note: "Inscription OCR — IRVIN CARL GATZ / KANSAS / PVT STU ARMY TNG CORPS / WORLD WAR I / JULY 31 1891 — MARCH 13 1956"
----
-
-## Summary
-
-Father of Gloria Martha (Gatz) Shorts. Named in Gloria’s obituary (C19). Dates and Olive Lawn / McPherson burial locked Round 4 (C24). Olive Lawn marker adds WWI service: PVT, Student Army Training Corps, Kansas. No parents linked on either FAG memorial yet.
-
-## Assertions
-
-| Claim | Confidence | Basis |
-| --- | --- | --- |
-| Father of Gloria; husband of Martha Tuxhorn | Confirmed | Family C19 + Gloria obit |
-| 31 Jul 1891 – 13 Mar 1956 | Confirmed | Family C24 + Olive Lawn stone OCR + FAG |
-| Buried Olive Lawn; memorial stone McPherson KS | Confirmed | Dual FAG 168568492 / 116548657 |
-| WWI PVT Student Army Training Corps (Kansas) | Probable | Olive Lawn marker inscription |
-
-## Sources
-
-- [Find A Grave 168568492](https://www.findagrave.com/memorial/168568492/irvin_carl-gatz) (Olive Lawn)
-- [Find A Grave 116548657](https://www.findagrave.com/memorial/116548657/irvin_carl-gatz) (McPherson cenotaph)
-- Gloria Martha Shorts obituary
-
-## Open questions
-
-Gatz parents / Kansas siblings; census cluster (1930/1940 McPherson; 1950 LA/Orange after 1942). FAN only: Jerry Gatz Odle (Possible); Charles C. Gatz McPherson pioneer 1889 (Speculative — Round 8, do not attach).
+  - ref: charles-c-gatz/media/census-1900-jackson-mcpherson.jpg
+    kind: census-image
+    role: son
+    tags: [household-1900]
+    source: "1900 US Census ED 133 Jackson Twp McPherson KS sheet 3A — FS Download (JPEG $dist) S3HY-DHFW-26L"
+    source_url: https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L
+    captured_at: 2026-08-06
+    note: "FS JPEG download (not PDF/screenshot); Irvin line ~22 in C C × Minnie household. Canonical file under charles-c-gatz."

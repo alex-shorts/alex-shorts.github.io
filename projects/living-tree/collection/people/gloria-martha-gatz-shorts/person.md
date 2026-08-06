@@ -11,9 +11,17 @@ burial: Conejo Mountain Memorial Park, Camarillo, Ventura County, California, US
 parents: [irvin, martha]
 spouses: [richard]
 children: [william, carla, gigi]
-object_ids: []
+object_ids: [FT-0005, FT-0004]
 confidence: Confirmed
+verified: true
 status: cataloged
+sources:
+  - label: "Conejo Mountain obituary (FT-0005)"
+    url: "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+  - label: "Find A Grave 183422612"
+    url: "https://www.findagrave.com/memorial/183422612/gloria-martha-gatz-shorts"
+  - label: "Richard VC Star obituary (FT-0004)"
+    url: "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
 media:
   - file: media/portrait.jpg
     kind: portrait
@@ -27,25 +35,25 @@ media:
     source_url: https://images.findagrave.com/photos/2020/20/183422612_857754ec-ae02-4380-9233-be9e5389e20e.jpeg
     captured_at: 2026-08-06
 ---
-
 ## Summary
 
 Paternal grandmother of Alexander Martin Shorts. Born Gloria Martha Gatz in McPherson, Kansas; family moved to California in 1942; finished Bellflower High; married Richard Dorland Shorts 22 Oct 1950 after meeting at the Hollywood Palladium. Lived Burbank → Thousand Oaks → Silver Strand Beach (Oxnard) → Hueneme Bay, Port Hueneme. Predeceased by husband Richard (2009) and daughter Carla.
 
 ## Assertions
 
-| Claim | Confidence | Basis |
-| --- | --- | --- |
-| Identity / dates 16 Aug 1925 – 16 Jun 2017 | Confirmed | Family (C5/C10) + Conejo Mountain obit + FAG |
-| Maiden Gatz; parents Irvin Carl × Martha Tuxhorn | Confirmed | Family Round 3 + obit |
-| Born McPherson KS; to CA 1942; Bellflower High | Confirmed | Family Round 3 + obit |
-| Married Richard 22 Oct 1950; children Carla, Bill, Gigi | Confirmed | Family Round 3 + obit |
-| Burial Conejo Mountain | Confirmed | FAG + funeral home |
+| Claim | Confidence | Source | Source URL | Notes |
+| --- | --- | --- | --- | --- |
+| Identity / dates 16 Aug 1925 – 16 Jun 2017 | Confirmed | Conejo Mountain obituary (FT-0005) | https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866 | Family C5/C10 + FAG |
+| Maiden Gatz; parents Irvin Carl × Martha Tuxhorn | Confirmed | Conejo Mountain obituary (FT-0005) | https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866 | Family Round 3 |
+| Born McPherson KS; to CA 1942; Bellflower High | Confirmed | Conejo Mountain obituary (FT-0005) | https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866 | Family Round 3 |
+| Married Richard 22 Oct 1950; children Carla, Bill, Gigi | Confirmed | Conejo Mountain obituary (FT-0005) | https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866 | Also FT-0004 |
+| Burial Conejo Mountain | Confirmed | Find A Grave 183422612 | https://www.findagrave.com/memorial/183422612/gloria-martha-gatz-shorts | Funeral home |
 
 ## Sources
 
-- [Conejo Mountain obituary](https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866) — full text in [`obituary.md`](obituary.md)
+- [Conejo Mountain obituary](https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866) — [`FT-0005`](../../objects/FT-0005/entry.md) (pointer: [`obituary.md`](obituary.md))
 - [Find A Grave 183422612](https://www.findagrave.com/memorial/183422612/gloria-martha-gatz-shorts)
+- Richard VC Star obituary — [`FT-0004`](../../objects/FT-0004/entry.md) (spouse context)
 
 ## Open questions
 

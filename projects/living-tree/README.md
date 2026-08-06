@@ -1,4 +1,4 @@
-﻿# Living tree (family preview)
+# Living tree (family preview)
 
 Interactive Shorts / Anderson family graph — open in a browser.
 
@@ -8,6 +8,4 @@ Interactive Shorts / Anderson family graph — open in a browser.
 
 https://alex-shorts.github.io/projects/living-tree/
 
-Or open `prototype/living-tree/index.html` after cloning this folder.
-
-Pan and zoom the map, click a person for details, use **+** to expand kin.
+Pan and zoom the map, click a person for details, use **Primary** to set the tree root.
