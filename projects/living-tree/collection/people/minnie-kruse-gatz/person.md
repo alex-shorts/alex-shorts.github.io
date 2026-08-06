@@ -12,9 +12,9 @@ parents: []
 spouses: [charles_c_gatz]
 children: [irvin]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "Find A Grave 116548907"
     url: "https://www.findagrave.com/memorial/116548907/minnie-gatz"

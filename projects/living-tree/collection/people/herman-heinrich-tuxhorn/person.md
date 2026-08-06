@@ -14,9 +14,9 @@ parents: []
 spouses: [anne_margarethe_esser]
 children: [frederick_tuxhorn]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "WikiTree Tuxhorn-62 — Herman Heinrich Tuxhorn"
     url: "https://www.wikitree.com/wiki/Tuxhorn-62"

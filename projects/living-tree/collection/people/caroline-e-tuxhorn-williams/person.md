@@ -9,12 +9,17 @@ birth_place: Inman, McPherson County, Kansas, USA
 death_place:
 burial: Inman North Cemetery, Inman, McPherson County, Kansas, USA
 parents: [leo_tuxhorn, ida_tuxhorn]
+parent_links:
+  - id: leo_tuxhorn
+    confidence: Confirmed
+  - id: ida_tuxhorn
+    confidence: Confirmed
 spouses: []
 children: []
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "Find A Grave 48237526"
     url: "https://www.findagrave.com/memorial/48237526/caroline_e_elizabeth-williams"

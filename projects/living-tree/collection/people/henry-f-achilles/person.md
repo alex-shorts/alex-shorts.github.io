@@ -11,12 +11,17 @@ birth_place: Barum, Salzgitter, Braunschweig, Germany
 death_place: Inman, McPherson County, Kansas, USA
 burial: Inman North Cemetery, Inman, McPherson County, Kansas, USA
 parents: [johann_friedrich_christoph_achilles, marie_christine_henrietta_burgdorf]
+parent_links:
+  - id: johann_friedrich_christoph_achilles
+    confidence: Confirmed
+  - id: marie_christine_henrietta_burgdorf
+    confidence: Confirmed
 spouses: [caroline_waescher]
 children: [ida_tuxhorn]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "Find A Grave 48236277"
     url: "https://www.findagrave.com/memorial/48236277/henry_f-achilles"

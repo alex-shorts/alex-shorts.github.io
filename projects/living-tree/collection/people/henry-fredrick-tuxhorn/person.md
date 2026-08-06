@@ -9,12 +9,17 @@ birth_place:
 death_place:
 burial: Neosho County Memorial Park, Chanute, Neosho County, Kansas, USA
 parents: [leo_tuxhorn, ida_tuxhorn]
+parent_links:
+  - id: leo_tuxhorn
+    confidence: Confirmed
+  - id: ida_tuxhorn
+    confidence: Confirmed
 spouses: []
 children: []
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "Find A Grave 27952385"
     url: "https://www.findagrave.com/memorial/27952385/henry_fredrick-tuxhorn"

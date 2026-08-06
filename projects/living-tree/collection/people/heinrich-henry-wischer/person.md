@@ -14,9 +14,9 @@ parents: []
 spouses: [carolina_wisher]
 children: [caroline_waescher]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "GEDBAS 1163945825 — Heinrich Henry Wischer (Rosendahl Familie file 42734)"
     url: "https://gedbas.genealogy.net/person/show/1163945825"

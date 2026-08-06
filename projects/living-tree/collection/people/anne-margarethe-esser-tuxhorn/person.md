@@ -15,9 +15,9 @@ parents: []
 spouses: [herman_heinrich_tuxhorn]
 children: [frederick_tuxhorn]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "WikiTree Esser-995 — Anne Margarethe Ilsabein Esser"
     url: "https://www.wikitree.com/wiki/Esser-995"

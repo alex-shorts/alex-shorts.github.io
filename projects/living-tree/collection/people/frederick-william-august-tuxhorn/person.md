@@ -9,6 +9,11 @@ birth_place: Dornberg, Bielefeld, Westphalia, Prussia, Germany
 death_place: McPherson County, Kansas, USA
 burial:
 parents: [herman_heinrich_tuxhorn, anne_margarethe_esser]
+parent_links:
+  - id: herman_heinrich_tuxhorn
+    confidence: Confirmed
+  - id: anne_margarethe_esser
+    confidence: Confirmed
 spouses: [elizabeth_birkenbeuel]
 children: [leo_tuxhorn]
 object_ids: []

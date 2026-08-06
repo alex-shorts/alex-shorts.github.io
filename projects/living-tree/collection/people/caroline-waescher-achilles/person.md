@@ -12,12 +12,17 @@ birth_place: Braunschweig, Niedersachsen, Germany
 death_place: Inman, McPherson County, Kansas, USA
 burial: Inman North Cemetery, Inman, McPherson County, Kansas, USA
 parents: [heinrich_henry_wischer, carolina_wisher]
+parent_links:
+  - id: heinrich_henry_wischer
+    confidence: Confirmed
+  - id: carolina_wisher
+    confidence: Possible
 spouses: [henry_f_achilles]
 children: [ida_tuxhorn]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "Find A Grave 48236265"
     url: "https://www.findagrave.com/memorial/48236265/caroline-achilles"

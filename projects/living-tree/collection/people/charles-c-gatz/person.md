@@ -9,12 +9,17 @@ birth_place: Germany
 death_place: McPherson County, Kansas, USA
 burial: McPherson Cemetery, McPherson, McPherson County, Kansas, USA
 parents: [john_wilhelm_gatz, sophia_maria_hilgenfeld]
+parent_links:
+  - id: john_wilhelm_gatz
+    confidence: Confirmed
+  - id: sophia_maria_hilgenfeld
+    confidence: Confirmed
 spouses: [minnie_kruse]
 children: [irvin]
 object_ids: []
-confidence: Probable
-verified: false
-status: researching
+confidence: Confirmed
+verified: true
+status: cataloged
 sources:
   - label: "Find A Grave 116548952"
     url: "https://www.findagrave.com/memorial/116548952/charles_c-gatz"
@@ -46,6 +51,10 @@ sources:
     url: "https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M"
   - label: "FS ascent: docs/research/people/proposals/fs-ascent-charles-parents.md"
     url: ""
+  - label: "DNA Gatz ascent harden: docs/research/people/proposals/dna-gatz-ascent.md"
+    url: ""
+  - label: "Falls City Journal 10 Nov 1899 — Sophia Gatz daughter of Johann Ludwig Hilgenfeld (via WikiTree)"
+    url: "https://www.wikitree.com/wiki/Hilgenfeld-6"
 media:
   - file: media/headstone-mcpherson-2013.jpg
     kind: headstone
@@ -71,7 +80,7 @@ media:
 ---
 ## Summary
 
-Proposed father of Irvin Carl Gatz (**C40 Probable**, Round 9 — awaiting Alex Y/N). Husband of **Minnie Kruse Gatz**. McPherson Cemetery stones (FATHER / years) + pioneer register Jackson Twp 1889 + probate index 1935. FAG also links children Mayme Anna Riddell, Isaac Ike “Frank,” Samuel P — Irvin **not** linked on FAG yet; birth-order gap ~1891 fits. **FS one-entry 1900:** household head **C C Gatz**, b. Oct 1859 Germany, married 14 yrs (~1886), parents b. Germany; FS tree id **GSHK-2Q9** (Carl Friedrich Wilhelm “Charley”). Stay `verified: false` / Probable. **Parents soft-ingested (C42/C140 Probable):** John Wilhelm Gatz × Sophia Maria Hilgenfeld — same Block 15 Lot 12 + WikiTree Gatz-102 birth **30 Oct 1859** Wendemark matching Charles; FS parent harden blocked this pass.
+Proposed father of Irvin Carl Gatz (**C40 Probable**, Round 9 — awaiting Alex Y/N). Husband of **Minnie Kruse Gatz**. McPherson Cemetery stones (FATHER / years) + pioneer register Jackson Twp 1889 + probate index 1935. FAG also links children Mayme Anna Riddell, Isaac Ike “Frank,” Samuel P — Irvin **not** linked on FAG yet; birth-order gap ~1891 fits. **FS one-entry 1900:** household head **C C Gatz**, b. Oct 1859 Germany, married 14 yrs (~1886), parents b. Germany; FS tree id **GSHK-2Q9** (Carl Friedrich Wilhelm “Charley”). Stay `verified: false` / Probable. **Parents soft-ingested + DNA harden (C42/C140/C360 Probable):** John Wilhelm Gatz × Sophia Maria Hilgenfeld — Block 15 Lot 12 + WikiTree Gatz-102 birth **30 Oct 1859** Wendemark + maternal-grandfather obit naming **Sophia Gatz**. **FS baptism probe 403** — no hammer. Grandparents soft-ingested separately (**C361+** / **C365+**).
 
 ## Assertions
 
@@ -87,8 +96,8 @@ Proposed father of Irvin Carl Gatz (**C40 Probable**, Round 9 — awaiting Alex 
 | Pioneer Jackson Twp McPherson by 1889 | Probable | MPL Pioneer Register Fâ€“G index + Vol 6A | https://macpl.org/genealogy-local-history/pioneer-register/pioneer-register-master-index/pioneer-register-mifg/ | free URL locked 2026-08-06 |
 | Buried McPherson Cem. Block 15 Lot 12 Sp. 10 (burial 31 May 1935) | Probable | MPL McPherson Cemetery HTML register sheet008 | https://macpl.org/cemeteries/mcpherson.html | same lot as Minnie Sp. 11; burial date vs FAG death 26 May 1935 |
 | Probate McPherson available 1870–present | Possible | County genealogy resources page | https://www.mcphersoncountyks.us/954/Genealogy-Resources | file # not re-opened this wave |
-| Parents = John Wilhelm Gatz × Sophia Maria Hilgenfeld | Probable | **C42** / **C140** — shared Block 15 Lot 12 + WikiTree Gatz-102 = Carl Friedrich Wilhelm b. 30 Oct 1859 | https://www.wikitree.com/wiki/Gatz-102 | Soft; FS tree parents not opened |
-| Born Wendemark as Carl Friedrich Wilhelm Geetz/Gatz | Probable | WikiTree Gatz-102 + FS cite QPX2-RM7M (index only) | https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M | Image not opened (FS blocked) |
+| Parents = John Wilhelm Gatz × Sophia Maria Hilgenfeld | Probable | **C42** / **C140** / **C360** — plot + WikiTree Gatz-102 + Sophia father obit FAN | https://www.wikitree.com/wiki/Gatz-102 | Soft; FS tree parents not opened |
+| Born Wendemark as Carl Friedrich Wilhelm Geetz/Gatz | Probable | WikiTree Gatz-102 + FS cite QPX2-RM7M (index only) | https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M | Image not opened (FS 403 probe) |
 
 ## Sources
 
@@ -105,7 +114,9 @@ Proposed father of Irvin Carl Gatz (**C40 Probable**, Round 9 — awaiting Alex 
 - [WikiTree Gatz-102](https://www.wikitree.com/wiki/Gatz-102) — Carl Friedrich Wilhelm b. 30 Oct 1859 Wendemark (parents Johann × Sophia)
 - FS baptism cite (index): [QPX2-RM7M](https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M) — image not opened
 - FS ascent: `docs/research/people/proposals/fs-ascent-charles-parents.md`
+- DNA ascent: `docs/research/people/proposals/dna-gatz-ascent.md`
+- Maternal GF obit FAN: [WikiTree Hilgenfeld-6](https://www.wikitree.com/wiki/Hilgenfeld-6)
 
 ## Open questions
 
-Entry #2 = 1910 image; CADI for Irvin mother maiden; promote siblings after Y; FS harden parents (GSHK-2Q9 + 1870/1880); same-sheet Fred Gatz FAN only; MPL obit clip.
+Entry #2 = 1910 image; CADI for Irvin mother maiden; promote siblings after Y; FS harden when healthy (GSHK-2Q9 + QPX2-RM7M image + 1870/1880); MPL obit clip.

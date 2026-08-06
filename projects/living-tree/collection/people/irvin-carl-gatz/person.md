@@ -9,6 +9,11 @@ birth_place: Kansas, USA
 death_place: Los Angeles, California, United States
 burial: Olive Lawn Memorial Park, La Mirada, Los Angeles County, California, USA (body); McPherson Cemetery, McPherson, Kansas, USA (memorial / cenotaph)
 parents: [charles_c_gatz, minnie_kruse]
+parent_links:
+  - id: charles_c_gatz
+    confidence: Confirmed
+  - id: minnie_kruse
+    confidence: Confirmed
 spouses: [martha]
 children: [gloria]
 object_ids: [FT-0005]

@@ -9,6 +9,11 @@ birth_place: Lee County, Iowa, USA
 death_place: McPherson, McPherson County, Kansas, USA
 burial: Inman North Cemetery, Inman, McPherson County, Kansas, USA
 parents: [henry_f_achilles, caroline_waescher]
+parent_links:
+  - id: henry_f_achilles
+    confidence: Confirmed
+  - id: caroline_waescher
+    confidence: Confirmed
 spouses: [leo_tuxhorn]
 children: [carrie_williams, florence_graves, martha, henry_f_tuxhorn, wilma_prather]
 object_ids: []
