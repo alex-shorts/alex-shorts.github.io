@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PROTOTYPE — Living tree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="gated">
+  <!-- Soft family gate — not cryptographic; keeps casual visitors out of the POC. -->
+  <div id="gate" class="gate" role="dialog" aria-labelledby="gate-title">
+    <form id="gate-form" class="gate-card">
+      <p class="gate-eyebrow">Shorts family</p>
+      <h1 id="gate-title">Living tree</h1>
+      <p class="gate-copy">Enter the family password to open this preview.</p>
+      <label class="gate-label" for="gate-pass">Password</label>
+      <input id="gate-pass" name="password" type="password" autocomplete="current-password" required autofocus />
+      <p id="gate-error" class="gate-error" hidden>That password doesn’t match. Try again.</p>
+      <button type="submit" class="gate-submit">Open</button>
+    </form>
+  </div>
+
+  <div id="app-shell" hidden>
+    <header class="topbar">
+      <div class="brand">
+        <span class="proto-tag">PROTOTYPE</span>
+        <h1>Living tree</h1>
+      </div>
+      <p class="lede">Loading collection/people…</p>
+      <div class="toolbar">
+        <button type="button" id="btn-reset" class="tool">Reset focus</button>
+        <button type="button" id="btn-fit" class="tool">Fit</button>
+        <label class="tool check">
+          <input type="checkbox" id="toggle-physics" checked />
+          Physics
+        </label>
+      </div>
+    </header>
+
+    <main class="stage">
+      <svg id="graph" aria-label="Family knowledge graph"></svg>
+      <aside id="panel" class="panel" hidden>
+        <button type="button" class="panel-close" id="panel-close" aria-label="Close">×</button>
+        <div id="panel-body"></div>
+      </aside>
+      <div id="lightbox" class="lightbox" hidden>
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image">×</button>
+        <img id="lightbox-img" alt="" />
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    </main>
+
+    <footer class="legend" id="legend"></footer>
+    <div id="hint" class="hint">Physics graph · curved descent &amp; marriage · drag nodes · ⊕ expands kin · pan &amp; zoom</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script type="module">
+    const GATE_KEY = "living-tree-unlocked";
+    const PASS = "Shorts";
+
+    async function openApp() {
+      document.getElementById("gate").hidden = true;
+      document.getElementById("app-shell").hidden = false;
+      document.body.classList.remove("gated");
+      await import("./app.js");
+    }
+
+    if (sessionStorage.getItem(GATE_KEY) === "1") {
+      openApp();
+    } else {
+      document.getElementById("gate-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const value = document.getElementById("gate-pass").value.trim();
+        const err = document.getElementById("gate-error");
+        if (value === PASS) {
+          sessionStorage.setItem(GATE_KEY, "1");
+          err.hidden = true;
+          openApp();
+        } else {
+          err.hidden = false;
+          document.getElementById("gate-pass").select();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
