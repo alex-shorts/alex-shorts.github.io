@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scripture Cross-References</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c1016;
+      --bg-panel: #141a22;
+      --line: #2a3340;
+      --text: #f0e6d8;
+      --muted: #8a929c;
+      --accent: #e8dcc8;
+      --chip: #1c2430;
+      --chip-on: #2a3a4a;
+      --left-w: 280px;
+      --right-w: 236px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      overflow: hidden;
+    }
+    .app {
+      display: grid;
+      grid-template-columns: var(--left-w) minmax(0, 1fr) var(--right-w);
+      height: 100%;
+    }
+
+    /* —— Left: refs —— */
+    .refs {
+      border-right: 1px solid var(--line);
+      background: var(--bg-panel);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .refs-header {
+      flex: 0 0 auto;
+      padding: 0.75rem 0.75rem 0.65rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .refs-header.empty {
+      display: none;
+    }
+    .refs-kicker {
+      color: var(--muted);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .refs-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-top: 0.35rem;
+    }
+    .refs-title {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+    }
+    .refs-meta {
+      margin-top: 0.4rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+    .refs-meta strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .clear-sel {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 0.3rem 0.5rem;
+      font: inherit;
+      font-size: 0.72rem;
+      cursor: pointer;
+      flex: 0 0 auto;
+      margin-top: 0.15rem;
+    }
+    .clear-sel:hover {
+      border-color: #6a7a8c;
+      color: var(--text);
+    }
+    .refs-empty {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 0.65rem 0.65rem 1rem;
+      overflow: auto;
+    }
+    .refs-empty.hidden { display: none; }
+    .refs-empty-intro {
+      margin: 0 0 0.85rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+    .refs-empty-intro strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .top-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .top-row {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 0.55rem 0.65rem;
+      text-align: left;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 1.6rem 1fr auto;
+      gap: 0.55rem;
+      align-items: center;
+      font: inherit;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .top-row:hover {
+      border-color: #6a7a8c;
+      background: var(--chip-on);
+    }
+    .top-rank {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .top-ref {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .top-sub {
+      margin-top: 0.15rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .top-count {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: right;
+      line-height: 1.25;
+    }
+    .top-count strong {
+      display: block;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .refs-body {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      padding: 0.55rem 0.65rem 1rem;
+      display: none;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .refs-body.on { display: flex; }
+    .refs-section-label {
+      margin: 0 0 0.45rem;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .verse-list, .chapter-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .verse-row, .chapter-row {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 0;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+      width: 100%;
+      overflow: hidden;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .verse-row:hover, .chapter-row:hover,
+    .verse-row.on, .chapter-row.on {
+      border-color: #6a7a8c;
+      background: var(--chip-on);
+    }
+    .verse-row-main, .chapter-row-main {
+      display: grid;
+      gap: 0.2rem;
+      padding: 0.5rem 0.6rem;
+    }
+    .verse-dir {
+      display: inline-block;
+      color: var(--muted);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .verse-pair, .chapter-to {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 0.98rem;
+      line-height: 1.25;
+    }
+    .verse-pair .arrow {
+      color: var(--muted);
+      font-weight: 500;
+      margin: 0 0.2em;
+    }
+    .meta-line {
+      color: var(--muted);
+      font-size: 0.7rem;
+      line-height: 1.35;
+    }
+    .scripture-block {
+      display: none;
+      border-top: 1px solid var(--line);
+      padding: 0.55rem 0.65rem 0.7rem;
+      background: rgba(12, 16, 22, 0.45);
+      gap: 0.65rem;
+    }
+    .verse-row.expanded .scripture-block {
+      display: grid;
+    }
+    .scripture-side {
+      display: grid;
+      gap: 0.2rem;
+    }
+    .scripture-ref {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .scripture-text {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: var(--text);
+    }
+    .scripture-text.pending,
+    .scripture-text.err {
+      color: var(--muted);
+      font-style: italic;
+    }
+    .muted-note {
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* —— Center: canvas —— */
+    .stage {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+    }
+    .stage-viz {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: 0;
+      background:
+        radial-gradient(ellipse at 50% 55%, #222c3a 0%, transparent 55%),
+        linear-gradient(180deg, #0c1016 0%, #161e28 100%);
+    }
+    .stage-legend {
+      flex: 0 0 auto;
+      border-top: 1px solid var(--line);
+      background: var(--bg-panel);
+      padding: 0.55rem 0.85rem 0.7rem;
+      max-height: 34vh;
+      overflow: auto;
+    }
+    .stage-legend.hidden {
+      display: none;
+    }
+    .stage-legend-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .stage-legend-head h2 {
+      margin: 0;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: crosshair;
+    }
+    .hud {
+      position: absolute;
+      left: 50%;
+      top: 1.05rem;
+      transform: translateX(-50%);
+      text-align: center;
+      max-width: min(36rem, calc(100% - 2rem));
+      pointer-events: none;
+      z-index: 1;
+    }
+    .hud h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(1.35rem, 2vw, 2rem);
+      letter-spacing: 0.01em;
+    }
+    .hud p {
+      margin: 0.3rem 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .hover-hint {
+      position: absolute;
+      left: 50%;
+      bottom: 1rem;
+      transform: translateX(-50%);
+      background: rgba(20, 26, 34, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      pointer-events: none;
+      display: none;
+      white-space: nowrap;
+      max-width: calc(100% - 2rem);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      backdrop-filter: blur(6px);
+    }
+    .hover-hint.on { display: block; }
+    .hover-hint strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .loading {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      background: rgba(12, 16, 22, 0.72);
+      z-index: 2;
+      font-size: 0.95rem;
+    }
+
+    /* —— Right: controls —— */
+    .panel {
+      border-left: 1px solid var(--line);
+      background: var(--bg-panel);
+      overflow: auto;
+      padding: 0.75rem 0.7rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .panel h2 {
+      margin: 0 0 0.4rem;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .group { display: flex; flex-direction: column; gap: 0.35rem; }
+    .seg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.35rem;
+    }
+    .seg button, .toggle, .chip {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 0.55rem 0.45rem;
+      font: inherit;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .seg button:hover, .toggle:hover, .chip:hover {
+      border-color: #4a5564;
+    }
+    .seg button.on, .toggle.on, .chip.on {
+      background: var(--chip-on);
+      border-color: #6a7a8c;
+      box-shadow: inset 0 0 0 1px rgba(232, 220, 200, 0.18);
+    }
+    .seg button small {
+      display: block;
+      margin-top: 0.15rem;
+      color: var(--muted);
+      font-size: 0.68rem;
+    }
+    .toggle {
+      text-align: left;
+      padding: 0.65rem 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .toggle .state {
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.55rem;
+      font-size: 0.78rem;
+    }
+    .swatch {
+      width: 0.65rem;
+      height: 0.65rem;
+      border-radius: 2px;
+      flex: 0 0 auto;
+    }
+    .chip-actions {
+      display: flex;
+      gap: 0.35rem;
+    }
+    .chip-actions button {
+      flex: 1;
+      appearance: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 0.35rem;
+      font: inherit;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    .legend {
+      display: flex;
+      flex-direction: column;
+      gap: 0.28rem;
+    }
+    .corpus-group {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--chip);
+      overflow: hidden;
+    }
+    .corpus-group.open {
+      background: var(--chip-on);
+      border-color: #3d4c5c;
+    }
+    .corpus-group.active {
+      border-color: #8a9aac;
+    }
+    .corpus-head {
+      appearance: none;
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      display: grid;
+      grid-template-columns: 0.55rem 1fr auto;
+      gap: 0.45rem;
+      align-items: center;
+      padding: 0.42rem 0.55rem;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+    }
+    .corpus-head:hover {
+      background: rgba(255,255,255,0.03);
+    }
+    .corpus-head .swatch {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 2px;
+    }
+    .corpus-head .label {
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .corpus-head .meta {
+      font-size: 0.66rem;
+      color: var(--muted);
+    }
+    .corpus-books {
+      display: none;
+      grid-template-columns: repeat(auto-fill, minmax(5.8rem, 1fr));
+      gap: 0.22rem;
+      padding: 0 0.45rem 0.45rem;
+    }
+    .corpus-group.open .corpus-books {
+      display: grid;
+    }
+    .book-chip {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(12, 16, 22, 0.45);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 0.28rem 0.35rem;
+      text-align: left;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 0.45rem 1fr;
+      gap: 0.3rem;
+      align-items: center;
+      font: inherit;
+      font-size: 0.66rem;
+      line-height: 1.2;
+      transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+    }
+    .book-chip:hover {
+      border-color: #6a7a8c;
+      background: var(--chip-on);
+    }
+    .book-chip.on {
+      border-color: #8a9aac;
+      background: var(--chip-on);
+    }
+    .book-chip.dim {
+      opacity: 0.4;
+    }
+    .book-chip .swatch {
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 2px;
+      display: block;
+    }
+    .book-chip .name {
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .zoom-chip {
+      position: absolute;
+      left: 0.75rem;
+      bottom: 0.75rem;
+      z-index: 2;
+      display: none;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.55rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(20, 26, 34, 0.88);
+      color: var(--muted);
+      font-size: 0.72rem;
+      backdrop-filter: blur(6px);
+    }
+    .zoom-chip.on { display: inline-flex; }
+    .zoom-chip strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .zoom-chip button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.72rem;
+      cursor: pointer;
+      padding: 0;
+    }
+    .inspiration a {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.7rem 0.75rem;
+      margin-bottom: 0.45rem;
+      background: var(--chip);
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .inspiration a:hover {
+      border-color: #6a7a8c;
+      background: var(--chip-on);
+    }
+    .inspiration a .t {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .inspiration a .b {
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+    .meta {
+      margin-top: auto;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 1100px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 28vh) minmax(0, 1fr) auto;
+        overflow: auto;
+      }
+      .refs {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+        max-height: 28vh;
+      }
+      .stage {
+        min-height: 42vh;
+      }
+      .stage-legend {
+        max-height: 28vh;
+        overflow: auto;
+      }
+      .panel {
+        border-left: none;
+        border-top: 1px solid var(--line);
+        max-height: 38vh;
+      }
+      .hud h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="refs" aria-label="Cross-references">
+      <div class="refs-header empty" id="refsHeader">
+        <div class="refs-kicker">Selected chapter</div>
+        <div class="refs-title-row">
+          <h2 class="refs-title" id="refsTitle">—</h2>
+          <button type="button" class="clear-sel" id="clearSelection">Clear</button>
+        </div>
+        <div class="refs-meta" id="refsMeta"></div>
+      </div>
+      <div class="refs-empty" id="refsEmpty">
+        <p class="refs-empty-intro">
+          Each arc is a cross-reference between two chapters. Pick a
+          <strong>collection</strong> under the graph (Torah, Gospels…) to zoom in,
+          then a book — or open a top verse below.
+        </p>
+        <h3 class="refs-section-label">Top 25 verses</h3>
+        <div class="top-list" id="topVerseList"></div>
+      </div>
+      <div class="refs-body" id="refsBody">
+        <div id="verseSection">
+          <h3 class="refs-section-label" id="verseSectionLabel">Verse links</h3>
+          <div class="verse-list" id="verseList"></div>
+        </div>
+        <div id="chapterSection">
+          <h3 class="refs-section-label">Chapter links <span id="chapterLinkCount" style="font-weight:400;text-transform:none;letter-spacing:0"></span></h3>
+          <div class="chapter-list" id="chapterList"></div>
+        </div>
+        <div id="bookLinksSection" hidden>
+          <h3 class="refs-section-label">Connections to other books</h3>
+          <div class="chapter-list" id="bookLinksList"></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="stage">
+      <div class="loading" id="loading">Loading cross-references…</div>
+      <div class="stage-viz">
+        <div class="hud">
+          <h1>Scripture Cross-References</h1>
+          <p id="subtitle">Interactive arc diagram of biblical cross-references</p>
+        </div>
+        <canvas id="viz"></canvas>
+        <div class="hover-hint" id="hoverHint"></div>
+        <div class="zoom-chip" id="zoomChip">
+          <span>Zoomed to <strong id="zoomLabel">—</strong></span>
+          <button type="button" id="resetZoom">Reset view</button>
+        </div>
+      </div>
+      <div class="stage-legend" id="stageLegend">
+        <div class="stage-legend-head">
+          <h2>Books of the Bible</h2>
+          <button type="button" class="clear-sel" id="clearBook" hidden>Clear focus</button>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+    </div>
+
+    <aside class="panel" aria-label="Controls">
+      <div class="group">
+        <h2>1 · Density</h2>
+        <div class="seg" id="densitySeg"></div>
+      </div>
+
+      <div class="group">
+        <h2>2 · Color mode</h2>
+        <div class="seg" id="colorSeg">
+          <button type="button" data-color="hybrid" class="on">Hybrid<small>Bars by section · arcs by distance</small></button>
+          <button type="button" data-color="section">Section<small>Arcs match section colors</small></button>
+          <button type="button" data-color="span">Span<small>Classic distance rainbow</small></button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h2>3 · Books</h2>
+        <button type="button" class="toggle on" id="legendToggle"><span>Show books under graph</span><span class="state">On</span></button>
+      </div>
+
+      <div class="group">
+        <h2>4 · Baseline metric</h2>
+        <div class="seg" id="baselineSeg">
+          <button type="button" data-baseline="length" class="on">Length<small>Bar = verses in chapter</small></button>
+          <button type="button" data-baseline="chapterRefs">Chapter refs<small>Bar = times chapter is linked</small></button>
+          <button type="button" data-baseline="verseRefs">Verse peak<small>Bar = hottest verse in chapter</small></button>
+        </div>
+      </div>
+
+      <div class="group inspiration">
+        <h2>Inspiration</h2>
+        <div id="inspiration"></div>
+      </div>
+
+      <div class="meta" id="meta"></div>
+    </aside>
+  </div>
+
+  <script>
+    const state = {
+      data: null,
+      density: "direct",
+      colorMode: "hybrid",
+      legend: true,
+      baseline: "length",
+      hoverChapter: -1,
+      hoverEdge: -1,
+      selectedGroup: null, // corpus group id or null
+      expandedGroup: null,
+      selectedBook: null, // book name or null
+      selectedChapter: -1,
+      selectedEdge: -1,
+      selectedVerse: null, // { i, v } when focusing a single verse
+      selectedVerseKey: null,
+      expandedVerseKey: null,
+      viewRange: null, // { i0, i1 } zoom window or null
+      scriptureCache: new Map(),
+      activeEdgeIndices: [],
+      dpr: Math.min(window.devicePixelRatio || 1, 2),
+    };
+
+    const canvas = document.getElementById("viz");
+    const ctx = canvas.getContext("2d", { alpha: false });
+    const loading = document.getElementById("loading");
+    const hoverHint = document.getElementById("hoverHint");
+
+    function hexToRgb(hex) {
+      const h = hex.replace("#", "");
+      return [
+        parseInt(h.slice(0, 2), 16),
+        parseInt(h.slice(2, 4), 16),
+        parseInt(h.slice(4, 6), 16),
+      ];
+    }
+
+    function spanColor(spanNorm) {
+      const t = Math.pow(Math.max(0, Math.min(1, spanNorm)), 0.85);
+      const hue = (0.58 - 0.58 * t);
+      const sat = 0.72 * (0.7 + 0.3 * t);
+      const val = 0.96;
+      return hsvToRgb(hue, sat, val);
+    }
+
+    function hsvToRgb(h, s, v) {
+      const i = Math.floor(h * 6);
+      const f = h * 6 - i;
+      const p = v * (1 - s);
+      const q = v * (1 - f * s);
+      const t = v * (1 - (1 - f) * s);
+      let r, g, b;
+      switch (i % 6) {
+        case 0: r = v; g = t; b = p; break;
+        case 1: r = q; g = v; b = p; break;
+        case 2: r = p; g = v; b = t; break;
+        case 3: r = p; g = q; b = v; break;
+        case 4: r = t; g = p; b = v; break;
+        default: r = v; g = p; b = q;
+      }
+      return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+    }
+
+    function edgeRgb(edge, chapters, sectionMap) {
+      const maxSpan = chapters.length - 1;
+      if (state.colorMode === "section") {
+        const sec = sectionMap.get(chapters[Math.min(edge.a, edge.b)].section);
+        return hexToRgb(sec.color);
+      }
+      return spanColor(edge.span / maxSpan);
+    }
+
+    function layoutMetrics(w, h) {
+      const left = w * 0.04;
+      const right = w * 0.96;
+      const baseline = h * 0.78;
+      const barMax = h * 0.06;
+      const ceiling = h * 0.12;
+      return { left, right, baseline, barMax, ceiling, contentW: right - left };
+    }
+
+    function focusWindow() {
+      if (state.viewRange) return state.viewRange;
+      return null;
+    }
+
+    function remapXn(xn) {
+      const range = focusWindow();
+      if (!range || !state.data) return xn;
+      const chapters = state.data.chapters;
+      const x0 = chapters[range.i0].x0;
+      const x1 = chapters[range.i1].x1;
+      const span = Math.max(1e-6, x1 - x0);
+      const pad = 0.05;
+      if (xn <= x0) {
+        return x0 <= 0 ? pad * 0.5 : (xn / x0) * pad;
+      }
+      if (xn >= x1) {
+        return x1 >= 1 ? 1 - pad * 0.5 : (1 - pad) + ((xn - x1) / Math.max(1e-6, 1 - x1)) * pad;
+      }
+      return pad + ((xn - x0) / span) * (1 - 2 * pad);
+    }
+
+    function pxX(xn, m) {
+      return m.left + remapXn(xn) * m.contentW;
+    }
+
+    function updateZoomChip() {
+      const chip = document.getElementById("zoomChip");
+      const label = document.getElementById("zoomLabel");
+      if (!chip || !label) return;
+      if (!state.viewRange) {
+        chip.classList.remove("on");
+        return;
+      }
+      let text = "selection";
+      if (state.selectedBook) text = state.selectedBook;
+      else if (state.selectedGroup) {
+        const g = (state.data.bookGroups || []).find((x) => x.id === state.selectedGroup);
+        text = g ? g.label : state.selectedGroup;
+      }
+      label.textContent = text;
+      chip.classList.add("on");
+    }
+
+    function setViewRange(range) {
+      state.viewRange = range ? { i0: range.i0, i1: range.i1 } : null;
+      updateZoomChip();
+    }
+
+    function chapterInFocusBand(chapterIndex) {
+      if (chapterIndex < 0 || !state.data) return false;
+      const ch = state.data.chapters[chapterIndex];
+      if (state.selectedBook) return ch.book === state.selectedBook;
+      if (state.selectedGroup) {
+        const g = (state.data.bookGroups || []).find((x) => x.id === state.selectedGroup);
+        return g ? ch.i >= g.i0 && ch.i <= g.i1 : false;
+      }
+      return false;
+    }
+
+    function verseKey(link, index) {
+      return `${link.dir}|${link.lv}|${link.oi}|${link.ov}|${index}`;
+    }
+
+    function scriptureKey(book, chapter, verse) {
+      return `${book} ${chapter}:${verse}`;
+    }
+
+    function findMatchingEdge(chapterIndex, otherIndex) {
+      if (chapterIndex < 0 || otherIndex < 0) return -1;
+      for (const idx of state.activeEdgeIndices) {
+        const e = state.data.edges[idx];
+        if (
+          (e.a === chapterIndex && e.b === otherIndex) ||
+          (e.b === chapterIndex && e.a === otherIndex)
+        ) {
+          return idx;
+        }
+      }
+      return -1;
+    }
+
+    function rebuildActiveEdges() {
+      const data = state.data;
+      const preset = data.densityPresets[state.density];
+      state.activeEdgeIndices = preset.indices.slice();
+      let focusNote = "";
+      if (state.selectedBook) focusNote = ` · focus ${state.selectedBook}`;
+      else if (state.selectedGroup) {
+        const g = (state.data.bookGroups || []).find((x) => x.id === state.selectedGroup);
+        focusNote = g ? ` · focus ${g.label}` : "";
+      }
+      if (state.viewRange) focusNote += " · zoomed";
+      document.getElementById("subtitle").textContent =
+        `${preset.label}: ${state.activeEdgeIndices.length.toLocaleString()} links · ${state.colorMode} color · baseline ${state.baseline}${focusNote}`;
+      renderRefsPanel();
+    }
+
+    function chapterInBook(chapterIndex, bookName) {
+      if (chapterIndex < 0 || !bookName || !state.data) return false;
+      return state.data.chapters[chapterIndex].book === bookName;
+    }
+
+    function edgeCrossesFocus(edge) {
+      const aIn = chapterInFocusBand(edge.a);
+      const bIn = chapterInFocusBand(edge.b);
+      if (!state.selectedBook && !state.selectedGroup) return false;
+      return (aIn && !bIn) || (bIn && !aIn);
+    }
+
+    function focusOutboundLinks() {
+      if (!state.data) return [];
+      if (!state.selectedBook && !state.selectedGroup) return [];
+      const chapters = state.data.chapters;
+      const edges = state.data.edges;
+      const byDest = new Map();
+      for (const idx of state.activeEdgeIndices) {
+        const e = edges[idx];
+        const aIn = chapterInFocusBand(e.a);
+        const bIn = chapterInFocusBand(e.b);
+        let dest = null;
+        let otherCh = -1;
+        let localCh = -1;
+        if (aIn && !bIn) {
+          dest = chapters[e.b].book;
+          localCh = e.a;
+          otherCh = e.b;
+        } else if (bIn && !aIn) {
+          dest = chapters[e.a].book;
+          localCh = e.b;
+          otherCh = e.a;
+        } else {
+          continue;
+        }
+        let row = byDest.get(dest);
+        if (!row) {
+          const destCh = chapters[otherCh];
+          row = {
+            book: dest,
+            section: destCh.section,
+            links: 0,
+            votes: 0,
+            edges: [],
+          };
+          byDest.set(dest, row);
+        }
+        row.links += 1;
+        row.votes += e.votes || 0;
+        row.edges.push({ idx, localCh, otherCh, votes: e.votes, span: e.span });
+      }
+      return Array.from(byDest.values()).sort((a, b) => b.votes - a.votes || b.links - a.links);
+    }
+
+    function bookOutboundLinks(bookName) {
+      const prevBook = state.selectedBook;
+      const prevGroup = state.selectedGroup;
+      state.selectedBook = bookName;
+      state.selectedGroup = null;
+      const rows = focusOutboundLinks();
+      state.selectedBook = prevBook;
+      state.selectedGroup = prevGroup;
+      return rows;
+    }
+
+    function chapterLinks(chapterIndex) {
+      if (chapterIndex < 0 || !state.data) return [];
+      const edges = state.data.edges;
+      const chapters = state.data.chapters;
+      const rows = [];
+      for (const idx of state.activeEdgeIndices) {
+        const e = edges[idx];
+        if (e.a !== chapterIndex && e.b !== chapterIndex) continue;
+        const other = e.a === chapterIndex ? e.b : e.a;
+        const dest = chapters[other];
+        rows.push({
+          idx,
+          other,
+          label: `${dest.book} ${dest.chapter}`,
+          section: dest.section,
+          votes: e.votes,
+          n: e.n,
+          span: e.span,
+        });
+      }
+      rows.sort((a, b) => b.votes - a.votes || b.span - a.span);
+      return rows;
+    }
+
+    function verseLinksForChapter(chapterIndex) {
+      if (chapterIndex < 0 || !state.data) return [];
+      const ch = state.data.chapters[chapterIndex];
+      const links = Array.isArray(ch.verseLinks) ? ch.verseLinks.slice() : [];
+      links.sort((a, b) => (b.votes || 0) - (a.votes || 0));
+      return links;
+    }
+
+    function topVerseEntry(chapterIndex, verse) {
+      if (!state.data || chapterIndex < 0 || verse == null) return null;
+      const rows = state.data.topCrossReferenced || [];
+      return rows.find((r) => r.i === chapterIndex && r.v === verse) || null;
+    }
+
+    function verseFocusLinks() {
+      if (!state.selectedVerse) return null;
+      const { i, v } = state.selectedVerse;
+      const entry = topVerseEntry(i, v);
+      if (entry && Array.isArray(entry.links)) {
+        return entry.links.map((link) => ({
+          dir: "out",
+          lv: v,
+          ob: link.ob,
+          oc: link.oc,
+          ov: link.ov,
+          oi: link.oi,
+          votes: link.votes,
+        }));
+      }
+      // Fallback: filter chapter verse-links for this local verse
+      return verseLinksForChapter(i).filter((link) => link.lv === v);
+    }
+
+    async function fetchScripture(book, chapter, verse) {
+      const key = scriptureKey(book, chapter, verse);
+      if (state.scriptureCache.has(key)) {
+        return state.scriptureCache.get(key);
+      }
+      const pending = { status: "loading", text: null, error: null };
+      state.scriptureCache.set(key, pending);
+      try {
+        const q = encodeURIComponent(`${book} ${chapter}:${verse}`);
+        const res = await fetch(`https://bible-api.com/${q}?translation=kjv`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        const text = (json.text || "").replace(/\s+/g, " ").trim();
+        if (!text) throw new Error("Empty response");
+        const ok = { status: "ok", text, error: null };
+        state.scriptureCache.set(key, ok);
+        return ok;
+      } catch (err) {
+        const fail = { status: "error", text: null, error: err.message || String(err) };
+        state.scriptureCache.set(key, fail);
+        return fail;
+      }
+    }
+
+    function scriptureHtml(refLabel, cacheEntry) {
+      if (!cacheEntry || cacheEntry.status === "loading") {
+        return `<div class="scripture-side"><div class="scripture-ref">${refLabel}</div><div class="scripture-text pending">Loading KJV…</div></div>`;
+      }
+      if (cacheEntry.status === "error") {
+        return `<div class="scripture-side"><div class="scripture-ref">${refLabel}</div><div class="scripture-text err">Could not load verse</div></div>`;
+      }
+      return `<div class="scripture-side"><div class="scripture-ref">${refLabel}</div><div class="scripture-text">${escapeHtml(cacheEntry.text)}</div></div>`;
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function clearSelection() {
+      state.selectedGroup = null;
+      state.expandedGroup = null;
+      state.selectedBook = null;
+      state.selectedChapter = -1;
+      state.selectedEdge = -1;
+      state.selectedVerse = null;
+      state.selectedVerseKey = null;
+      state.expandedVerseKey = null;
+      setViewRange(null);
+      renderLegend();
+      renderRefsPanel();
+      updateHoverHint();
+      draw();
+    }
+
+    function selectGroup(groupId) {
+      if (!groupId || !state.data) return;
+      const g = (state.data.bookGroups || []).find((x) => x.id === groupId);
+      if (!g) return;
+
+      // Re-clicking an already-focused group (no book) clears focus
+      if (state.selectedGroup === groupId && !state.selectedBook && state.selectedChapter < 0) {
+        clearSelection();
+        return;
+      }
+
+      state.selectedGroup = groupId;
+      state.expandedGroup = groupId;
+      state.selectedBook = null;
+      state.selectedChapter = -1;
+      state.selectedEdge = -1;
+      state.selectedVerse = null;
+      state.selectedVerseKey = null;
+      state.expandedVerseKey = null;
+      setViewRange({ i0: g.i0, i1: g.i1 });
+      rebuildActiveEdges();
+      renderLegend();
+      updateHoverHint();
+      draw();
+      document.getElementById("refsBody").scrollTop = 0;
+      document.getElementById("refsEmpty").scrollTop = 0;
+    }
+
+    function selectBook(bookName) {
+      if (!bookName || !state.data) return;
+      const book = (state.data.books || []).find((b) => b.name === bookName);
+      if (!book) return;
+
+      if (state.selectedBook === bookName) {
+        // Step back to parent group zoom if available
+        if (book.group) {
+          state.selectedBook = null;
+          state.selectedGroup = book.group;
+          state.expandedGroup = book.group;
+          const g = (state.data.bookGroups || []).find((x) => x.id === book.group);
+          setViewRange(g ? { i0: g.i0, i1: g.i1 } : null);
+        } else {
+          clearSelection();
+          return;
+        }
+      } else {
+        state.selectedBook = bookName;
+        state.selectedGroup = book.group || state.selectedGroup;
+        state.expandedGroup = book.group || state.expandedGroup;
+        setViewRange({ i0: book.i0, i1: book.i1 });
+      }
+
+      state.selectedChapter = -1;
+      state.selectedEdge = -1;
+      state.selectedVerse = null;
+      state.selectedVerseKey = null;
+      state.expandedVerseKey = null;
+      rebuildActiveEdges();
+      renderLegend();
+      updateHoverHint();
+      draw();
+      document.getElementById("refsBody").scrollTop = 0;
+      document.getElementById("refsEmpty").scrollTop = 0;
+    }
+
+    function selectTopVerse(entry) {
+      if (!entry) return;
+      const book = (state.data.books || []).find((b) => b.name === entry.book);
+      state.selectedGroup = book ? book.group : null;
+      state.expandedGroup = book ? book.group : null;
+      state.selectedBook = null;
+      state.selectedChapter = entry.i;
+      state.selectedVerse = { i: entry.i, v: entry.v };
+      state.selectedEdge = -1;
+      state.selectedVerseKey = null;
+      state.expandedVerseKey = null;
+      if (book) setViewRange({ i0: book.i0, i1: book.i1 });
+      else setViewRange(null);
+      renderLegend();
+      renderRefsPanel();
+      updateHoverHint();
+      draw();
+      document.getElementById("refsBody").scrollTop = 0;
+    }
+
+    function renderTopVerseList() {
+      const list = document.getElementById("topVerseList");
+      if (!state.data) {
+        list.innerHTML = "";
+        return;
+      }
+      const rows = state.data.topCrossReferenced || [];
+      if (!rows.length) {
+        list.innerHTML = `<p class="muted-note">Top-verse ranking not in this data export. Rebuild with <code>python -m src --web-only</code>.</p>`;
+        return;
+      }
+      const sectionMap = new Map(state.data.sections.map((s) => [s.id, s]));
+      list.innerHTML = rows.map((row, rank) => {
+        const ch = state.data.chapters[row.i];
+        const sec = ch ? sectionMap.get(ch.section) : null;
+        const ref = `${row.book} ${row.chapter}:${row.v}`;
+        return `
+          <button type="button" class="top-row" data-rank="${rank}">
+            <span class="top-rank">${rank + 1}</span>
+            <span>
+              <div class="top-ref">${escapeHtml(ref)}</div>
+              <div class="top-sub">${sec ? escapeHtml(sec.short) : ""} · ${(row.votes || 0).toLocaleString()} votes</div>
+            </span>
+            <span class="top-count"><strong>${(row.refs || 0).toLocaleString()}</strong>refs</span>
+          </button>
+        `;
+      }).join("");
+      list.querySelectorAll(".top-row").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          selectTopVerse(rows[Number(btn.dataset.rank)]);
+        });
+      });
+    }
+
+    function renderRefsPanel() {
+      const header = document.getElementById("refsHeader");
+      const empty = document.getElementById("refsEmpty");
+      const body = document.getElementById("refsBody");
+      const verseList = document.getElementById("verseList");
+      const chapterList = document.getElementById("chapterList");
+      const verseSection = document.getElementById("verseSection");
+      const chapterSection = document.getElementById("chapterSection");
+      const bookLinksSection = document.getElementById("bookLinksSection");
+      const bookLinksList = document.getElementById("bookLinksList");
+
+      if (state.data && state.selectedChapter < 0 && (state.selectedBook || state.selectedGroup)) {
+        const sectionMap = new Map(state.data.sections.map((s) => [s.id, s]));
+        const rows = focusOutboundLinks();
+        const linkTotal = rows.reduce((n, r) => n + r.links, 0);
+        const bookMeta = state.selectedBook
+          ? (state.data.books || []).find((b) => b.name === state.selectedBook)
+          : null;
+        const groupMeta = !state.selectedBook && state.selectedGroup
+          ? (state.data.bookGroups || []).find((g) => g.id === state.selectedGroup)
+          : null;
+        const sec = bookMeta
+          ? sectionMap.get(bookMeta.section)
+          : null;
+
+        header.classList.remove("empty");
+        empty.classList.add("hidden");
+        body.classList.add("on");
+        verseSection.hidden = true;
+        chapterSection.hidden = true;
+        bookLinksSection.hidden = false;
+        verseList.innerHTML = "";
+        chapterList.innerHTML = "";
+
+        if (bookMeta) {
+          document.querySelector(".refs-kicker").textContent = "Selected book";
+          document.getElementById("refsTitle").textContent = bookMeta.name;
+          document.getElementById("refsMeta").innerHTML =
+            `${sec ? sec.short : bookMeta.testament} · ` +
+            `<strong>${bookMeta.chapters}</strong> chapters · ` +
+            `<strong>${rows.length}</strong> books linked · ` +
+            `<strong>${linkTotal.toLocaleString()}</strong> chapter links in view`;
+        } else {
+          document.querySelector(".refs-kicker").textContent = "Selected collection";
+          document.getElementById("refsTitle").textContent = groupMeta ? groupMeta.label : "—";
+          document.getElementById("refsMeta").innerHTML =
+            `${groupMeta ? groupMeta.blurb : ""} · ` +
+            `<strong>${groupMeta ? groupMeta.books : "—"}</strong> books · ` +
+            `<strong>${rows.length}</strong> destinations · ` +
+            `<strong>${linkTotal.toLocaleString()}</strong> chapter links in view`;
+        }
+
+        if (!rows.length) {
+          bookLinksList.innerHTML = `<p class="muted-note">No cross-book links at the current density.</p>`;
+        } else {
+          bookLinksList.innerHTML = rows.map((row) => {
+            const secRow = sectionMap.get(row.section);
+            return `
+              <div class="chapter-row" style="cursor:default">
+                <div class="chapter-row-main">
+                  <span class="chapter-to">→ ${escapeHtml(row.book)}</span>
+                  <span class="meta-line">${secRow ? secRow.short : ""} · ${row.links.toLocaleString()} links · ${row.votes.toLocaleString()} votes</span>
+                </div>
+              </div>
+            `;
+          }).join("");
+        }
+        return;
+      }
+
+      bookLinksSection.hidden = true;
+      verseSection.hidden = false;
+      chapterSection.hidden = false;
+
+      if (!state.data || state.selectedChapter < 0) {
+        header.classList.add("empty");
+        empty.classList.remove("hidden");
+        body.classList.remove("on");
+        verseList.innerHTML = "";
+        chapterList.innerHTML = "";
+        bookLinksList.innerHTML = "";
+        document.querySelector(".refs-kicker").textContent = "Selected chapter";
+        document.getElementById("refsTitle").textContent = "—";
+        document.getElementById("refsMeta").textContent = "";
+        document.getElementById("verseSectionLabel").textContent = "Verse links";
+        renderTopVerseList();
+        return;
+      }
+
+      const ch = state.data.chapters[state.selectedChapter];
+      const sectionMap = new Map(state.data.sections.map((s) => [s.id, s]));
+      const sec = sectionMap.get(ch.section);
+      const verseFocus = state.selectedVerse
+        && state.selectedVerse.i === state.selectedChapter
+        ? state.selectedVerse.v
+        : null;
+      const vLinks = verseFocus != null ? (verseFocusLinks() || []) : verseLinksForChapter(state.selectedChapter);
+      const cLinks = verseFocus != null ? [] : chapterLinks(state.selectedChapter);
+
+      header.classList.remove("empty");
+      empty.classList.add("hidden");
+      body.classList.add("on");
+
+      if (verseFocus != null) {
+        const entry = topVerseEntry(state.selectedChapter, verseFocus);
+        const refCount = entry ? entry.refs : vLinks.length;
+        document.querySelector(".refs-kicker").textContent = "Selected verse";
+        document.getElementById("refsTitle").textContent = `${ch.book} ${ch.chapter}:${verseFocus}`;
+        document.getElementById("refsMeta").innerHTML =
+          `${sec ? sec.short : ch.section} · ` +
+          `<strong>${(refCount || 0).toLocaleString()}</strong> cross-references`;
+        chapterSection.hidden = true;
+      } else {
+        document.querySelector(".refs-kicker").textContent = "Selected chapter";
+        document.getElementById("refsTitle").textContent = `${ch.book} ${ch.chapter}`;
+        document.getElementById("refsMeta").innerHTML =
+          `${sec ? sec.short : ch.section} · <strong>${ch.verses}</strong> verses · ` +
+          `<strong>${(ch.refs || 0).toLocaleString()}</strong> chapter refs · ` +
+          `<strong>${vLinks.length}</strong> verse links`;
+        chapterSection.hidden = false;
+      }
+
+      document.getElementById("verseSectionLabel").textContent =
+        verseFocus != null ? "Cross-references" : "Verse links";
+
+      if (!vLinks.length) {
+        verseList.innerHTML = `<p class="muted-note">No verse-level links in this dataset for this ${verseFocus != null ? "verse" : "chapter"}.</p>`;
+      } else {
+        verseList.innerHTML = vLinks.map((link, i) => {
+          const key = verseKey(link, i);
+          const otherCh = state.data.chapters[link.oi];
+          const otherSec = otherCh ? sectionMap.get(otherCh.section) : null;
+          const dirLabel = verseFocus != null
+            ? "→ linked"
+            : (link.dir === "in" ? "← inbound" : "→ outbound");
+          const localRef = `${ch.book} ${ch.chapter}:${link.lv}`;
+          const otherRef = `${link.ob} ${link.oc}:${link.ov}`;
+          const expanded = state.expandedVerseKey === key;
+          const selected = state.selectedVerseKey === key;
+          const localCache = state.scriptureCache.get(scriptureKey(ch.book, ch.chapter, link.lv));
+          const otherCache = state.scriptureCache.get(scriptureKey(link.ob, link.oc, link.ov));
+
+          return `
+            <button type="button" class="verse-row${selected ? " on" : ""}${expanded ? " expanded" : ""}" data-verse-key="${escapeHtml(key)}" data-index="${i}">
+              <div class="verse-row-main">
+                <span class="verse-dir">${dirLabel}</span>
+                <span class="verse-pair">${escapeHtml(localRef)}<span class="arrow">↔</span>${escapeHtml(otherRef)}</span>
+                <span class="meta-line">${(link.votes || 0).toLocaleString()} votes · ${otherSec ? otherSec.short : (otherCh ? otherCh.section : "")}</span>
+              </div>
+              <div class="scripture-block">
+                ${scriptureHtml(localRef, localCache)}
+                ${scriptureHtml(otherRef, otherCache)}
+              </div>
+            </button>
+          `;
+        }).join("");
+
+        verseList.querySelectorAll(".verse-row").forEach((btn) => {
+          btn.addEventListener("click", () => onVerseRowClick(Number(btn.dataset.index)));
+        });
+      }
+
+      const countEl = document.getElementById("chapterLinkCount");
+      countEl.textContent = cLinks.length ? `(${cLinks.length.toLocaleString()} in view)` : "";
+
+      if (verseFocus != null) {
+        chapterList.innerHTML = "";
+      } else if (!cLinks.length) {
+        chapterList.innerHTML = `<p class="muted-note">No chapter links at the current density.</p>`;
+      } else {
+        chapterList.innerHTML = cLinks.map((row) => {
+          const secRow = sectionMap.get(row.section);
+          const on = row.idx === state.selectedEdge ? " on" : "";
+          return `
+            <button type="button" class="chapter-row${on}" data-edge="${row.idx}" data-other="${row.other}">
+              <div class="chapter-row-main">
+                <span class="chapter-to">→ ${escapeHtml(row.label)}</span>
+                <span class="meta-line">${secRow ? secRow.short : ""} · ${row.votes.toLocaleString()} votes · span ${row.span} ch</span>
+              </div>
+            </button>
+          `;
+        }).join("");
+
+        chapterList.querySelectorAll(".chapter-row").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            state.selectedEdge = Number(btn.dataset.edge);
+            state.selectedVerseKey = null;
+            state.expandedVerseKey = null;
+            renderRefsPanel();
+            draw();
+          });
+        });
+      }
+    }
+
+    async function onVerseRowClick(index) {
+      const links = state.selectedVerse
+        ? (verseFocusLinks() || [])
+        : verseLinksForChapter(state.selectedChapter);
+      const link = links[index];
+      if (!link) return;
+      const key = verseKey(link, index);
+      const ch = state.data.chapters[state.selectedChapter];
+
+      state.selectedVerseKey = key;
+      state.expandedVerseKey = state.expandedVerseKey === key ? null : key;
+
+      const edgeIdx = findMatchingEdge(state.selectedChapter, link.oi);
+      state.selectedEdge = edgeIdx;
+
+      renderRefsPanel();
+      draw();
+
+      if (state.expandedVerseKey === key) {
+        await Promise.all([
+          fetchScripture(ch.book, ch.chapter, link.lv),
+          fetchScripture(link.ob, link.oc, link.ov),
+        ]);
+        if (state.expandedVerseKey === key) {
+          renderRefsPanel();
+        }
+      }
+    }
+
+    function focusChapterIndex() {
+      if (state.selectedChapter >= 0) return state.selectedChapter;
+      return state.hoverChapter;
+    }
+
+    function focusEdgeIndex() {
+      if (state.selectedEdge >= 0) return state.selectedEdge;
+      return state.hoverEdge;
+    }
+
+    function barNorm(ch) {
+      if (state.baseline === "chapterRefs") return ch.barRefs || 0;
+      if (state.baseline === "verseRefs") return ch.barPeakVerse || 0;
+      return ch.bar || 0;
+    }
+
+    function draw() {
+      const data = state.data;
+      if (!data) return;
+      const rect = canvas.getBoundingClientRect();
+      const w = Math.max(1, Math.floor(rect.width * state.dpr));
+      const h = Math.max(1, Math.floor(rect.height * state.dpr));
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w;
+        canvas.height = h;
+      }
+
+      const m = layoutMetrics(w, h);
+      const chapters = data.chapters;
+      const edges = data.edges;
+      const sectionMap = new Map(data.sections.map((s) => [s.id, s]));
+      const focusCh = focusChapterIndex();
+      const focusEd = focusEdgeIndex();
+      const regionFocus = (state.selectedBook != null || state.selectedGroup != null) && state.selectedChapter < 0;
+      // Always dim non-focused arcs on hover / selection
+      const hoverOn = regionFocus || focusCh >= 0 || focusEd >= 0;
+
+      const g = ctx.createLinearGradient(0, 0, 0, h);
+      g.addColorStop(0, "#0c1016");
+      g.addColorStop(1, "#161e28");
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, w, h);
+
+      const radial = ctx.createRadialGradient(w * 0.5, h * 0.55, 0, w * 0.5, h * 0.55, w * 0.55);
+      radial.addColorStop(0, "rgba(34,44,58,0.35)");
+      radial.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = radial;
+      ctx.fillRect(0, 0, w, h);
+
+      const sorted = state.activeEdgeIndices
+        .slice()
+        .sort((i, j) => edges[j].span - edges[i].span);
+
+      const maxSpan = chapters.length - 1;
+      for (const idx of sorted) {
+        const e = edges[idx];
+        const focused = regionFocus
+          ? edgeCrossesFocus(e)
+          : (!hoverOn || e.a === focusCh || e.b === focusCh || idx === focusEd);
+        const x0 = pxX(chapters[e.a].x, m);
+        const x1 = pxX(chapters[e.b].x, m);
+        const left = Math.min(x0, x1);
+        const right = Math.max(x0, x1);
+        const chord = right - left;
+        if (chord < 1.5) continue;
+        const cx = (left + right) / 2;
+        let ry = (chord / 2) * 0.92;
+        if (m.baseline - ry < m.ceiling) ry = m.baseline - m.ceiling;
+
+        const rgb = edgeRgb(e, chapters, sectionMap);
+        const spanNorm = e.span / maxSpan;
+        let alpha = (0.12 + 0.35 * Math.min(1, Math.log1p(e.votes) / 6)) * (0.55 + 0.45 * spanNorm);
+        if (state.density === "rich") alpha *= 0.55;
+        if (state.density === "study") alpha *= 0.75;
+        if (hoverOn && !focused) alpha *= 0.06;
+        if (hoverOn && focused) alpha = Math.min(0.95, alpha * 1.8 + 0.15);
+        if (idx === state.selectedEdge) alpha = Math.min(0.98, alpha * 1.15 + 0.2);
+
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${alpha})`;
+        ctx.lineWidth = Math.max(1, (0.8 + 1.4 * spanNorm) * state.dpr * (focused && hoverOn ? 1.35 : 1) * (idx === state.selectedEdge ? 1.25 : 1));
+        ctx.moveTo(left, m.baseline);
+        ctx.quadraticCurveTo(cx, m.baseline - 2 * ry, right, m.baseline);
+        ctx.stroke();
+      }
+
+      const bandH = Math.max(2, 0.007 * h);
+      const selectedOther = (() => {
+        if (state.selectedEdge < 0 || state.selectedChapter < 0) return -1;
+        const e = edges[state.selectedEdge];
+        if (e.a === state.selectedChapter) return e.b;
+        if (e.b === state.selectedChapter) return e.a;
+        return -1;
+      })();
+
+      for (const ch of chapters) {
+        const sec = sectionMap.get(ch.section);
+        const x0 = pxX(ch.x0, m);
+        const x1 = pxX(ch.x1, m);
+        const bh = Math.max(2 * state.dpr, barNorm(ch) * m.barMax);
+        const inFocus = chapterInFocusBand(ch.i);
+        const dim = regionFocus
+          ? !inFocus
+          : (hoverOn && ch.i !== focusCh && focusCh >= 0 && ch.i !== selectedOther);
+        ctx.globalAlpha = dim ? 0.18 : 1;
+        ctx.fillStyle = sec.color;
+        ctx.fillRect(x0, m.baseline, Math.max(1, x1 - x0), bh);
+        ctx.fillRect(x0, m.baseline + bh + 2 * state.dpr, Math.max(1, x1 - x0), bandH);
+        if (ch.i === state.selectedChapter || ch.i === selectedOther || (regionFocus && inFocus)) {
+          ctx.strokeStyle = (ch.i === state.selectedChapter || (regionFocus && inFocus))
+            ? "rgba(240,230,216,0.9)"
+            : "rgba(232,220,200,0.55)";
+          ctx.lineWidth = Math.max(1, state.dpr);
+          ctx.strokeRect(x0, m.baseline - 2 * state.dpr, Math.max(1, x1 - x0), bh + bandH + 6 * state.dpr);
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      // Book labels when zoomed in enough to read them
+      if (state.viewRange) {
+        const span = state.viewRange.i1 - state.viewRange.i0 + 1;
+        const books = data.books || [];
+        ctx.save();
+        ctx.font = `${Math.max(10, 11 * state.dpr)}px "Source Sans 3", sans-serif`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "bottom";
+        for (const b of books) {
+          if (b.i1 < state.viewRange.i0 || b.i0 > state.viewRange.i1) continue;
+          const x0 = pxX(chapters[b.i0].x0, m);
+          const x1 = pxX(chapters[b.i1].x1, m);
+          const width = x1 - x0;
+          if (width < 28 * state.dpr && span > 40) continue;
+          const label = width < 56 * state.dpr && b.name.length > 8
+            ? b.name.split(" ").map((p) => p[0]).join("")
+            : b.name;
+          ctx.fillStyle = "rgba(240,230,216,0.82)";
+          ctx.fillText(label, (x0 + x1) / 2, m.baseline - 6 * state.dpr, Math.max(20, width - 4));
+          ctx.strokeStyle = "rgba(232,220,200,0.22)";
+          ctx.lineWidth = Math.max(1, 0.7 * state.dpr);
+          ctx.beginPath();
+          ctx.moveTo(x0, m.baseline - 2 * state.dpr);
+          ctx.lineTo(x0, m.baseline + m.barMax + bandH + 4 * state.dpr);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      const hx = pxX(data.meta.hingeX, m);
+      ctx.strokeStyle = "rgba(232,220,200,0.75)";
+      ctx.lineWidth = Math.max(1, state.dpr);
+      ctx.beginPath();
+      ctx.moveTo(hx, m.baseline - m.barMax * 0.5);
+      ctx.lineTo(hx, m.baseline + m.barMax + bandH + 8 * state.dpr);
+      ctx.stroke();
+    }
+
+    function chapterAt(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      const x = (clientX - rect.left) * state.dpr;
+      const y = (clientY - rect.top) * state.dpr;
+      const m = layoutMetrics(canvas.width, canvas.height);
+      if (y < m.baseline - 14 * state.dpr || y > m.baseline + m.barMax + 22 * state.dpr) return -1;
+      let best = -1;
+      let bestDist = Infinity;
+      for (const ch of state.data.chapters) {
+        const x0 = pxX(ch.x0, m);
+        const x1 = pxX(ch.x1, m);
+        if (x >= x0 && x <= x1) return ch.i;
+        const mid = (x0 + x1) / 2;
+        const d = Math.abs(x - mid);
+        if (d < bestDist) {
+          bestDist = d;
+          best = ch.i;
+        }
+      }
+      return bestDist < 12 * state.dpr ? best : -1;
+    }
+
+    function nearestEdge(clientX, clientY) {
+      const focusCh = focusChapterIndex();
+      const regionFocus = (state.selectedBook || state.selectedGroup) && state.selectedChapter < 0;
+      if (focusCh < 0 && !regionFocus) return -1;
+      const rect = canvas.getBoundingClientRect();
+      const x = (clientX - rect.left) * state.dpr;
+      const y = (clientY - rect.top) * state.dpr;
+      const m = layoutMetrics(canvas.width, canvas.height);
+      const chapters = state.data.chapters;
+      const edges = state.data.edges;
+      let best = -1;
+      let bestD = 18 * state.dpr;
+      for (const idx of state.activeEdgeIndices) {
+        const e = edges[idx];
+        if (regionFocus) {
+          if (!edgeCrossesFocus(e)) continue;
+        } else if (e.a !== focusCh && e.b !== focusCh) {
+          continue;
+        }
+        const x0 = pxX(chapters[e.a].x, m);
+        const x1 = pxX(chapters[e.b].x, m);
+        const left = Math.min(x0, x1);
+        const right = Math.max(x0, x1);
+        if (x < left - 4 || x > right + 4) continue;
+        let ry = ((right - left) / 2) * 0.92;
+        if (m.baseline - ry < m.ceiling) ry = m.baseline - m.ceiling;
+        const t = (x - left) / Math.max(1, right - left);
+        const yArc = (1 - t) * (1 - t) * m.baseline + 2 * (1 - t) * t * (m.baseline - 2 * ry) + t * t * m.baseline;
+        const d = Math.abs(y - yArc);
+        if (d < bestD) {
+          bestD = d;
+          best = idx;
+        }
+      }
+      return best;
+    }
+
+    function updateHoverHint() {
+      if (!state.data) {
+        hoverHint.classList.remove("on");
+        return;
+      }
+      if (state.hoverEdge >= 0) {
+        const e = state.data.edges[state.hoverEdge];
+        const a = state.data.chapters[e.a];
+        const b = state.data.chapters[e.b];
+        hoverHint.innerHTML = `<strong>${a.book} ${a.chapter} ↔ ${b.book} ${b.chapter}</strong> · ${e.votes.toLocaleString()} votes`;
+        hoverHint.classList.add("on");
+      } else if (state.hoverChapter >= 0 && state.selectedChapter < 0) {
+        const c = state.data.chapters[state.hoverChapter];
+        const sec = state.data.sections.find((s) => s.id === c.section);
+        hoverHint.innerHTML =
+          `<strong>${c.book} ${c.chapter}</strong> · ${sec ? sec.short : ""} · ${c.verses} verses · ${(c.refs || 0).toLocaleString()} refs`;
+        hoverHint.classList.add("on");
+      } else {
+        hoverHint.classList.remove("on");
+      }
+    }
+
+    function renderLegend() {
+      const el = document.getElementById("legend");
+      const wrap = document.getElementById("stageLegend");
+      const clearBtn = document.getElementById("clearBook");
+      wrap.classList.toggle("hidden", !state.legend);
+      el.style.display = state.legend ? "flex" : "none";
+      clearBtn.hidden = !(state.selectedBook || state.selectedGroup || state.viewRange);
+      const groups = state.data.bookGroups || [];
+      const books = state.data.books || [];
+      el.innerHTML = groups.map((g) => {
+        const open = state.expandedGroup === g.id;
+        const active = state.selectedGroup === g.id && !state.selectedBook;
+        const groupBooks = books.filter((b) => b.group === g.id);
+        return `
+          <div class="corpus-group${open ? " open" : ""}${active ? " active" : ""}" data-group="${escapeHtml(g.id)}">
+            <button type="button" class="corpus-head" data-group="${escapeHtml(g.id)}">
+              <span class="swatch" style="background:${g.color}"></span>
+              <span class="label">${escapeHtml(g.label)}</span>
+              <span class="meta">${g.books} books · ${g.chapters} ch</span>
+            </button>
+            <div class="corpus-books">
+              ${groupBooks.map((b) => {
+                const on = state.selectedBook === b.name;
+                const dim = state.selectedBook && !on;
+                return `
+                  <button type="button" class="book-chip${on ? " on" : ""}${dim ? " dim" : ""}" data-book="${escapeHtml(b.name)}" title="${escapeHtml(b.name)} · ${b.chapters} ch">
+                    <span class="swatch" style="background:${b.color}"></span>
+                    <span class="name">${escapeHtml(b.name)}</span>
+                  </button>
+                `;
+              }).join("")}
+            </div>
+          </div>
+        `;
+      }).join("");
+      el.querySelectorAll(".corpus-head").forEach((btn) => {
+        btn.addEventListener("click", () => selectGroup(btn.dataset.group));
+      });
+      el.querySelectorAll(".book-chip").forEach((btn) => {
+        btn.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          selectBook(btn.dataset.book);
+        });
+      });
+      updateZoomChip();
+      requestAnimationFrame(() => draw());
+    }
+
+    function renderControls() {
+      const data = state.data;
+      const dens = document.getElementById("densitySeg");
+      dens.innerHTML = Object.entries(data.densityPresets).map(([key, p]) => `
+        <button type="button" data-density="${key}" class="${state.density === key ? "on" : ""}">
+          ${p.label}<small>${p.count.toLocaleString()} links</small>
+        </button>
+      `).join("");
+      dens.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.density = btn.dataset.density;
+          dens.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b === btn));
+          rebuildActiveEdges();
+          draw();
+        });
+      });
+
+      document.getElementById("colorSeg").querySelectorAll("button").forEach((btn) => {
+        btn.classList.toggle("on", btn.dataset.color === state.colorMode);
+        btn.addEventListener("click", () => {
+          state.colorMode = btn.dataset.color;
+          document.querySelectorAll("#colorSeg button").forEach((b) => b.classList.toggle("on", b === btn));
+          rebuildActiveEdges();
+          draw();
+        });
+      });
+
+      document.getElementById("baselineSeg").querySelectorAll("button").forEach((btn) => {
+        btn.classList.toggle("on", btn.dataset.baseline === state.baseline);
+        btn.addEventListener("click", () => {
+          state.baseline = btn.dataset.baseline;
+          document.querySelectorAll("#baselineSeg button").forEach((b) => b.classList.toggle("on", b === btn));
+          rebuildActiveEdges();
+          draw();
+        });
+      });
+
+      const legendToggle = document.getElementById("legendToggle");
+      legendToggle.addEventListener("click", () => {
+        state.legend = !state.legend;
+        legendToggle.classList.toggle("on", state.legend);
+        legendToggle.querySelector(".state").textContent = state.legend ? "On" : "Off";
+        renderLegend();
+      });
+
+      document.getElementById("clearBook").addEventListener("click", () => clearSelection());
+      document.getElementById("resetZoom").addEventListener("click", () => clearSelection());
+      document.getElementById("clearSelection").addEventListener("click", clearSelection);
+
+      document.getElementById("inspiration").innerHTML = data.inspiration.map((item) => `
+        <a href="${item.url}" target="_blank" rel="noopener noreferrer">
+          <div class="t">${item.title}</div>
+          <div class="b">${item.blurb}</div>
+        </a>
+      `).join("");
+
+      document.getElementById("meta").textContent =
+        `${data.meta.attribution} Edge pool ${data.meta.edgePool.toLocaleString()} · ` +
+        `${data.meta.numChapters} chapters · ${(data.meta.verseRefCount || 0).toLocaleString()} verses with refs.`;
+
+      renderLegend();
+    }
+
+    canvas.addEventListener("pointermove", (ev) => {
+      if (!state.data) return;
+      if (state.selectedChapter < 0) {
+        state.hoverChapter = chapterAt(ev.clientX, ev.clientY);
+        state.hoverEdge = nearestEdge(ev.clientX, ev.clientY);
+      } else {
+        state.hoverEdge = nearestEdge(ev.clientX, ev.clientY);
+      }
+      updateHoverHint();
+      draw();
+    });
+    canvas.addEventListener("pointerleave", () => {
+      state.hoverChapter = -1;
+      if (state.selectedChapter < 0) state.hoverEdge = -1;
+      updateHoverHint();
+      draw();
+    });
+    canvas.addEventListener("click", (ev) => {
+      if (!state.data) return;
+      const ch = chapterAt(ev.clientX, ev.clientY);
+      if (ch < 0) return;
+      if (state.selectedChapter === ch) {
+        clearSelection();
+      } else {
+        const book = state.data.chapters[ch];
+        const bookMeta = (state.data.books || []).find((b) => b.name === book.book);
+        state.selectedGroup = bookMeta ? bookMeta.group : null;
+        state.expandedGroup = bookMeta ? bookMeta.group : null;
+        state.selectedBook = null;
+        state.selectedChapter = ch;
+        state.selectedVerse = null;
+        state.selectedEdge = -1;
+        state.selectedVerseKey = null;
+        state.expandedVerseKey = null;
+        state.hoverChapter = ch;
+        if (bookMeta) setViewRange({ i0: bookMeta.i0, i1: bookMeta.i1 });
+        renderLegend();
+        renderRefsPanel();
+        updateHoverHint();
+        draw();
+        document.getElementById("refsBody").scrollTop = 0;
+      }
+    });
+
+    window.addEventListener("resize", () => draw());
+
+    async function boot() {
+      const res = await fetch("data.json");
+      if (!res.ok) throw new Error("Missing data.json — run: python -m src --web-only");
+      state.data = await res.json();
+      state.density = state.data.defaults.density;
+      state.colorMode = state.data.defaults.colorMode;
+      state.legend = state.data.defaults.legend;
+      state.baseline = state.data.defaults.baseline || "length";
+      state.selectedGroup = null;
+      state.expandedGroup = null;
+      state.selectedBook = null;
+      setViewRange(null);
+      renderControls();
+      rebuildActiveEdges();
+      loading.style.display = "none";
+      draw();
+    }
+
+    boot().catch((err) => {
+      loading.textContent = String(err.message || err);
+    });
+  </script>
+</body>
+</html>
