@@ -1,0 +1,26659 @@
+window.PEOPLE_DATA = {
+  "version": 1,
+  "updated": "2026-08-10",
+  "focus_id": "morganne",
+  "people": {
+    "morganne": {
+      "id": "morganne",
+      "slug": "morganne",
+      "name": "Morganne Elizabeth Shorts",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "bill_parsons",
+        "marcy_parsons"
+      ],
+      "spouses": [
+        "alexander"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "bill_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "marcy_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "alexander",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Primary focus for the in-law ascent (Parsons / Rudd). Daughter of **Bill Parsons** × **Marcy Parsons**; spouse of **Alexander Shorts**. Living-private — no public vitals/death digs."
+    },
+    "alexander": {
+      "id": "alexander",
+      "slug": null,
+      "name": "Alexander Martin Shorts",
+      "years": "1987–",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "william",
+        "heidi"
+      ],
+      "spouses": [
+        "morganne"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0392",
+        "FT-0396",
+        "FT-0397"
+      ]
+    },
+    "marcy_parsons": {
+      "id": "marcy_parsons",
+      "slug": "marcy-parsons",
+      "name": "Marcy Parsons",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "george_rudd",
+        "marion_orciere"
+      ],
+      "spouses": [
+        "bill_parsons"
+      ],
+      "children": [
+        "morganne"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry",
+          "url": ""
+        },
+        {
+          "label": "SABR — Bill Parsons bio (married Marcy Rae Rudd 14 Jun 1969)",
+          "url": "https://sabr.org/bioproj/person/bill-parsons/"
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary (daughter Marcy Parsons)",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        }
+      ],
+      "aka": [
+        "Marcy Rae Rudd",
+        "Marcy Rae Parsons",
+        "Rudd (maiden — Confirmed C444)"
+      ],
+      "parent_links": [
+        {
+          "id": "george_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "marion_orciere",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "bill_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Mother of Morganne Shorts. Married name **Parsons**; maiden **Rudd** (**C444** Locked). Public SABR bio: **Marcy Rae Rudd**, m. Bill 14 Jun 1969. George’s obit names daughter Marcy Parsons × Bill and son **Dan Rudd** × Nancy — soft sibling via shared father George (**C545–C549..."
+    },
+    "bill_parsons": {
+      "id": "bill_parsons",
+      "slug": "bill-parsons",
+      "name": "Bill Parsons",
+      "years": "1948–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "gerald_allen_parsons",
+        "elizabeth_allen"
+      ],
+      "spouses": [
+        "marcy_parsons"
+      ],
+      "children": [
+        "morganne"
+      ],
+      "media": [
+        {
+          "file": "media/portrait-1973.jpg",
+          "kind": "portrait",
+          "source": "Wikimedia Commons — Bill Parsons 1973 (Jewel Foods; PD-US no notice)",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Bill_Parsons_1973.jpg"
+        },
+        {
+          "file": "media/1971-brewers-picture-pack-6.jpg",
+          "kind": "photo",
+          "source": "MEARS Online Auctions — 1971 Milwaukee Brewers MLB Photo Pack lot 92108 (crop: BILL PARSONS — Brewers)",
+          "source_url": "https://www.mearsonlineauctions.com/1971_Milwaukee_Brewers_MLB_Photo_Pack_w__12_Photos-LOT92108.aspx"
+        },
+        {
+          "file": "media/1972-topps-281.jpg",
+          "kind": "photo",
+          "source": "MEARS / research capture — 1972 Topps #281 Bill Parsons (HQ face)",
+          "source_url": "https://www.retroseasons.com/retroimages/sports-cards/1972/card-1972TP-281-0.jpg"
+        },
+        {
+          "file": "media/1972-topps-281-autograph.jpg",
+          "kind": "photo",
+          "source": "Baseball Almanac — bill_parsons_autograph.jpg (1972 Topps #281 face with autograph overlay)",
+          "source_url": "https://www.baseball-almanac.com/players/pics/bill_parsons_autograph.jpg"
+        },
+        {
+          "file": "media/1972-kelloggs-5.png",
+          "kind": "photo",
+          "source": "Number 5 Type Collection — 1972 Kellogg's Baseball #5 Bill Parsons",
+          "source_url": "https://www.number5typecollection.com/2012/02/1972-kelloggs-baseball-5-bill-parsons.html"
+        },
+        {
+          "file": "media/1972-kelloggs-5-back.png",
+          "kind": "photo",
+          "source": "Number 5 Type Collection — 1972 Kellogg's #5 back",
+          "source_url": "https://www.number5typecollection.com/2012/02/1972-kelloggs-baseball-5-bill-parsons.html"
+        },
+        {
+          "file": "media/1973-topps-231.jpg",
+          "kind": "photo",
+          "source": "RetroSeasons — 1973 Topps #231 Bill Parsons",
+          "source_url": "https://www.retroseasons.com/retroimages/sports-cards/1973/card-1973TP-231-0.jpg"
+        },
+        {
+          "file": "media/1973-topps-231-back.jpg",
+          "kind": "photo",
+          "source": "1973 Topps Baseball Set Builder blog — #231 back",
+          "source_url": "http://1973topps.blogspot.com/2010/05/231-bill-parsons.html"
+        },
+        {
+          "file": "media/1974-topps-574.jpg",
+          "kind": "photo",
+          "source": "RetroSeasons — 1974 Topps #574 Bill Parsons",
+          "source_url": "https://www.retroseasons.com/retroimages/sports-cards/1974/card-1974TP-574-0.jpg"
+        },
+        {
+          "file": "media/1975-topps-613.jpg",
+          "kind": "photo",
+          "source": "RetroSeasons — 1975 Topps #613 Bill Parsons",
+          "source_url": "https://www.retroseasons.com/retroimages/sports-cards/1975/card-1975TP-613-0.jpg"
+        },
+        {
+          "file": "media/career-photo-sabr-as.jpg",
+          "kind": "photo",
+          "source": "SABR BioProject — ParsonsBill / BillParsons.JPG",
+          "source_url": "https://sabr.org/bioproj/person/bill-parsons/"
+        },
+        {
+          "file": "media/career-photo-brewerfanatic-portrait.jpg",
+          "kind": "photo",
+          "source": "Brewer Fanatic — Milwaukee Brewers Players Project (Bill Parsons)",
+          "source_url": "https://brewerfanatic.com/milwaukee-brewers-players-project/bill-parsons-r39/"
+        },
+        {
+          "file": "media/career-photo-autograph-disc.jpg",
+          "kind": "photo",
+          "source": "Brewer Fanatic — Bill Parsons autograph disc",
+          "source_url": "https://brewerfanatic.com/milwaukee-brewers-players-project/bill-parsons-r39/"
+        },
+        {
+          "file": "media/career-photo-crew-throwback.jpg",
+          "kind": "photo",
+          "source": "Brewer Fanatic — Bill Parsons Crew Throwback",
+          "source_url": "https://brewerfanatic.com/news-rumors/milwaukee-brewers-history/bill-parsons-early-brewers-pitching-star-r2050/"
+        }
+      ],
+      "portrait": "media/portrait-1973.jpg",
+      "object_ids": [
+        "FT-0006",
+        "FT-0007",
+        "FT-0008"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry",
+          "url": ""
+        },
+        {
+          "label": "Wikimedia Commons — Bill Parsons 1973.jpg (PD-US no notice)",
+          "url": "https://commons.wikimedia.org/wiki/File:Bill_Parsons_1973.jpg"
+        },
+        {
+          "label": "Baseball-Reference — Bill Parsons (parsobi01)",
+          "url": "https://www.baseball-reference.com/players/p/parsobi01.shtml"
+        },
+        {
+          "label": "Wikipedia — Bill Parsons",
+          "url": "https://en.wikipedia.org/wiki/Bill_Parsons"
+        },
+        {
+          "label": "SABR — Bill Parsons bio (William Raymond Parsons; m. Marcy Rae Rudd 14 Jun 1969)",
+          "url": "https://sabr.org/bioproj/person/bill-parsons/"
+        },
+        {
+          "label": "Press-Enterprise — Elizabeth “Betty” A. Parsons (son Bill)",
+          "url": "https://www.pressenterprise.com/obituaries/elizabeth-a-parsons-riverside-ca/"
+        },
+        {
+          "label": "RetroSeasons — Bill Parsons sports cards",
+          "url": "https://www.retroseasons.com/players/bill-parsons/history/sports-cards/"
+        },
+        {
+          "label": "Number 5 Type Collection — 1972 Kellogg's #5",
+          "url": "https://www.number5typecollection.com/2012/02/1972-kelloggs-baseball-5-bill-parsons.html"
+        },
+        {
+          "label": "Brewer Fanatic — Bill Parsons",
+          "url": "https://brewerfanatic.com/milwaukee-brewers-players-project/bill-parsons-r39/"
+        }
+      ],
+      "aka": [
+        "William Raymond Parsons"
+      ],
+      "parent_links": [
+        {
+          "id": "gerald_allen_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "elizabeth_allen",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "marcy_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Father of **Morganne Shorts**; spouse of **Marcy Parsons**. Former MLB pitcher (Milwaukee Brewers 1971–73, Oakland Athletics 1974). **1971 AL Rookie of the Year runner-up** (BBWAA); **The Sporting News AL Rookie Pitcher of the Year**. Person-card portrait from Wikimedia Common..."
+    },
+    "marion_orciere": {
+      "id": "marion_orciere",
+      "slug": "marion-orciere",
+      "name": "Marion Orciere",
+      "years": "1926-1976",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "theodore_m_orciere",
+        "rachel_g_orciere"
+      ],
+      "spouses": [
+        "george_rudd"
+      ],
+      "children": [
+        "marcy_parsons"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-crestlawn-crabtree-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 203881060 — Marian E Crabtree",
+          "source_url": "https://images.findagrave.com/photos/2019/289/203881060_4e0d8472-d5c3-4d3d-9546-2a838a4729d0.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — parents Theodore × Rachel Orciere",
+          "url": ""
+        },
+        {
+          "label": "SortedByName SSACI — Marian Eveline Orciere / Crabtree / Harris / Rudd; b. 16 Aug 1926; parents Theodore M Orciere × Rachel G Fife; d. Oct 1976",
+          "url": "https://www.sortedbyname.com/letter_o/orciere.html"
+        },
+        {
+          "label": "Find A Grave 203881060 — Marian E Crabtree (1926–1976), Crestlawn",
+          "url": "https://www.findagrave.com/memorial/203881060/marian-e-crabtree"
+        },
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary (Marion not in 2012 survivors — predeceased)",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        },
+        {
+          "label": "Find A Grave 203880948 — father Theodore M Orciere",
+          "url": "https://www.findagrave.com/memorial/203880948/theodore-m-orciere"
+        },
+        {
+          "label": "Find A Grave 203880996 — mother Rachel G Orciere",
+          "url": "https://www.findagrave.com/memorial/203880996/rachel-g-orciere"
+        }
+      ],
+      "aka": [
+        "Marian Eveline Orciere",
+        "Marian E. Crabtree",
+        "Marian Eve Crabtree",
+        "Marian E. Harris",
+        "Marian Eve Harris",
+        "Marian Eveline Rudd",
+        "Marion Rudd"
+      ],
+      "parent_links": [
+        {
+          "id": "theodore_m_orciere",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "rachel_g_orciere",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "george_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Maternal grandmother of Morganne Shorts (mother of Marcy Parsons). **C442** + **C470 Locked**. Soft vitals from SortedByName SSACI (**C477**): **Marian Eveline**, b. **16 Aug 1926** Riverside/Arlington CA; d. **Oct 1976**; Crestlawn as **Marian E Crabtree**. Aka Crabtree / Har..."
+    },
+    "george_rudd": {
+      "id": "george_rudd",
+      "slug": "george-rudd",
+      "name": "George E. Rudd",
+      "years": "1923-2012",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "clause_rudd",
+        "della_elizabeth_rudd"
+      ],
+      "spouses": [
+        "marion_orciere"
+      ],
+      "children": [
+        "marcy_parsons",
+        "dan_rudd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy step-brother",
+          "url": ""
+        },
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        },
+        {
+          "label": "SABR — Bill Parsons bio (married Marcy Rae Rudd 14 Jun 1969)",
+          "url": "https://sabr.org/bioproj/person/bill-parsons/"
+        }
+      ],
+      "aka": [
+        "George Rudd"
+      ],
+      "parent_links": [
+        {
+          "id": "clause_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "della_elizabeth_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "marion_orciere",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **C448 Locked** (Marcy via Alex 2026-08-07): parents **Clause × Della Rudd**. Deceased. Spouse **Marion Orciere**. Son **Dan Rudd** is Marcy’s **step-brother** (Marion not Dan’s mother — **C549 Locke...",
+      "blocker": "Parents of Clause (C500 Blocked)"
+    },
+    "rachel_g_orciere": {
+      "id": "rachel_g_orciere",
+      "slug": "rachel-g-orciere",
+      "name": "Rachel G. Orciere",
+      "years": "1904-1997",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "albert_m_fife",
+        "josephine_fife"
+      ],
+      "spouses": [
+        "theodore_m_orciere"
+      ],
+      "children": [
+        "marion_orciere",
+        "kenneth_martin_orciere"
+      ],
+      "media": [
+        {
+          "ref": "theodore-m-orciere/media/headstone-crestlawn-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 203880948 — dual Crestlawn stone (canonical owner theodore-m-orciere)",
+          "source_url": "https://images.findagrave.com/photos/2019/289/203880948_289003ac-3856-4bc1-aad4-99fb245df666.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — mother of Marion Orciere",
+          "url": ""
+        },
+        {
+          "label": "SortedByName SSACI — Rachel G Orciere / maiden Fife on children’s claims; b. 14 Dec 1904; d. 10 Aug 1997 Rowan KY",
+          "url": "https://www.sortedbyname.com/letter_o/orciere.html"
+        },
+        {
+          "label": "Find A Grave 203880996 — Rachel G Orciere (1904–1997), Crestlawn; spouse Theodore M",
+          "url": "https://www.findagrave.com/memorial/203880996/rachel-g-orciere"
+        },
+        {
+          "label": "Find A Grave 203880948 — spouse Theodore M Orciere",
+          "url": "https://www.findagrave.com/memorial/203880948/theodore-m-orciere"
+        }
+      ],
+      "aka": [
+        "Rachel G. Fife"
+      ],
+      "parent_links": [
+        {
+          "id": "albert_m_fife",
+          "confidence": "Probable"
+        },
+        {
+          "id": "josephine_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "theodore_m_orciere",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Mother of **Marion Orciere**. **C470 / C472 Locked** (Marcy via Alex 2026-08-07). Crestlawn with spouse **Theodore M. Orciere**. Maiden **G** still unknown on free sources."
+    },
+    "theodore_m_orciere": {
+      "id": "theodore_m_orciere",
+      "slug": "theodore-m-orciere",
+      "name": "Theodore M. Orciere",
+      "years": "1903-1975",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "marin_orciere",
+        "anna_steinborn_orciere"
+      ],
+      "spouses": [
+        "rachel_g_orciere"
+      ],
+      "children": [
+        "marion_orciere",
+        "kenneth_martin_orciere"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-crestlawn-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 203880948 — Theodore M Orciere",
+          "source_url": "https://images.findagrave.com/photos/2019/289/203880948_289003ac-3856-4bc1-aad4-99fb245df666.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — father of Marion Orciere",
+          "url": ""
+        },
+        {
+          "label": "SortedByName — T Orciere b. 14 Mar 1903 d. Dec 1975; father of Marian + Kenneth with Rachel G Fife",
+          "url": "https://www.sortedbyname.com/letter_o/orciere.html"
+        },
+        {
+          "label": "Find A Grave 203880948 — Theodore M Orciere (1903–1975), Crestlawn; spouse Rachel G",
+          "url": "https://www.findagrave.com/memorial/203880948/theodore-m-orciere"
+        },
+        {
+          "label": "Find A Grave 203880996 — spouse Rachel G Orciere",
+          "url": "https://www.findagrave.com/memorial/203880996/rachel-g-orciere"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "marin_orciere",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_steinborn_orciere",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "rachel_g_orciere",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Father of **Marion Orciere** (Morganne’s maternal grandmother). **C470 / C471 Locked** (Marcy via Alex 2026-08-07). Crestlawn with spouse **Rachel G. Orciere**. FAG had no children linked — family confirmation supplies Marion."
+    },
+    "josephine_fife": {
+      "id": "josephine_fife",
+      "slug": "josephine-fife",
+      "name": "Josephine Fife",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "albert_m_fife"
+      ],
+      "children": [
+        "rachel_g_orciere",
+        "caney_fife",
+        "roland_fife",
+        "lovel_fife",
+        "glenn_fife"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910/1920 Riverside — Josie Fife spouse of Albert; mother of Rachel",
+          "url": ""
+        },
+        {
+          "label": "FS GenealogyBank — Albert M Fife 1934 spouse Josephine; Mrs T M Orcierr child of Josephine × Albert M Fife",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Josie Fife"
+      ],
+      "spouse_links": [
+        {
+          "id": "albert_m_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Mother of **Rachel G. (Fife) Orciere**. Soft **Probable** as Josie/Josephine. Pack **C479**."
+    },
+    "albert_m_fife": {
+      "id": "albert_m_fife",
+      "slug": "albert-m-fife",
+      "name": "Albert M. Fife",
+      "years": "1856-1934",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "josephine_fife"
+      ],
+      "children": [
+        "rachel_g_orciere",
+        "caney_fife",
+        "roland_fife",
+        "lovel_fife",
+        "glenn_fife"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 Temescal Riverside — Albert Fife × Josie; children Rachel + Caney + Roland + Lovel + Glenn",
+          "url": "https://www.familysearch.org/en/search/record/results?q.givenName=Albert&q.surname=Fife&q.anyPlace=Riverside%2C+California%2C+United+States"
+        },
+        {
+          "label": "FS GenealogyBank — Albert M Fife d. 15 Jul 1934; spouse Josephine; child Mrs T M Orcierr",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Albert Fife"
+      ],
+      "spouse_links": [
+        {
+          "id": "josephine_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Father of **Rachel G. (Fife) Orciere**. Soft **Probable** from Riverside census + 1934 obit naming Mrs T M Orcierr. Pack **C479**."
+    },
+    "anna_steinborn_orciere": {
+      "id": "anna_steinborn_orciere",
+      "slug": "anna-steinborn-orciere",
+      "name": "Anna Steinborn Orciere",
+      "years": "1875-1928",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "louise_steinborn"
+      ],
+      "spouses": [
+        "marin_orciere"
+      ],
+      "children": [
+        "theodore_m_orciere",
+        "charles_m_orciere"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 census — Anna Orciere age 36 Missouri; spouse Marion; sons Theodore R + Charley",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MVL2-VDF"
+        },
+        {
+          "label": "FS GenealogyBank — Mrs Anna Orciere d. 25 Feb 1928 Riverside; mother Miss Louise Steinborn; spouse Marin; sons Charles M + Theodore",
+          "url": "https://www.familysearch.org/en/search/record/results?q.givenName=Anna&q.surname=Orciere&q.deathLikeDate.from=1928&q.deathLikeDate.to=1928&f.collectionId=2860782"
+        }
+      ],
+      "aka": [
+        "Anna Orciere",
+        "Mrs Anna Orciere"
+      ],
+      "parent_links": [
+        {
+          "id": "louise_steinborn",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "marin_orciere",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Mother of **Theodore M. Orciere**. Soft **Probable** maiden **Steinborn** from 1928 GenealogyBank index. Pack **C478**."
+    },
+    "marin_orciere": {
+      "id": "marin_orciere",
+      "slug": "marin-orciere",
+      "name": "Marin Orciere",
+      "years": "1879–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "anna_steinborn_orciere"
+      ],
+      "children": [
+        "theodore_m_orciere",
+        "charles_m_orciere"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 census Riverside Ward 6 — Marion Orciere head; wife Anna; sons Charley + Theodore R",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MVL2-VDF"
+        },
+        {
+          "label": "FS GenealogyBank index — Mrs Anna Orciere obit 1928; spouse Marin; children Charles M + Theodore",
+          "url": "https://www.familysearch.org/en/search/record/results?q.givenName=Anna&q.surname=Orciere&q.deathLikeDate.from=1928&q.deathLikeDate.to=1928&f.collectionId=2860782"
+        }
+      ],
+      "aka": [
+        "Marion Orciere"
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_steinborn_orciere",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Father of **Theodore M. Orciere**. Soft **Probable** from FS 1910 (as Marion) + 1928 Anna Orciere GenealogyBank index (as Marin). Pack **C478**."
+    },
+    "louise_steinborn": {
+      "id": "louise_steinborn",
+      "slug": "louise-steinborn",
+      "name": "Louise Steinborn",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [],
+      "children": [
+        "anna_steinborn_orciere"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS GenealogyBank index — Mrs Anna Orciere 1928; parent Miss Louise Steinborn",
+          "url": "https://www.familysearch.org/en/search/record/results?q.givenName=Anna&q.surname=Orciere&q.deathLikeDate.from=1928&q.deathLikeDate.to=1928&f.collectionId=2860782"
+        }
+      ],
+      "aka": [
+        "Miss Louise Steinborn"
+      ],
+      "note": "Mother of **Anna Steinborn Orciere** (index-only soft). Pack **C1076**."
+    },
+    "della_elizabeth_rudd": {
+      "id": "della_elizabeth_rudd",
+      "slug": "della-elizabeth-rudd",
+      "name": "Della Elizabeth Rudd",
+      "years": "1902-1973",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ],
+      "spouses": [
+        "clause_rudd"
+      ],
+      "children": [
+        "george_rudd"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-fag-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 103950419 — Olivewood dual stone CLAUS Y. 1893–1976 / DELLA E. 1902–1973",
+          "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008",
+        "FT-0015",
+        "FT-0016",
+        "FT-0020"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — mother of George E. Rudd; Della parents hold for Dan",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary (mother Della Rudd)",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        },
+        {
+          "label": "Olivewood Memorial Park — Della Elizabeth Rudd (12 May 1902 – 29 Aug 1973)",
+          "url": "https://olivewoodcem.mykeeper.com/DellaElizabethRudd"
+        },
+        {
+          "label": "Find A Grave 103950419 — Della Elizabeth Olson Rudd (dual stone Della E. / Claus Y.)",
+          "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        },
+        {
+          "label": "SSDI index mirror — Della Rudd b. 12 May 1902 d. Aug 1973 last res. Riverside 92504",
+          "url": "https://www.locateancestors.com/rudd-born-in-1902/"
+        },
+        {
+          "label": "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA 12 May 1902; ISAAC OLSON × JENNIE MATSON",
+          "url": "https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf"
+        },
+        {
+          "label": "Find A Grave 26322001 — father Isaac Olsen",
+          "url": "https://www.findagrave.com/memorial/26322001/isaac-olsen"
+        },
+        {
+          "label": "Find A Grave 26322002 — mother Jennie Andersen Olsen",
+          "url": "https://www.findagrave.com/memorial/26322002/jennie-olsen"
+        }
+      ],
+      "aka": [
+        "Della Rudd",
+        "Della E. Rudd",
+        "Della Elizabeth Olson Rudd",
+        "Della Olson",
+        "née Olson"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "clause_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Mother of **George E. Rudd**. Named **Della** in George’s obituary; Olivewood + SSDI + FAG dual stone support **Della Elizabeth (Olson) Rudd** (12 May 1902 – 29 Aug 1973) at Olivewood with spouse **Claus Y. Rudd**. Soft parents **Isaac Olsen** × **Jennie Olsen** — pack **C505–..."
+    },
+    "clause_rudd": {
+      "id": "clause_rudd",
+      "slug": "clause-rudd",
+      "name": "Clause Rudd",
+      "years": "1893-1976",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "della_elizabeth_rudd"
+      ],
+      "children": [
+        "george_rudd"
+      ],
+      "media": [
+        {
+          "ref": "della-elizabeth-rudd/media/headstone-olivewood-fag-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 103950419 — Olivewood dual stone (canonical owner della-elizabeth-rudd)",
+          "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008",
+        "FT-0020"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — father of George E. Rudd",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary (names parents Clause and Della Rudd)",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        },
+        {
+          "label": "Find A Grave 103950403 — Claus Y Rudd (1893–23 Sep 1976), Olivewood; spouse Della Elizabeth",
+          "url": "https://www.findagrave.com/memorial/103950403/claus-y-rudd"
+        },
+        {
+          "label": "Olivewood Memorial Park — Claus Y. Rudd (9 Jun 1893 – 23 Sep 1976)",
+          "url": "https://olivewoodcem.mykeeper.com/ClausYRudd"
+        },
+        {
+          "label": "FAG dual-stone photo — CLAUS Y. 1893–1976 / DELLA E. 1902–1973",
+          "url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg"
+        },
+        {
+          "label": "SSDI index mirror — CLAUS RUDD b. 9 Jun 1893 d. Sep 1976 last res. Riverside 92504 (SSN 567-46-6678)",
+          "url": "https://www.locateancestors.com/rudd-born-in-1893/"
+        }
+      ],
+      "aka": [
+        "Claus Y. Rudd",
+        "Claus Rudd"
+      ],
+      "spouse_links": [
+        {
+          "id": "della_elizabeth_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked** (Marcy via Alex 2026-08-07). Also PE/FAG/Olivewood as **Claus Y. Rudd**. Spouse **Della** Confirmed. Gen-4 parents still **C500 Blocked**.",
+      "blocker": "Parents (gen-4) — C500 Blocked; unlock = family names / CA death cert / "
+    },
+    "jennie_olsen": {
+      "id": "jennie_olsen",
+      "slug": "jennie-olsen",
+      "name": "Jennie Olsen",
+      "years": "1863-1956",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "isaac_olsen"
+      ],
+      "children": [
+        "william_theodore_olson",
+        "mabel_victoria_olson_sizer",
+        "carl_leonard_olson",
+        "della_elizabeth_rudd"
+      ],
+      "media": [
+        {
+          "file": "media/bc-death-1956-09-007015.jpg",
+          "kind": "document",
+          "source": "BC Archives — Registration of Death 1956-09-007015",
+          "source_url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004438083/004438083_02045.jpg"
+        },
+        {
+          "file": "media/newspaper-death-notice-fag-2023.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 26322002 — Jennie Olsen death-notice scan (FT-0016)",
+          "source_url": "https://images.findagrave.com/photos/2023/216/26322002_bc11fb44-fffa-4a73-b6d0-85402550f722.jpeg"
+        },
+        {
+          "ref": "isaac-olsen/media/newspaper-death-notice-fag-2023.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 26322001 — Isaac Olsen death-notice scan (FT-0015)",
+          "source_url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0013",
+        "FT-0014",
+        "FT-0015",
+        "FT-0016"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 26322002 — Jennie Andersen Olsen",
+          "url": "https://www.findagrave.com/memorial/26322002/jennie-olsen"
+        },
+        {
+          "label": "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)",
+          "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        },
+        {
+          "label": "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA; mother JENNIE MATSON",
+          "url": "https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf"
+        },
+        {
+          "label": "BC Archives death 1956-09-007015 — JENNIE OLSEN; Vancouver 23 Jun 1956; parents not known",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/Genealogy/Results?search=Search&as.type_death=true&as.first_name=Jennie&as.last_name=Olsen&as.start_year_str=1956&as.end_year_str=1956"
+        },
+        {
+          "label": "BC Archives death image 004438083_02045.jpg",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004438083/004438083_02045.jpg"
+        },
+        {
+          "label": "interment.net Mountain View — OLSEN, Jennie + Isaac; ABRAY-*-16-005-0007 (39)",
+          "url": "https://www.interment.net/data/canada/bc/metro-vancouver/mountain-view/surnames-o.htm"
+        },
+        {
+          "label": "Isaac BC death 1947-09-008902 — spouse Jennie Anderson (maiden spelling note)",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg"
+        },
+        {
+          "label": "FAG photo — Jennie Olsen 1956 death notice scan",
+          "url": "https://images.findagrave.com/photos/2023/216/26322002_bc11fb44-fffa-4a73-b6d0-85402550f722.jpeg"
+        }
+      ],
+      "aka": [
+        "Jennie Andersen Olsen",
+        "Jennie Anderson",
+        "Jennie Matson",
+        "Jennie Olson"
+      ],
+      "spouse_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C507**. FAG + Lyman SD birth + **BC death 1956-09-007015** (open JPEG) corroborate vitals. Maiden conflict kept open: FAG **Andersen**,...",
+      "blocker": "Parents (gen-5) Blocked — unlock Swedish birth/emigration or family name"
+    },
+    "isaac_olsen": {
+      "id": "isaac_olsen",
+      "slug": "isaac-olsen",
+      "name": "Isaac Olsen",
+      "years": "1857-1947",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "jennie_olsen"
+      ],
+      "children": [
+        "william_theodore_olson",
+        "mabel_victoria_olson_sizer",
+        "carl_leonard_olson",
+        "della_elizabeth_rudd"
+      ],
+      "media": [
+        {
+          "file": "media/bc-death-1947-09-008902.jpg",
+          "kind": "vital-record",
+          "source": "BC Archives — Registration of Death 1947-09-008902",
+          "source_url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg"
+        },
+        {
+          "file": "media/newspaper-death-notice-fag-2023.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 26322001 — Isaac Olsen death-notice scan (FT-0015)",
+          "source_url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0013",
+        "FT-0014",
+        "FT-0015",
+        "FT-0016"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 26322001 — Isaac Olsen",
+          "url": "https://www.findagrave.com/memorial/26322001/isaac-olsen"
+        },
+        {
+          "label": "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)",
+          "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        },
+        {
+          "label": "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA 12 May 1902; father ISAAC OLSON",
+          "url": "https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf"
+        },
+        {
+          "label": "BC Archives death 1947-09-008902 — ISAAC OLSEN; Richmond 18 Oct 1947; parents not known",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/Genealogy/Results?search=Search&as.type_death=true&as.last_name=Olsen&as.first_name=Isaac&as.start_year_str=1947&as.end_year_str=1947"
+        },
+        {
+          "label": "BC Archives death image 004437672_00922.jpg",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg"
+        },
+        {
+          "label": "interment.net Mountain View — OLSEN, Isaac + Jennie; ABRAY-*-16-005-0007 (39)",
+          "url": "https://www.interment.net/data/canada/bc/metro-vancouver/mountain-view/surnames-o.htm"
+        },
+        {
+          "label": "FAG photo — Isaac Olsen 1947 death notice scan",
+          "url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        }
+      ],
+      "aka": [
+        "Isaac Olson"
+      ],
+      "spouse_links": [
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C506**. FAG + Lyman SD birth + **BC death 1947-09-008902** (open JPEG) corroborate vitals. Spelling **Olsen** (FAG/BC) / **Olson** (SD ...",
+      "blocker": "Parents (gen-5) Blocked — unlock Swedish birth/emigration or family name"
+    },
+    "elizabeth_allen": {
+      "id": "elizabeth_allen",
+      "slug": "elizabeth-allen",
+      "name": "Elizabeth Allen",
+      "years": "1910-2005",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "raymond_philip_allen",
+        "ina_louise_squier_allen"
+      ],
+      "spouses": [
+        "gerald_allen_parsons"
+      ],
+      "children": [
+        "bill_parsons"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2015.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 148402404 — Elizabeth Leonard Allen Parsons Olivewood",
+          "source_url": "https://images.findagrave.com/photos/2015/178/148402404_1435515475.jpg"
+        },
+        {
+          "ref": "gerald-allen-parsons/media/headstone-detail-2015.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 148402533 — dual flush markers Gerald + Elizabeth",
+          "source_url": "https://images.findagrave.com/photos/2015/178/148402533_1435515537.jpg"
+        },
+        {
+          "file": "media/obituary-press-enterprise-clip-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 148402404 — PE death-notice scan (text also FT-0007)",
+          "source_url": "https://images.findagrave.com/photos/2021/229/148402404_6634fb6d-86dd-41a7-8f47-62e1fcb9fba1.jpeg"
+        },
+        {
+          "file": "media/newspaper-pasadena-nursing-grad-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 148402404 — Betty Allen Pasadena graduates clip",
+          "source_url": "https://images.findagrave.com/photos/2021/229/148402404_f0ed8af8-0262-4427-bef7-c371218b29e5.jpeg"
+        },
+        {
+          "ref": "gerald-allen-parsons/media/newspaper-parsons-allen-wedding-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 148402533 — Parsons–Allen wedding notice clip",
+          "source_url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0007",
+        "FT-0010",
+        "FT-0012"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry (maiden Allen)",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — Elizabeth “Betty” A. Parsons obituary",
+          "url": "https://www.pressenterprise.com/obituaries/elizabeth-a-parsons-riverside-ca/"
+        },
+        {
+          "label": "Find A Grave 148402404 — Elizabeth Leonard Allen Parsons (Olivewood W-3-264-2)",
+          "url": "https://www.findagrave.com/memorial/148402404/elizabeth_leonard-parsons"
+        },
+        {
+          "label": "Find A Grave 109982536 — father Raymond Philip Allen",
+          "url": "https://www.findagrave.com/memorial/109982536/raymond_philip-allen"
+        },
+        {
+          "label": "Find A Grave 109982560 — mother Ina Louise Squier Allen",
+          "url": "https://www.findagrave.com/memorial/109982560/ina_louise-allen"
+        },
+        {
+          "label": "FAG photo — Betty Allen Pasadena nursing graduation notice",
+          "url": "https://images.findagrave.com/photos/2021/229/148402404_f0ed8af8-0262-4427-bef7-c371218b29e5.jpeg"
+        },
+        {
+          "label": "FAG photo — Parsons–Allen wedding notice (shared under gerald-allen-parsons)",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "aka": [
+        "Elizabeth Leonard Allen",
+        "Elizabeth “Betty” A. Parsons",
+        "Betty Parsons",
+        "Elizabeth A. Parsons",
+        "Elizabeth Parsons (married name)"
+      ],
+      "parent_links": [
+        {
+          "id": "raymond_philip_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ina_louise_squier_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "gerald_allen_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen**; FAG full name **Elizabeth Leonard “Betty” Allen Parsons**, b. **14 Jan 1910 Holyoke, MA**, d. **15 Sep 2005**, Olivewood **W-3-264-2**. Press-Enterprise death notice (object **FT-0007**) names ..."
+    },
+    "gerald_allen_parsons": {
+      "id": "gerald_allen_parsons",
+      "slug": "gerald-allen-parsons",
+      "name": "Gerald Allen Parsons",
+      "years": "1909-1985",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "nelson_b_parsons",
+        "harriet_b_foss_parsons"
+      ],
+      "spouses": [
+        "elizabeth_allen"
+      ],
+      "children": [
+        "bill_parsons"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2015.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 148402533 — Gerald Austin Parsons Olivewood",
+          "source_url": "https://images.findagrave.com/photos/2015/178/148402533_1435515553.jpg"
+        },
+        {
+          "file": "media/headstone-detail-2015.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 148402533 — dual flush markers Gerald + Elizabeth",
+          "source_url": "https://images.findagrave.com/photos/2015/178/148402533_1435515537.jpg"
+        },
+        {
+          "file": "media/olivewood-section-view-2015.jpg",
+          "kind": "photo",
+          "source": "Find A Grave 148402533 — Olivewood section context",
+          "source_url": "https://images.findagrave.com/photos/2015/178/148402533_1435515517.jpg"
+        },
+        {
+          "file": "media/olivewood-section-slope-2015.jpg",
+          "kind": "photo",
+          "source": "Find A Grave 148402533 — Olivewood section context",
+          "source_url": "https://images.findagrave.com/photos/2015/178/148402533_1435515504.jpg"
+        },
+        {
+          "file": "media/newspaper-pitcher-parsons-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 148402533 — uploaded newspaper sports clip",
+          "source_url": "https://images.findagrave.com/photos/2021/229/148402533_93e87d43-fdda-48f8-a4d3-7cde1220f943.jpeg"
+        },
+        {
+          "file": "media/newspaper-parsons-allen-wedding-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 148402533 — Parsons–Allen wedding notice clip",
+          "source_url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0007",
+        "FT-0010",
+        "FT-0011"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry (Gerald Allen)",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — Elizabeth “Betty” A. Parsons obituary (husband Jerry predeceased; sons Jack and Bill)",
+          "url": "https://www.pressenterprise.com/obituaries/elizabeth-a-parsons-riverside-ca/"
+        },
+        {
+          "label": "Find A Grave — Gerald Austin Parsons (148402533); Olivewood W-3-264-1",
+          "url": "https://www.findagrave.com/memorial/148402533/gerald_austin-parsons"
+        },
+        {
+          "label": "Find A Grave — Elizabeth Leonard “Betty” Allen Parsons (148402404); Olivewood W-3-264-2",
+          "url": "https://www.findagrave.com/memorial/148402404/elizabeth_leonard-parsons"
+        },
+        {
+          "label": "SSDI abstract — Gerald Parsons b. 27 Dec 1909 d. Nov 1985 last res. 92504 Riverside (LocateAncestors)",
+          "url": "https://www.locateancestors.com/gerald-parsons/"
+        },
+        {
+          "label": "FAG photo — Parsons–Allen wedding notice (Wee Kirk o’ the Heather, Glendale)",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        },
+        {
+          "label": "FAG photo — local sports clip Pitcher Parsons / Gerald A. Parsons nightball",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_93e87d43-fdda-48f8-a4d3-7cde1220f943.jpeg"
+        }
+      ],
+      "aka": [
+        "Jerry Parsons",
+        "Gerald Austin Parsons",
+        "Gerald A. Parsons"
+      ],
+      "parent_links": [
+        {
+          "id": "nelson_b_parsons",
+          "confidence": "Probable"
+        },
+        {
+          "id": "harriet_b_foss_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_allen",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Paternal grandfather of Morganne Shorts (father of Bill Parsons). **C441 Locked** as **Gerald Allen Parsons**. Public dig (Alex authorized 2026-08-07): FAG **Gerald Austin Parsons** shares Olivewood plot **W-3-264** with Betty (grave 1 / 2); SSDI birth matches; sons include **...",
+      "blocker": "Open Press-Enterprise / newspaper death notice Nov 1985 (not found free)"
+    },
+    "ina_louise_squier_allen": {
+      "id": "ina_louise_squier_allen",
+      "slug": "ina-louise-squier-allen",
+      "name": "Ina Louise Squier Allen",
+      "years": "1883-1970",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edwin_lorenzo_squier",
+        "ellen_a_dawley_squier"
+      ],
+      "spouses": [
+        "raymond_philip_allen"
+      ],
+      "children": [
+        "elizabeth_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-fag-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 109982560 — Ina Louise Squier Allen Olivewood",
+          "source_url": "https://images.findagrave.com/photos/2013/123/109982560_136770036485.jpg"
+        },
+        {
+          "ref": "raymond-philip-allen/media/headstone-olivewood-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 109982536 — Raymond Philip Allen Olivewood dual stone (canonical owner raymond-philip-allen)",
+          "source_url": "https://images.findagrave.com/photos/2013/123/109982536_136770040125.jpg"
+        },
+        {
+          "file": "media/olivewood-section-view-2014.jpg",
+          "kind": "photo",
+          "source": "Find A Grave 109982560 — Olivewood section context",
+          "source_url": "https://images.findagrave.com/photos/2014/250/109982560_1410212997.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0010",
+        "FT-0012",
+        "FT-0017",
+        "FT-0018"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 109982560 — Ina Louise Squier Allen",
+          "url": "https://www.findagrave.com/memorial/109982560/ina_louise-allen"
+        },
+        {
+          "label": "Find A Grave 137565956 — father Edwin Lorenzo Squier",
+          "url": "https://www.findagrave.com/memorial/137565956/edwin_lorenzo-squier"
+        },
+        {
+          "label": "Find A Grave 137565972 — mother Ellen A. Dawley Squier",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        },
+        {
+          "label": "Find A Grave 148402404 — daughter Elizabeth Leonard Allen Parsons (parent link)",
+          "url": "https://www.findagrave.com/memorial/148402404/elizabeth_leonard-parsons"
+        },
+        {
+          "label": "Find A Grave 109982536 — spouse Raymond Philip Allen",
+          "url": "https://www.findagrave.com/memorial/109982536/raymond_philip-allen"
+        }
+      ],
+      "aka": [
+        "Ina Louise Squier",
+        "Ina L. Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "edwin_lorenzo_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ellen_a_dawley_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "raymond_philip_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Mother of **Elizabeth Leonard “Betty” Allen Parsons**. Maiden **Squier**. Soft-ingest **Probable** / `verified: false` — pack **C447** (as Betty’s mother) and **C495** (own parents). Olivewood with husband Raymond. Soft parents **Edwin Lorenzo Squier** × **Ellen A. Dawley Squi..."
+    },
+    "raymond_philip_allen": {
+      "id": "raymond_philip_allen",
+      "slug": "raymond-philip-allen",
+      "name": "Raymond Philip Allen",
+      "years": "1883-1967",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "carl_addison_allen",
+        "sophie_elizabeth_stearns_allen"
+      ],
+      "spouses": [
+        "ina_louise_squier_allen"
+      ],
+      "children": [
+        "elizabeth_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 109982536 — Raymond Philip Allen Olivewood dual stone",
+          "source_url": "https://images.findagrave.com/photos/2013/123/109982536_136770040125.jpg"
+        },
+        {
+          "ref": "ina-louise-squier-allen/media/headstone-olivewood-fag-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 109982560 — Ina Louise Squier Allen Olivewood (shared dual)",
+          "source_url": "https://images.findagrave.com/photos/2013/123/109982560_136770036485.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0010",
+        "FT-0012",
+        "FT-0019"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 109982536 — Raymond Philip Allen",
+          "url": "https://www.findagrave.com/memorial/109982536/raymond_philip-allen"
+        },
+        {
+          "label": "Olivewood Memorial Park — Raymond P Allen (Section U, Row 1, Lot 65, Grave 3)",
+          "url": "https://olivewoodcem.mykeeper.com/RaymondPAllen"
+        },
+        {
+          "label": "Find A Grave 148402404 — daughter Elizabeth Leonard Allen Parsons (parent link)",
+          "url": "https://www.findagrave.com/memorial/148402404/elizabeth_leonard-parsons"
+        },
+        {
+          "label": "Find A Grave 69981102 — father Carl Addison Allen",
+          "url": "https://www.findagrave.com/memorial/69981102/carl_addison-allen"
+        },
+        {
+          "label": "Find A Grave 69981134 — mother Sophie Elizabeth Stearns Allen",
+          "url": "https://www.findagrave.com/memorial/69981134/sophie_elizabeth-allen"
+        },
+        {
+          "label": "FAG photo — Parsons–Allen wedding (Mr. and Mrs. Raymond P. Allen)",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "aka": [
+        "Raymond P. Allen",
+        "R. P. Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_addison_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sophie_elizabeth_stearns_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ina_louise_squier_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Father of **Elizabeth Leonard “Betty” Allen Parsons** (Morganne’s paternal grandmother). Soft-ingest **Probable** / `verified: false` — pack **C447**. Soft parents **Carl Addison Allen** × **Sophie Elizabeth Stearns Allen** — pack **C490–C494**. Born **Acworth, NH**; Olivewood..."
+    },
+    "ellen_a_dawley_squier": {
+      "id": "ellen_a_dawley_squier",
+      "slug": "ellen-a-dawley-squier",
+      "name": "Ellen A. Dawley Squier",
+      "years": "1854-1900",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [
+        "edwin_lorenzo_squier"
+      ],
+      "children": [
+        "ina_louise_squier_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-forestdale-2017.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 137565972 — Ellen A. Dawley Squier Forestdale",
+          "source_url": "https://images.findagrave.com/photos/2017/249/137565972_1504838371.jpg"
+        },
+        {
+          "ref": "edwin-lorenzo-squier/media/headstone-forestdale-2017.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 137565956 — Edwin Lorenzo Squier Forestdale (shared capture)",
+          "source_url": "https://images.findagrave.com/photos/2017/249/137565956_1504838148.jpg"
+        },
+        {
+          "file": "media/newspaper-obituary-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 137565972 — Ellen A. Squier death notice (FT-0017)",
+          "source_url": "https://images.findagrave.com/photos/2021/226/137565972_58af0922-eee0-4f7c-8ff5-24603e12e60c.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0017",
+        "FT-0018"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 137565972 — Ellen A. Dawley Squier",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        },
+        {
+          "label": "Find A Grave 58631306 — father George S. Dawley",
+          "url": "https://www.findagrave.com/memorial/58631306/george_s-dawley"
+        },
+        {
+          "label": "Find A Grave 58631308 — mother Sarah Leonard Dawley",
+          "url": "https://www.findagrave.com/memorial/58631308/sarah-dawley"
+        },
+        {
+          "label": "Find A Grave 109982560 — daughter Ina Louise Squier Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/109982560/ina_louise-allen"
+        },
+        {
+          "label": "Find A Grave 137565956 — spouse Edwin Lorenzo Squier",
+          "url": "https://www.findagrave.com/memorial/137565956/edwin_lorenzo-squier"
+        }
+      ],
+      "aka": [
+        "Ellen A. Dawley",
+        "Ellen Dawley Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "edwin_lorenzo_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Ina Louise Squier Allen** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C495** / **C497**. Maiden **Dawley** on FAG title markup. Parents soft **George S. Dawley** × **Sarah Leonard Dawley** (Hillside Monson) — pack **C555*..."
+    },
+    "edwin_lorenzo_squier": {
+      "id": "edwin_lorenzo_squier",
+      "slug": "edwin-lorenzo-squier",
+      "name": "Edwin Lorenzo Squier",
+      "years": "1850-1903",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lorenzo_lincoln_squier",
+        "adeline_stacy_squier"
+      ],
+      "spouses": [
+        "ellen_a_dawley_squier"
+      ],
+      "children": [
+        "ina_louise_squier_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-forestdale-2017.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 137565956 — Edwin Lorenzo Squier Forestdale",
+          "source_url": "https://images.findagrave.com/photos/2017/249/137565956_1504838148.jpg"
+        },
+        {
+          "file": "media/newspaper-funeral-notice-fag-2021.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 137565956 — Edwin L. Squier funeral notice (FT-0018)",
+          "source_url": "https://images.findagrave.com/photos/2021/226/137565956_cb869ce0-ca0c-4d84-9c7e-5cdbf62fb716.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0017",
+        "FT-0018"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 137565956 — Edwin Lorenzo Squier",
+          "url": "https://www.findagrave.com/memorial/137565956/edwin_lorenzo-squier"
+        },
+        {
+          "label": "Find A Grave 109982560 — daughter Ina Louise Squier Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/109982560/ina_louise-allen"
+        },
+        {
+          "label": "Find A Grave 137565972 — spouse Ellen A. Dawley Squier",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        },
+        {
+          "label": "Find A Grave 58970341 — father Lorenzo Lincoln Squier",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        },
+        {
+          "label": "Find A Grave 58970336 — mother Adeline Stacy Squier",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Edwin L. Squier",
+        "E. L. Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "lorenzo_lincoln_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "adeline_stacy_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ellen_a_dawley_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Ina Louise Squier Allen** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C495** / **C496**. FAG bidirectional: Ina parents grid ↔ Edwin children grid (with Alice Maud, Edith Adeline, Helen May, George Edwin). Spouse **Ellen ..."
+    },
+    "sarah_leonard_dawley": {
+      "id": "sarah_leonard_dawley",
+      "slug": "sarah-leonard-dawley",
+      "name": "Sarah Leonard Dawley",
+      "years": "1820-1893",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [
+        "george_s_dawley"
+      ],
+      "children": [
+        "ellen_a_dawley_squier",
+        "charles_c_dawley",
+        "alice_r_dawley",
+        "j_carson_dawley",
+        "charles_h_dawley",
+        "john_p_l_dawley",
+        "george_b_dawley"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2015/190/58631308_1436542789.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58631308 — Sarah Leonard Dawley",
+          "url": "https://www.findagrave.com/memorial/58631308/sarah-dawley"
+        },
+        {
+          "label": "Find A Grave 137565972 — daughter Ellen A. Dawley Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        },
+        {
+          "label": "Find A Grave 58631306 — spouse George S. Dawley",
+          "url": "https://www.findagrave.com/memorial/58631306/george_s-dawley"
+        },
+        {
+          "label": "Genealogy of New England — Sarah M. Leonard parents George × Rebecca; m. George S. Dawley",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard (parents George × Rebecca; m. Gen. George Dawley)",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "aka": [
+        "Sarah Leonard",
+        "Sarah Dawley",
+        "Sarah M. Leonard",
+        "Sarah Morse Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Ellen A. Dawley Squier** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C555** / **C557**. Maiden **Leonard** on FAG title markup. Soft parents **George Leonard** × **Rebecca Converse Leonard** — pack **C625** (GNE + Leonard..."
+    },
+    "george_s_dawley": {
+      "id": "george_s_dawley",
+      "slug": "george-s-dawley",
+      "name": "George S. Dawley",
+      "years": "1818-1864",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_dawley",
+        "sarah_amelia_burdick_dawley"
+      ],
+      "spouses": [
+        "sarah_leonard_dawley"
+      ],
+      "children": [
+        "ellen_a_dawley_squier",
+        "charles_c_dawley",
+        "alice_r_dawley",
+        "j_carson_dawley",
+        "charles_h_dawley",
+        "john_p_l_dawley",
+        "george_b_dawley"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2015/190/58631306_1436542580.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58631306 — George S. Dawley",
+          "url": "https://www.findagrave.com/memorial/58631306/george_s-dawley"
+        },
+        {
+          "label": "Find A Grave 137565972 — daughter Ellen A. Dawley Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        },
+        {
+          "label": "Find A Grave 58631308 — spouse Sarah Leonard Dawley",
+          "url": "https://www.findagrave.com/memorial/58631308/sarah-dawley"
+        },
+        {
+          "label": "Genealogy of New England — parents James Dawley × Amelia Burdick",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        },
+        {
+          "label": "Find A Grave 10312462 — father James Dawley (OWH)",
+          "url": "https://www.findagrave.com/memorial/10312462/james-dawley"
+        },
+        {
+          "label": "Find A Grave 10312463 — mother Amelia Dawley (OWH)",
+          "url": "https://www.findagrave.com/memorial/10312463/amelia-dawley"
+        },
+        {
+          "label": "Find A Grave 10312522 — infant Charles H (son of George & Sarah; OWH)",
+          "url": "https://www.findagrave.com/memorial/10312522/charles_h-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "james_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_amelia_burdick_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Ellen A. Dawley Squier** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C555** / **C556**; gen-7 parents soft **James Dawley × Sarah Amelia Burdick** — pack **C620**. Hillside Cemetery, Monson MA. FAG has **no** parent links; pare..."
+    },
+    "rebecca_converse_leonard": {
+      "id": "rebecca_converse_leonard",
+      "slug": "rebecca-converse-leonard",
+      "name": "Rebecca Converse Leonard",
+      "years": "1780-1858",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "benjamin_converse",
+        "avis_wheeler_converse"
+      ],
+      "spouses": [
+        "george_leonard"
+      ],
+      "children": [
+        "sarah_leonard_dawley",
+        "lucina_leonard_topliffe",
+        "lura_leonard",
+        "laura_leonard",
+        "susan_leonard",
+        "loomis_george_leonard",
+        "rhoda_leonard",
+        "zenas_leonard",
+        "avis_amelia_leonard_goodell",
+        "john_preston_leonard"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2013/321/87118612_138480789200.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Rebecca parents Benjamin × Avis Wheeler",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Find A Grave 87118612 — father Benjamin Converse",
+          "url": "https://www.findagrave.com/memorial/87118612/benjamin-converse"
+        },
+        {
+          "label": "Find A Grave 120501024 — mother Avis Wheeler Converse",
+          "url": "https://www.findagrave.com/memorial/120501024/avis-converse"
+        },
+        {
+          "label": "Hale Collection — Westford (Benjamin × Avis)",
+          "url": "https://halecollection.com/501-10-windham-ashford-westford-cemetery.htm"
+        },
+        {
+          "label": "Genealogy of New England — Sarah M. Leonard parents George × Rebecca Converse",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard (mother Rebecca Converse)",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        },
+        {
+          "label": "Hale Collection — Old Stafford Village (Rebecca wife of George d. 26 Nov 1858 ae 78)",
+          "url": "https://halecollection.com/809-9-old-stafford-village-cemetery.htm"
+        },
+        {
+          "label": "Nagel — Rebecca Converse via Sarah M Leonard parents",
+          "url": "https://nagelhistory.com/genealogy/getperson.php?personID=I67059&tree=tree1"
+        }
+      ],
+      "aka": [
+        "Rebecca Converse"
+      ],
+      "parent_links": [
+        {
+          "id": "benjamin_converse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "avis_wheeler_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Sarah Leonard Dawley** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C625** / **C627**. Maiden **Converse**. Stafford Village co-burial with **George Leonard**. Same GNE + Leonard compiled chain as George. Gen-8 parents sof..."
+    },
+    "george_leonard": {
+      "id": "george_leonard",
+      "slug": "george-leonard",
+      "name": "George Leonard",
+      "years": "1779-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [
+        "rebecca_converse_leonard"
+      ],
+      "children": [
+        "sarah_leonard_dawley",
+        "lucina_leonard_topliffe",
+        "lura_leonard",
+        "laura_leonard",
+        "susan_leonard",
+        "loomis_george_leonard",
+        "rhoda_leonard",
+        "zenas_leonard",
+        "avis_amelia_leonard_goodell",
+        "john_preston_leonard"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Sarah M. Leonard × George S. Dawley (parents George × Rebecca)",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard (parents George Leonard × Rebecca Converse)",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        },
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard parents Jacob Jr × Rhoda Wheeler",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Hale Collection — Old Stafford Village Cemetery (George Leonard d. 31 Mar 1862 ae 83)",
+          "url": "https://halecollection.com/809-9-old-stafford-village-cemetery.htm"
+        },
+        {
+          "label": "Nagel — George Leonard (1779–1862 Stafford; parents Jacob × Rhoda)",
+          "url": "https://nagelhistory.com/genealogy/getperson.php?personID=I67057&tree=tree1"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Sarah Leonard Dawley** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C625** / **C626**. Gen-8 parents **Jacob Leonard Jr** × **Rhoda Wheeler Leonard** soft **C700–C704**. Stafford Village / Leonard District co-burial with s..."
+    },
+    "avis_wheeler_converse": {
+      "id": "avis_wheeler_converse",
+      "slug": "avis-wheeler-converse",
+      "name": "Avis Wheeler Converse",
+      "years": "1757-1817",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_wheeler",
+        "rebeckah_millerd_wheeler"
+      ],
+      "spouses": [
+        "benjamin_converse"
+      ],
+      "children": [
+        "rebecca_converse_leonard",
+        "cyprian_converse",
+        "dorcas_converse_barlow",
+        "benjamin_converse_jr",
+        "palmer_converse"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 120501024 — Mrs Avis Wheeler Converse",
+          "url": "https://www.findagrave.com/memorial/120501024/avis-converse"
+        },
+        {
+          "label": "Hale Collection — Westford (Avis consort of Benjamin d. 31 May 1817 ae 60)",
+          "url": "https://halecollection.com/501-10-windham-ashford-westford-cemetery.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-21324 — Avis (Wheeler) Converse",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        },
+        {
+          "label": "Genealogy of New England — Avis Wheeler mother of Rebecca",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "WikiTree — parents Henry Wheeler × Rebeckah Millerd",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        },
+        {
+          "label": "WikiTree — Henry Wheeler (Wheeler-5806)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-5806"
+        },
+        {
+          "label": "WikiTree — Rebeckah (Millerd) Wheeler (Millerd-92)",
+          "url": "https://www.wikitree.com/wiki/Millerd-92"
+        },
+        {
+          "label": "dav4is Wheeler ODT — Avis child of Henry × Rebecca Millard",
+          "url": "https://freepages.rootsweb.com/~dav4is/genealogy/ODTs/WHEELER.shtml"
+        }
+      ],
+      "aka": [
+        "Avis Wheeler",
+        "Avis Converse"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebeckah_millerd_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "benjamin_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Rebecca Converse Leonard** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C705** / **C707**. Maiden **Wheeler**. Westford Village with Benjamin. FAN: granddaughter **Avis Amelia Leonard** carries given name Avis. WT lists Cy..."
+    },
+    "benjamin_converse": {
+      "id": "benjamin_converse",
+      "slug": "benjamin-converse",
+      "name": "Benjamin Converse",
+      "years": "1751-1837",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "avis_wheeler_converse"
+      ],
+      "children": [
+        "rebecca_converse_leonard",
+        "cyprian_converse",
+        "dorcas_converse_barlow",
+        "benjamin_converse_jr",
+        "palmer_converse"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 87118612 — Benjamin Converse (1751–1837)",
+          "url": "https://www.findagrave.com/memorial/87118612/benjamin-converse"
+        },
+        {
+          "label": "Hale Collection — Westford Cemetery (Benjamin d. 21 Jan 1837 ae 87)",
+          "url": "https://halecollection.com/501-10-windham-ashford-westford-cemetery.htm"
+        },
+        {
+          "label": "Genealogy of New England — Benjamin × Avis parents of Rebecca Converse Leonard",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-21324 — spouse Avis (Hale couple note)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "avis_wheeler_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Rebecca Converse Leonard** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C705** / **C706**. Westford Village co-burial with spouse **Avis Wheeler**. GNE names him father of Rebecca (m. George Leonard 22 Apr 1802 Union) plus..."
+    },
+    "rebeckah_millerd_wheeler": {
+      "id": "rebeckah_millerd_wheeler",
+      "slug": "rebeckah-millerd-wheeler",
+      "name": "Rebeckah Millerd Wheeler",
+      "years": "1724–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "henry_wheeler"
+      ],
+      "children": [
+        "henry_wheeler_jr",
+        "avis_wheeler_converse",
+        "jeremiah_wheeler"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Rebeckah (Millerd) Wheeler (Millerd-92)",
+          "url": "https://www.wikitree.com/wiki/Millerd-92"
+        },
+        {
+          "label": "WikiTree — daughter Avis (Wheeler) Converse (Wheeler-21324)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        },
+        {
+          "label": "FamilySearch cite (WT) — Rebeckah Millerd birth 25 May 1724",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QG1K-9B84"
+        },
+        {
+          "label": "FamilySearch cite (WT) — m. Henry Wheeler 15 May 1742",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QG1K-MY6G"
+        },
+        {
+          "label": "dav4is Wheeler ODT — Rebecca Millard wife of Henry",
+          "url": "https://freepages.rootsweb.com/~dav4is/genealogy/ODTs/WHEELER.shtml"
+        }
+      ],
+      "aka": [
+        "Rebeckah Millerd",
+        "Rebecca Millard",
+        "Rebecca Millerd"
+      ],
+      "spouse_links": [
+        {
+          "id": "henry_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Avis Wheeler Converse** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C915** / **C917**. Maiden **Millerd** (aka Millard). b. **25 May 1724** Rehoboth; m. **15 May 1742** Henry Wheeler. Death date/place **unknown** this pas..."
+    },
+    "henry_wheeler": {
+      "id": "henry_wheeler",
+      "slug": "henry-wheeler",
+      "name": "Henry Wheeler",
+      "years": "1719-1798",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "rebeckah_millerd_wheeler"
+      ],
+      "children": [
+        "henry_wheeler_jr",
+        "avis_wheeler_converse",
+        "jeremiah_wheeler"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Henry Wheeler (Wheeler-5806)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-5806"
+        },
+        {
+          "label": "WikiTree — daughter Avis (Wheeler) Converse (Wheeler-21324)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        },
+        {
+          "label": "WikiTree — wife Rebeckah (Millerd) Wheeler (Millerd-92)",
+          "url": "https://www.wikitree.com/wiki/Millerd-92"
+        },
+        {
+          "label": "dav4is Wheeler ODT — Henry × Rebecca Millard + child Avis",
+          "url": "https://freepages.rootsweb.com/~dav4is/genealogy/ODTs/WHEELER.shtml"
+        },
+        {
+          "label": "FamilySearch cite (WT) — Henry Wheeler × Rebeckah Millerd m. 15 May 1742",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QG1K-MY6G"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "rebeckah_millerd_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Avis Wheeler Converse** (Morganne ascent gen-9 via Rebecca Converse). Soft-ingest **Probable** / `verified: false` — pack **C915** / **C916**. b. **29 Dec 1719** Rehoboth; m. **15 May 1742** Rehoboth to **Rebeckah Millerd**; d. **~1798** (Glocester RI vs G..."
+    },
+    "rhoda_wheeler_leonard": {
+      "id": "rhoda_wheeler_leonard",
+      "slug": "rhoda-wheeler-leonard",
+      "name": "Rhoda Wheeler Leonard",
+      "years": "1747-1815",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "philip_wheeler",
+        "mercy_jenckes_wheeler"
+      ],
+      "spouses": [
+        "jacob_leonard_jr"
+      ],
+      "children": [
+        "benjamin_leonard",
+        "jacob_c_leonard",
+        "rhoda_leonard_gage",
+        "polly_leonard_morse",
+        "daniel_leonard",
+        "rufus_leonard",
+        "calvin_leonard",
+        "jesse_leonard",
+        "george_leonard"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Rhoda Wheeler × Jacob Leonard Jr",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "Hale Collection — Old Stafford Village (Rhoda, wife of Jacob, d. 31 Mar 1815 ae 67)",
+          "url": "https://halecollection.com/809-9-old-stafford-village-cemetery.htm"
+        },
+        {
+          "label": "Find A Grave 85983716 — Rhoda Wheeler Leonard",
+          "url": "https://www.findagrave.com/memorial/85983716/rhoda-leonard"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        },
+        {
+          "label": "Nagel — Rhoda Wheeler (1747–1815 Stafford)",
+          "url": "https://nagelhistory.com/genealogy/getperson.php?personID=I67055&tree=tree1"
+        },
+        {
+          "label": "WikiTree Wheeler-993 — Philip × Mercy (Jenckes); Rhoda in 2nd-wife children",
+          "url": "https://www.wikitree.com/wiki/Wheeler-993"
+        },
+        {
+          "label": "WikiTree Ingalls-806 — Mercy widow remarried Philip 10 Oct 1745",
+          "url": "https://www.wikitree.com/wiki/Ingalls-806"
+        }
+      ],
+      "aka": [
+        "Rhoda Wheeler"
+      ],
+      "parent_links": [
+        {
+          "id": "philip_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_jenckes_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **George Leonard** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C700** / **C702**. Maiden **Wheeler**; Old Stafford Village co-burial with **Jacob Leonard Jr**. Hale + FAG 85983716 + WikiTree + Leonard compiled corroborate. ..."
+    },
+    "jacob_leonard_jr": {
+      "id": "jacob_leonard_jr",
+      "slug": "jacob-leonard-jr",
+      "name": "Jacob Leonard Jr",
+      "years": "1742-1815",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard",
+        "mary_wilde_leonard"
+      ],
+      "spouses": [
+        "rhoda_wheeler_leonard"
+      ],
+      "children": [
+        "benjamin_leonard",
+        "jacob_c_leonard",
+        "rhoda_leonard_gage",
+        "polly_leonard_morse",
+        "daniel_leonard",
+        "rufus_leonard",
+        "calvin_leonard",
+        "jesse_leonard",
+        "george_leonard"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "Leonard Genealogy (John line) — parents Jacob × Mary Wilde",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p125.htm"
+        },
+        {
+          "label": "Hale Collection — Old Stafford Village (Jacob Leonard d. 8 Apr 1815 ae 73, Rev War)",
+          "url": "https://halecollection.com/809-9-old-stafford-village-cemetery.htm"
+        },
+        {
+          "label": "Nagel — Jacob Leonard (1742–1815 Stafford)",
+          "url": "https://nagelhistory.com/genealogy/getperson.php?personID=I67056&tree=tree1"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — spouse Rhoda; children incl. George",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "aka": [
+        "Jacob Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_wilde_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **George Leonard** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C700** / **C701**. Gen-9 parents **Jacob Leonard** × **Mary Wilde Leonard** soft **C890–C894**. Old Stafford Village co-burial with spouse **Rhoda Wheeler**. Le..."
+    },
+    "mercy_jenckes_wheeler": {
+      "id": "mercy_jenckes_wheeler",
+      "slug": "mercy-jenckes-wheeler",
+      "name": "Mercy Jenckes Wheeler",
+      "years": "1712-1796",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "philip_wheeler"
+      ],
+      "children": [
+        "rhoda_wheeler_leonard",
+        "mercy_wheeler",
+        "daniel_wheeler",
+        "rufus_wheeler"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Wheeler-993 — Mercy (Jenckes) Wheeler m. 10 Oct 1745",
+          "url": "https://www.wikitree.com/wiki/Wheeler-993"
+        },
+        {
+          "label": "Leonard Genealogy — Rhoda mother Mercy Ingalls",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "Nagel I67053 — Mercy Jenckes (1712–1796)",
+          "url": "https://nagelhistory.com/genealogy/getperson.php?personID=I67053&tree=tree1"
+        },
+        {
+          "label": "WikiTree Ingalls-806 — widow Mercy remarried Philip Wheeler",
+          "url": "https://www.wikitree.com/wiki/Ingalls-806"
+        }
+      ],
+      "aka": [
+        "Mercy Jenckes",
+        "Mercy Ingalls",
+        "Mercy Wheeler",
+        "Mrs. Mercy Ingalls"
+      ],
+      "spouse_links": [
+        {
+          "id": "philip_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Rhoda Wheeler Leonard** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C895** / **C897**. Maiden **Jenckes** (dau. Ebenezer × Mary Butterworth per WT/Nagel); widow of **Benjamin Ingalls** before m. **Philip Wheeler** **10 Oc..."
+    },
+    "philip_wheeler": {
+      "id": "philip_wheeler",
+      "slug": "philip-wheeler",
+      "name": "Philip Wheeler",
+      "years": "1698-1765",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mercy_jenckes_wheeler"
+      ],
+      "children": [
+        "rhoda_wheeler_leonard",
+        "mercy_wheeler",
+        "daniel_wheeler",
+        "rufus_wheeler"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Wheeler-993 — Philip Wheeler (1698–1765)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-993"
+        },
+        {
+          "label": "Leonard Genealogy — Rhoda father Major Philip Wheeler",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "Nagel — Philip Wheeler father of Rhoda",
+          "url": "https://nagelhistory.com/genealogy/getperson.php?personID=I67055&tree=tree1"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda daughter of Philip; 1765 estate receipt",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "aka": [
+        "Major Philip Wheeler"
+      ],
+      "spouse_links": [
+        {
+          "id": "mercy_jenckes_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Rhoda Wheeler Leonard** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C895** / **C896**. Major Philip of Rehoboth; will dated **10 Sep 1765** proved **7 Oct 1765** (WT) names wife Mercy and daughter Rhoda; Jacob Leonard rec..."
+    },
+    "mary_wilde_leonard": {
+      "id": "mary_wilde_leonard",
+      "slug": "mary-wilde-leonard",
+      "name": "Mary Wilde Leonard",
+      "years": "1721-1786",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "jacob_leonard"
+      ],
+      "children": [
+        "jonathan_leonard",
+        "mary_leonard_white",
+        "jacob_leonard_jr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Mary Wilde × Jacob Leonard",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p125.htm"
+        },
+        {
+          "label": "Leonard Genealogy (John line) — mother of Jacob Leonard Jr",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "Leonard Origins — Mary Wilde remarriage notes (ECL)",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g1/p83.htm"
+        }
+      ],
+      "aka": [
+        "Mary Wilde",
+        "Mary Wild",
+        "Mary Wilde Clark"
+      ],
+      "spouse_links": [
+        {
+          "id": "jacob_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Jacob Leonard Jr** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C890** / **C892**. Maiden **Wilde** (aka Wild); b. **22 Jul 1721** Braintree (Norton 1718 alternate — hold); m. Jacob **12 Oct 1737** Taunton; widow admitted ..."
+    },
+    "jacob_leonard": {
+      "id": "jacob_leonard",
+      "slug": "jacob-leonard",
+      "name": "Jacob Leonard",
+      "years": "1716-1743",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_wilde_leonard"
+      ],
+      "children": [
+        "jonathan_leonard",
+        "mary_leonard_white",
+        "jacob_leonard_jr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard × Mary Wilde",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p125.htm"
+        },
+        {
+          "label": "Leonard Origins — William × Anna Barney children (Jacob 1716–1743)",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g1/p83.htm"
+        },
+        {
+          "label": "Bradsport — Lt. William Leonard children (ECL quote)",
+          "url": "https://www.bradsport.com/jamesleonarddescendants1107/b2013.htm"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_wilde_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Jacob Leonard Jr** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C890** / **C891**. Leonard compiled: b. **1716** Norton; m. **Mary Wilde** **12 Oct 1737** Taunton; d. **14 Mar 1743** Norton (VR; Norton epitaph **14 Mar 174..."
+    },
+    "sarah_amelia_burdick_dawley": {
+      "id": "sarah_amelia_burdick_dawley",
+      "slug": "sarah-amelia-burdick-dawley",
+      "name": "Sarah Amelia Burdick Dawley",
+      "years": "1796-1881",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_burdick",
+        "sarah_crandall_burdick"
+      ],
+      "spouses": [
+        "james_dawley"
+      ],
+      "children": [
+        "george_s_dawley",
+        "joseph_f_dawley",
+        "stanton_benjamin_dawley"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2009/140/10312463_124290895568.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 10312463 — Amelia Dawley",
+          "url": "https://www.findagrave.com/memorial/10312463/amelia-dawley"
+        },
+        {
+          "label": "Find A Grave 10312462 — spouse James Dawley",
+          "url": "https://www.findagrave.com/memorial/10312462/james-dawley"
+        },
+        {
+          "label": "Genealogy of New England — mother BURDICK, Amelia",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        },
+        {
+          "label": "WikiTree Burdick-2251 — Sarah Amelia (Burdick) Dawley",
+          "url": "https://www.wikitree.com/wiki/Burdick-2251"
+        },
+        {
+          "label": "WikiTree Burdick-2034 — father Joel Burdick",
+          "url": "https://www.wikitree.com/wiki/Burdick-2034"
+        },
+        {
+          "label": "WikiTree Crandall-2115 — mother Sarah (Crandall) Burdick",
+          "url": "https://www.wikitree.com/wiki/Crandall-2115"
+        },
+        {
+          "label": "Find A Grave 22998334 — father Joel Burdick (Rockville)",
+          "url": "https://www.findagrave.com/memorial/22998334/joel-burdick"
+        },
+        {
+          "label": "Find A Grave 23000388 — mother Sarah Crandall Burdick (Rockville)",
+          "url": "https://www.findagrave.com/memorial/23000388/sarah-burdick"
+        }
+      ],
+      "aka": [
+        "Amelia Burdick",
+        "Amelia Dawley",
+        "Sarah Amelia Burdick"
+      ],
+      "parent_links": [
+        {
+          "id": "joel_burdick",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_crandall_burdick",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "james_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **George S. Dawley**. Soft-ingest **Probable** / `verified: false` — pack **C620** / **C622**. Maiden **Burdick** (GNE + WikiTree); FAG title **Amelia**. Old Willington Hill with James. Gen-8 parents soft **Joel Burdick × Sarah Crandall** — pack **C795**. Si..."
+    },
+    "james_dawley": {
+      "id": "james_dawley",
+      "slug": "james-dawley",
+      "name": "James Dawley",
+      "years": "1794-1874",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_dawley_sr",
+        "elizabeth_dawley"
+      ],
+      "spouses": [
+        "sarah_amelia_burdick_dawley"
+      ],
+      "children": [
+        "george_s_dawley",
+        "joseph_f_dawley",
+        "stanton_benjamin_dawley"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2009/140/10312462_124290905829.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 10312462 — James Dawley",
+          "url": "https://www.findagrave.com/memorial/10312462/james-dawley"
+        },
+        {
+          "label": "Find A Grave 10312463 — spouse Amelia Dawley",
+          "url": "https://www.findagrave.com/memorial/10312463/amelia-dawley"
+        },
+        {
+          "label": "Genealogy of New England — George S. Dawley parents James × Amelia Burdick",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        },
+        {
+          "label": "WikiTree Dawley-375 — James Dawley (vitals; father James Dawley-376; mother unknown)",
+          "url": "https://www.wikitree.com/wiki/Dawley-375"
+        },
+        {
+          "label": "WikiTree Dawley-376 — proposed father",
+          "url": "https://www.wikitree.com/wiki/Dawley-376"
+        },
+        {
+          "label": "Hale / FAG — proposed father James Sr Griswold",
+          "url": "https://www.halecollection.com/new-london-county-cemeteries/305-26-dawley-cemetery.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "james_dawley_sr",
+          "confidence": "Possible"
+        },
+        {
+          "id": "elizabeth_dawley",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_amelia_burdick_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **George S. Dawley** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C620** / **C621**. Gen-8 parents soft **Possible**: **James Dawley Sr.** × **Elizabeth Dawley** (WikiTree father link; mother unknown on WT — Elizabeth inferred fro..."
+    },
+    "sarah_crandall_burdick": {
+      "id": "sarah_crandall_burdick",
+      "slug": "sarah-crandall-burdick",
+      "name": "Sarah Crandall Burdick",
+      "years": "1767-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "joel_burdick"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 23000388 — Sarah Crandall Burdick",
+          "url": "https://www.findagrave.com/memorial/23000388/sarah-burdick"
+        },
+        {
+          "label": "WikiTree Crandall-2115 — Sarah (Crandall) Burdick",
+          "url": "https://www.wikitree.com/wiki/Crandall-2115"
+        },
+        {
+          "label": "WikiTree Burdick-2251 — daughter Sarah Amelia (Burdick) Dawley",
+          "url": "https://www.wikitree.com/wiki/Burdick-2251"
+        }
+      ],
+      "aka": [
+        "Sarah Crandall"
+      ],
+      "spouse_links": [
+        {
+          "id": "joel_burdick",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Sarah Amelia Burdick Dawley** (aka Amelia). Soft-ingest **Probable** / `verified: false` — pack **C795** / **C797**. Maiden **Crandall**; Rockville with Joel. Gen-9 Benjamin Crandall × Alice Kenyon on WT **not** climbed. **No open obituary text** this pass."
+    },
+    "joel_burdick": {
+      "id": "joel_burdick",
+      "slug": "joel-burdick",
+      "name": "Joel Burdick",
+      "years": "1763-1828",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_crandall_burdick"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 22998334 — Joel Burdick",
+          "url": "https://www.findagrave.com/memorial/22998334/joel-burdick"
+        },
+        {
+          "label": "WikiTree Burdick-2034 — Joel Burdick",
+          "url": "https://www.wikitree.com/wiki/Burdick-2034"
+        },
+        {
+          "label": "WikiTree Burdick-2251 — daughter Sarah Amelia (Burdick) Dawley",
+          "url": "https://www.wikitree.com/wiki/Burdick-2251"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_crandall_burdick",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Sarah Amelia Burdick Dawley** (aka Amelia). Soft-ingest **Probable** / `verified: false` — pack **C795** / **C796**. Rockville Cemetery with spouse **Sarah Crandall**. Gen-9 Stephen × Mary Church on WT **not** climbed. **No open obituary text** this pass."
+    },
+    "elizabeth_dawley": {
+      "id": "elizabeth_dawley",
+      "slug": "elizabeth-dawley",
+      "name": "Elizabeth Dawley",
+      "years": "1773-1840",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "james_dawley_sr"
+      ],
+      "children": [
+        "james_dawley",
+        "hannah_d_dawley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Hale Collection — Dawley Cemetery (Elizabeth wife of James d. 28 Aug 184- ae 67y 3m 26d)",
+          "url": "https://www.halecollection.com/new-london-county-cemeteries/305-26-dawley-cemetery.htm"
+        },
+        {
+          "label": "Find A Grave 184736483 — Elizabeth Dawley",
+          "url": "https://www.findagrave.com/memorial/184736483/elizabeth-dawley"
+        },
+        {
+          "label": "Find A Grave 184736421 — spouse James Dawley",
+          "url": "https://www.findagrave.com/memorial/184736421/james-dawley"
+        },
+        {
+          "label": "WikiTree Dawley-375 — mother unknown (Elizabeth not named as mother)",
+          "url": "https://www.wikitree.com/wiki/Dawley-375"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "james_dawley_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed spouse of **James Dawley Sr.** (Griswold). Soft identity **Probable** (Hale + FAG). WikiTree lists Willington James’s mother as **unknown** — treat Elizabeth as **Possible** mother of Willington James only if father link **C790** holds (inferred from Sr couple, not in..."
+    },
+    "james_dawley_sr": {
+      "id": "james_dawley_sr",
+      "slug": "james-dawley-sr",
+      "name": "James Dawley Sr.",
+      "years": "1768-1840",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_dawley"
+      ],
+      "children": [
+        "james_dawley",
+        "hannah_d_dawley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Hale Collection — Dawley Cemetery Griswold (James d. 27 Aug 1840 ae 72)",
+          "url": "https://www.halecollection.com/new-london-county-cemeteries/305-26-dawley-cemetery.htm"
+        },
+        {
+          "label": "Find A Grave 184736421 — James Dawley",
+          "url": "https://www.findagrave.com/memorial/184736421/james-dawley"
+        },
+        {
+          "label": "WikiTree Dawley-376 — James Dawley (father of Dawley-375)",
+          "url": "https://www.wikitree.com/wiki/Dawley-376"
+        },
+        {
+          "label": "WikiTree Dawley-375 — son James Dawley 1794–1874 (parent link)",
+          "url": "https://www.wikitree.com/wiki/Dawley-375"
+        }
+      ],
+      "aka": [
+        "James Dawley"
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **James Dawley** (1794–1874, Old Willington Hill) — Morganne ascent gen-8. Soft identity **Probable** (Hale + FAG Dawley Cemetery Griswold); parent link to Willington James is **Possible** (WikiTree Dawley-375→376 only; FAG Jr parents blank) — pack **C790** ..."
+    },
+    "adeline_stacy_squier": {
+      "id": "adeline_stacy_squier",
+      "slug": "adeline-stacy-squier",
+      "name": "Adeline Stacy Squier",
+      "years": "1824-1909",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [
+        "lorenzo_lincoln_squier"
+      ],
+      "children": [
+        "edwin_lorenzo_squier",
+        "eugene_a_squier",
+        "john_philo_squier"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58970336 — Adeline Stacy Squier",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 44592910 — mother Ruth Bliss Stacy",
+          "url": "https://www.findagrave.com/memorial/44592910/ruth-stacy"
+        },
+        {
+          "label": "Find A Grave 137565956 — son Edwin Lorenzo Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/137565956/edwin_lorenzo-squier"
+        },
+        {
+          "label": "Find A Grave 58970341 — spouse Lorenzo Lincoln Squier",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        }
+      ],
+      "aka": [
+        "Adeline Stacy",
+        "Adeline Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lorenzo_lincoln_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Edwin Lorenzo Squier** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C550** / **C552**. Maiden **Stacy** on FAG title markup. Bidirectional FAG: Edwin parents ↔ Adeline children (same sibling set as Lorenzo). Spouse **Loren..."
+    },
+    "lorenzo_lincoln_squier": {
+      "id": "lorenzo_lincoln_squier",
+      "slug": "lorenzo-lincoln-squier",
+      "name": "Lorenzo Lincoln Squier",
+      "years": "1818-1899",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_squier",
+        "chloe_lincoln_squier"
+      ],
+      "spouses": [
+        "adeline_stacy_squier"
+      ],
+      "children": [
+        "edwin_lorenzo_squier",
+        "eugene_a_squier",
+        "john_philo_squier"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2012/92/58970341_133336981202.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58970341 — Lorenzo Lincoln Squier",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        },
+        {
+          "label": "Find A Grave 137565956 — son Edwin Lorenzo Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/137565956/edwin_lorenzo-squier"
+        },
+        {
+          "label": "Find A Grave 58970336 — spouse Adeline Stacy Squier",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        },
+        {
+          "label": "Find A Grave 59099760 — father John Squier",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        },
+        {
+          "label": "Find A Grave 59099795 — mother Chloe Lincoln Squier",
+          "url": "https://www.findagrave.com/memorial/59099795/chloe-squier"
+        }
+      ],
+      "aka": [
+        "Lorenzo L. Squier",
+        "L. L. Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "john_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "chloe_lincoln_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "adeline_stacy_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Edwin Lorenzo Squier** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C550** / **C551**. FAG bidirectional: Edwin parents grid ↔ Lorenzo children (with Eugene A., John Philo). Spouse **Adeline Stacy Squier**; both **Hillside..."
+    },
+    "ruth_bliss_stacy": {
+      "id": "ruth_bliss_stacy",
+      "slug": "ruth-bliss-stacy",
+      "name": "Ruth Bliss Stacy",
+      "years": "1786-1859",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "stephen_stacy"
+      ],
+      "children": [
+        "almira_stacy_fuller",
+        "mary_stacy_beebe",
+        "lucy_stacy_pease",
+        "philo_stacy",
+        "louise_stacy_bliss",
+        "lovina_stacy_holmes",
+        "adeline_stacy_squier",
+        "stephen_edison_stacy"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2012/92/44592910_133336955191.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 44592910 — Ruth Bliss Stacy",
+          "url": "https://www.findagrave.com/memorial/44592910/ruth-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — daughter Adeline Stacy Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        },
+        {
+          "label": "Find A Grave 44592912 — spouse Stephen Stacy",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        }
+      ],
+      "aka": [
+        "Ruth Bliss",
+        "Ruth Stacy"
+      ],
+      "spouse_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Adeline Stacy Squier** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C685** / **C687**. Maiden **Bliss** on FAG title markup. Bennett Road Cemetery, Monson MA with spouse Stephen. FAG bidirectional: Adeline parents ↔ Ruth c..."
+    },
+    "stephen_stacy": {
+      "id": "stephen_stacy",
+      "slug": "stephen-stacy",
+      "name": "Stephen Stacy",
+      "years": "1783-1843",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ruth_bliss_stacy"
+      ],
+      "children": [
+        "almira_stacy_fuller",
+        "mary_stacy_beebe",
+        "lucy_stacy_pease",
+        "philo_stacy",
+        "louise_stacy_bliss",
+        "lovina_stacy_holmes",
+        "adeline_stacy_squier",
+        "stephen_edison_stacy"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2012/92/44592912_133336867096.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 44592912 — Stephen Stacy",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — daughter Adeline Stacy Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        },
+        {
+          "label": "Find A Grave 44592910 — spouse Ruth Bliss Stacy",
+          "url": "https://www.findagrave.com/memorial/44592910/ruth-stacy"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Adeline Stacy Squier** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C685** / **C686**. Bennett Road Cemetery, Monson MA. FAG bidirectional: Adeline parents grid ↔ Stephen children (Adeline + seven siblings). Spouse **Ruth ..."
+    },
+    "chloe_lincoln_squier": {
+      "id": "chloe_lincoln_squier",
+      "slug": "chloe-lincoln-squier",
+      "name": "Chloe Lincoln Squier",
+      "years": "1793-1871",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_squier"
+      ],
+      "children": [
+        "lorenzo_lincoln_squier",
+        "william_perlin_squier",
+        "abner_b_squier"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2014/182/59099795_1404316068.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099795 — Chloe Lincoln Squier",
+          "url": "https://www.findagrave.com/memorial/59099795/chloe-squier"
+        },
+        {
+          "label": "Find A Grave 58970341 — son Lorenzo Lincoln Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        },
+        {
+          "label": "Find A Grave 59099760 — spouse John Squier",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        }
+      ],
+      "aka": [
+        "Chloe Lincoln",
+        "Chloe Squier"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Lorenzo Lincoln Squier** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C680** / **C682**. Maiden **Lincoln** on FAG title markup. Bidirectional FAG: Lorenzo parents ↔ Chloe children (same sibling set as John). Spouse **John..."
+    },
+    "john_squier": {
+      "id": "john_squier",
+      "slug": "john-squier",
+      "name": "John Squier",
+      "years": "1789-1841",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [
+        "chloe_lincoln_squier"
+      ],
+      "children": [
+        "lorenzo_lincoln_squier",
+        "william_perlin_squier",
+        "abner_b_squier"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2014/182/59099760_1404316021.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099760 — John Squier",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        },
+        {
+          "label": "Find A Grave 58970341 — son Lorenzo Lincoln Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        },
+        {
+          "label": "Find A Grave 59099795 — spouse Chloe Lincoln Squier",
+          "url": "https://www.findagrave.com/memorial/59099795/chloe-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "chloe_lincoln_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Lorenzo Lincoln Squier** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C680** / **C681**. **Moulton Hill Cemetery**, Monson. FAG bidirectional: Lorenzo parents grid ↔ John children (Lorenzo + William Perlin + Abner B.). Spo..."
+    },
+    "sarah_a_moulton_squier": {
+      "id": "sarah_a_moulton_squier",
+      "slug": "sarah-a-moulton-squier",
+      "name": "Sarah A. Moulton Squier",
+      "years": "1768-1851",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "solomon_squier"
+      ],
+      "children": [
+        "almon_squier",
+        "carlton_squier",
+        "charles_squier",
+        "william_squier",
+        "solomon_squier_1795",
+        "elijah_squier",
+        "arbey_squier",
+        "daniel_squier",
+        "truxton_squier",
+        "rensselaer_squier",
+        "elvira_squier_bradway",
+        "ruby_squier_trask",
+        "john_squier"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099780 — Sarah A. Moulton Squier",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        },
+        {
+          "label": "Find A Grave 59099760 — son John Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — spouse Solomon Squier",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "WikiTree Moulton-80 — Sarah Moulton (pointer)",
+          "url": "https://www.wikitree.com/wiki/Moulton-80"
+        }
+      ],
+      "aka": [
+        "Sarah Moulton",
+        "Sarah A. Squier"
+      ],
+      "spouse_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **John Squier** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C820** / **C822**. Maiden **Moulton** on FAG title. b. **28 Jan 1768** Monson; d. **27 Dec 1851** Monson; **Moulton Hill Cemetery**. Spouse **Solomon Squier**; sam..."
+    },
+    "solomon_squier": {
+      "id": "solomon_squier",
+      "slug": "solomon-squier",
+      "name": "Solomon Squier",
+      "years": "1766-1834",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_a_moulton_squier"
+      ],
+      "children": [
+        "almon_squier",
+        "carlton_squier",
+        "charles_squier",
+        "william_squier",
+        "solomon_squier_1795",
+        "elijah_squier",
+        "arbey_squier",
+        "daniel_squier",
+        "truxton_squier",
+        "rensselaer_squier",
+        "elvira_squier_bradway",
+        "ruby_squier_trask",
+        "john_squier"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099783 — Solomon Squier",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099760 — son John Squier (parent link)",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — spouse Sarah A. Moulton Squier",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        },
+        {
+          "label": "WikiTree Squier-119 — Solomon Squier (pointer)",
+          "url": "https://www.wikitree.com/wiki/Squier-119"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **John Squier** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C820** / **C821**. **Moulton Hill Cemetery**, Monson. b. **20 Apr 1766** Ashford CT; d. **17 Feb 1834** Monson. Spouse **Sarah A. Moulton Squier**. Children grid i..."
+    },
+    "sophie_elizabeth_stearns_allen": {
+      "id": "sophie_elizabeth_stearns_allen",
+      "slug": "sophie-elizabeth-stearns-allen",
+      "name": "Sophie Elizabeth Stearns Allen",
+      "years": "1853-1888",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_barrows_stearns",
+        "justina_melross_chapin_stearns"
+      ],
+      "spouses": [
+        "carl_addison_allen"
+      ],
+      "children": [
+        "raymond_philip_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-forestdale-2011.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 69981134 — Sophie Elizabeth Stearns Allen Forestdale family stone",
+          "source_url": "https://images.findagrave.com/photos/2011/136/69981134_130568198287.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0019"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 69981134 — Sophie Elizabeth Stearns Allen",
+          "url": "https://www.findagrave.com/memorial/69981134/sophie_elizabeth-allen"
+        },
+        {
+          "label": "Find A Grave 109982536 — son Raymond Philip Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/109982536/raymond_philip-allen"
+        },
+        {
+          "label": "Find A Grave 103361695 — father Deacon Nathan Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "Find A Grave 103361845 — mother Justina Melross Chapin Stearns",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        },
+        {
+          "label": "WikiTree Allen-31072 — Sophie Elisabeth Stearns × Carl Addison Allen (m. 19 May 1875)",
+          "url": "https://www.wikitree.com/wiki/Allen-31072"
+        },
+        {
+          "label": "WikiTree Stearns-2007 — Nathan B Stearns children include Sophia Elizabeth (Stearns) Allen",
+          "url": "https://www.wikitree.com/wiki/Stearns-2007"
+        },
+        {
+          "label": "USGenWeb NH Sullivan Drawer 78 — Raymond P. Allen 1883 mother Sophie E. Stearns Lebanon NH",
+          "url": "http://files.usgwarchives.net/nh/sullivan/vitals/births/drawer78.txt"
+        }
+      ],
+      "aka": [
+        "Sophie Elizabeth Stearns",
+        "Sophia Elizabeth Stearns",
+        "Sophia E. Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_barrows_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "justina_melross_chapin_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "carl_addison_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Raymond Philip Allen** (Morganne ascent gen-4). Maiden **Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C490** / **C492**; parents **C515**. Died Acworth NH 1888 (Raymond b. Acworth 1883). Forestdale Cemetery, Holyoke MA with spouse. Soft..."
+    },
+    "carl_addison_allen": {
+      "id": "carl_addison_allen",
+      "slug": "carl-addison-allen",
+      "name": "Carl Addison Allen",
+      "years": "1847-1919",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_allen",
+        "phebe_lewis_allen"
+      ],
+      "spouses": [
+        "sophie_elizabeth_stearns_allen"
+      ],
+      "children": [
+        "raymond_philip_allen"
+      ],
+      "media": [
+        {
+          "file": "media/portrait-fag-2017.jpg",
+          "kind": "portrait",
+          "source": "Find A Grave 69981102 — Carl Addison Allen portrait upload",
+          "source_url": "https://images.findagrave.com/photos/2017/342/69981102_1512879356.jpg"
+        },
+        {
+          "ref": "sophie-elizabeth-stearns-allen/media/headstone-forestdale-2011.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 69981134 / 69981102 — Forestdale family stone (canonical under sophie-elizabeth-stearns-allen)",
+          "source_url": "https://images.findagrave.com/photos/2011/136/69981134_130568198287.jpg"
+        },
+        {
+          "file": "media/newspaper-obituary-fag-2025.png",
+          "kind": "document",
+          "source": "Find A Grave 69981102 — DR C. A. ALLEN DEAD (FT-0019)",
+          "source_url": "https://images.findagrave.com/photos/2025/146/69981102_e3b3fe1d-6ead-49fe-86fd-3afc3889c284.png"
+        }
+      ],
+      "portrait": "media/portrait-fag-2017.jpg",
+      "object_ids": [
+        "FT-0019"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 69981102 — Carl Addison Allen",
+          "url": "https://www.findagrave.com/memorial/69981102/carl_addison-allen"
+        },
+        {
+          "label": "Find A Grave 180998262 — father Stephen Allen",
+          "url": "https://www.findagrave.com/memorial/180998262/stephen-allen"
+        },
+        {
+          "label": "Find A Grave 180998699 — mother Phebe Lewis Allen",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        },
+        {
+          "label": "Find A Grave 109982536 — son Raymond Philip Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/109982536/raymond_philip-allen"
+        },
+        {
+          "label": "WikiTree Allen-31072 — Carl Addison Allen (1850 hh cite; parents blank on WT)",
+          "url": "https://www.wikitree.com/wiki/Allen-31072"
+        }
+      ],
+      "aka": [
+        "Dr. Carl Addison Allen",
+        "Carl A. Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_lewis_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sophie_elizabeth_stearns_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Raymond Philip Allen** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C490** / **C491**. Parents soft-climbed **Stephen Allen** × **Phebe Lewis Allen** — pack **C510–C514**. Forestdale Cemetery, Holyoke MA. FAG children incl..."
+    },
+    "justina_melross_chapin_stearns": {
+      "id": "justina_melross_chapin_stearns",
+      "slug": "justina-melross-chapin-stearns",
+      "name": "Justina Melross Chapin Stearns",
+      "years": "1828-1868",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [
+        "nathan_barrows_stearns"
+      ],
+      "children": [
+        "sophie_elizabeth_stearns_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2016/195/103361845_1468493609.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 103361845 — Justina Melross Chapin Stearns",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 69981134 — daughter Sophie Elizabeth Stearns Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/69981134/sophie_elizabeth-allen"
+        },
+        {
+          "label": "Find A Grave 103361695 — spouse Deacon Nathan Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "WikiTree Chapin-1448 — Justina Melross (Chapin) Stearns (pointer)",
+          "url": "https://www.wikitree.com/wiki/Chapin-1448"
+        }
+      ],
+      "aka": [
+        "Justina Melross Chapin",
+        "Justina M. Chapin",
+        "Justina Melrose Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "nathan_barrows_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Sophie Elizabeth Stearns Allen** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C515** / **C517**. Maiden **Chapin** on FAG title markup. Bidirectional FAG: Sophie parents ↔ Justina children (Sophie + Frederick Oliver + Arli..."
+    },
+    "nathan_barrows_stearns": {
+      "id": "nathan_barrows_stearns",
+      "slug": "nathan-barrows-stearns",
+      "name": "Nathan Barrows Stearns",
+      "years": "1819-1900",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "oliver_stearns",
+        "malinda_barrows_stearns"
+      ],
+      "spouses": [
+        "justina_melross_chapin_stearns"
+      ],
+      "children": [
+        "sophie_elizabeth_stearns_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2016/195/103361695_1468494288.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 103361695 — Deacon Nathan Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "Find A Grave 69981134 — daughter Sophie Elizabeth Stearns Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/69981134/sophie_elizabeth-allen"
+        },
+        {
+          "label": "Find A Grave 103361845 — spouse Justina Melross Chapin Stearns",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        },
+        {
+          "label": "Find A Grave 103361230 — father Oliver Stearns",
+          "url": "https://www.findagrave.com/memorial/103361230/oliver-stearns"
+        },
+        {
+          "label": "Find A Grave 199511937 — mother Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        },
+        {
+          "label": "WikiTree Stearns-2007 — Nathan B Stearns (pointer; father of Sophia Elizabeth Stearns Allen)",
+          "url": "https://www.wikitree.com/wiki/Stearns-2007"
+        }
+      ],
+      "aka": [
+        "Deacon Nathan Barrows Stearns",
+        "Nathan B. Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "oliver_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "malinda_barrows_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "justina_melross_chapin_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Sophie Elizabeth Stearns Allen** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C515** / **C516**. Soft parents **Oliver Stearns** × **Malinda *Barrows* Stearns** — pack **C580**. FAG bidirectional: Sophie parents grid ↔ Nat..."
+    },
+    "lydia_hurd_chapin": {
+      "id": "lydia_hurd_chapin",
+      "slug": "lydia-hurd-chapin",
+      "name": "Lydia H. Hurd Chapin",
+      "years": "1795-1837",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_ii",
+        "anna_thurston_hurd"
+      ],
+      "spouses": [
+        "moses_chapin"
+      ],
+      "children": [
+        "mary_ann_chapin_young",
+        "charlotte_harriet_chapin_holbrook",
+        "samuel_hurd_chapin",
+        "rua_mina_chapin",
+        "lucy_chapin_babcock",
+        "sophronia_chapin_stearns",
+        "justina_melross_chapin_stearns",
+        "sophia_t_chapin_tunnell",
+        "augusta_pauline_chapin_sylvester"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2019/278/123785670_5b5b97bf-0b5c-4b40-9986-3850ed7e1111.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 123785670 — Lydia H. Hurd Chapin",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — daughter Justina Melross Chapin Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        },
+        {
+          "label": "Find A Grave 123785736 — spouse Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 249877458 — father Samuel Hurd II",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 249877419 — mother Anna Thurston Hurd",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        },
+        {
+          "label": "WikiTree Hurd-2110 — Lydia (Hurd) Chapin (pointer)",
+          "url": "https://www.wikitree.com/wiki/Hurd-2110"
+        }
+      ],
+      "aka": [
+        "Lydia Hurd",
+        "Lydia H. Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Justina Melross Chapin Stearns** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C585** / **C587**. Soft parents **Samuel Hurd II** × **Anna Thurston Hurd** (Pine Street West, Newport NH) — pack **C655–C659**. Maiden **Hurd**..."
+    },
+    "moses_chapin": {
+      "id": "moses_chapin",
+      "slug": "moses-chapin",
+      "name": "Moses Chapin",
+      "years": "1790-1860",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [
+        "lydia_hurd_chapin"
+      ],
+      "children": [
+        "mary_ann_chapin_young",
+        "charlotte_harriet_chapin_holbrook",
+        "samuel_hurd_chapin",
+        "rua_mina_chapin",
+        "lucy_chapin_babcock",
+        "sophronia_chapin_stearns",
+        "justina_melross_chapin_stearns",
+        "sophia_t_chapin_tunnell",
+        "augusta_pauline_chapin_sylvester"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2019/278/123785736_d1d5c110-9cb1-461c-b930-391d2f43607d.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 123785736 — Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — daughter Justina Melross Chapin Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        },
+        {
+          "label": "Find A Grave 123785670 — spouse Lydia H. Hurd Chapin",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        },
+        {
+          "label": "WikiTree Chapin-1441 — Moses Chapin (pointer; parents blank)",
+          "url": "https://www.wikitree.com/wiki/Chapin-1441"
+        },
+        {
+          "label": "Orange Chapin, The Chapin genealogy (1862) — Moses son of Phineas × Mary",
+          "url": "https://archive.org/details/chapingenealogyc1862chap/page/44/mode/2up"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Justina Melross Chapin Stearns** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C585** / **C586**. Soft parents **Phineas Chapin** × **Mary Lane Chapin** (North Newport NH) — pack **C650–C654**. Northfield Farms Cemetery. FA..."
+    },
+    "anna_thurston_hurd": {
+      "id": "anna_thurston_hurd",
+      "slug": "anna-thurston-hurd",
+      "name": "Anna Thurston Hurd",
+      "years": "1762-1835",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [
+        "samuel_hurd_ii"
+      ],
+      "children": [
+        "lydia_hurd_1783",
+        "samuel_hurd_1789",
+        "samuel_hurd_iii",
+        "lydia_hurd_chapin",
+        "reuel_hurd",
+        "pauline_hurd_newell"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 193801770 — mother Elizabeth Clifford Thurston",
+          "url": "https://www.findagrave.com/memorial/193801770/elizabeth-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — Anna Thurston Hurd",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        },
+        {
+          "label": "Find A Grave 123785670 — daughter Lydia H. Hurd Chapin (parent link)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 249877458 — spouse Samuel Hurd II",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Anna Thurston (pointer + FAG merge note)",
+          "url": "https://mckown.net/g9/p9743.htm"
+        }
+      ],
+      "aka": [
+        "Anna Thurston",
+        "Anna Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Lydia H. Hurd Chapin** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C655** / **C657**. Maiden **Thurston** on FAG title. Pine Street West Cemetery, Newport NH (FAG; McKown older ID **50574254** merged → **249877419**). Spo..."
+    },
+    "samuel_hurd_ii": {
+      "id": "samuel_hurd_ii",
+      "slug": "samuel-hurd-ii",
+      "name": "Samuel Hurd II",
+      "years": "1758-1826",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [
+        "anna_thurston_hurd"
+      ],
+      "children": [
+        "lydia_hurd_1783",
+        "samuel_hurd_1789",
+        "samuel_hurd_iii",
+        "lydia_hurd_chapin",
+        "reuel_hurd",
+        "pauline_hurd_newell"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 249877458 — Samuel Hurd II",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Wheeler 1879 — Samuel Hurd s. of Samuel and Lydia (Wilcox) Hurd",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 123785670 — daughter Lydia H. Hurd Chapin (parent link)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 249877419 — spouse Anna Thurston Hurd",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Samuel Hurd Jr. (parents Capt. Samuel × Lydia Wilcox)",
+          "url": "https://www.mckown.net/g6/p6547.htm"
+        }
+      ],
+      "aka": [
+        "Samuel Hurd Jr.",
+        "Samuel Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Lydia H. Hurd Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C655** / **C656**. Parents soft **Captain Samuel Hurd Sr.** × **Lydia Wilcox Hurd** — pack **C750**. Wheeler 1879 names him son of Samuel × Lydia (Wilcox); came..."
+    },
+    "elizabeth_clifford_thurston": {
+      "id": "elizabeth_clifford_thurston",
+      "slug": "elizabeth-clifford-thurston",
+      "name": "Elizabeth Clifford Thurston",
+      "years": "1735-1817",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [
+        "moses_thurston_ii"
+      ],
+      "children": [
+        "sarah_thurston_bailey",
+        "phinehas_thurston",
+        "anna_thurston_hurd",
+        "elisabeth_thurston_ayers",
+        "mary_thurston_smith",
+        "dorothy_thurston_huntoon",
+        "josiah_thurston",
+        "hannah_thurston_philbrick",
+        "john_thurston_1776",
+        "joanna_thurston_fitts"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 193801770 — Elizabeth Clifford Thurston",
+          "url": "https://www.findagrave.com/memorial/193801770/elizabeth-thurston"
+        },
+        {
+          "label": "WikiTree Clifford-830 — Elizabeth Clifford Thurston (parents Isaac × Sarah)",
+          "url": "https://www.wikitree.com/wiki/Clifford-830"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac (child Elizabeth b. 21 Aug 1735)",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        },
+        {
+          "label": "WikiTree Taylor-9274 — Sarah (Taylor) Clifford",
+          "url": "https://www.wikitree.com/wiki/Taylor-9274"
+        },
+        {
+          "label": "Thurston Genealogies 1892 — Moses #200 m. Elizabeth Clifford",
+          "url": "https://archive.org/details/thurstongenealogbyu00thur"
+        },
+        {
+          "label": "Find A Grave 249877419 — daughter Anna Thurston Hurd (parent link)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        },
+        {
+          "label": "Find A Grave 193801812 — spouse CPT Moses Thurston",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        }
+      ],
+      "aka": [
+        "Elizabeth Clifford",
+        "Elizabeth Thurston"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Anna Thurston Hurd** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C755** / **C757**. Maiden **Clifford**. FAG/Thurston Genealogies: b. **12 Aug 1735** Kingston NH; Kingston VR/Athenaeum: **21 Aug 1735** (day hold). d. **24 Dec 1..."
+    },
+    "moses_thurston_ii": {
+      "id": "moses_thurston_ii",
+      "slug": "moses-thurston-ii",
+      "name": "CPT Moses Thurston",
+      "years": "1730-1812",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_clifford_thurston"
+      ],
+      "children": [
+        "sarah_thurston_bailey",
+        "phinehas_thurston",
+        "anna_thurston_hurd",
+        "elisabeth_thurston_ayers",
+        "mary_thurston_smith",
+        "dorothy_thurston_huntoon",
+        "josiah_thurston",
+        "hannah_thurston_philbrick",
+        "john_thurston_1776",
+        "joanna_thurston_fitts"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 193801812 — CPT Moses Thurston",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — daughter Anna Thurston Hurd (parent link)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        },
+        {
+          "label": "Find A Grave 193801770 — spouse Elizabeth Clifford Thurston",
+          "url": "https://www.findagrave.com/memorial/193801770/elizabeth-thurston"
+        },
+        {
+          "label": "WikiTree Thurston-1145 — Moses Thurston (pointer)",
+          "url": "https://www.wikitree.com/wiki/Thurston-1145"
+        }
+      ],
+      "aka": [
+        "Moses Thurston",
+        "Moses Thurston II"
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Anna Thurston Hurd** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C755** / **C756**. FAG: b. **10 Jun 1730** Stratham Station NH; d. **23 Aug 1812** Unity NH; Lower Cemetery. Spouse **Elizabeth Clifford** (m. **1755** King..."
+    },
+    "sarah_taylor_clifford": {
+      "id": "sarah_taylor_clifford",
+      "slug": "sarah-taylor-clifford",
+      "name": "Sarah Taylor Clifford",
+      "years": "1696-1741",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "isaac_clifford_sr"
+      ],
+      "children": [
+        "joseph_clifford_sr",
+        "isaac_clifford_jr",
+        "sarah_clifford_ladd",
+        "david_clifford",
+        "william_clifford_1727",
+        "israel_clifford_1729",
+        "zachariah_clifford",
+        "abigail_clifford_1733",
+        "john_clifford_1737",
+        "tristram_clifford",
+        "elizabeth_clifford_thurston"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Taylor-9274 — Sarah (Taylor) Clifford",
+          "url": "https://www.wikitree.com/wiki/Taylor-9274"
+        },
+        {
+          "label": "WikiTree Clifford-337 — spouse Isaac Clifford Sr",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac (spouse Sarah Taylor)",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-830 — daughter Elizabeth",
+          "url": "https://www.wikitree.com/wiki/Clifford-830"
+        }
+      ],
+      "aka": [
+        "Sarah Taylor",
+        "Sarah Clifford"
+      ],
+      "spouse_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Elizabeth Clifford Thurston** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C935** / **C937**. Maiden **Taylor**; b. **~1696** Exeter NH; d. **10 Nov 1741** Kingston NH. Spouse **Isaac Clifford Sr**. Kingston VR names child..."
+    },
+    "isaac_clifford_sr": {
+      "id": "isaac_clifford_sr",
+      "slug": "isaac-clifford-sr",
+      "name": "Isaac Clifford Sr",
+      "years": "1696-1745",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_taylor_clifford"
+      ],
+      "children": [
+        "joseph_clifford_sr",
+        "isaac_clifford_jr",
+        "sarah_clifford_ladd",
+        "david_clifford",
+        "william_clifford_1727",
+        "israel_clifford_1729",
+        "zachariah_clifford",
+        "abigail_clifford_1733",
+        "john_clifford_1737",
+        "tristram_clifford",
+        "elizabeth_clifford_thurston"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac (1696–1745)",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-830 — daughter Elizabeth (Clifford) Thurston",
+          "url": "https://www.wikitree.com/wiki/Clifford-830"
+        },
+        {
+          "label": "NH State Papers vol. 33 (Probate 1741–1749) — Isaac Clifford Kingston 1745",
+          "url": "https://scholars.unh.edu/propapers/33/"
+        }
+      ],
+      "aka": [
+        "Isaac Clifford"
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Elizabeth Clifford Thurston** (Morganne ascent gen-9 via Anna Thurston Hurd). Soft-ingest **Probable** / `verified: false` — pack **C935** / **C936**. b. **24 May 1696** Hampton NH; d. **11 Sep 1745** Kingston NH. m. **~1716** **Sarah Taylor**. Kingston ye..."
+    },
+    "lydia_wilcox_hurd": {
+      "id": "lydia_wilcox_hurd",
+      "slug": "lydia-wilcox-hurd",
+      "name": "Lydia Wilcox Hurd",
+      "years": "1734-1798",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_wilcox",
+        "mary_pierson_wilcox"
+      ],
+      "spouses": [
+        "samuel_hurd_sr"
+      ],
+      "children": [
+        "samuel_hurd_ii",
+        "stephen_hurd_sr",
+        "rebecca_hurd_pike",
+        "hepsibah_hurd_1774",
+        "lydia_hurd_bascom",
+        "polly_hurd_keith",
+        "elnathan_hurd",
+        "asa_hurd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 History of Newport — Lydia Wilcox wife of Samuel Hurd",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 50574260 — Lydia Wilcox Hurd (McKown cite)",
+          "url": "https://www.findagrave.com/memorial/50574260/lydia-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Lydia Wilcox",
+          "url": "https://mckown.net/g1/p1754.htm"
+        },
+        {
+          "label": "WikiTree Wilcox-4406 — Lydia (Wilcox) Hurd (birth day)",
+          "url": "https://www.wikitree.com/wiki/Wilcox-4406"
+        },
+        {
+          "label": "Wheeler 1879 — Lydia dau. of Stephen; sister of Jesse & Uriah",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown — father Stephen Wilcox",
+          "url": "https://www.mckown.net/g16/p16104.htm"
+        },
+        {
+          "label": "WikiTree Willcockson-108 — father Stephen",
+          "url": "https://www.wikitree.com/wiki/Willcockson-108"
+        },
+        {
+          "label": "WikiTree Pierson-158 — mother Mary Pierson",
+          "url": "https://www.wikitree.com/wiki/Pierson-158"
+        }
+      ],
+      "aka": [
+        "Lydia Wilcox",
+        "Lydia Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_wilcox",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_pierson_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Samuel Hurd II** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C750** / **C752**. Maiden **Wilcox**; Wheeler: dau. of **Stephen**, sister of Jesse & Uriah; father’s grant land. Birth **4 Sep 1734** (WikiTree/Barbour cite) vs McKo..."
+    },
+    "samuel_hurd_sr": {
+      "id": "samuel_hurd_sr",
+      "slug": "samuel-hurd-sr",
+      "name": "Captain Samuel Hurd Sr.",
+      "years": "1736-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [
+        "lydia_wilcox_hurd"
+      ],
+      "children": [
+        "samuel_hurd_ii",
+        "stephen_hurd_sr",
+        "rebecca_hurd_pike",
+        "hepsibah_hurd_1774",
+        "lydia_hurd_bascom",
+        "polly_hurd_keith",
+        "elnathan_hurd",
+        "asa_hurd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 History of Newport — Samuel Hurd × Lydia Wilcox family",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 50574269 — Captain Samuel Hurd Sr. (McKown cite)",
+          "url": "https://www.findagrave.com/memorial/50574269/samuel-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Captain Samuel Hurd Sr.",
+          "url": "https://www.mckown.net/g1/p1211.htm"
+        },
+        {
+          "label": "Find A Grave 249877458 — son Samuel Hurd II (parent names in prior dig)",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        },
+        {
+          "label": "WikiTree — Thankful (Nettleton) Hurd (Nettleton-299)",
+          "url": "https://www.wikitree.com/wiki/Nettleton-299"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR Samuel birth",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        }
+      ],
+      "aka": [
+        "Samuel Hurd I",
+        "Samuel Hurd",
+        "Capt. Samuel Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Samuel Hurd II** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C750** / **C751**. Parents soft **Elnathan Hurd Sr.** × **Thankful Nettleton Hurd** (**C870–C874**): McKown Capt page + WT Hurd-1329/Nettleton-299 + Killingworth VR S..."
+    },
+    "mary_pierson_wilcox": {
+      "id": "mary_pierson_wilcox",
+      "slug": "mary-pierson-wilcox",
+      "name": "Mary Pierson Wilcox",
+      "years": "1713-1795",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "stephen_wilcox"
+      ],
+      "children": [
+        "lydia_wilcox_hurd",
+        "jesse_wilcox",
+        "uriah_wilcox",
+        "phineas_wilcox",
+        "mary_wilcox_hurd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "McKown Genealogy — Mary Pierson (via Stephen/Lydia)",
+          "url": "https://www.mckown.net/g16/p16104.htm"
+        },
+        {
+          "label": "McKown — daughter Lydia Wilcox",
+          "url": "https://mckown.net/g1/p1754.htm"
+        },
+        {
+          "label": "Find A Grave 39229955 — Mary Wilcox",
+          "url": "https://www.findagrave.com/memorial/39229955/mary-wilcox"
+        },
+        {
+          "label": "WikiTree Pierson-158 — Mary (Pierson) Wilcox",
+          "url": "https://www.wikitree.com/wiki/Pierson-158"
+        },
+        {
+          "label": "Wheeler 1879 — Stephen Wilcox family (Mrs Samuel Hurd)",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        }
+      ],
+      "aka": [
+        "Mary Pierson",
+        "Mary Wilcox"
+      ],
+      "spouse_links": [
+        {
+          "id": "stephen_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Lydia Wilcox Hurd** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C875** / **C877**. Maiden **Pierson**; b. **10 Feb 1713** Killingworth; d. **13 Dec 1795**; Indian River Cemetery (FAG **39229955**). Wife of Capt. Stephen Wilcox;..."
+    },
+    "stephen_wilcox": {
+      "id": "stephen_wilcox",
+      "slug": "stephen-wilcox",
+      "name": "Stephen Wilcox",
+      "years": "1706-1781",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_pierson_wilcox"
+      ],
+      "children": [
+        "lydia_wilcox_hurd",
+        "jesse_wilcox",
+        "uriah_wilcox",
+        "phineas_wilcox",
+        "mary_wilcox_hurd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 History of Newport — Stephen Wilcox of Killingworth; father of Jesse/Uriah/Phinehas/Mrs Samuel Hurd",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown Genealogy — Stephen Wilcox",
+          "url": "https://www.mckown.net/g16/p16104.htm"
+        },
+        {
+          "label": "Find A Grave 39229755 — Stephen Wilcox",
+          "url": "https://www.findagrave.com/memorial/39229755/stephen-wilcox"
+        },
+        {
+          "label": "WikiTree Willcockson-108 — Stephen (Willcockson) Wilcox",
+          "url": "https://www.wikitree.com/wiki/Willcockson-108"
+        },
+        {
+          "label": "McKown — daughter Lydia Wilcox",
+          "url": "https://mckown.net/g1/p1754.htm"
+        }
+      ],
+      "aka": [
+        "Capt. Stephen Wilcox",
+        "Stephen Willcockson",
+        "Stephen Willcocks"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_pierson_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Lydia Wilcox Hurd** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C875** / **C876**. Capt. Stephen Wilcox (Willcockson) of Killingworth; m. **10 May 1733** Mary Pierson; d. **22 Dec 1781**; Indian River Cemetery (FAG **39229755**..."
+    },
+    "thankful_nettleton_hurd": {
+      "id": "thankful_nettleton_hurd",
+      "slug": "thankful-nettleton-hurd",
+      "name": "Thankful Nettleton Hurd",
+      "years": "1706-1752",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elnathan_hurd_sr"
+      ],
+      "children": [
+        "sarah_hurd_griswold",
+        "abigail_hurd_ackley",
+        "elnathan_hurd_jr",
+        "john_hurd_1734",
+        "jonathan_hurd_1739",
+        "thankful_hurd_higgins",
+        "nathan_hurd_sr",
+        "samuel_hurd_sr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Thankful (Nettleton) Hurd (Nettleton-299)",
+          "url": "https://www.wikitree.com/wiki/Nettleton-299"
+        },
+        {
+          "label": "McKown Genealogy — Thankful Nettleton",
+          "url": "https://www.mckown.net/g0/p887.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR child list",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown — son Captain Samuel Hurd Sr.",
+          "url": "https://www.mckown.net/g1/p1211.htm"
+        }
+      ],
+      "aka": [
+        "Thankful Nettleton",
+        "Thankfull Nettleton",
+        "Thankfull Hurd"
+      ],
+      "spouse_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Captain Samuel Hurd Sr.** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C870** / **C872**. Maiden **Nettleton**; b. **27 Mar 1706** Killingworth; d. **24 Aug 1752** Killingworth (Barbour cites on WT). m. **4 Dec 1724** to **Elnat..."
+    },
+    "elnathan_hurd_sr": {
+      "id": "elnathan_hurd_sr",
+      "slug": "elnathan-hurd-sr",
+      "name": "Elnathan Hurd Sr.",
+      "years": "1699-1750",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "thankful_nettleton_hurd"
+      ],
+      "children": [
+        "sarah_hurd_griswold",
+        "abigail_hurd_ackley",
+        "elnathan_hurd_jr",
+        "john_hurd_1734",
+        "jonathan_hurd_1739",
+        "thankful_hurd_higgins",
+        "nathan_hurd_sr",
+        "samuel_hurd_sr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR child list",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown — son Captain Samuel Hurd Sr.",
+          "url": "https://www.mckown.net/g1/p1211.htm"
+        }
+      ],
+      "aka": [
+        "Elnathan Hurd"
+      ],
+      "spouse_links": [
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Captain Samuel Hurd Sr.** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C870** / **C871**. b. **12 Oct 1699** Woodbury; d. **27 Jan 1750** (WT Killingworth; McKown also East Haddam — place held). m. **4 Dec 1724** Killingworth to..."
+    },
+    "mary_lane_chapin": {
+      "id": "mary_lane_chapin",
+      "slug": "mary-lane-chapin",
+      "name": "Mary Lane Chapin",
+      "years": "1762-1841",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "phineas_chapin"
+      ],
+      "children": [
+        "mary_thacher_chapin",
+        "infant_daughter_chapin_1787",
+        "elizabeth_chapin_bascom",
+        "moses_chapin",
+        "phinehas_chapin",
+        "sophia_chapin_baker",
+        "orlando_chapin",
+        "henry_chapin_newport",
+        "stillborn_daughter_chapin",
+        "abiah_chapin_hale"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48404983 — Mary Lane Chapin",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — son Moses Chapin (parent link)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — spouse Phineas Chapin",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Orange Chapin, The Chapin genealogy (1862) — Mary Lane dau. Robert Lane; m. Phineas",
+          "url": "https://archive.org/details/chapingenealogyc1862chap/page/44/mode/2up"
+        }
+      ],
+      "aka": [
+        "Mary Lane"
+      ],
+      "spouse_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Moses Chapin** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C650** / **C652**. Maiden **Lane** on FAG title + Orange Chapin 1862 (dau. of Robert Lane, Esq., Newport NH). North Newport Cemetery co-burial with Phineas. FAG b..."
+    },
+    "phineas_chapin": {
+      "id": "phineas_chapin",
+      "slug": "phineas-chapin",
+      "name": "Phineas Chapin",
+      "years": "1755-1849",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_lane_chapin"
+      ],
+      "children": [
+        "mary_thacher_chapin",
+        "infant_daughter_chapin_1787",
+        "elizabeth_chapin_bascom",
+        "moses_chapin",
+        "phinehas_chapin",
+        "sophia_chapin_baker",
+        "orlando_chapin",
+        "henry_chapin_newport",
+        "stillborn_daughter_chapin",
+        "abiah_chapin_hale"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48404988 — Phineas Chapin",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — son Moses Chapin (parent link)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — spouse Mary Lane Chapin",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        },
+        {
+          "label": "Orange Chapin, The Chapin genealogy (1862) — Phineas × Mary Lane; Moses son",
+          "url": "https://archive.org/details/chapingenealogyc1862chap/page/44/mode/2up"
+        }
+      ],
+      "aka": [
+        "Capt. Phinehas Chapin"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Moses Chapin** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C650** / **C651**. North Newport Cemetery with spouse **Mary Lane Chapin**. FAG bidirectional: Moses parents ↔ Phineas/Mary children (Moses + named siblings). Ora..."
+    },
+    "malinda_barrows_stearns": {
+      "id": "malinda_barrows_stearns",
+      "slug": "malinda-barrows-stearns",
+      "name": "Malinda Barrows Stearns",
+      "years": "1787-1824",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [
+        "oliver_stearns"
+      ],
+      "children": [
+        "oliver_lathrop_stearns",
+        "nathan_barrows_stearns",
+        "malinda_stearns_1824"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2019/147/199511937_c02562da-5c7a-4136-b585-9773857913d4.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 199511937 — Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752667 — mother Joanna Porter Barrows",
+          "url": "https://www.findagrave.com/memorial/23752667/joanna-barrows"
+        },
+        {
+          "label": "Dimock Mansfield births — Melinda dau. Lieut. Robert Jr. × Joanna (Porter) b. 7 Jun 1787",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Dimock Mansfield marriages — Oliver Stearns × Melinda Barrows m. 5 Dec 1815",
+          "url": "https://genealogytrails.com/conn/tolland/mansfield_marriages.html"
+        },
+        {
+          "label": "Find A Grave 103361695 — son Deacon Nathan Barrows Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "Find A Grave 103361230 — spouse Oliver Stearns",
+          "url": "https://www.findagrave.com/memorial/103361230/oliver-stearns"
+        }
+      ],
+      "aka": [
+        "Melinda Barrows Stearns",
+        "Malinda Barrows",
+        "Melinda Barrows"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "oliver_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Nathan Barrows Stearns** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C580** / **C582**. Soft parents **CPT Robert Barrows** × **Joanna Porter Barrows** — pack **C665–C669**. Maiden **Barrows**; Dimock birth **Melinda** 7 ..."
+    },
+    "oliver_stearns": {
+      "id": "oliver_stearns",
+      "slug": "oliver-stearns",
+      "name": "Oliver Stearns",
+      "years": "1776-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "shepard_stearns",
+        "olive_hall_porter"
+      ],
+      "spouses": [
+        "malinda_barrows_stearns"
+      ],
+      "children": [
+        "oliver_lathrop_stearns",
+        "nathan_barrows_stearns",
+        "malinda_stearns_1824"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2013/13/103361230_135818095295.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 103361230 — Oliver Stearns",
+          "url": "https://www.findagrave.com/memorial/103361230/oliver-stearns"
+        },
+        {
+          "label": "Find A Grave 127324137 — father Shepard Stearns",
+          "url": "https://www.findagrave.com/memorial/127324137/shepard-stearns"
+        },
+        {
+          "label": "Find A Grave 59812720 — mother Olive Hall Porter",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        },
+        {
+          "label": "Find A Grave 103361695 — son Deacon Nathan Barrows Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "Find A Grave 199511937 — spouse Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        },
+        {
+          "label": "Mansfield CT vital abstracts — parents Shepard × Olive Hall m. 1775",
+          "url": "http://dunhamwilcox.net/ct/mansfield_m3.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "shepard_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_hall_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "malinda_barrows_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Nathan Barrows Stearns** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C580** / **C581**. Soft parents **Shepard Stearns** × **Olive Hall Porter** — pack **C660**. FAG West Lebanon Cemetery; spouse **Malinda *Barrows* Stear..."
+    },
+    "joanna_porter_barrows": {
+      "id": "joanna_porter_barrows",
+      "slug": "joanna-porter-barrows",
+      "name": "Joanna Porter Barrows",
+      "years": "1745-1822",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "experience_porter_jr",
+        "abigail_safford_porter"
+      ],
+      "spouses": [
+        "robert_barrows"
+      ],
+      "children": [
+        "elijah_barrows",
+        "joanna_barrows_1770",
+        "robert_barrows_1772",
+        "nathan_barrows_1775",
+        "abigail_barrows_1777",
+        "dan_barrows",
+        "mary_barrows_wright",
+        "malinda_barrows_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 23752667 — Joanna Porter Barrows",
+          "url": "https://www.findagrave.com/memorial/23752667/joanna-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — daughter Malinda Barrows Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        },
+        {
+          "label": "Find A Grave 23752451 — spouse CPT Robert Barrows",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Dimock Mansfield — Robert Barrows Jr. × Joanna Porter m. 4 Apr 1765 (dau. Experience Porter Jr.)",
+          "url": "https://ldsgenealogy.com/CT/books/Births-baptisms-marriages-and-deaths-from-the-records-of-the-town-and-churches-in-Mansfield-Connecticut-1703-1850-part-11.htm"
+        },
+        {
+          "label": "Dimock Mansfield births — Joanna (Porter) Barrows children incl. Melinda",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Dimock Mansfield births — Joannah dau. Experience Jr. × Abigal (Safford) Porter b. 2 Jun 1744 (Archive.org p.142)",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "WikiTree Porter-21792 — Joannah Porter (pointer; birth day hold)",
+          "url": "https://www.wikitree.com/wiki/Porter-21792"
+        }
+      ],
+      "aka": [
+        "Joanna Porter",
+        "Joannah Porter"
+      ],
+      "parent_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Malinda Barrows Stearns** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C665** / **C667**. Soft parents **Experience Porter Jr.** × **Abigail Safford Porter** — pack **C775–C777**. Maiden **Porter**; Dimock marriage names f..."
+    },
+    "robert_barrows": {
+      "id": "robert_barrows",
+      "slug": "robert-barrows",
+      "name": "CPT Robert Barrows",
+      "years": "1739-1826",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [
+        "joanna_porter_barrows"
+      ],
+      "children": [
+        "elijah_barrows",
+        "joanna_barrows_1770",
+        "robert_barrows_1772",
+        "nathan_barrows_1775",
+        "abigail_barrows_1777",
+        "dan_barrows",
+        "mary_barrows_wright",
+        "malinda_barrows_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 23752451 — CPT Robert Barrows",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr.",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        },
+        {
+          "label": "Find A Grave 140050086 — mother Sibbel Hall Barrows",
+          "url": "https://www.findagrave.com/memorial/140050086/sibbel-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — daughter Malinda Barrows Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        },
+        {
+          "label": "Find A Grave 23752667 — spouse Joanna Porter Barrows",
+          "url": "https://www.findagrave.com/memorial/23752667/joanna-barrows"
+        },
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall); Robart b. May 8, 1739",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Dimock Mansfield births — Lieut. Robert Jr. × Joanna (Porter) children incl. Melinda",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "WikiTree Barrows-194 — Robert Barrows (pointer)",
+          "url": "https://www.wikitree.com/wiki/Barrows-194"
+        }
+      ],
+      "aka": [
+        "Capt. Robert Barrows",
+        "Lieut. Robert Barrows Jr.",
+        "Robert Barrows Jr.",
+        "Robart Barrows"
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Malinda Barrows Stearns** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C665** / **C666**. Soft parents **Jabez Barrows** × **Sibbel Hall Barrows** — pack **C770–C774**. FAG title CPT; Dimock styles **Lieut. Robert, Jr.** /..."
+    },
+    "abigail_safford_porter": {
+      "id": "abigail_safford_porter",
+      "slug": "abigail-safford-porter",
+      "name": "Abigail Safford Porter",
+      "years": "1703–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "experience_porter_jr"
+      ],
+      "children": [
+        "abigail_porter_1729",
+        "elijah_porter_1731",
+        "mary_porter_southworth",
+        "moses_porter",
+        "john_porter_1741",
+        "joanna_porter_barrows"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield — Experience Porter Jr. × Abigal Safford (dau. John Safford of Norwich) m. 29 Nov 1725",
+          "url": "http://genealogytrails.com/conn/tolland/mansfield_marriages.html"
+        },
+        {
+          "label": "Dimock Mansfield births — Children of Experience Jr. × Abigal (Safford) Porter (Archive.org p.142)",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "WikiTree Safford-28 — Abigail (Safford) Porter",
+          "url": "https://www.wikitree.com/wiki/Safford-28"
+        },
+        {
+          "label": "WikiTree Porter-21792 — Joannah Porter (daughter)",
+          "url": "https://www.wikitree.com/wiki/Porter-21792"
+        }
+      ],
+      "aka": [
+        "Abigail Safford",
+        "Abigal Safford"
+      ],
+      "spouse_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Joanna Porter Barrows** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C775** / **C777**. Maiden **Safford**; Dimock marriage names father **John Safford of Norwich**. Dimock children grid with Experience Jr. includes **Joan..."
+    },
+    "experience_porter_jr": {
+      "id": "experience_porter_jr",
+      "slug": "experience-porter-jr",
+      "name": "Experience Porter Jr.",
+      "years": "1702-1744",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "abigail_safford_porter"
+      ],
+      "children": [
+        "abigail_porter_1729",
+        "elijah_porter_1731",
+        "mary_porter_southworth",
+        "moses_porter",
+        "john_porter_1741",
+        "joanna_porter_barrows"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield — Experience Porter Jr. × Abigal Safford m. 29 Nov 1725",
+          "url": "http://genealogytrails.com/conn/tolland/mansfield_marriages.html"
+        },
+        {
+          "label": "Dimock Mansfield births — Children of Experience Jr. × Abigal (Safford) Porter (Archive.org p.142)",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "Dimock Mansfield deaths — Experience Porter Jr. d. 28 Oct 1744",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo"
+        },
+        {
+          "label": "Dimock Mansfield — Robert Barrows Jr. × Joanna Porter (dau. Experience Porter Jr., deceased) m. 4 Apr 1765",
+          "url": "https://ldsgenealogy.com/CT/books/Births-baptisms-marriages-and-deaths-from-the-records-of-the-town-and-churches-in-Mansfield-Connecticut-1703-1850-part-11.htm"
+        },
+        {
+          "label": "WikiTree Porter-2474 — Experience Porter Jr.",
+          "url": "https://www.wikitree.com/wiki/Porter-2474"
+        }
+      ],
+      "aka": [
+        "Experience Porter"
+      ],
+      "spouse_links": [
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Joanna Porter Barrows** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C775** / **C776**. Dimock marriage to **Abigal Safford** (dau. John Safford of Norwich) **29 Nov 1725**; Dimock children include **Joannah b. 2 Jun 1744*..."
+    },
+    "sibbel_hall_barrows": {
+      "id": "sibbel_hall_barrows",
+      "slug": "sibbel-hall-barrows",
+      "name": "Sibbel Hall Barrows",
+      "years": "1716-1769",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "jabez_barrows"
+      ],
+      "children": [
+        "jabez_barrows_jr",
+        "samuel_barrows_1741",
+        "isaac_barrows",
+        "sibbel_barrows_1744",
+        "lydia_barrows_1747",
+        "eunice_barrows_1748",
+        "stephen_barrows",
+        "martha_barrows_storrs",
+        "david_barrows",
+        "samuel_barrows_1769",
+        "robert_barrows"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 140050086 — Sibbel Hall Barrows",
+          "url": "https://www.findagrave.com/memorial/140050086/sibbel-barrows"
+        },
+        {
+          "label": "Find A Grave 23752451 — son CPT Robert Barrows (parent link)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — spouse Jabez Barrows Sr.",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        },
+        {
+          "label": "Dimock Mansfield — Jabez × Sibbel (Hall) children incl. Robart 8 May 1739",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Dimock Mansfield marriages — Sibbel dau. Isaac Hall × Jabez m. 20 May 1736",
+          "url": "http://dunhamwilcox.net/ct/mansfield_m1.htm"
+        },
+        {
+          "label": "Dimock Mansfield deaths — Sybel, wife of Jabez Barrows, d. July 20, 1769",
+          "url": "http://dunhamwilcox.net/ct/mansfield_d1.htm"
+        },
+        {
+          "label": "WikiTree Hall-11330 — Sybil (Hall) Barrows (pointer)",
+          "url": "https://www.wikitree.com/wiki/Hall-11330"
+        }
+      ],
+      "aka": [
+        "Sybil Hall Barrows",
+        "Sybel Hall Barrows",
+        "Sibbel Hall"
+      ],
+      "spouse_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **CPT Robert Barrows** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C770** / **C772**. Maiden **Hall** (Dimock: daughter of **Isaac Hall** of Mansfield). Dimock births name **Robart, b. May 8, 1739**; Dimock deaths: **Sybel,..."
+    },
+    "jabez_barrows": {
+      "id": "jabez_barrows",
+      "slug": "jabez-barrows",
+      "name": "Jabez Barrows",
+      "years": "1711-1792",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sibbel_hall_barrows"
+      ],
+      "children": [
+        "jabez_barrows_jr",
+        "samuel_barrows_1741",
+        "isaac_barrows",
+        "sibbel_barrows_1744",
+        "lydia_barrows_1747",
+        "eunice_barrows_1748",
+        "stephen_barrows",
+        "martha_barrows_storrs",
+        "david_barrows",
+        "samuel_barrows_1769",
+        "robert_barrows"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 23752603 — Jabez Barrows Sr.",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        },
+        {
+          "label": "Find A Grave 23752451 — son CPT Robert Barrows (parent link)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 140050086 — spouse Sibbel Hall Barrows",
+          "url": "https://www.findagrave.com/memorial/140050086/sibbel-barrows"
+        },
+        {
+          "label": "Dimock Mansfield — Jabez × Sibbel (Hall) children incl. Robart 8 May 1739",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Dimock Mansfield marriages — Jabez Barrows × Sibbel dau. Isaac Hall m. 20 May 1736",
+          "url": "http://dunhamwilcox.net/ct/mansfield_m1.htm"
+        },
+        {
+          "label": "WikiTree Barrows-191 — Jabez Barrows (pointer)",
+          "url": "https://www.wikitree.com/wiki/Barrows-191"
+        }
+      ],
+      "aka": [
+        "Jabez Barrows Sr."
+      ],
+      "spouse_links": [
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **CPT Robert Barrows** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C770** / **C771**. FAG Olde Mansfield Center with son Robert linked both ways. Dimock Mansfield births name **Robart, b. May 8, 1739** among children of **J..."
+    },
+    "olive_hall_porter": {
+      "id": "olive_hall_porter",
+      "slug": "olive-hall-porter",
+      "name": "Olive Hall Porter",
+      "years": "1753-1833",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [
+        "shepard_stearns"
+      ],
+      "children": [
+        "oliver_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59812720 — Olive Hall Porter",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 46682784 — mother Martha Sophia Storrs Hall",
+          "url": "https://www.findagrave.com/memorial/46682784/martha_sophia-hall"
+        },
+        {
+          "label": "Find A Grave 103361230 — son Oliver Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/103361230/oliver-stearns"
+        },
+        {
+          "label": "Find A Grave 127324137 — spouse Shepard Stearns",
+          "url": "https://www.findagrave.com/memorial/127324137/shepard-stearns"
+        },
+        {
+          "label": "Mansfield CT vital abstracts — Olive Hall dau. Capt. Nathaniel Hall m. Shepard Stearns 12 Jan 1775",
+          "url": "http://dunhamwilcox.net/ct/mansfield_m3.htm"
+        }
+      ],
+      "aka": [
+        "Olive Hall Stearns",
+        "Olive Stearns",
+        "Olive Hall",
+        "Olive Porter"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Oliver Stearns** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C660** / **C662**; parents soft **C725–C729**. Maiden **Hall** (FAG title *Hall*; Mansfield VR “Olive Hall, daughter of Capt. Nathaniel Hall”). Parents **Capt N..."
+    },
+    "shepard_stearns": {
+      "id": "shepard_stearns",
+      "slug": "shepard-stearns",
+      "name": "Shepard Stearns",
+      "years": "1750-1776",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "boaz_stearns",
+        "lydia_shepard_stearns"
+      ],
+      "spouses": [
+        "olive_hall_porter"
+      ],
+      "children": [
+        "oliver_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0009"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 127324137 — Shepard Stearns",
+          "url": "https://www.findagrave.com/memorial/127324137/shepard-stearns"
+        },
+        {
+          "label": "Find A Grave 103361230 — son Oliver Stearns (parent link)",
+          "url": "https://www.findagrave.com/memorial/103361230/oliver-stearns"
+        },
+        {
+          "label": "Find A Grave 59812720 — spouse Olive Hall Porter",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        },
+        {
+          "label": "Mansfield CT vital abstracts — Shepard Stearns × Olive Hall m. 12 Jan 1775",
+          "url": "http://dunhamwilcox.net/ct/mansfield_m3.htm"
+        },
+        {
+          "label": "WikiTree Stearns-886 — Shepherd Stearns (pointer; aka Shepherd)",
+          "url": "https://www.wikitree.com/wiki/Stearns-886"
+        },
+        {
+          "label": "Van Wagenen Stearns genealogy — Shepherd son of Dea. Boaz × Lydia",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "Mansfield Historical Society — Boaz × Lydia moved 1772 with youngest son Shepard",
+          "url": "https://mansfieldct-history.org/boaz-stearns-house-chestnut-hill/"
+        },
+        {
+          "label": "Find A Grave 11591118 — proposed father Boaz Stearns",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        },
+        {
+          "label": "Find A Grave 11591124 — proposed mother Lydia Shepard Stearns",
+          "url": "https://www.findagrave.com/memorial/11591124/lydia-stearns"
+        },
+        {
+          "label": "FT-0009 — Windham Phoenix Boaz notice (lost wife + dependent son)",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        }
+      ],
+      "aka": [
+        "Shepherd Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "olive_hall_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Oliver Stearns** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C660** / **C661**. Soft parents **Boaz Stearns** × **Lydia Shepard Stearns** — pack **C720**. FAG: b. **5 Oct 1750** CT; d. **Sep 1776** (aged 25); burial unkno..."
+    },
+    "martha_sophia_storrs_hall": {
+      "id": "martha_sophia_storrs_hall",
+      "slug": "martha-sophia-storrs-hall",
+      "name": "Martha Sophia Storrs Hall",
+      "years": "1728-1808",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "nathaniel_hall"
+      ],
+      "children": [
+        "nathaniel_hall_jr",
+        "deborah_hall_warner",
+        "ruth_hall_storrs",
+        "olive_hall_porter",
+        "martha_hall_barrows",
+        "richard_hall",
+        "asahel_hall",
+        "mary_hall_barrows"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 46682784 — Martha Sophia Storrs Hall",
+          "url": "https://www.findagrave.com/memorial/46682784/martha_sophia-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — daughter Olive Hall Porter (parent link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        },
+        {
+          "label": "Find A Grave 109505882 — spouse Capt Nathaniel Hall",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "WikiTree Storrs-137 — Martha Sophia (Storrs) Hall (pointer)",
+          "url": "https://www.wikitree.com/wiki/Storrs-137"
+        }
+      ],
+      "aka": [
+        "Martha Storrs",
+        "Martha Sophia Storrs",
+        "Martha Hall"
+      ],
+      "spouse_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Olive Hall Porter** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C725** / **C727**. Maiden **Storrs**. FAG: b. **28 Apr 1728** Mansfield; d. **16 Jun 1808** æ 80; Olde Mansfield Center Cemetery (stone: wife of Capt Nath’l ..."
+    },
+    "nathaniel_hall": {
+      "id": "nathaniel_hall",
+      "slug": "nathaniel-hall",
+      "name": "Capt Nathaniel Hall",
+      "years": "1724-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "martha_sophia_storrs_hall"
+      ],
+      "children": [
+        "nathaniel_hall_jr",
+        "deborah_hall_warner",
+        "ruth_hall_storrs",
+        "olive_hall_porter",
+        "martha_hall_barrows",
+        "richard_hall",
+        "asahel_hall",
+        "mary_hall_barrows"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 109505882 — Capt Nathaniel Hall",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — daughter Olive Hall Porter (parent link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        },
+        {
+          "label": "Find A Grave 46682784 — spouse Martha Sophia Storrs Hall",
+          "url": "https://www.findagrave.com/memorial/46682784/martha_sophia-hall"
+        },
+        {
+          "label": "Mansfield CT vital abstracts — Olive Hall dau. Capt. Nathaniel Hall m. Shepard Stearns",
+          "url": "http://dunhamwilcox.net/ct/mansfield_m3.htm"
+        },
+        {
+          "label": "WikiTree Hall-1586 — Capt Nathaniel Hall (pointer)",
+          "url": "https://www.wikitree.com/wiki/Hall-1586"
+        }
+      ],
+      "aka": [
+        "Nathaniel Hall",
+        "Capt. Nathaniel Hall",
+        "Nathanial Hall"
+      ],
+      "spouse_links": [
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Olive Hall Porter** (Morganne ascent gen-8 via Oliver Stearns). Soft-ingest **Probable** / `verified: false` — pack **C725** / **C726**. FAG: b. **8 Feb 1724**; d. **27 Jul 1810** New Haven VT (stone: 87th year); Evergreen Cemetery. Spouse **Martha Storrs*..."
+    },
+    "lydia_shepard_stearns": {
+      "id": "lydia_shepard_stearns",
+      "slug": "lydia-shepard-stearns",
+      "name": "Lydia Shepard Stearns",
+      "years": "1708-1789",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [
+        "boaz_stearns"
+      ],
+      "children": [
+        "samuel_stearns",
+        "mercy_stearns_stevens",
+        "oliver_stearns_1732",
+        "miriam_stearns",
+        "sarah_stearns_smith",
+        "shepard_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0009"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 11591124 — Lydia Shepard Stearns",
+          "url": "https://www.findagrave.com/memorial/11591124/lydia-stearns"
+        },
+        {
+          "label": "Find A Grave 11591118 — spouse Boaz Stearns",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        },
+        {
+          "label": "Plainfield CT Barbour — Lydia d. Isaac & Hannah b. 20 May 1708",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "Plainfield CT Barbour — Boaz Stearns m. Lidiah Shepard 18 Nov 1725",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "Van Wagenen Stearns genealogy — Lydia Shepard/Shepherd wife of Dea. Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "Mansfield Historical Society — Boaz × Lydia + son Shepard 1772 move",
+          "url": "https://mansfieldct-history.org/boaz-stearns-house-chestnut-hill/"
+        },
+        {
+          "label": "WikiTree Shepard-583 — Lydia (Shepard) Stearns",
+          "url": "https://www.wikitree.com/wiki/Shepard-583"
+        },
+        {
+          "label": "Find A Grave 106559540 — proposed father Isaac Shepard",
+          "url": "https://www.findagrave.com/memorial/106559540/isaac-shepard"
+        },
+        {
+          "label": "Find A Grave 106563482 — proposed mother Hannah Spalding Shepard",
+          "url": "https://www.findagrave.com/memorial/106563482/hannah-shepard"
+        }
+      ],
+      "aka": [
+        "Lydia Shepard",
+        "Lydia Shepherd",
+        "Lidiah Shepard"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Shepard Stearns** (Morganne ascent gen-8). Soft parents **Isaac Shepard** × **Hannah Spalding Shepard** — pack **C905**. Soft-ingest **Probable** / `verified: false` — also **C720** / **C722**. Maiden **Shepard**. Plainfield Barbour: **Lydia, d. Isaac & Ha..."
+    },
+    "boaz_stearns": {
+      "id": "boaz_stearns",
+      "slug": "boaz-stearns",
+      "name": "Boaz Stearns",
+      "years": "1702-1796",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [
+        "lydia_shepard_stearns"
+      ],
+      "children": [
+        "samuel_stearns",
+        "mercy_stearns_stevens",
+        "oliver_stearns_1732",
+        "miriam_stearns",
+        "sarah_stearns_smith",
+        "shepard_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0009"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 11591118 — Boaz Stearns",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        },
+        {
+          "label": "Find A Grave 11591124 — spouse Lydia Shepard Stearns",
+          "url": "https://www.findagrave.com/memorial/11591124/lydia-stearns"
+        },
+        {
+          "label": "Van Wagenen Stearns genealogy — Dea. Boaz × Lydia Shepard; son Shepherd",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "Mansfield Historical Society — Boaz Stearns House (1772 move with Lydia + Shepard)",
+          "url": "https://mansfieldct-history.org/boaz-stearns-house-chestnut-hill/"
+        },
+        {
+          "label": "WikiTree Stearns-881 — Boaz Stearns",
+          "url": "https://www.wikitree.com/wiki/Stearns-881"
+        },
+        {
+          "label": "FT-0009 — Windham Phoenix death notice (via Van Wagenen)",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        },
+        {
+          "label": "Find A Grave 84627767 — mother Mary Brown Stearns",
+          "url": "https://www.findagrave.com/memorial/84627767/mary-stearns"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel Stearns",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "WikiTree Browne-805 — mother Mary (Browne) Stearns",
+          "url": "https://www.wikitree.com/wiki/Browne-805"
+        }
+      ],
+      "aka": [
+        "Deacon Boaz Stearns",
+        "Dea. Boaz Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Shepard Stearns** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C720** / **C721**. Soft parents **Samuel Stearns (1666)** × **Mary Browne Stearns** — pack **C900–C904**. Deacon; Dedham birth; Killingly representative; remov..."
+    },
+    "hannah_spalding_shepard": {
+      "id": "hannah_spalding_shepard",
+      "slug": "hannah-spalding-shepard",
+      "name": "Hannah Spalding Shepard",
+      "years": "1674-1747",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "isaac_shepard"
+      ],
+      "children": [
+        "hannah_shepard_marsh",
+        "jonas_shepard",
+        "isaac_shepard_jr",
+        "joseph_shepard",
+        "abigail_shepard",
+        "samuel_shepard",
+        "lydia_shepard_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — children of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "Find A Grave 106563482 — Hannah Spalding Shepard",
+          "url": "https://www.findagrave.com/memorial/106563482/hannah-shepard"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Hannah (Spalding) Shepard",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        },
+        {
+          "label": "WikiTree Shepard-583 — daughter Lydia (Shepard) Stearns",
+          "url": "https://www.wikitree.com/wiki/Shepard-583"
+        },
+        {
+          "label": "Shepard Families of New England vol.1 (Jacobus) — Archive.org",
+          "url": "https://archive.org/details/shepardfamilieso01shep"
+        }
+      ],
+      "aka": [
+        "Hannah Spalding",
+        "Hannah Spaulding",
+        "Hannah Shepard"
+      ],
+      "spouse_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Lydia Shepard Stearns** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C905** / **C907**. Maiden **Spalding** (aka Spaulding). b. **~1674** Chelmsford (WT); d. **23 Jan 1747** Killingly; Old Plainfield. Daughter of Joseph Sp..."
+    },
+    "isaac_shepard": {
+      "id": "isaac_shepard",
+      "slug": "isaac-shepard",
+      "name": "Isaac Shepard",
+      "years": "1669-1748",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hannah_spalding_shepard"
+      ],
+      "children": [
+        "hannah_shepard_marsh",
+        "jonas_shepard",
+        "isaac_shepard_jr",
+        "joseph_shepard",
+        "abigail_shepard",
+        "samuel_shepard",
+        "lydia_shepard_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — children of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "Find A Grave 106559540 — Isaac Shepard",
+          "url": "https://www.findagrave.com/memorial/106559540/isaac-shepard"
+        },
+        {
+          "label": "WikiTree Shepard-1623 — Isaac Shepard",
+          "url": "https://www.wikitree.com/wiki/Shepard-1623"
+        },
+        {
+          "label": "WikiTree Shepard-583 — daughter Lydia (Shepard) Stearns",
+          "url": "https://www.wikitree.com/wiki/Shepard-583"
+        },
+        {
+          "label": "Shepard Families of New England vol.1 (Jacobus) — Archive.org",
+          "url": "https://archive.org/details/shepardfamilieso01shep"
+        }
+      ],
+      "aka": [
+        "Isaac Shepherd"
+      ],
+      "spouse_links": [
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Lydia Shepard Stearns** (Morganne ascent gen-9 via Boaz×Lydia). Soft-ingest **Probable** / `verified: false` — pack **C905** / **C906**. b. **30 Jun 1669** Concord; d. **23 Jan 1748** Killingly (WT/FAG); Old Plainfield burial cite. m. **Hannah Spalding** b..."
+    },
+    "mary_browne_stearns": {
+      "id": "mary_browne_stearns",
+      "slug": "mary-browne-stearns",
+      "name": "Mary Browne Stearns",
+      "years": "1678-1731",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "samuel_stearns_1666"
+      ],
+      "children": [
+        "samuel_stearns_jr_1697",
+        "mary_stearns_harris",
+        "nathaniel_stearns_1700",
+        "hannah_stearns_wheeler",
+        "ebenezer_stearns_1706",
+        "mehitable_stearns_snowden",
+        "boaz_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 84627767 — Mary Brown Stearns",
+          "url": "https://www.findagrave.com/memorial/84627767/mary-stearns"
+        },
+        {
+          "label": "Van Wagenen Stearns genealogy — Mary Brown wife of Samuel; mother of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Browne-805 — Mary (Browne) Stearns",
+          "url": "https://www.wikitree.com/wiki/Browne-805"
+        },
+        {
+          "label": "Concord VR (Tolman) — m. Samuel Stearns 9 Jul 1696",
+          "url": "https://archive.org/details/concordmassachus00conc"
+        },
+        {
+          "label": "Find A Grave 11591118 — son Boaz Stearns (identity; not on FAG child grid)",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        }
+      ],
+      "aka": [
+        "Mary Brown Stearns",
+        "Mary Browne",
+        "Mary Brown"
+      ],
+      "spouse_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Boaz Stearns** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C900** / **C902**. Maiden **Browne/Brown**; dau. of Boaz Brown × Mary Winship on FAG/WT (gen-10 **parked**). Birth **3 May 1678** Concord (WT/Concord VR) vs FAG *..."
+    },
+    "samuel_stearns_1666": {
+      "id": "samuel_stearns_1666",
+      "slug": "samuel-stearns-1666",
+      "name": "Samuel Stearns",
+      "years": "1666-1727",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_browne_stearns"
+      ],
+      "children": [
+        "samuel_stearns_jr_1697",
+        "mary_stearns_harris",
+        "nathaniel_stearns_1700",
+        "hannah_stearns_wheeler",
+        "ebenezer_stearns_1706",
+        "mehitable_stearns_snowden",
+        "boaz_stearns"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 84627515 — Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        },
+        {
+          "label": "Van Wagenen Stearns genealogy — Samuel × Mary Brown; father of Dea. Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — Samuel Stearns",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Concord VR (Tolman) — m. Mary Brown 9 Jul 1696 (via Archive.org / WT)",
+          "url": "https://archive.org/details/concordmassachus00conc"
+        },
+        {
+          "label": "Find A Grave 11591118 — son Boaz Stearns (identity; not on FAG child grid)",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        }
+      ],
+      "aka": [
+        "Deacon Samuel Stearns",
+        "Dea. Samuel Stearns"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Boaz Stearns** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C900** / **C901**. Id **`samuel_stearns_1666`** disambiguates grandson `samuel_stearns` (Boaz×Lydia, 1726). Dea. of Plainfield First Church; Dedham to Plainfield ..."
+    },
+    "phebe_lewis_allen": {
+      "id": "phebe_lewis_allen",
+      "slug": "phebe-lewis-allen",
+      "name": "Phebe Lewis Allen",
+      "years": "1814-1903",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "leland_lewis",
+        "etherlinda_huntley_lewis"
+      ],
+      "spouses": [
+        "stephen_allen"
+      ],
+      "children": [
+        "carl_addison_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2017/184/180998699_1499195612.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0019"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 180998699 — Phebe Lewis Allen",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        },
+        {
+          "label": "Find A Grave 69981102 — son Carl Addison Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/69981102/carl_addison-allen"
+        },
+        {
+          "label": "Find A Grave 180998262 — spouse Stephen Allen",
+          "url": "https://www.findagrave.com/memorial/180998262/stephen-allen"
+        },
+        {
+          "label": "Find A Grave 154318730 — father Leland Lewis",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 154319101 — mother Etherlinda Huntley Lewis",
+          "url": "https://www.findagrave.com/memorial/154319101/etherlinda-lewis"
+        }
+      ],
+      "aka": [
+        "Phebe Lewis",
+        "Phoebe Lewis Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "leland_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "etherlinda_huntley_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "stephen_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Carl Addison Allen** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C510** / **C512**. Maiden **Lewis** on FAG title markup. Bidirectional FAG: Carl parents ↔ Phebe children. Spouse **Stephen Allen**; FAG bio: m. **25 Mar 18..."
+    },
+    "stephen_allen": {
+      "id": "stephen_allen",
+      "slug": "stephen-allen",
+      "name": "Stephen Allen",
+      "years": "1810-1896",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [
+        "phebe_lewis_allen"
+      ],
+      "children": [
+        "carl_addison_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2017/184/180998262_1499194797.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0019"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 180998262 — Stephen Allen",
+          "url": "https://www.findagrave.com/memorial/180998262/stephen-allen"
+        },
+        {
+          "label": "Find A Grave 69981102 — son Carl Addison Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/69981102/carl_addison-allen"
+        },
+        {
+          "label": "Find A Grave 180998699 — spouse Phebe Lewis Allen",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        },
+        {
+          "label": "Find A Grave 89647339 — mother Catherine Littlehale Allen",
+          "url": "https://www.findagrave.com/memorial/89647339/catherine-allen"
+        },
+        {
+          "label": "History of Sand Pond — Penuel 1822; son Stephen 1840",
+          "url": "https://www.angelfire.com/nh/sandpond/History.html"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "phebe_lewis_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Carl Addison Allen** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C510** / **C511**. Gen-6 parents soft **Penuel Allen** × **Catherine Littlehale Allen** — pack **C590**. East Lempster Cemetery. FAG bidirectional: Carl par..."
+    },
+    "etherlinda_huntley_lewis": {
+      "id": "etherlinda_huntley_lewis",
+      "slug": "etherlinda-huntley-lewis",
+      "name": "Etherlinda Huntley Lewis",
+      "years": "1798-1872",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "russell_huntley",
+        "amy_miller_huntley"
+      ],
+      "spouses": [
+        "leland_lewis"
+      ],
+      "children": [
+        "phebe_lewis_allen",
+        "lucinda_lewis_herrick",
+        "hubbard_r_lewis"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2015/299/154319101_1445988165.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 154319101 — Etherlinda Huntley Lewis",
+          "url": "https://www.findagrave.com/memorial/154319101/etherlinda-lewis"
+        },
+        {
+          "label": "Find A Grave 180998699 — daughter Phebe Lewis Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        },
+        {
+          "label": "Find A Grave 154318730 — spouse Leland Lewis",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 72920676 — father Russel Huntly",
+          "url": "https://www.findagrave.com/memorial/72920676/russel-huntly"
+        },
+        {
+          "label": "Find A Grave 72921086 — mother Amy Miller Huntley (Erthelinda 1798)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        }
+      ],
+      "aka": [
+        "Ethelinda Lewis",
+        "Ethelinda Huntley",
+        "Etherlinda Huntley",
+        "Erthelinda Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "russell_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "amy_miller_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "leland_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Phebe Lewis Allen** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C595** / **C597**. Maiden **Huntley** on FAG title. Memorial name **Etherlinda**; Phebe FAG bio spells **Ethelinda**; mother Amy bio **Erthelinda** — same pe..."
+    },
+    "leland_lewis": {
+      "id": "leland_lewis",
+      "slug": "leland-lewis",
+      "name": "Leland Lewis",
+      "years": "1791-1872",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_mack_lewis",
+        "abigail_gee_lewis"
+      ],
+      "spouses": [
+        "etherlinda_huntley_lewis"
+      ],
+      "children": [
+        "phebe_lewis_allen",
+        "lucinda_lewis_herrick",
+        "hubbard_r_lewis"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2015/299/154318730_1445987666.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 154318730 — Leland Lewis",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 180998699 — daughter Phebe Lewis Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        },
+        {
+          "label": "Find A Grave 154319101 — spouse Etherlinda Huntley Lewis",
+          "url": "https://www.findagrave.com/memorial/154319101/etherlinda-lewis"
+        },
+        {
+          "label": "Find A Grave 154352894 — proposed father John Mack Lewis",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        },
+        {
+          "label": "Find A Grave 154353192 — proposed mother Abigail Gee Lewis",
+          "url": "https://www.findagrave.com/memorial/154353192/abigail-lewis"
+        },
+        {
+          "label": "Find A Grave 154353390 — proposed brother William Lewis (matching bio)",
+          "url": "https://www.findagrave.com/memorial/154353390/william-lewis"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_mack_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_gee_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "etherlinda_huntley_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Phebe Lewis Allen** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C595** / **C596**. FAG bidirectional: Phebe parents grid ↔ Leland children (Phebe; Lucinda Lewis Herrick; Hubbard R. Lewis). Spouse **Etherlinda Huntley Lewi..."
+    },
+    "amy_miller_huntley": {
+      "id": "amy_miller_huntley",
+      "slug": "amy-miller-huntley",
+      "name": "Amy Miller Huntley",
+      "years": "1762-1829",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [
+        "russell_huntley"
+      ],
+      "children": [
+        "elijah_huntley",
+        "phebe_huntley",
+        "luther_huntley",
+        "hubbard_huntley",
+        "etherlinda_huntley_lewis"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 72921086 — Amy Miller Huntley",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "Find A Grave 20825188 — father Capt Nicodemus Miller",
+          "url": "https://www.findagrave.com/memorial/20825188/nicodemus-miller"
+        },
+        {
+          "label": "Find A Grave 20825409 — mother Phebe Huntley Miller",
+          "url": "https://www.findagrave.com/memorial/20825409/phebe-miller"
+        },
+        {
+          "label": "Find A Grave 72920676 — spouse Russel Huntly",
+          "url": "https://www.findagrave.com/memorial/72920676/russel-huntly"
+        },
+        {
+          "label": "Find A Grave 154319101 — daughter Etherlinda (bio Anna Miller)",
+          "url": "https://www.findagrave.com/memorial/154319101/etherlinda-lewis"
+        },
+        {
+          "label": "WikiTree Miller-39699 — Amy (Miller) Huntley",
+          "url": "https://www.wikitree.com/wiki/Miller-39699"
+        },
+        {
+          "label": "Genealogy of New England — Ann Miller × Russell Huntley",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "Marlow Historical Society Fall 2022 — Ama Miller Huntley",
+          "url": "https://www.marlownewhampshire.org/resources/MHS%20Fall%202022%20Newsletter.pdf"
+        }
+      ],
+      "aka": [
+        "Anna Miller Huntley",
+        "Ama Miller Huntley",
+        "Ann Miller Huntley",
+        "Alice Miller Huntley",
+        "Amy Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "russell_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Etherlinda Huntley Lewis** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C635** / **C637**. Parents **Nicodemus Miller** × **Phebe Huntley Miller** soft-climbed **C715–C719** (FAG parent links both ways). Maiden **Miller**;..."
+    },
+    "russell_huntley": {
+      "id": "russell_huntley",
+      "slug": "russell-huntley",
+      "name": "Russell Huntley",
+      "years": "1758-1808",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [
+        "amy_miller_huntley"
+      ],
+      "children": [
+        "elijah_huntley",
+        "phebe_huntley",
+        "luther_huntley",
+        "hubbard_huntley",
+        "etherlinda_huntley_lewis"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825331 — father Nathan Huntley Sr.",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 20825349 — mother Lucy Smith Huntley",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        },
+        {
+          "label": "WikiTree Huntley-1413 — Nathan × Lucy (Russell child)",
+          "url": "https://www.wikitree.com/wiki/Huntley-1413"
+        },
+        {
+          "label": "Find A Grave 72920676 — Russel Huntly",
+          "url": "https://www.findagrave.com/memorial/72920676/russel-huntly"
+        },
+        {
+          "label": "Find A Grave 72921086 — spouse Amy Miller Huntley",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "Find A Grave 154319101 — daughter Etherlinda Huntley Lewis (bio parents)",
+          "url": "https://www.findagrave.com/memorial/154319101/etherlinda-lewis"
+        },
+        {
+          "label": "Find A Grave 160953066 — son Elijah Huntley (parent link)",
+          "url": "https://www.findagrave.com/memorial/160953066/elijah-huntley"
+        },
+        {
+          "label": "Genealogy of New England — Russell Huntley × Ann Miller",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "Marlow Historical Society Fall 2022 — Russell × Ama Miller Huntley",
+          "url": "https://www.marlownewhampshire.org/resources/MHS%20Fall%202022%20Newsletter.pdf"
+        }
+      ],
+      "aka": [
+        "Russel Huntly",
+        "Russel Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "amy_miller_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Etherlinda Huntley Lewis** (Morganne ascent gen-7); parents soft **Nathan Huntley × Lucy Smith Huntley** (gen-8, pack **C710**). Soft-ingest **Probable** / `verified: false` — pack **C635** / **C636**. FAG memorial title **Russel Huntly**; standard spellin..."
+    },
+    "phebe_huntley_miller": {
+      "id": "phebe_huntley_miller",
+      "slug": "phebe-huntley-miller",
+      "name": "Phebe Huntley Miller",
+      "years": "1722-1797",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [
+        "nicodemus_miller"
+      ],
+      "children": [
+        "lemuel_miller",
+        "esther_miller_munsell",
+        "pathama_miller",
+        "phebe_miller_mack",
+        "bethuel_miller",
+        "eunice_miller",
+        "amy_miller_huntley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825409 — Phebe Huntley Miller",
+          "url": "https://www.findagrave.com/memorial/20825409/phebe-miller"
+        },
+        {
+          "label": "Find A Grave 72921086 — daughter Amy Miller Huntley (parent link)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Phebe Huntley × Nicodemus Miller",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Huntley-733 — father Aaron Huntley Jr.",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree DeWolf-119 — mother Deborah (DeWolf) Huntley",
+          "url": "https://www.wikitree.com/wiki/DeWolf-119"
+        },
+        {
+          "label": "Genealogy of New England — parents Aaron Huntley × Deborah DeWolf",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Phebe Huntley",
+        "Phebe Miller"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Amy Miller Huntley** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C715** / **C717**. Maiden **Huntley**; West End with Nicodemus. Bidirectional FAG parent link from Amy. **Not** the same person as granddaughter **Phebe Hun..."
+    },
+    "nicodemus_miller": {
+      "id": "nicodemus_miller",
+      "slug": "nicodemus-miller",
+      "name": "Capt. Nicodemus Miller",
+      "years": "1715-1781",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_miller",
+        "joanna_alger_miller"
+      ],
+      "spouses": [
+        "phebe_huntley_miller"
+      ],
+      "children": [
+        "lemuel_miller",
+        "esther_miller_munsell",
+        "pathama_miller",
+        "phebe_miller_mack",
+        "bethuel_miller",
+        "eunice_miller",
+        "amy_miller_huntley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825188 — Capt Nicodemus Miller",
+          "url": "https://www.findagrave.com/memorial/20825188/nicodemus-miller"
+        },
+        {
+          "label": "Find A Grave 72921086 — daughter Amy Miller Huntley (parent link)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "WikiTree Miller-39685 — Nicodemus Miller",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        },
+        {
+          "label": "Genealogy of New England — Nicodemus Miller × Phebe Huntley",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "Genealogy of New England — Robert Millard × Joanna Alger",
+          "url": "http://www.genealogyofnewengland.com/f_9a8.htm"
+        },
+        {
+          "label": "WikiTree Beckwith-100 — Joanna Alger mother of Nicodemus",
+          "url": "https://www.wikitree.com/wiki/Beckwith-100"
+        },
+        {
+          "label": "CTGenWeb New London queries — Bob Miller 1996",
+          "url": "http://www.ctgenweb.org/county/conewlondon/nlquer96.htm"
+        }
+      ],
+      "aka": [
+        "Nicodemus Miller",
+        "Nichodemus Miller"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_alger_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Amy Miller Huntley** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C715** / **C716**. Parents soft **Robert Miller** × **Joanna Alger Miller** (**C840–C844**) — **not** WT’s Lydia Roach (m. after ~1725; chronology fail). Ca..."
+    },
+    "deborah_dewolf_huntley": {
+      "id": "deborah_dewolf_huntley",
+      "slug": "deborah-dewolf-huntley",
+      "name": "Deborah DeWolf Huntley",
+      "years": "1690-1748",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "aaron_huntley_jr"
+      ],
+      "children": [
+        "hannah_huntley_mack",
+        "aaron_huntley_iii",
+        "solomon_huntley",
+        "deborah_huntley_gee",
+        "ruth_huntley",
+        "stephen_huntley",
+        "phebe_huntley_miller",
+        "esther_huntley_robbins",
+        "nathan_huntley",
+        "jemima_huntley_lewis",
+        "timothy_huntley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree DeWolf-119 — Deborah (DeWolf) Huntley",
+          "url": "https://www.wikitree.com/wiki/DeWolf-119"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — daughter Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Phebe parents Aaron × Deborah DeWolf",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "Find A Grave 20825331 — son Nathan Huntley Sr. (parent link note)",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        }
+      ],
+      "aka": [
+        "Deborah DeWolf",
+        "Debra DeWolf",
+        "Deborah Huntley"
+      ],
+      "spouse_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Phebe Huntley Miller** (Morganne ascent gen-9 via Amy Miller). Soft-ingest **Probable** / `verified: false` — pack **C845** / **C847**. Maiden **DeWolf** (aka Debra); b. **25 Jul 1690** Lyme (Barbour cite on WT); survived husband (d. **aft 1748** — death y..."
+    },
+    "aaron_huntley_jr": {
+      "id": "aaron_huntley_jr",
+      "slug": "aaron-huntley-jr",
+      "name": "Aaron Huntley Jr.",
+      "years": "1680-1748",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "deborah_dewolf_huntley"
+      ],
+      "children": [
+        "hannah_huntley_mack",
+        "aaron_huntley_iii",
+        "solomon_huntley",
+        "deborah_huntley_gee",
+        "ruth_huntley",
+        "stephen_huntley",
+        "phebe_huntley_miller",
+        "esther_huntley_robbins",
+        "nathan_huntley",
+        "jemima_huntley_lewis",
+        "timothy_huntley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr.",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — daughter Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Phebe parents Aaron × Deborah DeWolf",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "Find A Grave 20825331 — son Nathan Huntley Sr. (parent link note)",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        }
+      ],
+      "aka": [
+        "Aaron Huntley"
+      ],
+      "spouse_links": [
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Phebe Huntley Miller** (Morganne ascent gen-9 via Amy Miller). Soft-ingest **Probable** / `verified: false` — pack **C845** / **C846**. Also father of **Nathan Huntley** (Russell Huntley gen-8) — sibling wire this pass. b. **1 Dec 1680** Lyme; d. **26 Sep ..."
+    },
+    "joanna_alger_miller": {
+      "id": "joanna_alger_miller",
+      "slug": "joanna-alger-miller",
+      "name": "Joanna Alger Miller",
+      "years": "1693–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "robert_miller"
+      ],
+      "children": [
+        "elisha_miller",
+        "eliphalet_miller",
+        "experience_miller",
+        "nicodemus_miller"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Joanna Alger × Robert Millard",
+          "url": "http://www.genealogyofnewengland.com/f_9a8.htm"
+        },
+        {
+          "label": "Genealogy of New England — mother of Nicodemus Miller",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Beckwith-100 — Joanna Alger mother of Nicodemus",
+          "url": "https://www.wikitree.com/wiki/Beckwith-100"
+        },
+        {
+          "label": "CTGenWeb New London queries — Bob Miller 1996",
+          "url": "http://www.ctgenweb.org/county/conewlondon/nlquer96.htm"
+        }
+      ],
+      "aka": [
+        "Joanna Alger",
+        "Johanna Alger"
+      ],
+      "spouse_links": [
+        {
+          "id": "robert_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Capt. Nicodemus Miller** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C840** / **C842**. Maiden **Alger**; Gene ~**1693** Lyme (dau. Roger Alger × Elizabeth Innis — gen-10 parked). Chronology: Mary Beckwith d. **18 Aug 171..."
+    },
+    "robert_miller": {
+      "id": "robert_miller",
+      "slug": "robert-miller",
+      "name": "Robert Miller",
+      "years": "1680-1752",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "joanna_alger_miller"
+      ],
+      "children": [
+        "elisha_miller",
+        "eliphalet_miller",
+        "experience_miller",
+        "nicodemus_miller"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Miller-5884 — Robert Miller of Lyme",
+          "url": "https://www.wikitree.com/wiki/Miller-5884"
+        },
+        {
+          "label": "WikiTree Beckwith-100 — Mary Beckwith Miller (remarriage narrative)",
+          "url": "https://www.wikitree.com/wiki/Beckwith-100"
+        },
+        {
+          "label": "Genealogy of New England — Robert Millard × Joanna Alger",
+          "url": "http://www.genealogyofnewengland.com/f_9a8.htm"
+        },
+        {
+          "label": "Genealogy of New England — son Nicodemus Miller parents",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "CTGenWeb New London queries — Bob Miller 1996 (Robert × Joanna → Nicodemus)",
+          "url": "http://www.ctgenweb.org/county/conewlondon/nlquer96.htm"
+        },
+        {
+          "label": "WikiTree Miller-39685 — son Nicodemus Miller",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        }
+      ],
+      "aka": [
+        "Robert Millard"
+      ],
+      "spouse_links": [
+        {
+          "id": "joanna_alger_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Capt. Nicodemus Miller** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C840** / **C841**. Lyme CT; d. **before / about Jul 1752** (WT probate window; Gene 27 Jul 1752). Soft spouse for this climb: **Joanna Alger** (mother o..."
+    },
+    "lucy_smith_huntley": {
+      "id": "lucy_smith_huntley",
+      "slug": "lucy-smith-huntley",
+      "name": "Lucy Smith Huntley",
+      "years": "1729-1802",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "nathan_huntley"
+      ],
+      "children": [
+        "rufus_huntley",
+        "isaiah_huntley",
+        "nathan_huntley_jr",
+        "luman_huntley",
+        "russell_huntley",
+        "elisha_huntley",
+        "azuba_huntley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825349 — Lucy Smith Huntley",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        },
+        {
+          "label": "Find A Grave 72920676 — son Russel Huntly (parent link)",
+          "url": "https://www.findagrave.com/memorial/72920676/russel-huntly"
+        },
+        {
+          "label": "Find A Grave 20825331 — spouse Nathan Huntley Sr.",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Genealogy of New England — Russell mother Luce Smith",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Smith-98204 — Lucy (Smith) Huntley (pointer; birth when FAG unknown)",
+          "url": "https://www.wikitree.com/wiki/Smith-98204"
+        }
+      ],
+      "aka": [
+        "Lucy Smith",
+        "Luce Smith",
+        "Luce Huntley"
+      ],
+      "spouse_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Russell Huntley** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C710** / **C712**. Maiden **Smith**; aka **Luce**. FAG: birth **unknown**, d. **25 Mar 1802**, West End Marlow; spouse Nathan; same five FAG children as Nathan..."
+    },
+    "nathan_huntley": {
+      "id": "nathan_huntley",
+      "slug": "nathan-huntley",
+      "name": "Nathan Huntley",
+      "years": "1726-1798",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [
+        "lucy_smith_huntley"
+      ],
+      "children": [
+        "rufus_huntley",
+        "isaiah_huntley",
+        "nathan_huntley_jr",
+        "luman_huntley",
+        "russell_huntley",
+        "elisha_huntley",
+        "azuba_huntley"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825331 — Nathan Huntley Sr.",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 72920676 — son Russel Huntly (parent link)",
+          "url": "https://www.findagrave.com/memorial/72920676/russel-huntly"
+        },
+        {
+          "label": "Find A Grave 20825349 — spouse Lucy Smith Huntley",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        },
+        {
+          "label": "Genealogy of New England — Russell parents Nathan × Luce Smith",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Huntley-1413 — Nathan Huntley (pointer; Virgil Huntley Vol.1 p.84)",
+          "url": "https://www.wikitree.com/wiki/Huntley-1413"
+        },
+        {
+          "label": "WikiTree Huntley-733 — father Aaron Huntley Jr.",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree DeWolf-119 — mother Deborah (DeWolf) Huntley",
+          "url": "https://www.wikitree.com/wiki/DeWolf-119"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        }
+      ],
+      "aka": [
+        "Nathan Huntley Sr",
+        "Nathan Alden Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Russell Huntley** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C710** / **C711**. West End Cemetery, Marlow NH. Spouse **Lucy (Smith) Huntley** (aka Luce). FAG children: Rufus, Isaiah, Nathan Jr, Russell, Elisha (Luman + i..."
+    },
+    "abigail_gee_lewis": {
+      "id": "abigail_gee_lewis",
+      "slug": "abigail-gee-lewis",
+      "name": "Abigail Gee Lewis",
+      "years": "1762-1853",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_gee",
+        "abigail_mack_gee"
+      ],
+      "spouses": [
+        "john_mack_lewis"
+      ],
+      "children": [
+        "rebecca_lewis_avery",
+        "william_lewis",
+        "leland_lewis"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 154353192 — Abigail Gee Lewis",
+          "url": "https://www.findagrave.com/memorial/154353192/abigail-lewis"
+        },
+        {
+          "label": "Find A Grave 22325650 — father LT William Gee",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        },
+        {
+          "label": "Find A Grave 22325661 — mother Abigail Mack Gee",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        },
+        {
+          "label": "Find A Grave 154318730 — son Leland Lewis (bio names John & Abigail)",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 154352894 — spouse John Mack Lewis",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        }
+      ],
+      "aka": [
+        "Abigail Gee",
+        "Abigail Lewis",
+        "Mrs Abigail Pierce"
+      ],
+      "parent_links": [
+        {
+          "id": "william_gee",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_mack_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "john_mack_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Leland Lewis** (Morganne ascent gen-7; pack **C630** / **C632**). Gen-8 soft parents **LT William Gee** × **Abigail Mack Gee** — **Probable** / `verified: false` — pack **C785–C787**. Maiden **Gee**; Lyme CT → Lempster NH; East Lempster with John Mack Lewi..."
+    },
+    "john_mack_lewis": {
+      "id": "john_mack_lewis",
+      "slug": "john-mack-lewis",
+      "name": "John Mack Lewis",
+      "years": "1752-1845",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_lewis",
+        "phebe_mack_lewis"
+      ],
+      "spouses": [
+        "abigail_gee_lewis"
+      ],
+      "children": [
+        "rebecca_lewis_avery",
+        "william_lewis",
+        "leland_lewis"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 154352894 — John Mack Lewis",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        },
+        {
+          "label": "Find A Grave 255222999 — proposed father James Lewis",
+          "url": "https://www.findagrave.com/memorial/255222999/james-lewis"
+        },
+        {
+          "label": "Find A Grave 273586268 — proposed mother Phebe Mack Lewis",
+          "url": "https://www.findagrave.com/memorial/273586268/phebe-lewis"
+        },
+        {
+          "label": "Find A Grave 227306142 — sister Esther Lewis Tubbs (Lempster FAN)",
+          "url": "https://www.findagrave.com/memorial/227306142/esther-tubbs"
+        },
+        {
+          "label": "Find A Grave 20825084 — sister Hannah Lewis Beckwith (Marlow FAN)",
+          "url": "https://www.findagrave.com/memorial/20825084/hannah-beckwith"
+        },
+        {
+          "label": "Find A Grave 154318730 — son Leland Lewis (bio names John & Abigail)",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 154353390 — son William Lewis (linked parents; same bio phrase)",
+          "url": "https://www.findagrave.com/memorial/154353390/william-lewis"
+        }
+      ],
+      "aka": [
+        "John Lewis"
+      ],
+      "parent_links": [
+        {
+          "id": "james_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_mack_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "abigail_gee_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Leland Lewis** (Morganne ascent gen-7; pack **C630** / **C631**). Soft parents **James Lewis** × **Phebe Mack Lewis** — **Probable** / `verified: false` — pack **C780–C782**. FAG bio “Son of James & Phebe (Mack) Lewis”; **no** FAG Parents links. Sibling FA..."
+    },
+    "abigail_mack_gee": {
+      "id": "abigail_mack_gee",
+      "slug": "abigail-mack-gee",
+      "name": "Abigail Mack Gee",
+      "years": "1740-1838",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "william_gee"
+      ],
+      "children": [
+        "abigail_gee_lewis",
+        "zopher_gee",
+        "sarah_gee_tinker",
+        "william_gee_jr",
+        "polly_gee_smith"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 22325661 — Abigail Mack Gee",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        },
+        {
+          "label": "Find A Grave 154353192 — daughter Abigail Gee Lewis (parents linked)",
+          "url": "https://www.findagrave.com/memorial/154353192/abigail-lewis"
+        },
+        {
+          "label": "Find A Grave 22325650 — spouse LT William Gee",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        }
+      ],
+      "aka": [
+        "Abigail Mack",
+        "Abigail Gee"
+      ],
+      "spouse_links": [
+        {
+          "id": "william_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Abigail Gee Lewis** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C785** / **C787**. Maiden **Mack** on FAG title; Old Stone Church co-burial with **LT William Gee**. FAG children match William’s grid (Abigail Lewis + four ..."
+    },
+    "william_gee": {
+      "id": "william_gee",
+      "slug": "william-gee",
+      "name": "LT William Gee",
+      "years": "1739-1817",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "abigail_mack_gee"
+      ],
+      "children": [
+        "abigail_gee_lewis",
+        "zopher_gee",
+        "sarah_gee_tinker",
+        "william_gee_jr",
+        "polly_gee_smith"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 22325650 — LT William Gee",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        },
+        {
+          "label": "Find A Grave 154353192 — daughter Abigail Gee Lewis (parents linked)",
+          "url": "https://www.findagrave.com/memorial/154353192/abigail-lewis"
+        },
+        {
+          "label": "Find A Grave 22325661 — spouse Abigail Mack Gee",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        }
+      ],
+      "aka": [
+        "William Gee",
+        "William Gee Sr."
+      ],
+      "spouse_links": [
+        {
+          "id": "abigail_mack_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Abigail Gee Lewis** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C785** / **C786**. Old Stone Church Burial Ground (East Lyme) with spouse **Abigail Mack Gee**; FAG children include Abigail Lewis + Zopher / Sarah Tinker / ..."
+    },
+    "phebe_mack_lewis": {
+      "id": "phebe_mack_lewis",
+      "slug": "phebe-mack-lewis",
+      "name": "Phebe Mack Lewis",
+      "years": "1707-1769",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "james_lewis"
+      ],
+      "children": [
+        "esther_lewis_tubbs",
+        "hannah_lewis_beckwith",
+        "john_mack_lewis"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 273586268 — Phebe Mack Lewis",
+          "url": "https://www.findagrave.com/memorial/273586268/phebe-lewis"
+        },
+        {
+          "label": "Find A Grave 154352894 — son John Mack Lewis (bio names James & Phebe Mack)",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        },
+        {
+          "label": "Find A Grave 255222999 — spouse James Lewis",
+          "url": "https://www.findagrave.com/memorial/255222999/james-lewis"
+        },
+        {
+          "label": "WikiTree — Phebe (Mack) Lewis (Mack-992)",
+          "url": "https://www.wikitree.com/wiki/Mack-992"
+        },
+        {
+          "label": "FamilyCentral — Phebe Mack × James Lewis",
+          "url": "http://www.familycentral.net/index/family.cfm?ref1=9125:952&ref2=9125:947"
+        }
+      ],
+      "aka": [
+        "Phebe Mack",
+        "Phoebe Mack"
+      ],
+      "spouse_links": [
+        {
+          "id": "james_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **John Mack Lewis** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C780** / **C782**. Maiden **Mack**; FAG **273586268**: 28 Jan 1707 Lyme – 8 Feb 1769 Lyme; burial unknown; spouse James; child **Esther Tubbs** linked. John’s ..."
+    },
+    "james_lewis": {
+      "id": "james_lewis",
+      "slug": "james-lewis",
+      "name": "James Lewis",
+      "years": "1713-1801",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "phebe_mack_lewis"
+      ],
+      "children": [
+        "esther_lewis_tubbs",
+        "hannah_lewis_beckwith",
+        "john_mack_lewis"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 255222999 — James Lewis",
+          "url": "https://www.findagrave.com/memorial/255222999/james-lewis"
+        },
+        {
+          "label": "Find A Grave 154352894 — son John Mack Lewis (bio names James & Phebe Mack)",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        },
+        {
+          "label": "Find A Grave 273586268 — spouse Phebe Mack Lewis",
+          "url": "https://www.findagrave.com/memorial/273586268/phebe-lewis"
+        },
+        {
+          "label": "FamilyCentral — James Lewis × Phebe Mack (m. 5 Feb 1735/36 Lyme)",
+          "url": "http://www.familycentral.net/index/family.cfm?ref1=9125:952&ref2=9125:947"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "phebe_mack_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **John Mack Lewis** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C780** / **C781**. FAG **255222999**: ~1713 Lyme – 13 Apr 1801 East Lyme; Old Meeting House Hill; bio son of John Lewis × Joanna Tillotson; m. (1) Phebe Mack 5..."
+    },
+    "catherine_littlehale_allen": {
+      "id": "catherine_littlehale_allen",
+      "slug": "catherine-littlehale-allen",
+      "name": "Catherine Littlehale Allen",
+      "years": "1781-1856",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [
+        "penuel_allen"
+      ],
+      "children": [
+        "betsey_l_allen",
+        "mercy_allen_cutler",
+        "elva_a_allen",
+        "stephen_allen",
+        "abner_allen",
+        "lorinda_allen",
+        "louis_c_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2012/126/89647339_133632389269.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 89647339 — Catherine Littlehale Allen",
+          "url": "https://www.findagrave.com/memorial/89647339/catherine-allen"
+        },
+        {
+          "label": "Find A Grave 180998262 — son Stephen Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/180998262/stephen-allen"
+        },
+        {
+          "label": "Find A Grave 89646865 — spouse Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        },
+        {
+          "label": "Littlehale 1889 — Catherine dau of Ezra × Lydia Richardson; m. Penuel Allen",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — Catherine; m. Penuel Allen 29 Dec 1803; children",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        }
+      ],
+      "aka": [
+        "Catherine Littlehale",
+        "Catherine Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Stephen Allen** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C590** / **C592**. Maiden **Littlehale** on FAG title markup. East Lempster Cemetery. FAG bidirectional: Stephen parents ↔ Catherine children (Stephen + **Mercy ..."
+    },
+    "penuel_allen": {
+      "id": "penuel_allen",
+      "slug": "penuel-allen",
+      "name": "Penuel Allen",
+      "years": "1772-1860",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "catherine_littlehale_allen"
+      ],
+      "children": [
+        "betsey_l_allen",
+        "mercy_allen_cutler",
+        "elva_a_allen",
+        "stephen_allen",
+        "abner_allen",
+        "lorinda_allen",
+        "louis_c_allen"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave — primary memorial photo",
+          "source_url": "https://images.findagrave.com/photos/2012/126/89646865_133632282281.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 89646865 — Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        },
+        {
+          "label": "Find A Grave 180998262 — son Stephen Allen (parent link)",
+          "url": "https://www.findagrave.com/memorial/180998262/stephen-allen"
+        },
+        {
+          "label": "Find A Grave 89647339 — spouse Catherine Littlehale Allen",
+          "url": "https://www.findagrave.com/memorial/89647339/catherine-allen"
+        },
+        {
+          "label": "History of Sand Pond — Penuel to Lempster 1822; son Stephen 1840",
+          "url": "https://www.angelfire.com/nh/sandpond/History.html"
+        },
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — m. Catherine Littlehale 29 Dec 1803; children; d. Lempster 1860",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Stephen Allen** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C590** / **C591**. East Lempster Cemetery. FAG bidirectional: Stephen parents grid ↔ Penuel children (Stephen + **Mercy Allen Cutler**). Spouse **Catherine Littl...",
+      "blocker": "Birth place (FAG blank); parents (C610 unlock = NH vitals / baptism / fa"
+    },
+    "lydia_richardson_littlehale": {
+      "id": "lydia_richardson_littlehale",
+      "slug": "lydia-richardson-littlehale",
+      "name": "Lydia Richardson Littlehale",
+      "years": "1756–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ezra_littlehale"
+      ],
+      "children": [
+        "john_littlehale",
+        "catherine_littlehale_allen",
+        "betsey_littlehale_jones",
+        "lydia_r_littlehale_sargent",
+        "ezra_littlehale_iii",
+        "ruth_littlehale_cunningham",
+        "mary_c_littlehale_chase",
+        "isaac_littlehale"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — Lydia Richardson × Ezra of Sutton; dau Catherine × Penuel",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "History of Sutton NH — Lydia Richardson of Dunstable b. May 1756",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "1840 Census of Pensioners — Lydia Littlehale age 82 in Penuel Allen hh, Lempster (FAN)",
+          "url": "https://www.newhorizonsgenealogicalservices.com/1840-census-of-pensioners-nh-sullivan.htm"
+        },
+        {
+          "label": "Dunstable VR — Ezra Littlehaile × Lydia Richardson int. 20 May 1777",
+          "url": "http://dunhamwilcox.net/ma/dunstable_marr2.htm"
+        }
+      ],
+      "aka": [
+        "Lydia Richardson",
+        "Lydia Littlehale"
+      ],
+      "spouse_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Catherine Littlehale Allen** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C615** / **C617**. Maiden **Richardson** of Dunstable; b. **May 1756** (History of Sutton); m. Ezra Littlehale **Jun 1777** (VR int. **20 May 1777**...",
+      "blocker": "Richardson parents Blocked (C745) — unlock MA/NH VR or probate naming pa"
+    },
+    "ezra_littlehale": {
+      "id": "ezra_littlehale",
+      "slug": "ezra-littlehale",
+      "name": "Ezra Littlehale",
+      "years": "1753–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale_sr",
+        "lydia_littlehale_pelham"
+      ],
+      "spouses": [
+        "lydia_richardson_littlehale"
+      ],
+      "children": [
+        "john_littlehale",
+        "catherine_littlehale_allen",
+        "betsey_littlehale_jones",
+        "lydia_r_littlehale_sargent",
+        "ezra_littlehale_iii",
+        "ruth_littlehale_cunningham",
+        "mary_c_littlehale_chase",
+        "isaac_littlehale"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — Ezra × Lydia Richardson of Sutton; dau Catherine × Penuel Allen",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "History of Sutton NH (Worthen) — Ezra Littlehale settled ~1780; children list",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Find A Grave 89647339 — daughter Catherine Littlehale Allen",
+          "url": "https://www.findagrave.com/memorial/89647339/catherine-allen"
+        },
+        {
+          "label": "Littlehale 1889 — (19) Ezra son of (10) Ezra × Lydia of Pelham",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_littlehale_pelham",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Catherine Littlehale Allen** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C615** / **C616**. Compiled Sutton branch: b. **6 Dec 1753** Dracut; m. **Lydia Richardson** of Dunstable **Jun 1777**; settled Sutton ~1780. Daught..."
+    },
+    "lydia_littlehale_pelham": {
+      "id": "lydia_littlehale_pelham",
+      "slug": "lydia-littlehale-pelham",
+      "name": "Lydia Littlehale of Pelham",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ezra_littlehale_sr"
+      ],
+      "children": [
+        "ezra_littlehale",
+        "elizabeth_littlehale_underwood"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — Ezra of Pelham m. Lydia —— ~1750; mother of (19) Ezra + Elizabeth",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "History of Sutton NH — Ezra m. 25 Dec 1750 Lydia ——; parents of Ezra of Sutton",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "BrazoriaRoots — Elizabeth Littlehale dau of Ezra × Lydia (—?—)",
+          "url": "https://www.brazoriaroots.com/p265.htm"
+        }
+      ],
+      "aka": [
+        "Lydia Littlehale",
+        "Lydia (—?—) Littlehale"
+      ],
+      "spouse_links": [
+        {
+          "id": "ezra_littlehale_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Ezra Littlehale** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C740** / **C742**. Compiled sources name her **Lydia** only — **maiden unknown** (do not invent). m. Ezra of Pelham **25 Dec 1750** (Worthen) / ~1750 (Littleha...",
+      "blocker": "Natal parents Blocked (C945) — unlock Pelham/Dracut VR or probate; rejec"
+    },
+    "ezra_littlehale_sr": {
+      "id": "ezra_littlehale_sr",
+      "slug": "ezra-littlehale-sr",
+      "name": "Ezra Littlehale Sr.",
+      "years": "1722-1756",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_littlehale_dracut",
+        "hannah_colburn_littlehale"
+      ],
+      "spouses": [
+        "lydia_littlehale_pelham"
+      ],
+      "children": [
+        "ezra_littlehale",
+        "elizabeth_littlehale_underwood"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — (10) Ezra of Pelham; son of John × Hannah Colburn; FIW death",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "History of Sutton NH (Worthen) — John × Hannah → Ezra × Lydia → Ezra of Sutton",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "NH probate index — Littlehale, Ezra, Pelham, 1756",
+          "url": "https://newhorizonsgenealogicalservices.com/new-hampshire-genealogy/probate/v5/wills-v5.htm"
+        },
+        {
+          "label": "Littlehale 1889 — (5)/(10) son of John × Hannah Colburn",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — father John Littlehale (Littlehale-5)",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        },
+        {
+          "label": "WikiTree — mother Hannah (Coborne) Littlehale (Coborne-3)",
+          "url": "https://www.wikitree.com/wiki/Coborne-3"
+        }
+      ],
+      "aka": [
+        "Ezra Littlehale of Pelham"
+      ],
+      "parent_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lydia_littlehale_pelham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Ezra Littlehale** (Morganne ascent gen-8 via Catherine). Soft-ingest **Probable** / `verified: false` — pack **C740** / **C741**. Littlehale 1889 **(10)**: son of John × Hannah (Colburn); b. **30 Mar 1722**; settled Dracut land later **Pelham NH**; m. ~175..."
+    },
+    "hannah_colburn_littlehale": {
+      "id": "hannah_colburn_littlehale",
+      "slug": "hannah-colburn-littlehale",
+      "name": "Hannah Colburn Littlehale",
+      "years": "1689-1763",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_littlehale_dracut"
+      ],
+      "children": [
+        "isaac_littlehale_pelham",
+        "john_littlehale_jr",
+        "ezra_littlehale_sr",
+        "abraham_littlehale",
+        "hannah_littlehale_dracut",
+        "james_littlehale"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — Hannah (Colburn) wife of (5) John of Dracut",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — Hannah (Coborne) Littlehale (Coborne-3)",
+          "url": "https://www.wikitree.com/wiki/Coborne-3"
+        },
+        {
+          "label": "Dracut VR intentions — Littelhail, John of Haverhill, and Hannah Colburn, Aug 1715",
+          "url": "https://archive.org/details/vitalrecordsofdr00drac/page/209/mode/1up"
+        },
+        {
+          "label": "History of Sutton NH (Worthen) — John × Hannah Colburn → Ezra",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        }
+      ],
+      "aka": [
+        "Hannah Colburn",
+        "Hannah Coborne",
+        "Hannah Littlehale"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Ezra Littlehale Sr.** Soft-ingest **Probable** / `verified: false` — pack **C940** / **C942**. Maiden **Colburn** / **Coborne**; Chelmsford birth **10 Jun 1689** (VR “d. John and Elisabeth”); WT also lists Susannah Read as mother — **mother identity confli..."
+    },
+    "john_littlehale_dracut": {
+      "id": "john_littlehale_dracut",
+      "slug": "john-littlehale-dracut",
+      "name": "John Littlehale of Dracut",
+      "years": "1691-1750",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hannah_colburn_littlehale"
+      ],
+      "children": [
+        "isaac_littlehale_pelham",
+        "john_littlehale_jr",
+        "ezra_littlehale_sr",
+        "abraham_littlehale",
+        "hannah_littlehale_dracut",
+        "james_littlehale"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — (5) John × Hannah Colburn of Dracut; will 10 May 1746; inventory Jan 1750",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — John Littlehale (Littlehale-5)",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        },
+        {
+          "label": "Ipswich VR — John s. Isaac and Elisabeth, 15 Jul 1691",
+          "url": "https://archive.org/details/vitalrecordsofip01esse/page/n481/mode/2up"
+        },
+        {
+          "label": "History of Sutton NH (Worthen) — John × Hannah → Ezra of Pelham",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        }
+      ],
+      "aka": [
+        "John Littlehale",
+        "John Littlehail"
+      ],
+      "spouse_links": [
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Ezra Littlehale Sr.** (Morganne ascent gen-9 via Catherine). Soft-ingest **Probable** / `verified: false` — pack **C940** / **C941**. Littlehale 1889 **(5)**: son of Isaac × Elizabeth; b. **15 Jul 1691**; m. Hannah Colburn **Nov 1715** (Dracut intentions *..."
+    },
+    "harriet_b_foss_parsons": {
+      "id": "harriet_b_foss_parsons",
+      "slug": "harriet-b-foss-parsons",
+      "name": "Harriet B. Foss Parsons",
+      "years": "1873-1941",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ambrose_foss",
+        "sarah_knight_foss"
+      ],
+      "spouses": [
+        "nelson_b_parsons"
+      ],
+      "children": [
+        "dorothy_parsons_prichard",
+        "sarah_mona_parsons",
+        "harold_ambrose_parsons",
+        "autis_foss_parsons_hicks",
+        "gerald_allen_parsons"
+      ],
+      "media": [
+        {
+          "ref": "nelson-b-parsons/media/headstone-olivewood-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 161996016 — Nelson B Parsons Olivewood dual stone (shared)",
+          "source_url": "https://images.findagrave.com/photos/2016/121/161996016_1462147677.jpg"
+        },
+        {
+          "file": "media/headstone-detail-olivewood-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 161996058 — Harriet B Parsons Olivewood dual stone detail",
+          "source_url": "https://images.findagrave.com/photos/2016/121/161996058_1462147755.jpg"
+        },
+        {
+          "ref": "nelson-b-parsons/media/marriage-1899-face.png",
+          "kind": "document",
+          "source": "FS Maine VR marriage face — Nelson × Hattie 23 Feb 1899",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-WL"
+        },
+        {
+          "ref": "nelson-b-parsons/media/marriage-1899-parents-side.png",
+          "kind": "document",
+          "source": "FS Maine VR marriage parents side — Ambrose×Sarah for bride",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0010"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave — Harriet B Foss Parsons (161996058)",
+          "url": "https://www.findagrave.com/memorial/161996058/harriet_b-parsons"
+        },
+        {
+          "label": "Find A Grave — son Gerald Austin Parsons (148402533) parents grid",
+          "url": "https://www.findagrave.com/memorial/148402533/gerald_austin-parsons"
+        },
+        {
+          "label": "Find A Grave — father Ambrose Foss (104839458) child link",
+          "url": "https://www.findagrave.com/memorial/104839458/ambrose-foss"
+        },
+        {
+          "label": "Find A Grave — mother Sarah Knight Foss (104839751) child link",
+          "url": "https://www.findagrave.com/memorial/104839751/sarah-foss"
+        },
+        {
+          "label": "WikiTree — Harriet B (Foss) Parsons (Foss-714)",
+          "url": "https://www.wikitree.com/wiki/Foss-714"
+        },
+        {
+          "label": "WikiTree — Ambrose Foss (Foss-715)",
+          "url": "https://www.wikitree.com/wiki/Foss-715"
+        },
+        {
+          "label": "Maine VR marriage parents side — bride’s parents Ambrose Foss × Sarah Knight (FS 3:1:939K-RPQC-6Y)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+        },
+        {
+          "label": "Maine VR marriage — Nelson B Parsons × Hattie B Foss 23 Feb 1899 (FS KCDC-9MV)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV"
+        }
+      ],
+      "aka": [
+        "Harriet B. Foss",
+        "Harriet Parsons",
+        "Hattie B. Foss",
+        "Hattie Parsons"
+      ],
+      "parent_links": [
+        {
+          "id": "ambrose_foss",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_knight_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "nelson_b_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). Soft-ingest **Probable** / `verified: false` — pack **C446** / **C461**. Maiden **Foss**; Olivewood T-2-1-6. **Parents Ambrose Foss × Sarah Knight** — FAG + Maine marriage parents side (FS image 2973..."
+    },
+    "nelson_b_parsons": {
+      "id": "nelson_b_parsons",
+      "slug": "nelson-b-parsons",
+      "name": "Nelson B. Parsons",
+      "years": "1863-1931",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "percy_parsons",
+        "kate_parsons"
+      ],
+      "spouses": [
+        "harriet_b_foss_parsons"
+      ],
+      "children": [
+        "dorothy_parsons_prichard",
+        "sarah_mona_parsons",
+        "harold_ambrose_parsons",
+        "autis_foss_parsons_hicks",
+        "gerald_allen_parsons"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 161996016 — Nelson B Parsons Olivewood dual stone",
+          "source_url": "https://images.findagrave.com/photos/2016/121/161996016_1462147677.jpg"
+        },
+        {
+          "file": "media/marriage-1899-face.png",
+          "kind": "document",
+          "source": "FS Maine VR marriage face — Nelson × Hattie 23 Feb 1899 (3:1:939K-RPQC-WL image 2974)",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-WL"
+        },
+        {
+          "file": "media/marriage-1899-parents-side.png",
+          "kind": "document",
+          "source": "FS Maine VR marriage parents side — Percy×Kate / Ambrose×Sarah (3:1:939K-RPQC-6Y image 2973)",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0010"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave — Nelson B Parsons (161996016)",
+          "url": "https://www.findagrave.com/memorial/161996016/nelson_b-parsons"
+        },
+        {
+          "label": "Find A Grave — son Gerald Austin Parsons (148402533) parents grid",
+          "url": "https://www.findagrave.com/memorial/148402533/gerald_austin-parsons"
+        },
+        {
+          "label": "Maine VR marriage — Nelson B Parsons × Hattie B Foss 23 Feb 1899 Fort Fairfield (FS KCDC-9MV)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV"
+        },
+        {
+          "label": "Maine VR marriage parents side — father Percy Parsons / mother Kate Parsons (FS 3:1:939K-RPQC-6Y image 2973)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+        },
+        {
+          "label": "FS 1880 Fort Fairfield — Nelson step-son Sweden in William × Kristi hh (MF3N-QJ3)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MF3N-QJ3"
+        },
+        {
+          "label": "CADI — Nelson B Parsons d. 1931 cert 67186 (FS QKS9-857M)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QKS9-857M"
+        },
+        {
+          "label": "Parsons–Allen wedding notice (FT-0010) — son of Mrs N. B. Parsons",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "percy_parsons",
+          "confidence": "Probable"
+        },
+        {
+          "id": "kate_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "harriet_b_foss_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). Soft-ingest **Probable** / `verified: false` — pack **C446** / **C461**. Olivewood T-2-1-5; Sweden-born; d. 25 Dec 1931 Riverside Co. **Parents unlocked 2026-08-07:** **Percy Parsons** × **Kate Parso..."
+    },
+    "sarah_knight_foss": {
+      "id": "sarah_knight_foss",
+      "slug": "sarah-knight-foss",
+      "name": "Sarah Knight Foss",
+      "years": "1844-1934",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_h_knight",
+        "betsy_warren_huntress_knight"
+      ],
+      "spouses": [
+        "ambrose_foss"
+      ],
+      "children": [
+        "harriet_b_foss_parsons"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Sarah Knight Foss (104839751)",
+          "url": "https://www.findagrave.com/memorial/104839751/sarah-foss"
+        },
+        {
+          "label": "Find A Grave — father William H Knight (26119161)",
+          "url": "https://www.findagrave.com/memorial/26119161/william_h-knight"
+        },
+        {
+          "label": "Find A Grave — mother Betsy Warren Huntress Knight (26227290)",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        },
+        {
+          "label": "Find A Grave — daughter Harriet B Foss Parsons (161996058)",
+          "url": "https://www.findagrave.com/memorial/161996058/harriet_b-parsons"
+        },
+        {
+          "label": "Find A Grave — spouse Ambrose Foss (104839458)",
+          "url": "https://www.findagrave.com/memorial/104839458/ambrose-foss"
+        },
+        {
+          "label": "WikiTree — Sarah E (Knight) Foss (Knight-2013)",
+          "url": "https://www.wikitree.com/wiki/Knight-2013"
+        }
+      ],
+      "aka": [
+        "Sarah E. Knight",
+        "Sarah E. Foss",
+        "Sarah Foss"
+      ],
+      "parent_links": [
+        {
+          "id": "william_h_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "betsy_warren_huntress_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ambrose_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Harriet B. Foss Parsons** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C485** / **C487**. Maiden **Knight** on FAG title; spouse **Ambrose Foss**; child grid includes Harriet. FAG bio notes Ambrose and Sarah had 10 childre..."
+    },
+    "ambrose_foss": {
+      "id": "ambrose_foss",
+      "slug": "ambrose-foss",
+      "name": "Ambrose Foss",
+      "years": "1844-1932",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "daniel_w_foss",
+        "harriet_n_bunker_foss"
+      ],
+      "spouses": [
+        "sarah_knight_foss"
+      ],
+      "children": [
+        "harriet_b_foss_parsons"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Ambrose Foss (104839458)",
+          "url": "https://www.findagrave.com/memorial/104839458/ambrose-foss"
+        },
+        {
+          "label": "Find A Grave — daughter Harriet B Foss Parsons (161996058)",
+          "url": "https://www.findagrave.com/memorial/161996058/harriet_b-parsons"
+        },
+        {
+          "label": "Find A Grave — spouse Sarah Knight Foss (104839751)",
+          "url": "https://www.findagrave.com/memorial/104839751/sarah-foss"
+        },
+        {
+          "label": "Find A Grave — father Daniel W. Foss (26237974)",
+          "url": "https://www.findagrave.com/memorial/26237974/daniel_w-foss"
+        },
+        {
+          "label": "Find A Grave — mother Harriet N. Bunker Foss (43860310)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        },
+        {
+          "label": "WikiTree — Ambrose Foss (Foss-715)",
+          "url": "https://www.wikitree.com/wiki/Foss-715"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "daniel_w_foss",
+          "confidence": "Probable"
+        },
+        {
+          "id": "harriet_n_bunker_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_knight_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Harriet B. Foss Parsons** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C485** / **C486**. FAG Riverside Cemetery Fort Fairfield; spouse **Sarah Knight Foss**; child grid includes Harriet. Parents soft **Daniel W. Foss** × ..."
+    },
+    "betsy_warren_huntress_knight": {
+      "id": "betsy_warren_huntress_knight",
+      "slug": "betsy-warren-huntress-knight",
+      "name": "Betsy Warren Huntress Knight",
+      "years": "1823–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_huntress",
+        "eunice_knight_huntress"
+      ],
+      "spouses": [
+        "william_h_knight"
+      ],
+      "children": [
+        "sarah_knight_foss"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 26227290 — Betsy Warren Huntress Knight",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        },
+        {
+          "label": "Find A Grave 92969533 — father Robert Huntress",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 92969488 — mother Eunice Knight Huntress",
+          "url": "https://www.findagrave.com/memorial/92969488/eunice-huntress"
+        },
+        {
+          "label": "Find A Grave 104839751 — daughter Sarah Knight Foss (parent link)",
+          "url": "https://www.findagrave.com/memorial/104839751/sarah-foss"
+        },
+        {
+          "label": "Find A Grave 26119161 — spouse William H Knight",
+          "url": "https://www.findagrave.com/memorial/26119161/william_h-knight"
+        },
+        {
+          "label": "WikiTree — Betsey Warren (Huntress) Knight (Huntress-97)",
+          "url": "https://www.wikitree.com/wiki/Huntress-97"
+        }
+      ],
+      "aka": [
+        "Betsey Warren Huntress",
+        "Betsy Warren Huntress",
+        "Betsy Huntress Knight",
+        "Betsey Warren Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "eunice_knight_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "william_h_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Sarah Knight Foss** (Morganne ascent gen-5 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C525** / **C527**. Maiden **Huntress** on FAG title. Parents soft **Robert Huntress** × **Eunice Knight Huntress** — pack **C575–C579**. FAG pare..."
+    },
+    "william_h_knight": {
+      "id": "william_h_knight",
+      "slug": "william-h-knight",
+      "name": "William H. Knight",
+      "years": "1819-1890",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edmund_knight",
+        "elizabeth_sawyer_knight"
+      ],
+      "spouses": [
+        "betsy_warren_huntress_knight"
+      ],
+      "children": [
+        "sarah_knight_foss"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 26119161 — William H Knight",
+          "url": "https://www.findagrave.com/memorial/26119161/william_h-knight"
+        },
+        {
+          "label": "Find A Grave 104839751 — daughter Sarah Knight Foss (parent link)",
+          "url": "https://www.findagrave.com/memorial/104839751/sarah-foss"
+        },
+        {
+          "label": "Find A Grave 26227290 — spouse Betsy Warren Huntress Knight",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        },
+        {
+          "label": "WikiTree — William H Knight (Knight-11972)",
+          "url": "https://www.wikitree.com/wiki/Knight-11972"
+        },
+        {
+          "label": "WikiTree — father Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — mother Elizabeth (Sawyer) Knight (Sawyer-10166)",
+          "url": "https://www.wikitree.com/wiki/Sawyer-10166"
+        }
+      ],
+      "aka": [
+        "William H Knight",
+        "William Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "edmund_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_sawyer_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "betsy_warren_huntress_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Sarah Knight Foss** (Morganne ascent gen-5 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C525** / **C526**. Bidirectional FAG: Sarah parents grid ↔ William children grid (George William, Sarah, Mercy Ellen, Howard Isaac, Warren H., Id..."
+    },
+    "eunice_knight_huntress": {
+      "id": "eunice_knight_huntress",
+      "slug": "eunice-knight-huntress",
+      "name": "Eunice Knight Huntress",
+      "years": "1803-1845",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_b_knight",
+        "hannah_cluff_knight"
+      ],
+      "spouses": [
+        "robert_huntress"
+      ],
+      "children": [
+        "betsy_warren_huntress_knight",
+        "james_knight_huntress",
+        "louisa_jane_huntress",
+        "george_freeman_huntress",
+        "albion_paris_huntress"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 92969488 — Eunice Knight Huntress",
+          "url": "https://www.findagrave.com/memorial/92969488/eunice-huntress"
+        },
+        {
+          "label": "Find A Grave 92969533 — spouse Robert Huntress",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 160918828 — son Albion Paris Huntress (parents in bio)",
+          "url": "https://www.findagrave.com/memorial/160918828/albion_paris-huntress"
+        },
+        {
+          "label": "WikiTree — Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        },
+        {
+          "label": "WikiTree — daughter Betsey Warren (Huntress) Knight (Huntress-97)",
+          "url": "https://www.wikitree.com/wiki/Huntress-97"
+        },
+        {
+          "label": "WikiTree — father Nathaniel B Knight (Knight-12905)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — mother Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        },
+        {
+          "label": "Find A Grave 123375554 — father Nathaniel B. Knight",
+          "url": "https://www.findagrave.com/memorial/123375554/nathaniel-b-knight"
+        },
+        {
+          "label": "Find A Grave 123376196 — mother Hannah (Cluff) Knight",
+          "url": "https://www.findagrave.com/memorial/123376196/hannah-knight"
+        }
+      ],
+      "aka": [
+        "Eunice Knight",
+        "Eunice Huntress"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "robert_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Betsy Warren Huntress Knight** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C575** / **C577**. Maiden **Knight** on FAG title; Town House Cemetery Waterboro with spouse Robert. Gen-7 parents soft **Nathaniel B. Knight** × ..."
+    },
+    "robert_huntress": {
+      "id": "robert_huntress",
+      "slug": "robert-huntress",
+      "name": "Robert Huntress",
+      "years": "1793-1860",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [
+        "eunice_knight_huntress"
+      ],
+      "children": [
+        "betsy_warren_huntress_knight",
+        "james_knight_huntress",
+        "louisa_jane_huntress",
+        "george_freeman_huntress",
+        "albion_paris_huntress"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 92969570 — father William Huntress",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-99 — father William",
+          "url": "https://www.wikitree.com/wiki/Huntress-99"
+        },
+        {
+          "label": "WikiTree Warren-13119 — mother Elizabeth Rhoda Warren",
+          "url": "https://www.wikitree.com/wiki/Warren-13119"
+        },
+        {
+          "label": "Find A Grave 92969533 — Robert Huntress",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 26227290 — daughter Betsy Warren Huntress Knight",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        },
+        {
+          "label": "Find A Grave 92969488 — spouse Eunice Knight Huntress",
+          "url": "https://www.findagrave.com/memorial/92969488/eunice-huntress"
+        },
+        {
+          "label": "WikiTree — Robert Huntress (Huntress-98)",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "eunice_knight_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Betsy Warren Huntress Knight** (Morganne ascent gen-6 via Sarah Knight Foss). Soft-ingest **Probable** / `verified: false` — pack **C575** / **C576**. FAG Town House Cemetery Waterboro; spouse **Eunice Knight Huntress**; children grid includes Betsy plus J..."
+    },
+    "hannah_cluff_knight": {
+      "id": "hannah_cluff_knight",
+      "slug": "hannah-cluff-knight",
+      "name": "Hannah Cluff Knight",
+      "years": "1775-1805",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [
+        "nathaniel_b_knight"
+      ],
+      "children": [
+        "nathaniel_b_knight_jr",
+        "susan_c_knight_cluff",
+        "lucy_knight_yeaton",
+        "samuel_c_knight",
+        "eunice_knight_huntress",
+        "james_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        },
+        {
+          "label": "WikiTree — daughter Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        },
+        {
+          "label": "Find A Grave 123376196 — Hannah (Cluff) Knight",
+          "url": "https://www.findagrave.com/memorial/123376196/hannah-knight"
+        },
+        {
+          "label": "Find A Grave 123375554 — spouse Nathaniel B. Knight",
+          "url": "https://www.findagrave.com/memorial/123375554/nathaniel-b-knight"
+        },
+        {
+          "label": "Gibney ONS — Hannah (I2128) FAG 123376196 + Rufus Knight Cemetery",
+          "url": "https://gibney.one-name.net/getperson.php?personID=I2128&tree=Perry"
+        },
+        {
+          "label": "WikiTree — father Samuel Clough (Clough-726)",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — mother Lucy (Wakefield) Clough (Wakefield-6328)",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "Rootsweb Clough — Samuel × Lucy Wakefield",
+          "url": "https://freepages.rootsweb.com/~whosefamilyisit/genealogy/clough.htm"
+        }
+      ],
+      "aka": [
+        "Hannah Cluff",
+        "Hannah Clough",
+        "Hannah Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Eunice Knight Huntress** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C675** / **C677**. Maiden **Cluff** / aka **Clough** (WT Cluff-434). b. **25 Jun 1775** Arundel York ME; d. **5 Aug 1805** Waterboro; wife of **Nathanie..."
+    },
+    "nathaniel_b_knight": {
+      "id": "nathaniel_b_knight",
+      "slug": "nathaniel-b-knight",
+      "name": "Nathaniel B. Knight",
+      "years": "1772-1855",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_knight",
+        "lydia_roberts_knight"
+      ],
+      "spouses": [
+        "hannah_cluff_knight"
+      ],
+      "children": [
+        "nathaniel_b_knight_jr",
+        "susan_c_knight_cluff",
+        "lucy_knight_yeaton",
+        "samuel_c_knight",
+        "eunice_knight_huntress",
+        "james_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — father John Knight (Knight-5643)",
+          "url": "https://www.wikitree.com/wiki/Knight-5643"
+        },
+        {
+          "label": "WikiTree — mother Lydia (Roberts) Knight (Roberts-11640)",
+          "url": "https://www.wikitree.com/wiki/Roberts-11640"
+        },
+        {
+          "label": "Gibney ONS — parents F490 John Barn × Lydia Roberts",
+          "url": "https://gibney.one-name.net/familygroup.php?familyID=F490&tree=Perry"
+        },
+        {
+          "label": "WikiTree — Nathaniel B Knight (Knight-12905)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — daughter Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        },
+        {
+          "label": "Find A Grave 123375554 — Nathaniel B. Knight",
+          "url": "https://www.findagrave.com/memorial/123375554/nathaniel-b-knight"
+        },
+        {
+          "label": "Find A Grave 123376196 — spouse Hannah (Cluff) Knight",
+          "url": "https://www.findagrave.com/memorial/123376196/hannah-knight"
+        },
+        {
+          "label": "Gibney ONS — Nathaniel B. Knight (I990) FAG + Rufus Knight Cemetery",
+          "url": "https://gibney.one-name.net/getperson.php?personID=I990&tree=Perry"
+        }
+      ],
+      "aka": [
+        "Nathaniel Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "john_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_roberts_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Eunice Knight Huntress** (Morganne ascent gen-7 via Betsy Warren Huntress). Soft-ingest **Probable** / `verified: false` — pack **C675** / **C676**. WikiTree Knight-12905: b. **16 Aug 1772** Somersworth NH; d. **1855** Waterboro York ME; husband of **Hanna..."
+    },
+    "lucy_wakefield_clough": {
+      "id": "lucy_wakefield_clough",
+      "slug": "lucy-wakefield-clough",
+      "name": "Lucy Wakefield Clough",
+      "years": "1750-1820",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "samuel_clough"
+      ],
+      "children": [
+        "hannah_cluff_knight",
+        "susannah_clough_weymouth",
+        "jedediah_clough",
+        "samuel_clough_jr",
+        "james_clough",
+        "lydia_clough_raymond",
+        "simon_clough",
+        "nathan_clough",
+        "nicholas_clough"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328)",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — daughter Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        },
+        {
+          "label": "Rootsweb Clough — Lucy Wakefield d. 21 Jun 1820 Alfred",
+          "url": "https://freepages.rootsweb.com/~whosefamilyisit/genealogy/clough.htm"
+        },
+        {
+          "label": "WikiTree — spouse Samuel Clough (Clough-726)",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        }
+      ],
+      "aka": [
+        "Lucy Wakefield",
+        "Lucey Wakefield",
+        "Lucy Cluff"
+      ],
+      "spouse_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Hannah Cluff Knight** (Morganne ascent via Eunice). Soft-ingest **Probable** / `verified: false` — pack **C835** / **C837**. Maiden **Wakefield**; b. **1750** Wells; d. **21 Jun 1820** Alfred (some earlier pastes **1821** — held). Daughter of Samuel Wakefi..."
+    },
+    "samuel_clough": {
+      "id": "samuel_clough",
+      "slug": "samuel-clough",
+      "name": "Samuel Clough",
+      "years": "1749-1827",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "lucy_wakefield_clough"
+      ],
+      "children": [
+        "hannah_cluff_knight",
+        "susannah_clough_weymouth",
+        "jedediah_clough",
+        "samuel_clough_jr",
+        "james_clough",
+        "lydia_clough_raymond",
+        "simon_clough",
+        "nathan_clough",
+        "nicholas_clough"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726)",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — daughter Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        },
+        {
+          "label": "Rootsweb Clough — Samuel × Lucy Wakefield (York VR + Alfred)",
+          "url": "https://freepages.rootsweb.com/~whosefamilyisit/genealogy/clough.htm"
+        },
+        {
+          "label": "Archive.org — Genealogy of the descendants of John Clough (Speare / JCGS)",
+          "url": "https://archive.org/details/genealogyofdesce00spea"
+        }
+      ],
+      "aka": [
+        "Samuel Cluff"
+      ],
+      "spouse_links": [
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Hannah Cluff Knight** (Morganne ascent via Eunice). Soft-ingest **Probable** / `verified: false` — pack **C835** / **C836**. WikiTree Clough-726 aka **Cluff**; b. **14 May 1749** York (VR); d. **27 May 1827** Alfred. m1 **7 Jun 1770** Wells to **Lucy Wakef..."
+    },
+    "lydia_roberts_knight": {
+      "id": "lydia_roberts_knight",
+      "slug": "lydia-roberts-knight",
+      "name": "Lydia Roberts Knight",
+      "years": "1743–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_knight"
+      ],
+      "children": [
+        "daniel_knight",
+        "nathaniel_b_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Lydia (Roberts) Knight (Roberts-11640)",
+          "url": "https://www.wikitree.com/wiki/Roberts-11640"
+        },
+        {
+          "label": "WikiTree — son Nathaniel B Knight (Knight-12905)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "Gibney ONS — John Barn Knight × Lydia Roberts (F490)",
+          "url": "https://gibney.one-name.net/familygroup.php?familyID=F490&tree=Perry"
+        }
+      ],
+      "aka": [
+        "Lydia Roberts"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Nathaniel B. Knight** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C830** / **C832**. WikiTree Roberts-11640: b. **31 Jul 1743** Somersworth NH; d. **aft 1801** (son bio alternate **1811** Alfred — hold); wife of **John Kn..."
+    },
+    "john_knight": {
+      "id": "john_knight",
+      "slug": "john-knight",
+      "name": "John Knight",
+      "years": "1742-1819",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "lydia_roberts_knight"
+      ],
+      "children": [
+        "daniel_knight",
+        "nathaniel_b_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Knight (Knight-5643)",
+          "url": "https://www.wikitree.com/wiki/Knight-5643"
+        },
+        {
+          "label": "WikiTree — son Nathaniel B Knight (Knight-12905)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "Gibney ONS — John Barn Knight × Lydia Roberts (F490)",
+          "url": "https://gibney.one-name.net/familygroup.php?familyID=F490&tree=Perry"
+        }
+      ],
+      "aka": [
+        "John Barn Knight",
+        "Barn Knight"
+      ],
+      "spouse_links": [
+        {
+          "id": "lydia_roberts_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Nathaniel B. Knight** (Morganne ascent gen-8 via Eunice Knight Huntress). Soft-ingest **Probable** / `verified: false` — pack **C830** / **C831**. WikiTree Knight-5643: b. **abt 1742** Kittery; d. **27 Jul 1819** (District of Maine / Alfred per son bio); h..."
+    },
+    "elizabeth_rhoda_warren_huntress": {
+      "id": "elizabeth_rhoda_warren_huntress",
+      "slug": "elizabeth-rhoda-warren-huntress",
+      "name": "Elizabeth Rhoda Warren Huntress",
+      "years": "1768–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "william_huntress"
+      ],
+      "children": [
+        "caleb_huntress",
+        "rhoda_huntress_carll",
+        "rebecca_huntress",
+        "robert_huntress",
+        "aaron_warren_huntress",
+        "hosea_hasty_huntress",
+        "james_huntress",
+        "betsey_warren_huntress_hammond",
+        "tyre_ann_huntress_shedd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Warren-13119 — Elizabeth Rhoda (Warren) Huntress",
+          "url": "https://www.wikitree.com/wiki/Warren-13119"
+        },
+        {
+          "label": "WikiTree Huntress-98 — son Robert (mother Elizabeth Rhoda Warren)",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        },
+        {
+          "label": "WikiTree Huntress-99 — spouse William (m. 2 Oct 1788 Berwick)",
+          "url": "https://www.wikitree.com/wiki/Huntress-99"
+        },
+        {
+          "label": "Find A Grave 92969533 — son Robert (father-only parents grid; mother from WT/ME birth cite)",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        }
+      ],
+      "aka": [
+        "Betsey Warren Huntress",
+        "Elizabeth Rhoda Warren",
+        "Betsey Warren"
+      ],
+      "spouse_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Robert Huntress** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C670** / **C672**. Maiden **Warren**; aka **Betsey**. WikiTree Warren-13119: b. **abt 1768** Kittery; spouse **William Huntress** m. **2 Oct 1788** Berwick. **..."
+    },
+    "william_huntress": {
+      "id": "william_huntress",
+      "slug": "william-huntress",
+      "name": "William Huntress",
+      "years": "1766-1844",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "children": [
+        "caleb_huntress",
+        "rhoda_huntress_carll",
+        "rebecca_huntress",
+        "robert_huntress",
+        "aaron_warren_huntress",
+        "hosea_hasty_huntress",
+        "james_huntress",
+        "betsey_warren_huntress_hammond",
+        "tyre_ann_huntress_shedd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 92969570 — William Huntress",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "Find A Grave 92969533 — son Robert Huntress (parent link)",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-99 — William Huntress",
+          "url": "https://www.wikitree.com/wiki/Huntress-99"
+        },
+        {
+          "label": "WikiTree Huntress-98 — son Robert (parents William × Elizabeth Rhoda Warren)",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Robert Huntress** (Morganne ascent gen-7 via Betsy Warren Huntress Knight). Soft-ingest **Probable** / `verified: false` — pack **C670** / **C671**. FAG Town House Cemetery Waterboro: b. **8 Sep 1766** Berwick; d. **13 Aug 1844** Waterboro. **Children grid..."
+    },
+    "elizabeth_sawyer_knight": {
+      "id": "elizabeth_sawyer_knight",
+      "slug": "elizabeth-sawyer-knight",
+      "name": "Elizabeth Sawyer Knight",
+      "years": "1779-1857",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "edmund_knight"
+      ],
+      "children": [
+        "william_h_knight",
+        "jones_knight",
+        "mary_knight",
+        "ruth_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elizabeth (Sawyer) Knight (Sawyer-10166)",
+          "url": "https://www.wikitree.com/wiki/Sawyer-10166"
+        },
+        {
+          "label": "WikiTree — son William H Knight (Knight-11972)",
+          "url": "https://www.wikitree.com/wiki/Knight-11972"
+        },
+        {
+          "label": "WikiTree — spouse Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        }
+      ],
+      "aka": [
+        "Elizabeth Sawyer",
+        "Betsey Sawyer",
+        "Betsy Sawyer",
+        "Betsey Knight"
+      ],
+      "spouse_links": [
+        {
+          "id": "edmund_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **William H. Knight** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C570** / **C572**. Maiden **Sawyer** (WT Sawyer-10166); aka Betsey/Betsy. m. Edmund Knight **2 Mar 1819** Hollis; Buxton register lists her as Edmund’s **2'd...",
+      "blocker": "Sawyer parents — BLOCKED C605–C609 : WT unknown; no FAG; no open obit; d"
+    },
+    "edmund_knight": {
+      "id": "edmund_knight",
+      "slug": "edmund-knight",
+      "name": "Edmund Knight",
+      "years": "1766-1841",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_knight",
+        "hannah_whidden_knight"
+      ],
+      "spouses": [
+        "elizabeth_sawyer_knight"
+      ],
+      "children": [
+        "william_h_knight",
+        "jones_knight",
+        "mary_knight",
+        "ruth_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — father Samuel Knight (Knight-9441)",
+          "url": "https://www.wikitree.com/wiki/Knight-9441"
+        },
+        {
+          "label": "WikiTree — mother Hannah (Whidden) Knight (Whidden-575)",
+          "url": "https://www.wikitree.com/wiki/Whidden-575"
+        },
+        {
+          "label": "WikiTree — son William H Knight (Knight-11972)",
+          "url": "https://www.wikitree.com/wiki/Knight-11972"
+        },
+        {
+          "label": "WikiTree — spouse Elizabeth (Sawyer) Knight (Sawyer-10166)",
+          "url": "https://www.wikitree.com/wiki/Sawyer-10166"
+        }
+      ],
+      "aka": [
+        "Edmond Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_whidden_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_sawyer_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **William H. Knight** (Morganne ascent gen-6 via Sarah Knight Foss). Soft-ingest **Probable** / `verified: false` — pack **C570** / **C571**. Gen-7 parents soft **Samuel Knight** × **Hannah Whidden Knight** — pack **C600**. WikiTree Knight-23073 + Buxton Fam..."
+    },
+    "hannah_whidden_knight": {
+      "id": "hannah_whidden_knight",
+      "slug": "hannah-whidden-knight",
+      "name": "Hannah Whidden Knight",
+      "years": "1752-1818",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [
+        "samuel_knight"
+      ],
+      "children": [
+        "edmund_knight",
+        "abel_knight",
+        "hannah_knight_libby",
+        "elizabeth_knight_sawyer",
+        "lydia_knight_palmer"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Hannah (Whidden) Knight (Whidden-575)",
+          "url": "https://www.wikitree.com/wiki/Whidden-575"
+        },
+        {
+          "label": "WikiTree — son Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — spouse Samuel Knight (Knight-9441)",
+          "url": "https://www.wikitree.com/wiki/Knight-9441"
+        },
+        {
+          "label": "A Merrill memorial (Archive.org) — cite on WT",
+          "url": "https://archive.org/details/merrillmemoriala01merr/page/193/mode/1up"
+        },
+        {
+          "label": "WikiTree — father John Whidden (Whidden-20)",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — mother Ruth (Merrill) Whidden (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN p.284",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        }
+      ],
+      "aka": [
+        "Hannah Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "samuel_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Edmund Knight** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C600** / **C602**. Maiden **Whidden** (WT Whidden-575); aka Hannah Knight. b. **~1752** Arundel York ME; d. **1818** (place blank on WT). Wife of **Samuel Knight..."
+    },
+    "samuel_knight": {
+      "id": "samuel_knight",
+      "slug": "samuel-knight",
+      "name": "Samuel Knight",
+      "years": "1741-1806",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edmund_knight_sr",
+        "jane_little_knight"
+      ],
+      "spouses": [
+        "hannah_whidden_knight"
+      ],
+      "children": [
+        "edmund_knight",
+        "abel_knight",
+        "hannah_knight_libby",
+        "elizabeth_knight_sawyer",
+        "lydia_knight_palmer"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Knight (Knight-9441)",
+          "url": "https://www.wikitree.com/wiki/Knight-9441"
+        },
+        {
+          "label": "WikiTree — son Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — spouse Hannah (Whidden) Knight (Whidden-575)",
+          "url": "https://www.wikitree.com/wiki/Whidden-575"
+        },
+        {
+          "label": "Newbury VR births — Samuel s. Edmund and Jane, Feb. 12, 1741",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/271/mode/1up"
+        },
+        {
+          "label": "WikiTree — father Edmund Knight Sr (Knight-2196)",
+          "url": "https://www.wikitree.com/wiki/Knight-2196"
+        },
+        {
+          "label": "WikiTree — mother Jane (Little) Knight (Little-7529)",
+          "url": "https://www.wikitree.com/wiki/Little-7529"
+        },
+        {
+          "label": "Little 1882 — Samuel Knight (entry 120)",
+          "url": "https://archive.org/details/descendantsofgeo1882litt"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "edmund_knight_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_little_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hannah_whidden_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Edmund Knight** (Morganne ascent gen-7 via William H. Knight). Soft-ingest **Probable** / `verified: false` — pack **C600** / **C601**. WikiTree Knight-9441: b. **12 Feb 1741** Newbury MA; d. **1806** Buxton York ME; husband of **Hannah Whidden**. Edmund W..."
+    },
+    "ruth_merrill_whidden": {
+      "id": "ruth_merrill_whidden",
+      "slug": "ruth-merrill-whidden",
+      "name": "Ruth Merrill Whidden",
+      "years": "1711–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [
+        "john_whidden"
+      ],
+      "children": [
+        "john_whitten",
+        "phineas_whitten",
+        "samuel_whitten",
+        "humphrey_whitten",
+        "israel_whitten",
+        "joseph_whitten",
+        "mary_whitten_waterhouse",
+        "ruth_whitten_clay",
+        "martha_whitten_gordon",
+        "sarah_whitten_davis",
+        "lydia_whitten_wadlin",
+        "anna_whitten_burbank",
+        "hannah_whidden_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "WikiTree — father John Merrill (Merrill-138)",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — mother Mary (Allen) Merrill (Allen-691)",
+          "url": "https://www.wikitree.com/wiki/Allen-691"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — Ruth, d. John and Mary, July 26, 1711",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        },
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN p.284",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "A Merrill memorial p.195 (Archive.org)",
+          "url": "https://archive.org/details/merrillmemoriala01merr/page/193/mode/1up"
+        },
+        {
+          "label": "WikiTree — daughter Hannah (Whidden) Knight (Whidden-575)",
+          "url": "https://www.wikitree.com/wiki/Whidden-575"
+        }
+      ],
+      "aka": [
+        "Ruth Merrill",
+        "Ruth Merryl",
+        "Ruth Whitten"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Hannah Whidden Knight** (Morganne ascent via Edmund Knight). Soft-ingest **Probable** / `verified: false` — pack **C695** / **C697**; parents soft **C885–C889**. Maiden **Merrill** (aka Merryl); b. **26 Jul 1711** Salisbury VR (WT header **20 Jul** held); ..."
+    },
+    "john_whidden": {
+      "id": "john_whidden",
+      "slug": "john-whidden",
+      "name": "John Whidden",
+      "years": "1704-1787",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_whidden",
+        "sarah_jones_whidden"
+      ],
+      "spouses": [
+        "ruth_merrill_whidden"
+      ],
+      "children": [
+        "john_whitten",
+        "phineas_whitten",
+        "samuel_whitten",
+        "humphrey_whitten",
+        "israel_whitten",
+        "joseph_whitten",
+        "mary_whitten_waterhouse",
+        "ruth_whitten_clay",
+        "martha_whitten_gordon",
+        "sarah_whitten_davis",
+        "lydia_whitten_wadlin",
+        "anna_whitten_burbank",
+        "hannah_whidden_knight"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Whidden (Whidden-20)",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN p.284",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "Archive.org — Bradbury History of Kennebunk Port",
+          "url": "https://archive.org/details/historyofkennebu00brad"
+        },
+        {
+          "label": "WikiTree — daughter Hannah (Whidden) Knight (Whidden-575)",
+          "url": "https://www.wikitree.com/wiki/Whidden-575"
+        },
+        {
+          "label": "WikiTree — father Samuel Whidden (Whidden-13)",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — mother Sarah (Jones) Savage (Jones-1991)",
+          "url": "https://www.wikitree.com/wiki/Jones-1991"
+        },
+        {
+          "label": "GDMNH p.745–6 via WT + Archive.org",
+          "url": "https://archive.org/details/genealogicaldict0000noye/page/744/mode/2up"
+        }
+      ],
+      "aka": [
+        "John Whitten"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_jones_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Hannah Whidden Knight** (Morganne ascent via Edmund Knight). Soft-ingest **Probable** / `verified: false` — pack **C695** / **C696**. WikiTree Whidden-20 aka **Whitten**; b. **~1704** Greenland NH; d. **15 Jun 1787** Arundel (bio also **5 Jun** Kennebunkpo..."
+    },
+    "mary_allen_merrill": {
+      "id": "mary_allen_merrill",
+      "slug": "mary-allen-merrill",
+      "name": "Mary Allen Merrill",
+      "years": "1681-1736",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_merrill"
+      ],
+      "children": [
+        "abel_merrill",
+        "john_merrill_jr",
+        "thomas_merrill",
+        "hannah_merrill_osgood",
+        "nanne_merrill",
+        "humphrey_merrill",
+        "martha_merrill_morse",
+        "mary_merrill_burnham",
+        "ruth_merrill_whidden"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Mary (Allen) Merrill (Allen-691)",
+          "url": "https://www.wikitree.com/wiki/Allen-691"
+        },
+        {
+          "label": "WikiTree — daughter Ruth (Merrill) Whidden (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John Merrill m. Mary Allin 23 Sep 1702",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        },
+        {
+          "label": "Hoyt Old Families of Salisbury and Amesbury (HathiTrust cite on WT)",
+          "url": "https://babel.hathitrust.org/cgi/pt?id=coo1.ark:/13960/t9766292m&view=1up&seq=40"
+        },
+        {
+          "label": "A Merrill memorial p.195 (Archive.org)",
+          "url": "https://archive.org/details/merrillmemoriala01merr/page/193/mode/1up"
+        }
+      ],
+      "aka": [
+        "Mary Allen",
+        "Mary Allin",
+        "Mary Merrill"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C885** / **C887**. Maiden **Allen**/Allin; b. **27 Dec 1681** Salisbury; m. **23 Sep 1702** John Merrill; d. **6 Apr 1736** Salisbury (WT Allen-691). Hoyt footn..."
+    },
+    "john_merrill": {
+      "id": "john_merrill",
+      "slug": "john-merrill",
+      "name": "John Merrill",
+      "years": "1674-1756",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_allen_merrill"
+      ],
+      "children": [
+        "abel_merrill",
+        "john_merrill_jr",
+        "thomas_merrill",
+        "hannah_merrill_osgood",
+        "nanne_merrill",
+        "humphrey_merrill",
+        "martha_merrill_morse",
+        "mary_merrill_burnham",
+        "ruth_merrill_whidden"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138)",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — daughter Ruth (Merrill) Whidden (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org djvu) — children of John and Mary; m. Mary Allin",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family (Salisbury VR cites)",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        },
+        {
+          "label": "A Merrill memorial p.195 (Archive.org)",
+          "url": "https://archive.org/details/merrillmemoriala01merr/page/193/mode/1up"
+        },
+        {
+          "label": "Find A Grave 47008264 — John Merrill (WT cite; fetch timed out this pass)",
+          "url": "https://www.findagrave.com/memorial/47008264/john-merrill"
+        }
+      ],
+      "aka": [
+        "Dea. John Merrill"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Ruth Merrill Whidden** (Morganne ascent via Hannah Whidden Knight). Soft-ingest **Probable** / `verified: false` — pack **C885** / **C886**. b. **7 Oct 1674** Newbury; m. **23 Sep 1702** Salisbury to **Mary Allen**/Allin; d. **17 Jan 1756** Salisbury; FAG ..."
+    },
+    "sarah_jones_whidden": {
+      "id": "sarah_jones_whidden",
+      "slug": "sarah-jones-whidden",
+      "name": "Sarah Jones Whidden",
+      "years": "1669-1722",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "samuel_whidden"
+      ],
+      "children": [
+        "sarah_whidden_bucknell",
+        "samuel_whidden_jr",
+        "john_whidden",
+        "james_whidden",
+        "ichabod_whidden"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Sarah (Jones) Savage (Jones-1991)",
+          "url": "https://www.wikitree.com/wiki/Jones-1991"
+        },
+        {
+          "label": "WikiTree — husband Samuel Whidden (Whidden-13)",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — son John Whidden (Whidden-20) parents",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "GDMNH via WT + Archive.org borrow",
+          "url": "https://archive.org/details/genealogicaldict0000noye/page/744/mode/2up"
+        }
+      ],
+      "aka": [
+        "Sarah Jones",
+        "Sarah Whidden",
+        "Sarah Whitten",
+        "Sarah Savage",
+        "Sarah Jones Savage"
+      ],
+      "spouse_links": [
+        {
+          "id": "samuel_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **John Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C880** / **C882**. Maiden **Jones**; b. **27 Apr 1669** Portsmouth NH; d. **~1722** / living 1722 Greenland (WT). Wife of **Samuel Whidden**/Whitten m. **~1700**; widow..."
+    },
+    "samuel_whidden": {
+      "id": "samuel_whidden",
+      "slug": "samuel-whidden",
+      "name": "Samuel Whidden",
+      "years": "1670-1714",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_jones_whidden"
+      ],
+      "children": [
+        "sarah_whidden_bucknell",
+        "samuel_whidden_jr",
+        "john_whidden",
+        "james_whidden",
+        "ichabod_whidden"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Whidden (Whidden-13)",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — son John Whidden (Whidden-20) parents",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "GDMNH p.745–6 via WT + Archive.org borrow",
+          "url": "https://archive.org/details/genealogicaldict0000noye/page/744/mode/2up"
+        },
+        {
+          "label": "Goff — Whidden Colchester NS (compiled; cites GDMNH/Noyes)",
+          "url": "https://gofffamilyhistory.ca/WhiddenColchesterNovaScotia.pdf"
+        }
+      ],
+      "aka": [
+        "Samuel Whitten",
+        "Samll Whitten"
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_jones_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **John Whidden** (Morganne ascent via Hannah Whidden Knight). Soft-ingest **Probable** / `verified: false` — pack **C880** / **C881**. WikiTree Whidden-13; b. **~1670** Greenland NH; d. **~20 Feb 1714** Greenland (alive 22 Aug 1713; dead by 3 Mar 1713/4 per ..."
+    },
+    "jane_little_knight": {
+      "id": "jane_little_knight",
+      "slug": "jane-little-knight",
+      "name": "Jane Little Knight",
+      "years": "1718-1751",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "edmund_knight_sr"
+      ],
+      "children": [
+        "samuel_knight",
+        "edmund_knight_jr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Jane (Little) Knight (Little-7529)",
+          "url": "https://www.wikitree.com/wiki/Little-7529"
+        },
+        {
+          "label": "Newbury VR births — Jane d. Tristram and Sarah, June 7, 1718",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/280/mode/1up"
+        },
+        {
+          "label": "Newbury VR marriages — Edmund Knight and Jane Little, May 25, 1741",
+          "url": "https://archive.org/details/vitalrecordsofne21newb/page/277/mode/1up"
+        },
+        {
+          "label": "Little 1882 — Jane (entry 119); children Samuel + Edmund",
+          "url": "https://archive.org/details/descendantsofgeo1882litt"
+        },
+        {
+          "label": "WikiTree — son Samuel Knight (Knight-9441)",
+          "url": "https://www.wikitree.com/wiki/Knight-9441"
+        }
+      ],
+      "aka": [
+        "Jane Little"
+      ],
+      "spouse_links": [
+        {
+          "id": "edmund_knight_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Samuel Knight** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C690** / **C692**. Maiden **Little**; Newbury VR b. **7 Jun 1718** (d. Tristram × Sarah); m. **25 May 1741** Edmund Knight; died **before Jun 1751** (Edmund remarried ..."
+    },
+    "edmund_knight_sr": {
+      "id": "edmund_knight_sr",
+      "slug": "edmund-knight-sr",
+      "name": "Edmund Knight Sr",
+      "years": "1714-1784",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "richard_knight",
+        "elizabeth_jaques_knight"
+      ],
+      "spouses": [
+        "jane_little_knight"
+      ],
+      "children": [
+        "samuel_knight",
+        "edmund_knight_jr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Edmund Knight Sr (Knight-2196)",
+          "url": "https://www.wikitree.com/wiki/Knight-2196"
+        },
+        {
+          "label": "Newbury VR births — Edmund s. Richard and Elisabeth, Aug. 30, 1714",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "Newbury VR marriages — Edmund and Jane Little, May 25, 1741",
+          "url": "https://archive.org/details/vitalrecordsofne21newb/page/277/mode/1up"
+        },
+        {
+          "label": "Little 1882 — Jane m. Edmund Knight (entry 119)",
+          "url": "https://archive.org/details/descendantsofgeo1882litt"
+        },
+        {
+          "label": "Pane-Joyce — Edmond Knight (27856)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr12/rr12_281.html"
+        },
+        {
+          "label": "WikiTree — father Richard Knight (Knight-2504)",
+          "url": "https://www.wikitree.com/wiki/Knight-2504"
+        },
+        {
+          "label": "WikiTree — mother Elizabeth (Jaques) Knight (Jaques-20)",
+          "url": "https://www.wikitree.com/wiki/Jaques-20"
+        }
+      ],
+      "aka": [
+        "Edmond Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "richard_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_jaques_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "jane_little_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Samuel Knight** (Morganne ascent via Edmund Knight of Buxton). Soft-ingest **Probable** / `verified: false` — pack **C690** / **C691**. WikiTree Knight-2196 + Newbury VR: b. **30 Aug 1714** Newbury (s. Richard × Elisabeth); m. **25 May 1741** Jane Little; ..."
+    },
+    "elizabeth_jaques_knight": {
+      "id": "elizabeth_jaques_knight",
+      "slug": "elizabeth-jaques-knight",
+      "name": "Elizabeth Jaques Knight",
+      "years": "1669-1743",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "richard_knight"
+      ],
+      "children": [
+        "henry_knight",
+        "elizabeth_knight_dole",
+        "moses_knight",
+        "edmund_knight_sr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elizabeth (Jaques) Knight (Jaques-20)",
+          "url": "https://www.wikitree.com/wiki/Jaques-20"
+        },
+        {
+          "label": "Newbury VR births — Elizabeth, d. Henry, Oct. 28, 1669",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/243/mode/1up"
+        },
+        {
+          "label": "Newbury VR births — Edmund s. Richard and Elisabeth, Aug. 30, 1714",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "WikiTree — son Edmund Knight Sr (Knight-2196)",
+          "url": "https://www.wikitree.com/wiki/Knight-2196"
+        },
+        {
+          "label": "Pane-Joyce — Capt. Richard Knight × Elizabeth Jaques children",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr12/rr12_281.html"
+        }
+      ],
+      "aka": [
+        "Elizabeth Jaques",
+        "Elisabeth Jaques",
+        "Elisabeth Knight"
+      ],
+      "spouse_links": [
+        {
+          "id": "richard_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Edmund Knight Sr** (Morganne ascent via Samuel Knight). Soft-ingest **Probable** / `verified: false` — pack **C800** / **C802**. Maiden **Jaques** (VR **Elisabeth** on Edmund’s birth). WikiTree Jaques-20 + Newbury VR: b. **28 Oct 1669** Newbury (d. Henry);..."
+    },
+    "richard_knight": {
+      "id": "richard_knight",
+      "slug": "richard-knight",
+      "name": "Capt Richard Knight",
+      "years": "1666-1723",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_jaques_knight"
+      ],
+      "children": [
+        "henry_knight",
+        "elizabeth_knight_dole",
+        "moses_knight",
+        "edmund_knight_sr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Richard Knight (Knight-2504)",
+          "url": "https://www.wikitree.com/wiki/Knight-2504"
+        },
+        {
+          "label": "Newbury VR births — Richard, s. John, jr., July 26, 1666",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/270/mode/1up"
+        },
+        {
+          "label": "Newbury VR births — Edmund s. Richard and Elisabeth, Aug. 30, 1714",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "WikiTree — son Edmund Knight Sr (Knight-2196)",
+          "url": "https://www.wikitree.com/wiki/Knight-2196"
+        },
+        {
+          "label": "Find A Grave 67491133 — Richard Knight (pointer; death-day conflict)",
+          "url": "https://www.findagrave.com/memorial/67491133/richard-knight"
+        },
+        {
+          "label": "Pane-Joyce — Capt. Richard Knight × Elizabeth Jaques children",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr12/rr12_281.html"
+        }
+      ],
+      "aka": [
+        "Richard Knight",
+        "Corp. Richard Knight"
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_jaques_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Edmund Knight Sr** (Morganne ascent via Samuel Knight). Soft-ingest **Probable** / `verified: false` — pack **C800** / **C801**. WikiTree Knight-2504 + Newbury VR: b. **26 Jul 1666** Newbury (s. John jr.); m. **~1697** Elizabeth Jaques (no VR marriage this..."
+    },
+    "harriet_n_bunker_foss": {
+      "id": "harriet_n_bunker_foss",
+      "slug": "harriet-n-bunker-foss",
+      "name": "Harriet N. Bunker Foss",
+      "years": "1822-1877",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ],
+      "spouses": [
+        "daniel_w_foss"
+      ],
+      "children": [
+        "ambrose_foss",
+        "abigail_j_foss_hill",
+        "ruth_h_foss_johnston"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Harriet N. Bunker Foss (43860310)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        },
+        {
+          "label": "Find A Grave — son Ambrose Foss (104839458)",
+          "url": "https://www.findagrave.com/memorial/104839458/ambrose-foss"
+        },
+        {
+          "label": "Find A Grave — daughter Abigail J Foss Hill (46299957)",
+          "url": "https://www.findagrave.com/memorial/46299957/abigail_j-hill"
+        },
+        {
+          "label": "Find A Grave — daughter Ruth H Foss Johnston (179493705)",
+          "url": "https://www.findagrave.com/memorial/179493705/ruth_h-johnston"
+        },
+        {
+          "label": "Find A Grave — spouse Daniel W. Foss (26237974)",
+          "url": "https://www.findagrave.com/memorial/26237974/daniel_w-foss"
+        },
+        {
+          "label": "Find A Grave — father Joseph Bunker (37548610)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave — mother Olive Otis Bunker (110452588)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        },
+        {
+          "label": "WikiTree — Harriet Newell (Bunker) Foss (Bunker-277)",
+          "url": "https://www.wikitree.com/wiki/Bunker-277"
+        }
+      ],
+      "aka": [
+        "Harriet Newell Bunker",
+        "Harriet N. Foss",
+        "Harriet M. Bunker Foss"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "daniel_w_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Ambrose Foss** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C520** / **C522**. Maiden **Bunker** on FAG title; spouse **Daniel W. Foss**; children Ambrose + **Abigail J. Foss Hill** + **Ruth H. Foss Johnston** (**C563**). ..."
+    },
+    "daniel_w_foss": {
+      "id": "daniel_w_foss",
+      "slug": "daniel-w-foss",
+      "name": "Daniel W. Foss",
+      "years": "1819-1894",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ambrose_foss_sr",
+        "abbie_wentworth_foss"
+      ],
+      "spouses": [
+        "harriet_n_bunker_foss"
+      ],
+      "children": [
+        "ambrose_foss",
+        "abigail_j_foss_hill",
+        "ruth_h_foss_johnston"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Daniel W. Foss (26237974)",
+          "url": "https://www.findagrave.com/memorial/26237974/daniel_w-foss"
+        },
+        {
+          "label": "Find A Grave — son Ambrose Foss (104839458)",
+          "url": "https://www.findagrave.com/memorial/104839458/ambrose-foss"
+        },
+        {
+          "label": "Find A Grave — daughter Abigail J Foss Hill (46299957)",
+          "url": "https://www.findagrave.com/memorial/46299957/abigail_j-hill"
+        },
+        {
+          "label": "Find A Grave — daughter Ruth H Foss Johnston (179493705)",
+          "url": "https://www.findagrave.com/memorial/179493705/ruth_h-johnston"
+        },
+        {
+          "label": "Find A Grave — spouse Harriet N. Bunker Foss (43860310)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        },
+        {
+          "label": "WikiTree — Daniel W. Foss (Foss-716)",
+          "url": "https://www.wikitree.com/wiki/Foss-716"
+        }
+      ],
+      "aka": [
+        "Daniel Foss"
+      ],
+      "parent_links": [
+        {
+          "id": "ambrose_foss_sr",
+          "confidence": "Possible"
+        },
+        {
+          "id": "abbie_wentworth_foss",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "harriet_n_bunker_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Ambrose Foss** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C520** / **C521**. FAG Riverside Cemetery Fort Fairfield; spouse **Harriet N. Bunker Foss** (m. 1841 on FAG); children grid Ambrose + **Abigail J. Foss Hill** + *..."
+    },
+    "olive_otis_bunker": {
+      "id": "olive_otis_bunker",
+      "slug": "olive-otis-bunker",
+      "name": "Olive Otis Bunker",
+      "years": "1784-1830",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "paul_otis",
+        "elizabeth_parshley_otis"
+      ],
+      "spouses": [
+        "joseph_s_bunker"
+      ],
+      "children": [
+        "ann_bunker_rand",
+        "eli_bunker",
+        "isaac_lewis_bunker",
+        "betsey_bunker_walker",
+        "harriet_n_bunker_foss",
+        "abraham_e_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 110452588 — Olive Otis Bunker",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        },
+        {
+          "label": "Find A Grave 64275619 — father Paul Otis (parent + children grid)",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        },
+        {
+          "label": "Find A Grave 43860310 — daughter Harriet N. Bunker Foss (parent link)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        },
+        {
+          "label": "Find A Grave 37548610 — spouse Joseph Bunker",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "WikiTree — Olive (Otis) Bunker (Otis-1645)",
+          "url": "https://www.wikitree.com/wiki/Otis-1645"
+        },
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210–211 — Olive dau. Paul × Elizabeth; m. Joseph Bunker",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        }
+      ],
+      "aka": [
+        "Olive Otis",
+        "Olive Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "paul_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_parshley_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Harriet N. Bunker Foss** (Morganne ascent gen-6 via Ambrose). Soft-ingest **Probable** / `verified: false` — pack **C565** / **C567**. Maiden **Otis**. Parents soft **Paul Otis** × **Elizabeth Parshley Otis** — pack **C645–C649**. Olive FAG → father Paul; ..."
+    },
+    "joseph_s_bunker": {
+      "id": "joseph_s_bunker",
+      "slug": "joseph-s-bunker",
+      "name": "Joseph S. Bunker",
+      "years": "1783-1830",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "eli_bunker_sr",
+        "anna_gordon_bunker"
+      ],
+      "spouses": [
+        "olive_otis_bunker"
+      ],
+      "children": [
+        "ann_bunker_rand",
+        "eli_bunker",
+        "isaac_lewis_bunker",
+        "betsey_bunker_walker",
+        "harriet_n_bunker_foss",
+        "abraham_e_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37548610 — Joseph Bunker",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 43860310 — daughter Harriet N. Bunker Foss (parent link)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        },
+        {
+          "label": "Find A Grave 110452588 — spouse Olive Otis Bunker",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        },
+        {
+          "label": "Find A Grave 37548652 — father Eli Bunker",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Find A Grave 37548584 — mother Anna Gordon Bunker",
+          "url": "https://www.findagrave.com/memorial/37548584/anna-bunker"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-37 / #100 (Archive.org)",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "WikiTree — Joseph S. Bunker (Bunker-1753)",
+          "url": "https://www.wikitree.com/wiki/Bunker-1753"
+        }
+      ],
+      "aka": [
+        "Joseph Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "eli_bunker_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_gordon_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Harriet N. Bunker Foss** (Morganne ascent gen-6 via Ambrose). Soft-ingest **Probable** / `verified: false` — pack **C565** / **C566**. Bidirectional FAG: Harriet parents grid ↔ Joseph children grid (Ann Rand, Eli, Isaac Lewis, Betsey Walker, Harriet N. Fos..."
+    },
+    "elizabeth_parshley_otis": {
+      "id": "elizabeth_parshley_otis",
+      "slug": "elizabeth-parshley-otis",
+      "name": "Elizabeth Parshley Otis",
+      "years": "1753-1837",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "paul_otis"
+      ],
+      "children": [
+        "samuel_otis",
+        "olive_otis_bunker",
+        "paul_otis_jr",
+        "betsey_otis_gilman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 64275619 — spouse Paul Otis (bio names Elizabeth Parshley 1753–1837)",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        },
+        {
+          "label": "WikiTree — Elizabeth Parshley (Parshley-38)",
+          "url": "https://www.wikitree.com/wiki/Parshley-38"
+        },
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210–211 — Paul m. Elizabeth Parshley; she d. 8 Nov 1837 æ 84",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        }
+      ],
+      "aka": [
+        "Elizabeth Parshley",
+        "Elizabeth Otis"
+      ],
+      "spouse_links": [
+        {
+          "id": "paul_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Olive Otis Bunker** (Morganne ascent gen-7 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C645** / **C647**. Maiden **Parshley**. Named on Paul Otis FAG bio and NEHGR Otis Genealogy (d. 8 Nov 1837 æ 84; ten children). WikiTree Parshley...",
+      "blocker": "Parshley parents — BLOCKED C765–C769 : WT unknown; no FAG; no open obit;"
+    },
+    "paul_otis": {
+      "id": "paul_otis",
+      "slug": "paul-otis",
+      "name": "Paul Otis",
+      "years": "1755-1848",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [
+        "elizabeth_parshley_otis"
+      ],
+      "children": [
+        "samuel_otis",
+        "olive_otis_bunker",
+        "paul_otis_jr",
+        "betsey_otis_gilman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 64275619 — Paul Otis",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        },
+        {
+          "label": "Find A Grave 110452588 — daughter Olive Otis Bunker (parent link)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        },
+        {
+          "label": "WikiTree — Paul Otis (Otis-1027)",
+          "url": "https://www.wikitree.com/wiki/Otis-1027"
+        },
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.209–210 — son of Joshua × Jane Hussey; Paul × Elizabeth",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Paul #246 under Joshua × Jane",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) / Jane Hussey (Hussey-1579)",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Paul Otis Sr"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_parshley_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Olive Otis Bunker** (Morganne ascent gen-7 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C645** / **C646**. Olive FAG parents grid → Paul; Paul’s children grid includes Olive. Spouse **Elizabeth Parshley** (FAG bio + NEHGR; no Elizabe..."
+    },
+    "jane_hussey_otis": {
+      "id": "jane_hussey_otis",
+      "slug": "jane-hussey-otis",
+      "name": "Jane Hussey Otis",
+      "years": "1724-1790",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "joshua_otis"
+      ],
+      "children": [
+        "nicholas_otis",
+        "micajah_otis",
+        "elijah_otis",
+        "mary_otis_young",
+        "sarah_otis_parshley",
+        "paul_otis",
+        "stephen_otis",
+        "joshua_otis_jr",
+        "jane_otis_meader",
+        "rebecca_otis_wilkinson"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.209–210 — Jane Hussey of Dover; d. 1790 Barrington",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/209/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Jane Hussey of Dover/Madbury; d. 1790",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Jane Hussey Otis (Hussey-1579)",
+          "url": "https://www.wikitree.com/wiki/Hussey-1579"
+        },
+        {
+          "label": "WikiTree — son Paul Otis (Otis-1027) parents",
+          "url": "https://www.wikitree.com/wiki/Otis-1027"
+        }
+      ],
+      "aka": [
+        "Jane Hussey"
+      ],
+      "spouse_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Paul Otis** (Morganne ascent gen-8 via Olive). Soft-ingest **Probable** / `verified: false` — pack **C760** / **C762**. Maiden **Hussey**. NEHGR: Jane Hussey of Dover m. Joshua Otis ~1745; d. 1790 Barrington with Joshua d. 1810. WT Hussey-1579 (Joseph Huss..."
+    },
+    "joshua_otis": {
+      "id": "joshua_otis",
+      "slug": "joshua-otis",
+      "name": "Joshua Otis",
+      "years": "1720-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "jane_hussey_otis"
+      ],
+      "children": [
+        "nicholas_otis",
+        "micajah_otis",
+        "elijah_otis",
+        "mary_otis_young",
+        "sarah_otis_parshley",
+        "paul_otis",
+        "stephen_otis",
+        "joshua_otis_jr",
+        "jane_otis_meader",
+        "rebecca_otis_wilkinson"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.209–210 — Joshua × Jane Hussey; children incl. Paul",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/209/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane Hussey; Paul #246",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881)",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        },
+        {
+          "label": "WikiTree — son Paul Otis (Otis-1027) parents",
+          "url": "https://www.wikitree.com/wiki/Otis-1027"
+        },
+        {
+          "label": "Find A Grave 64275619 — son Paul Otis (identity bridge)",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Paul Otis** (Morganne ascent gen-8 via Olive Otis Bunker). Soft-ingest **Probable** / `verified: false` — pack **C760** / **C761**. NEHGR Otis Genealogy (1851) p.209–210: Joshua Otis⁴ m. Jane Hussey of Dover ~1745; to Barrington/Strafford 1752; d. 1810 Bar..."
+    },
+    "anna_gordon_bunker": {
+      "id": "anna_gordon_bunker",
+      "slug": "anna-gordon-bunker",
+      "name": "Anna Gordon Bunker",
+      "years": "1761-1840",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "eli_bunker_sr"
+      ],
+      "children": [
+        "joseph_s_bunker",
+        "abraham_runnels_bunker",
+        "gordon_bunker",
+        "timothy_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37548584 — Anna Gordon Bunker",
+          "url": "https://www.findagrave.com/memorial/37548584/anna-bunker"
+        },
+        {
+          "label": "Find A Grave 37548610 — son Joseph Bunker (parent link)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 37548652 — spouse Eli Bunker",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Barnstead Parade Ground cemetery transcript (Access Genealogy)",
+          "url": "https://accessgenealogy.com/new-hampshire/barnstead-parade-ground-belknap-county-new-hampshire.htm"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-37 (Archive.org) — Anna Gordon; m. 30 Jan 1783",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "History of Durham NH — Anna Gordon of New Hampton (NHGenealogy extract)",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Anna (Gordon) Bunker (Gordon-10559)",
+          "url": "https://www.wikitree.com/wiki/Gordon-10559"
+        }
+      ],
+      "aka": [
+        "Anna Gordon",
+        "Ann Bunker"
+      ],
+      "spouse_links": [
+        {
+          "id": "eli_bunker_sr",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Joseph S. Bunker** (Morganne ascent gen-7 via Harriet N. Bunker Foss). Soft-ingest **Probable** / `verified: false` — pack **C640** / **C642**. Maiden **Gordon**. Bidirectional FAG: Joseph parents ↔ Anna children (Joseph, Abraham, Gordon, Timothy+). Spouse...",
+      "blocker": "Gordon parents — Blocked C735–C739 : WT unknown; Moran/Durham name no pa"
+    },
+    "eli_bunker_sr": {
+      "id": "eli_bunker_sr",
+      "slug": "eli-bunker-sr",
+      "name": "Eli Bunker",
+      "years": "1760-1842",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [
+        "anna_gordon_bunker"
+      ],
+      "children": [
+        "joseph_s_bunker",
+        "abraham_runnels_bunker",
+        "gordon_bunker",
+        "timothy_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37548652 — Eli Bunker",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Find A Grave 37548610 — son Joseph Bunker (parent link)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 37548584 — spouse Anna Gordon Bunker",
+          "url": "https://www.findagrave.com/memorial/37548584/anna-bunker"
+        },
+        {
+          "label": "Barnstead Parade Ground cemetery transcript (Access Genealogy)",
+          "url": "https://accessgenealogy.com/new-hampshire/barnstead-parade-ground-belknap-county-new-hampshire.htm"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-37 / D-15 (Archive.org)",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "History of Durham NH — Eli × Anna Gordon; Jonathan × Sarah Runnels (NHGenealogy extract)",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Eli Bunker (Bunker-1652)",
+          "url": "https://www.wikitree.com/wiki/Bunker-1652"
+        },
+        {
+          "label": "WikiTree — father Jonathon Bunker (Bunker-516)",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        },
+        {
+          "label": "WikiTree — mother Sarah (Runnels) Bunker (Runnels-194)",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "Eli Bunker Sr."
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_gordon_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Joseph S. Bunker** (Morganne ascent gen-7 via Harriet N. Bunker Foss). Soft-ingest **Probable** / `verified: false` — pack **C640** / **C641**. Bidirectional FAG: Joseph parents ↔ Eli children (Joseph, Abraham, Gordon, Timothy). Spouse **Anna Gordon Bunker..."
+    },
+    "sarah_runnels_bunker": {
+      "id": "sarah_runnels_bunker",
+      "slug": "sarah-runnels-bunker",
+      "name": "Sarah Runnels Bunker",
+      "years": "1731-1826",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [
+        "jonathan_bunker"
+      ],
+      "children": [
+        "bradbury_bunker",
+        "sobriety_bunker_williams",
+        "sarah_bunker_tibbetts",
+        "joseph_bunker_1757",
+        "eli_bunker_sr",
+        "jonathan_bunker_jr",
+        "hannah_bunker",
+        "isaiah_bunker",
+        "obadiah_bunker",
+        "elijah_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194)",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        },
+        {
+          "label": "WikiTree — son Eli Bunker (Bunker-1652) parent link",
+          "url": "https://www.wikitree.com/wiki/Bunker-1652"
+        },
+        {
+          "label": "Find A Grave 37548652 — son Eli Bunker (parent names Jonathan × Sarah Runnels)",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Barnstead Parade Ground cemetery transcript (Access Genealogy)",
+          "url": "https://accessgenealogy.com/new-hampshire/barnstead-parade-ground-belknap-county-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — father John Runnels (Runnels-195)",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — mother Hannah (Clark) Runnels (Clark-15792)",
+          "url": "https://www.wikitree.com/wiki/Clark-15792"
+        },
+        {
+          "label": "Runnels 1873 Genealogy — Sarah dau. John; will Sarah Bunker",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org)",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH (History of Durham extract)",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        }
+      ],
+      "aka": [
+        "Sarah Runnels",
+        "Sarah Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Eli Bunker** (`eli_bunker_sr`; Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C730** / **C732**. Maiden **Runnels**; soft parents **John Runnels** × **Hannah Clark Runnels** (pack **C925–C929**; Runnels 1873 will + Moran D-15..."
+    },
+    "jonathan_bunker": {
+      "id": "jonathan_bunker",
+      "slug": "jonathan-bunker",
+      "name": "Jonathan Bunker",
+      "years": "1729-1796",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_bunker",
+        "ann_giles_bunker"
+      ],
+      "spouses": [
+        "sarah_runnels_bunker"
+      ],
+      "children": [
+        "bradbury_bunker",
+        "sobriety_bunker_williams",
+        "sarah_bunker_tibbetts",
+        "joseph_bunker_1757",
+        "eli_bunker_sr",
+        "jonathan_bunker_jr",
+        "hannah_bunker",
+        "isaiah_bunker",
+        "obadiah_bunker",
+        "elijah_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516)",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        },
+        {
+          "label": "WikiTree — son Eli Bunker (Bunker-1652) parent link",
+          "url": "https://www.wikitree.com/wiki/Bunker-1652"
+        },
+        {
+          "label": "Find A Grave 37548652 — son Eli Bunker (parent names Jonathan x Sarah Runnels)",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Barnstead Parade Ground cemetery transcript (Access Genealogy)",
+          "url": "https://accessgenealogy.com/new-hampshire/barnstead-parade-ground-belknap-county-new-hampshire.htm"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org)",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH (History of Durham extract)",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — father Joseph Bunker (Bunker-517)",
+          "url": "https://www.wikitree.com/wiki/Bunker-517"
+        },
+        {
+          "label": "WikiTree — mother Ann (Giles) Bunker (Giles-1658)",
+          "url": "https://www.wikitree.com/wiki/Giles-1658"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6 (Jonathan #12)",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        }
+      ],
+      "aka": [
+        "Jonathon Bunker",
+        "Jonathan Bunker Sr."
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_giles_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Eli Bunker** (`eli_bunker_sr`; Morganne ascent gen-8 via Joseph S. Bunker). Soft-ingest **Probable** / `verified: false` — pack **C730** / **C731**. Moran D-15: b. 1729 Durham; m. **Dec 1749** Lee to Sarah Runnels; d. **3 Sep 1796** aet 67 Barnstead (Bible..."
+    },
+    "hannah_clark_runnels": {
+      "id": "hannah_clark_runnels",
+      "slug": "hannah-clark-runnels",
+      "name": "Hannah Clark Runnels",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_runnels"
+      ],
+      "children": [
+        "william_runnels",
+        "elizabeth_runnels_snell",
+        "joseph_runnels",
+        "sarah_runnels_bunker",
+        "hannah_runnels_willey",
+        "deliverance_runnels",
+        "stephen_runnels",
+        "solomon_runnels",
+        "winthrop_runnels"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Hannah (Clark) Runnels (Clark-15792)",
+          "url": "https://www.wikitree.com/wiki/Clark-15792"
+        },
+        {
+          "label": "Runnels 1873 — John¹ m. Hannah Clark 23 Dec 1718; will wife Hannah",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-15 — Sarah dau. John × Hannah Clark",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "WikiTree — daughter Sarah (Runnels) Bunker (Runnels-194)",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "Hannah Clark",
+        "Hannah Runnels"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Sarah Runnels Bunker** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C925** / **C927**. Maiden **Clark**; m. **23 Dec 1718** Durham to John Runnels (2nd wife). Alive **20 Jun 1756** (named in husband’s will) — reject unsour..."
+    },
+    "john_runnels": {
+      "id": "john_runnels",
+      "slug": "john-runnels",
+      "name": "John Runnels",
+      "years": "1676-1756",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hannah_clark_runnels"
+      ],
+      "children": [
+        "john_runnels_jr",
+        "abraham_runnels",
+        "william_runnels",
+        "elizabeth_runnels_snell",
+        "joseph_runnels",
+        "sarah_runnels_bunker",
+        "hannah_runnels_willey",
+        "deliverance_runnels",
+        "stephen_runnels",
+        "solomon_runnels",
+        "winthrop_runnels"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Runnels (Runnels-195)",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "Runnels 1873 Genealogy — John¹ will + children (Archive.org)",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-15 — Sarah dau. John × Hannah Clark",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "WikiTree — daughter Sarah (Runnels) Bunker (Runnels-194)",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "John Renels",
+        "John Ronals",
+        "John Renolds"
+      ],
+      "spouse_links": [
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Sarah Runnels Bunker** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C925** / **C926**. Soft b. **~1676** (WT; deposition aged 58 in 1734) — Runnels 1873 also ~1689. m. **23 Dec 1718** Durham to **Hannah Clark** (NEHGR Hugh..."
+    },
+    "ann_giles_bunker": {
+      "id": "ann_giles_bunker",
+      "slug": "ann-giles-bunker",
+      "name": "Ann Giles Bunker",
+      "years": "1702-1797",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "joseph_bunker"
+      ],
+      "children": [
+        "patience_bunker_clements",
+        "anna_bunker_stevenson",
+        "jonathan_bunker",
+        "benjamin_bunker",
+        "james_giles_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Ann (Giles) Bunker (Giles-1658)",
+          "url": "https://www.wikitree.com/wiki/Giles-1658"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6 (Ann Giles)",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "Moran Bunker Genealogy (Archive.org) — Joseph D-6 / Ann Giles",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Find A Grave 99274780 — Ann Giles Bunker (cite; HTML blocked this pass)",
+          "url": "https://www.findagrave.com/memorial/99274780/ann-bunker"
+        },
+        {
+          "label": "WikiTree — son Jonathon Bunker (Bunker-516) parent link",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "aka": [
+        "Ann Giles",
+        "Anne Giles"
+      ],
+      "spouse_links": [
+        {
+          "id": "joseph_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Jonathan Bunker** (`jonathan_bunker`; Morganne ascent via Eli Bunker Sr.). Soft-ingest **Probable** / `verified: false` — pack **C920** / **C922**. Maiden **Giles**, dau. of Mark Giles (Durham fam. 6). Soft birth **1 Oct 1702** (Durham); WT/FAG cite **10 O..."
+    },
+    "joseph_bunker": {
+      "id": "joseph_bunker",
+      "slug": "joseph-bunker",
+      "name": "Joseph Bunker",
+      "years": "1702-1784",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ann_giles_bunker"
+      ],
+      "children": [
+        "patience_bunker_clements",
+        "anna_bunker_stevenson",
+        "jonathan_bunker",
+        "benjamin_bunker",
+        "james_giles_bunker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Joseph Bunker (Bunker-517)",
+          "url": "https://www.wikitree.com/wiki/Bunker-517"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "Moran Bunker Genealogy D-6 (Archive.org)",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "WikiTree — son Jonathon Bunker (Bunker-516) parent link",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "aka": [
+        "Joseph Bunker of Durham"
+      ],
+      "spouse_links": [
+        {
+          "id": "ann_giles_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Jonathan Bunker** (`jonathan_bunker`; Morganne ascent via Eli Bunker Sr.). Soft-ingest **Probable** / `verified: false` — pack **C920** / **C921**. Durham/NHGenealogy family **6** (James²): m. **Ann**, dau. of Mark Giles (b. 1 Oct 1702); will 9 Sep 1778–Au..."
+    },
+    "abbie_wentworth_foss": {
+      "id": "abbie_wentworth_foss",
+      "slug": "abbie-wentworth-foss",
+      "name": "Abbie Wentworth Foss",
+      "years": "1802–",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ambrose_foss_sr"
+      ],
+      "children": [
+        "daniel_w_foss",
+        "eliphalet_j_foss"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Abbie (Wentworth) Foss (Wentworth-406)",
+          "url": "https://www.wikitree.com/wiki/Wentworth-406"
+        },
+        {
+          "label": "WikiTree — son Daniel W. Foss (Foss-716)",
+          "url": "https://www.wikitree.com/wiki/Foss-716"
+        }
+      ],
+      "aka": [
+        "Abbie Wentworth",
+        "Abby Wentworth"
+      ],
+      "spouse_links": [
+        {
+          "id": "ambrose_foss_sr",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "Proposed mother of **Daniel W. Foss** (Morganne ascent gen-6). Soft-ingest **Possible** / `verified: false` — pack **C560** / **C562**. Maiden **Wentworth** on WikiTree only; **no Find A Grave memorial**; Wentworth genealogy vols checked this pass without a clear Abbie×Ambrose..."
+    },
+    "ambrose_foss_sr": {
+      "id": "ambrose_foss_sr",
+      "slug": "ambrose-foss-sr",
+      "name": "Ambrose Foss",
+      "years": "1802-1833",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "abbie_wentworth_foss"
+      ],
+      "children": [
+        "daniel_w_foss",
+        "eliphalet_j_foss"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Ambrose Foss (Foss-717)",
+          "url": "https://www.wikitree.com/wiki/Foss-717"
+        },
+        {
+          "label": "WikiTree — son Daniel W. Foss (Foss-716)",
+          "url": "https://www.wikitree.com/wiki/Foss-716"
+        }
+      ],
+      "aka": [
+        "Ambrose Foss Sr."
+      ],
+      "spouse_links": [
+        {
+          "id": "abbie_wentworth_foss",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "Proposed father of **Daniel W. Foss** (Morganne ascent gen-6). Soft-ingest **Possible** / `verified: false` — pack **C560** / **C561**. Named only on WikiTree (Foss-717 / Foss-716); **no Find A Grave memorial** and **no Barrington VR hit** this pass. Distinct from grandson `am..."
+    },
+    "kate_parsons": {
+      "id": "kate_parsons",
+      "slug": "kate-parsons",
+      "name": "Kate Parsons",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "percy_parsons",
+        "william_parsons_ff"
+      ],
+      "children": [
+        "nelson_b_parsons",
+        "perry_parsons"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Maine VR marriage reverse — Nelson × Hattie Foss; groom’s mother Kate Parsons (FS 3:1:939K-RPQC-6Y)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+        },
+        {
+          "label": "FS 1880 Fort Fairfield — Kristi Parsons wife of William; Nelson+Perry step-sons Sweden (MF3N-QJ3)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MF3N-QJ3"
+        },
+        {
+          "label": "WikiTree Parsons-1326 bio — Kate (now marriage-image backed)",
+          "url": "https://www.wikitree.com/wiki/Parsons-1326"
+        }
+      ],
+      "aka": [
+        "Kristi Parsons",
+        "Kersti Parsons"
+      ],
+      "spouse_links": [
+        {
+          "id": "percy_parsons",
+          "confidence": "Probable"
+        },
+        {
+          "id": "william_parsons_ff",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Nelson B. Parsons**. Soft-ingest **Probable** / `verified: false` — pack **C1092**. Maine marriage parents side names **Kate Parsons** (housekeeper). Strong identity bridge to **Kristi Parsons** (Sweden, age 47) on 1880 Fort Fairfield census as wife of **W..."
+    },
+    "percy_parsons": {
+      "id": "percy_parsons",
+      "slug": "percy-parsons",
+      "name": "Percy Parsons",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "kate_parsons"
+      ],
+      "children": [
+        "nelson_b_parsons",
+        "perry_parsons"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Maine VR marriage reverse — Nelson B Parsons × Hattie B Foss; groom’s father Percy Parsons (FS image 2973 / 3:1:939K-RPQC-6Y)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+        },
+        {
+          "label": "Maine VR marriage face — Nelson B Parsons × Hattie B Foss 23 Feb 1899 Fort Fairfield (FS KCDC-9MV / 3:1:939K-RPQC-WL)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV"
+        },
+        {
+          "label": "WikiTree Parsons-1326 bio — son of Percy and Kate (now image-backed)",
+          "url": "https://www.wikitree.com/wiki/Parsons-1326"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "kate_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Nelson B. Parsons** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C1091**. Named on Maine marriage record parents side (film image **2973**, immediately before face card **2974**) for Nelson × Hattie Foss, 23 Feb 1899 Fort Fairfi..."
+    },
+    "william_parsons_ff": {
+      "id": "william_parsons_ff",
+      "slug": "william-parsons-ff",
+      "name": "William Parsons",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "kate_parsons"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1880 Fort Fairfield — William Parsons head; wife Kristi; step-sons Perry + Nelson Sweden (MF3N-QJ3)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MF3N-QJ3"
+        }
+      ],
+      "aka": [
+        "William Dudley Parsons"
+      ],
+      "spouse_links": [
+        {
+          "id": "kate_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Stepfather / household head for **Nelson B. Parsons** in 1880 Fort Fairfield (Maine-born farmer; FS labels Nelson and Perry as step-sons). Soft-ingest **Probable** / `verified: false` — pack **C1094**. **Not** listed as Nelson’s father on the 1899 marriage card (that is **Perc..."
+    },
+    "samuel": {
+      "id": "samuel",
+      "slug": null,
+      "name": "Samuel Shorts",
+      "years": "1987–",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "william",
+        "heidi"
+      ],
+      "spouses": [
+        "krystal"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null
+    },
+    "nicholas": {
+      "id": "nicholas",
+      "slug": null,
+      "name": "Nicholas William Shorts",
+      "years": "1990–",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "william",
+        "heidi"
+      ],
+      "spouses": [
+        "jessie"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null
+    },
+    "dan_rudd": {
+      "id": "dan_rudd",
+      "slug": "dan-rudd",
+      "name": "Dan Rudd",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "george_rudd"
+      ],
+      "spouses": [
+        "nancy_rudd"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — Marcy’s step-brother; son of George",
+          "url": ""
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary (survived by son Dan Rudd and wife Nancy)",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "nancy_rudd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Step-brother** of **Marcy Parsons**; son of **George E. Rudd**. **C545 / C549 Locked** (Marcy via Alex 2026-08-07). Mother is **not** Marion Orciere. Living-private. Marcy will ask Dan about **Della’s parents** (**C505** hold). Spouse **Nancy** still Probable from PE (**C547..."
+    },
+    "kenneth_martin_orciere": {
+      "id": "kenneth_martin_orciere",
+      "slug": "kenneth-martin-orciere",
+      "name": "Kenneth Martin Orciere",
+      "years": "1923-1996",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "theodore_m_orciere",
+        "rachel_g_orciere"
+      ],
+      "spouses": [
+        "alma_moore_orciere"
+      ],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-brown-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 67386585 — Kenneth Martin Orciere",
+          "source_url": "https://images.findagrave.com/photos/2025/77/67386585_d7f34cea-af07-46d0-b00f-bf5954517bbb.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "SortedByName SSACI mirror — Kenneth Martin Orciere; parents Theodore M Orciere × Rachel G Fife; b. 28 May 1923 Arlington CA",
+          "url": "https://www.sortedbyname.com/letter_o/orciere.html"
+        },
+        {
+          "label": "Find A Grave 67386585 — Kenneth Martin Orciere (28 May 1923 – 15 Sep 1996), Brown Cemetery; spouse Alma Moore",
+          "url": "https://www.findagrave.com/memorial/67386585/kenneth-martin-orciere"
+        }
+      ],
+      "aka": [
+        "Kenneth M. Orciere"
+      ],
+      "parent_links": [
+        {
+          "id": "theodore_m_orciere",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rachel_g_orciere",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "alma_moore_orciere",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Brother of **Marion Orciere** (Marian Eveline). Soft-ingest **Probable** from SortedByName SSACI (parents Theodore × Rachel G Fife) + FAG. Navy WWII/Korea per SSACI service abstract. Spouse **Alma Moore Orciere** FAG-linked — soft id only this pass. Pack **C476**."
+    },
+    "caney_fife": {
+      "id": "caney_fife",
+      "slug": "caney-fife",
+      "name": "Caney Fife",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "albert_m_fife",
+        "josephine_fife"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 Temescal — sibling of Rachel Fife in Albert × Josie household",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "albert_m_fife",
+          "confidence": "Probable"
+        },
+        {
+          "id": "josephine_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+    },
+    "roland_fife": {
+      "id": "roland_fife",
+      "slug": "roland-fife",
+      "name": "Roland Fife",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "albert_m_fife",
+        "josephine_fife"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 Temescal — sibling of Rachel Fife in Albert × Josie household",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Rolland Fife"
+      ],
+      "parent_links": [
+        {
+          "id": "albert_m_fife",
+          "confidence": "Probable"
+        },
+        {
+          "id": "josephine_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+    },
+    "lovel_fife": {
+      "id": "lovel_fife",
+      "slug": "lovel-fife",
+      "name": "Lovel Fife",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "albert_m_fife",
+        "josephine_fife"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 Temescal — sibling of Rachel Fife in Albert × Josie household",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "albert_m_fife",
+          "confidence": "Probable"
+        },
+        {
+          "id": "josephine_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+    },
+    "glenn_fife": {
+      "id": "glenn_fife",
+      "slug": "glenn-fife",
+      "name": "Glenn Fife",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "albert_m_fife",
+        "josephine_fife"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 Temescal — sibling of Rachel Fife in Albert × Josie household",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "albert_m_fife",
+          "confidence": "Probable"
+        },
+        {
+          "id": "josephine_fife",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+    },
+    "charles_m_orciere": {
+      "id": "charles_m_orciere",
+      "slug": "charles-m-orciere",
+      "name": "Charles M. Orciere",
+      "years": "1900–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "marin_orciere",
+        "anna_steinborn_orciere"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1910 — Charley Orciere age 10 CA; parents Marion × Anna",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MVL2-VDF"
+        },
+        {
+          "label": "FS GenealogyBank — Anna Orciere 1928 children Charles M Orciere + Theodore",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Charley Orciere"
+      ],
+      "parent_links": [
+        {
+          "id": "marin_orciere",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_steinborn_orciere",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Brother of **Theodore M. Orciere**. Soft collateral from 1910 + mother obit. Pack **C1077**."
+    },
+    "william_theodore_olson": {
+      "id": "william_theodore_olson",
+      "slug": "william-theodore-olson",
+      "name": "William Theodore Olson",
+      "years": "1884-1963",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/newspaper-obituary-fag-2023.jpeg",
+          "kind": "document",
+          "source": "Find A Grave 139634471 — William Olson death notice (FT-0020)",
+          "source_url": "https://images.findagrave.com/photos/2023/216/139634471_44e915d5-d04b-457d-a6f8-0a747ee97f2d.jpeg"
+        },
+        {
+          "file": "media/headstone-fag.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 139634471 — WILLIAM T. OLSON 1884–1963 Holden",
+          "source_url": "https://images.findagrave.com/photos/2014/338/139634471_1417830155.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0015",
+        "FT-0016",
+        "FT-0020"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 139634471 — William Theodore Olson",
+          "url": "https://www.findagrave.com/memorial/139634471/william_theodore-olson"
+        },
+        {
+          "label": "Find A Grave 26322001 — father Isaac Olsen (children grid)",
+          "url": "https://www.findagrave.com/memorial/26322001/isaac-olsen"
+        },
+        {
+          "label": "Find A Grave 26322002 — mother Jennie Andersen Olsen (children grid)",
+          "url": "https://www.findagrave.com/memorial/26322002/jennie-olsen"
+        },
+        {
+          "label": "Find A Grave 103950419 — sister Della Elizabeth Olson Rudd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        },
+        {
+          "label": "FAG photo — William Olson 1963 death notice scan",
+          "url": "https://images.findagrave.com/photos/2023/216/139634471_44e915d5-d04b-457d-a6f8-0a747ee97f2d.jpeg"
+        }
+      ],
+      "aka": [
+        "William T. Olson",
+        "William Olson"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** eldest soft sibling of **Della Elizabeth (Olson) Rudd** (Morganne / Rudd collateral). Soft-ingest **Probable** / `verified: false` — pack **C530**. Named on FAG children grids of **Isaac Olsen** × **Jennie Olsen** and on Della’s siblings grid. Vitals from FAG: b. ..."
+    },
+    "mabel_victoria_olson_sizer": {
+      "id": "mabel_victoria_olson_sizer",
+      "slug": "mabel-victoria-olson-sizer",
+      "name": "Mabel Victoria Olson Sizer",
+      "years": "1893-1974",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-sizer-2017.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave 139168614 — SIZER / Dick 1888–1956 / Mabel 1893–1974",
+          "source_url": "https://images.findagrave.com/photos/2017/284/139168614_ff0d6967-ff31-41f7-b466-e1df36b187a9.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0020"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 139168614 — Mabel Victoria Olson Sizer",
+          "url": "https://www.findagrave.com/memorial/139168614/mabel_victoria-sizer"
+        },
+        {
+          "label": "Find A Grave 26322001 — father Isaac Olsen (children grid)",
+          "url": "https://www.findagrave.com/memorial/26322001/isaac-olsen"
+        },
+        {
+          "label": "Find A Grave 26322002 — mother Jennie Andersen Olsen (children grid)",
+          "url": "https://www.findagrave.com/memorial/26322002/jennie-olsen"
+        },
+        {
+          "label": "Find A Grave 103950419 — sister Della Elizabeth Olson Rudd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        }
+      ],
+      "aka": [
+        "Mabel Victoria Olson",
+        "Mabel V. Sizer",
+        "née Olson"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft sibling of **Della Elizabeth (Olson) Rudd**. Soft-ingest **Probable** / `verified: false` — pack **C531**. Named on FAG children grids of **Isaac Olsen** × **Jennie Olsen** and on Della’s siblings grid. Vitals from FAG: b. **1893** South Dakota; d. **1974**; ..."
+    },
+    "carl_leonard_olson": {
+      "id": "carl_leonard_olson",
+      "slug": "carl-leonard-olson",
+      "name": "Carl Leonard Olson",
+      "years": "1899-1984",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0015",
+        "FT-0016",
+        "FT-0020"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 269531277 — PVT Carl Leonard Olson",
+          "url": "https://www.findagrave.com/memorial/269531277/carl_leonard-olson"
+        },
+        {
+          "label": "Find A Grave 26322001 — father Isaac Olsen (children grid)",
+          "url": "https://www.findagrave.com/memorial/26322001/isaac-olsen"
+        },
+        {
+          "label": "Find A Grave 26322002 — mother Jennie Andersen Olsen (children grid)",
+          "url": "https://www.findagrave.com/memorial/26322002/jennie-olsen"
+        },
+        {
+          "label": "Find A Grave 103950419 — sister Della Elizabeth Olson Rudd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        }
+      ],
+      "aka": [
+        "PVT Carl Leonard Olson",
+        "Carl L. Olson",
+        "Carl Olson"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft sibling of **Della Elizabeth (Olson) Rudd**. Soft-ingest **Probable** / `verified: false` — pack **C532**. Named on FAG children grids of **Isaac Olsen** × **Jennie Olsen** and on Della’s siblings grid. Vitals from FAG: b. **3 Mar 1899** South Dakota; d. **4 ..."
+    },
+    "dorothy_parsons_prichard": {
+      "id": "dorothy_parsons_prichard",
+      "slug": "dorothy-parsons-prichard",
+      "name": "Dorothy Parsons Prichard",
+      "years": "1900-1970",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "nelson_b_parsons",
+        "harriet_b_foss_parsons"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2015.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 152939693 — Dorothy K Prichard Olivewood",
+          "source_url": "https://images.findagrave.com/photos/2015/269/152939693_1443381602.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Dorothy K Prichard (152939693); Olivewood W-2-9-3; spouse Tracy C Prichard",
+          "url": "https://www.findagrave.com/memorial/152939693/dorothy-k-prichard"
+        },
+        {
+          "label": "WikiTree — Dorothy Parsons (Parsons-1328)",
+          "url": "https://www.wikitree.com/wiki/Parsons-1328"
+        },
+        {
+          "label": "WikiTree — father Nelson B. Parsons (Parsons-1326) child list",
+          "url": "https://www.wikitree.com/wiki/Parsons-1326"
+        },
+        {
+          "label": "Maine VR — Dorothy Parsons b. 30 Jan 1900 Fort Fairfield (FS cite on WT)",
+          "url": "https://familysearch.org/ark:/61903/1:1:KCDC-9SY"
+        },
+        {
+          "label": "FAG photo — Parsons–Allen wedding notice (Tracy Prichard usher / brother-in-law of Gerald)",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "aka": [
+        "Dorothy Parsons",
+        "Dorothy K. Prichard",
+        "Dorothy Pritchard"
+      ],
+      "parent_links": [
+        {
+          "id": "nelson_b_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "harriet_b_foss_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Named sister of **Gerald Allen / Austin Parsons**; daughter of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Locked **Confirmed** / `verified: true` — pack **C1087** — Alex Y 2026-08-07. Maine birth **Dorothy Parsons** 30 Jan 1900; married name **Prichard** (Alex **Prit..."
+    },
+    "sarah_mona_parsons": {
+      "id": "sarah_mona_parsons",
+      "slug": "sarah-mona-parsons",
+      "name": "Sarah Mona Parsons",
+      "years": "1901-1989",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "nelson_b_parsons",
+        "harriet_b_foss_parsons"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2021.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave 229936903 — Mona Sara Parsons Olivewood",
+          "source_url": "https://images.findagrave.com/photos/2021/207/229936903_aed3fd41-4517-4861-8f61-ac16b591f370.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Mona Sara Parsons (229936903); Olivewood T-2-1-7",
+          "url": "https://www.findagrave.com/memorial/229936903/mona-sara-parsons"
+        },
+        {
+          "label": "WikiTree — Sarah Mona Parsons (Parsons-1327)",
+          "url": "https://www.wikitree.com/wiki/Parsons-1327"
+        },
+        {
+          "label": "WikiTree — father Nelson B. Parsons (Parsons-1326) child list",
+          "url": "https://www.wikitree.com/wiki/Parsons-1326"
+        },
+        {
+          "label": "Maine VR — Sarah Mona Parsons b. 2 Aug 1901 Fort Fairfield (FS cite on WT)",
+          "url": "https://familysearch.org/ark:/61903/1:1:KCDH-GQB"
+        },
+        {
+          "label": "CADI — Sara Mona Parsons d. 12 Feb 1989 (FS cite on WT)",
+          "url": "https://familysearch.org/ark:/61903/1:1:VPN1-Y9D"
+        }
+      ],
+      "aka": [
+        "Mona Parsons",
+        "Mona Sara Parsons",
+        "S. Mona Parsons",
+        "Sara Mona Parsons"
+      ],
+      "parent_links": [
+        {
+          "id": "nelson_b_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "harriet_b_foss_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Named sister of **Gerald Allen / Austin Parsons**; daughter of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Locked **Confirmed** / `verified: true` — pack **C1088** — Alex Y 2026-08-07. WikiTree/census call her **Mona** / **S. Mona**; FAG title **Mona Sara**; Maine bir..."
+    },
+    "harold_ambrose_parsons": {
+      "id": "harold_ambrose_parsons",
+      "slug": "harold-ambrose-parsons",
+      "name": "Harold Ambrose Parsons",
+      "years": "1903-1993",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "nelson_b_parsons",
+        "harriet_b_foss_parsons"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0010"
+      ],
+      "sources": [
+        {
+          "label": "WikiTree — Harold Ambrose Parsons (Parsons-1329)",
+          "url": "https://www.wikitree.com/wiki/Parsons-1329"
+        },
+        {
+          "label": "WikiTree — father Nelson B. Parsons (Parsons-1326) child list",
+          "url": "https://www.wikitree.com/wiki/Parsons-1326"
+        },
+        {
+          "label": "Maine VR — Harold A Parsons b. 15 Feb 1903 Fort Fairfield (FS cite on WT)",
+          "url": "https://familysearch.org/ark:/61903/1:1:KCDH-T12"
+        },
+        {
+          "label": "CADI — Harold Ambrose Parsons d. 3 Jan 1993 Riverside (FS cite on WT)",
+          "url": "https://familysearch.org/ark:/61903/1:1:VGPY-BVW"
+        },
+        {
+          "label": "FAG photo — Parsons–Allen wedding notice (Harold A. Parsons best man for brother Gerald)",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "aka": [
+        "Harold A. Parsons",
+        "Harold Parsons"
+      ],
+      "parent_links": [
+        {
+          "id": "nelson_b_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "harriet_b_foss_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Named brother of **Gerald Allen / Austin Parsons**; son of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Locked **Confirmed** / `verified: true` — pack **C1089** — Alex Y 2026-08-07. WikiTree child of Nelson×Harriet; Maine birth 15 Feb 1903; CADI death 3 Jan 1993 Rivers..."
+    },
+    "autis_foss_parsons_hicks": {
+      "id": "autis_foss_parsons_hicks",
+      "slug": "autis-foss-parsons-hicks",
+      "name": "Autis Foss Parsons Hicks",
+      "years": "1904-1986",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "nelson_b_parsons",
+        "harriet_b_foss_parsons"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-olivewood-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 157205105 — Autis Foss Parsons Hicks Olivewood dual stone",
+          "source_url": "https://images.findagrave.com/photos/2016/17/157205105_1453138635.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0010"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave — Autis Foss Parsons Hicks (157205105); Olivewood W-3-100-3",
+          "url": "https://www.findagrave.com/memorial/157205105/autis_foss-hicks"
+        },
+        {
+          "label": "Find A Grave — father Nelson B Parsons (161996016) children grid",
+          "url": "https://www.findagrave.com/memorial/161996016/nelson_b-parsons"
+        },
+        {
+          "label": "WikiTree — Autis Foss (Parsons) Hicks (Parsons-1325)",
+          "url": "https://www.wikitree.com/wiki/Parsons-1325"
+        },
+        {
+          "label": "WikiTree — mother Harriet B (Foss) Parsons (Foss-714) children",
+          "url": "https://www.wikitree.com/wiki/Foss-714"
+        },
+        {
+          "label": "Maine VR — Autis Foss Parsons b. 18 Jul 1904 Fort Fairfield (FS KCDC-35M)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:KCDC-35M"
+        },
+        {
+          "label": "CADI — Autis Foss Hicks d. 4 Dec 1986 (FS VGP7-S62)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:VGP7-S62"
+        },
+        {
+          "label": "Parsons–Allen wedding (FT-0010) — Harry Hicks brother-in-law / usher",
+          "url": "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
+        }
+      ],
+      "aka": [
+        "Autis Foss Parsons",
+        "Autis F. Hicks",
+        "Autis Hicks"
+      ],
+      "parent_links": [
+        {
+          "id": "nelson_b_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "harriet_b_foss_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Soft sibling of **Gerald Allen Parsons**; daughter of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Alex confirmed WikiTree Foss-714 / Parsons-1325 (2026-08-07). Pack **C1090**. Bidirectional FAG: Nelson/Harriet children grids list Autis. Married **Harry Lawrence Hicks*..."
+    },
+    "charles_c_dawley": {
+      "id": "charles_c_dawley",
+      "slug": "charles-c-dawley",
+      "name": "Charles C. Dawley",
+      "years": "1847-1911",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 152041777 — Charles C. Dawley",
+          "url": "https://www.findagrave.com/memorial/152041777/charles_c-dawley"
+        },
+        {
+          "label": "Find A Grave 58631306 — father George S. Dawley (child link)",
+          "url": "https://www.findagrave.com/memorial/58631306/george_s-dawley"
+        },
+        {
+          "label": "Find A Grave 137565972 — sister Ellen A. Dawley Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ellen A. Dawley Squier** (FAG siblings / George×Sarah children grids). Soft-ingest **Probable** / `verified: false` — pack **C558**. Both parents linked on Charles FAG. Spouses/children on FAG **not** soft-ingested (collateral; climb stays UP). **No open obi..."
+    },
+    "alice_r_dawley": {
+      "id": "alice_r_dawley",
+      "slug": "alice-r-dawley",
+      "name": "Alice R. Dawley",
+      "years": "1855-1873",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58631305 — Alice R. Dawley",
+          "url": "https://www.findagrave.com/memorial/58631305/alice_r-dawley"
+        },
+        {
+          "label": "Find A Grave 58631306 — father George S. Dawley (child link)",
+          "url": "https://www.findagrave.com/memorial/58631306/george_s-dawley"
+        },
+        {
+          "label": "Find A Grave 137565972 — sister Ellen A. Dawley Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ellen A. Dawley Squier** (Ellen siblings + George children). Soft-ingest **Probable** / `verified: false` — pack **C558**. Alice FAG parents grid shows **George** only; **Sarah** wired via George children + Charles/Ellen sibling set (Sarah memorial children ..."
+    },
+    "j_carson_dawley": {
+      "id": "j_carson_dawley",
+      "slug": "j-carson-dawley",
+      "name": "J. Carson Dawley",
+      "years": "–1892",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58631307 — J. Carson Dawley",
+          "url": "https://www.findagrave.com/memorial/58631307/j_carson-dawley"
+        },
+        {
+          "label": "Find A Grave 58631306 — father George S. Dawley (child link)",
+          "url": "https://www.findagrave.com/memorial/58631306/george_s-dawley"
+        },
+        {
+          "label": "Find A Grave 137565972 — sister Ellen A. Dawley Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/137565972/ellen_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ellen A. Dawley Squier** (Ellen siblings + George children). Soft-ingest **Probable** / `verified: false` — pack **C558**. FAG birth unknown; death **1892**; Hillside Monson. Parents grid shows **George** only; **Sarah** via George children + sibling cluster..."
+    },
+    "charles_h_dawley": {
+      "id": "charles_h_dawley",
+      "slug": "charles-h-dawley",
+      "name": "Charles H. Dawley",
+      "years": "1841-1841",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 10312522 — Charles H Dawley (son of George & Sarah)",
+          "url": "https://www.findagrave.com/memorial/10312522/charles_h-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Infant son of **George S. Dawley × Sarah Leonard** — gravesite details “son of George & Sarah, age 4 weeks.” Soft-ingest **Probable** / `verified: false` — pack **C623** (named sibling of Ellen). Old Willington Hill (grandparents’ cemetery cluster)."
+    },
+    "john_p_l_dawley": {
+      "id": "john_p_l_dawley",
+      "slug": "john-p-l-dawley",
+      "name": "John P. L. Dawley",
+      "years": "1841-1842",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 10312521 — John P L Dawley (son of George & Sarah)",
+          "url": "https://www.findagrave.com/memorial/10312521/john_p_l-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Infant son of **George S. Dawley × Sarah Leonard** — gravesite “son of George & Sarah, age 5 months.” Soft-ingest **Probable** / `verified: false` — pack **C623**. Old Willington Hill."
+    },
+    "george_b_dawley": {
+      "id": "george_b_dawley",
+      "slug": "george-b-dawley",
+      "name": "George B. Dawley",
+      "years": "1843-1844",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_s_dawley",
+        "sarah_leonard_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 10312523 — George B Dawley (son of George & Sarah)",
+          "url": "https://www.findagrave.com/memorial/10312523/george_b-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_s_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_leonard_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Infant son of **George S. Dawley × Sarah Leonard** — gravesite “son of George & Sarah, age 2 months.” Soft-ingest **Probable** / `verified: false` — pack **C623**. Old Willington Hill (supports gen-7 James×Amelia cemetery cluster)."
+    },
+    "eugene_a_squier": {
+      "id": "eugene_a_squier",
+      "slug": "eugene-a-squier",
+      "name": "Eugene A. Squier",
+      "years": "1854-1897",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lorenzo_lincoln_squier",
+        "adeline_stacy_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58970337 — Eugene A. Squier",
+          "url": "https://www.findagrave.com/memorial/58970337/eugene_a-squier"
+        },
+        {
+          "label": "Find A Grave 58970341 — father Lorenzo Lincoln Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        },
+        {
+          "label": "Find A Grave 58970336 — mother Adeline Stacy Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Eugene Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "lorenzo_lincoln_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "adeline_stacy_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Edwin Lorenzo Squier** on Lorenzo × Adeline FAG children grids (same pass as gen-6 parents). Soft-ingest **Probable** / `verified: false` — pack **C553**. Hillside Cemetery, Monson. FAG spouse Maria F. Durkee not soft-ingested (sibling FAN). **No open obitua..."
+    },
+    "john_philo_squier": {
+      "id": "john_philo_squier",
+      "slug": "john-philo-squier",
+      "name": "John Philo Squier",
+      "years": "1867-1948",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lorenzo_lincoln_squier",
+        "adeline_stacy_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58970340 — John Philo Squier",
+          "url": "https://www.findagrave.com/memorial/58970340/john_philo-squier"
+        },
+        {
+          "label": "Find A Grave 58970341 — father Lorenzo Lincoln Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/58970341/lorenzo_lincoln-squier"
+        },
+        {
+          "label": "Find A Grave 58970336 — mother Adeline Stacy Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "John P. Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "lorenzo_lincoln_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "adeline_stacy_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Edwin Lorenzo Squier** on Lorenzo × Adeline FAG children grids (same pass as gen-6 parents). Soft-ingest **Probable** / `verified: false` — pack **C553**. Hillside Cemetery, Monson. FAG death place blank this pass. FAG spouse Jennie Maude Baxter not soft-ing..."
+    },
+    "lucina_leonard_topliffe": {
+      "id": "lucina_leonard_topliffe",
+      "slug": "lucina-leonard-topliffe",
+      "name": "Lucina Leonard Topliffe",
+      "years": "1803–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        },
+        {
+          "label": "Genealogy of New England — Lucina Leonard (parents George × Rebecca)",
+          "url": "http://www.genealogyofnewengland.com/f_8bf5.htm"
+        }
+      ],
+      "aka": [
+        "Lucina Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named eldest sibling of Sarah Morse / Sarah M. Leonard on Leonard..."
+    },
+    "lura_leonard": {
+      "id": "lura_leonard",
+      "slug": "lura-leonard",
+      "name": "Lura Leonard",
+      "years": "1804–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "aka": [
+        "Clara Leonard",
+        "Lura or Clara Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "laura_leonard": {
+      "id": "laura_leonard",
+      "slug": "laura-leonard",
+      "name": "Laura Leonard",
+      "years": "1806–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "susan_leonard": {
+      "id": "susan_leonard",
+      "slug": "susan-leonard",
+      "name": "Susan Leonard",
+      "years": "1808–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "loomis_george_leonard": {
+      "id": "loomis_george_leonard",
+      "slug": "loomis-george-leonard",
+      "name": "Loomis George Leonard",
+      "years": "1810-1892",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "aka": [
+        "Rev. Loomis George Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "rhoda_leonard": {
+      "id": "rhoda_leonard",
+      "slug": "rhoda-leonard",
+      "name": "Rhoda Leonard",
+      "years": "1812–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "zenas_leonard": {
+      "id": "zenas_leonard",
+      "slug": "zenas-leonard",
+      "name": "Zenas Leonard",
+      "years": "1814-1850",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "avis_amelia_leonard_goodell": {
+      "id": "avis_amelia_leonard_goodell",
+      "slug": "avis-amelia-leonard-goodell",
+      "name": "Avis Amelia Leonard Goodell",
+      "years": "1816-1887",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "aka": [
+        "Avis Amelia Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy / Origins; m. Lorenzo Dow Good..."
+    },
+    "john_preston_leonard": {
+      "id": "john_preston_leonard",
+      "slug": "john-preston-leonard",
+      "name": "John Preston Leonard",
+      "years": "1819-1851",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_leonard",
+        "rebecca_converse_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — George Leonard × Rebecca Converse children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p168.htm"
+        },
+        {
+          "label": "Leonard Origins — Sarah Morse Leonard sibling set via parents",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardOrigins-o/g2/p1137.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "george_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_converse_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Leonard Dawley** / Sarah Morse Leonard on Leonard compiled children of **George Leonard** × **Rebecca Converse**. Soft-ingest **Probable** / `verified: false` — pack **C628** collateral. Named sibling on Leonard genealogy George × Rebecca children list..."
+    },
+    "joseph_f_dawley": {
+      "id": "joseph_f_dawley",
+      "slug": "joseph-f-dawley",
+      "name": "Joseph F. Dawley",
+      "years": "1828-1913",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_dawley",
+        "sarah_amelia_burdick_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 52753195 — Joseph Frank Dawley",
+          "url": "https://www.findagrave.com/memorial/52753195/joseph-frank-dawley"
+        },
+        {
+          "label": "WikiTree Dawley-374 — son of James × Sarah Amelia Burdick",
+          "url": "https://www.wikitree.com/wiki/Dawley-374"
+        },
+        {
+          "label": "Find A Grave 10312462 — proposed father James Dawley (OWH cluster)",
+          "url": "https://www.findagrave.com/memorial/10312462/james-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "james_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_amelia_burdick_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named child of **James Dawley × Sarah Amelia Burdick** (WikiTree); soft sibling of **George S. Dawley** under pack **C623** when C620 holds. Soft-ingest **Probable** / `verified: false`. Spouses/children on FAG **not** climbed. **No open obituary text** this pass."
+    },
+    "stanton_benjamin_dawley": {
+      "id": "stanton_benjamin_dawley",
+      "slug": "stanton-benjamin-dawley",
+      "name": "Stanton Benjamin Dawley",
+      "years": "1830-1896",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_dawley",
+        "sarah_amelia_burdick_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 45593339 — Stanton Benjamin Dawley",
+          "url": "https://www.findagrave.com/memorial/45593339/stanton-benjamin-dawley"
+        },
+        {
+          "label": "Willington CT query — Stanton parents James Dawley × Sarah Amelia Burdick",
+          "url": "http://www.rockvillemama.com/willington/query1.htm"
+        },
+        {
+          "label": "Find A Grave 10312462 — proposed father James Dawley",
+          "url": "https://www.findagrave.com/memorial/10312462/james-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "james_dawley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_amelia_burdick_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named child of **James Dawley × Sarah Amelia Burdick** (Willington query 1998); soft sibling of **George S. Dawley** under pack **C623**. Soft-ingest **Probable** / `verified: false`. Spouse Mary Whitman / children on FAG **not** climbed. **No open obituary text** this pass."
+    },
+    "cyprian_converse": {
+      "id": "cyprian_converse",
+      "slug": "cyprian-converse",
+      "name": "Cyprian Converse",
+      "years": "1786–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "benjamin_converse",
+        "avis_wheeler_converse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Cyprian ← Benjamin × Avis",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Genealogy of New England — Benjamin × Avis children cluster",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Genealogy of New England — sibling pages f_843e",
+          "url": "http://www.genealogyofnewengland.com/f_843e.htm"
+        }
+      ],
+      "aka": [
+        "Cyprian S. Converse"
+      ],
+      "parent_links": [
+        {
+          "id": "benjamin_converse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "avis_wheeler_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of Rebecca (GNE Cyprian ← Benjamin × Avis; WT child of Avis). Soft lean — spouse Laura Moore not climbed. Soft-ingest **Probable** / `verified: false` — pack **C708**. **No open obituary text** this pass."
+    },
+    "dorcas_converse_barlow": {
+      "id": "dorcas_converse_barlow",
+      "slug": "dorcas-converse-barlow",
+      "name": "Dorcas Converse Barlow",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "benjamin_converse",
+        "avis_wheeler_converse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Dorcas ← Benjamin × Avis",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Genealogy of New England — Benjamin × Avis children cluster",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Genealogy of New England — sibling pages f_843e",
+          "url": "http://www.genealogyofnewengland.com/f_843e.htm"
+        }
+      ],
+      "aka": [
+        "Dorcas Converse"
+      ],
+      "parent_links": [
+        {
+          "id": "benjamin_converse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "avis_wheeler_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of Rebecca (GNE Dorcas ← Benjamin × Avis; spouse Reuben Barlow not climbed). Soft lean. Soft-ingest **Probable** / `verified: false` — pack **C708**. **No open obituary text** this pass."
+    },
+    "benjamin_converse_jr": {
+      "id": "benjamin_converse_jr",
+      "slug": "benjamin-converse-jr",
+      "name": "Benjamin Converse Jr.",
+      "years": "1793-1846",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "benjamin_converse",
+        "avis_wheeler_converse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 12189663 — Benjamin Converse Jr.",
+          "url": "https://www.findagrave.com/memorial/12189663/benjamin-converse"
+        },
+        {
+          "label": "Genealogy of New England — Benjamin × Avis children cluster",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Genealogy of New England — sibling pages f_843e",
+          "url": "http://www.genealogyofnewengland.com/f_843e.htm"
+        }
+      ],
+      "aka": [
+        "Benjamin Converse"
+      ],
+      "parent_links": [
+        {
+          "id": "benjamin_converse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "avis_wheeler_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of Rebecca (GNE + FAG 12189663 + Hale Stafford ae 54). Soft — spouse Hannah Ellis / children not climbed. Same Stafford Village cemetery as Rebecca×George. Soft-ingest **Probable** / `verified: false` — pack **C708**. **No open obituary text** this pass."
+    },
+    "palmer_converse": {
+      "id": "palmer_converse",
+      "slug": "palmer-converse",
+      "name": "Palmer Converse",
+      "years": "1798-1875",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "benjamin_converse",
+        "avis_wheeler_converse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 64163749 — Palmer Converse",
+          "url": "https://www.findagrave.com/memorial/64163749/palmer-converse"
+        },
+        {
+          "label": "Genealogy of New England — Benjamin × Avis children cluster",
+          "url": "http://www.genealogyofnewengland.com/f_843d.htm"
+        },
+        {
+          "label": "Genealogy of New England — sibling pages f_843e",
+          "url": "http://www.genealogyofnewengland.com/f_843e.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "benjamin_converse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "avis_wheeler_converse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of Rebecca (GNE + FAG 64163749 + WT child of Avis). Soft — spouse Elizabeth Tyler / children not climbed. Westford with parents. Soft-ingest **Probable** / `verified: false` — pack **C708**. **No open obituary text** this pass."
+    },
+    "benjamin_leonard": {
+      "id": "benjamin_leonard",
+      "slug": "benjamin-leonard",
+      "name": "Benjamin Leonard",
+      "years": "1765–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** on Leonard compiled children of **Jacob Leonard Jr** × **Rhoda Wheeler**. Soft-ingest **Probable** / `verified: false` — pack **C703** collateral. Birth 8 Aug 1765 Bridgewater (Leonard notes 1765/1775 open; not in Rehoboth VR). Spouses/desce..."
+    },
+    "jacob_c_leonard": {
+      "id": "jacob_c_leonard",
+      "slug": "jacob-c-leonard",
+      "name": "Jacob C. Leonard",
+      "years": "1766-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "aka": [
+        "Jacob Leonard Jr",
+        "Jacob Leonard III"
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** (Jacob C. / III). Soft-ingest **Probable** / `verified: false` — pack **C703**. Hale: **Leonard, Jacob, Jr.**, d. **5 Oct 1810**, ae **44** (fits ~1766). Leonard compiled death **15 Nov 1810** — prefer Hale day. Spouses/descendants **not** c..."
+    },
+    "rhoda_leonard_gage": {
+      "id": "rhoda_leonard_gage",
+      "slug": "rhoda-leonard-gage",
+      "name": "Rhoda Leonard Gage",
+      "years": "1768-1853",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "aka": [
+        "Rhoda Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** on Leonard + WikiTree (Rhoda Leonard Gage). Soft-ingest **Probable** / `verified: false` — pack **C703** collateral. Spouse Gage **not** soft-climbed. ≠ later `rhoda_leonard` (George × Rebecca daughter)."
+    },
+    "polly_leonard_morse": {
+      "id": "polly_leonard_morse",
+      "slug": "polly-leonard-morse",
+      "name": "Polly Leonard Morse",
+      "years": "1770-1848",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "aka": [
+        "Polly Leonard",
+        "Mary Leonard Morse"
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** (Polly / Mary Leonard Morse on WikiTree). Soft-ingest **Probable** / `verified: false` — pack **C703** collateral. Spouse Morse **not** soft-climbed."
+    },
+    "daniel_leonard": {
+      "id": "daniel_leonard",
+      "slug": "daniel-leonard",
+      "name": "Daniel Leonard",
+      "years": "1773-1842",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** on Leonard + WikiTree. Soft-ingest **Probable** / `verified: false` — pack **C703** collateral. Spouses/descendants **not** climbed."
+    },
+    "rufus_leonard": {
+      "id": "rufus_leonard",
+      "slug": "rufus-leonard",
+      "name": "Rufus Leonard",
+      "years": "1777-1837",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard**. Soft-ingest **Probable** / `verified: false` — pack **C703**. Hale: **Leonard, Rufus**, d. **10 Jan 1837**, ae **59** (fits ~1777); same cemetery as parents/George. Spouses (Jemima Hicks / Silence) **not** soft-climbed."
+    },
+    "calvin_leonard": {
+      "id": "calvin_leonard",
+      "slug": "calvin-leonard",
+      "name": "Calvin Leonard",
+      "years": "1781-1786",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** (child death). Soft-ingest **Probable** / `verified: false` — pack **C703** collateral. Leonard: b. 1781 Woodstock; d. 3 Feb 1786; Bungay Cemetery."
+    },
+    "jesse_leonard": {
+      "id": "jesse_leonard",
+      "slug": "jesse-leonard",
+      "name": "Jesse Leonard",
+      "years": "1785-1859",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard_jr",
+        "rhoda_wheeler_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard Jr × Rhoda Wheeler children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        },
+        {
+          "label": "WikiTree Wheeler-18159 — Rhoda Wheeler Leonard children (incl. George)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-18159"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rhoda_wheeler_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **George Leonard** on Leonard + WikiTree. Soft-ingest **Probable** / `verified: false` — pack **C703** collateral. Removed to NY; spouses/descendants **not** climbed."
+    },
+    "henry_wheeler_jr": {
+      "id": "henry_wheeler_jr",
+      "slug": "henry-wheeler-jr",
+      "name": "Henry Wheeler Jr",
+      "years": "1744-1832",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_wheeler",
+        "rebeckah_millerd_wheeler"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Henry Wheeler Jr (Wheeler-20)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-20"
+        },
+        {
+          "label": "WikiTree — sister Avis (Wheeler) Converse",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        },
+        {
+          "label": "Find A Grave 33403507 — Col Henry Wheeler",
+          "url": "https://www.findagrave.com/memorial/33403507/henry-wheeler"
+        },
+        {
+          "label": "dav4is Wheeler ODT — Col. Henry W. son of Henry × Rebecca",
+          "url": "https://freepages.rootsweb.com/~dav4is/genealogy/ODTs/WHEELER.shtml"
+        }
+      ],
+      "aka": [
+        "Col Henry Wheeler"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebeckah_millerd_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Avis Wheeler Converse** on WikiTree. Soft-ingest **Probable** / `verified: false` — pack **C918**. b. **10 Jan 1744** Glocester RI; d. **23 Sep 1832** Hartwick NY; Field Cemetery. Spouse Esther Williams **not** soft-climbed. **No open obituary text** this pass."
+    },
+    "jeremiah_wheeler": {
+      "id": "jeremiah_wheeler",
+      "slug": "jeremiah-wheeler",
+      "name": "Jeremiah Wheeler",
+      "years": "1765-1819",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_wheeler",
+        "rebeckah_millerd_wheeler"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Jeremiah Wheeler (Wheeler-13588)",
+          "url": "https://www.wikitree.com/wiki/Wheeler-13588"
+        },
+        {
+          "label": "WikiTree — sister Avis (Wheeler) Converse",
+          "url": "https://www.wikitree.com/wiki/Wheeler-21324"
+        },
+        {
+          "label": "Find A Grave 33139427 — Jeremiah Wheeler",
+          "url": "https://www.findagrave.com/memorial/33139427/jeremiah-wheeler"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebeckah_millerd_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Avis Wheeler Converse** on WikiTree. Soft-ingest **Probable** / `verified: false` — pack **C918**. WT bio notes **parents should be verified**; birth place Concord MA vs Scituate RI hold. d. **29 May 1819** Kanona NY. Spouse / children **not** soft-climbed. ..."
+    },
+    "mercy_wheeler": {
+      "id": "mercy_wheeler",
+      "slug": "mercy-wheeler",
+      "name": "Mercy Wheeler",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "philip_wheeler",
+        "mercy_jenckes_wheeler"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Wheeler-993 — Mercy Wheeler child of Philip × Mercy Jenckes",
+          "url": "https://www.wikitree.com/wiki/Wheeler-993"
+        },
+        {
+          "label": "Leonard Genealogy — Rhoda in Philip × Mercy household",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "philip_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_jenckes_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Rhoda Wheeler Leonard** (Philip Wheeler × Mercy Jenckes Wheeler). Soft-ingest **Probable** / `verified: false` — pack **C898**. Full sibling of Rhoda; lean soft; vitals open. Spouse/parents climb **not** done."
+    },
+    "daniel_wheeler": {
+      "id": "daniel_wheeler",
+      "slug": "daniel-wheeler",
+      "name": "Daniel Wheeler",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "philip_wheeler",
+        "mercy_jenckes_wheeler"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Wheeler-993 — Daniel Wheeler child of Philip × Mercy; named in will",
+          "url": "https://www.wikitree.com/wiki/Wheeler-993"
+        },
+        {
+          "label": "Leonard Genealogy — Rhoda in Philip × Mercy household",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "philip_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_jenckes_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Rhoda Wheeler Leonard** (Philip Wheeler × Mercy Jenckes Wheeler). Soft-ingest **Probable** / `verified: false` — pack **C898**. Full sibling of Rhoda; lean soft; will heir. Spouse/parents climb **not** done."
+    },
+    "rufus_wheeler": {
+      "id": "rufus_wheeler",
+      "slug": "rufus-wheeler",
+      "name": "Rufus Wheeler",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "philip_wheeler",
+        "mercy_jenckes_wheeler"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Wheeler-993 — Rufus Wheeler child of Philip × Mercy Jenckes",
+          "url": "https://www.wikitree.com/wiki/Wheeler-993"
+        },
+        {
+          "label": "Leonard Genealogy — Rhoda in Philip × Mercy household",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "philip_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_jenckes_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Rhoda Wheeler Leonard** (Philip Wheeler × Mercy Jenckes Wheeler). Soft-ingest **Probable** / `verified: false` — pack **C898**. Full sibling of Rhoda; lean soft; vitals open. Spouse/parents climb **not** done."
+    },
+    "jonathan_leonard": {
+      "id": "jonathan_leonard",
+      "slug": "jonathan-leonard",
+      "name": "Jonathan Leonard",
+      "years": "1738-1807",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard",
+        "mary_wilde_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard × Mary Wilde children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p125.htm"
+        },
+        {
+          "label": "Leonard Genealogy (John line) — sibling sheet on p.142 cluster",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_wilde_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Jacob Leonard Jr** on Leonard compiled children of **Jacob Leonard** × **Mary Wilde**. Soft-ingest **Probable** / `verified: false` — pack **C893** collateral. Assistant Surgeon Rev War (compiled). Spouses/descendants **not** climbed."
+    },
+    "mary_leonard_white": {
+      "id": "mary_leonard_white",
+      "slug": "mary-leonard-white",
+      "name": "Mary Leonard White",
+      "years": "1740-1801",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jacob_leonard",
+        "mary_wilde_leonard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Leonard Genealogy (John line) — Jacob Leonard × Mary Wilde children",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p125.htm"
+        },
+        {
+          "label": "Leonard Genealogy (John line) — sibling sheet on p.142 cluster",
+          "url": "http://leonardgenealogy.com/genealogy/LeonardJohn-o/g1/p142.htm"
+        }
+      ],
+      "aka": [
+        "Mary Leonard"
+      ],
+      "parent_links": [
+        {
+          "id": "jacob_leonard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_wilde_leonard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Jacob Leonard Jr** on Leonard compiled children of **Jacob Leonard** × **Mary Wilde**. Soft-ingest **Probable** / `verified: false` — pack **C893** collateral. m. Nathan White 15 Nov 1759 Norton (spouse **not** climbed)."
+    },
+    "hannah_d_dawley": {
+      "id": "hannah_d_dawley",
+      "slug": "hannah-d-dawley",
+      "name": "Hannah D. Dawley",
+      "years": "1816-1834",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_dawley_sr",
+        "elizabeth_dawley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Hale Collection — Hannah D. daughter of James and Elizabeth d. 3 Jul 1834 ae 18",
+          "url": "https://www.halecollection.com/new-london-county-cemeteries/305-26-dawley-cemetery.htm"
+        },
+        {
+          "label": "Find A Grave 184736536 — Hannah D. Dawley",
+          "url": "https://www.findagrave.com/memorial/184736536/hannah_d-dawley"
+        },
+        {
+          "label": "Find A Grave 184736421 — father James Dawley (children grid)",
+          "url": "https://www.findagrave.com/memorial/184736421/james-dawley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "james_dawley_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_dawley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named daughter of **James × Elizabeth Dawley** (Hale / FAG Griswold). Soft **Probable** as their child. **Possible** sibling of Willington **James Dawley** (1794–1874) only when parent claim **C790** holds — not independently named as his sister. Pack **C793**. Spouses/further..."
+    },
+    "almira_stacy_fuller": {
+      "id": "almira_stacy_fuller",
+      "slug": "almira-stacy-fuller",
+      "name": "Almira Stacy Fuller",
+      "years": "1811-1889",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 8781690 — Almira Stacy Fuller",
+          "url": "https://www.findagrave.com/memorial/8781690/almira-fuller"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Almira Stacy",
+        "Almira Fuller"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. FAG bio cites Springfield VR: parents **Stephen & Ruth**; b. Monson; burial Monson. Spouse Ralph Fuller **not** soft-ingested. **..."
+    },
+    "mary_stacy_beebe": {
+      "id": "mary_stacy_beebe",
+      "slug": "mary-stacy-beebe",
+      "name": "Mary Stacy Beebe",
+      "years": "1813-1883",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 39798047 — Mary Stacy Beebe",
+          "url": "https://www.findagrave.com/memorial/39798047/mary-beebe"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Polly Stacy",
+        "Mary \"Polly\" Stacy Beebe",
+        "Mary Beebe"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. FAG aka **Polly**. Spouse Jared Beebe **not** soft-ingested. **No open obituary text** this pass."
+    },
+    "lucy_stacy_pease": {
+      "id": "lucy_stacy_pease",
+      "slug": "lucy-stacy-pease",
+      "name": "Lucy Stacy Pease",
+      "years": "1815-1892",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 58936315 — Lucy Stacy Pease",
+          "url": "https://www.findagrave.com/memorial/58936315/lucy-pease"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Lucy Stacy",
+        "Lucy Pease"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. Hillside Cemetery, Monson (same as Adeline). Spouse Rufus M. Pease **not** soft-ingested. **No open obituary text** this pass."
+    },
+    "philo_stacy": {
+      "id": "philo_stacy",
+      "slug": "philo-stacy",
+      "name": "Philo Stacy",
+      "years": "1817-1867",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 44592909 — Philo Stacy",
+          "url": "https://www.findagrave.com/memorial/44592909/philo-stacy"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. Bennett Road Cemetery with parents. Children on FAG **not** soft-ingested. **No open obituary text** this pass."
+    },
+    "louise_stacy_bliss": {
+      "id": "louise_stacy_bliss",
+      "slug": "louise-stacy-bliss",
+      "name": "Louise Stacy Bliss",
+      "years": "1818-1877",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 185665264 — Louise Stacy Bliss",
+          "url": "https://www.findagrave.com/memorial/185665264/louise-bliss"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Louise Stacy",
+        "Louise Bliss"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. Maiden **Stacy** on FAG title. Spouse Orrin Frost Bliss **not** soft-ingested. **No open obituary text** this pass."
+    },
+    "lovina_stacy_holmes": {
+      "id": "lovina_stacy_holmes",
+      "slug": "lovina-stacy-holmes",
+      "name": "Lovina Stacy Holmes",
+      "years": "1821-1869",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 137224304 — Lovina Stacy Holmes",
+          "url": "https://www.findagrave.com/memorial/137224304/lovina-holmes"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "aka": [
+        "Lovina Stacy",
+        "Lovina Holmes"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. Riverside Cemetery, Riverside IA. Spouse Franklin Holmes **not** soft-ingested. **No open obituary text** this pass."
+    },
+    "stephen_edison_stacy": {
+      "id": "stephen_edison_stacy",
+      "slug": "stephen-edison-stacy",
+      "name": "Stephen Edison Stacy",
+      "years": "1825-1847",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_stacy",
+        "ruth_bliss_stacy"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 44592911 — Stephen Edison Stacy",
+          "url": "https://www.findagrave.com/memorial/44592911/stephen_edison-stacy"
+        },
+        {
+          "label": "Find A Grave 44592912 — father Stephen Stacy (child link)",
+          "url": "https://www.findagrave.com/memorial/44592912/stephen-stacy"
+        },
+        {
+          "label": "Find A Grave 58970336 — sister Adeline Stacy Squier (sibling link)",
+          "url": "https://www.findagrave.com/memorial/58970336/adeline-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_stacy",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_bliss_stacy",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Adeline Stacy Squier** (Adeline siblings + Stephen/Ruth children). Soft-ingest **Probable** / `verified: false` — pack **C688**. Bennett Road Cemetery with parents; died young (~22). **No open obituary text** this pass."
+    },
+    "william_perlin_squier": {
+      "id": "william_perlin_squier",
+      "slug": "william-perlin-squier",
+      "name": "William Perlin Squier",
+      "years": "1812-1888",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_squier",
+        "chloe_lincoln_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 184836490 — William Perlin Squier",
+          "url": "https://www.findagrave.com/memorial/184836490/william_perlin-squier"
+        },
+        {
+          "label": "Find A Grave 59099760 — father John Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        },
+        {
+          "label": "Find A Grave 59099795 — mother Chloe Lincoln Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099795/chloe-squier"
+        }
+      ],
+      "aka": [
+        "William P. Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "john_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "chloe_lincoln_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lorenzo Lincoln Squier** on John × Chloe FAG children grids (same pass as gen-7 parents). Soft-ingest **Probable** / `verified: false` — pack **C683**. Kingsley Cemetery, Crawford Co. PA. FAG spouse Jane Philura and children **not** soft-ingested (sibling FA..."
+    },
+    "abner_b_squier": {
+      "id": "abner_b_squier",
+      "slug": "abner-b-squier",
+      "name": "Abner B. Squier",
+      "years": "1828-1829",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_squier",
+        "chloe_lincoln_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099735 — Abner B. Squier",
+          "url": "https://www.findagrave.com/memorial/59099735/abner_b-squier"
+        },
+        {
+          "label": "Find A Grave 59099760 — father John Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099760/john-squier"
+        },
+        {
+          "label": "Find A Grave 59099795 — mother Chloe Lincoln Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099795/chloe-squier"
+        }
+      ],
+      "aka": [
+        "Abner Squier"
+      ],
+      "parent_links": [
+        {
+          "id": "john_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "chloe_lincoln_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named infant sibling of **Lorenzo Lincoln Squier** on John × Chloe FAG children grids (same pass as gen-7 parents). Soft-ingest **Probable** / `verified: false` — pack **C683**. **Moulton Hill Cemetery**, Monson. FAG birth/death places blank this pass. **No open notice**. Do n..."
+    },
+    "almon_squier": {
+      "id": "almon_squier",
+      "slug": "almon-squier",
+      "name": "Almon Squier",
+      "years": "1785-1813",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099796 — Almon Squier",
+          "url": "https://www.findagrave.com/memorial/59099796/almon-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1785–1813; Moulton Hill cluster. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "carlton_squier": {
+      "id": "carlton_squier",
+      "slug": "carlton-squier",
+      "name": "Carlton Squier",
+      "years": "1787-1866",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099742 — Carlton Squier",
+          "url": "https://www.findagrave.com/memorial/59099742/carlton-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1787–1866. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "charles_squier": {
+      "id": "charles_squier",
+      "slug": "charles-squier",
+      "name": "Charles Squier",
+      "years": "1791-1857",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 75461794 — Charles Squier",
+          "url": "https://www.findagrave.com/memorial/75461794/charles-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1791–1857. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "william_squier": {
+      "id": "william_squier",
+      "slug": "william-squier",
+      "name": "William Squier",
+      "years": "1793-1841",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099788 — William Squier",
+          "url": "https://www.findagrave.com/memorial/59099788/william-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1793–1841; uncle of William Perlin (John’s son). Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this ..."
+    },
+    "solomon_squier_1795": {
+      "id": "solomon_squier_1795",
+      "slug": "solomon-squier-1795",
+      "name": "Solomon Squier",
+      "years": "1795-1887",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 120027480 — Solomon Squier",
+          "url": "https://www.findagrave.com/memorial/120027480/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. Son Solomon (1795–1887); id disambiguated from father solomon_squier. Spouses/children **not** soft-ingested (sibling FAN park). **No open..."
+    },
+    "elijah_squier": {
+      "id": "elijah_squier",
+      "slug": "elijah-squier",
+      "name": "Elijah Squier",
+      "years": "1797-1858",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099751 — Elijah Squier",
+          "url": "https://www.findagrave.com/memorial/59099751/elijah-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1797–1858. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "arbey_squier": {
+      "id": "arbey_squier",
+      "slug": "arbey-squier",
+      "name": "Arbey Squier",
+      "years": "1799-1870",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099739 — Arbey Squier",
+          "url": "https://www.findagrave.com/memorial/59099739/arbey-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1799–1870. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "daniel_squier": {
+      "id": "daniel_squier",
+      "slug": "daniel-squier",
+      "name": "Daniel Squier",
+      "years": "1801-1871",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099744 — Daniel Squier",
+          "url": "https://www.findagrave.com/memorial/59099744/daniel-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1801–1871. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "truxton_squier": {
+      "id": "truxton_squier",
+      "slug": "truxton-squier",
+      "name": "Truxton Squier",
+      "years": "1805-1844",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099785 — Truxton Squier",
+          "url": "https://www.findagrave.com/memorial/59099785/truxton-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1805–1844. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "rensselaer_squier": {
+      "id": "rensselaer_squier",
+      "slug": "rensselaer-squier",
+      "name": "Rensselaer Squier",
+      "years": "1807-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099776 — Rensselaer Squier",
+          "url": "https://www.findagrave.com/memorial/59099776/rensselaer-squier"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG 1807–1863; WT grandfather of Edgar Squier-151. Spouses/children **not** soft-ingested (sibling FAN park). **No open obituary** this pass."
+    },
+    "elvira_squier_bradway": {
+      "id": "elvira_squier_bradway",
+      "slug": "elvira-squier-bradway",
+      "name": "Elvira Squier Bradway",
+      "years": "1809-1867",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 59099286 — Elvira Squier Bradway",
+          "url": "https://www.findagrave.com/memorial/59099286/elvira-bradway"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG Elvira Bradway 1809–1867; maiden Squier on parent children grids. Spouses/children **not** soft-ingested (sibling FAN park). **No open..."
+    },
+    "ruby_squier_trask": {
+      "id": "ruby_squier_trask",
+      "slug": "ruby-squier-trask",
+      "name": "Ruby Squier Trask",
+      "years": "1811-1890",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_squier",
+        "sarah_a_moulton_squier"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37082349 — Ruby Squier Trask",
+          "url": "https://www.findagrave.com/memorial/37082349/ruby-trask"
+        },
+        {
+          "label": "Find A Grave 59099783 — father Solomon Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099783/solomon-squier"
+        },
+        {
+          "label": "Find A Grave 59099780 — mother Sarah A. Moulton Squier (children grid)",
+          "url": "https://www.findagrave.com/memorial/59099780/sarah_a-squier"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_squier",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_a_moulton_squier",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **John Squier** (Solomon × Sarah A. Moulton children grids). Soft-ingest **Probable** / `verified: false` — pack **C823**. FAG Ruby Trask 1811–1890; maiden Squier on parent children grids. Spouses/children **not** soft-ingested (sibling FAN park). **No open obi..."
+    },
+    "mary_ann_chapin_young": {
+      "id": "mary_ann_chapin_young",
+      "slug": "mary-ann-chapin-young",
+      "name": "Mary Ann Chapin Young",
+      "years": "1816-1866",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 78468109 — Mary Ann Chapin Young",
+          "url": "https://www.findagrave.com/memorial/78468109/mary_ann-young"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Mary Ann Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "charlotte_harriet_chapin_holbrook": {
+      "id": "charlotte_harriet_chapin_holbrook",
+      "slug": "charlotte-harriet-chapin-holbrook",
+      "name": "Charlotte Harriet Chapin Holbrook",
+      "years": "1818-1904",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 134317310 — Charlotte Harriet Chapin Holbrook",
+          "url": "https://www.findagrave.com/memorial/134317310/charlotte_harriet-holbrook"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Charlotte Harriet Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "samuel_hurd_chapin": {
+      "id": "samuel_hurd_chapin",
+      "slug": "samuel-hurd-chapin",
+      "name": "Samuel Hurd Chapin",
+      "years": "1820-1896",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 121202232 — Samuel Hurd Chapin",
+          "url": "https://www.findagrave.com/memorial/121202232/samuel_hurd-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "rua_mina_chapin": {
+      "id": "rua_mina_chapin",
+      "slug": "rua-mina-chapin",
+      "name": "Rua Mina Chapin",
+      "years": "1822-1905",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 70491286 — Rua Mina Chapin",
+          "url": "https://www.findagrave.com/memorial/70491286/rua_mina-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Rhua Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "lucy_chapin_babcock": {
+      "id": "lucy_chapin_babcock",
+      "slug": "lucy-chapin-babcock",
+      "name": "Lucy Chapin Babcock",
+      "years": "1823-1860",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 88147944 — Lucy Chapin Babcock",
+          "url": "https://www.findagrave.com/memorial/88147944/lucy-babcock"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Lucy Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "sophronia_chapin_stearns": {
+      "id": "sophronia_chapin_stearns",
+      "slug": "sophronia-chapin-stearns",
+      "name": "Sophronia Chapin Stearns",
+      "years": "1825-1871",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 103553081 — Sophronia Chapin Stearns",
+          "url": "https://www.findagrave.com/memorial/103553081/sophronia-stearns"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Sophronia Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "sophia_t_chapin_tunnell": {
+      "id": "sophia_t_chapin_tunnell",
+      "slug": "sophia-t-chapin-tunnell",
+      "name": "Sophia T. Chapin Tunnell",
+      "years": "1830-1907",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 91394289 — Sophia T. Chapin Tunnell",
+          "url": "https://www.findagrave.com/memorial/91394289/sophia_t-tunnell"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Sophia T. Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "augusta_pauline_chapin_sylvester": {
+      "id": "augusta_pauline_chapin_sylvester",
+      "slug": "augusta-pauline-chapin-sylvester",
+      "name": "Augusta Pauline Chapin Sylvester",
+      "years": "1832-1891",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_chapin",
+        "lydia_hurd_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 35611287 — Augusta Pauline Chapin Sylvester",
+          "url": "https://www.findagrave.com/memorial/35611287/augusta_pauline-sylvester"
+        },
+        {
+          "label": "Find A Grave 123785736 — father Moses Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 123785670 — mother Lydia H. Hurd Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        },
+        {
+          "label": "Find A Grave 103361845 — sister Justina Melross Chapin Stearns (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/103361845/justina_melross-stearns"
+        }
+      ],
+      "aka": [
+        "Augusta Pauline Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_hurd_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Justina Melross Chapin Stearns** on FAG Moses × Lydia children grids (and Justina siblings grid). Soft-ingest **Probable** / `verified: false` — pack **C589**. Lean identity only; spouses/children not climbed. Distinct from any later Stearns in-laws unless s..."
+    },
+    "oliver_lathrop_stearns": {
+      "id": "oliver_lathrop_stearns",
+      "slug": "oliver-lathrop-stearns",
+      "name": "Oliver Lathrop Stearns",
+      "years": "1816-1888",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "oliver_stearns",
+        "malinda_barrows_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 102350144 — Oliver Lathrop Stearns",
+          "url": "https://www.findagrave.com/memorial/102350144/oliver_lathrop-stearns"
+        },
+        {
+          "label": "Find A Grave 103361695 — sibling Deacon Nathan Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "Find A Grave 199511937 — mother Malinda Barrows Stearns (children grid)",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "aka": [
+        "Capt. Oliver Lathrop Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "oliver_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "malinda_barrows_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Nathan Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — same pass as **C580** parents (no separate claim ID). FAG siblings grid on Nathan + Malinda/Oliver children grids. West Lebanon Cemetery with father/Nathan. Spous..."
+    },
+    "malinda_stearns_1824": {
+      "id": "malinda_stearns_1824",
+      "slug": "malinda-stearns-1824",
+      "name": "Malinda Stearns",
+      "years": "1824-1824",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "oliver_stearns",
+        "malinda_barrows_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 46717446 — Malinda Stearns (infant)",
+          "url": "https://www.findagrave.com/memorial/46717446/malinda-stearns"
+        },
+        {
+          "label": "Find A Grave 103361695 — sibling Deacon Nathan Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/103361695/nathan_barrows-stearns"
+        },
+        {
+          "label": "Find A Grave 199511937 — mother Malinda Barrows Stearns (children grid)",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "aka": [
+        "Melinda Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "oliver_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "malinda_barrows_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named infant full sibling of **Nathan Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — same pass as **C580** parents (no separate claim ID). Died age ~1 month; co-cemetery with mother Olde Mansfield Center. FAG birth **14 Jun 1824** (some com..."
+    },
+    "lydia_hurd_1783": {
+      "id": "lydia_hurd_1783",
+      "slug": "lydia-hurd-1783",
+      "name": "Lydia Hurd",
+      "years": "1783-1793",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_ii",
+        "anna_thurston_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 245867289 — Lydia Hurd",
+          "url": "https://www.findagrave.com/memorial/245867289/lydia-hurd"
+        },
+        {
+          "label": "Find A Grave 249877458 — father Samuel Hurd II (children grid)",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 123785670 — sister Lydia H. Hurd Chapin (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Lydia H. Hurd Chapin** (earlier sister, same given name). FAG **245867289** years **1783–1793**; parents Samuel × Anna on children/sibling grids. Pack **C659**. Not the 1795 Chapin daughter."
+    },
+    "samuel_hurd_1789": {
+      "id": "samuel_hurd_1789",
+      "slug": "samuel-hurd-1789",
+      "name": "Samuel Hurd",
+      "years": "1789-1793",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_ii",
+        "anna_thurston_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 249886755 — Samuel Hurd",
+          "url": "https://www.findagrave.com/memorial/249886755/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 249877458 — father Samuel Hurd II (children grid)",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 123785670 — sister Lydia H. Hurd Chapin (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Lydia H. Hurd Chapin**. FAG **249886755** years **1789–1793**; distinct from LT Samuel Hurd III. Pack **C659**."
+    },
+    "samuel_hurd_iii": {
+      "id": "samuel_hurd_iii",
+      "slug": "samuel-hurd-iii",
+      "name": "LT Samuel Hurd III",
+      "years": "1792-1826",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_ii",
+        "anna_thurston_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 50576395 — LT Samuel Hurd III",
+          "url": "https://www.findagrave.com/memorial/50576395/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 249877458 — father Samuel Hurd II (children grid)",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 123785670 — sister Lydia H. Hurd Chapin (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        }
+      ],
+      "aka": [
+        "Samuel Hurd III"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Lydia H. Hurd Chapin**. FAG **50576395** years **1792–1826**. Pack **C659**. Spouse climb parked."
+    },
+    "reuel_hurd": {
+      "id": "reuel_hurd",
+      "slug": "reuel-hurd",
+      "name": "Reuel Hurd",
+      "years": "1798-1803",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_ii",
+        "anna_thurston_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 50574354 — Reuel Hurd",
+          "url": "https://www.findagrave.com/memorial/50574354/reuel-hurd"
+        },
+        {
+          "label": "Find A Grave 249877458 — father Samuel Hurd II (children grid)",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 123785670 — sister Lydia H. Hurd Chapin (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        }
+      ],
+      "aka": [
+        "Ruel Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Lydia H. Hurd Chapin**. FAG **50574354** years **1798–1803** (title Reuel; bio Ruel). Pack **C659**."
+    },
+    "pauline_hurd_newell": {
+      "id": "pauline_hurd_newell",
+      "slug": "pauline-hurd-newell",
+      "name": "Pauline Hurd Newell",
+      "years": "1801-1896",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_ii",
+        "anna_thurston_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 50576418 — Pauline Hurd Newell",
+          "url": "https://www.findagrave.com/memorial/50576418/pauline-newell"
+        },
+        {
+          "label": "Find A Grave 249877458 — father Samuel Hurd II (children grid)",
+          "url": "https://www.findagrave.com/memorial/249877458/samuel-hurd"
+        },
+        {
+          "label": "Find A Grave 123785670 — sister Lydia H. Hurd Chapin (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/123785670/lydia_h-chapin"
+        }
+      ],
+      "aka": [
+        "Paulina Hurd",
+        "Pauline Newell"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_thurston_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Lydia H. Hurd Chapin**. FAG **50576418** years **1801–1896**. Pack **C659**. Spouse climb parked."
+    },
+    "mary_thacher_chapin": {
+      "id": "mary_thacher_chapin",
+      "slug": "mary-thacher-chapin",
+      "name": "Mary Thacher Chapin",
+      "years": "1785-1850",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48404984 — Mary Thacher Chapin",
+          "url": "https://www.findagrave.com/memorial/48404984/mary_thacher-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "aka": [
+        "Mary T. Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "infant_daughter_chapin_1787": {
+      "id": "infant_daughter_chapin_1787",
+      "slug": "infant-daughter-chapin-1787",
+      "name": "Infant Daughter Chapin",
+      "years": "1787-1787",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 246115949 — Infant Daughter Chapin",
+          "url": "https://www.findagrave.com/memorial/246115949/infant_daughter-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "elizabeth_chapin_bascom": {
+      "id": "elizabeth_chapin_bascom",
+      "slug": "elizabeth-chapin-bascom",
+      "name": "Elizabeth Chapin Bascom",
+      "years": "1788-1855",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 66792003 — Elizabeth Chapin Bascom",
+          "url": "https://www.findagrave.com/memorial/66792003/elizabeth-bascom"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "aka": [
+        "Elizabeth Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "phinehas_chapin": {
+      "id": "phinehas_chapin",
+      "slug": "phinehas-chapin",
+      "name": "Phinehas Chapin",
+      "years": "1792-1856",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48404989 — Phinehas Chapin",
+          "url": "https://www.findagrave.com/memorial/48404989/phinehas-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "aka": [
+        "Phineas Chapin Jr."
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "sophia_chapin_baker": {
+      "id": "sophia_chapin_baker",
+      "slug": "sophia-chapin-baker",
+      "name": "Sophia Chapin Baker",
+      "years": "1796-1839",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 88672251 — Sophia Chapin Baker",
+          "url": "https://www.findagrave.com/memorial/88672251/sophia-baker"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "aka": [
+        "Sophia Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "orlando_chapin": {
+      "id": "orlando_chapin",
+      "slug": "orlando-chapin",
+      "name": "Orlando Chapin",
+      "years": "1797-1878",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48404986 — Orlando Chapin",
+          "url": "https://www.findagrave.com/memorial/48404986/orlando-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "henry_chapin_newport": {
+      "id": "henry_chapin_newport",
+      "slug": "henry-chapin-newport",
+      "name": "Henry Chapin",
+      "years": "1800-1867",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 88383551 — Henry Chapin",
+          "url": "https://www.findagrave.com/memorial/88383551/henry-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "aka": [
+        "Henry Chapin of Newport NH"
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "stillborn_daughter_chapin": {
+      "id": "stillborn_daughter_chapin",
+      "slug": "stillborn-daughter-chapin",
+      "name": "Stillborn Daughter Chapin",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 50574202 — Stillborn Daughter Chapin",
+          "url": "https://www.findagrave.com/memorial/50574202/stillborn_daughter-chapin"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "abiah_chapin_hale": {
+      "id": "abiah_chapin_hale",
+      "slug": "abiah-chapin-hale",
+      "name": "Abiah Chapin Hale",
+      "years": "1806-1864",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "phineas_chapin",
+        "mary_lane_chapin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 24134714 — Abiah Chapin Hale",
+          "url": "https://www.findagrave.com/memorial/24134714/abiah-hale"
+        },
+        {
+          "label": "Find A Grave 123785736 — sibling Moses Chapin",
+          "url": "https://www.findagrave.com/memorial/123785736/moses-chapin"
+        },
+        {
+          "label": "Find A Grave 48404988 — father Phineas Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404988/phineas-chapin"
+        },
+        {
+          "label": "Find A Grave 48404983 — mother Mary Lane Chapin (children grid)",
+          "url": "https://www.findagrave.com/memorial/48404983/mary-chapin"
+        }
+      ],
+      "aka": [
+        "Abiah Chapin"
+      ],
+      "parent_links": [
+        {
+          "id": "phineas_chapin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_lane_chapin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Moses Chapin** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C654**. FAG Phineas × Mary children grids + Moses sibling links; Orange Chapin 1862 corroborates. Lean identity only; spouses/children not climbed. **No open obituary tex..."
+    },
+    "sarah_thurston_bailey": {
+      "id": "sarah_thurston_bailey",
+      "slug": "sarah-thurston-bailey",
+      "name": "Sarah Thurston Bailey",
+      "years": "1756-1851",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 242325660 — Sarah Sally Thurston Bailey",
+          "url": "https://www.findagrave.com/memorial/242325660/sarah_sally-bailey"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Sally Thurston",
+        "Sarah Bailey",
+        "Sally Bailey"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **242325660** years **1756-1851**. Pack **C759**. Spouse climb parked."
+    },
+    "phinehas_thurston": {
+      "id": "phinehas_thurston",
+      "slug": "phinehas-thurston",
+      "name": "Phinehas Thurston",
+      "years": "1758-1796",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 242320294 — Phinehas Thurston",
+          "url": "https://www.findagrave.com/memorial/242320294/phinehas-thurston"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Phineas Thurston"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **242320294** years **1758-1796**. Pack **C759**. Spouse climb parked."
+    },
+    "elisabeth_thurston_ayers": {
+      "id": "elisabeth_thurston_ayers",
+      "slug": "elisabeth-thurston-ayers",
+      "name": "Elisabeth Thurston Ayers",
+      "years": "1764–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 242323294 — Elisabeth Thurston Ayers",
+          "url": "https://www.findagrave.com/memorial/242323294/elisabeth-ayers"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Elizabeth Thurston",
+        "Elisabeth Ayers",
+        "Elizabeth Ayer"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **242323294** years **1764–**. Pack **C759**. Spouse climb parked."
+    },
+    "mary_thurston_smith": {
+      "id": "mary_thurston_smith",
+      "slug": "mary-thurston-smith",
+      "name": "Mary Thurston Smith",
+      "years": "1767-1850",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 193806560 — Mary Thurston Smith",
+          "url": "https://www.findagrave.com/memorial/193806560/mary-smith"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Mary Thurston",
+        "Mary Smith"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **193806560** years **1767-1850**. Pack **C759**. Spouse climb parked."
+    },
+    "dorothy_thurston_huntoon": {
+      "id": "dorothy_thurston_huntoon",
+      "slug": "dorothy-thurston-huntoon",
+      "name": "Dorothy Thurston Huntoon",
+      "years": "1769-1828",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 98976214 — Dorothy Thurston Huntoon",
+          "url": "https://www.findagrave.com/memorial/98976214/dorothy-huntoon"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Dorothy Thurston",
+        "Dorothy Huntoon"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **98976214** years **1769-1828**. Pack **C759**. Spouse climb parked."
+    },
+    "josiah_thurston": {
+      "id": "josiah_thurston",
+      "slug": "josiah-thurston",
+      "name": "Josiah Thurston",
+      "years": "1772-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 77579232 — Josiah Thurston",
+          "url": "https://www.findagrave.com/memorial/77579232/josiah-thurston"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **77579232** years **1772-1863**. Pack **C759**. Spouse climb parked."
+    },
+    "hannah_thurston_philbrick": {
+      "id": "hannah_thurston_philbrick",
+      "slug": "hannah-thurston-philbrick",
+      "name": "Hannah Thurston Philbrick",
+      "years": "1774-1850",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 159009041 — Hannah Thurston Philbrick",
+          "url": "https://www.findagrave.com/memorial/159009041/hannah-philbrick"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Hannah Thurston",
+        "Hannah Philbrick"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **159009041** years **1774-1850**. Pack **C759**. Spouse climb parked."
+    },
+    "john_thurston_1776": {
+      "id": "john_thurston_1776",
+      "slug": "john-thurston-1776",
+      "name": "John Thurston",
+      "years": "1776-1839",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 193801561 — John Thirston (Thurston)",
+          "url": "https://www.findagrave.com/memorial/193801561/john-thirston"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "John Thirston"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **193801561** years **1776-1839**. Pack **C759**. Spouse climb parked."
+    },
+    "joanna_thurston_fitts": {
+      "id": "joanna_thurston_fitts",
+      "slug": "joanna-thurston-fitts",
+      "name": "Joanna Thurston Fitts",
+      "years": "1776-1855",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "moses_thurston_ii",
+        "elizabeth_clifford_thurston"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 96951666 — Joanna Thurston Fitts",
+          "url": "https://www.findagrave.com/memorial/96951666/joanna-fitts"
+        },
+        {
+          "label": "Find A Grave 193801812 — father CPT Moses Thurston (children grid)",
+          "url": "https://www.findagrave.com/memorial/193801812/moses-thurston"
+        },
+        {
+          "label": "Find A Grave 249877419 — sister Anna Thurston Hurd (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/249877419/anna-hurd"
+        }
+      ],
+      "aka": [
+        "Joanna Thurston",
+        "Joanna Fitts"
+      ],
+      "parent_links": [
+        {
+          "id": "moses_thurston_ii",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_clifford_thurston",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Anna Thurston Hurd**. FAG **96951666** years **1776-1855**. Pack **C759**. Spouse climb parked."
+    },
+    "stephen_hurd_sr": {
+      "id": "stephen_hurd_sr",
+      "slug": "stephen-hurd-sr",
+      "name": "Stephen Hurd Sr.",
+      "years": "1760-1815",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Stephen Hurd s. of Samuel and Lydia (Wilcox)",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 50574272 — Stephen Hurd Sr. (McKown cite)",
+          "url": "https://www.findagrave.com/memorial/50574272/stephen-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Stephen Hurd Sr.",
+          "url": "https://www.mckown.net/g6/p6545.htm"
+        },
+        {
+          "label": "WikiTree Hurd-1268 — brother of Samuel Hurd II",
+          "url": "https://www.wikitree.com/wiki/Hurd-1268"
+        }
+      ],
+      "aka": [
+        "Lieut. Stephen Hurd",
+        "Stephen Hurd I"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II** (Wheeler + WikiTree). Soft-ingest **Probable** / `verified: false` — pack **C754**. Lean identity; spouses Abigail Glidden / Betsey Clemmens and children **not climbed**. Pine Street East (McKown FAG **50574272**)."
+    },
+    "rebecca_hurd_pike": {
+      "id": "rebecca_hurd_pike",
+      "slug": "rebecca-hurd-pike",
+      "name": "Rebecca Hurd Pike",
+      "years": "1762–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Rebecca Hurd m. John Pike of New London",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown Genealogy — Rebecca Hurd (child of Capt. Samuel × Lydia)",
+          "url": "https://www.mckown.net/g1/p1211.htm"
+        }
+      ],
+      "aka": [
+        "Rebecca Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II** in Wheeler Capt. Samuel family list (m. John Pike of New London). Soft-ingest **Probable** / `verified: false` — pack **C754**. Lean — no FAG / death this pass; McKown ~1762. Spouse **not climbed**."
+    },
+    "hepsibah_hurd_1774": {
+      "id": "hepsibah_hurd_1774",
+      "slug": "hepsibah-hurd-1774",
+      "name": "Hepsibah Hurd",
+      "years": "1765-1774",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Hepsibah d. July 26, 1774 (child of Samuel Hurd)",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown Genealogy — Hepsibah Hurd (c.1765–1774)",
+          "url": "https://www.mckown.net/g1/p1211.htm"
+        }
+      ],
+      "aka": [
+        "Hepzibah Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II** — Wheeler lists **Hepsibah, d. 26 Jul 1774** under Capt. Samuel × Lydia. Soft-ingest **Probable** / `verified: false` — pack **C754**. Child death; lean vitals (McKown ~1765). Distinct from McKown’s later Hepsibah ~1782 (**not** soft this pa..."
+    },
+    "lydia_hurd_bascom": {
+      "id": "lydia_hurd_bascom",
+      "slug": "lydia-hurd-bascom",
+      "name": "Lydia Hurd Bascom",
+      "years": "1768-1847",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Lydia Hurd (first female child born Newport) m. Reuben Bascom",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 94673500 — Lydia Hurd Bascom (McKown cite)",
+          "url": "https://www.findagrave.com/memorial/94673500/lydia-bascom"
+        },
+        {
+          "label": "McKown Genealogy — Lydia Hurd",
+          "url": "https://mckown.net/g6/p6550.htm"
+        }
+      ],
+      "aka": [
+        "Lydia Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II**. Soft-ingest **Probable** / `verified: false` — pack **C754**. Wheeler: first female child born in Newport; m. Reuben Bascom. Maple Street Cemetery (McKown FAG **94673500**). Spouse/children **not climbed**."
+    },
+    "polly_hurd_keith": {
+      "id": "polly_hurd_keith",
+      "slug": "polly-hurd-keith",
+      "name": "Polly Hurd Keith",
+      "years": "1770-1837",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Polly Hurd b. May 6, 1770; m. Ruel Keith",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown Genealogy — Polly Hurd (child of Capt. Samuel × Lydia)",
+          "url": "https://www.mckown.net/g1/p1211.htm"
+        }
+      ],
+      "aka": [
+        "Polly Hurd",
+        "Mary Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II**. Soft-ingest **Probable** / `verified: false` — pack **C754**. Wheeler: b. **6 May 1770**; m. Ruel Keith. McKown death ~1837. No FAG this pass. Spouse **not climbed**."
+    },
+    "elnathan_hurd": {
+      "id": "elnathan_hurd",
+      "slug": "elnathan-hurd",
+      "name": "Deacon Elnathan Hurd",
+      "years": "1772-1858",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Elnathan s. of Samuel and Lydia (Wilcox) Hurd",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 50574257 — Deacon Elnathan Hurd (McKown cite)",
+          "url": "https://www.findagrave.com/memorial/50574257/elnathan-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Deacon Elnathan Hurd",
+          "url": "https://www.mckown.net/g6/p6552.htm"
+        }
+      ],
+      "aka": [
+        "Elnathan Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II**. Soft-ingest **Probable** / `verified: false` — pack **C754**. Lean identity; spouse Louisa Griswold / children **not climbed**. Pine Street East (McKown FAG **50574257**)."
+    },
+    "asa_hurd": {
+      "id": "asa_hurd",
+      "slug": "asa-hurd",
+      "name": "Asa Hurd",
+      "years": "1773-1844",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_hurd_sr",
+        "lydia_wilcox_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Asa s. of Samuel Hurd × Lydia Wilcox",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "Find A Grave 194836511 — Asa Hurd (McKown cite)",
+          "url": "https://www.findagrave.com/memorial/194836511/asa-hurd"
+        },
+        {
+          "label": "McKown Genealogy — Asa Hurd",
+          "url": "https://www.mckown.net/g6/p6546.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_wilcox_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Samuel Hurd II**. Soft-ingest **Probable** / `verified: false` — pack **C754**. Lean identity; spouse Phoebe Griswold / children **not climbed**. Maple Street Cemetery (McKown FAG **194836511**). Birth ~1773 (McKown)."
+    },
+    "joseph_clifford_sr": {
+      "id": "joseph_clifford_sr",
+      "slug": "joseph-clifford-sr",
+      "name": "Joseph Clifford Sr",
+      "years": "1718-1783",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "aka": [
+        "Joseph Clifford"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. Eldest son; adm of father estate 1745; m. Mary Healey 1737 Kingston (Athenaeum/WT) Lean identity only; no spouse/UP climb this pass."
+    },
+    "isaac_clifford_jr": {
+      "id": "isaac_clifford_jr",
+      "slug": "isaac-clifford-jr",
+      "name": "Isaac Clifford Jr",
+      "years": "1721–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "aka": [
+        "Isaac Clifford"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. WT marks relationship uncertain; Athenaeum/probate share list include Isaac; m. Sarah Healey (Chester/Rumney) Lean identity only; ..."
+    },
+    "sarah_clifford_ladd": {
+      "id": "sarah_clifford_ladd",
+      "slug": "sarah-clifford-ladd",
+      "name": "Sarah Clifford Ladd",
+      "years": "1724–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "aka": [
+        "Sarah Clifford",
+        "Sarah Ladd"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. m. Nathaniel Ladd 12 Aug 1741 (Athenaeum); birth 13 Feb 1723/24 Kingston VR via WT Lean identity only; no spouse/UP climb this pass."
+    },
+    "david_clifford": {
+      "id": "david_clifford",
+      "slug": "david-clifford",
+      "name": "David Clifford",
+      "years": "1725–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. m. Joanna Moody then Margaret Ford (Athenaeum/WT) Lean identity only; no spouse/UP climb this pass."
+    },
+    "william_clifford_1727": {
+      "id": "william_clifford_1727",
+      "slug": "william-clifford-1727",
+      "name": "William Clifford",
+      "years": "1727–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. m. Abigail Gove/Gee 1746 Kingston (Athenaeum vs WT spouse surname variance) Lean identity only; no spouse/UP climb this pass."
+    },
+    "israel_clifford_1729": {
+      "id": "israel_clifford_1729",
+      "slug": "israel-clifford-1729",
+      "name": "Israel Clifford",
+      "years": "1729–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. Guardian Philbrick 1746/47; m. Deliverance Buzzell 1751 (WT) Lean identity only; no spouse/UP climb this pass."
+    },
+    "zachariah_clifford": {
+      "id": "zachariah_clifford",
+      "slug": "zachariah-clifford",
+      "name": "Zachariah Clifford",
+      "years": "1730-1752",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. Kingston VR death 23 May 1752 (WT/Arsenault cite) Lean identity only; no spouse/UP climb this pass."
+    },
+    "abigail_clifford_1733": {
+      "id": "abigail_clifford_1733",
+      "slug": "abigail-clifford-1733",
+      "name": "Abigail Clifford",
+      "years": "1733–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. d. bef. 1750 estate division (Athenaeum); not in 1750 share list Lean identity only; no spouse/UP climb this pass."
+    },
+    "john_clifford_1737": {
+      "id": "john_clifford_1737",
+      "slug": "john-clifford-1737",
+      "name": "John Clifford",
+      "years": "1737–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. d. bef. 1750 estate division (Athenaeum); not in 1750 share list; WT later m. Mary Worthen may be conflation hold Lean identity on..."
+    },
+    "tristram_clifford": {
+      "id": "tristram_clifford",
+      "slug": "tristram-clifford",
+      "name": "Tristram Clifford",
+      "years": "1739–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_clifford_sr",
+        "sarah_taylor_clifford"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Clifford, Isaac children list",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Clifford%2C+Isaac"
+        },
+        {
+          "label": "WikiTree Clifford-337 — Isaac Clifford Sr children",
+          "url": "https://www.wikitree.com/wiki/Clifford-337"
+        }
+      ],
+      "aka": [
+        "Tristrum Clifford"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_clifford_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_taylor_clifford",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Clifford Thurston** (Isaac Clifford Sr × Sarah Taylor). Soft-ingest **Probable** / `verified: false` — pack **C939**. Guardian Philbrick 1746/47; Athenaeum: d. unmarried Kingston Lean identity only; no spouse/UP climb this pass."
+    },
+    "jesse_wilcox": {
+      "id": "jesse_wilcox",
+      "slug": "jesse-wilcox",
+      "name": "Jesse Wilcox",
+      "years": "1744-1823",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_wilcox",
+        "mary_pierson_wilcox"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Jesse s. of Stephen (WILCOX settlers)",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown — Jesse Wilcox (FAG 50574383)",
+          "url": "https://www.mckown.net/g16/p16106.htm"
+        },
+        {
+          "label": "Find A Grave 50574383 — Jesse Wilcox",
+          "url": "https://www.findagrave.com/memorial/50574383/jesse-wilcox"
+        },
+        {
+          "label": "WikiTree Willcox-540 — Jesse (Willcox) Wilcox",
+          "url": "https://www.wikitree.com/wiki/Willcox-540"
+        }
+      ],
+      "aka": [
+        "Lieut. Jesse Wilcox",
+        "Jesse Willcox"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_wilcox",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_pierson_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Lydia Wilcox Hurd**. Soft-ingest **Probable** / `verified: false` — pack **C879**. Wheeler settler + Capt. Samuel sketch (sister of Jesse); m. Thankful Stevens; Pine Street (East McKown / West cemetery transcript).. Spouses/parents-of-spouse **not** climbed."
+    },
+    "uriah_wilcox": {
+      "id": "uriah_wilcox",
+      "slug": "uriah-wilcox",
+      "name": "Uriah Wilcox",
+      "years": "1748-1822",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_wilcox",
+        "mary_pierson_wilcox"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Uriah brother of Jesse Sen.",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown — Uriah Wilcox (FAG 50574387)",
+          "url": "https://www.mckown.net/g16/p16105.htm"
+        },
+        {
+          "label": "Find A Grave 50574387 — Uriah Wilcox",
+          "url": "https://www.findagrave.com/memorial/50574387/uriah-wilcox"
+        }
+      ],
+      "aka": [
+        "Hon. Uriah Wilcox",
+        "Maj. Uriah Wilcox",
+        "Capt. Uriah Wilcox"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_wilcox",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_pierson_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Lydia Wilcox Hurd**. Soft-ingest **Probable** / `verified: false` — pack **C879**. Wheeler settler + Capt. Samuel sketch (sister of Uriah); McKown FAG **50574387** Pine Street East.. Spouses/parents-of-spouse **not** climbed."
+    },
+    "phineas_wilcox": {
+      "id": "phineas_wilcox",
+      "slug": "phineas-wilcox",
+      "name": "Phineas Wilcox",
+      "years": "1746-1819",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_wilcox",
+        "mary_pierson_wilcox"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler 1879 — Phineas brother of Jesse and Uriah",
+          "url": "https://archive.org/stream/historyofnewport00whee/historyofnewport00whee_djvu.txt"
+        },
+        {
+          "label": "McKown — Phineas Wilcox",
+          "url": "https://www.mckown.net/g40/p40307.htm"
+        }
+      ],
+      "aka": [
+        "Phinehas Wilcox"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_wilcox",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_pierson_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Lydia Wilcox Hurd**. Soft-ingest **Probable** / `verified: false` — pack **C879**. Wheeler WILCOX settler block + brother sketch; McKown b. 13 Jan 1746 / d. 20 Aug 1819 Newport. No FAG this pass.. Spouses/parents-of-spouse **not** climbed."
+    },
+    "mary_wilcox_hurd": {
+      "id": "mary_wilcox_hurd",
+      "slug": "mary-wilcox-hurd",
+      "name": "Mary Wilcox Hurd",
+      "years": "1734–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "stephen_wilcox",
+        "mary_pierson_wilcox"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Wilcox-4406 — twin Mary same day (Barbour cite)",
+          "url": "https://www.wikitree.com/wiki/Wilcox-4406"
+        },
+        {
+          "label": "WikiTree Willcockson-108 / Pierson-158 — daughter Mary (Wilcox) Hurd",
+          "url": "https://www.wikitree.com/wiki/Willcockson-108"
+        }
+      ],
+      "aka": [
+        "Mary Wilcox",
+        "Mary Willcocks"
+      ],
+      "parent_links": [
+        {
+          "id": "stephen_wilcox",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_pierson_wilcox",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Lydia Wilcox Hurd**. Soft-ingest **Probable** / `verified: false` — pack **C879**. Identical twin of Lydia (WikiTree/Barbour cite). Soft vitals birth only; spouse climb parked. Not in Wheeler settler block.. Spouses/parents-of-spouse **not** climbed."
+    },
+    "sarah_hurd_griswold": {
+      "id": "sarah_hurd_griswold",
+      "slug": "sarah-hurd-griswold",
+      "name": "Sarah Hurd Griswold",
+      "years": "1725-1751",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "aka": [
+        "Sarah Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR dau. Elnathan×Thankfull b. 24 Aug 1725; McKown d. 16 Sep 1751; WT Griswold. Parents..."
+    },
+    "abigail_hurd_ackley": {
+      "id": "abigail_hurd_ackley",
+      "slug": "abigail-hurd-ackley",
+      "name": "Abigail Hurd Ackley",
+      "years": "1728-1793",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "aka": [
+        "Abigail Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR Mar 29 1728 (McKown May 20 1727 held); WT Ackley; d. 18 Jun 1793 McKown. Parents so..."
+    },
+    "elnathan_hurd_jr": {
+      "id": "elnathan_hurd_jr",
+      "slug": "elnathan-hurd-jr",
+      "name": "Elnathan Hurd Jr",
+      "years": "1730-1794",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "aka": [
+        "Elnathan Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR Oct 18 1730; WT Hurd-2824; Indian River Clinton CT. Not Deacon Elnathan 1772. Paren..."
+    },
+    "john_hurd_1734": {
+      "id": "john_hurd_1734",
+      "slug": "john-hurd-1734",
+      "name": "John Hurd",
+      "years": "1734–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR/McKown b. 4 Aug 1734 Killingworth (WT OCR typo 1834 held). Parents soft **elnathan_..."
+    },
+    "jonathan_hurd_1739": {
+      "id": "jonathan_hurd_1739",
+      "slug": "jonathan-hurd-1739",
+      "name": "Jonathan Hurd",
+      "years": "1739–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR/McKown b. 24 Aug 1739; on WT Elnathan Sr / Thankful children lists. Parents soft **..."
+    },
+    "thankful_hurd_higgins": {
+      "id": "thankful_hurd_higgins",
+      "slug": "thankful-hurd-higgins",
+      "name": "Thankful Hurd Higgins",
+      "years": "1743–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "aka": [
+        "Thankful Hurd",
+        "Thankfull Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR b. 15 Aug 1743; WT Hurd-2807 Higgins. Parents soft **elnathan_hurd_sr** × **thankfu..."
+    },
+    "nathan_hurd_sr": {
+      "id": "nathan_hurd_sr",
+      "slug": "nathan-hurd-sr",
+      "name": "Nathan Hurd Sr",
+      "years": "1746-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "elnathan_hurd_sr",
+        "thankful_nettleton_hurd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elnathan Hurd Jr (Hurd-2824) Killingworth VR siblings",
+          "url": "https://www.wikitree.com/wiki/Hurd-2824"
+        },
+        {
+          "label": "McKown Genealogy — Elnathan Hurd (children)",
+          "url": "https://mckown.net/g0/p882.htm"
+        },
+        {
+          "label": "WikiTree — Elnathan Hurd Sr (Hurd-1329)",
+          "url": "https://www.wikitree.com/wiki/Hurd-1329"
+        }
+      ],
+      "aka": [
+        "Nathan Hurd"
+      ],
+      "parent_links": [
+        {
+          "id": "elnathan_hurd_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "thankful_nettleton_hurd",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Captain Samuel Hurd Sr.** on Killingworth VR child list (WT Hurd-2824) and McKown Elnathan×Thankful children. Soft-ingest **Probable** / `verified: false` — pack **C874**. VR Feb 14 1746 (McKown Feb 2 held); d. 18 Mar 1810 McKown. Parents soft **elnathan_hur..."
+    },
+    "elijah_barrows": {
+      "id": "elijah_barrows",
+      "slug": "elijah-barrows",
+      "name": "Elijah Barrows",
+      "years": "1768–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "joanna_barrows_1770": {
+      "id": "joanna_barrows_1770",
+      "slug": "joanna-barrows-1770",
+      "name": "Joanna Barrows",
+      "years": "1770–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "robert_barrows_1772": {
+      "id": "robert_barrows_1772",
+      "slug": "robert-barrows-1772",
+      "name": "Robert Barrows",
+      "years": "1772–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "aka": [
+        "Robert Barrows Jr."
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "nathan_barrows_1775": {
+      "id": "nathan_barrows_1775",
+      "slug": "nathan-barrows-1775",
+      "name": "Nathan Barrows",
+      "years": "1775–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "abigail_barrows_1777": {
+      "id": "abigail_barrows_1777",
+      "slug": "abigail-barrows-1777",
+      "name": "Abigail Barrows",
+      "years": "1777–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "dan_barrows": {
+      "id": "dan_barrows",
+      "slug": "dan-barrows",
+      "name": "Dan Barrows",
+      "years": "1780–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "mary_barrows_wright": {
+      "id": "mary_barrows_wright",
+      "slug": "mary-barrows-wright",
+      "name": "Mary Barrows Wright",
+      "years": "1783–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_barrows",
+        "joanna_porter_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Lieut. Robert Jr. × Joanna (Porter) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — father CPT Robert Barrows (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 199511937 — sister Malinda Barrows Stearns",
+          "url": "https://www.findagrave.com/memorial/199511937/malinda-stearns"
+        },
+        {
+          "label": "WikiTree Barrows-78 — Mary (Barrows) Wright (pointer)",
+          "url": "https://www.wikitree.com/wiki/Barrows-78"
+        }
+      ],
+      "aka": [
+        "Mary Barrows"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_porter_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Malinda Barrows Stearns** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C669** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Lieut. Robert, Jr.** × **Joanna (Porter)**. Spouse/children not climbe..."
+    },
+    "abigail_porter_1729": {
+      "id": "abigail_porter_1729",
+      "slug": "abigail-porter-1729",
+      "name": "Abigail Porter",
+      "years": "1729–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "experience_porter_jr",
+        "abigail_safford_porter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — Abigail, child of Experience Jr. × Abigal (Safford) Porter, b. 1 Jun 1729",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "WikiTree Porter-2474 — Experience Porter Jr. children",
+          "url": "https://www.wikitree.com/wiki/Porter-2474"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joanna Porter Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C779**. Dimock: second Abigail (infant Abigail 1726 died — **not** this person). Spouse/death not climbed."
+    },
+    "elijah_porter_1731": {
+      "id": "elijah_porter_1731",
+      "slug": "elijah-porter-1731",
+      "name": "Elijah Porter",
+      "years": "1731–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "experience_porter_jr",
+        "abigail_safford_porter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — Elijah, child of Experience Jr. × Abigal (Safford) Porter, b. 5 Oct 1731",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "WikiTree Porter-2474 — Experience Porter Jr. children",
+          "url": "https://www.wikitree.com/wiki/Porter-2474"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joanna Porter Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C779**. Dimock Mansfield town births. Spouse/death not climbed."
+    },
+    "mary_porter_southworth": {
+      "id": "mary_porter_southworth",
+      "slug": "mary-porter-southworth",
+      "name": "Mary Porter Southworth",
+      "years": "1735–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "experience_porter_jr",
+        "abigail_safford_porter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — Mary, child of Experience Jr. × Abigal (Safford) Porter, b. at Norwich 11 Jan 1735",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "GenealogyTrails Mansfield — Constant Southworth × Mary Porter (dau. Experience Porter Jr., deceased) m. 7 Feb 1754",
+          "url": "http://genealogytrails.com/conn/tolland/mansfield_marriages.html"
+        },
+        {
+          "label": "WikiTree Porter-2474 — Experience Porter Jr. children",
+          "url": "https://www.wikitree.com/wiki/Porter-2474"
+        }
+      ],
+      "aka": [
+        "Mary Porter"
+      ],
+      "parent_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joanna Porter Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C779**. Dimock birth at Norwich; Dimock marriage to **Constant Southworth** names father Experience Jr. deceased (same phrasing as Joanna’s marriage). Spouse cli..."
+    },
+    "moses_porter": {
+      "id": "moses_porter",
+      "slug": "moses-porter",
+      "name": "Moses Porter",
+      "years": "1738-1803",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "experience_porter_jr",
+        "abigail_safford_porter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — Moses, child of Experience Jr. × Abigal (Safford) Porter, b. 19 Sep 1738",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "Find A Grave 59615584 — Moses Porter (pointer; FAG Cloudflare this pass)",
+          "url": "https://www.findagrave.com/memorial/59615584/moses-porter"
+        },
+        {
+          "label": "WikiTree Porter-2474 — Experience Porter Jr. children",
+          "url": "https://www.wikitree.com/wiki/Porter-2474"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joanna Porter Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C779**. Dimock birth **19 Sep 1738** (FAG/web sometimes **30 Sep** — hold). FAG 59615584 names parents Experience Jr. × Abigail Safford; spouse/children climb pa..."
+    },
+    "john_porter_1741": {
+      "id": "john_porter_1741",
+      "slug": "john-porter-1741",
+      "name": "John Porter",
+      "years": "1741–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "experience_porter_jr",
+        "abigail_safford_porter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — John, child of Experience Jr. × Abigal (Safford) Porter, b. 29 Mar 1741",
+          "url": "https://archive.org/details/birthsbaptismsma00dimo/page/142/mode/2up"
+        },
+        {
+          "label": "WikiTree Porter-2474 — Experience Porter Jr. children",
+          "url": "https://www.wikitree.com/wiki/Porter-2474"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "experience_porter_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_safford_porter",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joanna Porter Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C779**. Dimock Mansfield town births. Spouse/death not climbed (WT pointers to West Springfield exist — parked)."
+    },
+    "jabez_barrows_jr": {
+      "id": "jabez_barrows_jr",
+      "slug": "jabez-barrows-jr",
+      "name": "Jabez Barrows Jr.",
+      "years": "1737–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "aka": [
+        "Jabez Barrows"
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Jabez, b. July 27, 1737. Spouse/children not ..."
+    },
+    "samuel_barrows_1741": {
+      "id": "samuel_barrows_1741",
+      "slug": "samuel-barrows-1741",
+      "name": "Samuel Barrows",
+      "years": "1741–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Samuel, b. February 18, 1740-1. | Dimock 1740..."
+    },
+    "isaac_barrows": {
+      "id": "isaac_barrows",
+      "slug": "isaac-barrows",
+      "name": "Isaac Barrows",
+      "years": "1742–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Isaac, b. December 30, 1742. Spouse/children ..."
+    },
+    "sibbel_barrows_1744": {
+      "id": "sibbel_barrows_1744",
+      "slug": "sibbel-barrows-1744",
+      "name": "Sibbel Barrows",
+      "years": "1744–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "aka": [
+        "Sybil Barrows",
+        "Sybel Barrows"
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Sibbel, b. December 13, 1744. Spouse/children..."
+    },
+    "lydia_barrows_1747": {
+      "id": "lydia_barrows_1747",
+      "slug": "lydia-barrows-1747",
+      "name": "Lydia Barrows",
+      "years": "1747–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "aka": [
+        "Lidy Barrows"
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Lidy, b. February 21, 1746-7. | Dimock 1746-7..."
+    },
+    "eunice_barrows_1748": {
+      "id": "eunice_barrows_1748",
+      "slug": "eunice-barrows-1748",
+      "name": "Eunice Barrows",
+      "years": "1748–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Eunice, b. December 12, 1748. Spouse/children..."
+    },
+    "stephen_barrows": {
+      "id": "stephen_barrows",
+      "slug": "stephen-barrows",
+      "name": "Stephen Barrows",
+      "years": "1752–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Stephen, b. July 9, 1752. Spouse/children not..."
+    },
+    "martha_barrows_storrs": {
+      "id": "martha_barrows_storrs",
+      "slug": "martha-barrows-storrs",
+      "name": "Martha Barrows Storrs",
+      "years": "1755-1789",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 176448875 — Martha Barrows Storrs",
+          "url": "https://www.findagrave.com/memorial/176448875/martha_patty-storrs"
+        },
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "aka": [
+        "Martha Patty Barrows",
+        "Patty Barrows Storrs"
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Martha, b. September 4, 1755. Spouse/children..."
+    },
+    "david_barrows": {
+      "id": "david_barrows",
+      "slug": "david-barrows",
+      "name": "David Barrows",
+      "years": "1758–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — David, b. December 22, 1758. Spouse/children ..."
+    },
+    "samuel_barrows_1769": {
+      "id": "samuel_barrows_1769",
+      "slug": "samuel-barrows-1769",
+      "name": "Samuel Barrows",
+      "years": "1769–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jabez_barrows",
+        "sibbel_hall_barrows"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Dimock Mansfield births — child of Jabez × Sibbel (Hall) Barrows",
+          "url": "http://dunhamwilcox.net/ct/mansfield_b1.htm"
+        },
+        {
+          "label": "Find A Grave 23752451 — brother CPT Robert Barrows (parent link context)",
+          "url": "https://www.findagrave.com/memorial/23752451/robert-barrows"
+        },
+        {
+          "label": "Find A Grave 23752603 — father Jabez Barrows Sr. (children grid)",
+          "url": "https://www.findagrave.com/memorial/23752603/jabez-barrows"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jabez_barrows",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sibbel_hall_barrows",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **CPT Robert Barrows** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C774** (same pass as parents; no separate C##). Dimock Mansfield town births: child of **Jabez** × **Sibbel (Hall)** — Samuel, b. April 2, 1769. Spouse/children not..."
+    },
+    "nathaniel_hall_jr": {
+      "id": "nathaniel_hall_jr",
+      "slug": "nathaniel-hall-jr",
+      "name": "Capt Nathaniel Hall Jr",
+      "years": "1746-1821",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 43902541 — Capt Nathaniel Hall Jr",
+          "url": "https://www.findagrave.com/memorial/43902541/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "aka": [
+        "Nathaniel Hall Jr",
+        "Capt. Nathaniel Hall"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. FAG birth 3 Aug vs WT 13 Aug hold. **No spouse/UP climb** this pass. ..."
+    },
+    "deborah_hall_warner": {
+      "id": "deborah_hall_warner",
+      "slug": "deborah-hall-warner",
+      "name": "Deborah Hall Warner",
+      "years": "1748-1844",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 81992288 — Deborah Hall Warner",
+          "url": "https://www.findagrave.com/memorial/81992288/deborah-warner"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "aka": [
+        "Deborah Hall"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. **No spouse/UP climb** this pass. **No open obituary text**."
+    },
+    "ruth_hall_storrs": {
+      "id": "ruth_hall_storrs",
+      "slug": "ruth-hall-storrs",
+      "name": "Ruth Hall Storrs",
+      "years": "1751-1832",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 60124402 — Ruth Hall Storrs",
+          "url": "https://www.findagrave.com/memorial/60124402/ruth-storrs"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "aka": [
+        "Ruth Hall"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. FAG death 3 Apr vs WT 2 Apr hold. **No spouse/UP climb** this pass. *..."
+    },
+    "martha_hall_barrows": {
+      "id": "martha_hall_barrows",
+      "slug": "martha-hall-barrows",
+      "name": "Martha Hall Barrows",
+      "years": "1755-1819",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 104232426 — Martha Hall Barrows",
+          "url": "https://www.findagrave.com/memorial/104232426/martha-barrows"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "aka": [
+        "Martha Hall"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. FAG cemetery School Street Lebanon; death Mansfield. **No spouse/UP c..."
+    },
+    "richard_hall": {
+      "id": "richard_hall",
+      "slug": "richard-hall",
+      "name": "Deacon Richard Hall",
+      "years": "1762-1843",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 109506171 — Deacon Richard Hall",
+          "url": "https://www.findagrave.com/memorial/109506171/richard-hall"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "aka": [
+        "Richard Hall"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. **No spouse/UP climb** this pass. **No open obituary text**."
+    },
+    "asahel_hall": {
+      "id": "asahel_hall",
+      "slug": "asahel-hall",
+      "name": "Asahel Hall",
+      "years": "1766-1813",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 109505695 — Asahel Hall",
+          "url": "https://www.findagrave.com/memorial/109505695/asahel-hall"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. FAG 31 Mar vs Halls of NE 27 Mar hold. **No spouse/UP climb** this pa..."
+    },
+    "mary_hall_barrows": {
+      "id": "mary_hall_barrows",
+      "slug": "mary-hall-barrows",
+      "name": "Mary Hall Barrows",
+      "years": "1769-1840",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_hall",
+        "martha_sophia_storrs_hall"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 39461905 — Mary Hall Barrows",
+          "url": "https://www.findagrave.com/memorial/39461905/mary-barrows"
+        },
+        {
+          "label": "Find A Grave 109505882 — father Capt Nathaniel Hall (child link)",
+          "url": "https://www.findagrave.com/memorial/109505882/nathaniel-hall"
+        },
+        {
+          "label": "Find A Grave 59812720 — sister Olive Hall Porter (sibling link)",
+          "url": "https://www.findagrave.com/memorial/59812720/olive-porter"
+        }
+      ],
+      "aka": [
+        "Mary Hall"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_hall",
+          "confidence": "Probable"
+        },
+        {
+          "id": "martha_sophia_storrs_hall",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Olive Hall Porter** (Morganne ascent gen-8 Hall cluster). Soft-ingest **Probable** / `verified: false` — pack **C729**. FAG-linked on Olive sibling grid and Nathaniel/Martha children grids. **No spouse/UP climb** this pass. **No open obituary text**."
+    },
+    "samuel_stearns": {
+      "id": "samuel_stearns",
+      "slug": "samuel-stearns",
+      "name": "Samuel Stearns",
+      "years": "1726-1807",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "boaz_stearns",
+        "lydia_shepard_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 77261194 — Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/77261194/samuel-stearns"
+        },
+        {
+          "label": "Find A Grave 11591118 — father Boaz (child link)",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        },
+        {
+          "label": "Van Wagenen — Samuel son of Dea. Boaz × Lydia; d. 14 Nov 1807 West Killingly",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Shepard Stearns** (Boaz × Lydia). Soft-ingest **Probable** / `verified: false` — pack **C723**. FAG on both parent children grids. Spouses/children — **parked**."
+    },
+    "mercy_stearns_stevens": {
+      "id": "mercy_stearns_stevens",
+      "slug": "mercy-stearns-stevens",
+      "name": "Mercy Stearns Stevens",
+      "years": "1730–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "boaz_stearns",
+        "lydia_shepard_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Van Wagenen — Mercy Stearns b. 22 Apr 1730; md. Mr. Stevens; Peru MA",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-881 bio — Marcy/Mercy among Boaz × Lydia children",
+          "url": "https://www.wikitree.com/wiki/Stearns-881"
+        }
+      ],
+      "aka": [
+        "Marcy Stearns",
+        "Mercy Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Shepard Stearns** (Van Wagenen / WT bio). Soft-ingest lean **Probable** / `verified: false` — pack **C723**. **No FAG** on Boaz/Lydia children grids this pass. Spouse Stevens / children — **parked**."
+    },
+    "oliver_stearns_1732": {
+      "id": "oliver_stearns_1732",
+      "slug": "oliver-stearns-1732",
+      "name": "Oliver Stearns",
+      "years": "1732–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "boaz_stearns",
+        "lydia_shepard_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 245888923 — Oliver Stearns (b. 4 Oct 1732)",
+          "url": "https://www.findagrave.com/memorial/245888923/oliver-stearns"
+        },
+        {
+          "label": "Find A Grave 11591118 — father Boaz (child link)",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        },
+        {
+          "label": "Van Wagenen — Oliver son of Dea. Boaz × Lydia; farmer Mansfield; md. Priscilla Bateman 1753",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        }
+      ],
+      "aka": [
+        "Oliver Stearns (1732)"
+      ],
+      "parent_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Shepard Stearns** (uncle of graph `oliver_stearns` 1776–1862). Soft-ingest **Probable** / `verified: false` — pack **C723**. Id **`oliver_stearns_1732`** to avoid collision with nephew. FAG on both parent children grids. Spouse Priscilla Bateman / child..."
+    },
+    "miriam_stearns": {
+      "id": "miriam_stearns",
+      "slug": "miriam-stearns",
+      "name": "Miriam Stearns",
+      "years": "1737-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "boaz_stearns",
+        "lydia_shepard_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 42730452 — Meriam Starnes",
+          "url": "https://www.findagrave.com/memorial/42730452/meriam-starnes"
+        },
+        {
+          "label": "Find A Grave 11591118 — father Boaz (child link)",
+          "url": "https://www.findagrave.com/memorial/11591118/boaz-stearns"
+        },
+        {
+          "label": "Van Wagenen — Miriam Stearns b. 17 May 1737; d. 20 Feb 1810; unm.",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        }
+      ],
+      "aka": [
+        "Meriam Starnes",
+        "Meriam Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C723**. FAG spelling **Meriam Starnes**; Olde Mansfield Center with parents. Van Wagenen: unmarried."
+    },
+    "sarah_stearns_smith": {
+      "id": "sarah_stearns_smith",
+      "slug": "sarah-stearns-smith",
+      "name": "Sarah Stearns Smith",
+      "years": "1746–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "boaz_stearns",
+        "lydia_shepard_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Van Wagenen — Sarah Stearns b. 24 Jun 1746; md. Mr. Smith blacksmith of Killingly / Dedham",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-881 bio — second Sarah among Boaz × Lydia children",
+          "url": "https://www.wikitree.com/wiki/Stearns-881"
+        }
+      ],
+      "aka": [
+        "Sarah Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "boaz_stearns",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_shepard_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Shepard Stearns** (Van Wagenen surviving Sarah; earlier Sarah 1739–1741 skipped). Soft-ingest lean **Probable** / `verified: false` — pack **C723**. **No FAG** on Boaz/Lydia children grids this pass. Spouse Smith / children — **parked**."
+    },
+    "hannah_shepard_marsh": {
+      "id": "hannah_shepard_marsh",
+      "slug": "hannah-shepard-marsh",
+      "name": "Hannah Shepard Marsh",
+      "years": "1695–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — child of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Isaac × Hannah children list",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        }
+      ],
+      "aka": [
+        "Hannah Shepard"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lydia Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C909**. Barbour: b. 13 Nov 1695 d. Isaac & Hannah; WT m. James Marsh (death year hold) Spouse/children climb parked. No open obit this pass."
+    },
+    "jonas_shepard": {
+      "id": "jonas_shepard",
+      "slug": "jonas-shepard",
+      "name": "Jonas Shepard",
+      "years": "1698-1773",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — child of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Isaac × Hannah children list",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        }
+      ],
+      "aka": [
+        "Jonas Shepherd"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lydia Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C909**. Barbour: b. 12 May 1698 s. Isaac & Hannah; WT d. Mar 1773 Spouse/children climb parked. No open obit this pass."
+    },
+    "isaac_shepard_jr": {
+      "id": "isaac_shepard_jr",
+      "slug": "isaac-shepard-jr",
+      "name": "Isaac Shepard Jr",
+      "years": "1700-1748",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — child of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Isaac × Hannah children list",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        }
+      ],
+      "aka": [
+        "Isaac Shepard",
+        "Lt. Isaac Shepard"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lydia Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C909**. Barbour: b. 14 Sep 1700 s. Isaac & Hannah; WT Shepard-1695 d. 11 Oct 1748 Spouse/children climb parked. No open obit this pass."
+    },
+    "joseph_shepard": {
+      "id": "joseph_shepard",
+      "slug": "joseph-shepard",
+      "name": "Joseph Shepard",
+      "years": "1705–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — child of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Isaac × Hannah children list",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lydia Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C909**. Barbour: b. 11 Sep 1705 s. Isaac & Hannah (same-year conflict with Abigail held) Spouse/children climb parked. No open obit this pass."
+    },
+    "abigail_shepard": {
+      "id": "abigail_shepard",
+      "slug": "abigail-shepard",
+      "name": "Abigail Shepard",
+      "years": "1705–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — child of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Isaac × Hannah children list",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lydia Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C909**. Barbour: b. 7 Dec 1705 d. Isaac & Hannah (date conflicts Joseph — Barbour note) Spouse/children climb parked. No open obit this pass."
+    },
+    "samuel_shepard": {
+      "id": "samuel_shepard",
+      "slug": "samuel-shepard",
+      "name": "Samuel Shepard",
+      "years": "1711–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_shepard",
+        "hannah_spalding_shepard"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Plainfield CT Barbour — child of Isaac & Hannah Shepard",
+          "url": "http://www.ctgenweb.org/county/cowindham/records/barbour/barbourplainfieldpqrs.htm"
+        },
+        {
+          "label": "WikiTree Spalding-587 — Isaac × Hannah children list",
+          "url": "https://www.wikitree.com/wiki/Spalding-587"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_shepard",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_spalding_shepard",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Lydia Shepard Stearns**. Soft-ingest **Probable** / `verified: false` — pack **C909**. Barbour: b. 2 Apr 1711 s. Isaac & Hannah; WT m. Mary Spaulding (spouse climb parked) Spouse/children climb parked. No open obit this pass."
+    },
+    "samuel_stearns_jr_1697": {
+      "id": "samuel_stearns_jr_1697",
+      "slug": "samuel-stearns-jr-1697",
+      "name": "Samuel Stearns Jr.",
+      "years": "1697-1722",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Van Wagenen — child of Samuel × Mary (Brown) Stearns; sibling of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel (children list)",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        }
+      ],
+      "aka": [
+        "Samuel Stearns Jr"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Boaz Stearns** (Samuel × Mary Browne). Soft-ingest **Probable** / `verified: false` — pack **C903**. Van Wagenen 9007; d. 3 Feb 1722 age ~24; no spouse climbed. Spouses/children — **parked**."
+    },
+    "mary_stearns_harris": {
+      "id": "mary_stearns_harris",
+      "slug": "mary-stearns-harris",
+      "name": "Mary Stearns Harris",
+      "years": "1699–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Van Wagenen — child of Samuel × Mary (Brown) Stearns; sibling of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel (children list)",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        }
+      ],
+      "aka": [
+        "Mary Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Boaz Stearns** (Samuel × Mary Browne). Soft-ingest **Probable** / `verified: false` — pack **C903**. Van Wagenen 9008; m. 5 Nov 1724 Dorchester Timothy Harris — spouse parked. Spouses/children — **parked**."
+    },
+    "nathaniel_stearns_1700": {
+      "id": "nathaniel_stearns_1700",
+      "slug": "nathaniel-stearns-1700",
+      "name": "Nathaniel Stearns",
+      "years": "1700-1793",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 84627499 — Nathaniel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627499/nathaniel-stearns"
+        },
+        {
+          "label": "Van Wagenen — child of Samuel × Mary (Brown) Stearns; sibling of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel (children list)",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Boaz Stearns** (Samuel × Mary Browne). Soft-ingest **Probable** / `verified: false` — pack **C903**. Van Wagenen 9009/9017; FAG on Samuel×Mary children grids; m. Mary Ann Blake parked. Spouses/children — **parked**."
+    },
+    "hannah_stearns_wheeler": {
+      "id": "hannah_stearns_wheeler",
+      "slug": "hannah-stearns-wheeler",
+      "name": "Hannah Stearns Wheeler",
+      "years": "1704-1780",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 230317973 — Hannah Stearns Wheeler",
+          "url": "https://www.findagrave.com/memorial/230317973/hannah-wheeler"
+        },
+        {
+          "label": "Van Wagenen — child of Samuel × Mary (Brown) Stearns; sibling of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel (children list)",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        }
+      ],
+      "aka": [
+        "Hannah Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Boaz Stearns** (Samuel × Mary Browne). Soft-ingest **Probable** / `verified: false` — pack **C903**. Van Wagenen 9011; FAG on Samuel×Mary children grids; WT Wheeler; spouse parked. Spouses/children — **parked**."
+    },
+    "ebenezer_stearns_1706": {
+      "id": "ebenezer_stearns_1706",
+      "slug": "ebenezer-stearns-1706",
+      "name": "Ebenezer Stearns",
+      "years": "1706–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Van Wagenen — child of Samuel × Mary (Brown) Stearns; sibling of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel (children list)",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Boaz Stearns** (Samuel × Mary Browne). Soft-ingest **Probable** / `verified: false` — pack **C903**. Van Wagenen 9012/9030; Plainfield then Lanesboro; spouse Mary parked. Spouses/children — **parked**."
+    },
+    "mehitable_stearns_snowden": {
+      "id": "mehitable_stearns_snowden",
+      "slug": "mehitable-stearns-snowden",
+      "name": "Mehitable Stearns Snowden",
+      "years": "1712–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_stearns_1666",
+        "mary_browne_stearns"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Van Wagenen — child of Samuel × Mary (Brown) Stearns; sibling of Boaz",
+          "url": "https://archive.org/details/genealogymemoirscnst00vanw"
+        },
+        {
+          "label": "WikiTree Stearns-217 — father Samuel (children list)",
+          "url": "https://www.wikitree.com/wiki/Stearns-217"
+        },
+        {
+          "label": "Find A Grave 84627515 — father Samuel Stearns",
+          "url": "https://www.findagrave.com/memorial/84627515/samuel-stearns"
+        }
+      ],
+      "aka": [
+        "Mehetabel Stearns",
+        "Mehitable Stearns"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_stearns_1666",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_browne_stearns",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Boaz Stearns** (Samuel × Mary Browne). Soft-ingest **Probable** / `verified: false` — pack **C903**. Van Wagenen 9014; m. 19 Mar 1738 William Snowden — spouse parked. Spouses/children — **parked**."
+    },
+    "lucinda_lewis_herrick": {
+      "id": "lucinda_lewis_herrick",
+      "slug": "lucinda-lewis-herrick",
+      "name": "Lucinda Lewis Herrick",
+      "years": "1825-1898",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "leland_lewis",
+        "etherlinda_huntley_lewis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 44710751 — Lucinda Lewis Herrick",
+          "url": "https://www.findagrave.com/memorial/44710751/lucinda-herrick"
+        },
+        {
+          "label": "Find A Grave 154318730 — father Leland Lewis (child link)",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 180998699 — sister Phebe Lewis Allen (sibling link)",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        }
+      ],
+      "aka": [
+        "Lucinda Lewis"
+      ],
+      "parent_links": [
+        {
+          "id": "leland_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "etherlinda_huntley_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Phebe Lewis Allen** on FAG Family Members (and on Leland / Etherlinda children grids). Soft-ingest **Probable** / `verified: false` — pack **C598** collateral. Parents **Leland Lewis** × **Etherlinda Huntley Lewis**. Spouses / descendants on FAG (Herrick / B..."
+    },
+    "hubbard_r_lewis": {
+      "id": "hubbard_r_lewis",
+      "slug": "hubbard-r-lewis",
+      "name": "Hubbard R. Lewis",
+      "years": "1827-1901",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "leland_lewis",
+        "etherlinda_huntley_lewis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 205870098 — Hubbard R. Lewis",
+          "url": "https://www.findagrave.com/memorial/205870098/hubbard_r-lewis"
+        },
+        {
+          "label": "Find A Grave 154318730 — father Leland Lewis (child link)",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        },
+        {
+          "label": "Find A Grave 180998699 — sister Phebe Lewis Allen (sibling link)",
+          "url": "https://www.findagrave.com/memorial/180998699/phebe-allen"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "leland_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "etherlinda_huntley_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Phebe Lewis Allen** on FAG Family Members (and on Leland / Etherlinda children grids). Soft-ingest **Probable** / `verified: false` — pack **C598** collateral. Parents **Leland Lewis** × **Etherlinda Huntley Lewis**. Spouse Ellen Emery Lewis on FAG **not sof..."
+    },
+    "betsey_l_allen": {
+      "id": "betsey_l_allen",
+      "slug": "betsey-l-allen",
+      "name": "Betsey L. Allen",
+      "years": "1804–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — Catherine Littlehale × Penuel Allen children",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        }
+      ],
+      "aka": [
+        "Betsey Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Stephen Allen** (Worthen Sutton child list of Penuel × Catherine). Soft-ingest **Probable** / `verified: false` — pack **C611**. Death/burial unknown this pass. **No open obituary.**"
+    },
+    "mercy_allen_cutler": {
+      "id": "mercy_allen_cutler",
+      "slug": "mercy-allen-cutler",
+      "name": "Mercy Allen Cutler",
+      "years": "1806-1871",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 180932690 — Mercy Allen Cutler",
+          "url": "https://www.findagrave.com/memorial/180932690/mercy-cutler"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen (children grid)",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        },
+        {
+          "label": "Find A Grave 89647339 — mother Catherine Littlehale Allen (children grid)",
+          "url": "https://www.findagrave.com/memorial/89647339/catherine-allen"
+        }
+      ],
+      "aka": [
+        "Mercy Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Stephen Allen** (Penuel × Catherine children grids). Soft-ingest **Probable** / `verified: false` — pack **C593**. East Lempster Cemetery. FAG bio asserts dau of Penuel & Catherine; marriage line garbled (“09 Oct 1931 to Mercy Allen”) — **not trusted**; spou..."
+    },
+    "elva_a_allen": {
+      "id": "elva_a_allen",
+      "slug": "elva-a-allen",
+      "name": "Elva A. Allen",
+      "years": "1808–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — Catherine Littlehale × Penuel Allen children",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        }
+      ],
+      "aka": [
+        "Elva Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Stephen Allen** (Worthen Sutton child list of Penuel × Catherine). Soft-ingest **Probable** / `verified: false` — pack **C611**. Death/burial unknown this pass. **No open obituary.**"
+    },
+    "abner_allen": {
+      "id": "abner_allen",
+      "slug": "abner-allen",
+      "name": "Abner Allen",
+      "years": "1812-1897",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — Abner s. Penuel × Catherine, b. Lempster 24 Nov 1812",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        },
+        {
+          "label": "History of Littleton N.H. — Abner Allen, son of Penowell; d. 24 Jun 1897",
+          "url": "http://dunhamwilcox.net/nh/littleton1.htm"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Stephen Allen** (Worthen Lempster child list). Soft-ingest **Probable** / `verified: false` — pack **C611** / **C612**. Littleton genealogy: **son of Penowell** (= Penuel); resided Littleton from **1841**; d. **24 Jun 1897**. Birth **Worthen 24 Nov 1812 Lemp..."
+    },
+    "lorinda_allen": {
+      "id": "lorinda_allen",
+      "slug": "lorinda-allen",
+      "name": "Lorinda Allen",
+      "years": "1815–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — Lorinda d. Penuel × Catherine, b. Lempster 30 Jun 1815",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Stephen Allen** (Worthen Lempster child list of Penuel × Catherine). Soft-ingest **Probable** / `verified: false` — pack **C611**. Not the same person as Abner’s infant daughter Lorinda C. Allen (Littleton). Death/burial unknown this pass. **No open obituary.**"
+    },
+    "louis_c_allen": {
+      "id": "louis_c_allen",
+      "slug": "louis-c-allen",
+      "name": "Louis C. Allen",
+      "years": "1817–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "penuel_allen",
+        "catherine_littlehale_allen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Worthen, History of Sutton N.H. Vol. II — Louis C. s. Penuel × Catherine, b. Lempster 17 Mar 1817",
+          "url": "https://archive.org/details/historyofsuttonn02wort/page/813/mode/2up"
+        },
+        {
+          "label": "Find A Grave 89646865 — father Penuel Allen",
+          "url": "https://www.findagrave.com/memorial/89646865/penuel-allen"
+        }
+      ],
+      "aka": [
+        "Lewis C. Allen"
+      ],
+      "parent_links": [
+        {
+          "id": "penuel_allen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_littlehale_allen",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Stephen Allen** (Worthen Lempster child list of Penuel × Catherine). Soft-ingest **Probable** / `verified: false` — pack **C611**. Worthen spelling **Louis C.**; Lewis variant held as aka. Death/burial unknown this pass. **No open obituary.**"
+    },
+    "elijah_huntley": {
+      "id": "elijah_huntley",
+      "slug": "elijah-huntley",
+      "name": "Elijah Huntley",
+      "years": "1779-1861",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "russell_huntley",
+        "amy_miller_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 160953066 — Elijah Huntley",
+          "url": "https://www.findagrave.com/memorial/160953066/elijah-huntley"
+        },
+        {
+          "label": "Find A Grave 72920676 — father Russel Huntly",
+          "url": "https://www.findagrave.com/memorial/72920676/russel-huntly"
+        },
+        {
+          "label": "Find A Grave 72921086 — mother Amy Miller Huntley",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "russell_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "amy_miller_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Etherlinda Huntley Lewis** (Amy FAG children list + Russell/Amy FAG parent links). Soft-ingest **Probable** / `verified: false` — pack **C638**. Bidirectional FAG: Elijah parents ↔ Russell/Amy children. Spouses/children on FAG not climbed. Marlow Village Cem..."
+    },
+    "phebe_huntley": {
+      "id": "phebe_huntley",
+      "slug": "phebe-huntley",
+      "name": "Phebe Huntley",
+      "years": "1782–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "russell_huntley",
+        "amy_miller_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 72921086 — mother Amy Miller Huntley (children list)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "Genealogy of New England — Phebe Huntley child of Russell × Ann",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "russell_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "amy_miller_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Etherlinda Huntley Lewis** — Amy FAG bio **Phebe (b. 1782)**; Gene child list. Soft-ingest **Probable** / `verified: false` — pack **C638**. Lean identity (birth year only); no own FAG memorial found this pass (FAG search rate-limited). Not the same person a..."
+    },
+    "luther_huntley": {
+      "id": "luther_huntley",
+      "slug": "luther-huntley",
+      "name": "Luther Huntley",
+      "years": "1786–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "russell_huntley",
+        "amy_miller_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 72921086 — mother Amy Miller Huntley (children list)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "Genealogy of New England — Luther Huntley b. 27 Aug 1786",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "russell_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "amy_miller_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Etherlinda Huntley Lewis** — Amy FAG bio **Luther (b. 1786)**; Gene **27 Aug 1786** Marlow. Soft-ingest **Probable** / `verified: false` — pack **C638**. Lean; no own FAG this pass. Not climbed."
+    },
+    "hubbard_huntley": {
+      "id": "hubbard_huntley",
+      "slug": "hubbard-huntley",
+      "name": "Hubbard Huntley",
+      "years": "1793–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "russell_huntley",
+        "amy_miller_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 72921086 — mother Amy Miller Huntley (children list)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "Genealogy of New England — Hubbard Huntley b. 4 Mar 1793",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "russell_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "amy_miller_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Etherlinda Huntley Lewis** — Amy FAG bio **Hubbard (b. 1793)**; Gene **4 Mar 1793** Marlow. Soft-ingest **Probable** / `verified: false` — pack **C638**. Lean; no own FAG this pass. **Not** the same person as nephew/cousin-line **Hubbard R. Lewis**. Not clim..."
+    },
+    "rebecca_lewis_avery": {
+      "id": "rebecca_lewis_avery",
+      "slug": "rebecca-lewis-avery",
+      "name": "Rebecca Lewis Avery",
+      "years": "1787-1865",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_mack_lewis",
+        "abigail_gee_lewis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 22899321 — Rebecca Lewis Avery",
+          "url": "https://www.findagrave.com/memorial/22899321/rebecca-avery"
+        },
+        {
+          "label": "Find A Grave 154352894 — father John Mack Lewis (children grid)",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        },
+        {
+          "label": "Find A Grave 154353192 — mother Abigail Gee Lewis (children grid)",
+          "url": "https://www.findagrave.com/memorial/154353192/abigail-lewis"
+        }
+      ],
+      "aka": [
+        "Rebecca Lewis"
+      ],
+      "parent_links": [
+        {
+          "id": "john_mack_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_gee_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **William Lewis** on John Mack × Abigail FAG children grids; proposed collateral sibling of **Leland Lewis** (pack **C633**). Soft-ingest **Probable** / `verified: false`. Spouse Amos Avery / WI descendants **not soft-ingested**. **No open obituary text** this..."
+    },
+    "william_lewis": {
+      "id": "william_lewis",
+      "slug": "william-lewis",
+      "name": "William Lewis",
+      "years": "1789-1848",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_mack_lewis",
+        "abigail_gee_lewis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 154353390 — William Lewis",
+          "url": "https://www.findagrave.com/memorial/154353390/william-lewis"
+        },
+        {
+          "label": "Find A Grave 154352894 — father John Mack Lewis (children grid)",
+          "url": "https://www.findagrave.com/memorial/154352894/john-mack-lewis"
+        },
+        {
+          "label": "Find A Grave 154318730 — brother Leland Lewis (matching bio phrase)",
+          "url": "https://www.findagrave.com/memorial/154318730/leland-lewis"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_mack_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_gee_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named child of **John Mack Lewis** × **Abigail Gee Lewis** on FAG (bidirectional). Soft-ingest **Probable** / `verified: false` — pack **C633** collateral sibling of **Leland Lewis**. Bio phrase **“Son of John & Abigail Lewis”** matches Leland’s memorial bio. ≠ Marlow history ..."
+    },
+    "lemuel_miller": {
+      "id": "lemuel_miller",
+      "slug": "lemuel-miller",
+      "name": "Lemuel Miller",
+      "years": "1742-1822",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 72784488 — Lemuel Miller",
+          "url": "https://www.findagrave.com/memorial/72784488/lemuel-miller"
+        },
+        {
+          "label": "Find A Grave 72921086 — sister Amy Miller Huntley (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "WikiTree Miller-39685 — children of Nicodemus × Phebe",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Amy Miller Huntley** on Amy FAG siblings grid + WT/Huntley child list (b. 21 Jun 1742). Soft-ingest **Probable** / `verified: false` — pack **C718**. Spouse/children not climbed."
+    },
+    "esther_miller_munsell": {
+      "id": "esther_miller_munsell",
+      "slug": "esther-miller-munsell",
+      "name": "Esther Miller Munsell",
+      "years": "1744–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Miller-39685 — Esther b. 1 Jul 1744 m. James Munsell",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        },
+        {
+          "label": "Genealogy of New England — Esther child of Nicodemus × Phebe",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Esther Miller"
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Amy Miller Huntley** in Huntley compiled child list (WT Miller-39685) + Gene. Soft-ingest **Probable** / lean / `verified: false` — pack **C718**. No own FAG on Amy siblings grid this pass. Spouse James Munsell not climbed."
+    },
+    "pathama_miller": {
+      "id": "pathama_miller",
+      "slug": "pathama-miller",
+      "name": "Pathama Miller",
+      "years": "1746–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Miller-39685 — Pathama b. 16 Jul 1746",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        },
+        {
+          "label": "Genealogy of New England — Pathama child of Nicodemus × Phebe",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Amy Miller Huntley** in Huntley compiled child list + Gene (b. 16 Jul 1746). Soft-ingest **Probable** / lean / `verified: false` — pack **C718**. No FAG on Amy siblings grid this pass."
+    },
+    "phebe_miller_mack": {
+      "id": "phebe_miller_mack",
+      "slug": "phebe-miller-mack",
+      "name": "Phebe Miller Mack",
+      "years": "1748-1777",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 72919040 — Phebe Miller Mack",
+          "url": "https://www.findagrave.com/memorial/72919040/phebe-mack"
+        },
+        {
+          "label": "Find A Grave 72921086 — sister Amy Miller Huntley (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "WikiTree Miller-39685 — Phebe m. Zopher Mack",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        }
+      ],
+      "aka": [
+        "Phebe Miller"
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Amy Miller Huntley** on Amy FAG siblings grid (Phebe *Miller* Mack, 1748–1777). Soft-ingest **Probable** / `verified: false` — pack **C718**. **Not** mother Phebe Huntley Miller; **not** niece Phebe Huntley (Amy’s daughter). Spouse Zopher Mack not climbed."
+    },
+    "bethuel_miller": {
+      "id": "bethuel_miller",
+      "slug": "bethuel-miller",
+      "name": "Bethuel Miller",
+      "years": "1751-1821",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825223 — Bethuel Miller",
+          "url": "https://www.findagrave.com/memorial/20825223/bethuel-miller"
+        },
+        {
+          "label": "Find A Grave 72921086 — sister Amy Miller Huntley (siblings grid)",
+          "url": "https://www.findagrave.com/memorial/72921086/amy-huntley"
+        },
+        {
+          "label": "WikiTree Miller-39685 — Bethuel b. 19 Sep 1751",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Amy Miller Huntley** on Amy FAG siblings grid (1751–1821). Soft-ingest **Probable** / `verified: false` — pack **C718**. Spouse Jemima Huntley (WT) not climbed."
+    },
+    "eunice_miller": {
+      "id": "eunice_miller",
+      "slug": "eunice-miller",
+      "name": "Eunice Miller",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nicodemus_miller",
+        "phebe_huntley_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Miller-39685 — Eunice in Nicodemus × Phebe children",
+          "url": "https://www.wikitree.com/wiki/Miller-39685"
+        },
+        {
+          "label": "Genealogy of New England — Eunice child of Nicodemus × Phebe",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nicodemus_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_huntley_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Amy Miller Huntley** in Huntley compiled child list + Gene (no dates). Soft-ingest **Probable** / lean / `verified: false` — pack **C718**. No FAG on Amy siblings grid this pass."
+    },
+    "rufus_huntley": {
+      "id": "rufus_huntley",
+      "slug": "rufus-huntley",
+      "name": "Rufus Huntley",
+      "years": "1749-1802",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825395 — Rufus Huntley",
+          "url": "https://www.findagrave.com/memorial/20825395/rufus-huntly"
+        },
+        {
+          "label": "Find A Grave 20825331 — father Nathan Huntley Sr (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 20825349 — mother Lucy Smith Huntley (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        }
+      ],
+      "aka": [
+        "Rufus Huntly"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Russell Huntley** — Nathan/Lucy FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C713**. Birth from Virgil Huntley / WT child list; death year from FAG family dates. Spouses/children **not climbed**. **No open obituary text** this pass."
+    },
+    "isaiah_huntley": {
+      "id": "isaiah_huntley",
+      "slug": "isaiah-huntley",
+      "name": "Isaiah Huntley",
+      "years": "1751-1820",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 70731081 — Isaiah Huntley",
+          "url": "https://www.findagrave.com/memorial/70731081/isaiah-huntley"
+        },
+        {
+          "label": "Find A Grave 20825331 — father Nathan Huntley Sr (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 20825349 — mother Lucy Smith Huntley (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Russell Huntley** — Nathan/Lucy FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C713**. Birth from Virgil Huntley / WT child list; death year from FAG family dates. Spouses/children **not climbed**. **No open obituary text** this pass."
+    },
+    "nathan_huntley_jr": {
+      "id": "nathan_huntley_jr",
+      "slug": "nathan-huntley-jr",
+      "name": "Nathan Huntley Jr",
+      "years": "1754-1798",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 82123606 — Nathan Huntley Jr",
+          "url": "https://www.findagrave.com/memorial/82123606/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 20825331 — father Nathan Huntley Sr (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 20825349 — mother Lucy Smith Huntley (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        }
+      ],
+      "aka": [
+        "Nathan Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Russell Huntley** — Nathan/Lucy FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C713**. Birth from Virgil Huntley / WT child list; death year from FAG family dates. Spouses/children **not climbed**. **No open obituary text** this pass."
+    },
+    "luman_huntley": {
+      "id": "luman_huntley",
+      "slug": "luman-huntley",
+      "name": "Luman Huntley",
+      "years": "1756-1838",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-1520 — Luman Huntley (son of Nathan × Lucy)",
+          "url": "https://www.wikitree.com/wiki/Huntley-1520"
+        },
+        {
+          "label": "WikiTree Huntley-1413 — Nathan children list (Luman b. 15 May 1756)",
+          "url": "https://www.wikitree.com/wiki/Huntley-1413"
+        },
+        {
+          "label": "Genealogy of New England — Russell parents Nathan × Luce (sibling set context)",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Russell Huntley** — Virgil Huntley / WikiTree child list (**not** on Nathan/Lucy FAG children grids this pass). Soft lean **Probable** / `verified: false` — pack **C713**. b. 15 May 1756 Lyme; d. about 1838 Charlestown NH (WT). Spouses Beckwith — **parked**...."
+    },
+    "elisha_huntley": {
+      "id": "elisha_huntley",
+      "slug": "elisha-huntley",
+      "name": "Elisha Huntley",
+      "years": "1760-1835",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825312 — Elisha Huntley",
+          "url": "https://www.findagrave.com/memorial/20825312/elisha-huntley"
+        },
+        {
+          "label": "Find A Grave 20825331 — father Nathan Huntley Sr (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825331/nathan-huntley"
+        },
+        {
+          "label": "Find A Grave 20825349 — mother Lucy Smith Huntley (children grid)",
+          "url": "https://www.findagrave.com/memorial/20825349/lucy-huntley"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Russell Huntley** — Nathan/Lucy FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C713**. Birth from Virgil Huntley / WT child list; death year from FAG family dates. Spouses/children **not climbed**. **No open obituary text** this pass."
+    },
+    "azuba_huntley": {
+      "id": "azuba_huntley",
+      "slug": "azuba-huntley",
+      "name": "Azuba Huntley",
+      "years": "1747-1748",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_huntley",
+        "lucy_smith_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-1413 — Nathan children (Azuba 1747–1748)",
+          "url": "https://www.wikitree.com/wiki/Huntley-1413"
+        },
+        {
+          "label": "WikiTree Smith-98204 — Lucy children (Azuba)",
+          "url": "https://www.wikitree.com/wiki/Smith-98204"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_huntley",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_smith_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named infant sibling of **Russell Huntley** — Virgil Huntley / WikiTree (b. 28 Jun 1747; d. 31 Oct 1748). Soft lean **Probable** / `verified: false` — pack **C713**. **Not** on Nathan/Lucy FAG children grids. No memorial / no climb."
+    },
+    "hannah_huntley_mack": {
+      "id": "hannah_huntley_mack",
+      "slug": "hannah-huntley-mack",
+      "name": "Hannah Huntley Mack",
+      "years": "1708-1796",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Hannah Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest **Probable** / `verified: false` — pack **C848**. m. Ebenezer Mack 30 Apr 1728 Lyme (WT/Virgil). Spouses/UP **not** climbed."
+    },
+    "aaron_huntley_iii": {
+      "id": "aaron_huntley_iii",
+      "slug": "aaron-huntley-iii",
+      "name": "Aaron Huntley III",
+      "years": "1710-1763",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Aaron Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest **Probable** / `verified: false` — pack **C848**. b. 14 Sep 1710 Lyme; Gene m. Mary Leach Jun 1738; d. 18 Nov 1763. Spouses/UP **not** climbed."
+    },
+    "solomon_huntley": {
+      "id": "solomon_huntley",
+      "slug": "solomon-huntley",
+      "name": "Solomon Huntley",
+      "years": "1712–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest lean **Probable** / `verified: false` — pack **C848**. b. 1 Sep 1712; d. before 1724 (church records on WT). Spouses/UP **not** climbed."
+    },
+    "deborah_huntley_gee": {
+      "id": "deborah_huntley_gee",
+      "slug": "deborah-huntley-gee",
+      "name": "Deborah Huntley Gee",
+      "years": "1714-1807",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Deborah Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest **Probable** / `verified: false` — pack **C848**. m. Solomon Gee 29 May 1731 Lyme (WT/Gene); d. 26 Mar 1807 Lyme age 96. Spouses/UP **not** climbed."
+    },
+    "ruth_huntley": {
+      "id": "ruth_huntley",
+      "slug": "ruth-huntley",
+      "name": "Ruth Huntley",
+      "years": "1717–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest **Probable** / `verified: false` — pack **C848**. b. 1 Mar 1716/7; m. Samuel Huntley Lyme (WT). Spouses/UP **not** climbed."
+    },
+    "stephen_huntley": {
+      "id": "stephen_huntley",
+      "slug": "stephen-huntley",
+      "name": "Stephen Huntley",
+      "years": "1719–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest lean **Probable** / `verified: false` — pack **C848**. b. 28 Feb 1718/9; not mentioned in father’s will (WT). Spouses/UP **not** climbed."
+    },
+    "esther_huntley_robbins": {
+      "id": "esther_huntley_robbins",
+      "slug": "esther-huntley-robbins",
+      "name": "Esther Huntley Robbins",
+      "years": "1724–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Esther Huntley",
+        "Esther Robins"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest **Probable** / `verified: false` — pack **C848**. m. William Robins Jr 20 May 1741 Lyme (WT). Spouses/UP **not** climbed."
+    },
+    "jemima_huntley_lewis": {
+      "id": "jemima_huntley_lewis",
+      "slug": "jemima-huntley-lewis",
+      "name": "Jemima Huntley Lewis",
+      "years": "1728–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "aka": [
+        "Jemima Huntley"
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest **Probable** / `verified: false` — pack **C848**. m. Eber Lewis 26 May 1754; moved to Marlow NH (WT). Spouses/UP **not** climbed."
+    },
+    "timothy_huntley": {
+      "id": "timothy_huntley",
+      "slug": "timothy-huntley",
+      "name": "Timothy Huntley",
+      "years": "1731-1748",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "aaron_huntley_jr",
+        "deborah_dewolf_huntley"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntley-733 — Aaron Huntley Jr. children",
+          "url": "https://www.wikitree.com/wiki/Huntley-733"
+        },
+        {
+          "label": "WikiTree Huntley-1517 — sister Phebe (Huntley) Miller",
+          "url": "https://www.wikitree.com/wiki/Huntley-1517"
+        },
+        {
+          "label": "Genealogy of New England — Aaron × Deborah DeWolf child set",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "aaron_huntley_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_dewolf_huntley",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Phebe Huntley Miller** (and of **Nathan Huntley**). Soft-ingest lean **Probable** / `verified: false` — pack **C848**. b. 22 Oct 1731; guardianship to Nathan Oct 1748; death ~1748 on WT. Spouses/UP **not** climbed."
+    },
+    "elisha_miller": {
+      "id": "elisha_miller",
+      "slug": "elisha-miller",
+      "name": "Elisha Miller",
+      "years": "1716-1779",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_miller",
+        "joanna_alger_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Robert Millard × Joanna Alger children",
+          "url": "http://www.genealogyofnewengland.com/f_9a8.htm"
+        },
+        {
+          "label": "Genealogy of New England — Nicodemus / Elisha parent cluster",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Miller-5884 — Robert Miller children",
+          "url": "https://www.wikitree.com/wiki/Miller-5884"
+        }
+      ],
+      "aka": [
+        "Capt. Elisha Miller"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_alger_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft full sibling of Nicodemus (C843). Gene: b. 6 Mar 1715/6; d. 24 Feb 1779 Lyme; m. Elizabeth Lay 25 Feb 1739/40. Father Robert×Joanna on Gene. Soft-ingest **Probable** / `verified: false`. Shared parents **Robert Miller** × **Joanna Alger Miller**. Half-sibs via Mary Beckwi..."
+    },
+    "eliphalet_miller": {
+      "id": "eliphalet_miller",
+      "slug": "eliphalet-miller",
+      "name": "Eliphalet Miller",
+      "years": "1718–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_miller",
+        "joanna_alger_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Robert Millard × Joanna Alger children",
+          "url": "http://www.genealogyofnewengland.com/f_9a8.htm"
+        },
+        {
+          "label": "Genealogy of New England — Nicodemus / Elisha parent cluster",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Miller-5884 — Robert Miller children",
+          "url": "https://www.wikitree.com/wiki/Miller-5884"
+        }
+      ],
+      "aka": [
+        "Eliphalett Miller"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_alger_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft full sibling of Nicodemus (C843). Gene/WT: b. 4 Oct 1718 Lyme. Death unknown this pass. Soft-ingest **Probable** / `verified: false`. Shared parents **Robert Miller** × **Joanna Alger Miller**. Half-sibs via Mary Beckwith parked. **No open obituary**."
+    },
+    "experience_miller": {
+      "id": "experience_miller",
+      "slug": "experience-miller",
+      "name": "Experience Miller",
+      "years": "1720–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_miller",
+        "joanna_alger_miller"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of New England — Robert Millard × Joanna Alger children",
+          "url": "http://www.genealogyofnewengland.com/f_9a8.htm"
+        },
+        {
+          "label": "Genealogy of New England — Nicodemus / Elisha parent cluster",
+          "url": "http://www.genealogyofnewengland.com/f_315a.htm"
+        },
+        {
+          "label": "WikiTree Miller-5884 — Robert Miller children",
+          "url": "https://www.wikitree.com/wiki/Miller-5884"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "joanna_alger_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft full sibling of Nicodemus (C843). Gene: b. abt 1720 Lyme (Joanna Alger child set). Lean vitals. Soft-ingest **Probable** / `verified: false`. Shared parents **Robert Miller** × **Joanna Alger Miller**. Half-sibs via Mary Beckwith parked. **No open obituary**."
+    },
+    "zopher_gee": {
+      "id": "zopher_gee",
+      "slug": "zopher-gee",
+      "name": "Zopher Gee",
+      "years": "1763-1828",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_gee",
+        "abigail_mack_gee"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 107780520 — Zopher Gee",
+          "url": "https://www.findagrave.com/memorial/107780520/zopher-gee"
+        },
+        {
+          "label": "Find A Grave 22325650 — father LT William Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        },
+        {
+          "label": "Find A Grave 22325661 — mother Abigail Mack Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_gee",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_mack_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Abigail Gee Lewis** (William × Abigail Mack FAG children grids). Soft-ingest **Probable** / `verified: false` — pack **C788**. Dodgeville Cemetery. Spouses/children on FAG not climbed. **No open obituary text** this pass."
+    },
+    "sarah_gee_tinker": {
+      "id": "sarah_gee_tinker",
+      "slug": "sarah-gee-tinker",
+      "name": "Sarah Gee Tinker",
+      "years": "1765-1788",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_gee",
+        "abigail_mack_gee"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 22103010 — Sarah Gee Tinker",
+          "url": "https://www.findagrave.com/memorial/22103010/sarah-tinker"
+        },
+        {
+          "label": "Find A Grave 22325650 — father LT William Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        },
+        {
+          "label": "Find A Grave 22325661 — mother Abigail Mack Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        }
+      ],
+      "aka": [
+        "Sarah Gee",
+        "Sally Gee",
+        "Sally Tinker"
+      ],
+      "parent_links": [
+        {
+          "id": "william_gee",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_mack_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Abigail Gee Lewis** (William × Abigail Mack FAG children grids). Soft-ingest **Probable** / `verified: false` — pack **C788**. Aka **Sally**. Old Stone Church with parents. Spouse Tinker not climbed. **No open obituary text** this pass."
+    },
+    "william_gee_jr": {
+      "id": "william_gee_jr",
+      "slug": "william-gee-jr",
+      "name": "William Gee Jr.",
+      "years": "1767-1843",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_gee",
+        "abigail_mack_gee"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 61942477 — William Gee Jr.",
+          "url": "https://www.findagrave.com/memorial/61942477/william-gee"
+        },
+        {
+          "label": "Find A Grave 22325650 — father LT William Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        },
+        {
+          "label": "Find A Grave 22325661 — mother Abigail Mack Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        }
+      ],
+      "aka": [
+        "William Gee"
+      ],
+      "parent_links": [
+        {
+          "id": "william_gee",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_mack_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Abigail Gee Lewis** (William × Abigail Mack FAG children grids). Soft-ingest **Probable** / `verified: false` — pack **C788**. Whistletown Cemetery. Spouses/children not climbed. **No open obituary text** this pass."
+    },
+    "polly_gee_smith": {
+      "id": "polly_gee_smith",
+      "slug": "polly-gee-smith",
+      "name": "Polly Gee Smith",
+      "years": "1781-1835",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_gee",
+        "abigail_mack_gee"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 55493932 — Polly Gee Smith",
+          "url": "https://www.findagrave.com/memorial/55493932/polly-smith"
+        },
+        {
+          "label": "Find A Grave 22325650 — father LT William Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325650/william-gee"
+        },
+        {
+          "label": "Find A Grave 22325661 — mother Abigail Mack Gee (children grid)",
+          "url": "https://www.findagrave.com/memorial/22325661/abigail-gee"
+        }
+      ],
+      "aka": [
+        "Polly Gee",
+        "Polly Smith"
+      ],
+      "parent_links": [
+        {
+          "id": "william_gee",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_mack_gee",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Abigail Gee Lewis** (William × Abigail Mack FAG children grids). Soft-ingest **Probable** / `verified: false` — pack **C788**. Spouse Smith not climbed. Death place / burial lean this pass (FAG rate-limit mid-fetch). **No open obituary text** this pass."
+    },
+    "esther_lewis_tubbs": {
+      "id": "esther_lewis_tubbs",
+      "slug": "esther-lewis-tubbs",
+      "name": "Esther Lewis Tubbs",
+      "years": "1741-1802",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_lewis",
+        "phebe_mack_lewis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 227306142 — Esther Lewis Tubbs",
+          "url": "https://www.findagrave.com/memorial/227306142/esther-tubbs"
+        },
+        {
+          "label": "Find A Grave 255222999 — father James Lewis (children grid)",
+          "url": "https://www.findagrave.com/memorial/255222999/james-lewis"
+        },
+        {
+          "label": "Find A Grave 273586268 — mother Phebe Mack Lewis (children grid)",
+          "url": "https://www.findagrave.com/memorial/273586268/phebe-lewis"
+        }
+      ],
+      "aka": [
+        "Esther Lewis"
+      ],
+      "parent_links": [
+        {
+          "id": "james_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_mack_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of proposed **John Mack Lewis** line on James × Phebe FAG children grids (bidirectional with both parents). Soft-ingest **Probable** / `verified: false` — pack **C783**. Lyme CT → **Lempster NH** (same town as John’s East Lempster burial). Spouse John Miller Tubb..."
+    },
+    "hannah_lewis_beckwith": {
+      "id": "hannah_lewis_beckwith",
+      "slug": "hannah-lewis-beckwith",
+      "name": "Hannah Lewis Beckwith",
+      "years": "1743-1823",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "james_lewis",
+        "phebe_mack_lewis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 20825084 — Hannah Lewis Beckwith",
+          "url": "https://www.findagrave.com/memorial/20825084/hannah-beckwith"
+        },
+        {
+          "label": "Find A Grave 255222999 — father James Lewis (children grid)",
+          "url": "https://www.findagrave.com/memorial/255222999/james-lewis"
+        },
+        {
+          "label": "FamilyCentral — Johanna Lewis (James × Phebe; d. 16 Aug 1823 Marlow)",
+          "url": "http://www.familycentral.net/index/family.cfm?ref1=9125:952&ref2=9125:947"
+        }
+      ],
+      "aka": [
+        "Hannah Lewis",
+        "Johanna Lewis",
+        "Joanna Lewis"
+      ],
+      "parent_links": [
+        {
+          "id": "james_lewis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phebe_mack_lewis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of proposed **John Mack Lewis** line on James FAG children grid; FamilyCentral lists **Johanna** Lewis (same death day/place) as child of James × Phebe — soft aka Johanna/Joanna. Soft-ingest **Probable** / `verified: false` — pack **C783**. Lyme → **Marlow NH** (..."
+    },
+    "john_littlehale": {
+      "id": "john_littlehale",
+      "slug": "john-littlehale",
+      "name": "John Littlehale",
+      "years": "1779–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — John Littlehale m. Rhoda Scribner; to Orange VT",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — John of Sutton → Orange VT; aka Hale",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "aka": [
+        "John Hale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen** (Sutton Littlehale children). Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra Littlehale** × **Lydia Richardson**. Carpenter; m. Rhoda Scribner 1802 (spouse not soft-ingested). Removed to O..."
+    },
+    "betsey_littlehale_jones": {
+      "id": "betsey_littlehale_jones",
+      "slug": "betsey-littlehale-jones",
+      "name": "Betsey Littlehale Jones",
+      "years": "1783-1859",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — Betsey Littlehale m. Amos Jones 26 Dec 1805",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — Betsy × Amos Jones",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "aka": [
+        "Betsey Littlehale",
+        "Betsy Littlehale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen**. Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra** × **Lydia Richardson**. m. Amos Jones 26 Dec 1805 (spouse not soft-ingested). **Do not climb.**"
+    },
+    "lydia_r_littlehale_sargent": {
+      "id": "lydia_r_littlehale_sargent",
+      "slug": "lydia-r-littlehale-sargent",
+      "name": "Lydia R. Littlehale Sargent",
+      "years": "1785–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — Lydia R. Littlehale m. Enoch Sargent 25 Feb 1811",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — Lydia × Enoch Sargent",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "aka": [
+        "Lydia R. Littlehale",
+        "Lydia Littlehale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen**. Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra** × **Lydia Richardson**. m. Enoch Sargent 25 Feb 1811 (spouse not soft-ingested). **Do not climb.**"
+    },
+    "ezra_littlehale_iii": {
+      "id": "ezra_littlehale_iii",
+      "slug": "ezra-littlehale-iii",
+      "name": "Ezra Littlehale III",
+      "years": "1787–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — Ezra Littlehale 3d m. Hannah Smith 14 Dec 1813",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — Ezra × Hannah Smith",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "aka": [
+        "Ezra Littlehale 3d",
+        "Ezra Littlehale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen**. Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra** × **Lydia Richardson**. m. Hannah Smith 14 Dec 1813; History of Sutton says removed to Shrewsbury VT ~1830 (spouse/removal not climbed). *..."
+    },
+    "ruth_littlehale_cunningham": {
+      "id": "ruth_littlehale_cunningham",
+      "slug": "ruth-littlehale-cunningham",
+      "name": "Ruth Littlehale Cunningham",
+      "years": "1790–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — Ruth Littlehale m. James Cunningham 3 Dec 1817",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — Ruth × James Cunningham of Hillsborough",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "aka": [
+        "Ruth Littlehale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen**. Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra** × **Lydia Richardson**. m. James Cunningham of Hillsborough 3 Dec 1817 (spouse not soft-ingested). **Do not climb.**"
+    },
+    "mary_c_littlehale_chase": {
+      "id": "mary_c_littlehale_chase",
+      "slug": "mary-c-littlehale-chase",
+      "name": "Mary C. Littlehale Chase",
+      "years": "1792–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — Mary C. Littlehale m. Daniel Chase 6 Nov 1821",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — Mary × Daniel Chase",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "aka": [
+        "Mary C. Littlehale",
+        "Mary Littlehale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen**. Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra** × **Lydia Richardson**. m. Daniel Chase 6 Nov 1821 (spouse not soft-ingested). **Do not climb.**"
+    },
+    "isaac_littlehale": {
+      "id": "isaac_littlehale",
+      "slug": "isaac-littlehale",
+      "name": "Isaac Littlehale",
+      "years": "1794-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale",
+        "lydia_richardson_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "History of Sutton NH — Isaac Littlehale b. 12 Jul 1794; d. 21 Apr 1863; m. Margaret Walker",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "Littlehale 1889 — Isaac of Sutton; War of 1812 orderly",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_richardson_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Catherine Littlehale Allen**. Soft-ingest **Probable** / `verified: false` — pack **C618** collateral. Parents **Ezra** × **Lydia Richardson**. m. Margaret Walker (1819 / 30 Jun 1819 variants — spouse not soft-ingested). Stayed on Sutton homestead. **Do not ..."
+    },
+    "elizabeth_littlehale_underwood": {
+      "id": "elizabeth_littlehale_underwood",
+      "slug": "elizabeth-littlehale-underwood",
+      "name": "Elizabeth Littlehale Underwood",
+      "years": "1755–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ezra_littlehale_sr",
+        "lydia_littlehale_pelham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — Elizabeth b. 25 Dec 1755; m. Asa Underwood Dunstable 10 May 1777",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "History of Sutton NH — two children of Ezra × Lydia including Ezra of Sutton",
+          "url": "https://archive.org/details/historyofsuttonn02wort"
+        },
+        {
+          "label": "BrazoriaRoots — Elizabeth Littlehale × Asa Underwood (Chelmsford VR cite)",
+          "url": "https://www.brazoriaroots.com/p265.htm"
+        }
+      ],
+      "aka": [
+        "Elizabeth Littlehale"
+      ],
+      "parent_links": [
+        {
+          "id": "ezra_littlehale_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_littlehale_pelham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ezra Littlehale** (b. 1753). Soft-ingest **Probable** / `verified: false` — pack **C743**. Littlehale 1889: b. **25 Dec 1755**; m. **Asa Underwood** Dunstable **10 May 1777** (Brazoria cites Chelmsford **15 May 1777** — date conflict held). Parents Ezra of P..."
+    },
+    "isaac_littlehale_pelham": {
+      "id": "isaac_littlehale_pelham",
+      "slug": "isaac-littlehale-pelham",
+      "name": "Lieut. Isaac Littlehale",
+      "years": "1716-1759",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_littlehale_dracut",
+        "hannah_colburn_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — child of (5) John × Hannah Colburn",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — John Littlehale (Littlehale-5) family",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        }
+      ],
+      "aka": [
+        "Isaac Littlehale of Pelham"
+      ],
+      "parent_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ezra Littlehale Sr.** Soft-ingest **Probable** / `verified: false` — pack **C943**. Littlehale (8); Pelham; FIW Louisburg; admin Ezra estate Oct 1756; death 1757 vs m. 1758 → book prefers ~1759. Spouses/children **not** climbed. Infant John (b. 14 Sep 1718 d..."
+    },
+    "john_littlehale_jr": {
+      "id": "john_littlehale_jr",
+      "slug": "john-littlehale-jr",
+      "name": "John Littlehale Jr.",
+      "years": "1720–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_littlehale_dracut",
+        "hannah_colburn_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — child of (5) John × Hannah Colburn",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — John Littlehale (Littlehale-5) family",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        }
+      ],
+      "aka": [
+        "John Littlehale of Dunstable"
+      ],
+      "parent_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ezra Littlehale Sr.** Soft-ingest **Probable** / `verified: false` — pack **C943**. Littlehale (9); not infant John 1718 d. young; later Newry ME. Spouses/children **not** climbed. Infant John (b. 14 Sep 1718 d. young) **not** soft-ingested."
+    },
+    "abraham_littlehale": {
+      "id": "abraham_littlehale",
+      "slug": "abraham-littlehale",
+      "name": "Abraham Littlehale",
+      "years": "1725-1810",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_littlehale_dracut",
+        "hannah_colburn_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — child of (5) John × Hannah Colburn",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — John Littlehale (Littlehale-5) family",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ezra Littlehale Sr.** Soft-ingest **Probable** / `verified: false` — pack **C943**. Littlehale (11); Dunstable/Tyngsborough; Louisburg + Quebec. Spouses/children **not** climbed. Infant John (b. 14 Sep 1718 d. young) **not** soft-ingested."
+    },
+    "hannah_littlehale_dracut": {
+      "id": "hannah_littlehale_dracut",
+      "slug": "hannah-littlehale-dracut",
+      "name": "Hannah Littlehale",
+      "years": "1728–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_littlehale_dracut",
+        "hannah_colburn_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — child of (5) John × Hannah Colburn",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — John Littlehale (Littlehale-5) family",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ezra Littlehale Sr.** Soft-ingest **Probable** / `verified: false` — pack **C943**. Littlehale child list; spouse climb parked. Spouses/children **not** climbed. Infant John (b. 14 Sep 1718 d. young) **not** soft-ingested."
+    },
+    "james_littlehale": {
+      "id": "james_littlehale",
+      "slug": "james-littlehale",
+      "name": "James Littlehale",
+      "years": "1731-1803",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_littlehale_dracut",
+        "hannah_colburn_littlehale"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Littlehale 1889 — child of (5) John × Hannah Colburn",
+          "url": "https://archive.org/details/completehistoryg00inlitt"
+        },
+        {
+          "label": "WikiTree — John Littlehale (Littlehale-5) family",
+          "url": "https://www.wikitree.com/wiki/Littlehale-5"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_littlehale_dracut",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_colburn_littlehale",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Ezra Littlehale Sr.** Soft-ingest **Probable** / `verified: false` — pack **C943**. Littlehale (12); residual heir in John 1746 will. Spouses/children **not** climbed. Infant John (b. 14 Sep 1718 d. young) **not** soft-ingested."
+    },
+    "perry_parsons": {
+      "id": "perry_parsons",
+      "slug": "perry-parsons",
+      "name": "Perry Parsons",
+      "years": "1859–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "percy_parsons",
+        "kate_parsons"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS 1880 Fort Fairfield — Perry Parsens step-son age 21 Sweden in William × Kristi hh with Nelson (MF3N-QJ3)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MF3N-QJ3"
+        }
+      ],
+      "aka": [
+        "Perry Parsens"
+      ],
+      "parent_links": [
+        {
+          "id": "percy_parsons",
+          "confidence": "Probable"
+        },
+        {
+          "id": "kate_parsons",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft brother of **Nelson B. Parsons** (same 1880 step-sons under William × Kristi; Sweden). Pack **C1093**. Likely son of **Percy × Kate** (not the father Percy himself — age ~21 in 1880). Vitals lean."
+    },
+    "abigail_j_foss_hill": {
+      "id": "abigail_j_foss_hill",
+      "slug": "abigail-j-foss-hill",
+      "name": "Abigail J. Foss Hill",
+      "years": "1846-1916",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "daniel_w_foss",
+        "harriet_n_bunker_foss"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Abigail J Foss Hill (46299957)",
+          "url": "https://www.findagrave.com/memorial/46299957/abigail_j-hill"
+        },
+        {
+          "label": "Find A Grave — father Daniel W. Foss (26237974)",
+          "url": "https://www.findagrave.com/memorial/26237974/daniel_w-foss"
+        },
+        {
+          "label": "Find A Grave — mother Harriet N. Bunker Foss (43860310)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        }
+      ],
+      "aka": [
+        "Abbie Foss",
+        "Abigail J. Hill"
+      ],
+      "parent_links": [
+        {
+          "id": "daniel_w_foss",
+          "confidence": "Probable"
+        },
+        {
+          "id": "harriet_n_bunker_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sister of **Ambrose Foss** / daughter of **Daniel W. Foss** × **Harriet N. Bunker Foss**. Soft-ingest **Probable** / `verified: false` — pack **C563**. Bidirectional FAG: Daniel children grid lists Abigail; Abigail parents = Daniel × Harriet N. Bunker. Widow of Archelaus..."
+    },
+    "ruth_h_foss_johnston": {
+      "id": "ruth_h_foss_johnston",
+      "slug": "ruth-h-foss-johnston",
+      "name": "Ruth H. Foss Johnston",
+      "years": "1854-1928",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "daniel_w_foss",
+        "harriet_n_bunker_foss"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave — Ruth H. Foss Johnston (179493705)",
+          "url": "https://www.findagrave.com/memorial/179493705/ruth_h-johnston"
+        },
+        {
+          "label": "Find A Grave — father Daniel W. Foss (26237974)",
+          "url": "https://www.findagrave.com/memorial/26237974/daniel_w-foss"
+        },
+        {
+          "label": "Find A Grave — mother Harriet N. Bunker Foss (43860310)",
+          "url": "https://www.findagrave.com/memorial/43860310/harriet_n-foss"
+        }
+      ],
+      "aka": [
+        "Ruth H. Foss",
+        "Ruth H. Johnston"
+      ],
+      "parent_links": [
+        {
+          "id": "daniel_w_foss",
+          "confidence": "Probable"
+        },
+        {
+          "id": "harriet_n_bunker_foss",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sister of **Ambrose Foss** / daughter of **Daniel W. Foss** × **Harriet N. Bunker Foss**. Soft-ingest **Probable** / `verified: false` — pack **C563**. Bidirectional FAG: Daniel children grid lists Ruth; Ruth parents = Daniel × Harriet N. Bunker. Spouse Milton Straw John..."
+    },
+    "james_knight_huntress": {
+      "id": "james_knight_huntress",
+      "slug": "james-knight-huntress",
+      "name": "James Knight Huntress",
+      "years": "1828-1899",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_huntress",
+        "eunice_knight_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 128151865 — James Knight Huntress",
+          "url": "https://www.findagrave.com/memorial/128151865/james_knight-huntress"
+        },
+        {
+          "label": "Find A Grave 92969533 — father Robert Huntress (children)",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 26227290 — sister Betsy (siblings)",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "eunice_knight_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids. Do not climb spouse/parents of this collateral."
+    },
+    "louisa_jane_huntress": {
+      "id": "louisa_jane_huntress",
+      "slug": "louisa-jane-huntress",
+      "name": "Louisa Jane Huntress",
+      "years": "1833-1848",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_huntress",
+        "eunice_knight_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 92969517 — Louisa Jane Huntress",
+          "url": "https://www.findagrave.com/memorial/92969517/louisa_jane-huntress"
+        },
+        {
+          "label": "Find A Grave 92969533 — father Robert Huntress (children)",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 26227290 — sister Betsy (siblings)",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "eunice_knight_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids; Town House Cemetery with parents. Died young (~15). Do not climb."
+    },
+    "george_freeman_huntress": {
+      "id": "george_freeman_huntress",
+      "slug": "george-freeman-huntress",
+      "name": "George Freeman Huntress",
+      "years": "1835-1895",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_huntress",
+        "eunice_knight_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 26343496 — George Freeman Huntress",
+          "url": "https://www.findagrave.com/memorial/26343496/george_freeman-huntress"
+        },
+        {
+          "label": "Find A Grave 92969533 — father Robert Huntress (children)",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 26227290 — sister Betsy (siblings)",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "eunice_knight_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids. FAG title years **1835–1895**; bio OCR “AGE 59 YEARS,7 MONTHS,26 DAYS” — place/burial not hardened this pass. Do not cl..."
+    },
+    "albion_paris_huntress": {
+      "id": "albion_paris_huntress",
+      "slug": "albion-paris-huntress",
+      "name": "Albion Paris Huntress",
+      "years": "1839-1915",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_huntress",
+        "eunice_knight_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 160918828 — Albion Paris Huntress",
+          "url": "https://www.findagrave.com/memorial/160918828/albion_paris-huntress"
+        },
+        {
+          "label": "Find A Grave 92969533 — father Robert Huntress (children)",
+          "url": "https://www.findagrave.com/memorial/92969533/robert-huntress"
+        },
+        {
+          "label": "Find A Grave 26227290 — sister Betsy (siblings)",
+          "url": "https://www.findagrave.com/memorial/26227290/betsy_warren-knight"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "robert_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "eunice_knight_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids. FAG bio: **“Son of: Robert and Eunice (Knight) Huntress”**; m. Sarah Calef Hooper 22 Jun 1862 Biddeford (attribute only..."
+    },
+    "jones_knight": {
+      "id": "jones_knight",
+      "slug": "jones-knight",
+      "name": "Jones Knight",
+      "years": "1821–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edmund_knight",
+        "elizabeth_sawyer_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Edmund Knight Buxton register (Jones 1821)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — William H Knight (full sibling)",
+          "url": "https://www.wikitree.com/wiki/Knight-11972"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "edmund_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_sawyer_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **William H. Knight** (same parents Edmund × Elizabeth Sawyer). Soft-ingest **Probable** / `verified: false` — named in Buxton Family Records 2nd-wife children on WT Knight-23073 (**Jones Knight Born September 21 1821**). Pack note **C574**. No death/burial fre..."
+    },
+    "mary_knight": {
+      "id": "mary_knight",
+      "slug": "mary-knight",
+      "name": "Mary Knight",
+      "years": "1823–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edmund_knight",
+        "elizabeth_sawyer_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Edmund Knight Buxton register (Mary 1823)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — William H Knight (full sibling)",
+          "url": "https://www.wikitree.com/wiki/Knight-11972"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "edmund_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_sawyer_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **William H. Knight** (same parents Edmund × Elizabeth Sawyer). Soft-ingest **Probable** / `verified: false` — named in Buxton Family Records 2nd-wife children on WT Knight-23073 (**Mary born July 26 1823**). Pack note **C574**. No death/burial free this pass; ..."
+    },
+    "ruth_knight": {
+      "id": "ruth_knight",
+      "slug": "ruth-knight",
+      "name": "Ruth Knight",
+      "years": "1826–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edmund_knight",
+        "elizabeth_sawyer_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Edmund Knight Buxton register (Ruth 1826)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — William H Knight (full sibling)",
+          "url": "https://www.wikitree.com/wiki/Knight-11972"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "edmund_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_sawyer_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **William H. Knight** (same parents Edmund × Elizabeth Sawyer). Soft-ingest **Probable** / `verified: false` — named in Buxton Family Records 2nd-wife children on WT Knight-23073 (**Ruth born Feb. 26 1826**). Pack note **C574**. No death/burial free this pass; ..."
+    },
+    "nathaniel_b_knight_jr": {
+      "id": "nathaniel_b_knight_jr",
+      "slug": "nathaniel-b-knight-jr",
+      "name": "Nathaniel B. Knight Jr.",
+      "years": "1796-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_b_knight",
+        "hannah_cluff_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Nathaniel B Knight children (Jr. 1796)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — sister Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        }
+      ],
+      "aka": [
+        "Nathaniel Knight Jr."
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. Named in WT Knight-12905 children of Hannah marriage: b. **1796** Waterboro; d. **30 Nov 1863** Providence RI; m. Abigail Philbr..."
+    },
+    "susan_c_knight_cluff": {
+      "id": "susan_c_knight_cluff",
+      "slug": "susan-c-knight-cluff",
+      "name": "Susan C. Knight Cluff",
+      "years": "1797-1876",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_b_knight",
+        "hannah_cluff_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Nathaniel B Knight children (Susan C. 1797)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — sister Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        }
+      ],
+      "aka": [
+        "Susan C. Knight",
+        "Susan Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. WT Knight-12905: b. **Apr 1797** Waterboro; d. **18 Jan 1876** Alfred; m. Asa Cluff (spouse not soft). Do not climb."
+    },
+    "lucy_knight_yeaton": {
+      "id": "lucy_knight_yeaton",
+      "slug": "lucy-knight-yeaton",
+      "name": "Lucy Knight Yeaton",
+      "years": "1798-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_b_knight",
+        "hannah_cluff_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Nathaniel B Knight children (Lucy 1798)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — sister Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        }
+      ],
+      "aka": [
+        "Lucy Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. WT Knight-12905: b. **1798** Waterboro; d. **1862** Tamworth NH; m. Reuben D. Yeaton (spouse not soft). Do not climb."
+    },
+    "samuel_c_knight": {
+      "id": "samuel_c_knight",
+      "slug": "samuel-c-knight",
+      "name": "Samuel C. Knight",
+      "years": "1799-1873",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_b_knight",
+        "hannah_cluff_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Nathaniel B Knight children (Samuel C. 1799)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — sister Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. WT Knight-12905: b. **1799** Waterboro; d. **20 Sep 1873** Cornish York ME; m. Caroline A. Philbrick (spouse not soft). Do not c..."
+    },
+    "james_knight": {
+      "id": "james_knight",
+      "slug": "james-knight",
+      "name": "James Knight",
+      "years": "1804–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathaniel_b_knight",
+        "hannah_cluff_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Nathaniel B Knight children (James 1804)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        },
+        {
+          "label": "WikiTree — sister Eunice (Knight) Huntress (Knight-12904)",
+          "url": "https://www.wikitree.com/wiki/Knight-12904"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathaniel_b_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_cluff_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. Lean WT name only: b. **1804** Waterboro; death/spouse blank. Do not confuse with nephew **James Knight Huntress**. Do not climb."
+    },
+    "caleb_huntress": {
+      "id": "caleb_huntress",
+      "slug": "caleb-huntress",
+      "name": "Caleb Huntress",
+      "years": "1788-1869",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 64154442 — Caleb Huntress",
+          "url": "https://www.findagrave.com/memorial/64154442/caleb-huntress"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1788–1869**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+    },
+    "rhoda_huntress_carll": {
+      "id": "rhoda_huntress_carll",
+      "slug": "rhoda-huntress-carll",
+      "name": "Rhoda Huntress Carll",
+      "years": "1791-1885",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 110251964 — Rhoda Huntress Carll",
+          "url": "https://www.findagrave.com/memorial/110251964/rhoda-carll"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "aka": [
+        "Rhoda Huntress Carli"
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1791–1885**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+    },
+    "rebecca_huntress": {
+      "id": "rebecca_huntress",
+      "slug": "rebecca-huntress",
+      "name": "Rebecca Huntress",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert (Rebecca Huntress)",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid; Rebecca not listed)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** on WikiTree Huntress-98 only (not on William FAG children grid this pass). Soft-ingest lean **Probable** / `verified: false` — pack **C674**. Vitals unknown. Not climbed."
+    },
+    "aaron_warren_huntress": {
+      "id": "aaron_warren_huntress",
+      "slug": "aaron-warren-huntress",
+      "name": "Aaron Warren Huntress",
+      "years": "1798-1882",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 98541066 — Aaron Warren Huntress",
+          "url": "https://www.findagrave.com/memorial/98541066/aaron_warren-huntress"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1798–1882**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+    },
+    "hosea_hasty_huntress": {
+      "id": "hosea_hasty_huntress",
+      "slug": "hosea-hasty-huntress",
+      "name": "Hosea Hasty Huntress",
+      "years": "1800-1882",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 144269514 — Hosea Hasty Huntress",
+          "url": "https://www.findagrave.com/memorial/144269514/hosea_hasty-huntress"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1800–1882**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+    },
+    "james_huntress": {
+      "id": "james_huntress",
+      "slug": "james-huntress",
+      "name": "James Huntress",
+      "years": "1804-1898",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 98541198 — James Huntress",
+          "url": "https://www.findagrave.com/memorial/98541198/james-huntress"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1804–1898**; on William FAG children grid. Not James Knight Huntress (Robert’s son). Spouse/children not climbed. **No open obituary text** t..."
+    },
+    "betsey_warren_huntress_hammond": {
+      "id": "betsey_warren_huntress_hammond",
+      "slug": "betsey-warren-huntress-hammond",
+      "name": "Betsey Warren Huntress Hammond",
+      "years": "1809-1895",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 136045443 — Betsey Warren Huntress Hammond",
+          "url": "https://www.findagrave.com/memorial/136045443/betsey_warren-hammond"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1809–1895**; on William FAG children grid. Not Betsy Warren Huntress Knight (Robert’s daughter). Spouse/children not climbed. **No open obitu..."
+    },
+    "tyre_ann_huntress_shedd": {
+      "id": "tyre_ann_huntress_shedd",
+      "slug": "tyre-ann-huntress-shedd",
+      "name": "Tyre Ann Huntress Shedd",
+      "years": "1810-1869",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_huntress",
+        "elizabeth_rhoda_warren_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 102271107 — Tyre Ann Huntress Shedd",
+          "url": "https://www.findagrave.com/memorial/102271107/tyre_ann-shedd"
+        },
+        {
+          "label": "Find A Grave 92969570 — father William Huntress (children grid)",
+          "url": "https://www.findagrave.com/memorial/92969570/william-huntress"
+        },
+        {
+          "label": "WikiTree Huntress-98 — sibling of Robert",
+          "url": "https://www.wikitree.com/wiki/Huntress-98"
+        }
+      ],
+      "aka": [
+        "Tyra Ann Huntress Shedd"
+      ],
+      "parent_links": [
+        {
+          "id": "william_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_rhoda_warren_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1810–1869**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+    },
+    "susannah_clough_weymouth": {
+      "id": "susannah_clough_weymouth",
+      "slug": "susannah-clough-weymouth",
+      "name": "Susannah Clough Weymouth",
+      "years": "1771–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Susannah Clough",
+        "Susanna Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 9 Nov 1795 John Weymouth (WT Clough-726). Spouse climb parked."
+    },
+    "jedediah_clough": {
+      "id": "jedediah_clough",
+      "slug": "jedediah-clough",
+      "name": "Jedediah Clough",
+      "years": "1773-1850",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Jedediah Cluff",
+        "John Clough",
+        "John Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. aka John; m. 1 Jul 1796 Hannah Weymouth Lyman (WT). Spouse climb parked."
+    },
+    "samuel_clough_jr": {
+      "id": "samuel_clough_jr",
+      "slug": "samuel-clough-jr",
+      "name": "Samuel Clough Jr.",
+      "years": "1777-1825",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Samuel Cluff",
+        "Samuel Clough"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. ≠ father samuel_clough; m. 30 Sep 1798 Mary Polly Seavey (WT). Spouse climb parked."
+    },
+    "james_clough": {
+      "id": "james_clough",
+      "slug": "james-clough",
+      "name": "James Clough",
+      "years": "1781-1826",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "James Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. Martha Brice (WT Clough-726). Spouse climb parked."
+    },
+    "lydia_clough_raymond": {
+      "id": "lydia_clough_raymond",
+      "slug": "lydia-clough-raymond",
+      "name": "Lydia Clough Raymond",
+      "years": "1782-1811",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Lydia Cluff",
+        "Lydia Clough"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 4 Dec 1798 Samuel Low Raymond Coxhall (WT). Spouse climb parked."
+    },
+    "simon_clough": {
+      "id": "simon_clough",
+      "slug": "simon-clough",
+      "name": "Simon Clough",
+      "years": "1784-1824",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Simon Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 30 Nov 1805 Sally Parold Alfred (WT). Spouse climb parked."
+    },
+    "nathan_clough": {
+      "id": "nathan_clough",
+      "slug": "nathan-clough",
+      "name": "Nathan Clough",
+      "years": "1790-1820",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Nathan Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. WT Clough-726 child list; lean vitals. Spouse climb parked."
+    },
+    "nicholas_clough": {
+      "id": "nicholas_clough",
+      "slug": "nicholas-clough",
+      "name": "Nicholas Clough",
+      "years": "1791-1827",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_clough",
+        "lucy_wakefield_clough"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Clough (Clough-726) children",
+          "url": "https://www.wikitree.com/wiki/Clough-726"
+        },
+        {
+          "label": "WikiTree — Lucy (Wakefield) Clough (Wakefield-6328) children",
+          "url": "https://www.wikitree.com/wiki/Wakefield-6328"
+        },
+        {
+          "label": "WikiTree — sister Hannah (Cluff) Knight (Cluff-434)",
+          "url": "https://www.wikitree.com/wiki/Cluff-434"
+        }
+      ],
+      "aka": [
+        "Nicholas Cluff"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_clough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lucy_wakefield_clough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 27 Jun 1812 Hannah Taylor (WT). Spouse climb parked."
+    },
+    "daniel_knight": {
+      "id": "daniel_knight",
+      "slug": "daniel-knight",
+      "name": "Daniel Knight",
+      "years": "1764–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_knight",
+        "lydia_roberts_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Daniel Knight (Knight-5642)",
+          "url": "https://www.wikitree.com/wiki/Knight-5642"
+        },
+        {
+          "label": "WikiTree — brother Nathaniel B Knight (Knight-12905)",
+          "url": "https://www.wikitree.com/wiki/Knight-12905"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "lydia_roberts_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Nathaniel B. Knight** (same parents John × Lydia Roberts). Soft-ingest **Probable** / `verified: false` — pack **C834**. WikiTree Knight-5642: b. **28 Jun 1764** Somersworth NH; brother of Nathaniel; husband Patience Garey parked (no climb). Death blank. Do ..."
+    },
+    "abel_knight": {
+      "id": "abel_knight",
+      "slug": "abel-knight",
+      "name": "Abel Knight",
+      "years": "1768-1832",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_knight",
+        "hannah_whidden_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Abel Knight (Knight-29048)",
+          "url": "https://www.wikitree.com/wiki/Knight-29048"
+        },
+        {
+          "label": "Find A Grave 180681005 — Abel Knight",
+          "url": "https://www.findagrave.com/memorial/180681005/abel-knight"
+        },
+        {
+          "label": "WikiTree — brother Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_whidden_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight** (same parents Samuel × Hannah Whidden). Soft-ingest **Probable** / `verified: false` — pack **C603**. Named on Edmund WT sibling list; WT Knight-29048 + FAG **180681005** Elm Vale South Waterford (30 Nov 1768 – 12 Apr 1832). Spouse/children **..."
+    },
+    "hannah_knight_libby": {
+      "id": "hannah_knight_libby",
+      "slug": "hannah-knight-libby",
+      "name": "Hannah Knight Libby",
+      "years": "1774-1864",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_knight",
+        "hannah_whidden_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Hannah (Knight) Libby (Knight-31934)",
+          "url": "https://www.wikitree.com/wiki/Knight-31934"
+        },
+        {
+          "label": "Find A Grave 42782806 — Hannah Knight Libby",
+          "url": "https://www.findagrave.com/memorial/42782806/hannah-libby"
+        },
+        {
+          "label": "WikiTree — brother Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        }
+      ],
+      "aka": [
+        "Hannah Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_whidden_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight**. Soft-ingest **Probable** / `verified: false` — pack **C603**. WT Knight-31934 + FAG **42782806** Ruggles Carmel (16 May 1774 – 25 Jul 1864). Spouse Libby **not** climbed."
+    },
+    "elizabeth_knight_sawyer": {
+      "id": "elizabeth_knight_sawyer",
+      "slug": "elizabeth-knight-sawyer",
+      "name": "Elizabeth Knight Sawyer",
+      "years": "1776-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_knight",
+        "hannah_whidden_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Elizabeth (Knight) Sawyer (Knight-31931)",
+          "url": "https://www.wikitree.com/wiki/Knight-31931"
+        },
+        {
+          "label": "Find A Grave 42650497 — Betsey Knight Sawyer",
+          "url": "https://www.findagrave.com/memorial/42650497/betsey-sawyer"
+        },
+        {
+          "label": "WikiTree — brother Edmund Knight (Knight-23073)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        }
+      ],
+      "aka": [
+        "Betsey Knight",
+        "Betty Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_whidden_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight**. Soft-ingest **Probable** / `verified: false` — pack **C603**. Maiden **Knight**; married name Sawyer (WT Knight-31931). FAG **42650497** South Buxton (17 Dec 1776 – 18 Dec 1863). **Do not confuse** with Edmund's 2nd wife **Elizabeth Sawyer Kn..."
+    },
+    "lydia_knight_palmer": {
+      "id": "lydia_knight_palmer",
+      "slug": "lydia-knight-palmer",
+      "name": "Lydia Knight Palmer",
+      "years": "1781–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_knight",
+        "hannah_whidden_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — brother Edmund Knight sibling list (Lydia Palmer)",
+          "url": "https://www.wikitree.com/wiki/Knight-23073"
+        },
+        {
+          "label": "WikiTree — mother Hannah Whidden birth cite (Lydia 1781)",
+          "url": "https://www.wikitree.com/wiki/Whidden-575"
+        }
+      ],
+      "aka": [
+        "Lydia Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_whidden_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight**. Soft-ingest **Probable** / `verified: false` — pack **C603**. Named Lydia (Knight) Palmer on Edmund WT sibling list; mother Whidden-575 cites Buxton birth **26 May 1781**. Death/burial/FAG **not** confirmed this pass (do not invent). Spouse P..."
+    },
+    "john_whitten": {
+      "id": "john_whitten",
+      "slug": "john-whitten",
+      "name": "John Whitten",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "John Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Hannah Walker (Bradbury). Spouses/parents-of-spouse **not** climbed."
+    },
+    "phineas_whitten": {
+      "id": "phineas_whitten",
+      "slug": "phineas-whitten",
+      "name": "Phineas Whitten",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Phineas Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. Bradbury: moved east; WT relationship uncertain. Spouses/parents-of-spouse **not** climbed."
+    },
+    "samuel_whitten": {
+      "id": "samuel_whitten",
+      "slug": "samuel-whitten",
+      "name": "Samuel Whitten",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Samuel Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Hannah Poindexter; Revolutionary service on WT. Spouses/parents-of-spouse **not** climbed."
+    },
+    "humphrey_whitten": {
+      "id": "humphrey_whitten",
+      "slug": "humphrey-whitten",
+      "name": "Humphrey Whitten",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Humphrey Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Hannah Lassel/Lassell. Spouses/parents-of-spouse **not** climbed."
+    },
+    "israel_whitten": {
+      "id": "israel_whitten",
+      "slug": "israel-whitten",
+      "name": "Israel Whitten",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Israel Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Sarah Fairfield; Revolutionary service on WT. Spouses/parents-of-spouse **not** climbed."
+    },
+    "joseph_whitten": {
+      "id": "joseph_whitten",
+      "slug": "joseph-whitten",
+      "name": "Joseph Whitten",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Joseph Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Anna Burnham. Spouses/parents-of-spouse **not** climbed."
+    },
+    "mary_whitten_waterhouse": {
+      "id": "mary_whitten_waterhouse",
+      "slug": "mary-whitten-waterhouse",
+      "name": "Mary Whitten Waterhouse",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Mary Whitten",
+        "Mary Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Samuel Waterhouse. Spouses/parents-of-spouse **not** climbed."
+    },
+    "ruth_whitten_clay": {
+      "id": "ruth_whitten_clay",
+      "slug": "ruth-whitten-clay",
+      "name": "Ruth Whitten Clay",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Ruth Whitten",
+        "Ruth Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Mr. Clay. Spouses/parents-of-spouse **not** climbed."
+    },
+    "martha_whitten_gordon": {
+      "id": "martha_whitten_gordon",
+      "slug": "martha-whitten-gordon",
+      "name": "Martha Whitten Gordon",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Martha Whitten",
+        "Martha Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Mr. Gordon. Spouses/parents-of-spouse **not** climbed."
+    },
+    "sarah_whitten_davis": {
+      "id": "sarah_whitten_davis",
+      "slug": "sarah-whitten-davis",
+      "name": "Sarah Whitten Davis",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Sarah Whitten",
+        "Sarah Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Daniel Davis. Spouses/parents-of-spouse **not** climbed."
+    },
+    "lydia_whitten_wadlin": {
+      "id": "lydia_whitten_wadlin",
+      "slug": "lydia-whitten-wadlin",
+      "name": "Lydia Whitten Wadlin",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Lydia Whitten",
+        "Lydia Whidden"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Moses Wadlin. Spouses/parents-of-spouse **not** climbed."
+    },
+    "anna_whitten_burbank": {
+      "id": "anna_whitten_burbank",
+      "slug": "anna-whitten-burbank",
+      "name": "Anna Whitten Burbank",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_whidden",
+        "ruth_merrill_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bradbury 1837 History of Kennebunk Port — WHITTEN, JOHN children",
+          "url": "https://ldsgenealogy.com/ME/books/History-of-Kennebunk-Port-from-its-first-discovery-by-Bartholomew-Gosnold-May-14-1602-to-A-D-1837-part-24.htm"
+        },
+        {
+          "label": "WikiTree — John Whidden (Whidden-20) children",
+          "url": "https://www.wikitree.com/wiki/Whidden-20"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden (Merrill-720) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        }
+      ],
+      "aka": [
+        "Anna Whitten",
+        "Anna Whidden",
+        "Anna English"
+      ],
+      "parent_links": [
+        {
+          "id": "john_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ruth_merrill_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Capt. English then John Burbank (Bradbury). Spouses/parents-of-spouse **not** climbed."
+    },
+    "edmund_knight_jr": {
+      "id": "edmund_knight_jr",
+      "slug": "edmund-knight-jr",
+      "name": "Edmund Knight Jr",
+      "years": "1744-1813",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "edmund_knight_sr",
+        "jane_little_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Edmund Knight Jr (Knight-2195)",
+          "url": "https://www.wikitree.com/wiki/Knight-2195"
+        },
+        {
+          "label": "Newbury VR births — Edmund s. Edmund and Jane, Nov. 8, 1744",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "WikiTree — brother Samuel Knight (Knight-9441)",
+          "url": "https://www.wikitree.com/wiki/Knight-9441"
+        },
+        {
+          "label": "Little 1882 — Edmund Knight (entry 121)",
+          "url": "https://archive.org/details/descendantsofgeo1882litt"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "edmund_knight_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_little_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Samuel Knight** (same parents Edmund Sr × Jane Little). Soft-ingest **Probable** / `verified: false` — pack **C693**. Newbury VR + WT Knight-2195: b. **8 Nov 1744**; d. **21 Sep 1813** Newbury a. 68y 10m. Spouses Sarah Hale / Mary Coffin and children **not** ..."
+    },
+    "abel_merrill": {
+      "id": "abel_merrill",
+      "slug": "abel-merrill",
+      "name": "Abel Merrill",
+      "years": "1703–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 4 Jan 1702/3 (=1703-01-04) Salisbury VR; m. Mary Harding; removed to Arundel (WT/Bremer). **No UP climb / spouse dig** this pass."
+    },
+    "john_merrill_jr": {
+      "id": "john_merrill_jr",
+      "slug": "john-merrill-jr",
+      "name": "John Merrill Jr",
+      "years": "1704-1784",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "aka": [
+        "John Merrill"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 14 Apr 1704 Salisbury VR; m. Mary Hutchins; d. 8 Apr 1784 Kennebunkport (Bremer). Id john_merrill_jr ≠ father john_merrill. **No UP climb / spouse dig**..."
+    },
+    "thomas_merrill": {
+      "id": "thomas_merrill",
+      "slug": "thomas-merrill",
+      "name": "Thomas Merrill",
+      "years": "1708-1791",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 18 Dec 1708; m. Martha Silley 18 Jul 1728 Salisbury; d. 3 Feb 1791 (WT/Bremer). **No UP climb / spouse dig** this pass."
+    },
+    "hannah_merrill_osgood": {
+      "id": "hannah_merrill_osgood",
+      "slug": "hannah-merrill-osgood",
+      "name": "Hannah Merrill Osgood",
+      "years": "1712-1784",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "aka": [
+        "Hannah Merrill"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 1 Dec 1712 Salisbury VR; m. Jonathan Osgood 5 Sep 1734; d. 7 Oct 1784 (Bremer). **No UP climb / spouse dig** this pass."
+    },
+    "nanne_merrill": {
+      "id": "nanne_merrill",
+      "slug": "nanne-merrill",
+      "name": "Nanne Merrill",
+      "years": "1716–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "aka": [
+        "Nancy Merrill",
+        "Nanne Merrill Carr"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 17 Feb 1715/6 (=1716-02-17) Salisbury VR (Nanne); aka Nancy; spouse park (Bremer). **No UP climb / spouse dig** this pass."
+    },
+    "humphrey_merrill": {
+      "id": "humphrey_merrill",
+      "slug": "humphrey-merrill",
+      "name": "Humphrey Merrill",
+      "years": "1719–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "aka": [
+        "Umphory Merrill"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 14 Mar 1718/9 (=1719-03-14) Salisbury VR (Umphory); second Humphrey after infant 1717 death. **No UP climb / spouse dig** this pass."
+    },
+    "martha_merrill_morse": {
+      "id": "martha_merrill_morse",
+      "slug": "martha-merrill-morse",
+      "name": "Martha Merrill Morse",
+      "years": "1721–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "aka": [
+        "Martha Merrill"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 9 May 1721 Salisbury VR; m. Anthony Morse/Moss 22 Dec 1743 (Bremer/WT). **No UP climb / spouse dig** this pass."
+    },
+    "mary_merrill_burnham": {
+      "id": "mary_merrill_burnham",
+      "slug": "mary-merrill-burnham",
+      "name": "Mary Merrill Burnham",
+      "years": "1727–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_merrill",
+        "mary_allen_merrill"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — John Merrill (Merrill-138) children",
+          "url": "https://www.wikitree.com/wiki/Merrill-138"
+        },
+        {
+          "label": "WikiTree — Ruth (Merrill) Whidden siblings (Merrill-720)",
+          "url": "https://www.wikitree.com/wiki/Merrill-720"
+        },
+        {
+          "label": "Salisbury VR (Archive.org) — John and Mary Merrill children",
+          "url": "https://archive.org/details/vitalrecordsofsa00sali"
+        },
+        {
+          "label": "Bremer — Merrill, John (1674-1756) Family",
+          "url": "https://wiki.bremergenealogy.info/index.php/Merrill,_John_(1674-1756)_-_Family"
+        }
+      ],
+      "aka": [
+        "Mary Merrill"
+      ],
+      "parent_links": [
+        {
+          "id": "john_merrill",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_allen_merrill",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 10 Jul 1727 Salisbury VR; m. Joseph Burnham 17 Jan 1744/5 (Bremer). **No UP climb / spouse dig** this pass."
+    },
+    "sarah_whidden_bucknell": {
+      "id": "sarah_whidden_bucknell",
+      "slug": "sarah-whidden-bucknell",
+      "name": "Sarah Whidden Bucknell",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_whidden",
+        "sarah_jones_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Whidden (Whidden-13) children / GDMNH",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — Sarah (Jones) Savage (Jones-1991) children",
+          "url": "https://www.wikitree.com/wiki/Jones-1991"
+        },
+        {
+          "label": "Goff — Whidden Colchester NS child list",
+          "url": "https://gofffamilyhistory.ca/WhiddenColchesterNovaScotia.pdf"
+        }
+      ],
+      "aka": [
+        "Sarah Whidden",
+        "Sarah Whitten",
+        "Sarah Bucknell"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_jones_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. m. 9 Apr 1717 Greenland to William Bucknell (GDMNH via WT). Spouses/UP climb **not** done."
+    },
+    "samuel_whidden_jr": {
+      "id": "samuel_whidden_jr",
+      "slug": "samuel-whidden-jr",
+      "name": "Samuel Whidden Jr.",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_whidden",
+        "sarah_jones_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Whidden (Whidden-13) children / GDMNH",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — Sarah (Jones) Savage (Jones-1991) children",
+          "url": "https://www.wikitree.com/wiki/Jones-1991"
+        },
+        {
+          "label": "Goff — Whidden Colchester NS child list",
+          "url": "https://gofffamilyhistory.ca/WhiddenColchesterNovaScotia.pdf"
+        }
+      ],
+      "aka": [
+        "Samuel Whidden",
+        "Samuel Whitten"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_jones_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. Settled Greenland (GDMNH via WT); ≠ father samuel_whidden; ≠ nephew samuel_whitten. Spouses/UP climb **not** done."
+    },
+    "james_whidden": {
+      "id": "james_whidden",
+      "slug": "james-whidden",
+      "name": "James Whidden",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_whidden",
+        "sarah_jones_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Whidden (Whidden-13) children / GDMNH",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — Sarah (Jones) Savage (Jones-1991) children",
+          "url": "https://www.wikitree.com/wiki/Jones-1991"
+        },
+        {
+          "label": "Goff — Whidden Colchester NS child list",
+          "url": "https://gofffamilyhistory.ca/WhiddenColchesterNovaScotia.pdf"
+        }
+      ],
+      "aka": [
+        "James Whitten"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_jones_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. Settled Truro, Nova Scotia (GDMNH via WT / Goff). Spouses/UP climb **not** done."
+    },
+    "ichabod_whidden": {
+      "id": "ichabod_whidden",
+      "slug": "ichabod-whidden",
+      "name": "Ichabod Whidden",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_whidden",
+        "sarah_jones_whidden"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Samuel Whidden (Whidden-13) children / GDMNH",
+          "url": "https://www.wikitree.com/wiki/Whidden-13"
+        },
+        {
+          "label": "WikiTree — Sarah (Jones) Savage (Jones-1991) children",
+          "url": "https://www.wikitree.com/wiki/Jones-1991"
+        },
+        {
+          "label": "Goff — Whidden Colchester NS child list",
+          "url": "https://gofffamilyhistory.ca/WhiddenColchesterNovaScotia.pdf"
+        }
+      ],
+      "aka": [
+        "Ichabod Whitten"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_whidden",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_jones_whidden",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. Settled Newmarket (GDMNH via WT); bp. 1714 Greenland as Whitten. Spouses/UP climb **not** done."
+    },
+    "henry_knight": {
+      "id": "henry_knight",
+      "slug": "henry-knight",
+      "name": "Henry Knight",
+      "years": "1697-1773",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "richard_knight",
+        "elizabeth_jaques_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Newbury VR births — child of Richard × Elisabeth/Elizabeth",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "WikiTree — Richard Knight (Knight-2504) children",
+          "url": "https://www.wikitree.com/wiki/Knight-2504"
+        },
+        {
+          "label": "WikiTree — Elizabeth (Jaques) Knight (Jaques-20) children",
+          "url": "https://www.wikitree.com/wiki/Jaques-20"
+        },
+        {
+          "label": "Pane-Joyce — Capt. Richard × Elizabeth Jaques children",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr12/rr12_281.html"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "richard_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_jaques_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight Sr**. Soft-ingest **Probable** / `verified: false` — pack **C803**. Newbury VR: s. Corp. Richard and Elisabeth, 6 Jul 1697; Pane-Joyce d. ~1773 Falmouth ME. Spouses/descendants **not** climbed (collateral)."
+    },
+    "elizabeth_knight_dole": {
+      "id": "elizabeth_knight_dole",
+      "slug": "elizabeth-knight-dole",
+      "name": "Elizabeth Knight Dole",
+      "years": "1702-1776",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "richard_knight",
+        "elizabeth_jaques_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Newbury VR births — child of Richard × Elisabeth/Elizabeth",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "WikiTree — Richard Knight (Knight-2504) children",
+          "url": "https://www.wikitree.com/wiki/Knight-2504"
+        },
+        {
+          "label": "WikiTree — Elizabeth (Jaques) Knight (Jaques-20) children",
+          "url": "https://www.wikitree.com/wiki/Jaques-20"
+        },
+        {
+          "label": "Pane-Joyce — Capt. Richard × Elizabeth Jaques children",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr12/rr12_281.html"
+        }
+      ],
+      "aka": [
+        "Elizabeth Knight"
+      ],
+      "parent_links": [
+        {
+          "id": "richard_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_jaques_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight Sr**. Soft-ingest **Probable** / `verified: false` — pack **C803**. Newbury VR: d. Corp. Richard and Elizabeth, 11 Mar 1701/2; m. Samuel Dole (WT/Pane); d. 5 Dec 1776. Spouses/descendants **not** climbed (collateral)."
+    },
+    "moses_knight": {
+      "id": "moses_knight",
+      "slug": "moses-knight",
+      "name": "Moses Knight",
+      "years": "1710-1788",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "richard_knight",
+        "elizabeth_jaques_knight"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Newbury VR births — child of Richard × Elisabeth/Elizabeth",
+          "url": "https://archive.org/details/vitalrecordsofne01newb_0/page/267/mode/1up"
+        },
+        {
+          "label": "WikiTree — Richard Knight (Knight-2504) children",
+          "url": "https://www.wikitree.com/wiki/Knight-2504"
+        },
+        {
+          "label": "WikiTree — Elizabeth (Jaques) Knight (Jaques-20) children",
+          "url": "https://www.wikitree.com/wiki/Jaques-20"
+        },
+        {
+          "label": "Pane-Joyce — Capt. Richard × Elizabeth Jaques children",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr12/rr12_281.html"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "richard_knight",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_jaques_knight",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Full sibling of **Edmund Knight Sr**. Soft-ingest **Probable** / `verified: false` — pack **C803**. Newbury VR: s. Richard and Elizabeth, 27 Sep 1710; Pane-Joyce d. 11 Dec 1788. Spouses/descendants **not** climbed (collateral)."
+    },
+    "ann_bunker_rand": {
+      "id": "ann_bunker_rand",
+      "slug": "ann-bunker-rand",
+      "name": "Ann Bunker Rand",
+      "years": "1804-1888",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 110504539 — Ann Bunker Rand",
+          "url": "https://www.findagrave.com/memorial/110504539/ann-rand"
+        },
+        {
+          "label": "Find A Grave 37548610 — father Joseph Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 110452588 — mother Olive Otis Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "aka": [
+        "Ann Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+    },
+    "eli_bunker": {
+      "id": "eli_bunker",
+      "slug": "eli-bunker",
+      "name": "Eli Bunker",
+      "years": "1806-1879",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 210639851 — Eli Bunker",
+          "url": "https://www.findagrave.com/memorial/210639851/eli-bunker"
+        },
+        {
+          "label": "Find A Grave 37548610 — father Joseph Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 110452588 — mother Olive Otis Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+    },
+    "isaac_lewis_bunker": {
+      "id": "isaac_lewis_bunker",
+      "slug": "isaac-lewis-bunker",
+      "name": "Isaac Lewis Bunker",
+      "years": "1809-1858",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 216129024 — Isaac Lewis Bunker",
+          "url": "https://www.findagrave.com/memorial/216129024/isaac_lewis-bunker"
+        },
+        {
+          "label": "Find A Grave 37548610 — father Joseph Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 110452588 — mother Olive Otis Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+    },
+    "betsey_bunker_walker": {
+      "id": "betsey_bunker_walker",
+      "slug": "betsey-bunker-walker",
+      "name": "Betsey Bunker Walker",
+      "years": "1813-1892",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 228425541 — Betsey Bunker Walker",
+          "url": "https://www.findagrave.com/memorial/228425541/betsey-walker"
+        },
+        {
+          "label": "Find A Grave 37548610 — father Joseph Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 110452588 — mother Olive Otis Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "aka": [
+        "Betsey Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+    },
+    "abraham_e_bunker": {
+      "id": "abraham_e_bunker",
+      "slug": "abraham-e-bunker",
+      "name": "Abraham E. Bunker",
+      "years": "1827-1903",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37548539 — Abraham E. Bunker",
+          "url": "https://www.findagrave.com/memorial/37548539/abraham_e-bunker"
+        },
+        {
+          "label": "Find A Grave 37548610 — father Joseph Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548610/joseph-bunker"
+        },
+        {
+          "label": "Find A Grave 110452588 — mother Olive Otis Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "aka": [
+        "Abram Bunker",
+        "Abraham E. \"Abram\" Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_s_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "olive_otis_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+    },
+    "eliphalet_j_foss": {
+      "id": "eliphalet_j_foss",
+      "slug": "eliphalet-j-foss",
+      "name": "Eliphalet J. Foss",
+      "years": "1826-1888",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ambrose_foss_sr",
+        "abbie_wentworth_foss"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree — Eliphalet J Foss (Foss-718)",
+          "url": "https://www.wikitree.com/wiki/Foss-718"
+        },
+        {
+          "label": "WikiTree — brother Daniel W. Foss (Foss-716)",
+          "url": "https://www.wikitree.com/wiki/Foss-716"
+        }
+      ],
+      "aka": [
+        "Eliphalet Foss"
+      ],
+      "parent_links": [
+        {
+          "id": "ambrose_foss_sr",
+          "confidence": "Possible"
+        },
+        {
+          "id": "abbie_wentworth_foss",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "Named brother of **Daniel W. Foss** on WikiTree (Foss-718 / Foss-716). Soft-ingest **Possible** / `verified: false` — collateral under pack **C560** parents; no FAG memorial found this pass. Parents soft **Ambrose Foss Sr.** × **Abbie Wentworth Foss**. **No open obituary.** Do..."
+    },
+    "samuel_otis": {
+      "id": "samuel_otis",
+      "slug": "samuel-otis",
+      "name": "Samuel Otis",
+      "years": "1782-1816",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "paul_otis",
+        "elizabeth_parshley_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 130247749 — Samuel Otis",
+          "url": "https://www.findagrave.com/memorial/130247749/samuel-otis"
+        },
+        {
+          "label": "Find A Grave 64275619 — father Paul Otis (children grid)",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        },
+        {
+          "label": "Find A Grave 110452588 — sister Olive Otis Bunker (siblings)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "paul_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_parshley_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Olive Otis Bunker** on Paul Otis FAG children grid (and Olive siblings). Soft-ingest **Probable** / `verified: false` — pack **C649**. No UP climb / spouse dig this pass."
+    },
+    "paul_otis_jr": {
+      "id": "paul_otis_jr",
+      "slug": "paul-otis-jr",
+      "name": "Paul Otis Jr",
+      "years": "1787-1855",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "paul_otis",
+        "elizabeth_parshley_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 44198223 — Paul Otis",
+          "url": "https://www.findagrave.com/memorial/44198223/paul-otis"
+        },
+        {
+          "label": "Find A Grave 64275619 — father Paul Otis (children grid)",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        },
+        {
+          "label": "Find A Grave 110452588 — sister Olive Otis Bunker (siblings)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "aka": [
+        "Paul Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "paul_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_parshley_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Olive Otis Bunker** on Paul Otis FAG children grid (and Olive siblings). Soft-ingest **Probable** / `verified: false` — pack **C649**. Fairview Cemetery, Dansville MI. No UP climb / spouse dig this pass."
+    },
+    "betsey_otis_gilman": {
+      "id": "betsey_otis_gilman",
+      "slug": "betsey-otis-gilman",
+      "name": "Betsey Otis Gilman",
+      "years": "1789-1831",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "paul_otis",
+        "elizabeth_parshley_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 180274961 — Betsey Gilman",
+          "url": "https://www.findagrave.com/memorial/180274961/betsey-gilman"
+        },
+        {
+          "label": "Find A Grave 64275619 — father Paul Otis (children grid)",
+          "url": "https://www.findagrave.com/memorial/64275619/paul-otis"
+        },
+        {
+          "label": "Find A Grave 110452588 — sister Olive Otis Bunker (siblings)",
+          "url": "https://www.findagrave.com/memorial/110452588/olive-bunker"
+        }
+      ],
+      "aka": [
+        "Betsey Otis",
+        "Betsy Otis",
+        "Betsey Gilman"
+      ],
+      "parent_links": [
+        {
+          "id": "paul_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_parshley_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Olive Otis Bunker** on Paul Otis FAG children grid (and Olive siblings). Soft-ingest **Probable** / `verified: false` — pack **C649**. Married name Gilman (FAG). No UP climb / spouse dig this pass."
+    },
+    "abraham_runnels_bunker": {
+      "id": "abraham_runnels_bunker",
+      "slug": "abraham-runnels-bunker",
+      "name": "Abraham Runnels Bunker",
+      "years": "1785-1861",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "eli_bunker_sr",
+        "anna_gordon_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37548665 — Abraham Bunker",
+          "url": "https://www.findagrave.com/memorial/37548665/abraham-bunker"
+        },
+        {
+          "label": "Find A Grave 37548652 — father Eli Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Find A Grave 37548584 — mother Anna Gordon Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548584/anna-bunker"
+        }
+      ],
+      "aka": [
+        "Abraham Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "eli_bunker_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_gordon_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joseph S. Bunker** on Eli × Anna FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C644**. Barnstead Parade. No UP climb / spouse dig this pass."
+    },
+    "gordon_bunker": {
+      "id": "gordon_bunker",
+      "slug": "gordon-bunker",
+      "name": "Gordon Bunker",
+      "years": "1788-1872",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "eli_bunker_sr",
+        "anna_gordon_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 187238853 — Gordon Bunker",
+          "url": "https://www.findagrave.com/memorial/187238853/gordon-bunker"
+        },
+        {
+          "label": "Find A Grave 37548652 — father Eli Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Find A Grave 37548584 — mother Anna Gordon Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548584/anna-bunker"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "eli_bunker_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_gordon_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joseph S. Bunker** on Eli × Anna FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C644**. FAG bio: s/o Eli × Anna Gordon; m. Martha Davis 11 Aug 1808 Barnstead (spouse not soft this pass). No UP climb this pass."
+    },
+    "timothy_bunker": {
+      "id": "timothy_bunker",
+      "slug": "timothy-bunker",
+      "name": "Timothy Bunker",
+      "years": "1796-1840",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "eli_bunker_sr",
+        "anna_gordon_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 37548697 — Timothy Bunker",
+          "url": "https://www.findagrave.com/memorial/37548697/timothy-bunker"
+        },
+        {
+          "label": "Find A Grave 37548652 — father Eli Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548652/eli-bunker"
+        },
+        {
+          "label": "Find A Grave 37548584 — mother Anna Gordon Bunker (children grid)",
+          "url": "https://www.findagrave.com/memorial/37548584/anna-bunker"
+        },
+        {
+          "label": "Barnstead Parade Ground cemetery transcript (Access Genealogy)",
+          "url": "https://accessgenealogy.com/new-hampshire/barnstead-parade-ground-belknap-county-new-hampshire.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "eli_bunker_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_gordon_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Joseph S. Bunker** on Eli × Anna FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C644**. Barnstead Parade (cemetery transcript: Timothy d. 30 Dec 1840 ae 44). No UP climb / spouse dig this pass."
+    },
+    "nicholas_otis": {
+      "id": "nicholas_otis",
+      "slug": "nicholas-otis",
+      "name": "Nicholas Otis",
+      "years": "1746-1832",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 29 Mar 1746; m. Esther Berry; d. 3 Dec 1832 (1924 Otis). **No UP climb / spouse dig** this pass."
+    },
+    "micajah_otis": {
+      "id": "micajah_otis",
+      "slug": "micajah-otis",
+      "name": "Micajah Otis",
+      "years": "1747-1821",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Elder Micajah Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 21 May 1747; m. Sarah Foss 1769; Free Will Baptist elder; d. 20 May 1821 (1924). **No UP climb / spouse..."
+    },
+    "elijah_otis": {
+      "id": "elijah_otis",
+      "slug": "elijah-otis",
+      "name": "Elijah Otis",
+      "years": "1749-1838",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 10 Jun 1749; m. Dorothy Locke 19 Jul 1771; d. 8 Apr 1838 Durham (1924/NEHGR). **No UP climb / spouse di..."
+    },
+    "mary_otis_young": {
+      "id": "mary_otis_young",
+      "slug": "mary-otis-young",
+      "name": "Mary Otis Young",
+      "years": "1750-1849",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Mary Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. m. Elder Winthrop Young; d. 11 Apr 1849 ae 98 (NEHGR; 1924 has 1848). **No UP climb / spouse dig** this pass."
+    },
+    "sarah_otis_parshley": {
+      "id": "sarah_otis_parshley",
+      "slug": "sarah-otis-parshley",
+      "name": "Sarah Otis Parshley",
+      "years": "1751-1825",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Sarah Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 18 May 1751 (NEHGR; 1924 May 1); m. John B. Parshley; d. 6 Jul 1825. **No UP climb / spouse dig** this ..."
+    },
+    "stephen_otis": {
+      "id": "stephen_otis",
+      "slug": "stephen-otis",
+      "name": "Stephen Otis",
+      "years": "1761-1825",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Lieut. Stephen Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 24 Jun 1761; m. Hannah Emerson 30 Nov 1786; d. 4 Dec 1825 (1924). **No UP climb / spouse dig** this pass."
+    },
+    "joshua_otis_jr": {
+      "id": "joshua_otis_jr",
+      "slug": "joshua-otis-jr",
+      "name": "Joshua Otis Jr",
+      "years": "1764-1834",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Joshua Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 30 Mar 1764; m. Lydia Meader; d. 4 Mar 1834 Parishville NY (1924). Id joshua_otis_jr vs father joshua_o..."
+    },
+    "jane_otis_meader": {
+      "id": "jane_otis_meader",
+      "slug": "jane-otis-meader",
+      "name": "Jane Otis Meader",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Jane Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. m. Moses Meader Jr of Durham 9 Jul 1777; removed Alton; both dead by NEHGR 1851. **No UP climb / spouse di..."
+    },
+    "rebecca_otis_wilkinson": {
+      "id": "rebecca_otis_wilkinson",
+      "slug": "rebecca-otis-wilkinson",
+      "name": "Rebecca Otis Wilkinson",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_otis",
+        "jane_hussey_otis"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NEHGR 5 (1851) Otis Genealogy p.210 — child of Joshua Otis × Jane Hussey",
+          "url": "https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up"
+        },
+        {
+          "label": "Otis Family in America (1924) — Joshua × Jane children",
+          "url": "https://archive.org/details/genealogicalhist1924otis/page/132/mode/1up"
+        },
+        {
+          "label": "WikiTree — Joshua Otis (Otis-881) children",
+          "url": "https://www.wikitree.com/wiki/Otis-881"
+        }
+      ],
+      "aka": [
+        "Rebecca Otis"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_otis",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jane_hussey_otis",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. m. Wilkinson of Alton (NEHGR); both dead by 1851. **No UP climb / spouse dig** this pass."
+    },
+    "bradbury_bunker": {
+      "id": "bradbury_bunker",
+      "slug": "bradbury-bunker",
+      "name": "Bradbury Bunker",
+      "years": "1752–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Revolutionary War drummer; died of fever in service (Moran/Durham). No UP climb / spouse soft this..."
+    },
+    "sobriety_bunker_williams": {
+      "id": "sobriety_bunker_williams",
+      "slug": "sobriety-bunker-williams",
+      "name": "Sobriety Bunker Williams",
+      "years": "1755–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "aka": [
+        "Sobriety Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m. 7 Apr 1777 Samuel Williams of Barnstead (Moran/Durham); later Ohio. No UP climb / spouse soft t..."
+    },
+    "sarah_bunker_tibbetts": {
+      "id": "sarah_bunker_tibbetts",
+      "slug": "sarah-bunker-tibbetts",
+      "name": "Sarah Bunker Tibbetts",
+      "years": "1756-1834",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "aka": [
+        "Sarah Bunker",
+        "Sarah Sinclair"
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m1 Bradbury Sinclair; m2 Henry Tibbetts; d. 22 Dec 1834 (Durham/Moran). No UP climb / spouse soft ..."
+    },
+    "joseph_bunker_1757": {
+      "id": "joseph_bunker_1757",
+      "slug": "joseph-bunker-1757",
+      "name": "Joseph Bunker",
+      "years": "1757-1781",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "aka": [
+        "Joseph Bunker (Rev War)"
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Rev War; d. 1781 unmarried (Moran; father petition 1782). Id distinct from nephew `joseph_s_bunker..."
+    },
+    "jonathan_bunker_jr": {
+      "id": "jonathan_bunker_jr",
+      "slug": "jonathan-bunker-jr",
+      "name": "Jonathan Bunker Jr.",
+      "years": "1764–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "aka": [
+        "Jonathan Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Moran D-15 b. 9 Jan 1764; Durham extract says 1768 — soft uses Moran. No UP climb / spouse soft th..."
+    },
+    "hannah_bunker": {
+      "id": "hannah_bunker",
+      "slug": "hannah-bunker",
+      "name": "Hannah Bunker",
+      "years": "1767-1780",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. d. 1780 Durham (Hist. Durham / Moran). No UP climb / spouse soft this pass."
+    },
+    "isaiah_bunker": {
+      "id": "isaiah_bunker",
+      "slug": "isaiah-bunker",
+      "name": "Isaiah Bunker",
+      "years": "1769–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Moran b. 16 Sep 1769; Durham extract places Isaiah Oct 1750 — soft uses Moran; rem. Maine. No UP c..."
+    },
+    "obadiah_bunker": {
+      "id": "obadiah_bunker",
+      "slug": "obadiah-bunker",
+      "name": "Obadiah Bunker",
+      "years": "1770–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m. Judith Collins Berwick Me.; Starksboro Vt. (Durham/Moran). No UP climb / spouse soft this pass."
+    },
+    "elijah_bunker": {
+      "id": "elijah_bunker",
+      "slug": "elijah-bunker",
+      "name": "Elijah Bunker",
+      "years": "1772-1850",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "jonathan_bunker",
+        "sarah_runnels_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Moran Bunker Genealogy D-15 (Archive.org) — Jonathan issue",
+          "url": "https://archive.org/details/bunkergenealogyd00mora"
+        },
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Jonathan family 12",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Jonathon Bunker (Bunker-516) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-516"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_runnels_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m. Betsey Smith; rem. Anson Me.; d. 5 Jan 1850 (Durham). No UP climb / spouse soft this pass."
+    },
+    "john_runnels_jr": {
+      "id": "john_runnels_jr",
+      "slug": "john-runnels-jr",
+      "name": "John Runnels Jr.",
+      "years": "1716–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "John Runnels",
+        "Capt. John Runnels"
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named half-sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Half-brother of Sarah (1st wife unknown per Runnels). Barrington; Capt. John. Soft lean. (soft ~1716 – aft. 1785 Barrington). Spouses/UP **not** climbed."
+    },
+    "abraham_runnels": {
+      "id": "abraham_runnels",
+      "slug": "abraham-runnels",
+      "name": "Abraham Runnels",
+      "years": "1718-1804",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "Abraham Runnals"
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named half-sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Half-brother of Sarah (1st wife). Soft lean — ≠ Abraham Runnels Bunker. New Durham later. (23 May 1718 – 1804). Spouses/UP **not** climbed."
+    },
+    "william_runnels": {
+      "id": "william_runnels",
+      "slug": "william-runnels",
+      "name": "William Runnels",
+      "years": "1721–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah (Hannah Clark). Soft lean. (soft ~1721 – ~1773/74). Spouses/UP **not** climbed."
+    },
+    "elizabeth_runnels_snell": {
+      "id": "elizabeth_runnels_snell",
+      "slug": "elizabeth-runnels-snell",
+      "name": "Elizabeth Runnels Snell",
+      "years": "1724–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "Elizabeth Runnels",
+        "Elizabeth Snell"
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will as Elizabeth Snell (m. Solomon Snell). Soft lean — spouse not climbed. (soft ~1724). Spouses/UP **not** climbed."
+    },
+    "joseph_runnels": {
+      "id": "joseph_runnels",
+      "slug": "joseph-runnels",
+      "name": "Joseph Runnels",
+      "years": "1727-1765",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; tanner; will executor. Soft lean — widow Lydia not climbed. (10 Jun 1727 – ~1765). Spouses/UP **not** climbed."
+    },
+    "hannah_runnels_willey": {
+      "id": "hannah_runnels_willey",
+      "slug": "hannah-runnels-willey",
+      "name": "Hannah Runnels Willey",
+      "years": "1734-1756",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "aka": [
+        "Hannah Runnels",
+        "Hannah Willee",
+        "Hannah Willey"
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah (Runnels); m. Willee/Willey; d. before father’s will leaving Hannah + Elizabeth Willee. Soft lean — WT half-sib label held. (soft ~1734 – before 20 Ju..."
+    },
+    "deliverance_runnels": {
+      "id": "deliverance_runnels",
+      "slug": "deliverance-runnels",
+      "name": "Deliverance Runnels",
+      "years": "1743–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will legacy; guardian Hannah 1758. Soft lean — early death presumed by Runnels for youngest four. (soft ~1743 (minor 1758)). Spouses/UP **not** climbed."
+    },
+    "stephen_runnels": {
+      "id": "stephen_runnels",
+      "slug": "stephen-runnels",
+      "name": "Stephen Runnels",
+      "years": "1744–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will under-14. Soft lean — early death presumed. (soft ~1744). Spouses/UP **not** climbed."
+    },
+    "solomon_runnels": {
+      "id": "solomon_runnels",
+      "slug": "solomon-runnels",
+      "name": "Solomon Runnels",
+      "years": "1746–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will under-14 + gun. Soft lean — early death presumed. (soft ~1746). Spouses/UP **not** climbed."
+    },
+    "winthrop_runnels": {
+      "id": "winthrop_runnels",
+      "slug": "winthrop-runnels",
+      "name": "Winthrop Runnels",
+      "years": "1749–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_runnels",
+        "hannah_clark_runnels"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Runnels 1873 Genealogy — John¹ children / will",
+          "url": "https://archive.org/details/genealogyofrunne00runn"
+        },
+        {
+          "label": "WikiTree — John Runnels (Runnels-195) children",
+          "url": "https://www.wikitree.com/wiki/Runnels-195"
+        },
+        {
+          "label": "WikiTree — Sarah (Runnels) Bunker (Runnels-194) sibling list",
+          "url": "https://www.wikitree.com/wiki/Runnels-194"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_runnels",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_clark_runnels",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will under-14. Soft lean — early death presumed. (soft ~1749). Spouses/UP **not** climbed."
+    },
+    "patience_bunker_clements": {
+      "id": "patience_bunker_clements",
+      "slug": "patience-bunker-clements",
+      "name": "Patience Bunker Clements",
+      "years": "1721-1822",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_bunker",
+        "ann_giles_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6 children",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Joseph Bunker (Bunker-517) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-517"
+        },
+        {
+          "label": "WikiTree — Ann (Giles) Bunker (Giles-1658) children",
+          "url": "https://www.wikitree.com/wiki/Giles-1658"
+        }
+      ],
+      "aka": [
+        "Patience Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_giles_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 6: m. Job Clements; widow 1766; WT 1721–1822. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+    },
+    "anna_bunker_stevenson": {
+      "id": "anna_bunker_stevenson",
+      "slug": "anna-bunker-stevenson",
+      "name": "Anna Bunker Stevenson",
+      "years": "1725–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_bunker",
+        "ann_giles_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6 children",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Joseph Bunker (Bunker-517) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-517"
+        },
+        {
+          "label": "WikiTree — Ann (Giles) Bunker (Giles-1658) children",
+          "url": "https://www.wikitree.com/wiki/Giles-1658"
+        }
+      ],
+      "aka": [
+        "Anna Bunker",
+        "Anna Bunker Drew"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_giles_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 6: m. (1) Lemuel Drew, (2) Joseph Stevenson. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+    },
+    "benjamin_bunker": {
+      "id": "benjamin_bunker",
+      "slug": "benjamin-bunker",
+      "name": "Benjamin Bunker",
+      "years": "1740-1827",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_bunker",
+        "ann_giles_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6 children",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Joseph Bunker (Bunker-517) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-517"
+        },
+        {
+          "label": "WikiTree — Ann (Giles) Bunker (Giles-1658) children",
+          "url": "https://www.wikitree.com/wiki/Giles-1658"
+        }
+      ],
+      "aka": [
+        "Benjamin Bunker of Durham"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_giles_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 11: m. Betty Barnes of Portsmouth; d. 2 Oct 1827 ae 87. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+    },
+    "james_giles_bunker": {
+      "id": "james_giles_bunker",
+      "slug": "james-giles-bunker",
+      "name": "James Giles Bunker",
+      "years": "1741-1798",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_bunker",
+        "ann_giles_bunker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Genealogy of the Bunker Family of Durham NH — Joseph family 6 children",
+          "url": "https://newhampshiregenealogy.com/strafford/genealogy-of-the-bunker-family-of-durham-new-hampshire.htm"
+        },
+        {
+          "label": "WikiTree — Joseph Bunker (Bunker-517) children",
+          "url": "https://www.wikitree.com/wiki/Bunker-517"
+        },
+        {
+          "label": "WikiTree — Ann (Giles) Bunker (Giles-1658) children",
+          "url": "https://www.wikitree.com/wiki/Giles-1658"
+        }
+      ],
+      "aka": [
+        "James Bunker"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_bunker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_giles_bunker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 6: m. Polly Batchelder of Deerfield 13 Oct 1785 (?); WT James Giles. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+    }
+  }
+};
+window.OBJECTS_INDEX = {};

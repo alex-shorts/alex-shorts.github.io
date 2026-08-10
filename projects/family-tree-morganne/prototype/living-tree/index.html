@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>window.__FT_GATE_KEY__ = "ft-gate-morganne-v1";</script>
+
+  <script>window.__TREE_PRIMARY__ = "morganne";</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Morganne Shorts — Family tree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script>
+    (function(){
+      var key = window.__FT_GATE_KEY__;
+      if (!key) return;
+      try {
+        if (sessionStorage.getItem(key) !== "ok") {
+          location.replace("../");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="proto-tag">SHARE</span>
+      <h1>Living tree</h1>
+    </div>
+    <p class="lede">Loading collection…</p>
+    <div class="toolbar">
+      <label class="tool select-wrap">
+        <span class="select-label">Primary</span>
+        <select id="primary-select" aria-label="Primary person for tree and DNA"></select>
+      </label>
+      <button type="button" id="btn-reset" class="tool">Reset primary</button>
+      <button type="button" id="btn-fit" class="tool">Fit</button>
+      <label class="tool check">
+        <input type="checkbox" id="toggle-physics" />
+        Physics
+      </label>
+      <label class="tool check" title="Show named siblings of the blood line as quieter collateral">
+        <input type="checkbox" id="toggle-siblings" />
+        Siblings
+      </label>
+      <label class="tool check" title="Re-fetch collection/people/index.json (needs npm run prototype:tree)">
+        <input type="checkbox" id="toggle-live" />
+        Live · 5m
+      </label>
+      <span id="live-stamp" class="live-stamp" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <main class="stage">
+    <svg id="graph" aria-label="Family knowledge graph"></svg>
+    <aside id="panel" class="panel" hidden>
+      <button type="button" class="panel-close" id="panel-close" aria-label="Close">×</button>
+      <div id="panel-body"></div>
+    </aside>
+    <div id="lightbox" class="lightbox" hidden>
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+      <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous" hidden>‹</button>
+      <div class="lightbox-main">
+        <div class="lightbox-stage" id="lightbox-stage">
+          <div class="lightbox-zoom-layer" id="lightbox-zoom-layer">
+            <img id="lightbox-img" alt="" draggable="false" />
+          </div>
+        </div>
+        <aside class="lightbox-transcript" id="lightbox-transcript" hidden>
+          <h3 class="lightbox-transcript-title">Transcription</h3>
+          <pre class="lightbox-transcript-body" id="lightbox-transcript-body"></pre>
+        </aside>
+      </div>
+      <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next" hidden>›</button>
+      <div class="lightbox-footer">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+        <p id="lightbox-count" class="lightbox-count" hidden></p>
+        <div class="lightbox-zoom-tools" role="group" aria-label="Zoom">
+          <button type="button" id="lightbox-zoom-out" aria-label="Zoom out">−</button>
+          <button type="button" id="lightbox-zoom-reset" aria-label="Reset zoom">100%</button>
+          <button type="button" id="lightbox-zoom-in" aria-label="Zoom in">+</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="legend" id="legend"></footer>
+  <div id="hint" class="hint">Open from folder (or npm run prototype:tree) · drag · Primary sets ascent · + expand / − collapse · solid = parent→child · dashed = marriage · <a href="./alexander.html">Alexander</a> · <a href="./morganne.html">Morganne</a></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="./people-data.js"></script>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

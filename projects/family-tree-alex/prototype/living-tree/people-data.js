@@ -1,0 +1,15144 @@
+window.PEOPLE_DATA = {
+  "version": 1,
+  "updated": "2026-08-10",
+  "focus_id": "alexander",
+  "people": {
+    "alexander": {
+      "id": "alexander",
+      "slug": null,
+      "name": "Alexander Martin Shorts",
+      "years": "1987–",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "william",
+        "heidi"
+      ],
+      "spouses": [
+        "morganne"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0392",
+        "FT-0396",
+        "FT-0397"
+      ]
+    },
+    "morganne": {
+      "id": "morganne",
+      "slug": "morganne",
+      "name": "Morganne Elizabeth Shorts",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "bill_parsons",
+        "marcy_parsons"
+      ],
+      "spouses": [
+        "alexander"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0008"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "bill_parsons",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "marcy_parsons",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "alexander",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Primary focus for the in-law ascent (Parsons / Rudd). Daughter of **Bill Parsons** × **Marcy Parsons**; spouse of **Alexander Shorts**. Living-private — no public vitals/death digs."
+    },
+    "heidi": {
+      "id": "heidi",
+      "slug": null,
+      "name": "Heidi Jill Shorts",
+      "aka": "née Anderson",
+      "years": "",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "john_anderson",
+        "virginia_jill_cole"
+      ],
+      "spouses": [
+        "william"
+      ],
+      "children": [
+        "samuel",
+        "alexander",
+        "nicholas"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0028"
+      ]
+    },
+    "william": {
+      "id": "william",
+      "slug": null,
+      "name": "William Stanley Shorts",
+      "years": "",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "richard",
+        "gloria"
+      ],
+      "spouses": [
+        "heidi"
+      ],
+      "children": [
+        "samuel",
+        "alexander",
+        "nicholas"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0005",
+        "FT-0380",
+        "FT-0381",
+        "FT-0382",
+        "FT-0383",
+        "FT-0384",
+        "FT-0385",
+        "FT-0386",
+        "FT-0387",
+        "FT-0388",
+        "FT-0389"
+      ],
+      "note": "Living-private. Soft newspaper Accessions FT-0380–FT-0389 = published Utah swim only; Alex-authorized 2026-08-09. See docs/research/people/stories/heidi-bill-published-2026-08-09.md"
+    },
+    "virginia_jill_cole": {
+      "id": "virginia_jill_cole",
+      "slug": "virginia-jill-cole",
+      "name": "Virginia Jill Cole",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "myron_mamlock_cole",
+        "virginia_victoria_racine"
+      ],
+      "spouses": [
+        "john_anderson"
+      ],
+      "children": [
+        "heidi"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0028"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — C950/C952/C953/C957 Y; Virginia Jill Cole",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "CA county marriage — Jon Martin Anderson × Virginia Jill Cole 19 Jun 1955; bride parents Myron M Cole × Virginia Victoria Racine",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:K8F9-1Y9"
+        },
+        {
+          "label": "FT-0028 — CA marriage Accession",
+          "url": "collection/objects/FT-0028-california-county-marriage-jon-martin-anderson-v/entry.md"
+        }
+      ],
+      "aka": [
+        "Jill Cole",
+        "Virginia Jill Anderson"
+      ],
+      "parent_links": [
+        {
+          "id": "myron_mamlock_cole",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "virginia_victoria_racine",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "john_anderson",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Confirmed** / `verified: true` mother of **Heidi Jill Shorts** (**C950** Y). Maiden **Cole**; spouse **Jon Martin Anderson**. Parents **Myron Mamlock Cole (Cohn)** × **Virginia Victoria Racine** (**C952** / **C957** Y). Living-private. Marriage Accession **FT-0028**."
+    },
+    "john_anderson": {
+      "id": "john_anderson",
+      "slug": "john-martin-anderson",
+      "name": "Jon Martin Anderson",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "marion_lawrence_anderson",
+        "kathleen_blakely"
+      ],
+      "spouses": [
+        "virginia_jill_cole"
+      ],
+      "children": [
+        "heidi"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0028",
+        "FT-0395"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — C950/C951/C953/C956 Y",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "CA county marriage — Jon Martin Anderson × Virginia Jill Cole 19 Jun 1955 Los Angeles",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:K8F9-1Y9"
+        },
+        {
+          "label": "FT-0028 — CA marriage Accession",
+          "url": "collection/objects/FT-0028-california-county-marriage-jon-martin-anderson-v/entry.md"
+        },
+        {
+          "label": "Family knowledge (Alex, 2026-08-06) — living; middle name Martin",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John Martin Anderson",
+        "Jon Anderson"
+      ],
+      "parent_links": [
+        {
+          "id": "marion_lawrence_anderson",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "kathleen_blakely",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "virginia_jill_cole",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Confirmed** / `verified: true` father of **Heidi Jill Shorts** (**C950** Y). Spouse **Virginia Jill Cole** (**C953** / **C956** Y). Parents **Marion Lawrence Anderson** × **Kathleen Blakely** (**C951** Y). Living-private — no public death digs. Marriage Accession **FT-0028**."
+    },
+    "virginia_victoria_racine": {
+      "id": "virginia_victoria_racine",
+      "slug": "virginia-victoria-racine",
+      "name": "Virginia Victoria Racine",
+      "years": "1902–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "researching",
+      "parents": [
+        "solomon_racine",
+        "pauline_muschini"
+      ],
+      "spouses": [
+        "myron_mamlock_cole"
+      ],
+      "children": [
+        "virginia_jill_cole"
+      ],
+      "media": [
+        {
+          "file": "media/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan.pdf",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/1396811"
+        },
+        {
+          "file": "media/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/1396811"
+        },
+        {
+          "file": "media/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0021",
+        "FT-0025",
+        "FT-0028",
+        "FT-0096",
+        "FT-0230",
+        "FT-0231"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — mother of Virginia Jill Cole",
+          "url": ""
+        },
+        {
+          "label": "NYC HVR birth B-M-1902-0041933 — Virginia Victoria Racien 15 Oct 1902; parents Salomon Racien × Pauline Auxchkin; 68 W 35",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/1396811"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1927-0000778 — Myron W Cohn × Virginia V Racine 15 Dec 1926 (catalog 1927); mother Pauline Puschkin",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        }
+      ],
+      "aka": [
+        "Virginia V Racine",
+        "Virginia Racien",
+        "Virginia Victoria Cohn",
+        "Virginia Victoria Cole"
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_racine",
+          "confidence": "Probable"
+        },
+        {
+          "id": "pauline_muschini",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "myron_mamlock_cole",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Mother of **Virginia Jill Cole** (family). Birth **15 Oct 1902** Manhattan cert **41933** (PDF **B-M-1902-0041933**): parents **Solomon/Salomon Racien** × **Pauline** (maiden **Auxchkin** / marriage **Puschkin**). Married **Myron W. Cohn** **15 Dec 1926** Manhattan (catalog **..."
+    },
+    "myron_mamlock_cole": {
+      "id": "myron_mamlock_cole",
+      "slug": "myron-mamlock-cole",
+      "name": "Myron Mamlock Cole",
+      "years": "1900-1951",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "researching",
+      "parents": [
+        "monroe_cohn",
+        "mamie_mamlock"
+      ],
+      "spouses": [
+        "virginia_victoria_racine"
+      ],
+      "children": [
+        "virginia_jill_cole"
+      ],
+      "media": [
+        {
+          "file": "media/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan.pdf",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        },
+        {
+          "file": "media/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0023",
+        "FT-0024",
+        "FT-0025",
+        "FT-0028",
+        "FT-0094"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, 2026-08-07) — Cole (Cohn)",
+          "url": ""
+        },
+        {
+          "label": "NYC HVR marriage M-M-1927-0000778 — Myron W Cohn × Virginia V Racine 15 Dec 1926; age 26; accountant; b. NYC; parents Monroe × Mamie Mamlock; residence Jamestown NY",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        },
+        {
+          "label": "GGG NYC grooms — Cohn, Myron W × Racine, Virginia V (indexed 1926; image catalog 1927 cert 778)",
+          "url": "https://www.germangenealogygroup.com/records-search/grooms.php"
+        }
+      ],
+      "aka": [
+        "Myron Mamlock Cohn",
+        "Myron W Cohn",
+        "Myron Cole"
+      ],
+      "parent_links": [
+        {
+          "id": "monroe_cohn",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mamie_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "virginia_victoria_racine",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Father of **Virginia Jill Cole** (family). **Myron W. Cohn** married **Virginia V. Racine** **15 Dec 1926** Manhattan (HVR catalog **M-M-1927-0000778**): age **26**, accountant, b. **NYC** (not Nyack), residence Jamestown NY; parents **Monroe** × **Mamie Mamlock**. Family surn..."
+    },
+    "pauline_muschini": {
+      "id": "pauline_muschini",
+      "slug": "pauline-muschini-racine",
+      "name": "Pauline Racine",
+      "years": "1865-1927",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_dushken"
+      ],
+      "spouses": [
+        "solomon_racine"
+      ],
+      "children": [
+        "virginia_victoria_racine"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0021",
+        "FT-0025",
+        "FT-0096",
+        "FT-0230",
+        "FT-0231"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR birth B-M-1902-0041933 — mother Pauline Racien, maiden Auxchkin, age 35, Russia",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/1396811"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1927-0000778 — mother maiden Pauline Puschkin",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        },
+        {
+          "label": "FAG 93478005 — Pauline Bess Dushken Le Racine; death-cert paste (cn 21183)",
+          "url": "https://www.findagrave.com/memorial/93478005/pauline_bess-le_racine"
+        },
+        {
+          "label": "GGG NYC deaths — Pauline B Racine, 15 Sep 1927, Manhattan cert 21183",
+          "url": "https://www.germangenealogygroup.com/records-search/deaths.php"
+        }
+      ],
+      "aka": [
+        "Pauline Bess Duschkin",
+        "Pauline Bess Dushken",
+        "Pauline Duschkin",
+        "Pauline Dushken",
+        "Pauline Muschini",
+        "Pauline Puschkin",
+        "Pauline Auxchkin",
+        "Pauline Buschki",
+        "Pauline Racien",
+        "Pauline B Racine"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_dushken",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "solomon_racine",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Virginia Victoria Racine**. Married name **Pauline Racien/Racine**. Death identity: **Pauline Bess Dushken Le Racine**, b. **6 Oct 1865** Russia, d. **15 Sep 1927** Manhattan cert **21183**, widowed, housework; bur. **Riverside Cemetery**, Saddle Brook...",
+      "blocker": "HVR PDF D-M-1927-0021183 (Akamai 403 this wave — blocked digitization)"
+    },
+    "solomon_racine": {
+      "id": "solomon_racine",
+      "slug": "solomon-racine",
+      "name": "Solomon Racine",
+      "years": "1864-1927",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "pauline_muschini"
+      ],
+      "children": [
+        "virginia_victoria_racine"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0021",
+        "FT-0025",
+        "FT-0096",
+        "FT-0230"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR birth B-M-1902-0041933 — Virginia Victoria Racien; father Salomon/Solomon Racien, age 38, Russia, tailor, 68 W 35",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/1396811"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1927-0000778 — bride father Sol",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/9193947"
+        },
+        {
+          "label": "FAG 93478005 — Pauline Bess death-cert paste: Marital Status Widowed (15 Sep 1927)",
+          "url": "https://www.findagrave.com/memorial/93478005/pauline_bess-le_racine"
+        }
+      ],
+      "aka": [
+        "Salomon Racien",
+        "Solomon Racien"
+      ],
+      "spouse_links": [
+        {
+          "id": "pauline_muschini",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Virginia Victoria Racine**. Named **Salomon/Solomon Racien** on her Manhattan birth cert (**41933** / view **1396811**): age **38** in 1902 (b. ~1864), b. **Russia**, tailor, residence **68 W. 35th St**. Pauline’s 1927 death cert lists her **widowed** ..."
+    },
+    "samuel_dushken": {
+      "id": "samuel_dushken",
+      "slug": "samuel-dushken",
+      "name": "Samuel Dushken",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [],
+      "children": [
+        "pauline_muschini"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0230"
+      ],
+      "sources": [
+        {
+          "label": "FAG 93478005 — Pauline Bess Dushken Le Racine death-cert paste: Father's Name Samuel Dushken, b. Russia",
+          "url": "https://www.findagrave.com/memorial/93478005/pauline_bess-le_racine"
+        },
+        {
+          "label": "GGG NYC deaths — Pauline B Racine, 15 Sep 1927, Manhattan cert 21183 (index)",
+          "url": "https://www.germangenealogygroup.com/records-search/deaths.php"
+        }
+      ],
+      "aka": [
+        "Samuel Duschkin",
+        "Samuel Dushkin"
+      ],
+      "note": "**Probable** father of **Pauline Bess Racine** (`pauline_muschini`). Named **Samuel Dushken** (b. Russia) on her Manhattan death certificate (cn **21183**, 15 Sep 1927), as pasted on [FAG 93478005](https://www.findagrave.com/memorial/93478005/pauline_bess-le_racine). Soft-inge...",
+      "blocker": "HVR image D-M-1927-0021183 still needed (Akamai blocked this wave)"
+    },
+    "mamie_mamlock": {
+      "id": "mamie_mamlock",
+      "slug": "mamie-mamlock-cohn",
+      "name": "Mamie Mamlock",
+      "years": "1872-1945",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "mayer_mamlock",
+        "rochelle_kahn"
+      ],
+      "spouses": [
+        "monroe_cohn"
+      ],
+      "children": [
+        "myron_mamlock_cole",
+        "seymour_cohn"
+      ],
+      "media": [
+        {
+          "file": "media/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "file": "media/D-M-1945-0012625-mamie-cohn-death-manhattan.pdf",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        },
+        {
+          "file": "media/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0022",
+        "FT-0023",
+        "FT-0024",
+        "FT-0025",
+        "FT-0094",
+        "FT-0095",
+        "FT-0240",
+        "FT-0260",
+        "FT-0261",
+        "FT-0262",
+        "FT-0306",
+        "FT-0398"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR marriage M-M-1893-0013078 — Mamie Mamlock × Monroe Cohn; parents Meyer Mamlock × Rachel Miller",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "label": "NYC HVR death D-M-1945-0012625 — b. 1 May 1872; d. 4 Jun 1945; parents Meyer Mamlock × Rochelle Kahn; Mt Carmel",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        },
+        {
+          "label": "Find A Grave 95985316 — Mamie Cohn; d. 4 Jun 1945; Mt Carmel Glendale; no bio; no grave photo",
+          "url": "https://www.findagrave.com/memorial/95985316/mamie-cohn"
+        },
+        {
+          "label": "Neg: GenealogyBank 2026-08-08 — \"Mamie Cohn\" NY 1945; 15 doc hits but 7-day trial wall on open (checkout/13374291); no obit text captured",
+          "url": "https://www.genealogybank.com/explore/newspapers/all?kw=%22Mamie%20Cohn%22&dateY1=1945&dateY2=1945"
+        }
+      ],
+      "aka": [
+        "Mamie Cohn",
+        "Mamie Mamlock Cohn"
+      ],
+      "parent_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rochelle_kahn",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "monroe_cohn",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Myron Mamlock Cole / Cohn**. Married **Monroe Cohn** **17 Oct 1893** (age **22**). Born **1 May 1872** New York City; died **4 Jun 1945** Misericordia Hospital, Manhattan (cert **12625**); widow; residence **305 West End Ave**; buried **Mt. Carmel**, B..."
+    },
+    "monroe_cohn": {
+      "id": "monroe_cohn",
+      "slug": "monroe-cohn",
+      "name": "Monroe Cohn",
+      "years": "1867-1921",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "solomon_cohn",
+        "bertha_pottesham"
+      ],
+      "spouses": [
+        "mamie_mamlock"
+      ],
+      "children": [
+        "myron_mamlock_cole",
+        "seymour_cohn"
+      ],
+      "media": [
+        {
+          "file": "media/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan.pdf",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "file": "media/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "file": "media/D-M-1921-0029268-monroe-cohn-death-manhattan.pdf",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        },
+        {
+          "file": "media/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0022",
+        "FT-0023",
+        "FT-0024",
+        "FT-0025",
+        "FT-0094",
+        "FT-0095",
+        "FT-0099",
+        "FT-0240",
+        "FT-0261",
+        "FT-0262",
+        "FT-0398"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR marriage M-M-1893-0013078 — Monroe Cohn × Mamie Mamlock 17 Oct 1893; b. Hartford Conn; parents Solomon × Bertha Gotsdanner",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "label": "NYC HVR death D-M-1921-0029268 — d. 25 Dec 1921 age 54; parents Solomon Cohn × Bertha Potsdam; Mt Carmel",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        },
+        {
+          "label": "Neg: FAG Mt Carmel — no Monroe Cohn memorial (d. 1921 search; wrong Monroe Cohn 1905–1992 Monticello excluded)",
+          "url": "https://www.findagrave.com/memorial/search?firstname=Monroe&lastname=Cohn&locationId=cemetery-64109&deathyear=1921&deathyearfilter=0"
+        },
+        {
+          "label": "Neg: GenealogyBank 2026-08-08 — \"Monroe Cohn\" NY 1921–1922; 15 doc hits but 7-day trial wall on open (checkout/13374291); no obit text captured",
+          "url": "https://www.genealogybank.com/explore/newspapers/all?kw=%22Monroe%20Cohn%22&dateY1=1921&dateY2=1922"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "solomon_cohn",
+          "confidence": "Probable"
+        },
+        {
+          "id": "bertha_pottesham",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "mamie_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Myron Mamlock Cole / Cohn**. Married **Mamie Mamlock** **17 Oct 1893** Manhattan (cert **13078**): age **26**, b. **Hartford, Conn.** Died **25 Dec 1921** Manhattan (cert **29268**), age **54**, shoe jobber, **245 Fort Washington Ave**; buried **Mt. Ca..."
+    },
+    "rochelle_kahn": {
+      "id": "rochelle_kahn",
+      "slug": "rochelle-kahn-mamlock",
+      "name": "Rochelle Kahn",
+      "years": "1839-1911",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "myer_miller",
+        "sarah_kohn"
+      ],
+      "spouses": [
+        "mayer_mamlock"
+      ],
+      "children": [
+        "mamie_mamlock",
+        "albert_mamlock",
+        "franciska_mamlock",
+        "esther_mamlock",
+        "emma_mamlock",
+        "jenny_mamlock"
+      ],
+      "media": [
+        {
+          "file": "media/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0022",
+        "FT-0024",
+        "FT-0260",
+        "FT-0305"
+      ],
+      "sources": [
+        {
+          "label": "FS NYC Municipal Deaths — Rachel Mawlock 21 Mar 1911 Manh. cn 9738; parents Myer Miller × Sarah Kohn (both Germany)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:271T-32T"
+        },
+        {
+          "label": "NYC HVR death D-M-1945-0012625 — Mamie Cohn; mother Rochelle Kahn b. Germany",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1893-0013078 — bride mother maiden Rachel Miller",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "label": "GGG NYC deaths — Mamlock, Rachel 21 Mar 1911 Manhattan cert 9738 age 72",
+          "url": "https://www.germangenealogygroup.com/records-search/deaths.php"
+        },
+        {
+          "label": "ISTG Allemannia 9 Sep 1867 — Rosa Mamlock + children (FAN)",
+          "url": "https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html"
+        }
+      ],
+      "aka": [
+        "Rachel Mamlock",
+        "Rachel Miller",
+        "Rachel Mawlock",
+        "Rosa Mamlock",
+        "Rochelle Mamlock"
+      ],
+      "parent_links": [
+        {
+          "id": "myer_miller",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_kohn",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Mamie Mamlock Cohn**. NYC municipal death (FS ark `1:1:271T-32T`, cert **9738**) names her **Rachel Mawlock**, widowed, b. Germany ~1839, parents **Myer Miller** × **Sarah Kohn** (both Germany); burial Long Island **24 Mar 1911**. HVR image for 1911 #9..."
+    },
+    "mayer_mamlock": {
+      "id": "mayer_mamlock",
+      "slug": "mayer-mamlock",
+      "name": "Mayer Mamlock",
+      "years": "1832-1897",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "rochelle_kahn"
+      ],
+      "children": [
+        "mamie_mamlock",
+        "albert_mamlock",
+        "franciska_mamlock",
+        "esther_mamlock",
+        "emma_mamlock",
+        "jenny_mamlock"
+      ],
+      "media": [
+        {
+          "file": "media/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0022",
+        "FT-0024",
+        "FT-0260",
+        "FT-0305",
+        "FT-0306"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR death D-M-1945-0012625 — Mamie Cohn; father Meyer Mamlock b. Germany",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1893-0013078 — bride father Meyer Mamlock",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        },
+        {
+          "label": "GGG NYC deaths — Mamlock, Mayer 9 Jun 1897 Manhattan cert 17330 age 65",
+          "url": "https://www.germangenealogygroup.com/records-search/deaths.php"
+        },
+        {
+          "label": "ISTG Allemannia 9 Sep 1867 — Rosa Mamlock + children (FAN)",
+          "url": "https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html"
+        }
+      ],
+      "aka": [
+        "Meyer Mamlock"
+      ],
+      "spouse_links": [
+        {
+          "id": "rochelle_kahn",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Mamie Mamlock Cohn** (named **Meyer Mamlock** on her 1945 death cert and 1893 marriage; index **Mayer**). Born Germany. Soft-ingest; `verified: false`.",
+      "blocker": "Parents still unknown (pack C1133). Death Manh. 17330 (1897) not in NYC "
+    },
+    "sarah_kohn": {
+      "id": "sarah_kohn",
+      "slug": "sarah-kohn",
+      "name": "Sarah Kohn",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "myer_miller"
+      ],
+      "children": [
+        "rochelle_kahn"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS NYC Municipal Deaths — Rachel Mawlock/Mamlock 21 Mar 1911; mother Sarah Kohn",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:271T-32T"
+        }
+      ],
+      "aka": [
+        "Sarah Kahn",
+        "Sara Kohn"
+      ],
+      "spouse_links": [
+        {
+          "id": "myer_miller",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Rochelle/Rachel (Kahn) Mamlock** per NYC municipal death index (FS). Maiden **Kohn ≈ Kahn** helps explain Mamie’s death naming mother **Rochelle Kahn** while 1893 marriage used **Rachel Miller** (paternal surname). Soft-ingest; `verified: false`."
+    },
+    "myer_miller": {
+      "id": "myer_miller",
+      "slug": "myer-miller",
+      "name": "Myer Miller",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_kohn"
+      ],
+      "children": [
+        "rochelle_kahn"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FS NYC Municipal Deaths — Rachel Mawlock/Mamlock 21 Mar 1911; father Myer Miller",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:271T-32T"
+        }
+      ],
+      "aka": [
+        "Meyer Miller",
+        "Myer Müller"
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_kohn",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Rochelle/Rachel (Kahn) Mamlock** per NYC municipal death index (FS ark `1:1:271T-32T`). Soft-ingest; `verified: false`. Do not invent German town yet."
+    },
+    "bertha_pottesham": {
+      "id": "bertha_pottesham",
+      "slug": "bertha-pottesham-cohn",
+      "name": "Bertha Cohn",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "solomon_cohn"
+      ],
+      "children": [
+        "monroe_cohn"
+      ],
+      "media": [
+        {
+          "file": "media/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0022",
+        "FT-0023"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR death D-M-1921-0029268 — Monroe Cohn; mother maiden Bertha Potsdam, b. Germany",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1893-0013078 — groom mother maiden Bertha Gotsdanner",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        }
+      ],
+      "aka": [
+        "Bertha Pottesham",
+        "Bertha Potsdam",
+        "Bertha Gotsdanner"
+      ],
+      "spouse_links": [
+        {
+          "id": "solomon_cohn",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Monroe Cohn**. Maiden spelling **open**: death OCR **Potsdam/Pottesham** vs marriage **Gotsdanner** — same woman (Germany). Soft-ingest; `verified: false`. Graph id `bertha_pottesham`."
+    },
+    "solomon_cohn": {
+      "id": "solomon_cohn",
+      "slug": "solomon-cohn",
+      "name": "Solomon Cohn",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "bertha_pottesham"
+      ],
+      "children": [
+        "monroe_cohn"
+      ],
+      "media": [
+        {
+          "file": "media/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png",
+          "kind": "vital",
+          "source": "NYC Municipal Archives HVR",
+          "source_url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0022",
+        "FT-0023"
+      ],
+      "sources": [
+        {
+          "label": "NYC HVR death D-M-1921-0029268 — Monroe Cohn; father Solomon Cohn b. Germany",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
+        },
+        {
+          "label": "NYC HVR marriage M-M-1893-0013078 — groom father Solomon Cohn",
+          "url": "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "bertha_pottesham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Monroe Cohn**. Named on Monroe’s **1893 marriage** and **1921 death** certificates; birthplace **Germany** on the death cert. Soft-ingest; `verified: false`.",
+      "blocker": "Parents still unknown (pack C1131). No NYC GGG marriage to Bertha; digit"
+    },
+    "kathleen_blakely": {
+      "id": "kathleen_blakely",
+      "slug": "kathleen-blakely",
+      "name": "Kathleen Blakely",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "living-private",
+      "parents": [
+        "guerdon_conde_buck"
+      ],
+      "spouses": [
+        "marion_lawrence_anderson"
+      ],
+      "children": [
+        "john_anderson"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0028",
+        "FT-0390",
+        "FT-0391",
+        "FT-0393",
+        "FT-0394",
+        "FT-0395",
+        "FT-0399"
+      ],
+      "sources": [
+        {
+          "label": "CA county marriage — Jon Martin Anderson × Virginia Jill Cole 19 Jun 1955; bridegroom mother Kathleen Blakely",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:K8F9-1Y9"
+        },
+        {
+          "label": "FT-0028 — CA marriage Accession",
+          "url": "collection/objects/FT-0028-california-county-marriage-jon-martin-anderson-v/entry.md"
+        },
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — mother of Jon; father Dr. Guerdon Conde Buck; brief m. Wendell Heil (~6 mo, he died); Buck ≠ prior married name",
+          "url": ""
+        },
+        {
+          "label": "Heidi pack lock C951 Y (2026-08-08)",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        }
+      ],
+      "aka": [
+        "Kathleen Blakely Anderson",
+        "Kathleen Blakely Anderson Heil"
+      ],
+      "parent_links": [
+        {
+          "id": "guerdon_conde_buck",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "marion_lawrence_anderson",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Confirmed** / `verified: true` mother of **Jon Martin Anderson** (**C951** Y). Father soft **Dr. Guerdon Conde Buck** — Alex **N** on Buck-as-prior-married-name (**C955**). Brief later marriage to **Wendell Heil** (~6 months; he died) — FAN note only. Keep **living-private**..."
+    },
+    "marion_lawrence_anderson": {
+      "id": "marion_lawrence_anderson",
+      "slug": "marion-lawrence-anderson",
+      "name": "Marion Lawrence Anderson",
+      "years": "1906–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "researching",
+      "parents": [
+        "hugh_dupree_anderson",
+        "urtha_stonebraker"
+      ],
+      "spouses": [
+        "kathleen_blakely"
+      ],
+      "children": [
+        "john_anderson"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0028",
+        "FT-0182"
+      ],
+      "sources": [
+        {
+          "label": "CA county marriage — Jon Martin Anderson × Virginia Jill Cole 19 Jun 1955 LA; groom parents Marion L Anderson × Kathleen Blakely",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:K8F9-1Y9"
+        },
+        {
+          "label": "FT-0028 — CA marriage Accession",
+          "url": "collection/objects/FT-0028-california-county-marriage-jon-martin-anderson-v/entry.md"
+        },
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — father of Jon; parents Hugh Dupree Anderson × Urtha Stonebraker (reject Hamlin Martin×Hannah)",
+          "url": ""
+        },
+        {
+          "label": "Heidi pack lock C951 Y (2026-08-08)",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "Mills Co. IA birth index — Marion L. Anderson 1 Jun 1906; mother Stonebraker",
+          "url": "http://iagenweb.org/mills/births/1904_1906.htm"
+        },
+        {
+          "label": "OR Multnomah marriage index — Kathleen Blakely Buck × M L Anderson (Buck = father Guerdon; not prior married name)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:CL31-446Z"
+        }
+      ],
+      "aka": [
+        "Marion L Anderson",
+        "M L Anderson"
+      ],
+      "parent_links": [
+        {
+          "id": "hugh_dupree_anderson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "urtha_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "kathleen_blakely",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Confirmed** / `verified: true` father of **Jon Martin Anderson** (pack **C951** Y). Soft birth **1 Jun 1906**, Mills Co. IA (mother Stonebraker) — accepts Hugh×Urtha **C1107** parent-link; vitals set this pass (**C1095**). Parents soft **Hugh Dupree Anderson** × **Urtha Ston..."
+    },
+    "guerdon_conde_buck": {
+      "id": "guerdon_conde_buck",
+      "slug": "guerdon-conde-buck",
+      "name": "Guerdon Conde Buck",
+      "years": "1874-1932",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_junior_buck",
+        "sarah_elizabeth_trask"
+      ],
+      "spouses": [
+        "hulda_gertrude_moore"
+      ],
+      "children": [
+        "kathleen_blakely"
+      ],
+      "media": [
+        {
+          "file": "media/fag-122210552-stone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 122210552",
+          "source_url": "https://www.findagrave.com/memorial/122210552/guerdon-c-buck"
+        },
+        {
+          "file": "media/fag-122210552-obit-clip.jpg",
+          "kind": "obituary",
+          "source": "Find a Grave / Platteville paper clip",
+          "source_url": "https://www.findagrave.com/memorial/122210552/guerdon-c-buck"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — Kathleen’s father; Buck was father’s name (not her prior married name)",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "FAG memorial 122210552 — Dr Guerdon C Buck; stone face Guerdon Conde; Greenwood Platteville",
+          "url": "https://www.findagrave.com/memorial/122210552/guerdon-c-buck"
+        },
+        {
+          "label": "FT-0029 — Platteville ~22 Jun 1932 death notice (FAG clip)",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Dr. Guerdon Conde Buck",
+        "Dr. Guerdon C. Buck",
+        "Dr. Buck"
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_junior_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_elizabeth_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hulda_gertrude_moore",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** Platteville MD **Guerdon Conde Buck** (FAG stone **CONDE**; obit **Dr. Guerdon C. Buck**) — soft identity for Alex’s father of **Kathleen Blakely**. Soft parents **Dr. Erastus Junior Buck** × **Sarah Elizabeth Trask**; soft spouse **Hulda/Hilda Gertrude Moore** (m..."
+    },
+    "hulda_gertrude_moore": {
+      "id": "hulda_gertrude_moore",
+      "slug": "hulda-gertrude-moore",
+      "name": "Hulda Gertrude Moore",
+      "years": "1890-1964",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "guerdon_conde_buck"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 122112709 — Hulda Gertrude Moore Keates; m. Guerdon C Buck 1920",
+          "url": "https://www.findagrave.com/memorial/122112709/hulda-gertrude-keates"
+        },
+        {
+          "label": "FT-0029 — widow Mrs. Hilda Moore Buck",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Hilda Moore Buck",
+        "Hulda Gertrude Moore Keates",
+        "Mrs. Hilda Moore Buck"
+      ],
+      "spouse_links": [
+        {
+          "id": "guerdon_conde_buck",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft spouse of **Guerdon Conde Buck** (m. **1920** on FAG; widow in 1932 as **Hilda**). Later **Keates** (Stonehill Robinson Keates on FAG). **No children on FAG**; **not** soft-linked as mother of living-private **Kathleen Blakely** (m. 1920 vs adult mother-of-~1..."
+    },
+    "sarah_elizabeth_trask": {
+      "id": "sarah_elizabeth_trask",
+      "slug": "sarah-elizabeth-trask",
+      "name": "Sarah Elizabeth Trask",
+      "years": "1846-1943",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_trask",
+        "anne_rhodes_trask"
+      ],
+      "spouses": [
+        "erastus_junior_buck"
+      ],
+      "children": [
+        "guerdon_conde_buck",
+        "gertrude_a_buck",
+        "clara_h_buck",
+        "winifred_kendrick_buck",
+        "florence_trask_buck",
+        "berenice_buck"
+      ],
+      "media": [
+        {
+          "file": "media/fag-122210553-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 122210553",
+          "source_url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176",
+        "FT-0200",
+        "FT-0201",
+        "FT-0360"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 122210553 — Sarah Elizabeth Trask Buck; Platteville Journal 30 Sep 1943 paste",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        },
+        {
+          "label": "FT-0029 — Guerdon 1932 survivors mother Mrs. Sarah Buck of Milwaukee",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        },
+        {
+          "label": "FT-0176 — Platteville Journal 30 Sep 1943 obit paste (FAG)",
+          "url": "collection/objects/FT-0176-mrs-sarah-trask-buck-seattle-death-platteville-j/entry.md"
+        },
+        {
+          "label": "FT-0200 — spouse in 1877 biographical sketch (Beaver Dam m. 1866)",
+          "url": "collection/objects/FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877/entry.md"
+        },
+        {
+          "label": "FT-0201 — Platteville Normal Teacher of Reading 1876–1880",
+          "url": "collection/objects/FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876/entry.md"
+        },
+        {
+          "label": "FT-0360 — named wife in Butterfield 1881 Grant County bio",
+          "url": "collection/objects/FT-0360-e-j-buck-md-butterfield-grant-county-1881/entry.md"
+        },
+        {
+          "label": "FAG parent link — John Trask × Anne Rhodes Trask",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        }
+      ],
+      "aka": [
+        "Sarah Elizabeth Trask Buck",
+        "Mrs. Sarah Buck",
+        "Sarah Trafk Buck"
+      ],
+      "parent_links": [
+        {
+          "id": "john_trask",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anne_rhodes_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "erastus_junior_buck",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft mother of **Guerdon Conde Buck**. Widow of **Dr. Erastus J. Buck**; d. Seattle **25 Sep 1943** age 97; cremated remains to Greenwood Platteville. 1943 paste names six daughters + only son Guerdon (1932) — **no grandchildren named**. Soft parents **John Trask*..."
+    },
+    "erastus_junior_buck": {
+      "id": "erastus_junior_buck",
+      "slug": "erastus-junior-buck",
+      "name": "Erastus Junior Buck",
+      "years": "1828-1901",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_d_buck",
+        "elizabeth_roxana_baldwin"
+      ],
+      "spouses": [
+        "sarah_elizabeth_trask"
+      ],
+      "children": [
+        "guerdon_conde_buck",
+        "gertrude_a_buck",
+        "clara_h_buck",
+        "winifred_kendrick_buck",
+        "florence_trask_buck",
+        "berenice_buck"
+      ],
+      "media": [
+        {
+          "file": "media/fag-131391996-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 131391996",
+          "source_url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176",
+        "FT-0197",
+        "FT-0198",
+        "FT-0200",
+        "FT-0201",
+        "FT-0360",
+        "FT-0361",
+        "FT-0362"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 131391996 — Dr Erastus Junior E. J. Buck; Platteville runaway injury death notice",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        },
+        {
+          "label": "FT-0029 — son Guerdon C. Buck 1932 obit names late Dr. Erastus J. Buck",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        },
+        {
+          "label": "FT-0175 — Grant County Witness 26 Jun 1901 obit (FAG paste)",
+          "url": "collection/objects/FT-0175-dr-e-j-buck-runaway-injury-death-grant-county-wi/entry.md"
+        },
+        {
+          "label": "FT-0197 — 1895 WI veteran census Surgeon 18th Inf. Platteville",
+          "url": "collection/objects/FT-0197-1895-wi-veteran-census-erastus-buck-surgeon-18th/entry.md"
+        },
+        {
+          "label": "FT-0198 — Heath MA baptism Erastus s. Erastus and Roxana Oct 1827",
+          "url": "collection/objects/FT-0198-heath-ma-baptism-erastus-s-erastus-roxana-1827/entry.md"
+        },
+        {
+          "label": "FT-0200 — 1877 US Biographical Dictionary sketch (Platteville MD)",
+          "url": "collection/objects/FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877/entry.md"
+        },
+        {
+          "label": "FT-0201 — Sarah Normal faculty Reading 1876–1880 (McGregor overlap)",
+          "url": "collection/objects/FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876/entry.md"
+        },
+        {
+          "label": "FT-0360 — Butterfield 1881 Grant County bio (Shiloh, Aug 1868 Platteville)",
+          "url": "collection/objects/FT-0360-e-j-buck-md-butterfield-grant-county-1881/entry.md"
+        },
+        {
+          "label": "FT-0361 — Montello Express 1876 Westfield physician vignette",
+          "url": "collection/objects/FT-0361-e-j-buck-westfield-montello-express-1876/entry.md"
+        },
+        {
+          "label": "FT-0362 — YMLA vice president with Duncan McGregor ~1881",
+          "url": "collection/objects/FT-0362-e-j-buck-ymla-vice-president-platteville-1881/entry.md"
+        },
+        {
+          "label": "FAG child grid — Guerdon + daughters via Sarah Trask Buck memorial",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        },
+        {
+          "label": "Heath MA vitals — Erastus s. Erastus and Roxana bp. Oct 1827",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "FAG parent link — Erastus D. Buck × Elizabeth Roxana Baldwin",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "aka": [
+        "Dr. Erastus Junior Buck",
+        "E. J. Buck",
+        "Dr. E. J. Buck",
+        "Erastus J. Buck"
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_elizabeth_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Guerdon Conde Buck** (Platteville MD). Civil War–era physician; d. **20 Jun 1901** after runaway accident. Soft spouse **Sarah Elizabeth Trask** (m. 1866 on FAG). Soft parents **Erastus D. Buck** × **Elizabeth Roxana Baldwin** (Heath MA marriage 1..."
+    },
+    "anne_rhodes_trask": {
+      "id": "anne_rhodes_trask",
+      "slug": "anne-rhodes-trask",
+      "name": "Anne Rhodes Trask",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_trask"
+      ],
+      "children": [
+        "sarah_elizabeth_trask",
+        "annie_h_trask_furlong",
+        "clara_anna_trask"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG child grid — mother of Sarah Elizabeth Trask Buck (122210553)",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        }
+      ],
+      "aka": [
+        "Anne Rhodes",
+        "Mrs. Anne Trask"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft mother of **Sarah Elizabeth Trask**. FAG parent link **Anne Rhodes Trask** on Sarah’s memorial; siblings **Annie H. Trask Furlong** and **Clara Anna Trask** on same grid. Compiled trees give maiden **Grant** — not used as source here. Own parents not soft-cli..."
+    },
+    "john_trask": {
+      "id": "john_trask",
+      "slug": "john-trask",
+      "name": "John Trask",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "anne_rhodes_trask"
+      ],
+      "children": [
+        "sarah_elizabeth_trask",
+        "annie_h_trask_furlong",
+        "clara_anna_trask"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG child grid — father of Sarah Elizabeth Trask Buck (122210553)",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anne_rhodes_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Sarah Elizabeth Trask** (Guerdon Buck line). Named on Sarah’s FAG memorial parent link **John Trask** × **Anne Rhodes Trask**. Compiled trees cite **Washington death certificate** for Sarah (1943) naming John Trask — image not on free sources this..."
+    },
+    "elizabeth_roxana_baldwin": {
+      "id": "elizabeth_roxana_baldwin",
+      "slug": "elizabeth-roxana-baldwin",
+      "name": "Elizabeth Roxana Baldwin",
+      "years": "1801–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_baldwin",
+        "sarah_deane_baldwin"
+      ],
+      "spouses": [
+        "erastus_d_buck"
+      ],
+      "children": [
+        "erastus_junior_buck",
+        "olive_bawlden_buck",
+        "winslow_buck",
+        "halbert_a_buck",
+        "mary_roxana_buck",
+        "chauncey_sadie_buck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0198",
+        "FT-0281",
+        "FT-0282"
+      ],
+      "sources": [
+        {
+          "label": "FAG child grid — mother of Dr Erastus Junior Buck (131391996)",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        },
+        {
+          "label": "Heath MA marriages — Roxana Baldwin × Erastus Buck 11 Mar 1823",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_marr.htm"
+        },
+        {
+          "label": "Heath MA vitals — Roxanda d. David Baldwin bp. 22 Nov 1801",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Buck gen-back Heath C1402 — soft father David Baldwin",
+          "url": "docs/research/people/proposals/buck-gen-back-heath-2026-08-08.md"
+        },
+        {
+          "label": "Baldwin mother unlock C1581 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Roxana Baldwin",
+        "Elizabeth Rosana Baldwin",
+        "Roxanda Baldwin"
+      ],
+      "parent_links": [
+        {
+          "id": "david_baldwin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_deane_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft mother of **Erastus Junior Buck**. FAG **Elizabeth Rosana/Roxana Baldwin Buck** on son’s memorial; Heath marriage **11 Mar 1823**; baptisms of Erastus/Olive/William name **Erastus × Roxana**. Soft parents **David Baldwin** × **Sarah (Deane) Baldwin** from *Ro..."
+    },
+    "erastus_d_buck": {
+      "id": "erastus_d_buck",
+      "slug": "erastus-d-buck",
+      "name": "Erastus D. Buck",
+      "years": "1798–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_buck",
+        "sarah_maxwell_buck"
+      ],
+      "spouses": [
+        "elizabeth_roxana_baldwin"
+      ],
+      "children": [
+        "erastus_junior_buck",
+        "olive_bawlden_buck",
+        "winslow_buck",
+        "halbert_a_buck",
+        "mary_roxana_buck",
+        "chauncey_sadie_buck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0198",
+        "FT-0286",
+        "FT-0360"
+      ],
+      "sources": [
+        {
+          "label": "FAG child grid — father of Dr Erastus Junior Buck (131391996)",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        },
+        {
+          "label": "Heath MA marriages — Erastus Buck × Roxana Baldwin 11 Mar 1823",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_marr.htm"
+        },
+        {
+          "label": "Heath MA vitals to 1850 — Erastus ch. William 20 Jan 1798 (probable same man)",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Buck gen-back Heath C1400 — soft father Lt. William Buck",
+          "url": "docs/research/people/proposals/buck-gen-back-heath-2026-08-08.md"
+        },
+        {
+          "label": "Buck wife unlock C1541 — soft mother Sarah (Maxwell) Buck",
+          "url": "docs/research/people/proposals/buck-william-wife-heath-2026-08-08.md"
+        }
+      ],
+      "aka": [
+        "Erastus Buck"
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Erastus Junior Buck**. FAG names **Erastus D. Buck** on son’s memorial; Heath town marriage **11 Mar 1823** to **Roxana Baldwin**; baptisms of Erastus/Olive/William name **Erastus × Roxana**. Soft parents **Lt. William Buck** × **Sarah (Maxwell) B..."
+    },
+    "sarah_deane_baldwin": {
+      "id": "sarah_deane_baldwin",
+      "slug": "sarah-deane-baldwin-heath",
+      "name": "Sarah (Deane) Baldwin",
+      "years": "–1809",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "david_baldwin"
+      ],
+      "children": [
+        "lucy_baldwin_heath",
+        "betsy_baldwin_heath",
+        "phinehas_baldwin_heath",
+        "elizabeth_roxana_baldwin",
+        "kerziah_baldwin_heath"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0280",
+        "FT-0281"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Sarah Deane [w. Col. David] d. 30 Apr 1809 ae 28",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA vitals — Lucy D., d. Col. David and Sarah Deane d. 1827",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Baldwin mother unlock C1580 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sarah Baldwin",
+        "Sarah Deane"
+      ],
+      "spouse_links": [
+        {
+          "id": "david_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft wife of **David Baldwin** (`david_baldwin`, Heath *Col. David*) and soft mother of **Elizabeth Roxana Baldwin**. Death **30 Apr 1809** names *Sarah Deane [w. Col. David]* ae 28; daughter **Lucy** death names *Col. David and Sarah Deane* as parents. Baptism cl..."
+    },
+    "david_baldwin": {
+      "id": "david_baldwin",
+      "slug": "david-baldwin-heath",
+      "name": "David Baldwin",
+      "years": "–1813",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_deane_baldwin"
+      ],
+      "children": [
+        "lucy_baldwin_heath",
+        "betsy_baldwin_heath",
+        "phinehas_baldwin_heath",
+        "elizabeth_roxana_baldwin",
+        "kerziah_baldwin_heath"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0280",
+        "FT-0281",
+        "FT-0282",
+        "FT-0292"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Roxanda, d. David, bp. 22 Nov 1801",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Heath MA vitals — David Baldwin Jr. d. 15 Apr 1813 ae ~28",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA vitals — Lucy D., d. Col. David and Sarah Deane",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Buck gen-back Heath C1402 — docs/research/people/proposals/buck-gen-back-heath-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Baldwin mother unlock C1580 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "David Baldwin Jr.",
+        "Col. David Baldwin"
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_deane_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Elizabeth Roxana Baldwin** (*Roxanda, d. David, bp. 22 Nov 1801* Heath). Heath deaths name **Col. David** as father of **Lucy** with wife **Sarah Deane** (**C1580–C1581**). Soft spouse **Sarah (Deane) Baldwin**; children Lucy, Betsy, Phinehas, Rox...",
+      "blocker": "Own parents | Blocked | — | — | C1589 |"
+    },
+    "sarah_maxwell_buck": {
+      "id": "sarah_maxwell_buck",
+      "slug": "sarah-maxwell-buck-heath",
+      "name": "Sarah (Maxwell) Buck",
+      "years": "–1839",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "benjamin_maxwell",
+        "anna_winslow_maxwell"
+      ],
+      "spouses": [
+        "william_buck"
+      ],
+      "children": [
+        "erastus_d_buck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0283",
+        "FT-0284",
+        "FT-0285",
+        "FT-0287",
+        "FT-0288"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA marriages — Sarah and William Buck, 1785 (MAXWELL section)",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_marr.htm"
+        },
+        {
+          "label": "Heath MA vitals — Sally w. William d. 14 Mar 1839 ae 76, ch. Lt. Benjamin Maxwell and Anna (Winslow)",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA vitals — William Jr. s. Lt. William and Sarah d. 10 Jan 1817",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Buck wife unlock C1540 — docs/research/people/proposals/buck-william-wife-heath-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sarah Buck",
+        "Sally Buck"
+      ],
+      "spouse_links": [
+        {
+          "id": "william_buck",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft wife of **Lt. William Buck** (`william_buck`) and soft mother of **Erastus D. Buck**. Heath marriage *Sarah and William Buck*, 1785 (MAXWELL section); death **14 Mar 1839** names *Sally, w. William*, ae 76, *ch. Lt. Benjamin Maxwell and Anna (Winslow)*; sibli..."
+    },
+    "william_buck": {
+      "id": "william_buck",
+      "slug": "william-buck-heath",
+      "name": "Lt. William Buck",
+      "years": "–1839",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_maxwell_buck"
+      ],
+      "children": [
+        "erastus_d_buck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0283",
+        "FT-0285",
+        "FT-0286",
+        "FT-0291"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Erastus, ch. William, 20 Jan 1798 (C.R. Ray, s. Lt. William and w.)",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Anderson Buck CONNECT dig C1400 — docs/research/people/proposals/buck-gen-back-heath-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Heath MA vitals — William h. Sally d. 1 Apr 1839 ae 84",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Buck wife unlock C1540 — docs/research/people/proposals/buck-william-wife-heath-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "William Buck"
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_maxwell_buck",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Erastus D. Buck** from Heath *Erastus, ch. William, 20 Jan 1798* (**C1400**). Soft spouse **Sarah (Maxwell) Buck** (`sarah_maxwell_buck`) from marriage 1785, death 1839 naming Maxwell parentage, and *William Jr. s. Lt. William and Sarah* 1817 (**C...",
+      "blocker": "Own parents | Blocked | — | — | C1546; FAN William d"
+    },
+    "anna_winslow_maxwell": {
+      "id": "anna_winslow_maxwell",
+      "slug": "anna-winslow-maxwell-heath",
+      "name": "Anna (Winslow) Maxwell",
+      "years": "–1814",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "benjamin_maxwell"
+      ],
+      "children": [
+        "sarah_maxwell_buck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0284",
+        "FT-0285",
+        "FT-0287",
+        "FT-0288",
+        "FT-0322"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA deaths — Anna Winslow w. Lt. Benjamin, d. 28 Oct 1814 ae 71",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA marriages — Anna and Benjamin Maxwell, 1762",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_marr.htm"
+        },
+        {
+          "label": "Heath MA deaths — Sally w. William d. 14 Mar 1839, ch. Lt. Benjamin Maxwell and Anna (Winslow)",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Find A Grave — Anna Winslow Maxwell (87173271)",
+          "url": "https://www.findagrave.com/memorial/87173271/anna-maxwell"
+        },
+        {
+          "label": "Maxwell parents CONNECT C1575 — docs/research/people/proposals/maxwell-winslow-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Anna Winslow",
+        "Anna Maxwell"
+      ],
+      "spouse_links": [
+        {
+          "id": "benjamin_maxwell",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft mother of **Sarah (Maxwell) Buck** (death **14 Mar 1839**). Spouse **Lt. Benjamin Maxwell** (m. **1762**). d. **28 Oct 1814** Heath ae 71. Own parents **not named** on any Heath vital — `parents: []`. `verified: false`.",
+      "blocker": "Own parents | Blocked | — | — | C1575; no vital names parents"
+    },
+    "benjamin_maxwell": {
+      "id": "benjamin_maxwell",
+      "slug": "benjamin-maxwell-heath",
+      "name": "Lt. Benjamin Maxwell",
+      "years": "–1829",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hugh_maxwell",
+        "sarah_corbett_maxwell"
+      ],
+      "spouses": [
+        "anna_winslow_maxwell"
+      ],
+      "children": [
+        "sarah_maxwell_buck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0284",
+        "FT-0285",
+        "FT-0287",
+        "FT-0288",
+        "FT-0289",
+        "FT-0290",
+        "FT-0320",
+        "FT-0321",
+        "FT-0322",
+        "FT-0323",
+        "FT-0324",
+        "FT-0325",
+        "FT-0326",
+        "FT-0327",
+        "FT-0328",
+        "FT-0329"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA deaths — Benjamin Lt., h. Anna (Winslow), ch. Hugh and Sarah Corbett, d. 2 Feb 1829 ae 92",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA marriages — Benjamin and Anna Winslow, 1762",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_marr.htm"
+        },
+        {
+          "label": "Heath MA deaths — Sally w. William d. 14 Mar 1839, ch. Lt. Benjamin Maxwell and Anna (Winslow)",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Find A Grave — LTC Benjamin Butler Maxwell Sr (48687650)",
+          "url": "https://www.findagrave.com/memorial/48687650/benjamin_butler-maxwell"
+        },
+        {
+          "label": "Maxwell parents CONNECT C1570 — docs/research/people/proposals/maxwell-winslow-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Benjamin Maxwell"
+      ],
+      "parent_links": [
+        {
+          "id": "hugh_maxwell",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_corbett_maxwell",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_winslow_maxwell",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Sarah (Maxwell) Buck** (death **14 Mar 1839**). Spouse **Anna (Winslow)** (m. **1762**). Soft parents **Hugh Maxwell** × **Sarah (Corbett) Maxwell** from own death row (*ch. Hugh and Sarah Corbett*). d. **2 Feb 1829** Heath ae 92. `verified: false`."
+    },
+    "sarah_corbett_maxwell": {
+      "id": "sarah_corbett_maxwell",
+      "slug": "sarah-corbett-maxwell-heath",
+      "name": "Sarah (Corbett) Maxwell",
+      "years": "–1772",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hugh_maxwell"
+      ],
+      "children": [
+        "benjamin_maxwell"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0284",
+        "FT-0287",
+        "FT-0289",
+        "FT-0322",
+        "FT-0323"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA deaths — Sarah Corbett w. Hugh d. ---- 1772 ae 81; b. Minterburn, Ire.",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA deaths — Benjamin Lt. ch. Hugh and Sarah Corbett (C1571)",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Find A Grave — Hugh Maxwell spouse grid (25190915)",
+          "url": "https://www.findagrave.com/memorial/25190915/hugh-maxwell"
+        },
+        {
+          "label": "Maxwell parents CONNECT — docs/research/people/proposals/maxwell-winslow-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sarah Corbett",
+        "Sarah Maxwell"
+      ],
+      "spouse_links": [
+        {
+          "id": "hugh_maxwell",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft mother of **Lt. Benjamin Maxwell**, named on Benjamin’s Heath death row (*ch. Hugh and Sarah Corbett*). Soft death **1772** ae 81; birthplace **Minterburn, Ireland**; spouse **Hugh Maxwell**. Own parents blocked (**C1578**). `verified: false`.",
+      "blocker": "Own parents blocked (C1578)"
+    },
+    "hugh_maxwell": {
+      "id": "hugh_maxwell",
+      "slug": "hugh-maxwell-heath",
+      "name": "Hugh Maxwell",
+      "years": "–1759",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "sarah_corbett_maxwell"
+      ],
+      "children": [
+        "benjamin_maxwell"
+      ],
+      "media": [
+        {
+          "file": "media/fag-25190915-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 25190915",
+          "source_url": "https://images.findagrave.com/photos/2015/315/25190915_1447329815.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0284",
+        "FT-0287",
+        "FT-0289",
+        "FT-0320",
+        "FT-0322",
+        "FT-0323",
+        "FT-0327"
+      ],
+      "sources": [
+        {
+          "label": "Heath MA deaths — Hugh Maxwell d. ---- 1759 ae 59; b. Minterburn, Ire.; h. Sarah Corbett",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Heath MA deaths — Benjamin Lt. ch. Hugh and Sarah Corbett (C1570)",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Find A Grave — Hugh Maxwell (25190915, Bedford)",
+          "url": "https://www.findagrave.com/memorial/25190915/hugh-maxwell"
+        },
+        {
+          "label": "Maxwell parents CONNECT — docs/research/people/proposals/maxwell-winslow-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_corbett_maxwell",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** soft father of **Lt. Benjamin Maxwell**, named on Benjamin’s Heath death row (*ch. Hugh and Sarah Corbett*). Soft death **1759** ae 59; birthplace **Minterburn, Ireland**; spouse **Sarah Corbett**. Own parents blocked (**C1578**). `verified: false`.",
+      "blocker": "Own parents blocked (C1578)"
+    },
+    "urtha_stonebraker": {
+      "id": "urtha_stonebraker",
+      "slug": "urtha-stonebraker",
+      "name": "Urtha Stonebraker",
+      "years": "1880–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "j_a_stonebraker",
+        "p_h_stonebraker"
+      ],
+      "spouses": [
+        "hugh_dupree_anderson"
+      ],
+      "children": [
+        "marion_lawrence_anderson",
+        "azalea_gayle_anderson",
+        "lucille_anderson"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0173",
+        "FT-0178",
+        "FT-0182",
+        "FT-0183",
+        "FT-0192",
+        "FT-0340",
+        "FT-0341",
+        "FT-0342"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — mother of Marion Lawrence Anderson; maiden Stonebraker",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "Mills Co. IA marriage 1902 — Stonebraker, Urtha (22) × Hugh D. Anderson (25), 26 May, nr. Henderson",
+          "url": "http://iagenweb.org/mills/marriage/1900-1905/1902.htm"
+        },
+        {
+          "label": "Mills Co. Tribune 29 May 1902 — license Bertha Stonebraker (21) × Hugh D. Anderson (24), Henderson",
+          "url": "https://iagenweb.org/mills/news/newspapers/tribnews02a.htm"
+        },
+        {
+          "label": "Mills Co. delayed birth — mother Urtha Almina STONEBRAKER (Azalia Gaile 1904)",
+          "url": "http://iagenweb.org/mills/births/delbirthsA.htm"
+        },
+        {
+          "label": "Mills Co. delayed birth — mother Urtha A. STONEBRAKER (Ursula Lucille 1913)",
+          "url": "http://iagenweb.org/mills/births/delbirthsA.htm"
+        },
+        {
+          "label": "Mills Co. birth index 1904–1906 — Marion L. + Azalia Gayle mother Stonebraker",
+          "url": "http://iagenweb.org/mills/births/1904_1906.htm"
+        },
+        {
+          "label": "Henderson Christian Church — J. A. Stonebraker founding member 1877; Perkins married Belle Stonebraker",
+          "url": "http://iagenweb.org/mills/churches/and_henderson_cc.htm"
+        },
+        {
+          "label": "Mills Co. 1905 Henderson census — J. A. / P. H. / F. G. Stonebraker cluster (cards 166–168)",
+          "url": "https://www.iagenweb.org/mills/census/state/1905_henderson.htm"
+        },
+        {
+          "label": "Wave g dig — Urtha d.1973 CA Tier D hint (MyHeritage compiled); no free CADI/SSDI/FAG primary — C1594 not wired",
+          "url": "docs/research/people/proposals/hugh-death-unlock-2026-08-08.md"
+        }
+      ],
+      "aka": [
+        "Urtha Almina Stonebraker",
+        "Urtha A. Stonebraker",
+        "Urtha Anderson",
+        "Bertha Stonebraker"
+      ],
+      "parent_links": [
+        {
+          "id": "j_a_stonebraker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "p_h_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hugh_dupree_anderson",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Marion Lawrence Anderson**. Free Mills Co. IA sources confirm maiden **Stonebraker** and given name **Urtha** (delayed births: **Urtha Almina** / **Urtha A.**). Tribune marriage license prints **Bertha** — treat as newspaper variant of same woman, not ..."
+    },
+    "hugh_dupree_anderson": {
+      "id": "hugh_dupree_anderson",
+      "slug": "hugh-dupree-anderson",
+      "name": "Hugh Dupree Anderson",
+      "years": "1877–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "urtha_stonebraker"
+      ],
+      "children": [
+        "marion_lawrence_anderson",
+        "azalea_gayle_anderson",
+        "lucille_anderson"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0177",
+        "FT-0178",
+        "FT-0182",
+        "FT-0183",
+        "FT-0192",
+        "FT-0195",
+        "FT-0307",
+        "FT-0340",
+        "FT-0341",
+        "FT-0342",
+        "FT-0343"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) ? father of Marion; made Alex?s horseshoe bookends; middle Dupree",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "Mills Co. IA marriage 1902 ? Hugh D. Anderson (25) ? Stonebraker, Urtha (22), 26 May, nr. Henderson",
+          "url": "http://iagenweb.org/mills/marriage/1900-1905/1902.htm"
+        },
+        {
+          "label": "Mills Co. Tribune 29 May 1902 ? marriage license Hugh D. Anderson (24) ? Bertha Stonebraker (21), both Henderson",
+          "url": "https://iagenweb.org/mills/news/newspapers/tribnews02a.htm"
+        },
+        {
+          "label": "Mills Co. delayed birth ? Azalia Gaile Anderson 9 Aug 1904 Henderson; father Hugh D. Anderson 26 IA",
+          "url": "http://iagenweb.org/mills/births/delbirthsA.htm"
+        },
+        {
+          "label": "Mills Co. birth index 1904?1906 ? Marion L. Anderson 1 Jun 1906; mother Stonebraker",
+          "url": "http://iagenweb.org/mills/births/1904_1906.htm"
+        },
+        {
+          "label": "Mills Co. delayed birth ? Ursula Lucille Anderson 16 Jul 1913 Emerson; father Hugh D. Anderson 35 IA",
+          "url": "http://iagenweb.org/mills/births/delbirthsA.htm"
+        },
+        {
+          "label": "DNA parent FAN ? Silver City bio John W. Anderson ? Emily E. Dupray; collateral Harry W. + MO DC John E.; Dupree/Dupray middle ? no record names Hugh as their son (C1295)",
+          "url": "docs/research/people/proposals/dna-hugh-anderson-parents-2026-08-08.md"
+        },
+        {
+          "label": "Wave c dig 2026-08-08 ? Tribune obit index + Emerson cem negative; 1925 Mills census not web-transcribed; parents still unwired (C1342)",
+          "url": "docs/research/people/proposals/dna-build-wave-2026-08-08c.md"
+        },
+        {
+          "label": "Wave d dig 2026-08-08 ? full obit index + death bk2 + births 1873-80 negative; Emily obit off-index; parents still unwired (C1382)",
+          "url": "docs/research/people/proposals/dna-hugh-anderson-parents-2026-08-08.md"
+        },
+        {
+          "label": "Wave e — FAG Hugh Darwin Anderson (1877–1964 San Jose) linked to John W × Emily; Possible identity bridge (C1491–C1494)",
+          "url": "docs/research/people/proposals/hugh-death-unlock-2026-08-08.md"
+        },
+        {
+          "label": "Wave f — FAG Hugh Darwin spouse Emily Jane Maupin (m.1903 CA) not Urtha; no Marion/Azalea/Lucille — hard negative C1557",
+          "url": "docs/research/people/proposals/hugh-death-unlock-2026-08-08.md"
+        },
+        {
+          "label": "Wave g — Lawn Hill Hugh D. 1876–1938 × Nora (not Urtha); Harold son — hard negative C1597; no CA CADI/SSDI/obit text C1593",
+          "url": "docs/research/people/proposals/hugh-death-unlock-2026-08-08.md"
+        },
+        {
+          "label": "Hamilton Co. Lawn Hill Cemetery — Hugh D. Anderson 1876–1938; Nora 1886–1946; Harold Earl son of Hugh & Nora",
+          "url": "https://iagenweb.org/hamilton/cem/LawnHill/LawnHillCem1.2017.html"
+        }
+      ],
+      "aka": [
+        "Hugh D. Anderson"
+      ],
+      "spouse_links": [
+        {
+          "id": "urtha_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Marion Lawrence Anderson** (Alex Heidi pack) — identity hardened on free Mills Co. IA indexes: **Hugh D. Anderson** × **Urtha** Stonebraker, Henderson/Emerson area. Middle **Dupree** from Alex (indexes show **D.** only). Soft birth ~**1877–1878** Iowa...."
+    },
+    "p_h_stonebraker": {
+      "id": "p_h_stonebraker",
+      "slug": "p-h-stonebraker",
+      "name": "P. H. Stonebraker",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "j_a_stonebraker"
+      ],
+      "children": [
+        "urtha_stonebraker",
+        "belle_stonebraker",
+        "f_g_stonebraker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0173",
+        "FT-0191",
+        "FT-0340",
+        "FT-0342"
+      ],
+      "sources": [
+        {
+          "label": "Henderson Christian Church history — Mrs. J. A. Stonebraker founding treasurer 1877",
+          "url": "http://iagenweb.org/mills/churches/and_henderson_cc.htm"
+        },
+        {
+          "label": "Mills Co. 1905 IA state census — P. H. Stonebraker, Henderson PO (card 167)",
+          "url": "https://www.iagenweb.org/mills/census/state/1905_henderson.htm"
+        },
+        {
+          "label": "Mills Century Farm — Stonebraker (Bess & Max), Henderson, origin 1874",
+          "url": "https://iagenweb.org/mills/direct-gaz/farms_century.html"
+        }
+      ],
+      "aka": [
+        "Mrs. J. A. Stonebraker"
+      ],
+      "spouse_links": [
+        {
+          "id": "j_a_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Urtha Stonebraker** — indexed as **Mrs. J. A. Stonebraker** on Henderson Christian Church history (**1877** treasurer); **1905** Henderson census lists **P. H. Stonebraker** adjacent to **J. A.** and **F. G.** (likely spouse in household). Full given n..."
+    },
+    "j_a_stonebraker": {
+      "id": "j_a_stonebraker",
+      "slug": "j-a-stonebraker",
+      "name": "J. A. Stonebraker",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "p_h_stonebraker"
+      ],
+      "children": [
+        "urtha_stonebraker",
+        "belle_stonebraker",
+        "f_g_stonebraker"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0173",
+        "FT-0191",
+        "FT-0196",
+        "FT-0340",
+        "FT-0341",
+        "FT-0342"
+      ],
+      "sources": [
+        {
+          "label": "Henderson Christian Church history — Mr. and Mrs. J. A. Stonebraker founding members 1877; J. A. deacon",
+          "url": "http://iagenweb.org/mills/churches/and_henderson_cc.htm"
+        },
+        {
+          "label": "Mills Co. 1905 IA state census — J. A. Stonebraker, Henderson PO (card 166)",
+          "url": "https://www.iagenweb.org/mills/census/state/1905_henderson.htm"
+        },
+        {
+          "label": "Anderson Twp 1910 atlas history — Henderson Christian Church; J.A. Stonebraker charter member",
+          "url": "http://iagenweb.org/mills/townships/Anderson.htm"
+        },
+        {
+          "label": "Mills Century Farm — Stonebraker (Bess & Max), Henderson, origin 1874",
+          "url": "https://iagenweb.org/mills/direct-gaz/farms_century.html"
+        },
+        {
+          "label": "Van Buren Andrew Stonebraker bio — son James A.; gen-back Andrew Sr × Barbara Barr (unlinked FAN)",
+          "url": "http://iagenweb.org/boards/vanburen/biographies/index.cgi?read=1444"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "p_h_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Urtha Stonebraker** — Henderson Mills Co. IA Stonebraker patriarch on free sources: founding member of Highland/Henderson Christian Church (**1877**) with **Mrs. J. A. Stonebraker**; still in Henderson on **1905** census cluster with **P. H.** and **F...."
+    },
+    "gloria": {
+      "id": "gloria",
+      "slug": "gloria-martha-gatz-shorts",
+      "name": "Gloria Martha Shorts",
+      "years": "1925-2017",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "irvin",
+        "martha"
+      ],
+      "spouses": [
+        "richard"
+      ],
+      "children": [
+        "william",
+        "carla",
+        "gigi"
+      ],
+      "media": [
+        {
+          "file": "media/portrait.jpg",
+          "kind": "portrait",
+          "source": "Conejo Mountain Funeral Home obituary (same image also on Find A Grave 183422612)",
+          "source_url": "https://d1q40j6jx1d8h6.cloudfront.net/Obituaries/43105866/Image.jpg"
+        },
+        {
+          "file": "media/headstone-fag-2020.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 183422612",
+          "source_url": "https://images.findagrave.com/photos/2020/20/183422612_857754ec-ae02-4380-9233-be9e5389e20e.jpeg"
+        }
+      ],
+      "portrait": "media/portrait.jpg",
+      "object_ids": [
+        "FT-0004",
+        "FT-0005",
+        "FT-0101",
+        "FT-0102",
+        "FT-0313",
+        "FT-0315",
+        "FT-0397"
+      ],
+      "sources": [
+        {
+          "label": "Conejo Mountain obituary (FT-0005)",
+          "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+        },
+        {
+          "label": "Find A Grave 183422612",
+          "url": "https://www.findagrave.com/memorial/183422612/gloria-martha-gatz-shorts"
+        },
+        {
+          "label": "Richard VC Star obituary (FT-0004)",
+          "url": "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+        }
+      ],
+      "aka": [
+        "née Gatz"
+      ],
+      "note": "Paternal grandmother of Alexander Martin Shorts. Born Gloria Martha Gatz in McPherson, Kansas; family moved to California in 1942; finished Bellflower High; married Richard Dorland Shorts 22 Oct 1950 after meeting at the Hollywood Palladium. Lived Burbank → Thousand Oaks → Sil..."
+    },
+    "richard": {
+      "id": "richard",
+      "slug": "richard-dorland-shorts",
+      "name": "Richard Dorland Shorts",
+      "years": "1922-2009",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "earl",
+        "annabelle"
+      ],
+      "spouses": [
+        "gloria"
+      ],
+      "children": [
+        "william",
+        "carla",
+        "gigi"
+      ],
+      "media": [
+        {
+          "file": "media/memorial-fag-2011.gif",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 65483876 (CPL U.S. Army Air Forces, WWII)",
+          "source_url": "https://images.findagrave.com/photos/2011/40/65483876_129738501279.gif"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0004",
+        "FT-0005",
+        "FT-0101",
+        "FT-0108",
+        "FT-0310",
+        "FT-0311",
+        "FT-0312",
+        "FT-0370",
+        "FT-0372",
+        "FT-0373",
+        "FT-0374",
+        "FT-0397"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 65483876",
+          "url": "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+        },
+        {
+          "label": "Ventura County Star 28 Oct 2009 (FT-0004)",
+          "url": "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+        },
+        {
+          "label": "Gloria Conejo Mountain obituary (FT-0005)",
+          "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+        }
+      ],
+      "note": "Paternal grandfather of Alexander Martin Shorts. Born Rochester, NY; family to Southern California 1929; South Gate High School 1941; WWII U.S. Army Air Corps (Operations Specialist; Panama); later fireman (Arcadia → Huntington Park → Burbank Captain). Married Gloria Gatz 22 O..."
+    },
+    "martha": {
+      "id": "martha",
+      "slug": "martha-tuxhorn-gatz",
+      "name": "Martha Tuxhorn Gatz",
+      "years": "1897-1967",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [
+        "irvin"
+      ],
+      "children": [
+        "gloria"
+      ],
+      "media": [
+        {
+          "file": "media/memorial-mcpherson-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548697 — McPherson Cemetery cenotaph (shared stone with Irvin)",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548697_137833686409.jpg"
+        },
+        {
+          "file": "media/memorial-alt-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548697 (alternate angle / detail)",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548697_137833678706.jpg"
+        },
+        {
+          "file": "media/headstone-olive-lawn-2019.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave 168568524 — Olive Lawn Memorial Park (body burial)",
+          "source_url": "https://images.findagrave.com/photos/2019/220/168568524_694c187a-dad7-4f96-b2f8-68cdf9c63ca5.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0005",
+        "FT-0103",
+        "FT-0313",
+        "FT-0314"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 168568524",
+          "url": "https://www.findagrave.com/memorial/168568524/martha_t-gatz"
+        },
+        {
+          "label": "Find A Grave 116548697",
+          "url": "https://www.findagrave.com/memorial/116548697/martha-gatz"
+        },
+        {
+          "label": "Conejo Mountain obituary (FT-0005)",
+          "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+        }
+      ],
+      "aka": [
+        "née Tuxhorn"
+      ],
+      "note": "Mother of Gloria Martha (Gatz) Shorts, née Tuxhorn. Named in Gloria’s obituary (C19). Dates and burial locked Round 4 (C24). Parents Leo Lewis Tuxhorn × Ida L. Achilles locked Round 5 (C29). Siblings Carrie Williams, Florence Graves, Henry Tuxhorn, Wilma Prather — **Probable C..."
+    },
+    "irvin": {
+      "id": "irvin",
+      "slug": "irvin-carl-gatz",
+      "name": "Irvin Carl Gatz",
+      "years": "1891-1956",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "charles_c_gatz",
+        "minnie_kruse"
+      ],
+      "spouses": [
+        "martha"
+      ],
+      "children": [
+        "gloria"
+      ],
+      "media": [
+        {
+          "file": "media/memorial-mcpherson-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548657 — McPherson Cemetery cenotaph (shared stone with Martha)",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548657_137833684321.jpg"
+        },
+        {
+          "file": "media/memorial-alt-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548657 (alternate angle / detail)",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548657_137833675148.jpg"
+        },
+        {
+          "file": "media/headstone-olive-lawn-2019.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave 168568492 — Olive Lawn Memorial Park (body burial; WWI marker)",
+          "source_url": "https://images.findagrave.com/photos/2019/220/168568492_18851245-8b9c-4a05-8115-ee019d5cf5af.jpeg"
+        },
+        {
+          "ref": "charles-c-gatz/media/census-1900-jackson-mcpherson.jpg",
+          "kind": "census-image",
+          "source": "1900 US Census ED 133 Jackson Twp McPherson KS sheet 3A — FS Download (JPEG $dist) S3HY-DHFW-26L",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0005",
+        "FT-0098",
+        "FT-0354"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 168568492",
+          "url": "https://www.findagrave.com/memorial/168568492/irvin_carl-gatz"
+        },
+        {
+          "label": "Find A Grave 116548657",
+          "url": "https://www.findagrave.com/memorial/116548657/irvin_carl-gatz"
+        },
+        {
+          "label": "Conejo Mountain obituary (FT-0005)",
+          "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+        },
+        {
+          "label": "Find A Grave 116548952",
+          "url": "https://www.findagrave.com/memorial/116548952/charles_c-gatz"
+        },
+        {
+          "label": "Find A Grave 116548907",
+          "url": "https://www.findagrave.com/memorial/116548907/minnie-gatz"
+        },
+        {
+          "label": "USGenWeb McPherson 1900 ED map — Jackson Twp ED 133 / T623-488 (browse target)",
+          "url": "https://www.us-census.org/states/kansas/teams/mcpherson1900.htm"
+        },
+        {
+          "label": "1900 US Census — Irvin Gatz (person ark MMYS-34K)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMYS-34K"
+        },
+        {
+          "label": "1900 US Census — C C × Minnie Gatz household (MMYS-34F)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMYS-34F"
+        },
+        {
+          "label": "1900 census image S3HY-DHFW-26L (one-entry opened 2026-08-06)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+        },
+        {
+          "label": "1910 US Census — Irvin Gates / Charley C × Minnie, Groveland McPherson (M2CL-YL9)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:M2CL-YL9"
+        },
+        {
+          "label": "FamilySearch community person Irwin Carl Gatz GSHK-JXT",
+          "url": "https://www.familysearch.org/tree/person/details/GSHK-JXT"
+        },
+        {
+          "label": "FamilySearch wave: docs/research/people/proposals/familysearch-wave.md (one-entry Irvin/Gatz 1900)",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "charles_c_gatz",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "minnie_kruse",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Irvin Carl Gatz — Confirmed / `verified: true`. Parents Charles C. × Minnie Kruse; spouse Martha; child Gloria. Olive Lawn burial + McPherson cenotaph; 1900 Jackson Twp census in C C household."
+    },
+    "ida_tuxhorn": {
+      "id": "ida_tuxhorn",
+      "slug": "ida-achilles-tuxhorn",
+      "name": "Ida L. Tuxhorn",
+      "years": "1866-1951",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "henry_f_achilles",
+        "caroline_waescher"
+      ],
+      "spouses": [
+        "leo_tuxhorn"
+      ],
+      "children": [
+        "carrie_williams",
+        "florence_graves",
+        "martha",
+        "henry_f_tuxhorn",
+        "wilma_prather"
+      ],
+      "media": [
+        {
+          "file": "media/portrait-studio.jpg",
+          "kind": "portrait",
+          "source": "Find A Grave memorial 48237386 (studio portrait)",
+          "source_url": "https://images.findagrave.com/photos/2025/230/48237386_1a657cf8-1dd3-43d1-bf06-4c54d4ce1bcc.jpg"
+        },
+        {
+          "file": "media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48237386 — Inman North Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2010/94/48237386_127050794117.jpg"
+        }
+      ],
+      "portrait": "media/portrait-studio.jpg",
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48237386",
+          "url": "https://www.findagrave.com/memorial/48237386/ida_l-tuxhorn"
+        },
+        {
+          "label": "GEDBAS 1163945815 — Ida Louise Achilles; parents Heinrich×Caroline Wischer; m. Leo Lewis Tuxhorn; d. 9 Jan 1951",
+          "url": "https://gedbas.genealogy.net/person/show/1163945815"
+        },
+        {
+          "label": "McPherson County marriages — Leo Tuxhorn × Ida Achilles, 8 Jan 1891 Inman",
+          "url": "https://www.mcphersoncountyks.us/DocumentCenter/Home/View/816"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        },
+        {
+          "label": "Round 9: docs/research/people/proposals/round-9-tuxhorn-achilles.md",
+          "url": ""
+        },
+        {
+          "label": "Short quote (obit on FAG): “Mrs. Ida L. Tuxhorn, 84, widow of Leo Tuxhorn, died in McPherson hospital… born in Lee county, Ia…. came to the Inman community with her parents when she was nine years old",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Achilles"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_f_achilles",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "caroline_waescher",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Mother of Martha Tuxhorn Gatz (C29 Confirmed). Née Achilles; widow of Leo Tuxhorn. Born Lee County, Iowa; to Inman KS as a child. Stone dates 29 Aug 1866 – 9 Jan 1951. Sibling collateral Confirmed C30 (Carrie/Florence/Henry/Wilma promoted Probable C56-C59). Parents **Probable ..."
+    },
+    "leo_tuxhorn": {
+      "id": "leo_tuxhorn",
+      "slug": "leo-lewis-tuxhorn",
+      "name": "Leo Lewis Tuxhorn",
+      "years": "1866-1931",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "frederick_tuxhorn",
+        "elizabeth_birkenbeuel"
+      ],
+      "spouses": [
+        "ida_tuxhorn"
+      ],
+      "children": [
+        "carrie_williams",
+        "florence_graves",
+        "martha",
+        "henry_f_tuxhorn",
+        "wilma_prather"
+      ],
+      "media": [
+        {
+          "file": "media/portrait-studio.jpg",
+          "kind": "portrait",
+          "source": "Find A Grave memorial 48237387 (studio portrait)",
+          "source_url": "https://images.findagrave.com/photos/2025/230/48237387_46c31abf-3f92-4198-a642-41f2540f8ce0.jpg"
+        },
+        {
+          "file": "media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48237387 — Inman North Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2010/94/48237387_127050824452.jpg"
+        }
+      ],
+      "portrait": "media/portrait-studio.jpg",
+      "object_ids": [
+        "FT-0103",
+        "FT-0107",
+        "FT-0314"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 48237387",
+          "url": "https://www.findagrave.com/memorial/48237387/leo_lewis-tuxhorn"
+        },
+        {
+          "label": "McPherson County marriage index (Leo Tuxhorn × Ida Achilles, Inman)",
+          "url": ""
+        }
+      ],
+      "note": "Father of Martha Tuxhorn Gatz (C29 Confirmed). Married Ida L. Achilles. Inman / McPherson County, Kansas. McPherson marriage index: Leo Tuxhorn × Ida Achilles 8 Jan 1891 (Inman). FAG lists Martha’s siblings (Carrie, Florence, Henry, Wilma) — collateral tracking Confirmed C30; ..."
+    },
+    "caroline_waescher": {
+      "id": "caroline_waescher",
+      "slug": "caroline-waescher-achilles",
+      "name": "Caroline Achilles",
+      "years": "1842-1912",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "heinrich_henry_wischer",
+        "carolina_wisher"
+      ],
+      "spouses": [
+        "henry_f_achilles"
+      ],
+      "children": [
+        "ida_tuxhorn"
+      ],
+      "media": [
+        {
+          "ref": "henry-f-achilles/media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236265 — joint stone with Henry F. (canonical bytes under henry-f-achilles)",
+          "source_url": "https://images.findagrave.com/photos/2010/98/48236265_127086953140.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48236265",
+          "url": "https://www.findagrave.com/memorial/48236265/caroline-achilles"
+        },
+        {
+          "label": "Inman Municipal Cemetery transcript — Caroline Achilles, 16 Aug 1912, Mrs. Henry F.",
+          "url": "https://macpl.org/cemeteries/inmana-d.html"
+        },
+        {
+          "label": "GEDBAS 1163945814 — Caroline D Wischer; parents Wischer; m. Heinrich Achilles 20 Jun 1865 Lee Co. IA; child Ida Louise",
+          "url": "https://gedbas.genealogy.net/person/show/1163945814"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-tuxhorn-achilles.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Waescher",
+        "Caroline D. Wischer",
+        "Caroline Wisher"
+      ],
+      "parent_links": [
+        {
+          "id": "heinrich_henry_wischer",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "carolina_wisher",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** mother of Ida L. Achilles Tuxhorn (**C55** / harden **C370**). Maiden **Waescher** (FAG) = **Wischer / Wisher** (GEDBAS **C379**). Wife of Henry F. Achilles Sr.; m. **20 Jun 1865** Lee Co. IA. GEDBAS lists daughter **Ida Louise** matching Ida Tuxhorn vitals. Paren..."
+    },
+    "henry_f_achilles": {
+      "id": "henry_f_achilles",
+      "slug": "henry-f-achilles",
+      "name": "Henry F. Achilles Sr.",
+      "years": "1842-1934",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "johann_friedrich_christoph_achilles",
+        "marie_christine_henrietta_burgdorf"
+      ],
+      "spouses": [
+        "caroline_waescher"
+      ],
+      "children": [
+        "ida_tuxhorn"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236277 — joint stone with Caroline",
+          "source_url": "https://images.findagrave.com/photos/2010/98/48236277_127086965906.jpg"
+        },
+        {
+          "file": "media/portrait-fag-2021.jpeg",
+          "kind": "portrait",
+          "source": "Find A Grave memorial 48236277 (studio portrait attached to memorial)",
+          "source_url": "https://images.findagrave.com/photos/2021/16/48236277_2958bef2-67df-4dcd-8799-f50e5e45dd28.jpeg"
+        }
+      ],
+      "portrait": "media/portrait-fag-2021.jpeg",
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48236277",
+          "url": "https://www.findagrave.com/memorial/48236277/henry_f-achilles"
+        },
+        {
+          "label": "Inman Municipal Cemetery transcript — Henry F. Achilles Sr., 28 Mar 1934",
+          "url": "https://macpl.org/cemeteries/inmana-d.html"
+        },
+        {
+          "label": "McPherson Pioneer Register A–B — Henry Frederick Achilles, 1872, Little Valley, Vol 2 Part A",
+          "url": "https://macpl.org/genealogy-local-history/pioneer-register/pioneer-register-master-index/pioneer-register-miab/"
+        },
+        {
+          "label": "Old Mill Museum pioneer family register PDF (mirrors Achilles 1872)",
+          "url": "https://www.oldmillmuseum.org/wp-content/uploads/2022/09/6a-21a_Pioneer_-family_-register.pdf"
+        },
+        {
+          "label": "GEDBAS 1163945812 — Heinrich Henry Friedrich Achilles; parents Achilles–Burgdorf; m. Caroline D Wischer 20 Jun 1865 Lee Co. IA; child Ida Louise",
+          "url": "https://gedbas.genealogy.net/person/show/1163945812"
+        },
+        {
+          "label": "McPherson County marriages — Leo Tuxhorn × Ida Achilles, 8 Jan 1891 Inman",
+          "url": "https://www.mcphersoncountyks.us/DocumentCenter/Home/View/816"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-tuxhorn-achilles.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Henry Frederick Achilles",
+        "Heinrich Henry Friedrich Achilles"
+      ],
+      "parent_links": [
+        {
+          "id": "johann_friedrich_christoph_achilles",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "marie_christine_henrietta_burgdorf",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** father of Ida L. Achilles Tuxhorn (**C55** / harden **C370**). Husband of Caroline (Waescher / Wischer). GEDBAS **1163945812** locks matching stone dates, birth **Barum Salzgitter**, marriage **20 Jun 1865** Lee Co. IA, and child **Ida Louise** (29 Aug 1866) who m..."
+    },
+    "carolina_wisher": {
+      "id": "carolina_wisher",
+      "slug": "carolina-wisher",
+      "name": "Carolina Wisher",
+      "years": "1816–",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "heinrich_henry_wischer"
+      ],
+      "children": [
+        "caroline_waescher"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1163945826 — Carolina WISHER N.N. (Rosendahl Familie file 42734)",
+          "url": "https://gedbas.genealogy.net/person/show/1163945826"
+        },
+        {
+          "label": "GEDBAS 1163945814 — daughter Caroline D Wischer names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945814"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Carolina Wischer",
+        "Carolina N.N."
+      ],
+      "note": "**Possible** mother of Caroline (Waescher / Wischer) Achilles (**C375** / **C377**). GEDBAS labels her **Carolina WISHER N.N.** — married surname Wisher/Wischer; **maiden surname unknown**. b. **about 1816** Germany; death not given. Soft-ingest placeholder only. Stay `verifie..."
+    },
+    "heinrich_henry_wischer": {
+      "id": "heinrich_henry_wischer",
+      "slug": "heinrich-henry-wischer",
+      "name": "Heinrich Henry Wischer",
+      "years": "1811-1881",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "carolina_wisher"
+      ],
+      "children": [
+        "caroline_waescher"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1163945825 — Heinrich Henry Wischer (Rosendahl Familie file 42734)",
+          "url": "https://gedbas.genealogy.net/person/show/1163945825"
+        },
+        {
+          "label": "GEDBAS 1163945814 — daughter Caroline D Wischer names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945814"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Henry Wischer",
+        "Henry Wisher"
+      ],
+      "note": "**Probable** father of Caroline (Waescher / Wischer) Achilles (**C375**). Husband of **Carolina (Wisher) N.N.** GEDBAS: b. **1811** Germany; d. **15 May 1881** Jefferson Twp, Lee Co. Iowa; occupation note cites **Census 1880**. Soft-ingest only — 1880 page image not opened thi..."
+    },
+    "marie_christine_henrietta_burgdorf": {
+      "id": "marie_christine_henrietta_burgdorf",
+      "slug": "marie-christine-henrietta-burgdorf",
+      "name": "Marie Christine Henrietta Burgdorf",
+      "years": "1819-1907",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "gottfried_ludwig_burgdorf",
+        "marie_sophie_henriette_masberg"
+      ],
+      "spouses": [
+        "johann_friedrich_christoph_achilles"
+      ],
+      "children": [
+        "henry_f_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1163945811 — Marie Christine Henrietta Burgdorf (Rosendahl Familie file 42734)",
+          "url": "https://gedbas.genealogy.net/person/show/1163945811"
+        },
+        {
+          "label": "GEDBAS 1163945812 — son Heinrich Henry Friedrich Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945812"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Henrietta Achilles",
+        "Henrietta Burgdorf"
+      ],
+      "parent_links": [
+        {
+          "id": "gottfried_ludwig_burgdorf",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_sophie_henriette_masberg",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Henry F. Achilles Sr. (**C371**). Née **Burgdorf**; wife of **Johann Friedrich Christoph Achilles** (m. ~1841 Barum). Parents soft-ingested **C384**: **Gottfried Ludwig Burgdorf** × **Marie Sophie Henriette Masberg**. GEDBAS: b. **10 Oct 1819** Barum Sal..."
+    },
+    "johann_friedrich_christoph_achilles": {
+      "id": "johann_friedrich_christoph_achilles",
+      "slug": "johann-friedrich-christoph-achilles",
+      "name": "Johann Friedrich Christoph Achilles",
+      "years": "1815-1854",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "johann_heinrich_paul_achilles",
+        "marie_christine_linde"
+      ],
+      "spouses": [
+        "marie_christine_henrietta_burgdorf"
+      ],
+      "children": [
+        "henry_f_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1163945790 — Johann Friedrich Christoph Achilles (Rosendahl Familie file 42734)",
+          "url": "https://gedbas.genealogy.net/person/show/1163945790"
+        },
+        {
+          "label": "GEDBAS 1163945812 — son Heinrich Henry Friedrich Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945812"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Friedrich Achilles"
+      ],
+      "parent_links": [
+        {
+          "id": "johann_heinrich_paul_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_christine_linde",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Henry F. Achilles Sr. (**C371**). Husband of **Marie Christine Henrietta Burgdorf**. Parents soft-ingested **C380**: **Johann Heinrich Paul Achilles** × **Marie Christine Linde**. GEDBAS (Rosendahl file **42734**): b. **12 Nov 1815** Apelnstedt / Wolfenb..."
+    },
+    "marie_sophie_henriette_masberg": {
+      "id": "marie_sophie_henriette_masberg",
+      "slug": "marie-sophie-henriette-masberg",
+      "name": "Marie Sophie Henriette Masberg",
+      "years": "1790–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "gottfried_ludwig_burgdorf"
+      ],
+      "children": [
+        "marie_christine_henrietta_burgdorf"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1163945819 — Marie Sophie Henriette Masberg (Rosendahl Familie file 42734)",
+          "url": "https://gedbas.genealogy.net/person/show/1163945819"
+        },
+        {
+          "label": "GEDBAS 1163945811 — daughter Marie Christine Henrietta Burgdorf names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945811"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Marie Sophie Henriette Burgdorf"
+      ],
+      "note": "**Probable** mother of Marie Christine Henrietta Burgdorf (**C384**). Née **Masberg**; wife of **Gottfried Ludwig Burgdorf** (m. ~1817 Barum). GEDBAS: b. **about 1790** Barum Salzgitter; married name Burgdorf noted. Soft-ingest only — no parish image. Stay `verified: false`. M..."
+    },
+    "gottfried_ludwig_burgdorf": {
+      "id": "gottfried_ludwig_burgdorf",
+      "slug": "gottfried-ludwig-burgdorf",
+      "name": "Gottfried Ludwig Burgdorf",
+      "years": "1790–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "marie_sophie_henriette_masberg"
+      ],
+      "children": [
+        "marie_christine_henrietta_burgdorf"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1163945818 — Gottfried Ludwig Burgdorf (Rosendahl Familie file 42734)",
+          "url": "https://gedbas.genealogy.net/person/show/1163945818"
+        },
+        {
+          "label": "GEDBAS 1163945811 — daughter Marie Christine Henrietta Burgdorf names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945811"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Marie Christine Henrietta Burgdorf (**C384**). Husband of **Marie Sophie Henriette Masberg**. GEDBAS: b. **about 1790** Barum Salzgitter; m. **about 1817** Barum; child Marie Christine Henrietta b. **10 Oct 1819**. Soft-ingest only — no parish image. Sta..."
+    },
+    "marie_christine_linde": {
+      "id": "marie_christine_linde",
+      "slug": "marie-christine-linde",
+      "name": "Marie Christine Linde",
+      "years": "1780–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "johann_heinrich_paul_achilles"
+      ],
+      "children": [
+        "johann_friedrich_christoph_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS search — Marie Christine Linde *1780 Apelnstedt (Rosendahl file 42734)",
+          "url": "https://gedbas.genealogy.net/search/simple?firstname=Marie+Christine&lastname=Linde"
+        },
+        {
+          "label": "GEDBAS 1163945790 — son Johann Friedrich Christoph Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945790"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Marie Christine Achilles"
+      ],
+      "note": "**Probable** mother of Johann Friedrich Christoph Achilles (**C380**). Wife of **Johann Heinrich Paul Achilles**. GEDBAS (Rosendahl file **42734**): b. **1780** Apelnstedt / Wolfenbüttel; death year blank on search row (death place Apelnstedt). Soft-ingest only — no parish ima..."
+    },
+    "johann_heinrich_paul_achilles": {
+      "id": "johann_heinrich_paul_achilles",
+      "slug": "johann-heinrich-paul-achilles",
+      "name": "Johann Heinrich Paul Achilles",
+      "years": "1776-1832",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "heinrich_paul_christoph_achilles",
+        "johanna_lucia_catharina_sack"
+      ],
+      "spouses": [
+        "marie_christine_linde"
+      ],
+      "children": [
+        "johann_friedrich_christoph_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS search — Johann Heinrich Paul Achilles *1776 +1832 Apelnstedt (Rosendahl file 42734; parents Achilles–Sack)",
+          "url": "https://gedbas.genealogy.net/search/simple?firstname=Johann+Heinrich+Paul&lastname=Achilles"
+        },
+        {
+          "label": "GEDBAS 1163945790 — son Johann Friedrich Christoph Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1163945790"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "heinrich_paul_christoph_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "johanna_lucia_catharina_sack",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Johann Friedrich Christoph Achilles (**C380**). Husband of **Marie Christine Linde**. GEDBAS (Rosendahl file **42734**): b. **1776** Apelnstedt / Wolfenbüttel; d. **1832** same. Parent edge on son’s person page. Own parents soft-ingested as **Heinrich Pa..."
+    },
+    "johanna_lucia_catharina_sack": {
+      "id": "johanna_lucia_catharina_sack",
+      "slug": "johanna-lucia-catharina-sack",
+      "name": "Johanna Lucia Catharina Sack",
+      "years": "1742-1803",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "heinrich_paul_christoph_achilles"
+      ],
+      "children": [
+        "johann_heinrich_paul_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS Rosendahl file 42734 — Johanna Lucia Catharina Sack *1742 Braunschweig St.Leonhard +1803 Apelnstedt (parents Sack–Sack N.N.)",
+          "url": "https://gedbas.genealogy.net/person/database/42734?begin=Sack"
+        },
+        {
+          "label": "GEDBAS search — Johanna Lucia Catharina Sack",
+          "url": "https://gedbas.genealogy.net/search/simple?firstname=Johanna+Lucia+Catharina&lastname=Sack"
+        },
+        {
+          "label": "GEDBAS search — son Johann Heinrich Paul Achilles parents Achilles–Sack",
+          "url": "https://gedbas.genealogy.net/search/simple?firstname=Johann+Heinrich+Paul&lastname=Achilles"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Johanna Lucia Catharina Achilles"
+      ],
+      "note": "**Probable** mother of Johann Heinrich Paul Achilles (**C390**). Née **Sack**; wife of **Heinrich Paul Christoph Achilles**. GEDBAS (Rosendahl **42734**): b. **1742** Braunschweig St. Leonhard; d. **1803** Apelnstedt; own parents Sack–Sack N.N. (not soft-ingested). Only Sack w..."
+    },
+    "heinrich_paul_christoph_achilles": {
+      "id": "heinrich_paul_christoph_achilles",
+      "slug": "heinrich-paul-christoph-achilles",
+      "name": "Heinrich Paul Christoph Achilles",
+      "years": "1744-1818",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "johanna_lucia_catharina_sack"
+      ],
+      "children": [
+        "johann_heinrich_paul_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS Rosendahl file 42734 — Heinrich Paul Christoph Achilles *1744 +1818 Apelnstedt (parents Achilles–Lüddecke)",
+          "url": "https://gedbas.genealogy.net/person/database/42734?begin=Achilles&page=2"
+        },
+        {
+          "label": "GEDBAS search — son Johann Heinrich Paul Achilles parents Achilles–Sack",
+          "url": "https://gedbas.genealogy.net/search/simple?firstname=Johann+Heinrich+Paul&lastname=Achilles"
+        },
+        {
+          "label": "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Johann Heinrich Paul Achilles (**C390**). Husband of **Johanna Lucia Catharina Sack**. GEDBAS (Rosendahl **42734**): b. **1744** Apelnstedt; d. **1818** Apelnstedt; own parents listed Achilles–Lüddecke (not soft-ingested this wave). Identity tied to JHP ..."
+    },
+    "elizabeth_birkenbeuel": {
+      "id": "elizabeth_birkenbeuel",
+      "slug": "elizabeth-birkenbeuel-tuxhorn",
+      "name": "Elizabeth Tuxhorn",
+      "years": "1833-1911",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "frederick_tuxhorn"
+      ],
+      "children": [
+        "leo_tuxhorn"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48237384 — Inman North Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2010/101/48237384_127110163132.jpg"
+        },
+        {
+          "file": "media/headstone-detail-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48237384 (detail)",
+          "source_url": "https://images.findagrave.com/photos/2010/101/48237384_127110150485.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0314"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 48237384",
+          "url": "https://www.findagrave.com/memorial/48237384/elizabeth-tuxhorn"
+        }
+      ],
+      "aka": [
+        "née Birkenbeuel"
+      ],
+      "note": "Mother of Leo Lewis Tuxhorn (**C36 Confirmed**). Elizabeth Birkenbeuel Tuxhorn, 25 Nov 1833 – 26 Nov 1911, Inman North Cemetery. Widow of Frederick William August Tuxhorn.",
+      "blocker": "Birkenbeuel/Birkenbuel parents still unknown (C177 / C200 — GEDBAS paren"
+    },
+    "frederick_tuxhorn": {
+      "id": "frederick_tuxhorn",
+      "slug": "frederick-william-august-tuxhorn",
+      "name": "Frederick William August Tuxhorn",
+      "years": "1829-1884",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "herman_heinrich_tuxhorn",
+        "anne_margarethe_esser"
+      ],
+      "spouses": [
+        "elizabeth_birkenbeuel"
+      ],
+      "children": [
+        "leo_tuxhorn"
+      ],
+      "media": [
+        {
+          "file": "media/memorial-fag-2025.png",
+          "kind": "other",
+          "source": "Find A Grave memorial 185498490",
+          "source_url": "https://images.findagrave.com/photos/2025/3/185498490_fc1dc282-88d3-4eef-8efa-94f77ad19181.png"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0103",
+        "FT-0107",
+        "FT-0314"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 185498490",
+          "url": "https://www.findagrave.com/memorial/185498490/frederick_william_august-tuxhorn"
+        },
+        {
+          "label": "GEDBAS — Frederick William August / August Tuxhorn *1829 Dornberg; parents Tuxhorn–Esser (files 69366, 69369)",
+          "url": "https://gedbas.genealogy.net/search/simple?placename=Inman%2C+McPherson%2C+Kansas%2C+USA"
+        },
+        {
+          "label": "WikiTree Tuxhorn-62 × Esser-995 (Probable parents soft — C170)",
+          "url": "https://www.wikitree.com/wiki/Tuxhorn-62"
+        },
+        {
+          "label": "FS ascent proposal: docs/research/people/proposals/fs-ascent-birkenbeuel-tuxhorn-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "August Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "herman_heinrich_tuxhorn",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "anne_margarethe_esser",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Father of Leo Lewis Tuxhorn (**C36 Confirmed**). Frederick William August Tuxhorn, 1829 – 12 Nov 1884, McPherson County KS. Spouse Elizabeth Birkenbeuel. Soft parents (**C170**): **Herman Heinrich Tuxhorn** × **Anne Margarethe Ilsabein Esser** (GEDBAS Dornberg + WikiTree coupl..."
+    },
+    "anne_margarethe_esser": {
+      "id": "anne_margarethe_esser",
+      "slug": "anne-margarethe-esser-tuxhorn",
+      "name": "Anne Margarethe Ilsabein Tuxhorn",
+      "years": "1801-1852",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "herman_heinrich_tuxhorn"
+      ],
+      "children": [
+        "frederick_tuxhorn"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Esser-995 — Anne Margarethe Ilsabein Esser",
+          "url": "https://www.wikitree.com/wiki/Esser-995"
+        },
+        {
+          "label": "FS Germany Marriages cite JH9V-R5Q (via WikiTree) — Anne Margarethe Ilsabein Esser × Hermann Henrich Tuxhorn, Dornberg 1825",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:JH9V-R5Q"
+        },
+        {
+          "label": "FS Germany Births/Baptisms cite NZWN-KTL (via WikiTree) — Gret Elsabein Esser, Kirchdornberg 22/30 Oct 1801",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:NZWN-KTL"
+        },
+        {
+          "label": "GEDBAS — August / Frederick William August Tuxhorn parents Tuxhorn–Esser (files 69366, 69369)",
+          "url": "https://gedbas.genealogy.net/search/simple?placename=Inman%2C+McPherson%2C+Kansas%2C+USA"
+        },
+        {
+          "label": "FS ascent proposal: docs/research/people/proposals/fs-ascent-birkenbeuel-tuxhorn-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Esser",
+        "Anne Margarethe Ilsabein Esser",
+        "Gret Elsabein Esser"
+      ],
+      "note": "**Probable** mother of Frederick William August Tuxhorn (**C170**). Maiden **Esser**. Wife of **Herman Heinrich Tuxhorn**. WikiTree **Esser-995**: b. **22 Oct 1801** Dornberg, d. **28 Mar 1852**; m. Herman Heinrich Tuxhorn **26 Mar 1825** Evangelisch Dornberg. GEDBAS files **6..."
+    },
+    "herman_heinrich_tuxhorn": {
+      "id": "herman_heinrich_tuxhorn",
+      "slug": "herman-heinrich-tuxhorn",
+      "name": "Herman Heinrich Tuxhorn",
+      "years": "1798-1864",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "anne_margarethe_esser"
+      ],
+      "children": [
+        "frederick_tuxhorn"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Tuxhorn-62 — Herman Heinrich Tuxhorn",
+          "url": "https://www.wikitree.com/wiki/Tuxhorn-62"
+        },
+        {
+          "label": "FS Germany Marriages cite JH9V-R5Q (via WikiTree) — Hermann Henrich Tuxhorn × Anne Margarethe Ilsabein Esser, Dornberg 1825",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:JH9V-R5Q"
+        },
+        {
+          "label": "FS Germany Births/Baptisms cite NZWN-V4Y (via WikiTree) — Herm Henrich Tuxhorn, Kirchdornberg 16 Sep 1798",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:NZWN-V4Y"
+        },
+        {
+          "label": "GEDBAS — August / Frederick William August Tuxhorn parents Tuxhorn–Esser (files 69366, 69369)",
+          "url": "https://gedbas.genealogy.net/search/simple?placename=Inman%2C+McPherson%2C+Kansas%2C+USA"
+        },
+        {
+          "label": "FS ascent proposal: docs/research/people/proposals/fs-ascent-birkenbeuel-tuxhorn-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Hermann Heinrich Tuxhorn",
+        "Henry Tuxhorn"
+      ],
+      "note": "**Probable** father of Frederick William August Tuxhorn (**C170**). Husband of **Anne Margarethe Ilsabein Esser**. WikiTree **Tuxhorn-62**: b. **16 Sep 1798** Dornberg, d. **5 Sep 1864** Brackwede; m. Anne Margarethe Ilsabein Esser **26 Mar 1825** Evangelisch Dornberg (FS marr..."
+    },
+    "minnie_kruse": {
+      "id": "minnie_kruse",
+      "slug": "minnie-kruse-gatz",
+      "name": "Minnie Gatz",
+      "years": "1868-1925",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [
+        "charles_c_gatz"
+      ],
+      "children": [
+        "irvin"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-mcpherson-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548907 — McPherson Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548907_137833712544.jpg"
+        },
+        {
+          "file": "media/headstone-alt-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548907 / 116548952 — Gatz family plot marker",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548907_137833720257.jpg"
+        },
+        {
+          "ref": "charles-c-gatz/media/census-1900-jackson-mcpherson.jpg",
+          "kind": "census-image",
+          "source": "1900 US Census ED 133 Jackson Twp McPherson KS sheet 3A — FS Download (JPEG $dist) S3HY-DHFW-26L",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 116548907",
+          "url": "https://www.findagrave.com/memorial/116548907/minnie-gatz"
+        },
+        {
+          "label": "Find A Grave parents — Henry 127003248 × Marie Wolf 127003257",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "IAGenWeb Wheatland Cemetery (Henry / Mary Kruse dates)",
+          "url": "https://iagenweb.org/allamakee/cemetery/Wheatland.htm"
+        },
+        {
+          "label": "DNA Minnie Kruse parents: docs/research/people/proposals/dna-minnie-kruse-parents.md",
+          "url": ""
+        },
+        {
+          "label": "McPherson Cemetery burial register — Minnie Gatz, Block 15 Lot 12 Space 11, burial 9 Feb 1925",
+          "url": "https://macpl.org/cemeteries/mcpherson.html"
+        },
+        {
+          "label": "MPL Genealogy Index (search Gatz / Kruse obituaries)",
+          "url": "https://macpl.org/genealogy-local-history/genealogy-index/"
+        },
+        {
+          "label": "1900 US Census — C C × Minnie Gatz household (MMYS-34F)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMYS-34F"
+        },
+        {
+          "label": "1900 census image S3HY-DHFW-26L (one-entry 2026-08-06)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+        },
+        {
+          "label": "1910 US Census — Charley C Gates / Minnie, Groveland McPherson (M2CL-YL9)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:M2CL-YL9"
+        },
+        {
+          "label": "FamilySearch community person Minnie Kruse GSHK-F7H",
+          "url": "https://www.familysearch.org/tree/person/details/GSHK-F7H"
+        },
+        {
+          "label": "FamilySearch wave: docs/research/people/proposals/familysearch-wave.md (one-entry Irvin/Gatz 1900)",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Kruse"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Confirmed** mother of Irvin Carl Gatz (**C40** locked). Maiden **Kruse**. Wife of Charles C. Gatz. McPherson Cemetery stone (MOTHER / years). **1900:** parents b. **Germany**; birth Apr **1867** MN vs FAG **8 Apr 1868** — soft conflict kept. **Parents soft-ingested Probable ..."
+    },
+    "charles_c_gatz": {
+      "id": "charles_c_gatz",
+      "slug": "charles-c-gatz",
+      "name": "Charles C. Gatz",
+      "years": "1859-1935",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "john_wilhelm_gatz",
+        "sophia_maria_hilgenfeld"
+      ],
+      "spouses": [
+        "minnie_kruse"
+      ],
+      "children": [
+        "irvin"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-mcpherson-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548952 â€” McPherson Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548952_137833714722.jpg"
+        },
+        {
+          "file": "media/headstone-alt-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116548952 / 116548907 â€” Gatz family plot marker",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548952_137833722800.jpg"
+        },
+        {
+          "file": "media/census-1900-jackson-mcpherson.jpg",
+          "kind": "census-image",
+          "source": "1900 US Census ED 133 Jackson Twp McPherson KS sheet 3A â€” FS Download (JPEG $dist) S3HY-DHFW-26L",
+          "source_url": "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0098",
+        "FT-0100"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 116548952",
+          "url": "https://www.findagrave.com/memorial/116548952/charles_c-gatz"
+        },
+        {
+          "label": "McPherson Cemetery burial register â€” Charlie C. Gatz, Block 15 Lot 12 Space 10, burial 31 May 1935",
+          "url": "https://macpl.org/cemeteries/mcpherson.html"
+        },
+        {
+          "label": "McPherson Pioneer Register â€” Charles C Gatz, Jackson, 1889 (Vol 6 Part A)",
+          "url": "https://macpl.org/genealogy-local-history/pioneer-register/pioneer-register-master-index/pioneer-register-mifg/"
+        },
+        {
+          "label": "Pioneer Register Vol 6 Part A PDF (MPL)",
+          "url": "http://macpl.org/lhgcontent/pioneers/volumes/vol6_partA.pdf"
+        },
+        {
+          "label": "McPherson County genealogy resources (probate 1870â€“present at District Court)",
+          "url": "https://www.mcphersoncountyks.us/954/Genealogy-Resources"
+        },
+        {
+          "label": "MPL Genealogy Index (search Gatz obituaries)",
+          "url": "https://macpl.org/genealogy-local-history/genealogy-index/"
+        },
+        {
+          "label": "1900 US Census â€” C C Ã— Minnie Gatz household (MMYS-34F)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMYS-34F"
+        },
+        {
+          "label": "1900 census image S3HY-DHFW-26L (one-entry 2026-08-06)",
+          "url": "https://www.familysearch.org/ark:/61903/3:1:S3HY-DHFW-26L"
+        },
+        {
+          "label": "1910 US Census â€” Charley C Gates / Minnie, Groveland McPherson (M2CL-YL9)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:M2CL-YL9"
+        },
+        {
+          "label": "FamilySearch community person Carl Friedrich Wilhelm Charley Gatz GSHK-2Q9",
+          "url": "https://www.familysearch.org/tree/person/details/GSHK-2Q9"
+        },
+        {
+          "label": "FamilySearch wave: docs/research/people/proposals/familysearch-wave.md (one-entry Irvin/Gatz 1900)",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        },
+        {
+          "label": "WikiTree Gatz-102 — Carl Friedrich Wilhelm Gatz b. 30 Oct 1859 Wendemark (son of Johann × Sophia)",
+          "url": "https://www.wikitree.com/wiki/Gatz-102"
+        },
+        {
+          "label": "FS German Lutheran baptism cite QPX2-RM7M (via WikiTree; image not opened)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M"
+        },
+        {
+          "label": "FS ascent: docs/research/people/proposals/fs-ascent-charles-parents.md",
+          "url": ""
+        },
+        {
+          "label": "DNA Gatz ascent harden: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        },
+        {
+          "label": "Falls City Journal 10 Nov 1899 — Sophia Gatz daughter of Johann Ludwig Hilgenfeld (via WikiTree)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_wilhelm_gatz",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "sophia_maria_hilgenfeld",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Proposed father of Irvin Carl Gatz (**C40 Probable**, Round 9 — awaiting Alex Y/N). Husband of **Minnie Kruse Gatz**. McPherson Cemetery stones (FATHER / years) + pioneer register Jackson Twp 1889 + probate index 1935. FAG also links children Mayme Anna Riddell, Isaac Ike “Fra..."
+    },
+    "marie_wolf_kruse": {
+      "id": "marie_wolf_kruse",
+      "slug": "marie-wolf-kruse",
+      "name": "Marie “Mary” Wolf Kruse",
+      "years": "1839-1907",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "henry_kruse"
+      ],
+      "children": [
+        "george_kruse",
+        "henry_john_ernest_kruse",
+        "william_kruse",
+        "minnie_kruse",
+        "louis_kruse",
+        "maria_dorothea_caroline_kruse_jahn",
+        "charles_fredrick_kruse",
+        "anna_katherine_elizabeth_kruse_lubberstedt"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-wheatland-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 127003257 — Wheatland Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2014/220/127003257_1407601355.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 127003257",
+          "url": "https://www.findagrave.com/memorial/127003257/marie-kruse"
+        },
+        {
+          "label": "IAGenWeb Wheatland Cemetery — Kruse, Mary 1839 Apr 03 / 1907 Jan 26",
+          "url": "https://iagenweb.org/allamakee/cemetery/Wheatland.htm"
+        },
+        {
+          "label": "Find A Grave child link — Minnie Kruse Gatz 116548907",
+          "url": "https://www.findagrave.com/memorial/116548907/minnie-gatz"
+        },
+        {
+          "label": "1900 US Census — Minnie parents b. Germany (MMYS-34F)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMYS-34F"
+        },
+        {
+          "label": "DNA Minnie Kruse parents: docs/research/people/proposals/dna-minnie-kruse-parents.md",
+          "url": ""
+        },
+        {
+          "label": "IAGenWeb St. John's Wheatland church index",
+          "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
+        },
+        {
+          "label": "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mary Kruse",
+        "Marie Wolf",
+        "née Wolf"
+      ],
+      "note": "**Probable** mother of Minnie Kruse Gatz (**C430**). Maiden **Wolf** per FAG. Wife of **Henry Kruse** (m. **1862**). Wheatland Cemetery dates match IAGenWeb (**Mary**). Birth **Germany** on FAG aligns with Minnie’s 1900 census (parents b. Germany). **Wolf parents blocked** (**...",
+      "blocker": "Wolf parents Germany (C1311 blocked); Marie 1907 obit not on IAGenWeb (C"
+    },
+    "henry_kruse": {
+      "id": "henry_kruse",
+      "slug": "henry-kruse",
+      "name": "Henry Kruse",
+      "years": "1828-1908",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "marie_wolf_kruse"
+      ],
+      "children": [
+        "george_kruse",
+        "henry_john_ernest_kruse",
+        "william_kruse",
+        "minnie_kruse",
+        "louis_kruse",
+        "maria_dorothea_caroline_kruse_jahn",
+        "charles_fredrick_kruse",
+        "anna_katherine_elizabeth_kruse_lubberstedt"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-wheatland-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 127003248 — Wheatland Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2014/218/127003248_1407455554.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 127003248",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "IAGenWeb Wheatland Cemetery — Kruse, Henry 1828 Oct 29 / 1908 Nov 29",
+          "url": "https://iagenweb.org/allamakee/cemetery/Wheatland.htm"
+        },
+        {
+          "label": "Find A Grave child link — Minnie Kruse Gatz 116548907",
+          "url": "https://www.findagrave.com/memorial/116548907/minnie-gatz"
+        },
+        {
+          "label": "DNA Minnie Kruse parents: docs/research/people/proposals/dna-minnie-kruse-parents.md",
+          "url": ""
+        },
+        {
+          "label": "IAGenWeb St. John's Wheatland church index (Kruse confirmations/marriages)",
+          "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
+        },
+        {
+          "label": "Past & Present Allamakee (1913) — Henry Kruse St. John's trustee 1884",
+          "url": "https://archive.org/details/pastpresentofall01hanc"
+        },
+        {
+          "label": "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Minnie Kruse Gatz (**C430**). Husband of **Marie “Mary” Wolf Kruse** (m. **1862** on FAG). Wheatland Cemetery, New Albin, Allamakee Co. IA — dates match independent [IAGenWeb Woodmansee transcript](https://iagenweb.org/allamakee/cemetery/Wheatland.htm). ...",
+      "blocker": "Gen-back parents blocked (C1310) — no parent names on FAG"
+    },
+    "sophia_maria_hilgenfeld": {
+      "id": "sophia_maria_hilgenfeld",
+      "slug": "sophia-maria-hilgenfeld-gatz",
+      "name": "Sophia Maria Gatz",
+      "years": "1828-1905",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "johann_ludwig_hilgenfeld",
+        "catharine_dorothea_lonsman"
+      ],
+      "spouses": [
+        "john_wilhelm_gatz"
+      ],
+      "children": [
+        "charles_c_gatz"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-mcpherson-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116578829 — McPherson Cemetery",
+          "source_url": "https://www.findagrave.com/memorial/116578829/sophia_maria-gatz"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0097",
+        "FT-0098",
+        "FT-0100",
+        "FT-0350",
+        "FT-0351",
+        "FT-0352",
+        "FT-0353",
+        "FT-0355"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 116578829",
+          "url": "https://www.findagrave.com/memorial/116578829/sophia_maria-gatz"
+        },
+        {
+          "label": "McPherson Cemetery burial register — Sophia Mary Gatz, Block 15 Lot 12 Space 1, burial 10 Oct 1905",
+          "url": "https://macpl.org/cemeteries/mcpherson.html"
+        },
+        {
+          "label": "WikiTree Hilgenfeld-18 — Sophia Marie (Hilgenfeld) Gatz",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-18"
+        },
+        {
+          "label": "FS German Lutheran baptism cite for son Carl (QPX2-RM7M) — via WikiTree Gatz-102",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M"
+        },
+        {
+          "label": "Falls City Journal 10 Nov 1899 — father Johann Ludwig names daughter Sophia Gatz (via WikiTree Hilgenfeld-6)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "FS ascent proposal: docs/research/people/proposals/fs-ascent-charles-parents.md",
+          "url": ""
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Hilgenfeld",
+        "Sophia Marie Hilgenfeld",
+        "Sophia Mary Gatz",
+        "Sophia M. Gatz"
+      ],
+      "parent_links": [
+        {
+          "id": "johann_ludwig_hilgenfeld",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "catharine_dorothea_lonsman",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** mother of Charles C. Gatz (**C42** / **C140** / **C360** harden). Maiden **Hilgenfeld**. Wife of **John Wilhelm Gatz**. McPherson Cemetery stone (SOPHIA M. GATZ / 1828–1905) + burial register **Sophia Mary**, Block **15** Lot **12** Space **1**, burial **10 Oct 19..."
+    },
+    "john_wilhelm_gatz": {
+      "id": "john_wilhelm_gatz",
+      "slug": "john-wilhelm-gatz",
+      "name": "John Wilhelm Gatz",
+      "years": "1820-1906",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "johann_dietrich_geetz",
+        "maria_dorothea_rusche"
+      ],
+      "spouses": [
+        "sophia_maria_hilgenfeld"
+      ],
+      "children": [
+        "charles_c_gatz"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-mcpherson-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 116578895 — McPherson Cemetery",
+          "source_url": "https://www.findagrave.com/memorial/116578895/john_wilhelm-gatz"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0098",
+        "FT-0100",
+        "FT-0355"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 116578895",
+          "url": "https://www.findagrave.com/memorial/116578895/john_wilhelm-gatz"
+        },
+        {
+          "label": "McPherson Cemetery burial register — John William Gatz, Block 15 Lot 12 Space 2, burial 20 Jan 1906",
+          "url": "https://macpl.org/cemeteries/mcpherson.html"
+        },
+        {
+          "label": "WikiTree Gatz-97 — Johann Heinrich Wilhelm Gatz",
+          "url": "https://www.wikitree.com/wiki/Gatz-97"
+        },
+        {
+          "label": "FS German Lutheran baptism cite for son Carl (QPX2-RM7M) — via WikiTree Gatz-102",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QPX2-RM7M"
+        },
+        {
+          "label": "FS ascent proposal: docs/research/people/proposals/fs-ascent-charles-parents.md",
+          "url": ""
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Johann Heinrich Wilhelm Gatz",
+        "John William Gatz",
+        "John W. Gatz"
+      ],
+      "parent_links": [
+        {
+          "id": "johann_dietrich_geetz",
+          "confidence": "Possible"
+        },
+        {
+          "id": "maria_dorothea_rusche",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** father of Charles C. Gatz (**C42** / **C140** / **C360** harden). Husband of **Sophia Maria Hilgenfeld Gatz**. McPherson Cemetery stone (JOHN W. GATZ / 1820–1906) + burial register **John William**, Block **15** Lot **12** Space **2**, burial **20 Jan 1906** — sam..."
+    },
+    "catharine_dorothea_lonsman": {
+      "id": "catharine_dorothea_lonsman",
+      "slug": "catharine-dorothea-lonsman-hilgenfeld",
+      "name": "Catharine Dorothea Hilgenfeld",
+      "years": "1808-1876",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "sophie_luntzmann",
+        "caspar_herms"
+      ],
+      "spouses": [
+        "johann_ludwig_hilgenfeld"
+      ],
+      "children": [
+        "sophia_maria_hilgenfeld"
+      ],
+      "media": [
+        {
+          "ref": "johann-ludwig-hilgenfeld/media/headstone-zion-bethel-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 23324837 / 23324948 — Zion Bethel joint stone",
+          "source_url": "https://images.findagrave.com/photos/2016/181/23324837_1467327609.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0097",
+        "FT-0352",
+        "FT-0353"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 23324948",
+          "url": "https://www.findagrave.com/memorial/23324948/catharine-dorothea-hilgenfeld"
+        },
+        {
+          "label": "Zion Bethel joint stone OCR — DOROTHE HILGENFELD / Born MAR. 15. 1808. / Died OCT. 20. 1876.",
+          "url": "https://images.findagrave.com/photos/2016/181/23324837_1467327609.jpg"
+        },
+        {
+          "label": "WikiTree Lonsman-1 — mother Sophie Linsmann/Lüntzmann; putative father Caspar Herms (Archion; images not opened)",
+          "url": "https://www.wikitree.com/wiki/Lonsman-1"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Lonsman",
+        "Dorothe Hilgenfeld",
+        "Catharine Dorothea Lünzmann",
+        "Lüntzmann / Linsmann"
+      ],
+      "parent_links": [
+        {
+          "id": "sophie_luntzmann",
+          "confidence": "Possible"
+        },
+        {
+          "id": "caspar_herms",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** mother of Sophia Maria Hilgenfeld Gatz (**C361**). Wife of **Johann Ludwig Hilgenfeld**. Zion Bethel joint stone (DOROTHE / 15 Mar 1808 – 20 Oct 1876). Maiden **Lonsman** / Lünzmann on WikiTree. Stay `verified: false` / Probable. DNA-ok maternal soft-ingest with f..."
+    },
+    "johann_ludwig_hilgenfeld": {
+      "id": "johann_ludwig_hilgenfeld",
+      "slug": "johann-ludwig-hilgenfeld",
+      "name": "Johann Ludwig Hilgenfeld",
+      "years": "1807-1899",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "christian_wilhelm_hilgenfeld",
+        "catharina_elisabeth_bielefeld"
+      ],
+      "spouses": [
+        "catharine_dorothea_lonsman"
+      ],
+      "children": [
+        "sophia_maria_hilgenfeld"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-zion-bethel-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 23324837 / 23324948 — Zion Bethel joint stone",
+          "source_url": "https://images.findagrave.com/photos/2016/181/23324837_1467327609.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0097",
+        "FT-0350",
+        "FT-0351",
+        "FT-0352",
+        "FT-0353"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 23324837",
+          "url": "https://www.findagrave.com/memorial/23324837/johann-ludwig-hilgenfeld"
+        },
+        {
+          "label": "Zion Bethel joint stone OCR — JOHN L. HILGENFELD / Born APR. 22. 1807. / Died NOV. 4. 1899.",
+          "url": "https://images.findagrave.com/photos/2016/181/23324837_1467327609.jpg"
+        },
+        {
+          "label": "Falls City Journal 10 Nov 1899 obituary (via WikiTree Hilgenfeld-6) — daughter Sophia Gatz",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "WikiTree Hilgenfeld-6 — parents Christian/Christoph Wilhelm × Bielefeld (Archion cites; images not opened)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John L. Hilgenfeld",
+        "John Hilgenfeld",
+        "Johann Ludwig Wilhelm Hilgenfeld"
+      ],
+      "parent_links": [
+        {
+          "id": "christian_wilhelm_hilgenfeld",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catharina_elisabeth_bielefeld",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** father of Sophia Maria Hilgenfeld Gatz (**C361** DNA ascent). Husband of **Catharine Dorothea Lonsman**. Zion Bethel joint stone (JOHN L. / 22 Apr 1807 – 4 Nov 1899) + Falls City Journal **10 Nov 1899** obituary (via WikiTree) naming surviving daughter **Sophia Ga..."
+    },
+    "caspar_herms": {
+      "id": "caspar_herms",
+      "slug": "caspar-herms",
+      "name": "Caspar Herms",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [],
+      "children": [
+        "catharine_dorothea_lonsman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Lonsman-1 — supposed father Caspar Herms of illegitimate Catharine (Archion baptism cite; not opened)",
+          "url": "https://www.wikitree.com/wiki/Lonsman-1"
+        },
+        {
+          "label": "WikiTree Lonsman-1 marriage paraphrase — late Caspar Herms named with Sophie Lüntzmann (Archion picture 27; not opened)",
+          "url": "https://www.wikitree.com/wiki/Lonsman-1"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Kaspar Herms"
+      ],
+      "note": "**Possible** putative father of Catharine Dorothea (Lonsman) Hilgenfeld (**C404**). WikiTree **Lonsman-1** baptism note: Catharine illegitimate; **supposed father Caspar Herms**. Marriage cite on same profile: “late Caspar Herms” with Sophie Lüntzmann. Hilgenfeld-6 marriage pa..."
+    },
+    "sophie_luntzmann": {
+      "id": "sophie_luntzmann",
+      "slug": "sophie-luntzmann",
+      "name": "Sophie Lüntzmann",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [],
+      "children": [
+        "catharine_dorothea_lonsman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Lonsman-1 — illegitimate daughter of Sophia Linsmann (Lünzmann/Lüntzmann); Archion Falkenberg Taufen picture 21 (not opened)",
+          "url": "https://www.wikitree.com/wiki/Lonsman-1"
+        },
+        {
+          "label": "WikiTree Hilgenfeld-6 / Lonsman-1 — marriage 2 Jun 1833 names Sophie Lüntzmann as mother of bride (Archion picture 27; not opened)",
+          "url": "https://www.wikitree.com/wiki/Lonsman-1"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sophia Linsmann",
+        "Sophie Lünzmann",
+        "Sophie Lüntzmann / Lonsman line"
+      ],
+      "note": "**Possible** mother of Catharine Dorothea (Lonsman) Hilgenfeld (**C403**). WikiTree **Lonsman-1** / **Hilgenfeld-6** cite Archion Falkenberg baptism and marriage: Catharine was the **illegitimate** daughter of **Sophie / Sophia Linsmann** (later Lünzmann / Lüntzmann). WT notes..."
+    },
+    "catharina_elisabeth_bielefeld": {
+      "id": "catharina_elisabeth_bielefeld",
+      "slug": "catharina-elisabeth-bielefeld-hilgenfeld",
+      "name": "Catharina Elisabeth Hilgenfeld",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "christian_wilhelm_hilgenfeld"
+      ],
+      "children": [
+        "johann_ludwig_hilgenfeld"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Hilgenfeld-6 — baptism: Katharine Elisabeth Bielefeld (Archion Werben picture 51; not opened)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "WikiTree Hilgenfeld-6 — marriage: Catharina Elisabeth Bielefeld (Archion Falkenberg picture 27; not opened)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Bielefeld",
+        "Katharine Elisabeth Bielefeld",
+        "Catharina Elisabeth Bielefeld"
+      ],
+      "note": "**Possible** mother of Johann Ludwig Hilgenfeld (**C400** / **C402**). Named with husband Christian/Christoph Wilhelm on WikiTree **Hilgenfeld-6** Archion baptism and marriage citations (images not opened). Stay `verified: false` / Possible. No free stone or GEDBAS corroboration."
+    },
+    "christian_wilhelm_hilgenfeld": {
+      "id": "christian_wilhelm_hilgenfeld",
+      "slug": "christian-wilhelm-hilgenfeld",
+      "name": "Christian Wilhelm Hilgenfeld",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "catharina_elisabeth_bielefeld"
+      ],
+      "children": [
+        "johann_ludwig_hilgenfeld"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Hilgenfeld-6 — baptism cite: soldier Christian Wilhelm Hilgenfeld × Katharine Elisabeth Bielefeld (Archion Werben Taufen 1802–1836 picture 51; image not opened)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "WikiTree Hilgenfeld-6 — marriage 2 Jun 1833 Falkenberg: son of Christoph Wilhelm Hilgenfeld from Behrendorf × Catharina Elisabeth Bielefeld (Archion picture 27; image not opened)",
+          "url": "https://www.wikitree.com/wiki/Hilgenfeld-6"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Christoph Wilhelm Hilgenfeld",
+        "Christian / Christoph Wilhelm (soldier)"
+      ],
+      "note": "**Possible** father of Johann Ludwig Hilgenfeld (**C400–C401**). Named on WikiTree **Hilgenfeld-6** from Archion cites: baptism as soldier **Christian Wilhelm**; marriage as **Christoph Wilhelm** of Behrendorf. Treat as one man (Christian/Christoph variance) until parish image..."
+    },
+    "maria_dorothea_rusche": {
+      "id": "maria_dorothea_rusche",
+      "slug": "maria-dorothea-rusche-geetz",
+      "name": "Maria Dorothea Geetz",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "johann_dietrich_geetz"
+      ],
+      "children": [
+        "john_wilhelm_gatz"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Gatz-97 biography — Maria Dorothea Rusche? (question mark on WT)",
+          "url": "https://www.wikitree.com/wiki/Gatz-97"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Rusche?",
+        "Maria Dorothea Rusche"
+      ],
+      "note": "**Possible** mother of John Wilhelm Gatz (**C366**). WikiTree **Gatz-97** bio names **Maria Dorothea Rusche?** with an explicit question mark — softer than Johann Dietrich. Soft-ingested for DNA maternal completeness beside Possible father. Stay `verified: false` / Possible. N..."
+    },
+    "johann_dietrich_geetz": {
+      "id": "johann_dietrich_geetz",
+      "slug": "johann-dietrich-geetz",
+      "name": "Johann Dietrich Geetz",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "maria_dorothea_rusche"
+      ],
+      "children": [
+        "john_wilhelm_gatz"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "WikiTree Gatz-97 biography — son of daylabourer Johann Dietrich Geetz × Maria Dorothea Rusche?",
+          "url": "https://www.wikitree.com/wiki/Gatz-97"
+        },
+        {
+          "label": "Archion cite via WikiTree — Wendemark Taufen 1804–1840 picture 30 (image not opened)",
+          "url": "https://www.wikitree.com/wiki/Gatz-97"
+        },
+        {
+          "label": "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Johann Dietrich Gatz",
+        "Geetz / Getz / Gretz (register variants)"
+      ],
+      "note": "**Possible** father of John Wilhelm Gatz (**C365**). Named only in WikiTree **Gatz-97** biography as daylabourer **Johann Dietrich Geetz**, citing Archion Wendemark baptism picture **30** for son Johann Heinrich Wilhelm (b. **11 Jan 1820**). WikiTree header still shows parents..."
+    },
+    "annabelle": {
+      "id": "annabelle",
+      "slug": "annabelle-lucretia-shorts",
+      "name": "Annabelle Lucretia Shorts",
+      "years": "1899-1987",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "george_merritt",
+        "belle_conant_merritt"
+      ],
+      "spouses": [
+        "earl"
+      ],
+      "children": [
+        "richard",
+        "don_shorts"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-live-oak-2012.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 100072401 — Live Oak Memorial Park",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072401_135191952551.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0004",
+        "FT-0152",
+        "FT-0370",
+        "FT-0373",
+        "FT-0374",
+        "FT-0397"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 100072401",
+          "url": "https://www.findagrave.com/memorial/100072401/annabelle-l-shorts"
+        },
+        {
+          "label": "Ventura County Star 28 Oct 2009 — Richard Dorland Shorts (FT-0004)",
+          "url": "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+        },
+        {
+          "label": "SSDI abstract: Annabelle Shorts 555-07-9219, 18 Apr 1899 – May 1987, ZIP 91101 Pasadena — **Confirmed C27**",
+          "url": ""
+        },
+        {
+          "label": "California Death Index (Ancestry 5180 / record 6739464) — mother maiden Conant; death Ventura; SSN match",
+          "url": ""
+        },
+        {
+          "label": "NY State Marriage Index 1918 (Reclaim The Records / Internet Archive) — browse Merritt/Shorts for 26 Jun Rochester",
+          "url": "https://archive.org/details/New_York_State_Marriage_Index_1918"
+        },
+        {
+          "label": "Ontario GenWeb 1900 Canandaigua census index — household #154 MERRITT; George, Belle, Helen, Anna-Belle (C180)",
+          "url": "http://ontario.nygenweb.net/canandaigua1900censuspart2.htm"
+        },
+        {
+          "label": "1900 US Census, Canandaigua Ward 4, Ontario, NY — “Aanna Belle” Merritt in George × Belle household",
+          "url": ""
+        },
+        {
+          "label": "1900 US Census Canandaigua — FS search hit (C98; detail ark TBD — FS 403 on Merritt ascent)",
+          "url": ""
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C98)",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Merritt parents: docs/research/people/proposals/fs-ascent-merritt-parents.md (C180–C189)",
+          "url": ""
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-merritt.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Merritt"
+      ],
+      "note": "Mother of Richard Dorland Shorts; paternal great-grandmother of Alexander. Named with Earl Stanley in Richard’s Ventura County Star obituary (C21). **C27 Confirmed:** maiden **Merritt**; b. 18 Apr 1899; d. **5 May 1987**; Live Oak. SSDI last residence Pasadena 91101 (SSN 555-0..."
+    },
+    "earl": {
+      "id": "earl",
+      "slug": "earl-stanley-shorts",
+      "name": "Earl Stanley Shorts",
+      "years": "1892-1972",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "dorland",
+        "effie"
+      ],
+      "spouses": [
+        "mayme",
+        "annabelle"
+      ],
+      "children": [
+        "richard",
+        "don_shorts"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-live-oak-2012.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 100072423 — Live Oak Memorial Park",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0004",
+        "FT-0067",
+        "FT-0069",
+        "FT-0152",
+        "FT-0215",
+        "FT-0370",
+        "FT-0371",
+        "FT-0372",
+        "FT-0373",
+        "FT-0374",
+        "FT-0397"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 100072423",
+          "url": "https://www.findagrave.com/memorial/100072423/earl-stanley-shorts"
+        },
+        {
+          "label": "Ventura County Star 28 Oct 2009 — Richard Dorland Shorts (FT-0004)",
+          "url": "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+        },
+        {
+          "label": "SSDI Earl Shorts 549-07-0345",
+          "url": ""
+        }
+      ],
+      "note": "Father of Richard Dorland Shorts; paternal great-grandfather of Alexander. **C26 Confirmed.** Parents Dorland × Effie (**C28**). Wife Annabelle Merritt (**C27**) is Richard’s mother. First wife May F. “Mayme” Garrett Shorts (m. 1915; d. 1917) — **C35 Confirmed**. Sister Lena R..."
+    },
+    "belle_conant_merritt": {
+      "id": "belle_conant_merritt",
+      "slug": "belle-f-conant-merritt",
+      "name": "Belle F. Merritt",
+      "years": "1871–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "george_merritt"
+      ],
+      "children": [
+        "helen_merritt",
+        "allen_merritt",
+        "annabelle"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Ontario GenWeb 1900 Canandaigua census index — household #154 MERRITT; George, Belle, Helen, Anna-Belle (C180)",
+          "url": "http://ontario.nygenweb.net/canandaigua1900censuspart2.htm"
+        },
+        {
+          "label": "1900 US Census, Canandaigua Ward 4, Ontario, New York (Ancestry 7602 record 67130926)",
+          "url": ""
+        },
+        {
+          "label": "1900 US Census Canandaigua — FS search hit George × Belle Merritt (C98; detail ark TBD — FS 403 this ascent)",
+          "url": ""
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C98)",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Merritt parents: docs/research/people/proposals/fs-ascent-merritt-parents.md (C180–C189)",
+          "url": ""
+        },
+        {
+          "label": "NY State Marriage Index 1909 Brides (IA) — browse Belle F Conant × Finch, 27 Apr Rochester",
+          "url": "https://archive.org/details/New_York_State_Marriage_Index_1909_Brides"
+        },
+        {
+          "label": "NYSDI CSV portal / collection (search Belle Finch death — no match through 1930 this pass)",
+          "url": "https://archive.org/details/reclaim-the-records-new-york-state-death-index-1880-1971"
+        },
+        {
+          "label": "NewYorkDeathIndex.com (free Reclaim search UI)",
+          "url": "https://www.newyorkdeathindex.com/"
+        },
+        {
+          "label": "1915 NY State Census: Annabelle Merritt, Rochester Ward 04 — family members Bell F, Theodore W",
+          "url": ""
+        },
+        {
+          "label": "California Death Index abstract for Annabelle L Shorts (mother’s maiden Conant)",
+          "url": ""
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-merritt.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Village Canandaigua births — Allen/Anna parents George × Belle Conent/Cowant (C427)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/741/Village-of-Canandaigua---Births"
+        },
+        {
+          "label": "Village Canandaigua marriages — 26 Jan 87 Conant Birdie × Uleritt George (C426)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/743/Village-of-Canandaigua---Marriages"
+        },
+        {
+          "label": "DNA Merritt ascent: docs/research/people/proposals/dna-merritt-ascent.md (C428 Belle parents blocked)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Conant; later Finch"
+      ],
+      "note": "**Probable** mother of Annabelle Lucretia (Merritt) Shorts (**C45** pending Y). Free **Ontario GenWeb** 1900 Canandaigua **#154** names wife **Belle** with George, Helen, Anna-Belle (**C180**). CADI for Annabelle lists mother’s maiden **Conant** (**C46**). Soft birth **Oct 187...",
+      "blocker": "Conant parents blocked until free/FS naming source; full given name (Bel"
+    },
+    "george_merritt": {
+      "id": "george_merritt",
+      "slug": "george-merritt",
+      "name": "George Merritt",
+      "years": "1866–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "charles_j_merritt",
+        "ann_l_merritt"
+      ],
+      "spouses": [
+        "belle_conant_merritt"
+      ],
+      "children": [
+        "helen_merritt",
+        "allen_merritt",
+        "annabelle"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0172"
+      ],
+      "sources": [
+        {
+          "label": "Ontario County Chronicle 21 May 1902 — Charles Merritt survived by sons George and Charles of Canandaigua (C420/C424)",
+          "url": "https://ontario.nygenweb.net/Meobituaries.htm"
+        },
+        {
+          "label": "Ontario County 1875 Canandaigua census index — Meritt Charles × Ann L + George (C423)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/648/1875"
+        },
+        {
+          "label": "DNA Merritt ascent: docs/research/people/proposals/dna-merritt-ascent.md (C420–C429)",
+          "url": ""
+        },
+        {
+          "label": "Village Canandaigua marriages — 26 Jan 87 Uleritt George × Conant Birdie (C426 Probable OCR)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/743/Village-of-Canandaigua---Marriages"
+        },
+        {
+          "label": "Ontario GenWeb 1900 Canandaigua census index — household #154 MERRITT; George, Belle, Helen, Anna-Belle (C180)",
+          "url": "http://ontario.nygenweb.net/canandaigua1900censuspart2.htm"
+        },
+        {
+          "label": "1900 US Census, Canandaigua Ward 4, Ontario, New York — Ancestry collection 7602 (children’s index cards name parents George, Belle; also Allen)",
+          "url": ""
+        },
+        {
+          "label": "1900 US Census Canandaigua — FS search hit George × Belle Merritt (C98; b. Jul 1866 NY; m. 1888; detail ark TBD — FS 403 this ascent)",
+          "url": ""
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C98)",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Merritt parents: docs/research/people/proposals/fs-ascent-merritt-parents.md (C180–C189)",
+          "url": ""
+        },
+        {
+          "label": "NYSDI CSV negative — no George Merritt death in Canandaigua 1900–1909 (pre-Belle Finch remarriage)",
+          "url": "https://archive.org/details/reclaim-the-records-new-york-state-death-index-1880-1971"
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-merritt.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "charles_j_merritt",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_l_merritt",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Annabelle Lucretia (Merritt) Shorts (**C45** pending Y). Free **Ontario GenWeb** 1900 Canandaigua household **#154** names **George, Belle, Helen, Anna-Belle** (**C180**). Ancestry/FS also place **Allen** in the same household (**C47**/**C98**/**C187**)...."
+    },
+    "ann_l_merritt": {
+      "id": "ann_l_merritt",
+      "slug": "ann-l-merritt",
+      "name": "Ann L. Merritt",
+      "years": "1843-1928",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [
+        "charles_j_merritt"
+      ],
+      "children": [
+        "george_merritt",
+        "charles_e_merritt"
+      ],
+      "media": [
+        {
+          "file": "media/fag-121146775-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 121146775",
+          "source_url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0172",
+        "FT-0174",
+        "FT-0217",
+        "FT-0218",
+        "FT-0219",
+        "FT-0270"
+      ],
+      "sources": [
+        {
+          "label": "Woodlawn Cemetery burial register — Merritt, Ann L, age 84, d. 5-16-1928 Rochester, bur. 5-18-1928, Sec 10 Lot 207 with Charles J (C422)",
+          "url": "https://www.interment.net/data/us/ny/ontario/woodlawn/woodlawn-cemetery-records-me-my.htm"
+        },
+        {
+          "label": "Ontario County Chronicle 4 Jun 1902 — Ann L. Merritt executor, Charles Merritt late of Gorham (C425)",
+          "url": "https://ontario.nygenweb.net/surrogate5.htm"
+        },
+        {
+          "label": "Ontario County Chronicle 21 May 1902 — Charles Merritt survived by wife (unnamed in notice) (C424)",
+          "url": "https://ontario.nygenweb.net/Meobituaries.htm"
+        },
+        {
+          "label": "Ontario County 1875 Canandaigua census index — Meritt Ann L with Charles, George, Charles E (C423)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/648/1875"
+        },
+        {
+          "label": "DNA Merritt ascent: docs/research/people/proposals/dna-merritt-ascent.md (C420–C429)",
+          "url": ""
+        },
+        {
+          "label": "FAG 121146775 — Anna Lucretia Tesseyman Merritt; 1850 Hopewell hh paste (C1320/C1321)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md (C1320–C1329)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Anna Lucretia Tesseyman Merritt; Ann L. Meritt (1875 index); Ann L Tessiman (1850)"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_tesseyman",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_j_tesseyman",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **George Merritt** and **Charles E. Merritt**. **Woodlawn** Sec **10 Lot 207** with husband **Charles J.**: **Ann L.** Merritt d. **16 May 1928** Rochester, age **84**, bur. 18 May (**C422**). FAG memorial titles **Anna Lucretia Tesseyman Merritt** b. **..."
+    },
+    "charles_j_merritt": {
+      "id": "charles_j_merritt",
+      "slug": "charles-j-merritt",
+      "name": "Charles J. Merritt",
+      "years": "1840-1902",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ann_l_merritt"
+      ],
+      "children": [
+        "george_merritt",
+        "charles_e_merritt"
+      ],
+      "media": [
+        {
+          "ref": "ann-l-merritt/media/fag-121146775-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 121146775 (dual stone Charles + Ann L.)",
+          "source_url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0172",
+        "FT-0217",
+        "FT-0218",
+        "FT-0219"
+      ],
+      "sources": [
+        {
+          "label": "Ontario County Chronicle 21 May 1902 — Charles Merritt d. Bright’s disease ae 62; wife + sons George and Charles of Canandaigua village (C420/C424)",
+          "url": "https://ontario.nygenweb.net/Meobituaries.htm"
+        },
+        {
+          "label": "Ontario County Chronicle 4 Jun 1902 — probate Charles Merritt late of Gorham; Ann L. Merritt executor (C425)",
+          "url": "https://ontario.nygenweb.net/surrogate5.htm"
+        },
+        {
+          "label": "Woodlawn Cemetery burial register — Merritt, Charles J, age 62, d. 5-16-1902 Gorham, bur. 5-18-1902, Sec 10 Lot 207 (C421)",
+          "url": "https://www.interment.net/data/us/ny/ontario/woodlawn/woodlawn-cemetery-records-me-my.htm"
+        },
+        {
+          "label": "Ontario County 1875 Canandaigua census index — Meritt Charles, Ann L, George, Charles E; fam 665 Dist #2 p.69 (C423)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/648/1875"
+        },
+        {
+          "label": "DNA Merritt ascent: docs/research/people/proposals/dna-merritt-ascent.md (C420–C429)",
+          "url": ""
+        },
+        {
+          "label": "FAG 121146760 — Charles Merritt 1840–1902 Woodlawn; spouse Anna Lucretia Tesseyman Merritt (C1326)",
+          "url": "https://www.findagrave.com/memorial/121146760/charles-merritt"
+        },
+        {
+          "label": "FT-0172 — Ontario County Chronicle obit 21 May 1902 (C1325)",
+          "url": ""
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md (C1320–C1329)",
+          "url": ""
+        },
+        {
+          "label": "DNA build wave c: docs/research/people/proposals/dna-build-wave-2026-08-08c.md (C1350–C1359) — parents still blocked",
+          "url": ""
+        },
+        {
+          "label": "Charles J parents lean CONNECT: docs/research/people/proposals/charles-j-merritt-parents-2026-08-08.md (C1470–C1479)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Charles Merritt; Meritt (1875 index)"
+      ],
+      "note": "**Probable** father of **George Merritt** (Annabelle’s father). Free **Ontario County Chronicle** (21 May 1902) names farmer **Charles Merritt**, ae **62**, death Bright’s disease on the east shore of Canandaigua Lake; survivors **wife** and sons **George** and **Charles** of ...",
+      "blocker": "Charles’s parents (C1477 blocked — FS death cert / 1850–60 census image "
+    },
+    "abigail_j_tesseyman": {
+      "id": "abigail_j_tesseyman",
+      "slug": "abigail-j-tesseyman",
+      "name": "Abigail J. Tesseyman",
+      "years": "1821–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "henry_tesseyman"
+      ],
+      "children": [
+        "ann_l_merritt",
+        "clarrissa_e_tesseyman",
+        "ethelinda_j_tesseyman",
+        "robert_e_tesseyman",
+        "artemisia_h_tesseyman",
+        "arietta_tesseyman",
+        "elizabeth_tesseyman",
+        "harriet_a_tesseyman"
+      ],
+      "media": [
+        {
+          "ref": "ann-l-merritt/media/fag-121146775-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 121146775",
+          "source_url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0174",
+        "FT-0270",
+        "FT-0271"
+      ],
+      "sources": [
+        {
+          "label": "FAG 121146775 — 1850 Hopewell fam 259: Abigail J Tessiman 29, children incl. Ann L (C1321)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md (C1320–C1329)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Abigail J. Tessiman (1850 census OCR on FAG 121146775)"
+      ],
+      "note": "**Probable** mother of **Ann L. (Anna Lucretia Tesseyman) Merritt**. Named on FAG-pasted **1850 Hopewell, Ontario, NY** household of **Henry Tessiman** (**C1321**). **Maiden surname unknown** — not invented. Soft birth **~1821**. Soft-ingest `verified: false`."
+    },
+    "henry_tesseyman": {
+      "id": "henry_tesseyman",
+      "slug": "henry-tesseyman",
+      "name": "Henry Tesseyman",
+      "years": "1813–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "abigail_j_tesseyman"
+      ],
+      "children": [
+        "ann_l_merritt",
+        "clarrissa_e_tesseyman",
+        "ethelinda_j_tesseyman",
+        "robert_e_tesseyman",
+        "artemisia_h_tesseyman",
+        "arietta_tesseyman",
+        "elizabeth_tesseyman",
+        "harriet_a_tesseyman"
+      ],
+      "media": [
+        {
+          "ref": "ann-l-merritt/media/fag-121146775-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find a Grave memorial 121146775",
+          "source_url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0174",
+        "FT-0270",
+        "FT-0271"
+      ],
+      "sources": [
+        {
+          "label": "FAG 121146775 — 1850 Hopewell NY fam 259 census paste: Henry Tessiman 37, wife Abigail J 29, children incl. Ann L 7 (C1321)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "1875 Canandaigua index — Ethelinda Tesseyman fam 465 (sibling corroboration C1322)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/648/1875"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md (C1320–C1329)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Henry Tessiman (1850 census OCR on FAG 121146775)"
+      ],
+      "note": "**Probable** father of **Ann L. (Anna Lucretia Tesseyman) Merritt**. FAG memorial for Ann (**121146775**) pastes **1850 US Census, Hopewell, Ontario, NY, fam 259**: **Henry Tessiman** ae **37**, wife **Abigail J.** ae **29**, children **Clarrissa E.** 8, **Ann L.** 7, **Etheli..."
+    },
+    "mayme": {
+      "id": "mayme",
+      "slug": "may-f-garrett-shorts",
+      "name": "May F. “Mayme” Shorts",
+      "years": "1893-1917",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "james_h_garrett",
+        "mary_josephine_yarman"
+      ],
+      "spouses": [
+        "earl"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0152"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 276633586",
+          "url": "https://www.findagrave.com/memorial/276633586/may_f-shorts"
+        },
+        {
+          "label": "NY County Marriage — May F. Garrett × Earl S. Shorts, 25 Mar 1915 (XVPR-868)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:XVPR-868"
+        },
+        {
+          "label": "FamilySearch community person May F. Garrett G9C1-BRC",
+          "url": "https://www.familysearch.org/tree/person/details/G9C1-BRC"
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C96–C97)",
+          "url": ""
+        },
+        {
+          "label": "Wave 2-F proposal: docs/research/people/proposals/wave-2-mayme-garrett.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Garrett"
+      ],
+      "note": "**First wife** of Earl Stanley Shorts (**C35** Confirmed; married 1915). May F. “Mayme” Garrett Shorts, 1893 – 7 Feb 1917, Mount Hope Rochester. Died before Richard’s 1922 birth — Annabelle Lucretia Merritt is Richard’s mother (Confirmed). Collateral / prior-marriage context f..."
+    },
+    "effie": {
+      "id": "effie",
+      "slug": "effie-eliza-earl-shorts",
+      "name": "Effie Eliza Shorts",
+      "years": "1861-1918",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "dorland"
+      ],
+      "children": [
+        "earl",
+        "lena"
+      ],
+      "media": [
+        {
+          "file": "media/mount-hope-cemetery-2020.jpeg",
+          "kind": "other",
+          "source": "Find A Grave memorial 8850579 — Mount Hope Cemetery overview (no individual stone photo on memorial)",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0066",
+        "FT-0067",
+        "FT-0069",
+        "FT-0152",
+        "FT-0215",
+        "FT-0216"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 8850579",
+          "url": "https://www.findagrave.com/memorial/8850579/effie_eliza-shorts"
+        },
+        {
+          "label": "NYSDI CSV 1916–1920 (Reclaim / IA) — 37880,,Effie E.,Shorts,…,25,Jun,1918,East Rochester",
+          "url": "https://archive.org/details/reclaim-the-records-new-york-state-death-index-1880-1971"
+        },
+        {
+          "label": "NY State Death Index 1918 fiche (Reclaim / IA)",
+          "url": "https://archive.org/details/New_York_State_Death_Index_1918"
+        },
+        {
+          "label": "Mount Hope Section W stone list",
+          "url": "https://mcnygenealogy.com/cem/mthope-sec-w2.htm"
+        },
+        {
+          "label": "Wave 2 proposal: docs/research/people/proposals/wave-2-effie-earl.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Ontario cluster wave: docs/research/people/proposals/ontario-cluster-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Ontario birth — daughter Carie Elena; mother Effie E. Earl (FM81-MYC)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:FM81-MYC"
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C94)",
+          "url": ""
+        },
+        {
+          "label": "CONNECT dig C1160–C1169 / C1430–C1439: docs/research/people/proposals/shorts-effie-earl-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Earl"
+      ],
+      "note": "Mother of Earl Stanley Shorts (**C28 Confirmed**). Effie Eliza Earl Shorts, Nov 1861 (Canada per FAG) – 25 Jun 1918 East Rochester NY; Mount Hope Cemetery Section W with Rev Dorland. NY State Death Index certificate **37880**. **Parents still unknown** — Wave 2 C60–C64 / Ontar..."
+    },
+    "dorland": {
+      "id": "dorland",
+      "slug": "dorland-shorts",
+      "name": "Rev Dorland Shorts",
+      "years": "1860-1945",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "alexander_shorts",
+        "eva_aylesworth"
+      ],
+      "spouses": [
+        "effie"
+      ],
+      "children": [
+        "earl",
+        "lena"
+      ],
+      "media": [
+        {
+          "ref": "effie-eliza-earl-shorts/media/mount-hope-cemetery-2020.jpeg",
+          "kind": "other",
+          "source": "Find A Grave memorial 8850579 — Mount Hope Cemetery overview (shared dual-stone context; no individual stone photo)",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0031",
+        "FT-0033",
+        "FT-0038",
+        "FT-0040",
+        "FT-0065",
+        "FT-0066",
+        "FT-0067",
+        "FT-0068",
+        "FT-0069",
+        "FT-0070",
+        "FT-0071",
+        "FT-0074",
+        "FT-0089",
+        "FT-0111",
+        "FT-0137",
+        "FT-0152",
+        "FT-0215",
+        "FT-0397"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 8850577",
+          "url": "https://www.findagrave.com/memorial/8850577/dorland-shorts"
+        },
+        {
+          "label": "NYSDI CSV 1941–1945 — 52286,,DORLAND,SHORTS,…,3,Sep,1945,MARCY (FT-0065)",
+          "url": "https://archive.org/details/reclaim-the-records-new-york-state-death-index-1880-1971"
+        },
+        {
+          "label": "Mount Hope Section W stone list (FT-0066)",
+          "url": "https://mcnygenealogy.com/cem/mthope-sec-w2.htm"
+        },
+        {
+          "label": "Pringle/Benham compiled — Dorland Shortts #239 (FT-0067)",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Maynard Methodist Church Marcy — place context (FT-0068)",
+          "url": "https://eriecanalvillageny.org/maynard-church/"
+        },
+        {
+          "label": "Ontario birth — daughter Carie Elena; father Dorland (FM81-MYZ / FM81-MYC)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:FM81-MYZ"
+        },
+        {
+          "label": "FamilySearch community person Dorland Shorts 97XX-KRT",
+          "url": "https://www.familysearch.org/tree/person/details/97XX-KRT"
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C94–C95)",
+          "url": ""
+        }
+      ],
+      "note": "Father of Earl Stanley Shorts (C28 Confirmed). Rev Dorland Shorts, Dec 1860 (Ontario) – **3 Sep 1945 Marcy, Oneida Co. NY** (NYSDI cert. **52286** / FT-0065); buried Mount Hope Cemetery Section W, Rochester with Effie (FT-0066). Spouse Effie Eliza Earl Shorts (compiled m. **18..."
+    },
+    "eva_aylesworth": {
+      "id": "eva_aylesworth",
+      "slug": "eva-eliza-aylesworth-shorts",
+      "name": "Eva Eliza Shorts",
+      "years": "1849-1876",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "jonathan_aylesworth",
+        "margaret_gilchrist_aylesworth"
+      ],
+      "spouses": [
+        "alexander_shorts"
+      ],
+      "children": [
+        "dorland"
+      ],
+      "media": [
+        {
+          "file": "media/knights-cemetery-fag-cover.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 138634881 (cemetery cover; no individual stone photo on memorial)",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633"
+        },
+        {
+          "file": "media/knights-cemetery-overview-2013.jpg",
+          "kind": "photo",
+          "source": "Find A Grave cemetery 2276932 Knight's Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2013/234/CEM2276932_137727900595.jpg"
+        },
+        {
+          "file": "media/knights-cemetery-overview-2019a.jpeg",
+          "kind": "photo",
+          "source": "Find A Grave cemetery 2276932 Knight's Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2019/274/CEM2276932_54002130-2709-414f-be38-637e832e7c88.jpeg"
+        },
+        {
+          "file": "media/knights-cemetery-overview-2024.jpeg",
+          "kind": "photo",
+          "source": "Find A Grave cemetery 2276932 Knight's Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2024/19/CEM2276932_a9e60370-2936-4334-8336-eea6d7cdaee5.jpeg"
+        },
+        {
+          "file": "media/inkerman-methodist-church-1883.jpg",
+          "kind": "photo",
+          "source": "fadedgenes Inkerman Methodist Church (FT-0072)",
+          "source_url": "https://krassoc.wordpress.com/wp-content/uploads/2013/02/inkermanmeth1883sepia.jpg"
+        },
+        {
+          "file": "media/inkerman-church-carriage-sheds.jpg",
+          "kind": "photo",
+          "source": "Mills 1983 Inkerman United Church history via Canadiana (FT-0073)",
+          "source_url": "https://pub.canadiana.ca/view/osmsdga.SouthMountain6"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0033",
+        "FT-0036",
+        "FT-0040",
+        "FT-0057",
+        "FT-0060",
+        "FT-0069",
+        "FT-0070",
+        "FT-0071",
+        "FT-0072",
+        "FT-0073",
+        "FT-0074",
+        "FT-0106",
+        "FT-0137",
+        "FT-0149"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 138634881",
+          "url": "https://www.findagrave.com/memorial/138634881/eva_eliza-shorts"
+        },
+        {
+          "label": "Knight’s Cemetery transcript (KNS 96)",
+          "url": "http://www.weekesfamily.org/graves/Graves_KnightsCemetery.htm"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 160",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/160/mode/2up"
+        },
+        {
+          "label": "fadedgenes — Inkerman Methodist Church",
+          "url": "https://krassoc.wordpress.com/2013/02/27/inkerman-methodist-church-mountain-township-dundas-county/"
+        },
+        {
+          "label": "Canadiana — Mills, History of Inkerman United Church 1883–1983",
+          "url": "https://pub.canadiana.ca/view/osmsdga.SouthMountain6"
+        },
+        {
+          "label": "Round 9: docs/research/people/proposals/round-9-aylesworth-shorts.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Eva parents: docs/research/people/proposals/fs-ascent-eva-parents.md",
+          "url": ""
+        },
+        {
+          "label": "Ontario cluster wave: docs/research/people/proposals/ontario-cluster-wave.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Aylesworth"
+      ],
+      "parent_links": [
+        {
+          "id": "jonathan_aylesworth",
+          "confidence": "Probable"
+        },
+        {
+          "id": "margaret_gilchrist_aylesworth",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Mother of Rev Dorland Shorts (**C33 Confirmed**). Eva Eliza Aylesworth Shorts, cataloged **3 Oct 1849** – **9 Aug 1876**, buried Knight’s Cemetery, Inkerman. Died young at the Methodist Episcopal parsonage; Dorland ~15–16. **Ascent refill:** parents soft-ingested **Jonathan Fa..."
+    },
+    "alexander_shorts": {
+      "id": "alexander_shorts",
+      "slug": "rev-alexander-shorts",
+      "name": "Rev Alexander Shorts",
+      "years": "1839-1896",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "samuel_shorts",
+        "mary_ann_denison"
+      ],
+      "spouses": [
+        "eva_aylesworth"
+      ],
+      "children": [
+        "dorland"
+      ],
+      "media": [
+        {
+          "file": "media/memorial-window-alexander-shorts.jpeg",
+          "kind": "other",
+          "source": "TI Life / GIUMC memorial stained-glass window (FT-0033)",
+          "source_url": "https://thousandislandslife.com/content/images/2025/08/Rev-Shorts-1.jpeg"
+        },
+        {
+          "file": "media/memorial-window-dedication-detail.png",
+          "kind": "other",
+          "source": "TI Life memorial pane detail (FT-0033)",
+          "source_url": "https://thousandislandslife.com/content/images/2025/08/Screenshot-2025-08-04-110621.png"
+        },
+        {
+          "file": "media/mount-hope-overview-2020.jpeg",
+          "kind": "other",
+          "source": "Find A Grave (cemetery overview linked from memorial 96207765)",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0031",
+        "FT-0033",
+        "FT-0034",
+        "FT-0036",
+        "FT-0037",
+        "FT-0038",
+        "FT-0039",
+        "FT-0040",
+        "FT-0041",
+        "FT-0053",
+        "FT-0054",
+        "FT-0057",
+        "FT-0058",
+        "FT-0059",
+        "FT-0060",
+        "FT-0061",
+        "FT-0062",
+        "FT-0063",
+        "FT-0064",
+        "FT-0069",
+        "FT-0070",
+        "FT-0071",
+        "FT-0072",
+        "FT-0073",
+        "FT-0074",
+        "FT-0084",
+        "FT-0137"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 96207765",
+          "url": "https://www.findagrave.com/memorial/96207765/alexander-shorts"
+        },
+        {
+          "label": "Thousand Islands Life — Alexander Shorts stained-glass series (FT-0033)",
+          "url": "https://thousandislandslife.com/grindstone-island-church-stained-glass-window-series-about-alexander-shorts/"
+        },
+        {
+          "label": "Grindstone Island UMC History — full page (FT-0031)",
+          "url": "https://www.giumc.org/history/"
+        },
+        {
+          "label": "TI Life archive — Grindstone historic churches (FT-0034)",
+          "url": "https://tilife.org/BackIssues/Archive/tabid/393/articleType/ArticleView/articleId/1450/Grindstone-Grenell-and-Wellesleys-Historic-Churches.html"
+        },
+        {
+          "label": "TI Life — Emmet C. Dodge stained-glass series (FT-0061)",
+          "url": "https://thousandislandslife.com/stained-glass-series-emmet-c-dodge/"
+        },
+        {
+          "label": "Grindstone News 12 Jul 1998 — Jesse Calkins / Rev. Shorts (FT-0062)",
+          "url": "http://grindstoneisland.org/aminta/1998/71298.htm"
+        },
+        {
+          "label": "Grindstone News 19 Aug 2001 — Tercott 1947 church eyewitness (FT-0063)",
+          "url": "http://grindstoneisland.org/aminta/2001/81901.htm"
+        },
+        {
+          "label": "TI Life — Lashomb Going Home cheese-factory chapter (FT-0064)",
+          "url": "https://tilife.org/BackIssues/Archive/tabid/393/articleType/ArticleView/articleId/2063/The-Cheese-Factory-a-Chapter-from-Going-Home.html"
+        },
+        {
+          "label": "fadedgenes — Alexander Shorts ME",
+          "url": "https://krassoc.wordpress.com/?s=Alexander+Shorts"
+        },
+        {
+          "label": "Canadiana — Mills Inkerman United Church history (FT-0057/0060)",
+          "url": "https://pub.canadiana.ca/view/osmsdga.SouthMountain6"
+        },
+        {
+          "label": "Riceville Methodist history PDF (FT-0058)",
+          "url": "https://riceville-pendletonunitedchurch.weebly.com/uploads/8/9/9/4/89943573/riceville_methodist__united_church_history_website_version__1_.pdf"
+        },
+        {
+          "label": "L&A heritage — Napanee ME → Grace United (FT-0059)",
+          "url": "http://www.sfredheritage.on.ca/L&ACounty1967.htm"
+        },
+        {
+          "label": "Round 9: docs/research/people/proposals/round-9-aylesworth-shorts.md",
+          "url": ""
+        }
+      ],
+      "note": "Father of Rev Dorland Shorts (**C33 Confirmed**). Rev Alexander Shorts, 1839 – 17 May 1896. Methodist Episcopal minister; founder of the Grindstone Island church; buried Thurso Cemetery on Grindstone Island. Spouse Eva Eliza Aylesworth; parents Samuel Shorts × Mary Ann Denison..."
+    },
+    "margaret_gilchrist_aylesworth": {
+      "id": "margaret_gilchrist_aylesworth",
+      "slug": "margaret-gilchrist-aylesworth",
+      "name": "Margaret Aylesworth",
+      "years": "1810-1876",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "duncan_gilchrist",
+        "barbara_anna_mccaslin_gilchrist"
+      ],
+      "spouses": [
+        "jonathan_aylesworth"
+      ],
+      "children": [
+        "eva_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "jonathan-fairfield-aylesworth/media/aylsworth-1887-p160.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.160 — shared under jonathan-fairfield-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page160.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 160",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/160/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Lennox & Addington Aylesworth compiled tree",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Eva parents: docs/research/people/proposals/fs-ascent-eva-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-aylesworth-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Gilchrist; Margaret Gilchrist Aylsworth"
+      ],
+      "parent_links": [
+        {
+          "id": "duncan_gilchrist",
+          "confidence": "Probable"
+        },
+        {
+          "id": "barbara_anna_mccaslin_gilchrist",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Eva Eliza Aylesworth Shorts (**C160**). Compiled 1887: born **1810** Salem (US); daughter of **Duncan × Barbara Anna (McCaslin) Gilchrist**; married Jonathan Fairfield Aylesworth **14 Oct 1835**; died **12 Aug 1876** (three days after Eva’s death **9 Aug..."
+    },
+    "jonathan_aylesworth": {
+      "id": "jonathan_aylesworth",
+      "slug": "jonathan-fairfield-aylesworth",
+      "name": "Jonathan Fairfield Aylesworth",
+      "years": "1812–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "otho_nial_aylesworth",
+        "charlotte_bowerman_aylesworth"
+      ],
+      "spouses": [
+        "margaret_gilchrist_aylesworth"
+      ],
+      "children": [
+        "eva_aylesworth"
+      ],
+      "media": [
+        {
+          "file": "media/aylsworth-1887-p160.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.160 — Jonathan Fairfield; Margaret dau Duncan × Barbara Anna McCaslin Gilchrist",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page160.jpg"
+        },
+        {
+          "ref": "otho-nial-aylesworth/media/aylsworth-1887-p89-otho.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.89 — shared under otho-nial-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page89.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0139",
+        "FT-0149"
+      ],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 160",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/160/mode/2up"
+        },
+        {
+          "label": "Same volume p. 89 — Otho Nial children (Jonathan Fairfield)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Lennox & Addington Aylesworth compiled tree",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Eva parents: docs/research/people/proposals/fs-ascent-eva-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-aylesworth-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Jonathan F. Aylsworth"
+      ],
+      "parent_links": [
+        {
+          "id": "otho_nial_aylesworth",
+          "confidence": "Probable"
+        },
+        {
+          "id": "charlotte_bowerman_aylesworth",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Eva Eliza Aylesworth Shorts (**C160**). Compiled 1887 genealogy: born **1812**; married **Margaret Gilchrist** **14 Oct 1835**; dwelt near **Roblin** P.O., Ontario; daughter **Eva Eliza** m. Rev. Alexander Shorts and d. **9 Aug 1876**. Second marriage **..."
+    },
+    "barbara_anna_mccaslin_gilchrist": {
+      "id": "barbara_anna_mccaslin_gilchrist",
+      "slug": "barbara-anna-mccaslin-gilchrist",
+      "name": "Barbara Anna Gilchrist",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "duncan_gilchrist"
+      ],
+      "children": [
+        "margaret_gilchrist_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "jonathan-fairfield-aylesworth/media/aylsworth-1887-p160.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.160 — shared under jonathan-fairfield-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page160.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 160",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/160/mode/2up"
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-aylesworth-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née McCaslin; Barbara Anna McCaslin"
+      ],
+      "note": "**Probable** mother of Margaret (Gilchrist) Aylesworth (**C193**). Named on Homer Aylsworth **1887 p. 160** as **Barbara Anna (McCaslin)**, wife of **Duncan Gilchrist**, of Salem (?). Soft-ingest only — `verified: false`. No independent free vitals this pass."
+    },
+    "duncan_gilchrist": {
+      "id": "duncan_gilchrist",
+      "slug": "duncan-gilchrist",
+      "name": "Duncan Gilchrist",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "barbara_anna_mccaslin_gilchrist"
+      ],
+      "children": [
+        "margaret_gilchrist_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "jonathan-fairfield-aylesworth/media/aylsworth-1887-p160.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.160 — shared under jonathan-fairfield-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page160.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 160",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/160/mode/2up"
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-aylesworth-genback.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Margaret (Gilchrist) Aylesworth (**C193**). Named only on Homer Aylsworth **1887 p. 160** as husband of **Barbara Anna (McCaslin)** and father of Margaret (b. **1810** Salem, US). Soft-ingest only — `verified: false`. No independent free vitals this pass..."
+    },
+    "charlotte_bowerman_aylesworth": {
+      "id": "charlotte_bowerman_aylesworth",
+      "slug": "charlotte-bowerman-aylesworth",
+      "name": "Charlotte Aylesworth",
+      "years": "1779-1869",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [
+        "otho_nial_aylesworth"
+      ],
+      "children": [
+        "jonathan_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "otho-nial-aylesworth/media/aylsworth-1887-p89-otho.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.89 — shared under otho-nial-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page89.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0139",
+        "FT-0140",
+        "FT-0141",
+        "FT-0142",
+        "FT-0146",
+        "FT-0147",
+        "FT-0148",
+        "FT-0149",
+        "FT-0168"
+      ],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 89",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Lennox & Addington Aylesworth compiled tree",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "Bowerman family genealogy appendix — vitals, adoption note, Quaker records",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        },
+        {
+          "label": "Pioneer Life on the Bay of Quinte (1904), p. 131",
+          "url": "https://archive.org/details/pioneerlifeonbay00torouoft/page/131/mode/2up"
+        },
+        {
+          "label": "West Lake Prep. Meeting Women Friends 1803–1825 (H-12-1, CFHA) — Charlotty Bowerman / Charlotte Elsworth minutes",
+          "url": "https://cfha.info/WestLakeH-12-1.pdf"
+        },
+        {
+          "label": "Adolphustown Monthly Meeting 1798–1813 (O-2-1) — Charlottee Bowerman accepted; Charlotte Aylsworth acknowledgment",
+          "url": "https://quaker.ca/archives/wp-content/uploads/sites/47/2015/08/Adolphustown-Monthly-Meeting-Minutes-1798.pdf"
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-mother-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-quaker-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Bowerman; Charlotte Jinks Bowerman (compiled); Charlotty Bowerman (Quaker records)"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** mother of Jonathan Fairfield Aylesworth (**C190**). Homer Aylsworth **1887 p. 89**: **Charlotte Bowerman** b. **1779**, daughter of **David Bowerman**; m. **Otho Nial** **1805**; d. **1869**. Bowerman appendix + aylesworth.net harden vitals (**b. 16 Oct 1779**; **..."
+    },
+    "otho_nial_aylesworth": {
+      "id": "otho_nial_aylesworth",
+      "slug": "otho-nial-aylesworth",
+      "name": "Otho Nial Aylesworth",
+      "years": "1761-1821",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "job_aylesworth",
+        "sarah_clark_aylesworth"
+      ],
+      "spouses": [
+        "charlotte_bowerman_aylesworth"
+      ],
+      "children": [
+        "jonathan_aylesworth"
+      ],
+      "media": [
+        {
+          "file": "media/aylsworth-1887-p89-otho.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.89 — Otho Nial × Charlotte Bowerman; Jonathan Fairfield child",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page89.jpg"
+        },
+        {
+          "ref": "job-aylesworth/media/aylsworth-1887-p62-job.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.62 — shared under job-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page62.jpg"
+        },
+        {
+          "ref": "job-aylesworth/media/aylsworth-1887-p90-otho-mother.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.90 — shared under job-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page90.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0139",
+        "FT-0148",
+        "FT-0149"
+      ],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 89",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up"
+        },
+        {
+          "label": "Same volume p. 160 — son Jonathan Fairfield lineage header",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/160/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Lennox & Addington Aylesworth compiled tree",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-aylesworth-genback.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Otho parents: docs/research/people/proposals/fs-ascent-otho-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Otho Nial Aylsworth; Ortho Nial"
+      ],
+      "parent_links": [
+        {
+          "id": "job_aylesworth",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_clark_aylesworth",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Jonathan Fairfield Aylesworth (**C190**). Homer Aylsworth **1887 p. 89**: **Otho Nial (4)** m. **1805** **Charlotte Bowerman** (b. **1779**, dau. **David Bowerman**); dwelt Ernesttown, Lennox Co., Ontario; he d. **1821**, she **1869**. Child list include..."
+    },
+    "catherine_bartlett_bowerman": {
+      "id": "catherine_bartlett_bowerman",
+      "slug": "catherine-bartlett-bowerman",
+      "name": "Catherine Bartlett Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "david_bowerman"
+      ],
+      "children": [
+        "charlotte_bowerman_aylesworth",
+        "john_bowerman_david",
+        "benoni_bowerman",
+        "levi_bowerman",
+        "mary_bowerman_vanvaulkenberg",
+        "cornelius_bowerman_david",
+        "ichabod_bowerman_son_of_david",
+        "sarah_bowerman_hutchinson",
+        "elizabeth_bowerman_shorey",
+        "lydia_bowerman_trumpour",
+        "phebe_bowerman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0140",
+        "FT-0141",
+        "FT-0142",
+        "FT-0147",
+        "FT-0148"
+      ],
+      "sources": [
+        {
+          "label": "Pioneer Life on the Bay of Quinte (1904), p. 131 — David × Catherine; Charlotte listed as child",
+          "url": "https://archive.org/details/pioneerlifeonbay00torouoft/page/131/mode/2up"
+        },
+        {
+          "label": "Bowerman family genealogy (PLBQ-derived) — David m. Catherine Bartlett; Quaker records",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        },
+        {
+          "label": "West Lake Prep. Meeting Women Friends 1803–1825 (H-12-1) — Catarine Bowerman request 6th Mo 1804",
+          "url": "https://cfha.info/WestLakeH-12-1.pdf"
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-mother-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-quaker-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Bartlett; Catherine Bowerman"
+      ],
+      "note": "**Possible** adoptive mother of Charlotte (Bowerman) Aylesworth (**C1190**). PLBQ p. **131** and Bowerman compiled genealogy name **Catherine Bartlett** as wife of **David Bowerman** and mother figure in Charlotte’s Bowerman FAN. Bowerman **1904 appendix** states Charlotte was..."
+    },
+    "david_bowerman": {
+      "id": "david_bowerman",
+      "slug": "david-bowerman",
+      "name": "David Bowerman",
+      "years": "1754-1828",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ichabod_bowerman",
+        "lydia_mott_bowerman"
+      ],
+      "spouses": [
+        "catherine_bartlett_bowerman"
+      ],
+      "children": [
+        "john_bowerman_david",
+        "benoni_bowerman",
+        "levi_bowerman",
+        "mary_bowerman_vanvaulkenberg",
+        "cornelius_bowerman_david",
+        "ichabod_bowerman_son_of_david",
+        "sarah_bowerman_hutchinson",
+        "elizabeth_bowerman_shorey",
+        "lydia_bowerman_trumpour",
+        "phebe_bowerman",
+        "charlotte_bowerman_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "otho-nial-aylesworth/media/aylsworth-1887-p89-otho.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.89 — shared under otho-nial-aylesworth (Charlotte dau. David)",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page89.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0139",
+        "FT-0141",
+        "FT-0142",
+        "FT-0146",
+        "FT-0147",
+        "FT-0148",
+        "FT-0156",
+        "FT-0168",
+        "FT-0169",
+        "FT-0170"
+      ],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 89 — Charlotte dau. David Bowerman",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up"
+        },
+        {
+          "label": "Pioneer Life on the Bay of Quinte (1904), p. 131 — David × Catherine Bartlett family",
+          "url": "https://archive.org/details/pioneerlifeonbay00torouoft/page/131/mode/2up"
+        },
+        {
+          "label": "Bowerman family genealogy (PLBQ-derived) — David vitals, children, appendix on Charlotte adoption",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        },
+        {
+          "label": "aylesworth.net — Charlotte Bowerman parent compiled",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "Adolphustown Monthly Meeting 1798–1813 (O-2-1) — Ichabod Bowerman children membership 1799",
+          "url": "https://quaker.ca/archives/wp-content/uploads/sites/47/2015/08/Adolphustown-Monthly-Meeting-Minutes-1798.pdf"
+        },
+        {
+          "label": "M.Y. Williams genealogy (williams1379d.pdf) — David son of Lydia Mott",
+          "url": "https://sites.rootsweb.com/~saylormowbray/williams1379d.pdf"
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-mother-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-quaker-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ichabod_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "lydia_mott_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** father of Charlotte (Bowerman) Aylesworth (**C253**). Homer Aylsworth **1887 p. 89**: Charlotte Bowerman, born **1779**, “was the daughter of **David Bowerman**.” Bowerman / PLBQ sources add vitals (**b. 1754**; **d. Apr 1828** Pr. Ed. Co.), spouse **Catherine Bar..."
+    },
+    "lydia_mott_bowerman": {
+      "id": "lydia_mott_bowerman",
+      "slug": "lydia-mott-bowerman",
+      "name": "Lydia Mott Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ichabod_bowerman"
+      ],
+      "children": [
+        "david_bowerman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0156"
+      ],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy — (IV) Ichabod × Lydia Mott; mother of David (V)",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Mott; Lydia Mott Petty (compiled variant)"
+      ],
+      "note": "**Possible** mother of **David Bowerman** (**C1195**). Bowerman compiled genealogy names **Lydia Mott** as wife of **Ichabod Bowerman** and mother of **David**. Soft-ingest only — `verified: false`."
+    },
+    "ichabod_bowerman": {
+      "id": "ichabod_bowerman",
+      "slug": "ichabod-bowerman",
+      "name": "Ichabod Bowerman",
+      "years": "1683-1796",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "lydia_mott_bowerman"
+      ],
+      "children": [
+        "david_bowerman"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0146",
+        "FT-0156",
+        "FT-0157",
+        "FT-0168",
+        "FT-0169",
+        "FT-0170"
+      ],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy — (IV) Ichabod × Lydia Mott; father of David (V)",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        },
+        {
+          "label": "Adolphustown Monthly Meeting 1798–1813 (O-2-1) — Ichabod Bowerman children membership request",
+          "url": "https://quaker.ca/archives/wp-content/uploads/sites/47/2015/08/Adolphustown-Monthly-Meeting-Minutes-1798.pdf"
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-mother-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Dig proposal: docs/research/people/proposals/shorts-bowerman-quaker-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "note": "**Possible** father of **David Bowerman** (**C1195**). Bowerman compiled genealogy: **(IV) Ichabod** × **Lydia Mott**; issue includes **(V) David**. Descendants of Ichabod Bowerman of Dutchess Co., NY **1683–1796**. Soft-ingest name-only — `verified: false`. Do not climb Ichab..."
+    },
+    "sarah_clark_aylesworth": {
+      "id": "sarah_clark_aylesworth",
+      "slug": "sarah-clark-aylesworth",
+      "name": "Sarah Aylesworth",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "job_aylesworth"
+      ],
+      "children": [
+        "otho_nial_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "job-aylesworth/media/aylsworth-1887-p62-job.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.62 — shared under job-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page62.jpg"
+        },
+        {
+          "ref": "job-aylesworth/media/aylsworth-1887-p90-otho-mother.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.90 — shared under job-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page90.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), pp. 62–63 — Job (3) m. Sarah Clark",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/62/mode/2up"
+        },
+        {
+          "label": "Same volume p. 90 — Otho Nial + Job (4) children of first wife Sarah (Clark)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/90/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Sarah Clark first wife of Job; mother of Otho",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Otho parents: docs/research/people/proposals/fs-ascent-otho-aylesworth-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Job parents (Sarah gap C275): docs/research/people/proposals/fs-ascent-job-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Clark; Sarah Clark"
+      ],
+      "note": "**Probable** mother of Otho Nial Aylesworth (**C250**). Homer Aylsworth **1887**: Job (3) married **Sarah Clark** (Aylsworth Register); p. **90** argues that if Job (4) was born **~1763**, then older brother Otho (**perhaps 1761**) and Job (4) were children of the **first** wi..."
+    },
+    "job_aylesworth": {
+      "id": "job_aylesworth",
+      "slug": "job-aylesworth",
+      "name": "Job Aylesworth",
+      "years": "1722-1803",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "philip_aylesworth",
+        "rachel_greene_aylesworth"
+      ],
+      "spouses": [
+        "sarah_clark_aylesworth"
+      ],
+      "children": [
+        "otho_nial_aylesworth"
+      ],
+      "media": [
+        {
+          "file": "media/aylsworth-1887-p62-job.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.62 — Job (3) × Sarah Clark; Canada 1788; d. 1803 spotted fever",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page62.jpg"
+        },
+        {
+          "file": "media/aylsworth-1887-p63-job-children.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.63 — children incl. Otho Nial (4) m. Charlotte Bowerman 1805",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page63.jpg"
+        },
+        {
+          "file": "media/aylsworth-1887-p90-otho-mother.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.90 — Otho/Job (4) of Sarah Clark not Sarah Aylsworth m. 1765",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page90.jpg"
+        },
+        {
+          "ref": "philip-aylesworth/media/aylsworth-1887-p43-philip.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.43 — shared under philip-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page43.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), pp. 62–63 — #23 Job (3)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/62/mode/2up"
+        },
+        {
+          "label": "Same volume p. 90 — Otho/Job (4) birth inference; Sarah Clark as first wife",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/90/mode/2up"
+        },
+        {
+          "label": "Same volume p. 89 — Otho Nial (4)—Job (3) lineage header",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Job × Sarah Clark → Otho Nial",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Otho parents: docs/research/people/proposals/fs-ascent-otho-aylesworth-parents.md",
+          "url": ""
+        },
+        {
+          "label": "Homer E. Aylsworth 1887 p. 43 — Philip (2) × Rachel Greene; child Job (3)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/43/mode/2up"
+        },
+        {
+          "label": "FS ascent Job parents: docs/research/people/proposals/fs-ascent-job-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Job Aylsworth; Job Aylesworth Sr."
+      ],
+      "parent_links": [
+        {
+          "id": "philip_aylesworth",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rachel_greene_aylesworth",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Otho Nial Aylesworth (**C250**). Homer Aylsworth **1887 pp. 62–63**: **Job (3)**—Philip (2), Arthur (1)—married **Sarah Clark**; entered Canada **1788**; settled Ernesttown near Bath; he, his wife, and three children died in the **1803** spotted-fever ou..."
+    },
+    "rachel_greene_aylesworth": {
+      "id": "rachel_greene_aylesworth",
+      "slug": "rachel-greene-aylesworth",
+      "name": "Rachel Aylesworth",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "daniel_greene",
+        "rebecca_barrow_greene"
+      ],
+      "spouses": [
+        "philip_aylesworth"
+      ],
+      "children": [
+        "job_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "philip-aylesworth/media/aylsworth-1887-p43-philip.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.43 — shared under philip-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page43.jpg"
+        },
+        {
+          "ref": "philip-aylesworth/media/aylsworth-1887-p44-philip-children.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.44 — shared under philip-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page44.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 43 — Rachel Greene dau. Daniel × Rebecca (Barrow) Greene; wife of Philip (2)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/43/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Rachel Greene dau. Daniel Greene × Rebecca Barrows; m. Phillip ~1721",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Job parents: docs/research/people/proposals/fs-ascent-job-aylesworth-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Philip parents: docs/research/people/proposals/fs-ascent-philip-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Greene; Rachel Green; Rachel (Greene) Aylsworth"
+      ],
+      "parent_links": [
+        {
+          "id": "daniel_greene",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rebecca_barrow_greene",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Job Aylesworth (**C270**). Homer Aylsworth **1887 p. 43**: Philip (2) married **Rachel Greene**, daughter of **Daniel and Rebecca (Barrow) Greene** of Quidnesset; they lived and died on the immigrant homestead; death dates lost. Soft-ingest only — `verif..."
+    },
+    "philip_aylesworth": {
+      "id": "philip_aylesworth",
+      "slug": "philip-aylesworth",
+      "name": "Philip Aylesworth",
+      "years": "1692–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "arthur_aylesworth",
+        "mary_brown_aylesworth"
+      ],
+      "spouses": [
+        "rachel_greene_aylesworth"
+      ],
+      "children": [
+        "job_aylesworth"
+      ],
+      "media": [
+        {
+          "file": "media/aylsworth-1887-p43-philip.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.43 — Philip (2) × Rachel Greene; child Job (3)",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page43.jpg"
+        },
+        {
+          "file": "media/aylsworth-1887-p44-philip-children.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.44 — closes Philip child list (five d. youth); Chad (2) starts",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page44.jpg"
+        },
+        {
+          "ref": "arthur-aylesworth/media/aylsworth-1887-p36-arthur-start.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.36 — shared under arthur-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page36.jpg"
+        },
+        {
+          "ref": "arthur-aylesworth/media/aylsworth-1887-p37-arthur.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.37 — shared under arthur-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page37.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 43 — #5 Philip (2) × Rachel Greene; child Job (3)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/43/mode/2up"
+        },
+        {
+          "label": "Same volume pp. 36–37 — Arthur (1) × Mary Brown; child Philip (2)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/36/mode/2up"
+        },
+        {
+          "label": "Same volume pp. 62–63 — JOB (3)—Philip (2), Arthur (1)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/62/mode/2up"
+        },
+        {
+          "label": "Same volume p. 89 — Otho Nial (4)—Job (3), Philip (2), Arthur (1)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Phillip b. 1692 × Rachel Greene → Job",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Job parents: docs/research/people/proposals/fs-ascent-job-aylesworth-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Philip parents: docs/research/people/proposals/fs-ascent-philip-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Philip Aylsworth; Philip (2)"
+      ],
+      "parent_links": [
+        {
+          "id": "arthur_aylesworth",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_aylesworth",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Job Aylesworth (**C270**). Homer Aylsworth **1887 p. 43**: **Philip (2)—Arthur (1)—** b. **1692**, married **Rachel Greene** (dau. Daniel × Rebecca (Barrow) Greene of Quidnesset); lived on the immigrant homestead; death dates and children’s birth dates l..."
+    },
+    "rebecca_barrow_greene": {
+      "id": "rebecca_barrow_greene",
+      "slug": "rebecca-barrow-greene",
+      "name": "Rebecca Greene",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "daniel_greene"
+      ],
+      "children": [
+        "rachel_greene_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "philip-aylesworth/media/aylsworth-1887-p43-philip.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.43 — shared under philip-aylesworth (Rachel dau. Daniel × Rebecca)",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page43.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 43 — Rebecca (Barrow) Greene; mother of Rachel",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/43/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Rebecca Barrows × Daniel Greene → Rachel",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Philip parents: docs/research/people/proposals/fs-ascent-philip-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Barrow; Rebecca (Barrow) Greene; Rebecca Barrows"
+      ],
+      "note": "**Probable** mother of Rachel (Greene) Aylesworth (**C294**). Homer Aylsworth **1887 p. 43**: Rachel Greene, daughter of Daniel and **Rebecca (Barrow) Greene** of Quidnesset. Soft-ingest name-only — `verified: false`. aylesworth.net spells **Barrows** — keep as aka. No free vi..."
+    },
+    "daniel_greene": {
+      "id": "daniel_greene",
+      "slug": "daniel-greene",
+      "name": "Daniel Greene",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "rebecca_barrow_greene"
+      ],
+      "children": [
+        "rachel_greene_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "philip-aylesworth/media/aylsworth-1887-p43-philip.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.43 — shared under philip-aylesworth (Rachel dau. Daniel × Rebecca)",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page43.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 43 — Rachel Greene dau. Daniel and Rebecca (Barrow) Greene of Quidnesset",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/43/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Daniel Greene × Rebecca Barrows → Rachel",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Philip parents: docs/research/people/proposals/fs-ascent-philip-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Rachel (Greene) Aylesworth (**C294**). Homer Aylsworth **1887 p. 43**: Philip married Rachel Greene, “daughter of **Daniel and Rebecca (Barrow) Greene** of Quidnesset.” Soft-ingest name-only — `verified: false`. No free vitals or parents found this pass;..."
+    },
+    "mary_brown_aylesworth": {
+      "id": "mary_brown_aylesworth",
+      "slug": "mary-brown-aylesworth",
+      "name": "Mary Aylesworth",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "rev_john_brown",
+        "mary_holmes_brown"
+      ],
+      "spouses": [
+        "arthur_aylesworth"
+      ],
+      "children": [
+        "philip_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "arthur-aylesworth/media/aylsworth-1887-p36-arthur-start.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.36 — shared under arthur-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page36.jpg"
+        },
+        {
+          "ref": "arthur-aylesworth/media/aylsworth-1887-p37-arthur.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.37 — shared under arthur-aylesworth",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page37.jpg"
+        },
+        {
+          "ref": "rev-john-brown/media/chad-browne-1888-p10-john.jpg",
+          "kind": "document",
+          "source": "Chad Browne Memorial 1888 p.10 — shared under rev-john-brown",
+          "source_url": "https://archive.org/download/chadbrownememori00bulkrich/page/page10.jpg"
+        },
+        {
+          "ref": "rev-john-brown/media/chad-browne-1888-p14-mary-aylworth.jpg",
+          "kind": "document",
+          "source": "Chad Browne Memorial 1888 p.14 — shared under rev-john-brown",
+          "source_url": "https://archive.org/download/chadbrownememori00bulkrich/page/page14.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), p. 36 — Mary Brown of Providence; wife of Arthur (1)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/36/mode/2up"
+        },
+        {
+          "label": "Same volume p. 37 — child list includes Philip (2)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/37/mode/2up"
+        },
+        {
+          "label": "Abby Isabel Brown Bulkley, The Chad Browne Memorial (1888), p. 14 — #7 Mary Brown (John², Chad¹) m. Arthur Aylworth",
+          "url": "https://archive.org/details/chadbrownememori00bulkrich/page/14/mode/2up"
+        },
+        {
+          "label": "Same volume p. 10 — parents Rev. John × Mary Holmes",
+          "url": "https://archive.org/details/chadbrownememori00bulkrich/page/10/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Mary Brown × Arthur → Philip",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Mary Brown parents: docs/research/people/proposals/fs-ascent-mary-brown-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Brown; Mary Brown of Providence; Mary (Brown) Aylworth"
+      ],
+      "parent_links": [
+        {
+          "id": "rev_john_brown",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_holmes_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Philip Aylesworth (**C290**). Homer Aylsworth **1887 p. 36**: Arthur married **Mary Brown**, of Providence; her death “doubtless preceded his a number of years.” Soft-ingest only — `verified: false`. Parents climbed (**C310**): **Rev. John Brown** × **Ma..."
+    },
+    "arthur_aylesworth": {
+      "id": "arthur_aylesworth",
+      "slug": "arthur-aylesworth",
+      "name": "Arthur Aylesworth",
+      "years": "1656-1725",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_brown_aylesworth"
+      ],
+      "children": [
+        "philip_aylesworth"
+      ],
+      "media": [
+        {
+          "file": "media/aylsworth-1887-p36-arthur-start.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.36 — FIRST GENERATION Arthur (1) × Mary Brown of Providence",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page36.jpg"
+        },
+        {
+          "file": "media/aylsworth-1887-p37-arthur.jpg",
+          "kind": "document",
+          "source": "Arthur Aylsworth 1887 p.37 — child list Philip (2) b.1692; will names Phillip heir",
+          "source_url": "https://archive.org/download/arthuraylsworthh00ayls/page/page37.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0106"
+      ],
+      "sources": [
+        {
+          "label": "Homer E. Aylsworth, Arthur Aylsworth and his Descendants in America (1887), pp. 36–37 — #1 Arthur (1) × Mary Brown; child Philip (2)",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/36/mode/2up"
+        },
+        {
+          "label": "Same volume p. 43 — PHILIP (2)—Arthur (1)— lineage header",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/43/mode/2up"
+        },
+        {
+          "label": "Aylsworth Register excerpt in same volume — Arthur b. England ~1656; m. Mary Brown",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/n21/mode/2up"
+        },
+        {
+          "label": "aylesworth.net — Arthur the immigrant × Mary Brown → Philip",
+          "url": "http://www.aylesworth.net/Caleb/aylesworth.html"
+        },
+        {
+          "label": "FS ascent Philip parents: docs/research/people/proposals/fs-ascent-philip-aylesworth-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Arthur Aylworth; Arthur (1); the Emigrant"
+      ],
+      "note": "**Probable** father of Philip Aylesworth (**C290**). Homer Aylsworth **1887 pp. 36–37**: **Arthur Aylworth (1)** came to America before **29 Jul 1679**, married **Mary Brown** of Providence, settled **Quidnesset**, died between **7 Nov 1725** and **13 Sep 1726**. Child list in..."
+    },
+    "mary_holmes_brown": {
+      "id": "mary_holmes_brown",
+      "slug": "mary-holmes-brown",
+      "name": "Mary Brown",
+      "years": "1638-1690",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "rev_john_brown"
+      ],
+      "children": [
+        "mary_brown_aylesworth"
+      ],
+      "media": [
+        {
+          "ref": "rev-john-brown/media/chad-browne-1888-p10-john.jpg",
+          "kind": "document",
+          "source": "Chad Browne Memorial 1888 p.10 — shared under rev-john-brown",
+          "source_url": "https://archive.org/download/chadbrownememori00bulkrich/page/page10.jpg"
+        },
+        {
+          "ref": "rev-john-brown/media/chad-browne-1888-p14-mary-aylworth.jpg",
+          "kind": "document",
+          "source": "Chad Browne Memorial 1888 p.14 — shared under rev-john-brown",
+          "source_url": "https://archive.org/download/chadbrownememori00bulkrich/page/page14.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Abby Isabel Brown Bulkley, The Chad Browne Memorial (1888), p. 10 — John m. Mary, dau. of Rev. Obadiah and Catharine Holmes of Newport",
+          "url": "https://archive.org/details/chadbrownememori00bulkrich/page/10/mode/2up"
+        },
+        {
+          "label": "Same volume p. 14 — #7 Mary Brown (John²) m. Arthur Aylworth",
+          "url": "https://archive.org/details/chadbrownememori00bulkrich/page/14/mode/2up"
+        },
+        {
+          "label": "Homer E. Aylsworth 1887 p. 36 — Mary (Holmes) Brown; Rev. Obadiah Holmes named in footnote",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/36/mode/2up"
+        },
+        {
+          "label": "WikiTree Holmes-558",
+          "url": "https://www.wikitree.com/wiki/Holmes-558"
+        },
+        {
+          "label": "Find A Grave 180601700 (soft)",
+          "url": "https://www.findagrave.com/memorial/180601700/mary-brown"
+        },
+        {
+          "label": "FS ascent Mary Brown parents: docs/research/people/proposals/fs-ascent-mary-brown-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Holmes; Mary (Holmes) Brown; Mary Holmes of Newport"
+      ],
+      "note": "**Probable** mother of Mary (Brown) Aylesworth (**C310**). Chad Browne Memorial **1888 p. 10**: wife of **#2 John Brown (Chad¹)** — **Mary**, daughter of **Rev. Obadiah and Catharine Holmes** of Newport. Same volume **p. 14** names daughter **#7 Mary** as wife of Arthur Aylwor..."
+    },
+    "rev_john_brown": {
+      "id": "rev_john_brown",
+      "slug": "rev-john-brown",
+      "name": "Rev. John Brown",
+      "years": "1630-1706",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_holmes_brown"
+      ],
+      "children": [
+        "mary_brown_aylesworth"
+      ],
+      "media": [
+        {
+          "file": "media/chad-browne-1888-p10-john.jpg",
+          "kind": "document",
+          "source": "Chad Browne Memorial 1888 p.10 — John Brown (Chad¹) × Mary Holmes of Newport",
+          "source_url": "https://archive.org/download/chadbrownememori00bulkrich/page/page10.jpg"
+        },
+        {
+          "file": "media/chad-browne-1888-p14-mary-aylworth.jpg",
+          "kind": "document",
+          "source": "Chad Browne Memorial 1888 p.14 — #7 Mary Brown m. Arthur Aylworth",
+          "source_url": "https://archive.org/download/chadbrownememori00bulkrich/page/page14.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Abby Isabel Brown Bulkley, The Chad Browne Memorial (1888), p. 10 — #2 John Brown (Chad¹) × Mary Holmes; Baptist Elder, Providence",
+          "url": "https://archive.org/details/chadbrownememori00bulkrich/page/10/mode/2up"
+        },
+        {
+          "label": "Same volume p. 14 — #7 Mary Brown (John², Chad¹) m. Arthur Aylworth",
+          "url": "https://archive.org/details/chadbrownememori00bulkrich/page/14/mode/2up"
+        },
+        {
+          "label": "Homer E. Aylsworth 1887 p. 36 footnote — Mary dau. probably of Rev. John × Mary (Holmes); Editor: proved correct",
+          "url": "https://archive.org/details/arthuraylsworthh00ayls/page/36/mode/2up"
+        },
+        {
+          "label": "WikiTree Browne-1393",
+          "url": "https://www.wikitree.com/wiki/Browne-1393"
+        },
+        {
+          "label": "FS ascent Mary Brown parents: docs/research/people/proposals/fs-ascent-mary-brown-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John Browne; Elder John Brown; John Brown (2) son of Chad"
+      ],
+      "note": "**Probable** father of Mary (Brown) Aylesworth (**C310**). Chad Browne Memorial **1888 p. 10**: **#2 John Brown (Chad¹)**, b. **1630**, d. **about 1706**, m. **Mary**, dau. of **Rev. Obadiah and Catharine Holmes** of Newport; Baptist Elder / surveyor, Providence North End. Chi..."
+    },
+    "mary_ann_denison": {
+      "id": "mary_ann_denison",
+      "slug": "mary-ann-denison-shorts",
+      "name": "Mary Ann Shorts",
+      "years": "1809-1872",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "nathan_denison",
+        "elizabeth_thompson"
+      ],
+      "spouses": [
+        "samuel_shorts"
+      ],
+      "children": [
+        "alexander_shorts",
+        "robert_shorts"
+      ],
+      "media": [
+        {
+          "ref": "samuel-shorts/media/sexsmith-cemetery-overview-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Sexsmith Cemetery overview (shared; Mary Ann FAG 280868640 has 0 photos)",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0053",
+        "FT-0054",
+        "FT-0055",
+        "FT-0104",
+        "FT-0105",
+        "FT-0137"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 280868640",
+          "url": "https://www.findagrave.com/memorial/280868640/mary_ann-shorts"
+        },
+        {
+          "label": "Baldwin & Clift (1881) — Internet Archive",
+          "url": "https://archive.org/details/recordofdescenda1881bald"
+        },
+        {
+          "label": "WikiTree Denison-1629",
+          "url": "https://www.wikitree.com/wiki/Denison-1629"
+        },
+        {
+          "label": "Museum of Lennox & Addington quilt 2014.36.01",
+          "url": "https://lennoxaddington.pastperfectonline.com/webobject/43218FFE-FBCC-4DA7-87D0-456574585180"
+        }
+      ],
+      "aka": [
+        "née Denison"
+      ],
+      "note": "Mother of Rev Alexander Shorts (**C34 Confirmed**). Mary Ann Denison Shorts 1809–1872; wife of Samuel Shorts. FAG-linked children Alexander + Robert (**C52**); Baldwin/FAG also list Elizabeth / Jane / Andrew / Hannah (**C53 Possible**). Probable parents Nathan Denison × Elizab..."
+    },
+    "samuel_shorts": {
+      "id": "samuel_shorts",
+      "slug": "samuel-shorts",
+      "name": "Samuel Shorts",
+      "years": "1809-1869",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [
+        "mary_ann_denison"
+      ],
+      "children": [
+        "alexander_shorts",
+        "robert_shorts"
+      ],
+      "media": [
+        {
+          "file": "media/sexsmith-cemetery-overview-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 (Sexsmith Cemetery overview; Samuel memorial has no stone photo)",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        },
+        {
+          "file": "media/sexsmith-cemetery-row-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 (Sexsmith Cemetery row; Shorts inscriptions not readable)",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0035",
+        "FT-0053",
+        "FT-0054",
+        "FT-0056",
+        "FT-0137"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 280868397",
+          "url": "https://www.findagrave.com/memorial/280868397/samuel-shorts"
+        },
+        {
+          "label": "Baldwin & Clift (1881) #3074 — Internet Archive",
+          "url": "https://archive.org/details/recordofdescenda1881bald"
+        },
+        {
+          "label": "OGW 1851 Richmond Twp transcript (parents Agustis/Ellenor p.117)",
+          "url": "https://oncensus.canadagenweb.org/transcripts/1851/1725-12.html"
+        },
+        {
+          "label": "Sexsmith Cemetery location — South Fred Heritage",
+          "url": "http://www.sfredheritage.on.ca/CemeteriesGrNap.htm"
+        },
+        {
+          "label": "Wave 2 proposal: docs/research/people/proposals/wave-2-samuel-shorts.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Samuel D. Shorts; Samuel D. Shortts"
+      ],
+      "note": "Father of Rev Alexander Shorts (**C34 Confirmed**). Samuel D. Shorts 1809-1869; married Mary Ann Denison 10 Apr 1832 (per FAG bio + Baldwin 1881). FAG-linked children: Alexander (1839-1896) and Robert (1849-1929, **C52**). Bio/Baldwin additional children Elizabeth / Andrew / H..."
+    },
+    "elizabeth_thompson": {
+      "id": "elizabeth_thompson",
+      "slug": "elizabeth-thompson-denison",
+      "name": "Elizabeth Denison",
+      "years": "1788-1873",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "nathan_denison"
+      ],
+      "children": [
+        "mary_ann_denison"
+      ],
+      "media": [
+        {
+          "file": "media/riverview-cemetery-fag-2020.jpeg",
+          "kind": "other",
+          "source": "Find A Grave memorial 214727774 (Riverview Cemetery overview; identical bytes to Nathan 214727773 overview)",
+          "source_url": "https://images.findagrave.com/photos/2020/236/UNCEM_2232740_c5111a64-ff16-4bf5-8893-771320fcb8a5.jpeg"
+        },
+        {
+          "file": "media/riverview-cemetery-fag-2020b.jpeg",
+          "kind": "other",
+          "source": "Find A Grave memorial 214727774 (Riverview Cemetery overview B)",
+          "source_url": "https://images.findagrave.com/photos/2020/236/UNCEM_2232740_94072d53-684c-4d6a-bbca-7931f2a114d5.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0055",
+        "FT-0105"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 214727774",
+          "url": "https://www.findagrave.com/memorial/214727774/elizabeth-denison"
+        },
+        {
+          "label": "Baldwin & Clift (1881), pp. 148–149",
+          "url": "https://archive.org/details/recordofdescenda1881bald"
+        },
+        {
+          "label": "WikiTree Thompson-46450",
+          "url": "https://www.wikitree.com/wiki/Thompson-46450"
+        },
+        {
+          "label": "Museum of Lennox & Addington quilt 2014.36.01 (Elizabeth Denison née Thompson; parent conflict)",
+          "url": "https://lennoxaddington.pastperfectonline.com/webobject/43218FFE-FBCC-4DA7-87D0-456574585180"
+        },
+        {
+          "label": "Ontario cluster wave: docs/research/people/proposals/ontario-cluster-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Thompson; Elizabeth Thompson Denison"
+      ],
+      "note": "Probable mother of Mary Ann Denison Shorts (**C66**, Wave 2). Elizabeth (Thompson) Denison; m. Nathan Denison **15 Dec 1803** Berne NY (**C133**); d. **19 Nov 1873** Napanee; buried Riverview Cemetery. Working birth ~1788 Albany Co. NY; museum descendants give **4 Mar 1786** R..."
+    },
+    "nathan_denison": {
+      "id": "nathan_denison",
+      "slug": "nathan-denison",
+      "name": "Nathan Denison",
+      "years": "1781-1849",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "robert_denison",
+        "anna_chesebrough_denison"
+      ],
+      "spouses": [
+        "elizabeth_thompson"
+      ],
+      "children": [
+        "mary_ann_denison"
+      ],
+      "media": [
+        {
+          "file": "media/riverview-cemetery-fag-2020.jpeg",
+          "kind": "other",
+          "source": "Find A Grave memorial 214727773 (Riverview Cemetery overview; not a personal tablet)",
+          "source_url": "https://images.findagrave.com/photos/2020/236/UNCEM_2232740_c5111a64-ff16-4bf5-8893-771320fcb8a5.jpeg"
+        },
+        {
+          "ref": "robert-denison/media/baldwin-1881-p147.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.147 — shared under robert-denison (parents Robert × Anna)",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page147.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0055",
+        "FT-0104",
+        "FT-0105"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 214727773",
+          "url": "https://www.findagrave.com/memorial/214727773/nathan-denison"
+        },
+        {
+          "label": "Baldwin & Clift (1881) — Internet Archive (Nathan #3031; Mary Ann #3074)",
+          "url": "https://archive.org/details/recordofdescenda1881bald"
+        },
+        {
+          "label": "Baldwin 1881 p. 147 — son of Robert #2734 × Anna Chesebro'",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/147/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream — Nathan b. 2 Mar 1781; m. Elizabeth Thompson 15 Dec 1803; d. 16 Nov 1849",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — Nathan #393",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Denison-1629",
+          "url": "https://www.wikitree.com/wiki/Denison-1629"
+        },
+        {
+          "label": "Denison Genealogy (1963/1993) IA — no. 1175 path",
+          "url": "https://archive.org/details/denisongenealogy00deni"
+        },
+        {
+          "label": "Ontario cluster wave: docs/research/people/proposals/ontario-cluster-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent Nathan parents: docs/research/people/proposals/fs-ascent-nathan-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Nathaniel Denison"
+      ],
+      "parent_links": [
+        {
+          "id": "robert_denison",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_chesebrough_denison",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Probable father of Mary Ann Denison Shorts (**C65**, Wave 2). Nathan (Nathaniel) Denison, b. **2 Mar 1781** Stonington CT; m. Elizabeth Thompson **15 Dec 1803** Berne, Albany Co. NY (**C133**); settled Napanee / Richmond Twp; d. **16 Nov 1849**. Buried Riverview Cemetery, Napa..."
+    },
+    "anna_chesebrough_denison": {
+      "id": "anna_chesebrough_denison",
+      "slug": "anna-chesebrough-denison",
+      "name": "Anna Denison",
+      "years": "1753-1793",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_chesebrough",
+        "anna_stanton_chesebrough"
+      ],
+      "spouses": [
+        "robert_denison"
+      ],
+      "children": [
+        "nathan_denison"
+      ],
+      "media": [
+        {
+          "ref": "robert-denison/media/baldwin-1881-p147.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.147 — shared under robert-denison",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page147.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 147 — Anna Chesebro' wife of Robert #2734; mother of Nathan #3031",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/147/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) — Anna Stanton #3696 m. Nathan Chesebro' (parents of this Anna)",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — Anna Chesebrough #254",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Chesebrough-588",
+          "url": "https://www.wikitree.com/wiki/Chesebrough-588"
+        },
+        {
+          "label": "FS ascent Robert parents: docs/research/people/proposals/fs-ascent-robert-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Chesebrough; Chesebro'; Anna Chesebrough Denison"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_chesebrough",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_stanton_chesebrough",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Nathan Denison (**C220**). Baldwin **1881 p. 147**: Robert Denison m. **Anna Chesebro'** of Stonington **17 Mar 1774**; their child **Nathan** (#3031). Wheeler **1900** #254: **Anna** b. **22 May 1753** m. Robert Denison #220. Soft-ingest only — `verifie..."
+    },
+    "robert_denison": {
+      "id": "robert_denison",
+      "slug": "robert-denison",
+      "name": "Robert Denison",
+      "years": "1749-1833",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "daniel_denison_jr",
+        "esther_wheeler_denison"
+      ],
+      "spouses": [
+        "anna_chesebrough_denison"
+      ],
+      "children": [
+        "nathan_denison"
+      ],
+      "media": [
+        {
+          "file": "media/baldwin-1881-p147.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.147 — Robert Denison #2734 × Anna Chesebro'; Nathan #3031",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page147.jpg"
+        },
+        {
+          "ref": "daniel-denison-jr/media/baldwin-1881-p131.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.131 — shared under daniel-denison-jr",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page131.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 147 — Robert #2734 × Anna Chesebro'; child Nathan #3031",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/147/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) p. 131 — parents Daniel Jr #2509 × Esther Wheeler",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/131/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — Robert #220; Nathan #393",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Denison-274",
+          "url": "https://www.wikitree.com/wiki/Denison-274"
+        },
+        {
+          "label": "FS ascent Robert parents: docs/research/people/proposals/fs-ascent-robert-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "daniel_denison_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "esther_wheeler_denison",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Nathan Denison (**C220**). Baldwin & Clift **1881 p. 147**: **Robert Denison** (#2734), b. **12 Dec 1749**, m. **17 Mar 1774** **Anna Chesebro'** of Stonington; emigrated Stonington → **Knox, N.Y.** about **1793**; child list includes **Nathan** (#3031) ..."
+    },
+    "anna_stanton_chesebrough": {
+      "id": "anna_stanton_chesebrough",
+      "slug": "anna-stanton-chesebrough",
+      "name": "Anna Chesebrough",
+      "years": "1732-1805",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "nathan_chesebrough"
+      ],
+      "children": [
+        "anna_chesebrough_denison"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) — Anna #3696 (Thankful Denison × Thomas Stanton) m. Nathan Chesebro' 6 Dec 1752",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "WikiTree Stanton-1277",
+          "url": "https://www.wikitree.com/wiki/Stanton-1277"
+        },
+        {
+          "label": "Find A Grave 60396088",
+          "url": "https://www.findagrave.com/memorial/60396088/anna-chesebrough"
+        },
+        {
+          "label": "FS ascent Robert parents: docs/research/people/proposals/fs-ascent-robert-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Stanton; Anna Stanton Chesebrough"
+      ],
+      "note": "**Probable** mother of Anna (Chesebrough) Denison (**C243**). Baldwin **#3696**: **Anna** b. **22 Mar 1732**, dau. of Thankful (Denison) × Thomas Stanton, m. **Nathan Chesebro'** **6 Dec 1752**. Daughter Anna b. **22 May 1753** (Barbour/Wheeler). Soft-ingest only — `verified: ..."
+    },
+    "nathan_chesebrough": {
+      "id": "nathan_chesebrough",
+      "slug": "nathan-chesebrough",
+      "name": "Nathan Chesebrough",
+      "years": "1728-1782",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "anna_stanton_chesebrough"
+      ],
+      "children": [
+        "anna_chesebrough_denison"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) — Anna Stanton #3696 m. Nathan Chesebro' 6 Dec 1752",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — Chesebrough / Anna #254 lineage",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Chesebrough-121",
+          "url": "https://www.wikitree.com/wiki/Chesebrough-121"
+        },
+        {
+          "label": "FS ascent Robert parents: docs/research/people/proposals/fs-ascent-robert-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Nathan Chesebro'; Nathaniel Chesebrough (compiled variants)"
+      ],
+      "note": "**Probable** father of Anna (Chesebrough) Denison (**C243**). Baldwin names **Nathan Chesebro'** husband of **Anna Stanton** (#3696) m. **6 Dec 1752**; Barbour/Wheeler/WikiTree place daughter **Anna** b. **22 May 1753** in that household. Soft-ingest only — `verified: false`. ..."
+    },
+    "esther_wheeler_denison": {
+      "id": "esther_wheeler_denison",
+      "slug": "esther-wheeler-denison",
+      "name": "Esther Denison",
+      "years": "1722-1814",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_wheeler",
+        "hannah_gallup_wheeler"
+      ],
+      "spouses": [
+        "daniel_denison_jr"
+      ],
+      "children": [
+        "robert_denison"
+      ],
+      "media": [
+        {
+          "ref": "daniel-denison-jr/media/baldwin-1881-p131.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.131 — shared under daniel-denison-jr",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page131.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 131 — Esther Wheeler wife of Daniel Jr #2509; mother of Robert #2734",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/131/mode/2up"
+        },
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — Esther #41; William × Hannah (via WikiTree)",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Wheeler-243",
+          "url": "https://www.wikitree.com/wiki/Wheeler-243"
+        },
+        {
+          "label": "Find A Grave 75279563",
+          "url": "https://www.findagrave.com/memorial/75279563/esther-denison"
+        },
+        {
+          "label": "FS ascent Daniel Jr parents: docs/research/people/proposals/fs-ascent-daniel-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Wheeler; Esther Wheeler Denison"
+      ],
+      "parent_links": [
+        {
+          "id": "william_wheeler",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_gallup_wheeler",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Robert Denison (**C240**). Baldwin **1881 p. 131**: Daniel Denison Jr m. **Esther Wheeler**, b. **15 Feb 1722**, d. **31 Mar 1814**; their child **Robert** (#2734). Soft-ingest only — `verified: false`. Parents soft-ingested as **William Wheeler × Hannah..."
+    },
+    "daniel_denison_jr": {
+      "id": "daniel_denison_jr",
+      "slug": "daniel-denison-jr",
+      "name": "Daniel Denison Jr.",
+      "years": "1720-1776",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "daniel_denison_sr",
+        "mary_stanton_denison"
+      ],
+      "spouses": [
+        "esther_wheeler_denison"
+      ],
+      "children": [
+        "robert_denison"
+      ],
+      "media": [
+        {
+          "file": "media/baldwin-1881-p131.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.131 — Daniel Denison Jr #2509 × Esther Wheeler; Robert #2734",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page131.jpg"
+        },
+        {
+          "ref": "daniel-denison-sr/media/baldwin-1881-p120.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.120 — shared under daniel-denison-sr",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page120.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 131 — Daniel Jr #2509 × Esther Wheeler; child Robert #2734",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/131/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) p. 120 — parents Dea. Daniel #181 × Mary Stanton",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/120/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "WikiTree Denison-97",
+          "url": "https://www.wikitree.com/wiki/Denison-97"
+        },
+        {
+          "label": "Find A Grave 75279409",
+          "url": "https://www.findagrave.com/memorial/75279409/daniel-denison"
+        },
+        {
+          "label": "FS ascent Daniel Jr parents: docs/research/people/proposals/fs-ascent-daniel-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Daniel Denison (2509)"
+      ],
+      "parent_links": [
+        {
+          "id": "daniel_denison_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_stanton_denison",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Robert Denison (**C240**). Baldwin & Clift **1881 p. 131**: **Daniel Denison, Jr.** (#2509), b. **22 Mar 1720/21**, m. **27 May 1742** **Esther Wheeler**; d. Stonington **9 May 1776**; child list includes **Robert** (#2734) b. **12 Dec 1749** m. Anna Che..."
+    },
+    "hannah_gallup_wheeler": {
+      "id": "hannah_gallup_wheeler",
+      "slug": "hannah-gallup-wheeler",
+      "name": "Hannah Wheeler",
+      "years": "1683-1754",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "william_wheeler"
+      ],
+      "children": [
+        "esther_wheeler_denison"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — Hannah Gallup × William; Esther #41 (via WikiTree)",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Gallup-53",
+          "url": "https://www.wikitree.com/wiki/Gallup-53"
+        },
+        {
+          "label": "WikiTree Denison-97 — Esther dau. of Hannah Gallup & William Wheeler",
+          "url": "https://www.wikitree.com/wiki/Denison-97"
+        },
+        {
+          "label": "Find A Grave 64569770",
+          "url": "https://www.findagrave.com/memorial/64569770/hannah-wheeler"
+        },
+        {
+          "label": "FS ascent Daniel Jr parents: docs/research/people/proposals/fs-ascent-daniel-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Gallup; Hannah Gallup Wheeler"
+      ],
+      "note": "**Probable** mother of Esther (Wheeler) Denison (**C263**). Wheeler *Stonington* **1900** + WikiTree place Esther as daughter of **William Wheeler** × **Hannah Gallup**; m. **30 May 1710**. Soft-ingest only — `verified: false`."
+    },
+    "william_wheeler": {
+      "id": "william_wheeler",
+      "slug": "william-wheeler",
+      "name": "William Wheeler",
+      "years": "1681-1747",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hannah_gallup_wheeler"
+      ],
+      "children": [
+        "esther_wheeler_denison"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Wheeler, History of the Town of Stonington (1900) — William #12; Esther #41 (via WikiTree)",
+          "url": "https://archive.org/stream/historyoftownofs00whee_1/historyoftownofs00whee_1_djvu.txt"
+        },
+        {
+          "label": "WikiTree Wheeler-244",
+          "url": "https://www.wikitree.com/wiki/Wheeler-244"
+        },
+        {
+          "label": "WikiTree Denison-97 — Esther dau. of Hannah Gallup & William Wheeler",
+          "url": "https://www.wikitree.com/wiki/Denison-97"
+        },
+        {
+          "label": "Find A Grave 34168394",
+          "url": "https://www.findagrave.com/memorial/34168394/william-wheeler"
+        },
+        {
+          "label": "FS ascent Daniel Jr parents: docs/research/people/proposals/fs-ascent-daniel-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Esther (Wheeler) Denison (**C263**). Wheeler *Stonington* **1900** (via WikiTree) places Esther #41 as child of **William Wheeler** × **Hannah Gallup**; WikiTree Denison-97 bio names the same parents. Soft-ingest only — `verified: false`. Baldwin names E..."
+    },
+    "mary_stanton_denison": {
+      "id": "mary_stanton_denison",
+      "slug": "mary-stanton-denison",
+      "name": "Mary Denison",
+      "years": "1687-1724",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "daniel_denison_sr"
+      ],
+      "children": [
+        "daniel_denison_jr"
+      ],
+      "media": [
+        {
+          "ref": "daniel-denison-sr/media/baldwin-1881-p120.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.120 — shared under daniel-denison-sr",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page120.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 120 — Mary Stanton wife of Dea. Daniel #181; mother of #2509 Daniel",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/120/mode/2up"
+        },
+        {
+          "label": "WikiTree Stanton-79",
+          "url": "https://www.wikitree.com/wiki/Stanton-79"
+        },
+        {
+          "label": "Find A Grave 75277594",
+          "url": "https://www.findagrave.com/memorial/75277594/mary-denison"
+        },
+        {
+          "label": "FS ascent Daniel Jr parents: docs/research/people/proposals/fs-ascent-daniel-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Stanton; Mary Stanton Denison"
+      ],
+      "note": "**Probable** mother of Daniel Denison Jr (**C260**). Baldwin **1881 p. 120**: Dea. Daniel Denison m. **Mary Stanton**, dau. of **Robert and Joanna (Gardiner) Stanton**, b. **3 Feb 1687**, d. **2 Sep 1724**; mother of all his children including **#2509 Daniel**. Soft-ingest onl..."
+    },
+    "daniel_denison_sr": {
+      "id": "daniel_denison_sr",
+      "slug": "daniel-denison-sr",
+      "name": "Daniel Denison Sr.",
+      "years": "1680-1747",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_denison",
+        "phoebe_lay_denison"
+      ],
+      "spouses": [
+        "mary_stanton_denison"
+      ],
+      "children": [
+        "daniel_denison_jr"
+      ],
+      "media": [
+        {
+          "file": "media/baldwin-1881-p120.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.120 — Dea. Daniel #181 × Mary Stanton; child #2509 Daniel",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page120.jpg"
+        },
+        {
+          "ref": "john-denison/media/baldwin-1881-p17.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.17 — shared under john-denison",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page17.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 120 — Dea. Daniel #181 × Mary Stanton; child #2509 Daniel",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/120/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) p. 17 — parents Capt. John #7 × Phebe Lay",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/17/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "WikiTree Denison-175",
+          "url": "https://www.wikitree.com/wiki/Denison-175"
+        },
+        {
+          "label": "Find A Grave 71196292",
+          "url": "https://www.findagrave.com/memorial/71196292/daniel-denison"
+        },
+        {
+          "label": "FS ascent Daniel Sr parents: docs/research/people/proposals/fs-ascent-daniel-denison-sr-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Deacon Daniel Denison; Daniel Denison (181)"
+      ],
+      "parent_links": [
+        {
+          "id": "john_denison",
+          "confidence": "Probable"
+        },
+        {
+          "id": "phoebe_lay_denison",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Daniel Denison Jr (**C260**). Baldwin & Clift **1881 p. 120**: **#181 Daniel Denison** (John², George¹), b. **28 Mar 1680**, Deacon First Congregational Church Stonington; m. **1 Jan 1703** **Mary Stanton**; d. **13 Oct 1747**; child list includes **#250..."
+    },
+    "phoebe_lay_denison": {
+      "id": "phoebe_lay_denison",
+      "slug": "phoebe-lay-denison",
+      "name": "Phoebe Denison",
+      "years": "1650-1699",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_denison"
+      ],
+      "children": [
+        "daniel_denison_sr"
+      ],
+      "media": [
+        {
+          "ref": "john-denison/media/baldwin-1881-p17.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.17 — shared under john-denison",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page17.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 17 — Phebe Lay dau. Robert × Sarah; m. Capt. John; child #181 Daniel",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/17/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) p. 120 — Dea. Daniel #181 lineage",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/120/mode/2up"
+        },
+        {
+          "label": "WikiTree Lay-294",
+          "url": "https://www.wikitree.com/wiki/Lay-294"
+        },
+        {
+          "label": "Find A Grave 41994841",
+          "url": "https://www.findagrave.com/memorial/41994841/phoebe-denison"
+        },
+        {
+          "label": "FS ascent Daniel Sr parents: docs/research/people/proposals/fs-ascent-daniel-denison-sr-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Phebe Lay; Phoebe (Lay) Denison; nee Lay"
+      ],
+      "note": "**Probable** mother of Dea. Daniel Denison Sr (**C280**). Baldwin & Clift **1881 p. 17**: **Phebe Lay**, dau. of **Robert and Sarah Lay** of Saybrook; m. **26 Nov 1667** Capt. John Denison; d. **1699** aged 49; mother of **#181 Daniel** b. **28 Mar 1680**. Soft-ingest only — `..."
+    },
+    "john_denison": {
+      "id": "john_denison",
+      "slug": "john-denison",
+      "name": "John Denison",
+      "years": "1646-1698",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_denison",
+        "ann_borodell_denison"
+      ],
+      "spouses": [
+        "phoebe_lay_denison"
+      ],
+      "children": [
+        "daniel_denison_sr"
+      ],
+      "media": [
+        {
+          "file": "media/baldwin-1881-p17.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.17 — Capt. John #7 × Phebe Lay; child #181 Daniel",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page17.jpg"
+        },
+        {
+          "ref": "george-denison/media/baldwin-1881-p6-george-ann.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.6 — shared under george-denison",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page6.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 17 — Capt. John #7 × Phebe Lay; child #181 Daniel",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/17/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) p. 6 — parents Capt. George #4 × Ann Borodell",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/6/mode/2up"
+        },
+        {
+          "label": "Baldwin & Clift (1881) p. 120 — Dea. Daniel #181 lineage (John², George¹)",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/120/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "WikiTree Denison-15",
+          "url": "https://www.wikitree.com/wiki/Denison-15"
+        },
+        {
+          "label": "Find A Grave 10863715",
+          "url": "https://www.findagrave.com/memorial/10863715/john-denison"
+        },
+        {
+          "label": "FS ascent John Denison parents: docs/research/people/proposals/fs-ascent-john-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Capt. John Denison; John Denison (7); John Borodell Denison"
+      ],
+      "parent_links": [
+        {
+          "id": "george_denison",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_borodell_denison",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Dea. Daniel Denison Sr (**C280**). Baldwin & Clift **1881 p. 17**: **#7 John Denison** (George¹), b. **14 Jul 1646**, m. **26 Nov 1667** **Phebe Lay** (dau. Robert × Sarah Lay of Saybrook); Capt. John of Stonington; d. **1698** aged 52; child list includ..."
+    },
+    "ann_borodell_denison": {
+      "id": "ann_borodell_denison",
+      "slug": "ann-borodell-denison",
+      "name": "Ann Denison",
+      "years": "1615-1712",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "george_denison"
+      ],
+      "children": [
+        "john_denison"
+      ],
+      "media": [
+        {
+          "ref": "george-denison/media/baldwin-1881-p6-george-ann.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.6 — shared under george-denison",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page6.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 6–7 — Ann Borodell dau. John; m. George; child #7 John; d. 26 Sep 1712 aged 97",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/6/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "WikiTree Borodell-3",
+          "url": "https://www.wikitree.com/wiki/Borodell-3"
+        },
+        {
+          "label": "Find A Grave 14911199 (soft)",
+          "url": "https://www.findagrave.com/memorial/14911199/ann-denison"
+        },
+        {
+          "label": "FS ascent John Denison parents: docs/research/people/proposals/fs-ascent-john-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Ann Borodell; Lady Ann; Ann (Borodell) Denison; nee Borodell"
+      ],
+      "note": "**Probable** mother of Capt. John Denison (**C300**). Baldwin & Clift **1881 p. 6**: after Capt. George’s first wife Bridget d. **1643**, George was nursed at the house of **John Borodell** by his daughter **Ann**, married Ann, returned to Roxbury, settled Stonington; children..."
+    },
+    "george_denison": {
+      "id": "george_denison",
+      "slug": "george-denison",
+      "name": "George Denison",
+      "years": "1618-1694",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ann_borodell_denison"
+      ],
+      "children": [
+        "john_denison"
+      ],
+      "media": [
+        {
+          "file": "media/baldwin-1881-p6-george-ann.jpg",
+          "kind": "document",
+          "source": "Baldwin & Clift 1881 p.6 — #4 George × Ann Borodell; child #7 John",
+          "source_url": "https://archive.org/download/recordofdescenda1881bald/page/page6.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0104"
+      ],
+      "sources": [
+        {
+          "label": "Baldwin & Clift (1881) p. 6 — #4 George (son of William) × Ann Borodell; child #7 John",
+          "url": "https://archive.org/details/recordofdescenda1881bald/page/6/mode/2up"
+        },
+        {
+          "label": "Baldwin 1881 OCR stream",
+          "url": "https://archive.org/stream/recordofdescenda1881bald/recordofdescenda1881bald_djvu.txt"
+        },
+        {
+          "label": "WikiTree Denison-13",
+          "url": "https://www.wikitree.com/wiki/Denison-13"
+        },
+        {
+          "label": "Find A Grave 11435695 (soft)",
+          "url": "https://www.findagrave.com/memorial/11435695/george-denison"
+        },
+        {
+          "label": "FS ascent John Denison parents: docs/research/people/proposals/fs-ascent-john-denison-parents.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Capt. George Denison; George Denison Sr.; George Denison (4)"
+      ],
+      "note": "**Probable** father of Capt. John Denison (**C300**). Baldwin & Clift **1881 p. 6**: **#4 George Denison** (son of William), b. **1618** (footnote soft dual vs stone ~1621); m. (1) **Bridget Thompson** 1640 (children Sarah, Hannah — not this climb); after Bridget d. **1643**, ..."
+    },
+    "hannah_pringle_shorts": {
+      "id": "hannah_pringle_shorts",
+      "slug": "hannah-ellenor-pringle-shorts",
+      "name": "Hannah Ellenor Shorts",
+      "years": "1776-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_pringle",
+        "eunice_benedict_pringle"
+      ],
+      "spouses": [
+        "augustus_shorts"
+      ],
+      "children": [
+        "elizabeth_shorts_hughes",
+        "mary_shorts_augustus",
+        "samuel_shorts",
+        "andrew_pringle_shorts",
+        "william_shorts_fredericksburgh",
+        "philip_shorts_hallowell",
+        "hannah_shorts_holcomb"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133462968 Sexsmith Cemetery overview",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133462968_1406580851.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0032",
+        "FT-0035",
+        "FT-0038",
+        "FT-0046",
+        "FT-0047",
+        "FT-0049",
+        "FT-0050",
+        "FT-0051",
+        "FT-0052",
+        "FT-0054",
+        "FT-0056",
+        "FT-0075",
+        "FT-0076",
+        "FT-0077",
+        "FT-0078",
+        "FT-0079",
+        "FT-0112",
+        "FT-0116",
+        "FT-0134",
+        "FT-0135",
+        "FT-0136",
+        "FT-0138",
+        "FT-0150"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 133462968",
+          "url": "https://www.findagrave.com/memorial/133462968/hannah_ellenor-shorts"
+        },
+        {
+          "label": "Van Deursen, *The Van Deursen Family* (1912) -- Hannah PRINDLE dau. of William & Eunice",
+          "url": "https://archive.org/details/vandeursenfamily01vand"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Prindle-289",
+          "url": "https://www.wikitree.com/wiki/Prindle-289"
+        },
+        {
+          "label": "Old Hay Bay Church -- sister of Rev. Andrew Prindle",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "fadedgenes — Andrew Prindle ME minister (1780–1855)",
+          "url": "https://krassoc.wordpress.com/2013/01/15/andrew-prindle-methodist-episcopal-minister/"
+        },
+        {
+          "label": "Find A Grave 130725257 — Rev Andrew Prindle (brother)",
+          "url": "https://www.findagrave.com/memorial/130725257/andrew-prindle"
+        },
+        {
+          "label": "Historical Hamilton — Bowman Church Ancaster",
+          "url": "https://historicalhamilton.com/ancaster/bowman-church/"
+        },
+        {
+          "label": "HistoricPlaces.ca — Old Hay Bay Church NHS (FT-0047)",
+          "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=10617"
+        },
+        {
+          "label": "ME Conference Minutes 1829 — Prindle worn-out / Bowman’s chapel (FT-0050)",
+          "url": "https://archive.org/stream/13680353.688.emory.edu/13680353_688_djvu.txt"
+        },
+        {
+          "label": "Kewley — Camp Meeting Movement (Prindle Niagara 1805–06)",
+          "url": "https://mail.biblicalstudies.org.uk/pdf/cjt/10-3_192.pdf"
+        },
+        {
+          "label": "FS ascent: docs/research/people/proposals/fs-ascent-hannah-pringle-parents.md",
+          "url": ""
+        },
+        {
+          "label": "Augustus harden dig 2026-08-08: docs/research/people/proposals/shorts-augustus-harden-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Pringle PDF Gen4 — seven children of Augustus × Hannah (#50–56)",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        }
+      ],
+      "aka": [
+        "nee Pringle; Prindle; Hannah Eleanor"
+      ],
+      "parent_links": [
+        {
+          "id": "william_pringle",
+          "confidence": "Probable"
+        },
+        {
+          "id": "eunice_benedict_pringle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Probable mother of Samuel D. Shorts (**C71**, Wave 2). Hannah Ellenor (Pringle / Prindle) Shorts, 1776 New York -- 1862 Fredericksburgh. Wife of Rev Augustus Shorts. Buried Sexsmith Cemetery, Napanee ON -- same cemetery as Samuel. **C210** soft-ingest: parents **William Pringl..."
+    },
+    "augustus_shorts": {
+      "id": "augustus_shorts",
+      "slug": "rev-augustus-shorts",
+      "name": "Rev Augustus Shorts",
+      "years": "1777-1869",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_shorts",
+        "rosannah_monk_shorts"
+      ],
+      "spouses": [
+        "hannah_pringle_shorts"
+      ],
+      "children": [
+        "elizabeth_shorts_hughes",
+        "mary_shorts_augustus",
+        "samuel_shorts",
+        "andrew_pringle_shorts",
+        "william_shorts_fredericksburgh",
+        "philip_shorts_hallowell",
+        "hannah_shorts_holcomb"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 Sexsmith Cemetery overview",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        },
+        {
+          "file": "media/headstone-detail-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 Sexsmith Cemetery row",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0032",
+        "FT-0035",
+        "FT-0038",
+        "FT-0044",
+        "FT-0045",
+        "FT-0046",
+        "FT-0047",
+        "FT-0048",
+        "FT-0049",
+        "FT-0050",
+        "FT-0051",
+        "FT-0052",
+        "FT-0054",
+        "FT-0056",
+        "FT-0075",
+        "FT-0076",
+        "FT-0077",
+        "FT-0078",
+        "FT-0079",
+        "FT-0082",
+        "FT-0083",
+        "FT-0085",
+        "FT-0086",
+        "FT-0112",
+        "FT-0113",
+        "FT-0134",
+        "FT-0135",
+        "FT-0136",
+        "FT-0138",
+        "FT-0153",
+        "FT-0154",
+        "FT-0155"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 133463240",
+          "url": "https://www.findagrave.com/memorial/133463240/augustus-shorts"
+        },
+        {
+          "label": "Van Deursen, *The Van Deursen Family* (1912) vol. 1 — Internet Archive full text (1811 deed → FT-0045)",
+          "url": "https://archive.org/details/vandeursenfamily01vand"
+        },
+        {
+          "label": "Old Hay Bay Church photos — Wikimedia Commons category (FT-0046)",
+          "url": "https://commons.wikimedia.org/wiki/Category:Old_Hay_Bay_Church"
+        },
+        {
+          "label": "Old Hay Bay Church NHS — HistoricPlaces.ca 10617 (FT-0047)",
+          "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=10617"
+        },
+        {
+          "label": "Webster, History of the M.E. Church in Canada (1870) — Bishop George / Elizabethtown 1817 (FT-0048)",
+          "url": "https://archive.org/details/historyofthemeth00websuoft"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF)",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Old Hay Bay Church -- Shorts orphan cluster (CCA 19 Mar 1862 cite)",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "WikiTree Short-3450 (parents John W × Rosannah)",
+          "url": "https://www.wikitree.com/wiki/Short-3450"
+        },
+        {
+          "label": "Y-line Augustus father: docs/research/people/proposals/y-line-augustus-father.md",
+          "url": ""
+        },
+        {
+          "label": "Ontario cluster wave: docs/research/people/proposals/ontario-cluster-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Free-sources wave: docs/research/people/proposals/free-sources-wave.md",
+          "url": ""
+        },
+        {
+          "label": "Augustus harden dig 2026-08-08: docs/research/people/proposals/shorts-augustus-harden-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Augustus media harden 2026-08-08: docs/research/people/proposals/shorts-augustus-media-harden-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "CCA death unlock C1530–C1539 — McKenzie IA borrow-only; lean Jan 1862 (C1534)",
+          "url": "docs/research/people/proposals/augustus-cca-death-unlock-2026-08-08.md"
+        },
+        {
+          "label": "1851 Richmond Holcomb hh — Hannah O (FT-0112)",
+          "url": "https://oncensus.canadagenweb.org/transcripts/1851/1725-5.html"
+        },
+        {
+          "label": "FAG children grid — Elizabeth / Andrew / Samuel / Hannah Holcomb (133463240)",
+          "url": "https://www.findagrave.com/memorial/133463240/augustus-shorts"
+        },
+        {
+          "label": "Pringle PDF Gen4 — seven children #50–56 (pri247283)",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        }
+      ],
+      "aka": [
+        "Augustus Shortts; Father Shorts"
+      ],
+      "parent_links": [
+        {
+          "id": "john_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rosannah_monk_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Probable father of Samuel D. Shorts (**C70**, Wave 2). Methodist Episcopal minister (\"Father Shorts\"), b. Jul 1777 Paradise, Lancaster Co. PA; FAG death **12 Jan 1869** Fredericksburgh — **Ontario cluster C130** leans **Jan 1862** (Van Deursen/Pringle **12 Jan 1862**; Old Hay ...",
+      "blocker": "Resolve Augustus death 1862 vs 1869 — CCA 19 Mar 1862 primary still miss"
+    },
+    "eunice_benedict_pringle": {
+      "id": "eunice_benedict_pringle",
+      "slug": "eunice-benedict-pringle",
+      "name": "Eunice Pringle",
+      "years": "1749-1842",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_benedict",
+        "elizabeth_knapp_benedict"
+      ],
+      "spouses": [
+        "william_pringle"
+      ],
+      "children": [
+        "hannah_pringle_shorts"
+      ],
+      "media": [
+        {
+          "ref": "william-pringle/media/fag-95004236-marker.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 125180719 (shared marker with William 95004236)",
+          "source_url": "https://www.findagrave.com/memorial/125180719/eunice-pringle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0116"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #236700",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Van Deursen, The Van Deursen Family (1912) — Hannah PRINDLE dau. of William & Eunice (via Pringle extract)",
+          "url": "https://archive.org/details/vandeursenfamily01vand"
+        },
+        {
+          "label": "WikiTree Benedict-880",
+          "url": "https://www.wikitree.com/wiki/Benedict-880"
+        },
+        {
+          "label": "Find A Grave 125180719",
+          "url": "https://www.findagrave.com/memorial/125180719/eunice-pringle"
+        },
+        {
+          "label": "FS ascent: docs/research/people/proposals/fs-ascent-hannah-pringle-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-pringle-benedict-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Benedict; Eunice Prindle"
+      ],
+      "parent_links": [
+        {
+          "id": "samuel_benedict",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_knapp_benedict",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Hannah Ellenor (Pringle / Prindle) Shorts (**C210**). Soft-ingest from Van Deursen naming + Pringle/Benham compiled + WikiTree Benedict-880 — `verified: false`. Buried Hay Bay Loyalist Cemetery with husband William. Parents soft-ingested **Samuel Benedic..."
+    },
+    "william_pringle": {
+      "id": "william_pringle",
+      "slug": "william-pringle",
+      "name": "William Pringle",
+      "years": "1749-1839",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_jr",
+        "deborah_bigelow_pringle"
+      ],
+      "spouses": [
+        "eunice_benedict_pringle"
+      ],
+      "children": [
+        "hannah_pringle_shorts"
+      ],
+      "media": [
+        {
+          "file": "media/fag-95004236-marker.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 95004236",
+          "source_url": "https://www.findagrave.com/memorial/95004236/william-pringle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0114",
+        "FT-0116",
+        "FT-0144",
+        "FT-0150",
+        "FT-0151",
+        "FT-0167"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #142088",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Van Deursen, The Van Deursen Family (1912) — Hannah PRINDLE dau. of William & Eunice (via Pringle extract)",
+          "url": "https://archive.org/details/vandeursenfamily01vand"
+        },
+        {
+          "label": "WikiTree Pringle-35",
+          "url": "https://www.wikitree.com/wiki/Pringle-35"
+        },
+        {
+          "label": "Find A Grave 95004236",
+          "url": "https://www.findagrave.com/memorial/95004236/william-pringle"
+        },
+        {
+          "label": "FS ascent: docs/research/people/proposals/fs-ascent-hannah-pringle-parents.md",
+          "url": ""
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-pringle-benedict-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Prindle; William Prindel"
+      ],
+      "parent_links": [
+        {
+          "id": "joel_pringle_jr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "deborah_bigelow_pringle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Hannah Ellenor (Pringle / Prindle) Shorts (**C210**). United Empire Loyalist family of Fredericksburgh. Soft-ingest from Van Deursen naming + Pringle/Benham compiled + WikiTree — `verified: false`. Working death **5 Jun 1839** (PDF / WikiTree / FAG); som..."
+    },
+    "elizabeth_knapp_benedict": {
+      "id": "elizabeth_knapp_benedict",
+      "slug": "elizabeth-knapp-benedict",
+      "name": "Elizabeth Benedict",
+      "years": "1699-1753",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "samuel_benedict"
+      ],
+      "children": [
+        "eunice_benedict_pringle"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy — Elizabeth Knapp #274286 (mother of Eunice)",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Find A Grave Eunice bio — dau. of Samuel Benedict × Elizabeth Knapp",
+          "url": "https://www.findagrave.com/memorial/125180719/eunice-pringle"
+        },
+        {
+          "label": "Pane-Joyce — Elizabeth Knapp (7 Sep 1699) × Samuel Benedict",
+          "url": "https://mathcs.clarku.edu/~djoyce/gen/report/rr09/rr09_151.html"
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-pringle-benedict-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "née Knapp; Elizabeth Knapp"
+      ],
+      "note": "**Probable** (softer than Joel×Deborah) mother of Eunice (Benedict) Pringle (**C233**). Soft-ingest from Pringle PDF + FAG Eunice bio + Pane-Joyce Knapp identity — `verified: false`. **WikiTree Benedict-880 lists mother unknown** — keep that soft conflict open. Pane-Joyce give..."
+    },
+    "samuel_benedict": {
+      "id": "samuel_benedict",
+      "slug": "samuel-benedict",
+      "name": "Samuel Benedict",
+      "years": "1704-1795",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_knapp_benedict"
+      ],
+      "children": [
+        "eunice_benedict_pringle"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy — Eunice dau. of Samuel Benedict #274285",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Benedict-881",
+          "url": "https://www.wikitree.com/wiki/Benedict-881"
+        },
+        {
+          "label": "WikiTree Benedict-880 — Eunice dau. of Samuel",
+          "url": "https://www.wikitree.com/wiki/Benedict-880"
+        },
+        {
+          "label": "Pane-Joyce — Samuel Benedict × Elizabeth Knapp (Danbury)",
+          "url": "https://mathcs.clarku.edu/~djoyce/gen/report/rr09/rr09_151.html"
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-pringle-benedict-genback.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** father of Eunice (Benedict) Pringle (**C233**). Soft-ingest from Pringle PDF parent header + WikiTree Benedict-880/881 + Pane-Joyce Samuel×Elizabeth cluster — `verified: false`. Working **1704 – 16 Nov 1795** Danbury/CT. Weaker free trail than Joel×Deborah (thin W..."
+    },
+    "deborah_bigelow_pringle": {
+      "id": "deborah_bigelow_pringle",
+      "slug": "deborah-bigelow-pringle",
+      "name": "Deborah Pringle",
+      "years": "1725-1790",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [
+        "joel_pringle_jr"
+      ],
+      "children": [
+        "joel_pringle_iii",
+        "william_pringle",
+        "timothy_pringle_ue",
+        "joseph_pringle_ue",
+        "dexter_pringle",
+        "lois_pringle_dafoe"
+      ],
+      "media": [
+        {
+          "ref": "joel-pringle-jr/media/fag-59609435-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 59609479 (shared UEL cemetery stone image on FAG)",
+          "source_url": "https://www.findagrave.com/memorial/59609479/deborah-pringle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0114",
+        "FT-0144",
+        "FT-0150",
+        "FT-0166",
+        "FT-0167",
+        "FT-0171"
+      ],
+      "sources": [
+        {
+          "label": "Watertown VR — Ebenezer×Hannah marriage + sibling baptisms (no Deborah entry)",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Ebenezer household (Deborah omitted)",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #142086",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Bigelow Society — Debra Bigelow × Joel Pringle (UEL Adolphustown)",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "Find A Grave 59609479",
+          "url": "https://www.findagrave.com/memorial/59609479/deborah-pringle"
+        }
+      ],
+      "aka": [
+        "née Bigelow; Debra Bigelow"
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of William Pringle (**C230**). Soft-ingest from Pringle PDF + Bigelow Society Debra note + FAG **59609479** — `verified: false`. Working **1725–1790**; stone tradition “Died 1790 Aged 65-8-18.” Parents **Ebenezer Bigelow** × **Hannah Brown** — **MA harden 2..."
+    },
+    "joel_pringle_jr": {
+      "id": "joel_pringle_jr",
+      "slug": "joel-pringle-jr",
+      "name": "Joel Pringle Jr.",
+      "years": "1726-1800",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_sr",
+        "jemima_benham_pringle"
+      ],
+      "spouses": [
+        "deborah_bigelow_pringle"
+      ],
+      "children": [
+        "joel_pringle_iii",
+        "william_pringle",
+        "timothy_pringle_ue",
+        "joseph_pringle_ue",
+        "dexter_pringle",
+        "lois_pringle_dafoe"
+      ],
+      "media": [
+        {
+          "file": "media/fag-59609435-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 59609435",
+          "source_url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0114",
+        "FT-0115",
+        "FT-0144",
+        "FT-0145",
+        "FT-0150",
+        "FT-0151",
+        "FT-0164",
+        "FT-0167",
+        "FT-0171"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #142085",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Pringle-33",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Find A Grave 59609435",
+          "url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        },
+        {
+          "label": "Napanee Beaver 8 Dec 1970 excerpt (via WikiTree) — Joel patriarch + sons Rangers",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "FS ascent gen-back: docs/research/people/proposals/fs-ascent-pringle-benedict-genback.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Prindle; Joel Prindle Jr."
+      ],
+      "parent_links": [
+        {
+          "id": "joel_pringle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jemima_benham_pringle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of William Pringle (**C230**). United Empire Loyalist; King's Rangers FAN with sons. Soft-ingest from Pringle/Benham PDF Gen. 2 + WikiTree Pringle-33 + FAG **59609435** — `verified: false`. Working birth **16 Jan 1725/26** (PDF 1725 / WikiTree 1726 New Have..."
+    },
+    "hannah_brown_bigelow": {
+      "id": "hannah_brown_bigelow",
+      "slug": "hannah-brown-bigelow",
+      "name": "Hannah Brown Bigelow",
+      "years": "1699-1775",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "abraham_brown_watertown",
+        "mary_hyde_brown"
+      ],
+      "spouses": [
+        "ebenezer_bigelow_1698"
+      ],
+      "children": [
+        "ebenezer_bigelow_1721",
+        "hannah_bigelow_1724",
+        "deborah_bigelow_pringle",
+        "moses_bigelow_1730",
+        "hopestill_bigelow_1731",
+        "silence_bigelow_1732",
+        "samuel_bigelow_1738"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0129",
+        "FT-0130",
+        "FT-0132"
+      ],
+      "sources": [
+        {
+          "label": "Watertown VR — m. 24 May 1720 Hannah Brown × Ebenezer Biglo of Weston",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Brown p.120; Bigelow p.127",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Bigelow Society — Hannah Browne dau. Abraham × Mary Hyde",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "Find A Grave 59609479 — daughter Deborah (parent link)",
+          "url": "https://www.findagrave.com/memorial/59609479/deborah-pringle"
+        }
+      ],
+      "aka": [
+        "Hannah Browne; née Brown"
+      ],
+      "parent_links": [
+        {
+          "id": "abraham_brown_watertown",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_hyde_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Proposed mother of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false`. **MA harden 2026-08-08:** Watertown VR **m. 24 May 1720** to Ebenezer Biglo of Weston (**C1230**). **Parents soft 2026-08-08:** **Capt. Abraham Brown × Mary Hyde** — pack **C1281** ..."
+    },
+    "ebenezer_bigelow_1698": {
+      "id": "ebenezer_bigelow_1698",
+      "slug": "ebenezer-bigelow-1698",
+      "name": "Ebenezer Bigelow",
+      "years": "1698–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_bigelow_1655",
+        "elizabeth_flagg_bigelow"
+      ],
+      "spouses": [
+        "hannah_brown_bigelow"
+      ],
+      "children": [
+        "ebenezer_bigelow_1721",
+        "hannah_bigelow_1724",
+        "deborah_bigelow_pringle",
+        "moses_bigelow_1730",
+        "hopestill_bigelow_1731",
+        "silence_bigelow_1732",
+        "samuel_bigelow_1738"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0129",
+        "FT-0130",
+        "FT-0131",
+        "FT-0133",
+        "FT-0166",
+        "FT-0167"
+      ],
+      "sources": [
+        {
+          "label": "Watertown VR — b. 4 Sep 1698; m. 24 May 1720 (Roman index via Bigelow Society)",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Ebenezer × Hannah; d. Cuba",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Bigelow Society — Ebenezer 3 × Hannah Browne",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "Find A Grave 51809062",
+          "url": "https://www.findagrave.com/memorial/51809062/ebenezer-bigelow"
+        },
+        {
+          "label": "Find A Grave 59609479 — daughter Deborah (parent link)",
+          "url": "https://www.findagrave.com/memorial/59609479/deborah-pringle"
+        }
+      ],
+      "aka": [
+        "Ebenezer 3 Bigelow"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_bigelow_1655",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_flagg_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "Proposed father of **Deborah (Bigelow) Pringle** (Shorts UEL line). Soft-ingest **Probable** / `verified: false`. **MA harden 2026-08-08:** Watertown published VR confirms **b. 4 Sep 1698** (Joshua × Elizabeth) and **m. 24 May 1720** Hannah Brown (**C1230–C1231**). **Parents s..."
+    },
+    "mary_hyde_brown": {
+      "id": "mary_hyde_brown",
+      "slug": "mary-hyde-brown",
+      "name": "Mary Hyde Brown",
+      "years": "1673–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "abraham_brown_watertown"
+      ],
+      "children": [
+        "jonathan_brown_watertown",
+        "samuel_brown_watertown",
+        "hannah_brown_bigelow"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Brown p.120 Mary Hyde",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Bigelow Society ebenezr3 — Hannah dau. Abraham × Mary Hyde",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        }
+      ],
+      "aka": [
+        "Mary Hyde; née Hyde"
+      ],
+      "spouse_links": [
+        {
+          "id": "abraham_brown_watertown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of **Hannah Brown Bigelow** (**C1281** / **C1285**). Soft-ingest from Bond Brown p.120 + Bigelow Society — `verified: false`. Compiled tradition: daughter of **Job Hyde × Elizabeth Fuller**; gen-back not climbed (**C1289**)."
+    },
+    "abraham_brown_watertown": {
+      "id": "abraham_brown_watertown",
+      "slug": "abraham-brown-watertown",
+      "name": "Abraham Brown",
+      "years": "1671-1729",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_hyde_brown"
+      ],
+      "children": [
+        "jonathan_brown_watertown",
+        "samuel_brown_watertown",
+        "hannah_brown_bigelow"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Brown p.120 Abraham family",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Abraham Brown will 20 Jul 1728 — names Hannah wife of Ebenezer Bigelow",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Bigelow Society ebenezr3 — Hannah dau. Abraham × Mary Hyde",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        }
+      ],
+      "aka": [
+        "Capt. Abraham Brown; Abram Brown"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_hyde_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of **Hannah Brown Bigelow** (**C1281** / **C1284**). Soft-ingest from Bond Brown p.120 + Abraham will 1728 (names Hannah wife of Ebenezer Bigelow) + Bigelow Society — `verified: false`. **≠** `mary_brown_prindle` (NH) or `mary_brown_aylesworth` (Providence)..."
+    },
+    "elizabeth_flagg_bigelow": {
+      "id": "elizabeth_flagg_bigelow",
+      "slug": "elizabeth-flagg-bigelow",
+      "name": "Elizabeth Flagg Bigelow",
+      "years": "1655-1729",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "joshua_bigelow_1655"
+      ],
+      "children": [
+        "eleazer_bigelow_1705",
+        "gershom_bigelow_1701",
+        "ebenezer_bigelow_1698"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Watertown VR — d. 9 Aug 1729 wife of Joshua; m. 20 Oct 1676",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Joshua × Elizabeth",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Bigelow Society — Elizabeth (Flagg) Bigelow",
+          "url": "http://www.bigelowsociety.com/rod/joshua2.htm"
+        }
+      ],
+      "aka": [
+        "Elizabeth Flagg; Elizabeth Fleg"
+      ],
+      "spouse_links": [
+        {
+          "id": "joshua_bigelow_1655",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** mother of **Ebenezer Bigelow (1698)** (**C1280** / **C1283**). Soft-ingest from Watertown VR (death + marriage) + Bond + Bigelow Society — `verified: false`. Daughter of Thomas Flagg per compiled genealogy; Thomas × Mary Flagg gen-back not climbed (**C1289**)."
+    },
+    "joshua_bigelow_1655": {
+      "id": "joshua_bigelow_1655",
+      "slug": "joshua-bigelow-1655",
+      "name": "Joshua Bigelow",
+      "years": "1655-1745",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_flagg_bigelow"
+      ],
+      "children": [
+        "eleazer_bigelow_1705",
+        "gershom_bigelow_1701",
+        "ebenezer_bigelow_1698"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Watertown VR — b. 5 Nov 1655; m. Elizabeth Fleg 20 Oct 1676",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Joshua Bigelow block",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Bigelow Society — Joshua 2 × Elizabeth Flagg",
+          "url": "http://www.bigelowsociety.com/rod/joshua2.htm"
+        }
+      ],
+      "aka": [
+        "Joshua Bigelow Jr.; Joshua 2 Bigelow"
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_flagg_bigelow",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** father of **Ebenezer Bigelow (1698)** (**C1280** / **C1282**). Soft-ingest from Watertown published VR + Bond + Bigelow Society `joshua2` — `verified: false`. King Philip's War veteran; removed to Westminster in old age with son Eleazer. Gen-back **John Bigelow × ..."
+    },
+    "jemima_benham_pringle": {
+      "id": "jemima_benham_pringle",
+      "slug": "jemima-benham-pringle",
+      "name": "Jemima Benham",
+      "years": "1700-1752",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_benham_1679",
+        "sarah_beecher_benham"
+      ],
+      "spouses": [
+        "joel_pringle_sr"
+      ],
+      "children": [
+        "william_prindle_1719",
+        "sarah_pringle_ives",
+        "lois_pringle_bristol",
+        "joel_pringle_jr"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0124",
+        "FT-0127",
+        "FT-0128",
+        "FT-0164",
+        "FT-0165"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #274284",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Benham-506",
+          "url": "https://www.wikitree.com/wiki/Benham-506"
+        },
+        {
+          "label": "Pane-Joyce — Jemima Benham (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham pp. 186–188)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-114 — father Nathan",
+          "url": "https://www.wikitree.com/wiki/Benham-114"
+        },
+        {
+          "label": "Find A Grave 66966847 — mother Sarah (parent grid)",
+          "url": "https://www.findagrave.com/memorial/66966847/sarah-benham"
+        },
+        {
+          "label": "Franklin C. Prindle, The Prindle Genealogy (1906) pp. 49–51 — Joel³ × Jemima Benham (independent of pollymoth PDF)",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Jemima (Benham) Morgan; née Benham; Prindle"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_benham_1679",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_beecher_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Joel Pringle Jr. (**C1170**). Parents soft-ingested **Nathan Benham** × **Sarah Beecher** — pack **C1220** (2026-08-08). Jacobus FANH + WikiTree + Pane-Joyce + Prindle 1906 + FAG Sarah grid; `verified: false`. Remarried Joseph Morgan 1729 (four Morgan ch..."
+    },
+    "joel_pringle_sr": {
+      "id": "joel_pringle_sr",
+      "slug": "joel-pringle-sr",
+      "name": "Joel Pringle Sr.",
+      "years": "1696-1726",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_prindle_sr",
+        "mary_brown_prindle"
+      ],
+      "spouses": [
+        "jemima_benham_pringle"
+      ],
+      "children": [
+        "william_prindle_1719",
+        "sarah_pringle_ives",
+        "lois_pringle_bristol",
+        "joel_pringle_jr"
+      ],
+      "media": [
+        {
+          "file": "media/fag-59610755-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 59610755",
+          "source_url": "https://www.findagrave.com/memorial/59610755/joel-prindle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0115",
+        "FT-0124",
+        "FT-0162",
+        "FT-0163",
+        "FT-0164",
+        "FT-0165"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #274283",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Pringle-610",
+          "url": "https://www.wikitree.com/wiki/Pringle-610"
+        },
+        {
+          "label": "Find A Grave 59610755",
+          "url": "https://www.findagrave.com/memorial/59610755/joel-prindle"
+        },
+        {
+          "label": "Pane-Joyce — Joel Prindle × Jemima Benham (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Franklin C. Prindle, The Prindle Genealogy (1906) pp. 49–51 — Joel³ × Jemima; parents Joseph² × Mary Brown",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "Donald Lines Jacobus, Families of Ancient New Haven, vol. 6 pp. 1487–1488",
+          "url": "https://www.wikitree.com/wiki/Pringle-610"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Prindle; Joel Prindle Sr."
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_prindle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Joel Pringle Jr. (**C1170**). Soft-ingest from Pringle/Benham PDF Gen. 1 + WikiTree Pringle-610 + FAG **59610755** + Pane-Joyce Jacobus cite — `verified: false`. Died age 30; never reached Canada (UEL line continues through Joel Jr.)."
+    },
+    "sarah_beecher_benham": {
+      "id": "sarah_beecher_benham",
+      "slug": "sarah-beecher-benham",
+      "name": "Sarah (Beecher) Benham",
+      "years": "1679-1712",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [
+        "nathan_benham_1679"
+      ],
+      "children": [
+        "jemima_benham_pringle",
+        "mercy_benham_hull",
+        "samuel_benham_1706",
+        "lydia_benham_atwater",
+        "sarah_benham_hotchkiss"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag-66966847.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 66966847",
+          "source_url": "https://www.findagrave.com/memorial/66966847/sarah-benham"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0127",
+        "FT-0128"
+      ],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Beecher p. 163)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-34",
+          "url": "https://www.wikitree.com/wiki/Beecher-34"
+        },
+        {
+          "label": "Find A Grave 66966847",
+          "url": "https://www.findagrave.com/memorial/66966847/sarah-benham"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sarah Beecher"
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "nathan_benham_1679",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Jemima (Benham) Pringle/Morgan**. Soft-ingest **Probable** / `verified: false` — pack **C1220** / **C1222**. Daughter of John Beecher × Elizabeth Roberts per Jacobus; m. Nathan Benham ~1699; d. ae 32. FAG stone legible: \"SARAH WIFE OF NATTHAN BENHAM DIED D..."
+    },
+    "nathan_benham_1679": {
+      "id": "nathan_benham_1679",
+      "slug": "nathan-benham-1679",
+      "name": "Nathan Benham",
+      "years": "1679-1757",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_benham_1631",
+        "mercy_smith_benham"
+      ],
+      "spouses": [
+        "sarah_beecher_benham"
+      ],
+      "children": [
+        "jemima_benham_pringle",
+        "mercy_benham_hull",
+        "samuel_benham_1706",
+        "lydia_benham_atwater",
+        "sarah_benham_hotchkiss"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0127",
+        "FT-0128",
+        "FT-0164",
+        "FT-0165"
+      ],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham pp. 186–188)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-114",
+          "url": "https://www.wikitree.com/wiki/Benham-114"
+        },
+        {
+          "label": "Find A Grave 66966847 — spouse Sarah (parent grid)",
+          "url": "https://www.findagrave.com/memorial/66966847/sarah-benham"
+        },
+        {
+          "label": "Pane-Joyce — Nathan × Sarah Beecher (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sarah_beecher_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Jemima (Benham) Pringle/Morgan** (Shorts UEL line). Soft-ingest **Probable** / `verified: false` — pack **C1220** / **C1270**. Jacobus FANH + NHV p. 30 + WikiTree Benham-114 + Pane-Joyce + FAG Sarah spouse grid. m. (1) **Sarah Beecher** ~1699; m. (2) Mary ..."
+    },
+    "elizabeth_roberts_beecher": {
+      "id": "elizabeth_roberts_beecher",
+      "slug": "elizabeth-roberts-beecher",
+      "name": "Elizabeth (Roberts) Beecher",
+      "years": "1653-1722",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_beecher_1646"
+      ],
+      "children": [
+        "mary_beecher_wilmot",
+        "elizabeth_beecher_dunbar",
+        "joanna_beecher",
+        "sarah_beecher_benham",
+        "jemima_beecher",
+        "joseph_beecher_1683",
+        "ebenezer_beecher_1686"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Beecher p. 162)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "Find A Grave 149212111",
+          "url": "https://www.findagrave.com/memorial/149212111/elizabeth-beecher"
+        },
+        {
+          "label": "WikiTree Roberts-9041",
+          "url": "https://www.wikitree.com/wiki/Roberts-9041"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-benham-beecher-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Elizabeth Roberts"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Sarah (Beecher) Benham**. Soft-ingest **Probable** / `verified: false` — pack **C1273** / **C1275**. Chr 14 May 1653 Milford; d. 4 Aug 1722 ae 72; will mentions grand-daughter Mercy Benham."
+    },
+    "john_beecher_1646": {
+      "id": "john_beecher_1646",
+      "slug": "john-beecher-1646",
+      "name": "John Beecher",
+      "years": "1646-1712",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "elizabeth_roberts_beecher"
+      ],
+      "children": [
+        "mary_beecher_wilmot",
+        "elizabeth_beecher_dunbar",
+        "joanna_beecher",
+        "sarah_beecher_benham",
+        "jemima_beecher",
+        "joseph_beecher_1683",
+        "ebenezer_beecher_1686"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Beecher p. 162)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "Find A Grave 8642118",
+          "url": "https://www.findagrave.com/memorial/8642118/john-beecher"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-benham-beecher-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Sarah (Beecher) Benham**. Soft-ingest **Probable** / `verified: false` — pack **C1273** / **C1274**. Jacobus FANH Beecher p. 162; son of Isaac × Mary; FAG Grove Street stone ae 67; will 1712 names Sarah Benham among daughters."
+    },
+    "mercy_smith_benham": {
+      "id": "mercy_smith_benham",
+      "slug": "mercy-smith-benham",
+      "name": "Mercy (Smith) Benham",
+      "years": "1645-1698",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_benham_1631"
+      ],
+      "children": [
+        "joseph_benham_1670",
+        "samuel_benham_1671",
+        "mercy_benham_1673",
+        "nathan_benham_1679",
+        "ebenezer_benham_1686",
+        "nathaniel_benham_1686"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham pp. 186, 1620)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "NHV New Haven p. 30 — m. John Benham",
+          "url": "https://www.wikitree.com/wiki/Smith-2623"
+        },
+        {
+          "label": "WikiTree Smith-2623",
+          "url": "https://www.wikitree.com/wiki/Smith-2623"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-benham-beecher-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mercy Smith"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Nathan Benham**. Soft-ingest **Probable** / `verified: false` — pack **C1270** / **C1272**. Daughter of George Smith × Sarah per Jacobus; m. John Benham 3 Mar 1668/9; widow rate remission 20 Jun 1698."
+    },
+    "john_benham_1631": {
+      "id": "john_benham_1631",
+      "slug": "john-benham-1631",
+      "name": "John Benham",
+      "years": "1631-1691",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mercy_smith_benham"
+      ],
+      "children": [
+        "joseph_benham_1670",
+        "samuel_benham_1671",
+        "mercy_benham_1673",
+        "nathan_benham_1679",
+        "ebenezer_benham_1686",
+        "nathaniel_benham_1686"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham p. 186)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "NHV New Haven 1649–1850 p. 30 — m. Mercy Smith 3 Mar 1668/9",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        },
+        {
+          "label": "WikiTree Benham-155",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-benham-beecher-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Nathan Benham** (Shorts UEL line). Soft-ingest **Probable** / `verified: false` — pack **C1270** / **C1271**. Jacobus FANH + NHV p. 30 marriage to Mercy Smith; d. 1691 New Haven per Jacobus. Prior wife Sarah Hurst + her children not soft-ingested this pass."
+    },
+    "mary_brown_prindle": {
+      "id": "mary_brown_prindle",
+      "slug": "mary-brown-prindle",
+      "name": "Mary Brown",
+      "years": "1664-1704",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_brown_nh",
+        "mary_walker_brown"
+      ],
+      "spouses": [
+        "joseph_prindle_sr"
+      ],
+      "children": [
+        "john_prindle_1691",
+        "samuel_prindle_1693",
+        "joel_pringle_sr",
+        "hephzibah_prindle_roberts",
+        "mary_prindle_bristol_1702",
+        "joseph_prindle_jr_ct"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag-125971521.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 125971521",
+          "source_url": "https://www.findagrave.com/memorial/125971521/mary-prindle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0124",
+        "FT-0126"
+      ],
+      "sources": [
+        {
+          "label": "Franklin C. Prindle, The Prindle Genealogy (1906) pp. 49–51 — Mary Brown dau. John² × Mary Walker",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Brown-2513",
+          "url": "https://www.wikitree.com/wiki/Brown-2513"
+        },
+        {
+          "label": "Pane-Joyce — Mary Brown & Joseph Prindle (rr08_356 header)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Donald Lines Jacobus, Families of Ancient New Haven, vol. 6 p. 1487",
+          "url": "https://www.wikitree.com/wiki/Brown-2513"
+        },
+        {
+          "label": "Find A Grave 125971521",
+          "url": "https://www.findagrave.com/memorial/125971521/mary-prindle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mary (Brown) Prindle; née Brown"
+      ],
+      "parent_links": [
+        {
+          "id": "john_brown_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_walker_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** mother of Joel Pringle Sr. (**C1210**). Daughter of **John Brown × Mary Walker** (New Haven) — soft-ingest **C1263** / `verified: false`. **≠** `mary_brown_aylesworth` of Providence (**C1212** / **C1268** guard). Prindle **1906** + Jacobus Brown p. 346 + Pane-Joyc..."
+    },
+    "joseph_prindle_sr": {
+      "id": "joseph_prindle_sr",
+      "slug": "joseph-prindle-sr",
+      "name": "Joseph Prindle Sr.",
+      "years": "1663-1738",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_prindle_nh",
+        "mary_disburrow_prindle"
+      ],
+      "spouses": [
+        "mary_brown_prindle"
+      ],
+      "children": [
+        "john_prindle_1691",
+        "samuel_prindle_1693",
+        "joel_pringle_sr",
+        "hephzibah_prindle_roberts",
+        "mary_prindle_bristol_1702",
+        "joseph_prindle_jr_ct"
+      ],
+      "media": [
+        {
+          "file": "media/headstone-fag-169522429.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave 169522429",
+          "source_url": "https://www.findagrave.com/memorial/169522429/joseph-prindle"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0124",
+        "FT-0125",
+        "FT-0162",
+        "FT-0163"
+      ],
+      "sources": [
+        {
+          "label": "Franklin C. Prindle, The Prindle Genealogy (1906) pp. 49–51 — Joseph² × Mary Brown; children incl. Joel³",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-40",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Pane-Joyce — Mary Brown & Joseph Prindle parent page (rr08_356 header)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Donald Lines Jacobus, Families of Ancient New Haven, vol. 6 p. 1487",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Find A Grave 125971473",
+          "url": "https://www.findagrave.com/memorial/125971473/joseph-prindle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Joseph Pringle Sr.; Serjeant Joseph Prindle"
+      ],
+      "parent_links": [
+        {
+          "id": "william_prindle_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_disburrow_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** father of Joel Pringle Sr. (**C1210**). Son of **William Prindle × Mary (Disburrow) Prindle** (New Haven) — soft-ingest **C1260** / `verified: false`. Prindle **1906** + Pane-Joyce + Jacobus + FAG **125971473**.",
+      "blocker": "William gen-back Scotland parents Blocked; Mary Disburrow origins Blocke"
+    },
+    "mary_walker_brown": {
+      "id": "mary_walker_brown",
+      "slug": "mary-walker-brown",
+      "name": "Mary (Walker) Brown",
+      "years": "1641-1719",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_brown_nh"
+      ],
+      "children": [
+        "mary_brown_prindle",
+        "john_brown_1666",
+        "hannah_brown_smith",
+        "grace_brown_denison"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven, Walker/Brown (Mary Walker)",
+          "url": "https://www.wikitree.com/wiki/Walker-12213"
+        },
+        {
+          "label": "Pane-Joyce — John Brown × Mary Walker (rr04_071)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "NH VR Part I p. 16 — marriage 11 Jan 1660",
+          "url": "https://www.wikitree.com/wiki/Walker-12213"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mary Walker; later Mary Clark"
+      ],
+      "spouse_links": [
+        {
+          "id": "john_brown_nh",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Mary (Brown) Prindle**. Soft-ingest **Probable** / `verified: false` — pack **C1263** / **C1265**. Jacobus + Pane-Joyce + NH VR. m. (1) John Brown **1660**; divorced **1674**; m. (2) John Clark **1675** (Clark half-siblings **not** soft this pass). Living ..."
+    },
+    "john_brown_nh": {
+      "id": "john_brown_nh",
+      "slug": "john-brown-nh",
+      "name": "John Brown",
+      "years": "1640-1673",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_walker_brown"
+      ],
+      "children": [
+        "mary_brown_prindle",
+        "john_brown_1666",
+        "hannah_brown_smith",
+        "grace_brown_denison"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven, Brown p. 346 (John² son of Francis)",
+          "url": "https://www.wikitree.com/wiki/Brown-1305"
+        },
+        {
+          "label": "Pane-Joyce — John Brown × Mary Walker (rr04_071)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "NH VR Part I p. 16 — John Browne & Mary Walker m. 11 Jan 1660",
+          "url": "https://www.wikitree.com/wiki/Brown-1305"
+        },
+        {
+          "label": "Prindle Genealogy 1906 — Mary Brown dau. John² × Mary Walker",
+          "url": "https://archive.org/stream/prindlegenealog00pringoog#page/n46/mode/2up"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John Browne (New Haven)"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_walker_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Mary (Brown) Prindle**. Soft-ingest **Probable** / `verified: false` — pack **C1263** / **C1264**. Jacobus FANH Brown p. 346 + Pane-Joyce + NH VR marriage. **≠** `rev_john_brown` of Providence (**C1268** guard). Parents Francis Brown × Mary Edwards named —..."
+    },
+    "mary_disburrow_prindle": {
+      "id": "mary_disburrow_prindle",
+      "slug": "mary-disburrow-prindle",
+      "name": "Mary (Disburrow) Prindle",
+      "years": "1635-1700",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "william_prindle_nh"
+      ],
+      "children": [
+        "john_prindle_1658",
+        "ebenezer_prindle_1661",
+        "joseph_prindle_sr",
+        "samuel_prindle_1668"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "NH VR — Mary Desborough m. William Prindle 7 Dec 1655 (via WikiTree Disburrow-1)",
+          "url": "https://www.wikitree.com/wiki/Disburrow-1"
+        },
+        {
+          "label": "Franklin C. Prindle, The Prindle Genealogy (1906) pp. 1–2",
+          "url": "https://archive.org/stream/prindlegenealog00pringoog#page/n46/mode/2up"
+        },
+        {
+          "label": "Pane-Joyce — Mary Desborough × William Prindle (rr04_071)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mary Desborough; Mary Disborough"
+      ],
+      "spouse_links": [
+        {
+          "id": "william_prindle_nh",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed mother of **Joseph Prindle Sr.** Soft-ingest **Probable** / `verified: false` — pack **C1260** / **C1262**. NH marriage VR **7 Dec 1655** + Prindle **1906** + Pane-Joyce. **Identity guard:** ≠ Mary Brownson widow of Nicholas Disborough; ≠ Isaac Disbrowe (Eltisley) lin..."
+    },
+    "william_prindle_nh": {
+      "id": "william_prindle_nh",
+      "slug": "william-prindle-nh",
+      "name": "William Prindle",
+      "years": "1630-1690",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_disburrow_prindle"
+      ],
+      "children": [
+        "john_prindle_1658",
+        "ebenezer_prindle_1661",
+        "joseph_prindle_sr",
+        "samuel_prindle_1668"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Franklin C. Prindle, The Prindle Genealogy (1906) pp. 1–2 — William¹ × Mary Desborough; child Joseph²",
+          "url": "https://archive.org/stream/prindlegenealog00pringoog#page/n46/mode/2up"
+        },
+        {
+          "label": "Pane-Joyce — William Prindle × Mary Desborough parent header (rr04_071)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "WikiTree Prindle-35 — will 17 Oct 1689 / probate 5 Jun 1690",
+          "url": "https://www.wikitree.com/wiki/Prindle-35"
+        },
+        {
+          "label": "New Haven probate — William Prindle will 1689 (via WikiTree)",
+          "url": "https://www.wikitree.com/wiki/Prindle-35"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "William Pringle; William \"The Scotsman\" Prindle"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_disburrow_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed father of **Joseph Prindle Sr.** (Shorts UEL line). Soft-ingest **Probable** / `verified: false` — pack **C1260** / **C1261**. Prindle **1906** + Pane-Joyce Jacobus stack + NH probate will **17 Oct 1689**. **Not** `william_prindle_1719` (grandson) or UEL William Pring...",
+      "blocker": "Gen-back Scotland parents Blocked — unknown"
+    },
+    "rosannah_monk_shorts": {
+      "id": "rosannah_monk_shorts",
+      "slug": "rosannah-monk-shorts",
+      "name": "Rosannah Shorts",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "john_shorts"
+      ],
+      "children": [
+        "augustus_shorts",
+        "hannah_mary_shorts",
+        "catharine_shorts",
+        "philip_shorts_ue",
+        "frances_shorts_heck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0043",
+        "FT-0044",
+        "FT-0080",
+        "FT-0087",
+        "FT-0088",
+        "FT-0090",
+        "FT-0092",
+        "FT-0153",
+        "FT-0154",
+        "FT-0155"
+      ],
+      "sources": [
+        {
+          "label": "Old Hay Bay Church — Shorts orphan cluster (Rosannah Monk Shorts)",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "WikiTree Monk-1058",
+          "url": "https://www.wikitree.com/wiki/Monk-1058"
+        },
+        {
+          "label": "Y-line proposal: docs/research/people/proposals/y-line-augustus-father.md",
+          "url": ""
+        },
+        {
+          "label": "Dig 2026-08-07 siblings: docs/research/people/proposals/john-shorts-1778-siblings.md",
+          "url": ""
+        },
+        {
+          "label": "Monk parents dig 2026-08-08: docs/research/people/proposals/rosannah-monk-parents.md (C1141–C1146)",
+          "url": ""
+        },
+        {
+          "label": "Barbara Monk × Casper Hoover sister FAN (FT-0080)",
+          "url": "https://www.pollymoth.com/genealogies/hoo155508.pdf"
+        }
+      ],
+      "aka": [
+        "née Monk; Rosannah Monck; Mrs Shorts"
+      ],
+      "note": "**Probable** mother of Rev Augustus Shorts (**C331**) — soft-ingested with husband **John Shorts** for couple ID on the Shorts Y-line climb; **not** a Y-line dig target. Married John on the Susquehanna **1764**; fled as Loyalist widow; died of exposure at **Pointe Claire** wes...",
+      "blocker": "Exact birth/death dates; née Monk parents still blocked; FAG none this p"
+    },
+    "john_shorts": {
+      "id": "john_shorts",
+      "slug": "john-shorts",
+      "name": "John Shorts",
+      "years": "–1778",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "rosannah_monk_shorts"
+      ],
+      "children": [
+        "augustus_shorts",
+        "hannah_mary_shorts",
+        "catharine_shorts",
+        "philip_shorts_ue",
+        "frances_shorts_heck"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0042",
+        "FT-0043",
+        "FT-0044",
+        "FT-0081",
+        "FT-0082",
+        "FT-0087",
+        "FT-0088",
+        "FT-0090",
+        "FT-0092",
+        "FT-0153",
+        "FT-0154",
+        "FT-0155"
+      ],
+      "sources": [
+        {
+          "label": "Old Hay Bay Church — Shorts orphan cluster (John Shorts × Rosannah Monk)",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "WikiTree Short-3451 (John W Short)",
+          "url": "https://www.wikitree.com/wiki/Short-3451"
+        },
+        {
+          "label": "WikiTree Short-3450 (Augustus — son of John W × Rosannah)",
+          "url": "https://www.wikitree.com/wiki/Short-3450"
+        },
+        {
+          "label": "Exploring Niagara — Butler’s Rangers privates SHORTS, JOHN E. (FT-0042)",
+          "url": "http://exploringniagara.com/all_about_niagara/the_history_of_niagara/butlers_rangers.html"
+        },
+        {
+          "label": "OHS Papers — St. John’s Ernesttown register; Philip & Katreen Shorts witnesses 1792 (FT-0043)",
+          "url": "https://archive.org/stream/papersrecordsont01onta/papersrecordsont01onta_djvu.txt"
+        },
+        {
+          "label": "Ontario plaques — Hay Bay Church 1792 + Loyalist Landing photos (FT-0044)",
+          "url": "https://ontarioplaques.ca/Plaques/Plaque_Lennox06.html"
+        },
+        {
+          "label": "Smy Annotated Nominal Roll — Short, John Henry (FT-0081)",
+          "url": "https://archive.org/details/annotatednominal0000smyw"
+        },
+        {
+          "label": "Y-line proposal: docs/research/people/proposals/y-line-augustus-father.md",
+          "url": ""
+        },
+        {
+          "label": "Dig 2026-08-07 siblings: docs/research/people/proposals/john-shorts-1778-siblings.md",
+          "url": ""
+        },
+        {
+          "label": "Father unlock: docs/research/people/proposals/y-line-john-shorts-father.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John W. Short; John W. Shorts; John E. Shorts; John Henry Short (Smy); Johannis Shorts (do not merge RI Shorts-127)"
+      ],
+      "note": "**Probable** father of Rev Augustus Shorts (**C330**). Butler’s Ranger; Swiss origins; Susquehanna settler with wife Rosannah Monk (m. 1764). Soft-ingest from Old Hay Bay vignette (cites CCA **19 Mar 1862** orphan narrative) + WikiTree Short-3450/3451 — `verified: false`. Work...",
+      "blocker": "Parents blocked — need LAC petition images / remaining Smy Short"
+    },
+    "samuel": {
+      "id": "samuel",
+      "slug": null,
+      "name": "Samuel Shorts",
+      "years": "1987–",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "william",
+        "heidi"
+      ],
+      "spouses": [
+        "krystal"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null
+    },
+    "nicholas": {
+      "id": "nicholas",
+      "slug": null,
+      "name": "Nicholas William Shorts",
+      "years": "1990–",
+      "confidence": "Confirmed",
+      "status": "living-private",
+      "parents": [
+        "william",
+        "heidi"
+      ],
+      "spouses": [
+        "jessie"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null
+    },
+    "carla": {
+      "id": "carla",
+      "slug": "carla-lou-shorts",
+      "name": "Carla Lou Shorts",
+      "years": "1952-1988",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "richard",
+        "gloria"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/memorial-fag-2011.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 65483984",
+          "source_url": "https://images.findagrave.com/photos/2011/40/65483984_129738517043.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0005"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 65483984",
+          "url": "https://www.findagrave.com/memorial/65483984/carla_lou-shorts"
+        },
+        {
+          "label": "Gloria Conejo Mountain obituary (FT-0005)",
+          "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
+        }
+      ],
+      "note": "Sister of William Stanley Shorts; daughter of Richard Dorland Shorts and Gloria Martha (Gatz) Shorts. Named Carla in Gloria’s obituary (C13). Full name and dates locked Round 4 (C23)."
+    },
+    "gigi": {
+      "id": "gigi",
+      "slug": null,
+      "name": "Gloria “Gigi” Kilmer",
+      "aka": "née Shorts",
+      "years": "",
+      "confidence": "Confirmed",
+      "status": "researching",
+      "parents": [
+        "richard",
+        "gloria"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "note": "No deceased FAG match — treat as living; no public scrape",
+      "object_ids": [
+        "FT-0005"
+      ]
+    },
+    "seymour_cohn": {
+      "id": "seymour_cohn",
+      "slug": "seymour-cohn",
+      "name": "Seymour Cohn",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "researching",
+      "parents": [
+        "monroe_cohn",
+        "mamie_mamlock"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0023",
+        "FT-0024"
+      ],
+      "sources": [
+        {
+          "label": "MyHeritage — brother of Myron Mamlock Cohn",
+          "url": "https://www.myheritage.no/names/myron_cohn"
+        },
+        {
+          "label": "GGG NYC grooms — Seymour Cohn × Florence Hahn 2 Sep 1926 Manhattan cert 25642",
+          "url": "https://www.germangenealogygroup.com/records-search/grooms.php"
+        }
+      ],
+      "aka": [
+        "Sy Cohn",
+        "Sy"
+      ],
+      "parent_links": [
+        {
+          "id": "monroe_cohn",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mamie_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Confirmed** / `verified: true` brother of **Myron Mamlock Cohn** (collateral) — pack **C969** Y; Alex: went by **Sy**. Do **not** climb spouse/parents ahead of UP gaps."
+    },
+    "albert_mamlock": {
+      "id": "albert_mamlock",
+      "slug": "albert-mamlock",
+      "name": "Albert Mamlock",
+      "years": "1858-1937",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "mayer_mamlock",
+        "rachel_mamlock"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0260",
+        "FT-0305",
+        "FT-0306"
+      ],
+      "sources": [
+        {
+          "label": "ISTG Allemannia 9 Sep 1867 — Alb. Mamlock age 7",
+          "url": "https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html"
+        },
+        {
+          "label": "GGG NYC deaths — Mamlock, Albert 24 May 1937 Manhattan cert 12843 age 79",
+          "url": "https://www.germangenealogygroup.com/records-search/deaths.php"
+        },
+        {
+          "label": "MyHeritage — sibling of Mamie Cohn (Mamlock)",
+          "url": "https://www.myheritage.hu/names/mamie_cohn"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rachel_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rosa_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of **Mamie Mamlock** (collateral). Ship 1867 + MH sibling list + NYC death. Parents Possible Mayer × Rachel; manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**). Do not climb ahead of Mamie UP harden."
+    },
+    "franciska_mamlock": {
+      "id": "franciska_mamlock",
+      "slug": "franciska-mamlock",
+      "name": "Franciska Mamlock",
+      "years": "1862–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "mayer_mamlock",
+        "rachel_mamlock"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0260",
+        "FT-0305"
+      ],
+      "sources": [
+        {
+          "label": "ISTG Allemannia 9 Sep 1867 — Franciska Mamlock age 5",
+          "url": "https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html"
+        },
+        {
+          "label": "GGG NYC brides — Franciska Mamlock m. 19 Sep 1886 Manhattan cert 61529",
+          "url": "https://www.germangenealogygroup.com/records-search/brides.php"
+        }
+      ],
+      "aka": [
+        "Frances Aronson",
+        "Frances Mamlock"
+      ],
+      "parent_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rachel_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rosa_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Ship 1867 + 1886 Manhattan marriage. Parents Possible Mayer × Rachel; manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**)."
+    },
+    "esther_mamlock": {
+      "id": "esther_mamlock",
+      "slug": "esther-mamlock-geiger",
+      "name": "Esther Mamlock",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "mayer_mamlock",
+        "rachel_mamlock"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GGG NYC brides — Esther Mamlock × Charles Geiger 6 Mar 1894 Manhattan cert 2970",
+          "url": "https://www.germangenealogygroup.com/records-search/brides.php"
+        }
+      ],
+      "aka": [
+        "Esther Geiger"
+      ],
+      "parent_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rachel_mamlock",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Married **Charles Geiger** **6 Mar 1894** Manhattan cert **2970**. Parents Possible Mayer × Rachel."
+    },
+    "emma_mamlock": {
+      "id": "emma_mamlock",
+      "slug": "emma-mamlock-michaels",
+      "name": "Emma Mamlock",
+      "years": "1864–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "mayer_mamlock",
+        "rachel_mamlock"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0260",
+        "FT-0305"
+      ],
+      "sources": [
+        {
+          "label": "ISTG Allemannia 9 Sep 1867 — Emma Mamlock age 3",
+          "url": "https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html"
+        },
+        {
+          "label": "GGG NYC brides — Emma Mamlock m. 6 Dec 1898 Manhattan cert 18992",
+          "url": "https://www.germangenealogygroup.com/records-search/brides.php"
+        },
+        {
+          "label": "MyHeritage — Emma Michaels sibling of Mamie Cohn",
+          "url": "https://www.myheritage.hu/names/mamie_cohn"
+        }
+      ],
+      "aka": [
+        "Emma Michaels"
+      ],
+      "parent_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rachel_mamlock",
+          "confidence": "Possible"
+        },
+        {
+          "id": "rosa_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Ship 1867; married **6 Dec 1898** Manhattan cert **18992** (MH: Michaels). Parents Possible Mayer × Rachel; manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**)."
+    },
+    "jenny_mamlock": {
+      "id": "jenny_mamlock",
+      "slug": "jenny-mamlock",
+      "name": "Jenny Mamlock",
+      "years": "1867–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "mayer_mamlock",
+        "rochelle_kahn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0260",
+        "FT-0305"
+      ],
+      "sources": [
+        {
+          "label": "ISTG Allemannia 9 Sep 1867 — Jenny Mamlock 0y6m with Rosa + sibs",
+          "url": "https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html"
+        },
+        {
+          "label": "FS 1900 census index — Rachael Mamlock household includes Jennie Mamlock",
+          "url": "https://www.familysearch.org/en/search/record/results?q.givenName=Rachael&q.surname=Mamlock"
+        }
+      ],
+      "aka": [
+        "Jennie Mamlock"
+      ],
+      "parent_links": [
+        {
+          "id": "mayer_mamlock",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rochelle_kahn",
+          "confidence": "Probable"
+        },
+        {
+          "id": "rosa_mamlock",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Named on 1867 Allemannia passenger list and in 1900 household index under mother Rachael. Manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**). Soft only; do not climb ahead of Rochelle UP."
+    },
+    "azalea_gayle_anderson": {
+      "id": "azalea_gayle_anderson",
+      "slug": "azalea-gayle-anderson",
+      "name": "Azalea Gayle Anderson",
+      "years": "1904–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hugh_dupree_anderson",
+        "urtha_stonebraker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0182",
+        "FT-0183"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — sister of Marion (not Blanche)",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "Mills Co. delayed birth — Azalia Gaile Anderson 9 Aug 1904 Henderson; Hugh D. × Urtha Almina Stonebraker",
+          "url": "http://iagenweb.org/mills/births/delbirthsA.htm"
+        },
+        {
+          "label": "Mills Co. birth index 1904–1906 — Anderson, Azalia Gayle 09 Aug 1904; mother Stonebraker",
+          "url": "http://iagenweb.org/mills/births/1904_1906.htm"
+        }
+      ],
+      "aka": [
+        "Azalia Gaile Anderson",
+        "Azalia Gayle Anderson",
+        "Azalea Gayle"
+      ],
+      "parent_links": [
+        {
+          "id": "hugh_dupree_anderson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "urtha_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Marion Lawrence Anderson**. Mills delayed birth indexes **Azalia Gaile** (Alex: **Azalea Gayle**) — keep Alex display spelling; aka carries index forms. b. **9 Aug 1904** Henderson, Mills Co. IA. Collateral; do not climb UP ahead of Hugh/Urtha parents."
+    },
+    "lucille_anderson": {
+      "id": "lucille_anderson",
+      "slug": "lucille-anderson",
+      "name": "Lucille Anderson",
+      "years": "1913–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hugh_dupree_anderson",
+        "urtha_stonebraker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0183"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Alex, Heidi pack 2026-08-08) — sister of Marion (not Blanche)",
+          "url": "docs/research/people/packs/heidi-line-feedback-2026-08-08.json"
+        },
+        {
+          "label": "Mills Co. delayed birth — Ursula Lucille Anderson, 3rd child, 16 Jul 1913 Emerson; Hugh D. × Urtha A. Stonebraker",
+          "url": "http://iagenweb.org/mills/births/delbirthsA.htm"
+        }
+      ],
+      "aka": [
+        "Ursula Lucille Anderson",
+        "Ursula Lucille"
+      ],
+      "parent_links": [
+        {
+          "id": "hugh_dupree_anderson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "urtha_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Marion Lawrence Anderson**. Delayed birth gives full **Ursula Lucille** (Alex: **Lucille**). b. **16 Jul 1913** Emerson, Mills Co. IA; marked **3rd** child (after Azalia 1904 + Marion L. 1906). Collateral; do not climb."
+    },
+    "gertrude_a_buck": {
+      "id": "gertrude_a_buck",
+      "slug": "gertrude-a-buck",
+      "name": "Gertrude A. Buck",
+      "years": "1868-1957",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_junior_buck",
+        "sarah_elizabeth_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176"
+      ],
+      "sources": [
+        {
+          "label": "FAG — Gertrude A. Buck child of Erastus Jr × Sarah Trask; Guerdon half/full sibling grid",
+          "url": "https://www.findagrave.com/memorial/119827475/gertrude_a-buck"
+        },
+        {
+          "label": "FT-0029 — Miss Gertrude of Milwaukee",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Miss Gertrude Buck"
+      ],
+      "note": "**Probable** soft sister of **Guerdon Conde Buck** (FAG half-sibling label on Guerdon; Sarah 1943 / 1932 lists Miss Gertrude). Collateral only — no UP climb. `verified: false`."
+    },
+    "clara_h_buck": {
+      "id": "clara_h_buck",
+      "slug": "clara-h-buck",
+      "name": "Clara H. Buck",
+      "years": "1870-1951",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_junior_buck",
+        "sarah_elizabeth_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 122113274 — Clara H Nehls; sibling of Guerdon C Buck",
+          "url": "https://www.findagrave.com/memorial/122113274/clara_h-nehls"
+        },
+        {
+          "label": "FT-0029 — Mrs. Arthur Nehls of Buffalo NY",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Clara H. Nehls",
+        "Mrs. Arthur Nehls"
+      ],
+      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+    },
+    "winifred_kendrick_buck": {
+      "id": "winifred_kendrick_buck",
+      "slug": "winifred-kendrick-buck",
+      "name": "Winifred Kendrick Buck",
+      "years": "1875-1970",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_junior_buck",
+        "sarah_elizabeth_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 286891698 — Winifred Kendrick Buck Muckler",
+          "url": "https://www.findagrave.com/memorial/286891698/winifred_kendrick-muckler"
+        },
+        {
+          "label": "FT-0029 — Mrs. Winifred Muckler of Missoula MT",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Winifred Kendrick Buck Muckler",
+        "Mrs. Winifred Muckler"
+      ],
+      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+    },
+    "florence_trask_buck": {
+      "id": "florence_trask_buck",
+      "slug": "florence-trask-buck",
+      "name": "Florence Trask Buck",
+      "years": "1877-1961",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_junior_buck",
+        "sarah_elizabeth_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 286739782 — Florence Trask Buck Saxton",
+          "url": "https://www.findagrave.com/memorial/286739782/florence_trask-saxton"
+        },
+        {
+          "label": "FT-0029 — Mrs. Ralph Saxton of Seattle",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Florence Trask Buck Saxton",
+        "Mrs. Ralph Saxton"
+      ],
+      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+    },
+    "berenice_buck": {
+      "id": "berenice_buck",
+      "slug": "berenice-buck",
+      "name": "Berenice Buck",
+      "years": "1881-1957",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_junior_buck",
+        "sarah_elizabeth_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0029",
+        "FT-0175",
+        "FT-0176"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 286891810 — Berenice Buck",
+          "url": "https://www.findagrave.com/memorial/286891810/berenice-buck"
+        },
+        {
+          "label": "FT-0029 — Miss Berenice of Hammond IN",
+          "url": "collection/objects/FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl/entry.md"
+        }
+      ],
+      "aka": [
+        "Berniece Buck",
+        "Miss Berenice"
+      ],
+      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+    },
+    "annie_h_trask_furlong": {
+      "id": "annie_h_trask_furlong",
+      "slug": "annie-h-trask-furlong",
+      "name": "Annie H. Trask Furlong",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_trask",
+        "anne_rhodes_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG sibling grid — Annie H. Trask Furlong on Sarah Trask Buck memorial",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        }
+      ],
+      "aka": [
+        "Annie H. Trask"
+      ],
+      "parent_links": [
+        {
+          "id": "john_trask",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anne_rhodes_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sister of **Sarah Elizabeth Trask** — FAG sibling link on Sarah’s memorial. `verified: false`."
+    },
+    "clara_anna_trask": {
+      "id": "clara_anna_trask",
+      "slug": "clara-anna-trask",
+      "name": "Clara Anna Trask",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_trask",
+        "anne_rhodes_trask"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG sibling grid — Clara Anna Trask on Sarah Trask Buck memorial",
+          "url": "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_trask",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anne_rhodes_trask",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sister of **Sarah Elizabeth Trask** — FAG sibling link on Sarah’s memorial. `verified: false`."
+    },
+    "olive_bawlden_buck": {
+      "id": "olive_bawlden_buck",
+      "slug": "olive-bawlden-buck",
+      "name": "Olive Bawlden Buck",
+      "years": "1825–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_d_buck",
+        "elizabeth_roxana_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Olive Bawlden d. Erastus and Roxana bp. 30 Oct 1825",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "FAG sibling grid — Erastus Junior Buck memorial",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sister of **Erastus Junior Buck** — Heath baptism **30 Oct 1825** + FAG sibling link on Erastus memorial. `verified: false`."
+    },
+    "winslow_buck": {
+      "id": "winslow_buck",
+      "slug": "winslow-buck",
+      "name": "Winslow Buck",
+      "years": "1824–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_d_buck",
+        "elizabeth_roxana_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Heath MA vitals — William s. Erastus and Roxana bp. 30 May 1824",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "FAG sibling grid — Winslow Buck on Erastus Junior memorial",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "aka": [
+        "William Buck"
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sibling of **Erastus Junior Buck**. Heath baptism **William** s. Erastus × Roxana **30 May 1824**; FAG lists **Winslow Buck** — may be same person (given-name conflict open). `verified: false`."
+    },
+    "halbert_a_buck": {
+      "id": "halbert_a_buck",
+      "slug": "halbert-a-buck",
+      "name": "Halbert A. Buck",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_d_buck",
+        "elizabeth_roxana_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG sibling grid — Halbert A. Buck on Erastus Junior memorial",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sibling of **Erastus Junior Buck** — FAG sibling link only this pass. `verified: false`."
+    },
+    "mary_roxana_buck": {
+      "id": "mary_roxana_buck",
+      "slug": "mary-roxana-buck",
+      "name": "Mary Roxana Buck",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_d_buck",
+        "elizabeth_roxana_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG sibling grid — Mary Roxana Buck on Erastus Junior memorial",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sibling of **Erastus Junior Buck** — FAG sibling link only this pass. `verified: false`."
+    },
+    "chauncey_sadie_buck": {
+      "id": "chauncey_sadie_buck",
+      "slug": "chauncey-sadie-buck",
+      "name": "Chauncey Sadie Buck",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "erastus_d_buck",
+        "elizabeth_roxana_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "FAG sibling grid — Chauncey Sadie Buck on Erastus Junior memorial",
+          "url": "https://www.findagrave.com/memorial/131391996/erastus_junior-buck"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "erastus_d_buck",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roxana_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** collateral sibling of **Erastus Junior Buck** — FAG lists single entry **Chauncey Sadie Buck** (may be one person or FAG conflation). `verified: false`."
+    },
+    "lucy_baldwin_heath": {
+      "id": "lucy_baldwin_heath",
+      "slug": "lucy-baldwin-heath",
+      "name": "Lucy Baldwin",
+      "years": "1794-1827",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_baldwin",
+        "sarah_deane_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Lucy, d. David and w., bp. 30 Jun 1794",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Heath MA vitals — Lucy D., d. Col. David and Sarah Deane d. 10 May 1827 ae 20",
+          "url": "http://dunhamwilcox.net/ma/heath_ma_deaths.htm"
+        },
+        {
+          "label": "Baldwin Heath siblings C1584 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Lucy D. Baldwin"
+      ],
+      "parent_links": [
+        {
+          "id": "david_baldwin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_deane_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1584**. bp. **30 Jun 1794** *Lucy, d. David and w.*; death names *Lucy D., d. Col. David and Sarah Deane* (**10 May 1827**, ae 20 — age vs bp tension in proposal). Spouses/chi..."
+    },
+    "betsy_baldwin_heath": {
+      "id": "betsy_baldwin_heath",
+      "slug": "betsy-baldwin-heath",
+      "name": "Betsy Baldwin",
+      "years": "1796–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_baldwin",
+        "sarah_deane_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Betsy, d. David and w., bp. 17 Jul 1796",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Baldwin Heath siblings C1585 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "david_baldwin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_deane_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1585**. *Betsy, d. David and w., bp. 17 Jul 1796* Heath. Mother **Sarah (Deane) Baldwin** from sibling-death FAN on Lucy + Sarah Deane death row (**C1580–C1581**). Spouses/chi..."
+    },
+    "phinehas_baldwin_heath": {
+      "id": "phinehas_baldwin_heath",
+      "slug": "phinehas-baldwin-heath",
+      "name": "Phinehas Baldwin",
+      "years": "1790–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_baldwin",
+        "sarah_deane_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Phinehas, 3 Apr 1790 (David Baldwin line)",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Baldwin Heath siblings C1586 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Phineas Baldwin"
+      ],
+      "parent_links": [
+        {
+          "id": "david_baldwin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_deane_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1586**. *Phinehas, Apr 3, 1790* in David Baldwin birth cluster (distinct from later *Phinehas and Mary* household). Mother **Sarah (Deane) Baldwin** via Lucy death + Sarah Dea..."
+    },
+    "kerziah_baldwin_heath": {
+      "id": "kerziah_baldwin_heath",
+      "slug": "kerziah-baldwin-heath",
+      "name": "Kerziah Baldwin",
+      "years": "1804–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_baldwin",
+        "sarah_deane_baldwin"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Heath MA vitals — Kerziah, d. David and w., bp. 25 Nov 1804",
+          "url": "https://ldsgenealogy.com/MA/Vital-records-of-Heath-Massachusetts-to-the-year-1850.htm"
+        },
+        {
+          "label": "Baldwin Heath siblings C1587 — docs/research/people/proposals/baldwin-heath-mother-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Keziah Baldwin"
+      ],
+      "parent_links": [
+        {
+          "id": "david_baldwin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_deane_baldwin",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1587**. *Kerziah, d. David and w., bp. 25 Nov 1804* Heath. Born before mother Sarah Deane death **1809**. Spouses/children **not climbed**."
+    },
+    "belle_stonebraker": {
+      "id": "belle_stonebraker",
+      "slug": "belle-stonebraker",
+      "name": "Belle Stonebraker",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "j_a_stonebraker",
+        "p_h_stonebraker"
+      ],
+      "spouses": [
+        "solomon_m_perkins"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0173",
+        "FT-0190"
+      ],
+      "sources": [
+        {
+          "label": "Henderson Christian Church — Solomon M. Perkins pastor 1895–96 married Belle Stonebraker while here",
+          "url": "http://iagenweb.org/mills/churches/and_henderson_cc.htm"
+        },
+        {
+          "label": "Mills Co. marriage index — Perkins, S. M. × Stonebraker, Belle · 23 Dec 1896",
+          "url": "http://iagenweb.org/mills/marriage/1852-1925g/p.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "j_a_stonebraker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "p_h_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "solomon_m_perkins",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** older sister of **Urtha Stonebraker** — Henderson Christian Church history records pastor **Solomon M. Perkins** (1895–96) married **Belle Stonebraker** during his ministry. Collateral FAN to Urtha (Villisca **Mrs. S. M. Perkins** visit cited on compiled trees onl..."
+    },
+    "f_g_stonebraker": {
+      "id": "f_g_stonebraker",
+      "slug": "f-g-stonebraker",
+      "name": "F. G. Stonebraker",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "j_a_stonebraker",
+        "p_h_stonebraker"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0173",
+        "FT-0191"
+      ],
+      "sources": [
+        {
+          "label": "Mills Co. 1905 IA state census — F. G. Stonebraker, Henderson PO (card 168)",
+          "url": "https://www.iagenweb.org/mills/census/state/1905_henderson.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "j_a_stonebraker",
+          "confidence": "Probable"
+        },
+        {
+          "id": "p_h_stonebraker",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sibling of **Urtha Stonebraker** — **1905** Henderson census lists **F. G. Stonebraker** in sequence with **J. A.** and **P. H.** Stonebraker (probable child still in household). Full given name open (Frederick G.? — not assumed). `verified: false`."
+    },
+    "don_shorts": {
+      "id": "don_shorts",
+      "slug": "don-shorts",
+      "name": "Don Shorts",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "researching",
+      "parents": [
+        "earl",
+        "annabelle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0108",
+        "FT-0109",
+        "FT-0110"
+      ],
+      "sources": [
+        {
+          "label": "Alex 2026-08-08 — Don Shorts is Richard Dorland Shorts’s brother",
+          "url": ""
+        },
+        {
+          "label": "Ontarioplaques.com Blue Church visitor comment 12 Sep 2010 (FT-0108)",
+          "url": "https://www.ontarioplaques.com/Plaques/Plaque_Leeds15.html"
+        },
+        {
+          "label": "Ventura County Star 28 Oct 2009 — Richard “first son” implies younger sibling(s) (FT-0004)",
+          "url": "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
+        }
+      ],
+      "aka": [
+        "Donald Shorts (soft; form unknown)"
+      ],
+      "parent_links": [
+        {
+          "id": "earl",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "annabelle",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Confirmed** brother of **Richard Dorland Shorts** (Alex 2026-08-08). Parents **Earl Stanley × Annabelle Merritt**. Living-private: no public scrape beyond his **2010** open comment on the Ontario Blue Church plaque page (FT-0108), where he names the family’s Methodism work a..."
+    },
+    "carrie_williams": {
+      "id": "carrie_williams",
+      "slug": "caroline-e-tuxhorn-williams",
+      "name": "Caroline E. Elizabeth Williams",
+      "years": "1892-1979",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/portrait-2022.jpeg",
+          "kind": "portrait",
+          "source": "Find A Grave memorial 48237526",
+          "source_url": "https://images.findagrave.com/photos/2022/218/48237526_a01ce0a9-f91d-46a1-a7d6-dfd267dc0a17.jpeg"
+        },
+        {
+          "file": "media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48237526 — Inman North Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2010/94/48237526_127051114768.jpg"
+        }
+      ],
+      "portrait": "media/portrait-2022.jpeg",
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48237526",
+          "url": "https://www.findagrave.com/memorial/48237526/caroline_e_elizabeth-williams"
+        }
+      ],
+      "aka": [
+        "Carrie; née Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "leo_tuxhorn",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "ida_tuxhorn",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** eldest sister of Martha Tuxhorn Gatz (**C56** / C30). Daughter of Leo Lewis × Ida L. Achilles Tuxhorn per FAG bio and parent links. Married Williams (spouse Benjamin Joseph Williams on FAG). Collateral."
+    },
+    "florence_graves": {
+      "id": "florence_graves",
+      "slug": "florence-e-tuxhorn-graves",
+      "name": "Florence E. Graves",
+      "years": "1894-1983",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-inman-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236712 — Inman North Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2010/96/48236712_127066981089.jpg"
+        },
+        {
+          "file": "media/headstone-detail-2010.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236712 (detail)",
+          "source_url": "https://images.findagrave.com/photos/2010/96/48236712_127066978569.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 48236712",
+          "url": "https://www.findagrave.com/memorial/48236712/florence_e-graves"
+        }
+      ],
+      "aka": [
+        "née Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "leo_tuxhorn",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "ida_tuxhorn",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** sister of Martha Tuxhorn Gatz (**C57** / C30). Daughter of Leo × Ida per FAG parent links. Married Graves (Brooks Wallace Graves on FAG). Collateral."
+    },
+    "henry_f_tuxhorn": {
+      "id": "henry_f_tuxhorn",
+      "slug": "henry-fredrick-tuxhorn",
+      "name": "Henry Fredrick Tuxhorn",
+      "years": "1899-1973",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-neosho-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 27952385 — Neosho County Memorial Park",
+          "source_url": "https://images.findagrave.com/photos/2013/26/27952385_135932499363.jpg"
+        },
+        {
+          "file": "media/headstone-detail-2013.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 27952385 (detail)",
+          "source_url": "https://images.findagrave.com/photos/2013/26/27952385_135932496839.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 27952385",
+          "url": "https://www.findagrave.com/memorial/27952385/henry_fredrick-tuxhorn"
+        }
+      ],
+      "aka": [
+        "Henry F. Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "leo_tuxhorn",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "ida_tuxhorn",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** brother of Martha Tuxhorn Gatz (**C58** / C30). Son of Leo × Ida per FAG parent links. Shared marker with Helen (1902–1995). Collateral."
+    },
+    "wilma_prather": {
+      "id": "wilma_prather",
+      "slug": "wilma-ella-tuxhorn-prather",
+      "name": "Wilma Ella Prather",
+      "years": "1905-1972",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-mount-lebanon-2016.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 167363109 — Mount Lebanon Cemetery",
+          "source_url": "https://images.findagrave.com/photos/2016/248/167363109_1473123301.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave 167363109",
+          "url": "https://www.findagrave.com/memorial/167363109/wilma_ella-prather"
+        }
+      ],
+      "aka": [
+        "née Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "leo_tuxhorn",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "ida_tuxhorn",
+          "confidence": "Confirmed"
+        }
+      ],
+      "note": "**Probable** sister of Martha Tuxhorn Gatz (**C59** / C30). Daughter of Leo × Ida per FAG parent links. Married T. Elvis Prather. Collateral; buried Missouri."
+    },
+    "george_kruse": {
+      "id": "george_kruse",
+      "slug": "george-kruse",
+      "name": "George Kruse",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248 / Minnie 116548907",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312** sibling FAN). Named on FAG children grid only — vitals not opened this pass. Stay `verified: false`. Do not climb UP."
+    },
+    "henry_john_ernest_kruse": {
+      "id": "henry_john_ernest_kruse",
+      "slug": "henry-john-ernest-kruse",
+      "name": "Henry John Ernest Kruse",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid name only. Distinct from unrelated Henry H. Kruse (Amanda Meyer line). Stay `verified: false`."
+    },
+    "william_kruse": {
+      "id": "william_kruse",
+      "slug": "william-kruse",
+      "name": "William Kruse",
+      "years": "1865-1943",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "IAGenWeb Wheatland Cemetery — Kruse, William 1865 / 1943",
+          "url": "https://iagenweb.org/allamakee/cemetery/Wheatland.htm"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1313**). Wheatland Woodmansee **1865 – 1943** + FAG children grid. Bertha Kruse 1884–1959 same cemetery — likely daughter-in-law, not wired. Stay `verified: false`."
+    },
+    "louis_kruse": {
+      "id": "louis_kruse",
+      "slug": "louis-kruse",
+      "name": "Heinrich Wilhelm Louis Kruse",
+      "years": "1872–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave sibling grid — Heinrich Wilhelm Louis Kruse",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman; confirm Johann Heinrich Louis",
+          "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
+        },
+        {
+          "label": "IAGenWeb obit William P. Kruse 1995 — son of Louis and Frieda (Heitman) Kruse",
+          "url": "http://iagenweb.org/boards/allamakee/obituaries/index.cgi?read=306683"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Louis H. Kruse",
+        "Louis Kruse"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1314**). FAG **Heinrich Wilhelm Louis** on sibling grid. St. John's Wheatland: **Louis** m. **Frieda Dorothea Heitman**; confirmation **Johann Heinrich Louis**. Descendant obit (William P. Kruse 1995) names ..."
+    },
+    "maria_dorothea_caroline_kruse_jahn": {
+      "id": "maria_dorothea_caroline_kruse_jahn",
+      "slug": "maria-dorothea-caroline-kruse-jahn",
+      "name": "Maria Dorothea Caroline Kruse Jahn",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave sibling grid — Maria Dorothea Caroline Mary Kruse Jahn",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "IAGenWeb St. John's — Maria D.C.M. Kruse confirm; m. Johann Jacob John",
+          "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mary Kruse Jahn",
+        "Maria D.C.M. Kruse"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** daughter of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid + St. John's index **Maria D.C.M.** confirmation; m. **Johann Jacob John** per church index. Stay `verified: false`."
+    },
+    "charles_fredrick_kruse": {
+      "id": "charles_fredrick_kruse",
+      "slug": "charles-fredrick-kruse",
+      "name": "Charles Fredrick Kruse",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave sibling grid — Charles Fredrick Kruse",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid only. Stay `verified: false`."
+    },
+    "anna_katherine_elizabeth_kruse_lubberstedt": {
+      "id": "anna_katherine_elizabeth_kruse_lubberstedt",
+      "slug": "anna-katherine-elizabeth-kruse-lubberstedt",
+      "name": "Anna Katherine Elizabeth Kruse Lubberstedt",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Find A Grave sibling grid — Anna Katherine Elizabeth Kruse Lubberstedt",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** daughter of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid (married name **Lubberstedt**). Stay `verified: false`."
+    },
+    "helen_merritt": {
+      "id": "helen_merritt",
+      "slug": "helen-merritt",
+      "name": "Helen Merritt",
+      "years": "1889–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_merritt",
+        "belle_conant_merritt"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "1900 US Census, Canandaigua Ward 4, Ontario, New York (Ancestry 7602 record 67130927)",
+          "url": ""
+        },
+        {
+          "label": "1900 US Census Canandaigua — FS search hit (C98; detail ark TBD)",
+          "url": ""
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C98)",
+          "url": ""
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-merritt.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** sister of Annabelle Lucretia (Merritt) Shorts (**C47** pending Y). 1900 Canandaigua Ward 4: Helen Merritt, daughter of George × Belle, b. **Oct 1889** NY (elder sibling of Allen and Annabelle). **C98** FS search soft-reinforces household; harden later."
+    },
+    "allen_merritt": {
+      "id": "allen_merritt",
+      "slug": "allen-c-merritt",
+      "name": "Allen C. Merritt",
+      "years": "1897-1976",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "george_merritt",
+        "belle_conant_merritt"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "1900 US Census, Canandaigua Ward 4, Ontario, New York (Ancestry 7602 record 67130928)",
+          "url": ""
+        },
+        {
+          "label": "1900 US Census Canandaigua — FS search hit (C98; detail ark TBD)",
+          "url": ""
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C98)",
+          "url": ""
+        },
+        {
+          "label": "U.S. WWI Draft Registration Cards (Ancestry 6482) — Allen C Merritt, Rochester",
+          "url": ""
+        },
+        {
+          "label": "California Death Index / SSDI abstracts — Allen C Merritt, 1976 LA (Possible)",
+          "url": ""
+        },
+        {
+          "label": "Round 9 proposal: docs/research/people/proposals/round-9-merritt.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** brother of Annabelle Lucretia (Merritt) Shorts (**C47** pending Y). 1900 Canandaigua: Allen Merritt, son of George × Belle, b. **Jul 1897** NY. **C98** FS search soft-reinforces household. WWI draft **Allen C Merritt**, b. **29 Jul 1897** NY, residence **Rochester..."
+    },
+    "lena": {
+      "id": "lena",
+      "slug": "lena-shorts-rathbun",
+      "name": "Lena Shorts Rathbun",
+      "years": "1880-1958",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "dorland",
+        "effie"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-fag-2023.jpeg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 18570057",
+          "source_url": "https://images.findagrave.com/photos/2023/235/18570057_8bd5e94f-9590-49a9-a537-8f5c08dfb331.jpeg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0067",
+        "FT-0069",
+        "FT-0152",
+        "FT-0215"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 18570057",
+          "url": "https://www.findagrave.com/memorial/18570057/lena-rathbun"
+        },
+        {
+          "label": "Ontario birth — Carie Elena Shorts, 16 Nov 1880 Yonge Leeds (FM81-MYC)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:FM81-MYC"
+        },
+        {
+          "label": "Ontario birth — Dorland mention (FM81-MYZ)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:FM81-MYZ"
+        },
+        {
+          "label": "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C94)",
+          "url": ""
+        },
+        {
+          "label": "Ontario cluster / Wave 2 Effie FAN — Leeds & Grenville birth (C138)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Carrie Alena Shorts; Carie Elena Shorts (ON birth index)"
+      ],
+      "note": "Probable sister of Earl Stanley Shorts (FAG sibling link). Given name Carrie Alena / **Carie Elena** (ON birth index); married Rathbun. Collateral — not on Alex’s direct line. FAG bio lists children Gilbert, Burrill, Dorland S., Charles A. Rathbun. **C94 soft:** Ontario birth ..."
+    },
+    "charles_e_merritt": {
+      "id": "charles_e_merritt",
+      "slug": "charles-e-merritt",
+      "name": "Charles E. Merritt",
+      "years": "1868–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "charles_j_merritt",
+        "ann_l_merritt"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0172"
+      ],
+      "sources": [
+        {
+          "label": "Ontario County Chronicle 21 May 1902 — son Charles Merritt of Canandaigua village with George (C424/C1324)",
+          "url": "https://ontario.nygenweb.net/Meobituaries.htm"
+        },
+        {
+          "label": "Ontario County 1875 Canandaigua census index — Meritt Charles E in fam 665 with Charles, Ann L, George (C423/C1324)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/648/1875"
+        },
+        {
+          "label": "1892 Gorham state census index — Merritt Charles E with Charles J, Ann, George W, Helen, Bell (C1327)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/667/1892"
+        },
+        {
+          "label": "Village Canandaigua births — Charles b. 10 Nov 1900 + Clifford b. 1 Nov 1902; father Charles, mother Anna/Mary Durkin (C1328 collateral)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/741/Village-of-Canandaigua---Births"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md (C1320–C1329)",
+          "url": ""
+        },
+        {
+          "label": "FT-0172 — Charles J. Merritt obituary (1902 Chronicle)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Charles Merritt (1902 obit); Meritt Charles E (1875 index)"
+      ],
+      "parent_links": [
+        {
+          "id": "charles_j_merritt",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ann_l_merritt",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Charles J. Merritt** × **Ann L. (Tesseyman) Merritt** and brother of **George Merritt**. **1875** Canandaigua **Meritt** fam **665** lists **Charles E** with parents and George (**C423**/**C1324**). **1902** Chronicle obit names surviving sons **George** ..."
+    },
+    "clarrissa_e_tesseyman": {
+      "id": "clarrissa_e_tesseyman",
+      "slug": "clarrissa-e-tesseyman",
+      "name": "Clarrissa E. Tesseyman",
+      "years": "1842–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0174"
+      ],
+      "sources": [
+        {
+          "label": "FAG 121146775 — 1850 Hopewell hh: Clarrissa E Tessiman ae 8 (C1322)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Clarrissa E Tessiman (1850 census OCR)"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_tesseyman",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_j_tesseyman",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Ann L. Merritt**. Named **Clarrissa E. Tessiman** ae **8** in **1850 Hopewell** household on Ann's FAG memorial (**C1322**). Collateral only. Soft-ingest `verified: false`."
+    },
+    "ethelinda_j_tesseyman": {
+      "id": "ethelinda_j_tesseyman",
+      "slug": "ethelinda-j-tesseyman",
+      "name": "Ethelinda J. Tesseyman",
+      "years": "1846–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0174",
+        "FT-0270",
+        "FT-0271"
+      ],
+      "sources": [
+        {
+          "label": "FAG 121146775 — 1850 Hopewell hh: Ethelinda J Tessiman ae 4 (C1322)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "1875 Canandaigua census index — Tesseyman Ethelinda fam 465 Dist #2 p.48 (C1322)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/648/1875"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Ethelinda Tesseyman (1875 index); Ethelinda J Tessiman (1850)"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_tesseyman",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_j_tesseyman",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of **Ann L. Merritt**. **1850** Hopewell census paste on Ann's FAG memorial names **Ethelinda J.** ae **4** in **Henry × Abigail J.** household (**C1322**). **1875** Canandaigua index lists **Tesseyman Ethelinda** fam **465** — independent corroboration. Co..."
+    },
+    "robert_e_tesseyman": {
+      "id": "robert_e_tesseyman",
+      "slug": "robert-e-tesseyman",
+      "name": "Robert E. Tesseyman",
+      "years": "1848–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0174",
+        "FT-0270"
+      ],
+      "sources": [
+        {
+          "label": "FAG 121146775 — 1850 Hopewell hh: Robert E Tessiman ae 2 (C1322)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Robert E Tessiman (1850 census OCR)"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_tesseyman",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_j_tesseyman",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of **Ann L. Merritt**. Named **Robert E. Tessiman** ae **2** in **1850 Hopewell** household on Ann's FAG memorial (**C1322**). Collateral only. Soft-ingest `verified: false`."
+    },
+    "artemisia_h_tesseyman": {
+      "id": "artemisia_h_tesseyman",
+      "slug": "artemisia-h-tesseyman",
+      "name": "Artemisia H. Tesseyman",
+      "years": "1850–",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0174"
+      ],
+      "sources": [
+        {
+          "label": "FAG 121146775 — 1850 Hopewell hh: Artemitia H Tessiman ae 0 (C1322)",
+          "url": "https://www.findagrave.com/memorial/121146775/anna-lucretia-merritt"
+        },
+        {
+          "label": "1870 Canandaigua census index — Tesseyman Armida fam 192 p.25 (Possible same person C1322)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/647/1870"
+        },
+        {
+          "label": "DNA Merritt grandparents: docs/research/people/proposals/dna-merritt-grandparents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Artemitia H Tessiman (1850 census OCR); Armida Tesseyman (1870 index fam 192)"
+      ],
+      "parent_links": [
+        {
+          "id": "henry_tesseyman",
+          "confidence": "Probable"
+        },
+        {
+          "id": "abigail_j_tesseyman",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Possible** sister of **Ann L. Merritt**. **Artemitia H. Tessiman** ae **0** in **1850 Hopewell** hh (**C1322**). **1870** Canandaigua index lists lone **Tesseyman Armida** fam **192** — **Possible** same woman (spelling drift); not Confirmed without image. Soft-ingest `verif..."
+    },
+    "arietta_tesseyman": {
+      "id": "arietta_tesseyman",
+      "slug": "arietta-tesseyman",
+      "name": "Arietta Tesseyman",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0270"
+      ],
+      "sources": [
+        {
+          "label": "1855 Hopewell NY fam 027 — daughter Arietta (C1481)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/669/1855"
+        },
+        {
+          "label": "Tesseyman parents CONNECT — docs/research/people/proposals/tesseyman-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named on **1855** Hopewell NY household fam **027** (**C1481**). Not on 1850 FAG paste (younger / missed). Do not climb UP. `verified: false`."
+    },
+    "elizabeth_tesseyman": {
+      "id": "elizabeth_tesseyman",
+      "slug": "elizabeth-tesseyman",
+      "name": "Elizabeth Tesseyman",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0270"
+      ],
+      "sources": [
+        {
+          "label": "1855 Hopewell NY fam 027 — daughter Elizabeth (C1481)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/669/1855"
+        },
+        {
+          "label": "Tesseyman parents CONNECT — docs/research/people/proposals/tesseyman-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named on **1855** Hopewell NY household fam **027** (**C1481**). Do not climb UP. `verified: false`."
+    },
+    "harriet_a_tesseyman": {
+      "id": "harriet_a_tesseyman",
+      "slug": "harriet-a-tesseyman",
+      "name": "Harriet A. Tesseyman",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "henry_tesseyman",
+        "abigail_j_tesseyman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0270"
+      ],
+      "sources": [
+        {
+          "label": "1855 Hopewell NY fam 027 — daughter Harriet A. (C1481)",
+          "url": "https://www.ontariocountyny.gov/DocumentCenter/View/669/1855"
+        },
+        {
+          "label": "Tesseyman parents CONNECT — docs/research/people/proposals/tesseyman-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named on **1855** Hopewell NY household fam **027** (**C1481**). Do not climb UP. `verified: false`."
+    },
+    "robert_shorts": {
+      "id": "robert_shorts",
+      "slug": "robert-shorts",
+      "name": "Robert Shorts",
+      "years": "1849-1929",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "samuel_shorts",
+        "mary_ann_denison"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/headstone-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131879884",
+          "source_url": "https://images.findagrave.com/photos/2014/175/131879884_1403733739.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0053",
+        "FT-0054"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 131879884",
+          "url": "https://www.findagrave.com/memorial/131879884/robert-shorts"
+        },
+        {
+          "label": "Round 9: docs/research/people/proposals/round-9-aylesworth-shorts.md",
+          "url": ""
+        }
+      ],
+      "note": "Probable brother of Rev Alexander Shorts (**C52**) — same parents Samuel × Mary Ann Denison on FAG + Pringle compiled. Robert Shorts 18 Jul 1849 – 3 Jan 1929; m. Elizabeth Jane Armstrong 22 Feb 1868 Lennox & Addington (FAG bio); later Eva Chandler Lang (Costa Rica). Collateral..."
+    },
+    "john_bowerman_david": {
+      "id": "john_bowerman_david",
+      "slug": "john-bowerman-david",
+      "name": "John Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) John, son of David × Catherine; m. Mary Beadle",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "son of David Bowerman"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1196**). Biological child of David × Catherine per Bowerman compiled genealogy. m. **Mary Beadle** (not soft-ingested). `verified: false`."
+    },
+    "benoni_bowerman": {
+      "id": "benoni_bowerman",
+      "slug": "benoni-bowerman",
+      "name": "Benoni Bowerman",
+      "years": "–1822",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Benoni, son of David × Catherine; m. Rebecca Hill",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1196**). m. **Rebecca Hill**; moved St. Catharines area; d. ~**1822**. Children adopted back in Pr. Ed. Co. per genealogy. `verified: false`."
+    },
+    "levi_bowerman": {
+      "id": "levi_bowerman",
+      "slug": "levi-bowerman",
+      "name": "Levi Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Levi, son of David × Catherine; m. Jude West",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1196**). m. **Jude West** (not soft-ingested). `verified: false`."
+    },
+    "mary_bowerman_vanvaulkenberg": {
+      "id": "mary_bowerman_vanvaulkenberg",
+      "slug": "mary-bowerman-vanvaulkenberg",
+      "name": "Mary Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0157"
+      ],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Mary, dau. David × Catherine; m. George Vanvaulkenberg",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "Mary Vanvaulkenberg"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1196**). m. **George Vanvaulkenberg**. `verified: false`."
+    },
+    "cornelius_bowerman_david": {
+      "id": "cornelius_bowerman_david",
+      "slug": "cornelius-bowerman-david",
+      "name": "Cornelius Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Cornelius, son of David × Catherine",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "son of David Bowerman"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1196**). Named in David × Catherine child list. `verified: false`."
+    },
+    "ichabod_bowerman_son_of_david": {
+      "id": "ichabod_bowerman_son_of_david",
+      "slug": "ichabod-bowerman-son-of-david",
+      "name": "Ichabod Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Ichabod, son of David × Catherine",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "son of David Bowerman"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1196**). Named in David × Catherine child list — distinct from grandfather **ichabod_bowerman**. `verified: false`."
+    },
+    "sarah_bowerman_hutchinson": {
+      "id": "sarah_bowerman_hutchinson",
+      "slug": "sarah-bowerman-hutchinson",
+      "name": "Sarah Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Sarah, dau. David × Catherine; m. Marmaduke Hutcheson",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "Sarah Hutchinson"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1197**). m. **Marmaduke Hutcheson** (Hutchinson spelling variant in other sources). `verified: false`."
+    },
+    "elizabeth_bowerman_shorey": {
+      "id": "elizabeth_bowerman_shorey",
+      "slug": "elizabeth-bowerman-shorey",
+      "name": "Elizabeth Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Elizabeth, dau. David × Catherine; m. Silas Shorey in Second Town (Ernesttown)",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "Elizabeth Shorey"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1197**). m. **Silas Shorey** in **Second Town / Ernesttown** — same Quinte geography as Charlotte × Otho. `verified: false`."
+    },
+    "lydia_bowerman_trumpour": {
+      "id": "lydia_bowerman_trumpour",
+      "slug": "lydia-bowerman-trumpour",
+      "name": "Lydia Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0157"
+      ],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Lydia, dau. David × Catherine; m. Jonathan Trumpour",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "aka": [
+        "Lydia Trumpour"
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1197**). m. **Jonathan Trumpour**. `verified: false`."
+    },
+    "phebe_bowerman": {
+      "id": "phebe_bowerman",
+      "slug": "phebe-bowerman",
+      "name": "Phebe Bowerman",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "david_bowerman",
+        "catherine_bartlett_bowerman"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0157"
+      ],
+      "sources": [
+        {
+          "label": "Bowerman family genealogy p. 16 — (VI) Phebe, dau. David × Catherine; died unmarried",
+          "url": "https://freepages.rootsweb.com/~saylormowbray/genealogy/bowerman1904.html"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "david_bowerman",
+          "confidence": "Possible"
+        },
+        {
+          "id": "catherine_bartlett_bowerman",
+          "confidence": "Possible"
+        }
+      ],
+      "note": "**Possible** sibling of Charlotte (Bowerman) Aylesworth (**C1197**). Died unmarried per Bowerman genealogy. `verified: false`."
+    },
+    "elizabeth_shorts_hughes": {
+      "id": "elizabeth_shorts_hughes",
+      "slug": "elizabeth-shorts-hughes",
+      "name": "Elizabeth Shorts Hughes",
+      "years": "1800-1877",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "ref": "rev-augustus-shorts/media/headstone-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 Sexsmith Cemetery overview (shared burial cluster)",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        },
+        {
+          "ref": "rev-augustus-shorts/media/headstone-detail-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 Sexsmith Cemetery row",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0053",
+        "FT-0054",
+        "FT-0112",
+        "FT-0135",
+        "FT-0143"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 133464095 — Elizabeth Shorts Hughs",
+          "url": "https://www.findagrave.com/memorial/133464095/elizabeth-shorts"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy #274287 — child of Augustus × Hannah",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Find A Grave 133464931 — Thomas Godfrey Hughs (spouse)",
+          "url": "https://www.findagrave.com/memorial/133464931/thomas-godfrey-hughs"
+        },
+        {
+          "label": "Rev Augustus Shorts FAG children grid 133463240",
+          "url": "https://www.findagrave.com/memorial/133463240/augustus-shorts"
+        },
+        {
+          "label": "Baldwin 1881 — Daniel Denison × Hannah Shorts Hughes 1847 (FT-0053)",
+          "url": "https://archive.org/details/recordofdescenda1881bald"
+        },
+        {
+          "label": "Augustus media harden: docs/research/people/proposals/shorts-augustus-media-harden-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Elizabeth Shortts; nee Shorts; Hughs spelling on FAG"
+      ],
+      "parent_links": [
+        {
+          "id": "augustus_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_pringle_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** daughter of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** — collateral sibling of Samuel D. Shorts (**C1201**). b. **1 Feb 1800** (Pringle; FAG **1 Oct 1800**) Fredericksburgh; d. **29 Mar 1877** Richmond; buried Sexsmith Cemetery with parents/siblings clus..."
+    },
+    "mary_shorts_augustus": {
+      "id": "mary_shorts_augustus",
+      "slug": "mary-shorts-augustus",
+      "name": "Mary Shorts",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy #179938 — named child only",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Hay Bay — Augustus × Hannah had seven children",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        }
+      ],
+      "aka": [
+        "Mary Shortts"
+      ],
+      "parent_links": [
+        {
+          "id": "augustus_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_pringle_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Possible** daughter of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1205**) — **named only** in Pringle compiled (#179938); no vitals, spouse, or FAG this pass. Seven-child FAN with Elizabeth, Andrew, Samuel, William, Philip, Hannah. Soft-ingest lean; `verified: ..."
+    },
+    "andrew_pringle_shorts": {
+      "id": "andrew_pringle_shorts",
+      "slug": "andrew-pringle-shorts",
+      "name": "Andrew Pringle Shorts",
+      "years": "1804-1837",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "ref": "rev-augustus-shorts/media/headstone-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 Sexsmith Cemetery overview (shared burial cluster)",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        },
+        {
+          "ref": "rev-augustus-shorts/media/headstone-detail-fag-2014.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 133463240 Sexsmith Cemetery row",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0054",
+        "FT-0136"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 133467916 — Andrew Pringle Shorts",
+          "url": "https://www.findagrave.com/memorial/133467916/andrew-pringle-shorts"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy #179942",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Rev Augustus Shorts FAG children grid 133463240",
+          "url": "https://www.findagrave.com/memorial/133463240/augustus-shorts"
+        }
+      ],
+      "aka": [
+        "Andrew Pringle Shortts"
+      ],
+      "parent_links": [
+        {
+          "id": "augustus_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_pringle_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1202**). b. **22 Apr 1804** Fredericksburgh; d. **17 Sep 1837** Richmond (aged 33); Sexsmith burial. Pringle notes m. **Jane Lobdell** and four daughters (not soft-ingested this pass). Distinct from R..."
+    },
+    "william_shorts_fredericksburgh": {
+      "id": "william_shorts_fredericksburgh",
+      "slug": "william-shorts-fredericksburgh",
+      "name": "William Shorts",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0111"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy #179943 — lived Fredericksburgh",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Hay Bay / Pringle — seven children list includes William",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "FAN only: FAG Ruth Dorland Shorts — husband William b. 1812 (not merged)",
+          "url": "https://www.findagrave.com/memorial/103279852/ruth-shorts"
+        }
+      ],
+      "aka": [
+        "William Shortts"
+      ],
+      "parent_links": [
+        {
+          "id": "augustus_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_pringle_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** from compiled child list only (**C1204**). Pringle: **William Shortts #179943**, lived Fredericksburgh — **no** birth/death/marriage in PDF. **Possible FAN:** William Short b. **~1812** × Ruth Dorland (FA..."
+    },
+    "philip_shorts_hallowell": {
+      "id": "philip_shorts_hallowell",
+      "slug": "philip-shorts-hallowell",
+      "name": "Philip Short",
+      "years": "1800-1863",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0113",
+        "FT-0138"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy #179944 — Hallowell Twp",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Short-3449 — son of Augustus × Hannah; m. Hannah Brown 1821",
+          "url": "https://www.wikitree.com/wiki/Short-3449"
+        },
+        {
+          "label": "Old Hay Bay — seven children of Augustus × Hannah (Philip named in orphan cluster context)",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "LA&HS death index — David B. Shorts son of Philip Shorts (FT-0113)",
+          "url": "https://gorslinehouse.wordpress.com/"
+        },
+        {
+          "label": "Augustus media harden: docs/research/people/proposals/shorts-augustus-media-harden-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Philip Shortts; Philip Shorts"
+      ],
+      "parent_links": [
+        {
+          "id": "augustus_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_pringle_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** son of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1203**) — **not** the same person as `philip_shorts_ue` (John UE land-petition index). Lived **Hallowell Township, Prince Edward County** (Pringle); d. **19 May 1863** Roblin (WikiTree). m. **Hannah B..."
+    },
+    "hannah_shorts_holcomb": {
+      "id": "hannah_shorts_holcomb",
+      "slug": "hannah-shorts-holcomb",
+      "name": "Hannah Shorts Holcomb",
+      "years": "1814-1899",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "augustus_shorts",
+        "hannah_pringle_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/coral-cemetery-overview-fag-2012.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave cemetery 313 Coral Cemetery (memorial 46280209 has no stone photo)",
+          "source_url": "https://images.findagrave.com/photos/2012/255/CEM313_134747643938.jpg"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0054",
+        "FT-0112",
+        "FT-0134"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 46280209 — Hannah Shorts Holcomb",
+          "url": "https://www.findagrave.com/memorial/46280209/hannah-shorts"
+        },
+        {
+          "label": "Pringle/Benham compiled genealogy #179945",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "Rev Augustus Shorts FAG children grid 133463240",
+          "url": "https://www.findagrave.com/memorial/133463240/augustus-shorts"
+        },
+        {
+          "label": "1851 Richmond census — Henry Holcomb hh (FAN; FT-0112)",
+          "url": "https://oncensus.canadagenweb.org/transcripts/1851/1725-5.html"
+        },
+        {
+          "label": "Augustus media harden: docs/research/people/proposals/shorts-augustus-media-harden-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Hannah Shortts"
+      ],
+      "parent_links": [
+        {
+          "id": "augustus_shorts",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_pringle_shorts",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** daughter of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1206**). b. **8 Dec 1814** Fredericksburgh; d. **26 Jan 1899** Montcalm Co. MI; Coral Cemetery. FAG bio names parents Augustus (d. Jan 1862 lean) × Hannah Prindle. m. **Henry Holcomb**; children ..."
+    },
+    "hannah_mary_shorts": {
+      "id": "hannah_mary_shorts",
+      "slug": "hannah-mary-shorts",
+      "name": "Hannah Mary Shorts",
+      "years": "1766-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_shorts",
+        "rosannah_monk_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0045"
+      ],
+      "sources": [
+        {
+          "label": "VanDusen compiled — daughter of John W. Shorts × Rosannah Monk",
+          "url": "https://www.pollymoth.com/genealogies/van141179.pdf"
+        },
+        {
+          "label": "TreesByDan — Hannah Mary Shorts",
+          "url": "https://www.treesbydan.com/g0/p751.htm"
+        },
+        {
+          "label": "Ontario Genealogy — SHORTS (PRINDEL) HANNAH land petition (DUE of John)",
+          "url": "http://www.ontariogenealogy.com/uppercanadalandpetitions/s_landpetition.html"
+        },
+        {
+          "label": "Find A Grave 205519221 — Hannah Mary Shorts VanDusen (Paradise Twp PA → Brighton ON)",
+          "url": "https://www.findagrave.com/memorial/205519221/hannah-mary-vandusen"
+        }
+      ],
+      "aka": [
+        "Hannah Mary Shortt; Hannah Mary Van Dusen; Hannah Mary VanDeusen"
+      ],
+      "note": "**Probable** daughter of **John Shorts** × **Rosannah Monk** — sibling of Rev Augustus on the Shorts Loyalist orphan cluster. Soft-ingest **collateral** only (`verified: false`); do **not** climb Van Dusen parents ahead of John’s UP gap. m. Casparus R. Van Dusen **16 Feb 1786*..."
+    },
+    "catharine_shorts": {
+      "id": "catharine_shorts",
+      "slug": "catharine-shorts",
+      "name": "Catharine Shorts",
+      "years": "1774-1861",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_shorts",
+        "rosannah_monk_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0043",
+        "FT-0080",
+        "FT-0092"
+      ],
+      "sources": [
+        {
+          "label": "TreesByDan — Catharine Shorts child of John W. × Rosannah",
+          "url": "https://treesbydan.com/g2/p2665.htm"
+        },
+        {
+          "label": "Old Hay Bay — Catherine brought to Adolphustown (uncle Casper Hoover × Barbara Monk)",
+          "url": "https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/"
+        },
+        {
+          "label": "OHS Papers — St. John’s Ernesttown; Katreen Shorts witness 2 Feb 1792 (FT-0043)",
+          "url": "https://archive.org/stream/papersrecordsont01onta/papersrecordsont01onta_djvu.txt"
+        },
+        {
+          "label": "Barbara Monk × Casper Hoover rescue FAN (FT-0080)",
+          "url": "https://www.pollymoth.com/genealogies/hoo155508.pdf"
+        },
+        {
+          "label": "Y-line Rosannah note — five orphans / Catherine FAN",
+          "url": ""
+        },
+        {
+          "label": "UELAC Ferguson compiled — Arra m. Catherine Shorts 7 Apr 1793; dau. John W × Rosanna Monk",
+          "url": "https://www.uelac.org/Loyalist-Info/extras/Ferguson-Richard/Ferguson-Richard-genealogy.pdf"
+        }
+      ],
+      "aka": [
+        "Catherine Shorts; Catharine Ferguson"
+      ],
+      "note": "**Probable** daughter of **John Shorts** × **Rosannah Monk**; m. **Arra Ferguson** **7 Apr 1793** PE Co. (Ferguson compiled / TreesByDan). Soft-ingest **collateral** (`verified: false`). Vitals soft **15 Oct 1774** – **28 Apr 1861** (Ferguson PDF; TreesByDan still shows ~1772)..."
+    },
+    "philip_shorts_ue": {
+      "id": "philip_shorts_ue",
+      "slug": "philip-shorts-ue",
+      "name": "Philip Shorts",
+      "years": "",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_shorts",
+        "rosannah_monk_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0043"
+      ],
+      "sources": [
+        {
+          "label": "Ontario Genealogy S petitions — SHORTS PHILIP (Prince Edward 1818, 1835)",
+          "url": "http://www.ontariogenealogy.com/uppercanadalandpetitions/s_landpetition.html"
+        },
+        {
+          "label": "OHS Papers — St. John’s Ernesttown; Philip Shorts witness 2 Feb 1792 (FT-0043)",
+          "url": "https://archive.org/stream/papersrecordsont01onta/papersrecordsont01onta_djvu.txt"
+        },
+        {
+          "label": "Prior dig: DUE children of John UE (y-line-john-shorts-father.md)",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Phillip Shorts"
+      ],
+      "note": "**Possible** son of **John Shorts** (UE) — land-petition **index** lists Philip Shorts in Prince Edward; prior unlock dig treats Augustus/Philip/Hannah petitions as **DUE of John**, not Gen-9. Soft-ingest lean for sibling FAN; **upgrade only** when LAC petition image names fat..."
+    },
+    "frances_shorts_heck": {
+      "id": "frances_shorts_heck",
+      "slug": "frances-shorts-heck",
+      "name": "Frances Shorts",
+      "years": "1771-1844",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_shorts",
+        "rosannah_monk_shorts"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0030",
+        "FT-0090",
+        "FT-0091",
+        "FT-0093",
+        "FT-0108",
+        "FT-0109",
+        "FT-0110"
+      ],
+      "sources": [
+        {
+          "label": "Blue Church gleanings — Frances, wife of Jacob Heck, d. 10 Apr 1844 ae 73",
+          "url": "http://my.tbaytel.net/bmartin/bluechur.htm"
+        },
+        {
+          "label": "Find A Grave 72194186 — Jacob Heck; spouse Frances Short Heck 1771–1844 (m. 1792)",
+          "url": "https://www.findagrave.com/memorial/72194186/jacob-heck"
+        },
+        {
+          "label": "WikiTree Heck-1378 — m. Frances Shorts 3 Apr 1792 Montreal",
+          "url": "https://www.wikitree.com/wiki/Heck-1378"
+        },
+        {
+          "label": "FS Genealogies / PRF — parents John E Shorts × Rosannah Monk (user trees)",
+          "url": "https://www.familysearch.org/en/search/genealogies/results?q.givenName=Frances&q.surname=Shorts&q.fatherGivenName=John&q.motherGivenName=Rosannah"
+        }
+      ],
+      "aka": [
+        "Fanny Shorts; Frances Heck; Frances Short"
+      ],
+      "note": "**Possible** daughter of **John Shorts** × **Rosannah Monk** — sibling FAN of Augustus. Soft-ingest lean (`verified: false`). Blue Church stone + FAG spouse link + Montreal marriage index prove **Frances Shorts** × **Jacob Heck**; **parent link** is still secondary/user-tree o..."
+    },
+    "joel_pringle_iii": {
+      "id": "joel_pringle_iii",
+      "slug": "joel-pringle-iii",
+      "name": "Joel Pringle III",
+      "years": "1747-1806",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_jr",
+        "deborah_bigelow_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0114",
+        "FT-0144"
+      ],
+      "sources": [
+        {
+          "label": "WikiTree Pringle-33 — Joel Pringle III UE",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Find A Grave 59609435 — child Joel III (1747-1806)",
+          "url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        },
+        {
+          "label": "Napanee Beaver 8 Dec 1970 (via WikiTree) — Joel the Younger",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Joel the Younger; Prindle"
+      ],
+      "note": "**Probable** brother of William Pringle (**C1176**). Eldest son of Joel Jr × Deborah per WikiTree + FAG children grid — `verified: false`. UEL King's Rangers; Loughborough settlement. PDF Gen. 2 header omits Joel III — hold PDF-only attach."
+    },
+    "timothy_pringle_ue": {
+      "id": "timothy_pringle_ue",
+      "slug": "timothy-pringle-ue",
+      "name": "Timothy Pringle",
+      "years": "1751-1793",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_jr",
+        "deborah_bigelow_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0114",
+        "FT-0144",
+        "FT-0171"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #142077",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Pringle-33 / Pringle-32",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Find A Grave 59609435 — Timothy Sr child",
+          "url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Timothy Pringle UE; Prindle"
+      ],
+      "note": "**Probable** brother of William Pringle (**C1177**). Soft-ingest from Pringle PDF #142077 + WikiTree + FAG Joel Jr grid — `verified: false`. UEL King's Rangers; m. Huldah Weldon 1 May 1771 Skenesborough."
+    },
+    "joseph_pringle_ue": {
+      "id": "joseph_pringle_ue",
+      "slug": "joseph-pringle-ue",
+      "name": "Joseph Pringle",
+      "years": "1754-1833",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_jr",
+        "deborah_bigelow_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/fag-104925410-portrait.jpg",
+          "kind": "portrait",
+          "source": "Find A Grave memorial 104925410",
+          "source_url": "https://www.findagrave.com/memorial/104925410/joseph-pringle"
+        }
+      ],
+      "portrait": "media/fag-104925410-portrait.jpg",
+      "object_ids": [
+        "FT-0114",
+        "FT-0144",
+        "FT-0145",
+        "FT-0151"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #232619",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Pringle-33 — Joseph (Pringle) Prindle",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Find A Grave 104925410",
+          "url": "https://www.findagrave.com/memorial/104925410/joseph-pringle"
+        },
+        {
+          "label": "Find A Grave 59609435 — Joseph child",
+          "url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Joseph (Prindle) Pringle; Doctor Pringle"
+      ],
+      "note": "**Probable** brother of William Pringle (**C1178**). Soft-ingest from Pringle PDF #232619 + WikiTree + FAG **104925410** — `verified: false`. Richmond Township UEL hotelkeeper / JP / militia officer; Christian Guardian obit excerpt → **FT-0145**; UEL cert **FT-0151**."
+    },
+    "dexter_pringle": {
+      "id": "dexter_pringle",
+      "slug": "dexter-pringle",
+      "name": "Dexter Pringle",
+      "years": "1761-1839",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_jr",
+        "deborah_bigelow_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #142090",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Pringle-33 — Dexter Pringle UE",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Find A Grave 146755462",
+          "url": "https://www.findagrave.com/memorial/146755462/dexter-pringle"
+        },
+        {
+          "label": "Find A Grave 59609435 — Dexter child",
+          "url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Prindle"
+      ],
+      "note": "**Probable** brother of William Pringle (**C1179**). Soft-ingest from Pringle PDF #142090 + WikiTree + FAG **146755462** — `verified: false`. UEL; Hay Bay area grants; m. Margaret Peterson ~1786."
+    },
+    "lois_pringle_dafoe": {
+      "id": "lois_pringle_dafoe",
+      "slug": "lois-pringle-dafoe",
+      "name": "Lois (Pringle) Dafoe",
+      "years": "1766-1831",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_jr",
+        "deborah_bigelow_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0145"
+      ],
+      "sources": [
+        {
+          "label": "Pringle/Benham compiled genealogy (pollymoth PDF) #142091",
+          "url": "https://www.pollymoth.com/genealogies/pri247283.pdf"
+        },
+        {
+          "label": "WikiTree Pringle-33 — Lois (Pringle) Dafoe",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Find A Grave 133628750",
+          "url": "https://www.findagrave.com/memorial/133628750/lois-dafoe"
+        },
+        {
+          "label": "Find A Grave 59609435 — Lois child",
+          "url": "https://www.findagrave.com/memorial/59609435/joel-pringle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Lois Prindle"
+      ],
+      "note": "**Probable** sister of William Pringle (**C1179**). Soft-ingest with Dexter under sibling batch — `verified: false`. m. John Ernst Dafoe Jr. ~1784; Richmond / Napanee FAN. **Not** Lois (Pringle) Bristol (1724)."
+    },
+    "ebenezer_bigelow_1721": {
+      "id": "ebenezer_bigelow_1721",
+      "slug": "ebenezer-bigelow-1721",
+      "name": "Ebenezer Bigelow Jr.",
+      "years": "1721-1758",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bigelow Society — Ebenezer b. 23 Jan 1721 Weston",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        }
+      ],
+      "aka": [
+        "Ebenezer Bigelow (1721)"
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed elder brother of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1188**. b. **23 Jan 1721** Weston; d. on Canada expedition **1756–1758**; m. Anna Harris then widow Hepsibeh Dufore; res Lancaster MA; four children per Bigelow Soci..."
+    },
+    "hannah_bigelow_1724": {
+      "id": "hannah_bigelow_1724",
+      "slug": "hannah-bigelow-1724",
+      "name": "Hannah Bigelow",
+      "years": "1724–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bigelow Society — Hannah b. 7 Feb 1724 Worcester",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "Bigelow Society Lawson children list",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed sister of **Deborah (Bigelow) Pringle** (not the mother Hannah Brown). Soft-ingest **Probable** / `verified: false` — pack **C1186**. b. **7 Feb 1724** Worcester per Bigelow Society. Collateral only; id `hannah_bigelow_1724` disambiguates from mother `hannah_brown_big..."
+    },
+    "moses_bigelow_1730": {
+      "id": "moses_bigelow_1730",
+      "slug": "moses-bigelow-1730",
+      "name": "Moses Bigelow",
+      "years": "1730–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bigelow Society — Moses bapt 3 May 1730",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "WikiTree Bigelow-211 children",
+          "url": "https://www.wikitree.com/wiki/Bigelow-211"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1183**. Bapt **3 May 1730**; m. Mary Hammond **15 Jun 1756** per Bigelow Society — spouse/children not climbed. Collateral only."
+    },
+    "hopestill_bigelow_1731": {
+      "id": "hopestill_bigelow_1731",
+      "slug": "hopestill-bigelow-1731",
+      "name": "Hopestill Bigelow",
+      "years": "1731-1795",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bigelow Society — Hopestill bapt 3 Jun 1731; m. Esther Benedict",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "WikiTree Bigelow-211 children",
+          "url": "https://www.wikitree.com/wiki/Bigelow-211"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1184**. Bapt **3 Jun 1731**; res Danbury CT, Tyringham MA, Whitehall NY; m. Esther Benedict; Pringle/Benedict FAN (Hopestill account mentions Prindle kin). Collateral only..."
+    },
+    "silence_bigelow_1732": {
+      "id": "silence_bigelow_1732",
+      "slug": "silence-bigelow-1732",
+      "name": "Silence Bigelow",
+      "years": "1732-1811",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bigelow Society — Silence b. 1 Sep 1732; m. John Davenport",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1187**. b. **1 Sep 1732**; d. **11 Sep 1811** Bridgeport ME; m. John Davenport; large family per Bigelow Society. Collateral only."
+    },
+    "samuel_bigelow_1738": {
+      "id": "samuel_bigelow_1738",
+      "slug": "samuel-bigelow-1738",
+      "name": "Samuel Bigelow",
+      "years": "1738–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ebenezer_bigelow_1698",
+        "hannah_brown_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bigelow Society — Samuel bapt 28 May 1738; m. Elizabeth Hubbard",
+          "url": "http://www.bigelowsociety.com/rod/ebenezr3.htm"
+        },
+        {
+          "label": "WikiTree Bigelow-211 / Bigelow-207 sibling list",
+          "url": "https://www.wikitree.com/wiki/Bigelow-207"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "ebenezer_bigelow_1698",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hannah_brown_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1185**. Bapt **28 May 1738** Waltham; m. Elizabeth Hubbard **1 Jan 1765** per Bigelow Society. Collateral only."
+    },
+    "william_prindle_1719": {
+      "id": "william_prindle_1719",
+      "slug": "william-prindle-1719",
+      "name": "William Prindle",
+      "years": "1719-1747",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_sr",
+        "jemima_benham_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pane-Joyce — William Prindle b. 2 Oct 1719 (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Find A Grave Joel Sr 59610755 — child William 1719-1747",
+          "url": "https://www.findagrave.com/memorial/59610755/joel-prindle"
+        },
+        {
+          "label": "WikiTree Pringle-33 — brother William Pringle",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "William Pringle; uncle of William Pringle (1749)"
+      ],
+      "note": "**Probable** brother of Joel Pringle Jr. (**C1173**). Eldest son of Joel Sr × Jemima; died unm. as Louisburg prisoner. **Not** the UEL William Pringle (1749) who married Eunice Benedict."
+    },
+    "sarah_pringle_ives": {
+      "id": "sarah_pringle_ives",
+      "slug": "sarah-pringle-ives",
+      "name": "Sarah (Pringle) Ives",
+      "years": "1721-1750",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_sr",
+        "jemima_benham_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pane-Joyce — Sarah Prindle b. 9 Jul 1721 (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Find A Grave Joel Sr 59610755 — Sarah Ives",
+          "url": "https://www.findagrave.com/memorial/59610755/joel-prindle"
+        },
+        {
+          "label": "WikiTree Pringle-33 — Sarah (Pringle) Ives",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sarah Prindle"
+      ],
+      "note": "**Probable** sister of Joel Pringle Jr. (**C1174**). Soft-ingest collateral from Pane-Joyce + FAG Joel Sr children grid + WikiTree — `verified: false`. m. 2 Oct 1744 Andrew Ives, Wallingford."
+    },
+    "lois_pringle_bristol": {
+      "id": "lois_pringle_bristol",
+      "slug": "lois-pringle-bristol",
+      "name": "Lois (Pringle) Bristol",
+      "years": "1724-1756",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joel_pringle_sr",
+        "jemima_benham_pringle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pane-Joyce — Lois Prindle b. 21 Feb 1724 (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Find A Grave Joel Sr 59610755 — Lois Bristol",
+          "url": "https://www.findagrave.com/memorial/59610755/joel-prindle"
+        },
+        {
+          "label": "WikiTree Pringle-33 — Lois (Pringle) Bristol",
+          "url": "https://www.wikitree.com/wiki/Pringle-33"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-pringle-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Lois Prindle"
+      ],
+      "note": "**Probable** sister of Joel Pringle Jr. (**C1175**). Soft-ingest collateral — `verified: false`. m. Henry Bristol; rem. Wallingford. **Not** Lois (Pringle) Dafoe (1766), daughter of Joel Jr."
+    },
+    "jonathan_brown_watertown": {
+      "id": "jonathan_brown_watertown",
+      "slug": "jonathan-brown-watertown",
+      "name": "Jonathan Brown",
+      "years": "1694-1755",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "abraham_brown_watertown",
+        "mary_hyde_brown"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Brown p.120 Jonathan son of Abraham",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Abraham Brown will 1728 — names son Jonathan",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        }
+      ],
+      "aka": [
+        "Jonathan Browne"
+      ],
+      "parent_links": [
+        {
+          "id": "abraham_brown_watertown",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_hyde_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Hannah Brown Bigelow**. Soft-ingest **Probable** / `verified: false` — pack **C1288**. Bond: b. **1694**; d. **1755** ae 61. Named in father Abraham's will 1728. Collateral only."
+    },
+    "samuel_brown_watertown": {
+      "id": "samuel_brown_watertown",
+      "slug": "samuel-brown-watertown",
+      "name": "Samuel Brown",
+      "years": "1703–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "abraham_brown_watertown",
+        "mary_hyde_brown"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Bond, Genealogies of Watertown (1860) — Brown p.120 Samuel son of Abraham",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        },
+        {
+          "label": "Abraham Brown will 1728 — Samuel executor",
+          "url": "https://archive.org/details/genealogiesoffam00bond"
+        }
+      ],
+      "aka": [
+        "Samuel Browne"
+      ],
+      "parent_links": [
+        {
+          "id": "abraham_brown_watertown",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_hyde_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named sibling of **Hannah Brown Bigelow**; executor of father Abraham's will. Soft-ingest **Probable** / `verified: false` — pack **C1288**. Bond: b. **21 Jul 1703**; tailor of Watertown. Collateral only."
+    },
+    "eleazer_bigelow_1705": {
+      "id": "eleazer_bigelow_1705",
+      "slug": "eleazer-bigelow-1705",
+      "name": "Eleazer Bigelow",
+      "years": "1705-1762",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_bigelow_1655",
+        "elizabeth_flagg_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Watertown VR — b. 14 Mar 1704/05 son of Joshua and Elisabeth",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bigelow Society joshua2 — Eleazer d. 24 Feb 1762 Westminster",
+          "url": "http://www.bigelowsociety.com/rod/joshua2.htm"
+        },
+        {
+          "label": "Westminster VR — Eleazer d. 14 Sep 1758 (date conflict held)",
+          "url": "https://archive.org/details/vitalrecordsofwe00west"
+        }
+      ],
+      "aka": [
+        "Eleizer Bigelow; Eleazer Bigelow Jr."
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_bigelow_1655",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_flagg_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Ebenezer Bigelow (1698)**. Soft-ingest **Probable** / `verified: false` — pack **C1286**. Westminster death date resolves FAG/WikiTree conflation with Ebenezer (**C1236**). Collateral only; no UP climb."
+    },
+    "gershom_bigelow_1701": {
+      "id": "gershom_bigelow_1701",
+      "slug": "gershom-bigelow-1701",
+      "name": "Gershom Bigelow",
+      "years": "1701-1769",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joshua_bigelow_1655",
+        "elizabeth_flagg_bigelow"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Watertown VR — b. 6 Sep 1701 son of Joshua and Elisabeth",
+          "url": "http://bigelowsociety.com/rod/watertow.htm"
+        },
+        {
+          "label": "Bigelow Society joshua2 — Gershom × Rachel Gale",
+          "url": "http://www.bigelowsociety.com/rod/joshua2.htm"
+        }
+      ],
+      "aka": [
+        "Gersham Bigelow"
+      ],
+      "parent_links": [
+        {
+          "id": "joshua_bigelow_1655",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_flagg_bigelow",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Named full sibling of **Ebenezer Bigelow (1698)**. Soft-ingest **Probable** / `verified: false` — pack **C1286**. b. **6 Sep 1701**; d. **2 Feb 1769** Auburn per Bigelow Society. Collateral only; spouse/children not climbed."
+    },
+    "mercy_benham_hull": {
+      "id": "mercy_benham_hull",
+      "slug": "mercy-benham-hull",
+      "name": "Mercy (Benham) Hull",
+      "years": "1703-1766",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_benham_1679",
+        "sarah_beecher_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham pp. 186–188)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-114 — child Mercy",
+          "url": "https://www.wikitree.com/wiki/Benham-114"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mercy Benham"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_benham_1679",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_beecher_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Jemima Benham (**C1225**). Soft collateral from Jacobus + WikiTree Benham-114 child list. m. 1 May 1724 Wallingford **Caleb Hull** — spouse not soft-ingested."
+    },
+    "samuel_benham_1706": {
+      "id": "samuel_benham_1706",
+      "slug": "samuel-benham-1706",
+      "name": "Samuel Benham",
+      "years": "1706–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_benham_1679",
+        "sarah_beecher_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham pp. 186–188)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-114 — child Samuel (died young)",
+          "url": "https://www.wikitree.com/wiki/Benham-114"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_benham_1679",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_beecher_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Jemima Benham (**C1228**). b. 29 Jul 1706 New Haven; **died young** per Jacobus. Not the later Samuel by Nathan's second wife Mary (1719/20). Collateral only — no climb."
+    },
+    "lydia_benham_atwater": {
+      "id": "lydia_benham_atwater",
+      "slug": "lydia-benham-atwater",
+      "name": "Lydia (Benham) Atwater",
+      "years": "1709–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_benham_1679",
+        "sarah_beecher_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham pp. 186–188)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-114 — child Lydia",
+          "url": "https://www.wikitree.com/wiki/Benham-114"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Lydia Benham"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_benham_1679",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_beecher_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Jemima Benham (**C1226**). Soft collateral. m. 6 Apr 1727 New Haven **Caleb Atwater** — spouse not soft-ingested. Birth date not given in Jacobus child list."
+    },
+    "sarah_benham_hotchkiss": {
+      "id": "sarah_benham_hotchkiss",
+      "slug": "sarah-benham-hotchkiss",
+      "name": "Sarah (Benham) Hotchkiss",
+      "years": "1712-1751",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "nathan_benham_1679",
+        "sarah_beecher_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Families of Ancient New Haven (Benham + Hotchkiss cross-ref)",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-114 — child Sarah",
+          "url": "https://www.wikitree.com/wiki/Benham-114"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-jemima-benham-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Sarah Benham"
+      ],
+      "parent_links": [
+        {
+          "id": "nathan_benham_1679",
+          "confidence": "Probable"
+        },
+        {
+          "id": "sarah_beecher_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Jemima Benham (**C1227**). Soft collateral. b. c. 1712; bp Cheshire 19 Mar 1731/2; d. ae 50; m. 23 Nov 1736 Wallingford **Henry Hotchkiss**. Jacobus Hotchkiss fam. names her \"Sarah da. Nathan & Sarah (Beecher) Benham\" — independent parent-link corroborat..."
+    },
+    "john_prindle_1691": {
+      "id": "john_prindle_1691",
+      "slug": "john-prindle-1691",
+      "name": "John Prindle",
+      "years": "1691–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_prindle_sr",
+        "mary_brown_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Prindle Genealogy 1906 pp. 49–51 — John³ b. 1691/2 m. Hannah Clark",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-40 — John Prindle",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John Pringle"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_prindle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Joel Pringle Sr. (**C1217**). b. 1691/2; m. Hannah Clark 1717. Collateral soft-ingest."
+    },
+    "samuel_prindle_1693": {
+      "id": "samuel_prindle_1693",
+      "slug": "samuel-prindle-1693",
+      "name": "Samuel Prindle",
+      "years": "1693-1767",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_prindle_sr",
+        "mary_brown_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pane-Joyce — Samuel Prindle b. 11 Nov 1693 (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Prindle Genealogy 1906 pp. 49–51 — Samuel³",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-40 children grid",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Samuel Pringle"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_prindle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Joel Pringle Sr. (**C1213**). Eldest surviving son of Joseph × Mary; m. Mary Smith 1718; lawyer at Danbury. Collateral — not UEL line climb."
+    },
+    "hephzibah_prindle_roberts": {
+      "id": "hephzibah_prindle_roberts",
+      "slug": "hephzibah-prindle-roberts",
+      "name": "Hepzibah Prindle",
+      "years": "1698-1796",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_prindle_sr",
+        "mary_brown_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pane-Joyce — Hephzibah Prindle b. 15 May 1698 (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Prindle Genealogy 1906 pp. 49–51 — Hepzibah³ m. Abial Robards",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-40",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Hephzibah (Prindle) Roberts; Hephzebah"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_prindle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Joel Pringle Sr. (**C1214**). m. Abiel Roberts 24 Jun 1724 Wallingford. Collateral soft-ingest only."
+    },
+    "mary_prindle_bristol_1702": {
+      "id": "mary_prindle_bristol_1702",
+      "slug": "mary-prindle-bristol-1702",
+      "name": "Mary Prindle",
+      "years": "1702-1733",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_prindle_sr",
+        "mary_brown_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Pane-Joyce — Mary Prindle b. 1 Feb 1701/2 m. John Bristol (rr08_356)",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr08/rr08_356.html"
+        },
+        {
+          "label": "Prindle Genealogy 1906 pp. 49–51 — Mary³ m. John Bristol Jr.",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-40",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Mary (Prindle) Bristol"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_prindle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Joel Pringle Sr. (**C1215**). m. John Bristol Jr. 21 Dec 1726. **Not** `lois_pringle_bristol` (Joel Sr's daughter Lois who m. a Bristol)."
+    },
+    "joseph_prindle_jr_ct": {
+      "id": "joseph_prindle_jr_ct",
+      "slug": "joseph-prindle-jr-ct",
+      "name": "Joseph Prindle Jr.",
+      "years": "1704-1771",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "joseph_prindle_sr",
+        "mary_brown_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Prindle Genealogy 1906 pp. 49–51 — Joseph³ Jr. m. Elizabeth Thomas",
+          "url": "https://archive.org/details/prindlegenealog00prin/page/49/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-40 — Joseph Prindle Jr.",
+          "url": "https://www.wikitree.com/wiki/Prindle-40"
+        },
+        {
+          "label": "Find A Grave 169522429",
+          "url": "https://www.findagrave.com/memorial/169522429/joseph-prindle"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joel-sr-parents-verify-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Joseph Pringle Jr.; Joseph³"
+      ],
+      "parent_links": [
+        {
+          "id": "joseph_prindle_sr",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_brown_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Joel Pringle Sr. (**C1216**). Youngest child of Joseph × Mary; executor of father's will. id disambiguates from UEL `joseph_pringle_ue`."
+    },
+    "mary_beecher_wilmot": {
+      "id": "mary_beecher_wilmot",
+      "slug": "mary-beecher-wilmot",
+      "name": "Mary (Beecher) Wilmot",
+      "years": "1672–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Beecher p. 162",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        }
+      ],
+      "aka": [
+        "Mary Beecher"
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). m. Benjamin Wilmot 1700/1. Soft collateral — `verified: false`."
+    },
+    "elizabeth_beecher_dunbar": {
+      "id": "elizabeth_beecher_dunbar",
+      "slug": "elizabeth-beecher-dunbar",
+      "name": "Elizabeth (Beecher) Dunbar",
+      "years": "1675–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Beecher p. 162",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        }
+      ],
+      "aka": [
+        "Elizabeth Beecher"
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). m. John Dunbar 1700. Soft collateral — `verified: false`."
+    },
+    "joanna_beecher": {
+      "id": "joanna_beecher",
+      "slug": "joanna-beecher",
+      "name": "Joanna Beecher",
+      "years": "1677-1718",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Beecher p. 162",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). Soft collateral — `verified: false`."
+    },
+    "jemima_beecher": {
+      "id": "jemima_beecher",
+      "slug": "jemima-beecher",
+      "name": "Jemima Beecher",
+      "years": "1681–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Beecher p. 162",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). Not Jemima (Benham) Pringle. Soft collateral — `verified: false`."
+    },
+    "joseph_beecher_1683": {
+      "id": "joseph_beecher_1683",
+      "slug": "joseph-beecher-1683",
+      "name": "Joseph Beecher",
+      "years": "1683-1712",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Beecher p. 162",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        },
+        {
+          "label": "Find A Grave Sarah 66966847 — sibling Ebenezer",
+          "url": "https://www.findagrave.com/memorial/66966847/sarah-benham"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Sarah Beecher Benham (**C1277**). m. Sarah Morris 1710; d. 1712. Soft collateral — `verified: false`."
+    },
+    "ebenezer_beecher_1686": {
+      "id": "ebenezer_beecher_1686",
+      "slug": "ebenezer-beecher-1686",
+      "name": "Ebenezer Beecher",
+      "years": "1686-1763",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_beecher_1646",
+        "elizabeth_roberts_beecher"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Beecher p. 162",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Beecher-108",
+          "url": "https://www.wikitree.com/wiki/Beecher-108"
+        },
+        {
+          "label": "Find A Grave Sarah 66966847 — sibling grid",
+          "url": "https://www.findagrave.com/memorial/66966847/sarah-benham"
+        }
+      ],
+      "aka": [
+        "Capt Ebenezer Beecher"
+      ],
+      "parent_links": [
+        {
+          "id": "john_beecher_1646",
+          "confidence": "Probable"
+        },
+        {
+          "id": "elizabeth_roberts_beecher",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Sarah Beecher Benham (**C1277**). Capt; FAG sibling link on Sarah memorial. Soft collateral — `verified: false`."
+    },
+    "joseph_benham_1670": {
+      "id": "joseph_benham_1670",
+      "slug": "joseph-benham-1670",
+      "name": "Joseph Benham",
+      "years": "1670–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_benham_1631",
+        "mercy_smith_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Benham p. 186",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-155",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Nathan Benham (**C1276**). Soft collateral — `verified: false`."
+    },
+    "samuel_benham_1671": {
+      "id": "samuel_benham_1671",
+      "slug": "samuel-benham-1671",
+      "name": "Samuel Benham",
+      "years": "1671–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_benham_1631",
+        "mercy_smith_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Benham p. 186",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-155",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Nathan Benham (**C1276**). Not Samuel b. 1706 (Nathan×Sarah). Soft collateral — `verified: false`."
+    },
+    "mercy_benham_1673": {
+      "id": "mercy_benham_1673",
+      "slug": "mercy-benham-1673",
+      "name": "Mercy Benham",
+      "years": "1673–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_benham_1631",
+        "mercy_smith_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Benham p. 186",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-155",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** sister of Nathan Benham (**C1276**). Not Mercy (Benham) Hull (Nathan×Sarah). Soft collateral — `verified: false`."
+    },
+    "ebenezer_benham_1686": {
+      "id": "ebenezer_benham_1686",
+      "slug": "ebenezer-benham-1686",
+      "name": "Ebenezer Benham",
+      "years": "1686–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_benham_1631",
+        "mercy_smith_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Benham p. 186",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-155",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Nathan Benham (**C1276**). Bpt 10 Jan 1685/6. Soft collateral — `verified: false`."
+    },
+    "nathaniel_benham_1686": {
+      "id": "nathaniel_benham_1686",
+      "slug": "nathaniel-benham-1686",
+      "name": "Nathaniel Benham",
+      "years": "1686–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_benham_1631",
+        "mercy_smith_benham"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus — Benham p. 186",
+          "url": "https://archive.org/details/familiesofancien00jaco_0"
+        },
+        {
+          "label": "WikiTree Benham-155",
+          "url": "https://www.wikitree.com/wiki/Benham-155"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "john_benham_1631",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mercy_smith_benham",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "**Probable** brother of Nathan Benham (**C1276**). Twin bpt with Ebenezer 10 Jan 1685/6. Soft collateral — `verified: false`."
+    },
+    "john_brown_1666": {
+      "id": "john_brown_1666",
+      "slug": "john-brown-1666",
+      "name": "John Brown",
+      "years": "1666–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_brown_nh",
+        "mary_walker_brown"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus Brown p. 346 — John b. 1666",
+          "url": "https://www.wikitree.com/wiki/Brown-1305"
+        },
+        {
+          "label": "Pane-Joyce rr04_071 — John Brown b. 9 Jan 1666",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John Browne Jr."
+      ],
+      "parent_links": [
+        {
+          "id": "john_brown_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_walker_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed **brother** of Mary (Brown) Prindle. Soft-ingest **Probable** / `verified: false` — pack **C1268**."
+    },
+    "hannah_brown_smith": {
+      "id": "hannah_brown_smith",
+      "slug": "hannah-brown-smith",
+      "name": "Hannah (Brown) Smith",
+      "years": "1669-1729",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_brown_nh",
+        "mary_walker_brown"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus Brown p. 346 — Hannah m. Nathan Smith",
+          "url": "https://www.wikitree.com/wiki/Brown-1305"
+        },
+        {
+          "label": "Pane-Joyce rr04_071 — Hannah Brown × Nathan Smith",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Hannah Brown"
+      ],
+      "parent_links": [
+        {
+          "id": "john_brown_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_walker_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed **sister** of Mary (Brown) Prindle. Soft-ingest **Probable** / `verified: false` — pack **C1268**. m. Nathan Smith (2nd wife)."
+    },
+    "grace_brown_denison": {
+      "id": "grace_brown_denison",
+      "slug": "grace-brown-denison",
+      "name": "Grace (Brown) Denison",
+      "years": "1672-1740",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "john_brown_nh",
+        "mary_walker_brown"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Jacobus Brown p. 346 — Grace m. John Denison",
+          "url": "https://www.wikitree.com/wiki/Brown-1305"
+        },
+        {
+          "label": "Pane-Joyce rr04_071 — Grace Brown × John Denison",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_071.html"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Grace Brown"
+      ],
+      "parent_links": [
+        {
+          "id": "john_brown_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_walker_brown",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed **sister** of Mary (Brown) Prindle. Soft-ingest **Probable** / `verified: false` — pack **C1268**. m. John Denison of East Haven."
+    },
+    "john_prindle_1658": {
+      "id": "john_prindle_1658",
+      "slug": "john-prindle-1658",
+      "name": "John Prindle",
+      "years": "1658-1734",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_prindle_nh",
+        "mary_disburrow_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Prindle Genealogy 1906 pp. 1, 20–29 — John² son of William¹",
+          "url": "https://archive.org/stream/prindlegenealog00pringoog#page/n46/mode/2up"
+        },
+        {
+          "label": "Pane-Joyce rr04_180 — John × Mary Hull",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr04/rr04_180.html"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "John Pringle"
+      ],
+      "parent_links": [
+        {
+          "id": "william_prindle_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_disburrow_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed **uncle** of Joseph Prindle Sr. Soft-ingest **Probable** / `verified: false` — pack **C1267**. **Not** `john_prindle_1691` (nephew b. ~1691)."
+    },
+    "ebenezer_prindle_1661": {
+      "id": "ebenezer_prindle_1661",
+      "slug": "ebenezer-prindle-1661",
+      "name": "Ebenezer Prindle",
+      "years": "1661-1740",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_prindle_nh",
+        "mary_disburrow_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Prindle Genealogy 1906 pp. 1, 31–48 — Ebenezer² son of William¹",
+          "url": "https://archive.org/stream/prindlegenealog00pringoog#page/n46/mode/2up"
+        },
+        {
+          "label": "WikiTree Prindle-35",
+          "url": "https://www.wikitree.com/wiki/Prindle-35"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Ebenezer Pringle"
+      ],
+      "parent_links": [
+        {
+          "id": "william_prindle_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_disburrow_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed **uncle** of Joseph Prindle Sr. Soft-ingest **Probable** / `verified: false` — pack **C1266**. Executor/heir of William Prindle estate per will 1689."
+    },
+    "samuel_prindle_1668": {
+      "id": "samuel_prindle_1668",
+      "slug": "samuel-prindle-1668",
+      "name": "Samuel Prindle",
+      "years": "1668-1750",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "william_prindle_nh",
+        "mary_disburrow_prindle"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "Prindle Genealogy 1906 pp. 1–2 — Samuel son of William¹",
+          "url": "https://archive.org/stream/prindlegenealog00pringoog#page/n46/mode/2up"
+        },
+        {
+          "label": "Pane-Joyce rr06_258 — Samuel × Dorothy Plumb",
+          "url": "https://cs.clarku.edu/~djoyce/gen/report/rr06/rr06_258.html"
+        },
+        {
+          "label": "WikiTree Prindle-35 child list",
+          "url": "https://www.wikitree.com/wiki/Prindle-35"
+        },
+        {
+          "label": "Proposal: docs/research/people/proposals/shorts-joseph-mary-parents-2026-08-08.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Samuel Pringle"
+      ],
+      "parent_links": [
+        {
+          "id": "william_prindle_nh",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_disburrow_prindle",
+          "confidence": "Probable"
+        }
+      ],
+      "note": "Proposed **uncle** of Joseph Prindle Sr. and Joel Pringle Sr. line. Soft-ingest **Probable** / `verified: false` — pack **C1266**. **Not** `samuel_prindle_1693` (nephew)."
+    }
+  }
+};
+window.OBJECTS_INDEX = {};
