@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverbs Link — Theme Matrices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1c1914;
+      --muted: #5c564c;
+      --paper: #f7f2e8;
+      --line: rgba(28, 25, 20, 0.12);
+      --accent: #8a4b1f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #efe6d2 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e4ddd0 0%, transparent 50%),
+        linear-gradient(180deg, #faf6ef 0%, var(--paper) 40%, #f3ebe0 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    .wrap {
+      position: relative;
+      width: min(1280px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header { display: grid; gap: 0.75rem; margin-bottom: 1.25rem; animation: rise 0.7s ease both; }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Fraunces, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .lede { margin: 0; max-width: 42rem; color: var(--muted); line-height: 1.5; }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin-top: 0.35rem;
+      font-size: 0.95rem;
+    }
+    .nav-links a { color: var(--accent); font-weight: 600; }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 1.25rem 0 1rem;
+      animation: rise 0.7s ease 0.08s both;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.55);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.45rem 0.8rem;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+    .tab:hover { transform: translateY(-1px); background: #fff; }
+    .tab[aria-selected="true"] {
+      background: var(--ink);
+      color: #f7f2e8;
+      border-color: var(--ink);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      animation: rise 0.7s ease 0.1s both;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.45rem;
+      margin-right: 0.4rem;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+    }
+    .badge.polished { background: color-mix(in srgb, #8fd14f 28%, white); }
+    .badge.mostly-polished { background: color-mix(in srgb, #2d9bf0 22%, white); }
+    .badge.placeholder { background: color-mix(in srgb, #fac710 30%, white); }
+
+    .matrix-title {
+      font-family: Fraunces, serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin: 0 0 1rem;
+      animation: rise 0.75s ease 0.12s both;
+    }
+
+    .columns {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      animation: rise 0.75s ease 0.14s both;
+    }
+
+    .col {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      min-width: 0;
+    }
+
+    .col-header {
+      padding: 0.75rem 0.9rem;
+      font-family: Fraunces, serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      background: color-mix(in srgb, var(--theme, #8fd14f) 32%, white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-label {
+      margin: 0;
+      padding: 0.55rem 0.9rem 0.25rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .divider {
+      margin: 0.65rem 0.9rem;
+      border: 0;
+      border-top: 2px dashed color-mix(in srgb, var(--theme, #8fd14f) 45%, var(--line));
+    }
+
+    .passage {
+      padding: 0.55rem 0.9rem;
+      border-top: 1px solid var(--line);
+    }
+    .passage:first-of-type { border-top: 0; }
+
+    .ref {
+      font-weight: 700;
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+    .passage p {
+      margin: 0;
+      white-space: pre-line;
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+    .passage.emphasized p { font-weight: 600; }
+    .passage.related .ref { color: var(--accent); }
+    .passage.stub {
+      background: color-mix(in srgb, #fac710 12%, transparent);
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    .rows { display: grid; gap: 0.85rem; animation: rise 0.75s ease 0.14s both; }
+
+    .row {
+      display: grid;
+      grid-template-columns: minmax(160px, 220px) 1fr;
+      gap: 0.75rem;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      padding: 0.85rem 1rem;
+    }
+    @media (max-width: 720px) {
+      .row { grid-template-columns: 1fr; }
+    }
+
+    .row-name {
+      font-family: Fraunces, serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .shema-bit {
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+    .shema-bit strong { color: var(--ink); display: block; margin-bottom: 0.15rem; }
+
+    .pile {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      animation: rise 0.75s ease 0.14s both;
+    }
+
+    .note-box {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border: 1px dashed var(--line);
+      background: rgba(255,255,255,0.45);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Proverbs Link · matrices</div>
+      <h1>Theme pattern matrices</h1>
+      <p class="lede">
+        Multi-column pattern documents from Miro — Speech, Lips &amp; Words is the gold standard.
+        Separate from the simple theme column lists.
+      </p>
+      <div class="nav-links">
+        <a href="./index.html">Way of Life</a>
+        <a href="./climb.html">Climb</a>
+        <a href="./proverbs-1-9.html">Foundation</a>
+        <a href="./themes.html">Themes</a>
+        <a href="./verses.html">Verses</a>
+        <a href="./reports/">Reports</a>
+      </div>
+    </header>
+
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Matrices"></nav>
+    <div class="meta" id="meta"></div>
+    <div id="view"></div>
+  </div>
+
+  <script>
+    const FILES = {
+      "speech-lips-words": "./data/matrices/speech-lips-words.json",
+      "shema-parallels": "./data/matrices/shema-parallels.json",
+      "pride-humility-folly": "./data/matrices/pride-humility-folly.json",
+    };
+
+    let catalog = null;
+    let cache = {};
+    let activeId = null;
+
+    async function init() {
+      catalog = await (await fetch("./data/matrices/index.json")).json();
+      const hash = location.hash.replace(/^#/, "");
+      activeId = FILES[hash] ? hash : catalog.gold_standard;
+      renderTabs();
+      await show(activeId);
+    }
+
+    function renderTabs() {
+      const tabs = document.getElementById("tabs");
+      tabs.innerHTML = catalog.matrices.map((m) => `
+        <button class="tab" role="tab" aria-selected="${m.id === activeId}" data-id="${m.id}">
+          ${escapeHtml(m.title)}
+        </button>
+      `).join("");
+      tabs.querySelectorAll(".tab").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          activeId = btn.dataset.id;
+          history.replaceState(null, "", `#${activeId}`);
+          renderTabs();
+          show(activeId);
+        });
+      });
+    }
+
+    async function show(id) {
+      if (!cache[id]) {
+        cache[id] = await (await fetch(FILES[id])).json();
+      }
+      const doc = cache[id];
+      const polish = doc.polish || "unknown";
+      document.getElementById("meta").innerHTML = `
+        <span class="badge ${escapeHtml(polish)}">${escapeHtml(polish.replace("-", " "))}</span>
+        ${escapeHtml(doc.aim || "")}
+        · <a href="${escapeHtml(doc.miro.frame_url)}" target="_blank" rel="noopener">Open in Miro</a>
+      `;
+
+      const view = document.getElementById("view");
+      if (doc.pattern === "theme-matrix" && doc.columns && doc.columns.length) {
+        view.innerHTML = renderSpeech(doc);
+      } else if (doc.rows) {
+        view.innerHTML = renderShema(doc);
+      } else {
+        view.innerHTML = renderPile(doc);
+      }
+    }
+
+    function renderSpeech(doc) {
+      return `
+        <h2 class="matrix-title">${escapeHtml(doc.title)}</h2>
+        <div class="columns">
+          ${doc.columns.map(renderColumn).join("")}
+        </div>
+        ${doc.duplicates_across_columns?.length ? `
+          <div class="note-box">
+            <strong>Also in multiple columns:</strong>
+            ${doc.duplicates_across_columns.map((d) => escapeHtml(d.ref)).join(" · ")}
+          </div>` : ""}
+      `;
+    }
+
+    function renderColumn(col) {
+      return `
+        <section class="col" style="--theme:${escapeHtml(col.color)}">
+          <div class="col-header">${escapeHtml(col.name)}</div>
+          <p class="section-label">Proverbs</p>
+          ${col.proverbs.map((p) => passageHtml(p, false)).join("") || emptyBit()}
+          ${col.related?.length ? `
+            <hr class="divider" />
+            <p class="section-label">Related</p>
+            ${col.related.map((p) => passageHtml(p, true)).join("")}
+          ` : ""}
+        </section>
+      `;
+    }
+
+    function renderShema(doc) {
+      return `
+        <h2 class="matrix-title">${escapeHtml(doc.title)}</h2>
+        <div class="rows">
+          ${doc.rows.map((row) => `
+            <article class="row">
+              <div>
+                <div class="row-name">${escapeHtml(row.name)}</div>
+                <div class="shema-bit">
+                  <strong>${escapeHtml(row.shema?.ref || "")}</strong>
+                  ${escapeHtml(row.shema?.text || "")}
+                </div>
+              </div>
+              <div>
+                ${(row.parallels || []).map((p) => {
+                  if (!p.text) {
+                    return `<div class="passage stub"><div class="ref">${escapeHtml(p.ref)}</div><p>${escapeHtml(p.note || "Stub — no text on board")}</p></div>`;
+                  }
+                  return passageHtml(p, false);
+                }).join("")}
+              </div>
+            </article>
+          `).join("")}
+        </div>
+        ${(doc.related || []).map((r) => `
+          <div class="note-box" style="margin-top:1rem">
+            <div class="ref" style="font-weight:700;margin-bottom:0.35rem">${escapeHtml(r.ref)} · ${escapeHtml(r.role || "")}</div>
+            <p style="margin:0;white-space:pre-line;line-height:1.45">${escapeHtml(r.text)}</p>
+          </div>
+        `).join("")}
+      `;
+    }
+
+    function renderPile(doc) {
+      return `
+        <h2 class="matrix-title">${escapeHtml(doc.title)}</h2>
+        <div class="note-box" style="margin-bottom:1rem">Placeholder / unsorted pile — not yet a matrix.</div>
+        <div class="pile">
+          <p class="section-label">Proverbs</p>
+          ${(doc.passages || []).map((p) => passageHtml(p, false)).join("")}
+          <hr class="divider" style="--theme:#a86a2a" />
+          <p class="section-label">Related dumps</p>
+          ${(doc.related || []).map((p) => passageHtml(p, true)).join("")}
+        </div>
+      `;
+    }
+
+    function passageHtml(p, related) {
+      const cls = ["passage", p.emphasized ? "emphasized" : "", related ? "related" : ""]
+        .filter(Boolean).join(" ");
+      return `
+        <article class="${cls}">
+          <div class="ref">${escapeHtml(p.ref || "—")}${p.ref_inferred ? " *" : ""}</div>
+          <p>${escapeHtml(p.text || p.note || "")}</p>
+        </article>
+      `;
+    }
+
+    function emptyBit() {
+      return `<p style="padding:0.75rem 0.9rem;color:var(--muted)">No passages.</p>`;
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    init().catch((err) => {
+      document.getElementById("view").innerHTML =
+        `<p style="padding:1rem">Could not load matrices (${escapeHtml(err.message)}).</p>`;
+    });
+  </script>
+</body>
+</html>

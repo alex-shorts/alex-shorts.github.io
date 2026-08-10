@@ -1,0 +1,62 @@
+{
+  "generated": "2026-08-10",
+  "source_boards": [
+    {
+      "name": "Proverbs 10-31",
+      "url": "https://miro.com/app/board/uXjVOLZ3rpc=/"
+    },
+    {
+      "name": "Proverbs 1-9",
+      "url": "https://miro.com/app/board/o9J_kvdzkig=/"
+    },
+    {
+      "name": "Copy of Proverbs 1-9",
+      "url": "https://miro.com/app/board/uXjVKP2NcA4=/"
+    }
+  ],
+  "gold_standard": "speech-lips-words",
+  "matrices": [
+    {
+      "id": "speech-lips-words",
+      "title": "Speech, Lips & Words",
+      "polish": "polished",
+      "file": "speech-lips-words.json",
+      "html": "matrices.html#speech-lips-words",
+      "doc": "../docs/matrices/speech-lips-words.md",
+      "reports": "../reports/speech-lips-words/"
+    },
+    {
+      "id": "shema-parallels",
+      "title": "Parallels with the Shema",
+      "polish": "mostly-polished",
+      "file": "shema-parallels.json",
+      "html": "matrices.html#shema-parallels",
+      "doc": "../docs/matrices/shema-parallels.md"
+    },
+    {
+      "id": "pride-humility-folly",
+      "title": "Pride, Humility & Folly",
+      "polish": "placeholder",
+      "file": "pride-humility-folly.json",
+      "html": "matrices.html#pride-humility-folly",
+      "doc": "../docs/matrices/pride-humility-folly.md"
+    }
+  ],
+  "not_matrices": [
+    {
+      "name": "Theme column lists (Man and Woman, Anger, Discipline, …)",
+      "data": "themes.json",
+      "reason": "Single colored header + verse list — not a multi-column cross-Bible pattern matrix."
+    },
+    {
+      "name": "Proverbs 1–9 → Themes frame",
+      "board": "https://miro.com/app/board/o9J_kvdzkig=/?moveToWidget=3074457356572306389",
+      "reason": "Chapter-sorted color highlights (Listen / Act / Warning / Wisdom…) with occasional Isaiah/John dumps — working categorization, not a polished theme matrix."
+    },
+    {
+      "name": "Proverbs 1–9 → Categories frame",
+      "board": "https://miro.com/app/board/o9J_kvdzkig=/?moveToWidget=3074457356569064852",
+      "reason": "Chapter columns (Ch. 1–8), not a pattern matrix."
+    }
+  ]
+}

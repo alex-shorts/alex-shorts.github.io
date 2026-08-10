@@ -1,0 +1,91 @@
+{
+  "id": "pride-humility-folly",
+  "title": "Pride, Humility & Folly",
+  "slug": "pride-humility-folly",
+  "polish": "placeholder",
+  "pattern": "unsorted-pile",
+  "miro": {
+    "board": "Proverbs 10-31",
+    "board_url": "https://miro.com/app/board/uXjVOLZ3rpc=/",
+    "frame": "Frame 1",
+    "frame_url": "https://miro.com/app/board/uXjVOLZ3rpc=/?moveToWidget=3458764540391332815",
+    "frame_id": "3458764540391332815"
+  },
+  "aim": "Working pile of pride / humility / folly passages — not yet organized into a Speech-style matrix.",
+  "layout": {
+    "columns": [],
+    "note": "No colored theme headers or Proverbs-vs-related divider. Verses sit in a loose vertical stack with some cross-book dumps beside them."
+  },
+  "columns": [],
+  "passages": [
+    {
+      "ref": "Proverbs 12:15-17",
+      "chapter": 12,
+      "text": "15 Fools suppose their way is straight,\n    but the wise pay attention to advice.\n16 A fool’s anger is known at once,\n    but a cautious person slighted conceals his feelings.\n17 He who tells the truth furthers justice,\n    but a false witness furthers deceit."
+    },
+    {
+      "ref": "Proverbs 19:2",
+      "chapter": 19,
+      "text": "2 To act without knowing how you function is not good;\n    and if you rush ahead, you will miss your goal."
+    },
+    {
+      "ref": "Proverbs 11:2",
+      "chapter": 11,
+      "text": "2 First comes pride, then disgrace;\n    but with the humble is wisdom."
+    },
+    {
+      "ref": "Proverbs 17:12",
+      "chapter": 17,
+      "text": "12 Rather meet a bear robbed of its cubs\n    than encounter a fool in his folly."
+    },
+    {
+      "ref": "Proverbs 16:22",
+      "chapter": 16,
+      "text": "22 Common sense is a fountain of life to one who has it,\n    whereas fools are punished by their own folly."
+    },
+    {
+      "ref": "Proverbs 16:5",
+      "chapter": 16,
+      "text": "5 Adonai detests all those with proud hearts;\n    be assured that they will not go unpunished."
+    },
+    {
+      "ref": "Proverbs 16:18",
+      "chapter": 16,
+      "text": "18 Pride goes before destruction,\n    and arrogance before failure."
+    },
+    {
+      "ref": "Proverbs 28:26",
+      "chapter": 28,
+      "text": "26 He who trusts in himself is a fool,\n    but he who lives by wisdom will escape."
+    },
+    {
+      "ref": "Proverbs 15:31-33",
+      "chapter": 15,
+      "text": "31 He who heeds life-giving correction\n    will be at home in the company of the wise.\n32 He who spurns discipline detests himself,\n    but he who listens to correction grows in understanding.\n33 The discipline of wisdom is fear of Adonai,\n    so before being honored, a person must be humble."
+    }
+  ],
+  "related": [
+    {
+      "ref": "Matthew 25:14-30",
+      "text": "Parable of the talents — prose summary pasted on the board (not verse-formatted).",
+      "note": "Looks like research dump / placeholder."
+    },
+    {
+      "ref": "Matthew 7:1-5",
+      "text": "Do not judge… speck / plank teaching."
+    },
+    {
+      "ref": "Ezekiel 36:26",
+      "text": "And I will give you a new heart, and a new spirit I will put within you…"
+    },
+    {
+      "ref": "Nehemiah 1:4-11",
+      "text": "Partial paste of Nehemiah’s confession prayer (cuts mid-sentence on the board)."
+    }
+  ],
+  "notes": [
+    "Untitled Frame 1 — working pile, not a polished matrix.",
+    "No multi-column theme headers; cross-book material is uneven and partially truncated.",
+    "Best next step: promote into a matrix modeled on Speech, Lips & Words (e.g. Pride | Humility | Folly | Related)."
+  ]
+}

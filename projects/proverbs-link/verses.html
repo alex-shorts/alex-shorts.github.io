@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verses — Proverbs Link</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1612;
+      --muted: #5a5348;
+      --paper: #f7f2e8;
+      --line: rgba(26, 22, 18, 0.14);
+      --accent: #8a4b1f;
+      --life: #2f5d3a;
+      --life-bg: #e4efe7;
+      --death: #8a3b2a;
+      --death-bg: #f3e6e2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcfaf6, var(--paper));
+      min-height: 100vh;
+    }
+    .wrap {
+      width: min(1100px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 1.35rem 0 3rem;
+    }
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1rem;
+      margin-bottom: 1.1rem;
+      font-size: 0.9rem;
+    }
+    .site-nav a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 0.35rem;
+    }
+    h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.45rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+    .note {
+      margin: 0.85rem 0 1rem;
+      padding: 0.7rem 0.85rem;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.65);
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .pair-heads {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      margin: 1rem 0 0.45rem;
+    }
+    .pair-heads h2 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.25rem;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--line);
+    }
+    .pair-heads .left { background: var(--life-bg); color: var(--life); }
+    .pair-heads .right { background: var(--death-bg); color: var(--death); }
+
+    .pair-rows { display: flex; flex-direction: column; gap: 0.45rem; }
+    .pair-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      align-items: stretch;
+    }
+    .pair-row.intact {
+      grid-template-columns: 1fr;
+    }
+    .cell {
+      border: 1px solid var(--line);
+      padding: 0.7rem 0.85rem;
+      background: rgba(255,255,255,0.72);
+      min-height: 3.2rem;
+    }
+    .cell.life {
+      background: color-mix(in srgb, var(--life-bg) 55%, white);
+      border-left: 4px solid var(--life);
+    }
+    .cell.death {
+      background: color-mix(in srgb, var(--death-bg) 55%, white);
+      border-left: 4px solid var(--death);
+    }
+    .cell.both {
+      background: linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--life-bg) 50%, white) 0%,
+        color-mix(in srgb, var(--life-bg) 50%, white) 48%,
+        color-mix(in srgb, var(--death-bg) 50%, white) 52%,
+        color-mix(in srgb, var(--death-bg) 50%, white) 100%
+      );
+      border-left: 4px solid var(--life);
+      border-right: 4px solid var(--death);
+    }
+    .cell.empty {
+      background: transparent;
+      border-style: dashed;
+      opacity: 0.4;
+    }
+    .lean {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-left: 0.45rem;
+      color: var(--muted);
+    }
+    .cell.both .lean { color: var(--accent); }
+    .ref {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+    }
+    .cell p {
+      margin: 0;
+      line-height: 1.45;
+      font-size: 0.98rem;
+      white-space: pre-line;
+    }
+
+    .single-list {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+    }
+    .passage {
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      gap: 0.65rem;
+      padding: 0.7rem 1rem;
+      border-top: 1px solid var(--line);
+    }
+    .passage:first-child { border-top: 0; }
+    .passage .ref { padding-top: 0.15rem; }
+    .passage p { margin: 0; line-height: 1.5; white-space: pre-line; }
+
+    .section-label {
+      margin: 1.25rem 0 0.5rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.15rem;
+    }
+    .links { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+    .links a {
+      color: var(--life);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--life) 30%, transparent);
+      align-self: start;
+    }
+    .empty { padding: 1.1rem; color: var(--muted); line-height: 1.5; }
+    .tr-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem 1rem;
+      margin: 0.85rem 0 0.35rem;
+    }
+    .tr-bar label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .tr-bar select {
+      font: inherit;
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(255,255,255,0.85);
+      border: 1px solid var(--line);
+      padding: 0.35rem 0.55rem;
+      min-width: 8.5rem;
+    }
+    .tr-bar .tr-status {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .v-text.tr-fallback {
+      opacity: 0.92;
+    }
+    @media (max-width: 720px) {
+      .pair-heads, .pair-row { grid-template-columns: 1fr; }
+      .passage { grid-template-columns: 1fr; gap: 0.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="site-nav" aria-label="Site">
+      <a href="./index.html">Way of Life</a>
+      <a href="./climb.html">Climb</a>
+      <a href="./proverbs-1-9.html">Foundation</a>
+      <a href="./themes.html">Themes</a>
+      <a href="./matrices.html">Matrices</a>
+      <a href="./reports/">Reports</a>
+    </nav>
+    <p class="eyebrow" id="eyebrow">Category verses</p>
+    <h1 id="title">Loading…</h1>
+    <p class="meta" id="meta"></p>
+    <div class="tr-bar" id="trBar" hidden>
+      <label for="trSelect">Translation</label>
+      <select id="trSelect" aria-label="Bible translation">
+        <option value="CJB">CJB</option>
+        <option value="ESV">ESV</option>
+        <option value="NKJV">NKJV</option>
+        <option value="CSB">CSB</option>
+      </select>
+      <span class="tr-status" id="trStatus"></span>
+    </div>
+    <div class="note" id="note" hidden></div>
+    <div id="body"></div>
+  </div>
+  <script>
+    const TRANSLATIONS = {
+      CJB: { root: "./data/cjb", label: "CJB" },
+      ESV: { root: "./data/bibles/esv", label: "ESV" },
+      NKJV: { root: "./data/bibles/nkjv", label: "NKJV" },
+      CSB: { root: "./data/bibles/csb", label: "CSB" },
+    };
+    const BOOK_FOLDERS = {
+      genesis: "genesis", gen: "genesis",
+      exodus: "exodus", exod: "exodus", exo: "exodus",
+      leviticus: "leviticus", lev: "leviticus",
+      numbers: "numbers", num: "numbers",
+      deuteronomy: "deuteronomy", deut: "deuteronomy", deu: "deuteronomy",
+      joshua: "joshua", josh: "joshua",
+      judges: "judges", judg: "judges",
+      ruth: "ruth",
+      "1 samuel": "1-samuel", "1sam": "1-samuel", "1 sa": "1-samuel",
+      "2 samuel": "2-samuel", "2sam": "2-samuel",
+      "1 kings": "1-kings", "1kgs": "1-kings",
+      "2 kings": "2-kings", "2kgs": "2-kings",
+      "1 chronicles": "1-chronicles", "1chr": "1-chronicles",
+      "2 chronicles": "2-chronicles", "2chr": "2-chronicles",
+      ezra: "ezra",
+      nehemiah: "nehemiah", neh: "nehemiah",
+      esther: "esther", esth: "esther",
+      job: "job",
+      psalm: "psalm", psalms: "psalm", ps: "psalm", psa: "psalm",
+      proverbs: "proverbs", prov: "proverbs", pr: "proverbs",
+      ecclesiastes: "ecclesiastes", eccl: "ecclesiastes", ecc: "ecclesiastes",
+      "song of solomon": "song-of-solomon", "song of songs": "song-of-solomon", song: "song-of-solomon",
+      isaiah: "isaiah", isa: "isaiah",
+      jeremiah: "jeremiah", jer: "jeremiah",
+      lamentations: "lamentations", lam: "lamentations",
+      ezekiel: "ezekiel", ezek: "ezekiel", eze: "ezekiel",
+      daniel: "daniel", dan: "daniel",
+      hosea: "hosea", hos: "hosea",
+      joel: "joel",
+      amos: "amos",
+      obadiah: "obadiah", obad: "obadiah",
+      jonah: "jonah",
+      micah: "micah", mic: "micah",
+      nahum: "nahum", nah: "nahum",
+      habakkuk: "habakkuk", hab: "habakkuk",
+      zephaniah: "zephaniah", zeph: "zephaniah",
+      haggai: "haggai", hag: "haggai",
+      zechariah: "zechariah", zech: "zechariah",
+      malachi: "malachi", mal: "malachi",
+      matthew: "matthew", matt: "matthew", mt: "matthew",
+      mark: "mark", mk: "mark",
+      luke: "luke", lk: "luke",
+      john: "john", jn: "john",
+      acts: "acts",
+      romans: "romans", rom: "romans",
+      "1 corinthians": "1-corinthians", "1cor": "1-corinthians",
+      "2 corinthians": "2-corinthians", "2cor": "2-corinthians",
+      galatians: "galatians", gal: "galatians",
+      ephesians: "ephesians", eph: "ephesians",
+      philippians: "philippians", phil: "philippians",
+      colossians: "colossians", col: "colossians",
+      "1 thessalonians": "1-thessalonians", "1thess": "1-thessalonians",
+      "2 thessalonians": "2-thessalonians", "2thess": "2-thessalonians",
+      "1 timothy": "1-timothy", "1tim": "1-timothy",
+      "2 timothy": "2-timothy", "2tim": "2-timothy",
+      titus: "titus",
+      philemon: "philemon", phlm: "philemon",
+      hebrews: "hebrews", heb: "hebrews",
+      james: "james", jas: "james",
+      "1 peter": "1-peter", "1pet": "1-peter",
+      "2 peter": "2-peter", "2pet": "2-peter",
+      "1 john": "1-john", "1jn": "1-john",
+      "2 john": "2-john", "2jn": "2-john",
+      "3 john": "3-john", "3jn": "3-john",
+      jude: "jude",
+      revelation: "revelation", rev: "revelation",
+    };
+
+    const trState = {
+      version: localStorage.getItem("proverbs-link-tr") || "CJB",
+      chapterCache: new Map(),
+    };
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function refShort(ref) {
+      return String(ref || "—").replace(/^Proverbs\s+/i, "");
+    }
+
+    function categoryId() {
+      const raw = (location.hash || "").replace(/^#/, "");
+      if (raw) return decodeURIComponent(raw);
+      return new URLSearchParams(location.search).get("id") || "";
+    }
+
+    function parseRef(ref) {
+      const raw = String(ref || "").trim();
+      const m = raw.match(
+        /^((?:\d\s*)?[A-Za-z][A-Za-z .'-]*?)\s+(\d+)\s*:\s*(\d+)(?:\s*[-–]\s*(\d+))?/
+      );
+      if (!m) return null;
+      const bookKey = m[1].toLowerCase().replace(/\./g, "").replace(/\s+/g, " ").trim();
+      const folder = BOOK_FOLDERS[bookKey] || BOOK_FOLDERS[bookKey.replace(/\s+/g, "")] || null;
+      if (!folder) return null;
+      const chapter = Number(m[2]);
+      const v1 = Number(m[3]);
+      const v2 = m[4] ? Number(m[4]) : v1;
+      const verses = [];
+      for (let v = Math.min(v1, v2); v <= Math.max(v1, v2); v++) verses.push(v);
+      return { folder, chapter, verses, raw };
+    }
+
+    async function loadChapter(version, folder, chapter) {
+      const key = `${version}:${folder}:${chapter}`;
+      if (trState.chapterCache.has(key)) return trState.chapterCache.get(key);
+      const meta = TRANSLATIONS[version];
+      if (!meta) return null;
+      const url = `${meta.root}/${folder}/${chapter}.json`;
+      try {
+        const res = await fetch(url);
+        if (!res.ok) {
+          trState.chapterCache.set(key, null);
+          return null;
+        }
+        const data = await res.json();
+        trState.chapterCache.set(key, data);
+        return data;
+      } catch {
+        trState.chapterCache.set(key, null);
+        return null;
+      }
+    }
+
+    async function textForRef(ref, version) {
+      const parsed = parseRef(ref);
+      if (!parsed) return null;
+      const chapter = await loadChapter(version, parsed.folder, parsed.chapter);
+      if (!chapter || !chapter.verses) return null;
+      const parts = [];
+      for (const v of parsed.verses) {
+        const t = chapter.verses[String(v)];
+        if (!t) return null;
+        parts.push(t);
+      }
+      return parts.join(" ");
+    }
+
+    function verseTextEl(ref, text) {
+      return `<p class="v-text" data-ref="${escapeHtml(ref || "")}" data-base-text="${encodeURIComponent(text || "")}">${escapeHtml(text || "")}</p>`;
+    }
+
+    async function applyTranslation() {
+      const version = trState.version;
+      const nodes = [...document.querySelectorAll(".v-text[data-ref]")];
+      const bar = document.getElementById("trBar");
+      const status = document.getElementById("trStatus");
+      const sel = document.getElementById("trSelect");
+      if (!nodes.length) {
+        bar.hidden = true;
+        return;
+      }
+      bar.hidden = false;
+      if (sel) sel.value = version;
+      status.textContent = version === "CJB" ? "Source text" : `Loading ${version}…`;
+
+      let ok = 0;
+      let missing = 0;
+      await Promise.all(
+        nodes.map(async (el) => {
+          const ref = el.dataset.ref || "";
+          let base = "";
+          try {
+            base = decodeURIComponent(el.dataset.baseText || "");
+          } catch {
+            base = el.dataset.baseText || "";
+          }
+          if (version === "CJB") {
+            el.textContent = base;
+            el.classList.remove("tr-fallback");
+            ok += 1;
+            return;
+          }
+          const alt = await textForRef(ref, version);
+          if (alt) {
+            el.textContent = alt;
+            el.classList.remove("tr-fallback");
+            ok += 1;
+          } else {
+            el.textContent = base;
+            el.classList.add("tr-fallback");
+            missing += 1;
+          }
+        })
+      );
+
+      if (version === "CJB") {
+        status.textContent = "CJB · source of truth";
+      } else if (missing === 0) {
+        status.textContent = `${version} · ${ok} verses`;
+      } else {
+        status.textContent = `${version} · ${ok} loaded · ${missing} kept CJB (missing locally)`;
+      }
+    }
+
+    function wireTranslationSelect() {
+      const sel = document.getElementById("trSelect");
+      if (!sel || sel.dataset.wired) return;
+      sel.dataset.wired = "1";
+      sel.value = trState.version;
+      sel.addEventListener("change", () => {
+        trState.version = sel.value;
+        localStorage.setItem("proverbs-link-tr", trState.version);
+        applyTranslation();
+      });
+    }
+
+    async function loadThemePassages(themeId, themesData) {
+      const theme = themesData.themes.find((t) => t.id === themeId);
+      if (!theme) return { label: themeId, passages: [] };
+      return { label: theme.name, passages: theme.passages || [] };
+    }
+
+    async function loadMatrixColumn(meta) {
+      const data = await fetch("./" + meta.matrix_file).then((r) => r.json());
+      const col = data.columns.find((c) => c.id === meta.column_id);
+      if (!col) return { label: meta.label, passages: [], related: [] };
+      return { label: col.name, passages: col.proverbs || [], related: col.related || [] };
+    }
+
+    function pairRowsHtml(pair) {
+      const leftLabel = pair.left.label;
+      const rightLabel = pair.right.label;
+      const rows = pair.rows
+        .map((row) => {
+          const full = row.full || row.left || row.right || "";
+          const ref = escapeHtml(refShort(row.ref));
+          const band = row.correlation_band
+            ? `<span class="lean">${escapeHtml(row.correlation_band)}</span>`
+            : "";
+          if (row.mode === "split" || row.mode === "both") {
+            return `<div class="pair-row intact">
+              <div class="cell both">
+                <div class="ref">${ref}<span class="lean">life · death</span>${band}</div>
+                ${verseTextEl(row.ref, full)}
+              </div>
+            </div>`;
+          }
+          if (row.mode === "left_only" || (row.left && !row.right)) {
+            return `<div class="pair-row">
+              <div class="cell life"><div class="ref">${ref}<span class="lean">${escapeHtml(leftLabel)}</span>${band}</div>${verseTextEl(row.ref, full)}</div>
+              <div class="cell empty"></div>
+            </div>`;
+          }
+          return `<div class="pair-row">
+            <div class="cell empty"></div>
+            <div class="cell death"><div class="ref">${ref}<span class="lean">${escapeHtml(rightLabel)}</span>${band}</div>${verseTextEl(row.ref, full)}</div>
+          </div>`;
+        })
+        .join("");
+
+      return `
+        <div class="pair-heads">
+          <h2 class="left">${escapeHtml(leftLabel)}</h2>
+          <h2 class="right">${escapeHtml(rightLabel)}</h2>
+        </div>
+        <div class="pair-rows">${rows}</div>
+      `;
+    }
+
+    function renderPair(pair, openedAs) {
+      const leftLabel = pair.left.label;
+      const rightLabel = pair.right.label;
+      const note =
+        openedAs === pair.right.id
+          ? `Opened from ${rightLabel}. Full verses kept intact — placed under Life, Death, or both when the proverb itself holds the contrast.`
+          : `Opened from ${leftLabel}. Full verses kept intact — placed under Life, Death, or both when the proverb itself holds the contrast.`;
+      document.getElementById("note").hidden = false;
+      document.getElementById("note").textContent = note;
+      document.getElementById("meta").textContent =
+        `${pair.counts.rows} proverbs · sorted strong → light · intact text · ${pair.theme_name}`;
+      return pairRowsHtml(pair);
+    }
+
+    function uniquePairsFromIds(ids, pairsData) {
+      const seen = new Set();
+      const out = [];
+      for (const cid of ids || []) {
+        const pair = pairsData.pairs[cid];
+        if (!pair || !pair.rows) continue;
+        const key = pair.pair_id || cid;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push({ openedAs: cid, pair });
+      }
+      return out;
+    }
+
+    function renderPassages(passages) {
+      if (!passages.length) return `<div class="empty">No passages.</div>`;
+      const ordered = [...passages].sort((a, b) => {
+        const ca = a.correlation ?? -1;
+        const cb = b.correlation ?? -1;
+        if (cb !== ca) return cb - ca;
+        return 0;
+      });
+      return `<div class="single-list">${ordered
+        .map((p) => {
+          const band = p.correlation_band
+            ? `<span class="lean">${escapeHtml(p.correlation_band)}</span>`
+            : "";
+          return `<article class="passage">
+            <div class="ref">${escapeHtml(refShort(p.ref))}${band}</div>
+            ${verseTextEl(p.ref, p.text)}
+          </article>`;
+        })
+        .join("")}</div>`;
+    }
+
+    async function resolveAndRender(id, map, themesData, climbData, pairsData) {
+      const titleEl = document.getElementById("title");
+      const body = document.getElementById("body");
+      document.getElementById("eyebrow").textContent = `Category · ${id}`;
+
+      const meta = map.categories[id];
+      const pair = pairsData.pairs[id];
+
+      const PRESENTATION_ONLY = new Set([
+        "two-paths",
+        "child",
+        "youth-man",
+        "husband-household",
+        "child-receive",
+        "child-refuse",
+        "youth-foundations",
+        "youth-passions",
+        "house-provide",
+        "house-peace",
+        "house-neglect",
+        "house-tear",
+      ]);
+      if (PRESENTATION_ONLY.has(id) && !pair) {
+        titleEl.textContent = "Choose a category";
+        document.title = "Choose a category — A Man's Climb";
+        document.getElementById("note").hidden = false;
+        document.getElementById("note").textContent =
+          "This band is part of the climb presentation. Open a specific category tile from the climb.";
+        document.getElementById("meta").textContent = "";
+        body.innerHTML = `<div class="links"><a href="./climb.html">Back to climb →</a> · <a href="./index.html">Way of Life →</a></div>`;
+        document.getElementById("trBar").hidden = true;
+        return;
+      }
+
+      // Climb label (stage / group / leaf name)
+      let title = meta?.label || id;
+      for (const st of climbData.mountain?.stages || []) {
+        if (st.id === id) {
+          title = st.name;
+          break;
+        }
+        const find = (nodes) => {
+          for (const n of nodes || []) {
+            if (n.id === id) return n.name;
+            const hit = find(n.children);
+            if (hit) return hit;
+          }
+          return null;
+        };
+        const hit = find(st.life) || find(st.death);
+        if (hit) {
+          title = hit;
+          break;
+        }
+      }
+
+      // Bands / groups: every child theme as Life | Death (diligence|laziness pattern)
+      if (meta && (meta.source === "multi" || meta.source === "stage" || meta.source === "group")) {
+        titleEl.textContent = title;
+        document.title = `${title} — A Man's Climb`;
+
+        const childIds = meta.child_ids || [];
+        const sourceIds = (meta.sources || [])
+          .map((src) => {
+            if (src.source !== "theme") return null;
+            return (
+              Object.entries(map.categories).find(([, v]) => v.theme_id === src.theme_id)?.[0] ||
+              src.theme_id
+            );
+          })
+          .filter(Boolean);
+
+        let pairBlocks = uniquePairsFromIds([...childIds, ...sourceIds], pairsData);
+        if (!pairBlocks.length && pair) {
+          pairBlocks = [{ openedAs: id, pair }];
+        }
+
+        if (pairBlocks.length) {
+          document.getElementById("note").hidden = false;
+          document.getElementById("note").textContent =
+            meta.note ||
+            "Full verses kept intact — each theme uses the Life | Death juxtaposition (as with Diligence | Laziness).";
+          document.getElementById("meta").textContent = `${pairBlocks.length} juxtapositions · intact text`;
+          body.innerHTML = pairBlocks
+            .map(({ openedAs, pair: p }) => {
+              const label = `${p.left.label} · ${p.right.label}`;
+              const head = `<h2 class="section-label"><a href="./verses.html#${encodeURIComponent(openedAs)}" style="color:inherit">${escapeHtml(label)}</a></h2>`;
+              return head + pairRowsHtml(p);
+            })
+            .join("");
+          await applyTranslation();
+          return;
+        }
+      }
+
+      // Leaf category: Life | Death pair page
+      if (pair && pair.rows) {
+        const openedAs = pair.opened_as || id;
+        const label = `${pair.left.label} · ${pair.right.label}`;
+        titleEl.textContent = label;
+        document.title = `${label} — A Man's Climb`;
+        body.innerHTML = renderPair(pair, openedAs);
+        await applyTranslation();
+        return;
+      }
+
+      if (!meta) {
+        titleEl.textContent = id;
+        body.innerHTML = `<div class="empty">No mapping for “${escapeHtml(id)}”.</div>`;
+        document.getElementById("trBar").hidden = true;
+        return;
+      }
+
+      titleEl.textContent = title;
+      document.title = `${title} — A Man's Climb`;
+
+      if (meta.note) {
+        document.getElementById("note").hidden = false;
+        document.getElementById("note").textContent = meta.note;
+      } else {
+        document.getElementById("note").hidden = true;
+      }
+
+      if (meta.source === "theme") {
+        const block = await loadThemePassages(meta.theme_id, themesData);
+        document.getElementById("meta").textContent = `${block.passages.length} passages · ${block.label}`;
+        body.innerHTML = renderPassages(block.passages);
+        await applyTranslation();
+        return;
+      }
+
+      if (meta.source === "matrix") {
+        const block = await loadMatrixColumn(meta);
+        const related = block.related || [];
+        document.getElementById("meta").textContent =
+          `${block.passages.length + related.length} passages · ${block.label}`;
+        let html = renderPassages(block.passages);
+        if (related.length) {
+          html += `<h2 class="section-label">Related</h2>` + renderPassages(related);
+        }
+        body.innerHTML = html;
+        await applyTranslation();
+        return;
+      }
+
+      if (meta.source === "none") {
+        document.getElementById("meta").textContent = "Theological extension";
+        const links = (meta.related || [])
+          .map((src) => {
+            const catId =
+              Object.entries(map.categories).find(([, v]) => v.theme_id === src.theme_id)?.[0] ||
+              src.theme_id;
+            return `<a href="./verses.html#${encodeURIComponent(catId)}">${escapeHtml(src.label)} →</a>`;
+          })
+          .join("");
+        body.innerHTML = `<div class="links">${links}</div>`;
+        document.getElementById("trBar").hidden = true;
+        return;
+      }
+
+      body.innerHTML = `<div class="empty">No verses mapped for this category yet.</div>`;
+      document.getElementById("trBar").hidden = true;
+    }
+
+    async function boot() {
+      wireTranslationSelect();
+      const id = categoryId();
+      if (!id) {
+        document.getElementById("title").textContent = "Choose a category";
+        document.getElementById("meta").textContent = "Open this page from the man’s climb.";
+        document.getElementById("body").innerHTML = `<div class="links"><a href="./climb.html">Go to climb →</a> · <a href="./index.html">Way of Life →</a></div>`;
+        document.getElementById("trBar").hidden = true;
+        return;
+      }
+
+      const [map, themesData, climbData, pairsData] = await Promise.all([
+        fetch("./data/category-verse-map.json").then((r) => r.json()),
+        fetch("./data/themes.json").then((r) => r.json()),
+        fetch("./proposals/theme-ontology/hierarchy-map-data.json").then((r) => r.json()),
+        fetch("./data/verse-pairs.json").then((r) => r.json()),
+      ]);
+
+      await resolveAndRender(id, map, themesData, climbData, pairsData);
+    }
+
+    window.addEventListener("hashchange", () => boot());
+    boot().catch((err) => {
+      document.getElementById("title").textContent = "Could not load verses";
+      document.getElementById("body").innerHTML = `<div class="empty">${escapeHtml(err.message)}</div>`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Man's Climb - Proverbs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1612;
+      --muted: #5a5348;
+      --paper: #f7f2e8;
+      --line: rgba(26, 22, 18, 0.14);
+      --accent: #8a4b1f;
+      --life: #2f5d3a;
+      --life-bg: #e4efe7;
+      --life-block: #c5d9cb;
+      --death: #8a3b2a;
+      --death-bg: #f3e6e2;
+      --death-block: #e0c4bc;
+      --spine: #3d3428;
+      --spine-bg: #ebe4d6;
+      --peak: #c9a227;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcfaf6, var(--paper));
+      min-height: 100vh;
+    }
+    .wrap {
+      width: min(1180px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 1.5rem 0 3rem;
+    }
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 0.3rem;
+    }
+    h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .lede {
+      margin: 0.55rem 0 0;
+      max-width: 46rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1rem;
+      margin: 0.75rem 0 1rem;
+      font-size: 0.9rem;
+    }
+    .nav a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+
+    .col-heads {
+      display: grid;
+      grid-template-columns: 1fr minmax(180px, 220px) 1fr;
+      gap: 0.55rem;
+      margin-bottom: 0.45rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+    }
+    .col-heads span { padding: 0.35rem 0.5rem; }
+    .col-heads .life { color: var(--life); }
+    .col-heads .spine { color: var(--spine); text-align: center; }
+    .col-heads .death { color: var(--death); text-align: right; }
+
+    .climb {
+      display: flex;
+      flex-direction: column-reverse; /* data order; visual bottom→top */
+      gap: 0.65rem;
+    }
+
+    .band {
+      display: grid;
+      grid-template-columns: 1fr minmax(180px, 220px) 1fr;
+      gap: 0.55rem;
+      align-items: stretch;
+    }
+    .band.foundation-paths {
+      padding: 0.35rem;
+      border: 2px solid rgba(61, 52, 40, 0.28);
+      background: rgba(255,255,255,0.45);
+      gap: 0.55rem;
+    }
+    .band.foundation-paths .flank.life {
+      background: color-mix(in srgb, var(--life-bg) 70%, #fff);
+      border-color: color-mix(in srgb, var(--life) 35%, var(--line));
+    }
+    .band.foundation-paths .flank.death {
+      background: color-mix(in srgb, var(--death-bg) 70%, #fff);
+      border-color: color-mix(in srgb, var(--death) 35%, var(--line));
+    }
+    .band.foundation-paths .axis {
+      background: #e2d8c6;
+      border-width: 2px;
+    }
+    .band.foundation-paths a.tile .t-name {
+      font-size: 1.15rem;
+    }
+
+    .flank {
+      border: 1px solid var(--line);
+      padding: 0.65rem 0.7rem 0.75rem;
+      min-height: 5.5rem;
+    }
+    .flank.life { background: var(--life-bg); }
+    .flank.death { background: var(--death-bg); }
+    .flank.void {
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 6px,
+        rgba(138, 59, 42, 0.06) 6px,
+        rgba(138, 59, 42, 0.06) 12px
+      );
+      border-style: dashed;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .axis {
+      border: 1.5px solid rgba(61, 52, 40, 0.35);
+      background: var(--spine-bg);
+      padding: 0.7rem 0.55rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+    }
+    .axis.peak {
+      background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg));
+      border-color: color-mix(in srgb, var(--peak) 50%, var(--spine));
+    }
+    .axis .cover {
+      width: 148px;
+      height: 148px;
+      object-fit: cover;
+      border-radius: 3px;
+      border: 2px solid rgba(61, 52, 40, 0.4);
+      margin: 0 0 0.55rem;
+      display: block;
+      image-rendering: auto;
+      box-shadow: 0 4px 14px rgba(40, 30, 18, 0.18);
+    }
+    .axis .name {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+    .axis .short {
+      margin: 0.3rem 0 0;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .axis .cover-label {
+      margin: 0.2rem 0 0.15rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.25;
+      max-width: 9.5rem;
+    }
+    .axis .alt {
+      margin: 0.25rem 0 0;
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    .site-foot {
+      margin-top: 1.75rem;
+      padding: 1.35rem 0 0.5rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+    .site-foot .eyebrow {
+      margin-bottom: 0.35rem;
+    }
+    .site-foot h1 {
+      font-size: clamp(1.55rem, 3vw, 2.1rem);
+    }
+    .site-foot .lede {
+      margin: 0.55rem auto 0;
+      max-width: 36rem;
+    }
+    .site-foot .frame {
+      margin: 0.85rem auto 0;
+      max-width: 34rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .site-foot .nav {
+      justify-content: center;
+      margin-top: 0.9rem;
+    }
+
+    .group {
+      margin: 0 0 0.65rem;
+    }
+    .group:last-child { margin-bottom: 0; }
+    .group-title {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0 0 0.4rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .group-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0 0 0.4rem;
+      line-height: 1.35;
+    }
+
+    .tiles {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    button.tile, a.tile {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      padding: 0.45rem 0.55rem;
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+    }
+    .flank.life button.tile, .flank.life a.tile { background: color-mix(in srgb, var(--life-block) 55%, white); }
+    .flank.death button.tile, .flank.death a.tile { background: color-mix(in srgb, var(--death-block) 55%, white); }
+    button.tile:hover, a.tile:hover { filter: brightness(1.03); }
+    button.tile[aria-selected="true"], a.tile[aria-current="page"] {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+    }
+    a.tile .t-name {
+      display: block;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: 1.08rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    a.tile .t-go {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    a.tile .t-note {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    a.tile .t-builds {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: var(--life);
+    }
+    .flank.death a.tile .t-builds { color: var(--death); }
+
+    .role-foundation { border-left: 3px solid var(--life); }
+    .role-passion { border-left: 3px solid var(--death); }
+    .role-justice,
+    .role-blessing { border-left: 3px solid #4a6b52; }
+    .role-provision { border-left: 3px solid #6b7a4a; }
+    .role-peak { border-left: 3px solid var(--peak); }
+
+    button.axis-btn, a.axis-btn {
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      width: 100%;
+      text-decoration: none;
+    }
+    button.axis-btn[aria-selected="true"], a.axis-btn[aria-current="page"] {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+    }
+    a.axis-btn .t-go {
+      margin-top: 0.45rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .axis.axis-static {
+      cursor: default;
+    }
+    .axis-hint {
+      margin: 0.45rem 0 0;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+
+    .detail {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 860px) {
+      .col-heads, .band { grid-template-columns: 1fr; }
+      .col-heads .spine, .col-heads .death { text-align: left; }
+      .detail { grid-template-columns: 1fr; }
+    }
+    .panel, .chains {
+      background: rgba(255,255,255,0.8);
+      border: 1px solid var(--line);
+      padding: 1rem 1.1rem;
+    }
+    .panel .meta, .chains h2 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.4rem;
+    }
+    .chains h2 {
+      font-family: inherit;
+      font-size: 0.72rem;
+    }
+    .panel h2 {
+      margin: 0 0 0.4rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+    }
+    .panel p, .chain p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .builds {
+      margin-top: 0.6rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--life);
+    }
+    .chain {
+      padding: 0.65rem 0;
+      border-top: 1px solid var(--line);
+    }
+    .chain:first-of-type { border-top: 0; padding-top: 0; }
+    .chain strong {
+      display: block;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+    .chain .steps {
+      font-size: 0.88rem;
+      color: var(--ink);
+      line-height: 1.45;
+      margin: 0 0 0.35rem;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 1.1rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.45;
+      max-width: 48rem;
+    }
+    .hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    .climb-cue {
+      position: sticky;
+      bottom: 0.85rem;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+      margin-top: -0.25rem;
+    }
+    .climb-cue span {
+      pointer-events: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(247, 242, 232, 0.92);
+      border: 1px solid var(--line);
+      padding: 0.4rem 0.75rem;
+      box-shadow: 0 6px 18px rgba(40, 30, 18, 0.08);
+    }
+    .climb-cue[hidden] { display: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="col-heads" aria-hidden="true">
+      <span class="life">Way of Life</span>
+      <span class="spine">Covering</span>
+      <span class="death">Way of Death</span>
+    </div>
+
+    <div class="climb" id="climb"></div>
+    <div class="climb-cue" id="climbCue" hidden><span>↑ Scroll up to climb</span></div>
+
+    <footer class="site-foot" id="foundation">
+      <h1>A Man's Climb - Proverbs</h1>
+      <p class="lede">
+        <strong>Way of Life</strong> versus <strong>Way of Death</strong>. Scroll up to climb.
+        Click a category for its verses.
+      </p>
+      <p class="frame">
+        Covering widens: parents → self → household → gate → nation → Christ.
+      </p>
+      <nav class="nav">
+        <a href="./index.html">The Way of Life</a>
+        <a href="./proverbs-1-9.html">Foundation</a>
+        <a href="./verses.html">Verses</a>
+        <a href="./themes.html">Themes</a>
+        <a href="./matrices.html">Matrices</a>
+        <a href="./reports/">Reports</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    const state = { data: null, verseMap: null };
+
+    const COVER = {
+      "two-paths": {
+        src: "./assets/covers/cover-two-paths.png",
+        label: "The fork",
+      },
+      child: {
+        src: "./assets/covers/cover-child.png",
+        label: "Parents’ covering",
+      },
+      "youth-man": {
+        src: "./assets/covers/cover-youth.png",
+        label: "His own covering",
+      },
+      "husband-household": {
+        src: "./assets/covers/cover-household.png",
+        label: "Household covering",
+      },
+      ruler: {
+        src: "./assets/covers/cover-ruler.png",
+        label: "Community covering",
+      },
+      king: {
+        src: "./assets/covers/cover-king.png",
+        label: "Temple · nation",
+      },
+      "reign-with-christ": {
+        src: "./assets/covers/cover-christ.png",
+        label: "Cosmos under Christ",
+      },
+    };
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    // Stages kept as presentation bands only — dial in via leaf categories
+    const PRESENTATION_ONLY_STAGES = new Set([
+      "two-paths",
+      "child",
+      "youth-man",
+      "husband-household",
+    ]);
+
+    function renderFlank(nodes, side, bandId) {
+      if (!nodes || !nodes.length) {
+        return `<div class="flank void" data-band="${escapeHtml(bandId)}">No telos — climb ends, or falls</div>`;
+      }
+
+      const parts = [];
+      let looseOpen = false;
+
+      function closeLoose() {
+        if (!looseOpen) return;
+        parts.push(`</div>`);
+        looseOpen = false;
+      }
+
+      function openLoose() {
+        if (looseOpen) return;
+        parts.push(`<div class="tiles">`);
+        looseOpen = true;
+      }
+
+      for (const n of nodes) {
+        if (n.children && n.children.length) {
+          closeLoose();
+          const role = n.role ? ` role-${escapeHtml(n.role)}` : "";
+          parts.push(`<div class="group${role}">`);
+          // Group labels are structural only — verses open from leaf tiles
+          parts.push(`<div class="group-title">${escapeHtml(n.name)}</div>`);
+          if (n.notes) parts.push(`<p class="group-note">${escapeHtml(n.notes)}</p>`);
+          parts.push(`<div class="tiles">`);
+          for (const c of n.children) {
+            parts.push(tileHtml(c, side, bandId));
+          }
+          parts.push(`</div></div>`);
+        } else {
+          openLoose();
+          parts.push(tileHtml(n, side, bandId));
+        }
+      }
+      closeLoose();
+
+      return `<div class="flank ${side}">${parts.join("")}</div>`;
+    }
+
+    function tileHtml(n, side, bandId) {
+      const href = `verses.html#${encodeURIComponent(n.id)}`;
+      const roleClass = n.role ? `role-${escapeHtml(n.role)}` : "";
+      const builds =
+        n.builds_on && n.builds_on.length
+          ? `<span class="t-builds">builds on: ${escapeHtml(n.builds_on.join(", "))}</span>`
+          : "";
+      const preview = n.notes ? truncate(n.notes, 140) : "";
+      const count = verseCountLabel(n.id);
+      return `<a class="tile ${roleClass}" href="${href}">
+          <span class="t-name">${escapeHtml(n.name)}</span>
+          ${preview ? `<span class="t-note">${escapeHtml(preview)}</span>` : ""}
+          ${builds}
+          <span class="t-go">${count} →</span>
+        </a>`;
+    }
+
+    function verseCountLabel(id) {
+      const meta = state.verseMap?.categories?.[id];
+      if (!meta) return "Open verses";
+      if (meta.source === "theme" && meta.passage_count != null) return `${meta.passage_count} verses`;
+      if (meta.source === "matrix" && meta.passage_count != null) return `${meta.passage_count} verses`;
+      if (meta.source === "multi") return "Verse sources";
+      if (meta.source === "group" || meta.source === "stage") return "All verses in band";
+      if (meta.source === "none") return "Related themes";
+      return "Open verses";
+    }
+
+    function truncate(s, n) {
+      const t = String(s).replace(/\s+/g, " ").trim();
+      return t.length > n ? t.slice(0, n - 1) + "…" : t;
+    }
+
+    function render() {
+      const stages = [...state.data.mountain.stages].sort((a, b) => a.order - b.order);
+      const climb = document.getElementById("climb");
+      climb.innerHTML = stages
+        .map((st) => {
+          const peak = st.extension ? " peak" : "";
+          const foundation = st.id === "two-paths" ? " foundation-paths" : "";
+          const cover = COVER[st.id];
+          const coverHtml = cover
+            ? `<img class="cover" src="${escapeHtml(cover.src)}" alt="" width="148" height="148" loading="lazy" />
+               <p class="cover-label">${escapeHtml(cover.label)}</p>`
+            : "";
+          const presentationOnly = PRESENTATION_ONLY_STAGES.has(st.id);
+          const axisInner = `
+              ${coverHtml}
+              <p class="name">${escapeHtml(st.name)}</p>
+              <p class="short">${escapeHtml(st.short || "")}</p>
+              ${
+                presentationOnly
+                  ? `<p class="axis-hint">Choose a category →</p>`
+                  : `<p class="t-go">${verseCountLabel(st.id)} →</p>`
+              }
+          `;
+          const axis = presentationOnly
+            ? `<div class="axis${peak} axis-static" aria-hidden="false">
+              ${axisInner}
+            </div>`
+            : `<a class="axis${peak} axis-btn" href="verses.html#${encodeURIComponent(st.id)}">
+              ${axisInner}
+            </a>`;
+          return `<section class="band${foundation}" aria-label="${escapeHtml(st.name)}">
+            ${renderFlank(st.life, "life", st.id)}
+            ${axis}
+            ${renderFlank(st.death, "death", st.id)}
+          </section>`;
+        })
+        .join("");
+
+      startAtFoundation();
+    }
+
+    function startAtFoundation() {
+      // Open at the bottom (title + Two paths). Scroll up to climb.
+      history.scrollRestoration = "manual";
+      const go = () => {
+        const max = Math.max(
+          0,
+          document.documentElement.scrollHeight - window.innerHeight
+        );
+        window.scrollTo(0, max);
+        updateClimbCue();
+      };
+      requestAnimationFrame(() => requestAnimationFrame(go));
+      setTimeout(go, 50);
+      setTimeout(go, 250);
+      // After cover images load, height can change — re-pin to bottom
+      document.querySelectorAll("img.cover").forEach((img) => {
+        if (!img.complete) img.addEventListener("load", go, { once: true });
+      });
+      window.addEventListener("load", go, { once: true });
+    }
+
+    function updateClimbCue() {
+      const cue = document.getElementById("climbCue");
+      if (!cue) return;
+      const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      const fromBottom = max - window.scrollY;
+      cue.hidden = fromBottom > 320;
+    }
+
+    window.addEventListener("scroll", updateClimbCue, { passive: true });
+
+    Promise.all([
+      fetch("./proposals/theme-ontology/hierarchy-map-data.json").then((r) => r.json()),
+      fetch("./data/category-verse-map.json").then((r) => r.json()),
+    ])
+      .then(([data, verseMap]) => {
+        state.data = data;
+        state.verseMap = verseMap;
+        render();
+      })
+      .catch((err) => {
+        document.getElementById("climb").innerHTML =
+          `<p style="padding:1rem;color:#5a5348">Could not load: ${escapeHtml(err.message)}</p>`;
+      });
+  </script>
+</body>
+</html>

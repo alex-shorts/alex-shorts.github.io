@@ -1,0 +1,184 @@
+{
+  "id": "shema-parallels",
+  "title": "Parallels with the Shema",
+  "slug": "shema-parallels",
+  "polish": "mostly-polished",
+  "pattern": "theme-matrix",
+  "miro": {
+    "board": "Proverbs 10-31",
+    "board_url": "https://miro.com/app/board/uXjVOLZ3rpc=/",
+    "frame": "Shema Parallels",
+    "frame_url": "https://miro.com/app/board/uXjVOLZ3rpc=/?moveToWidget=3458764520062753887",
+    "frame_id": "3458764520062753887",
+    "also_on": [
+      {
+        "board": "Proverbs 1-9",
+        "board_url": "https://miro.com/app/board/o9J_kvdzkig=/",
+        "frame_url": "https://miro.com/app/board/o9J_kvdzkig=/?moveToWidget=3074457358152389829",
+        "note": "Duplicate copy of the same Shema Parallels layout."
+      }
+    ]
+  },
+  "aim": "Map Deuteronomy 6:4–9 (the Shema) into Hear / Believe / Do / Store / Teach rows, with Proverbs (and James) parallels.",
+  "layout": {
+    "axis": "rows",
+    "rows": [
+      "Hear",
+      "Believe in God",
+      "Do",
+      "Store / Treasure",
+      "Teach - Words"
+    ],
+    "columns": [
+      "Shema (Deut 6)",
+      "Proverbs parallels"
+    ],
+    "footer": "James 1:19–27 spans Hear / Do / Speak; side notes Knowledge / Faith / Wisdom."
+  },
+  "rows": [
+    {
+      "id": "hear",
+      "name": "Hear",
+      "shema": {
+        "ref": "Deuteronomy 6:4",
+        "text": "Hear, O Israel"
+      },
+      "parallels": [
+        {
+          "ref": "Proverbs 4:1-2",
+          "text": "1 Listen, children, to a father’s instruction;\n pay attention, in order to gain insight;\n2 for I am giving you good advice;\n so don’t abandon my teaching.",
+          "emphasized_phrases": ["Listen", "pay attention"]
+        },
+        {
+          "ref": "Proverbs 4:20-22",
+          "text": "20 My son, pay attention to what I am saying;\n incline your ear to my words.\n21 Don’t let them out of your sight,\n keep them deep in your heart;\n22 for they are life to those who find them\n and health to their whole being.",
+          "emphasized_phrases": ["pay attention", "incline your ear"]
+        },
+        {
+          "ref": "Proverbs 8:1-11, 32-36",
+          "text": null,
+          "note": "Reference-only stub on the board — no verse body pasted yet."
+        }
+      ]
+    },
+    {
+      "id": "believe-in-god",
+      "name": "Believe in God",
+      "shema": {
+        "ref": "Deuteronomy 6:4",
+        "text": "The LORD our God, the LORD is one."
+      },
+      "parallels": [
+        {
+          "ref": "Proverbs 1:7",
+          "text": "The fear of Adonai is the beginning of knowledge,\nbut fools despise wisdom and discipline.",
+          "emphasized_phrases": ["fear of Adonai"]
+        }
+      ]
+    },
+    {
+      "id": "do",
+      "name": "Do",
+      "shema": {
+        "ref": "Deuteronomy 6:5",
+        "text": "You shall love the the LORD your God with all your heart and with all your soul and with all your might."
+      },
+      "parallels": [
+        {
+          "ref": "Proverbs 1:8-9",
+          "text": "8 My son, heed the discipline of your father,\n and do not abandon the teaching of your mother;\n9 they will be a garland to grace your head,\n a medal of honor for your neck.",
+          "emphasized_phrases": ["heed"]
+        },
+        {
+          "ref": "Proverbs 6:20-23",
+          "text": "20 My son, obey your father’s command,\n and don’t abandon your mother’s teaching.\n21 Bind them always on your heart,\n tie them around your neck.\n22 When you walk, they will lead you;\n when you lie down, they will watch over you;\n and when you wake up, they will talk with you.\n23 For the mitzvah is a lamp, Torah is light,\n and reproofs that discipline are the way to life.",
+          "emphasized_phrases": ["obey"]
+        }
+      ]
+    },
+    {
+      "id": "store-treasure",
+      "name": "Store / Treasure",
+      "shema": {
+        "ref": "Deuteronomy 6:6",
+        "text": "And these words that I command you today shall be on your heart"
+      },
+      "parallels": [
+        {
+          "ref": "Proverbs 3:1-2",
+          "text": "1 My son, don’t forget my teaching,\n keep my commands in your heart;\n2 for they will add to you many days,\n years of life and peace.",
+          "emphasized_phrases": ["don’t forget"]
+        },
+        {
+          "ref": "Proverbs 7:1-5",
+          "text": "1 My son, keep my words,\n store up my commands with you.\n2 Obey my commands, and live;\n guard my teaching like the pupil of your eye.\n3 Bind them on your fingers;\n write them on the tablet of your heart.\n4 Say to wisdom, “You are my sister”;\n call understanding your kinswoman;\n5 so that they can keep you from unknown women,\n from loose women with their seductive talk.",
+          "emphasized_phrases": ["store up my commands"]
+        }
+      ]
+    },
+    {
+      "id": "teach-words",
+      "name": "Teach - Words",
+      "shema": {
+        "ref": "Deuteronomy 6:7",
+        "text": "You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise."
+      },
+      "parallels": [
+        {
+          "ref": "Proverbs 16:23-24",
+          "text": "23 The wise man’s heart teaches his mouth,\n    and to his lips it adds learning.\n24 Pleasant words are like a honeycomb,\n    sweet to the taste and healing for the body."
+        },
+        {
+          "ref": "Proverbs 10:31-32",
+          "text": "31 The mouth of the righteous brings forth wisdom,\n    but the perverse tongue will be cut off.\n32 The lips of the righteous know what is wanted,\n    but the mouth of the wicked [knows] deceit."
+        },
+        {
+          "ref": "Ecclesiastes 9:17",
+          "text": "17 A wise man speaking quietly is more worth heeding\n than the shouts of a ruler commanding fools."
+        },
+        {
+          "ref": "Proverbs 15:7",
+          "text": "The lips of the wise spread knowledge;\nnot so the hearts of fools."
+        },
+        {
+          "ref": "Proverbs 20:15",
+          "text": "15 A person may have gold and a wealth of pearls,\n    but lips informed by knowledge are a precious jewel."
+        },
+        {
+          "ref": "Proverbs 10:20-21",
+          "text": "20 The tongue of the righteous is like pure silver,\n    but the mind of the wicked is worth little.\n21 The lips of the righteous feed many,\n    but fools die for lack of sense."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "ref": "James 1:19-27",
+      "role": "cross-book synthesis under Hear / Do / Speak",
+      "text": "19 Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; 20 for the anger of man does not produce the righteousness of God. 21 Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls.\n22 But be doers of the word, and not hearers only, deceiving yourselves. 23 For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. 24 For he looks at himself and goes away and at once forgets what he was like. 25 But the one who looks into the perfect law, the law of liberty, and perseveres, being no hearer who forgets but a doer who acts, he will be blessed in his doing.\n26 If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. 27 Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.",
+      "emphasized_phrases": [
+        "quick to hear",
+        "receive with meekness the implanted word",
+        "doers of the word, and not hearers only",
+        "but a doer who acts, he will be blessed in his doing.",
+        "tongue"
+      ],
+      "side_labels": ["Hear", "Do", "Speak"]
+    }
+  ],
+  "placeholder_notes": [
+    {
+      "text": "Knowledge / Faith / Wisdom",
+      "note": "Sparse side list under James — looks unfinished."
+    },
+    {
+      "ref": "Proverbs 8:1-11, 32-36",
+      "note": "Hear-row stub with no passage body."
+    }
+  ],
+  "notes": [
+    "Duplicate of this frame also lives on Proverbs 1–9 and the Copy board.",
+    "Structure is a clear row matrix (Shema phrase → Proverbs parallels), with James as a footer synthesis.",
+    "Less polished than Speech, Lips & Words: one stub cell and skeletal Knowledge/Faith/Wisdom notes."
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "id": "speech-lips-words",
+  "title": "Speech, Lips & Words",
+  "slug": "speech-lips-words",
+  "polish": "polished",
+  "pattern": "theme-matrix",
+  "miro": {
+    "board": "Proverbs 10-31",
+    "board_url": "https://miro.com/app/board/uXjVOLZ3rpc=/",
+    "frame": "Lips",
+    "frame_url": "https://miro.com/app/board/uXjVOLZ3rpc=/?moveToWidget=3458764519434534078",
+    "frame_id": "3458764519434534078"
+  },
+  "aim": "Categorize Proverbs 10–31 (and related) passages about speech into four thematic columns, with cross-book parallels below.",
+  "layout": {
+    "columns": [
+      "Listen, Quiet & Control",
+      "Wise Words",
+      "Power / Fruit",
+      "Wicked / Evil"
+    ],
+    "proverbs_section_label": "Proverbs",
+    "related_section_note": "Cross-book passages sit below ~y=950 (Ecclesiastes, James, Psalms).",
+    "divider_y_approx": 950
+  },
+  "columns": [
+    {
+      "id": "listen-quiet-control",
+      "name": "Listen, Quiet & Control",
+      "color": "#8fd14f",
+      "proverbs": [
+        {
+          "ref": "Proverbs 21:23",
+          "book": "Proverbs",
+          "chapter": 21,
+          "text": "23 Whoever guards his mouth and tongue\nkeeps himself out of trouble.",
+          "emphasized": false,
+          "miro_id": "3458764519434534033",
+          "position": {
+            "x": 400.6,
+            "y": 268.0
+          }
+        },
+        {
+          "ref": "Proverbs 27:2",
+          "book": "Proverbs",
+          "chapter": 27,
+          "text": "2 Let someone else praise you, not your own mouth,\n    a stranger and not your own lips.",
+          "emphasized": false,
+          "miro_id": "3458764519434534035",
+          "position": {
+            "x": 400.6,
+            "y": 324.0
+          }
+        },
+        {
+          "ref": "Proverbs 22:17-18",
+          "book": "Proverbs",
+          "chapter": 22,
+          "text": "17 Pay attention, and listen to the words of the wise;\n apply your heart to my knowledge;\n18 for it is pleasant to keep them deep within you;\n    have all of them ready on your lips.",
+          "emphasized": false,
+          "miro_id": "3458764519439625956",
+          "position": {
+            "x": 400.6,
+            "y": 396.0
+          }
+        },
+        {
+          "ref": "Proverbs 10:13-14",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "13 On the lips of the intelligent is found wisdom,\n but a stick is in store for the back of a fool.\n14 Wise people hide their knowledge,\n    but when a fool speaks, ruin is imminent.",
+          "emphasized": false,
+          "miro_id": "3458764519439626074",
+          "position": {
+            "x": 400.6,
+            "y": 488.4
+          }
+        },
+        {
+          "ref": "Proverbs 29:20",
+          "book": "Proverbs",
+          "chapter": 29,
+          "text": "20 Do you see someone too anxious to speak?\nThere is more hope for a fool than for him.",
+          "emphasized": false,
+          "miro_id": "3458764519439386847",
+          "position": {
+            "x": 411.2,
+            "y": 564.4
+          }
+        },
+        {
+          "ref": "Proverbs 29:11",
+          "book": "Proverbs",
+          "chapter": 29,
+          "text": "11 A fool gives vent to all his feelings,\nbut the wise, thinking of afterwards, stills them.",
+          "emphasized": true,
+          "miro_id": "3458764519439386716",
+          "position": {
+            "x": 416.8,
+            "y": 620.4
+          }
+        },
+        {
+          "ref": "Proverbs 10:18-19",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "18 He who covers up hate has lips that lie,\n and anyone who slanders is a fool.\n19 When words are many, sin is not lacking;\n    so he who controls his speech is wise.",
+          "emphasized": false,
+          "miro_id": "3458764519439626283",
+          "position": {
+            "x": 414.2,
+            "y": 702.8
+          }
+        },
+        {
+          "ref": "Proverbs 12:22-23",
+          "book": "Proverbs",
+          "chapter": 12,
+          "text": "22 Lying lips are an abomination to Adonai,\n but those who deal faithfully are his delight.\n23 A cautious person conceals knowledge,\n    but the heart of a fool blurts out folly.",
+          "emphasized": false,
+          "miro_id": "3458764519439626683",
+          "position": {
+            "x": 414.2,
+            "y": 798.8
+          }
+        },
+        {
+          "ref": "Proverbs 17:27",
+          "book": "Proverbs",
+          "chapter": 17,
+          "text": "27 A knowledgeable person controls his tongue;\n    a discerning person controls his temper.",
+          "emphasized": false,
+          "miro_id": "3458764520062576765",
+          "position": {
+            "x": 414.2,
+            "y": 868.7
+          }
+        }
+      ],
+      "related": [
+        {
+          "ref": "Ecclesiastes 9:17",
+          "book": "Ecclesiastes",
+          "chapter": 9,
+          "text": "A wise man speaking quietly is more worth heeding\n than the shouts of a ruler commanding fools.",
+          "emphasized": false,
+          "miro_id": "3458764519434534063",
+          "position": {
+            "x": 399.6,
+            "y": 1012.8
+          }
+        },
+        {
+          "ref": "James 1:19",
+          "book": "James",
+          "chapter": 1,
+          "text": "Therefore my dear brothers, let every person be quick to listen but slow to speak, slow to get angry",
+          "emphasized": false,
+          "miro_id": "3458764519434534044",
+          "position": {
+            "x": 382.7,
+            "y": 1108.8
+          }
+        },
+        {
+          "ref": "Psalms 141:3-4",
+          "book": "Psalms",
+          "chapter": 141,
+          "text": "3 Set a guard, Adonai, over my mouth;\n keep watch at the door of my lips.\n4 Don’t let my heart turn to anything evil\n or allow me to act wickedly\n with men who are evildoers;\n keep me from eating their delicacies.",
+          "emphasized": false,
+          "miro_id": "3458764519434534059",
+          "position": {
+            "x": 406.7,
+            "y": 1254.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "wise-words",
+      "name": "Wise Words",
+      "color": "#2d9bf0",
+      "proverbs": [
+        {
+          "ref": "Proverbs 20:15",
+          "book": "Proverbs",
+          "chapter": 20,
+          "text": "15 A person may have gold and a wealth of pearls,\n but lips informed by knowledge are a precious jewel.",
+          "emphasized": false,
+          "miro_id": "3458764519439799499",
+          "position": {
+            "x": 826.6,
+            "y": 268.0
+          }
+        },
+        {
+          "ref": "Proverbs 22:11",
+          "book": "Proverbs",
+          "chapter": 22,
+          "text": "11 He who loves the pure-hearted and is gracious in speech\nwill have the king as his friend.",
+          "emphasized": false,
+          "miro_id": "3458764519439799500",
+          "position": {
+            "x": 845.9,
+            "y": 324.0
+          }
+        },
+        {
+          "ref": "Proverbs 29:9",
+          "book": "Proverbs",
+          "chapter": 29,
+          "text": "9 When a wise man argues with a foolish one,\nhe meets anger and ridicule without relief.",
+          "emphasized": false,
+          "miro_id": "3458764519439933082",
+          "position": {
+            "x": 826.6,
+            "y": 379.0
+          }
+        },
+        {
+          "ref": "Proverbs 10:10",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "10 He who winks his eye [instead of rebuking] causes pain,\nyet a babbling fool will have trouble.",
+          "emphasized": false,
+          "miro_id": "3458764519439933888",
+          "position": {
+            "x": 845.9,
+            "y": 434.0
+          }
+        },
+        {
+          "ref": "Proverbs 10:13-14",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "13 On the lips of the intelligent is found wisdom,\n but a stick is in store for the back of a fool.\n14 Wise people hide their knowledge,\n    but when a fool speaks, ruin is imminent.",
+          "emphasized": false,
+          "miro_id": "3458764519439968046",
+          "position": {
+            "x": 826.6,
+            "y": 518.6
+          }
+        },
+        {
+          "ref": "Proverbs 10:31-32",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "31 The mouth of the righteous brings forth wisdom,\n but the perverse tongue will be cut off.\n32 The lips of the righteous know what is wanted,\n    but the mouth of the wicked [knows] deceit.",
+          "emphasized": false,
+          "miro_id": "3458764519439968398",
+          "position": {
+            "x": 826.6,
+            "y": 614.6
+          }
+        },
+        {
+          "ref": "Proverbs 15:7",
+          "book": "Proverbs",
+          "chapter": 15,
+          "text": "7 The lips of the wise spread knowledge;\nnot so the hearts of fools.",
+          "emphasized": false,
+          "miro_id": "3458764519439968496",
+          "position": {
+            "x": 826.6,
+            "y": 690.6
+          }
+        },
+        {
+          "ref": "Proverbs 13:14",
+          "book": "Proverbs",
+          "chapter": 13,
+          "text": "13:14 The teaching of a wise man is a fountain of life,\n    enabling one to avoid deadly traps.",
+          "emphasized": true,
+          "miro_id": "3458764520062401108",
+          "position": {
+            "x": 810.9,
+            "y": 770.8
+          }
+        }
+      ],
+      "related": [
+        {
+          "ref": "Ecclesiastes 10:12-15",
+          "book": "Ecclesiastes",
+          "chapter": 10,
+          "text": "12 The words spoken by the wise bring them favor,\n but the lips of a fool swallow him up.\n13 What he says starts with foolishness\n and ends with wicked madness.\n14 A fool keeps talking and talking,\n yet no one knows what the future will bring —\n can anyone tell a person\n what will happen after he’s gone?\n15 The efforts of a fool wear him out;\n he doesn’t even know the way to town!",
+          "emphasized": false,
+          "miro_id": "3458764519434534029",
+          "position": {
+            "x": 826.2,
+            "y": 1102.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "power-fruit",
+      "name": "Power / Fruit",
+      "color": "#652cb3",
+      "proverbs": [
+        {
+          "ref": "Proverbs 18:4",
+          "book": "Proverbs",
+          "chapter": 18,
+          "text": "4 The words of a man’s mouth are deep water,\n    a gushing torrent, a fountain of wisdom.",
+          "emphasized": false,
+          "miro_id": "3458764520062575943",
+          "position": {
+            "x": 1283.1,
+            "y": 238.4
+          }
+        },
+        {
+          "ref": "Proverbs 11:30",
+          "book": "Proverbs",
+          "chapter": 11,
+          "text": "30 The fruit of the righteous is a tree of life, \nand he who is wise wins souls",
+          "emphasized": false,
+          "miro_id": "3458764520062576003",
+          "position": {
+            "x": 1283.1,
+            "y": 283.4
+          }
+        },
+        {
+          "ref": "Proverbs 25:15",
+          "book": "Proverbs",
+          "chapter": 25,
+          "text": "15 With patience a ruler may be won over,\nand a gentle tongue can break bones.",
+          "emphasized": false,
+          "miro_id": "3458764519440605050",
+          "position": {
+            "x": 1283.1,
+            "y": 338.6
+          }
+        },
+        {
+          "ref": "Proverbs 18:20-21",
+          "book": "Proverbs",
+          "chapter": 18,
+          "text": "20 A person’s belly will be filled with the fruit of his mouth;\n with what his lips produce he will be filled.\n21 The tongue has power over life and death;\n    those who indulge it must eat its fruit.",
+          "emphasized": false,
+          "miro_id": "3458764519440605051",
+          "position": {
+            "x": 1302.4,
+            "y": 414.6
+          }
+        },
+        {
+          "ref": "Proverbs 14:3",
+          "book": "Proverbs",
+          "chapter": 14,
+          "text": "3 From the mouth of a fool sprouts pride,\nbut the lips of the wise protect them.",
+          "emphasized": true,
+          "miro_id": "3458764519440605281",
+          "position": {
+            "x": 1302.4,
+            "y": 490.6
+          }
+        },
+        {
+          "ref": "Proverbs 16:23-24",
+          "book": "Proverbs",
+          "chapter": 16,
+          "text": "23 The wise man’s heart teaches his mouth,\n and to his lips it adds learning.\n24 Pleasant words are like a honeycomb,\n    sweet to the taste and healing for the body.",
+          "emphasized": false,
+          "miro_id": "3458764519440605721",
+          "position": {
+            "x": 1302.4,
+            "y": 566.6
+          }
+        },
+        {
+          "ref": "Proverbs 10:20-21",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "20 The tongue of the righteous is like pure silver,\n but the mind of the wicked is worth little.\n21 The lips of the righteous feed many,\n    but fools die for lack of sense.",
+          "emphasized": true,
+          "miro_id": "3458764519440759055",
+          "position": {
+            "x": 1302.4,
+            "y": 662.6
+          }
+        },
+        {
+          "ref": "Proverbs 22:17-18",
+          "book": "Proverbs",
+          "chapter": 22,
+          "text": "17 Pay attention, and listen to the words of the wise;\n apply your heart to my knowledge;\n18 for it is pleasant to keep them deep within you;\n    have all of them ready on your lips.",
+          "emphasized": false,
+          "miro_id": "3458764519440759453",
+          "position": {
+            "x": 1302.4,
+            "y": 758.6
+          }
+        },
+        {
+          "ref": "Proverbs 17:7",
+          "book": "Proverbs",
+          "chapter": 17,
+          "text": "7 Fine speech is unbecoming to a boor,\nand even less lying lips to a leader.",
+          "emphasized": false,
+          "miro_id": "3458764519440759572",
+          "position": {
+            "x": 1302.4,
+            "y": 834.6
+          }
+        },
+        {
+          "ref": "Proverbs 10:21",
+          "book": "Proverbs",
+          "chapter": 10,
+          "text": "21 The lips of the righteous feed many,\nbut fools die for lack of sense.",
+          "emphasized": false,
+          "miro_id": "3458764520062089844",
+          "position": {
+            "x": 1302.4,
+            "y": 890.6
+          }
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "wicked-evil",
+      "name": "Wicked / Evil",
+      "color": "#bb0000",
+      "proverbs": [
+        {
+          "ref": "Proverbs 17:4",
+          "book": "Proverbs",
+          "chapter": 17,
+          "text": "4 An evildoer heeds wicked lips;\na liar listens to destructive talk.",
+          "emphasized": false,
+          "miro_id": "3458764519440984113",
+          "position": {
+            "x": 1728.1,
+            "y": 265.1
+          }
+        },
+        {
+          "ref": "Proverbs 24:1-2",
+          "book": "Proverbs",
+          "chapter": 24,
+          "text": "1 Don’t be envious of evil people,\n and don’t desire to be with them.\n2 For their minds are occupied with violence,\n    and their lips speak of making trouble.",
+          "emphasized": false,
+          "miro_id": "3458764519440984114",
+          "position": {
+            "x": 1747.4,
+            "y": 341.1
+          }
+        },
+        {
+          "ref": "Proverbs 16:27",
+          "book": "Proverbs",
+          "chapter": 16,
+          "text": "27 A worthless person digs up evil [gossip] —\nit is like scorching fire on his lips.",
+          "emphasized": false,
+          "miro_id": "3458764519440984316",
+          "position": {
+            "x": 1747.4,
+            "y": 417.1
+          }
+        },
+        {
+          "ref": "Proverbs 24:28",
+          "book": "Proverbs",
+          "chapter": 24,
+          "text": "Don’t be a witness against your neighbor for no reason —\nwould you use your lips to deceive?",
+          "emphasized": false,
+          "miro_id": "3458764519440984454",
+          "position": {
+            "x": 1699.4,
+            "y": 497.1
+          },
+          "ref_note": "Board shows chapter label 24: only; verse number inferred as 24:28 from text.",
+          "ref_inferred": true
+        }
+      ],
+      "related": []
+    }
+  ],
+  "duplicates_across_columns": [
+    {
+      "ref": "Proverbs 10:13-14",
+      "columns": [
+        "listen-quiet-control",
+        "wise-words"
+      ]
+    },
+    {
+      "ref": "Proverbs 22:17-18",
+      "columns": [
+        "listen-quiet-control",
+        "power-fruit"
+      ]
+    }
+  ],
+  "notes": [
+    "Verse text follows the Complete Jewish Bible style used on the Miro board (Adonai).",
+    "Some verses appear in multiple columns intentionally (e.g. 10:13-14 in Listen and Wise Words; 22:17-18 in Listen and Power).",
+    "Proverbs 24 false-witness line has chapter label 24: but no verse number on the board (likely 24:28).",
+    "Emphasized (bold) verses on the board are marked emphasized=true."
+  ]
+}

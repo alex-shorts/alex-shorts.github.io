@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "translation_note": "Complete Jewish Bible (CJB)",
+  "themes_file": "data/themes.json",
+  "categories": {
+    "way-of-life": {
+      "source": "theme",
+      "theme_id": "way-of-life",
+      "theme_name": "Way of Life",
+      "label": "Way of Life",
+      "passage_count": 42,
+      "note": null
+    },
+    "way-of-death": {
+      "source": "theme",
+      "theme_id": "way-of-death",
+      "theme_name": "Way of Death",
+      "label": "Way of Death",
+      "passage_count": 3,
+      "note": null
+    },
+    "person-wise-righteous": {
+      "source": "theme",
+      "theme_id": "the-wise-righteous",
+      "theme_name": "The Wise/Righteous",
+      "label": "The Wise/Righteous",
+      "passage_count": 48,
+      "note": null
+    },
+    "person-fool-wicked": {
+      "source": "theme",
+      "theme_id": "the-fool-wicked",
+      "theme_name": "The Fool / Wicked",
+      "label": "The Fool / Wicked",
+      "passage_count": 42,
+      "note": null
+    },
+    "ruler-king": {
+      "source": "theme",
+      "theme_id": "ruler-king",
+      "theme_name": "Ruler / King",
+      "label": "Ruler / King",
+      "passage_count": 34,
+      "note": null
+    },
+    "justice": {
+      "source": "theme",
+      "theme_id": "justice",
+      "theme_name": "Justice",
+      "label": "Justice",
+      "passage_count": 65,
+      "note": null
+    },
+    "discipline": {
+      "source": "theme",
+      "theme_id": "discipline",
+      "theme_name": "Discipline",
+      "label": "Discipline",
+      "passage_count": 30,
+      "note": null
+    },
+    "formation": {
+      "source": "theme",
+      "theme_id": "wisdom-knowledge-discipline",
+      "theme_name": "Wisdom, Knowledge & Discipline",
+      "label": "Wisdom, Knowledge & Discipline",
+      "passage_count": 56,
+      "note": null
+    },
+    "wisdom-knowledge": {
+      "source": "theme",
+      "theme_id": "wisdom-knowledge-discipline",
+      "theme_name": "Wisdom, Knowledge & Discipline",
+      "label": "Wisdom, Knowledge & Discipline",
+      "passage_count": 56,
+      "note": null
+    },
+    "fear-of-adonai": {
+      "source": "theme",
+      "theme_id": "wisdom-knowledge-discipline",
+      "theme_name": "Wisdom, Knowledge & Discipline",
+      "label": "Wisdom, Knowledge & Discipline",
+      "passage_count": 56,
+      "note": null
+    },
+    "self-control": {
+      "source": "theme",
+      "theme_id": "discipline",
+      "theme_name": "Discipline",
+      "label": "Discipline",
+      "passage_count": 30,
+      "note": null
+    },
+    "parents-children": {
+      "source": "theme",
+      "theme_id": "discipline",
+      "theme_name": "Discipline",
+      "label": "Discipline",
+      "passage_count": 30,
+      "note": null
+    },
+    "diligence": {
+      "source": "theme",
+      "theme_id": "diligent-lazy",
+      "theme_name": "Diligent & Lazy",
+      "label": "Diligent & Lazy",
+      "passage_count": 41,
+      "note": null
+    },
+    "laziness": {
+      "source": "theme",
+      "theme_id": "diligent-lazy",
+      "theme_name": "Diligent & Lazy",
+      "label": "Diligent & Lazy",
+      "passage_count": 41,
+      "note": null
+    },
+    "skill-serves-kings": {
+      "source": "theme",
+      "theme_id": "diligent-lazy",
+      "theme_name": "Diligent & Lazy",
+      "label": "Diligent & Lazy",
+      "passage_count": 41,
+      "note": null
+    },
+    "wealth": {
+      "source": "theme",
+      "theme_id": "wealth",
+      "theme_name": "Wealth",
+      "label": "Wealth",
+      "passage_count": 47,
+      "note": null
+    },
+    "anger": {
+      "source": "theme",
+      "theme_id": "anger",
+      "theme_name": "Anger",
+      "label": "Anger",
+      "passage_count": 19,
+      "note": null
+    },
+    "patience": {
+      "source": "theme",
+      "theme_id": "anger",
+      "theme_name": "Anger",
+      "label": "Anger",
+      "passage_count": 19,
+      "note": null
+    },
+    "humility": {
+      "source": "theme",
+      "theme_id": "humility-pride",
+      "theme_name": "Humility & Pride",
+      "label": "Humility & Pride",
+      "passage_count": 25,
+      "note": null
+    },
+    "pride": {
+      "source": "theme",
+      "theme_id": "humility-pride",
+      "theme_name": "Humility & Pride",
+      "label": "Humility & Pride",
+      "passage_count": 25,
+      "note": null
+    },
+    "human-nature": {
+      "source": "theme",
+      "theme_id": "human-nature",
+      "theme_name": "Human Nature",
+      "label": "Human Nature",
+      "passage_count": 38,
+      "note": null
+    },
+    "household": {
+      "source": "theme",
+      "theme_id": "man-and-woman-family-and-friends",
+      "theme_name": "Man and Woman Family and Friends",
+      "label": "Man and Woman Family and Friends",
+      "passage_count": 26,
+      "note": null
+    },
+    "marriage": {
+      "source": "theme",
+      "theme_id": "man-and-woman-family-and-friends",
+      "theme_name": "Man and Woman Family and Friends",
+      "label": "Man and Woman Family and Friends",
+      "passage_count": 26,
+      "note": null
+    },
+    "friendship": {
+      "source": "theme",
+      "theme_id": "man-and-woman-family-and-friends",
+      "theme_name": "Man and Woman Family and Friends",
+      "label": "Man and Woman Family and Friends",
+      "passage_count": 26,
+      "note": null
+    },
+    "womans-character": {
+      "source": "theme",
+      "theme_id": "man-and-woman-family-and-friends",
+      "theme_name": "Man and Woman Family and Friends",
+      "label": "Man and Woman Family and Friends",
+      "passage_count": 26,
+      "note": null
+    },
+    "wise-woman-builds": {
+      "source": "theme",
+      "theme_id": "man-and-woman-family-and-friends",
+      "theme_name": "Man and Woman Family and Friends",
+      "label": "Man and Woman Family and Friends",
+      "passage_count": 26,
+      "note": null
+    },
+    "speech": {
+      "source": "theme",
+      "theme_id": "speech",
+      "theme_name": "Speech",
+      "label": "Speech",
+      "passage_count": 76,
+      "note": null
+    },
+    "vocation-rule": {
+      "source": "theme",
+      "theme_id": "ruler-king",
+      "theme_name": "Ruler / King",
+      "label": "Ruler / King",
+      "passage_count": 34,
+      "note": null
+    },
+    "speech-listen-control": {
+      "source": "matrix",
+      "matrix_id": "speech-lips-words",
+      "matrix_file": "data/matrices/speech-lips-words.json",
+      "column_id": "listen-quiet-control",
+      "label": "Listen, Quiet & Control",
+      "passage_count": 12
+    },
+    "speech-wise-words": {
+      "source": "matrix",
+      "matrix_id": "speech-lips-words",
+      "matrix_file": "data/matrices/speech-lips-words.json",
+      "column_id": "wise-words",
+      "label": "Wise Words",
+      "passage_count": 9
+    },
+    "speech-power-fruit": {
+      "source": "matrix",
+      "matrix_id": "speech-lips-words",
+      "matrix_file": "data/matrices/speech-lips-words.json",
+      "column_id": "power-fruit",
+      "label": "Power / Fruit",
+      "passage_count": 10
+    },
+    "speech-wicked": {
+      "source": "matrix",
+      "matrix_id": "speech-lips-words",
+      "matrix_file": "data/matrices/speech-lips-words.json",
+      "column_id": "wicked-evil",
+      "label": "Wicked / Evil",
+      "passage_count": 4
+    },
+    "strength-for-others": {
+      "source": "multi",
+      "label": "Strength for others",
+      "note": "Spine theme — verses gathered from Life, Justice, and Wise/Righteous columns.",
+      "sources": [
+        {
+          "source": "theme",
+          "theme_id": "way-of-life",
+          "label": "Way of Life"
+        },
+        {
+          "source": "theme",
+          "theme_id": "justice",
+          "label": "Justice"
+        },
+        {
+          "source": "theme",
+          "theme_id": "the-wise-righteous",
+          "label": "The Wise/Righteous"
+        }
+      ]
+    },
+    "selfish-strength": {
+      "source": "multi",
+      "label": "Selfish strength",
+      "note": "Death-tilt of strength — Fool/Wicked and Way of Death columns.",
+      "sources": [
+        {
+          "source": "theme",
+          "theme_id": "the-fool-wicked",
+          "label": "The Fool / Wicked"
+        },
+        {
+          "source": "theme",
+          "theme_id": "way-of-death",
+          "label": "Way of Death"
+        }
+      ]
+    },
+    "trials-suffering": {
+      "source": "theme",
+      "theme_id": "discipline",
+      "label": "Trials & suffering (via Discipline)",
+      "note": "Father’s training texts live primarily in the Discipline column (incl. Heb 12 cross-refs where present)."
+    },
+    "reign-with-christ": {
+      "source": "stage",
+      "label": "Reign with Christ",
+      "note": "Theological extension: Proverbs apprentices a man toward sitting with Christ. Faithful over little → faithful over much. Trials were the elevator.",
+      "child_ids": [
+        "reign-with-christ",
+        "speech-power-fruit",
+        "trials-suffering"
+      ]
+    },
+    "blessing-radius": {
+      "source": "multi",
+      "label": "Blessing radius",
+      "note": "Maturity as expanded stewardship — gathered from Life / Justice / Wise.",
+      "sources": [
+        {
+          "source": "theme",
+          "theme_id": "way-of-life",
+          "label": "Way of Life"
+        },
+        {
+          "source": "theme",
+          "theme_id": "justice",
+          "label": "Justice"
+        }
+      ]
+    },
+    "ruler": {
+      "source": "stage",
+      "label": "Ruler (city / gate)",
+      "note": "Justice rises here. Counsel is speech matured for many. Skill that serves kings is diligence recognized. Church elder mapping is open (application of gate).",
+      "child_ids": [
+        "justice",
+        "speech-power-fruit",
+        "skill-serves-kings",
+        "strength-for-others",
+        "selfish-strength",
+        "speech-wicked",
+        "pride"
+      ]
+    },
+    "king": {
+      "source": "stage",
+      "label": "King",
+      "note": "Maximum Proverbs scope: throne by righteousness, justice for the poor, lips that decree life. Blessing many is high — same tongue that was guarded in youth.",
+      "child_ids": [
+        "justice",
+        "ruler-king",
+        "speech-power-fruit",
+        "strength-for-others",
+        "humility",
+        "selfish-strength",
+        "anger",
+        "person-fool-wicked"
+      ]
+    }
+  }
+}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverbs Link — Proverbs 1–9 Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1c1914;
+      --muted: #5c564c;
+      --paper: #f7f2e8;
+      --line: rgba(28, 25, 20, 0.12);
+      --accent: #8a4b1f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #efe6d2 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e4ddd0 0%, transparent 50%),
+        linear-gradient(180deg, #faf6ef 0%, var(--paper) 40%, #f3ebe0 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    .wrap {
+      position: relative;
+      width: min(1480px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 2.25rem 0 4rem;
+    }
+
+    header {
+      display: grid;
+      gap: 0.7rem;
+      margin-bottom: 1.1rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Fraunces, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 46rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin-top: 0.2rem;
+      font-size: 0.95rem;
+    }
+    .nav-links a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 1.1rem 0 0.85rem;
+      animation: rise 0.7s ease 0.08s both;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.55);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.45rem 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+    .tab:hover { transform: translateY(-1px); background: #fff; }
+    .tab[aria-selected="true"] {
+      background: var(--ink);
+      color: #f7f2e8;
+      border-color: var(--ink);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 0.9rem;
+      max-width: 48rem;
+      line-height: 1.45;
+      animation: rise 0.7s ease 0.1s both;
+    }
+    .meta a { color: var(--accent); font-weight: 600; }
+
+    .board-scroll {
+      overflow-x: auto;
+      overflow-y: visible;
+      padding-bottom: 0.75rem;
+      animation: rise 0.7s ease 0.14s both;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .chapters,
+    .stories {
+      display: grid;
+      gap: 0.75rem;
+      align-items: start;
+      width: max-content;
+      min-width: 100%;
+    }
+
+    .chapters {
+      grid-template-columns: repeat(9, minmax(220px, 240px));
+    }
+
+    .stories {
+      grid-template-columns: repeat(5, minmax(260px, 300px));
+    }
+
+    .col {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      min-height: 8rem;
+    }
+
+    .col-head {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 0.65rem 0.75rem;
+      font-family: Fraunces, serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--cat, #808080) 28%, white);
+    }
+
+    .col-head .sub {
+      display: block;
+      margin-top: 0.15rem;
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .col-body {
+      display: grid;
+      gap: 0.55rem;
+      padding: 0.65rem;
+    }
+
+    .block {
+      --cat: #808080;
+      border: 1px solid color-mix(in srgb, var(--cat) 35%, var(--line));
+      background: color-mix(in srgb, var(--cat) 18%, white);
+      padding: 0.55rem 0.6rem;
+    }
+
+    .block.hinge {
+      background: rgba(255, 255, 255, 0.9);
+      border-style: dashed;
+    }
+
+    .block-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.55rem;
+      align-items: baseline;
+      margin-bottom: 0.35rem;
+    }
+
+    .ch-tag,
+    .cat-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .ch-tag { color: var(--muted); }
+    .cat-tag { color: color-mix(in srgb, var(--cat) 70%, var(--ink)); }
+
+    .block-text {
+      margin: 0;
+      font-size: 0.84rem;
+      line-height: 1.45;
+      white-space: pre-line;
+    }
+
+    .hinge-feature {
+      margin: 0 auto 1.15rem;
+      padding: 1.15rem 1.25rem 1.25rem;
+      border: 2px solid var(--ink);
+      background:
+        linear-gradient(180deg, rgba(255, 252, 245, 0.96), rgba(255, 248, 232, 0.92));
+      box-shadow: 0 10px 28px rgba(26, 22, 18, 0.08);
+      text-align: center;
+      max-width: 42rem;
+      animation: rise 0.7s ease 0.1s both;
+    }
+    .hinge-feature .eyebrow {
+      margin: 0 0 0.45rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hinge-feature h2 {
+      margin: 0 0 0.65rem;
+      font-family: Fraunces, serif;
+      font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+    .hinge-feature .verse {
+      margin: 0 auto 0.7rem;
+      max-width: 34rem;
+      font-size: 1.02rem;
+      line-height: 1.5;
+      white-space: pre-line;
+      color: var(--ink);
+    }
+    .hinge-feature .ref {
+      margin: 0 0 0.55rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hinge-feature .note {
+      margin: 0 auto;
+      max-width: 34rem;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .story-art {
+      margin: 0 0 0.55rem;
+      border: 2px solid color-mix(in srgb, var(--cat) 55%, #1a1612);
+      background: #0e0c0a;
+      overflow: hidden;
+    }
+    .story-art img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+    .story-art figcaption {
+      margin: 0;
+      padding: 0.45rem 0.55rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--cat) 55%, var(--ink));
+      background: color-mix(in srgb, var(--cat) 14%, white);
+      border-top: 1px solid color-mix(in srgb, var(--cat) 30%, var(--line));
+      line-height: 1.3;
+    }
+
+    .error {
+      padding: 1rem;
+      border: 1px solid #c45;
+      background: #fff5f5;
+      color: #8a2b2b;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 700px) {
+      .chapters { grid-template-columns: repeat(9, minmax(200px, 220px)); }
+      .stories { grid-template-columns: repeat(5, minmax(220px, 250px)); }
+      .block-text { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Prologue · Two paths · First rung</div>
+      <h1>Proverbs 1–9</h1>
+      <p class="lede">
+        Way of Life versus Way of Death — the story that installs the fork and the climb’s first rung.
+        Feel the death. Rejoice in the life.
+      </p>
+      <div class="nav-links">
+        <a href="./index.html">The Way of Life</a>
+        <a href="./climb.html">Climb</a>
+        <a href="./themes.html">Themes</a>
+        <a href="./verses.html">Verses</a>
+        <a href="./matrices.html">Matrices</a>
+        <a href="./reports/">Reports</a>
+      </div>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Board views">
+      <button class="tab" role="tab" id="tab-categories" aria-selected="false" data-view="categories">Categories</button>
+      <button class="tab" role="tab" id="tab-master" aria-selected="true" data-view="master">Master story</button>
+    </div>
+
+    <p class="meta" id="view-meta" hidden></p>
+    <div id="board"></div>
+  </div>
+
+  <script>
+    const CAT_META = {
+      wisdom: { name: "Wisdom", color: "#652cb3" },
+      listen: { name: "Listen!", color: "#8fd14f" },
+      act: { name: "Act!", color: "#2d9bf0" },
+      dont: { name: "Don't!", color: "#fac710" },
+      way_of_evil: { name: "Way of Evil", color: "#bb0000" },
+      uncategorized: { name: "Hinge", color: "#808080" },
+    };
+
+    const state = { data: null, view: "master" };
+
+    function escapeHtml(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function catColor(id) {
+      return (CAT_META[id] && CAT_META[id].color) || "#808080";
+    }
+
+    function catName(id) {
+      return (CAT_META[id] && CAT_META[id].name) || id;
+    }
+
+    function setMeta(html) {
+      const metaEl = document.getElementById("view-meta");
+      if (html) {
+        metaEl.hidden = false;
+        metaEl.innerHTML = html;
+      } else {
+        metaEl.hidden = true;
+        metaEl.innerHTML = "";
+      }
+    }
+
+    function renderArt(images, color) {
+      if (!images || !images.length) return "";
+      return images.map((img) => `
+        <figure class="story-art" style="--cat:${color}">
+          <img src="${escapeHtml(img.src)}" alt="${escapeHtml(img.alt || "")}" loading="lazy" />
+          ${img.caption ? `<figcaption>${escapeHtml(img.caption)}</figcaption>` : ""}
+        </figure>
+      `).join("");
+    }
+
+    function renderBlock(block, { showChapter = false, showCategory = false } = {}) {
+      const cat = block.category || block._cat || "uncategorized";
+      const color = catColor(cat);
+      const vs = block.verse_start != null ? `v${block.verse_start}` : "";
+      const ch = block.chapter != null ? `Ch. ${block.chapter}` : "";
+      const hinge = cat === "uncategorized";
+      return `
+        <article class="block${hinge ? " hinge" : ""}" style="--cat:${color}">
+          <div class="block-meta">
+            ${showChapter && ch ? `<span class="ch-tag">${escapeHtml(ch)}${vs ? ` · ${vs}` : ""}</span>` : ""}
+            ${!showChapter && vs ? `<span class="ch-tag">${escapeHtml(vs)}</span>` : ""}
+            ${showCategory ? `<span class="cat-tag">${escapeHtml(catName(cat))}</span>` : ""}
+          </div>
+          <p class="block-text">${escapeHtml(block.text)}</p>
+        </article>
+      `;
+    }
+
+    function renderCategories(data) {
+      const view = data.categories_view;
+      setMeta(
+        `${escapeHtml(view.subtitle)} · <a href="${escapeHtml(data.source.frames.categories)}" target="_blank" rel="noopener">Miro Categories</a>`
+      );
+
+      const cols = view.chapters.map((ch) => `
+        <section class="col">
+          <div class="col-head" style="--cat:#c4b8a5">Ch. ${ch.chapter}</div>
+          <div class="col-body">
+            ${ch.blocks.map((b) => renderBlock(b, { showCategory: true })).join("") || `<p class="block-text" style="color:var(--muted)">—</p>`}
+          </div>
+        </section>
+      `).join("");
+
+      document.getElementById("board").innerHTML = `
+        <div class="board-scroll">
+          <div class="chapters">${cols}</div>
+        </div>
+      `;
+    }
+
+    function renderMaster(data) {
+      const view = data.master_story_view;
+      setMeta("");
+
+      const cols = view.stories.map((story) => `
+        <section class="col">
+          <div class="col-head" style="--cat:${story.color}">
+            ${escapeHtml(story.name)}
+            <span class="sub">${escapeHtml(story.layer || story.path || "")} · ${escapeHtml(story.role)}</span>
+          </div>
+          <div class="col-body">
+            ${renderArt(story.images, story.color)}
+            ${story.passages.map((p) => renderBlock({ ...p, category: story.id }, { showChapter: true })).join("")}
+          </div>
+        </section>
+      `).join("");
+
+      const hinge = (view.hinge && view.hinge[0]) || null;
+      const hingeHtml = hinge
+        ? `<section class="hinge-feature" aria-label="Foundational hinge">
+            <p class="eyebrow">Foundational hinge · Formation · First rung</p>
+            <h2>The fear of Adonai is the beginning of wisdom</h2>
+            <p class="verse">${escapeHtml(hinge.text)}</p>
+            <p class="ref">Proverbs ${hinge.chapter}${hinge.verse_start != null ? `:${hinge.verse_start}` : ""}</p>
+            <p class="note">Unmarked on the Miro board on purpose — the hinge between purpose and parental appeal. Everything in Wisdom, Listen, and Act hangs from this beginning.</p>
+          </section>`
+        : "";
+
+      document.getElementById("board").innerHTML = `
+        ${hingeHtml}
+        <div class="board-scroll">
+          <div class="stories">${cols}</div>
+        </div>
+      `;
+    }
+
+    function setView(view) {
+      state.view = view;
+      document.querySelectorAll(".tab").forEach((btn) => {
+        btn.setAttribute("aria-selected", btn.dataset.view === view ? "true" : "false");
+      });
+      history.replaceState(null, "", view === "master" ? "#master-story" : "#categories");
+      if (!state.data) return;
+      if (view === "master") renderMaster(state.data);
+      else renderCategories(state.data);
+    }
+
+    document.querySelectorAll(".tab").forEach((btn) => {
+      btn.addEventListener("click", () => setView(btn.dataset.view));
+    });
+
+    async function boot() {
+      try {
+        const res = await fetch("./data/proverbs-1-9/board.json?v=nohero");
+        if (!res.ok) throw new Error(`Failed to load board.json (${res.status})`);
+        state.data = await res.json();
+        const hash = (location.hash || "").replace("#", "");
+        if (hash === "categories") setView("categories");
+        else setView("master");
+      } catch (err) {
+        document.getElementById("board").innerHTML =
+          `<div class="error">${escapeHtml(err.message || String(err))}</div>`;
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

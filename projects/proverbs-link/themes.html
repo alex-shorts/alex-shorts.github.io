@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverbs Link — Theme Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1c1914;
+      --muted: #5c564c;
+      --paper: #f7f2e8;
+      --line: rgba(28, 25, 20, 0.12);
+      --accent: #8a4b1f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #efe6d2 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e4ddd0 0%, transparent 50%),
+        linear-gradient(180deg, #faf6ef 0%, var(--paper) 40%, #f3ebe0 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    .wrap {
+      position: relative;
+      width: min(1100px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Fraunces, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 40rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1rem;
+      margin-top: 0.55rem;
+      font-size: 0.9rem;
+    }
+    .site-nav a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 1.25rem 0 1.5rem;
+      animation: rise 0.7s ease 0.08s both;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.55);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.45rem 0.8rem;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .tab:hover { transform: translateY(-1px); background: #fff; }
+    .tab[aria-selected="true"] {
+      background: var(--ink);
+      color: #f7f2e8;
+      border-color: var(--ink);
+    }
+
+    .theme-panel {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      animation: rise 0.75s ease 0.12s both;
+    }
+
+    .theme-header {
+      padding: 1rem 1.15rem;
+      font-family: Fraunces, serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      background: color-mix(in srgb, var(--theme, #0ca789) 35%, white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .passage-list { padding: 0.35rem 0 0.75rem; }
+
+    .passage {
+      display: grid;
+      grid-template-columns: 5.5rem 1fr;
+      gap: 0.65rem;
+      padding: 0.55rem 1.15rem;
+      border-top: 1px solid var(--line);
+      align-items: start;
+    }
+
+    .passage:first-child { border-top: 0; }
+
+    .ref {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding-top: 0.1rem;
+    }
+
+    .passage p {
+      margin: 0;
+      line-height: 1.45;
+      font-size: 0.98rem;
+    }
+
+    .passage.emphasized p { font-weight: 600; }
+    .passage.highlight {
+      background: color-mix(in srgb, var(--theme, #0ca789) 12%, transparent);
+    }
+
+    .passage.cross-ref {
+      border-top-style: dashed;
+    }
+
+    .passage.cross-ref .ref {
+      color: var(--accent);
+      font-size: 0.82rem;
+    }
+
+    .corr-band {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      opacity: 0.85;
+    }
+    .passage.corr-light { opacity: 0.72; }
+    .passage.corr-light .corr-band { color: var(--muted); }
+    .beats {
+      margin-top: 0.25rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      animation: rise 0.7s ease 0.1s both;
+    }
+    .tr-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1rem;
+      margin: 0 0 0.85rem;
+    }
+    .tr-bar label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .tr-bar select {
+      font: inherit;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.85);
+      padding: 0.35rem 0.55rem;
+    }
+    .tr-status { font-size: 0.85rem; color: var(--muted); }
+    .v-text.tr-fallback { opacity: 0.92; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .passage { grid-template-columns: 1fr; gap: 0.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Proverbs Link · from Miro</div>
+      <h1>Theme Board</h1>
+      <p class="lede">
+        Proverbs 10–31 by theme — each list sorted strongest correlation first.
+        Verses may also pulse on other themes (shown as “also: …”); that is expected.
+      </p>
+      <nav class="site-nav" aria-label="Site">
+        <a href="./index.html">Way of Life</a>
+        <a href="./climb.html">Climb</a>
+        <a href="./proverbs-1-9.html">Foundation</a>
+        <a href="./verses.html">Verses</a>
+        <a href="./matrices.html">Matrices</a>
+        <a href="./reports/">Reports</a>
+      </nav>
+    </header>
+
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Themes"></nav>
+    <div class="count" id="count"></div>
+    <div class="tr-bar" id="trBar">
+      <label for="trSelect">Translation</label>
+      <select id="trSelect" aria-label="Bible translation">
+        <option value="CJB">CJB</option>
+        <option value="ESV">ESV</option>
+        <option value="NKJV">NKJV</option>
+        <option value="CSB">CSB</option>
+      </select>
+      <span class="tr-status" id="trStatus"></span>
+    </div>
+    <div class="theme-panel" id="panel"></div>
+  </div>
+
+  <script>
+    let data = null;
+    let activeId = null;
+
+    const TRANSLATIONS = {
+      CJB: { root: "./data/cjb" },
+      ESV: { root: "./data/bibles/esv" },
+      NKJV: { root: "./data/bibles/nkjv" },
+      CSB: { root: "./data/bibles/csb" },
+    };
+    const BOOK_FOLDERS = {
+      proverbs: "proverbs", prov: "proverbs",
+      hebrews: "hebrews", heb: "hebrews",
+      psalm: "psalm", psalms: "psalm", ps: "psalm",
+      ecclesiastes: "ecclesiastes", eccl: "ecclesiastes",
+      james: "james", jas: "james",
+      job: "job",
+      isaiah: "isaiah", isa: "isaiah",
+      jeremiah: "jeremiah", jer: "jeremiah",
+      matthew: "matthew", matt: "matthew",
+      romans: "romans", rom: "romans",
+      "1 timothy": "1-timothy", "1tim": "1-timothy",
+      "2 timothy": "2-timothy", "2tim": "2-timothy",
+    };
+    const trState = {
+      version: localStorage.getItem("proverbs-link-tr") || "CJB",
+      chapterCache: new Map(),
+    };
+
+    async function init() {
+      const res = await fetch("./data/themes.json");
+      data = await res.json();
+      activeId = data.themes[0].id;
+      const sel = document.getElementById("trSelect");
+      sel.value = trState.version;
+      sel.addEventListener("change", () => {
+        trState.version = sel.value;
+        localStorage.setItem("proverbs-link-tr", trState.version);
+        applyTranslation();
+      });
+      render();
+    }
+
+    function parseRef(ref) {
+      const raw = String(ref || "").trim();
+      const m = raw.match(
+        /^((?:\d\s*)?[A-Za-z][A-Za-z .'-]*?)\s+(\d+)\s*:\s*(\d+)(?:\s*[-–]\s*(\d+))?/
+      );
+      if (!m) return null;
+      const bookKey = m[1].toLowerCase().replace(/\./g, "").replace(/\s+/g, " ").trim();
+      const folder = BOOK_FOLDERS[bookKey] || BOOK_FOLDERS[bookKey.replace(/\s+/g, "")] || null;
+      if (!folder) return null;
+      const chapter = Number(m[2]);
+      const v1 = Number(m[3]);
+      const v2 = m[4] ? Number(m[4]) : v1;
+      const verses = [];
+      for (let v = Math.min(v1, v2); v <= Math.max(v1, v2); v++) verses.push(v);
+      return { folder, chapter, verses };
+    }
+
+    async function loadChapter(version, folder, chapter) {
+      const key = `${version}:${folder}:${chapter}`;
+      if (trState.chapterCache.has(key)) return trState.chapterCache.get(key);
+      const meta = TRANSLATIONS[version];
+      if (!meta) return null;
+      try {
+        const res = await fetch(`${meta.root}/${folder}/${chapter}.json`);
+        if (!res.ok) {
+          trState.chapterCache.set(key, null);
+          return null;
+        }
+        const data = await res.json();
+        trState.chapterCache.set(key, data);
+        return data;
+      } catch {
+        trState.chapterCache.set(key, null);
+        return null;
+      }
+    }
+
+    async function textForRef(ref, version) {
+      const parsed = parseRef(ref);
+      if (!parsed) return null;
+      const chapter = await loadChapter(version, parsed.folder, parsed.chapter);
+      if (!chapter?.verses) return null;
+      const parts = [];
+      for (const v of parsed.verses) {
+        const t = chapter.verses[String(v)];
+        if (!t) return null;
+        parts.push(t);
+      }
+      return parts.join(" ");
+    }
+
+    async function applyTranslation() {
+      const version = trState.version;
+      const nodes = [...document.querySelectorAll(".v-text[data-ref]")];
+      const status = document.getElementById("trStatus");
+      status.textContent = version === "CJB" ? "CJB · source of truth" : `Loading ${version}…`;
+      let ok = 0;
+      let missing = 0;
+      await Promise.all(
+        nodes.map(async (el) => {
+          let base = "";
+          try {
+            base = decodeURIComponent(el.dataset.baseText || "");
+          } catch {
+            base = el.dataset.baseText || "";
+          }
+          if (version === "CJB") {
+            el.textContent = base;
+            el.classList.remove("tr-fallback");
+            ok += 1;
+            return;
+          }
+          const alt = await textForRef(el.dataset.ref || "", version);
+          if (alt) {
+            el.textContent = alt;
+            el.classList.remove("tr-fallback");
+            ok += 1;
+          } else {
+            el.textContent = base;
+            el.classList.add("tr-fallback");
+            missing += 1;
+          }
+        })
+      );
+      if (version === "CJB") status.textContent = "CJB · source of truth";
+      else if (!missing) status.textContent = `${version} · ${ok} verses`;
+      else status.textContent = `${version} · ${ok} loaded · ${missing} kept CJB`;
+    }
+
+    function render() {
+      const tabs = document.getElementById("tabs");
+      tabs.innerHTML = data.themes.map((t) => `
+        <button class="tab" role="tab" aria-selected="${t.id === activeId}" data-id="${t.id}">
+          ${escapeHtml(t.name)}
+        </button>
+      `).join("");
+
+      tabs.querySelectorAll(".tab").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          activeId = btn.dataset.id;
+          render();
+        });
+      });
+
+      const theme = data.themes.find((t) => t.id === activeId);
+      document.getElementById("count").textContent =
+        `${theme.passages.length} passages · sorted strong → light · ${data.source.board}`;
+
+      const panel = document.getElementById("panel");
+      panel.style.setProperty("--theme", theme.color);
+      panel.innerHTML = `
+        <div class="theme-header">${escapeHtml(theme.name)}</div>
+        <div class="passage-list">
+          ${theme.passages.map(renderPassage).join("") || `<p style="padding:1rem">No passages.</p>`}
+        </div>
+      `;
+      applyTranslation();
+    }
+
+    function renderPassage(p) {
+      const ref = p.cross_ref
+        ? (p.ref || "—")
+        : p.ref
+          ? p.ref.replace(/^Proverbs\s+/, "")
+          : "—";
+      const cls = [
+        "passage",
+        p.emphasized ? "emphasized" : "",
+        p.highlight ? "highlight" : "",
+        p.cross_ref ? "cross-ref" : "",
+        p.correlation_band ? `corr-${p.correlation_band}` : "",
+      ].filter(Boolean).join(" ");
+      const band = p.correlation_band
+        ? `<span class="corr-band">${escapeHtml(p.correlation_band)}</span>`
+        : "";
+      const beats = (p.beats || [])
+        .map((b) => b.theme_id)
+        .slice(0, 3)
+        .join(", ");
+      const beatsHtml = beats
+        ? `<div class="beats">also: ${escapeHtml(beats)}</div>`
+        : "";
+      return `
+        <article class="${cls}">
+          <div class="ref">${escapeHtml(ref)}${band}</div>
+          <div>
+            <p class="v-text" data-ref="${escapeHtml(p.ref || "")}" data-base-text="${encodeURIComponent(p.text || "")}">${escapeHtml(p.text)}</p>
+            ${beatsHtml}
+          </div>
+        </article>
+      `;
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    init().catch((err) => {
+      document.getElementById("panel").innerHTML =
+        `<p style="padding:1rem">Could not load themes.json (${escapeHtml(err.message)}).</p>`;
+    });
+  </script>
+</body>
+</html>

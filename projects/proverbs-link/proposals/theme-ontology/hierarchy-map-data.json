@@ -1,0 +1,935 @@
+{
+  "version": "0.3",
+  "focus": "men",
+  "spine": "Strength is for others; selfish use tilts any domain toward Way of Death; others-oriented use tilts toward righteousness / Way of Life. Maturity expands blessing radius; beyond king, reign-with-Christ (theological extension). Trials/suffering train sons upward.",
+  "title": "A Man's Climb - Proverbs",
+  "read": "Way of Life versus Way of Death. Click a category for its verses.",
+  "mountain": {
+    "axis_label": "A man’s ladder",
+    "left_label": "Way of Life",
+    "right_label": "Way of Death",
+    "stages": [
+      {
+        "id": "two-paths",
+        "name": "Two paths",
+        "order": 0,
+        "short": "The fork",
+        "altitude": "overarching foundation",
+        "notes": "Every rung is lived on one road or the other.",
+        "extension": false,
+        "life": [
+          {
+            "id": "way-of-life",
+            "name": "Way of Life",
+            "kind": "path",
+            "layer": "path",
+            "notes": "The upright path that holds the whole climb.",
+            "extension": false,
+            "value": 8,
+            "children": null,
+            "role": "foundation"
+          },
+          {
+            "id": "person-wise-righteous",
+            "name": "The wise / righteous man",
+            "kind": "person",
+            "layer": "identity",
+            "notes": "The man who walks this way.",
+            "extension": false,
+            "value": 4,
+            "children": null,
+            "builds_on": [
+              "way-of-life"
+            ],
+            "role": "foundation"
+          }
+        ],
+        "death": [
+          {
+            "id": "way-of-death",
+            "name": "Way of Death",
+            "kind": "path",
+            "layer": "path",
+            "notes": "The road that seems right and ends in death.",
+            "extension": false,
+            "value": 8,
+            "children": null,
+            "role": "passion"
+          },
+          {
+            "id": "person-fool-wicked",
+            "name": "The fool / wicked man",
+            "kind": "person",
+            "layer": "identity",
+            "notes": "The man who walks death’s way.",
+            "extension": false,
+            "value": 4,
+            "children": null,
+            "builds_on": [
+              "way-of-death"
+            ],
+            "role": "passion"
+          }
+        ],
+        "life_weight": 12,
+        "death_weight": 12
+      },
+      {
+        "id": "child",
+        "name": "Son / Child",
+        "order": 1,
+        "short": "Receive",
+        "altitude": "foundation",
+        "notes": "Receive discipline, learn to listen, fear Adonai.",
+        "extension": false,
+        "life": [
+          {
+            "id": "child-receive",
+            "name": "Receive formation",
+            "kind": "group",
+            "layer": "formation",
+            "notes": "The bedrock under every higher rung.",
+            "extension": false,
+            "children": [
+              {
+                "id": "discipline",
+                "name": "Receive discipline",
+                "kind": "practice",
+                "layer": "fruit",
+                "notes": "Rod and reproof that make wisdom.",
+                "extension": false,
+                "value": 5,
+                "children": null,
+                "role": "foundation"
+              },
+              {
+                "id": "speech-listen-control",
+                "name": "Learn to listen",
+                "kind": "practice",
+                "layer": "fruit",
+                "notes": "Hear father and mother.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "foundation"
+              },
+              {
+                "id": "fear-of-adonai",
+                "name": "Fear of Adonai",
+                "kind": "virtue",
+                "layer": "formation",
+                "notes": "Beginning of knowledge.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "foundation"
+              }
+            ],
+            "role": "foundation"
+          },
+          {
+            "id": "humility",
+            "name": "Teachable humility",
+            "kind": "virtue",
+            "layer": "fruit",
+            "notes": "Stay soft enough to be taught.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "role": "foundation"
+          },
+          {
+            "id": "parents-children",
+            "name": "Honor father & mother",
+            "kind": "role",
+            "layer": "identity",
+            "notes": "A wise son gladdens his parents.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "role": "foundation"
+          }
+        ],
+        "death": [
+          {
+            "id": "child-refuse",
+            "name": "Refuse the rod",
+            "kind": "group",
+            "layer": "action",
+            "notes": "Refuse formation and the climb never starts.",
+            "extension": false,
+            "children": [
+              {
+                "id": "person-fool-wicked",
+                "name": "Folly in the heart",
+                "kind": "person",
+                "layer": "identity",
+                "notes": "Ignore correction and leave the path.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "passion"
+              },
+              {
+                "id": "pride",
+                "name": "Untamed pride",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Hardness that refuses counsel.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "role": "passion"
+              }
+            ]
+          }
+        ],
+        "life_weight": 19,
+        "death_weight": 7
+      },
+      {
+        "id": "youth-man",
+        "name": "Youth / Man",
+        "order": 2,
+        "short": "Master self",
+        "altitude": "lower",
+        "notes": "Master tongue, hand, and passions before wider trust.",
+        "extension": false,
+        "life": [
+          {
+            "id": "youth-foundations",
+            "name": "Tongue & hand",
+            "kind": "group",
+            "layer": "action",
+            "notes": "Load-bearing: speech and diligence.",
+            "extension": false,
+            "children": [
+              {
+                "id": "speech-listen-control",
+                "name": "Guard the mouth",
+                "kind": "practice",
+                "layer": "fruit",
+                "notes": "Keep tongue and trouble in check.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "builds_on": [
+                  "speech-listen-control"
+                ],
+                "role": "foundation"
+              },
+              {
+                "id": "speech-wise-words",
+                "name": "Wise words",
+                "kind": "practice",
+                "layer": "fruit",
+                "notes": "Apt, true, restrained speech.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "builds_on": [
+                  "speech-listen-control"
+                ],
+                "role": "foundation"
+              },
+              {
+                "id": "diligence",
+                "name": "Diligence",
+                "kind": "virtue",
+                "layer": "fruit",
+                "notes": "Steady work that later provides and serves.",
+                "extension": false,
+                "value": 5,
+                "children": null,
+                "role": "foundation"
+              },
+              {
+                "id": "self-control",
+                "name": "Self-control",
+                "kind": "virtue",
+                "layer": "fruit",
+                "notes": "A man who rules his spirit.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "builds_on": [
+                  "discipline"
+                ],
+                "role": "foundation"
+              }
+            ],
+            "role": "foundation"
+          },
+          {
+            "id": "person-wise-righteous",
+            "name": "Walk with the wise",
+            "kind": "person",
+            "layer": "identity",
+            "notes": "Companions shape the path.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "role": "foundation"
+          },
+          {
+            "id": "patience",
+            "name": "Slow to anger",
+            "kind": "virtue",
+            "layer": "fruit",
+            "notes": "Master temper before household and city.",
+            "extension": false,
+            "value": 2,
+            "children": null,
+            "builds_on": [
+              "self-control",
+              "speech-listen-control"
+            ],
+            "role": "foundation"
+          }
+        ],
+        "death": [
+          {
+            "id": "youth-passions",
+            "name": "Youthful passions",
+            "kind": "group",
+            "layer": "action",
+            "notes": "Put these away to climb.",
+            "extension": false,
+            "children": [
+              {
+                "id": "human-nature",
+                "name": "Desires of the flesh",
+                "kind": "domain",
+                "layer": "substrate",
+                "notes": "Wine, appetite, and sexual folly.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "passion"
+              },
+              {
+                "id": "laziness",
+                "name": "Laziness",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Idle hands that block provision.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "passion"
+              },
+              {
+                "id": "anger",
+                "name": "Hot anger / strife",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Fury that wrecks later rule.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "role": "passion"
+              },
+              {
+                "id": "speech-wicked",
+                "name": "Reckless tongue",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Slander, mockery, many words.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "role": "passion"
+              },
+              {
+                "id": "pride",
+                "name": "Pride",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Pride before a fall.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "role": "passion"
+              }
+            ]
+          }
+        ],
+        "life_weight": 20,
+        "death_weight": 17
+      },
+      {
+        "id": "husband-household",
+        "name": "Husband / Household",
+        "order": 3,
+        "short": "Provide & guard",
+        "altitude": "middle",
+        "notes": "Provide, protect, and keep covenant peace.",
+        "extension": false,
+        "life": [
+          {
+            "id": "house-provide",
+            "name": "Provide from diligence",
+            "kind": "group",
+            "layer": "action",
+            "notes": "Diligence matured into provision.",
+            "extension": false,
+            "children": [
+              {
+                "id": "diligence",
+                "name": "Labor that provides",
+                "kind": "virtue",
+                "layer": "fruit",
+                "notes": "Work that feeds the house.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "builds_on": [
+                  "diligence"
+                ],
+                "role": "provision"
+              },
+              {
+                "id": "wealth",
+                "name": "Wealth / store",
+                "kind": "domain",
+                "layer": "fruit",
+                "notes": "Store built on diligence, not greed.",
+                "extension": false,
+                "value": 5,
+                "children": null,
+                "builds_on": [
+                  "diligence"
+                ],
+                "role": "provision"
+              }
+            ],
+            "role": "provision"
+          },
+          {
+            "id": "house-peace",
+            "name": "Peace in the house",
+            "kind": "group",
+            "layer": "sphere",
+            "notes": "",
+            "extension": false,
+            "children": [
+              {
+                "id": "speech-wise-words",
+                "name": "Soft answer / cover offense",
+                "kind": "practice",
+                "layer": "fruit",
+                "notes": "Speech that keeps the peace.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "builds_on": [
+                  "speech-listen-control",
+                  "speech-wise-words"
+                ],
+                "role": "provision"
+              },
+              {
+                "id": "marriage",
+                "name": "Covenant with his wife",
+                "kind": "role",
+                "layer": "identity",
+                "notes": "Find, value, and keep her.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "provision"
+              },
+              {
+                "id": "parents-children",
+                "name": "Father his children",
+                "kind": "role",
+                "layer": "identity",
+                "notes": "Give the discipline he once received.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "builds_on": [
+                  "discipline"
+                ],
+                "role": "provision"
+              }
+            ]
+          },
+          {
+            "id": "friendship",
+            "name": "Faithful friendship",
+            "kind": "role",
+            "layer": "identity",
+            "notes": "A friend who sticks closer than a brother.",
+            "extension": false,
+            "value": 2,
+            "children": null,
+            "role": "provision"
+          },
+          {
+            "id": "strength-for-others",
+            "name": "Strength for his house",
+            "kind": "virtue",
+            "layer": "fruit",
+            "notes": "Protect and bless wife, children, and friends.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "builds_on": [
+              "diligence",
+              "speech-wise-words"
+            ],
+            "role": "provision"
+          }
+        ],
+        "death": [
+          {
+            "id": "house-neglect",
+            "name": "Neglect & consume the house",
+            "kind": "group",
+            "layer": "action",
+            "notes": "Neglect, rage, sloth, and harsh tongue.",
+            "extension": false,
+            "children": [
+              {
+                "id": "selfish-strength",
+                "name": "Strength for self",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Consume, neglect, dominate.",
+                "extension": false,
+                "value": 4,
+                "children": null,
+                "role": "passion"
+              },
+              {
+                "id": "anger",
+                "name": "Rage at home",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Temper that breaks covenant peace.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "builds_on": [
+                  "anger"
+                ],
+                "role": "passion"
+              },
+              {
+                "id": "laziness",
+                "name": "Fail to provide",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Empty store and shame.",
+                "extension": false,
+                "value": 3,
+                "children": null,
+                "builds_on": [
+                  "laziness"
+                ],
+                "role": "passion"
+              },
+              {
+                "id": "speech-wicked",
+                "name": "Harsh / crooked speech",
+                "kind": "vice",
+                "layer": "fruit",
+                "notes": "Words that rot the house.",
+                "extension": false,
+                "value": 2,
+                "children": null,
+                "role": "passion"
+              }
+            ]
+          }
+        ],
+        "life_weight": 25,
+        "death_weight": 12
+      },
+      {
+        "id": "ruler",
+        "name": "Ruler (city / gate)",
+        "order": 4,
+        "short": "Judge for many",
+        "altitude": "higher",
+        "notes": "Justice and counsel for the city.",
+        "extension": false,
+        "life": [
+          {
+            "id": "justice",
+            "name": "Justice",
+            "kind": "practice",
+            "layer": "fruit",
+            "notes": "Rescue the oppressed; judge right.",
+            "extension": false,
+            "value": 6,
+            "children": null,
+            "builds_on": [
+              "humility",
+              "speech-wise-words",
+              "diligence"
+            ],
+            "role": "justice"
+          },
+          {
+            "id": "speech-power-fruit",
+            "name": "Counsel that guides",
+            "kind": "practice",
+            "layer": "fruit",
+            "notes": "Advice that steadies a city.",
+            "extension": false,
+            "value": 4,
+            "children": null,
+            "builds_on": [
+              "speech-wise-words",
+              "speech-listen-control"
+            ],
+            "role": "justice"
+          },
+          {
+            "id": "skill-serves-kings",
+            "name": "Skill before kings",
+            "kind": "practice",
+            "layer": "fruit",
+            "notes": "Diligence recognized in the court.",
+            "extension": false,
+            "value": 4,
+            "children": null,
+            "builds_on": [
+              "diligence"
+            ],
+            "role": "justice"
+          },
+          {
+            "id": "strength-for-others",
+            "name": "Strength for the city",
+            "kind": "virtue",
+            "layer": "fruit",
+            "notes": "Blessing that makes the city rejoice.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "builds_on": [
+              "justice",
+              "strength-for-others"
+            ],
+            "role": "blessing"
+          }
+        ],
+        "death": [
+          {
+            "id": "selfish-strength",
+            "name": "Partiality & predation",
+            "kind": "vice",
+            "layer": "fruit",
+            "notes": "Bribes and power turned inward.",
+            "extension": false,
+            "value": 5,
+            "children": null,
+            "role": "passion"
+          },
+          {
+            "id": "speech-wicked",
+            "name": "Wicked counsel / messengers",
+            "kind": "vice",
+            "layer": "fruit",
+            "notes": "False words that twist judgment.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "role": "passion"
+          },
+          {
+            "id": "pride",
+            "name": "Proud judgment",
+            "kind": "vice",
+            "layer": "fruit",
+            "notes": "Refuse counsel; rule unteachably.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "role": "passion"
+          }
+        ],
+        "life_weight": 17,
+        "death_weight": 11
+      },
+      {
+        "id": "king",
+        "name": "King",
+        "order": 5,
+        "short": "Secure the people",
+        "altitude": "higher",
+        "notes": "Throne by righteousness; lips that feed many.",
+        "extension": false,
+        "life": [
+          {
+            "id": "justice",
+            "name": "Justice for the poor",
+            "kind": "practice",
+            "layer": "fruit",
+            "notes": "Judge the poor faithfully.",
+            "extension": false,
+            "value": 5,
+            "children": null,
+            "builds_on": [
+              "justice"
+            ],
+            "role": "justice"
+          },
+          {
+            "id": "ruler-king",
+            "name": "Righteous throne",
+            "kind": "role",
+            "layer": "identity",
+            "notes": "Establish the throne by righteousness.",
+            "extension": false,
+            "value": 5,
+            "children": null,
+            "builds_on": [
+              "justice",
+              "humility"
+            ],
+            "role": "justice"
+          },
+          {
+            "id": "speech-power-fruit",
+            "name": "Lips that feed many",
+            "kind": "practice",
+            "layer": "fruit",
+            "notes": "Decrees and words that give life.",
+            "extension": false,
+            "value": 5,
+            "children": null,
+            "builds_on": [
+              "speech-power-fruit",
+              "speech-wise-words"
+            ],
+            "role": "blessing"
+          },
+          {
+            "id": "strength-for-others",
+            "name": "Strength for the nation",
+            "kind": "virtue",
+            "layer": "fruit",
+            "notes": "Righteousness that exalts a people.",
+            "extension": false,
+            "value": 4,
+            "children": null,
+            "builds_on": [
+              "justice",
+              "strength-for-others"
+            ],
+            "role": "blessing"
+          },
+          {
+            "id": "humility",
+            "name": "Humility under glory",
+            "kind": "virtue",
+            "layer": "fruit",
+            "notes": "Stay teachable at the top.",
+            "extension": false,
+            "value": 2,
+            "children": null,
+            "role": "foundation"
+          }
+        ],
+        "death": [
+          {
+            "id": "selfish-strength",
+            "name": "Oppressive rule",
+            "kind": "vice",
+            "layer": "fruit",
+            "notes": "Crush the people instead of guarding them.",
+            "extension": false,
+            "value": 5,
+            "children": null,
+            "role": "passion"
+          },
+          {
+            "id": "anger",
+            "name": "Wrath as messengers of death",
+            "kind": "vice",
+            "layer": "fruit",
+            "notes": "Lethal temper with a crown.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "builds_on": [
+              "anger"
+            ],
+            "role": "passion"
+          },
+          {
+            "id": "person-fool-wicked",
+            "name": "Wicked retained at court",
+            "kind": "person",
+            "layer": "identity",
+            "notes": "Keep evil near the throne.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "role": "passion"
+          }
+        ],
+        "life_weight": 21,
+        "death_weight": 11
+      },
+      {
+        "id": "reign-with-christ",
+        "name": "Reign with Christ",
+        "order": 6,
+        "short": "Share His rule",
+        "altitude": "peak",
+        "notes": "Faithful over little; share His rule.",
+        "extension": true,
+        "life": [
+          {
+            "id": "reign-with-christ",
+            "name": "Share His rule",
+            "kind": "role",
+            "layer": "identity",
+            "notes": "Sit with Him; reign with Him.",
+            "extension": true,
+            "value": 6,
+            "children": null,
+            "builds_on": [
+              "strength-for-others",
+              "justice",
+              "discipline"
+            ],
+            "role": "peak"
+          },
+          {
+            "id": "speech-power-fruit",
+            "name": "Shepherding word",
+            "kind": "practice",
+            "layer": "fruit",
+            "notes": "A tongue that shepherds under the Lamb.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "builds_on": [
+              "speech-power-fruit"
+            ],
+            "role": "peak"
+          },
+          {
+            "id": "trials-suffering",
+            "name": "Trained through trials",
+            "kind": "practice",
+            "layer": "formation",
+            "notes": "The Father’s training for wider trust.",
+            "extension": false,
+            "value": 3,
+            "children": null,
+            "builds_on": [
+              "discipline"
+            ],
+            "role": "peak"
+          }
+        ],
+        "death": [],
+        "life_weight": 12,
+        "death_weight": 0
+      }
+    ]
+  },
+  "build_chains": [
+    {
+      "id": "chain-paths",
+      "label": "Two paths (foundation)",
+      "steps": [
+        "Way of Life ↔ Way of Death",
+        "Wise / righteous ↔ Fool / wicked",
+        "Every rung lived on one road or the other"
+      ],
+      "note": "Overarching frame. Domains below do not replace the fork — they express which road a man is on."
+    },
+    {
+      "id": "chain-speech",
+      "label": "Speech",
+      "steps": [
+        "Listen (child)",
+        "Guard mouth (youth)",
+        "Wise words",
+        "Counsel / soft answer",
+        "Lips that feed many",
+        "Shepherding word"
+      ],
+      "note": "Load-bearing domain. Almost every higher fruit of the tongue presupposes lower mastery."
+    },
+    {
+      "id": "chain-diligence",
+      "label": "Diligence → Wealth → Skill",
+      "steps": [
+        "Diligence (youth)",
+        "Wealth / provide (household)",
+        "Skill before kings (ruler)",
+        "Faithful over much (peak)"
+      ],
+      "note": "Wealth is not a root — it is built on diligence. Skill before kings is diligence recognized."
+    },
+    {
+      "id": "chain-justice",
+      "label": "Justice & blessing many",
+      "steps": [
+        "Integrity formed below",
+        "Justice at the gate",
+        "Justice for the poor / throne",
+        "Strength that blesses many",
+        "Reign with Christ"
+      ],
+      "note": "Justice and wide blessing sit high — they require a man already mastered in tongue, hand, and passions."
+    },
+    {
+      "id": "chain-passions",
+      "label": "Passions (death flank, lower)",
+      "steps": [
+        "Refuse rod",
+        "Flesh desires / forbidden woman / wine",
+        "Laziness · anger · pride · reckless tongue",
+        "Same vices scaled: house → city → throne"
+      ],
+      "note": "Youthful passions parked low. Unmastered, they reappear amplified at every higher rung."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "sug-bedrock-strip",
+      "title": "Persistent bedrock strip",
+      "detail": "Keep a thin vertical reminder that Speech + Diligence never leave the mountain — they change scope. Optional UI: pinned ‘bedrock’ labels along the left axis."
+    },
+    {
+      "id": "sug-elder-rung",
+      "title": "Church elder as explicit rung?",
+      "detail": "1 Tim 3 treats household competence as qualification for oversight. Decide: insert elder between household and city-gate, or treat elder as application of ‘ruler’."
+    },
+    {
+      "id": "sug-sexual-node",
+      "title": "Name sexual folly as its own death node",
+      "detail": "Forbidden woman (23:27–28) currently sits under ‘desires of the flesh’ / Human Nature. A dedicated leaf would teach cleaner at the youth band."
+    },
+    {
+      "id": "sug-wealth-dual",
+      "title": "Wealth dual-home: diligence fruit + justice test",
+      "detail": "At household = provision fruit of diligence. At king = scales / oppression test (16:11; 28:16). Consider a second wealth appearance at king band as ‘economy & oppression’."
+    },
+    {
+      "id": "sug-trials-elevator",
+      "title": "Trials as visible elevator",
+      "detail": "Discipline/trials currently peak-annotated. Could draw a side rail ‘received trials ↑’ vs ‘refused trials = trapdoor’ linking child discipline to peak."
+    },
+    {
+      "id": "sug-identity-thread",
+      "title": "Wise son → righteous man → righteous king thread",
+      "detail": "Identity could appear once per band as a narrow spine badge inside the life flank, showing the same man under widening office — not only fruit tiles."
+    },
+    {
+      "id": "sug-women-track",
+      "title": "Parallel mountain for women (later)",
+      "detail": "14:1 wise woman builds; 31; mother’s torah (1:8; 6:20). Separate climb — do not force into this men-only diagram."
+    }
+  ]
+}
