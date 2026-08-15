@@ -11,9 +11,9 @@ burial: "Long Island, New York (24 Mar 1911)"
 parents: [myer_miller, sarah_kohn]
 spouses: [mayer_mamlock]
 children: [mamie_mamlock, albert_mamlock, franciska_mamlock, esther_mamlock, emma_mamlock, jenny_mamlock]
-object_ids: [FT-0022, FT-0024, FT-0260, FT-0305]
-confidence: Probable
-verified: false
+object_ids: [FT-0022, FT-0024, FT-0260, FT-0305, FT-0421]
+confidence: Confirmed
+verified: true
 status: researching
 parent_links:
   - id: myer_miller
@@ -22,7 +22,7 @@ parent_links:
     confidence: Probable
 spouse_links:
   - id: mayer_mamlock
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "FS NYC Municipal Deaths — Rachel Mawlock 21 Mar 1911 Manh. cn 9738; parents Myer Miller × Sarah Kohn (both Germany)"
     url: "https://www.familysearch.org/ark:/61903/1:1:271T-32T"
@@ -43,15 +43,15 @@ media:
 
 ## Summary
 
-**Probable** mother of **Mamie Mamlock Cohn**. NYC municipal death (FS ark `1:1:271T-32T`, cert **9738**) names her **Rachel Mawlock**, widowed, b. Germany ~1839, parents **Myer Miller** × **Sarah Kohn** (both Germany); burial Long Island **24 Mar 1911**. HVR image for 1911 #9738 **not digitized** (FS: Image Unavailable).
+**Confirmed** mother of **Mamie Mamlock Cohn** (LOCKED — legal vital FT-0022/FT-0024). NYC municipal death (FS ark `1:1:271T-32T`, cert **9738**) names her **Rachel Mawlock**, widowed, b. Germany ~1839, parents **Myer Miller** × **Sarah Kohn** (both Germany); burial Long Island **24 Mar 1911**. HVR image for 1911 #9738 **not digitized** (FS: Image Unavailable) — her own parents stay Probable.
 
-**Maiden conflict C1066 → explained Probable:** marriage used paternal surname **Miller**; Mamie’s 1945 death used maternal line **Kahn** (← **Kohn**). Soft-ingest; `verified: false`.
+**Maiden conflict C1066:** marriage used paternal surname **Miller**; Mamie’s 1945 death used maternal line **Kahn** (← **Kohn**) — keep both as aka; relationship to Mamie is Confirmed.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Mother of Mamie Cohn | Probable | Marriage + death PDFs | https://a860-historicalvitalrecords.nyc.gov/view/7281961 | Pack **C1064** |
+| Mother of Mamie Cohn | Confirmed | Marriage + death PDFs | https://a860-historicalvitalrecords.nyc.gov/view/7281961 | **LOCKED — legal vital** C1064 |
 | Parents Myer Miller × Sarah Kohn | Probable | FS Municipal Deaths | https://www.familysearch.org/ark:/61903/1:1:271T-32T | Pack **C1070–C1071** |
 | Miller vs Kahn maiden | Probable resolve | Father Miller / mother Kohn | same | Pack **C1072** (supersedes open C1066) |
 | d. 21 Mar 1911 Manh. cn 9738; bur. LI 24 Mar | Confirmed (index) | FS + GGG | https://www.familysearch.org/ark:/61903/1:1:271T-32T | Image still missing |

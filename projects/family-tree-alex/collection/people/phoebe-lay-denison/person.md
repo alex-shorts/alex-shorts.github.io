@@ -11,7 +11,7 @@ burial: Denison Burying Ground, Mystic, New London County, Connecticut, USA (sof
 parents: []
 spouses: [john_denison]
 children: [daniel_denison_sr]
-object_ids: []
+object_ids: [FT-0465]
 confidence: Probable
 verified: false
 status: researching

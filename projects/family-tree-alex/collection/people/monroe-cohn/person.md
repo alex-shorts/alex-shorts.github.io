@@ -11,18 +11,18 @@ burial: Mt. Carmel Cemetery
 parents: [solomon_cohn, bertha_pottesham]
 spouses: [mamie_mamlock]
 children: [myron_mamlock_cole, seymour_cohn]
-object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0099, FT-0240, FT-0261, FT-0262, FT-0398]
-confidence: Probable
-verified: false
+object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0099, FT-0240, FT-0261, FT-0262, FT-0398, FT-0426, FT-0427]
+confidence: Confirmed
+verified: true
 status: researching
 parent_links:
   - id: solomon_cohn
-    confidence: Probable
+    confidence: Confirmed
   - id: bertha_pottesham
-    confidence: Probable
+    confidence: Confirmed
 spouse_links:
   - id: mamie_mamlock
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "NYC HVR marriage M-M-1893-0013078 — Monroe Cohn × Mamie Mamlock 17 Oct 1893; b. Hartford Conn; parents Solomon × Bertha Gotsdanner"
     url: "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
@@ -53,16 +53,16 @@ media:
 
 ## Summary
 
-**Probable** father of **Myron Mamlock Cole / Cohn**. Married **Mamie Mamlock** **17 Oct 1893** Manhattan (cert **13078**): age **26**, b. **Hartford, Conn.** Died **25 Dec 1921** Manhattan (cert **29268**), age **54**, shoe jobber, **245 Fort Washington Ave**; buried **Mt. Carmel**. Parents **Solomon Cohn** × **Bertha** (maiden spelling open). Soft; `verified: false`.
+**Confirmed** (legal vital) father of **Myron Mamlock Cole / Cohn** — named on Myron’s marriage cert (**FT-0025**). Married **Mamie Mamlock** **17 Oct 1893** Manhattan (**FT-0022** cert **13078**): age **26**, b. **Hartford, Conn.** Died **25 Dec 1921** Manhattan (**FT-0023** cert **29268**), age **54**, shoe jobber, **245 Fort Washington Ave**; buried **Mt. Carmel**. Parents **Solomon Cohn** × **Bertha** LOCKED — legal vital FT-0022/FT-0023 (maiden spelling Gotsdanner vs Potsdam remains open as aka). `verified: true` for identity + spouse + father-of-Myron links.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Father of Myron | Probable | Cluster + Myron marriage |  | Pack **C965** |
-| m. Mamie 17 Oct 1893 Manh. 13078 | Confirmed (image) | HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/8103617 | Pack **C966** |
-| d. 25 Dec 1921 Manh. 29268 | Confirmed (image) | HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/5446381 | Pack **C967** |
-| Parents Solomon × Bertha (Germany) | Probable | Death + marriage | same | Pack **C1062–C1063** |
+| Father of Myron | Confirmed | FT-0025 Myron marriage | https://a860-historicalvitalrecords.nyc.gov/view/9193947 | **LOCKED — legal vital** C965 |
+| m. Mamie 17 Oct 1893 Manh. 13078 | Confirmed (image) | FT-0022 HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/8103617 | **LOCKED — legal vital** C966 |
+| d. 25 Dec 1921 Manh. 29268 | Confirmed (image) | FT-0023 HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/5446381 | **LOCKED — legal vital** C967 |
+| Parents Solomon × Bertha (Germany) | Probable | Death + marriage | same | Pack **C1062–C1063** — still need Y / more |
 | b. Hartford CT ~1867 | Probable | Marriage age 26 in 1893 | https://a860-historicalvitalrecords.nyc.gov/view/8103617 | |
 
 ## Gather note (2026-08-08 lean)

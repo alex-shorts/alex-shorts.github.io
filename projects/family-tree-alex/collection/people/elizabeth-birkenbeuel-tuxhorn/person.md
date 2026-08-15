@@ -11,7 +11,7 @@ burial: Inman North Cemetery, Inman, McPherson County, Kansas, USA
 parents: []
 spouses: [frederick_tuxhorn]
 children: [leo_tuxhorn]
-object_ids: [FT-0314]
+object_ids: [FT-0314, FT-0408, FT-0409, FT-0411]
 confidence: Confirmed
 verified: true
 status: cataloged

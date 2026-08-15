@@ -21,11 +21,14 @@ spouse_links:
 sources:
   - label: "FAG child grid — mother of Sarah Elizabeth Trask Buck (122210553)"
     url: "https://www.findagrave.com/memorial/122210553/sarah_elizabeth-buck"
+  - label: "Essex VR gen-back dig C1935 — no Anne parent rows (Jefferson Part 2 / Baptist / LOC negative)"
+    url: "https://archives.mainegenealogy.net/2006/07/early-vital-records-of-jefferson-part_12.html"
 media: []
+blocker: "Parents blocked — need WA DC 4592 parent cols + ME marriage John×Anne; no free Essex parent names"
 ---
 ## Summary
 
-**Probable** soft mother of **Sarah Elizabeth Trask**. FAG parent link **Anne Rhodes Trask** on Sarah’s memorial; siblings **Annie H. Trask Furlong** and **Clara Anna Trask** on same grid. Compiled trees give maiden **Grant** — not used as source here. Own parents not soft-climbed. `verified: false`.
+**Probable** soft mother of **Sarah Elizabeth Trask**. FAG parent link **Anne Rhodes Trask** on Sarah’s memorial; siblings **Annie H. Trask Furlong** and **Clara Anna Trask** on same grid. Compiled trees give maiden **Grant** — not used as source here. Own parents still empty (**C1694**); free Jefferson vitals / Baptist deaths negative this pass. `verified: false`.
 
 ## Assertions
 

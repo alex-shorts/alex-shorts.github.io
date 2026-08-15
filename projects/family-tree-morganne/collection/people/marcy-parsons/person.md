@@ -14,7 +14,7 @@ burial:
 parents: [george_rudd, marion_orciere]
 spouses: [bill_parsons]
 children: [morganne]
-object_ids: [FT-0008]
+object_ids: [FT-0008, FT-0457]
 confidence: Confirmed
 verified: true
 status: living-private
@@ -45,6 +45,7 @@ Mother of Morganne Shorts. Married name **Parsons**; maiden **Rudd** (**C444** L
 | --- | --- | --- | --- | --- |
 | Mother of Morganne Shorts | Confirmed | Family corroboration (Alex, 2026-08-07) |  | Pack **C440** Locked |
 | Married name Parsons; spouse Bill Parsons | Confirmed | Same |  | Pack **C443** Locked |
+| Married Bill Parsons **14 Jun 1969** (as Marcy Rae Rudd) | Confirmed | SABR FT-0457 + Alex 2026-08-14 | https://sabr.org/bioproj/person/bill-parsons/ | Pack **C568** Locked |
 | Parents George Rudd × Marion Orciere | Confirmed | Same |  | Pack **C442** Locked |
 | Maiden name Rudd | Confirmed | Alex Y 2026-08-07 (all yes C440–C445) |  | Pack **C444** Locked |
 | Living (no public death dig) | Confirmed | Generation / family context |  | living-private |

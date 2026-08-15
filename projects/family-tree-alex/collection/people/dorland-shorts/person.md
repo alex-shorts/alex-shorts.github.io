@@ -11,7 +11,7 @@ burial: Mount Hope Cemetery, Rochester, Monroe County, New York, USA
 parents: [alexander_shorts, eva_aylesworth]
 spouses: [effie]
 children: [earl, lena]
-object_ids: [FT-0031, FT-0033, FT-0038, FT-0040, FT-0065, FT-0066, FT-0067, FT-0068, FT-0069, FT-0070, FT-0071, FT-0074, FT-0089, FT-0111, FT-0137, FT-0152, FT-0215, FT-0397]
+object_ids: [FT-0031, FT-0033, FT-0038, FT-0040, FT-0065, FT-0066, FT-0067, FT-0068, FT-0069, FT-0070, FT-0071, FT-0074, FT-0089, FT-0111, FT-0137, FT-0152, FT-0215, FT-0397, FT-0429]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -33,6 +33,12 @@ sources:
   - label: "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C94–C95)"
     url: ""
 media:
+  - file: media/fag-8850577-mount-hope-full.jpg
+    kind: other
+    tags: [mount-hope, fag-gallery, fag-8850577]
+    source: Find A Grave Mount Hope Cemetery overview (Dorland/Effie Section W context; no individual Dorland stone)
+    source_url: https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?size=original
+    captured_at: 2026-08-12
   - ref: effie-eliza-earl-shorts/media/mount-hope-cemetery-2020.jpeg
     kind: other
     tags: []

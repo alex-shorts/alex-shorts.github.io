@@ -35,11 +35,13 @@ sources:
     url: ""
   - label: "Father unlock: docs/research/people/proposals/y-line-john-shorts-father.md"
     url: ""
+  - label: "Burleigh fonds — Shorts family file (hcbshorts IA OCR; Swiss/Frontenac; no Gen-9)"
+    url: "https://archive.org/details/hcbshorts"
 media: []
 ---
 ## Summary
 
-**Probable** father of Rev Augustus Shorts (**C330**). Butler’s Ranger; Swiss origins; Susquehanna settler with wife Rosannah Monk (m. 1764). Soft-ingest from Old Hay Bay vignette (cites CCA **19 Mar 1862** orphan narrative) + WikiTree Short-3450/3451 — `verified: false`. Working death **~1778** NYC as prisoner (Hay Bay); WikiTree **1776** soft dual. Birth year soft (**~1720–1730**); no FAG/stone this pass. Free secondary list names **SHORTS, JOHN E.** among Butler’s Rangers privates (Exploring Niagara / **FT-0042**). Smy borrow (**FT-0081**): **Short, John Henry**, Private, **taken Jan 1778** Susquehanna near Tioga with sixteen Rangers — soft ID match; middle **Henry** vs open-list **E.** tension. **Parents still empty** (**C1080** / **C1147**) — Smy entry names **no** father/mother; **no** Gen-9 soft-ingest. Soft children **Hannah Mary**, **Catharine**, **Philip** (Possible), **Frances/Fanny Heck** (Possible) — **C1081–C1083**, **C1086**. **Do not** merge with Rhode Island John Short / [Shorts-127](https://www.wikitree.com/wiki/Shorts-127) (**C1084**). Next unlock = remaining Short* in Smy (if any) + LAC petition images (**C1085** / **C1148–C1149**).
+**Probable** father of Rev Augustus Shorts (**C330**). Butler’s Ranger; Swiss origins; Susquehanna settler with wife Rosannah Monk (m. 1764). Soft-ingest from Old Hay Bay vignette (cites CCA **19 Mar 1862** orphan narrative) + WikiTree Short-3450/3451 — `verified: false`. Working death **~1778** NYC as prisoner (Hay Bay); WikiTree **1776** soft dual. Birth year soft (**~1720–1730**); no FAG/stone this pass. Free secondary list names **SHORTS, JOHN E.** among Butler’s Rangers privates (Exploring Niagara / **FT-0042**). Smy borrow (**FT-0081**): **Short, John Henry**, Private, **taken Jan 1778** Susquehanna near Tioga with sixteen Rangers — soft ID match; middle **Henry** vs open-list **E.** tension. **Parents still empty** (**C1080** / **C1147** / **C1920**) — Smy (**FT-0081**) and Burleigh **hcbshorts** name **no** father/mother; Harvey/Rupp/ISTG negatives logged **C1922–C1924**; **no** Gen-9 soft-ingest. Soft children **Hannah Mary**, **Catharine**, **Philip** (Possible), **Frances/Fanny Heck** (Possible) — **C1081–C1083**, **C1086**. **Do not** merge with Rhode Island John Short / [Shorts-127](https://www.wikitree.com/wiki/Shorts-127) (**C1084**). Next unlock = remaining Short* in Smy (if any) + LAC petition images (**C1085** / **C1148–C1149**).
 
 ## Assertions
 
@@ -49,7 +51,7 @@ media: []
 | Husband of Rosannah Monk; m. ~1764 Susquehanna | Probable | Same + Monk-1058 (**C331**) | https://www.wikitree.com/wiki/Monk-1058 |  |
 | Swiss origins; Butler’s Ranger; d. NYC POW ~1778 | Probable (identity) / vitals soft | Hay Bay · Short-3451 · Exploring Niagara **SHORTS, JOHN E.** (**C332**) · Smy **Short, John Henry** (**FT-0081**) | http://exploringniagara.com/all_about_niagara/the_history_of_niagara/butlers_rangers.html | Alt d. 1776 WT; taken Jan 1778 Tioga |
 | Taken Jan 1778 Susquehanna near Tioga (Westmoreland Militia) | Probable | Smy annotated roll (**FT-0081**) | https://archive.org/details/annotatednominal0000smyw | Soft match; Henry vs E. |
-| Parents unknown — **still BLOCKED** (**C1080** / **C1147**) | Confirmed gap | Dig: [`john-shorts-1778-siblings.md`](../../../docs/research/people/proposals/john-shorts-1778-siblings.md) · [`y-line-john-shorts-father.md`](../../../docs/research/people/proposals/y-line-john-shorts-father.md) |  | No soft-ingest Gen-9 |
+| Parents unknown — **still BLOCKED** (**C1080** / **C1147** / **C1920**) | Confirmed gap | Dig: [`connect-shorts-john-father-2026-08-12.md`](../../../docs/research/people/proposals/connect-shorts-john-father-2026-08-12.md) · [`y-line-john-shorts-father.md`](../../../docs/research/people/proposals/y-line-john-shorts-father.md) |  | No soft-ingest Gen-9 |
 | Soft children Hannah Mary · Catharine · Philip · Frances | Probable / Possible | VanDusen · TreesByDan · ON petitions · Blue Church (**C1081–C1083**, **C1086**) |  | Collateral |
 
 ## Sources
@@ -63,6 +65,8 @@ media: []
 - [Ontario plaques — Hay Bay Church 1792](https://ontarioplaques.ca/Plaques/Plaque_Lennox06.html) + Loyalist Landing 1784 photos — **FT-0044**
 - Proposal: [`docs/research/people/proposals/y-line-augustus-father.md`](../../../docs/research/people/proposals/y-line-augustus-father.md)
 - Father dig (blocked): [`docs/research/people/proposals/y-line-john-shorts-father.md`](../../../docs/research/people/proposals/y-line-john-shorts-father.md)
+- Connect pass 2026-08-12: [`docs/research/people/proposals/connect-shorts-john-father-2026-08-12.md`](../../../docs/research/people/proposals/connect-shorts-john-father-2026-08-12.md)
+- [Burleigh fonds — Shorts (hcbshorts)](https://archive.org/details/hcbshorts)
 - Siblings dig: [`docs/research/people/proposals/john-shorts-1778-siblings.md`](../../../docs/research/people/proposals/john-shorts-1778-siblings.md)
 
 ## Open questions

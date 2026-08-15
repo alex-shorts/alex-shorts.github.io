@@ -1,0 +1,313 @@
+/**
+ * Person cards + expand +/−
+ *
+ * Sizes come from JS at mount (--card-w, --card-h, --stall-band, --expand-hit).
+ * Change METRICS in cards.js if you change the tile size (layout uses the same numbers).
+ */
+
+.cards {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  transform-origin: 0 0;
+}
+
+.card-host {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  transform-origin: 0 0;
+  user-select: none;
+}
+
+.cards.is-physics .card-host {
+  will-change: transform;
+}
+
+.card-stack {
+  position: absolute;
+  left: calc(var(--card-w) / -2);
+  top: calc((var(--card-h) / -2) - var(--stall-band));
+  z-index: 1;
+  width: var(--card-w);
+  height: calc(var(--card-h) + var(--stall-band));
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.stall-slot {
+  position: relative;
+  z-index: 0;
+  flex: 0 0 var(--stall-band);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.stall-badge {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  z-index: 0;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--stall, #a65d2e) 88%, var(--ink));
+  color: #f7f1e6;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  text-transform: lowercase;
+}
+
+.person-card,
+.stall-badge {
+  pointer-events: auto;
+}
+
+.person-card {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--soft) 70%, white);
+  border: 1.5px solid color-mix(in srgb, var(--fill) 55%, var(--ink));
+  font-family: var(--font-ui);
+  box-shadow: 0 1px 0 rgba(26, 23, 20, 0.06);
+}
+
+.card-host.has-artifacts .card-stack::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: calc(var(--stall-band) + 2px);
+  width: calc(var(--card-w) - 6px);
+  height: calc(var(--card-h) - 4px);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--mist) 70%, var(--soft));
+  border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  opacity: 0.55;
+  z-index: 0;
+}
+
+.card-stack.is-stalled .person-card {
+  border-color: color-mix(in srgb, var(--stall, #a65d2e) 50%, var(--ink));
+}
+
+.person-card.focus {
+  border-width: 2px;
+  border-color: var(--accent);
+}
+
+.person-card.unknown {
+  border-style: dashed;
+  opacity: 0.85;
+}
+
+.photo-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: var(--soft);
+}
+
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dna-badge {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 0.06rem 0.22rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--mist) 82%, var(--ink));
+  color: var(--ink);
+  font-size: 0.46rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+.adopted-badge {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  padding: 0.1rem 0.32rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, #7a5a2e 88%, var(--ink));
+  color: #f7f1e6;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-transform: lowercase;
+}
+
+.card-meta {
+  padding: 0.35rem 0.4rem 0.45rem;
+  background: color-mix(in srgb, var(--mist) 88%, white);
+}
+
+.card-name {
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.card-years {
+  margin-top: 0.15rem;
+  font-size: 0.58rem;
+  opacity: 0.65;
+}
+
+.card-host.is-collateral {
+  opacity: 0.55;
+}
+
+.card-host.is-step-back {
+  opacity: 0.5;
+}
+
+.card-host.is-step-back .person-card {
+  filter: saturate(0.75) brightness(1.04);
+  border-color: color-mix(in srgb, var(--fill) 35%, var(--ink) 25%);
+}
+
+.card-host.is-stack-collapsed {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.card-host.is-dim {
+  opacity: 0.28;
+}
+
+.card-host.is-collateral.is-dim {
+  opacity: 0.32;
+}
+
+.card-host.is-selected .person-card {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.card-host.is-selected.has-artifacts .card-stack::before {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--ink));
+  opacity: 0.75;
+}
+
+/* Expand +/− — top-left, behind the card so they peek from under the edge */
+.expand-row-top {
+  position: absolute;
+  left: calc(var(--card-w) / -2 + 2px);
+  top: calc(var(--card-h) / -2 - 13px);
+  z-index: 0;
+  display: flex;
+  gap: 3px;
+  transform: none;
+  pointer-events: none;
+}
+
+.expand-row-top .expand-btn {
+  pointer-events: auto;
+}
+
+.expand-btn {
+  box-sizing: border-box;
+  width: var(--expand-hit);
+  height: var(--expand-hit);
+  padding: 0;
+  border: 1.5px solid var(--mist);
+  border-radius: 999px;
+  background: var(--accent);
+  color: #f7f1e6;
+  font: 800 11px/1 var(--font-ui);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+}
+
+.expand-btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.expand-btn.is-collapse {
+  background: #5c5346;
+}
+
+.expand-btn[hidden] {
+  display: none;
+}
+
+.expand-glyph {
+  pointer-events: none;
+}
+
+.expand-btn .expand-minus {
+  display: none;
+}
+
+.expand-btn.is-collapse .expand-plus {
+  display: none;
+}
+
+.expand-btn.is-collapse .expand-minus {
+  display: block;
+}
+
+.expand-kids {
+  position: absolute;
+  left: calc(var(--card-w) / -2 + 2px);
+  top: calc(var(--card-h) / 2 - 4px);
+  z-index: 0;
+  transform: none;
+}
+
+.expand-double {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+
+.expand-double span {
+  position: absolute;
+  font-weight: 800;
+  line-height: 1;
+  font-size: 10px;
+}
+
+.expand-double span:first-child {
+  left: -2px;
+  top: -3px;
+  color: color-mix(in srgb, var(--accent) 70%, #f7f1e6);
+}
+
+.expand-double span:last-child {
+  left: 2px;
+  top: 1px;
+  color: #f7f1e6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-host {
+    transition: none;
+  }
+}

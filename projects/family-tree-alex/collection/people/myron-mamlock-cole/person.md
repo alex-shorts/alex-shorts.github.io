@@ -17,12 +17,12 @@ verified: true
 status: researching
 parent_links:
   - id: monroe_cohn
-    confidence: Probable
+    confidence: Confirmed
   - id: mamie_mamlock
-    confidence: Probable
+    confidence: Confirmed
 spouse_links:
   - id: virginia_victoria_racine
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "Family corroboration (Alex, 2026-08-07) — Cole (Cohn)"
     url: ""
@@ -43,7 +43,7 @@ media:
 
 ## Summary
 
-Father of **Virginia Jill Cole** (family). **Myron W. Cohn** married **Virginia V. Racine** **15 Dec 1926** Manhattan (HVR catalog **M-M-1927-0000778**): age **26**, accountant, b. **NYC** (not Nyack), residence Jamestown NY; parents **Monroe** × **Mamie Mamlock**. Family surname **Cole**. Soft Probable / `verified: false`.
+Father of **Virginia Jill Cole** (family). **Myron W. Cohn** married **Virginia V. Racine** **15 Dec 1926** Manhattan (**FT-0025** / HVR **M-M-1927-0000778**): age **26**, accountant, b. **NYC**, residence Jamestown NY; parents **Monroe** × **Mamie Mamlock** — **LOCKED — legal vital** (**C965**). Family surname **Cole**. `verified: true` / Confirmed.
 
 Do **not** confuse with comedian Myron Cohen.
 
@@ -51,9 +51,9 @@ Do **not** confuse with comedian Myron Cohen.
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Father of Virginia Jill Cole | Probable | Family corroboration (Alex) |  | Pack **C952** |
-| m. Virginia V Racine 15 Dec 1926 Manh. 778 | Confirmed (image) | HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/9193947 | Pack **C960** |
-| Parents Monroe × Mamie | Probable | Marriage PDF | same | Pack **C965** |
+| Father of Virginia Jill Cole | Probable | Family corroboration (Alex) |  | Pack **C952** (Y-locked line) |
+| m. Virginia V Racine 15 Dec 1926 Manh. 778 | Confirmed (image) | FT-0025 | https://a860-historicalvitalrecords.nyc.gov/view/9193947 | Pack **C960** |
+| Parents Monroe × Mamie | Confirmed | FT-0025 names both | same | **LOCKED — legal vital** **C965** |
 | b. NYC ~1900 (age 26 in Dec 1926) | Probable | Marriage PDF | same | Corrected from Nyack |
 
 ## Sources

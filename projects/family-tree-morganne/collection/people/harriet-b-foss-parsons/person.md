@@ -15,18 +15,18 @@ burial: Olivewood Cemetery, Riverside, California (T-2-1-6)
 parents: [ambrose_foss, sarah_knight_foss]
 spouses: [nelson_b_parsons]
 children: [dorothy_parsons_prichard, sarah_mona_parsons, harold_ambrose_parsons, autis_foss_parsons_hicks, gerald_allen_parsons]
-object_ids: [FT-0010]
-confidence: Probable
-verified: false
-status: researching
+object_ids: [FT-0010, FT-0443]
+confidence: Confirmed
+verified: true
+status: cataloged
 parent_links:
   - id: ambrose_foss
-    confidence: Probable
+    confidence: Confirmed
   - id: sarah_knight_foss
-    confidence: Probable
+    confidence: Confirmed
 spouse_links:
   - id: nelson_b_parsons
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "Find A Grave — Harriet B Foss Parsons (161996058)"
     url: "https://www.findagrave.com/memorial/161996058/harriet_b-parsons"
@@ -72,7 +72,7 @@ media:
 ---
 ## Summary
 
-Proposed mother of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). Soft-ingest **Probable** / `verified: false` — pack **C446** / **C461**. Maiden **Foss**; Olivewood T-2-1-6. **Parents Ambrose Foss × Sarah Knight** — FAG + Maine marriage parents side (FS image 2973) naming them as bride’s parents (hardens **C485**). Children Locked **C1087–C1090**. No open 1941 obit; no life portrait.
+Mother of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). **LOCKED — legal vital** **FT-0443** (2026-08-13): spouse **Nelson B. Parsons** (**C461**) and parents **Ambrose Foss × Sarah Knight** (**C485**). Maiden **Foss**; Olivewood T-2-1-6. Children Locked **C1087–C1090**. Gerald ← Nelson × Harriet (**C446**) still awaiting Y. Possible-adoption park on further Foss climb remains. No open 1941 obit; no life portrait.
 
 ## Assertions
 
@@ -80,8 +80,8 @@ Proposed mother of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). So
 | --- | --- | --- | --- | --- |
 | Mother of Gerald Austin / Allen Parsons | Probable | FAG Gerald parents grid + Olivewood | https://www.findagrave.com/memorial/148402533/gerald_austin-parsons | Pack **C446** |
 | Maiden Foss | Probable | FAG + ME VR marriage | https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV | Pack **C462** |
-| Spouse Nelson B. Parsons | Probable | FAG + ME VR marriage | Same | |
-| Parents Ambrose Foss × Sarah Knight Foss | Probable | FAG + ME VR marriage parents side | https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y | Pack **C485** hardened |
+| Spouse Nelson B. Parsons | Confirmed | ME VR marriage face + FT-0443 | https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV | Pack **C461** LOCKED — legal vital |
+| Parents Ambrose Foss × Sarah Knight Foss | Confirmed | ME VR marriage parents side + FT-0443 | https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y | Pack **C485** LOCKED — legal vital |
 | b. 15 Nov 1873 Fort Fairfield ME; d. 16 Jun 1941 Riverside Co.; Olivewood T-2-1-6 | Probable | FAG memorial | Same | Soft vitals |
 
 ## Sources

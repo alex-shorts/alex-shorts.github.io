@@ -16,7 +16,7 @@ parent_links:
     confidence: Confirmed
 spouses: [elizabeth_birkenbeuel]
 children: [leo_tuxhorn]
-object_ids: [FT-0103, FT-0107, FT-0314]
+object_ids: [FT-0103, FT-0107, FT-0314, FT-0408, FT-0409, FT-0411]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -59,4 +59,4 @@ Father of Leo Lewis Tuxhorn (**C36 Confirmed**). Frederick William August Tuxhor
 
 ## Open questions
 
-Burial place; local KS newspaper corroboration of 1884 death details; Frederick baptism ~1829 naming Herman × Anne; Elizabeth’s parents still unknown (**C177**). FAG also lists other children of Frederick × Elizabeth (Leo siblings FAN — not folded this round).
+Burial place; Frederick baptism ~1829 naming Herman × Anne; Elizabeth’s parents still unknown (**C177**). FAG also lists other children of Frederick × Elizabeth (Leo siblings FAN — not folded this round). **1884 death wire** **FT-0408**. Probate **index** **FT-0411** (D52/1891 + E104/1894) — **book page images still Blocked** (courthouse/order). Migration lead: LaSalle Co. IL ~1856 / Fayette 1870 (unverified) → passenger/nat still open.

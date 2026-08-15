@@ -35,4 +35,19 @@ npm run prototype:tree
 
 Over http the app prefers live `collection/people/index.json` instead of the snapshot.
 
-**Primary** controls which ascent is drawn: blood ancestors + descendants of the primary, plus spouse cards (spouse’s own parents stay hidden until you switch Primary or expand ⊕ in the panel).
+**Primary** sets which blood tree is drawn: all blood ancestors and descendants, plus the primary’s spouse. Adoptive/step branches and extra spouses with no blood child on this tree stay off the diagram. Couples read by spacing (no marriage dashes).
+
+## Files (designers start here)
+
+Cards are HTML in a layer beside the SVG (not inside `foreignObject`). One camera: SVG `transform` on edges (stays sharp), CSS `zoom` on `#cards` (HTML re-rasterizes — `transform: scale()` on HTML stays blurry).
+
+| File | What to edit |
+| --- | --- |
+| `cards.css` | Tile, photo, badges, stall, +/− buttons. Sizes are CSS vars set at mount. |
+| `cards.js` → `cardHTML()` | Card markup. Keep class names `.card-stack`, `.person-card`, `.expand-one`, `.expand-all`, `.expand-kids`. |
+| `cards.js` → `METRICS` | `CARD_W` / `CARD_H` / `STALL_BAND` — layout reads the same numbers. |
+| `layout.js` | Pedigree packing (units, layers, step-back, sprawl). |
+| `styles.css` | Page chrome, panel, edge strokes. Not cards. |
+| `app.js` | Camera, expand/collapse, physics overlay, museum panel. |
+
+Do not put card look in `app.js`. Do not change `METRICS` without checking packing (`FAMILY_GAP` in `layout.js`).

@@ -11,18 +11,18 @@ burial: Olivewood Cemetery, Riverside, California (T-2-1-5)
 parents: [percy_parsons, kate_parsons]
 spouses: [harriet_b_foss_parsons]
 children: [dorothy_parsons_prichard, sarah_mona_parsons, harold_ambrose_parsons, autis_foss_parsons_hicks, gerald_allen_parsons]
-object_ids: [FT-0010]
-confidence: Probable
-verified: false
-status: researching
+object_ids: [FT-0010, FT-0443]
+confidence: Confirmed
+verified: true
+status: cataloged
 parent_links:
   - id: percy_parsons
-    confidence: Probable
+    confidence: Confirmed
   - id: kate_parsons
-    confidence: Probable
+    confidence: Confirmed
 spouse_links:
   - id: harriet_b_foss_parsons
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "Find A Grave — Nelson B Parsons (161996016)"
     url: "https://www.findagrave.com/memorial/161996016/nelson_b-parsons"
@@ -30,12 +30,12 @@ sources:
     url: "https://www.findagrave.com/memorial/148402533/gerald_austin-parsons"
   - label: "Maine VR marriage — Nelson B Parsons × Hattie B Foss 23 Feb 1899 Fort Fairfield (FS KCDC-9MV)"
     url: "https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV"
-  - label: "Maine VR marriage parents side — father Percy Parsons / mother Kate Parsons (FS 3:1:939K-RPQC-6Y image 2973)"
+  - label: "Maine VR marriage parents side — father Percy Parsons / mother Kate Parsons (FS 3:1:939K-RPQC-6Y image 2973) — FT-0443"
     url: "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
   - label: "FS 1880 Fort Fairfield — Nelson step-son Sweden in William × Kristi hh (MF3N-QJ3)"
     url: "https://www.familysearch.org/ark:/61903/1:1:MF3N-QJ3"
-  - label: "CADI — Nelson B Parsons d. 1931 cert 67186 (FS QKS9-857M)"
-    url: "https://www.familysearch.org/ark:/61903/1:1:QKS9-857M"
+  - label: "FS 1900 Fort Fairfield — Nelson P Parsons × Hattie; b. Feb 1865 Sweden; arrival 1872; parents b. Sweden (MMLZ-CRT)"
+    url: "https://www.familysearch.org/ark:/61903/1:1:MMLZ-CRT"
   - label: "Parsons–Allen wedding notice (FT-0010) — son of Mrs N. B. Parsons"
     url: "https://images.findagrave.com/photos/2021/229/148402533_cf35c75d-08e3-4820-9fbd-9f15c8dd2aa1.jpeg"
 media:
@@ -68,7 +68,7 @@ media:
 ---
 ## Summary
 
-Proposed father of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). Soft-ingest **Probable** / `verified: false` — pack **C446** / **C461**. Olivewood T-2-1-5; Sweden-born; d. 25 Dec 1931 Riverside Co. **Parents unlocked 2026-08-07:** **Percy Parsons** × **Kate Parsons** on Maine marriage parents side (FS image **2973** / `3:1:939K-RPQC-6Y`) — pack **C1091–C1092**. 1880 Fort Fairfield: step-son of William × Kristi (Kate) with brother Perry — **C1093–C1094**. Children Locked **C1087–C1090**. Marriage also names Hattie’s parents Ambrose Foss × Sarah Knight (corroborates **C485**).
+Father of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). **LOCKED — legal vital** **FT-0443** (2026-08-13): Maine VR marriage names **Percy Parsons** × **Kate Parsons** as groom’s parents and **Hattie B. Foss** as spouse — pack **C1091–C1092** / **C461**. Olivewood T-2-1-5; Sweden-born (FAG / 1880; face card says Maine — not auto-accepted); d. 25 Dec 1931 Riverside Co. 1880 Fort Fairfield: step-son of William × Kristi (Kate) with brother Perry — **C1093–C1094** still awaiting Y. Children Locked **C1087–C1090**. Same card names Hattie’s parents Ambrose Foss × Sarah Knight (**C485** locked). Gerald ← Nelson × Harriet (**C446**) still awaiting Y.
 
 ## Attributes
 
@@ -83,20 +83,24 @@ Proposed father of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). So
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
 | Father of Gerald Austin / Allen Parsons | Probable | FAG Gerald parents grid + Olivewood | https://www.findagrave.com/memorial/148402533/gerald_austin-parsons | Pack **C446** |
-| Spouse Harriet B. Foss Parsons | Probable | FAG + ME VR marriage | https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV | Pack **C461** |
-| Parents Percy Parsons × Kate Parsons | Probable | ME VR marriage parents side image 2973 | https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y | Pack **C1091–C1092** |
+| Spouse Harriet B. Foss Parsons | Confirmed | ME VR marriage face + FT-0443 | https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV | Pack **C461** LOCKED — legal vital |
+| Parents Percy Parsons × Kate Parsons | Confirmed | ME VR marriage parents side image 2973 + FT-0443 | https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y | Pack **C1091–C1092** LOCKED — legal vital |
 | b. Feb 1863 Sweden; d. 25 Dec 1931 Riverside Co. | Probable | FAG + CADI 67186 + 1900 census | Same | Soft vitals |
+| Arrived US **1872**; both parents born Sweden | Probable | 1900 MMLZ-CRT | https://www.familysearch.org/ark:/61903/1:1:MMLZ-CRT | Pack **C2283** |
 
 ## Sources
 
 - [Find A Grave — Nelson B Parsons (161996016)](https://www.findagrave.com/memorial/161996016/nelson_b-parsons)
 - [Maine VR marriage KCDC-9MV](https://www.familysearch.org/ark:/61903/1:1:KCDC-9MV)
-- [Maine VR parents side 939K-RPQC-6Y](https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y)
+- [Maine VR parents side 939K-RPQC-6Y](https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y) — **FT-0443**
 - [FS 1880 MF3N-QJ3](https://www.familysearch.org/ark:/61903/1:1:MF3N-QJ3)
+- [FS 1900 MMLZ-CRT](https://www.familysearch.org/ark:/61903/1:1:MMLZ-CRT) — arrival 1872; parents b. Sweden
 
 ## Open questions
 
-- Full given name; open 1931 obit; immigration
+- Full given name; 1931 obit still paywalled; **arrived 1872** (1900)
 - Portrait still none open
-- William is stepfather only — not in `parents:`
+- Face card age ~26 / birthplace Maine vs stone+1880 Feb 1863 Sweden — keep Sweden; 1900 says Feb **1865**
+- William is stepfather only — not in `parents:` (**C1094** awaiting Y)
+- Percy/Kate own parents **C2280–C2281 Blocked**
 ---

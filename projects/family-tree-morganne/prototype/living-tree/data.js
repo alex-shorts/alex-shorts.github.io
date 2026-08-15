@@ -61,7 +61,7 @@
   function linkMap(list) {
     return (list || [])
       .map((entry) => {
-        if (typeof entry === "string") return { id: entry, confidence: null, ended: false };
+        if (typeof entry === "string") return { id: entry, confidence: null, ended: false, kind: "biological" };
         if (entry?.id) {
           const status = String(entry.status || "").toLowerCase();
           return {
@@ -72,11 +72,39 @@
               status === "divorced" ||
               status === "ended" ||
               status === "dissolved",
+            kind: normalizeParentKind(entry.kind),
           };
         }
         return null;
       })
       .filter(Boolean);
+  }
+
+  function normalizeParentKind(kind) {
+    const k = String(kind || "biological").toLowerCase().trim();
+    if (k === "adopted") return "adoptive";
+    if (k === "stepfather" || k === "stepmother" || k === "step-parent" || k === "stepparent") {
+      return "step";
+    }
+    if (k === "adoptive" || k === "step" || k === "biological") return k;
+    return "biological";
+  }
+
+  function parentLinkKind(child, parentId) {
+    const explicit = (child?.parentLinks || []).find((l) => l.id === parentId);
+    return normalizeParentKind(explicit?.kind);
+  }
+
+  function isBloodParent(child, parentId) {
+    return parentLinkKind(child, parentId) === "biological";
+  }
+
+  function bloodParentsOf(person) {
+    return (person?.parents || []).filter((pid) => isBloodParent(person, pid));
+  }
+
+  function hasNonBloodParent(person) {
+    return (person?.parents || []).some((pid) => !isBloodParent(person, pid));
   }
 
   function parentLinkConfidence(child, parentId) {
@@ -106,6 +134,78 @@
 
   function edgeClass(confidence) {
     return `edge-${normalizeConfidence(confidence).toLowerCase()}`;
+  }
+
+  /** Face only — never a PDF or vital scan as the card portrait. */
+  function isFaceMedia(entry) {
+    if (entry == null) return false;
+    const kind = String(typeof entry === "object" ? entry.kind || "" : "").toLowerCase();
+    const file = String(mediaPath(entry) || "").toLowerCase();
+    if (!file || /\.pdf(\?|$)/.test(file)) return false;
+    return kind === "portrait" || /(^|\/)portrait/.test(file);
+  }
+
+  function pickFacePhoto(slug, raw) {
+    if (raw?.portrait) return peopleMediaUrl(slug, raw.portrait);
+    for (const m of raw?.media || []) {
+      if (isFaceMedia(m)) return peopleMediaUrl(slug, m);
+    }
+    return null;
+  }
+
+  /** Higher = better card face. 0 = skip (PDF / not an image). */
+  function cardPhotoScore(entry) {
+    const file = String(mediaPath(entry) || "").toLowerCase();
+    if (!file || /\.pdf(\?|$)/.test(file)) return 0;
+    if (!/\.(jpe?g|png|webp|gif)(\?|$)/i.test(file) && !file.includes("/media/")) return 0;
+    const kind = String(typeof entry === "object" ? entry.kind || "" : "").toLowerCase();
+    if (kind === "portrait" || /(^|\/)portrait/.test(file)) return 100;
+    const gallery = inferGalleryKey(file.split("/").pop(), kind);
+    if (kind === "headstone" || gallery === "headstones") return 80;
+    if (gallery === "career-photos" || gallery === "baseball-cards") return 60;
+    if (gallery === "photos") return 50;
+    if (gallery === "clippings") return 40;
+    if (gallery === "census") return 20;
+    return 30;
+  }
+
+  function pickObjectPhoto(objectIds) {
+    const idx = objectsIndex || global.OBJECTS_INDEX || {};
+    let best = null;
+    let bestScore = 0;
+    for (const oid of objectIds || []) {
+      const row = idx[oid];
+      if (!row?.dir || !row.photos?.length) continue;
+      for (const rel of row.photos) {
+        const n = String(rel).toLowerCase();
+        if (!/\.(jpe?g|png|webp|gif)(\?|$)/i.test(n)) continue;
+        let score = 30;
+        if (/portrait/.test(n)) score = 100;
+        else if (/headstone|grave|memorial|fag/.test(n)) score = 80;
+        if (score > bestScore) {
+          bestScore = score;
+          best = `${OBJECTS_ROOT}${row.dir}/${rel}`;
+        }
+      }
+    }
+    return best;
+  }
+
+  /** Portrait, else headstone / other defining image, else a linked object photo. */
+  function pickCardPhoto(slug, raw) {
+    const face = pickFacePhoto(slug, raw);
+    if (face) return face;
+    let bestUrl = null;
+    let bestScore = 0;
+    for (const m of raw?.media || []) {
+      const score = cardPhotoScore(m);
+      const url = peopleMediaUrl(slug, m);
+      if (score > bestScore && url) {
+        bestScore = score;
+        bestUrl = url;
+      }
+    }
+    return bestUrl || pickObjectPhoto(raw?.object_ids);
   }
 
   /** Resolve index media entry: string path, or { ref | file | path }. */
@@ -150,6 +250,63 @@
     portraits: "Portraits",
     photos: "Photos",
   };
+
+  const OBJECT_TYPE_LABELS = {
+    newspaper: "Newspaper",
+    census: "Census",
+    obituary: "Obituary",
+    vital: "Vital record",
+    deed: "Deed",
+    military: "Military",
+    church: "Church",
+    place: "Place",
+    book: "Book",
+    genealogy: "Genealogy",
+    photo: "Photo",
+    artifact: "Artifact",
+    adoption: "Adoption",
+    recipe: "Recipe",
+    headstone: "Headstones",
+    document: "Document",
+  };
+
+  function isAccessionId(s) {
+    return /^FT-\d+$/i.test(String(s || "").trim());
+  }
+
+  function humanizeObjectDir(dir) {
+    const slug = String(dir || "")
+      .replace(/^FT-\d+-?/i, "")
+      .replace(/-/g, " ")
+      .trim();
+    if (!slug) return "";
+    return slug.replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+
+  function inferTypeFromDir(dir) {
+    const d = String(dir || "").toLowerCase();
+    if (/obituar|funeral/.test(d)) return "obituary";
+    if (/census/.test(d)) return "census";
+    if (/newspaper|press-|star-|clipping|sentinel|chronicle/.test(d)) return "newspaper";
+    if (/headstone|grave|memorial|fag/.test(d)) return "headstone";
+    if (/vital|birth|marriage|death/.test(d)) return "vital";
+    if (/deed|probate|land/.test(d)) return "deed";
+    if (/military|war-|veteran|roster/.test(d)) return "military";
+    if (/church|baptism|pew/.test(d)) return "church";
+    return "";
+  }
+
+  /** Tile label: what the object is (Newspaper), not FT-0103. */
+  function objectGalleryLabel(o) {
+    const type = String(o?.type || inferTypeFromDir(o?.dirName) || "").toLowerCase();
+    if (type && OBJECT_TYPE_LABELS[type] && type !== "document") return OBJECT_TYPE_LABELS[type];
+    const title = String(o?.title || "").trim();
+    if (title && !isAccessionId(title)) {
+      const short = title.split(/[—–|]/)[0].trim();
+      return short.length > 42 ? `${short.slice(0, 40)}…` : short;
+    }
+    return humanizeObjectDir(o?.dirName) || OBJECT_TYPE_LABELS[type] || "Document";
+  }
 
   /** Infer gallery category from kind + filename (index often stores paths only). */
   function inferGalleryKey(name, kind) {
@@ -212,10 +369,7 @@
     people = {};
     for (const [id, raw] of Object.entries(index.people || {})) {
       const slug = raw.slug || null;
-      const photoUrl =
-        peopleMediaUrl(slug, raw.portrait) ||
-        peopleMediaUrl(slug, raw.media && raw.media[0]) ||
-        null;
+      const photoUrl = pickCardPhoto(slug, raw);
       people[id] = {
         id,
         slug,
@@ -228,9 +382,9 @@
         note: raw.note || "",
         summary: raw.note || `${raw.name || id}${raw.years ? ` (${raw.years})` : ""}.`,
         blocker: raw.blocker ? String(raw.blocker).trim() : "",
-        parents: raw.parents || [],
-        spouses: raw.spouses || [],
-        children: raw.children || [],
+        parents: [...(raw.parents || [])],
+        spouses: [...(raw.spouses || [])],
+        children: [...(raw.children || [])],
         parentLinks: linkMap(raw.parent_links),
         spouseLinks: linkMap(raw.spouse_links),
         // Keep objects when present; index often has path strings only.
@@ -246,10 +400,43 @@
         objectIds: [...(raw.object_ids || [])],
         sources: Array.isArray(raw.sources) ? raw.sources : [],
         generation: 0,
+        sex: raw.sex === "m" || raw.sex === "f" ? raw.sex : "",
       };
+    }
+    closeKinship(people);
+    assignSex(people);
+    {
+      let open = 0;
+      for (const p of Object.values(people)) {
+        for (const pid of p.parents) {
+          if (people[pid] && !people[pid].children.includes(p.id)) open += 1;
+        }
+      }
+      console.assert(open === 0, `${open} parent→child edges still one-way`);
     }
     assignGenerations(people, focusId);
     return { focusId, people, updated: index.updated };
+  }
+
+  /** Parent/spouse lists are one-way in person.md; layout and DNA need both directions. */
+  function closeKinship(map) {
+    for (const p of Object.values(map)) {
+      if (!p.children) p.children = [];
+      if (!p.spouses) p.spouses = [];
+      if (!p.parents) p.parents = [];
+    }
+    for (const p of Object.values(map)) {
+      for (const pid of p.parents) {
+        const par = map[pid];
+        if (!par) continue;
+        if (!par.children.includes(p.id)) par.children.push(p.id);
+      }
+      for (const sid of p.spouses) {
+        const s = map[sid];
+        if (!s) continue;
+        if (!s.spouses.includes(p.id)) s.spouses.push(p.id);
+      }
+    }
   }
 
   async function loadPeopleIndex() {
@@ -325,60 +512,59 @@
   }
 
   /**
-   * Do not walk parents of these people in the default graph. They stay on the
-   * map; deeper ascent only appears when the user expands (+) that card.
-   * Harriet B. Foss Parsons — Morganne line cut; Foss/Bunker/Knight stay collapsed.
-   */
-  const COLLAPSE_ANCESTORS_PAST = new Set(["harriet_b_foss_parsons"]);
-
-  /**
-   * Visible set for the Share graph: primary’s blood line (ancestors + descendants)
-   * plus spouses of those people (spouse cards only — do **not** pull in the
-   * spouse’s own parents/ancestors). Switching Primary therefore hides the
-   * other partner’s ascent (e.g. Morganne primary → Alexander stays, Shorts/Anderson ascent off).
+   * Share graph: each root’s blood ancestors + descendants, both blood parents
+   * of everyone visible, and each root’s spouse. No adoptive/step branches,
+   * no prior spouses without a blood child on this tree.
+   * `opts.roots` unions several primaries (Alexander + Morganne).
    */
   function defaultVisible(map, primaryId, opts = {}) {
-    const includeSiblings = opts.includeSiblings !== false;
-    const root = primaryId || focusId;
+    const includeSiblings = opts.includeSiblings === true;
+    const roots = (opts.roots?.length ? opts.roots : [primaryId || focusId]).filter((id) => map[id]);
     const vis = new Set();
-    if (!map[root]) return vis;
+    if (!roots.length) return vis;
 
-    const up = [root];
-    while (up.length) {
-      const id = up.pop();
-      if (!map[id] || vis.has(id)) continue;
-      vis.add(id);
-      // Keep the cut person visible; hide everything past them until ⊕ expand.
-      if (COLLAPSE_ANCESTORS_PAST.has(id)) continue;
-      for (const p of map[id].parents || []) up.push(p);
-    }
-
-    const down = [root];
-    const seenDown = new Set([root]);
-    while (down.length) {
-      const id = down.pop();
-      for (const c of map[id]?.children || []) {
-        if (!map[c] || seenDown.has(c)) continue;
-        seenDown.add(c);
-        vis.add(c);
-        down.push(c);
+    for (const root of roots) {
+      const up = [root];
+      while (up.length) {
+        const id = up.pop();
+        if (!map[id] || vis.has(id)) continue;
+        vis.add(id);
+        for (const p of bloodParentsOf(map[id])) {
+          if (map[p]) up.push(p);
+        }
+      }
+      const down = [root];
+      const seenDown = new Set([root]);
+      while (down.length) {
+        const id = down.pop();
+        for (const c of map[id]?.children || []) {
+          if (!map[c] || seenDown.has(c)) continue;
+          if (!isBloodParent(map[c], id)) continue;
+          seenDown.add(c);
+          vis.add(c);
+          down.push(c);
+        }
       }
     }
 
-    // Blood-line set before spouses — add named siblings (same parents) as quieter collateral
     if (includeSiblings) {
       const blood = new Set(vis);
       for (const id of [...blood]) {
-        for (const pid of map[id]?.parents || []) {
+        for (const pid of bloodParentsOf(map[id])) {
           for (const sib of map[pid]?.children || []) {
-            if (map[sib]) vis.add(sib);
+            if (map[sib] && isBloodParent(map[sib], pid)) vis.add(sib);
           }
         }
       }
     }
 
     for (const id of [...vis]) {
-      for (const s of map[id]?.spouses || []) {
+      for (const pid of bloodParentsOf(map[id])) {
+        if (map[pid]) vis.add(pid);
+      }
+    }
+    for (const root of roots) {
+      for (const s of map[root]?.spouses || []) {
         if (map[s]) vis.add(s);
       }
     }
@@ -399,7 +585,7 @@
       for (let i = 0; i < q.length; i++) {
         const id = q[i];
         const d = dist.get(id);
-        for (const p of map[id]?.parents || []) {
+        for (const p of bloodParentsOf(map[id])) {
           if (!map[p] || dist.has(p)) continue;
           dist.set(p, d + 1);
           q.push(p);
@@ -453,37 +639,146 @@
     return `~${pct.toFixed(2)}%`;
   }
 
-  /** Focus + ancestors + descendants (spine). Siblings/cousins are off-line. */
-  function directLineIds(focusId, map) {
-    const line = new Set();
-    const up = [focusId];
+  /** Adoptive/step parent of primary or of someone on primary’s blood spine. */
+  function isNonBloodKin(id, primaryId, map) {
+    if (!map[id] || !map[primaryId]) return false;
+    const blood = new Set();
+    const up = [primaryId];
     while (up.length) {
-      const id = up.pop();
-      if (!map[id] || line.has(id)) continue;
-      line.add(id);
-      for (const p of map[id].parents || []) up.push(p);
+      const cur = up.pop();
+      if (!map[cur] || blood.has(cur)) continue;
+      blood.add(cur);
+      for (const p of bloodParentsOf(map[cur])) up.push(p);
     }
-    const down = [focusId];
-    const seen = new Set([focusId]);
+    const down = [primaryId];
+    const seen = new Set([primaryId]);
     while (down.length) {
-      const id = down.pop();
-      for (const c of map[id]?.children || []) {
+      const cur = down.pop();
+      for (const c of map[cur]?.children || []) {
         if (!map[c] || seen.has(c)) continue;
         seen.add(c);
-        line.add(c);
+        blood.add(c);
         down.push(c);
+      }
+    }
+    for (const bid of blood) {
+      if ((map[bid]?.parents || []).includes(id) && !isBloodParent(map[bid], id)) return true;
+    }
+    return false;
+  }
+
+  /** Focus + ancestors + descendants (spine). Siblings/cousins are off-line. */
+  function directLineIds(focusId, map, extraRoots) {
+    const line = new Set();
+    const roots = [focusId, ...(extraRoots || [])].filter((id, i, arr) => map[id] && arr.indexOf(id) === i);
+    for (const root of roots) {
+      const up = [root];
+      while (up.length) {
+        const id = up.pop();
+        if (!map[id] || line.has(id)) continue;
+        line.add(id);
+        for (const p of bloodParentsOf(map[id])) up.push(p);
+      }
+      const down = [root];
+      const seen = new Set([root]);
+      while (down.length) {
+        const id = down.pop();
+        for (const c of map[id]?.children || []) {
+          if (!map[c] || seen.has(c)) continue;
+          if (!isBloodParent(map[c], id)) continue;
+          seen.add(c);
+          line.add(c);
+          down.push(c);
+        }
       }
     }
     return line;
   }
 
+  const FEMALE_FIRST = new Set(
+    "ann anna anne annabelle barbara belle betty caroline carolina catharine catherine charlotte clara della effie elizabeth emma esther eunice eva florence gertrude glendora gloria hannah harriet heidi helen hulda ida ina jane joanna kathleen kate lena louise lucretia mamie marcy margaret marie marion martha mary may mayme mehitable minnie morganne phoebe phebe rachel rebecca rose rosannah sarah sophia sophie virginia wilma".split(" ")
+  );
+  const MALE_FIRST = new Set(
+    "abraham alexander andrew arthur augustus bill boaz carl caspar charles clause daniel david don dorland duncan earl edmund frederick george gerald gottfried heinrich henry herman isaac irvin james job joel johann john jonathan leo monroe nathan otho philip richard robert samuel william".split(" ")
+  );
+
+  function assignSex(map) {
+    for (const p of Object.values(map)) {
+      if (p.sex === "m" || p.sex === "f") continue;
+      const name = String(p.name || "");
+      if (/\b(Jr\.?|III|II|Sr\.?)\b/.test(name)) {
+        p.sex = "m";
+        continue;
+      }
+      const first = name.split(/[\s-]+/)[0].toLowerCase();
+      if (FEMALE_FIRST.has(first)) {
+        p.sex = "f";
+        continue;
+      }
+      if (MALE_FIRST.has(first)) {
+        p.sex = "m";
+        continue;
+      }
+      for (const cid of p.children || []) {
+        const pars = map[cid]?.parents || [];
+        if (pars[0] === p.id && pars[1] && pars[1] !== p.id) {
+          p.sex = "m";
+          break;
+        }
+        if (pars[1] === p.id && pars[0] && pars[0] !== p.id) {
+          p.sex = "f";
+          break;
+        }
+      }
+    }
+    for (const p of Object.values(map)) {
+      if (p.sex) continue;
+      for (const sid of p.spouses || []) {
+        const s = map[sid]?.sex;
+        if (s === "m") p.sex = "f";
+        else if (s === "f") p.sex = "m";
+        if (p.sex) break;
+      }
+    }
+  }
+
+  const STALL_TYPES = [
+    { id: "adoption", label: "Adoption", short: "adopt", color: "#7a5a2e", re: /adopt/i },
+    { id: "immigration", label: "Immigration", short: "immig.", color: "#3d6b8a", re: /immigra|emigra|passenger|naturaliz|ellis|voyage|sweden|england parent/i },
+    { id: "maiden", label: "Maiden name", short: "maiden", color: "#8b5a7a", re: /maiden/i },
+    { id: "death", label: "Death / burial", short: "death", color: "#5c5346", re: /\b(death|burial|died|grave)\b/i },
+    { id: "marriage", label: "Marriage", short: "married", color: "#6b8f71", re: /marriage|wife name|spouse name/i },
+    { id: "parents", label: "Parents unknown", short: "parents", color: "#a65d2e", re: /parent/i },
+    { id: "records", label: "Records blocked", short: "records", color: "#b56b5a", re: /./ },
+  ];
+
+  function stallInfo(blocker) {
+    const text = String(blocker || "").trim();
+    if (!text) return null;
+    return STALL_TYPES.find((t) => t.re.test(text)) || STALL_TYPES[STALL_TYPES.length - 1];
+  }
+  console.assert(stallInfo("adoptive parents unknown")?.id === "adoption", "stall adoption");
+  console.assert(stallInfo("Sweden emigration unlock")?.id === "immigration", "stall immigration");
+  console.assert(stallInfo("Parents blocked — need cert")?.id === "parents", "stall parents");
+  console.assert(cardPhotoScore({ kind: "portrait", file: "media/portrait.jpg" }) > cardPhotoScore({ kind: "headstone", file: "media/headstone.jpg" }), "portrait beats headstone");
+  console.assert(cardPhotoScore({ kind: "headstone", file: "media/headstone.jpg" }) > cardPhotoScore({ file: "media/clip.jpg" }), "headstone beats clip");
+  console.assert(cardPhotoScore({ file: "media/scan.pdf" }) === 0, "skip pdf");
+
+  function silhouetteUrl(sex, bg) {
+    const body =
+      sex === "f"
+        ? `<path d="M32 38c0-14 8-24 18-24s18 10 18 24c2 8 8 12 10 20h-8c-2-10-6-16-20-16s-18 6-20 16h-8c2-8 8-12 10-20z" fill="#6a5348"/><circle cx="50" cy="36" r="11" fill="#8a7a70"/><path d="M24 108 L50 54 L76 108 Z" fill="#6a5348"/>`
+        : sex === "m"
+          ? `<circle cx="50" cy="32" r="12" fill="#6e6a64"/><rect x="46" y="43" width="8" height="8" fill="#6e6a64"/><path d="M28 108 V62 c0-6 8-10 22-10s22 4 22 10 v46z" fill="#4f5558"/>`
+          : `<circle cx="50" cy="38" r="13" fill="#6a6560"/><ellipse cx="50" cy="100" rx="24" ry="16" fill="#6a6560"/>`;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 112"><rect width="100" height="112" fill="#${bg}"/>${body}</svg>`;
+    return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+  }
+
   function portraitUrl(person) {
     if (person.photo) return person.photo;
-    if (person.id === "anderson_grandma") {
-      return `https://api.dicebear.com/9.x/shapes/svg?seed=unknown&backgroundColor=bdb5a8`;
-    }
     const bg = (GEN_COLORS[person.generation] || GEN_COLORS[2]).avatarBg;
-    return `https://api.dicebear.com/9.x/notionists/svg?seed=${encodeURIComponent(person.id)}&backgroundColor=${bg}`;
+    return silhouetteUrl(person.sex, bg);
   }
 
   function neighborIds(person) {
@@ -575,7 +870,14 @@
 
     const meta = body ? parseFrontmatter(body) : {};
     const photos = (row?.photos || []).map((rel) => `${base}${rel}`);
-    const type = (meta.type || "document").toLowerCase();
+    const dirName = row?.dir || objectId;
+    const type = String(
+      meta.type ||
+        row?.type ||
+        inferTypeFromDir(dirName) ||
+        inferTypeFromDir((row?.photos || []).join(" ")) ||
+        "document"
+    ).toLowerCase();
 
     const audioCandidate = `${base}narration.webm`;
     const audio = (await mediaExists(audioCandidate)) ? audioCandidate : null;
@@ -586,10 +888,13 @@
 
     if (!body && !photos.length && !audio && !videos.length) return null;
 
+    const rawTitle = String(meta.title || row?.title || "").trim();
+    const title = rawTitle && !isAccessionId(rawTitle) ? rawTitle : humanizeObjectDir(dirName) || objectId;
+
     return {
       id: objectId,
-      dirName: row?.dir || objectId,
-      title: meta.title || objectId,
+      dirName,
+      title,
       type,
       sourceUrl: meta.source_url || "",
       bodyPath: entryUrl,
@@ -674,12 +979,20 @@
     directLineIds,
     expectedDnaShares,
     formatDnaShare,
+    parentLinkKind,
+    isBloodParent,
+    hasNonBloodParent,
+    isNonBloodKin,
     portraitUrl,
+    silhouetteUrl,
+    stallInfo,
+    STALL_TYPES,
     neighborIds,
     spouseConfidence,
     childConfidence,
     edgeClass,
     loadObjectArtifact,
+    objectGalleryLabel,
     personMediaArtifacts,
     inferGalleryKey,
     galleryLabel,

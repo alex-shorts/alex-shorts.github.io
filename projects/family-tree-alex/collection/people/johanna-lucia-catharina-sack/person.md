@@ -48,4 +48,4 @@ media: []
 
 ## Open questions
 
-Person-ID permalink; marriage date; Sack parents beyond N.N. (parked — not DNA-strong this pass).
+Sack parents beyond N.N. (parked). Marriage **10 Nov 1763** Mascherode on GEDBAS **1133073187** / **1133073186** (**C1715**).

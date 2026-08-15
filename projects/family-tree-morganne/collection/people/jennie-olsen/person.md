@@ -15,7 +15,7 @@ burial: Mountain View Cemetery, Vancouver, British Columbia, Canada
 parents: []
 spouses: [isaac_olsen]
 children: [william_theodore_olson, mabel_victoria_olson_sizer, carl_leonard_olson, della_elizabeth_rudd]
-object_ids: [FT-0013, FT-0014, FT-0015, FT-0016]
+object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445]
 confidence: Probable
 verified: false
 status: researching

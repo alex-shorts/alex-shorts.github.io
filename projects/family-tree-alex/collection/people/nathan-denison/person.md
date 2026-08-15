@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [elizabeth_thompson]
 children: [mary_ann_denison]
-object_ids: [FT-0055, FT-0104, FT-0105]
+object_ids: [FT-0055, FT-0104, FT-0105, FT-0466]
 confidence: Probable
 verified: false
 status: researching

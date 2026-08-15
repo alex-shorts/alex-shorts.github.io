@@ -21,13 +21,13 @@ sources:
     url: "https://gedbas.genealogy.net/person/show/1163945819"
   - label: "GEDBAS 1163945811 — daughter Marie Christine Henrietta Burgdorf names these parents"
     url: "https://gedbas.genealogy.net/person/show/1163945811"
-  - label: "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md"
+  - label: "DNA Burgdorf/Masberg parents CONNECT: docs/research/people/proposals/dna-burgdorf-masberg-parents-2026-08-10.md"
     url: ""
 media: []
 ---
 ## Summary
 
-**Probable** mother of Marie Christine Henrietta Burgdorf (**C384**). Née **Masberg**; wife of **Gottfried Ludwig Burgdorf** (m. ~1817 Barum). GEDBAS: b. **about 1790** Barum Salzgitter; married name Burgdorf noted. Soft-ingest only — no parish image. Stay `verified: false`. Masberg parents blank on GEDBAS (not invented).
+**Probable** mother of Marie Christine Henrietta Burgdorf (**C384**). Née **Masberg**; wife of **Gottfried Ludwig Burgdorf** (m. ~1817 Barum). GEDBAS: b. **about 1790** Barum Salzgitter; married name Burgdorf noted. Soft-ingest only — no parish image. Stay `verified: false`. Masberg parents blank on GEDBAS (not invented). **C1720–C1729** CONNECT: free dig blocked — keep `parents: []`.
 
 ## Assertions
 
@@ -45,4 +45,4 @@ media: []
 
 ## Open questions
 
-Death date/place; Masberg parents (GEDBAS blank).
+Death date/place; Masberg parents still blank — CONNECT dig **C1720–C1729** blocked (free GEDBAS/OFB/web negative; unlock = Barum parish ~1790/~1817).

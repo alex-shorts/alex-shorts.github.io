@@ -17,32 +17,33 @@ confidence: Probable
 verified: false
 status: researching
 sources:
-  - label: "GEDBAS search — Marie Christine Linde *1780 Apelnstedt (Rosendahl file 42734)"
-    url: "https://gedbas.genealogy.net/search/simple?firstname=Marie+Christine&lastname=Linde"
+  - label: "GEDBAS 1133073184 — Marie Christine Linde *~1780 Apelnstedt (Rosendahl 42734; parents blank)"
+    url: "https://gedbas.genealogy.net/person/show/1133073184"
   - label: "GEDBAS 1163945790 — son Johann Friedrich Christoph Achilles names these parents"
     url: "https://gedbas.genealogy.net/person/show/1163945790"
-  - label: "DNA Achilles ascent: docs/research/people/proposals/dna-achilles-ascent.md"
+  - label: "DNA Achilles–Linde parents: docs/research/people/proposals/dna-achilles-linde-parents-2026-08-10.md"
     url: ""
 media: []
 ---
 ## Summary
 
-**Probable** mother of Johann Friedrich Christoph Achilles (**C380**). Wife of **Johann Heinrich Paul Achilles**. GEDBAS (Rosendahl file **42734**): b. **1780** Apelnstedt / Wolfenbüttel; death year blank on search row (death place Apelnstedt). Soft-ingest only — no parish image; direct GEDBAS person-ID URL not captured. Stay `verified: false`. Do not invent maiden-line parents (search parents blank).
+**Probable** mother of Johann Friedrich Christoph Achilles (**C380**). Wife of **Johann Heinrich Paul Achilles** (m. **~1805** Apelnstedt per GEDBAS). GEDBAS **1133073184** (Rosendahl **42734**): b. **~1780** Apelnstedt; death year blank (place Apelnstedt). **Parents blank** on person page — free dig **C1717** blocked; keep `parents: []`. Soft-ingest only — no parish image. Stay `verified: false`.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| b. 1780 Apelnstedt / Wolfenbüttel; d. Apelnstedt (year unknown) | Probable | GEDBAS search | https://gedbas.genealogy.net/search/simple?firstname=Marie+Christine&lastname=Linde | C382; death year blank |
+| b. ~1780 Apelnstedt; d. Apelnstedt (year unknown) | Probable | GEDBAS 1133073184 | https://gedbas.genealogy.net/person/show/1133073184 | C382 |
 | Mother of Johann Friedrich Christoph Achilles | Probable | GEDBAS parent edge on 1163945790 | https://gedbas.genealogy.net/person/show/1163945790 | C380 |
-| Wife of Johann Heinrich Paul Achilles | Probable | Same parent pair on son | https://gedbas.genealogy.net/person/show/1163945790 | C380 |
+| Wife of Johann Heinrich Paul Achilles | Probable | Same parent pair on son + GEDBAS spouses | https://gedbas.genealogy.net/person/show/1133073184 | C380 |
+| Own parents unknown on free GEDBAS | Blocked | GEDBAS 1133073184 Parents absent | https://gedbas.genealogy.net/person/show/1133073184 | C1717 |
 
 ## Sources
 
-- [GEDBAS search Marie Christine Linde](https://gedbas.genealogy.net/search/simple?firstname=Marie+Christine&lastname=Linde)
+- [GEDBAS Marie Christine Linde](https://gedbas.genealogy.net/person/show/1133073184)
 - [GEDBAS Johann Friedrich Christoph Achilles](https://gedbas.genealogy.net/person/show/1163945790)
-- Proposal: `docs/research/people/proposals/dna-achilles-ascent.md`
+- Proposal: `docs/research/people/proposals/dna-achilles-linde-parents-2026-08-10.md`
 
 ## Open questions
 
-Death date; marriage date; Linde parents (blank on GEDBAS).
+Death date; parents — unlock Apelnstedt KB / Archion naming father–mother (**C1719**).

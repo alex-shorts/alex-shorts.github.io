@@ -11,13 +11,13 @@ burial:
 parents: []
 spouses: [bertha_pottesham]
 children: [monroe_cohn]
-object_ids: [FT-0022, FT-0023]
-confidence: Probable
-verified: false
+object_ids: [FT-0022, FT-0023, FT-0427]
+confidence: Confirmed
+verified: true
 status: researching
 spouse_links:
   - id: bertha_pottesham
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "NYC HVR death D-M-1921-0029268 — Monroe Cohn; father Solomon Cohn b. Germany"
     url: "https://a860-historicalvitalrecords.nyc.gov/view/5446381"
@@ -32,7 +32,7 @@ media:
 
 ## Summary
 
-**Probable** father of **Monroe Cohn**. Named on Monroe’s **1893 marriage** and **1921 death** certificates; birthplace **Germany** on the death cert. Soft-ingest; `verified: false`.
+**Confirmed** father of **Monroe Cohn**. Named on Monroe’s **1893 marriage** and **1921 death** certificates; birthplace **Germany** on the death cert. LOCKED — legal vital FT-0022/FT-0023. `verified: true`.
 
 ## Assertions
 
@@ -47,4 +47,4 @@ media:
 
 ## Open questions
 
-- Parents still unknown (pack **C1131**). No NYC GGG marriage to Bertha; digitized Manhattan death gap covers most adult Solomon Cohn deaths. Unlock: CT (Monroe b. Hartford) / German town / order NYC death image when digitized.
+- Parents still unknown (**C1742** / **C1131** / **C1902**). JG Cohn+Hartford: no parent fields. **Connect 2026-08-12 Hartford:** Geer’s **1867–68** lists **Cohn Solomon** boots & shoes, 483 Main, h. **40 Windsor** (+ Samuel Jr. boards same — FAN only, **not** soft sibling). CT Solr: Monroe/Solomon parent-naming = **0** (pre-1897 gap). LOC CT `"Solomon Cohn"` = New Haven juror/joke only. Open Data Solomon deaths lack parent fields. Unlock: Hartford town clerk Monroe birth · German town · HVR when healthy (**C1909**).

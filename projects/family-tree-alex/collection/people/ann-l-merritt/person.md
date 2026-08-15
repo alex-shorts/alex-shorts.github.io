@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [charles_j_merritt]
 children: [george_merritt, charles_e_merritt]
-object_ids: [FT-0172, FT-0174, FT-0217, FT-0218, FT-0219, FT-0270]
+object_ids: [FT-0172, FT-0174, FT-0217, FT-0218, FT-0219, FT-0270, FT-0401]
 confidence: Probable
 verified: false
 status: researching

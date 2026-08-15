@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [augustus_shorts]
 children: [elizabeth_shorts_hughes, mary_shorts_augustus, samuel_shorts, andrew_pringle_shorts, william_shorts_fredericksburgh, philip_shorts_hallowell, hannah_shorts_holcomb]
-object_ids: [FT-0030, FT-0032, FT-0035, FT-0038, FT-0046, FT-0047, FT-0049, FT-0050, FT-0051, FT-0052, FT-0054, FT-0056, FT-0075, FT-0076, FT-0077, FT-0078, FT-0079, FT-0112, FT-0116, FT-0134, FT-0135, FT-0136, FT-0138, FT-0150]
+object_ids: [FT-0030, FT-0032, FT-0035, FT-0038, FT-0046, FT-0047, FT-0049, FT-0050, FT-0051, FT-0052, FT-0054, FT-0056, FT-0075, FT-0076, FT-0077, FT-0078, FT-0079, FT-0112, FT-0116, FT-0134, FT-0135, FT-0136, FT-0138, FT-0150, FT-0413, FT-0414, FT-0428]
 confidence: Probable
 verified: false
 status: researching
@@ -50,14 +50,32 @@ sources:
   - label: "Pringle PDF Gen4 — seven children of Augustus × Hannah (#50–56)"
     url: "https://www.pollymoth.com/genealogies/pri247283.pdf"
 media:
-  - file: media/headstone-fag-2014.jpg
+  - file: media/fag-133462968-sexsmith-row.jpg
     kind: headstone
     shared: true
-    tags: [sexsmith-cluster]
+    tags: [sexsmith-cluster, fag-gallery, fag-133462968]
     appears: [hannah_pringle_shorts, augustus_shorts]
-    source: Find A Grave memorial 133462968 Sexsmith Cemetery overview
-    source_url: https://images.findagrave.com/photos/2014/208/133462968_1406580851.jpg
-    captured_at: 2026-08-08
+    source: Find A Grave memorial 133462968 Sexsmith Cemetery overview (gallery floor 2026-08-12)
+    source_url: https://images.findagrave.com/photos/2014/208/133462968_1406580851.jpg?size=original
+    captured_at: 2026-08-12
+  - file: media/fag-133462968-sexsmith-detail.jpg
+    kind: headstone
+    tags: [sexsmith-cluster, fag-gallery, fag-133462968]
+    source: Find A Grave memorial 133462968 detail (gallery floor 2026-08-12)
+    source_url: https://images.findagrave.com/photos/2014/208/133462968_1406580803.jpg?size=original
+    captured_at: 2026-08-12
+  - file: media/fag-130725257-andrew-prindle-alt.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-144753754, prindle-fan]
+    source: "Eunice Miller stone — sister of late Rev. A. Prindle (FT-0413)"
+    source_url: https://images.findagrave.com/photos/2021/182/144753754_6be5ed9c-e9d4-4fdb-b4a3-63b123cfb392.jpeg?size=original
+    captured_at: 2026-08-12
+  - file: media/fag-hay-bay-1819-drowning-memorial.jpg
+    kind: other
+    tags: [hay-bay, hard-history, fag-gallery]
+    source: "Hay Bay 1819 drowning worshippers memorial (FT-0414)"
+    source_url: https://www.findagrave.com/memorial/130725257/andrew-prindle
+    captured_at: 2026-08-12
 ---
 ## Summary
 

@@ -16,7 +16,7 @@ burial: Olivewood Memorial Park, Riverside, California (Sec. H, Row 2, Lot 207, 
 parents: [isaac_olsen, jennie_olsen]
 spouses: [clause_rudd]
 children: [george_rudd]
-object_ids: [FT-0008, FT-0015, FT-0016, FT-0020]
+object_ids: [FT-0008, FT-0015, FT-0016, FT-0020, FT-0445, FT-0455, FT-0456]
 confidence: Confirmed
 verified: true
 status: cataloged

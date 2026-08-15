@@ -12,8 +12,10 @@ parents: [david_bowerman, catherine_bartlett_bowerman]
 parent_links:
   - id: david_bowerman
     confidence: Probable
+    kind: adoptive
   - id: catherine_bartlett_bowerman
     confidence: Possible
+    kind: adoptive
 spouses: [otho_nial_aylesworth]
 children: [jonathan_aylesworth]
 object_ids: [FT-0139, FT-0140, FT-0141, FT-0142, FT-0146, FT-0147, FT-0148, FT-0149, FT-0168]
@@ -47,7 +49,7 @@ media:
 ---
 ## Summary
 
-**Probable** mother of Jonathan Fairfield Aylesworth (**C190**). Homer Aylsworth **1887 p. 89**: **Charlotte Bowerman** b. **1779**, daughter of **David Bowerman**; m. **Otho Nial** **1805**; d. **1869**. Bowerman appendix + aylesworth.net harden vitals (**b. 16 Oct 1779**; **d. 27 Mar 1869** Hillier). **Adoptive** mother soft-ingested as **Catherine Bartlett** (**C1190**, `Possible`) — Bowerman genealogy states Charlotte was **adopted**; **biological mother still unknown** (**C1194** / **C255** partial). Soft-ingest only — `verified: false`.
+**Probable** mother of Jonathan Fairfield Aylesworth (**C190**). Homer Aylsworth **1887 p. 89**: **Charlotte Bowerman** b. **1779**, daughter of **David Bowerman**; m. **Otho Nial** **1805**; d. **1869**. Bowerman appendix + aylesworth.net harden vitals (**b. 16 Oct 1779**; **d. 27 Mar 1869** Hillier). **Adopted** — raising/legal parents **David Bowerman** × **Catherine Bartlett** (`kind: adoptive`, **C1190** / **C253** recut). Appendix: “adopted dau. of David and Catherine.” **Biological parents unknown** — blood line **cut** until a bio parent is identified (**C1194** / **C255**). Soft-ingest only — `verified: false`.
 
 ## Assertions
 
@@ -55,15 +57,15 @@ media:
 | --- | --- | --- | --- | --- |
 | Mother of Jonathan Fairfield Aylesworth | Probable | Arthur Aylsworth 1887 p. 89 (**C190**) | https://archive.org/details/arthuraylsworthh00ayls/page/89/mode/2up |  |
 | b. 16 Oct 1779; d. 27 Mar 1869; née Bowerman | Probable | 1887 + Bowerman appendix + aylesworth.net (**C1193**) |  | Hallowell / Hillier |
-| Father = David Bowerman | Probable | 1887 p. 89 (**C253**) |  |  |
-| Adoptive mother = Catherine Bartlett | Possible | PLBQ p. 131; Bowerman 1904 (**C1190**) |  | Not biological |
+| Adoptive father = David Bowerman | Probable (legal) | 1887 p. 89 + Bowerman appendix (**C253**) |  | Not blood — adoption known; line cut |
+| Adoptive mother = Catherine Bartlett | Possible | PLBQ p. 131; Bowerman 1904 (**C1190**) |  | Not blood |
+| Biological parents unknown | Confirmed gap | Bowerman appendix; Quaker minutes negative (**C1194** / **C1246**) |  | Do not invent; do not climb Bowerman as blood |
 | Quaker: request under Friends care **12th 7th Mo 1803** | Probable | West Lake H-12-1 (**C1240**) | https://cfha.info/WestLakeH-12-1.pdf | Charlotty Bowerman |
 | Quaker: accepted membership **15th 9th Mo 1803** | Probable | Adolphustown O-2-1 (**C1242**) | https://quaker.ca/archives/wp-content/uploads/sites/47/2015/08/Adolphustown-Monthly-Meeting-Minutes-1798.pdf | Charlottee Bowerman |
 | Quaker: mar. out acknowledgment **12th 11th Mo 1805** | Probable | West Lake H-12-1 (**C1243**) | https://cfha.info/WestLakeH-12-1.pdf | Charlotte Elsworth |
 | Quaker: acknowledgment accepted **18th 9th Mo 1806** | Probable | Adolphustown O-2-1 (**C1244**) |  | Charlotte Aylsworth |
-| Biological mother unknown | Confirmed gap | Bowerman appendix; Quaker minutes negative (**C1194** / **C1246**) |  | Do not invent |
 | Burial McFaul Cemetery, Hillier | Possible | aylesworth.net | http://www.aylesworth.net/Caleb/aylesworth.html | Compiled |
 
 ## Open questions
 
-Biological mother; adoption record; burial stone image.
+Biological parents (blood line cut); adoption record; burial stone image.

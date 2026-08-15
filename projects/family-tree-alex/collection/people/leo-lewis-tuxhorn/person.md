@@ -11,7 +11,7 @@ burial: Inman North Cemetery, Inman, McPherson County, Kansas, USA
 parents: [frederick_tuxhorn, elizabeth_birkenbeuel]
 spouses: [ida_tuxhorn]
 children: [carrie_williams, florence_graves, martha, henry_f_tuxhorn, wilma_prather]
-object_ids: [FT-0103, FT-0107, FT-0314]
+object_ids: [FT-0103, FT-0107, FT-0314, FT-0408]
 confidence: Confirmed
 verified: true
 status: cataloged

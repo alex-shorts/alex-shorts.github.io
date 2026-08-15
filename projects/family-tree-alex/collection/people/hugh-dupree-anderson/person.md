@@ -8,13 +8,18 @@ death:
 birth_place: Iowa, USA
 death_place:
 burial:
-parents: []
+parents: [john_w_anderson, emily_e_dupray_anderson]
 spouses: [urtha_stonebraker]
 children: [marion_lawrence_anderson, azalea_gayle_anderson, lucille_anderson]
-object_ids: [FT-0177, FT-0178, FT-0182, FT-0183, FT-0192, FT-0195, FT-0307, FT-0340, FT-0341, FT-0342, FT-0343]
+object_ids: [FT-0177, FT-0178, FT-0182, FT-0183, FT-0192, FT-0195, FT-0307, FT-0340, FT-0341, FT-0342, FT-0343, FT-0439, FT-0440]
 confidence: Probable
 verified: false
 status: researching
+parent_links:
+  - id: john_w_anderson
+    confidence: Probable
+  - id: emily_e_dupray_anderson
+    confidence: Probable
 spouse_links:
   - id: urtha_stonebraker
     confidence: Probable
@@ -43,13 +48,21 @@ sources:
     url: "docs/research/people/proposals/hugh-death-unlock-2026-08-08.md"
   - label: "Wave g — Lawn Hill Hugh D. 1876–1938 × Nora (not Urtha); Harold son — hard negative C1597; no CA CADI/SSDI/obit text C1593"
     url: "docs/research/people/proposals/hugh-death-unlock-2026-08-08.md"
+  - label: "Wave h 2026-08-10 — FAG John W bio paste (Harry only); Pott DC index 1920–39 A negative; Malvern Leader wedding snippet names bride parents only; parents still [] (C1660–C1669)"
+    url: "docs/research/people/proposals/dna-hugh-parents-2026-08-10.md"
+  - label: "Malvern Leader 5 Jun 1902 p.2 — full Advantage OCR: Hugh Anderson of Silver City; farm near Silver City; bride parents J.A. only (C1970–C1971 / FT-0340)"
+    url: "https://malvern.advantage-preservation.com/viewer/?k=hugh%20anderson&i=f&by=1902&bdd=1900&d=05011902-06301902&m=between&ord=k1&fn=malvern_leader_usa_iowa_malvern_19020605_english_2&df=1&dt=4"
+  - label: "Silver City Times 2 Oct 1913 p.1 — Harry Anderson sold farm NE of town to his brother Hugh for $23,800 (C2010–C2013 / FT-0439)"
+    url: "https://silvercity.advantage-preservation.com/viewer/?k=hugh%20anderson&i=f&d=01011900-12311920&m=between&ord=k1&fn=the_silver_city_times_usa_iowa_silver_city_19131002_english_1&df=1&dt=10"
+  - label: "Silver City Times 8 Nov 1923 p.1 — Emily death notice names sons Harry, E.U./Ed, H.D./Hugh of Portland (C2017 / FT-0440)"
+    url: "https://silvercity.advantage-preservation.com/viewer/?k=emily%20anderson&i=f&by=1923&bdd=1920&d=11011923-12151923&m=between&ord=k1&fn=the_silver_city_times_usa_iowa_silver_city_19231108_english_1&df=1&dt=4"
   - label: "Hamilton Co. Lawn Hill Cemetery — Hugh D. Anderson 1876–1938; Nora 1886–1946; Harold Earl son of Hugh & Nora"
     url: "https://iagenweb.org/hamilton/cem/LawnHill/LawnHillCem1.2017.html"
 media: []
 ---
 ## Summary
 
-**Probable** father of **Marion Lawrence Anderson** (Alex Heidi pack) — identity hardened on free Mills Co. IA indexes: **Hugh D. Anderson** × **Urtha** Stonebraker, Henderson/Emerson area. Middle **Dupree** from Alex (indexes show **D.** only). Soft birth ~**1877–1878** Iowa. Parents still `[]`. Soft **Hugh Darwin Anderson** (John W × Emily FAN, FAG 229213602) is a **different man** — spouse **Emily Jane Maupin** (m.1903) ≠ Urtha (**C1557**). Dupree/Dupray middle FAN to John W × Emily remains **Possible only** without a naming record. Death/burial still open. `verified: false`.
+**Probable** father of **Marion Lawrence Anderson** (Alex Heidi pack) — identity hardened on free Mills Co. IA indexes: **Hugh D. Anderson** × **Urtha** Stonebraker, Henderson/Emerson area. Middle **Dupree** from Alex (indexes show **D.** only). Soft birth ~**1877–1878** Iowa. **Malvern Leader 5 Jun 1902** (**FT-0340**): of **Silver City**; farm near Silver City after 1 Jul. **Silver City Times 2 Oct 1913** (**FT-0439**): **Harry Anderson** sold his farm northeast of town to **his brother Hugh**. **Times 8 Nov 1923** (**FT-0440**): Emily death notice names sons Harry, **E. U. / Ed**, and **H. D. / Hugh** of Portland. Wires Hugh ← **John W. Anderson** × **Emily E. Dupray** (**Probable**, `verified: false`). Soft **Hugh Darwin Anderson** (FAG 229213602, × Emily Maupin CA) remains a **different man** (**C1557**). Death/burial still open.
 
 ## Assertions
 
@@ -59,14 +72,15 @@ media: []
 | Spouse Urtha (Almina) Stonebraker | Probable | Mills m. 1902 + delayed births | http://iagenweb.org/mills/marriage/1900-1905/1902.htm | Tribune license ?Bertha? |
 | b. ~1877?1878 Iowa | Probable | Ages on m. + child delayed births | http://iagenweb.org/mills/births/delbirthsA.htm | Year approximate |
 | Middle name Dupree | Probable | Alex Heidi pack |  | Not spelled out on IA indexes |
-| Parents unknown | Confirmed gap | DNA dig 2026-08-08 + waves c/d |  | **C1295** / **C1342** / **C1382** ? FAN only |
-| FAN parents John W. ? Emily Dupray | Possible | Silver City bio + marriage 1861 + MO DC sibling | http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm | **Not wired** ? bio names Harry only |
-| Collateral sibling Harry W. Anderson | Probable | Silver City bio | http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm | Separate person node **C1293** |
+| Parents John W. Anderson × Emily E. Dupray | Probable | Silver City Times 2 Oct 1913 + 8 Nov 1923 death notice + Harry bio FT-0177 | https://silvercity.advantage-preservation.com/viewer/?k=hugh%20anderson&i=f&d=01011900-12311920&m=between&ord=k1&fn=the_silver_city_times_usa_iowa_silver_city_19131002_english_1&df=1&dt=10 | **C2013** / **FT-0439** / **FT-0440** — Harry named son; brother Hugh; Emily notice names H.D. Hugh. Supersedes keep-empty **C1972/C1973** |
+| Collateral sibling Harry W. Anderson | Probable | Same 1913 clip + Silver City bio | http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm | **C2011** / **C2014** |
 | Collateral sibling John E. Anderson | Probable | Nodaway MO DC# 15347 | https://nodaway.mogenweb.org/death/sifers/Ana.html | b. 1867 IA **C1294** |
-| Hugh Darwin FAG spouse not Urtha | Confirmed negative | FAG 229213602 vs Mills m.1902 | https://www.findagrave.com/memorial/229213602/hugh-darwin-anderson | **C1557** Emily Maupin m.1903 |
+| Hugh Darwin FAG spouse not Urtha | Confirmed negative | FAG 229213602 vs Mills m.1902 | https://www.findagrave.com/memorial/229213602/hugh-darwin-anderson | **C1557** Emily Maupin m.1903; **C2015** do not merge |
 | Hugh Dean/Nora Stanhope ≠ Hugh Dupree | Confirmed negative | Lawn Hill cemetery vs Mills Urtha/Marion | https://iagenweb.org/hamilton/cem/LawnHill/LawnHillCem1.2017.html | **C1597** Nora spouse; Harold son |
 | Death/burial Hugh Dupree | Confirmed gap | Wave g CA/SSDI/FAG negative | docs/research/people/proposals/hugh-death-unlock-2026-08-08.md | **C1593** no primary text |
+| Of Silver City; farm near Silver City after 1 Jul 1902 | Probable | Malvern Leader 5 Jun 1902 p.2 Advantage | https://malvern.advantage-preservation.com/viewer/?k=hugh%20anderson&i=f&by=1902&bdd=1900&d=05011902-06301902&m=between&ord=k1&fn=malvern_leader_usa_iowa_malvern_19020605_english_2&df=1&dt=4 | **C1971** — fills FT-0340 truncation |
+| Wedding guests E. N. / H. N. Anderson, Silver City | Possible FAN | Same notice guest list | same | **C1974** — not parent names; do not merge H.N.→Harry |
 
 ## Open questions
 
-Death/burial; exact birth date; confirm Hugh ? John W ? Emily via Hugh death DC, obit, **1925 IA census parent columns** (Glenwood Library / FS one-entry when healthy), or John W Tribune obit clip (index 20 Sep 1908 ? text not on IAGenWeb). CADI row for Urtha **1973 CA** Tier D hint (**C1594**) still open.
+Death/burial; exact birth date; **1925 IA census parent columns** (Glenwood Library) still the best vital-style confirm. John W Tribune **20 Sep 1908** survivors clip still unopened (Mills County Advantage Cloudflare this pass). Identify wedding guests **E. N. Anderson** / **H. N. Anderson** of Silver City. CADI row for Urtha **1973 CA** Tier D hint (**C1594**) still open. Next UP: **John W. Anderson** parents (Chicago/freight bio; still `[]`).

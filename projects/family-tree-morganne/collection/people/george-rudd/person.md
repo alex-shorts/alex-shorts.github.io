@@ -12,7 +12,7 @@ burial: Private services at sea
 parents: [clause_rudd, della_elizabeth_rudd]
 spouses: [marion_orciere]
 children: [marcy_parsons, dan_rudd]
-object_ids: [FT-0008]
+object_ids: [FT-0008, FT-0455, FT-0457]
 confidence: Confirmed
 verified: true
 status: cataloged

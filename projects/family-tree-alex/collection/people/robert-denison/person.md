@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [anna_chesebrough_denison]
 children: [nathan_denison]
-object_ids: []
+object_ids: [FT-0466]
 confidence: Probable
 verified: false
 status: researching

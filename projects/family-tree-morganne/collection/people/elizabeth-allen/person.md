@@ -23,13 +23,17 @@ status: cataloged
 parent_links:
   - id: raymond_philip_allen
     confidence: Probable
+    kind: adoptive
   - id: ina_louise_squier_allen
     confidence: Probable
+    kind: adoptive
 spouse_links:
   - id: gerald_allen_parsons
     confidence: Confirmed
 sources:
   - label: "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry (maiden Allen)"
+    url: ""
+  - label: "Family corroboration (Alex, 2026-08-13) — Elizabeth Allen / Betty Parsons was adopted; Raymond × Ina are adoptive parents, not blood"
     url: ""
   - label: "Press-Enterprise — Elizabeth “Betty” A. Parsons obituary"
     url: "https://www.pressenterprise.com/obituaries/elizabeth-a-parsons-riverside-ca/"
@@ -77,7 +81,7 @@ media:
 ---
 ## Summary
 
-Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen**; FAG full name **Elizabeth Leonard “Betty” Allen Parsons**, b. **14 Jan 1910 Holyoke, MA**, d. **15 Sep 2005**, Olivewood **W-3-264-2**. Press-Enterprise death notice (object **FT-0007**) names spouse Jerry + sons Jack and Bill; nurse career 50+ years. Soft parents **Raymond Philip Allen** × **Ina Louise Squier Allen** (**C447** Probable). Post-harden (2026-08-07): headstone + FAG newspaper clips (nursing graduation; PE obit scan; wedding ref). Spouse middle-name conflict Gerald **Allen** (family) vs **Austin** (FAG/wedding) — **C466**.
+Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen**; FAG full name **Elizabeth Leonard “Betty” Allen Parsons**, b. **14 Jan 1910 Holyoke, MA**, d. **15 Sep 2005**, Olivewood **W-3-264-2**. Press-Enterprise death notice (object **FT-0007**) names spouse Jerry + sons Jack and Bill; nurse career 50+ years. **Adopted** — raising/legal parents **Raymond Philip Allen** × **Ina Louise Squier Allen** (`parent_links.kind: adoptive`, **C447**). Biological parents unknown. Family corroboration (Alex, 2026-08-13). Post-harden (2026-08-07): headstone + FAG newspaper clips (nursing graduation; PE obit scan; wedding ref). Spouse middle-name conflict Gerald **Allen** (family) vs **Austin** (FAG/wedding) — **C466**.
 
 ## Attributes
 
@@ -91,7 +95,7 @@ Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen
 | Leadership in training | Class president (1st year); student-body president | Same |
 | Career at marriage | Surgical nurse, Children’s Hospital, Hollywood | Wedding clip |
 | Career (obit) | Registered nurse 50+ years | FT-0007 / PE |
-| Parents (wedding) | Mr. and Mrs. Raymond P. Allen, 5222 Magnolia Ave. | Wedding clip |
+| Parents (wedding) | Mr. and Mrs. Raymond P. Allen, 5222 Magnolia Ave. | Wedding clip (adoptive / legal) |
 
 ## Events
 
@@ -112,12 +116,13 @@ Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen
 | Maiden Allen | Confirmed | Family corroboration |  | Pack **C441** |
 | Same person as Elizabeth “Betty” A. Parsons d. 15 Sep 2005 | Probable→Confirmed trail | Press-Enterprise + FAG dates match | Same + FAG 148402404 | Pack **C450** / **C465** |
 | Birth 14 Jan 1910 Holyoke MA; middle Leonard | Probable | FAG 148402404 | https://www.findagrave.com/memorial/148402404/elizabeth_leonard-parsons | Pack **C465**; age 95 in 2005 fits |
-| Parents Raymond Philip Allen × Ina Louise Squier Allen | Probable | FAG parent links + Olivewood cluster + wedding | FAG 148402404 / 109982536 / 109982560 | Pack **C447**; no CADI mother-maiden free |
+| Adoptive parents Raymond Philip Allen × Ina Louise Squier Allen | Probable (identities) / Confirmed (adoption) | Family (Alex 2026-08-13) + FAG parent links + wedding | FAG 148402404 / 109982536 / 109982560 | Pack **C447**; `kind: adoptive` — not blood; bio parents unknown |
 | Spouse Jerry / Gerald Allen Parsons | Confirmed / Probable harden | Family + Betty obit + FAG spouse + wedding | Same | Pack **C441** / **C451** / **C466** |
 
 ## Sources
 
-- Family corroboration (Alex, 2026-08-07)
+- Family corroboration (Alex, 2026-08-07) — maiden Allen
+- Family corroboration (Alex, 2026-08-13) — adopted; Raymond × Ina adoptive, not blood
 - [Press-Enterprise — Elizabeth “Betty” A. Parsons](https://www.pressenterprise.com/obituaries/elizabeth-a-parsons-riverside-ca/) — object **FT-0007**
 - [Find A Grave 148402404](https://www.findagrave.com/memorial/148402404/elizabeth_leonard-parsons)
 - [Find A Grave 109982536 — Raymond Philip Allen](https://www.findagrave.com/memorial/109982536/raymond_philip-allen)
@@ -130,4 +135,5 @@ Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen
 - CADI / CA birth index for sons (mother maiden) when free indexes open
 - Confirm Gerald middle **Allen** vs **Austin** (**C466**)
 - Sibling Alice Allen on FAG — collateral parked
+- **Biological parents unknown** (adopted by Raymond × Ina)
 ---

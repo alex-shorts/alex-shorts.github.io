@@ -11,7 +11,7 @@ burial:
 parents: [hugh_maxwell, sarah_corbett_maxwell]
 spouses: [anna_winslow_maxwell]
 children: [sarah_maxwell_buck]
-object_ids: [FT-0284, FT-0285, FT-0287, FT-0288, FT-0289, FT-0290, FT-0320, FT-0321, FT-0322, FT-0323, FT-0324, FT-0325, FT-0326, FT-0327, FT-0328, FT-0329]
+object_ids: [FT-0284, FT-0285, FT-0287, FT-0288, FT-0289, FT-0290, FT-0320, FT-0321, FT-0322, FT-0323, FT-0324, FT-0325, FT-0326, FT-0327, FT-0328, FT-0329, FT-0432, FT-0433, FT-0434, FT-0435, FT-0436, FT-0437]
 confidence: Probable
 verified: false
 status: researching

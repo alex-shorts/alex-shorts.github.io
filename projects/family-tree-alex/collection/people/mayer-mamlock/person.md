@@ -12,12 +12,12 @@ parents: []
 spouses: [rochelle_kahn]
 children: [mamie_mamlock, albert_mamlock, franciska_mamlock, esther_mamlock, emma_mamlock, jenny_mamlock]
 object_ids: [FT-0022, FT-0024, FT-0260, FT-0305, FT-0306]
-confidence: Probable
-verified: false
+confidence: Confirmed
+verified: true
 status: researching
 spouse_links:
   - id: rochelle_kahn
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "NYC HVR death D-M-1945-0012625 — Mamie Cohn; father Meyer Mamlock b. Germany"
     url: "https://a860-historicalvitalrecords.nyc.gov/view/7281961"
@@ -36,7 +36,7 @@ media:
 
 ## Summary
 
-**Probable** father of **Mamie Mamlock Cohn** (named **Meyer Mamlock** on her 1945 death cert and 1893 marriage; index **Mayer**). Born Germany. Soft-ingest; `verified: false`.
+**Confirmed** father of **Mamie Mamlock Cohn** (named **Meyer Mamlock** on her 1945 death cert and 1893 marriage; index **Mayer**). Born Germany. LOCKED — legal vital FT-0022/FT-0024. `verified: true`.
 
 ## Assertions
 
@@ -54,4 +54,4 @@ media:
 
 ## Open questions
 
-- Parents still unknown (pack **C1133**). Death Manh. **17330** (1897) not in NYC Open Data digitized index — parent fields blocked until order/digitize. ISTG Germania Moritz×Blamchen Mamlock = FAN only (**C1136**), not soft parents.
+- Parents still unknown (**C1740** / **C1671** / prior **C1450**). JG logged-in 2026-08-10: no parent names; JOWBR NY burial **Maimonides, Brooklyn** ae 68 (identity only). Reject Vienna/Krotoschin Meyer Mamlok (Emma’s father) as FAN (**C1747**). Death Manh. **17330** still not digitized. ISTG Moritz×Blamchen = FAN only.

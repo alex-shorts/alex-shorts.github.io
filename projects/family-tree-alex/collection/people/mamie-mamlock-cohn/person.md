@@ -11,18 +11,18 @@ burial: Mt. Carmel Cemetery, Brooklyn
 parents: [mayer_mamlock, rochelle_kahn]
 spouses: [monroe_cohn]
 children: [myron_mamlock_cole, seymour_cohn]
-object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0240, FT-0260, FT-0261, FT-0262, FT-0306, FT-0398]
-confidence: Probable
-verified: false
+object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0240, FT-0260, FT-0261, FT-0262, FT-0306, FT-0398, FT-0418, FT-0421, FT-0426]
+confidence: Confirmed
+verified: true
 status: researching
 parent_links:
   - id: mayer_mamlock
-    confidence: Probable
+    confidence: Confirmed
   - id: rochelle_kahn
-    confidence: Probable
+    confidence: Confirmed
 spouse_links:
   - id: monroe_cohn
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "NYC HVR marriage M-M-1893-0013078 — Mamie Mamlock × Monroe Cohn; parents Meyer Mamlock × Rachel Miller"
     url: "https://a860-historicalvitalrecords.nyc.gov/view/8103617"
@@ -49,16 +49,16 @@ media:
 
 ## Summary
 
-**Probable** mother of **Myron Mamlock Cole / Cohn**. Married **Monroe Cohn** **17 Oct 1893** (age **22**). Born **1 May 1872** New York City; died **4 Jun 1945** Misericordia Hospital, Manhattan (cert **12625**); widow; residence **305 West End Ave**; buried **Mt. Carmel**, Brooklyn. Parents **Meyer/Mayer Mamlock** × mother maiden **conflict** (Miller vs Kahn — **C1066**). Soft; `verified: false`.
+**Confirmed** (legal vital) mother of **Myron Mamlock Cole / Cohn** — named on Myron’s marriage cert (**FT-0025**). Married **Monroe Cohn** **17 Oct 1893** (**FT-0022**). Born **1 May 1872** New York City; died **4 Jun 1945** Misericordia Hospital, Manhattan (**FT-0024** cert **12625**); widow; residence **305 West End Ave**; buried **Mt. Carmel**, Brooklyn. Parents **Meyer/Mayer Mamlock** × mother maiden **conflict** (Miller vs Kahn — **C1066** still open). `verified: true` for identity + spouse + mother-of-Myron links.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Mother of Myron | Probable | Cluster + Myron marriage |  | Pack **C965** |
-| m. Monroe 17 Oct 1893 | Confirmed (image) | HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/8103617 | Pack **C966** |
-| b. 1 May 1872 NYC; d. 4 Jun 1945 | Confirmed (image) | Death PDF | https://a860-historicalvitalrecords.nyc.gov/view/7281961 | Pack **C968** |
-| Parents Meyer × Rochelle/Rachel | Probable | Death + marriage | same | Pack **C1064–C1066** |
+| Mother of Myron | Confirmed | FT-0025 Myron marriage | https://a860-historicalvitalrecords.nyc.gov/view/9193947 | **LOCKED — legal vital** C965 |
+| m. Monroe 17 Oct 1893 | Confirmed (image) | FT-0022 HVR PDF | https://a860-historicalvitalrecords.nyc.gov/view/8103617 | **LOCKED — legal vital** C966 |
+| b. 1 May 1872 NYC; d. 4 Jun 1945 | Confirmed (image) | FT-0024 Death PDF | https://a860-historicalvitalrecords.nyc.gov/view/7281961 | **LOCKED — legal vital** C968 |
+| Parents Meyer × Rochelle/Rachel | Probable | Death + marriage | same | Pack **C1064–C1066** — **C1066** conflict open |
 
 ## Gather note (2026-08-08 lean)
 

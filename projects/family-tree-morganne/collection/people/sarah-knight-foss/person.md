@@ -14,10 +14,10 @@ burial: Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA
 parents: [william_h_knight, betsy_warren_huntress_knight]
 spouses: [ambrose_foss]
 children: [harriet_b_foss_parsons]
-object_ids: []
-confidence: Probable
-verified: false
-status: researching
+object_ids: [FT-0443]
+confidence: Confirmed
+verified: true
+status: cataloged
 parent_links:
   - id: william_h_knight
     confidence: Probable
@@ -39,11 +39,19 @@ sources:
     url: "https://www.findagrave.com/memorial/104839458/ambrose-foss"
   - label: "WikiTree — Sarah E (Knight) Foss (Knight-2013)"
     url: "https://www.wikitree.com/wiki/Knight-2013"
-media: []
+  - label: "Maine VR marriage parents side — bride’s mother Sarah Knight (FS 3:1:939K-RPQC-6Y) — FT-0443"
+    url: "https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y"
+media:
+  - ref: nelson-b-parsons/media/marriage-1899-parents-side.png
+    kind: document
+    tags: [marriage-1899, harriet_b_foss_parsons, ambrose_foss, sarah_knight_foss]
+    source: "FS Maine VR marriage parents side — Sarah Knight named as bride’s mother (FT-0443)"
+    source_url: https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y
+    captured_at: 2026-08-07
 ---
 ## Summary
 
-Proposed mother of **Harriet B. Foss Parsons** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C485** / **C487**. Maiden **Knight** on FAG title; spouse **Ambrose Foss**; child grid includes Harriet. FAG bio notes Ambrose and Sarah had 10 children (siblings not soft-ingested). WikiTree marriage 20 May 1865 Fort Fairfield and Freedom ME birthplace — Possible until image. **No open obituary text** this pass.
+Mother of **Harriet B. Foss Parsons** (Morganne ascent gen-4). **LOCKED — legal vital** **FT-0443** / pack **C485** (2026-08-13) — named as bride’s mother **Sarah Knight** on Maine VR. Spouse **Ambrose Foss**; FAG child grid includes Harriet. FAG bio notes Ambrose and Sarah had 10 children (siblings not soft-ingested). WikiTree marriage 20 May 1865 Fort Fairfield and Freedom ME birthplace — Possible until image. **No open obituary text** this pass.
 
 **Parents soft-climb (C525–C529):** FAG Family Members parents **William H. Knight** × **Betsy Warren Huntress Knight** — bidirectional (both list Sarah among children); same Riverside Fort Fairfield cluster; bio credits contributor for parent links. WikiTree Knight-2013 still shows parents unknown — FAG cluster is the free-source trail. Gen-6 not climbed.
 
@@ -51,7 +59,7 @@ Proposed mother of **Harriet B. Foss Parsons** (Morganne ascent gen-4). Soft-ing
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Mother of Harriet B. Foss Parsons | Probable | FAG Sarah children + Harriet parents grid | https://www.findagrave.com/memorial/104839751/sarah-foss | Pack **C485** |
+| Mother of Harriet B. Foss Parsons | Confirmed | ME VR marriage parents side + FT-0443 | https://www.familysearch.org/ark:/61903/3:1:939K-RPQC-6Y | Pack **C485** LOCKED — legal vital |
 | Spouse Ambrose Foss; maiden Knight | Probable | FAG title + spouse link | Same | Pack **C488** |
 | b. 15 Aug 1844 Maine; d. 17 Jun 1934 Fort Fairfield; Riverside Cemetery | Probable | FAG memorial | Same | Soft vitals **C487**; WikiTree Freedom Waldo Possible |
 | Daughter of William H. Knight × Betsy Warren Huntress Knight | Probable | FAG Sarah parents + both parents’ children grids | https://www.findagrave.com/memorial/104839751/sarah-foss | Pack **C525** |

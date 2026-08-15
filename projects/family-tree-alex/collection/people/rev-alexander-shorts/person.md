@@ -11,7 +11,7 @@ burial: Thurso Cemetery, Grindstone Island, Jefferson County, New York, USA
 parents: [samuel_shorts, mary_ann_denison]
 spouses: [eva_aylesworth]
 children: [dorland]
-object_ids: [FT-0031, FT-0033, FT-0034, FT-0036, FT-0037, FT-0038, FT-0039, FT-0040, FT-0041, FT-0053, FT-0054, FT-0057, FT-0058, FT-0059, FT-0060, FT-0061, FT-0062, FT-0063, FT-0064, FT-0069, FT-0070, FT-0071, FT-0072, FT-0073, FT-0074, FT-0084, FT-0137]
+object_ids: [FT-0031, FT-0033, FT-0034, FT-0036, FT-0037, FT-0038, FT-0039, FT-0040, FT-0041, FT-0053, FT-0054, FT-0057, FT-0058, FT-0059, FT-0060, FT-0061, FT-0062, FT-0063, FT-0064, FT-0069, FT-0070, FT-0071, FT-0072, FT-0073, FT-0074, FT-0084, FT-0137, FT-0430, FT-0431]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -53,11 +53,24 @@ media:
     source: TI Life memorial pane detail (FT-0033)
     source_url: https://thousandislandslife.com/content/images/2025/08/Screenshot-2025-08-04-110621.png
     captured_at: 2026-08-07
-  - file: media/mount-hope-overview-2020.jpeg
-    kind: other
-    source: Find A Grave (cemetery overview linked from memorial 96207765)
-    source_url: https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg
-    captured_at: 2026-08-06
+  - file: media/giumc-church-front.jpg
+    kind: photo
+    tags: [grindstone, giumc]
+    source: GIUMC History page church exterior (FT-0031)
+    source_url: https://www.giumc.org/wp-content/uploads/2020/11/church-front.jpg
+    captured_at: 2026-08-12
+  - file: media/giumc-alexander-window.jpg
+    kind: photo
+    tags: [grindstone, giumc]
+    source: GIUMC History — Alexander Shorts memorial window (FT-0031)
+    source_url: https://www.giumc.org/wp-content/uploads/2020/11/about_glass1_large.jpg
+    captured_at: 2026-08-12
+  - file: media/giumc-altar.jpg
+    kind: photo
+    tags: [grindstone, giumc]
+    source: GIUMC History — altar (FT-0031)
+    source_url: https://www.giumc.org/wp-content/uploads/2020/11/alter.jpg
+    captured_at: 2026-08-12
 ---
 ## Summary
 
@@ -96,4 +109,4 @@ Father of Rev Dorland Shorts (**C33 Confirmed**). Rev Alexander Shorts, 1839 –
 
 ## Open questions
 
-Individual Thurso stone photo (FAG 96207765 still has cemetery overview only, no personal marker image); NY/Ontario census household pages; resolve fadedgenes birth ~1838 vs FAG 1839; Possible bio siblings Elizabeth/Andrew/Hannah (**C53**); unpublished Emmet Dodge MS + full Lashomb/Norcom books (private/print); Centennial of the Grindstone Island Methodist Church pamphlet (named in FT-0063, not open).
+Individual Thurso stone photo still missing (FAG 96207765 has no personal marker; cemetery overview on that memorial was Mount Hope Rochester mis-link — removed 2026-08-12). NY/Ontario census household pages; resolve fadedgenes birth ~1838 vs FAG 1839; Possible bio siblings Elizabeth/Andrew/Hannah (**C53**); unpublished Emmet Dodge MS + full Lashomb/Norcom books (private/print); Centennial of the Grindstone Island Methodist Church pamphlet (named in FT-0063, not open).

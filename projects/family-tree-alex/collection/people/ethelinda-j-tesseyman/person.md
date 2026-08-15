@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: []
 children: []
-object_ids: [FT-0174, FT-0270, FT-0271]
+object_ids: [FT-0174, FT-0270, FT-0271, FT-0401]
 confidence: Probable
 verified: false
 status: researching

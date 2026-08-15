@@ -17,12 +17,12 @@ verified: true
 status: researching
 parent_links:
   - id: solomon_racine
-    confidence: Probable
+    confidence: Confirmed
   - id: pauline_muschini
-    confidence: Probable
+    confidence: Confirmed
 spouse_links:
   - id: myron_mamlock_cole
-    confidence: Probable
+    confidence: Confirmed
 sources:
   - label: "Family corroboration (Alex, 2026-08-07) — mother of Virginia Jill Cole"
     url: ""
@@ -47,7 +47,7 @@ media:
 
 ## Summary
 
-Mother of **Virginia Jill Cole** (family). Birth **15 Oct 1902** Manhattan cert **41933** (PDF **B-M-1902-0041933**): parents **Solomon/Salomon Racien** × **Pauline** (maiden **Auxchkin** / marriage **Puschkin**). Married **Myron W. Cohn** **15 Dec 1926** Manhattan (catalog **1927** cert **778**). Soft Probable / `verified: false`.
+Mother of **Virginia Jill Cole** (family). Birth **15 Oct 1902** Manhattan cert **41933** (PDF **B-M-1902-0041933**): parents **Solomon/Salomon Racien** × **Pauline** (maiden **Auxchkin** / marriage **Puschkin**). Married **Myron W. Cohn** **15 Dec 1926** Manhattan (catalog **1927** cert **778**). Parents Solomon × Pauline LOCKED — legal vital FT-0021; spouse Myron LOCKED — FT-0025.
 
 ## Assertions
 

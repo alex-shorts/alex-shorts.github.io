@@ -45,4 +45,4 @@ media: []
 
 ## Open questions
 
-Maiden surname; death/burial; 1850–1880 Lee Co. census naming her.
+Parents + maiden unknown — free dig **C1620–C1629** blocked (GEDBAS N.N./blank parents). Unlock: German birth ~1816 naming parents. Death/burial; 1850–1880 Lee Co. census.

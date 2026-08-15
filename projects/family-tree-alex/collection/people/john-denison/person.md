@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [phoebe_lay_denison]
 children: [daniel_denison_sr]
-object_ids: []
+object_ids: [FT-0458, FT-0459, FT-0461, FT-0463, FT-0465]
 confidence: Probable
 verified: false
 status: researching

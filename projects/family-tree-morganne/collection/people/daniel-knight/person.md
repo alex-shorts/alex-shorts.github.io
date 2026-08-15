@@ -29,7 +29,7 @@ media: []
 ---
 ## Summary
 
-Named sibling of **Nathaniel B. Knight** (same parents John × Lydia Roberts). Soft-ingest **Probable** / `verified: false` — pack **C834**. WikiTree Knight-5642: b. **28 Jun 1764** Somersworth NH; brother of Nathaniel; husband Patience Garey parked (no climb). Death blank. Do not confuse with grandfather Daniel Knight (Knight-6274) or nephew lines. Do not climb.
+Named sibling of **Nathaniel B. Knight** (same parents John × Lydia Roberts). Soft-ingest **Probable** / `verified: false` — pack **C834**. WikiTree Knight-5642: b. **28 Jun 1764** Somersworth NH; brother of Nathaniel; husband Patience Garey parked (no climb). Death blank. Do not confuse with grandfather `daniel_knight_sr` (Knight-6274) or nephew lines. Do not climb.
 
 ## Assertions
 

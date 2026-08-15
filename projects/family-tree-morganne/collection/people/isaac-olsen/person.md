@@ -12,7 +12,7 @@ burial: Mountain View Cemetery, Vancouver, British Columbia, Canada
 parents: []
 spouses: [jennie_olsen]
 children: [william_theodore_olson, mabel_victoria_olson_sizer, carl_leonard_olson, della_elizabeth_rudd]
-object_ids: [FT-0013, FT-0014, FT-0015, FT-0016]
+object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445]
 confidence: Probable
 verified: false
 status: researching
@@ -50,7 +50,7 @@ media:
 ---
 ## Summary
 
-Proposed father of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C506**. FAG + Lyman SD birth + **BC death 1947-09-008902** (open JPEG) corroborate vitals. Spelling **Olsen** (FAG/BC) / **Olson** (SD + Della). Spouse **Jennie Olsen** (death form **Jennie Anderson**). Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Jennie. Soft children (FAG grid / **C530–C534**): William, Mabel, Carl, Della. **Parents Blocked (C535)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1947 death notice on FAG → **FT-0015** (names Mrs. C. Y. Rudd). No stone photo on FAG this pass (notice + BC death image only).
+Proposed father of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C506**. FAG + Lyman SD birth + **BC death 1947-09-008902** (open JPEG) corroborate vitals. Spelling **Olsen** (FAG/BC) / **Olson** (SD + Della). Spouse **Jennie Olsen** (death form **Jennie Anderson**). Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Jennie. Soft children (FAG grid / **C530–C534**): William, Mabel, Carl, Della. **Parents Blocked (C535)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1947 death notice on FAG → **FT-0015** (names Mrs. C. Y. Rudd). FAG gallery 2026-08-14: plot photo is unmarked grass only (no readable stone); keep notice + BC death image.
 
 ## Assertions
 

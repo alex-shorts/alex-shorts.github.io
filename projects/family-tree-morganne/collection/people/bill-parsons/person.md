@@ -12,7 +12,7 @@ burial:
 parents: [gerald_allen_parsons, elizabeth_allen]
 spouses: [marcy_parsons]
 children: [morganne]
-object_ids: [FT-0006, FT-0007, FT-0008]
+object_ids: [FT-0006, FT-0007, FT-0008, FT-0457]
 confidence: Confirmed
 verified: true
 status: living-private
@@ -153,6 +153,7 @@ Father of **Morganne Shorts**; spouse of **Marcy Parsons**. Former MLB pitcher (
 | --- | --- | --- | --- | --- |
 | Father of Morganne Shorts | Confirmed | Family corroboration (Alex, 2026-08-07) |  | Pack **C440** Locked |
 | Spouse Marcy Parsons | Confirmed | Same |  | Pack **C443** Locked |
+| Married Marcy Rae Rudd **14 Jun 1969** | Confirmed | SABR FT-0457 + Alex 2026-08-14 | https://sabr.org/bioproj/person/bill-parsons/ | Pack **C568** Locked |
 | Parents Gerald Allen Parsons × Elizabeth Allen | Confirmed | Same |  | Pack **C441** Locked |
 | Living (no public death dig) | Confirmed | Generation / family context |  | living-private |
 

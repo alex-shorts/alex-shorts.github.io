@@ -45,4 +45,4 @@ media: []
 
 ## Open questions
 
-1880 Jefferson Twp Lee Co. census image; burial; further German origin.
+Parents unknown — free dig **C1620–C1629** blocked (GEDBAS blank; no Lee obit/FAG parents). Unlock: Braunschweig-area birth ~1811 + Lee Co death 1881. 1880 Jefferson census image; burial.

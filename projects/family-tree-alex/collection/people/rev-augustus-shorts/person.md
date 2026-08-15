@@ -4,7 +4,7 @@ slug: rev-augustus-shorts
 name: Rev Augustus Shorts
 aka: Augustus Shortts; Father Shorts
 birth: 1777-07
-death: 1869-01-12
+death: 1862-01-12
 birth_place: Paradise, Lancaster County, Pennsylvania, USA
 death_place: Fredericksburgh, Lennox and Addington County, Ontario, Canada
 burial: Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada
@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [hannah_pringle_shorts]
 children: [elizabeth_shorts_hughes, mary_shorts_augustus, samuel_shorts, andrew_pringle_shorts, william_shorts_fredericksburgh, philip_shorts_hallowell, hannah_shorts_holcomb]
-object_ids: [FT-0030, FT-0032, FT-0035, FT-0038, FT-0044, FT-0045, FT-0046, FT-0047, FT-0048, FT-0049, FT-0050, FT-0051, FT-0052, FT-0054, FT-0056, FT-0075, FT-0076, FT-0077, FT-0078, FT-0079, FT-0082, FT-0083, FT-0085, FT-0086, FT-0112, FT-0113, FT-0134, FT-0135, FT-0136, FT-0138, FT-0153, FT-0154, FT-0155]
+object_ids: [FT-0030, FT-0032, FT-0035, FT-0038, FT-0044, FT-0045, FT-0046, FT-0047, FT-0048, FT-0049, FT-0050, FT-0051, FT-0052, FT-0054, FT-0056, FT-0075, FT-0076, FT-0077, FT-0078, FT-0079, FT-0082, FT-0083, FT-0085, FT-0086, FT-0112, FT-0113, FT-0134, FT-0135, FT-0136, FT-0138, FT-0153, FT-0154, FT-0155, FT-0413, FT-0414, FT-0428]
 confidence: Probable
 verified: false
 status: researching
@@ -47,7 +47,7 @@ sources:
     url: ""
   - label: "Augustus media harden 2026-08-08: docs/research/people/proposals/shorts-augustus-media-harden-2026-08-08.md"
     url: ""
-  - label: "CCA death unlock C1530–C1539 — McKenzie IA borrow-only; lean Jan 1862 (C1534)"
+  - label: "CCA death unlock C1530–C1539 — Alex Y 1862 lean (C1534/C1539); CCA page still optional"
     url: "docs/research/people/proposals/augustus-cca-death-unlock-2026-08-08.md"
   - label: "1851 Richmond Holcomb hh — Hannah O (FT-0112)"
     url: "https://oncensus.canadagenweb.org/transcripts/1851/1725-5.html"
@@ -56,33 +56,33 @@ sources:
   - label: "Pringle PDF Gen4 — seven children #50–56 (pri247283)"
     url: "https://www.pollymoth.com/genealogies/pri247283.pdf"
 media:
-  - file: media/headstone-fag-2014.jpg
+  - file: media/fag-133463240-01-headstone.jpg
     kind: headstone
     shared: true
-    tags: [sexsmith-cluster]
+    tags: [sexsmith-cluster, fag-gallery, fag-133463240]
     appears: [augustus_shorts, samuel_shorts, elizabeth_shorts_hughes, andrew_pringle_shorts, hannah_pringle_shorts]
-    source: Find A Grave memorial 133463240 Sexsmith Cemetery overview
-    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg
-    captured_at: 2026-08-08
-  - file: media/headstone-detail-fag-2014.jpg
+    source: Find A Grave memorial 133463240 Sexsmith Cemetery overview (gallery floor 2026-08-12)
+    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg?size=original
+    captured_at: 2026-08-12
+  - file: media/fag-133463240-02-headstone.jpg
     kind: headstone
     shared: true
-    tags: [sexsmith-cluster]
+    tags: [sexsmith-cluster, fag-gallery, fag-133463240]
     appears: [augustus_shorts, samuel_shorts, elizabeth_shorts_hughes, andrew_pringle_shorts, hannah_pringle_shorts]
-    source: Find A Grave memorial 133463240 Sexsmith Cemetery row
-    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg
-    captured_at: 2026-08-08
+    source: Find A Grave memorial 133463240 Sexsmith Cemetery row (gallery floor 2026-08-12)
+    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg?size=original
+    captured_at: 2026-08-12
 ---
 ## Summary
 
-Probable father of Samuel D. Shorts (**C70**, Wave 2). Methodist Episcopal minister ("Father Shorts"), b. Jul 1777 Paradise, Lancaster Co. PA; FAG death **12 Jan 1869** Fredericksburgh — **Ontario cluster C130** leans **Jan 1862** (Van Deursen/Pringle **12 Jan 1862**; Old Hay Bay **17 Jan 1862** + cites CCA obituary **19 Mar 1862**). Spouse Hannah Ellenor Pringle/Prindle. Parents soft-ingested **John Shorts × Rosannah Monk** (**C330–C331**). Buried Sexsmith Cemetery, Napanee ON -- same cemetery as Samuel. Frontmatter death date keeps FAG until Alex Y on C130.
+Probable father of Samuel D. Shorts (**C70**, Wave 2). Methodist Episcopal minister ("Father Shorts"), b. Jul 1777 Paradise, Lancaster Co. PA; death **12 Jan 1862** Fredericksburgh (**C1534 / C1539** Alex Y 2026-08-10 — Pringle/Hannah **12 Jan**; Hay Bay **17 Jan** + CCA cite **19 Mar 1862**; FAG **12 Jan 1869** treated as Possible typo **C1533**). Spouse Hannah Ellenor Pringle/Prindle. Parents soft-ingested **John Shorts × Rosannah Monk** (**C330–C331**). Buried Sexsmith Cemetery, Napanee ON -- same cemetery as Samuel. Primary CCA page still optional Evidence.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
 | Father of Samuel D. Shorts (1809-1869) | Probable | FAG 133463240 / 280868397 + Pringle compiled gen. + Van Deursen 1912 child list |  |  |
-| Jul 1777 Paradise PA; death Jan 1862 lean vs FAG 12 Jan 1869 | Probable lean (C130) | Hay Bay cites CCA 19 Mar 1862; Van Deursen/Pringle 12 Jan 1862; FAG 1869 | https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/ | Keep conflict open until CCA image/stone |
+| Jul 1777 Paradise PA; death **12 Jan 1862** (FAG 1869 Possible typo) | Probable (**C1534/C1539**) | Hay Bay CCA cite 19 Mar 1862; Van Deursen/Pringle 12 Jan 1862; FAG 1869 | https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/ | Frontmatter locked Alex Y; CCA page optional |
 | Husband of Hannah Ellenor Pringle/Prindle | Probable | FAG spouse link + Van Deursen + Old Hay Bay / Pringle compiled |  |  |
 | Parents John Shorts × Rosannah Monk | Probable (C330–C331) | Old Hay Bay Shorts vignette + WikiTree Short-3450/3451/Monk-1058 | https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/ | Soft-ingest 2026-08-06; verified false |
 | Hay Bay trustee 1811; Deacon ord. 1 Jul 1817 by Bishop Enoch George; “Father Shorts” | Probable (C131) | Old Hay Bay + Pringle/Van Deursen extract | https://oldhaybaychurch.ca/subscribers-of-1792-9-arra-ferguson/ |  |
@@ -103,7 +103,7 @@ Probable father of Samuel D. Shorts (**C70**, Wave 2). Methodist Episcopal minis
 
 ## Open questions
 
-Resolve Augustus death **1862 vs 1869** — CCA **19 Mar 1862** primary still missing; McKenzie IA borrow-only (**C1530–C1531**). Open stack leans **Jan 1862** (**C1532/C1534**); FAG **1869** Possible typo (**C1533**). Frontmatter keeps FAG until Alex Y on **C130/C1539**. Unlock: McKenzie library borrow / HPL CCA microfilm (**C1537**). Capture readable individual stone if one exists in Sexsmith wall. Parents soft-ingested **John Shorts × Rosannah Monk** (**C330–C331**) — awaiting Alex Y.
+Death year frontmatter locked **12 Jan 1862** (**C1539**). Optional: primary CCA **19 Mar 1862** page (HPL microfilm **#63** / McKenzie borrow) or readable Sexsmith stone. Parents soft-ingested **John Shorts × Rosannah Monk** (**C330–C331**) — awaiting Alex Y.
 
 ## Circuit-rider / captivity lore (2026-08-07)
 

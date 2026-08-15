@@ -8,7 +8,7 @@ death: "1810"
 birth_place: Dover, Strafford County, New Hampshire, USA
 death_place: Barrington, Strafford County, New Hampshire, USA
 burial: ""
-parents: []
+parents: [stephen_otis_sr, mary_young_otis]
 spouses: [jane_hussey_otis]
 children:
   - nicholas_otis
@@ -25,6 +25,11 @@ object_ids: []
 confidence: Probable
 verified: false
 status: researching
+parent_links:
+  - id: stephen_otis_sr
+    confidence: Probable
+  - id: mary_young_otis
+    confidence: Probable
 spouse_links:
   - id: jane_hussey_otis
     confidence: Probable
@@ -39,11 +44,15 @@ sources:
     url: "https://www.wikitree.com/wiki/Otis-1027"
   - label: "Find A Grave 64275619 — son Paul Otis (identity bridge)"
     url: "https://www.findagrave.com/memorial/64275619/paul-otis"
+  - label: "NEHGR 5 (1851) p.196–197 — Joshua⁴ son of Stephen³ × Mary Young"
+    url: "https://archive.org/details/newenglandhistor1851wate/page/196/mode/1up"
 media: []
 ---
 ## Summary
 
-Proposed father of **Paul Otis** (Morganne ascent gen-8 via Olive Otis Bunker). Soft-ingest **Probable** / `verified: false` — pack **C760** / **C761**. NEHGR Otis Genealogy (1851) p.209–210: Joshua Otis⁴ m. Jane Hussey of Dover ~1745; to Barrington/Strafford 1752; d. 1810 Barrington; children include **Paul** b. 4 Mar 1755. 1924 Otis memoir + WikiTree Otis-881/Otis-1027 corroborate. **No Find A Grave memorial** found this pass (Otis Cemetery Barrington hit is later Joshua 1773–1839). **No open obituary text**. His parents (Stephen × Mary Young on WT) not climbed.
+Proposed father of **Paul Otis** (Morganne ascent gen-8 via Olive Otis Bunker). Soft-ingest **Probable** / `verified: false` — pack **C760** / **C761**. NEHGR Otis Genealogy (1851) p.209–210: Joshua Otis⁴ m. Jane Hussey of Dover ~1745; to Barrington/Strafford 1752; d. 1810 Barrington; children include **Paul** b. 4 Mar 1755. 1924 Otis memoir + WikiTree Otis-881/Otis-1027 corroborate. **No Find A Grave memorial** found this pass (Otis Cemetery Barrington hit is later Joshua 1773–1839). **No open obituary text**.
+
+Parents soft **C2210**: **Stephen Otis Sr** × **Mary Young Otis** (NEHGR p.185/196–197; 1924 #42/#96). Same-mother sibs Stephen Jr / John **C2213**.
 
 ## Assertions
 
@@ -52,6 +61,7 @@ Proposed father of **Paul Otis** (Morganne ascent gen-8 via Olive Otis Bunker). 
 | Father of Paul Otis | Probable | NEHGR p.210 Paul under Joshua×Jane; WT Otis-1027; 1924 #246 | https://archive.org/details/newenglandhistor1851wate/page/210/mode/1up | Pack **C760** |
 | Spouse Jane Hussey; ~1745 Dover | Probable | NEHGR p.209–210; WT Otis-881 / Hussey-1579 | https://archive.org/details/newenglandhistor1851wate/page/209/mode/1up | Pack **C763** |
 | b. ~1720 Dover/Madbury; d. 1810 Barrington | Probable | NEHGR; WT; 1924 | https://www.wikitree.com/wiki/Otis-881 | Pack **C761**; no FAG |
+| Son of Stephen Otis Sr × Mary Young | Probable | NEHGR p.196–197; 1924 #96; WT Otis-881 | https://archive.org/details/newenglandhistor1851wate/page/196/mode/1up | Pack **C2210** |
 
 ## Sources
 
@@ -60,8 +70,9 @@ Proposed father of **Paul Otis** (Morganne ascent gen-8 via Olive Otis Bunker). 
 - [WikiTree Otis-881 — Joshua Otis](https://www.wikitree.com/wiki/Otis-881)
 - [WikiTree Otis-1027 — Paul Otis](https://www.wikitree.com/wiki/Otis-1027)
 - [Find A Grave 64275619 — Paul Otis](https://www.findagrave.com/memorial/64275619/paul-otis)
+- [NEHGR 5 (1851) p.196–197 — Stephen × Mary Young child block](https://archive.org/details/newenglandhistor1851wate/page/196/mode/1up)
 
 ## Open questions
 
-- Burial / FAG; NH vital images; gen-9 Stephen × Mary Young — parked
+- Burial / FAG; NH vital images; gen-10 Richard Otis × Susanna Hussey — parked
 ---

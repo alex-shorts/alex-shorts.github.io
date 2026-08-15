@@ -11,7 +11,7 @@ burial:
 parents: [bill_parsons, marcy_parsons]
 spouses: [alexander]
 children: []
-object_ids: [FT-0008]
+object_ids: [FT-0008, FT-0457]
 confidence: Confirmed
 verified: true
 status: living-private

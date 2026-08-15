@@ -11,7 +11,7 @@ burial:
 parents: [mayer_mamlock, rochelle_kahn]
 spouses: []
 children: []
-object_ids: [FT-0260, FT-0305]
+object_ids: [FT-0260, FT-0305, FT-0421]
 confidence: Probable
 verified: false
 status: researching
@@ -43,3 +43,7 @@ media: []
 ## Sources
 
 - [ISTG Allemannia 1867](https://www.immigrantships.net/v14/1800v14/allemannia18670909_02.html)
+
+## Open questions
+
+- **Spouse:** Open Data **Jennie Mamlok** × **Moritz Branis** 28 Oct 1882 Manh. **17901** — park **FAN only** (Mamlok spelling; age ~15 if our ~1867 Jenny; Braniss already FAN-not-Mayer via **C1885** / Rosalie×Moritz Braniss 1902). Keep `spouses: []` (**C1889**).

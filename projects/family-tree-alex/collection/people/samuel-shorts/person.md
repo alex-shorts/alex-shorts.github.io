@@ -27,16 +27,16 @@ sources:
   - label: "Wave 2 proposal: docs/research/people/proposals/wave-2-samuel-shorts.md"
     url: ""
 media:
-  - file: media/sexsmith-cemetery-overview-fag-2014.jpg
+  - ref: rev-augustus-shorts/media/fag-133463240-01-headstone.jpg
     kind: headstone
-    source: Find A Grave memorial 133463240 (Sexsmith Cemetery overview; Samuel memorial has no stone photo)
-    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg
-    tags: [sexsmith-cluster]
-  - file: media/sexsmith-cemetery-row-fag-2014.jpg
+    source: Find A Grave memorial 133463240 (Sexsmith Cemetery overview; Samuel memorial has no personal stone)
+    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg?size=original
+    tags: [sexsmith-cluster, fag-gallery]
+  - ref: rev-augustus-shorts/media/fag-133463240-02-headstone.jpg
     kind: headstone
-    source: Find A Grave memorial 133463240 (Sexsmith Cemetery row; Shorts inscriptions not readable)
-    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg
-    tags: [sexsmith-cluster]
+    source: Find A Grave memorial 133463240 (Sexsmith Cemetery row)
+    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406580938.jpg?size=original
+    tags: [sexsmith-cluster, fag-gallery]
 ---
 ## Summary
 
