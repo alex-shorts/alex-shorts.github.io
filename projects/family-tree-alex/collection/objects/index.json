@@ -1,1 +1,2283 @@
-{}
+{
+  "version": 1,
+  "updated": "2026-08-15",
+  "objects": {
+    "FT-0392": {
+      "dir": "FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "photo",
+      "title": "Young man in US Navy sailor uniform (studio portrait)"
+    },
+    "FT-0396": {
+      "dir": "FT-0396-school-open-house-photo-second-grade-audio-marke",
+      "photos": [],
+      "entry": true,
+      "type": "artifact",
+      "title": "School open-house photo (second grade) — audio marker only"
+    },
+    "FT-0397": {
+      "dir": "FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg",
+        "photos/03.jpg",
+        "photos/04.jpg"
+      ],
+      "entry": true,
+      "type": "artifact",
+      "title": "Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"
+    },
+    "FT-0028": {
+      "dir": "FT-0028-california-county-marriage-jon-martin-anderson-v",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "California county marriage — Jon Martin Anderson × Virginia Jill Cole (Los Angeles 19 Jun 1955)"
+    },
+    "FT-0021": {
+      "dir": "FT-0021-nyc-birth-certificate-virginia-victoria-racien-m",
+      "photos": [
+        "photos/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan-p1.png"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC birth certificate — Virginia Victoria Racien (Manhattan 1902 #41933)"
+    },
+    "FT-0025": {
+      "dir": "FT-0025-nyc-marriage-certificate-myron-w-cohn-virginia-v",
+      "photos": [
+        "photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png",
+        "photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p2.png"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC marriage certificate — Myron W. Cohn × Virginia V. Racine (Manhattan 1926/1927 #778)"
+    },
+    "FT-0096": {
+      "dir": "FT-0096-what-tailor-meant-solomon-racien-racine-near-w-3",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "What ‘tailor’ meant — Solomon Racien (Racine) near W 35th and New York’s garment boom (~1902)"
+    },
+    "FT-0230": {
+      "dir": "FT-0230-find-a-grave-93478005-pauline-bess-dushken-le-racine",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 93478005 — Pauline Bess Dushken Le Racine memorial + death-cert paste"
+    },
+    "FT-0231": {
+      "dir": "FT-0231-nyc-open-data-death-index-pauline-b-racine-21183",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Digitized Death Certificate Index — Pauline B Racine, cert. 21183, Manhattan 1927"
+    },
+    "FT-0412": {
+      "dir": "FT-0412-ny-county-nat-index-salomon-racien-1899",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NY County naturalization index — Salomon Racien, 24 Jul 1899 (arrived NYC Jul 1888)"
+    },
+    "FT-0415": {
+      "dir": "FT-0415-castle-garden-july-1888-arrival-window-salomon-racien",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Castle Garden arrival window — Salomon Racien, July 1888 (pre-Ellis)"
+    },
+    "FT-0420": {
+      "dir": "FT-0420-castle-garden-process-and-1888-rush-solomon-era",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Castle Garden process — registry, rush of 1888, Russian-Jewish tailor class (Solomon era)"
+    },
+    "FT-0023": {
+      "dir": "FT-0023-nyc-death-certificate-monroe-cohn-manhattan-1921",
+      "photos": [
+        "photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png",
+        "photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p2.png"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC death certificate — Monroe Cohn (Manhattan 1921 #29268)"
+    },
+    "FT-0024": {
+      "dir": "FT-0024-nyc-death-certificate-mamie-cohn-manhattan-1945",
+      "photos": [
+        "photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png",
+        "photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p2.png"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC death certificate — Mamie Cohn (Manhattan 1945 #12625)"
+    },
+    "FT-0094": {
+      "dir": "FT-0094-what-a-shoe-jobber-was-monroe-cohn-s-trade-not-s",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "What a shoe jobber was — Monroe Cohn’s trade (not shoemaker, not shop clerk)"
+    },
+    "FT-0022": {
+      "dir": "FT-0022-nyc-marriage-certificate-monroe-cohn-mamie-mamlo",
+      "photos": [
+        "photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png",
+        "photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p2.png"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC marriage certificate — Monroe Cohn × Mamie Mamlock (Manhattan 1893 #13078)"
+    },
+    "FT-0095": {
+      "dir": "FT-0095-rabbi-aaron-wise-of-rodeph-sholom-marries-monroe",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Rabbi Aaron Wise of Rodeph Sholom marries Monroe Cohn × Mamie Mamlock (Lexington & 63rd world, 1893)"
+    },
+    "FT-0240": {
+      "dir": "FT-0240-find-a-grave-95985316-mamie-cohn-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 95985316 — Mamie Cohn memorial (Mt Carmel; no bio; no grave photo)"
+    },
+    "FT-0260": {
+      "dir": "FT-0260-allemannia-1867-rosa-mamlock-children-hamburg-new-york",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Allemannia 1867 — Rosa Mamlock lands with four children; Mamie born later in NYC"
+    },
+    "FT-0261": {
+      "dir": "FT-0261-washington-heights-jewish-drift-monroe-cohn-1921-death",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Washington Heights Jewish surge — Monroe Cohn's Fort Washington Ave death address (1921)"
+    },
+    "FT-0262": {
+      "dir": "FT-0262-west-end-widow-mamie-cohn-305-west-end-ave-1945",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "West End widow — Mamie Cohn's 305 West End Ave last years on the quiet UWS spine"
+    },
+    "FT-0306": {
+      "dir": "FT-0306-albert-mamlock-bronx-brook-av-deed-1901",
+      "photos": [],
+      "entry": true,
+      "type": "deed",
+      "title": "Albert Mamlock buys Bronx lot — Brook av near 171st st (1901)"
+    },
+    "FT-0398": {
+      "dir": "FT-0398-cohn-mamlock-oval-studio-portraits-framed-set-ph",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg",
+        "photos/03.jpg",
+        "photos/04.jpg",
+        "photos/05.jpg",
+        "photos/06.jpg",
+        "photos/07.jpg"
+      ],
+      "entry": true,
+      "type": "photo",
+      "title": "Cohn / Mamlock oval studio portraits (framed set) + photographer backs"
+    },
+    "FT-0418": {
+      "dir": "FT-0418-nyc-open-data-death-index-albert-mamlock-manhattan-12843-1937",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Open Data death index — Albert Mamlock, Manhattan 12843, 24 May 1937 age 79"
+    },
+    "FT-0421": {
+      "dir": "FT-0421-allemannia-ship-castle-garden-1867-mamlock-landing",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Allemannia (HAL) + Castle Garden 1867 — mother-and-children German landing world (Mamlock)"
+    },
+    "FT-0426": {
+      "dir": "FT-0426-mt-carmel-cemetery-jewish-burial-world-monroe-mamie",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Mt. Carmel Cemetery (Glendale) — NYC Jewish burial world (Monroe & Mamie)"
+    },
+    "FT-0305": {
+      "dir": "FT-0305-germania-1867-moritz-blamchen-mamlock-hamburg-new-york",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Germania 1867 — Moritz Mamlock merchant + wife Blamchen land before Rosa party"
+    },
+    "FT-0099": {
+      "dir": "FT-0099-what-shoes-looked-like-1890-1920-the-stock-a-sho",
+      "photos": [
+        "photos/01-crawford-oxfords-ad-1902.jpg",
+        "photos/02-shoe-store-interior-1901.jpg",
+        "photos/03-american-high-boots-1899-1900.jpg",
+        "photos/04-mens-factory-lace-boots.jpg",
+        "photos/05-boots-shoes-storefront-poster-c1878.jpg",
+        "photos/06-gilpin-shoe-storefront-1899.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "What shoes looked like ~1890–1920 — the stock a shoe jobber moved"
+    },
+    "FT-0427": {
+      "dir": "FT-0427-hartford-german-jewish-merchant-world-solomon-era",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Hartford German-Jewish merchant world — clothing & downtown trade color (Solomon Cohn era)"
+    },
+    "FT-0417": {
+      "dir": "FT-0417-nyc-open-data-death-index-bertha-cohn-kings-10639-1925",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Open Data death index — Bertha Cohn, Kings 10639, 22 May 1925 age 79 (candidate)"
+    },
+    "FT-0395": {
+      "dir": "FT-0395-orange-county-register-a-life-story-kay-heil-did",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg",
+        "photos/03.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Orange County Register — “A Life Story: Kay Heil did it her way” (2007)"
+    },
+    "FT-0390": {
+      "dir": "FT-0390-tri-delta-sorority-eugene-or-1928-29-grandma-kay",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg",
+        "photos/03.jpg"
+      ],
+      "entry": true,
+      "type": "photo",
+      "title": "Tri Delta sorority — Eugene OR 1928–29 (Grandma Kay) + Clemens genealogy note"
+    },
+    "FT-0391": {
+      "dir": "FT-0391-registration-of-marriage-john-a-blakely-emma-a-m",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "Registration of Marriage — John A. Blakely × Emma A. More (1868, Grant Co. WI)"
+    },
+    "FT-0393": {
+      "dir": "FT-0393-american-red-cross-volunteer-special-services-ce",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "artifact",
+      "title": "American Red Cross Volunteer Special Services Certificate — Kathleen Anderson (1945)"
+    },
+    "FT-0394": {
+      "dir": "FT-0394-park-st-school-hood-river-classroom-medical-insp",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg"
+      ],
+      "entry": true,
+      "type": "photo",
+      "title": "Park St. School, Hood River — classroom / medical inspection (Glendora Blakely)"
+    },
+    "FT-0399": {
+      "dir": "FT-0399-clipping-mrs-glendora-m-blakeley-public-welfare",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Clipping — Mrs. Glendora M. Blakeley, public welfare chairman"
+    },
+    "FT-0403": {
+      "dir": "FT-0403-mrs-glendora-blakely-bloomington-nurse-la-mesa",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Mrs. Glendora Blakely — Bloomington city nurse; died La Mesa Calif. (1960)"
+    },
+    "FT-0404": {
+      "dir": "FT-0404-platteville-journal-john-a-blakely-gar-obit-1937",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Platteville Journal / Grant County News — John A. Blakely G.A.R. obituary (15 Sep 1937)"
+    },
+    "FT-0029": {
+      "dir": "FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl",
+      "photos": [
+        "photos/01.jpg",
+        "photos/source-clip.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Death Claims Dr. Guerdon C. Buck Monday Morning (Platteville ~22 Jun 1932)"
+    },
+    "FT-0175": {
+      "dir": "FT-0175-dr-e-j-buck-runaway-injury-death-grant-county-wi",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Dr. E. J. Buck — runaway injury death (Grant County Witness 26 Jun 1901)"
+    },
+    "FT-0176": {
+      "dir": "FT-0176-mrs-sarah-trask-buck-seattle-death-platteville-j",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Mrs. Sarah Trask Buck — Seattle death (Platteville Journal 30 Sep 1943)"
+    },
+    "FT-0200": {
+      "dir": "FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Erastus J. Buck, M.D. — United States Biographical Dictionary (Wisconsin vol., 1877)"
+    },
+    "FT-0201": {
+      "dir": "FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Mrs. S. E. Buck — Platteville Normal School teacher of Reading (1876–1880)"
+    },
+    "FT-0360": {
+      "dir": "FT-0360-e-j-buck-md-butterfield-grant-county-1881",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "E. J. Buck, M.D. — History of Grant County (Butterfield 1881) biographical sketch"
+    },
+    "FT-0197": {
+      "dir": "FT-0197-1895-wi-veteran-census-erastus-buck-surgeon-18th",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "1895 Wisconsin veteran census — Erastus Buck, Surgeon, 18th Wis. Inf., Platteville"
+    },
+    "FT-0198": {
+      "dir": "FT-0198-heath-ma-baptism-erastus-s-erastus-roxana-1827",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA baptism — Erastus s. Erastus and Roxana, Oct 1827"
+    },
+    "FT-0361": {
+      "dir": "FT-0361-e-j-buck-westfield-montello-express-1876",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "E. J. Buck, M.D. — Westfield “first class physician” vignette (Montello Express 1876)"
+    },
+    "FT-0362": {
+      "dir": "FT-0362-e-j-buck-ymla-vice-president-platteville-1881",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "E. J. Buck — Young Men’s Library Association vice president (Platteville ~1881)"
+    },
+    "FT-0281": {
+      "dir": "FT-0281-heath-ma-death-lucy-d-col-david-sarah-deane-1827",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA death — Lucy D., d. Col. David and Sarah Deane, May 1827"
+    },
+    "FT-0282": {
+      "dir": "FT-0282-heath-ma-baptism-roxanda-d-david-1801",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA baptism — Roxanda, d. David, bp. 22 Nov 1801"
+    },
+    "FT-0280": {
+      "dir": "FT-0280-heath-ma-death-sarah-deane-w-col-david-1809",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA death — Sarah Deane [w. Col. David], 30 Apr 1809"
+    },
+    "FT-0292": {
+      "dir": "FT-0292-david-baldwin-heath-pioneer-land-church-pew",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "David Baldwin — early Heath/Charlemont landholder and church pew 6 (Everts + Connecticut Valley)"
+    },
+    "FT-0286": {
+      "dir": "FT-0286-heath-ma-birth-erastus-ch-william-lt-william-1798",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA birth — Erastus ch. William (Lt. William and w.), Jan 1798"
+    },
+    "FT-0283": {
+      "dir": "FT-0283-heath-ma-deaths-buck-william-sarah-william-jr",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA deaths — Lt. William Buck, Sarah (Sally) Buck, and William Jr."
+    },
+    "FT-0284": {
+      "dir": "FT-0284-heath-ma-deaths-maxwell-hugh-corbett-benjamin-anna",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA deaths — Hugh Maxwell, Sarah Corbett, Benjamin Lt., Anna Winslow"
+    },
+    "FT-0285": {
+      "dir": "FT-0285-heath-ma-marriages-buck-1785-maxwell-winslow-1762",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Heath MA marriages — Buck 1785 and Maxwell × Winslow 1762"
+    },
+    "FT-0287": {
+      "dir": "FT-0287-find-a-grave-48687650-benjamin-maxwell-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 48687650 — LTC Benjamin Butler Maxwell Sr memorial"
+    },
+    "FT-0288": {
+      "dir": "FT-0288-find-a-grave-87173271-anna-winslow-maxwell-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 87173271 — Anna Winslow Maxwell memorial"
+    },
+    "FT-0322": {
+      "dir": "FT-0322-aane-benjamin-maxwell-brother-minuteman",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "AANE Deerfield — Lt. Benjamin Maxwell: son of Hugh I × Sarah Corbett; brother of Col. Hugh; Capt. Rice Minute-Man"
+    },
+    "FT-0289": {
+      "dir": "FT-0289-find-a-grave-25190915-hugh-maxwell-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 25190915 — Hugh Maxwell (1701–1759) memorial"
+    },
+    "FT-0290": {
+      "dir": "FT-0290-hugh-maxwell-heath-founding-revolution-narrative",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Col. Hugh Maxwell — Heath incorporation, Irish origin, and Revolutionary narrative (Everts 1879 + MS 27)"
+    },
+    "FT-0320": {
+      "dir": "FT-0320-christian-patriot-col-hugh-maxwell-memoir",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "The Christian Patriot (1833) — Col. Hugh Maxwell memoir: two Hughs, Fort William Henry, Bunker Hill, later war, death at sea"
+    },
+    "FT-0321": {
+      "dir": "FT-0321-shays-rebellion-stcc-col-hugh-maxwell",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Shays' Rebellion STCC narrative — Col. Hugh Maxwell military career, Stickney letter, Cincinnati, Shays"
+    },
+    "FT-0323": {
+      "dir": "FT-0323-franklin-biographical-review-maxwell-rangers",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Biographical Review Franklin Co. (1895) — Hugh Sr. / Col. Hugh Jr. / Benjamin Minute-Man + Rogers's Rangers claim"
+    },
+    "FT-0324": {
+      "dir": "FT-0324-white-charlemont-plantation-maxwell-revwar",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Joseph White, Charlemont as a Plantation (1855/58) — Col. Hugh & Lt. Benjamin Maxwell Rev War / FIW narrative"
+    },
+    "FT-0325": {
+      "dir": "FT-0325-greenfield-recorder-west-county-revwar-maxwell",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Greenfield Recorder (2026) — western Franklin County Rev War stories: Charlemont Maxwell Minute-Men + Heath naming"
+    },
+    "FT-0326": {
+      "dir": "FT-0326-ma-state-library-blog-hugh-maxwell-ms27",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "MA State Library blog (2014) — interpretive note on Hugh Maxwell MS 27 military papers"
+    },
+    "FT-0327": {
+      "dir": "FT-0327-brown-bedford-maxwell-warriors",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Abram English Brown, History of Bedford (1891) — Maxwell FIW warriors; elder Hugh epitaph 1759; Christian Patriot"
+    },
+    "FT-0328": {
+      "dir": "FT-0328-americancenturies-pvma-maxwell-agriculture",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "American Centuries / PVMA — Col. Hugh Maxwell Mass. Society for Agriculture certificate (1794) interpretive label"
+    },
+    "FT-0329": {
+      "dir": "FT-0329-nason-gazetteer-heath-maxwell-no-tories",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Nason/Varney Gazetteer (1890) — Heath: Col. Hugh Maxwell, Bunker Hill wound, no Tories"
+    },
+    "FT-0432": {
+      "dir": "FT-0432-fort-william-henry-1757-siege-massacre-context",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Fort William Henry 1757 — siege and column attack (surrounding event for Col. Hugh’s escape)"
+    },
+    "FT-0433": {
+      "dir": "FT-0433-robortella-steps-west-preemption-line-survey",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Steps West — Col. Hugh Maxwell’s 1788 Pre-emption Line survey (Robortella + Historic Geneva)"
+    },
+    "FT-0434": {
+      "dir": "FT-0434-heitman-lt-col-hugh-maxwell-continental-commissions",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Heitman register — Lt. Col. Hugh Maxwell (Mass.) Continental commissions; Washington papers name his company"
+    },
+    "FT-0435": {
+      "dir": "FT-0435-mssrw-hugh-maxwell-charlemont-abstract",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "MSSRW vol. 10 — Maxwell, Hugh of Charlemont (service abstract)"
+    },
+    "FT-0436": {
+      "dir": "FT-0436-heath-south-cemetery-maxwell-cenotaph-land-gift",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Heath South Cemetery — Col. Hugh Maxwell land gift (1791) and grandchildren’s cenotaph (1859)"
+    },
+    "FT-0437": {
+      "dir": "FT-0437-pvma-burgoyne-flag-maxwell-regimental-fragment",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "PVMA Memorial Hall — Burgoyne flag remnant + Col. Hugh Maxwell regimental flag fragment"
+    },
+    "FT-0291": {
+      "dir": "FT-0291-william-buck-heath-first-settler-church-pew",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Lt. William Buck — western Heath first settler and founding-church pew (Everts 1879)"
+    },
+    "FT-0438": {
+      "dir": "FT-0438-hotten-increase-1635-william-roger-buck",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Hotten Original Lists — Increase 1635: William Buck 50 (plowwright) + Roger Buck 18"
+    },
+    "FT-0182": {
+      "dir": "FT-0182-mills-birth-index-marion-azalia-anderson",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Mills Co. birth index 1904–1906 — Marion L. & Azalia Gayle Anderson (mother Stonebraker)"
+    },
+    "FT-0173": {
+      "dir": "FT-0173-henderson-christian-church-history-stonebraker-f",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Henderson Christian Church history — Stonebraker founding members (1877)"
+    },
+    "FT-0178": {
+      "dir": "FT-0178-marriage-license-hugh-d-anderson-bertha-stonebra",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Marriage license — Hugh D. Anderson × Bertha Stonebraker (Tribune 29 May 1902)"
+    },
+    "FT-0183": {
+      "dir": "FT-0183-delayed-birth-azalia-ursula-lucille-anderson",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Mills Co. delayed births — Azalia Gaile & Ursula Lucille Anderson (Hugh D. × Urtha Stonebraker)"
+    },
+    "FT-0192": {
+      "dir": "FT-0192-marriage-return-hugh-anderson-urtha-stonebraker-1902",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Mills Co. marriage return 1902 — Hugh D. Anderson × Urtha Stonebraker"
+    },
+    "FT-0340": {
+      "dir": "FT-0340-malvern-leader-stonebraker-anderson-marriage-1902",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Malvern Leader — Stonebraker–Anderson marriage at J. A. Stonebraker home (5 Jun 1902)"
+    },
+    "FT-0341": {
+      "dir": "FT-0341-henderson-times-1910-pioneer-stonebraker",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Henderson Times 15 Dec 1910 — pioneer roll names J. A. Stonebraker"
+    },
+    "FT-0342": {
+      "dir": "FT-0342-1910-atlas-stonebraker-section-8",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "1910 Mills atlas — J. A. & P. H. Stonebraker landowners, Anderson Twp Sec. 8"
+    },
+    "FT-0191": {
+      "dir": "FT-0191-1905-henderson-census-stonebraker-cluster",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1905 IA State Census — Henderson — J. A. / P. H. / F. G. Stonebraker (cards 166–168)"
+    },
+    "FT-0196": {
+      "dir": "FT-0196-henderson-christian-church-1942-fire-rebuild",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Henderson Christian Church — 1942 fire and wartime rebuild"
+    },
+    "FT-0177": {
+      "dir": "FT-0177-silver-city-community-history-harry-w-anderson-b",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Silver City Community History — Harry W. Anderson bio (John W. × Emily Dupray)"
+    },
+    "FT-0195": {
+      "dir": "FT-0195-silver-city-anderson-favorite-family-stories",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Silver City Community History — Anderson Favorite Family Stories"
+    },
+    "FT-0307": {
+      "dir": "FT-0307-silver-city-harry-w-anderson-trade-career",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Silver City Community History — Harry W. Anderson trade career"
+    },
+    "FT-0343": {
+      "dir": "FT-0343-hugh-dupree-horseshoe-bookends-family-oral",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Family oral — Hugh Dupree Anderson made Alex’s horseshoe bookends"
+    },
+    "FT-0439": {
+      "dir": "FT-0439-silver-city-times-harry-hugh-farm-1913",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Silver City Times — Harry Anderson sold farm to brother Hugh (2 Oct 1913)"
+    },
+    "FT-0440": {
+      "dir": "FT-0440-silver-city-times-emily-anderson-death-1923",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Silver City Times — Mrs. Emily Anderson death notice (8 Nov 1923)"
+    },
+    "FT-0330": {
+      "dir": "FT-0330-jw-anderson-silver-creek-supervisor-wheat-1869",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Pottawattamie notes — J. W. Anderson Silver Creek supervisor (1869) + wheat crop"
+    },
+    "FT-0332": {
+      "dir": "FT-0332-mills-western-stage-coonville-st-joseph",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Mills County early transportation — Western Stage Line Coonville to St. Joseph"
+    },
+    "FT-0333": {
+      "dir": "FT-0333-coonville-glenwood-wortman-1881",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Coonville / Glenwood — Wortman & 1881 history (meet-story place frame)"
+    },
+    "FT-0335": {
+      "dir": "FT-0335-ingraham-plumer-inn-stage-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Ingraham / Silver City — Flanagan–Huffaker settling + Wortman Stage Coach Inn"
+    },
+    "FT-0331": {
+      "dir": "FT-0331-silver-creek-twp-jw-anderson-trustee-1882",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Silver Creek Township history — J. W. Anderson trustee (1882) + stage-station landscape"
+    },
+    "FT-0334": {
+      "dir": "FT-0334-chicago-dray-teamster-trade-context",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Encyclopedia of Chicago — Teamsters / horse-team drayage (profession unpack)"
+    },
+    "FT-0005": {
+      "dir": "FT-0005-conejo-mountain-funeral-home-gloria-martha-short",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Conejo Mountain Funeral Home — Gloria Martha Shorts"
+    },
+    "FT-0380": {
+      "dir": "FT-0380-deseret-1972-utah-swim-shorts-thousand-oaks-recruit",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Deseret News — Utah swim preview names Bill Shorts of Thousand Oaks (1972)"
+    },
+    "FT-0381": {
+      "dir": "FT-0381-chronicle-1973-01-utah-development-meet-shorts-backstroke",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Daily Utah Chronicle — Bill Shorts backstroke placings + photo caption (1973)"
+    },
+    "FT-0382": {
+      "dir": "FT-0382-tribune-1973-02-shorts-bio-thousand-oaks-business",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Salt Lake Tribune — Bill Shorts bio (Thousand Oaks, business major, 6'4 backstroke)"
+    },
+    "FT-0383": {
+      "dir": "FT-0383-chronicle-1973-02-frosh-backstroke-firsts",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Daily Utah Chronicle — frosh Bill Shorts wins 200 back, second in 100 (1973)"
+    },
+    "FT-0384": {
+      "dir": "FT-0384-wac-1974-medley-relay-shorts-backstroke-lead",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "WAC swimming championships 1974 — Bill Shorts leads off Utah medley relay"
+    },
+    "FT-0385": {
+      "dir": "FT-0385-chronicle-1975-03-wac-preview-shorts-favorite",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Daily Utah Chronicle — 1975 WAC preview: Shorts favorite in backstroke"
+    },
+    "FT-0386": {
+      "dir": "FT-0386-deseret-1975-03-wac-medley-record-shorts",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Deseret News — 1975 WAC: Utah medley relay meet record (Shorts lead-off)"
+    },
+    "FT-0387": {
+      "dir": "FT-0387-chronicle-1975-03-ncaa-cleveland-roster-shorts",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Daily Utah Chronicle — Bill Shorts named to Utah NCAA Cleveland roster (1975)"
+    },
+    "FT-0388": {
+      "dir": "FT-0388-captain-wac-100-back-champ-1975-76-season",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Team captain Bill Shorts — WAC 100 backstroke champion (1975–76 season stack)"
+    },
+    "FT-0389": {
+      "dir": "FT-0389-wac-1976-shorts-defend-third-place",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "1976 WAC — defending backstroke champ Bill Shorts finishes third"
+    },
+    "FT-0004": {
+      "dir": "FT-0004-ventura-county-star-richard-dorland-shorts-28-oc",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Ventura County Star — Richard Dorland Shorts (28 Oct 2009)"
+    },
+    "FT-0101": {
+      "dir": "FT-0101-they-met-at-the-hollywood-palladium-gloria-richa",
+      "photos": [
+        "photos/01-hollywood-palladium.jpg",
+        "photos/02-gloria-portrait.jpg",
+        "photos/03-gloria-obit-card.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "They met at the Hollywood Palladium — Gloria × Richard danced to Woody Herman"
+    },
+    "FT-0102": {
+      "dir": "FT-0102-secretary-at-the-long-beach-shipyards-gloria-s-w",
+      "photos": [
+        "photos/01-liberty-ship.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Secretary at the Long Beach shipyards — Gloria’s wartime / postwar work world"
+    },
+    "FT-0313": {
+      "dir": "FT-0313-gloria-bellflower-wartime-school-boom",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Bellflower 1942 — wartime boomtown where Gloria finished high school"
+    },
+    "FT-0315": {
+      "dir": "FT-0315-long-beach-women-wwii-historian-burnett",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Long Beach women in the WWII yards — local historian context for Gloria’s shipyard years"
+    },
+    "FT-0103": {
+      "dir": "FT-0103-tuxhorn-germans-on-the-plains-westphalia-mcphers",
+      "photos": [
+        "photos/01-leo-tuxhorn-portrait.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Tuxhorn Germans on the Plains — Westphalia → McPherson; Nemaha surname neighbors"
+    },
+    "FT-0314": {
+      "dir": "FT-0314-august-tuxhorn-1884-farm-fire-death",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "August Tuxhorn’s 1884 farm fire — Leo’s father, McPherson County"
+    },
+    "FT-0107": {
+      "dir": "FT-0107-dornberg-bielefeld-america-westphalia-emigration",
+      "photos": [
+        "photos/01-memorial-fag.png",
+        "photos/01-tuxhorn-fag.png"
+      ],
+      "entry": true,
+      "type": "census",
+      "title": "Dornberg / Bielefeld → America — Westphalia emigration peak (Tuxhorn hinge)"
+    },
+    "FT-0408": {
+      "dir": "FT-0408-democratic-sentinel-august-tuxhorn-1884-wire",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Democratic Sentinel (Rensselaer IN) — August Tuxhorn McPherson wire, 21 Nov 1884"
+    },
+    "FT-0409": {
+      "dir": "FT-0409-mcpherson-settler-elizabeth-tuxhorn-groveland-1876",
+      "photos": [],
+      "entry": true,
+      "type": "deed",
+      "title": "McPherson Co. KS settler list — Elizabeth Tuxhorn (Birkenbuel), Groveland 1876"
+    },
+    "FT-0411": {
+      "dir": "FT-0411-mcpherson-probate-index-tuxhorn-august-d52-e104",
+      "photos": [],
+      "entry": true,
+      "type": "deed",
+      "title": "McPherson Co. KS probate journal index — Tuxhorn August D52 (1891) / E104 (1894)"
+    },
+    "FT-0098": {
+      "dir": "FT-0098-altmark-germans-on-the-kansas-prairie-gatz-hilge",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Altmark Germans on the Kansas prairie — Gatz × Hilgenfeld, McPherson Pioneer Register, and what ‘farmer’ meant"
+    },
+    "FT-0354": {
+      "dir": "FT-0354-irvin-satc-wwi-student-army-training-corps",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Irvin Carl Gatz — Pvt Student Army Training Corps (WWI title unpack)"
+    },
+    "FT-0100": {
+      "dir": "FT-0100-prairie-housing-and-tools-1870-1905-soddy-to-fra",
+      "photos": [
+        "photos/01-chrisman-sisters-sod.jpg",
+        "photos/02-rawding-family-sod-house-1886.jpg",
+        "photos/03-haumont-two-story-sod-1886.jpg",
+        "photos/04-family-sod-house-prairie.jpg",
+        "photos/05-farm-family-sod-nebraska.jpg",
+        "photos/06-horse-drawn-plow.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Prairie housing & tools ~1870–1905 — soddy to frame, plow work (context for Gatz farmers)"
+    },
+    "FT-0097": {
+      "dir": "FT-0097-falls-city-journal-1899-johann-ludwig-hilgenfeld",
+      "photos": [],
+      "entry": true,
+      "type": "obituary",
+      "title": "Falls City Journal 1899 — Johann Ludwig Hilgenfeld, 92; names daughter Sophia Gatz"
+    },
+    "FT-0350": {
+      "dir": "FT-0350-falls-city-journal-1941-anna-deckinger-hilgenfeld",
+      "photos": [],
+      "entry": true,
+      "type": "obituary",
+      "title": "Falls City Journal 1941 — Anna Deckinger Hilgenfeld (FAN farm + McPherson sister)"
+    },
+    "FT-0351": {
+      "dir": "FT-0351-richardson-1890-farmers-hilgenfield-arago",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Nebraska State Gazetteer 1890 — Hilgenfield farmers at Arago / Falls City"
+    },
+    "FT-0352": {
+      "dir": "FT-0352-andreas-falls-city-deutsche-gesellschaft-arago",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Andreas 1882 — Falls City Die Deutsche Gesellschaft + Arago German farming community"
+    },
+    "FT-0353": {
+      "dir": "FT-0353-barrington-german-pioneer-influx-lines",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Barrington area — German pioneer influx 1840s–1850s (Hilgenfeld sojourn landscape)"
+    },
+    "FT-0355": {
+      "dir": "FT-0355-wendemark-altmark-marschhufendorf-place",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Wendemark (Altmärkische Wische) — Marschhufendorf place for Gatz × Hilgenfeld wedding"
+    },
+    "FT-0108": {
+      "dir": "FT-0108-don-shorts-at-blue-church-plaque-methodism-claim",
+      "photos": [
+        "photos/01-ontarioplaques-don-shorts-comment.png",
+        "photos/02-blue-church-exterior.jpg",
+        "photos/03-blue-church-roadside.jpg"
+      ],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Don Shorts at Blue Church plaque — Methodism claim + who is buried here? (2010)"
+    },
+    "FT-0310": {
+      "dir": "FT-0310-richard-panama-sixth-af-operations-specialist",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Operations Specialist in Panama — Richard’s WWII AAF world (Sixth Air Force)"
+    },
+    "FT-0311": {
+      "dir": "FT-0311-richard-fire-career-arcadia-huntington-burbank",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Arcadia → Huntington Park → Burbank Captain — Richard’s fire departments in local histories"
+    },
+    "FT-0312": {
+      "dir": "FT-0312-south-gate-high-1941-industrial-suburb",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "South Gate High 1941 — industrial suburb where Richard graduated"
+    },
+    "FT-0370": {
+      "dir": "FT-0370-1929-socal-move-south-gate-firestone-boom",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "1929 Rochester → Southern California — Firestone / South Gate boom year"
+    },
+    "FT-0372": {
+      "dir": "FT-0372-highland-park-figueroa-shoe-retail-world",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Highland Park Figueroa — retail / shoe-store strip where Earl kept shop"
+    },
+    "FT-0373": {
+      "dir": "FT-0373-south-gate-depression-quake-industry",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "South Gate childhood suburb — Depression, 1933 quake, factory jobs"
+    },
+    "FT-0374": {
+      "dir": "FT-0374-south-pasadena-later-residence-world",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "South Pasadena later home — trolley suburb where Earl died"
+    },
+    "FT-0152": {
+      "dir": "FT-0152-find-a-grave-100072423-earl-stanley-shorts-memor",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 100072423 — Earl Stanley Shorts memorial extract"
+    },
+    "FT-0172": {
+      "dir": "FT-0172-charles-merritt-brights-disease-gorham-ontario-c",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Charles Merritt — Bright's disease, Gorham (Ontario County Chronicle 21 May 1902)"
+    },
+    "FT-0174": {
+      "dir": "FT-0174-1850-us-census-hopewell-ontario-ny-henry-tessima",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "census",
+      "title": "1850 US Census — Hopewell, Ontario, NY — Henry Tessiman household (fam 259)"
+    },
+    "FT-0217": {
+      "dir": "FT-0217-woodlawn-cemetery-register-merritt-lot-207",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Woodlawn Cemetery register — Charles J. & Ann L. Merritt, Sec 10 Lot 207"
+    },
+    "FT-0218": {
+      "dir": "FT-0218-charles-merritt-probate-ann-l-executor-jun-1902",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Charles Merritt probate — Ann L. Merritt executor (Ontario County Chronicle 4 Jun 1902)"
+    },
+    "FT-0219": {
+      "dir": "FT-0219-find-a-grave-121146760-charles-merritt-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 121146760 — Charles Merritt memorial extract"
+    },
+    "FT-0270": {
+      "dir": "FT-0270-1855-census-hopewell-ontario-ny-tesseyman-fam-027",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1855 NY State Census index — Hopewell, Ontario, NY — Tesseyman household (fam 027)"
+    },
+    "FT-0401": {
+      "dir": "FT-0401-abbie-tesseyman-pneumonia-chapinville-1898",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Abbie Tesseyman — pneumonia, Chapinville (Ontario County Journal 30 Dec 1898)"
+    },
+    "FT-0271": {
+      "dir": "FT-0271-1875-census-canandaigua-ontario-ny-ethelinda-tesseyman-fam-465",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1875 NY State Census index — Canandaigua, Ontario, NY — Ethelinda Tesseyman (fam 465)"
+    },
+    "FT-0067": {
+      "dir": "FT-0067-pringle-benham-compiled-dorland-shortts-239-mini",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Pringle/Benham compiled — Dorland Shortts #239 minister; m. Effie Earl 1879; d. Marcy 1945"
+    },
+    "FT-0069": {
+      "dir": "FT-0069-find-a-grave-8850577-rev-dorland-shorts-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 8850577 — Rev Dorland Shorts memorial extract (no bio; no stone photo)"
+    },
+    "FT-0215": {
+      "dir": "FT-0215-find-a-grave-8850579-effie-eliza-earl-shorts-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 8850579 — Effie Eliza Earl Shorts memorial extract (no bio; no stone photo)"
+    },
+    "FT-0371": {
+      "dir": "FT-0371-rochester-shoe-industry-mckelvey-decline",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Rochester shoe-town decline — McKelvey city-historian frame for leaving ~1929"
+    },
+    "FT-0066": {
+      "dir": "FT-0066-mount-hope-cemetery-section-w-stone-list-rev-dor",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Mount Hope Cemetery Section W stone list — Rev. Dorland Shorts & Effie E."
+    },
+    "FT-0216": {
+      "dir": "FT-0216-ny-state-death-index-1918-effie-shorts-cert-37880",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NY State Death Index 1918 — Effie E. Shorts, cert. 37880, East Rochester"
+    },
+    "FT-0031": {
+      "dir": "FT-0031-grindstone-island-umc-history-rev-alexander-shor",
+      "photos": [
+        "photos/01-altar.jpg",
+        "photos/02-stained-glass.jpg",
+        "photos/03-church-front.jpg",
+        "photos/04-church-door.jpg",
+        "photos/05-quilt.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Grindstone Island UMC History — Rev Alexander Shorts, circuit rider (full page + images)"
+    },
+    "FT-0033": {
+      "dir": "FT-0033-thousand-islands-life-grindstone-stained-glass-s",
+      "photos": [
+        "photos/01-church-stained-glass-hero.png",
+        "photos/02-rev-alexander-shorts.jpeg",
+        "photos/03-church-graphic.png",
+        "photos/04-church-exterior.png",
+        "photos/05-nancy-keziah-photo.png"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Thousand Islands Life — Grindstone stained-glass series: Rev. Alexander Shorts (full article + images)"
+    },
+    "FT-0038": {
+      "dir": "FT-0038-shorts-me-builders-connection-map-hay-bay-napane",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Shorts ME builders — connection map (Hay Bay → Napanee → Grindstone → Dorland)"
+    },
+    "FT-0040": {
+      "dir": "FT-0040-aylsworth-family-1887-eva-eliza-aylesworth-m-rev",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Aylsworth Family (1887) — Eva Eliza Aylesworth m. Rev. Alexander Shorts; died leaving son Dorian"
+    },
+    "FT-0065": {
+      "dir": "FT-0065-ny-state-death-index-1945-dorland-shorts-cert-52",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NY State Death Index 1945 — Dorland Shorts, cert. 52286, Marcy"
+    },
+    "FT-0068": {
+      "dir": "FT-0068-maynard-methodist-church-marcy-ny-erie-canal-vil",
+      "photos": [
+        "photos/01-maynard-methodist-church.png",
+        "photos/02-maynard-interior.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Maynard Methodist Church (Marcy NY) — Erie Canal Village history + photos"
+    },
+    "FT-0070": {
+      "dir": "FT-0070-find-a-grave-138634881-eva-eliza-aylesworth-shor",
+      "photos": [
+        "photos/01-cemetery-cover.jpeg"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 138634881 — Eva Eliza Aylesworth Shorts (Knight's Cemetery)"
+    },
+    "FT-0071": {
+      "dir": "FT-0071-knights-cemetery-transcript-kns-96-eva-eliza-sho",
+      "photos": [
+        "photos/01-cemetery-overview-2013.jpg",
+        "photos/02-cemetery-overview-2019.jpeg",
+        "photos/03-cemetery-overview-2024.jpeg"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "Knight's Cemetery transcript — KNS 96 Eva Eliza Shorts stone + cemetery intro"
+    },
+    "FT-0074": {
+      "dir": "FT-0074-pringle-benham-compiled-gen-110-alexander-shortt",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Pringle/Benham compiled gen. §110 — Alexander Shortts × Eva Eliza Aylesworth; child Dorland only"
+    },
+    "FT-0089": {
+      "dir": "FT-0089-methodism-in-alexandria-jefferson-co-ny-circuit",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Methodism in Alexandria (Jefferson Co. NY) — circuit riders on horseback; town where Earl Stanley Shorts was born"
+    },
+    "FT-0111": {
+      "dir": "FT-0111-crem-dorland-book-fag-ruth-dorland-william-short",
+      "photos": [],
+      "entry": true,
+      "type": "book",
+      "title": "Crem Dorland book + FAG — Ruth Dorland × William Shorts (Adolphustown FAN; not blood claim)"
+    },
+    "FT-0137": {
+      "dir": "FT-0137-find-a-grave-96207765-rev-alexander-shorts-grind",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 96207765 — Rev Alexander Shorts (Grindstone Island Cemetery)"
+    },
+    "FT-0429": {
+      "dir": "FT-0429-black-river-nny-conference-memorial-shorts-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Black River & Northern NY Conference Memorial — no Shorts sketch (Dorland charge negative)"
+    },
+    "FT-0036": {
+      "dir": "FT-0036-fadedgenes-rev-alexander-shorts-me-charges-ricev",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "fadedgenes — Rev Alexander Shorts ME charges (Riceville 1869; Napanee 1881)"
+    },
+    "FT-0057": {
+      "dir": "FT-0057-inkerman-me-church-and-parsonage-1868-eva-shorts",
+      "photos": [
+        "photos/01-inkerman-united-cover-1883.jpg",
+        "photos/02-inkerman-church-carriage-sheds.jpg",
+        "photos/03-inkerman-me-1883-sepia.jpg",
+        "photos/04-mills-me-chapter-p9.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Inkerman ME church & parsonage (1868) — Eva Shorts death context; 1883 red-brick successor"
+    },
+    "FT-0060": {
+      "dir": "FT-0060-canadian-me-charge-ladder-riceville-inkerman-nap",
+      "photos": [
+        "photos/01-mills-methodism-inkerman.jpg",
+        "photos/02-inkerman-fadedgenes-sto.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Canadian ME charge ladder — Riceville → Inkerman → Napanee (buildings + search negatives)"
+    },
+    "FT-0072": {
+      "dir": "FT-0072-fadedgenes-inkerman-methodist-church-mountain-tw",
+      "photos": [
+        "photos/01-inkerman-methodist-1883.jpg",
+        "photos/02-inkerman-mountain-map.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "fadedgenes — Inkerman Methodist Church (Mountain Twp, Dundas) + 1883 building photo"
+    },
+    "FT-0073": {
+      "dir": "FT-0073-mills-1983-yesterday-and-to-day-history-of-inker",
+      "photos": [
+        "photos/01-cover-inkerman-united-church.jpg",
+        "photos/02-inkerman-church-carriage-sheds.jpg",
+        "photos/03-methodism-me-parsonage-p9.jpg",
+        "photos/04-church-today-1883-building.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Mills 1983 — Yesterday and To-Day: History of Inkerman United Church (ME parsonage + building photos)"
+    },
+    "FT-0106": {
+      "dir": "FT-0106-arthur-aylesworth-at-quidnessett-ri-settler-and",
+      "photos": [
+        "photos/01-aylsworth-1887-p36.jpg",
+        "photos/02-aylsworth-1887-p37.jpg",
+        "photos/03-emigration-ri.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Arthur Aylesworth at Quidnessett — RI settler & the road to Canada"
+    },
+    "FT-0149": {
+      "dir": "FT-0149-otho-nial-charlotte-bowerman-aylsworth-1887-job",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Otho Nial × Charlotte Bowerman — Aylsworth 1887; Job Aylesworth spotted fever 1803"
+    },
+    "FT-0139": {
+      "dir": "FT-0139-aylsworth-family-1887-p-89-charlotte-bowerman-da",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Aylsworth Family (1887) p. 89 — Charlotte Bowerman dau. David; m. Otho Nial 1805"
+    },
+    "FT-0140": {
+      "dir": "FT-0140-quaker-minutes-charlotte-bowerman-membership-and",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Quaker minutes — Charlotte Bowerman membership & marry-out acknowledgment (1803–1806)"
+    },
+    "FT-0141": {
+      "dir": "FT-0141-bowerman-family-genealogy-1904-david-bowerman-vi",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Bowerman family genealogy (1904) — David Bowerman vitals, children, Charlotte adoption note"
+    },
+    "FT-0142": {
+      "dir": "FT-0142-pioneer-life-on-the-bay-of-quinte-1904-p-131-dav",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Pioneer Life on the Bay of Quinte (1904) p. 131 — David Bowerman × Catherine Bartlett family"
+    },
+    "FT-0146": {
+      "dir": "FT-0146-bowerman-family-migration-batteau-route-ichabod",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Bowerman family migration — batteau route, Ichabod Quaker disownment, Joseph Earl Loyalist"
+    },
+    "FT-0147": {
+      "dir": "FT-0147-charlotte-bowerman-adopted-daughter-note-bowerma",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Charlotte Bowerman — adopted daughter note (Bowerman genealogy appendix)"
+    },
+    "FT-0148": {
+      "dir": "FT-0148-charlotte-bowerman-quaker-membership-marry-out-a",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Charlotte Bowerman — Quaker membership, marry-out, and acknowledgment (1803–1806)"
+    },
+    "FT-0168": {
+      "dir": "FT-0168-bowerman-1904-ichabod-verbank-homestead-bowerman",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Bowerman 1904 — Ichabod Verbank homestead, Bowerman's Hole, Deborah stayed Dutchess"
+    },
+    "FT-0034": {
+      "dir": "FT-0034-ti-life-archive-grindstone-grenell-wellesley-his",
+      "photos": [
+        "photos/01-grindstone-church.png",
+        "photos/02-historic-church.png",
+        "photos/03-historic-church.png",
+        "photos/04-historic-church.png",
+        "photos/05-historic-church.png",
+        "photos/06-historic-church.png",
+        "photos/07-historic-church.png",
+        "photos/08-historic-church.png",
+        "photos/09-historic-church.png",
+        "photos/10-historic-church.png",
+        "photos/11-dinsmore-church.png",
+        "photos/12-church.png",
+        "photos/13-church.png",
+        "photos/14-church.png",
+        "photos/15-church.png",
+        "photos/16-picture34.jpg",
+        "photos/17-dunsm.jpg",
+        "photos/18-picture26.jpg",
+        "photos/19-picture27.jpg",
+        "photos/20-picture28.jpg",
+        "photos/21-picture46.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "TI Life archive — Grindstone / Grenell / Wellesley historic churches (Rick Tague); Shorts section + images"
+    },
+    "FT-0037": {
+      "dir": "FT-0037-ti-life-gabriel-series-mending-alexander-shorts",
+      "photos": [
+        "photos/01-window.jpg",
+        "photos/02-gabriel.jpeg",
+        "photos/03-well.png"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "TI Life — Gabriel series: mending Alexander Shorts’s Grindstone church (1935–45)"
+    },
+    "FT-0039": {
+      "dir": "FT-0039-ti-life-grindstone-island-lost-in-time-kim-lunma",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "TI Life — Grindstone Island: Lost in Time (Kim Lunman); church as summer heart + Rex Ennis lay preacher"
+    },
+    "FT-0041": {
+      "dir": "FT-0041-ti-life-5-13-11-dig-tague-citation-negative-may",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "TI Life 5/13/11 dig — Tague citation negative; May 13 2011 archive posts are not Grindstone church history"
+    },
+    "FT-0053": {
+      "dir": "FT-0053-baldwin-and-clift-1881-3074-mary-ann-denison-sam",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Baldwin & Clift 1881 — #3074 Mary Ann Denison × Samuel D. Shorts (children)"
+    },
+    "FT-0054": {
+      "dir": "FT-0054-find-a-grave-samuel-shorts-280868397-mary-ann-de",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave — Samuel Shorts 280868397 + Mary Ann Denison Shorts 280868640 (Sexsmith)"
+    },
+    "FT-0058": {
+      "dir": "FT-0058-riceville-methodist-1869-little-white-church-pre",
+      "photos": [
+        "photos/02-pendleton-methodist-prescott.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Riceville Methodist — 1869 Little White Church (Prescott) & pastoral-charge history"
+    },
+    "FT-0059": {
+      "dir": "FT-0059-napanee-me-church-grace-united-bridge-and-robert",
+      "photos": [
+        "photos/01-grace-united-bridge-st.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Napanee ME church → Grace United (Bridge & Robert) — Alexander’s 1881 charge town"
+    },
+    "FT-0061": {
+      "dir": "FT-0061-ti-life-emmet-c-dodge-stained-glass-series-mid-1",
+      "photos": [
+        "photos/01-stained-glass-window.png",
+        "photos/02-dodge-hall.png",
+        "photos/03-emmet-dodge.jpg",
+        "photos/04-emmet-portrait.jpg",
+        "photos/05-dodge-monument.jpeg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "TI Life — Emmet C. Dodge stained-glass series: mid-1930s Grindstone church rebuild + unpublished MS"
+    },
+    "FT-0062": {
+      "dir": "FT-0062-grindstone-news-12-jul-1998-jesse-calkins-helped",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Grindstone News 12 Jul 1998 — Jesse Calkins helped Rev. Shorts build the island church"
+    },
+    "FT-0063": {
+      "dir": "FT-0063-grindstone-news-19-aug-2001-mrs-joseph-tercott-1",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Grindstone News 19 Aug 2001 — Mrs. Joseph Tercott (1947) saw Shorts-era church built on Turcotte land"
+    },
+    "FT-0064": {
+      "dir": "FT-0064-ti-life-lashomb-going-home-chapter-cheese-factor",
+      "photos": [
+        "photos/01-book-cover.png",
+        "photos/02-cheese-factory-1990.png",
+        "photos/03-milk-wagon.png",
+        "photos/04-factory-deteriorating.png",
+        "photos/05-author-scan.png"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "TI Life — Lashomb Going Home chapter: Cheese Factory (Emmet Dodge Memoires + Turcotte Thurso)"
+    },
+    "FT-0084": {
+      "dir": "FT-0084-grindstone-island-schoolhouse-history-house-of-g",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Grindstone Island schoolhouse history — House of Good Temperance served as island church until fire (pre-Shorts fabric)"
+    },
+    "FT-0430": {
+      "dir": "FT-0430-grace-united-napanee-museum-fire-hub-narrative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Grace United Napanee — museum object story (1842 ME building, lightning, 1943 fire, community hub)"
+    },
+    "FT-0431": {
+      "dir": "FT-0431-trinity-united-napanee-beaver-names-st-andrews",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Trinity United Napanee — Beaver names history; St Andrew's Gothic rival & 1930s merger"
+    },
+    "FT-0055": {
+      "dir": "FT-0055-museum-of-lennox-and-addington-denison-christian",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg",
+        "photos/03.jpg",
+        "photos/04.jpg"
+      ],
+      "entry": true,
+      "type": "artifact",
+      "title": "Museum of Lennox & Addington — Denison Christian Cross quilt 2014.36.01 (Mary Anne finishes)"
+    },
+    "FT-0104": {
+      "dir": "FT-0104-capt-george-denison-stonington-founder-and-king",
+      "photos": [
+        "photos/01-baldwin-1881-p6.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Capt. George Denison — Stonington founder & King Philip’s War (colonial hinge)"
+    },
+    "FT-0105": {
+      "dir": "FT-0105-uel-land-and-bay-of-quinte-thompson-loyalist-hin",
+      "photos": [
+        "photos/01-quilt-detail.jpg",
+        "photos/02-loyalist-landing-plaque.jpg",
+        "photos/03-hay-bay-plaque.jpg"
+      ],
+      "entry": true,
+      "type": "artifact",
+      "title": "UEL land & Bay of Quinte — Thompson Loyalist hinge (quilt + landing world)"
+    },
+    "FT-0466": {
+      "dir": "FT-0466-stonington-helderberg-robert-denison-knox",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Stonington families to Helderberg — Robert Denison on Van Rensselaer’s ‘free’ land"
+    },
+    "FT-0465": {
+      "dir": "FT-0465-saybrook-1667-mystic-farm-john-phebe",
+      "photos": [],
+      "entry": true,
+      "type": "deed",
+      "title": "1667 Saybrook settlement — George’s Mystic-mouth farm to Capt. John × Phebe Lay"
+    },
+    "FT-0458": {
+      "dir": "FT-0458-baldwin-george-denison-cromwell-naseby",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Baldwin 1881 — Capt. George Denison under Cromwell; wounded at Naseby; Ann as nurse"
+    },
+    "FT-0459": {
+      "dir": "FT-0459-george-denison-will-england-war-sword",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Capt. George Denison will 1693/4 — great sword & gauntlet from the wars of England"
+    },
+    "FT-0461": {
+      "dir": "FT-0461-wheeler-denison-england-return-jointure",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Wheeler 1900 — George’s England soldier year, Ann jointure £300, Stonington fame"
+    },
+    "FT-0463": {
+      "dir": "FT-0463-haynes-roxbury-train-band-pequotsepos",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Haynes 1963 — Roxbury train-band snub, New London captain, Pequotsepos lean-to"
+    },
+    "FT-0407": {
+      "dir": "FT-0407-denison-homestead-pequotsepos-manor-history",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Denison Homestead / Pequotsepos Manor — land grant, manor fire 1717 rebuild, museum"
+    },
+    "FT-0410": {
+      "dir": "FT-0410-kasper-miscia-nehgr-178-borodell-cumbrian-summary",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Anna Kasper 2024 — Miscia NEHGR 178 Borodell Cumbrian summary (reject Cork/Broughton mother)"
+    },
+    "FT-0406": {
+      "dir": "FT-0406-maj-gen-daniel-denison-autobiography-1672",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Maj. Gen. Daniel Denison autobiography (1672) — Lyon 1631, Dudley marriage, George at Marston Moor"
+    },
+    "FT-0460": {
+      "dir": "FT-0460-cromwell-marston-moor-naseby-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "What ‘serving under Cromwell’ meant — Marston Moor 1644 and Naseby 1645"
+    },
+    "FT-0462": {
+      "dir": "FT-0462-stonington-church-denison-miles-standish",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Stonington First Church 1874 — Denison as Miles Standish of the settlement; Canonchet"
+    },
+    "FT-0464": {
+      "dir": "FT-0464-caulkins-denison-border-man-southerton",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Caulkins 1860 — Denison the border man; Southerton magistrate; ‘only except’"
+    },
+    "FT-0035": {
+      "dir": "FT-0035-father-shorts-conversion-first-upper-canada-me-o",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Father Shorts — conversion, first Upper Canada ME ordination, deathbed (Pringle compiled / CCA tradition)"
+    },
+    "FT-0056": {
+      "dir": "FT-0056-1851-canada-west-census-richmond-twp-lennox-agus",
+      "photos": [
+        "photos/sexsmith-overview-fag-2014.jpg",
+        "photos/sexsmith-row-fag-2014.jpg"
+      ],
+      "entry": true,
+      "type": "census",
+      "title": "1851 Canada West Census — Richmond Twp, Lennox — Agustis & Ellenor Shorts (+ Sexsmith place)"
+    },
+    "FT-0030": {
+      "dir": "FT-0030-canada-christian-advocate-via-old-hay-bay-shorts",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Canada Christian Advocate (via Old Hay Bay) — Shorts orphan / Father Shorts vignette"
+    },
+    "FT-0032": {
+      "dir": "FT-0032-fadedgenes-rev-andrew-prindle-me-charge-list-han",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "fadedgenes — Rev Andrew Prindle ME charge list (Hannah Shorts’s brother)"
+    },
+    "FT-0046": {
+      "dir": "FT-0046-old-hay-bay-church-open-building-photographs-ext",
+      "photos": [
+        "photos/01-exterior-1908-postcard.jpg",
+        "photos/02-exterior-2008.jpg",
+        "photos/03-historic-1926-ao.jpg",
+        "photos/04-historic-1926-ao-alt.jpg",
+        "photos/05-historic-1926-portrait.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Old Hay Bay Church — open building photographs (exterior / historic views)"
+    },
+    "FT-0047": {
+      "dir": "FT-0047-old-hay-bay-church-nhs-parks-canada-historicplac",
+      "photos": [
+        "photos/01-historicplaces-general-view.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Old Hay Bay Church NHS — Parks Canada / HistoricPlaces designation + Ontario plaque text"
+    },
+    "FT-0049": {
+      "dir": "FT-0049-bowman-united-church-ancaster-exteriors-prindle",
+      "photos": [
+        "photos/01-bowman-side.jpg",
+        "photos/02-bowman-front-door.jpg",
+        "photos/03-bowman-side-detail.jpg",
+        "photos/04-bowman-historic-bw.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Bowman United Church, Ancaster — exteriors + Prindle burial / chair relic site"
+    },
+    "FT-0050": {
+      "dir": "FT-0050-me-conference-1829-andrew-prindle-superannuated",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "ME Conference 1829 — Andrew Prindle superannuated; next session at Bowman’s chapel, Ancaster"
+    },
+    "FT-0051": {
+      "dir": "FT-0051-rev-andrew-prindle-fag-burial-sanderson-death-no",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Rev Andrew Prindle — FAG burial + Sanderson death notice + Yonge Street clergy (beyond FT-0035)"
+    },
+    "FT-0052": {
+      "dir": "FT-0052-upper-canada-me-itinerancy-prindle-niagara-years",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Upper Canada ME itinerancy — Prindle Niagara years + horseback circuit-rider quotes"
+    },
+    "FT-0075": {
+      "dir": "FT-0075-carroll-case-and-his-cotemporaries-vol-1-rev-and",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Carroll, Case and his Cotemporaries vol. 1 — Rev Andrew Prindle biographical sketch"
+    },
+    "FT-0076": {
+      "dir": "FT-0076-fadedgenes-bowman-me-church-ancaster-old-slide-p",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "fadedgenes — Bowman ME Church Ancaster (Old Slide) + Prindle chair / Kitty Murray"
+    },
+    "FT-0077": {
+      "dir": "FT-0077-webster-history-of-the-me-church-in-canada-andre",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Webster, History of the ME Church in Canada — Andrew Prindle first Canadian itinerant"
+    },
+    "FT-0078": {
+      "dir": "FT-0078-bowman-united-church-cemetery-rev-andrew-prindle",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Bowman United Church Cemetery — Rev Andrew Prindle stone (Interment.net)"
+    },
+    "FT-0079": {
+      "dir": "FT-0079-carroll-vols-2-and-5-father-prindle-death-eulogy",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Carroll vols. 2 & 5 — Father Prindle death eulogy + Bay of Quinte local Deacon Augustus Shorts"
+    },
+    "FT-0112": {
+      "dir": "FT-0112-1851-canada-west-census-richmond-twp-henry-holco",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1851 Canada West Census — Richmond Twp — Henry Holcomb × Hannah O Shorts household"
+    },
+    "FT-0116": {
+      "dir": "FT-0116-find-a-grave-william-and-eunice-pringle-hay-bay",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Find A Grave — William & Eunice Pringle Hay Bay (95004236 + 125180719)"
+    },
+    "FT-0134": {
+      "dir": "FT-0134-find-a-grave-46280209-hannah-shorts-holcomb-cora",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 46280209 — Hannah Shorts Holcomb (Coral Cemetery, MI)"
+    },
+    "FT-0135": {
+      "dir": "FT-0135-find-a-grave-133464095-elizabeth-shorts-hughs-se",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 133464095 — Elizabeth Shorts Hughs (Sexsmith Cemetery)"
+    },
+    "FT-0136": {
+      "dir": "FT-0136-find-a-grave-133467916-andrew-pringle-shorts-sex",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 133467916 — Andrew Pringle Shorts (Sexsmith Cemetery)"
+    },
+    "FT-0138": {
+      "dir": "FT-0138-wikitree-short-3449-philip-short-augustus-son-m",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "WikiTree Short-3449 — Philip Short (Augustus son); m. Hannah Brown 1821"
+    },
+    "FT-0150": {
+      "dir": "FT-0150-deborah-bigelow-pringle-uel-adolphustown-loyalis",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Deborah Bigelow Pringle — UEL Adolphustown; Loyalist cemetery tradition"
+    },
+    "FT-0413": {
+      "dir": "FT-0413-eunice-miller-stone-sister-rev-a-prindle",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Eunice Miller stone — sister of the late Rev. A. Prindle (FAG 144753754)"
+    },
+    "FT-0414": {
+      "dir": "FT-0414-hay-bay-1819-drowning-worshippers-memorial",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "church",
+      "title": "Hay Bay — 1819 drowning worshippers memorial (dedicated 1961)"
+    },
+    "FT-0428": {
+      "dir": "FT-0428-richmond-hill-early-days-appendix-c-clergy",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Richmond Hill Early Days — Appendix C full clergy compendium (Prindle Yonge St. 1807/1811)"
+    },
+    "FT-0114": {
+      "dir": "FT-0114-find-a-grave-joel-pringle-jr-59609435-uel-kings",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Find A Grave — Joel Pringle Jr. 59609435 (UEL King's Rangers bio)"
+    },
+    "FT-0144": {
+      "dir": "FT-0144-napanee-beaver-1970-joel-pringle-jr-uel-patriarc",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Napanee Beaver (1970) — Joel Pringle Jr UEL patriarch, King's Rangers, batteaux settlement"
+    },
+    "FT-0151": {
+      "dir": "FT-0151-uelac-joseph-pringle-st-johns-arrival-july-1781",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "UELAC Joseph Pringle — St. John's arrival July 1781; Fredericksburgh grant 1783"
+    },
+    "FT-0167": {
+      "dir": "FT-0167-bigelow-society-deborah-joel-uel-hopestill-prind",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Bigelow Society — Deborah × Joel UEL; Hopestill Prindle FAN (Benedict in-law)"
+    },
+    "FT-0166": {
+      "dir": "FT-0166-bigelow-society-ebenezer-ship-carpenter-cuba-dea",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Bigelow Society — Ebenezer ship carpenter, Cuba death tradition, Ticonderoga alternate"
+    },
+    "FT-0171": {
+      "dir": "FT-0171-compiled-genealogy-deborah-pringle-edward-the-sp",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Compiled genealogy — Deborah Pringle × Edward 'The Spy' Hicks (Butler's Rangers son)"
+    },
+    "FT-0129": {
+      "dir": "FT-0129-watertown-vr-roman-index-ebenezer-bigelow-birth",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Watertown VR Roman index — Ebenezer Bigelow birth, marriage, baptisms"
+    },
+    "FT-0130": {
+      "dir": "FT-0130-bond-p-127-ebenezer-bigelow-hannah-brown-househo",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Bond p.127 — Ebenezer Bigelow × Hannah Brown household"
+    },
+    "FT-0132": {
+      "dir": "FT-0132-bond-brown-p-120-hannah-brown-b-1699",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Bond Brown p.120 — Hannah Brown b.1699"
+    },
+    "FT-0131": {
+      "dir": "FT-0131-bond-p-32-ebenezer-bigelow-b-1698-d-in-cuba-trad",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Bond p.32 — Ebenezer Bigelow b.1698; d. in Cuba tradition"
+    },
+    "FT-0133": {
+      "dir": "FT-0133-find-a-grave-51809062-ebenezer-bigelow-memorial",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 51809062 — Ebenezer Bigelow memorial (secondary death note)"
+    },
+    "FT-0405": {
+      "dir": "FT-0405-joshua-bigelow-king-philips-war-narragansett-grant",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Joshua Bigelow — King Philip’s War wound, Narragansett No. 2 grant, late move to Westminster"
+    },
+    "FT-0115": {
+      "dir": "FT-0115-find-a-grave-joel-pringle-sr-59610755-west-haven",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Find A Grave — Joel Pringle Sr. 59610755 (West Haven stone + family bio)"
+    },
+    "FT-0145": {
+      "dir": "FT-0145-joseph-pringle-richmond-township-pioneer-christi",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Joseph Pringle — Richmond Township pioneer, Christian Guardian obituary (1833)"
+    },
+    "FT-0164": {
+      "dir": "FT-0164-prindle-1906-joel-sr-louisbourg-prisoner-son-joe",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Prindle 1906 — Joel Sr Louisbourg prisoner son; Joel Jr Danbury deed & Rev. soldier"
+    },
+    "FT-0124": {
+      "dir": "FT-0124-pane-joyce-jacobus-joseph-prindle-mary-brown-joe",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Pane-Joyce (Jacobus) — Joseph Prindle × Mary Brown; Joel × Jemima Benham"
+    },
+    "FT-0127": {
+      "dir": "FT-0127-jacobus-fanh-nathan-benham-sarah-beecher-childre",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Jacobus FANH — Nathan Benham × Sarah Beecher; children incl. Jemima"
+    },
+    "FT-0128": {
+      "dir": "FT-0128-find-a-grave-66966847-sarah-beecher-benham-stone",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 66966847 — Sarah (Beecher) Benham stone + family grid"
+    },
+    "FT-0165": {
+      "dir": "FT-0165-prindle-1906-beecher-stone-nathan-benham-daughte",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Prindle 1906 + Beecher stone — Nathan Benham daughter Jemima × Joel Pringle Sr"
+    },
+    "FT-0162": {
+      "dir": "FT-0162-prindle-1906-william-pringle-the-scotchman-oath",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Prindle 1906 — William Pringle 'the Scotchman' oath 1654 + immigrant traditions"
+    },
+    "FT-0163": {
+      "dir": "FT-0163-prindle-1906-joseph-sr-scotland-farm-prindle-hil",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Prindle 1906 — Joseph Sr 'Scotland' farm, Prindle Hill, Serjeant, Episcopal founder"
+    },
+    "FT-0126": {
+      "dir": "FT-0126-find-a-grave-125971521-mary-walker-brown-prindle",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 125971521 — Mary Walker Brown Prindle bio + stone"
+    },
+    "FT-0125": {
+      "dir": "FT-0125-find-a-grave-169522429-sgt-joseph-prindle-memori",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 169522429 — SGT Joseph Prindle memorial bio + stone"
+    },
+    "FT-0044": {
+      "dir": "FT-0044-adolphustown-place-set-loyalist-landing-1784-old",
+      "photos": [
+        "photos/01-hay-bay-church-plaque.jpg",
+        "photos/02-hay-bay-church-plaque-alt.jpg",
+        "photos/03-loyalist-landing-plaque.jpg",
+        "photos/04-old-hay-bay-church.jpg",
+        "photos/06-loyalist-landing-alt.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "Adolphustown place set — Loyalist Landing 1784 + Old Hay Bay Church plaques / exterior"
+    },
+    "FT-0045": {
+      "dir": "FT-0045-hay-bay-church-deed-abstract-7-june-1811-augustu",
+      "photos": [],
+      "entry": true,
+      "type": "deed",
+      "title": "Hay Bay Church deed abstract (7 June 1811) — Augustus Shorts named trustee (Van Deursen 1912)"
+    },
+    "FT-0048": {
+      "dir": "FT-0048-webster-1870-bishop-george-genesee-conference-at",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Webster 1870 — Bishop George / Genesee Conference at Elizabethtown, June 1817 (ordination window)"
+    },
+    "FT-0082": {
+      "dir": "FT-0082-kingston-whig-standard-adolphustown-loyalists-ha",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Kingston Whig Standard — Adolphustown Loyalists, Hay Bay Church, Elijah Woolsey saddlebag circuit (2021)"
+    },
+    "FT-0083": {
+      "dir": "FT-0083-casey-davis-early-methodist-history-adolphustown",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Casey / Davis — Early Methodist History: Adolphustown cradle, Losee, Darius Dunham, Hay Bay first church"
+    },
+    "FT-0085": {
+      "dir": "FT-0085-bishop-philander-smith-me-church-in-canada-1847",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Bishop Philander Smith (ME Church in Canada, 1847–1870) — identity for Hay Bay ‘granddaughter married Bishop Philander Smith’ claim"
+    },
+    "FT-0086": {
+      "dir": "FT-0086-what-is-a-circuit-rider-losee-gallops-hay-bay-co",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "What is a circuit rider? — Losee gallops Hay Bay country; Dunham survives an axe (Carroll 1867)"
+    },
+    "FT-0113": {
+      "dir": "FT-0113-death-notice-david-b-shorts-son-of-philip-shorts",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Death notice — David B. Shorts, son of Philip Shorts (Transcript Montreal, 8 Nov 1842)"
+    },
+    "FT-0153": {
+      "dir": "FT-0153-wikitree-short-3451-john-w-short-vitals-research",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "WikiTree Short-3451 — John W Short vitals + researcher note (Susquehanna cluster)"
+    },
+    "FT-0154": {
+      "dir": "FT-0154-wikitree-monk-1058-rosannah-monk-short-vitals",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "WikiTree Monk-1058 — Rosannah (Monk) Short vitals"
+    },
+    "FT-0155": {
+      "dir": "FT-0155-wikitree-short-3450-augustus-short-parent-link-j",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "WikiTree Short-3450 — Augustus Short parent link (John W × Rosannah Monk)"
+    },
+    "FT-0043": {
+      "dir": "FT-0043-ohs-papers-st-johns-ernesttown-marriage-register",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "OHS Papers — St. John's Ernesttown marriage register (1792) — Philip & Katreen Shorts witnesses"
+    },
+    "FT-0080": {
+      "dir": "FT-0080-hay-bay-canniff-brebner-barbara-monk-casper-hoov",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Hay Bay + Canniff/Brebner — Barbara Monk × Casper Hoover (Rosannah’s sister; Catharine’s rescue)"
+    },
+    "FT-0087": {
+      "dir": "FT-0087-barbara-monk-hover-s-pewter-platter-palatine-rel",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Barbara Monk Hover’s pewter platter — Palatine relic, pot-pie bees, and Casper Hover’s death by falling limb"
+    },
+    "FT-0088": {
+      "dir": "FT-0088-vanalstine-loyalist-voyage-shark-at-sea-pork-and",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "VanAlstine Loyalist voyage — shark at sea, pork-and-peas rations, linen tents at Sorel (Canniff tradition)"
+    },
+    "FT-0090": {
+      "dir": "FT-0090-frances-shorts-jacob-heck-married-into-barbara-h",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Frances Shorts × Jacob Heck — married into Barbara Heck’s family; Heck House on the St. Lawrence"
+    },
+    "FT-0092": {
+      "dir": "FT-0092-catharine-shorts-arra-ferguson-orphan-bride-pict",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Catharine Shorts × Arra Ferguson — orphan bride; Picton church land; Ferguson & Catherine Streets; class with Dunham’s flock"
+    },
+    "FT-0042": {
+      "dir": "FT-0042-exploring-niagara-butlers-rangers-nominal-list-p",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Exploring Niagara — Butler's Rangers nominal list (privates) — SHORTS, JOHN E."
+    },
+    "FT-0081": {
+      "dir": "FT-0081-smy-annotated-nominal-roll-of-butler-s-rangers-s",
+      "photos": [
+        "photos/01-smy-short-john-henry.png",
+        "photos/02-smy-source-E52-harvey.png",
+        "photos/03-smy-source-E75-ousterhout.png"
+      ],
+      "entry": true,
+      "type": "military",
+      "title": "Smy — Annotated Nominal Roll of Butler’s Rangers — Short, John Henry (private)"
+    },
+    "FT-0423": {
+      "dir": "FT-0423-nyc-open-data-marriage-index-florence-hahn-seymour-cohn",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Open Data marriage index — Florence Hahn × Seymour Cohn, Manhattan 25642, 2 Sep 1926"
+    },
+    "FT-0416": {
+      "dir": "FT-0416-nyc-open-data-mamlock-sisters-marriage-index-pairs",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Open Data marriage index — Mamlock sisters × Aronsohn / Geiger / Michaels"
+    },
+    "FT-0419": {
+      "dir": "FT-0419-nyc-open-data-death-index-leon-aronsohn-bronx-1500-1921-candidate",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Open Data death index — Leon Aronsohn, Bronx 1500, 6 Mar 1921 age 55 (Leo P. candidate)"
+    },
+    "FT-0422": {
+      "dir": "FT-0422-nyc-open-data-death-index-esther-geiger-emma-michaels",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NYC Open Data death index — Esther Geiger Manh 1197/1944 · Emma Michaels Manh 6504/1942"
+    },
+    "FT-0190": {
+      "dir": "FT-0190-marriage-index-perkins-belle-stonebraker-1896",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Mills Co. marriage index — Solomon M. Perkins × Belle Stonebraker (23 Dec 1896)"
+    },
+    "FT-0109": {
+      "dir": "FT-0109-why-barbara-heck-matters-mother-of-methodism-joh",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Why Barbara Heck matters — Mother of Methodism (John Street → Upper Canada)"
+    },
+    "FT-0110": {
+      "dir": "FT-0110-the-blue-church-augusta-place-pack-why-it-belong",
+      "photos": [
+        "photos/02-blue-church-exterior.jpg",
+        "photos/03-blue-church-roadside.jpg"
+      ],
+      "entry": true,
+      "type": "place",
+      "title": "The Blue Church (Augusta) — place pack + why it belongs in a future story"
+    },
+    "FT-0143": {
+      "dir": "FT-0143-find-a-grave-133464931-thomas-godfrey-hughs-spou",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Find A Grave 133464931 — Thomas Godfrey Hughs (spouse of Elizabeth Shorts)"
+    },
+    "FT-0091": {
+      "dir": "FT-0091-barbara-heck-cards-in-the-fire-embury-preached-m",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Barbara Heck — cards in the fire, Embury preached, Mother of Methodism; Blue Church monument (mother-in-law of Frances Shorts)"
+    },
+    "FT-0093": {
+      "dir": "FT-0093-1891-adolphustown-wedding-pewter-platter-brought",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "1891 Adolphustown wedding — pewter platter ‘brought to Canada by Barbara Heck’ serves the roast goose"
+    },
+    "FT-0008": {
+      "dir": "FT-0008-press-enterprise-george-e-rudd",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Press-Enterprise — George E. Rudd"
+    },
+    "FT-0457": {
+      "dir": "FT-0457-sabr-bill-parsons-married-marcy-rae-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"
+    }
+  }
+}

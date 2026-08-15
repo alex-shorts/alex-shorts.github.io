@@ -1,1 +1,173 @@
-{}
+{
+  "version": 1,
+  "updated": "2026-08-15",
+  "objects": {
+    "FT-0008": {
+      "dir": "FT-0008-press-enterprise-george-e-rudd",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Press-Enterprise — George E. Rudd"
+    },
+    "FT-0457": {
+      "dir": "FT-0457-sabr-bill-parsons-married-marcy-rae-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"
+    },
+    "FT-0455": {
+      "dir": "FT-0455-hbc-edmonton-downtown-rudd-years",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)"
+    },
+    "FT-0015": {
+      "dir": "FT-0015-death-notice-isaac-olsen-fag-scan",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Death notice — Isaac Olsen (FAG scan)"
+    },
+    "FT-0016": {
+      "dir": "FT-0016-death-notice-jennie-olsen-fag-scan",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Death notice — Jennie Olsen (FAG scan)"
+    },
+    "FT-0020": {
+      "dir": "FT-0020-death-notice-william-olson-fag-scan",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Death notice — William Olson (FAG scan)"
+    },
+    "FT-0445": {
+      "dir": "FT-0445-sdgenweb-lyman-birth-olson-della-1902",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)"
+    },
+    "FT-0456": {
+      "dir": "FT-0456-olivewood-memorial-park-claus-della-burial",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Olivewood Memorial Park founding — burial landscape for Claus × Della"
+    },
+    "FT-0013": {
+      "dir": "FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "BC Registration of Death — Isaac Olsen (1947-09-008902)"
+    },
+    "FT-0014": {
+      "dir": "FT-0014-bc-registration-of-death-jennie-olsen-56-09-0070",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "BC Registration of Death — Jennie Olsen (56-09-007015)"
+    },
+    "FT-0444": {
+      "dir": "FT-0444-henderson-edmonton-1931-chas-y-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)"
+    },
+    "FT-0454": {
+      "dir": "FT-0454-hbc-wholesale-claus-rudd-edmonton-trade",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade"
+    },
+    "FT-0006": {
+      "dir": "FT-0006-bill-parsons-baseball-card-rolodex",
+      "photos": [],
+      "entry": true,
+      "type": "artifact",
+      "title": "Bill Parsons baseball-card rolodex"
+    },
+    "FT-0007": {
+      "dir": "FT-0007-press-enterprise-elizabeth-betty-a-parsons",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Press-Enterprise — Elizabeth “Betty” A. Parsons"
+    },
+    "FT-0010": {
+      "dir": "FT-0010-parsons-allen-wedding-notice-wee-kirk-o-the-heat",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Parsons–Allen wedding notice — Wee Kirk o' the Heather"
+    },
+    "FT-0012": {
+      "dir": "FT-0012-betty-allen-among-pasadena-nursing-graduates",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Betty Allen among Pasadena nursing graduates"
+    },
+    "FT-0011": {
+      "dir": "FT-0011-pitcher-parsons-scheduled-vs-former-teammates-ni",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Pitcher Parsons scheduled vs former teammates — nightball (1936)"
+    },
+    "FT-0443": {
+      "dir": "FT-0443-maine-vr-marriage-nelson-hattie-foss",
+      "photos": [
+        "photos/01-parents-side.png",
+        "photos/02-face.png"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"
+    },
+    "FT-0392": {
+      "dir": "FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "photo",
+      "title": "Young man in US Navy sailor uniform (studio portrait)"
+    },
+    "FT-0396": {
+      "dir": "FT-0396-school-open-house-photo-second-grade-audio-marke",
+      "photos": [],
+      "entry": true,
+      "type": "artifact",
+      "title": "School open-house photo (second grade) — audio marker only"
+    },
+    "FT-0397": {
+      "dir": "FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the",
+      "photos": [
+        "photos/01.jpg",
+        "photos/02.jpg",
+        "photos/03.jpg",
+        "photos/04.jpg"
+      ],
+      "entry": true,
+      "type": "artifact",
+      "title": "Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"
+    }
+  }
+}
