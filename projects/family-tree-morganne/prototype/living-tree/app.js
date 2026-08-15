@@ -16,13 +16,12 @@
     getFocusId,
     hasNonBloodParent,
     isBloodParent,
-    isNonBloodKin,
     parentLinkKind,
     setFocusId,
     getPeople,
     groupIntoGalleries,
     loadObjectArtifact,
-    objectGalleryLabel,
+    objectAccessionLabel,
     loadPeopleIndex,
     neighborIds,
     personMediaArtifacts,
@@ -429,7 +428,7 @@ function attachCardUi(d) {
     photo: portraitUrl(d),
     fallback: silhouetteUrl(d.sex, (GEN_COLORS[d.generation] || GEN_COLORS[2]).avatarBg),
     short: shortName(d.name),
-    years: d.years || d.confidence || "",
+    years: d.years || "",
     dna: d.id === getFocusId() ? "100%" : formatDnaShare(dnaShareFor(d.id)),
     artifacts: artifactCount(d),
     stalled: Boolean(stall),
@@ -713,11 +712,56 @@ function selectPerson(id) {
 }
 
 function stripMarkdownLite(md) {
-  return String(md)
-    .replace(/^---[\s\S]*?---\n*/, "")
-    .replace(/^#.+\n+/gm, "")
+  return readableProse(
+    String(md)
+      .replace(/^---[\s\S]*?---\n*/, "")
+      .replace(/^#.+\n+/gm, "")
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+  );
+}
+
+function formatVitalDate(v) {
+  const s = String(v || "").trim();
+  const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return s;
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const month = months[Number(m[2]) - 1];
+  return month ? `${Number(m[3])} ${month} ${m[1]}` : s;
+}
+
+function joinDot(parts) {
+  return parts.filter(Boolean).join(" · ");
+}
+
+/** YAML vitals only — not the ## Summary diary. */
+function vitalBlockHtml(p) {
+  const lines = [];
+  if (p.birth || p.birthPlace) {
+    lines.push(p.birth ? joinDot([`Born ${formatVitalDate(p.birth)}`, p.birthPlace]) : `Born ${p.birthPlace}`);
+  }
+  if (p.death || p.deathPlace) {
+    lines.push(p.death ? joinDot([`Died ${formatVitalDate(p.death)}`, p.deathPlace]) : `Died ${p.deathPlace}`);
+  }
+  if (p.burial) lines.push(`Buried ${p.burial}`);
+  if (!lines.length) return "";
+  return `<div class="vitals">${lines.map((l) => `<p>${escapeHtml(l)}</p>`).join("")}</div>`;
+}
+
+/** Desk notes → family-readable: drop **bold**, `code`, and pack C42 / C360. Keep FT-0097. */
+function readableProse(s) {
+  return String(s || "")
+    .replace(/`([^`]+)`/g, "$1")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/\bpack\s+C\d+(?:\s*[–\-]\s*C?\d+)?/gi, "")
+    .replace(/\((?:\s*C\d+\s*(?:\/|,|and|–|-)\s*)+C\d+(?:\s+\w+)?\s*\)/gi, "")
+    .replace(/\(\s*C\d+\s*\)/gi, "")
+    .replace(/\bC\d{2,4}\b/g, "")
+    .replace(/\*{1,}/g, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([.,;:])/g, "$1")
+    .replace(/\(\s*\)/g, "")
+    .replace(/\s+[—–]\s*$/g, "")
     .trim();
 }
 
@@ -861,22 +905,19 @@ async function openPanel(id) {
       <div>
         <p class="eyebrow" style="color:${c.fill}">${c.label}</p>
         <h2>${escapeHtml(p.name)}</h2>
-        <p class="meta">${escapeHtml(p.years || "dates TBD")}${p.status ? ` · ${escapeHtml(p.status)}` : ""}</p>
-        <p class="confidence">${escapeHtml(p.confidence)}${p.aka ? ` · ${escapeHtml(p.aka)}` : ""}</p>
         ${
-          p.blocker
-            ? `<p class="blocker-line"><strong>Stalled</strong> — ${escapeHtml(p.blocker)}</p>`
+          joinDot([p.years, p.maiden])
+            ? `<p class="meta">${escapeHtml(joinDot([p.years, p.maiden]))}</p>`
             : ""
         }
-        <p class="dna-line">${
+        <p class="confidence">${escapeHtml(p.confidence)}</p>
+        ${
           dnaLabel
-            ? `<strong>${escapeHtml(dnaLabel)}</strong> expected shared DNA with ${escapeHtml(
+            ? `<p class="dna-line"><strong>${escapeHtml(dnaLabel)}</strong> shared DNA with ${escapeHtml(
                 primary?.name || "primary"
-              )}`
-            : isNonBloodKin(id, getFocusId(), people)
-              ? `Adoptive / legal kin — not a blood path to ${escapeHtml(primary?.name || "primary")}`
-              : `No blood path to ${escapeHtml(primary?.name || "primary")} (marriage / in-law)`
-        }</p>
+              )}</p>`
+            : ""
+        }
         ${
           isPrimary
             ? `<p class="dna-note">Primary for tree + DNA%</p>`
@@ -884,7 +925,7 @@ async function openPanel(id) {
         }
       </div>
     </div>
-    <p class="summary">${escapeHtml(p.summary)}</p>
+    ${vitalBlockHtml(p)}
     <h3>Family</h3>
     ${
       kin.length
@@ -1097,7 +1138,7 @@ async function fillArtifacts(person) {
   }
 
   for (const o of objects) {
-    const kind = objectGalleryLabel(o);
+    const kind = objectAccessionLabel(o);
     if (o.photos?.length) {
       const gid = `object:${o.id}:photos`;
       const transcript = extractObjectTranscript(o.bodyText);
@@ -1372,7 +1413,22 @@ async function boot() {
   try {
     const { people, focusId } = await loadPeopleIndex();
     // ponytail: one load self-check
-    console.assert(Object.keys(people).length > 0, "people index empty");
+      console.assert(
+        objectAccessionLabel({ id: "FT-0097", type: "obituary", title: "Falls City Journal" }) ===
+          "FT-0097 · Obituary",
+        "object tiles keep FT-#### for database lookup"
+      );
+      console.assert(
+        formatVitalDate("1828-05-12") === "12 May 1828",
+        "vital dates read as day month year"
+      );
+      const sample = people.gloria || people.sophia_maria_hilgenfeld;
+      if (sample) {
+        console.assert(
+          !sample.summary,
+          "share panel must not carry the ## Summary diary"
+        );
+      }
     console.assert(people[focusId], `focus ${focusId} missing from index`);
     // ponytail: gallery grouping self-check
     {

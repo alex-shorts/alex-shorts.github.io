@@ -108,8 +108,7 @@ window.PEOPLE_DATA = {
           "id": "john_anderson",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "**Confirmed** / `verified: true` mother of **Heidi Jill Shorts** (**C950** Y). Maiden **Cole**; spouse **Jon Martin Anderson**. Parents **Myron Mamlock Cole (Cohn)** × **Virginia Victoria Racine** (**C952** / **C957** Y). Living-private. Marriage Accession **FT-0028**."
+      ]
     },
     "virginia_victoria_racine": {
       "id": "virginia_victoria_racine",
@@ -194,7 +193,8 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Mother of **Virginia Jill Cole** (family). Birth **15 Oct 1902** Manhattan cert **41933** (PDF **B-M-1902-0041933**): parents **Solomon/Salomon Racien** × **Pauline** (maiden **Auxchkin** / marriage **Puschkin**). Married **Myron W. Cohn** **15 Dec 1926** Manhattan (catalog **..."
+      "birth": "1902-10-15",
+      "birth_place": "Manhattan, New York, New York"
     },
     "pauline_muschini": {
       "id": "pauline_muschini",
@@ -264,7 +264,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** mother of **Virginia Victoria Racine** (LOCKED — legal vital FT-0021). Married name **Pauline Racien/Racine**. Death identity: **Pauline Bess Dushken Le Racine**, b. **6 Oct 1865** Russia, d. **15 Sep 1927** Manhattan cert **21183**, widowed, housework; bur. **Ri...",
+      "birth": "1865-10-06",
+      "death": "1927-09-15",
+      "birth_place": "Russia",
+      "death_place": "Manhattan, New York, New York",
+      "burial": "Riverside Cemetery, Saddle Brook, Bergen County, New Jersey (16 Sep 1927)",
       "blocker": "HVR PDF D-M-1927-0021183 (Akamai 403 this wave — blocked digitization)"
     },
     "samuel_dushken": {
@@ -299,7 +303,7 @@ window.PEOPLE_DATA = {
         "Samuel Duschkin",
         "Samuel Dushkin"
       ],
-      "note": "**Probable** father of **Pauline Bess Racine** (`pauline_muschini`). Named **Samuel Dushken** (b. Russia) on her Manhattan death certificate (cn **21183**, 15 Sep 1927), as pasted on [FAG 93478005](https://www.findagrave.com/memorial/93478005/pauline_bess-le_racine). Soft-inge...",
+      "birth_place": "Russia",
       "blocker": "HVR image D-M-1927-0021183 still needed (Akamai blocked this wave)"
     },
     "solomon_racine": {
@@ -363,7 +367,9 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** father of **Virginia Victoria Racine**. Named **Salomon/Solomon Racien** on her Manhattan birth cert (**41933**): age **38** in 1902 (b. ~1864), b. **Russia**, tailor, residence **68 W. 35th St**. **Naturalization index (FT-0412):** Supreme Court NY County **24 J...",
+      "birth": "~1864",
+      "death": "before 1927-09-15",
+      "birth_place": "Russia",
       "blocker": "Parents’ names — still Blocked; town still missing on nat index — unlock"
     },
     "myron_mamlock_cole": {
@@ -441,7 +447,9 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of **Virginia Jill Cole** (family). **Myron W. Cohn** married **Virginia V. Racine** **15 Dec 1926** Manhattan (**FT-0025** / HVR **M-M-1927-0000778**): age **26**, accountant, b. **NYC**, residence Jamestown NY; parents **Monroe** × **Mamie Mamlock** — **LOCKED — legal..."
+      "birth": "~1900",
+      "death": "1951",
+      "birth_place": "New York, New York"
     },
     "mamie_mamlock": {
       "id": "mamie_mamlock",
@@ -538,7 +546,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** (legal vital) mother of **Myron Mamlock Cole / Cohn** — named on Myron’s marriage cert (**FT-0025**). Married **Monroe Cohn** **17 Oct 1893** (**FT-0022**). Born **1 May 1872** New York City; died **4 Jun 1945** Misericordia Hospital, Manhattan (**FT-0024** cert ..."
+      "birth": "1872-05-01",
+      "death": "1945-06-04",
+      "birth_place": "New York, New York",
+      "death_place": "Manhattan, New York, New York",
+      "burial": "Mt. Carmel Cemetery, Brooklyn"
     },
     "rochelle_kahn": {
       "id": "rochelle_kahn",
@@ -624,7 +636,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** mother of **Mamie Mamlock Cohn** (LOCKED — legal vital FT-0022/FT-0024). NYC municipal death (FS ark `1:1:271T-32T`, cert **9738**) names her **Rachel Mawlock**, widowed, b. Germany ~1839, parents **Myer Miller** × **Sarah Kohn** (both Germany); burial Long Islan..."
+      "birth": "~1839",
+      "death": "1911-03-21",
+      "birth_place": "Germany",
+      "death_place": "Manhattan, New York, New York",
+      "burial": "Long Island, New York (24 Mar 1911)"
     },
     "sarah_kohn": {
       "id": "sarah_kohn",
@@ -660,7 +676,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Rochelle/Rachel (Kahn) Mamlock** per NYC municipal death index (FS). Maiden **Kohn ≈ Kahn** helps explain Mamie’s death naming mother **Rochelle Kahn** while 1893 marriage used **Rachel Miller** (paternal surname). Soft-ingest; `verified: false`."
+      "birth_place": "Germany"
     },
     "myer_miller": {
       "id": "myer_miller",
@@ -696,7 +712,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Rochelle/Rachel (Kahn) Mamlock** per NYC municipal death index (FS ark `1:1:271T-32T`). Soft-ingest; `verified: false`. Do not invent German town yet."
+      "birth_place": "Germany"
     },
     "mayer_mamlock": {
       "id": "mayer_mamlock",
@@ -761,7 +777,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** father of **Mamie Mamlock Cohn** (named **Meyer Mamlock** on her 1945 death cert and 1893 marriage; index **Mayer**). Born Germany. LOCKED — legal vital FT-0022/FT-0024. `verified: true`."
+      "birth": "~1832",
+      "death": "1897-06-09",
+      "birth_place": "Germany",
+      "death_place": "Manhattan, New York, New York"
     },
     "monroe_cohn": {
       "id": "monroe_cohn",
@@ -858,7 +877,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** (legal vital) father of **Myron Mamlock Cole / Cohn** — named on Myron’s marriage cert (**FT-0025**). Married **Mamie Mamlock** **17 Oct 1893** Manhattan (**FT-0022** cert **13078**): age **26**, b. **Hartford, Conn.** Died **25 Dec 1921** Manhattan (**FT-0023** ..."
+      "birth": "~1867",
+      "death": "1921-12-25",
+      "birth_place": "Hartford, Connecticut",
+      "death_place": "Manhattan, New York, New York",
+      "burial": "Mt. Carmel Cemetery"
     },
     "bertha_pottesham": {
       "id": "bertha_pottesham",
@@ -915,7 +938,7 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** mother of **Monroe Cohn**. Maiden spelling **open**: death OCR **Potsdam/Pottesham** vs marriage **Gotsdanner** — same woman (Germany); relationship LOCKED — legal vital FT-0022/FT-0023. `verified: true`. Graph id `bertha_pottesham`."
+      "birth_place": "Germany"
     },
     "solomon_cohn": {
       "id": "solomon_cohn",
@@ -962,7 +985,7 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** father of **Monroe Cohn**. Named on Monroe’s **1893 marriage** and **1921 death** certificates; birthplace **Germany** on the death cert. LOCKED — legal vital FT-0022/FT-0023. `verified: true`.",
+      "birth_place": "Germany",
       "blocker": "Parents still unknown (C1742 / C1131 / C1902). JG Cohn+Hartford: no pare"
     },
     "john_anderson": {
@@ -1026,8 +1049,7 @@ window.PEOPLE_DATA = {
           "id": "virginia_jill_cole",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "**Confirmed** / `verified: true` father of **Heidi Jill Shorts** (**C950** Y). Spouse **Virginia Jill Cole** (**C953** / **C956** Y). Parents **Marion Lawrence Anderson** × **Kathleen Blakely** (**C951** Y). Living-private — no public death digs. Marriage Accession **FT-0028**."
+      ]
     },
     "kathleen_blakely": {
       "id": "kathleen_blakely",
@@ -1100,8 +1122,7 @@ window.PEOPLE_DATA = {
           "id": "marion_lawrence_anderson",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "**Confirmed** / `verified: true` mother of **Jon Martin Anderson** (**C951** Y). Father soft **Dr. Guerdon Conde Buck** — Alex **N** on Buck-as-prior-married-name (**C955**). Soft mother **Glendora Blakely** (**FT-0403** / FAG **97518779** — intake Grandma Kay’s mother). Brief..."
+      ]
     },
     "glendora_blakely": {
       "id": "glendora_blakely",
@@ -1165,7 +1186,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of living-private **Kathleen Blakely** (**FT-0403**: Mrs. Kathleen Anderson of La Mesa). Soft parents **John A. Blakely** × **Emma A. More/Moore** (FAG parent grid + **FT-0404** children list + FT-0391 couple). Public-health nurse (Hood River OR / Bloomingt..."
+      "birth": "1878-12-18",
+      "death": "1960-04-30",
+      "birth_place": "Grant County, Wisconsin, USA",
+      "death_place": "La Mesa, San Diego County, California, USA",
+      "burial": "Hillside Cemetery, Platteville, Grant County, Wisconsin, USA"
     },
     "emma_a_more": {
       "id": "emma_a_more",
@@ -1229,7 +1254,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** / `verified: true` via legal marriage **FT-0391** (spouse + parents named). More/Moore on-document. Parents soft **George A. More** x **Mary P. More** (FAG aka Mary Fisher Jordan). Spouse **John A. Blakely**. Soft children from **FT-0404** (Glendora edge only). N..."
+      "birth": "1849-07",
+      "death": "1941-03-03",
+      "birth_place": "Paris, Grant County, Wisconsin, USA",
+      "death_place": "Platteville, Grant County, Wisconsin, USA",
+      "burial": "Hillside Cemetery, Platteville, Grant County, Wisconsin, USA"
     },
     "mary_p_more": {
       "id": "mary_p_more",
@@ -1271,8 +1300,7 @@ window.PEOPLE_DATA = {
           "id": "george_a_more",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "Soft mother of **Emma A. More** from **FT-0391** (**Mary P. More** / Moore). FAG compiled maiden **Mary Fisher Jordan**. No open obit. `verified: false`; mother-of-Emma link LOCKED via legal vital."
+      ]
     },
     "george_a_more": {
       "id": "george_a_more",
@@ -1313,8 +1341,7 @@ window.PEOPLE_DATA = {
           "id": "mary_p_more",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "Soft father of **Emma A. More** from **FT-0391** (George A. More / Moore). FAG compiled **George Alexander Moore**. No open obit. `verified: false`; father-of-Emma link LOCKED via legal vital."
+      ]
     },
     "john_a_blakely": {
       "id": "john_a_blakely",
@@ -1377,7 +1404,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** / `verified: true` via legal marriage **FT-0391** (spouse + parents named) + free obit **FT-0404**. Parents soft cards **Robert** x **Amanda Melvina (Endicott)** — parent *links* LOCKED legal vital. Spouse **Emma A. More**. Soft children from obit (incl. `glendor..."
+      "birth": "1847-12-23",
+      "death": "1937-09-10",
+      "birth_place": "Town of Harrison, Grant County, Wisconsin, USA",
+      "death_place": "Platteville, Grant County, Wisconsin, USA",
+      "burial": "Hillside Cemetery, Platteville, Grant County, Wisconsin, USA"
     },
     "amanda_melvina_blakely": {
       "id": "amanda_melvina_blakely",
@@ -1428,7 +1459,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Soft mother of **John A. Blakely**. Marriage cert **FT-0391** names **Amanda Blakely**; obit **FT-0404** names **Malvina Endicott** — treated as one woman (**Amanda Melvina Endicott / Indicot**). FAG **133769028**. Orphaned John raised by grandfather **John A. Endicott** (obit..."
+      "birth": "1825",
+      "death": "1850",
+      "birth_place": "Posey Township, Clay County, Indiana, USA (compiled)",
+      "death_place": "Grant County, Wisconsin, USA (compiled)"
     },
     "robert_blakely": {
       "id": "robert_blakely",
@@ -1475,7 +1509,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Soft-ingest father of **John A. Blakely** from legal marriage **FT-0391** (father named) + **FT-0404** obit (Robert × Malvina Endicott). FAG **133768809** Probable vitals. Spouse soft **Amanda Melvina (Endicott) Blakely**. Daughter soft **Laura Blakely**. `verified: false` (pe..."
+      "birth": "1808",
+      "death": "1849",
+      "birth_place": "Ireland (compiled)",
+      "death_place": "Grant County, Wisconsin, USA (compiled)"
     },
     "guerdon_conde_buck": {
       "id": "guerdon_conde_buck",
@@ -1550,7 +1587,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** Platteville MD **Guerdon Conde Buck** (FAG stone **CONDE**; obit **Dr. Guerdon C. Buck**) — soft identity for Alex’s father of **Kathleen Blakely**. Soft parents **Dr. Erastus Junior Buck** × **Sarah Elizabeth Trask**; soft spouse **Hulda/Hilda Gertrude Moore** (m..."
+      "birth": "1874-10-17",
+      "death": "1932-06-20",
+      "birth_place": "Platteville, Grant County, Wisconsin, USA",
+      "death_place": "Platteville, Grant County, Wisconsin, USA",
+      "burial": "Greenwood Cemetery, Platteville, Grant County, Wisconsin, USA"
     },
     "sarah_elizabeth_trask": {
       "id": "sarah_elizabeth_trask",
@@ -1643,7 +1684,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Guerdon Conde Buck**. Widow of **Dr. Erastus J. Buck**; d. Seattle **25 Sep 1943** age 97; cremated remains to Greenwood Platteville. 1943 paste names six daughters + only son Guerdon (1932) — **no grandchildren named**. Soft parents **John Trask*..."
+      "birth": "1846-05-12",
+      "death": "1943-09-25",
+      "birth_place": "South Jefferson, Lincoln County, Maine, USA",
+      "death_place": "Seattle, King County, Washington, USA",
+      "burial": "Greenwood Cemetery, Platteville, Grant County, Wisconsin, USA"
     },
     "anne_rhodes_trask": {
       "id": "anne_rhodes_trask",
@@ -1685,7 +1730,6 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Sarah Elizabeth Trask**. FAG parent link **Anne Rhodes Trask** on Sarah’s memorial; siblings **Annie H. Trask Furlong** and **Clara Anna Trask** on same grid. Compiled trees give maiden **Grant** — not used as source here. Own parents still empty ...",
       "blocker": "Parents blocked — need WA DC 4592 parent cols + ME marriage John×Anne; n"
     },
     "john_trask": {
@@ -1741,7 +1785,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Sarah Elizabeth Trask** (Guerdon Buck line). Named on Sarah’s FAG memorial parent link **John Trask** × **Anne Rhodes Trask**. Soft parents **Jonathan Trask** × **Elizabeth Hodge Trask** from Jefferson town vitals (**C1690–C1692**) — birth **21 Ma..."
+      "birth": "1808-03-21",
+      "birth_place": "Jefferson, Lincoln County, Maine, USA"
     },
     "elizabeth_hodge_trask": {
       "id": "elizabeth_hodge_trask",
@@ -1781,7 +1826,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **John Trask** (`john_trask`). Jefferson town vitals name **Elizabeth Hodge** born **31 Oct 1767**, married **Jonathan Trask** **11 Apr 1784**, mother of **John** **21 Mar 1808**. No free FAG/burial hit this pass. Own parents not climbed. `verified:...",
+      "birth": "1767-10-31",
       "blocker": "Own parents / burial | Blocked | Free dig | | No open parent-naming so"
     },
     "jonathan_trask": {
@@ -1854,7 +1899,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **John Trask** (`john_trask`). Jefferson town vital family block (NEHGR 73 transcription) records marriage to **Elizabeth Hodge** **11 Apr 1784**, his birth **19 Apr 1764**, and son **John** **21 Mar 1808** (second John in the block after **5 Feb 17..."
+      "birth": "1764-04-19",
+      "death": "1830-04-17",
+      "birth_place": "Jefferson, Lincoln County, Maine, USA",
+      "death_place": "Jefferson, Lincoln County, Maine, USA",
+      "burial": "Ford Cemetery, Jefferson, Lincoln County, Maine, USA"
     },
     "hannah_stewart_trask": {
       "id": "hannah_stewart_trask",
@@ -1903,7 +1952,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Jonathan Trask** (`jonathan_trask`). Named on Salem marriage **28 Dec 1730** to **Samuel Trask**; mother of **David** (Rowley **1734**) and multiple Beverly-recorded Trask births (Thomas, William, Abigail, Anne, Samuel). Birth **22 Apr 1705** Rowl...",
+      "birth": "1705-04-22",
+      "death": "1790-05-20",
+      "birth_place": "Rowley, Essex County, Massachusetts, USA",
+      "death_place": "Edgecomb, Lincoln County, Maine, USA",
       "blocker": "Own parents | Blocked | Free dig | | |"
     },
     "samuel_marston_trask": {
@@ -1956,7 +2008,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Jonathan Trask** (`jonathan_trask`). Essex County published vitals: marriage to **Hannah Steward** **28 Dec 1730** Salem; Beverly TRASK-section births name **Samuel and Hannah** as parents of Thomas (bp **29 Aug 1731**), William (**8 Jun 1729**), ...",
+      "birth": "1703-12-13",
+      "death": "1789-08-01",
+      "birth_place": "Beverly, Essex County, Massachusetts, USA",
+      "death_place": "Edgecomb, Lincoln County, Maine, USA",
       "blocker": "Own parents (Elias × Hannah Marston) | Blocked | Free dig | | No open pa"
     },
     "erastus_junior_buck": {
@@ -2079,7 +2134,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Guerdon Conde Buck** (Platteville MD). Civil War–era physician; d. **20 Jun 1901** after runaway accident. Soft spouse **Sarah Elizabeth Trask** (m. 1866 on FAG). Soft parents **Erastus D. Buck** × **Elizabeth Roxana Baldwin** (Heath MA marriage 1..."
+      "birth": "1828-09-05",
+      "death": "1901-06-20",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA",
+      "death_place": "Platteville, Grant County, Wisconsin, USA",
+      "burial": "Greenwood Cemetery, Platteville, Grant County, Wisconsin, USA"
     },
     "elizabeth_roxana_baldwin": {
       "id": "elizabeth_roxana_baldwin",
@@ -2154,7 +2213,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Erastus Junior Buck**. FAG **Elizabeth Rosana/Roxana Baldwin Buck** on son’s memorial; Heath marriage **11 Mar 1823**; baptisms of Erastus/Olive/William name **Erastus × Roxana**. Soft parents **David Baldwin** × **Sarah (Deane) Baldwin** from *Ro..."
+      "birth": "1801-11-22",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "sarah_deane_baldwin": {
       "id": "sarah_deane_baldwin",
@@ -2205,7 +2265,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft wife of **David Baldwin** (`david_baldwin`, Heath *Col. David*) and soft mother of **Elizabeth Roxana Baldwin**. Death **30 Apr 1809** names *Sarah Deane [w. Col. David]* ae 28; daughter **Lucy** death names *Col. David and Sarah Deane* as parents. Baptism cl..."
+      "death": "1809-04-30",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "david_baldwin": {
       "id": "david_baldwin",
@@ -2266,7 +2328,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Elizabeth Roxana Baldwin** (*Roxanda, d. David, bp. 22 Nov 1801* Heath). Heath deaths name **Col. David** as father of **Lucy** with wife **Sarah Deane** (**C1580–C1581**). Soft spouse **Sarah (Deane) Baldwin**; children Lucy, Betsy, Phinehas, Rox...",
+      "death": "1813-04-15",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA",
       "blocker": "Own parents | Blocked | — | — | C1589 |"
     },
     "erastus_d_buck": {
@@ -2330,7 +2394,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Erastus Junior Buck**. FAG names **Erastus D. Buck** on son’s memorial; Heath town marriage **11 Mar 1823** to **Roxana Baldwin**; baptisms of Erastus/Olive/William name **Erastus × Roxana**. Soft parents **Lt. William Buck** × **Sarah (Maxwell) B..."
+      "birth": "1798-01-20",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "sarah_maxwell_buck": {
       "id": "sarah_maxwell_buck",
@@ -2387,7 +2452,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft wife of **Lt. William Buck** (`william_buck`) and soft mother of **Erastus D. Buck**. Heath marriage *Sarah and William Buck*, 1785 (MAXWELL section); death **14 Mar 1839** names *Sally, w. William*, ae 76, *ch. Lt. Benjamin Maxwell and Anna (Winslow)*; sibli..."
+      "death": "1839-03-14",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "anna_winslow_maxwell": {
       "id": "anna_winslow_maxwell",
@@ -2445,7 +2512,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Sarah (Maxwell) Buck** (death **14 Mar 1839**). Spouse **Lt. Benjamin Maxwell** (m. **1762**). d. **28 Oct 1814** Heath ae 71. Own parents **not named** on any Heath vital — `parents: []`. `verified: false`.",
+      "death": "1814-10-28",
+      "death_place": "Heath, Franklin County, Massachusetts, USA",
       "blocker": "Own parents | Blocked | — | — | C1575; no vital names parents"
     },
     "benjamin_maxwell": {
@@ -2533,7 +2601,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Sarah (Maxwell) Buck** (death **14 Mar 1839**). Spouse **Anna (Winslow)** (m. **1762**). Soft parents **Hugh Maxwell** × **Sarah (Corbett) Maxwell** from own death row (*ch. Hugh and Sarah Corbett*). d. **2 Feb 1829** Heath ae 92. `verified: false`."
+      "death": "1829-02-02",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "sarah_corbett_maxwell": {
       "id": "sarah_corbett_maxwell",
@@ -2587,7 +2657,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Lt. Benjamin Maxwell**, named on Benjamin’s Heath death row (*ch. Hugh and Sarah Corbett*). Soft death **1772** ae 81; birthplace **Minterburn, Ireland**; spouse **Hugh Maxwell**. Own parents blocked (**C1578**). `verified: false`.",
+      "death": "1772",
+      "birth_place": "Minterburn, Ireland",
+      "death_place": "Heath, Franklin County, Massachusetts, USA",
       "blocker": "Own parents blocked (C1578)"
     },
     "hugh_maxwell": {
@@ -2672,7 +2744,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Lt. Benjamin Maxwell**, named on Benjamin’s Heath death row (*ch. Hugh and Sarah Corbett*). Soft death **19 Mar 1759** ae 59 (Bedford burial; Heath index); birthplace **Minterburn**; spouse **Sarah Corbett**. Soft parents **Samuel Maxwell** × **Ma..."
+      "birth": "1701-04-08",
+      "death": "1759-03-19",
+      "birth_place": "Minterburn, County Tyrone, Ireland",
+      "death_place": "Bedford, Middlesex County, Massachusetts, USA",
+      "burial": "Old Burying Ground, Bedford, Massachusetts"
     },
     "margaret_buntine_maxwell": {
       "id": "margaret_buntine_maxwell",
@@ -2717,7 +2793,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of elder **Hugh Maxwell** (`hugh_maxwell`). WikiTree **Buntine**; Maltby **(Kennedy) Bunting** — keep both as aka. Soft spouse **Samuel Maxwell**; m. **8 Jun 1695**. Printed *Christian Patriot* silent on her name. Own parents not soft-wired (WikiTree p..."
+      "birth": "1670",
+      "birth_place": "County Tyrone, Ireland (uncertain)"
     },
     "samuel_maxwell": {
       "id": "samuel_maxwell",
@@ -2761,7 +2838,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of elder **Hugh Maxwell** (`hugh_maxwell`, d. **1759** Bedford). Named on WikiTree Maxwell-6864/6935 and Maltby’s family-tradition extract (Samuel b. **3 Dec 1674**; m. Margaret **8 Jun 1695**, often Wigton). Printed *Christian Patriot* names only gran..."
+      "birth": "1674-12-03",
+      "death": "1758",
+      "birth_place": "Scotland or Ireland (uncertain)",
+      "death_place": "Belfast, Ireland (uncertain)"
     },
     "william_buck": {
       "id": "william_buck",
@@ -2838,7 +2918,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Erastus D. Buck** from Heath *Erastus, ch. William, 20 Jan 1798* (**C1400**). Soft spouse **Sarah (Maxwell) Buck** (`sarah_maxwell_buck`) from marriage 1785 / death 1839 (**C1540–C1541**). Soft parents **William Buck Sr.** × **Mary (Wyman) Buck** ..."
+      "birth": "1755-04-02",
+      "death": "1839-04-01",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "mary_wyman_buck": {
       "id": "mary_wyman_buck",
@@ -2913,7 +2996,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Lt. William Buck** (`william_buck`). Soft parents **David Wyman** × **Phebe (Richardson) Wyman** from Richardson Memorial / Pane-Joyce (**C1803–C1805**). Soft birth **7 Mar 1737** Woburn — **conflicts** with Heath/Centennial ae **81** in 1805 (imp..."
+      "birth": "1737-03-07",
+      "death": "1805-07-18",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "phebe_richardson_wyman": {
       "id": "phebe_richardson_wyman",
@@ -2961,7 +3047,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Mary (Wyman) Buck** (`mary_wyman_buck`). Maiden **Richardson**; m. **David Wyman** 31 Oct 1716 Woburn; d. **24 Nov 1750** Woburn (compiled + FAG 7849506 soft). Parent link to Mary is compiled (Richardson Memorial / Pane-Joyce). `verified: false`."
+      "birth": "1696-03-04",
+      "death": "1750-11-24",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "burial": "First Burial Ground, Woburn, Middlesex County, Massachusetts, USA"
     },
     "david_wyman": {
       "id": "david_wyman",
@@ -3034,7 +3124,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Mary (Wyman) Buck** (`mary_wyman_buck`). Soft parents **Jacob Wyman** × **Elizabeth (Richardson) Wyman** (C1873–C1875). Woburn m. **Phebe Richardson** 31 Oct 1716; Wyman 1883 / Pane-Joyce name daughter **Mary** (b. 7 Mar 1737; VR OCR confirms *Mar..."
+      "birth": "1693-04-14",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "elizabeth_richardson_wyman": {
       "id": "elizabeth_richardson_wyman",
@@ -3111,7 +3203,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **David Wyman** (`david_wyman`). Maiden **Richardson**; m. **Jacob Wyman** 23 Nov 1687 Woburn; d. **21 Nov 1739** (VR *Elizabeth, wife of Jacob*). Soft parents **Samuel Richardson** (`samuel_richardson_1646`) × **Martha (Unknown)** (`martha_unknown_..."
+      "birth": "1672-06-28",
+      "death": "1739-11-21",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "martha_unknown_richardson": {
       "id": "martha_unknown_richardson",
@@ -3161,7 +3256,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Elizabeth (Richardson) Wyman**. Named **Martha**, wife of **Samuel Richardson**, in Woburn deaths **20 Dec 1673** (same day as daughter Martha’s birth). Maiden **Blocked** — no Woburn marriage row for Samuel × Martha. Soft only. `verified: false`."
+      "death": "1673-12-20",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "samuel_richardson_1646": {
       "id": "samuel_richardson_1646",
@@ -3216,7 +3312,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Elizabeth (Richardson) Wyman** (`elizabeth_richardson_wyman`). Woburn *Samuel, s. of Samuel, May 22, 1646*; first wife **Martha** d. **20 Dec 1673** (VR). Wyman 1883 + Pane-Joyce (quoting Richardson Memorial / Middlesex probate xiii.68) name daugh...",
+      "birth": "1646-05-22",
+      "death": "1712-04-29",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "burial": "First Burial Ground, Woburn, Middlesex County, Massachusetts, USA (compiled stone)",
       "blocker": "England / immigrant parents | Blocked | Dig log | | Not climbed |"
     },
     "jacob_wyman": {
@@ -3290,7 +3390,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **David Wyman** (`david_wyman`). Soft parents **Lieut. John Wyman** × **Sarah (Nutt) Wyman** (Wyman 1883 / Pane-Joyce; Woburn m. 5 Nov 1644). Woburn m. **Elizabeth Richardson** 23 Nov 1687; Wyman 1883 + Pane-Joyce name son **David** b. 14 Apr 1693. ..."
+      "birth": "1665-06-04",
+      "death": "1742-03-31",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Watertown, Middlesex County, Massachusetts, USA"
     },
     "sarah_nutt_wyman": {
       "id": "sarah_nutt_wyman",
@@ -3347,7 +3450,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Jacob Wyman**. Maiden **Nutt** from Woburn m. **John Wyman** 5 Nov 1644. Wyman 1883 names her daughter of **Miles Nutt** (not soft this pass). Soft death **24 May 1688** compiled. Own parents empty. `verified: false`."
+      "birth": "1624",
+      "death": "1688-05-24",
+      "birth_place": "England (compiled; not climbed)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_wyman": {
       "id": "john_wyman",
@@ -3411,7 +3517,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Jacob Wyman** (`jacob_wyman`). Woburn m. **Sarah Nutt** 5 Nov 1644; Wyman 1883 lists Jacob among their children; Sewall names him **Lieut. John Wyman**, tanner, father of John Jr. slain Narraganset. Own parents **Blocked** (England / Westmill trad...",
+      "birth": "1621",
+      "death": "1684-05-09",
+      "birth_place": "Westmill, Hertfordshire, England (compiled; not climbed)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA",
       "blocker": "Own parents Blocked (England / Westmill tradition — not c"
     },
     "william_buck_sr": {
@@ -3483,7 +3592,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Lt. William Buck** (`william_buck`). Heath Centennial (1885) names him the 1773 settler who d. **1801** ae 75, husband of **Mary**, and **father of Lieut. William Buck** (d. 1839 ae 84). Soft parents **John Buck** × **Priscilla** from Woburn birth..."
+      "birth": "1726-07-31",
+      "death": "1801-05-27",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "priscilla_buck": {
       "id": "priscilla_buck",
@@ -3532,7 +3644,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **William Buck Sr.** (`william_buck_sr`). Named only as **Priscilla** on Woburn births of John×Priscilla children (Mary 1712–William 1726). Maiden surname **unknown** this pass (not soft-invented). Soft spouse **John Buck**. `verified: false`."
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_buck": {
       "id": "john_buck",
@@ -3611,7 +3723,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **William Buck Sr.** (`william_buck_sr`). Soft parents **Ephraim Buck** × **Sarah (Brooks) Buck** (C1870–C1872). Woburn birth *William, s. of John and Priscilla, July 31, 1726*; John himself *s. of Ephraim, Feb. 7, 1680*; death *Mr. John, Nov. 24, 1..."
+      "birth": "1680-02-07",
+      "death": "1752-11-24",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "sarah_brooks_buck": {
       "id": "sarah_brooks_buck",
@@ -3691,7 +3806,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **John Buck** (`john_buck`). Maiden **Brooks**; soft parents **John Brooks** × **Eunice (Mousall) Brooks**. m. **Ephraim Buck** 1 Jan 1670 Woburn VR (Buck gen prints 1671). Soft birth **21 Nov 1652** (Buck gen / Pane-Joyce; Woburn OCR weak this pass..."
+      "birth": "1652-11-21",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "eunice_mousall_brooks": {
       "id": "eunice_mousall_brooks",
@@ -3764,7 +3881,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Sarah (Brooks) Buck**. Soft parents **Deacon John Mousall** × **Joanna** (**C1963–C1964**). Maiden **Mousall**. Soft m. John Brooks **1 Nov 1649**; soft death **1 Jan 1684** (Woburn VR). Soft only. `verified: false`."
+      "birth": "1628",
+      "death": "1684-01-01",
+      "birth_place": "England (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "joanna_unknown_mousall": {
       "id": "joanna_unknown_mousall",
@@ -3804,7 +3924,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Eunice (Mousall) Brooks**. Named **Joanna** in Deacon John’s will. Maiden **Blocked** (Thompson-sister lore rejected in free secondary literature). Soft only. `verified: false`."
+      "birth_place": "England (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA (survived John 1665)"
     },
     "john_mousall": {
       "id": "john_mousall",
@@ -3853,7 +3974,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Eunice (Mousall) Brooks**. Founder/deacon of Woburn; soft death **27 Mar 1665**. Will (**19 4mo 1660**, proved **1665**) names daughter **Eunice**, wife of **John Brooks**, and grandchild **Sarah Brooks**. Soft spouse **Joanna** (maiden Blocked — ..."
+      "birth": "1595",
+      "death": "1665-03-27",
+      "birth_place": "England (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_brooks": {
       "id": "john_brooks",
@@ -3921,7 +4045,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Sarah (Brooks) Buck**. Soft father **Henry Brooks** (**C1960**). Woburn m. **Eunice Mousall** **1 Nov 1649**; soft death **29 Sep 1691**. Soft only. `verified: false`."
+      "birth": "1623",
+      "death": "1691-09-29",
+      "birth_place": "England (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "henry_brooks": {
       "id": "henry_brooks",
@@ -3960,7 +4087,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** soft father of **John Brooks** (`john_brooks`). Cutter/Loring **1904**: Concord by **1639**, Woburn ~**1650**; will **18 Jul 1682** names sons **John, Timothy, Isaac**; soft death **12 Apr 1683** (Woburn VR). First wife (mother of children) **unknown** — do not in...",
+      "birth": "1592",
+      "death": "1683-04-12",
+      "birth_place": "England (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA",
       "blocker": "Own parents Blocked (England)"
     },
     "ephraim_buck": {
@@ -4037,7 +4167,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **John Buck** (`john_buck`). Cambridge *Ephraim, s. of Roger and Susan, July 26, 1646*. Soft parents **Roger Buck** × **Susanna**. m. **Sarah Brooks** 1 Jan 1670 Woburn. Will dated **23 Nov 1717**, proved **Mar 1720/21** (do not treat Jan 1721 “s. o..."
+      "birth": "1646-07-26",
+      "death": "1721",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "susanna_unknown_buck": {
       "id": "susanna_unknown_buck",
@@ -4095,7 +4228,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Ephraim Buck**. Cambridge births style her **Susan** / **Susanna** / **Susannah**. Maiden **Blocked** (not invented). Soft death **20 Sep 1685** (Cambridge VR; Buck gen had 10 Sep). Own parents empty. `verified: false`."
+      "death": "1685-09-20",
+      "birth_place": "England or Massachusetts (uncertain)",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA"
     },
     "roger_buck": {
       "id": "roger_buck",
@@ -4166,7 +4301,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Ephraim Buck** (`ephraim_buck`). Cambridge VR: *Ephraim, s. of Roger and Susan, July 26, 1646*; also *John* 1644 and *Mary* 1648. Soft remaining children **Samuel** / **Lydia** (compiled + Cambridge marr). Soft spouse **Susanna** (maiden unknown)...."
+      "birth": "1617",
+      "death": "1693-11-10",
+      "birth_place": "England (uncertain)",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA"
     },
     "william_buck_cambridge": {
       "id": "william_buck_cambridge",
@@ -4207,7 +4345,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "William Bucke"
       ],
-      "note": "**Probable** soft father of **Roger Buck** (`roger_buck`) — **Increase** **1635** passenger (Hotten **FT-0438**: plowwright ae **50** with Roger ae **18**). Soft death **24 Jan 1658** Cambridge ae **73** (Buck gen / Harris epitaph tradition). Wife not soft-wired (none on Hotte...",
+      "birth": "1585",
+      "death": "1658-01-24",
+      "birth_place": "England (uncertain; Padbury lore unconfirmed)",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA",
       "blocker": "Own parents Blocked (England)"
     },
     "marion_lawrence_anderson": {
@@ -4280,7 +4421,8 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Confirmed** / `verified: true` father of **Jon Martin Anderson** (pack **C951** Y). Soft birth **1 Jun 1906**, Mills Co. IA (mother Stonebraker) — accepts Hugh×Urtha **C1107** parent-link; vitals set this pass (**C1095**). Parents soft **Hugh Dupree Anderson** × **Urtha Ston..."
+      "birth": "1906-06-01",
+      "birth_place": "Mills County, Iowa, USA"
     },
     "urtha_stonebraker": {
       "id": "urtha_stonebraker",
@@ -4374,7 +4516,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Marion Lawrence Anderson**. Free Mills Co. IA sources confirm maiden **Stonebraker** and given name **Urtha** (delayed births: **Urtha Almina** / **Urtha A.**). Tribune marriage license prints **Bertha** — treat as newspaper variant of same woman, not ..."
+      "birth": "1880",
+      "birth_place": "Iowa, USA"
     },
     "p_h_stonebraker": {
       "id": "p_h_stonebraker",
@@ -4423,8 +4566,7 @@ window.PEOPLE_DATA = {
           "id": "j_a_stonebraker",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** mother of **Urtha Stonebraker** — indexed as **Mrs. J. A. Stonebraker** on Henderson Christian Church history (**1877** treasurer); **1905** Henderson census lists **P. H. Stonebraker** adjacent to **J. A.** and **F. G.** (likely spouse in household). Full given n..."
+      ]
     },
     "j_a_stonebraker": {
       "id": "j_a_stonebraker",
@@ -4481,7 +4623,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Urtha Stonebraker** — Henderson Mills Co. IA Stonebraker patriarch on free sources: founding member of Highland/Henderson Christian Church (**1877**) with **Mrs. J. A. Stonebraker**; still in Henderson on **1905** census cluster with **P. H.** and **F...."
+      "birth_place": "Iowa, USA"
     },
     "hugh_dupree_anderson": {
       "id": "hugh_dupree_anderson",
@@ -4609,7 +4751,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Marion Lawrence Anderson** (Alex Heidi pack) — identity hardened on free Mills Co. IA indexes: **Hugh D. Anderson** × **Urtha** Stonebraker, Henderson/Emerson area. Middle **Dupree** from Alex (indexes show **D.** only). Soft birth ~**1877–1878** Iowa...."
+      "birth": "1877",
+      "birth_place": "Iowa, USA"
     },
     "emily_e_dupray_anderson": {
       "id": "emily_e_dupray_anderson",
@@ -4702,7 +4845,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** **Emily E. Dupray** × **John W. Anderson** (m. 1861 Mills Co.). Soft parents **Hugh Dupray** × **Mary Ann Dupray** (**C1731–C1733**). FAG children wave **C1560–C1564** stands; **Hugh Dupree** and **Ed E. U.** wired as children via *Times* 1913/1923 (**FT-0439** / ..."
+      "birth": "1842-12-26",
+      "death": "1923-11-05",
+      "death_place": "Silver City, Mills County, Iowa, USA",
+      "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
     "mary_ann_dupray": {
       "id": "mary_ann_dupray",
@@ -4746,7 +4892,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** maternal grandmother of the Silver City Anderson line — **Mary Ann (Chamberlin) Dupray** (FAG **1823**–1884; bio years **1824–1884**), innkeeper with **Hugh Dupray**, mother of **Emily E. Dupray**. FT-0195 favorite-story stallion ride is this maternal grandmother...."
+      "birth": "1823",
+      "death": "1884-03-23",
+      "birth_place": "Massachusetts, USA",
+      "death_place": "Silver City, Mills County, Iowa, USA",
+      "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
     "hugh_dupray": {
       "id": "hugh_dupray",
@@ -4783,7 +4933,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** maternal grandfather of the Silver City Anderson line — **Hugh Dupray** (1815–1892), innkeeper with **Mary A. / Mary Ann**, father of **Emily E. Dupray** (and FAG-named **Willis**). Soft UP climb from Emily (**C1731**). Do not confuse with Hugh Dupree Anderson par..."
+      "birth": "1815",
+      "death": "1892-07-03",
+      "birth_place": "Pennsylvania, USA",
+      "death_place": "Silver City, Mills County, Iowa, USA",
+      "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
     "john_w_anderson": {
       "id": "john_w_anderson",
@@ -4856,7 +5010,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** Mills/Pottawattamie **John W. Anderson** (1834–1907), m. **Emily E. Dupray** 1861, buried Silver City. Parents still `[]` this free pass (**C1736**) — bio names Chicago dray / freight career only; FAG parents blank; **Powell×Harriet Huffaker** = different Silver C..."
+      "birth": "1834-07-05",
+      "death": "1907-09-18",
+      "death_place": "Silver City, Mills County, Iowa, USA",
+      "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
     "william": {
       "id": "william",
@@ -4891,8 +5048,7 @@ window.PEOPLE_DATA = {
         "FT-0387",
         "FT-0388",
         "FT-0389"
-      ],
-      "note": "Living-private. Soft newspaper Accessions FT-0380–FT-0389 = published Utah swim only; Alex-authorized 2026-08-09. See docs/research/people/stories/heidi-bill-published-2026-08-09.md"
+      ]
     },
     "gloria": {
       "id": "gloria",
@@ -4955,7 +5111,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Gatz"
       ],
-      "note": "Paternal grandmother of Alexander Martin Shorts. Born Gloria Martha Gatz in McPherson, Kansas; family moved to California in 1942; finished Bellflower High; married Richard Dorland Shorts 22 Oct 1950 after meeting at the Hollywood Palladium. Lived Burbank → Thousand Oaks → Sil..."
+      "birth": "1925-08-16",
+      "death": "2017-06-16",
+      "birth_place": "McPherson, McPherson County, Kansas, USA",
+      "death_place": "Ventura County, California, USA",
+      "burial": "Conejo Mountain Memorial Park, Camarillo, Ventura County, California, USA"
     },
     "martha": {
       "id": "martha",
@@ -5019,7 +5179,9 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Tuxhorn"
       ],
-      "note": "Mother of Gloria Martha (Gatz) Shorts, née Tuxhorn. Named in Gloria’s obituary (C19). Dates and burial locked Round 4 (C24). Parents Leo Lewis Tuxhorn × Ida L. Achilles locked Round 5 (C29). Siblings Carrie Williams, Florence Graves, Henry Tuxhorn, Wilma Prather — **Probable C..."
+      "birth": "1897-06-17",
+      "death": "1967-11-21",
+      "burial": "Olive Lawn Memorial Park, La Mirada, Los Angeles County, California, USA (body); McPherson Cemetery, McPherson, Kansas, USA (memorial / cenotaph)"
     },
     "ida_tuxhorn": {
       "id": "ida_tuxhorn",
@@ -5098,7 +5260,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Mother of Martha Tuxhorn Gatz (C29 Confirmed). Née Achilles; widow of Leo Tuxhorn. Born Lee County, Iowa; to Inman KS as a child. Stone dates 29 Aug 1866 – 9 Jan 1951. Sibling collateral Confirmed C30 (Carrie/Florence/Henry/Wilma promoted Probable C56-C59). Parents **Probable ..."
+      "birth": "1866-08-29",
+      "death": "1951-01-09",
+      "birth_place": "Lee County, Iowa, USA",
+      "death_place": "McPherson, McPherson County, Kansas, USA",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA"
     },
     "caroline_waescher": {
       "id": "caroline_waescher",
@@ -5165,7 +5331,11 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "**Probable** mother of Ida L. Achilles Tuxhorn (**C55** / harden **C370**). Maiden **Waescher** (FAG) = **Wischer / Wisher** (GEDBAS **C379**). Wife of Henry F. Achilles Sr.; m. **20 Jun 1865** Lee Co. IA. GEDBAS lists daughter **Ida Louise** matching Ida Tuxhorn vitals. Paren..."
+      "birth": "1842-10-23",
+      "death": "1912-08-16",
+      "birth_place": "Braunschweig, Niedersachsen, Germany",
+      "death_place": "Inman, McPherson County, Kansas, USA",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA"
     },
     "carolina_wisher": {
       "id": "carolina_wisher",
@@ -5203,7 +5373,8 @@ window.PEOPLE_DATA = {
         "Carolina Wischer",
         "Carolina N.N."
       ],
-      "note": "**Possible** mother of Caroline (Waescher / Wischer) Achilles (**C375** / **C377**). GEDBAS labels her **Carolina WISHER N.N.** — married surname Wisher/Wischer; **maiden surname unknown**. b. **about 1816** Germany; death not given. Soft-ingest placeholder only. Stay `verifie...",
+      "birth": "1816",
+      "birth_place": "Germany",
       "blocker": "Parents + maiden unknown — free dig C1620–C1629 blocked (GEDBAS N.N./bla"
     },
     "heinrich_henry_wischer": {
@@ -5242,7 +5413,10 @@ window.PEOPLE_DATA = {
         "Henry Wischer",
         "Henry Wisher"
       ],
-      "note": "**Probable** father of Caroline (Waescher / Wischer) Achilles (**C375**). Husband of **Carolina (Wisher) N.N.** GEDBAS: b. **1811** Germany; d. **15 May 1881** Jefferson Twp, Lee Co. Iowa; occupation note cites **Census 1880**. Soft-ingest only — 1880 page image not opened thi...",
+      "birth": "1811",
+      "death": "1881-05-15",
+      "birth_place": "Germany",
+      "death_place": "Jefferson Township, Lee County, Iowa, USA",
       "blocker": "Parents unknown — free dig C1620–C1629 blocked (GEDBAS blank; no Lee obi"
     },
     "henry_f_achilles": {
@@ -5327,7 +5501,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** father of Ida L. Achilles Tuxhorn (**C55** / harden **C370**). Husband of Caroline (Waescher / Wischer). GEDBAS **1163945812** locks matching stone dates, birth **Barum Salzgitter**, marriage **20 Jun 1865** Lee Co. IA, and child **Ida Louise** (29 Aug 1866) who m..."
+      "birth": "1842-05-25",
+      "death": "1934-03-28",
+      "birth_place": "Barum, Salzgitter, Braunschweig, Germany",
+      "death_place": "Inman, McPherson County, Kansas, USA",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA"
     },
     "marie_christine_henrietta_burgdorf": {
       "id": "marie_christine_henrietta_burgdorf",
@@ -5378,7 +5556,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Henry F. Achilles Sr. (**C371**). Née **Burgdorf**; wife of **Johann Friedrich Christoph Achilles** (m. ~1841 Barum). Parents soft-ingested **C384**: **Gottfried Ludwig Burgdorf** × **Marie Sophie Henriette Masberg**. GEDBAS: b. **10 Oct 1819** Barum Sal..."
+      "birth": "1819-10-10",
+      "death": "1907-08-17",
+      "birth_place": "Barum, Salzgitter, Braunschweig, Germany",
+      "death_place": "Franklin County, Iowa, USA"
     },
     "marie_sophie_henriette_masberg": {
       "id": "marie_sophie_henriette_masberg",
@@ -5415,7 +5596,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "Marie Sophie Henriette Burgdorf"
       ],
-      "note": "**Probable** mother of Marie Christine Henrietta Burgdorf (**C384**). Née **Masberg**; wife of **Gottfried Ludwig Burgdorf** (m. ~1817 Barum). GEDBAS: b. **about 1790** Barum Salzgitter; married name Burgdorf noted. Soft-ingest only — no parish image. Stay `verified: false`. M...",
+      "birth": "1790",
+      "birth_place": "Barum, Salzgitter, Braunschweig, Germany",
       "blocker": "Death date/place; Masberg parents still blank — CONNECT dig C1720–C1729 "
     },
     "gottfried_ludwig_burgdorf": {
@@ -5450,7 +5632,8 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Marie Christine Henrietta Burgdorf (**C384**). Husband of **Marie Sophie Henriette Masberg**. GEDBAS: b. **about 1790** Barum Salzgitter; m. **about 1817** Barum; child Marie Christine Henrietta b. **10 Oct 1819**. Soft-ingest only — no parish image. Sta...",
+      "birth": "1790",
+      "birth_place": "Barum, Salzgitter, Braunschweig, Germany",
       "blocker": "Death date/place; Burgdorf parents still blank — CONNECT dig C1720–C1729"
     },
     "johann_friedrich_christoph_achilles": {
@@ -5501,7 +5684,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Henry F. Achilles Sr. (**C371**). Husband of **Marie Christine Henrietta Burgdorf**. Parents soft-ingested **C380**: **Johann Heinrich Paul Achilles** × **Marie Christine Linde**. GEDBAS (Rosendahl file **42734**): b. **12 Nov 1815** Apelnstedt / Wolfenb..."
+      "birth": "1815-11-12",
+      "death": "1854-09-04",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
     "marie_christine_linde": {
       "id": "marie_christine_linde",
@@ -5538,7 +5724,9 @@ window.PEOPLE_DATA = {
       "aka": [
         "Marie Christine Achilles"
       ],
-      "note": "**Probable** mother of Johann Friedrich Christoph Achilles (**C380**). Wife of **Johann Heinrich Paul Achilles** (m. **~1805** Apelnstedt per GEDBAS). GEDBAS **1133073184** (Rosendahl **42734**): b. **~1780** Apelnstedt; death year blank (place Apelnstedt). **Parents blank** o...",
+      "birth": "1780",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
       "blocker": "Parents blank on person page — free dig C1717 blocked; keep parents: []"
     },
     "johann_heinrich_paul_achilles": {
@@ -5586,7 +5774,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Johann Friedrich Christoph Achilles (**C380**). Husband of **Marie Christine Linde**. GEDBAS (Rosendahl file **42734**): b. **1776** Apelnstedt / Wolfenbüttel; d. **1832** same. Parent edge on son’s person page. Own parents soft-ingested as **Heinrich Pa..."
+      "birth": "1776",
+      "death": "1832",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
     "johanna_lucia_catharina_sack": {
       "id": "johanna_lucia_catharina_sack",
@@ -5627,7 +5818,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Johanna Lucia Catharina Achilles"
       ],
-      "note": "**Probable** mother of Johann Heinrich Paul Achilles (**C390**). Née **Sack**; wife of **Heinrich Paul Christoph Achilles**. GEDBAS (Rosendahl **42734**): b. **1742** Braunschweig St. Leonhard; d. **1803** Apelnstedt; own parents Sack–Sack N.N. (not soft-ingested). Only Sack w..."
+      "birth": "1742",
+      "death": "1803",
+      "birth_place": "Braunschweig St. Leonhard, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
     "heinrich_paul_christoph_achilles": {
       "id": "heinrich_paul_christoph_achilles",
@@ -5678,7 +5872,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Johann Heinrich Paul Achilles (**C390**). Husband of **Johanna Lucia Catharina Sack** (m. **10 Nov 1763** Mascherode). GEDBAS **1133073186** (Rosendahl **42734**): b./bapt. **30 Jan 1744** Apelnstedt; d. **10 Dec 1818** / bur. **16 Dec 1818** Apelnstedt;..."
+      "birth": "1744-01-30",
+      "death": "1818-12-10",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
     "marie_lucie_luddecke": {
       "id": "marie_lucie_luddecke",
@@ -5715,7 +5912,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Marie Lucie Achilles"
       ],
-      "note": "**Probable** mother of Heinrich Paul Christoph Achilles (**C1711**). Née **Lüddecke**; wife of **Paul Christoph Achilles** (m. **4 Nov 1733** Vallstedt). GEDBAS (Rosendahl **42734**): b. **Nov 1711** Vallstedt bei Vechelde; d./bur. **15 May 1785** Apelnstedt. Soft-ingest only ..."
+      "birth": "1711-11",
+      "death": "1785-05-15",
+      "birth_place": "Vallstedt bei Vechelde, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
     "paul_christoph_achilles": {
       "id": "paul_christoph_achilles",
@@ -5749,7 +5949,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Heinrich Paul Christoph Achilles (**C1710**). Husband of **Marie Lucie Lüddecke** (m. **4 Nov 1733** Vallstedt). GEDBAS (Rosendahl **42734**): b./bapt. **25 Aug 1700** Apelnstedt; d./bur. **9 Jun 1754** Apelnstedt; occupation Ackermann. Child edge lists ..."
+      "birth": "1700-08-25",
+      "death": "1754-06-09",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
     "leo_tuxhorn": {
       "id": "leo_tuxhorn",
@@ -5804,7 +6007,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "Father of Martha Tuxhorn Gatz (C29 Confirmed). Married Ida L. Achilles. Inman / McPherson County, Kansas. McPherson marriage index: Leo Tuxhorn × Ida Achilles 8 Jan 1891 (Inman). FAG lists Martha’s siblings (Carrie, Florence, Henry, Wilma) — collateral tracking Confirmed C30; ..."
+      "birth": "1866-08-27",
+      "death": "1931-03-21",
+      "death_place": "McPherson County, Kansas, USA",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA"
     },
     "elizabeth_birkenbeuel": {
       "id": "elizabeth_birkenbeuel",
@@ -5851,7 +6057,9 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Birkenbeuel"
       ],
-      "note": "Mother of Leo Lewis Tuxhorn (**C36 Confirmed**). Elizabeth Birkenbeuel Tuxhorn, 25 Nov 1833 – 26 Nov 1911, Inman North Cemetery. Widow of Frederick William August Tuxhorn.",
+      "birth": "1833-11-25",
+      "death": "1911-11-26",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA",
       "blocker": "Birkenbeuel/Birkenbuel parents still unknown (C177 / C200 — GEDBAS paren"
     },
     "frederick_tuxhorn": {
@@ -5920,7 +6128,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of Leo Lewis Tuxhorn (**C36 Confirmed**). Frederick William August Tuxhorn, 1829 – 12 Nov 1884, McPherson County KS. Spouse Elizabeth Birkenbeuel. Soft parents (**C170**): **Herman Heinrich Tuxhorn** × **Anne Margarethe Ilsabein Esser** (GEDBAS Dornberg + WikiTree coupl...",
+      "birth": "1829",
+      "death": "1884-11-12",
+      "birth_place": "Dornberg, Bielefeld, Westphalia, Prussia, Germany",
+      "death_place": "McPherson County, Kansas, USA",
       "blocker": "Burial place; Frederick baptism ~1829 naming Herman × Anne; Elizabeth’s "
     },
     "anne_margarethe_esser": {
@@ -5968,7 +6179,9 @@ window.PEOPLE_DATA = {
         "Anne Margarethe Ilsabein Esser",
         "Gret Elsabein Esser"
       ],
-      "note": "**Probable** mother of Frederick William August Tuxhorn (**C170**). Maiden **Esser**. Wife of **Herman Heinrich Tuxhorn**. WikiTree **Esser-995**: b. **22 Oct 1801** Dornberg, d. **28 Mar 1852**; m. Herman Heinrich Tuxhorn **26 Mar 1825** Evangelisch Dornberg. GEDBAS files **6..."
+      "birth": "1801-10-22",
+      "death": "1852-03-28",
+      "birth_place": "Dornberg, Bielefeld, Westphalia, Prussia, Germany"
     },
     "herman_heinrich_tuxhorn": {
       "id": "herman_heinrich_tuxhorn",
@@ -6014,7 +6227,10 @@ window.PEOPLE_DATA = {
         "Hermann Heinrich Tuxhorn",
         "Henry Tuxhorn"
       ],
-      "note": "**Probable** father of Frederick William August Tuxhorn (**C170**). Husband of **Anne Margarethe Ilsabein Esser**. WikiTree **Tuxhorn-62**: b. **16 Sep 1798** Dornberg, d. **5 Sep 1864** Brackwede; m. Anne Margarethe Ilsabein Esser **26 Mar 1825** Evangelisch Dornberg (FS marr..."
+      "birth": "1798-09-16",
+      "death": "1864-09-05",
+      "birth_place": "Dornberg, Bielefeld, Westphalia, Prussia, Germany",
+      "death_place": "Brackwede, Bielefeld, Westfalen, Preußen, Deutschland"
     },
     "irvin": {
       "id": "irvin",
@@ -6130,7 +6346,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Irvin Carl Gatz — Confirmed / `verified: true`. Parents Charles C. × Minnie Kruse; spouse Martha; child Gloria. Olive Lawn burial + McPherson cenotaph; 1900 Jackson Twp census in C C household."
+      "birth": "1891-07-31",
+      "death": "1956-03-13",
+      "birth_place": "Kansas, USA",
+      "death_place": "Los Angeles, California, United States",
+      "burial": "Olive Lawn Memorial Park, La Mirada, Los Angeles County, California, USA (body); McPherson Cemetery, McPherson, Kansas, USA (memorial / cenotaph)"
     },
     "minnie_kruse": {
       "id": "minnie_kruse",
@@ -6235,7 +6455,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Confirmed** mother of Irvin Carl Gatz (**C40** locked). Maiden **Kruse**. Wife of Charles C. Gatz. McPherson Cemetery stone (MOTHER / years). **1900:** parents b. **Germany**; birth Apr **1867** MN vs FAG **8 Apr 1868** — soft conflict kept. **Parents soft-ingested Probable ..."
+      "birth": "1868-04-08",
+      "death": "1925-02-09",
+      "birth_place": "Minnesota, USA",
+      "death_place": "McPherson County, Kansas, USA",
+      "burial": "McPherson Cemetery, McPherson, McPherson County, Kansas, USA"
     },
     "marie_wolf_kruse": {
       "id": "marie_wolf_kruse",
@@ -6304,7 +6528,10 @@ window.PEOPLE_DATA = {
         "Marie Wolf",
         "née Wolf"
       ],
-      "note": "**Probable** mother of Minnie Kruse Gatz (**C430**). Maiden **Wolf** per FAG. Wife of **Henry Kruse** (m. **1862**). Wheatland Cemetery dates match IAGenWeb (**Mary**). Birth **Germany** on FAG aligns with Minnie’s 1900 census (parents b. Germany). **Wolf parents blocked** (**...",
+      "birth": "1839-04-03",
+      "death": "1907-01-26",
+      "birth_place": "Germany",
+      "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA",
       "blocker": "Wolf parents Germany (C1311 blocked); Marie 1907 obit not on IAGenWeb (C"
     },
     "henry_kruse": {
@@ -6369,7 +6596,9 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Minnie Kruse Gatz (**C430**). Husband of **Marie “Mary” Wolf Kruse** (m. **1862** on FAG). Wheatland Cemetery, New Albin, Allamakee Co. IA — dates match independent [IAGenWeb Woodmansee transcript](https://iagenweb.org/allamakee/cemetery/Wheatland.htm). ...",
+      "birth": "1828-10-29",
+      "death": "1908-11-29",
+      "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA",
       "blocker": "Gen-back parents blocked (C1310) — no parent names on FAG"
     },
     "charles_c_gatz": {
@@ -6495,7 +6724,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Proposed father of Irvin Carl Gatz (**C40 Probable**, Round 9 — awaiting Alex Y/N). Husband of **Minnie Kruse Gatz**. McPherson Cemetery stones (FATHER / years) + pioneer register Jackson Twp 1889 + probate index 1935. FAG also links children Mayme Anna Riddell, Isaac Ike “Fra..."
+      "birth": "1859-10-30",
+      "death": "1935-05-26",
+      "birth_place": "Germany",
+      "death_place": "McPherson County, Kansas, USA",
+      "burial": "McPherson Cemetery, McPherson, McPherson County, Kansas, USA"
     },
     "sophia_maria_hilgenfeld": {
       "id": "sophia_maria_hilgenfeld",
@@ -6580,7 +6813,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** mother of Charles C. Gatz (**C42** / **C140** / **C360** harden). Maiden **Hilgenfeld**. Wife of **John Wilhelm Gatz**. McPherson Cemetery stone (SOPHIA M. GATZ / 1828–1905) + burial register **Sophia Mary**, Block **15** Lot **12** Space **1**, burial **10 Oct 19..."
+      "birth": "1828-05-12",
+      "death": "1905-10-10",
+      "birth_place": "Falkenberg (Altmark), Stendal, Saxony-Anhalt, Germany",
+      "death_place": "Conway, McPherson County, Kansas, USA",
+      "burial": "McPherson Cemetery, McPherson, McPherson County, Kansas, USA"
     },
     "catharine_dorothea_lonsman": {
       "id": "catharine_dorothea_lonsman",
@@ -6648,7 +6885,11 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "**Probable** mother of Sophia Maria Hilgenfeld Gatz (**C361**). Wife of **Johann Ludwig Hilgenfeld**. Zion Bethel joint stone (DOROTHE / 15 Mar 1808 – 20 Oct 1876). Maiden **Lonsman** / Lünzmann on WikiTree. Stay `verified: false` / Probable. DNA-ok maternal soft-ingest with f..."
+      "birth": "1808-03-15",
+      "death": "1876-10-20",
+      "birth_place": "Falkenberg (Altmark), Saxony-Anhalt, Germany",
+      "death_place": "Richardson County, Nebraska, USA",
+      "burial": "Zion Bethel Cemetery, Falls City, Richardson County, Nebraska, USA"
     },
     "caspar_herms": {
       "id": "caspar_herms",
@@ -6682,8 +6923,7 @@ window.PEOPLE_DATA = {
       ],
       "aka": [
         "Kaspar Herms"
-      ],
-      "note": "**Possible** putative father of Catharine Dorothea (Lonsman) Hilgenfeld (**C404**). WikiTree **Lonsman-1** baptism note: Catharine illegitimate; **supposed father Caspar Herms**. Marriage cite on same profile: “late Caspar Herms” with Sophie Lüntzmann. Hilgenfeld-6 marriage pa..."
+      ]
     },
     "sophie_luntzmann": {
       "id": "sophie_luntzmann",
@@ -6720,7 +6960,7 @@ window.PEOPLE_DATA = {
         "Sophie Lünzmann",
         "Sophie Lüntzmann / Lonsman line"
       ],
-      "note": "**Possible** mother of Catharine Dorothea (Lonsman) Hilgenfeld (**C403**). WikiTree **Lonsman-1** / **Hilgenfeld-6** cite Archion Falkenberg baptism and marriage: Catharine was the **illegitimate** daughter of **Sophie / Sophia Linsmann** (later Lünzmann / Lüntzmann). WT notes..."
+      "birth_place": "Falkenberg (Altmark), Saxony-Anhalt, Germany (lead)"
     },
     "johann_ludwig_hilgenfeld": {
       "id": "johann_ludwig_hilgenfeld",
@@ -6793,7 +7033,11 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "**Probable** father of Sophia Maria Hilgenfeld Gatz (**C361** DNA ascent). Husband of **Catharine Dorothea Lonsman**. Zion Bethel joint stone (JOHN L. / 22 Apr 1807 – 4 Nov 1899) + Falls City Journal **10 Nov 1899** obituary (via WikiTree) naming surviving daughter **Sophia Ga..."
+      "birth": "1807-04-22",
+      "death": "1899-11-04",
+      "birth_place": "Werben (Altmark), Saxony-Anhalt, Germany",
+      "death_place": "Falls City, Richardson County, Nebraska, USA",
+      "burial": "Zion Bethel Cemetery, Falls City, Richardson County, Nebraska, USA"
     },
     "catharina_elisabeth_bielefeld": {
       "id": "catharina_elisabeth_bielefeld",
@@ -6831,8 +7075,7 @@ window.PEOPLE_DATA = {
         "née Bielefeld",
         "Katharine Elisabeth Bielefeld",
         "Catharina Elisabeth Bielefeld"
-      ],
-      "note": "**Possible** mother of Johann Ludwig Hilgenfeld (**C400** / **C402**). Named with husband Christian/Christoph Wilhelm on WikiTree **Hilgenfeld-6** Archion baptism and marriage citations (images not opened). Stay `verified: false` / Possible. No free stone or GEDBAS corroboration."
+      ]
     },
     "christian_wilhelm_hilgenfeld": {
       "id": "christian_wilhelm_hilgenfeld",
@@ -6870,7 +7113,7 @@ window.PEOPLE_DATA = {
         "Christoph Wilhelm Hilgenfeld",
         "Christian / Christoph Wilhelm (soldier)"
       ],
-      "note": "**Possible** father of Johann Ludwig Hilgenfeld (**C400–C401**). Named on WikiTree **Hilgenfeld-6** from Archion cites: baptism as soldier **Christian Wilhelm**; marriage as **Christoph Wilhelm** of Behrendorf. Treat as one man (Christian/Christoph variance) until parish image..."
+      "birth_place": "Behrendorf (near Werben), Altmark, Saxony-Anhalt, Germany (lead)"
     },
     "john_wilhelm_gatz": {
       "id": "john_wilhelm_gatz",
@@ -6945,7 +7188,11 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "**Probable** father of Charles C. Gatz (**C42** / **C140** / **C360** harden). Husband of **Sophia Maria Hilgenfeld Gatz**. McPherson Cemetery stone (JOHN W. GATZ / 1820–1906) + burial register **John William**, Block **15** Lot **12** Space **2**, burial **20 Jan 1906** — sam..."
+      "birth": "1820-01-11",
+      "death": "1906-01-20",
+      "birth_place": "Wendemark, Stendal, Saxony-Anhalt, Germany",
+      "death_place": "Conway, McPherson County, Kansas, USA",
+      "burial": "McPherson Cemetery, McPherson, McPherson County, Kansas, USA"
     },
     "maria_dorothea_rusche": {
       "id": "maria_dorothea_rusche",
@@ -6978,8 +7225,7 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Rusche?",
         "Maria Dorothea Rusche"
-      ],
-      "note": "**Possible** mother of John Wilhelm Gatz (**C366**). WikiTree **Gatz-97** bio names **Maria Dorothea Rusche?** with an explicit question mark — softer than Johann Dietrich. Soft-ingested for DNA maternal completeness beside Possible father. Stay `verified: false` / Possible. N..."
+      ]
     },
     "johann_dietrich_geetz": {
       "id": "johann_dietrich_geetz",
@@ -7017,7 +7263,7 @@ window.PEOPLE_DATA = {
         "Johann Dietrich Gatz",
         "Geetz / Getz / Gretz (register variants)"
       ],
-      "note": "**Possible** father of John Wilhelm Gatz (**C365**). Named only in WikiTree **Gatz-97** biography as daylabourer **Johann Dietrich Geetz**, citing Archion Wendemark baptism picture **30** for son Johann Heinrich Wilhelm (b. **11 Jan 1820**). WikiTree header still shows parents..."
+      "birth_place": "Wendemark (Altmark), Saxony-Anhalt, Germany (lead)"
     },
     "richard": {
       "id": "richard",
@@ -7076,7 +7322,11 @@ window.PEOPLE_DATA = {
           "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
         }
       ],
-      "note": "Paternal grandfather of Alexander Martin Shorts. Born Rochester, NY; family to Southern California 1929; South Gate High School 1941; WWII U.S. Army Air Corps (Operations Specialist; Panama); later fireman (Arcadia → Huntington Park → Burbank Captain). Married Gloria Gatz 22 O..."
+      "birth": "1922-07-29",
+      "death": "2009-10-23",
+      "birth_place": "Rochester, New York, USA",
+      "death_place": "California, USA",
+      "burial": "Conejo Mountain Memorial Park, Camarillo, Ventura County, California, USA"
     },
     "annabelle": {
       "id": "annabelle",
@@ -7167,7 +7417,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Merritt"
       ],
-      "note": "Mother of Richard Dorland Shorts; paternal great-grandmother of Alexander. Named with Earl Stanley in Richard’s Ventura County Star obituary (C21). **C27 Confirmed:** maiden **Merritt**; b. 18 Apr 1899; d. **5 May 1987**; Live Oak. SSDI last residence Pasadena 91101 (SSN 555-0..."
+      "birth": "1899-04-18",
+      "death": "1987-05-05",
+      "birth_place": "New York, USA",
+      "death_place": "Ventura County, California, USA",
+      "burial": "Live Oak Memorial Park, Monrovia, Los Angeles County, California, USA"
     },
     "belle_conant_merritt": {
       "id": "belle_conant_merritt",
@@ -7254,7 +7508,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Conant; later Finch"
       ],
-      "note": "**Probable** mother of Annabelle Lucretia (Merritt) Shorts (**C45** pending Y). Free **Ontario GenWeb** 1900 Canandaigua **#154** names wife **Belle** with George, Helen, Anna-Belle (**C180**). CADI for Annabelle lists mother’s maiden **Conant** (**C46**). Soft birth **Oct 187...",
+      "birth": "1871-10",
+      "birth_place": "New York, USA",
       "blocker": "Conant parents blocked until free/FS naming source; full given name (Bel"
     },
     "george_merritt": {
@@ -7342,7 +7597,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Annabelle Lucretia (Merritt) Shorts (**C45** pending Y). Free **Ontario GenWeb** 1900 Canandaigua household **#154** names **George, Belle, Helen, Anna-Belle** (**C180**). Ancestry/FS also place **Allen** in the same household (**C47**/**C98**/**C187**)...."
+      "birth": "1866-07",
+      "birth_place": "New York, USA"
     },
     "ann_l_merritt": {
       "id": "ann_l_merritt",
@@ -7424,7 +7680,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **George Merritt** and **Charles E. Merritt**. **Woodlawn** Sec **10 Lot 207** with husband **Charles J.**: **Ann L.** Merritt d. **16 May 1928** Rochester, age **84**, bur. 18 May (**C422**). FAG memorial titles **Anna Lucretia Tesseyman Merritt** b. **..."
+      "birth": "1843",
+      "death": "1928-05-16",
+      "death_place": "Rochester, Monroe County, New York, USA",
+      "burial": "Woodlawn Cemetery, Canandaigua, Ontario County, New York, USA"
     },
     "abigail_j_tesseyman": {
       "id": "abigail_j_tesseyman",
@@ -7484,7 +7743,9 @@ window.PEOPLE_DATA = {
         "Abbie Tesseyman (Ontario County Journal 30 Dec 1898)",
         "Agigal Tessiman (1860 Hopewell index OCR)"
       ],
-      "note": "**Probable** mother of **Ann L. (Anna Lucretia Tesseyman) Merritt**. Named on FAG-pasted **1850 Hopewell** household of **Henry Tessiman** (**C1321**). **Ontario County Journal 30 Dec 1898** death notice for **Mrs. Abbie Tesseyman**, Chapinville, d. **22 Dec 1898**, pneumonia,...",
+      "birth": "1821",
+      "death": "1898-12-22",
+      "death_place": "Chapinville, Ontario County, New York, USA",
       "blocker": "Parents unknown — free dig blocked (C1638)"
     },
     "henry_tesseyman": {
@@ -7547,7 +7808,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "Henry Tessiman (1850 census OCR on FAG 121146775)"
       ],
-      "note": "**Probable** father of **Ann L. (Anna Lucretia Tesseyman) Merritt**. FAG memorial for Ann (**121146775**) pastes **1850 US Census, Hopewell, Ontario, NY, fam 259**: **Henry Tessiman** ae **37**, wife **Abigail J.** ae **29** (**C1321**). **1860** Hopewell p.**258** still lists...",
+      "birth": "1813",
+      "birth_place": "New York, USA",
       "blocker": "Parents unknown — free dig blocked (C1637)"
     },
     "charles_j_merritt": {
@@ -7626,7 +7888,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Charles Merritt; Meritt (1875 index)"
       ],
-      "note": "**Probable** father of **George Merritt** (Annabelle’s father). Free **Ontario County Chronicle** (21 May 1902) names farmer **Charles Merritt**, ae **62**, death Bright’s disease on the east shore of Canandaigua Lake; survivors **wife** and sons **George** and **Charles** of ...",
+      "birth": "1840",
+      "death": "1902-05-16",
+      "death_place": "Gorham, Ontario County, New York, USA",
+      "burial": "Woodlawn Cemetery, Canandaigua, Ontario County, New York, USA",
       "blocker": "Charles’s parents (C1477 blocked — FS death cert / 1850–60 census image "
     },
     "earl": {
@@ -7685,7 +7950,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "Father of Richard Dorland Shorts; paternal great-grandfather of Alexander. **C26 Confirmed.** Parents Dorland × Effie (**C28**). Wife Annabelle Merritt (**C27**) is Richard’s mother. First wife May F. “Mayme” Garrett Shorts (m. 1915; d. 1917) — **C35 Confirmed**. Sister Lena R..."
+      "birth": "1892-03-11",
+      "death": "1972-09-14",
+      "death_place": "South Pasadena, Los Angeles County, California, USA",
+      "burial": "Live Oak Memorial Park, Monrovia, Los Angeles County, California, USA"
     },
     "effie": {
       "id": "effie",
@@ -7765,7 +8033,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Earl"
       ],
-      "note": "Mother of Earl Stanley Shorts (**C28 Confirmed**). Effie Eliza Earl Shorts, Nov 1861 (Canada per FAG) – 25 Jun 1918 East Rochester NY; Mount Hope Cemetery Section W with Rev Dorland. NY State Death Index certificate **37880**. **Parents still unknown** — Wave 2 C60–C64 / Ontar..."
+      "birth": "1861-11",
+      "death": "1918-06-25",
+      "birth_place": "Canada",
+      "death_place": "East Rochester, Monroe County, New York, USA",
+      "burial": "Mount Hope Cemetery, Rochester, Monroe County, New York, USA"
     },
     "dorland": {
       "id": "dorland",
@@ -7856,7 +8128,11 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "Father of Earl Stanley Shorts (C28 Confirmed). Rev Dorland Shorts, Dec 1860 (Ontario) – **3 Sep 1945 Marcy, Oneida Co. NY** (NYSDI cert. **52286** / FT-0065); buried Mount Hope Cemetery Section W, Rochester with Effie (FT-0066). Spouse Effie Eliza Earl Shorts (compiled m. **18..."
+      "birth": "1860-12",
+      "death": "1945-09-03",
+      "birth_place": "Ontario, Canada",
+      "death_place": "Marcy, Oneida County, New York, USA",
+      "burial": "Mount Hope Cemetery, Rochester, Monroe County, New York, USA"
     },
     "eva_aylesworth": {
       "id": "eva_aylesworth",
@@ -7982,7 +8258,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Mother of Rev Dorland Shorts (**C33 Confirmed**). Eva Eliza Aylesworth Shorts, cataloged **3 Oct 1849** – **9 Aug 1876**, buried Knight’s Cemetery, Inkerman. Died young at the Methodist Episcopal parsonage; Dorland ~15–16. **Ascent refill:** parents soft-ingested **Jonathan Fa..."
+      "birth": "1849-10-03",
+      "death": "1876-08-09",
+      "birth_place": "Camden Township, Lennox and Addington County, Ontario, Canada",
+      "death_place": "M.E. Parsonage, Inkerman, Stormont Dundas and Glengarry United Counties, Ontario, Canada",
+      "burial": "Knight's Cemetery, Inkerman, Stormont Dundas and Glengarry United Counties, Ontario, Canada"
     },
     "margaret_gilchrist_aylesworth": {
       "id": "margaret_gilchrist_aylesworth",
@@ -8043,7 +8323,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Eva Eliza Aylesworth Shorts (**C160**). Compiled 1887: born **1810** Salem (US); daughter of **Duncan × Barbara Anna (McCaslin) Gilchrist**; married Jonathan Fairfield Aylesworth **14 Oct 1835**; died **12 Aug 1876** (three days after Eva’s death **9 Aug..."
+      "birth": "1810",
+      "death": "1876-08-12",
+      "birth_place": "Salem, United States (compiled; locality soft)",
+      "death_place": "near Roblin, Lennox and Addington County, Ontario, Canada (compiled)"
     },
     "barbara_anna_mccaslin_gilchrist": {
       "id": "barbara_anna_mccaslin_gilchrist",
@@ -8083,7 +8366,7 @@ window.PEOPLE_DATA = {
       "aka": [
         "née McCaslin; Barbara Anna McCaslin"
       ],
-      "note": "**Probable** mother of Margaret (Gilchrist) Aylesworth (**C193**). Named on Homer Aylsworth **1887 p. 160** as **Barbara Anna (McCaslin)**, wife of **Duncan Gilchrist**, of Salem (?). Soft-ingest only — `verified: false`. No independent free vitals this pass."
+      "birth_place": "Salem, United States (compiled; locality soft — book “Salem, (?)”)"
     },
     "duncan_gilchrist": {
       "id": "duncan_gilchrist",
@@ -8120,7 +8403,7 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Margaret (Gilchrist) Aylesworth (**C193**). Named only on Homer Aylsworth **1887 p. 160** as husband of **Barbara Anna (McCaslin)** and father of Margaret (b. **1810** Salem, US). Soft-ingest only — `verified: false`. No independent free vitals this pass..."
+      "birth_place": "Salem, United States (compiled; locality soft — book “Salem, (?)”)"
     },
     "jonathan_aylesworth": {
       "id": "jonathan_aylesworth",
@@ -8194,7 +8477,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Eva Eliza Aylesworth Shorts (**C160**). Compiled 1887 genealogy: born **1812**; married **Margaret Gilchrist** **14 Oct 1835**; dwelt near **Roblin** P.O., Ontario; daughter **Eva Eliza** m. Rev. Alexander Shorts and d. **9 Aug 1876**. Second marriage **..."
+      "birth": "1812",
+      "birth_place": "Ontario, Canada (compiled)"
     },
     "charlotte_bowerman_aylesworth": {
       "id": "charlotte_bowerman_aylesworth",
@@ -8283,7 +8567,11 @@ window.PEOPLE_DATA = {
           "kind": "adoptive"
         }
       ],
-      "note": "**Probable** mother of Jonathan Fairfield Aylesworth (**C190**). Homer Aylsworth **1887 p. 89**: **Charlotte Bowerman** b. **1779**, daughter of **David Bowerman**; m. **Otho Nial** **1805**; d. **1869**. Bowerman appendix + aylesworth.net harden vitals (**b. 16 Oct 1779**; **..."
+      "birth": "1779-10-16",
+      "death": "1869-03-27",
+      "birth_place": "Hallowell Township, Prince Edward County, Ontario (compiled)",
+      "death_place": "Hillier Township, Prince Edward County, Ontario (compiled)",
+      "burial": "McFaul Cemetery, Hillier Township, Prince Edward County (compiled)"
     },
     "otho_nial_aylesworth": {
       "id": "otho_nial_aylesworth",
@@ -8364,7 +8652,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Jonathan Fairfield Aylesworth (**C190**). Homer Aylsworth **1887 p. 89**: **Otho Nial (4)** m. **1805** **Charlotte Bowerman** (b. **1779**, dau. **David Bowerman**); dwelt Ernesttown, Lennox Co., Ontario; he d. **1821**, she **1869**. Child list include..."
+      "birth": "1761",
+      "death": "1821",
+      "birth_place": "(compiled ~1761; book soft)",
+      "death_place": "Ernesttown, Lennox County, Ontario, Canada (compiled)"
     },
     "sarah_clark_aylesworth": {
       "id": "sarah_clark_aylesworth",
@@ -8422,7 +8713,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Clark; Sarah Clark"
       ],
-      "note": "**Probable** mother of Otho Nial Aylesworth (**C250**). Homer Aylsworth **1887**: Job (3) married **Sarah Clark** (Aylsworth Register); p. **90** argues that if Job (4) was born **~1763**, then older brother Otho (**perhaps 1761**) and Job (4) were children of the **first** wi..."
+      "birth_place": "Rhode Island (compiled soft)",
+      "death_place": "(before Job’s 1765 remarriage — inference; book soft)"
     },
     "job_aylesworth": {
       "id": "job_aylesworth",
@@ -8513,7 +8805,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Otho Nial Aylesworth (**C250**). Homer Aylsworth **1887 pp. 62–63**: **Job (3)**—Philip (2), Arthur (1)—married **Sarah Clark**; entered Canada **1788**; settled Ernesttown near Bath; he, his wife, and three children died in the **1803** spotted-fever ou..."
+      "birth": "1722",
+      "death": "1803",
+      "birth_place": "Rhode Island (compiled)",
+      "death_place": "Ernesttown near Bath, Lennox County, Ontario, Canada (spotted fever)",
+      "burial": "Victoria Cemetery, Ernesttown (compiled reburial 1861)"
     },
     "rachel_greene_aylesworth": {
       "id": "rachel_greene_aylesworth",
@@ -8580,7 +8876,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Job Aylesworth (**C270**). Homer Aylsworth **1887 p. 43**: Philip (2) married **Rachel Greene**, daughter of **Daniel and Rebecca (Barrow) Greene** of Quidnesset; they lived and died on the immigrant homestead; death dates lost. Soft-ingest only — `verif..."
+      "birth_place": "Quidnesset / North Kingstown, Rhode Island (compiled soft)",
+      "death_place": "Immigrant homestead, Quidnesset, Rhode Island (compiled; date lost)"
     },
     "rebecca_barrow_greene": {
       "id": "rebecca_barrow_greene",
@@ -8624,7 +8921,7 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Barrow; Rebecca (Barrow) Greene; Rebecca Barrows"
       ],
-      "note": "**Probable** mother of Rachel (Greene) Aylesworth (**C294**). Homer Aylsworth **1887 p. 43**: Rachel Greene, daughter of Daniel and **Rebecca (Barrow) Greene** of Quidnesset. Soft-ingest name-only — `verified: false`. aylesworth.net spells **Barrows** — keep as aka. No free vi..."
+      "birth_place": "Quidnesset / North Kingstown, Rhode Island (compiled soft)"
     },
     "daniel_greene": {
       "id": "daniel_greene",
@@ -8665,7 +8962,7 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Rachel (Greene) Aylesworth (**C294**). Homer Aylsworth **1887 p. 43**: Philip married Rachel Greene, “daughter of **Daniel and Rebecca (Barrow) Greene** of Quidnesset.” Soft-ingest name-only — `verified: false`. No free vitals or parents found this pass;..."
+      "birth_place": "Quidnesset / North Kingstown, Rhode Island (compiled soft)"
     },
     "philip_aylesworth": {
       "id": "philip_aylesworth",
@@ -8756,7 +9053,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Job Aylesworth (**C270**). Homer Aylsworth **1887 p. 43**: **Philip (2)—Arthur (1)—** b. **1692**, married **Rachel Greene** (dau. Daniel × Rebecca (Barrow) Greene of Quidnesset); lived on the immigrant homestead; death dates and children’s birth dates l..."
+      "birth": "1692",
+      "birth_place": "North Kingstown / Quidnesset, Rhode Island (compiled)",
+      "death_place": "Immigrant homestead, Quidnesset, Rhode Island (compiled; date lost)"
     },
     "mary_brown_aylesworth": {
       "id": "mary_brown_aylesworth",
@@ -8843,7 +9142,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Philip Aylesworth (**C290**). Homer Aylsworth **1887 p. 36**: Arthur married **Mary Brown**, of Providence; her death “doubtless preceded his a number of years.” Soft-ingest only — `verified: false`. Parents climbed (**C310**): **Rev. John Brown** × **Ma..."
+      "birth_place": "Providence, Rhode Island (compiled)",
+      "death_place": "Quidnesset / North Kingstown, Rhode Island (compiled; preceded Arthur)"
     },
     "mary_holmes_brown": {
       "id": "mary_holmes_brown",
@@ -8905,7 +9205,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Holmes; Mary (Holmes) Brown; Mary Holmes of Newport"
       ],
-      "note": "**Probable** mother of Mary (Brown) Aylesworth (**C310**). Chad Browne Memorial **1888 p. 10**: wife of **#2 John Brown (Chad¹)** — **Mary**, daughter of **Rev. Obadiah and Catharine Holmes** of Newport. Same volume **p. 14** names daughter **#7 Mary** as wife of Arthur Aylwor..."
+      "birth": "1638",
+      "death": "1690",
+      "birth_place": "New England (Salem / RI cluster soft; WikiTree ~1638)",
+      "death_place": "Providence, Rhode Island (about 1690 soft)",
+      "burial": "North Burial Ground, Providence (soft; FAG 180601700)"
     },
     "rev_john_brown": {
       "id": "rev_john_brown",
@@ -8963,7 +9267,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "John Browne; Elder John Brown; John Brown (2) son of Chad"
       ],
-      "note": "**Probable** father of Mary (Brown) Aylesworth (**C310**). Chad Browne Memorial **1888 p. 10**: **#2 John Brown (Chad¹)**, b. **1630**, d. **about 1706**, m. **Mary**, dau. of **Rev. Obadiah and Catharine Holmes** of Newport; Baptist Elder / surveyor, Providence North End. Chi..."
+      "birth": "1630",
+      "death": "1706",
+      "birth_place": "England (High Wycombe / Buckinghamshire soft; Chad Browne Memorial)",
+      "death_place": "Providence, Rhode Island (about 1706)",
+      "burial": "North Burial Ground, Providence (soft; WikiTree/FAG)"
     },
     "arthur_aylesworth": {
       "id": "arthur_aylesworth",
@@ -9023,7 +9331,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Arthur Aylworth; Arthur (1); the Emigrant"
       ],
-      "note": "**Probable** father of Philip Aylesworth (**C290**). Homer Aylsworth **1887 pp. 36–37**: **Arthur Aylworth (1)** came to America before **29 Jul 1679**, married **Mary Brown** of Providence, settled **Quidnesset**, died between **7 Nov 1725** and **13 Sep 1726**. Child list in..."
+      "birth": "1656",
+      "death": "1725",
+      "birth_place": "England or Wales (compiled; ~1656 Register)",
+      "death_place": "Quidnesset / North Kingstown, Rhode Island (between 7 Nov 1725 and 13 Sep 1726)"
     },
     "alexander_shorts": {
       "id": "alexander_shorts",
@@ -9161,7 +9472,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "Father of Rev Dorland Shorts (**C33 Confirmed**). Rev Alexander Shorts, 1839 – 17 May 1896. Methodist Episcopal minister; founder of the Grindstone Island church; buried Thurso Cemetery on Grindstone Island. Spouse Eva Eliza Aylesworth; parents Samuel Shorts × Mary Ann Denison..."
+      "birth": "1839",
+      "death": "1896-05-17",
+      "birth_place": "Napanee, Lennox and Addington County, Ontario, Canada",
+      "burial": "Thurso Cemetery, Grindstone Island, Jefferson County, New York, USA"
     },
     "mary_ann_denison": {
       "id": "mary_ann_denison",
@@ -9220,7 +9534,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Denison"
       ],
-      "note": "Mother of Rev Alexander Shorts (**C34 Confirmed**). Mary Ann Denison Shorts 1809–1872; wife of Samuel Shorts. FAG-linked children Alexander + Robert (**C52**); Baldwin/FAG also list Elizabeth / Jane / Andrew / Hannah (**C53 Possible**). Probable parents Nathan Denison × Elizab..."
+      "birth": "1809",
+      "death": "1872",
+      "death_place": "Lennox and Addington County, Ontario, Canada",
+      "burial": "Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "elizabeth_thompson": {
       "id": "elizabeth_thompson",
@@ -9285,7 +9602,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Thompson; Elizabeth Thompson Denison"
       ],
-      "note": "Probable mother of Mary Ann Denison Shorts (**C66**, Wave 2). Elizabeth (Thompson) Denison; m. Nathan Denison **15 Dec 1803** Berne NY (**C133**); d. **19 Nov 1873** Napanee; buried Riverview Cemetery. Working birth ~1788 Albany Co. NY; museum descendants give **4 Mar 1786** R..."
+      "birth": "1788",
+      "death": "1873-11-19",
+      "birth_place": "Knox, Albany County, New York, USA (probable; secondary)",
+      "death_place": "Napanee, Lennox and Addington County, Ontario, Canada",
+      "burial": "Riverview Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "nathan_denison": {
       "id": "nathan_denison",
@@ -9381,7 +9702,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Probable father of Mary Ann Denison Shorts (**C65**, Wave 2). Nathan (Nathaniel) Denison, b. **2 Mar 1781** Stonington CT; m. Elizabeth Thompson **15 Dec 1803** Berne, Albany Co. NY (**C133**); settled Napanee / Richmond Twp; d. **16 Nov 1849**. Buried Riverview Cemetery, Napa..."
+      "birth": "1781-03-02",
+      "death": "1849-11-16",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Richmond Township, Lennox and Addington County, Ontario, Canada",
+      "burial": "Riverview Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "anna_chesebrough_denison": {
       "id": "anna_chesebrough_denison",
@@ -9446,7 +9771,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Nathan Denison (**C220**). Baldwin **1881 p. 147**: Robert Denison m. **Anna Chesebro'** of Stonington **17 Mar 1774**; their child **Nathan** (#3031). Wheeler **1900** #254: **Anna** b. **22 May 1753** m. Robert Denison #220. Soft-ingest only — `verifie..."
+      "birth": "1753-05-22",
+      "death": "1793",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Albany County, New York, USA (soft ~1793)"
     },
     "anna_stanton_chesebrough": {
       "id": "anna_stanton_chesebrough",
@@ -9487,7 +9815,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Stanton; Anna Stanton Chesebrough"
       ],
-      "note": "**Probable** mother of Anna (Chesebrough) Denison (**C243**). Baldwin **#3696**: **Anna** b. **22 Mar 1732**, dau. of Thankful (Denison) × Thomas Stanton, m. **Nathan Chesebro'** **6 Dec 1752**. Daughter Anna b. **22 May 1753** (Barbour/Wheeler). Soft-ingest only — `verified: ..."
+      "birth": "1732-03-22",
+      "death": "1805-03-20",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Evergreen Cemetery, Stonington, New London County, Connecticut, USA (soft; FAG 60396088)"
     },
     "nathan_chesebrough": {
       "id": "nathan_chesebrough",
@@ -9528,7 +9860,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Nathan Chesebro'; Nathaniel Chesebrough (compiled variants)"
       ],
-      "note": "**Probable** father of Anna (Chesebrough) Denison (**C243**). Baldwin names **Nathan Chesebro'** husband of **Anna Stanton** (#3696) m. **6 Dec 1752**; Barbour/Wheeler/WikiTree place daughter **Anna** b. **22 May 1753** in that household. Soft-ingest only — `verified: false`. ..."
+      "birth": "1728-11-14",
+      "death": "1782-06-03",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA (bef. / by)"
     },
     "robert_denison": {
       "id": "robert_denison",
@@ -9602,7 +9937,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Nathan Denison (**C220**). Baldwin & Clift **1881 p. 147**: **Robert Denison** (#2734), b. **12 Dec 1749**, m. **17 Mar 1774** **Anna Chesebro'** of Stonington; emigrated Stonington → **Knox, N.Y.** about **1793**; child list includes **Nathan** (#3031) ..."
+      "birth": "1749-12-12",
+      "death": "1833",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Altamont, Albany County, New York, USA (soft; living 1833)"
     },
     "esther_wheeler_denison": {
       "id": "esther_wheeler_denison",
@@ -9669,7 +10007,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Robert Denison (**C240**). Baldwin **1881 p. 131**: Daniel Denison Jr m. **Esther Wheeler**, b. **15 Feb 1722**, d. **31 Mar 1814**; their child **Robert** (#2734). Soft-ingest only — `verified: false`. Parents soft-ingested as **William Wheeler × Hannah..."
+      "birth": "1722-02-15",
+      "death": "1814-03-31",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Elm Grove Cemetery, Mystic, New London County, Connecticut, USA (soft; FAG 75279563)"
     },
     "hannah_gallup_wheeler": {
       "id": "hannah_gallup_wheeler",
@@ -9714,7 +10056,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Gallup; Hannah Gallup Wheeler"
       ],
-      "note": "**Probable** mother of Esther (Wheeler) Denison (**C263**). Wheeler *Stonington* **1900** + WikiTree place Esther as daughter of **William Wheeler** × **Hannah Gallup**; m. **30 May 1710**. Soft-ingest only — `verified: false`."
+      "birth": "1683-05-22",
+      "death": "1754-08-17",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Whitehall Graveyard, Stonington, New London County, Connecticut, USA (soft; FAG 64569770)"
     },
     "william_wheeler": {
       "id": "william_wheeler",
@@ -9756,7 +10102,11 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Esther (Wheeler) Denison (**C263**). Wheeler *Stonington* **1900** (via WikiTree) places Esther #41 as child of **William Wheeler** × **Hannah Gallup**; WikiTree Denison-97 bio names the same parents. Soft-ingest only — `verified: false`. Baldwin names E..."
+      "birth": "1681-09-09",
+      "death": "1747-08-11",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Whitehall Burying Ground, Mystic, New London County, Connecticut, USA (soft; FAG 34168394)"
     },
     "daniel_denison_jr": {
       "id": "daniel_denison_jr",
@@ -9833,7 +10183,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Robert Denison (**C240**). Baldwin & Clift **1881 p. 131**: **Daniel Denison, Jr.** (#2509), b. **22 Mar 1720/21**, m. **27 May 1742** **Esther Wheeler**; d. Stonington **9 May 1776**; child list includes **Robert** (#2734) b. **12 Dec 1749** m. Anna Che..."
+      "birth": "1720-03-22",
+      "death": "1776-05-09",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Elm Grove Cemetery, Mystic, New London County, Connecticut, USA (soft; FAG 75279409)"
     },
     "mary_stanton_denison": {
       "id": "mary_stanton_denison",
@@ -9881,7 +10235,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Stanton; Mary Stanton Denison"
       ],
-      "note": "**Probable** mother of Daniel Denison Jr (**C260**). Baldwin **1881 p. 120**: Dea. Daniel Denison m. **Mary Stanton**, dau. of **Robert and Joanna (Gardiner) Stanton**, b. **3 Feb 1687**, d. **2 Sep 1724**; mother of all his children including **#2509 Daniel**. Soft-ingest onl..."
+      "birth": "1687-02-03",
+      "death": "1724-09-02",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Elm Grove Cemetery, Mystic, New London County, Connecticut, USA (soft; FAG 75277594)"
     },
     "daniel_denison_sr": {
       "id": "daniel_denison_sr",
@@ -9916,7 +10274,9 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0469"
+      ],
       "sources": [
         {
           "label": "Baldwin & Clift (1881) p. 120 — Dea. Daniel #181 × Mary Stanton; child #2509 Daniel",
@@ -9956,7 +10316,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Daniel Denison Jr (**C260**). Baldwin & Clift **1881 p. 120**: **#181 Daniel Denison** (John², George¹), b. **28 Mar 1680**, Deacon First Congregational Church Stonington; m. **1 Jan 1703** **Mary Stanton**; d. **13 Oct 1747**; child list includes **#250..."
+      "birth": "1680-03-28",
+      "death": "1747-10-13",
+      "birth_place": "Stonington, New London County, Connecticut, USA",
+      "death_place": "Stonington, New London County, Connecticut, USA",
+      "burial": "Elm Grove Cemetery, Mystic, New London County, Connecticut, USA (soft; FAG 71196292)"
     },
     "phoebe_lay_denison": {
       "id": "phoebe_lay_denison",
@@ -10010,7 +10374,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Phebe Lay; Phoebe (Lay) Denison; nee Lay"
       ],
-      "note": "**Probable** mother of Dea. Daniel Denison Sr (**C280**). Baldwin & Clift **1881 p. 17**: **Phebe Lay**, dau. of **Robert and Sarah Lay** of Saybrook; m. **26 Nov 1667** Capt. John Denison; d. **1699** aged 49; mother of **#181 Daniel** b. **28 Mar 1680**. Soft-ingest only — `..."
+      "birth": "1650-01-05",
+      "death": "1699",
+      "birth_place": "Old Saybrook, Middlesex County, Connecticut Colony",
+      "death_place": "Stonington, New London County, Connecticut Colony",
+      "burial": "Denison Burying Ground, Mystic, New London County, Connecticut, USA (soft; FAG 41994841)"
     },
     "john_denison": {
       "id": "john_denison",
@@ -10095,7 +10463,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Dea. Daniel Denison Sr (**C280**). Baldwin & Clift **1881 p. 17**: **#7 John Denison** (George¹), b. **14 Jul 1646**, m. **26 Nov 1667** **Phebe Lay** (dau. Robert × Sarah Lay of Saybrook); Capt. John of Stonington; d. **1698** aged 52; child list includ..."
+      "birth": "1646-07-14",
+      "death": "1698",
+      "birth_place": "Roxbury, Suffolk County, Massachusetts Bay Colony",
+      "death_place": "Stonington, New London County, Connecticut Colony",
+      "burial": "Denison Burying Ground, Mystic, New London County, Connecticut, USA (soft; FAG 10863715)"
     },
     "ann_borodell_denison": {
       "id": "ann_borodell_denison",
@@ -10213,7 +10585,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Capt. John Denison (**C300**). Soft father **John Borodell** (`john_borodell`) this pass (**C1770**): Baldwin **1881** names Ann dau. of John; FAG **14911199** + free Miscia **NEHGR 178** summaries keep father John (~1600–before 1640, Cumbrian) and **rej...",
+      "birth": "1623",
+      "death": "1712-09-26",
+      "birth_place": "England (soft; Miscia/FAG ~1623 — not Cork Irish-lord lore)",
+      "death_place": "Stonington, New London County, Connecticut Colony",
+      "burial": "Elm Grove Cemetery, Mystic, New London County, Connecticut, USA (soft; FAG 14911199; stone moved from Denison Burying Ground)",
       "blocker": "Mother name Blocked; soft Robert Borodell UP after Y. FAG 14911199 galle"
     },
     "john_borodell": {
@@ -10282,7 +10658,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Ann (Borodell) Denison** (`ann_borodell_denison`). Baldwin & Clift **1881** names **John Borodell** as Ann’s father (sibs **John** + **Margaret**). Soft father (**C1840**): Miscia **NEHGR 178** free summaries name **Robert Borodell** of Gosforth; ...",
+      "birth": "1600",
+      "death": "1640",
+      "birth_place": "Cumberland (now Cumbria), England (soft; Miscia 2024 / FAG summary)",
+      "death_place": "England (soft; d. before 1640)",
       "blocker": "Wife name (Blocked); soft Nicholas × Ellice UP proposed C1950–C1959."
     },
     "robert_borodell": {
@@ -10355,7 +10734,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **John Borodell** (`john_borodell`). Free Miscia **NEHGR 178** (2024) summaries name **Robert Borodell** of Gosforth (~**1556**–before **6 Nov 1634** inventory). Soft parents **Nicholas Borodell** × **Ellice (Unknown)** (**C1950–C1952**). Own wife *..."
+      "birth": "1556",
+      "death": "1634",
+      "birth_place": "Cumberland (now Cumbria), England (soft; Miscia 2024)",
+      "death_place": "Gosforth, Cumberland, England (soft; inventory before 6 Nov 1634)"
     },
     "ellice_unknown_borodell": {
       "id": "ellice_unknown_borodell",
@@ -10404,7 +10786,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft mother of **Robert Borodell**. Maiden **Blocked** (Ellice ____ only). Survived Nicholas (**1597** will trust for widow). Own parents empty. `verified: false`."
+      "birth_place": "Cumberland, England (uncertain)",
+      "death_place": "Cumberland, England (uncertain; survived Nicholas 1597)"
     },
     "nicholas_borodell": {
       "id": "nicholas_borodell",
@@ -10457,7 +10840,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft father of **Robert Borodell** (`robert_borodell`). Free Miscia (via Kasper) + WikiTree: **Nicholas** of **Cragg House**, Santon (~**1530**–**18 Oct 1597**); will **10 Oct** / proved **18 Oct 1597**; soft spouse **Ellice**. Own parents empty (England blocked)....",
+      "birth": "1530",
+      "death": "1597-10-18",
+      "birth_place": "Cumberland (now Cumbria), England (soft)",
+      "death_place": "Santon / Cragg House, Cumberland, England (soft)",
       "blocker": "Own parents empty (England blocked)"
     },
     "george_denison": {
@@ -10554,7 +10940,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Capt. John Denison (**C300**). Baldwin & Clift **1881 p. 6**: **#4 George Denison** (son of William), b. **1618** (footnote soft dual vs stone ~1621); m. (1) **Bridget Thompson** 1640 (children Sarah, Hannah — not this climb); after Bridget d. **1643**, ..."
+      "birth": "1618",
+      "death": "1694-10-23",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; Baldwin prefers 1618)",
+      "death_place": "Hartford, Hartford County, Connecticut Colony",
+      "burial": "Ancient Burying Ground, Hartford / Elm Grove memorial Mystic (soft; FAG 11435695 / 125445067)"
     },
     "margaret_chandler_denison": {
       "id": "margaret_chandler_denison",
@@ -10620,7 +11010,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Capt. George Denison (**C1761**). Soft parents **Tobias Chandler** × **Joan Momford** (**C1830–C1832**) via WT Chandler-99/100 + Momford-1 + Tobias will naming **Margret**. Tobias gen-back **Thomas × Joan Page** + Joan gen-back **Edmund Momford** soft-cl..."
+      "birth": "1577",
+      "death": "1646-02-03",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; WT chr. 13 Oct 1577)",
+      "death_place": "Roxbury, Suffolk County, Massachusetts Bay Colony",
+      "burial": "Eliot Burying Ground, Roxbury (soft; FAG 15750213)"
     },
     "joan_momford_chandler": {
       "id": "joan_momford_chandler",
@@ -10687,7 +11081,11 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "**Probable** mother of Margaret (Chandler) Denison (**C1831**). WikiTree **Momford-1** + **Chandler-99**: Joan Momford m. Tobias Chandler **21 Sep 1574** Bishop's Stortford; bur. **29 Jun 1618**. Soft chr. **6 Jan 1543/4** Chalgrave — **confirmed** in Archive.org OCR of Bedfor...",
+      "birth": "1544",
+      "death": "1618-06-29",
+      "birth_place": "Chalgrave, Bedfordshire, England (soft; chr. 6 Jan 1543/4)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England",
+      "burial": "Bishop's Stortford (soft; bur. 29 Jun 1618)",
       "blocker": "Parents Edmund × Eliza soft-wired (C1915–C1917); Edmund gen-back blocked"
     },
     "eliza_unknown_momford": {
@@ -10725,7 +11123,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "Eliza Mumford; Eliza (Unknown) Mumford"
       ],
-      "note": "**Possible** mother of **Joan (Momford) Chandler** (**C1916**). WikiTree **Momford-8** names **Eliza (Unknown) Mumford** as wife of **Edmund Momford** m. ~**1525**; Chalgrave PR baptisms cite father **Edmund** only — no open register surname for wife. Soft-ingest given name on..."
+      "birth": "1510",
+      "birth_place": "Bedfordshire, England (soft ~1510)"
     },
     "edmund_momford": {
       "id": "edmund_momford",
@@ -10762,7 +11161,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Edmond Momford; Edmund Munford; Edmund Mumford"
       ],
-      "note": "**Probable** father of **Joan (Momford) Chandler** (**C1915**). WikiTree **Momford-8** + **Chalgrave parish register** Vol. 18 (Archive.org OCR this pass): **Edmund Momford** ~**1505**, bur. **7 Jan 1546/7** Chalgrave; baptisms name **Joan d Edmd Moumford** **JA 6** (1543/4) a...",
+      "birth": "1505",
+      "death": "1547-01-07",
+      "birth_place": "Chalgrave, Bedfordshire, England (soft ~1505)",
+      "death_place": "Chalgrave, Bedfordshire, England",
+      "burial": "Chalgrave (soft; bur. 7 Jan 1546/7)",
       "blocker": "Own parents unknown/blocked on WT. PR sibs Agnes + Margaret named but no"
     },
     "tobias_chandler": {
@@ -10834,7 +11237,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Margaret (Chandler) Denison (**C1830**). WikiTree **Chandler-100** + **Chandler-99**: Tobias × Joan Momford m. **21 Sep 1574** Bishop's Stortford; daughter Margaret chr. **13 Oct 1577**. Free will abstract (Cookie Crumbs / Snow-Estes): dated **20 Aug 162..."
+      "birth": "1551",
+      "death": "1629-10-24",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; ~1551)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England",
+      "burial": "Bishop's Stortford (soft; bur. 24 Oct 1629)"
     },
     "joan_page_chandler": {
       "id": "joan_page_chandler",
@@ -10875,7 +11282,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Joan Page; Joane Page Chandler"
       ],
-      "note": "**Probable** mother of **Tobias Chandler** (**C1911**). WikiTree **Page-5841**: **Joan Page**, dau. **John Page** × **Katherine (Unknown)**, b. say **1530** Braughing, m. **Thomas Chandler** ~**1550** Bishop's Stortford, bur. **11 Mar 1606/7**. WT cites Richardson **TAG 73** (..."
+      "birth": "1530",
+      "death": "1607-03-11",
+      "birth_place": "Braughing, Hertfordshire, England (soft ~1530)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England",
+      "burial": "Bishop's Stortford (soft; bur. 11 Mar 1606/7)"
     },
     "thomas_chandler_1528": {
       "id": "thomas_chandler_1528",
@@ -10920,7 +11331,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Thomas Chandler of Bishop's Stortford; churchwarden"
       ],
-      "note": "**Probable** father of **Tobias Chandler** (**C1910**). WikiTree **Chandler-116** × **Page-5841**: **Thomas Chandler** of Bishop's Stortford (~**1528**), churchwarden **1562/1563/1574**, m. **Joan Page** ~**1550**, bur. **4 Jun 1611**; wife bur. **11 Mar 1606/7**. WT cites Ric..."
+      "birth": "1528",
+      "death": "1611-06-04",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft ~1528)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England",
+      "burial": "Bishop's Stortford (soft; bur. 4 Jun 1611)"
     },
     "william_denison": {
       "id": "william_denison",
@@ -10994,7 +11409,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Capt. George Denison (**C1760**). Baldwin & Clift **1881**: **#1 William Denison**, England **~1586** soft, to America **1631** with wife **Margaret** and sons **Daniel, Edward, George**; Roxbury; d. **25 Jan 1653**. WikiTree **Denison-22**: bp. **3 Feb ..."
+      "birth": "1571",
+      "death": "1654-01-25",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; WT bp. 3 Feb 1570/1; Baldwin ~1586)",
+      "death_place": "Roxbury, Suffolk County, Massachusetts Bay Colony",
+      "burial": "Eliot Burying Ground, Roxbury (soft; FAG 9327690)"
     },
     "agnes_wylley_denison": {
       "id": "agnes_wylley_denison",
@@ -11037,7 +11456,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Agnes (Wylley) Wall; Agnes Willie; Agnes Wiley; Agnes Denison; Agnes Gace"
       ],
-      "note": "**Probable** mother of immigrant **William Denison** (**C1821**). WikiTree **Wylley-8** (PGM adjunct) + **Denison Genealogy 1963**: **Agnes Willie/Wylley**, m. **John Denison** **11 May 1561** Thorley; widow m. John Gace (1584) then John Wall; living **aft. 1613** (Wall will)...."
+      "birth": "1545-11-13",
+      "death": "1613",
+      "birth_place": "Thorley / Bishop's Stortford, Hertfordshire, England (soft; WT 13 Nov 1545)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England (soft; living aft. 1613)"
     },
     "john_denison_stortford": {
       "id": "john_denison_stortford",
@@ -11084,7 +11506,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "John Denison Sr.; John Denyson; Deacon John Denison of Bishop's Stortford"
       ],
-      "note": "**Probable** father of immigrant **William Denison** (**C1820**). WikiTree **Denison-28** + **Denison Genealogy 1963** (Archive.org): **John Denison** of Bishop's Stortford (~**1540**/~1530 soft), m. **Agnes Willie/Wylley** (WT/Fiske **11 May 1561** Thorley; Denison 1963 print..."
+      "birth": "1540",
+      "death": "1582-12-04",
+      "birth_place": "Bishop's Stortford / Hertfordshire, England (soft ~1540; Denison 1963 ~1530)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England",
+      "burial": "St Michael Churchyard, Bishop's Stortford (soft; FAG 89618617)"
     },
     "samuel_shorts": {
       "id": "samuel_shorts",
@@ -11152,7 +11578,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Samuel D. Shorts; Samuel D. Shortts"
       ],
-      "note": "Father of Rev Alexander Shorts (**C34 Confirmed**). Samuel D. Shorts 1809-1869; married Mary Ann Denison 10 Apr 1832 (per FAG bio + Baldwin 1881). FAG-linked children: Alexander (1839-1896) and Robert (1849-1929, **C52**). Bio/Baldwin additional children Elizabeth / Andrew / H..."
+      "birth": "1809",
+      "death": "1869",
+      "birth_place": "Richmond Township, Lennox and Addington County, Ontario, Canada",
+      "death_place": "Lennox and Addington County, Ontario, Canada",
+      "burial": "Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "hannah_pringle_shorts": {
       "id": "hannah_pringle_shorts",
@@ -11305,7 +11735,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Probable mother of Samuel D. Shorts (**C71**, Wave 2). Hannah Ellenor (Pringle / Prindle) Shorts, 1776 New York -- 1862 Fredericksburgh. Wife of Rev Augustus Shorts. Buried Sexsmith Cemetery, Napanee ON -- same cemetery as Samuel. **C210** soft-ingest: parents **William Pringl..."
+      "birth": "1776",
+      "death": "1862",
+      "birth_place": "New York, USA",
+      "death_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada",
+      "burial": "Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "eunice_benedict_pringle": {
       "id": "eunice_benedict_pringle",
@@ -11376,7 +11810,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Hannah Ellenor (Pringle / Prindle) Shorts (**C210**). Soft-ingest from Van Deursen naming + Pringle/Benham compiled + WikiTree Benedict-880 — `verified: false`. Buried Hay Bay Loyalist Cemetery with husband William. Parents soft-ingested **Samuel Benedic..."
+      "birth": "1749-01-30",
+      "death": "1842-02-28",
+      "birth_place": "Danbury, Fairfield County, Connecticut",
+      "death_place": "Ontario, Canada (compiled; Fredericksburgh area)",
+      "burial": "Hay Bay Loyalist Cemetery, South Fredericksburgh, Lennox and Addington County, Ontario, Canada"
     },
     "elizabeth_knapp_benedict": {
       "id": "elizabeth_knapp_benedict",
@@ -11417,7 +11855,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Knapp; Elizabeth Knapp"
       ],
-      "note": "**Probable** (softer than Joel×Deborah) mother of Eunice (Benedict) Pringle (**C233**). Soft-ingest from Pringle PDF + FAG Eunice bio + Pane-Joyce Knapp identity — `verified: false`. **WikiTree Benedict-880 lists mother unknown** — keep that soft conflict open. Pane-Joyce give..."
+      "birth": "1699-09-07",
+      "death": "1753",
+      "birth_place": "Stamford, Fairfield County, Connecticut (Pane-Joyce)",
+      "death_place": "(compiled; before / by 1753)"
     },
     "samuel_benedict": {
       "id": "samuel_benedict",
@@ -11459,7 +11900,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** father of Eunice (Benedict) Pringle (**C233**). Soft-ingest from Pringle PDF parent header + WikiTree Benedict-880/881 + Pane-Joyce Samuel×Elizabeth cluster — `verified: false`. Working **1704 – 16 Nov 1795** Danbury/CT. Weaker free trail than Joel×Deborah (thin W..."
+      "birth": "1704",
+      "death": "1795-11-16",
+      "birth_place": "Danbury, Fairfield County, Connecticut",
+      "death_place": "Connecticut (compiled; Norfolk CT in Pane-Joyce)"
     },
     "william_pringle": {
       "id": "william_pringle",
@@ -11535,7 +11979,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Hannah Ellenor (Pringle / Prindle) Shorts (**C210**). United Empire Loyalist family of Fredericksburgh. Soft-ingest from Van Deursen naming + Pringle/Benham compiled + WikiTree — `verified: false`. Working death **5 Jun 1839** (PDF / WikiTree / FAG); som..."
+      "birth": "1749-03-15",
+      "death": "1839-06-05",
+      "birth_place": "Canaan, Litchfield County, Connecticut",
+      "death_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada",
+      "burial": "Hay Bay Loyalist Cemetery, South Fredericksburgh, Lennox and Addington County, Ontario, Canada"
     },
     "deborah_bigelow_pringle": {
       "id": "deborah_bigelow_pringle",
@@ -11612,7 +12060,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of William Pringle (**C230**). Soft-ingest from Pringle PDF + Bigelow Society Debra note + FAG **59609479** — `verified: false`. Working **1725–1790**; stone tradition “Died 1790 Aged 65-8-18.” Parents **Ebenezer Bigelow** × **Hannah Brown** — **MA harden 2..."
+      "birth": "1725",
+      "death": "1790",
+      "birth_place": "Watertown, Middlesex County, Massachusetts (compiled)",
+      "death_place": "Ontario, Canada (compiled; Adolphustown / Hay Bay area)",
+      "burial": "United Empire Loyalist Cemetery, Adolphustown, Lennox and Addington County, Ontario, Canada"
     },
     "hannah_brown_bigelow": {
       "id": "hannah_brown_bigelow",
@@ -11682,7 +12134,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Proposed mother of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false`. **MA harden 2026-08-08:** Watertown VR **m. 24 May 1720** to Ebenezer Biglo of Weston (**C1230**). **Parents soft 2026-08-08:** **Capt. Abraham Brown × Mary Hyde** — pack **C1281** ..."
+      "birth": "1699-10-05",
+      "death": "1775-11-03",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Unknown town (Bond; town unstated)"
     },
     "mary_hyde_brown": {
       "id": "mary_hyde_brown",
@@ -11723,7 +12178,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Hannah Brown Bigelow** (**C1281** / **C1285**). Soft-ingest from Bond Brown p.120 + Bigelow Society — `verified: false`. Compiled tradition: daughter of **Job Hyde × Elizabeth Fuller**; gen-back not climbed (**C1289**)."
+      "birth": "1673-06-21",
+      "birth_place": "Newton, Middlesex County, Massachusetts",
+      "death_place": "Unknown"
     },
     "abraham_brown_watertown": {
       "id": "abraham_brown_watertown",
@@ -11789,7 +12246,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Hannah Brown Bigelow** (**C1281** / **C1284**). Soft-ingest from Bond Brown p.120 + Abraham will 1728 + Bigelow Society — `verified: false`. **Parents soft 2026-08-10:** **Jonathan Browne (1635) × Mary Shattuck** — Watertown VR birth + Bond + FAG — pac..."
+      "birth": "1671-08-26",
+      "death": "1729-11-27",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Grove Hill Cemetery area tradition (Waltham)"
     },
     "mary_shattuck_brown": {
       "id": "mary_shattuck_brown",
@@ -11851,7 +12312,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Capt. Abraham Brown** — pack **C1781**. Soft parents **William Shattuck × Susanna** — pack **C1863–C1865**. Soft-ingest Bond + Shattuck Memorial + Watertown VR + FAG — `verified: false`."
+      "birth": "1645-08-25",
+      "death": "1732-10-23",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Waltham, Middlesex County, Massachusetts",
+      "burial": "Grove Hill / Waltham graveyard tradition"
     },
     "susanna_shattuck_norcross": {
       "id": "susanna_shattuck_norcross",
@@ -11891,7 +12356,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Mary Shattuck Brown** — pack **C1864**. Soft-ingest from Shattuck Memorial — `verified: false`. Maiden **Blocked** (Memorial: surname not ascertained; reject Hayden soft) — **C1869**.",
+      "death": "1686-12-11",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown",
       "blocker": "Maiden surname — Blocked (C1869); do not soft Hayden"
     },
     "william_shattuck_watertown": {
@@ -11932,7 +12399,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Mary Shattuck Brown** — pack **C1863**. Soft-ingest from Shattuck Memorial (1855) + Bond cross-ref — `verified: false`. England parents parked (**C1869**)."
+      "birth": "1622",
+      "death": "1672-08-14",
+      "birth_place": "England",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Ancient burying-ground, Watertown (tablet tradition)"
     },
     "jonathan_browne_1635": {
       "id": "jonathan_browne_1635",
@@ -11994,7 +12465,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Capt. Abraham Brown** (`abraham_brown_watertown`) — pack **C1780–C1789**. Soft parents **Abraham Browne × Lydia** — pack **C1860–C1862**. Soft-ingest Bond + Watertown VR + Shattuck Memorial + FAG — `verified: false`. **≠** `jonathan_brown_watertown` (1..."
+      "birth": "1635-10-15",
+      "death": "1691-03",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "lydia_browne_hodges": {
       "id": "lydia_browne_hodges",
@@ -12034,7 +12509,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Jonathan Browne (1635)** — pack **C1861**. Soft-ingest from Bond + Shattuck Memorial — `verified: false`. Maiden **Blocked** (**C1869**).",
+      "death": "1686-09-27",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown",
       "blocker": "Maiden surname — Blocked (C1869)"
     },
     "abraham_browne_watertown": {
@@ -12075,7 +12552,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Jonathan Browne (1635)** — pack **C1860**. Soft-ingest from Bond Abraham Browne block (will + child list) + Shattuck Memorial Family 3 — `verified: false`. **≠** Capt. `abraham_brown_watertown` (1671 grandson). England parents parked (**C1869**)."
+      "death": "1650",
+      "birth_place": "England",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "ebenezer_bigelow_1698": {
       "id": "ebenezer_bigelow_1698",
@@ -12152,7 +12632,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Proposed father of **Deborah (Bigelow) Pringle** (Shorts UEL line). Soft-ingest **Probable** / `verified: false`. **MA harden 2026-08-08:** Watertown published VR confirms **b. 4 Sep 1698** (Joshua × Elizabeth) and **m. 24 May 1720** Hannah Brown (**C1230–C1231**). **Parents s..."
+      "birth": "1698-09-04",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Cuba (Bond tradition; date unknown)",
+      "burial": "Burial details unknown"
     },
     "elizabeth_flagg_bigelow": {
       "id": "elizabeth_flagg_bigelow",
@@ -12197,7 +12680,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** mother of **Ebenezer Bigelow (1698)** (**C1280** / **C1283**). Soft-ingest from Watertown VR (death + marriage) + Bond + Bigelow Society — `verified: false`. Daughter of Thomas Flagg per compiled genealogy; Thomas × Mary Flagg gen-back not climbed (**C1289**)."
+      "birth": "1655-03-22",
+      "death": "1729-08-09",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "joshua_bigelow_1655": {
       "id": "joshua_bigelow_1655",
@@ -12261,7 +12748,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** father of **Ebenezer Bigelow (1698)** (**C1280** / **C1282**). Parents soft-wired to **John Bigelow × Mary Warren** (**C1810**) via Watertown VR 1:18:4 + Bond + Howe + joshua2 — `verified: false`. King Philip's War veteran (Capt. Ting); removed to Westminster in o..."
+      "birth": "1655-11-05",
+      "death": "1745-02-01",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Westminster, Worcester County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "mary_warren_bigelow": {
       "id": "mary_warren_bigelow",
@@ -12329,7 +12820,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Joshua Bigelow (1655)** (**C1810** / **C1812**). Soft parents **John Warren × Margaret** (**C1850**) — Bond + Howe + john1 — `verified: false`."
+      "birth": "1624",
+      "death": "1691-10-19",
+      "birth_place": "Nayland, Suffolk, England (baptism tradition)",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Grove Hill Cemetery, Waltham, Middlesex County, Massachusetts (FAG tradition)"
     },
     "margaret_warren_watertown": {
       "id": "margaret_warren_watertown",
@@ -12373,7 +12868,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of **Mary Warren Bigelow** (**C1850** / **C1852**). Soft-ingest Bond + Howe + john1 — `verified: false`. Maiden **not** asserted this pass (**C1855**)."
+      "death": "1662-11-06",
+      "death_place": "Watertown, Middlesex County, Massachusetts"
     },
     "john_warren_watertown": {
       "id": "john_warren_watertown",
@@ -12417,7 +12913,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Mary Warren Bigelow** (**C1850** / **C1851**). Soft-ingest from Bond Warren (I.) + Howe + Bigelow Society `john1` — `verified: false`. Immigrant 1630; freeman 1631; selectman; will **30 Nov 1667**. Gen-back John × Mary Scarlet parked (**C1858**)."
+      "birth": "1585",
+      "death": "1667-12-13",
+      "birth_place": "England (Nayland, Suffolk baptism tradition)",
+      "death_place": "Watertown, Middlesex County, Massachusetts"
     },
     "john_bigelow_watertown": {
       "id": "john_bigelow_watertown",
@@ -12472,7 +12971,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of **Joshua Bigelow (1655)** (**C1810** / **C1811**). Soft-ingest from Watertown VR + Bond + Howe Archive.org + Bigelow Society `john1` + FAG — `verified: false`. Immigrant blacksmith; Watertown selectman; will **4 Jan 1702/3** names son **Joshua** co-execu...",
+      "birth": "1617",
+      "death": "1703-07-14",
+      "birth_place": "England (Wrentham, Suffolk tradition)",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Grove Hill Cemetery, Waltham, Middlesex County, Massachusetts (FAG tradition)",
       "blocker": "England parents Blocked (C1856/C1857) — Howe: Wrentham John Beagely bp 1"
     },
     "joel_pringle_jr": {
@@ -12553,7 +13056,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of William Pringle (**C230**). United Empire Loyalist; King's Rangers FAN with sons. Soft-ingest from Pringle/Benham PDF Gen. 2 + WikiTree Pringle-33 + FAG **59609435** — `verified: false`. Working birth **16 Jan 1725/26** (PDF 1725 / WikiTree 1726 New Have..."
+      "birth": "1726-01-16",
+      "death": "1800",
+      "birth_place": "West Haven / New Haven, Colony of Connecticut",
+      "death_place": "Hallowell Township, Prince Edward County, Ontario, Canada (compiled)",
+      "burial": "United Empire Loyalist Cemetery, Adolphustown, Lennox and Addington County, Ontario, Canada"
     },
     "jemima_benham_pringle": {
       "id": "jemima_benham_pringle",
@@ -12632,7 +13139,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Joel Pringle Jr. (**C1170**). Parents soft-ingested **Nathan Benham** × **Sarah Beecher** — pack **C1220** (2026-08-08). Jacobus FANH + WikiTree + Pane-Joyce + Prindle 1906 + FAG Sarah grid; `verified: false`. Remarried Joseph Morgan 1729 (four Morgan ch..."
+      "birth": "1700-09-21",
+      "death": "1752-08-08",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Cheshire, New Haven County, Connecticut Colony"
     },
     "sarah_beecher_benham": {
       "id": "sarah_beecher_benham",
@@ -12706,7 +13216,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Jemima (Benham) Pringle/Morgan**. Soft-ingest **Probable** / `verified: false` — pack **C1220** / **C1222**. Daughter of John Beecher × Elizabeth Roberts per Jacobus; m. Nathan Benham ~1699; d. ae 32. FAG stone legible: \"SARAH WIFE OF NATTHAN BENHAM DIED D..."
+      "birth": "1679-01-01",
+      "death": "1712-12-18",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "West Haven, New Haven County, Connecticut Colony",
+      "burial": "West Haven Green Cemetery, West Haven, New Haven County, Connecticut, USA"
     },
     "elizabeth_roberts_beecher": {
       "id": "elizabeth_roberts_beecher",
@@ -12759,7 +13273,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Sarah (Beecher) Benham**. Soft-ingest **Probable** / `verified: false` — pack **C1273** / **C1275**. Chr 14 May 1653 Milford; d. 4 Aug 1722 ae 72; will mentions grand-daughter Mercy Benham."
+      "birth": "1653-05-14",
+      "death": "1722-08-04",
+      "birth_place": "Milford, New Haven Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony",
+      "burial": "Grove Street Cemetery, New Haven, New Haven County, Connecticut, USA"
     },
     "john_beecher_1646": {
       "id": "john_beecher_1646",
@@ -12809,7 +13327,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Sarah (Beecher) Benham**. Soft-ingest **Probable** / `verified: false` — pack **C1273** / **C1274**. Jacobus FANH Beecher p. 162; son of Isaac × Mary; FAG Grove Street stone ae 67; will 1712 names Sarah Benham among daughters."
+      "birth": "1646",
+      "death": "1712-12-05",
+      "birth_place": "New Haven, New Haven Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony",
+      "burial": "Grove Street Cemetery, New Haven, New Haven County, Connecticut, USA"
     },
     "nathan_benham_1679": {
       "id": "nathan_benham_1679",
@@ -12879,7 +13401,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Jemima (Benham) Pringle/Morgan** (Shorts UEL line). Soft-ingest **Probable** / `verified: false` — pack **C1220** / **C1270**. Jacobus FANH + NHV p. 30 + WikiTree Benham-114 + Pane-Joyce + FAG Sarah spouse grid. m. (1) **Sarah Beecher** ~1699; m. (2) Mary ..."
+      "birth": "1679-07-10",
+      "death": "1757-06-01",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Cheshire, New Haven County, Connecticut Colony",
+      "burial": "Cheshire, New Haven County, Connecticut (church records; compiled)"
     },
     "mercy_smith_benham": {
       "id": "mercy_smith_benham",
@@ -12931,7 +13457,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Nathan Benham**. Soft-ingest **Probable** / `verified: false` — pack **C1270** / **C1272**. Daughter of George Smith × Sarah per Jacobus; m. John Benham 3 Mar 1668/9; widow rate remission 20 Jun 1698."
+      "birth": "1645",
+      "death": "1698-06-20",
+      "birth_place": "New Haven, New Haven Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "john_benham_1631": {
       "id": "john_benham_1631",
@@ -12980,7 +13509,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Nathan Benham** (Shorts UEL line). Soft-ingest **Probable** / `verified: false` — pack **C1270** / **C1271**. Jacobus FANH + NHV p. 30 marriage to Mercy Smith; d. 1691 New Haven per Jacobus. Prior wife Sarah Hurst + her children not soft-ingested this pass."
+      "birth": "1631",
+      "death": "1691",
+      "birth_place": "Dorchester, Massachusetts Bay Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony",
+      "burial": "New Haven, New Haven County, Connecticut Colony (compiled)"
     },
     "joel_pringle_sr": {
       "id": "joel_pringle_sr",
@@ -13063,7 +13596,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Joel Pringle Jr. (**C1170**). Soft-ingest from Pringle/Benham PDF Gen. 1 + WikiTree Pringle-610 + FAG **59610755** + Pane-Joyce Jacobus cite — `verified: false`. Died age 30; never reached Canada (UEL line continues through Joel Jr.)."
+      "birth": "1696-01-28",
+      "death": "1726-02-23",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony",
+      "burial": "West Haven Green Cemetery, West Haven, New Haven County, Connecticut, USA"
     },
     "mary_brown_prindle": {
       "id": "mary_brown_prindle",
@@ -13144,7 +13681,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** mother of Joel Pringle Sr. (**C1210**). Daughter of **John Brown × Mary Walker** (New Haven) — soft-ingest **C1263** / `verified: false`. **≠** `mary_brown_aylesworth` of Providence (**C1212** / **C1268** guard). Prindle **1906** + Jacobus Brown p. 346 + Pane-Joyc..."
+      "birth": "1664-05-02",
+      "death": "1704-03-07",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Haven / West Haven, New Haven County, Connecticut Colony (after 7 Mar 1704)"
     },
     "mary_walker_brown": {
       "id": "mary_walker_brown",
@@ -13194,7 +13734,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Mary (Brown) Prindle**. Soft-ingest **Probable** / `verified: false` — pack **C1263** / **C1265**. Jacobus + Pane-Joyce + NH VR. m. (1) John Brown **1660**; divorced **1674**; m. (2) John Clark **1675** (Clark half-siblings **not** soft this pass). Living ..."
+      "birth": "1641-03-01",
+      "death": "1719-04-06",
+      "birth_place": "New Haven, New Haven Colony",
+      "death_place": "West Haven, New Haven County, Connecticut Colony (after 6 Apr 1719)",
+      "burial": "Burial details unknown"
     },
     "john_brown_nh": {
       "id": "john_brown_nh",
@@ -13248,7 +13792,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Mary (Brown) Prindle**. Soft-ingest **Probable** / `verified: false` — pack **C1263** / **C1264**. Jacobus FANH Brown p. 346 + Pane-Joyce + NH VR marriage. **≠** `rev_john_brown` of Providence (**C1268** guard). Parents Francis Brown × Mary Edwards named —..."
+      "birth": "1640-04-07",
+      "death": "1673",
+      "birth_place": "New Haven, New Haven Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony (left town; Jacobus lost track)",
+      "burial": "Burial details unknown"
     },
     "joseph_prindle_sr": {
       "id": "joseph_prindle_sr",
@@ -13331,7 +13879,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** father of Joel Pringle Sr. (**C1210**). Son of **William Prindle × Mary (Disburrow) Prindle** (New Haven) — soft-ingest **C1260** / `verified: false`. Prindle **1906** + Pane-Joyce + Jacobus + FAG **125971473**.",
+      "birth": "1663-06-11",
+      "death": "1738-03-18",
+      "birth_place": "New Haven / West Haven, New Haven County, Connecticut Colony",
+      "death_place": "West Haven, New Haven County, Connecticut Colony",
+      "burial": "West Haven Green Cemetery, West Haven, New Haven County, Connecticut, USA",
       "blocker": "William gen-back Scotland parents Blocked; Mary Disburrow origins Blocke"
     },
     "mary_disburrow_prindle": {
@@ -13382,7 +13934,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Joseph Prindle Sr.** Soft-ingest **Probable** / `verified: false` — pack **C1260** / **C1262**. NH marriage VR **7 Dec 1655** + Prindle **1906** + Pane-Joyce. **Identity guard:** ≠ Mary Brownson widow of Nicholas Disborough; ≠ Isaac Disbrowe (Eltisley) lin..."
+      "birth": "1635",
+      "death": "1700",
+      "birth_place": "Unknown",
+      "death_place": "New Haven, New Haven County, Connecticut Colony (after 17 Oct 1689)",
+      "burial": "Burial details unknown"
     },
     "william_prindle_nh": {
       "id": "william_prindle_nh",
@@ -13436,7 +13992,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Joseph Prindle Sr.** (Shorts UEL line). Soft-ingest **Probable** / `verified: false` — pack **C1260** / **C1261**. Prindle **1906** + Pane-Joyce Jacobus stack + NH probate will **17 Oct 1689**. **Not** `william_prindle_1719` (grandson) or UEL William Pring...",
+      "birth": "1630",
+      "death": "1690-06-05",
+      "birth_place": "Stow, Midlothian, Scotland (tradition)",
+      "death_place": "New Haven, New Haven County, Connecticut Colony",
+      "burial": "Burial details unknown",
       "blocker": "Gen-back Scotland parents Blocked — unknown"
     },
     "augustus_shorts": {
@@ -13599,7 +14159,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Probable father of Samuel D. Shorts (**C70**, Wave 2). Methodist Episcopal minister (\"Father Shorts\"), b. Jul 1777 Paradise, Lancaster Co. PA; death **12 Jan 1862** Fredericksburgh (**C1534 / C1539** Alex Y 2026-08-10 — Pringle/Hannah **12 Jan**; Hay Bay **17 Jan** + CCA cite ..."
+      "birth": "1777-07",
+      "death": "1862-01-12",
+      "birth_place": "Paradise, Lancaster County, Pennsylvania, USA",
+      "death_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada",
+      "burial": "Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "rosannah_monk_shorts": {
       "id": "rosannah_monk_shorts",
@@ -13664,7 +14228,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "née Monk; Rosannah Monck; Mrs Shorts"
       ],
-      "note": "**Probable** mother of Rev Augustus Shorts (**C331**) — soft-ingested with husband **John Shorts** for couple ID on the Shorts Y-line climb; **not** a Y-line dig target. Married John on the Susquehanna **1764**; fled as Loyalist widow; died of exposure at **Pointe Claire** wes...",
+      "death_place": "Pointe Claire, near Montreal, Quebec (exposure; soft)",
+      "burial": "Pointe Claire, Quebec (soft)",
       "blocker": "Exact birth/death dates; née Monk parents still blocked; FAG none this p"
     },
     "john_shorts": {
@@ -13752,7 +14317,9 @@ window.PEOPLE_DATA = {
       "aka": [
         "John W. Short; John W. Shorts; John E. Shorts; John Henry Short (Smy); Johannis Shorts (do not merge RI Shorts-127)"
       ],
-      "note": "**Probable** father of Rev Augustus Shorts (**C330**). Butler’s Ranger; Swiss origins; Susquehanna settler with wife Rosannah Monk (m. 1764). Soft-ingest from Old Hay Bay vignette (cites CCA **19 Mar 1862** orphan narrative) + WikiTree Short-3450/3451 — `verified: false`. Work...",
+      "death": "1778",
+      "birth_place": "Switzerland (soft)",
+      "death_place": "New York City, New York (prisoner of war; soft)",
       "blocker": "Parents blocked — need LAC petition images / remaining Smy Short"
     },
     "samuel": {
@@ -13847,8 +14414,7 @@ window.PEOPLE_DATA = {
           "id": "florence_hahn",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Confirmed** / `verified: true` brother of **Myron Mamlock Cohn** (collateral) — pack **C969** Y; Alex: went by **Sy**. Soft spouse **Florence Hahn** via Open Data pair Manh. **25642** (**C1887**). Do **not** climb spouse parents ahead of UP gaps. No third sibling named this ..."
+      ]
     },
     "albert_mamlock": {
       "id": "albert_mamlock",
@@ -13905,7 +14471,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of **Mamie Mamlock** (collateral). Ship 1867 + MH sibling list + NYC death. Parents Possible Mayer × Rachel; manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**). Do not climb ahead of Mamie UP harden."
+      "birth": "~1858",
+      "death": "1937-05-24",
+      "birth_place": "Germany",
+      "death_place": "Manhattan, New York, New York"
     },
     "franciska_mamlock": {
       "id": "franciska_mamlock",
@@ -13971,7 +14540,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Ship 1867; married **Leo P. Aronsohn** **19 Sep 1886** Manhattan cert **61529** (**FT-0416**). Parents Possible Mayer × Rachel; manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**)."
+      "birth": "~1862",
+      "birth_place": "Germany"
     },
     "esther_mamlock": {
       "id": "esther_mamlock",
@@ -14023,8 +14593,7 @@ window.PEOPLE_DATA = {
           "id": "charles_geiger",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Married **Charles Geiger** **6 Mar 1894** Manhattan cert **2970** (**FT-0416**). Parents Possible Mayer × Rachel."
+      ]
     },
     "emma_mamlock": {
       "id": "emma_mamlock",
@@ -14092,7 +14661,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Ship 1867; married **Aloe Michaels** **6 Dec 1898** Manhattan cert **18992** (**FT-0416**). Parents Possible Mayer × Rachel; manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**)."
+      "birth": "~1864",
+      "birth_place": "Germany"
     },
     "jenny_mamlock": {
       "id": "jenny_mamlock",
@@ -14142,7 +14712,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Mamie Mamlock** (collateral). Named on 1867 Allemannia passenger list and in 1900 household index under mother Rachael. Manifest FAN **Rosa Mamlock** (Probable ship mother — **C1522**). Soft only; do not climb ahead of Rochelle UP."
+      "birth": "~1867",
+      "birth_place": "Germany"
     },
     "laura_blakely": {
       "id": "laura_blakely",
@@ -14180,8 +14751,7 @@ window.PEOPLE_DATA = {
           "id": "amanda_melvina_blakely",
           "confidence": "Probable"
         }
-      ],
-      "note": "Soft sister of **John A. Blakely** (named on Robert/Amanda FAG children grids). Not named in FT-0404 survivors. `verified: false`."
+      ]
     },
     "gertrude_a_buck": {
       "id": "gertrude_a_buck",
@@ -14217,7 +14787,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "Miss Gertrude Buck"
       ],
-      "note": "**Probable** soft sister of **Guerdon Conde Buck** (FAG half-sibling label on Guerdon; Sarah 1943 / 1932 lists Miss Gertrude). Collateral only — no UP climb. `verified: false`."
+      "birth": "1868",
+      "death": "1957"
     },
     "clara_h_buck": {
       "id": "clara_h_buck",
@@ -14254,7 +14825,8 @@ window.PEOPLE_DATA = {
         "Clara H. Nehls",
         "Mrs. Arthur Nehls"
       ],
-      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+      "birth": "1870",
+      "death": "1951"
     },
     "winifred_kendrick_buck": {
       "id": "winifred_kendrick_buck",
@@ -14291,7 +14863,8 @@ window.PEOPLE_DATA = {
         "Winifred Kendrick Buck Muckler",
         "Mrs. Winifred Muckler"
       ],
-      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+      "birth": "1875",
+      "death": "1970"
     },
     "florence_trask_buck": {
       "id": "florence_trask_buck",
@@ -14328,7 +14901,8 @@ window.PEOPLE_DATA = {
         "Florence Trask Buck Saxton",
         "Mrs. Ralph Saxton"
       ],
-      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+      "birth": "1877",
+      "death": "1961"
     },
     "berenice_buck": {
       "id": "berenice_buck",
@@ -14365,7 +14939,8 @@ window.PEOPLE_DATA = {
         "Berniece Buck",
         "Miss Berenice"
       ],
-      "note": "**Probable** soft sister of **Guerdon Conde Buck**. Collateral only. `verified: false`."
+      "birth": "1881",
+      "death": "1957"
     },
     "annie_h_trask_furlong": {
       "id": "annie_h_trask_furlong",
@@ -14402,8 +14977,7 @@ window.PEOPLE_DATA = {
           "id": "anne_rhodes_trask",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** collateral sister of **Sarah Elizabeth Trask** — FAG sibling link on Sarah’s memorial. `verified: false`."
+      ]
     },
     "clara_anna_trask": {
       "id": "clara_anna_trask",
@@ -14437,8 +15011,7 @@ window.PEOPLE_DATA = {
           "id": "anne_rhodes_trask",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** collateral sister of **Sarah Elizabeth Trask** — FAG sibling link on Sarah’s memorial. `verified: false`."
+      ]
     },
     "olive_bawlden_buck": {
       "id": "olive_bawlden_buck",
@@ -14477,7 +15050,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral sister of **Erastus Junior Buck** — Heath baptism **30 Oct 1825** + FAG sibling link on Erastus memorial. `verified: false`."
+      "birth": "1825",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "winslow_buck": {
       "id": "winslow_buck",
@@ -14519,7 +15093,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral sibling of **Erastus Junior Buck**. Heath baptism **William** s. Erastus × Roxana **30 May 1824**; FAG lists **Winslow Buck** — may be same person (given-name conflict open). `verified: false`."
+      "birth": "1824",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "halbert_a_buck": {
       "id": "halbert_a_buck",
@@ -14553,8 +15128,7 @@ window.PEOPLE_DATA = {
           "id": "elizabeth_roxana_baldwin",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** collateral sibling of **Erastus Junior Buck** — FAG sibling link only this pass. `verified: false`."
+      ]
     },
     "mary_roxana_buck": {
       "id": "mary_roxana_buck",
@@ -14588,8 +15162,7 @@ window.PEOPLE_DATA = {
           "id": "elizabeth_roxana_baldwin",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** collateral sibling of **Erastus Junior Buck** — FAG sibling link only this pass. `verified: false`."
+      ]
     },
     "chauncey_sadie_buck": {
       "id": "chauncey_sadie_buck",
@@ -14623,8 +15196,7 @@ window.PEOPLE_DATA = {
           "id": "elizabeth_roxana_baldwin",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** collateral sibling of **Erastus Junior Buck** — FAG lists single entry **Chauncey Sadie Buck** (may be one person or FAG conflation). `verified: false`."
+      ]
     },
     "lucy_baldwin_heath": {
       "id": "lucy_baldwin_heath",
@@ -14670,7 +15242,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1584**. bp. **30 Jun 1794** *Lucy, d. David and w.*; death names *Lucy D., d. Col. David and Sarah Deane* (**10 May 1827**, ae 20 — age vs bp tension in proposal). Spouses/chi..."
+      "birth": "1794-06-30",
+      "death": "1827-05-10",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA",
+      "death_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "betsy_baldwin_heath": {
       "id": "betsy_baldwin_heath",
@@ -14709,7 +15284,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1585**. *Betsy, d. David and w., bp. 17 Jul 1796* Heath. Mother **Sarah (Deane) Baldwin** from sibling-death FAN on Lucy + Sarah Deane death row (**C1580–C1581**). Spouses/chi..."
+      "birth": "1796-07-17",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "phinehas_baldwin_heath": {
       "id": "phinehas_baldwin_heath",
@@ -14751,7 +15327,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1586**. *Phinehas, Apr 3, 1790* in David Baldwin birth cluster (distinct from later *Phinehas and Mary* household). Mother **Sarah (Deane) Baldwin** via Lucy death + Sarah Dea..."
+      "birth": "1790-04-03",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "kerziah_baldwin_heath": {
       "id": "kerziah_baldwin_heath",
@@ -14793,7 +15370,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Roxana Baldwin**. Soft-ingest **Probable** / `verified: false` — pack **C1587**. *Kerziah, d. David and w., bp. 25 Nov 1804* Heath. Born before mother Sarah Deane death **1809**. Spouses/children **not climbed**."
+      "birth": "1804-11-25",
+      "birth_place": "Heath, Franklin County, Massachusetts, USA"
     },
     "molly_buck": {
       "id": "molly_buck",
@@ -14832,7 +15410,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Lt. William Buck** — Woburn birth *Molly, d. of William and Mary, 29 Jul 1753*. Soft parents **William Buck Sr.** × **Mary (Wyman) Buck**. `verified: false`."
+      "birth": "1753-07-29",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "francis_buck": {
       "id": "francis_buck",
@@ -14871,7 +15450,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Lt. William Buck** — Woburn birth *Francis, s. of William and Mary, 13 May 1758*. Soft parents **William Buck Sr.** × **Mary (Wyman) Buck**. `verified: false`."
+      "birth": "1758-05-13",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "prudence_buck": {
       "id": "prudence_buck",
@@ -14910,7 +15490,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Lt. William Buck** — Woburn birth *Prudence, d. of William and Mary, 9 Nov 1760*. Soft parents **William Buck Sr.** × **Mary (Wyman) Buck**. `verified: false`."
+      "birth": "1760-11-09",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "samuel_richardson_1670": {
       "id": "samuel_richardson_1670",
@@ -14949,7 +15530,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Elizabeth (Richardson) Wyman** — Woburn *Samuel, s. of Samuel, Nov. 5, 1670* (twin of Thomas). No UP / spouse climb this pass. `verified: false`."
+      "birth": "1670-11-05",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "thomas_richardson_1670": {
       "id": "thomas_richardson_1670",
@@ -14992,7 +15574,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Elizabeth (Richardson) Wyman** — Woburn *Thomas, s. of Samuel, Nov. 5, 1670* (twin of Samuel); *slain by the Indians, April 10, 1676*. Child. No UP climb this pass. `verified: false`."
+      "birth": "1670-11-05",
+      "death": "1676-04-10",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "martha_richardson_1673": {
       "id": "martha_richardson_1673",
@@ -15031,7 +15616,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Elizabeth (Richardson) Wyman** — Woburn *Martha, d. of Samuel, Dec. 20, 1673* (same day mother Martha died). Compiled infant death 9 Nov 1677 **not** found in Johnson deaths this pass — death left blank. No UP climb. `verified: false`."
+      "birth": "1673-12-20",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "samuel_wyman_1646": {
       "id": "samuel_wyman_1646",
@@ -15074,7 +15660,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Samuel, s. of John, Sept. 20, 1646*; d. **27 Sep 1646** (Wyman 1883). Infant. `verified: false`."
+      "birth": "1646-09-20",
+      "death": "1646-09-27",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_wyman_jr": {
       "id": "john_wyman_jr",
@@ -15124,7 +15713,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *John, s. of John, March 28, 1648*. Sewall: slain Narraganset **1675**, son of Lieut. John. Spouse climb deferred. `verified: false`."
+      "birth": "1648-03-28",
+      "death": "1675-12-19",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Great Swamp, Rhode Island (Narraganset fight)"
     },
     "sarah_wyman_1650": {
       "id": "sarah_wyman_1650",
@@ -15167,7 +15759,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Sarah, d. of John, April 15, 1650*. Spouse climb deferred. `verified: false`."
+      "birth": "1650-04-15",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "solomon_wyman": {
       "id": "solomon_wyman",
@@ -15210,7 +15803,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Solomon, s. of John, Feb. 26, 1652*. Soft only. `verified: false`."
+      "birth": "1652-02-26",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "david_wyman_1654": {
       "id": "david_wyman_1654",
@@ -15253,7 +15847,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *David, s. of John, April 7, 1654*. Distinct from nephew `david_wyman` (Jacob’s son, 1693). Spouse climb deferred. `verified: false`."
+      "birth": "1654-04-07",
+      "death": "1678-12-27",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "elizabeth_wyman_1656": {
       "id": "elizabeth_wyman_1656",
@@ -15296,7 +15893,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Elizabeth, d. of John, Jan. 18, 1656*; d. **21 Nov 1658** (Wyman 1883). Infant. `verified: false`."
+      "birth": "1656-01-18",
+      "death": "1658-11-21",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "bathsheba_wyman": {
       "id": "bathsheba_wyman",
@@ -15339,7 +15939,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Bathsheba, d. of John, Oct. 6, 1658*. Spouse climb deferred. `verified: false`."
+      "birth": "1658-10-06",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "jonathan_wyman": {
       "id": "jonathan_wyman",
@@ -15385,7 +15986,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Jonathan, s. of John, July 13, 1661*. Spouse climb deferred. `verified: false`."
+      "birth": "1661-07-13",
+      "death": "1736-12-15",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "seth_wyman": {
       "id": "seth_wyman",
@@ -15431,7 +16035,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Jacob Wyman** — Woburn *Seth, s. of John, Aug. 3, 1663*. Spouse climb deferred. `verified: false`."
+      "birth": "1663-08-03",
+      "death": "1715-10-26",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "mary_buck_bixby": {
       "id": "mary_buck_bixby",
@@ -15473,7 +16080,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **William Buck Sr.** — Woburn *Mary, d. of John and Priscilla, Oct. 2, 1712*. Soft parents John × Priscilla. `verified: false`."
+      "birth": "1712-10-02",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "priscilla_buck_1714": {
       "id": "priscilla_buck_1714",
@@ -15516,7 +16124,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **William Buck Sr.** — Woburn birth 18 Nov 1714 / death 14 Jun 1736 (*d. of John and Priscilla*). Not the mother Priscilla. `verified: false`."
+      "birth": "1714-11-18",
+      "death": "1736-06-14",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_buck_1716": {
       "id": "john_buck_1716",
@@ -15558,7 +16169,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **William Buck Sr.** — Woburn *John, s. of John and Priscilla, Nov. 28, 1716*. `verified: false`."
+      "birth": "1716-11-28",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "kezia_buck": {
       "id": "kezia_buck",
@@ -15597,7 +16209,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **William Buck Sr.** — Woburn *Kezia, d. of John and Priscilla, March 1, 1719*. `verified: false`."
+      "birth": "1719-03-01",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "sarah_buck_1721": {
       "id": "sarah_buck_1721",
@@ -15636,7 +16249,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **William Buck Sr.** — Woburn *Sarah, d. of John and Priscilla, Aug. 20, 1721*. `verified: false`."
+      "birth": "1721-08-20",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "esther_buck_kendall": {
       "id": "esther_buck_kendall",
@@ -15682,7 +16296,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **William Buck Sr.** — Woburn *Esther, d. of John and Priscilla, Jan. 10, 1724*; compiled death 7 Jun 1752. `verified: false`."
+      "birth": "1724-01-10",
+      "death": "1752-06-07",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "sarah_buck_1673": {
       "id": "sarah_buck_1673",
@@ -15724,7 +16341,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **John Buck** — Woburn *Sarah, d. of Ephraim, Jan. 11, 1673/4*. Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1673-01-11",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "ephraim_buck_jr": {
       "id": "ephraim_buck_jr",
@@ -15766,7 +16384,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **John Buck** — Woburn *Ephraim, s. of Ephraim, July 13, 1676*. Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1676-07-13",
+      "death": "1734",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_buck_1678": {
       "id": "john_buck_1678",
@@ -15809,7 +16430,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft infant sibling of **John Buck** (1680) — Woburn *John, s. of Ephraim, Jan. 1, 1678*; d. 27 Jan 1679 (Pane-Joyce). Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1678-01-01",
+      "death": "1679-01-27",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "samuel_buck_1682": {
       "id": "samuel_buck_1682",
@@ -15848,7 +16472,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **John Buck** — Woburn *Samuel, s. of Ephraim, Nov. 13, 1682*. Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1682-11-13",
+      "death": "1730-12-02",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "eunice_buck": {
       "id": "eunice_buck",
@@ -15887,7 +16514,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **John Buck** — Woburn *Eunice, d. of Ephraim, July 7, 1685*. Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1685-07-07",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "ebenezer_buck": {
       "id": "ebenezer_buck",
@@ -15926,7 +16554,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **John Buck** — Woburn *Ebenezer, s. of Ephraim and Sarah, May 20, 1689*. Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1689-05-20",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "mary_buck_pike": {
       "id": "mary_buck_pike",
@@ -15968,7 +16597,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **John Buck** — Woburn *Mary, d. of Ephraim and Sarah, Oct. 28, 1691*. Soft parents Ephraim × Sarah Brooks. `verified: false`."
+      "birth": "1691-10-28",
+      "birth_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "john_mousall_jr": {
       "id": "john_mousall_jr",
@@ -16022,7 +16652,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **Eunice (Mousall) Brooks**. m. **Sarah Brooks** (Henry’s daughter) **13 May 1650**. Soft only; d. without heirs (Cutter). `verified: false`."
+      "birth_place": "England or Massachusetts (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "timothy_brooks": {
       "id": "timothy_brooks",
@@ -16056,7 +16687,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **John Brooks** — named in Henry Brooks’s **1682** will. Soft only; do not climb. `verified: false`."
+      "birth_place": "England or Massachusetts (uncertain)",
+      "death_place": "Swansea, Bristol County, Massachusetts, USA (compiled)"
     },
     "isaac_brooks": {
       "id": "isaac_brooks",
@@ -16094,7 +16726,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **John Brooks** — Henry’s will executor. Soft death **8 Sep 1686** Woburn. Soft only; do not climb. `verified: false`."
+      "birth": "1643",
+      "death": "1686-09-08",
+      "birth_place": "Massachusetts (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "sarah_brooks_mousall": {
       "id": "sarah_brooks_mousall",
@@ -16143,7 +16778,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sister of **John Brooks**. m. **John Mousall Jr.** **13 May 1650** (double in-law of Eunice×John). Soft only. `verified: false`."
+      "birth_place": "England or Massachusetts (uncertain)",
+      "death_place": "Woburn, Middlesex County, Massachusetts, USA"
     },
     "samuel_buck_1642": {
       "id": "samuel_buck_1642",
@@ -16197,7 +16833,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Ephraim Buck** — Buck gen / Pane-Joyce *Samuel* s. Roger × Susanna b. **6 Feb 1642**. Cambridge m. **Rachell Leven** 16 Mar 1669/70; d. **21 Sep 1690**. Spouse climb deferred. `verified: false`."
+      "birth": "1642-02-06",
+      "death": "1690-09-21",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA"
     },
     "john_buck_1644": {
       "id": "john_buck_1644",
@@ -16244,7 +16883,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Ephraim Buck** — Cambridge *John, s. of Roger and Susan, Sept. 3, 1644*. Distinct from later `john_buck` (Ephraim’s son, 1680). Soft death **1664** compiled only. `verified: false`."
+      "birth": "1644-09-03",
+      "death": "1664",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA (compiled)"
     },
     "mary_buck_1648": {
       "id": "mary_buck_1648",
@@ -16291,7 +16933,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Ephraim Buck** — Cambridge *Mary, d. of Roger and Susan, June 23, 1648*. Soft death **31 Aug 1669** compiled only. `verified: false`."
+      "birth": "1648-06-23",
+      "death": "1669-08-31",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA (compiled)"
     },
     "lydia_buck_1650": {
       "id": "lydia_buck_1650",
@@ -16341,7 +16986,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Ephraim Buck** — Buck gen / Pane-Joyce name **Lydia** as child of Roger × Susanna. Cambridge *Lidea Bucke and Henry Smith, Mar. 3, 1672-3*. No Cambridge birth row found this pass. Spouse climb deferred. `verified: false`."
+      "birth": "1650",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA (compiled)"
     },
     "ruth_buck_1653": {
       "id": "ruth_buck_1653",
@@ -16384,7 +17030,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Ephraim Buck** — Cambridge *Ruth, d. of Roger and Susanna, Nov. 6, 1653*. Soft only; spouse climb deferred. `verified: false`."
+      "birth": "1653-11-06",
+      "death": "1683-09-03",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA",
+      "death_place": "Cambridge, Middlesex County, Massachusetts, USA"
     },
     "elizabeth_buck_1657": {
       "id": "elizabeth_buck_1657",
@@ -16427,7 +17076,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Ephraim Buck** — Cambridge *Elizabeth, d. of Rog[e]r and Susannah, July 5, 1657*. Soft only; spouse climb deferred. `verified: false`."
+      "birth": "1657-07-05",
+      "birth_place": "Cambridge, Middlesex County, Massachusetts, USA"
     },
     "azalea_gayle_anderson": {
       "id": "azalea_gayle_anderson",
@@ -16478,7 +17128,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Marion Lawrence Anderson**. Mills delayed birth indexes **Azalia Gaile** (Alex: **Azalea Gayle**) — keep Alex display spelling; aka carries index forms. b. **9 Aug 1904** Henderson, Mills Co. IA. Collateral; do not climb UP ahead of Hugh/Urtha parents."
+      "birth": "1904-08-09",
+      "birth_place": "Henderson, Mills County, Iowa, USA"
     },
     "lucille_anderson": {
       "id": "lucille_anderson",
@@ -16523,7 +17174,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Marion Lawrence Anderson**. Delayed birth gives full **Ursula Lucille** (Alex: **Lucille**). b. **16 Jul 1913** Emerson, Mills Co. IA; marked **3rd** child (after Azalia 1904 + Marion L. 1906). Collateral; do not climb."
+      "birth": "1913-07-16",
+      "birth_place": "Emerson, Mills County, Iowa, USA"
     },
     "belle_stonebraker": {
       "id": "belle_stonebraker",
@@ -16573,7 +17225,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** older sister of **Urtha Stonebraker** — Henderson Christian Church history records pastor **Solomon M. Perkins** (1895–96) married **Belle Stonebraker** during his ministry. Collateral FAN to Urtha (Villisca **Mrs. S. M. Perkins** visit cited on compiled trees onl..."
+      "birth_place": "Iowa, USA"
     },
     "f_g_stonebraker": {
       "id": "f_g_stonebraker",
@@ -16611,7 +17263,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sibling of **Urtha Stonebraker** — **1905** Henderson census lists **F. G. Stonebraker** in sequence with **J. A.** and **P. H.** Stonebraker (probable child still in household). Full given name open (Frederick G.? — not assumed). `verified: false`."
+      "birth_place": "Iowa, USA"
     },
     "frank_clarence_anderson": {
       "id": "frank_clarence_anderson",
@@ -16657,7 +17309,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** infant son of **John W. Anderson** × **Emily E. Dupray** — FAG family links + Glenwood Cemetery memorial (**C1561**). d. age 5; buried Sec 12 Row 9 beside sibling **Birdie**. Birth date calculated on memorial (Mills County Cemetery Book 1983). Collateral sibling F..."
+      "birth": "1862-04-22",
+      "death": "1867-12-05",
+      "death_place": "Glenwood, Mills County, Iowa, USA",
+      "burial": "Glenwood Cemetery, Glenwood, Mills County, Iowa, USA"
     },
     "birdie_anderson": {
       "id": "birdie_anderson",
@@ -16700,7 +17355,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** child of **John W. Anderson** × **Emily E. Dupray** — FAG family links + Glenwood Cemetery memorial (**C1562**). d. age 8; buried Sec 12 Row 9 beside sibling **Frank Clarence**. FAG bio text reads “son” — given name **Birdie** may be nickname; sex unconfirmed on f..."
+      "birth": "1865-03-13",
+      "death": "1873-06-02",
+      "death_place": "Glenwood, Mills County, Iowa, USA",
+      "burial": "Glenwood Cemetery, Glenwood, Mills County, Iowa, USA"
     },
     "john_e_anderson": {
       "id": "john_e_anderson",
@@ -16735,7 +17393,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral sibling of **Hugh Dupree Anderson** — Nodaway MO death index names **John E. Anderson** (b. **1867** IA) as son of **John W. Anderson** × **Emily Dupray**. Older than Harry (1873) and Hugh (~1877–78). Do not merge to **Ed E. U. Anderson** (Portland 1923..."
+      "birth": "1867",
+      "death": "1941-04",
+      "birth_place": "Iowa, USA",
+      "death_place": "Hopkins, Nodaway County, Missouri, USA",
+      "burial": "Hopkins, Missouri, USA"
     },
     "harry_w_anderson": {
       "id": "harry_w_anderson",
@@ -16787,7 +17449,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral sibling of **Hugh Dupree Anderson** — Silver City bio names **Harry W.** as son of **John W. Anderson** × **Emily E. Dupray**, b. **15 Sep 1873**. **Silver City Times 2 Oct 1913** (**FT-0439**) names **brother Hugh**. Mortician/livery Silver City; Mayor..."
+      "birth": "1873-09-15",
+      "death": "1960-10-25",
+      "birth_place": "Silver Creek, Mills County, Iowa, USA",
+      "death_place": "Silver City, Mills County, Iowa, USA",
+      "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
     "emma_anderson": {
       "id": "emma_anderson",
@@ -16830,7 +17496,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** daughter of **John W. Anderson** × **Emily E. Dupray** — FAG family links + Silver City Cemetery memorial (**C1563**). Headstone inscription “Daughter of J.W. and E.E.” d. age 9. Collateral sibling FAN between **Harry W.** (1873) and **Hugh Darwin** (1877). `verif..."
+      "birth": "1875-08-03",
+      "death": "1885-01-06",
+      "death_place": "Silver City, Mills County, Iowa, USA",
+      "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
     "ed_e_u_anderson": {
       "id": "ed_e_u_anderson",
@@ -16874,8 +17543,7 @@ window.PEOPLE_DATA = {
           "id": "emily_e_dupray_anderson",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** son of **John W. Anderson** × **Emily E. Dupray** — *Silver City Times* **8 Nov 1923** names **E. U. / Ed** as one of two other boys besides **Harry**, with **H. D. / Hugh**, of **Portland, Oregon**. **15 Nov 1923**: Mr. and Mrs. Ed Anderson from Portland stayed a..."
+      ]
     },
     "hugh_darwin_anderson": {
       "id": "hugh_darwin_anderson",
@@ -16933,7 +17601,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft son of **John W. Anderson** × **Emily E. Dupray** via FAG family links (Tier C). FAG memorial **229213602**: b. **12 Oct 1877** Pottawattamie Co. IA; d. **6 Jun 1964** San Jose; Oak Hill Birch Lawn Lot 604 Sp 2 (with spouse). FAG spouse **Emily Jane Maupin An..."
+      "birth": "1877-10-12",
+      "death": "1964-06-06",
+      "birth_place": "Pottawattamie County, Iowa, USA",
+      "death_place": "San Jose, Santa Clara County, California, USA",
+      "burial": "Oak Hill Memorial Park, San Jose, Santa Clara County, California, USA"
     },
     "willis_dupray": {
       "id": "willis_dupray",
@@ -16967,8 +17639,7 @@ window.PEOPLE_DATA = {
           "id": "mary_ann_dupray",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** sibling of **Emily E. Dupray Anderson** — named with Emily on father **Hugh Dupray** FAG children list (**C1734**). No separate Silver City FAG hit this pass; vitals open. Collateral only — do not climb. `verified: false`."
+      ]
     },
     "carla": {
       "id": "carla",
@@ -17006,7 +17677,9 @@ window.PEOPLE_DATA = {
           "url": "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
         }
       ],
-      "note": "Sister of William Stanley Shorts; daughter of Richard Dorland Shorts and Gloria Martha (Gatz) Shorts. Named Carla in Gloria’s obituary (C13). Full name and dates locked Round 4 (C23)."
+      "birth": "1952-05-14",
+      "death": "1988-08-17",
+      "burial": "Conejo Mountain Memorial Park, Camarillo, Ventura County, California, USA"
     },
     "gigi": {
       "id": "gigi",
@@ -17024,7 +17697,6 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "note": "No deceased FAG match — treat as living; no public scrape",
       "object_ids": [
         "FT-0005"
       ]
@@ -17078,7 +17750,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** eldest sister of Martha Tuxhorn Gatz (**C56** / C30). Daughter of Leo Lewis × Ida L. Achilles Tuxhorn per FAG bio and parent links. Married Williams (spouse Benjamin Joseph Williams on FAG). Collateral."
+      "birth": "1892-02-09",
+      "death": "1979-01-31",
+      "birth_place": "Inman, McPherson County, Kansas, USA",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA"
     },
     "florence_graves": {
       "id": "florence_graves",
@@ -17129,7 +17804,9 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** sister of Martha Tuxhorn Gatz (**C57** / C30). Daughter of Leo × Ida per FAG parent links. Married Graves (Brooks Wallace Graves on FAG). Collateral."
+      "birth": "1894-07-03",
+      "death": "1983-04-27",
+      "burial": "Inman North Cemetery, Inman, McPherson County, Kansas, USA"
     },
     "henry_f_tuxhorn": {
       "id": "henry_f_tuxhorn",
@@ -17180,7 +17857,9 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** brother of Martha Tuxhorn Gatz (**C58** / C30). Son of Leo × Ida per FAG parent links. Shared marker with Helen (1902–1995). Collateral."
+      "birth": "1899-12-29",
+      "death": "1973-09-10",
+      "burial": "Neosho County Memorial Park, Chanute, Neosho County, Kansas, USA"
     },
     "wilma_prather": {
       "id": "wilma_prather",
@@ -17225,7 +17904,9 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "**Probable** sister of Martha Tuxhorn Gatz (**C59** / C30). Daughter of Leo × Ida per FAG parent links. Married T. Elvis Prather. Collateral; buried Missouri."
+      "birth": "1905-05-30",
+      "death": "1972-08-18",
+      "burial": "Mount Lebanon Cemetery, Saint Ann, St. Louis County, Missouri, USA"
     },
     "george_kruse": {
       "id": "george_kruse",
@@ -17263,8 +17944,7 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312** sibling FAN). Named on FAG children grid only — vitals not opened this pass. Stay `verified: false`. Do not climb UP."
+      ]
     },
     "henry_john_ernest_kruse": {
       "id": "henry_john_ernest_kruse",
@@ -17302,8 +17982,7 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid name only. Distinct from unrelated Henry H. Kruse (Amanda Meyer line). Stay `verified: false`."
+      ]
     },
     "william_kruse": {
       "id": "william_kruse",
@@ -17346,7 +18025,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1313**). Wheatland Woodmansee **1865 – 1943** + FAG children grid. Bertha Kruse 1884–1959 same cemetery — likely daughter-in-law, not wired. Stay `verified: false`."
+      "birth": "1865",
+      "death": "1943",
+      "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA"
     },
     "louis_kruse": {
       "id": "louis_kruse",
@@ -17397,7 +18078,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1314**). FAG **Heinrich Wilhelm Louis** on sibling grid. St. John's Wheatland: **Louis** m. **Frieda Dorothea Heitman**; confirmation **Johann Heinrich Louis**. Descendant obit (William P. Kruse 1995) names ..."
+      "birth": "1872",
+      "birth_place": "Iowa, USA"
     },
     "maria_dorothea_caroline_kruse_jahn": {
       "id": "maria_dorothea_caroline_kruse_jahn",
@@ -17443,8 +18125,7 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** daughter of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid + St. John's index **Maria D.C.M.** confirmation; m. **Johann Jacob John** per church index. Stay `verified: false`."
+      ]
     },
     "charles_fredrick_kruse": {
       "id": "charles_fredrick_kruse",
@@ -17482,8 +18163,7 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid only. Stay `verified: false`."
+      ]
     },
     "anna_katherine_elizabeth_kruse_lubberstedt": {
       "id": "anna_katherine_elizabeth_kruse_lubberstedt",
@@ -17521,8 +18201,7 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** daughter of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid (married name **Lubberstedt**). Stay `verified: false`."
+      ]
     },
     "don_shorts": {
       "id": "don_shorts",
@@ -17571,8 +18250,7 @@ window.PEOPLE_DATA = {
           "id": "annabelle",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "**Confirmed** brother of **Richard Dorland Shorts** (Alex 2026-08-08). Parents **Earl Stanley × Annabelle Merritt**. Living-private: no public scrape beyond his **2010** open comment on the Ontario Blue Church plaque page (FT-0108), where he names the family’s Methodism work a..."
+      ]
     },
     "helen_merritt": {
       "id": "helen_merritt",
@@ -17609,7 +18287,8 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** sister of Annabelle Lucretia (Merritt) Shorts (**C47** pending Y). 1900 Canandaigua Ward 4: Helen Merritt, daughter of George × Belle, b. **Oct 1889** NY (elder sibling of Allen and Annabelle). **C98** FS search soft-reinforces household; harden later."
+      "birth": "1889-10",
+      "birth_place": "New York, USA"
     },
     "allen_merritt": {
       "id": "allen_merritt",
@@ -17654,7 +18333,10 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** brother of Annabelle Lucretia (Merritt) Shorts (**C47** pending Y). 1900 Canandaigua: Allen Merritt, son of George × Belle, b. **Jul 1897** NY. **C98** FS search soft-reinforces household. WWI draft **Allen C Merritt**, b. **29 Jul 1897** NY, residence **Rochester..."
+      "birth": "1897-07-29",
+      "death": "1976-03",
+      "birth_place": "New York, USA",
+      "death_place": "Los Angeles County, California, USA"
     },
     "charles_e_merritt": {
       "id": "charles_e_merritt",
@@ -17714,7 +18396,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** son of **Charles J. Merritt** × **Ann L. (Tesseyman) Merritt** and brother of **George Merritt**. **1875** Canandaigua **Meritt** fam **665** lists **Charles E** with parents and George (**C423**/**C1324**). **1902** Chronicle obit names surviving sons **George** ..."
+      "birth": "1868",
+      "birth_place": "New York, USA"
     },
     "clarrissa_e_tesseyman": {
       "id": "clarrissa_e_tesseyman",
@@ -17758,7 +18441,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Ann L. Merritt**. Named **Clarrissa E. Tessiman** ae **8** in **1850 Hopewell** household on Ann's FAG memorial (**C1322**). Collateral only. Soft-ingest `verified: false`."
+      "birth": "1842",
+      "birth_place": "New York, USA"
     },
     "ethelinda_j_tesseyman": {
       "id": "ethelinda_j_tesseyman",
@@ -17809,7 +18493,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of **Ann L. Merritt**. **1850** Hopewell census paste on Ann's FAG memorial names **Ethelinda J.** ae **4** in **Henry × Abigail J.** household (**C1322**). **1875** Canandaigua index lists **Tesseyman Ethelinda** fam **465** — independent corroboration. Co..."
+      "birth": "1846",
+      "birth_place": "New York, USA"
     },
     "robert_e_tesseyman": {
       "id": "robert_e_tesseyman",
@@ -17855,7 +18540,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of **Ann L. Merritt**. Named **Robert E. Tessiman** ae **2** in **1850 Hopewell** household on Ann's FAG memorial (**C1322**). Collateral only. Soft-ingest `verified: false`."
+      "birth": "1848",
+      "birth_place": "New York, USA"
     },
     "artemisia_h_tesseyman": {
       "id": "artemisia_h_tesseyman",
@@ -17903,7 +18589,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Possible** sister of **Ann L. Merritt**. **Artemitia H. Tessiman** ae **0** in **1850 Hopewell** hh (**C1322**). **1870** Canandaigua index lists lone **Tesseyman Armida** fam **192** — **Possible** same woman (spelling drift); not Confirmed without image. Soft-ingest `verif..."
+      "birth": "1850",
+      "birth_place": "New York, USA"
     },
     "arietta_tesseyman": {
       "id": "arietta_tesseyman",
@@ -17934,7 +18621,7 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named on **1855** Hopewell NY household fam **027** (**C1481**). Not on 1850 FAG paste (younger / missed). Do not climb UP. `verified: false`."
+      "birth_place": "New York, USA"
     },
     "elizabeth_tesseyman": {
       "id": "elizabeth_tesseyman",
@@ -17965,7 +18652,7 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named on **1855** Hopewell NY household fam **027** (**C1481**). Do not climb UP. `verified: false`."
+      "birth_place": "New York, USA"
     },
     "harriet_a_tesseyman": {
       "id": "harriet_a_tesseyman",
@@ -17996,7 +18683,7 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named on **1855** Hopewell NY household fam **027** (**C1481**). Do not climb UP. `verified: false`."
+      "birth_place": "New York, USA"
     },
     "william_h_tesseyman": {
       "id": "william_h_tesseyman",
@@ -18049,7 +18736,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral son of **Henry × Abigail J. Tesseyman**. Named **William** on **1860** Hopewell p.**258** with parents; **William H.** on **1865** Hopewell fam **128**; **William of Buffalo** in mother **Abbie**'s **1898** obit (**FT-0401**). Not on 1850 FAG paste (bor..."
+      "birth_place": "New York, USA"
     },
     "mrs_a_o_squires": {
       "id": "mrs_a_o_squires",
@@ -18092,8 +18779,7 @@ window.PEOPLE_DATA = {
           "id": "abigail_j_tesseyman",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Probable** collateral daughter of **Henry × Abigail J. Tesseyman**, named only as **Mrs. A. O. Squires** of Chicago in mother **Abbie**'s **1898** Ontario County Journal notice (**FT-0401** / **C1635**). **Given / maiden first name not stated** — do not invent which census d..."
+      ]
     },
     "lena": {
       "id": "lena",
@@ -18149,7 +18835,9 @@ window.PEOPLE_DATA = {
       "aka": [
         "Carrie Alena Shorts; Carie Elena Shorts (ON birth index)"
       ],
-      "note": "Probable sister of Earl Stanley Shorts (FAG sibling link). Given name Carrie Alena / **Carie Elena** (ON birth index); married Rathbun. Collateral — not on Alex’s direct line. FAG bio lists children Gilbert, Burrill, Dorland S., Charles A. Rathbun. **C94 soft:** Ontario birth ..."
+      "birth": "1880-11-16",
+      "death": "1958",
+      "birth_place": "Yonge, Leeds, Ontario, Canada"
     },
     "robert_shorts": {
       "id": "robert_shorts",
@@ -18188,7 +18876,11 @@ window.PEOPLE_DATA = {
           "url": ""
         }
       ],
-      "note": "Probable brother of Rev Alexander Shorts (**C52**) — same parents Samuel × Mary Ann Denison on FAG + Pringle compiled. Robert Shorts 18 Jul 1849 – 3 Jan 1929; m. Elizabeth Jane Armstrong 22 Feb 1868 Lennox & Addington (FAG bio); later Eva Chandler Lang (Costa Rica). Collateral..."
+      "birth": "1849-07-18",
+      "death": "1929-01-03",
+      "birth_place": "Richmond, Lennox and Addington County, Ontario, Canada",
+      "death_place": "San José, Costa Rica",
+      "burial": "Cementerio de Extranjeros, San José, Costa Rica"
     },
     "margaret_borodell_mitchell": {
       "id": "margaret_borodell_mitchell",
@@ -18239,7 +18931,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sister of **Ann (Borodell) Denison**. Baldwin names sister **Margaret** (m. Shepherd); FAG/Miscia free summaries identify her as Margaret (Borodell) Shepard Mitchell. Soft parent **John Borodell** only. `verified: false`. Collateral — do not climb her spouses..."
+      "birth": "1625",
+      "death": "1691",
+      "birth_place": "England (soft)",
+      "death_place": "Cambridge, Middlesex County, Massachusetts Bay (soft; inventory 1691)"
     },
     "john_borodell_jr": {
       "id": "john_borodell_jr",
@@ -18290,7 +18985,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **Ann (Borodell) Denison**. Baldwin names brother **John**; free Miscia/FAG summaries place **Ann Broughton** as *his* wife (Kent; dau. of regicide Andrew Broughton) — **not** mother of Ann Denison. Soft parent **John Borodell** Sr. only; do not so..."
+      "birth_place": "England (soft)"
     },
     "alice_borodell_john_dau": {
       "id": "alice_borodell_john_dau",
@@ -18326,7 +19021,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sister of **Ann (Borodell) Denison** — Kasper/Miscia: John’s four children include **Alice**. Distinct from aunt `alice_borodell_morden`. Soft only; do not climb. `verified: false`."
+      "birth_place": "England (uncertain)"
     },
     "dorothy_borodell_yates": {
       "id": "dorothy_borodell_yates",
@@ -18367,7 +19062,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sister of **John Borodell**. Miscia/Kasper: **Dorothy** m. Robert Patrickson, then Rev. Jeremiah Burroughs, then Rev. John Yates; with Patrickson took guardianship of John’s minor children before 1640. Soft parent **Robert Borodell** only. `verified: false`. ..."
+      "birth": "1599",
+      "death": "1657",
+      "birth_place": "Gosforth, Cumberland, England (soft; Miscia/Kasper)",
+      "death_place": "England (soft; living after 1657 per secondary)"
     },
     "alice_borodell_morden": {
       "id": "alice_borodell_morden",
@@ -18408,7 +19106,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sister of **John Borodell**. Miscia/Kasper: **Alice** m. Francis Morden, yeoman of Egremont, Cumberland. Soft parent **Robert Borodell** only. `verified: false`. Collateral — do not climb spouse ahead of John UP."
+      "birth": "1595",
+      "birth_place": "Gosforth, Cumberland, England (soft; Miscia/Kasper)"
     },
     "john_borodell_nicholas_son": {
       "id": "john_borodell_nicholas_son",
@@ -18454,7 +19153,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **Robert Borodell** — named son **John** in Nicholas’s **1597** will (life tenant of Cragg House after widow). Distinct from nephew `john_borodell` (Ann’s father) and `john_borodell_jr`. Soft only; do not climb. `verified: false`."
+      "birth_place": "Cumberland, England (uncertain)"
     },
     "nicholas_borodell_jr": {
       "id": "nicholas_borodell_jr",
@@ -18496,7 +19195,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **Robert Borodell** (WikiTree Borodell-8 sib list). Soft only; do not climb. `verified: false`."
+      "birth_place": "Cumberland, England (uncertain)"
     },
     "william_borodell_nicholas_son": {
       "id": "william_borodell_nicholas_son",
@@ -18535,7 +19234,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft brother of **Robert Borodell** (WikiTree Borodell-8 sib list). Soft only; do not climb. `verified: false`."
+      "birth_place": "Cumberland, England (uncertain)"
     },
     "elizabeth_borodell_coate": {
       "id": "elizabeth_borodell_coate",
@@ -18581,7 +19280,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sister of **Robert Borodell**. WikiTree **Elizabeth (Borodell) Coate**; Kasper notes will trustee **John Cote** likely son-in-law. Soft only; do not climb spouse. `verified: false`."
+      "birth_place": "Cumberland, England (uncertain)"
     },
     "daniel_denison_maj_gen": {
       "id": "daniel_denison_maj_gen",
@@ -18630,7 +19329,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Capt. George Denison (**C1766**) — Baldwin **#2 Daniel**, son of William, b. **1612**, m. Patience Dudley, Ipswich, Major General; d. **1682**. Soft collateral only — do not climb Dudley/children ahead of William × Margaret UP. Distinct from `daniel_den..."
+      "birth": "1612",
+      "death": "1682",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft)",
+      "death_place": "Ipswich, Essex County, Massachusetts Bay Colony"
     },
     "edward_denison": {
       "id": "edward_denison",
@@ -18676,7 +19378,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Capt. George Denison (**C1766**) — Baldwin **#3 Edward**, son of William, Roxbury, m. Elizabeth Welde; d. **26 Apr 1668**. Soft collateral only — do not climb Welde/children ahead of focus UP."
+      "birth": "1616",
+      "death": "1668-04-26",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; Baldwin 1614 / WT bp. 1616)",
+      "death_place": "Roxbury, Suffolk County, Massachusetts Bay Colony"
     },
     "john_chandler_1579": {
       "id": "john_chandler_1579",
@@ -18712,7 +19417,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "John Chandler of Bishop's Stortford (Tobias son)"
       ],
-      "note": "**Probable** brother of Margaret (Chandler) Denison — named son **John** in Tobias will (**C1836**). Soft bp. **4 Oct 1579**. Collateral only — do not climb. `verified: false`."
+      "birth": "1579",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; bp. 4 Oct 1579)"
     },
     "george_chandler_1581": {
       "id": "george_chandler_1581",
@@ -18748,7 +19454,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "George Chandler of Bishop's Stortford (Tobias son)"
       ],
-      "note": "**Probable** brother of Margaret (Chandler) Denison — named son **George** in Tobias will (**C1836**). Soft bp. **1 Nov 1581**. Collateral only — do not climb. `verified: false`."
+      "birth": "1581",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; bp. 1 Nov 1581)"
     },
     "joane_chandler_1592": {
       "id": "joane_chandler_1592",
@@ -18784,7 +19491,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "Jhone Chandler; Joane (Chandler) Wilmott (soft WT)"
       ],
-      "note": "**Probable** sister of Margaret (Chandler) Denison — will daughter **Jhone** (**C1836**). Soft surviving Joane bp. **11 Jun 1592** (earlier Joanes d.y. not soft-ingested). Collateral only. `verified: false`."
+      "birth": "1592",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; bp. 11 Jun 1592 surviving Joane)"
     },
     "robert_chandler_1594": {
       "id": "robert_chandler_1594",
@@ -18820,7 +19528,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Robert Chandler of Bishop's Stortford (Tobias son; tallow chandler soft)"
       ],
-      "note": "**Probable** brother of Margaret (Chandler) Denison — named son **Robert** in Tobias will (**C1836**). Soft bp. **31 Mar 1594**; soft d. bef. **10 Jun 1637**. Collateral only. `verified: false`."
+      "birth": "1594",
+      "death": "1637",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; bp. 31 Mar 1594)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England (soft; bef. 10 Jun 1637)"
     },
     "grace_chandler_1598": {
       "id": "grace_chandler_1598",
@@ -18856,7 +19567,8 @@ window.PEOPLE_DATA = {
       "aka": [
         "Grace Chandler of Bishop's Stortford (Tobias daughter)"
       ],
-      "note": "**Probable** sister of Margaret (Chandler) Denison — named daughter **Grace** in Tobias will (**C1836**). Soft bp. **10 Sep 1598**. Collateral only. `verified: false`."
+      "birth": "1598",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; bp. 10 Sep 1598)"
     },
     "edward_denison_ireland": {
       "id": "edward_denison_ireland",
@@ -18892,7 +19604,9 @@ window.PEOPLE_DATA = {
       "aka": [
         "Edward Denison of Ireland; Edward Denyson (Bishop's Stortford)"
       ],
-      "note": "**Probable** soft brother of immigrant **William Denison** (**C1826**). Named in **Denison Genealogy 1963** child list of John × Agnes (bp. **6 Apr 1575**; Ireland). Not Roxbury **Edward** (`edward_denison`). Soft-ingest only — `verified: false`."
+      "birth": "1575",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; Denison 1963 bp. 6 Apr 1575)",
+      "death_place": "Ireland (soft; Dublin / Cork cluster per Denison 1963)"
     },
     "george_denison_stortford": {
       "id": "george_denison_stortford",
@@ -18928,7 +19642,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "George Denison of Bishop's Stortford; George Denyson"
       ],
-      "note": "**Probable** soft brother of immigrant **William Denison** (**C1826**). Named in **Denison Genealogy 1963** (bp. **1 Mar 1582**; stayed Stortford). Not Capt. **George** (`george_denison`). Soft-ingest only — `verified: false`."
+      "birth": "1582",
+      "death": "1642",
+      "birth_place": "Bishop's Stortford, Hertfordshire, England (soft; Denison 1963 bp. 1 Mar 1582)",
+      "death_place": "Bishop's Stortford, Hertfordshire, England (soft ~1642 lore)"
     },
     "elizabeth_shorts_hughes": {
       "id": "elizabeth_shorts_hughes",
@@ -19005,7 +19722,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** daughter of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** — collateral sibling of Samuel D. Shorts (**C1201**). b. **1 Feb 1800** (Pringle; FAG **1 Oct 1800**) Fredericksburgh; d. **29 Mar 1877** Richmond; buried Sexsmith Cemetery with parents/siblings clus..."
+      "birth": "1800-02-01",
+      "death": "1877-03-29",
+      "birth_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada",
+      "death_place": "Richmond, Lennox and Addington County, Ontario, Canada",
+      "burial": "Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "mary_shorts_augustus": {
       "id": "mary_shorts_augustus",
@@ -19046,8 +19767,7 @@ window.PEOPLE_DATA = {
           "id": "hannah_pringle_shorts",
           "confidence": "Probable"
         }
-      ],
-      "note": "**Possible** daughter of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1205**) — **named only** in Pringle compiled (#179938); no vitals, spouse, or FAG this pass. Seven-child FAN with Elizabeth, Andrew, Samuel, William, Philip, Hannah. Soft-ingest lean; `verified: ..."
+      ]
     },
     "andrew_pringle_shorts": {
       "id": "andrew_pringle_shorts",
@@ -19109,7 +19829,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** son of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1202**). b. **22 Apr 1804** Fredericksburgh; d. **17 Sep 1837** Richmond (aged 33); Sexsmith burial. Pringle notes m. **Jane Lobdell** and four daughters (not soft-ingested this pass). Distinct from R..."
+      "birth": "1804-04-22",
+      "death": "1837-09-17",
+      "birth_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada",
+      "death_place": "Richmond, Lennox and Addington County, Ontario, Canada",
+      "burial": "Sexsmith Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "william_shorts_fredericksburgh": {
       "id": "william_shorts_fredericksburgh",
@@ -19157,7 +19881,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** son of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** from compiled child list only (**C1204**). Pringle: **William Shortts #179943**, lived Fredericksburgh — **no** birth/death/marriage in PDF. **Possible FAN:** William Short b. **~1812** × Ruth Dorland (FA..."
+      "birth_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada (soft)"
     },
     "philip_shorts_hallowell": {
       "id": "philip_shorts_hallowell",
@@ -19214,7 +19938,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** son of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1203**) — **not** the same person as `philip_shorts_ue` (John UE land-petition index). Lived **Hallowell Township, Prince Edward County** (Pringle); d. **19 May 1863** Roblin (WikiTree). m. **Hannah B..."
+      "birth": "1800",
+      "death": "1863-05-19",
+      "birth_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada (soft)",
+      "death_place": "Roblin, Lennox and Addington County, Ontario, Canada"
     },
     "hannah_shorts_holcomb": {
       "id": "hannah_shorts_holcomb",
@@ -19279,7 +20006,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** daughter of **Rev Augustus Shorts** × **Hannah Ellenor Pringle** (**C1206**). b. **8 Dec 1814** Fredericksburgh; d. **26 Jan 1899** Montcalm Co. MI; Coral Cemetery. FAG bio names parents Augustus (d. Jan 1862 lean) × Hannah Prindle. m. **Henry Holcomb**; children ..."
+      "birth": "1814-12-08",
+      "death": "1899-01-26",
+      "birth_place": "Fredericksburgh, Lennox and Addington County, Ontario, Canada",
+      "death_place": "Montcalm County, Michigan, USA",
+      "burial": "Coral Cemetery, Coral, Montcalm County, Michigan, USA"
     },
     "joel_pringle_iii": {
       "id": "joel_pringle_iii",
@@ -19322,7 +20053,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Joel the Younger; Prindle"
       ],
-      "note": "**Probable** brother of William Pringle (**C1176**). Eldest son of Joel Jr × Deborah per WikiTree + FAG children grid — `verified: false`. UEL King's Rangers; Loughborough settlement. PDF Gen. 2 header omits Joel III — hold PDF-only attach."
+      "birth": "1747",
+      "death": "1806",
+      "birth_place": "Canaan / Albany area, New York (compiled)",
+      "death_place": "Loughborough Township, Frontenac County, Ontario, Canada (compiled)"
     },
     "timothy_pringle_ue": {
       "id": "timothy_pringle_ue",
@@ -19366,7 +20100,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Timothy Pringle UE; Prindle"
       ],
-      "note": "**Probable** brother of William Pringle (**C1177**). Soft-ingest from Pringle PDF #142077 + WikiTree + FAG Joel Jr grid — `verified: false`. UEL King's Rangers; m. Huldah Weldon 1 May 1771 Skenesborough."
+      "birth": "1751-03-08",
+      "death": "1793",
+      "birth_place": "Cape May, New Jersey (compiled; Skenesborough NY area per UEL FAN)",
+      "death_place": "Ontario, Canada (compiled)"
     },
     "joseph_pringle_ue": {
       "id": "joseph_pringle_ue",
@@ -19422,7 +20159,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Joseph (Prindle) Pringle; Doctor Pringle"
       ],
-      "note": "**Probable** brother of William Pringle (**C1178**). Soft-ingest from Pringle PDF #232619 + WikiTree + FAG **104925410** — `verified: false`. Richmond Township UEL hotelkeeper / JP / militia officer; Christian Guardian obit excerpt → **FT-0145**; UEL cert **FT-0151**."
+      "birth": "1754-04",
+      "death": "1833-09-22",
+      "birth_place": "Whitehall / Skenesborough, Washington County, New York",
+      "death_place": "Napanee, Lennox County, Ontario, Canada"
     },
     "dexter_pringle": {
       "id": "dexter_pringle",
@@ -19466,7 +20206,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Prindle"
       ],
-      "note": "**Probable** brother of William Pringle (**C1179**). Soft-ingest from Pringle PDF #142090 + WikiTree + FAG **146755462** — `verified: false`. UEL; Hay Bay area grants; m. Margaret Peterson ~1786."
+      "birth": "1761",
+      "death": "1839",
+      "birth_place": "New York State (compiled; Skenesborough area)",
+      "death_place": "Fredericksburgh, Lennox County, Ontario, Canada"
     },
     "lois_pringle_dafoe": {
       "id": "lois_pringle_dafoe",
@@ -19512,7 +20255,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Lois Prindle"
       ],
-      "note": "**Probable** sister of William Pringle (**C1179**). Soft-ingest with Dexter under sibling batch — `verified: false`. m. John Ernst Dafoe Jr. ~1784; Richmond / Napanee FAN. **Not** Lois (Pringle) Bristol (1724)."
+      "birth": "1766-04-12",
+      "death": "1831-02-07",
+      "birth_place": "Skenesborough, Washington County, New York",
+      "death_place": "Richmond Township, Lennox and Addington County, Ontario, Canada",
+      "burial": "Grooms Cemetery, Napanee, Lennox and Addington County, Ontario, Canada"
     },
     "ebenezer_bigelow_1721": {
       "id": "ebenezer_bigelow_1721",
@@ -19550,7 +20297,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed elder brother of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1188**. b. **23 Jan 1721** Weston; d. on Canada expedition **1756–1758**; m. Anna Harris then widow Hepsibeh Dufore; res Lancaster MA; four children per Bigelow Soci..."
+      "birth": "1721-01-23",
+      "death": "1758",
+      "birth_place": "Weston, Middlesex County, Massachusetts",
+      "death_place": "Canada expedition (compiled; d. between 1756–1758)"
     },
     "hannah_bigelow_1724": {
       "id": "hannah_bigelow_1724",
@@ -19589,7 +20339,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed sister of **Deborah (Bigelow) Pringle** (not the mother Hannah Brown). Soft-ingest **Probable** / `verified: false` — pack **C1186**. b. **7 Feb 1724** Worcester per Bigelow Society. Collateral only; id `hannah_bigelow_1724` disambiguates from mother `hannah_brown_big..."
+      "birth": "1724-02-07",
+      "birth_place": "Worcester, Worcester County, Massachusetts"
     },
     "moses_bigelow_1730": {
       "id": "moses_bigelow_1730",
@@ -19628,7 +20379,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1183**. Bapt **3 May 1730**; m. Mary Hammond **15 Jun 1756** per Bigelow Society — spouse/children not climbed. Collateral only."
+      "birth": "1730-05-03",
+      "birth_place": "Watertown, Middlesex County, Massachusetts (baptism)"
     },
     "hopestill_bigelow_1731": {
       "id": "hopestill_bigelow_1731",
@@ -19667,7 +20419,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1184**. Bapt **3 Jun 1731**; res Danbury CT, Tyringham MA, Whitehall NY; m. Esther Benedict; Pringle/Benedict FAN (Hopestill account mentions Prindle kin). Collateral only..."
+      "birth": "1731-06-03",
+      "death": "1795",
+      "birth_place": "Massachusetts (compiled)",
+      "death_place": "Whitehall, Washington County, New York (compiled)"
     },
     "silence_bigelow_1732": {
       "id": "silence_bigelow_1732",
@@ -19702,7 +20457,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1187**. b. **1 Sep 1732**; d. **11 Sep 1811** Bridgeport ME; m. John Davenport; large family per Bigelow Society. Collateral only."
+      "birth": "1732-09-01",
+      "death": "1811-09-11",
+      "birth_place": "Massachusetts (compiled)",
+      "death_place": "Bridgeport, Maine"
     },
     "samuel_bigelow_1738": {
       "id": "samuel_bigelow_1738",
@@ -19741,7 +20499,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed sibling of **Deborah (Bigelow) Pringle**. Soft-ingest **Probable** / `verified: false` — pack **C1185**. Bapt **28 May 1738** Waltham; m. Elizabeth Hubbard **1 Jan 1765** per Bigelow Society. Collateral only."
+      "birth": "1738-05-28",
+      "birth_place": "Waltham, Middlesex County, Massachusetts (baptism)"
     },
     "jonathan_brown_watertown": {
       "id": "jonathan_brown_watertown",
@@ -19783,7 +20542,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Hannah Brown Bigelow**. Soft-ingest **Probable** / `verified: false` — pack **C1288**. Bond: b. **1694**; d. **1755** ae 61. Named in father Abraham's will 1728. Collateral only."
+      "birth": "1694",
+      "death": "1755",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "samuel_brown_watertown": {
       "id": "samuel_brown_watertown",
@@ -19825,7 +20588,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Hannah Brown Bigelow**; executor of father Abraham's will. Soft-ingest **Probable** / `verified: false` — pack **C1288**. Bond: b. **21 Jul 1703**; tailor of Watertown. Collateral only."
+      "birth": "1703-07-21",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Unknown"
     },
     "benjamin_brown_watertown": {
       "id": "benjamin_brown_watertown",
@@ -19863,7 +20628,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Capt. Abraham Brown**. Soft-ingest **Probable** / `verified: false` — pack **C1786**. Collateral only; no UP climb."
+      "birth": "1682-02-27",
+      "death": "1753-03-11",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "william_brown_watertown": {
       "id": "william_brown_watertown",
@@ -19901,7 +20670,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Capt. Abraham Brown**. Soft-ingest **Probable** / `verified: false` — pack **C1786**. Collateral only; no UP climb."
+      "birth": "1684-09-03",
+      "death": "1756-10-28",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "john_shattuck_1647": {
       "id": "john_shattuck_1647",
@@ -19939,7 +20712,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Mary Shattuck Brown**. Soft-ingest **Probable** / `verified: false` — pack **C1867**. Collateral only; no UP climb."
+      "birth": "1647-02-11",
+      "death": "1675-09-14",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Charlestown Ferry, Massachusetts (drowned)",
+      "burial": "Ancient burying-ground, Watertown (tablet with father)"
     },
     "abraham_browne_jr_1639": {
       "id": "abraham_browne_jr_1639",
@@ -19977,7 +20754,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Jonathan Browne (1635)**. Soft-ingest **Probable** / `verified: false` — pack **C1866**. Collateral only; no UP climb."
+      "birth": "1640-03-06",
+      "death": "1667",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Watertown, Middlesex County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "eleazer_bigelow_1705": {
       "id": "eleazer_bigelow_1705",
@@ -20023,7 +20804,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Ebenezer Bigelow (1698)**. Soft-ingest **Probable** / `verified: false` — pack **C1286**. Westminster death date resolves FAG/WikiTree conflation with Ebenezer (**C1236**). Collateral only; no UP climb."
+      "birth": "1705-03-14",
+      "death": "1762-02-24",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Westminster, Worcester County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "gershom_bigelow_1701": {
       "id": "gershom_bigelow_1701",
@@ -20065,7 +20850,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Ebenezer Bigelow (1698)**. Soft-ingest **Probable** / `verified: false` — pack **C1286**. b. **6 Sep 1701**; d. **2 Feb 1769** Auburn per Bigelow Society. Collateral only; spouse/children not climbed."
+      "birth": "1701-09-06",
+      "death": "1769-02-02",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Auburn, Worcester County, Massachusetts",
+      "burial": "Burial details unknown"
     },
     "jonathan_bigelow_1646": {
       "id": "jonathan_bigelow_1646",
@@ -20107,7 +20896,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral brother of **Joshua Bigelow (1655)** (**C1816**). Lean soft-ingest from Watertown VR + will — `verified: false`. Do not climb his line ahead of Joshua UP."
+      "birth": "1646-12-11",
+      "death": "1711-01-09",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Hartford, Connecticut (compiled)"
     },
     "samuel_bigelow_1653": {
       "id": "samuel_bigelow_1653",
@@ -20149,7 +20941,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** collateral brother of **Joshua Bigelow (1655)** (**C1815**). Lean soft-ingest from Watertown VR + will — `verified: false`. Do not climb his line ahead of Joshua UP."
+      "birth": "1653-10-28",
+      "death": "1732-02-01",
+      "birth_place": "Watertown, Middlesex County, Massachusetts",
+      "death_place": "Waltham, Middlesex County, Massachusetts (compiled)"
     },
     "daniel_warren_watertown": {
       "id": "daniel_warren_watertown",
@@ -20191,7 +20986,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Lean collateral sibling of **Mary Warren Bigelow** (**C1853**). Soft-ingest Bond + john1 — `verified: false`. Spouse/children **not** climbed."
+      "birth": "1628",
+      "birth_place": "England (Nayland tradition)"
     },
     "william_prindle_1719": {
       "id": "william_prindle_1719",
@@ -20231,7 +21027,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "William Pringle; uncle of William Pringle (1749)"
       ],
-      "note": "**Probable** brother of Joel Pringle Jr. (**C1173**). Eldest son of Joel Sr × Jemima; died unm. as Louisburg prisoner. **Not** the UEL William Pringle (1749) who married Eunice Benedict."
+      "birth": "1719-10-02",
+      "death": "1747-07-04",
+      "birth_place": "Wallingford, New Haven County, Connecticut Colony",
+      "death_place": "Louisburg, Nova Scotia (prisoner of war; compiled)"
     },
     "sarah_pringle_ives": {
       "id": "sarah_pringle_ives",
@@ -20271,7 +21070,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Sarah Prindle"
       ],
-      "note": "**Probable** sister of Joel Pringle Jr. (**C1174**). Soft-ingest collateral from Pane-Joyce + FAG Joel Sr children grid + WikiTree — `verified: false`. m. 2 Oct 1744 Andrew Ives, Wallingford."
+      "birth": "1721-07-09",
+      "death": "1750",
+      "birth_place": "Wallingford, New Haven County, Connecticut Colony",
+      "death_place": "Connecticut (compiled)"
     },
     "lois_pringle_bristol": {
       "id": "lois_pringle_bristol",
@@ -20311,7 +21113,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Lois Prindle"
       ],
-      "note": "**Probable** sister of Joel Pringle Jr. (**C1175**). Soft-ingest collateral — `verified: false`. m. Henry Bristol; rem. Wallingford. **Not** Lois (Pringle) Dafoe (1766), daughter of Joel Jr."
+      "birth": "1724-02-21",
+      "death": "1756-01",
+      "birth_place": "Wallingford, New Haven County, Connecticut Colony",
+      "death_place": "Connecticut (compiled)"
     },
     "mercy_benham_hull": {
       "id": "mercy_benham_hull",
@@ -20357,7 +21162,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Jemima Benham (**C1225**). Soft collateral from Jacobus + WikiTree Benham-114 child list. m. 1 May 1724 Wallingford **Caleb Hull** — spouse not soft-ingested."
+      "birth": "1703-08-06",
+      "death": "1766-04-18",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Cheshire, New Haven County, Connecticut Colony",
+      "burial": "Cheshire, New Haven County, Connecticut (compiled)"
     },
     "samuel_benham_1706": {
       "id": "samuel_benham_1706",
@@ -20400,7 +21209,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Jemima Benham (**C1228**). b. 29 Jul 1706 New Haven; **died young** per Jacobus. Not the later Samuel by Nathan's second wife Mary (1719/20). Collateral only — no climb."
+      "birth": "1706-07-29",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "lydia_benham_atwater": {
       "id": "lydia_benham_atwater",
@@ -20446,7 +21256,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Jemima Benham (**C1226**). Soft collateral. m. 6 Apr 1727 New Haven **Caleb Atwater** — spouse not soft-ingested. Birth date not given in Jacobus child list."
+      "birth": "1709-01-01",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "sarah_benham_hotchkiss": {
       "id": "sarah_benham_hotchkiss",
@@ -20492,7 +21303,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Jemima Benham (**C1227**). Soft collateral. b. c. 1712; bp Cheshire 19 Mar 1731/2; d. ae 50; m. 23 Nov 1736 Wallingford **Henry Hotchkiss**. Jacobus Hotchkiss fam. names her \"Sarah da. Nathan & Sarah (Beecher) Benham\" — independent parent-link corroborat..."
+      "birth": "1712-01-01",
+      "death": "1751-11-13",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Cheshire, New Haven County, Connecticut Colony",
+      "burial": "Cheshire, New Haven County, Connecticut (compiled)"
     },
     "mary_beecher_wilmot": {
       "id": "mary_beecher_wilmot",
@@ -20534,7 +21349,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). m. Benjamin Wilmot 1700/1. Soft collateral — `verified: false`."
+      "birth": "1672-02-23",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "elizabeth_beecher_dunbar": {
       "id": "elizabeth_beecher_dunbar",
@@ -20576,7 +21392,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). m. John Dunbar 1700. Soft collateral — `verified: false`."
+      "birth": "1675",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "joanna_beecher": {
       "id": "joanna_beecher",
@@ -20615,7 +21432,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). Soft collateral — `verified: false`."
+      "birth": "1677-07-21",
+      "death": "1718-10-21",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "jemima_beecher": {
       "id": "jemima_beecher",
@@ -20654,7 +21474,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Sarah Beecher Benham (**C1277**). Not Jemima (Benham) Pringle. Soft collateral — `verified: false`."
+      "birth": "1681-02-11",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "joseph_beecher_1683": {
       "id": "joseph_beecher_1683",
@@ -20697,7 +21518,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Sarah Beecher Benham (**C1277**). m. Sarah Morris 1710; d. 1712. Soft collateral — `verified: false`."
+      "birth": "1683-02-13",
+      "death": "1712",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "ebenezer_beecher_1686": {
       "id": "ebenezer_beecher_1686",
@@ -20743,7 +21567,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Sarah Beecher Benham (**C1277**). Capt; FAG sibling link on Sarah memorial. Soft collateral — `verified: false`."
+      "birth": "1686-04-12",
+      "death": "1763-01-28",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "joseph_benham_1670": {
       "id": "joseph_benham_1670",
@@ -20782,7 +21609,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Nathan Benham (**C1276**). Soft collateral — `verified: false`."
+      "birth": "1670-06-09",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "samuel_benham_1671": {
       "id": "samuel_benham_1671",
@@ -20821,7 +21649,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Nathan Benham (**C1276**). Not Samuel b. 1706 (Nathan×Sarah). Soft collateral — `verified: false`."
+      "birth": "1671-11-16",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "mercy_benham_1673": {
       "id": "mercy_benham_1673",
@@ -20860,7 +21689,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Nathan Benham (**C1276**). Not Mercy (Benham) Hull (Nathan×Sarah). Soft collateral — `verified: false`."
+      "birth": "1673-10-02",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "ebenezer_benham_1686": {
       "id": "ebenezer_benham_1686",
@@ -20899,7 +21729,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Nathan Benham (**C1276**). Bpt 10 Jan 1685/6. Soft collateral — `verified: false`."
+      "birth": "1686-01-10",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "nathaniel_benham_1686": {
       "id": "nathaniel_benham_1686",
@@ -20938,7 +21769,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Nathan Benham (**C1276**). Twin bpt with Ebenezer 10 Jan 1685/6. Soft collateral — `verified: false`."
+      "birth": "1686-01-10",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony"
     },
     "john_prindle_1691": {
       "id": "john_prindle_1691",
@@ -20984,7 +21816,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Joel Pringle Sr. (**C1217**). b. 1691/2; m. Hannah Clark 1717. Collateral soft-ingest."
+      "birth": "1691",
+      "birth_place": "West Haven, New Haven County, Connecticut Colony"
     },
     "samuel_prindle_1693": {
       "id": "samuel_prindle_1693",
@@ -21034,7 +21867,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Joel Pringle Sr. (**C1213**). Eldest surviving son of Joseph × Mary; m. Mary Smith 1718; lawyer at Danbury. Collateral — not UEL line climb."
+      "birth": "1693-11-11",
+      "death": "1767",
+      "birth_place": "New Haven / West Haven, Connecticut Colony",
+      "death_place": "Danbury / Norwalk area, Connecticut (compiled)"
     },
     "hephzibah_prindle_roberts": {
       "id": "hephzibah_prindle_roberts",
@@ -21084,7 +21920,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Joel Pringle Sr. (**C1214**). m. Abiel Roberts 24 Jun 1724 Wallingford. Collateral soft-ingest only."
+      "birth": "1698-05-15",
+      "death": "1796",
+      "birth_place": "New Haven / West Haven, Connecticut Colony",
+      "death_place": "Cheshire, Connecticut (compiled)"
     },
     "mary_prindle_bristol_1702": {
       "id": "mary_prindle_bristol_1702",
@@ -21134,7 +21973,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** sister of Joel Pringle Sr. (**C1215**). m. John Bristol Jr. 21 Dec 1726. **Not** `lois_pringle_bristol` (Joel Sr's daughter Lois who m. a Bristol)."
+      "birth": "1702-02-01",
+      "death": "1733",
+      "birth_place": "New Haven / West Haven, Connecticut Colony",
+      "death_place": "Newtown, Connecticut (compiled)"
     },
     "joseph_prindle_jr_ct": {
       "id": "joseph_prindle_jr_ct",
@@ -21184,7 +22026,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** brother of Joel Pringle Sr. (**C1216**). Youngest child of Joseph × Mary; executor of father's will. id disambiguates from UEL `joseph_pringle_ue`."
+      "birth": "1704-03-07",
+      "death": "1771-11-10",
+      "birth_place": "West Haven, New Haven County, Connecticut Colony",
+      "death_place": "West Haven, New Haven County, Connecticut Colony",
+      "burial": "West Haven Green Cemetery, West Haven, New Haven County, Connecticut, USA"
     },
     "john_brown_1666": {
       "id": "john_brown_1666",
@@ -21230,7 +22076,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed **brother** of Mary (Brown) Prindle. Soft-ingest **Probable** / `verified: false` — pack **C1268**."
+      "birth": "1666-01-09",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Milford, New Haven County, Connecticut Colony (youth)"
     },
     "hannah_brown_smith": {
       "id": "hannah_brown_smith",
@@ -21276,7 +22124,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed **sister** of Mary (Brown) Prindle. Soft-ingest **Probable** / `verified: false` — pack **C1268**. m. Nathan Smith (2nd wife)."
+      "birth": "1669-08-07",
+      "death": "1729-06-19",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "West Haven, New Haven County, Connecticut Colony",
+      "burial": "Congregational Graveyard, West Haven, Connecticut"
     },
     "grace_brown_denison": {
       "id": "grace_brown_denison",
@@ -21322,7 +22174,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed **sister** of Mary (Brown) Prindle. Soft-ingest **Probable** / `verified: false` — pack **C1268**. m. John Denison of East Haven."
+      "birth": "1672-01-09",
+      "death": "1740",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Haven, New Haven County, Connecticut Colony",
+      "burial": "Burial details unknown"
     },
     "john_prindle_1658": {
       "id": "john_prindle_1658",
@@ -21368,7 +22224,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed **uncle** of Joseph Prindle Sr. Soft-ingest **Probable** / `verified: false` — pack **C1267**. **Not** `john_prindle_1691` (nephew b. ~1691)."
+      "birth": "1658-10-05",
+      "death": "1734-11-25",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Derby, New Haven County, Connecticut Colony",
+      "burial": "Burial details unknown"
     },
     "ebenezer_prindle_1661": {
       "id": "ebenezer_prindle_1661",
@@ -21414,7 +22274,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed **uncle** of Joseph Prindle Sr. Soft-ingest **Probable** / `verified: false` — pack **C1266**. Executor/heir of William Prindle estate per will 1689."
+      "birth": "1661-09-10",
+      "death": "1740",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "Newtown, Fairfield County, Connecticut Colony",
+      "burial": "Burial details unknown"
     },
     "samuel_prindle_1668": {
       "id": "samuel_prindle_1668",
@@ -21464,7 +22328,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed **uncle** of Joseph Prindle Sr. and Joel Pringle Sr. line. Soft-ingest **Probable** / `verified: false` — pack **C1266**. **Not** `samuel_prindle_1693` (nephew)."
+      "birth": "1668-04-15",
+      "death": "1750-09-20",
+      "birth_place": "New Haven, New Haven County, Connecticut Colony",
+      "death_place": "New Milford, Litchfield County, Connecticut Colony",
+      "burial": "Burial details unknown"
     },
     "hannah_mary_shorts": {
       "id": "hannah_mary_shorts",
@@ -21507,7 +22375,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Hannah Mary Shortt; Hannah Mary Van Dusen; Hannah Mary VanDeusen"
       ],
-      "note": "**Probable** daughter of **John Shorts** × **Rosannah Monk** — sibling of Rev Augustus on the Shorts Loyalist orphan cluster. Soft-ingest **collateral** only (`verified: false`); do **not** climb Van Dusen parents ahead of John’s UP gap. m. Casparus R. Van Dusen **16 Feb 1786*..."
+      "birth": "1766-01-23",
+      "death": "1862-10-26",
+      "birth_place": "Paradise Twp., Lancaster Co., Pennsylvania (soft)",
+      "death_place": "Hilton, Brighton Twp., Northumberland Co., Ontario"
     },
     "catharine_shorts": {
       "id": "catharine_shorts",
@@ -21560,7 +22431,10 @@ window.PEOPLE_DATA = {
       "aka": [
         "Catherine Shorts; Catharine Ferguson"
       ],
-      "note": "**Probable** daughter of **John Shorts** × **Rosannah Monk**; m. **Arra Ferguson** **7 Apr 1793** PE Co. (Ferguson compiled / TreesByDan). Soft-ingest **collateral** (`verified: false`). Vitals soft **15 Oct 1774** – **28 Apr 1861** (Ferguson PDF; TreesByDan still shows ~1772)..."
+      "birth": "1774-10-15",
+      "death": "1861-04-28",
+      "birth_place": "Pennsylvania? (soft — Ferguson compiled / TreesByDan ~1772)",
+      "death_place": "(soft — Picton / PE Co. area; Ferguson compiled)"
     },
     "philip_shorts_ue": {
       "id": "philip_shorts_ue",
@@ -21598,8 +22472,7 @@ window.PEOPLE_DATA = {
       ],
       "aka": [
         "Phillip Shorts"
-      ],
-      "note": "**Possible** son of **John Shorts** (UE) — land-petition **index** lists Philip Shorts in Prince Edward; prior unlock dig treats Augustus/Philip/Hannah petitions as **DUE of John**, not Gen-9. Soft-ingest lean for sibling FAN; **upgrade only** when LAC petition image names fat..."
+      ]
     },
     "frances_shorts_heck": {
       "id": "frances_shorts_heck",
@@ -21647,7 +22520,11 @@ window.PEOPLE_DATA = {
       "aka": [
         "Fanny Shorts; Frances Heck; Frances Short"
       ],
-      "note": "**Possible** daughter of **John Shorts** × **Rosannah Monk** — sibling FAN of Augustus. Soft-ingest lean (`verified: false`). Blue Church stone + FAG spouse link + Montreal marriage index prove **Frances Shorts** × **Jacob Heck**; **parent link** is still secondary/user-tree o..."
+      "birth": "1771",
+      "death": "1844-04-10",
+      "birth_place": "(soft — Lancaster / Susquehanna frontier)",
+      "death_place": "Augusta Twp., Leeds and Grenville, Ontario",
+      "burial": "Blue Church Cemetery, Blue Church, Ontario"
     },
     "rachel_mamlock": {
       "id": "rachel_mamlock",
@@ -21690,7 +22567,9 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "**Possible** mother of **Mamie Mamlock**. Died **21 Mar 1911** Manhattan cert **9738**, age 72. Immigrant list shows **Rosa Mamlock** (age 36) with children Albert/Franciska/Emma/Jenny **9 Sep 1867** — Rosa may or may not be the same as Rachel. Soft only; `verified: false`. Do..."
+      "birth": "~1839",
+      "death": "1911-03-21",
+      "death_place": "Manhattan, New York, New York"
     },
     "morganne": {
       "id": "morganne",
@@ -21735,9 +22614,8 @@ window.PEOPLE_DATA = {
           "id": "alexander",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "Primary focus for the in-law ascent (Parsons / Rudd). Daughter of **Bill Parsons** × **Marcy Parsons**; spouse of **Alexander Shorts**. Living-private — no public vitals/death digs."
+      ]
     }
   }
 };
-window.OBJECTS_INDEX = {"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)"},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only"},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"},"FT-0028":{"dir":"FT-0028-california-county-marriage-jon-martin-anderson-v","photos":[],"entry":true,"type":"vital","title":"California county marriage — Jon Martin Anderson × Virginia Jill Cole (Los Angeles 19 Jun 1955)"},"FT-0021":{"dir":"FT-0021-nyc-birth-certificate-virginia-victoria-racien-m","photos":["photos/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan-p1.png"],"entry":true,"type":"vital","title":"NYC birth certificate — Virginia Victoria Racien (Manhattan 1902 #41933)"},"FT-0025":{"dir":"FT-0025-nyc-marriage-certificate-myron-w-cohn-virginia-v","photos":["photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png","photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Myron W. Cohn × Virginia V. Racine (Manhattan 1926/1927 #778)"},"FT-0096":{"dir":"FT-0096-what-tailor-meant-solomon-racien-racine-near-w-3","photos":[],"entry":true,"type":"newspaper","title":"What ‘tailor’ meant — Solomon Racien (Racine) near W 35th and New York’s garment boom (~1902)"},"FT-0230":{"dir":"FT-0230-find-a-grave-93478005-pauline-bess-dushken-le-racine","photos":[],"entry":true,"type":"vital","title":"Find A Grave 93478005 — Pauline Bess Dushken Le Racine memorial + death-cert paste"},"FT-0231":{"dir":"FT-0231-nyc-open-data-death-index-pauline-b-racine-21183","photos":[],"entry":true,"type":"vital","title":"NYC Digitized Death Certificate Index — Pauline B Racine, cert. 21183, Manhattan 1927"},"FT-0412":{"dir":"FT-0412-ny-county-nat-index-salomon-racien-1899","photos":[],"entry":true,"type":"vital","title":"NY County naturalization index — Salomon Racien, 24 Jul 1899 (arrived NYC Jul 1888)"},"FT-0415":{"dir":"FT-0415-castle-garden-july-1888-arrival-window-salomon-racien","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden arrival window — Salomon Racien, July 1888 (pre-Ellis)"},"FT-0420":{"dir":"FT-0420-castle-garden-process-and-1888-rush-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden process — registry, rush of 1888, Russian-Jewish tailor class (Solomon era)"},"FT-0023":{"dir":"FT-0023-nyc-death-certificate-monroe-cohn-manhattan-1921","photos":["photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png","photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Monroe Cohn (Manhattan 1921 #29268)"},"FT-0024":{"dir":"FT-0024-nyc-death-certificate-mamie-cohn-manhattan-1945","photos":["photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png","photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Mamie Cohn (Manhattan 1945 #12625)"},"FT-0094":{"dir":"FT-0094-what-a-shoe-jobber-was-monroe-cohn-s-trade-not-s","photos":[],"entry":true,"type":"newspaper","title":"What a shoe jobber was — Monroe Cohn’s trade (not shoemaker, not shop clerk)"},"FT-0022":{"dir":"FT-0022-nyc-marriage-certificate-monroe-cohn-mamie-mamlo","photos":["photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png","photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Monroe Cohn × Mamie Mamlock (Manhattan 1893 #13078)"},"FT-0095":{"dir":"FT-0095-rabbi-aaron-wise-of-rodeph-sholom-marries-monroe","photos":[],"entry":true,"type":"church","title":"Rabbi Aaron Wise of Rodeph Sholom marries Monroe Cohn × Mamie Mamlock (Lexington & 63rd world, 1893)"},"FT-0240":{"dir":"FT-0240-find-a-grave-95985316-mamie-cohn-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 95985316 — Mamie Cohn memorial (Mt Carmel; no bio; no grave photo)"},"FT-0260":{"dir":"FT-0260-allemannia-1867-rosa-mamlock-children-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Allemannia 1867 — Rosa Mamlock lands with four children; Mamie born later in NYC"},"FT-0261":{"dir":"FT-0261-washington-heights-jewish-drift-monroe-cohn-1921-death","photos":[],"entry":true,"type":"newspaper","title":"Washington Heights Jewish surge — Monroe Cohn's Fort Washington Ave death address (1921)"},"FT-0262":{"dir":"FT-0262-west-end-widow-mamie-cohn-305-west-end-ave-1945","photos":[],"entry":true,"type":"newspaper","title":"West End widow — Mamie Cohn's 305 West End Ave last years on the quiet UWS spine"},"FT-0306":{"dir":"FT-0306-albert-mamlock-bronx-brook-av-deed-1901","photos":[],"entry":true,"type":"deed","title":"Albert Mamlock buys Bronx lot — Brook av near 171st st (1901)"},"FT-0398":{"dir":"FT-0398-cohn-mamlock-oval-studio-portraits-framed-set-ph","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg","photos/05.jpg","photos/06.jpg","photos/07.jpg"],"entry":true,"type":"photo","title":"Cohn / Mamlock oval studio portraits (framed set) + photographer backs"},"FT-0418":{"dir":"FT-0418-nyc-open-data-death-index-albert-mamlock-manhattan-12843-1937","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Albert Mamlock, Manhattan 12843, 24 May 1937 age 79"},"FT-0421":{"dir":"FT-0421-allemannia-ship-castle-garden-1867-mamlock-landing","photos":[],"entry":true,"type":"newspaper","title":"Allemannia (HAL) + Castle Garden 1867 — mother-and-children German landing world (Mamlock)"},"FT-0426":{"dir":"FT-0426-mt-carmel-cemetery-jewish-burial-world-monroe-mamie","photos":[],"entry":true,"type":"newspaper","title":"Mt. Carmel Cemetery (Glendale) — NYC Jewish burial world (Monroe & Mamie)"},"FT-0305":{"dir":"FT-0305-germania-1867-moritz-blamchen-mamlock-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Germania 1867 — Moritz Mamlock merchant + wife Blamchen land before Rosa party"},"FT-0099":{"dir":"FT-0099-what-shoes-looked-like-1890-1920-the-stock-a-sho","photos":["photos/01-crawford-oxfords-ad-1902.jpg","photos/02-shoe-store-interior-1901.jpg","photos/03-american-high-boots-1899-1900.jpg","photos/04-mens-factory-lace-boots.jpg","photos/05-boots-shoes-storefront-poster-c1878.jpg","photos/06-gilpin-shoe-storefront-1899.jpg"],"entry":true,"type":"newspaper","title":"What shoes looked like ~1890–1920 — the stock a shoe jobber moved"},"FT-0427":{"dir":"FT-0427-hartford-german-jewish-merchant-world-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Hartford German-Jewish merchant world — clothing & downtown trade color (Solomon Cohn era)"},"FT-0417":{"dir":"FT-0417-nyc-open-data-death-index-bertha-cohn-kings-10639-1925","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Bertha Cohn, Kings 10639, 22 May 1925 age 79 (candidate)"},"FT-0395":{"dir":"FT-0395-orange-county-register-a-life-story-kay-heil-did","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"newspaper","title":"Orange County Register — “A Life Story: Kay Heil did it her way” (2007)"},"FT-0390":{"dir":"FT-0390-tri-delta-sorority-eugene-or-1928-29-grandma-kay","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"photo","title":"Tri Delta sorority — Eugene OR 1928–29 (Grandma Kay) + Clemens genealogy note"},"FT-0391":{"dir":"FT-0391-registration-of-marriage-john-a-blakely-emma-a-m","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"vital","title":"Registration of Marriage — John A. Blakely × Emma A. More (1868, Grant Co. WI)"},"FT-0393":{"dir":"FT-0393-american-red-cross-volunteer-special-services-ce","photos":["photos/01.jpg"],"entry":true,"type":"artifact","title":"American Red Cross Volunteer Special Services Certificate — Kathleen Anderson (1945)"},"FT-0394":{"dir":"FT-0394-park-st-school-hood-river-classroom-medical-insp","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"photo","title":"Park St. School, Hood River — classroom / medical inspection (Glendora Blakely)"},"FT-0399":{"dir":"FT-0399-clipping-mrs-glendora-m-blakeley-public-welfare","photos":["photos/01.jpg"],"entry":true,"type":"newspaper","title":"Clipping — Mrs. Glendora M. Blakeley, public welfare chairman"},"FT-0403":{"dir":"FT-0403-mrs-glendora-blakely-bloomington-nurse-la-mesa","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Glendora Blakely — Bloomington city nurse; died La Mesa Calif. (1960)"},"FT-0404":{"dir":"FT-0404-platteville-journal-john-a-blakely-gar-obit-1937","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Platteville Journal / Grant County News — John A. Blakely G.A.R. obituary (15 Sep 1937)"},"FT-0029":{"dir":"FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl","photos":["photos/01.jpg","photos/source-clip.jpg"],"entry":true,"type":"obituary","title":"Death Claims Dr. Guerdon C. Buck Monday Morning (Platteville ~22 Jun 1932)"},"FT-0175":{"dir":"FT-0175-dr-e-j-buck-runaway-injury-death-grant-county-wi","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Dr. E. J. Buck — runaway injury death (Grant County Witness 26 Jun 1901)"},"FT-0176":{"dir":"FT-0176-mrs-sarah-trask-buck-seattle-death-platteville-j","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Sarah Trask Buck — Seattle death (Platteville Journal 30 Sep 1943)"},"FT-0200":{"dir":"FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877","photos":[],"entry":true,"type":"newspaper","title":"Erastus J. Buck, M.D. — United States Biographical Dictionary (Wisconsin vol., 1877)"},"FT-0201":{"dir":"FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876","photos":[],"entry":true,"type":"place","title":"Mrs. S. E. Buck — Platteville Normal School teacher of Reading (1876–1880)"},"FT-0360":{"dir":"FT-0360-e-j-buck-md-butterfield-grant-county-1881","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — History of Grant County (Butterfield 1881) biographical sketch"},"FT-0197":{"dir":"FT-0197-1895-wi-veteran-census-erastus-buck-surgeon-18th","photos":[],"entry":true,"type":"military","title":"1895 Wisconsin veteran census — Erastus Buck, Surgeon, 18th Wis. Inf., Platteville"},"FT-0198":{"dir":"FT-0198-heath-ma-baptism-erastus-s-erastus-roxana-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Erastus s. Erastus and Roxana, Oct 1827"},"FT-0361":{"dir":"FT-0361-e-j-buck-westfield-montello-express-1876","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — Westfield “first class physician” vignette (Montello Express 1876)"},"FT-0362":{"dir":"FT-0362-e-j-buck-ymla-vice-president-platteville-1881","photos":[],"entry":true,"type":"place","title":"E. J. Buck — Young Men’s Library Association vice president (Platteville ~1881)"},"FT-0281":{"dir":"FT-0281-heath-ma-death-lucy-d-col-david-sarah-deane-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Lucy D., d. Col. David and Sarah Deane, May 1827"},"FT-0282":{"dir":"FT-0282-heath-ma-baptism-roxanda-d-david-1801","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Roxanda, d. David, bp. 22 Nov 1801"},"FT-0280":{"dir":"FT-0280-heath-ma-death-sarah-deane-w-col-david-1809","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Sarah Deane [w. Col. David], 30 Apr 1809"},"FT-0292":{"dir":"FT-0292-david-baldwin-heath-pioneer-land-church-pew","photos":[],"entry":true,"type":"place","title":"David Baldwin — early Heath/Charlemont landholder and church pew 6 (Everts + Connecticut Valley)"},"FT-0286":{"dir":"FT-0286-heath-ma-birth-erastus-ch-william-lt-william-1798","photos":[],"entry":true,"type":"vital","title":"Heath MA birth — Erastus ch. William (Lt. William and w.), Jan 1798"},"FT-0283":{"dir":"FT-0283-heath-ma-deaths-buck-william-sarah-william-jr","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Lt. William Buck, Sarah (Sally) Buck, and William Jr."},"FT-0284":{"dir":"FT-0284-heath-ma-deaths-maxwell-hugh-corbett-benjamin-anna","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Hugh Maxwell, Sarah Corbett, Benjamin Lt., Anna Winslow"},"FT-0285":{"dir":"FT-0285-heath-ma-marriages-buck-1785-maxwell-winslow-1762","photos":[],"entry":true,"type":"vital","title":"Heath MA marriages — Buck 1785 and Maxwell × Winslow 1762"},"FT-0287":{"dir":"FT-0287-find-a-grave-48687650-benjamin-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 48687650 — LTC Benjamin Butler Maxwell Sr memorial"},"FT-0288":{"dir":"FT-0288-find-a-grave-87173271-anna-winslow-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 87173271 — Anna Winslow Maxwell memorial"},"FT-0322":{"dir":"FT-0322-aane-benjamin-maxwell-brother-minuteman","photos":[],"entry":true,"type":"military","title":"AANE Deerfield — Lt. Benjamin Maxwell: son of Hugh I × Sarah Corbett; brother of Col. Hugh; Capt. Rice Minute-Man"},"FT-0289":{"dir":"FT-0289-find-a-grave-25190915-hugh-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 25190915 — Hugh Maxwell (1701–1759) memorial"},"FT-0290":{"dir":"FT-0290-hugh-maxwell-heath-founding-revolution-narrative","photos":[],"entry":true,"type":"place","title":"Col. Hugh Maxwell — Heath incorporation, Irish origin, and Revolutionary narrative (Everts 1879 + MS 27)"},"FT-0320":{"dir":"FT-0320-christian-patriot-col-hugh-maxwell-memoir","photos":[],"entry":true,"type":"military","title":"The Christian Patriot (1833) — Col. Hugh Maxwell memoir: two Hughs, Fort William Henry, Bunker Hill, later war, death at sea"},"FT-0321":{"dir":"FT-0321-shays-rebellion-stcc-col-hugh-maxwell","photos":[],"entry":true,"type":"military","title":"Shays' Rebellion STCC narrative — Col. Hugh Maxwell military career, Stickney letter, Cincinnati, Shays"},"FT-0323":{"dir":"FT-0323-franklin-biographical-review-maxwell-rangers","photos":[],"entry":true,"type":"military","title":"Biographical Review Franklin Co. (1895) — Hugh Sr. / Col. Hugh Jr. / Benjamin Minute-Man + Rogers's Rangers claim"},"FT-0324":{"dir":"FT-0324-white-charlemont-plantation-maxwell-revwar","photos":[],"entry":true,"type":"military","title":"Joseph White, Charlemont as a Plantation (1855/58) — Col. Hugh & Lt. Benjamin Maxwell Rev War / FIW narrative"},"FT-0325":{"dir":"FT-0325-greenfield-recorder-west-county-revwar-maxwell","photos":[],"entry":true,"type":"newspaper","title":"Greenfield Recorder (2026) — western Franklin County Rev War stories: Charlemont Maxwell Minute-Men + Heath naming"},"FT-0326":{"dir":"FT-0326-ma-state-library-blog-hugh-maxwell-ms27","photos":[],"entry":true,"type":"military","title":"MA State Library blog (2014) — interpretive note on Hugh Maxwell MS 27 military papers"},"FT-0327":{"dir":"FT-0327-brown-bedford-maxwell-warriors","photos":[],"entry":true,"type":"military","title":"Abram English Brown, History of Bedford (1891) — Maxwell FIW warriors; elder Hugh epitaph 1759; Christian Patriot"},"FT-0328":{"dir":"FT-0328-americancenturies-pvma-maxwell-agriculture","photos":[],"entry":true,"type":"place","title":"American Centuries / PVMA — Col. Hugh Maxwell Mass. Society for Agriculture certificate (1794) interpretive label"},"FT-0329":{"dir":"FT-0329-nason-gazetteer-heath-maxwell-no-tories","photos":[],"entry":true,"type":"place","title":"Nason/Varney Gazetteer (1890) — Heath: Col. Hugh Maxwell, Bunker Hill wound, no Tories"},"FT-0432":{"dir":"FT-0432-fort-william-henry-1757-siege-massacre-context","photos":[],"entry":true,"type":"military","title":"Fort William Henry 1757 — siege and column attack (surrounding event for Col. Hugh’s escape)"},"FT-0433":{"dir":"FT-0433-robortella-steps-west-preemption-line-survey","photos":[],"entry":true,"type":"place","title":"Steps West — Col. Hugh Maxwell’s 1788 Pre-emption Line survey (Robortella + Historic Geneva)"},"FT-0434":{"dir":"FT-0434-heitman-lt-col-hugh-maxwell-continental-commissions","photos":[],"entry":true,"type":"military","title":"Heitman register — Lt. Col. Hugh Maxwell (Mass.) Continental commissions; Washington papers name his company"},"FT-0435":{"dir":"FT-0435-mssrw-hugh-maxwell-charlemont-abstract","photos":[],"entry":true,"type":"military","title":"MSSRW vol. 10 — Maxwell, Hugh of Charlemont (service abstract)"},"FT-0436":{"dir":"FT-0436-heath-south-cemetery-maxwell-cenotaph-land-gift","photos":[],"entry":true,"type":"place","title":"Heath South Cemetery — Col. Hugh Maxwell land gift (1791) and grandchildren’s cenotaph (1859)"},"FT-0437":{"dir":"FT-0437-pvma-burgoyne-flag-maxwell-regimental-fragment","photos":[],"entry":true,"type":"military","title":"PVMA Memorial Hall — Burgoyne flag remnant + Col. Hugh Maxwell regimental flag fragment"},"FT-0291":{"dir":"FT-0291-william-buck-heath-first-settler-church-pew","photos":[],"entry":true,"type":"place","title":"Lt. William Buck — western Heath first settler and founding-church pew (Everts 1879)"},"FT-0438":{"dir":"FT-0438-hotten-increase-1635-william-roger-buck","photos":[],"entry":true,"type":"vital","title":"Hotten Original Lists — Increase 1635: William Buck 50 (plowwright) + Roger Buck 18"},"FT-0182":{"dir":"FT-0182-mills-birth-index-marion-azalia-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. birth index 1904–1906 — Marion L. & Azalia Gayle Anderson (mother Stonebraker)"},"FT-0173":{"dir":"FT-0173-henderson-christian-church-history-stonebraker-f","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Henderson Christian Church history — Stonebraker founding members (1877)"},"FT-0178":{"dir":"FT-0178-marriage-license-hugh-d-anderson-bertha-stonebra","photos":[],"entry":true,"type":"newspaper","title":"Marriage license — Hugh D. Anderson × Bertha Stonebraker (Tribune 29 May 1902)"},"FT-0183":{"dir":"FT-0183-delayed-birth-azalia-ursula-lucille-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. delayed births — Azalia Gaile & Ursula Lucille Anderson (Hugh D. × Urtha Stonebraker)"},"FT-0192":{"dir":"FT-0192-marriage-return-hugh-anderson-urtha-stonebraker-1902","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage return 1902 — Hugh D. Anderson × Urtha Stonebraker"},"FT-0340":{"dir":"FT-0340-malvern-leader-stonebraker-anderson-marriage-1902","photos":[],"entry":true,"type":"newspaper","title":"Malvern Leader — Stonebraker–Anderson marriage at J. A. Stonebraker home (5 Jun 1902)"},"FT-0341":{"dir":"FT-0341-henderson-times-1910-pioneer-stonebraker","photos":[],"entry":true,"type":"newspaper","title":"Henderson Times 15 Dec 1910 — pioneer roll names J. A. Stonebraker"},"FT-0342":{"dir":"FT-0342-1910-atlas-stonebraker-section-8","photos":[],"entry":true,"type":"place","title":"1910 Mills atlas — J. A. & P. H. Stonebraker landowners, Anderson Twp Sec. 8"},"FT-0191":{"dir":"FT-0191-1905-henderson-census-stonebraker-cluster","photos":[],"entry":true,"type":"census","title":"1905 IA State Census — Henderson — J. A. / P. H. / F. G. Stonebraker (cards 166–168)"},"FT-0196":{"dir":"FT-0196-henderson-christian-church-1942-fire-rebuild","photos":[],"entry":true,"type":"church","title":"Henderson Christian Church — 1942 fire and wartime rebuild"},"FT-0177":{"dir":"FT-0177-silver-city-community-history-harry-w-anderson-b","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson bio (John W. × Emily Dupray)"},"FT-0195":{"dir":"FT-0195-silver-city-anderson-favorite-family-stories","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Anderson Favorite Family Stories"},"FT-0307":{"dir":"FT-0307-silver-city-harry-w-anderson-trade-career","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson trade career"},"FT-0343":{"dir":"FT-0343-hugh-dupree-horseshoe-bookends-family-oral","photos":[],"entry":true,"type":"newspaper","title":"Family oral — Hugh Dupree Anderson made Alex’s horseshoe bookends"},"FT-0439":{"dir":"FT-0439-silver-city-times-harry-hugh-farm-1913","photos":[],"entry":true,"type":"newspaper","title":"Silver City Times — Harry Anderson sold farm to brother Hugh (2 Oct 1913)"},"FT-0440":{"dir":"FT-0440-silver-city-times-emily-anderson-death-1923","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Silver City Times — Mrs. Emily Anderson death notice (8 Nov 1923)"},"FT-0330":{"dir":"FT-0330-jw-anderson-silver-creek-supervisor-wheat-1869","photos":[],"entry":true,"type":"newspaper","title":"Pottawattamie notes — J. W. Anderson Silver Creek supervisor (1869) + wheat crop"},"FT-0332":{"dir":"FT-0332-mills-western-stage-coonville-st-joseph","photos":[],"entry":true,"type":"newspaper","title":"Mills County early transportation — Western Stage Line Coonville to St. Joseph"},"FT-0333":{"dir":"FT-0333-coonville-glenwood-wortman-1881","photos":[],"entry":true,"type":"newspaper","title":"Coonville / Glenwood — Wortman & 1881 history (meet-story place frame)"},"FT-0335":{"dir":"FT-0335-ingraham-plumer-inn-stage-landscape","photos":[],"entry":true,"type":"newspaper","title":"Ingraham / Silver City — Flanagan–Huffaker settling + Wortman Stage Coach Inn"},"FT-0331":{"dir":"FT-0331-silver-creek-twp-jw-anderson-trustee-1882","photos":[],"entry":true,"type":"newspaper","title":"Silver Creek Township history — J. W. Anderson trustee (1882) + stage-station landscape"},"FT-0334":{"dir":"FT-0334-chicago-dray-teamster-trade-context","photos":[],"entry":true,"type":"newspaper","title":"Encyclopedia of Chicago — Teamsters / horse-team drayage (profession unpack)"},"FT-0005":{"dir":"FT-0005-conejo-mountain-funeral-home-gloria-martha-short","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Conejo Mountain Funeral Home — Gloria Martha Shorts"},"FT-0380":{"dir":"FT-0380-deseret-1972-utah-swim-shorts-thousand-oaks-recruit","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — Utah swim preview names Bill Shorts of Thousand Oaks (1972)"},"FT-0381":{"dir":"FT-0381-chronicle-1973-01-utah-development-meet-shorts-backstroke","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts backstroke placings + photo caption (1973)"},"FT-0382":{"dir":"FT-0382-tribune-1973-02-shorts-bio-thousand-oaks-business","photos":[],"entry":true,"type":"newspaper","title":"Salt Lake Tribune — Bill Shorts bio (Thousand Oaks, business major, 6'4 backstroke)"},"FT-0383":{"dir":"FT-0383-chronicle-1973-02-frosh-backstroke-firsts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — frosh Bill Shorts wins 200 back, second in 100 (1973)"},"FT-0384":{"dir":"FT-0384-wac-1974-medley-relay-shorts-backstroke-lead","photos":[],"entry":true,"type":"newspaper","title":"WAC swimming championships 1974 — Bill Shorts leads off Utah medley relay"},"FT-0385":{"dir":"FT-0385-chronicle-1975-03-wac-preview-shorts-favorite","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — 1975 WAC preview: Shorts favorite in backstroke"},"FT-0386":{"dir":"FT-0386-deseret-1975-03-wac-medley-record-shorts","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — 1975 WAC: Utah medley relay meet record (Shorts lead-off)"},"FT-0387":{"dir":"FT-0387-chronicle-1975-03-ncaa-cleveland-roster-shorts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts named to Utah NCAA Cleveland roster (1975)"},"FT-0388":{"dir":"FT-0388-captain-wac-100-back-champ-1975-76-season","photos":[],"entry":true,"type":"newspaper","title":"Team captain Bill Shorts — WAC 100 backstroke champion (1975–76 season stack)"},"FT-0389":{"dir":"FT-0389-wac-1976-shorts-defend-third-place","photos":[],"entry":true,"type":"newspaper","title":"1976 WAC — defending backstroke champ Bill Shorts finishes third"},"FT-0004":{"dir":"FT-0004-ventura-county-star-richard-dorland-shorts-28-oc","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Ventura County Star — Richard Dorland Shorts (28 Oct 2009)"},"FT-0101":{"dir":"FT-0101-they-met-at-the-hollywood-palladium-gloria-richa","photos":["photos/01-hollywood-palladium.jpg","photos/02-gloria-portrait.jpg","photos/03-gloria-obit-card.jpg"],"entry":true,"type":"newspaper","title":"They met at the Hollywood Palladium — Gloria × Richard danced to Woody Herman"},"FT-0102":{"dir":"FT-0102-secretary-at-the-long-beach-shipyards-gloria-s-w","photos":["photos/01-liberty-ship.jpg"],"entry":true,"type":"newspaper","title":"Secretary at the Long Beach shipyards — Gloria’s wartime / postwar work world"},"FT-0313":{"dir":"FT-0313-gloria-bellflower-wartime-school-boom","photos":[],"entry":true,"type":"newspaper","title":"Bellflower 1942 — wartime boomtown where Gloria finished high school"},"FT-0315":{"dir":"FT-0315-long-beach-women-wwii-historian-burnett","photos":[],"entry":true,"type":"newspaper","title":"Long Beach women in the WWII yards — local historian context for Gloria’s shipyard years"},"FT-0103":{"dir":"FT-0103-tuxhorn-germans-on-the-plains-westphalia-mcphers","photos":["photos/01-leo-tuxhorn-portrait.jpg"],"entry":true,"type":"newspaper","title":"Tuxhorn Germans on the Plains — Westphalia → McPherson; Nemaha surname neighbors"},"FT-0314":{"dir":"FT-0314-august-tuxhorn-1884-farm-fire-death","photos":[],"entry":true,"type":"newspaper","title":"August Tuxhorn’s 1884 farm fire — Leo’s father, McPherson County"},"FT-0107":{"dir":"FT-0107-dornberg-bielefeld-america-westphalia-emigration","photos":["photos/01-memorial-fag.png","photos/01-tuxhorn-fag.png"],"entry":true,"type":"census","title":"Dornberg / Bielefeld → America — Westphalia emigration peak (Tuxhorn hinge)"},"FT-0408":{"dir":"FT-0408-democratic-sentinel-august-tuxhorn-1884-wire","photos":[],"entry":true,"type":"newspaper","title":"Democratic Sentinel (Rensselaer IN) — August Tuxhorn McPherson wire, 21 Nov 1884"},"FT-0409":{"dir":"FT-0409-mcpherson-settler-elizabeth-tuxhorn-groveland-1876","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS settler list — Elizabeth Tuxhorn (Birkenbuel), Groveland 1876"},"FT-0411":{"dir":"FT-0411-mcpherson-probate-index-tuxhorn-august-d52-e104","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS probate journal index — Tuxhorn August D52 (1891) / E104 (1894)"},"FT-0098":{"dir":"FT-0098-altmark-germans-on-the-kansas-prairie-gatz-hilge","photos":[],"entry":true,"type":"newspaper","title":"Altmark Germans on the Kansas prairie — Gatz × Hilgenfeld, McPherson Pioneer Register, and what ‘farmer’ meant"},"FT-0354":{"dir":"FT-0354-irvin-satc-wwi-student-army-training-corps","photos":[],"entry":true,"type":"newspaper","title":"Irvin Carl Gatz — Pvt Student Army Training Corps (WWI title unpack)"},"FT-0100":{"dir":"FT-0100-prairie-housing-and-tools-1870-1905-soddy-to-fra","photos":["photos/01-chrisman-sisters-sod.jpg","photos/02-rawding-family-sod-house-1886.jpg","photos/03-haumont-two-story-sod-1886.jpg","photos/04-family-sod-house-prairie.jpg","photos/05-farm-family-sod-nebraska.jpg","photos/06-horse-drawn-plow.jpg"],"entry":true,"type":"newspaper","title":"Prairie housing & tools ~1870–1905 — soddy to frame, plow work (context for Gatz farmers)"},"FT-0097":{"dir":"FT-0097-falls-city-journal-1899-johann-ludwig-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1899 — Johann Ludwig Hilgenfeld, 92; names daughter Sophia Gatz"},"FT-0350":{"dir":"FT-0350-falls-city-journal-1941-anna-deckinger-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1941 — Anna Deckinger Hilgenfeld (FAN farm + McPherson sister)"},"FT-0351":{"dir":"FT-0351-richardson-1890-farmers-hilgenfield-arago","photos":[],"entry":true,"type":"newspaper","title":"Nebraska State Gazetteer 1890 — Hilgenfield farmers at Arago / Falls City"},"FT-0352":{"dir":"FT-0352-andreas-falls-city-deutsche-gesellschaft-arago","photos":[],"entry":true,"type":"newspaper","title":"Andreas 1882 — Falls City Die Deutsche Gesellschaft + Arago German farming community"},"FT-0353":{"dir":"FT-0353-barrington-german-pioneer-influx-lines","photos":[],"entry":true,"type":"newspaper","title":"Barrington area — German pioneer influx 1840s–1850s (Hilgenfeld sojourn landscape)"},"FT-0355":{"dir":"FT-0355-wendemark-altmark-marschhufendorf-place","photos":[],"entry":true,"type":"newspaper","title":"Wendemark (Altmärkische Wische) — Marschhufendorf place for Gatz × Hilgenfeld wedding"},"FT-0108":{"dir":"FT-0108-don-shorts-at-blue-church-plaque-methodism-claim","photos":["photos/01-ontarioplaques-don-shorts-comment.png","photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"newspaper","title":"Don Shorts at Blue Church plaque — Methodism claim + who is buried here? (2010)"},"FT-0310":{"dir":"FT-0310-richard-panama-sixth-af-operations-specialist","photos":[],"entry":true,"type":"newspaper","title":"Operations Specialist in Panama — Richard’s WWII AAF world (Sixth Air Force)"},"FT-0311":{"dir":"FT-0311-richard-fire-career-arcadia-huntington-burbank","photos":[],"entry":true,"type":"newspaper","title":"Arcadia → Huntington Park → Burbank Captain — Richard’s fire departments in local histories"},"FT-0312":{"dir":"FT-0312-south-gate-high-1941-industrial-suburb","photos":[],"entry":true,"type":"newspaper","title":"South Gate High 1941 — industrial suburb where Richard graduated"},"FT-0370":{"dir":"FT-0370-1929-socal-move-south-gate-firestone-boom","photos":[],"entry":true,"type":"newspaper","title":"1929 Rochester → Southern California — Firestone / South Gate boom year"},"FT-0372":{"dir":"FT-0372-highland-park-figueroa-shoe-retail-world","photos":[],"entry":true,"type":"newspaper","title":"Highland Park Figueroa — retail / shoe-store strip where Earl kept shop"},"FT-0373":{"dir":"FT-0373-south-gate-depression-quake-industry","photos":[],"entry":true,"type":"newspaper","title":"South Gate childhood suburb — Depression, 1933 quake, factory jobs"},"FT-0374":{"dir":"FT-0374-south-pasadena-later-residence-world","photos":[],"entry":true,"type":"newspaper","title":"South Pasadena later home — trolley suburb where Earl died"},"FT-0152":{"dir":"FT-0152-find-a-grave-100072423-earl-stanley-shorts-memor","photos":[],"entry":true,"type":"vital","title":"Find A Grave 100072423 — Earl Stanley Shorts memorial extract"},"FT-0172":{"dir":"FT-0172-charles-merritt-brights-disease-gorham-ontario-c","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Charles Merritt — Bright's disease, Gorham (Ontario County Chronicle 21 May 1902)"},"FT-0174":{"dir":"FT-0174-1850-us-census-hopewell-ontario-ny-henry-tessima","photos":["photos/01.jpg"],"entry":true,"type":"census","title":"1850 US Census — Hopewell, Ontario, NY — Henry Tessiman household (fam 259)"},"FT-0217":{"dir":"FT-0217-woodlawn-cemetery-register-merritt-lot-207","photos":[],"entry":true,"type":"church","title":"Woodlawn Cemetery register — Charles J. & Ann L. Merritt, Sec 10 Lot 207"},"FT-0218":{"dir":"FT-0218-charles-merritt-probate-ann-l-executor-jun-1902","photos":[],"entry":true,"type":"newspaper","title":"Charles Merritt probate — Ann L. Merritt executor (Ontario County Chronicle 4 Jun 1902)"},"FT-0219":{"dir":"FT-0219-find-a-grave-121146760-charles-merritt-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 121146760 — Charles Merritt memorial extract"},"FT-0270":{"dir":"FT-0270-1855-census-hopewell-ontario-ny-tesseyman-fam-027","photos":[],"entry":true,"type":"census","title":"1855 NY State Census index — Hopewell, Ontario, NY — Tesseyman household (fam 027)"},"FT-0401":{"dir":"FT-0401-abbie-tesseyman-pneumonia-chapinville-1898","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Abbie Tesseyman — pneumonia, Chapinville (Ontario County Journal 30 Dec 1898)"},"FT-0271":{"dir":"FT-0271-1875-census-canandaigua-ontario-ny-ethelinda-tesseyman-fam-465","photos":[],"entry":true,"type":"census","title":"1875 NY State Census index — Canandaigua, Ontario, NY — Ethelinda Tesseyman (fam 465)"},"FT-0067":{"dir":"FT-0067-pringle-benham-compiled-dorland-shortts-239-mini","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled — Dorland Shortts #239 minister; m. Effie Earl 1879; d. Marcy 1945"},"FT-0069":{"dir":"FT-0069-find-a-grave-8850577-rev-dorland-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850577 — Rev Dorland Shorts memorial extract (no bio; no stone photo)"},"FT-0215":{"dir":"FT-0215-find-a-grave-8850579-effie-eliza-earl-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850579 — Effie Eliza Earl Shorts memorial extract (no bio; no stone photo)"},"FT-0371":{"dir":"FT-0371-rochester-shoe-industry-mckelvey-decline","photos":[],"entry":true,"type":"newspaper","title":"Rochester shoe-town decline — McKelvey city-historian frame for leaving ~1929"},"FT-0066":{"dir":"FT-0066-mount-hope-cemetery-section-w-stone-list-rev-dor","photos":[],"entry":true,"type":"vital","title":"Mount Hope Cemetery Section W stone list — Rev. Dorland Shorts & Effie E."},"FT-0216":{"dir":"FT-0216-ny-state-death-index-1918-effie-shorts-cert-37880","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1918 — Effie E. Shorts, cert. 37880, East Rochester"},"FT-0031":{"dir":"FT-0031-grindstone-island-umc-history-rev-alexander-shor","photos":["photos/01-altar.jpg","photos/02-stained-glass.jpg","photos/03-church-front.jpg","photos/04-church-door.jpg","photos/05-quilt.jpg"],"entry":true,"type":"church","title":"Grindstone Island UMC History — Rev Alexander Shorts, circuit rider (full page + images)"},"FT-0033":{"dir":"FT-0033-thousand-islands-life-grindstone-stained-glass-s","photos":["photos/01-church-stained-glass-hero.png","photos/02-rev-alexander-shorts.jpeg","photos/03-church-graphic.png","photos/04-church-exterior.png","photos/05-nancy-keziah-photo.png"],"entry":true,"type":"church","title":"Thousand Islands Life — Grindstone stained-glass series: Rev. Alexander Shorts (full article + images)"},"FT-0038":{"dir":"FT-0038-shorts-me-builders-connection-map-hay-bay-napane","photos":[],"entry":true,"type":"church","title":"Shorts ME builders — connection map (Hay Bay → Napanee → Grindstone → Dorland)"},"FT-0040":{"dir":"FT-0040-aylsworth-family-1887-eva-eliza-aylesworth-m-rev","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) — Eva Eliza Aylesworth m. Rev. Alexander Shorts; died leaving son Dorian"},"FT-0065":{"dir":"FT-0065-ny-state-death-index-1945-dorland-shorts-cert-52","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1945 — Dorland Shorts, cert. 52286, Marcy"},"FT-0068":{"dir":"FT-0068-maynard-methodist-church-marcy-ny-erie-canal-vil","photos":["photos/01-maynard-methodist-church.png","photos/02-maynard-interior.jpg"],"entry":true,"type":"place","title":"Maynard Methodist Church (Marcy NY) — Erie Canal Village history + photos"},"FT-0070":{"dir":"FT-0070-find-a-grave-138634881-eva-eliza-aylesworth-shor","photos":["photos/01-cemetery-cover.jpeg"],"entry":true,"type":"vital","title":"Find A Grave 138634881 — Eva Eliza Aylesworth Shorts (Knight's Cemetery)"},"FT-0071":{"dir":"FT-0071-knights-cemetery-transcript-kns-96-eva-eliza-sho","photos":["photos/01-cemetery-overview-2013.jpg","photos/02-cemetery-overview-2019.jpeg","photos/03-cemetery-overview-2024.jpeg"],"entry":true,"type":"vital","title":"Knight's Cemetery transcript — KNS 96 Eva Eliza Shorts stone + cemetery intro"},"FT-0074":{"dir":"FT-0074-pringle-benham-compiled-gen-110-alexander-shortt","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled gen. §110 — Alexander Shortts × Eva Eliza Aylesworth; child Dorland only"},"FT-0089":{"dir":"FT-0089-methodism-in-alexandria-jefferson-co-ny-circuit","photos":[],"entry":true,"type":"church","title":"Methodism in Alexandria (Jefferson Co. NY) — circuit riders on horseback; town where Earl Stanley Shorts was born"},"FT-0111":{"dir":"FT-0111-crem-dorland-book-fag-ruth-dorland-william-short","photos":[],"entry":true,"type":"book","title":"Crem Dorland book + FAG — Ruth Dorland × William Shorts (Adolphustown FAN; not blood claim)"},"FT-0137":{"dir":"FT-0137-find-a-grave-96207765-rev-alexander-shorts-grind","photos":[],"entry":true,"type":"vital","title":"Find A Grave 96207765 — Rev Alexander Shorts (Grindstone Island Cemetery)"},"FT-0429":{"dir":"FT-0429-black-river-nny-conference-memorial-shorts-negative","photos":[],"entry":true,"type":"church","title":"Black River & Northern NY Conference Memorial — no Shorts sketch (Dorland charge negative)"},"FT-0036":{"dir":"FT-0036-fadedgenes-rev-alexander-shorts-me-charges-ricev","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Alexander Shorts ME charges (Riceville 1869; Napanee 1881)"},"FT-0057":{"dir":"FT-0057-inkerman-me-church-and-parsonage-1868-eva-shorts","photos":["photos/01-inkerman-united-cover-1883.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-inkerman-me-1883-sepia.jpg","photos/04-mills-me-chapter-p9.jpg"],"entry":true,"type":"place","title":"Inkerman ME church & parsonage (1868) — Eva Shorts death context; 1883 red-brick successor"},"FT-0060":{"dir":"FT-0060-canadian-me-charge-ladder-riceville-inkerman-nap","photos":["photos/01-mills-methodism-inkerman.jpg","photos/02-inkerman-fadedgenes-sto.jpg"],"entry":true,"type":"church","title":"Canadian ME charge ladder — Riceville → Inkerman → Napanee (buildings + search negatives)"},"FT-0072":{"dir":"FT-0072-fadedgenes-inkerman-methodist-church-mountain-tw","photos":["photos/01-inkerman-methodist-1883.jpg","photos/02-inkerman-mountain-map.jpg"],"entry":true,"type":"church","title":"fadedgenes — Inkerman Methodist Church (Mountain Twp, Dundas) + 1883 building photo"},"FT-0073":{"dir":"FT-0073-mills-1983-yesterday-and-to-day-history-of-inker","photos":["photos/01-cover-inkerman-united-church.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-methodism-me-parsonage-p9.jpg","photos/04-church-today-1883-building.jpg"],"entry":true,"type":"church","title":"Mills 1983 — Yesterday and To-Day: History of Inkerman United Church (ME parsonage + building photos)"},"FT-0106":{"dir":"FT-0106-arthur-aylesworth-at-quidnessett-ri-settler-and","photos":["photos/01-aylsworth-1887-p36.jpg","photos/02-aylsworth-1887-p37.jpg","photos/03-emigration-ri.jpg"],"entry":true,"type":"church","title":"Arthur Aylesworth at Quidnessett — RI settler & the road to Canada"},"FT-0149":{"dir":"FT-0149-otho-nial-charlotte-bowerman-aylsworth-1887-job","photos":[],"entry":true,"type":"church","title":"Otho Nial × Charlotte Bowerman — Aylsworth 1887; Job Aylesworth spotted fever 1803"},"FT-0139":{"dir":"FT-0139-aylsworth-family-1887-p-89-charlotte-bowerman-da","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) p. 89 — Charlotte Bowerman dau. David; m. Otho Nial 1805"},"FT-0140":{"dir":"FT-0140-quaker-minutes-charlotte-bowerman-membership-and","photos":[],"entry":true,"type":"church","title":"Quaker minutes — Charlotte Bowerman membership & marry-out acknowledgment (1803–1806)"},"FT-0141":{"dir":"FT-0141-bowerman-family-genealogy-1904-david-bowerman-vi","photos":[],"entry":true,"type":"vital","title":"Bowerman family genealogy (1904) — David Bowerman vitals, children, Charlotte adoption note"},"FT-0142":{"dir":"FT-0142-pioneer-life-on-the-bay-of-quinte-1904-p-131-dav","photos":[],"entry":true,"type":"vital","title":"Pioneer Life on the Bay of Quinte (1904) p. 131 — David Bowerman × Catherine Bartlett family"},"FT-0146":{"dir":"FT-0146-bowerman-family-migration-batteau-route-ichabod","photos":[],"entry":true,"type":"church","title":"Bowerman family migration — batteau route, Ichabod Quaker disownment, Joseph Earl Loyalist"},"FT-0147":{"dir":"FT-0147-charlotte-bowerman-adopted-daughter-note-bowerma","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — adopted daughter note (Bowerman genealogy appendix)"},"FT-0148":{"dir":"FT-0148-charlotte-bowerman-quaker-membership-marry-out-a","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — Quaker membership, marry-out, and acknowledgment (1803–1806)"},"FT-0168":{"dir":"FT-0168-bowerman-1904-ichabod-verbank-homestead-bowerman","photos":[],"entry":true,"type":"church","title":"Bowerman 1904 — Ichabod Verbank homestead, Bowerman's Hole, Deborah stayed Dutchess"},"FT-0034":{"dir":"FT-0034-ti-life-archive-grindstone-grenell-wellesley-his","photos":["photos/01-grindstone-church.png","photos/02-historic-church.png","photos/03-historic-church.png","photos/04-historic-church.png","photos/05-historic-church.png","photos/06-historic-church.png","photos/07-historic-church.png","photos/08-historic-church.png","photos/09-historic-church.png","photos/10-historic-church.png","photos/11-dinsmore-church.png","photos/12-church.png","photos/13-church.png","photos/14-church.png","photos/15-church.png","photos/16-picture34.jpg","photos/17-dunsm.jpg","photos/18-picture26.jpg","photos/19-picture27.jpg","photos/20-picture28.jpg","photos/21-picture46.jpg"],"entry":true,"type":"place","title":"TI Life archive — Grindstone / Grenell / Wellesley historic churches (Rick Tague); Shorts section + images"},"FT-0037":{"dir":"FT-0037-ti-life-gabriel-series-mending-alexander-shorts","photos":["photos/01-window.jpg","photos/02-gabriel.jpeg","photos/03-well.png"],"entry":true,"type":"church","title":"TI Life — Gabriel series: mending Alexander Shorts’s Grindstone church (1935–45)"},"FT-0039":{"dir":"FT-0039-ti-life-grindstone-island-lost-in-time-kim-lunma","photos":[],"entry":true,"type":"newspaper","title":"TI Life — Grindstone Island: Lost in Time (Kim Lunman); church as summer heart + Rex Ennis lay preacher"},"FT-0041":{"dir":"FT-0041-ti-life-5-13-11-dig-tague-citation-negative-may","photos":[],"entry":true,"type":"newspaper","title":"TI Life 5/13/11 dig — Tague citation negative; May 13 2011 archive posts are not Grindstone church history"},"FT-0053":{"dir":"FT-0053-baldwin-and-clift-1881-3074-mary-ann-denison-sam","photos":[],"entry":true,"type":"vital","title":"Baldwin & Clift 1881 — #3074 Mary Ann Denison × Samuel D. Shorts (children)"},"FT-0054":{"dir":"FT-0054-find-a-grave-samuel-shorts-280868397-mary-ann-de","photos":[],"entry":true,"type":"vital","title":"Find A Grave — Samuel Shorts 280868397 + Mary Ann Denison Shorts 280868640 (Sexsmith)"},"FT-0058":{"dir":"FT-0058-riceville-methodist-1869-little-white-church-pre","photos":["photos/02-pendleton-methodist-prescott.jpg"],"entry":true,"type":"church","title":"Riceville Methodist — 1869 Little White Church (Prescott) & pastoral-charge history"},"FT-0059":{"dir":"FT-0059-napanee-me-church-grace-united-bridge-and-robert","photos":["photos/01-grace-united-bridge-st.jpg"],"entry":true,"type":"place","title":"Napanee ME church → Grace United (Bridge & Robert) — Alexander’s 1881 charge town"},"FT-0061":{"dir":"FT-0061-ti-life-emmet-c-dodge-stained-glass-series-mid-1","photos":["photos/01-stained-glass-window.png","photos/02-dodge-hall.png","photos/03-emmet-dodge.jpg","photos/04-emmet-portrait.jpg","photos/05-dodge-monument.jpeg"],"entry":true,"type":"church","title":"TI Life — Emmet C. Dodge stained-glass series: mid-1930s Grindstone church rebuild + unpublished MS"},"FT-0062":{"dir":"FT-0062-grindstone-news-12-jul-1998-jesse-calkins-helped","photos":[],"entry":true,"type":"church","title":"Grindstone News 12 Jul 1998 — Jesse Calkins helped Rev. Shorts build the island church"},"FT-0063":{"dir":"FT-0063-grindstone-news-19-aug-2001-mrs-joseph-tercott-1","photos":[],"entry":true,"type":"church","title":"Grindstone News 19 Aug 2001 — Mrs. Joseph Tercott (1947) saw Shorts-era church built on Turcotte land"},"FT-0064":{"dir":"FT-0064-ti-life-lashomb-going-home-chapter-cheese-factor","photos":["photos/01-book-cover.png","photos/02-cheese-factory-1990.png","photos/03-milk-wagon.png","photos/04-factory-deteriorating.png","photos/05-author-scan.png"],"entry":true,"type":"church","title":"TI Life — Lashomb Going Home chapter: Cheese Factory (Emmet Dodge Memoires + Turcotte Thurso)"},"FT-0084":{"dir":"FT-0084-grindstone-island-schoolhouse-history-house-of-g","photos":[],"entry":true,"type":"church","title":"Grindstone Island schoolhouse history — House of Good Temperance served as island church until fire (pre-Shorts fabric)"},"FT-0430":{"dir":"FT-0430-grace-united-napanee-museum-fire-hub-narrative","photos":[],"entry":true,"type":"church","title":"Grace United Napanee — museum object story (1842 ME building, lightning, 1943 fire, community hub)"},"FT-0431":{"dir":"FT-0431-trinity-united-napanee-beaver-names-st-andrews","photos":[],"entry":true,"type":"church","title":"Trinity United Napanee — Beaver names history; St Andrew's Gothic rival & 1930s merger"},"FT-0055":{"dir":"FT-0055-museum-of-lennox-and-addington-denison-christian","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Museum of Lennox & Addington — Denison Christian Cross quilt 2014.36.01 (Mary Anne finishes)"},"FT-0104":{"dir":"FT-0104-capt-george-denison-stonington-founder-and-king","photos":["photos/01-baldwin-1881-p6.jpg"],"entry":true,"type":"church","title":"Capt. George Denison — Stonington founder & King Philip’s War (colonial hinge)"},"FT-0105":{"dir":"FT-0105-uel-land-and-bay-of-quinte-thompson-loyalist-hin","photos":["photos/01-quilt-detail.jpg","photos/02-loyalist-landing-plaque.jpg","photos/03-hay-bay-plaque.jpg"],"entry":true,"type":"artifact","title":"UEL land & Bay of Quinte — Thompson Loyalist hinge (quilt + landing world)"},"FT-0466":{"dir":"FT-0466-stonington-helderberg-robert-denison-knox","photos":[],"entry":true,"type":"newspaper","title":"Stonington families to Helderberg — Robert Denison on Van Rensselaer’s ‘free’ land"},"FT-0465":{"dir":"FT-0465-saybrook-1667-mystic-farm-john-phebe","photos":[],"entry":true,"type":"deed","title":"1667 Saybrook settlement — George’s Mystic-mouth farm to Capt. John × Phebe Lay"},"FT-0458":{"dir":"FT-0458-baldwin-george-denison-cromwell-naseby","photos":[],"entry":true,"type":"military","title":"Baldwin 1881 — Capt. George Denison under Cromwell; wounded at Naseby; Ann as nurse"},"FT-0459":{"dir":"FT-0459-george-denison-will-england-war-sword","photos":[],"entry":true,"type":"military","title":"Capt. George Denison will 1693/4 — great sword & gauntlet from the wars of England"},"FT-0461":{"dir":"FT-0461-wheeler-denison-england-return-jointure","photos":[],"entry":true,"type":"military","title":"Wheeler 1900 — George’s England soldier year, Ann jointure £300, Stonington fame"},"FT-0463":{"dir":"FT-0463-haynes-roxbury-train-band-pequotsepos","photos":[],"entry":true,"type":"military","title":"Haynes 1963 — Roxbury train-band snub, New London captain, Pequotsepos lean-to"},"FT-0407":{"dir":"FT-0407-denison-homestead-pequotsepos-manor-history","photos":[],"entry":true,"type":"place","title":"Denison Homestead / Pequotsepos Manor — land grant, manor fire 1717 rebuild, museum"},"FT-0410":{"dir":"FT-0410-kasper-miscia-nehgr-178-borodell-cumbrian-summary","photos":[],"entry":true,"type":"newspaper","title":"Anna Kasper 2024 — Miscia NEHGR 178 Borodell Cumbrian summary (reject Cork/Broughton mother)"},"FT-0406":{"dir":"FT-0406-maj-gen-daniel-denison-autobiography-1672","photos":[],"entry":true,"type":"military","title":"Maj. Gen. Daniel Denison autobiography (1672) — Lyon 1631, Dudley marriage, George at Marston Moor"},"FT-0460":{"dir":"FT-0460-cromwell-marston-moor-naseby-landscape","photos":[],"entry":true,"type":"military","title":"What ‘serving under Cromwell’ meant — Marston Moor 1644 and Naseby 1645"},"FT-0462":{"dir":"FT-0462-stonington-church-denison-miles-standish","photos":[],"entry":true,"type":"church","title":"Stonington First Church 1874 — Denison as Miles Standish of the settlement; Canonchet"},"FT-0464":{"dir":"FT-0464-caulkins-denison-border-man-southerton","photos":[],"entry":true,"type":"newspaper","title":"Caulkins 1860 — Denison the border man; Southerton magistrate; ‘only except’"},"FT-0035":{"dir":"FT-0035-father-shorts-conversion-first-upper-canada-me-o","photos":[],"entry":true,"type":"church","title":"Father Shorts — conversion, first Upper Canada ME ordination, deathbed (Pringle compiled / CCA tradition)"},"FT-0056":{"dir":"FT-0056-1851-canada-west-census-richmond-twp-lennox-agus","photos":["photos/sexsmith-overview-fag-2014.jpg","photos/sexsmith-row-fag-2014.jpg"],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp, Lennox — Agustis & Ellenor Shorts (+ Sexsmith place)"},"FT-0030":{"dir":"FT-0030-canada-christian-advocate-via-old-hay-bay-shorts","photos":[],"entry":true,"type":"newspaper","title":"Canada Christian Advocate (via Old Hay Bay) — Shorts orphan / Father Shorts vignette"},"FT-0032":{"dir":"FT-0032-fadedgenes-rev-andrew-prindle-me-charge-list-han","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Andrew Prindle ME charge list (Hannah Shorts’s brother)"},"FT-0046":{"dir":"FT-0046-old-hay-bay-church-open-building-photographs-ext","photos":["photos/01-exterior-1908-postcard.jpg","photos/02-exterior-2008.jpg","photos/03-historic-1926-ao.jpg","photos/04-historic-1926-ao-alt.jpg","photos/05-historic-1926-portrait.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church — open building photographs (exterior / historic views)"},"FT-0047":{"dir":"FT-0047-old-hay-bay-church-nhs-parks-canada-historicplac","photos":["photos/01-historicplaces-general-view.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church NHS — Parks Canada / HistoricPlaces designation + Ontario plaque text"},"FT-0049":{"dir":"FT-0049-bowman-united-church-ancaster-exteriors-prindle","photos":["photos/01-bowman-side.jpg","photos/02-bowman-front-door.jpg","photos/03-bowman-side-detail.jpg","photos/04-bowman-historic-bw.jpg"],"entry":true,"type":"place","title":"Bowman United Church, Ancaster — exteriors + Prindle burial / chair relic site"},"FT-0050":{"dir":"FT-0050-me-conference-1829-andrew-prindle-superannuated","photos":[],"entry":true,"type":"church","title":"ME Conference 1829 — Andrew Prindle superannuated; next session at Bowman’s chapel, Ancaster"},"FT-0051":{"dir":"FT-0051-rev-andrew-prindle-fag-burial-sanderson-death-no","photos":[],"entry":true,"type":"church","title":"Rev Andrew Prindle — FAG burial + Sanderson death notice + Yonge Street clergy (beyond FT-0035)"},"FT-0052":{"dir":"FT-0052-upper-canada-me-itinerancy-prindle-niagara-years","photos":[],"entry":true,"type":"church","title":"Upper Canada ME itinerancy — Prindle Niagara years + horseback circuit-rider quotes"},"FT-0075":{"dir":"FT-0075-carroll-case-and-his-cotemporaries-vol-1-rev-and","photos":[],"entry":true,"type":"church","title":"Carroll, Case and his Cotemporaries vol. 1 — Rev Andrew Prindle biographical sketch"},"FT-0076":{"dir":"FT-0076-fadedgenes-bowman-me-church-ancaster-old-slide-p","photos":[],"entry":true,"type":"church","title":"fadedgenes — Bowman ME Church Ancaster (Old Slide) + Prindle chair / Kitty Murray"},"FT-0077":{"dir":"FT-0077-webster-history-of-the-me-church-in-canada-andre","photos":[],"entry":true,"type":"church","title":"Webster, History of the ME Church in Canada — Andrew Prindle first Canadian itinerant"},"FT-0078":{"dir":"FT-0078-bowman-united-church-cemetery-rev-andrew-prindle","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Bowman United Church Cemetery — Rev Andrew Prindle stone (Interment.net)"},"FT-0079":{"dir":"FT-0079-carroll-vols-2-and-5-father-prindle-death-eulogy","photos":[],"entry":true,"type":"church","title":"Carroll vols. 2 & 5 — Father Prindle death eulogy + Bay of Quinte local Deacon Augustus Shorts"},"FT-0112":{"dir":"FT-0112-1851-canada-west-census-richmond-twp-henry-holco","photos":[],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp — Henry Holcomb × Hannah O Shorts household"},"FT-0116":{"dir":"FT-0116-find-a-grave-william-and-eunice-pringle-hay-bay","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — William & Eunice Pringle Hay Bay (95004236 + 125180719)"},"FT-0134":{"dir":"FT-0134-find-a-grave-46280209-hannah-shorts-holcomb-cora","photos":[],"entry":true,"type":"vital","title":"Find A Grave 46280209 — Hannah Shorts Holcomb (Coral Cemetery, MI)"},"FT-0135":{"dir":"FT-0135-find-a-grave-133464095-elizabeth-shorts-hughs-se","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464095 — Elizabeth Shorts Hughs (Sexsmith Cemetery)"},"FT-0136":{"dir":"FT-0136-find-a-grave-133467916-andrew-pringle-shorts-sex","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133467916 — Andrew Pringle Shorts (Sexsmith Cemetery)"},"FT-0138":{"dir":"FT-0138-wikitree-short-3449-philip-short-augustus-son-m","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3449 — Philip Short (Augustus son); m. Hannah Brown 1821"},"FT-0150":{"dir":"FT-0150-deborah-bigelow-pringle-uel-adolphustown-loyalis","photos":[],"entry":true,"type":"vital","title":"Deborah Bigelow Pringle — UEL Adolphustown; Loyalist cemetery tradition"},"FT-0413":{"dir":"FT-0413-eunice-miller-stone-sister-rev-a-prindle","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Eunice Miller stone — sister of the late Rev. A. Prindle (FAG 144753754)"},"FT-0414":{"dir":"FT-0414-hay-bay-1819-drowning-worshippers-memorial","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Hay Bay — 1819 drowning worshippers memorial (dedicated 1961)"},"FT-0428":{"dir":"FT-0428-richmond-hill-early-days-appendix-c-clergy","photos":[],"entry":true,"type":"church","title":"Richmond Hill Early Days — Appendix C full clergy compendium (Prindle Yonge St. 1807/1811)"},"FT-0114":{"dir":"FT-0114-find-a-grave-joel-pringle-jr-59609435-uel-kings","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Jr. 59609435 (UEL King's Rangers bio)"},"FT-0144":{"dir":"FT-0144-napanee-beaver-1970-joel-pringle-jr-uel-patriarc","photos":[],"entry":true,"type":"newspaper","title":"Napanee Beaver (1970) — Joel Pringle Jr UEL patriarch, King's Rangers, batteaux settlement"},"FT-0151":{"dir":"FT-0151-uelac-joseph-pringle-st-johns-arrival-july-1781","photos":[],"entry":true,"type":"vital","title":"UELAC Joseph Pringle — St. John's arrival July 1781; Fredericksburgh grant 1783"},"FT-0167":{"dir":"FT-0167-bigelow-society-deborah-joel-uel-hopestill-prind","photos":[],"entry":true,"type":"church","title":"Bigelow Society — Deborah × Joel UEL; Hopestill Prindle FAN (Benedict in-law)"},"FT-0166":{"dir":"FT-0166-bigelow-society-ebenezer-ship-carpenter-cuba-dea","photos":[],"entry":true,"type":"vital","title":"Bigelow Society — Ebenezer ship carpenter, Cuba death tradition, Ticonderoga alternate"},"FT-0171":{"dir":"FT-0171-compiled-genealogy-deborah-pringle-edward-the-sp","photos":[],"entry":true,"type":"vital","title":"Compiled genealogy — Deborah Pringle × Edward 'The Spy' Hicks (Butler's Rangers son)"},"FT-0129":{"dir":"FT-0129-watertown-vr-roman-index-ebenezer-bigelow-birth","photos":[],"entry":true,"type":"vital","title":"Watertown VR Roman index — Ebenezer Bigelow birth, marriage, baptisms"},"FT-0130":{"dir":"FT-0130-bond-p-127-ebenezer-bigelow-hannah-brown-househo","photos":[],"entry":true,"type":"vital","title":"Bond p.127 — Ebenezer Bigelow × Hannah Brown household"},"FT-0132":{"dir":"FT-0132-bond-brown-p-120-hannah-brown-b-1699","photos":[],"entry":true,"type":"vital","title":"Bond Brown p.120 — Hannah Brown b.1699"},"FT-0131":{"dir":"FT-0131-bond-p-32-ebenezer-bigelow-b-1698-d-in-cuba-trad","photos":[],"entry":true,"type":"vital","title":"Bond p.32 — Ebenezer Bigelow b.1698; d. in Cuba tradition"},"FT-0133":{"dir":"FT-0133-find-a-grave-51809062-ebenezer-bigelow-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 51809062 — Ebenezer Bigelow memorial (secondary death note)"},"FT-0405":{"dir":"FT-0405-joshua-bigelow-king-philips-war-narragansett-grant","photos":[],"entry":true,"type":"military","title":"Joshua Bigelow — King Philip’s War wound, Narragansett No. 2 grant, late move to Westminster"},"FT-0115":{"dir":"FT-0115-find-a-grave-joel-pringle-sr-59610755-west-haven","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Sr. 59610755 (West Haven stone + family bio)"},"FT-0145":{"dir":"FT-0145-joseph-pringle-richmond-township-pioneer-christi","photos":[],"entry":true,"type":"newspaper","title":"Joseph Pringle — Richmond Township pioneer, Christian Guardian obituary (1833)"},"FT-0164":{"dir":"FT-0164-prindle-1906-joel-sr-louisbourg-prisoner-son-joe","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 — Joel Sr Louisbourg prisoner son; Joel Jr Danbury deed & Rev. soldier"},"FT-0124":{"dir":"FT-0124-pane-joyce-jacobus-joseph-prindle-mary-brown-joe","photos":[],"entry":true,"type":"vital","title":"Pane-Joyce (Jacobus) — Joseph Prindle × Mary Brown; Joel × Jemima Benham"},"FT-0127":{"dir":"FT-0127-jacobus-fanh-nathan-benham-sarah-beecher-childre","photos":[],"entry":true,"type":"vital","title":"Jacobus FANH — Nathan Benham × Sarah Beecher; children incl. Jemima"},"FT-0128":{"dir":"FT-0128-find-a-grave-66966847-sarah-beecher-benham-stone","photos":[],"entry":true,"type":"vital","title":"Find A Grave 66966847 — Sarah (Beecher) Benham stone + family grid"},"FT-0165":{"dir":"FT-0165-prindle-1906-beecher-stone-nathan-benham-daughte","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 + Beecher stone — Nathan Benham daughter Jemima × Joel Pringle Sr"},"FT-0162":{"dir":"FT-0162-prindle-1906-william-pringle-the-scotchman-oath","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — William Pringle 'the Scotchman' oath 1654 + immigrant traditions"},"FT-0163":{"dir":"FT-0163-prindle-1906-joseph-sr-scotland-farm-prindle-hil","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — Joseph Sr 'Scotland' farm, Prindle Hill, Serjeant, Episcopal founder"},"FT-0126":{"dir":"FT-0126-find-a-grave-125971521-mary-walker-brown-prindle","photos":[],"entry":true,"type":"vital","title":"Find A Grave 125971521 — Mary Walker Brown Prindle bio + stone"},"FT-0125":{"dir":"FT-0125-find-a-grave-169522429-sgt-joseph-prindle-memori","photos":[],"entry":true,"type":"vital","title":"Find A Grave 169522429 — SGT Joseph Prindle memorial bio + stone"},"FT-0044":{"dir":"FT-0044-adolphustown-place-set-loyalist-landing-1784-old","photos":["photos/01-hay-bay-church-plaque.jpg","photos/02-hay-bay-church-plaque-alt.jpg","photos/03-loyalist-landing-plaque.jpg","photos/04-old-hay-bay-church.jpg","photos/06-loyalist-landing-alt.jpg"],"entry":true,"type":"place","title":"Adolphustown place set — Loyalist Landing 1784 + Old Hay Bay Church plaques / exterior"},"FT-0045":{"dir":"FT-0045-hay-bay-church-deed-abstract-7-june-1811-augustu","photos":[],"entry":true,"type":"deed","title":"Hay Bay Church deed abstract (7 June 1811) — Augustus Shorts named trustee (Van Deursen 1912)"},"FT-0048":{"dir":"FT-0048-webster-1870-bishop-george-genesee-conference-at","photos":[],"entry":true,"type":"church","title":"Webster 1870 — Bishop George / Genesee Conference at Elizabethtown, June 1817 (ordination window)"},"FT-0082":{"dir":"FT-0082-kingston-whig-standard-adolphustown-loyalists-ha","photos":[],"entry":true,"type":"newspaper","title":"Kingston Whig Standard — Adolphustown Loyalists, Hay Bay Church, Elijah Woolsey saddlebag circuit (2021)"},"FT-0083":{"dir":"FT-0083-casey-davis-early-methodist-history-adolphustown","photos":[],"entry":true,"type":"church","title":"Casey / Davis — Early Methodist History: Adolphustown cradle, Losee, Darius Dunham, Hay Bay first church"},"FT-0085":{"dir":"FT-0085-bishop-philander-smith-me-church-in-canada-1847","photos":[],"entry":true,"type":"church","title":"Bishop Philander Smith (ME Church in Canada, 1847–1870) — identity for Hay Bay ‘granddaughter married Bishop Philander Smith’ claim"},"FT-0086":{"dir":"FT-0086-what-is-a-circuit-rider-losee-gallops-hay-bay-co","photos":[],"entry":true,"type":"church","title":"What is a circuit rider? — Losee gallops Hay Bay country; Dunham survives an axe (Carroll 1867)"},"FT-0113":{"dir":"FT-0113-death-notice-david-b-shorts-son-of-philip-shorts","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — David B. Shorts, son of Philip Shorts (Transcript Montreal, 8 Nov 1842)"},"FT-0153":{"dir":"FT-0153-wikitree-short-3451-john-w-short-vitals-research","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3451 — John W Short vitals + researcher note (Susquehanna cluster)"},"FT-0154":{"dir":"FT-0154-wikitree-monk-1058-rosannah-monk-short-vitals","photos":[],"entry":true,"type":"vital","title":"WikiTree Monk-1058 — Rosannah (Monk) Short vitals"},"FT-0155":{"dir":"FT-0155-wikitree-short-3450-augustus-short-parent-link-j","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3450 — Augustus Short parent link (John W × Rosannah Monk)"},"FT-0043":{"dir":"FT-0043-ohs-papers-st-johns-ernesttown-marriage-register","photos":[],"entry":true,"type":"church","title":"OHS Papers — St. John's Ernesttown marriage register (1792) — Philip & Katreen Shorts witnesses"},"FT-0080":{"dir":"FT-0080-hay-bay-canniff-brebner-barbara-monk-casper-hoov","photos":[],"entry":true,"type":"church","title":"Hay Bay + Canniff/Brebner — Barbara Monk × Casper Hoover (Rosannah’s sister; Catharine’s rescue)"},"FT-0087":{"dir":"FT-0087-barbara-monk-hover-s-pewter-platter-palatine-rel","photos":[],"entry":true,"type":"church","title":"Barbara Monk Hover’s pewter platter — Palatine relic, pot-pie bees, and Casper Hover’s death by falling limb"},"FT-0088":{"dir":"FT-0088-vanalstine-loyalist-voyage-shark-at-sea-pork-and","photos":[],"entry":true,"type":"newspaper","title":"VanAlstine Loyalist voyage — shark at sea, pork-and-peas rations, linen tents at Sorel (Canniff tradition)"},"FT-0090":{"dir":"FT-0090-frances-shorts-jacob-heck-married-into-barbara-h","photos":[],"entry":true,"type":"church","title":"Frances Shorts × Jacob Heck — married into Barbara Heck’s family; Heck House on the St. Lawrence"},"FT-0092":{"dir":"FT-0092-catharine-shorts-arra-ferguson-orphan-bride-pict","photos":[],"entry":true,"type":"church","title":"Catharine Shorts × Arra Ferguson — orphan bride; Picton church land; Ferguson & Catherine Streets; class with Dunham’s flock"},"FT-0042":{"dir":"FT-0042-exploring-niagara-butlers-rangers-nominal-list-p","photos":[],"entry":true,"type":"military","title":"Exploring Niagara — Butler's Rangers nominal list (privates) — SHORTS, JOHN E."},"FT-0081":{"dir":"FT-0081-smy-annotated-nominal-roll-of-butler-s-rangers-s","photos":["photos/01-smy-short-john-henry.png","photos/02-smy-source-E52-harvey.png","photos/03-smy-source-E75-ousterhout.png"],"entry":true,"type":"military","title":"Smy — Annotated Nominal Roll of Butler’s Rangers — Short, John Henry (private)"},"FT-0423":{"dir":"FT-0423-nyc-open-data-marriage-index-florence-hahn-seymour-cohn","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Florence Hahn × Seymour Cohn, Manhattan 25642, 2 Sep 1926"},"FT-0416":{"dir":"FT-0416-nyc-open-data-mamlock-sisters-marriage-index-pairs","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Mamlock sisters × Aronsohn / Geiger / Michaels"},"FT-0419":{"dir":"FT-0419-nyc-open-data-death-index-leon-aronsohn-bronx-1500-1921-candidate","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Leon Aronsohn, Bronx 1500, 6 Mar 1921 age 55 (Leo P. candidate)"},"FT-0422":{"dir":"FT-0422-nyc-open-data-death-index-esther-geiger-emma-michaels","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Esther Geiger Manh 1197/1944 · Emma Michaels Manh 6504/1942"},"FT-0190":{"dir":"FT-0190-marriage-index-perkins-belle-stonebraker-1896","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage index — Solomon M. Perkins × Belle Stonebraker (23 Dec 1896)"},"FT-0109":{"dir":"FT-0109-why-barbara-heck-matters-mother-of-methodism-joh","photos":[],"entry":true,"type":"church","title":"Why Barbara Heck matters — Mother of Methodism (John Street → Upper Canada)"},"FT-0110":{"dir":"FT-0110-the-blue-church-augusta-place-pack-why-it-belong","photos":["photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"place","title":"The Blue Church (Augusta) — place pack + why it belongs in a future story"},"FT-0143":{"dir":"FT-0143-find-a-grave-133464931-thomas-godfrey-hughs-spou","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464931 — Thomas Godfrey Hughs (spouse of Elizabeth Shorts)"},"FT-0091":{"dir":"FT-0091-barbara-heck-cards-in-the-fire-embury-preached-m","photos":[],"entry":true,"type":"church","title":"Barbara Heck — cards in the fire, Embury preached, Mother of Methodism; Blue Church monument (mother-in-law of Frances Shorts)"},"FT-0093":{"dir":"FT-0093-1891-adolphustown-wedding-pewter-platter-brought","photos":[],"entry":true,"type":"newspaper","title":"1891 Adolphustown wedding — pewter platter ‘brought to Canada by Barbara Heck’ serves the roast goose"},"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd"},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"}};
+window.OBJECTS_INDEX = {"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)"},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only"},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"},"FT-0028":{"dir":"FT-0028-california-county-marriage-jon-martin-anderson-v","photos":[],"entry":true,"type":"vital","title":"California county marriage — Jon Martin Anderson × Virginia Jill Cole (Los Angeles 19 Jun 1955)"},"FT-0021":{"dir":"FT-0021-nyc-birth-certificate-virginia-victoria-racien-m","photos":["photos/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan-p1.png"],"entry":true,"type":"vital","title":"NYC birth certificate — Virginia Victoria Racien (Manhattan 1902 #41933)"},"FT-0025":{"dir":"FT-0025-nyc-marriage-certificate-myron-w-cohn-virginia-v","photos":["photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png","photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Myron W. Cohn × Virginia V. Racine (Manhattan 1926/1927 #778)"},"FT-0096":{"dir":"FT-0096-what-tailor-meant-solomon-racien-racine-near-w-3","photos":[],"entry":true,"type":"newspaper","title":"What ‘tailor’ meant — Solomon Racien (Racine) near W 35th and New York’s garment boom (~1902)"},"FT-0230":{"dir":"FT-0230-find-a-grave-93478005-pauline-bess-dushken-le-racine","photos":[],"entry":true,"type":"vital","title":"Find A Grave 93478005 — Pauline Bess Dushken Le Racine memorial + death-cert paste"},"FT-0231":{"dir":"FT-0231-nyc-open-data-death-index-pauline-b-racine-21183","photos":[],"entry":true,"type":"vital","title":"NYC Digitized Death Certificate Index — Pauline B Racine, cert. 21183, Manhattan 1927"},"FT-0412":{"dir":"FT-0412-ny-county-nat-index-salomon-racien-1899","photos":[],"entry":true,"type":"vital","title":"NY County naturalization index — Salomon Racien, 24 Jul 1899 (arrived NYC Jul 1888)"},"FT-0415":{"dir":"FT-0415-castle-garden-july-1888-arrival-window-salomon-racien","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden arrival window — Salomon Racien, July 1888 (pre-Ellis)"},"FT-0420":{"dir":"FT-0420-castle-garden-process-and-1888-rush-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden process — registry, rush of 1888, Russian-Jewish tailor class (Solomon era)"},"FT-0023":{"dir":"FT-0023-nyc-death-certificate-monroe-cohn-manhattan-1921","photos":["photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png","photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Monroe Cohn (Manhattan 1921 #29268)"},"FT-0024":{"dir":"FT-0024-nyc-death-certificate-mamie-cohn-manhattan-1945","photos":["photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png","photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Mamie Cohn (Manhattan 1945 #12625)"},"FT-0094":{"dir":"FT-0094-what-a-shoe-jobber-was-monroe-cohn-s-trade-not-s","photos":[],"entry":true,"type":"newspaper","title":"What a shoe jobber was — Monroe Cohn’s trade (not shoemaker, not shop clerk)"},"FT-0022":{"dir":"FT-0022-nyc-marriage-certificate-monroe-cohn-mamie-mamlo","photos":["photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png","photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Monroe Cohn × Mamie Mamlock (Manhattan 1893 #13078)"},"FT-0095":{"dir":"FT-0095-rabbi-aaron-wise-of-rodeph-sholom-marries-monroe","photos":[],"entry":true,"type":"church","title":"Rabbi Aaron Wise of Rodeph Sholom marries Monroe Cohn × Mamie Mamlock (Lexington & 63rd world, 1893)"},"FT-0240":{"dir":"FT-0240-find-a-grave-95985316-mamie-cohn-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 95985316 — Mamie Cohn memorial (Mt Carmel; no bio; no grave photo)"},"FT-0260":{"dir":"FT-0260-allemannia-1867-rosa-mamlock-children-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Allemannia 1867 — Rosa Mamlock lands with four children; Mamie born later in NYC"},"FT-0261":{"dir":"FT-0261-washington-heights-jewish-drift-monroe-cohn-1921-death","photos":[],"entry":true,"type":"newspaper","title":"Washington Heights Jewish surge — Monroe Cohn's Fort Washington Ave death address (1921)"},"FT-0262":{"dir":"FT-0262-west-end-widow-mamie-cohn-305-west-end-ave-1945","photos":[],"entry":true,"type":"newspaper","title":"West End widow — Mamie Cohn's 305 West End Ave last years on the quiet UWS spine"},"FT-0306":{"dir":"FT-0306-albert-mamlock-bronx-brook-av-deed-1901","photos":[],"entry":true,"type":"deed","title":"Albert Mamlock buys Bronx lot — Brook av near 171st st (1901)"},"FT-0398":{"dir":"FT-0398-cohn-mamlock-oval-studio-portraits-framed-set-ph","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg","photos/05.jpg","photos/06.jpg","photos/07.jpg"],"entry":true,"type":"photo","title":"Cohn / Mamlock oval studio portraits (framed set) + photographer backs"},"FT-0418":{"dir":"FT-0418-nyc-open-data-death-index-albert-mamlock-manhattan-12843-1937","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Albert Mamlock, Manhattan 12843, 24 May 1937 age 79"},"FT-0421":{"dir":"FT-0421-allemannia-ship-castle-garden-1867-mamlock-landing","photos":[],"entry":true,"type":"newspaper","title":"Allemannia (HAL) + Castle Garden 1867 — mother-and-children German landing world (Mamlock)"},"FT-0426":{"dir":"FT-0426-mt-carmel-cemetery-jewish-burial-world-monroe-mamie","photos":[],"entry":true,"type":"newspaper","title":"Mt. Carmel Cemetery (Glendale) — NYC Jewish burial world (Monroe & Mamie)"},"FT-0305":{"dir":"FT-0305-germania-1867-moritz-blamchen-mamlock-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Germania 1867 — Moritz Mamlock merchant + wife Blamchen land before Rosa party"},"FT-0099":{"dir":"FT-0099-what-shoes-looked-like-1890-1920-the-stock-a-sho","photos":["photos/01-crawford-oxfords-ad-1902.jpg","photos/02-shoe-store-interior-1901.jpg","photos/03-american-high-boots-1899-1900.jpg","photos/04-mens-factory-lace-boots.jpg","photos/05-boots-shoes-storefront-poster-c1878.jpg","photos/06-gilpin-shoe-storefront-1899.jpg"],"entry":true,"type":"newspaper","title":"What shoes looked like ~1890–1920 — the stock a shoe jobber moved"},"FT-0427":{"dir":"FT-0427-hartford-german-jewish-merchant-world-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Hartford German-Jewish merchant world — clothing & downtown trade color (Solomon Cohn era)"},"FT-0417":{"dir":"FT-0417-nyc-open-data-death-index-bertha-cohn-kings-10639-1925","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Bertha Cohn, Kings 10639, 22 May 1925 age 79 (candidate)"},"FT-0395":{"dir":"FT-0395-orange-county-register-a-life-story-kay-heil-did","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"newspaper","title":"Orange County Register — “A Life Story: Kay Heil did it her way” (2007)"},"FT-0390":{"dir":"FT-0390-tri-delta-sorority-eugene-or-1928-29-grandma-kay","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"photo","title":"Tri Delta sorority — Eugene OR 1928–29 (Grandma Kay) + Clemens genealogy note"},"FT-0391":{"dir":"FT-0391-registration-of-marriage-john-a-blakely-emma-a-m","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"vital","title":"Registration of Marriage — John A. Blakely × Emma A. More (1868, Grant Co. WI)"},"FT-0393":{"dir":"FT-0393-american-red-cross-volunteer-special-services-ce","photos":["photos/01.jpg"],"entry":true,"type":"artifact","title":"American Red Cross Volunteer Special Services Certificate — Kathleen Anderson (1945)"},"FT-0394":{"dir":"FT-0394-park-st-school-hood-river-classroom-medical-insp","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"photo","title":"Park St. School, Hood River — classroom / medical inspection (Glendora Blakely)"},"FT-0399":{"dir":"FT-0399-clipping-mrs-glendora-m-blakeley-public-welfare","photos":["photos/01.jpg"],"entry":true,"type":"newspaper","title":"Clipping — Mrs. Glendora M. Blakeley, public welfare chairman"},"FT-0403":{"dir":"FT-0403-mrs-glendora-blakely-bloomington-nurse-la-mesa","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Glendora Blakely — Bloomington city nurse; died La Mesa Calif. (1960)"},"FT-0404":{"dir":"FT-0404-platteville-journal-john-a-blakely-gar-obit-1937","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Platteville Journal / Grant County News — John A. Blakely G.A.R. obituary (15 Sep 1937)"},"FT-0029":{"dir":"FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl","photos":["photos/01.jpg","photos/source-clip.jpg"],"entry":true,"type":"obituary","title":"Death Claims Dr. Guerdon C. Buck Monday Morning (Platteville ~22 Jun 1932)"},"FT-0175":{"dir":"FT-0175-dr-e-j-buck-runaway-injury-death-grant-county-wi","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Dr. E. J. Buck — runaway injury death (Grant County Witness 26 Jun 1901)"},"FT-0176":{"dir":"FT-0176-mrs-sarah-trask-buck-seattle-death-platteville-j","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Sarah Trask Buck — Seattle death (Platteville Journal 30 Sep 1943)"},"FT-0200":{"dir":"FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877","photos":[],"entry":true,"type":"newspaper","title":"Erastus J. Buck, M.D. — United States Biographical Dictionary (Wisconsin vol., 1877)"},"FT-0201":{"dir":"FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876","photos":[],"entry":true,"type":"place","title":"Mrs. S. E. Buck — Platteville Normal School teacher of Reading (1876–1880)"},"FT-0360":{"dir":"FT-0360-e-j-buck-md-butterfield-grant-county-1881","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — History of Grant County (Butterfield 1881) biographical sketch"},"FT-0197":{"dir":"FT-0197-1895-wi-veteran-census-erastus-buck-surgeon-18th","photos":[],"entry":true,"type":"military","title":"1895 Wisconsin veteran census — Erastus Buck, Surgeon, 18th Wis. Inf., Platteville"},"FT-0198":{"dir":"FT-0198-heath-ma-baptism-erastus-s-erastus-roxana-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Erastus s. Erastus and Roxana, Oct 1827"},"FT-0361":{"dir":"FT-0361-e-j-buck-westfield-montello-express-1876","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — Westfield “first class physician” vignette (Montello Express 1876)"},"FT-0362":{"dir":"FT-0362-e-j-buck-ymla-vice-president-platteville-1881","photos":[],"entry":true,"type":"place","title":"E. J. Buck — Young Men’s Library Association vice president (Platteville ~1881)"},"FT-0281":{"dir":"FT-0281-heath-ma-death-lucy-d-col-david-sarah-deane-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Lucy D., d. Col. David and Sarah Deane, May 1827"},"FT-0282":{"dir":"FT-0282-heath-ma-baptism-roxanda-d-david-1801","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Roxanda, d. David, bp. 22 Nov 1801"},"FT-0280":{"dir":"FT-0280-heath-ma-death-sarah-deane-w-col-david-1809","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Sarah Deane [w. Col. David], 30 Apr 1809"},"FT-0292":{"dir":"FT-0292-david-baldwin-heath-pioneer-land-church-pew","photos":[],"entry":true,"type":"place","title":"David Baldwin — early Heath/Charlemont landholder and church pew 6 (Everts + Connecticut Valley)"},"FT-0286":{"dir":"FT-0286-heath-ma-birth-erastus-ch-william-lt-william-1798","photos":[],"entry":true,"type":"vital","title":"Heath MA birth — Erastus ch. William (Lt. William and w.), Jan 1798"},"FT-0283":{"dir":"FT-0283-heath-ma-deaths-buck-william-sarah-william-jr","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Lt. William Buck, Sarah (Sally) Buck, and William Jr."},"FT-0284":{"dir":"FT-0284-heath-ma-deaths-maxwell-hugh-corbett-benjamin-anna","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Hugh Maxwell, Sarah Corbett, Benjamin Lt., Anna Winslow"},"FT-0285":{"dir":"FT-0285-heath-ma-marriages-buck-1785-maxwell-winslow-1762","photos":[],"entry":true,"type":"vital","title":"Heath MA marriages — Buck 1785 and Maxwell × Winslow 1762"},"FT-0287":{"dir":"FT-0287-find-a-grave-48687650-benjamin-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 48687650 — LTC Benjamin Butler Maxwell Sr memorial"},"FT-0288":{"dir":"FT-0288-find-a-grave-87173271-anna-winslow-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 87173271 — Anna Winslow Maxwell memorial"},"FT-0322":{"dir":"FT-0322-aane-benjamin-maxwell-brother-minuteman","photos":[],"entry":true,"type":"military","title":"AANE Deerfield — Lt. Benjamin Maxwell: son of Hugh I × Sarah Corbett; brother of Col. Hugh; Capt. Rice Minute-Man"},"FT-0289":{"dir":"FT-0289-find-a-grave-25190915-hugh-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 25190915 — Hugh Maxwell (1701–1759) memorial"},"FT-0290":{"dir":"FT-0290-hugh-maxwell-heath-founding-revolution-narrative","photos":[],"entry":true,"type":"place","title":"Col. Hugh Maxwell — Heath incorporation, Irish origin, and Revolutionary narrative (Everts 1879 + MS 27)"},"FT-0320":{"dir":"FT-0320-christian-patriot-col-hugh-maxwell-memoir","photos":[],"entry":true,"type":"military","title":"The Christian Patriot (1833) — Col. Hugh Maxwell memoir: two Hughs, Fort William Henry, Bunker Hill, later war, death at sea"},"FT-0321":{"dir":"FT-0321-shays-rebellion-stcc-col-hugh-maxwell","photos":[],"entry":true,"type":"military","title":"Shays' Rebellion STCC narrative — Col. Hugh Maxwell military career, Stickney letter, Cincinnati, Shays"},"FT-0323":{"dir":"FT-0323-franklin-biographical-review-maxwell-rangers","photos":[],"entry":true,"type":"military","title":"Biographical Review Franklin Co. (1895) — Hugh Sr. / Col. Hugh Jr. / Benjamin Minute-Man + Rogers's Rangers claim"},"FT-0324":{"dir":"FT-0324-white-charlemont-plantation-maxwell-revwar","photos":[],"entry":true,"type":"military","title":"Joseph White, Charlemont as a Plantation (1855/58) — Col. Hugh & Lt. Benjamin Maxwell Rev War / FIW narrative"},"FT-0325":{"dir":"FT-0325-greenfield-recorder-west-county-revwar-maxwell","photos":[],"entry":true,"type":"newspaper","title":"Greenfield Recorder (2026) — western Franklin County Rev War stories: Charlemont Maxwell Minute-Men + Heath naming"},"FT-0326":{"dir":"FT-0326-ma-state-library-blog-hugh-maxwell-ms27","photos":[],"entry":true,"type":"military","title":"MA State Library blog (2014) — interpretive note on Hugh Maxwell MS 27 military papers"},"FT-0327":{"dir":"FT-0327-brown-bedford-maxwell-warriors","photos":[],"entry":true,"type":"military","title":"Abram English Brown, History of Bedford (1891) — Maxwell FIW warriors; elder Hugh epitaph 1759; Christian Patriot"},"FT-0328":{"dir":"FT-0328-americancenturies-pvma-maxwell-agriculture","photos":[],"entry":true,"type":"place","title":"American Centuries / PVMA — Col. Hugh Maxwell Mass. Society for Agriculture certificate (1794) interpretive label"},"FT-0329":{"dir":"FT-0329-nason-gazetteer-heath-maxwell-no-tories","photos":[],"entry":true,"type":"place","title":"Nason/Varney Gazetteer (1890) — Heath: Col. Hugh Maxwell, Bunker Hill wound, no Tories"},"FT-0432":{"dir":"FT-0432-fort-william-henry-1757-siege-massacre-context","photos":[],"entry":true,"type":"military","title":"Fort William Henry 1757 — siege and column attack (surrounding event for Col. Hugh’s escape)"},"FT-0433":{"dir":"FT-0433-robortella-steps-west-preemption-line-survey","photos":[],"entry":true,"type":"place","title":"Steps West — Col. Hugh Maxwell’s 1788 Pre-emption Line survey (Robortella + Historic Geneva)"},"FT-0434":{"dir":"FT-0434-heitman-lt-col-hugh-maxwell-continental-commissions","photos":[],"entry":true,"type":"military","title":"Heitman register — Lt. Col. Hugh Maxwell (Mass.) Continental commissions; Washington papers name his company"},"FT-0435":{"dir":"FT-0435-mssrw-hugh-maxwell-charlemont-abstract","photos":[],"entry":true,"type":"military","title":"MSSRW vol. 10 — Maxwell, Hugh of Charlemont (service abstract)"},"FT-0436":{"dir":"FT-0436-heath-south-cemetery-maxwell-cenotaph-land-gift","photos":[],"entry":true,"type":"place","title":"Heath South Cemetery — Col. Hugh Maxwell land gift (1791) and grandchildren’s cenotaph (1859)"},"FT-0437":{"dir":"FT-0437-pvma-burgoyne-flag-maxwell-regimental-fragment","photos":[],"entry":true,"type":"military","title":"PVMA Memorial Hall — Burgoyne flag remnant + Col. Hugh Maxwell regimental flag fragment"},"FT-0291":{"dir":"FT-0291-william-buck-heath-first-settler-church-pew","photos":[],"entry":true,"type":"place","title":"Lt. William Buck — western Heath first settler and founding-church pew (Everts 1879)"},"FT-0438":{"dir":"FT-0438-hotten-increase-1635-william-roger-buck","photos":[],"entry":true,"type":"vital","title":"Hotten Original Lists — Increase 1635: William Buck 50 (plowwright) + Roger Buck 18"},"FT-0182":{"dir":"FT-0182-mills-birth-index-marion-azalia-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. birth index 1904–1906 — Marion L. & Azalia Gayle Anderson (mother Stonebraker)"},"FT-0173":{"dir":"FT-0173-henderson-christian-church-history-stonebraker-f","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Henderson Christian Church history — Stonebraker founding members (1877)"},"FT-0178":{"dir":"FT-0178-marriage-license-hugh-d-anderson-bertha-stonebra","photos":[],"entry":true,"type":"newspaper","title":"Marriage license — Hugh D. Anderson × Bertha Stonebraker (Tribune 29 May 1902)"},"FT-0183":{"dir":"FT-0183-delayed-birth-azalia-ursula-lucille-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. delayed births — Azalia Gaile & Ursula Lucille Anderson (Hugh D. × Urtha Stonebraker)"},"FT-0192":{"dir":"FT-0192-marriage-return-hugh-anderson-urtha-stonebraker-1902","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage return 1902 — Hugh D. Anderson × Urtha Stonebraker"},"FT-0340":{"dir":"FT-0340-malvern-leader-stonebraker-anderson-marriage-1902","photos":[],"entry":true,"type":"newspaper","title":"Malvern Leader — Stonebraker–Anderson marriage at J. A. Stonebraker home (5 Jun 1902)"},"FT-0341":{"dir":"FT-0341-henderson-times-1910-pioneer-stonebraker","photos":[],"entry":true,"type":"newspaper","title":"Henderson Times 15 Dec 1910 — pioneer roll names J. A. Stonebraker"},"FT-0342":{"dir":"FT-0342-1910-atlas-stonebraker-section-8","photos":[],"entry":true,"type":"place","title":"1910 Mills atlas — J. A. & P. H. Stonebraker landowners, Anderson Twp Sec. 8"},"FT-0191":{"dir":"FT-0191-1905-henderson-census-stonebraker-cluster","photos":[],"entry":true,"type":"census","title":"1905 IA State Census — Henderson — J. A. / P. H. / F. G. Stonebraker (cards 166–168)"},"FT-0196":{"dir":"FT-0196-henderson-christian-church-1942-fire-rebuild","photos":[],"entry":true,"type":"church","title":"Henderson Christian Church — 1942 fire and wartime rebuild"},"FT-0177":{"dir":"FT-0177-silver-city-community-history-harry-w-anderson-b","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson bio (John W. × Emily Dupray)"},"FT-0195":{"dir":"FT-0195-silver-city-anderson-favorite-family-stories","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Anderson Favorite Family Stories"},"FT-0307":{"dir":"FT-0307-silver-city-harry-w-anderson-trade-career","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson trade career"},"FT-0343":{"dir":"FT-0343-hugh-dupree-horseshoe-bookends-family-oral","photos":[],"entry":true,"type":"newspaper","title":"Family oral — Hugh Dupree Anderson made Alex’s horseshoe bookends"},"FT-0439":{"dir":"FT-0439-silver-city-times-harry-hugh-farm-1913","photos":[],"entry":true,"type":"newspaper","title":"Silver City Times — Harry Anderson sold farm to brother Hugh (2 Oct 1913)"},"FT-0440":{"dir":"FT-0440-silver-city-times-emily-anderson-death-1923","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Silver City Times — Mrs. Emily Anderson death notice (8 Nov 1923)"},"FT-0330":{"dir":"FT-0330-jw-anderson-silver-creek-supervisor-wheat-1869","photos":[],"entry":true,"type":"newspaper","title":"Pottawattamie notes — J. W. Anderson Silver Creek supervisor (1869) + wheat crop"},"FT-0332":{"dir":"FT-0332-mills-western-stage-coonville-st-joseph","photos":[],"entry":true,"type":"newspaper","title":"Mills County early transportation — Western Stage Line Coonville to St. Joseph"},"FT-0333":{"dir":"FT-0333-coonville-glenwood-wortman-1881","photos":[],"entry":true,"type":"newspaper","title":"Coonville / Glenwood — Wortman & 1881 history (meet-story place frame)"},"FT-0335":{"dir":"FT-0335-ingraham-plumer-inn-stage-landscape","photos":[],"entry":true,"type":"newspaper","title":"Ingraham / Silver City — Flanagan–Huffaker settling + Wortman Stage Coach Inn"},"FT-0331":{"dir":"FT-0331-silver-creek-twp-jw-anderson-trustee-1882","photos":[],"entry":true,"type":"newspaper","title":"Silver Creek Township history — J. W. Anderson trustee (1882) + stage-station landscape"},"FT-0334":{"dir":"FT-0334-chicago-dray-teamster-trade-context","photos":[],"entry":true,"type":"newspaper","title":"Encyclopedia of Chicago — Teamsters / horse-team drayage (profession unpack)"},"FT-0005":{"dir":"FT-0005-conejo-mountain-funeral-home-gloria-martha-short","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Conejo Mountain Funeral Home — Gloria Martha Shorts"},"FT-0380":{"dir":"FT-0380-deseret-1972-utah-swim-shorts-thousand-oaks-recruit","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — Utah swim preview names Bill Shorts of Thousand Oaks (1972)"},"FT-0381":{"dir":"FT-0381-chronicle-1973-01-utah-development-meet-shorts-backstroke","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts backstroke placings + photo caption (1973)"},"FT-0382":{"dir":"FT-0382-tribune-1973-02-shorts-bio-thousand-oaks-business","photos":[],"entry":true,"type":"newspaper","title":"Salt Lake Tribune — Bill Shorts bio (Thousand Oaks, business major, 6'4 backstroke)"},"FT-0383":{"dir":"FT-0383-chronicle-1973-02-frosh-backstroke-firsts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — frosh Bill Shorts wins 200 back, second in 100 (1973)"},"FT-0384":{"dir":"FT-0384-wac-1974-medley-relay-shorts-backstroke-lead","photos":[],"entry":true,"type":"newspaper","title":"WAC swimming championships 1974 — Bill Shorts leads off Utah medley relay"},"FT-0385":{"dir":"FT-0385-chronicle-1975-03-wac-preview-shorts-favorite","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — 1975 WAC preview: Shorts favorite in backstroke"},"FT-0386":{"dir":"FT-0386-deseret-1975-03-wac-medley-record-shorts","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — 1975 WAC: Utah medley relay meet record (Shorts lead-off)"},"FT-0387":{"dir":"FT-0387-chronicle-1975-03-ncaa-cleveland-roster-shorts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts named to Utah NCAA Cleveland roster (1975)"},"FT-0388":{"dir":"FT-0388-captain-wac-100-back-champ-1975-76-season","photos":[],"entry":true,"type":"newspaper","title":"Team captain Bill Shorts — WAC 100 backstroke champion (1975–76 season stack)"},"FT-0389":{"dir":"FT-0389-wac-1976-shorts-defend-third-place","photos":[],"entry":true,"type":"newspaper","title":"1976 WAC — defending backstroke champ Bill Shorts finishes third"},"FT-0004":{"dir":"FT-0004-ventura-county-star-richard-dorland-shorts-28-oc","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Ventura County Star — Richard Dorland Shorts (28 Oct 2009)"},"FT-0101":{"dir":"FT-0101-they-met-at-the-hollywood-palladium-gloria-richa","photos":["photos/01-hollywood-palladium.jpg","photos/02-gloria-portrait.jpg","photos/03-gloria-obit-card.jpg"],"entry":true,"type":"newspaper","title":"They met at the Hollywood Palladium — Gloria × Richard danced to Woody Herman"},"FT-0102":{"dir":"FT-0102-secretary-at-the-long-beach-shipyards-gloria-s-w","photos":["photos/01-liberty-ship.jpg"],"entry":true,"type":"newspaper","title":"Secretary at the Long Beach shipyards — Gloria’s wartime / postwar work world"},"FT-0313":{"dir":"FT-0313-gloria-bellflower-wartime-school-boom","photos":[],"entry":true,"type":"newspaper","title":"Bellflower 1942 — wartime boomtown where Gloria finished high school"},"FT-0315":{"dir":"FT-0315-long-beach-women-wwii-historian-burnett","photos":[],"entry":true,"type":"newspaper","title":"Long Beach women in the WWII yards — local historian context for Gloria’s shipyard years"},"FT-0103":{"dir":"FT-0103-tuxhorn-germans-on-the-plains-westphalia-mcphers","photos":["photos/01-leo-tuxhorn-portrait.jpg"],"entry":true,"type":"newspaper","title":"Tuxhorn Germans on the Plains — Westphalia → McPherson; Nemaha surname neighbors"},"FT-0314":{"dir":"FT-0314-august-tuxhorn-1884-farm-fire-death","photos":[],"entry":true,"type":"newspaper","title":"August Tuxhorn’s 1884 farm fire — Leo’s father, McPherson County"},"FT-0107":{"dir":"FT-0107-dornberg-bielefeld-america-westphalia-emigration","photos":["photos/01-memorial-fag.png","photos/01-tuxhorn-fag.png"],"entry":true,"type":"census","title":"Dornberg / Bielefeld → America — Westphalia emigration peak (Tuxhorn hinge)"},"FT-0408":{"dir":"FT-0408-democratic-sentinel-august-tuxhorn-1884-wire","photos":[],"entry":true,"type":"newspaper","title":"Democratic Sentinel (Rensselaer IN) — August Tuxhorn McPherson wire, 21 Nov 1884"},"FT-0409":{"dir":"FT-0409-mcpherson-settler-elizabeth-tuxhorn-groveland-1876","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS settler list — Elizabeth Tuxhorn (Birkenbuel), Groveland 1876"},"FT-0411":{"dir":"FT-0411-mcpherson-probate-index-tuxhorn-august-d52-e104","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS probate journal index — Tuxhorn August D52 (1891) / E104 (1894)"},"FT-0098":{"dir":"FT-0098-altmark-germans-on-the-kansas-prairie-gatz-hilge","photos":[],"entry":true,"type":"newspaper","title":"Altmark Germans on the Kansas prairie — Gatz × Hilgenfeld, McPherson Pioneer Register, and what ‘farmer’ meant"},"FT-0354":{"dir":"FT-0354-irvin-satc-wwi-student-army-training-corps","photos":[],"entry":true,"type":"newspaper","title":"Irvin Carl Gatz — Pvt Student Army Training Corps (WWI title unpack)"},"FT-0100":{"dir":"FT-0100-prairie-housing-and-tools-1870-1905-soddy-to-fra","photos":["photos/01-chrisman-sisters-sod.jpg","photos/02-rawding-family-sod-house-1886.jpg","photos/03-haumont-two-story-sod-1886.jpg","photos/04-family-sod-house-prairie.jpg","photos/05-farm-family-sod-nebraska.jpg","photos/06-horse-drawn-plow.jpg"],"entry":true,"type":"newspaper","title":"Prairie housing & tools ~1870–1905 — soddy to frame, plow work (context for Gatz farmers)"},"FT-0097":{"dir":"FT-0097-falls-city-journal-1899-johann-ludwig-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1899 — Johann Ludwig Hilgenfeld, 92; names daughter Sophia Gatz"},"FT-0350":{"dir":"FT-0350-falls-city-journal-1941-anna-deckinger-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1941 — Anna Deckinger Hilgenfeld (FAN farm + McPherson sister)"},"FT-0351":{"dir":"FT-0351-richardson-1890-farmers-hilgenfield-arago","photos":[],"entry":true,"type":"newspaper","title":"Nebraska State Gazetteer 1890 — Hilgenfield farmers at Arago / Falls City"},"FT-0352":{"dir":"FT-0352-andreas-falls-city-deutsche-gesellschaft-arago","photos":[],"entry":true,"type":"newspaper","title":"Andreas 1882 — Falls City Die Deutsche Gesellschaft + Arago German farming community"},"FT-0353":{"dir":"FT-0353-barrington-german-pioneer-influx-lines","photos":[],"entry":true,"type":"newspaper","title":"Barrington area — German pioneer influx 1840s–1850s (Hilgenfeld sojourn landscape)"},"FT-0355":{"dir":"FT-0355-wendemark-altmark-marschhufendorf-place","photos":[],"entry":true,"type":"newspaper","title":"Wendemark (Altmärkische Wische) — Marschhufendorf place for Gatz × Hilgenfeld wedding"},"FT-0108":{"dir":"FT-0108-don-shorts-at-blue-church-plaque-methodism-claim","photos":["photos/01-ontarioplaques-don-shorts-comment.png","photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"newspaper","title":"Don Shorts at Blue Church plaque — Methodism claim + who is buried here? (2010)"},"FT-0310":{"dir":"FT-0310-richard-panama-sixth-af-operations-specialist","photos":[],"entry":true,"type":"newspaper","title":"Operations Specialist in Panama — Richard’s WWII AAF world (Sixth Air Force)"},"FT-0311":{"dir":"FT-0311-richard-fire-career-arcadia-huntington-burbank","photos":[],"entry":true,"type":"newspaper","title":"Arcadia → Huntington Park → Burbank Captain — Richard’s fire departments in local histories"},"FT-0312":{"dir":"FT-0312-south-gate-high-1941-industrial-suburb","photos":[],"entry":true,"type":"newspaper","title":"South Gate High 1941 — industrial suburb where Richard graduated"},"FT-0370":{"dir":"FT-0370-1929-socal-move-south-gate-firestone-boom","photos":[],"entry":true,"type":"newspaper","title":"1929 Rochester → Southern California — Firestone / South Gate boom year"},"FT-0372":{"dir":"FT-0372-highland-park-figueroa-shoe-retail-world","photos":[],"entry":true,"type":"newspaper","title":"Highland Park Figueroa — retail / shoe-store strip where Earl kept shop"},"FT-0373":{"dir":"FT-0373-south-gate-depression-quake-industry","photos":[],"entry":true,"type":"newspaper","title":"South Gate childhood suburb — Depression, 1933 quake, factory jobs"},"FT-0374":{"dir":"FT-0374-south-pasadena-later-residence-world","photos":[],"entry":true,"type":"newspaper","title":"South Pasadena later home — trolley suburb where Earl died"},"FT-0152":{"dir":"FT-0152-find-a-grave-100072423-earl-stanley-shorts-memor","photos":[],"entry":true,"type":"vital","title":"Find A Grave 100072423 — Earl Stanley Shorts memorial extract"},"FT-0172":{"dir":"FT-0172-charles-merritt-brights-disease-gorham-ontario-c","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Charles Merritt — Bright's disease, Gorham (Ontario County Chronicle 21 May 1902)"},"FT-0174":{"dir":"FT-0174-1850-us-census-hopewell-ontario-ny-henry-tessima","photos":["photos/01.jpg"],"entry":true,"type":"census","title":"1850 US Census — Hopewell, Ontario, NY — Henry Tessiman household (fam 259)"},"FT-0217":{"dir":"FT-0217-woodlawn-cemetery-register-merritt-lot-207","photos":[],"entry":true,"type":"church","title":"Woodlawn Cemetery register — Charles J. & Ann L. Merritt, Sec 10 Lot 207"},"FT-0218":{"dir":"FT-0218-charles-merritt-probate-ann-l-executor-jun-1902","photos":[],"entry":true,"type":"newspaper","title":"Charles Merritt probate — Ann L. Merritt executor (Ontario County Chronicle 4 Jun 1902)"},"FT-0219":{"dir":"FT-0219-find-a-grave-121146760-charles-merritt-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 121146760 — Charles Merritt memorial extract"},"FT-0270":{"dir":"FT-0270-1855-census-hopewell-ontario-ny-tesseyman-fam-027","photos":[],"entry":true,"type":"census","title":"1855 NY State Census index — Hopewell, Ontario, NY — Tesseyman household (fam 027)"},"FT-0401":{"dir":"FT-0401-abbie-tesseyman-pneumonia-chapinville-1898","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Abbie Tesseyman — pneumonia, Chapinville (Ontario County Journal 30 Dec 1898)"},"FT-0271":{"dir":"FT-0271-1875-census-canandaigua-ontario-ny-ethelinda-tesseyman-fam-465","photos":[],"entry":true,"type":"census","title":"1875 NY State Census index — Canandaigua, Ontario, NY — Ethelinda Tesseyman (fam 465)"},"FT-0067":{"dir":"FT-0067-pringle-benham-compiled-dorland-shortts-239-mini","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled — Dorland Shortts #239 minister; m. Effie Earl 1879; d. Marcy 1945"},"FT-0069":{"dir":"FT-0069-find-a-grave-8850577-rev-dorland-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850577 — Rev Dorland Shorts memorial extract (no bio; no stone photo)"},"FT-0215":{"dir":"FT-0215-find-a-grave-8850579-effie-eliza-earl-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850579 — Effie Eliza Earl Shorts memorial extract (no bio; no stone photo)"},"FT-0371":{"dir":"FT-0371-rochester-shoe-industry-mckelvey-decline","photos":[],"entry":true,"type":"newspaper","title":"Rochester shoe-town decline — McKelvey city-historian frame for leaving ~1929"},"FT-0066":{"dir":"FT-0066-mount-hope-cemetery-section-w-stone-list-rev-dor","photos":[],"entry":true,"type":"vital","title":"Mount Hope Cemetery Section W stone list — Rev. Dorland Shorts & Effie E."},"FT-0216":{"dir":"FT-0216-ny-state-death-index-1918-effie-shorts-cert-37880","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1918 — Effie E. Shorts, cert. 37880, East Rochester"},"FT-0031":{"dir":"FT-0031-grindstone-island-umc-history-rev-alexander-shor","photos":["photos/01-altar.jpg","photos/02-stained-glass.jpg","photos/03-church-front.jpg","photos/04-church-door.jpg","photos/05-quilt.jpg"],"entry":true,"type":"church","title":"Grindstone Island UMC History — Rev Alexander Shorts, circuit rider (full page + images)"},"FT-0033":{"dir":"FT-0033-thousand-islands-life-grindstone-stained-glass-s","photos":["photos/01-church-stained-glass-hero.png","photos/02-rev-alexander-shorts.jpeg","photos/03-church-graphic.png","photos/04-church-exterior.png","photos/05-nancy-keziah-photo.png"],"entry":true,"type":"church","title":"Thousand Islands Life — Grindstone stained-glass series: Rev. Alexander Shorts (full article + images)"},"FT-0038":{"dir":"FT-0038-shorts-me-builders-connection-map-hay-bay-napane","photos":[],"entry":true,"type":"church","title":"Shorts ME builders — connection map (Hay Bay → Napanee → Grindstone → Dorland)"},"FT-0040":{"dir":"FT-0040-aylsworth-family-1887-eva-eliza-aylesworth-m-rev","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) — Eva Eliza Aylesworth m. Rev. Alexander Shorts; died leaving son Dorian"},"FT-0065":{"dir":"FT-0065-ny-state-death-index-1945-dorland-shorts-cert-52","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1945 — Dorland Shorts, cert. 52286, Marcy"},"FT-0068":{"dir":"FT-0068-maynard-methodist-church-marcy-ny-erie-canal-vil","photos":["photos/01-maynard-methodist-church.png","photos/02-maynard-interior.jpg"],"entry":true,"type":"place","title":"Maynard Methodist Church (Marcy NY) — Erie Canal Village history + photos"},"FT-0070":{"dir":"FT-0070-find-a-grave-138634881-eva-eliza-aylesworth-shor","photos":["photos/01-cemetery-cover.jpeg"],"entry":true,"type":"vital","title":"Find A Grave 138634881 — Eva Eliza Aylesworth Shorts (Knight's Cemetery)"},"FT-0071":{"dir":"FT-0071-knights-cemetery-transcript-kns-96-eva-eliza-sho","photos":["photos/01-cemetery-overview-2013.jpg","photos/02-cemetery-overview-2019.jpeg","photos/03-cemetery-overview-2024.jpeg"],"entry":true,"type":"vital","title":"Knight's Cemetery transcript — KNS 96 Eva Eliza Shorts stone + cemetery intro"},"FT-0074":{"dir":"FT-0074-pringle-benham-compiled-gen-110-alexander-shortt","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled gen. §110 — Alexander Shortts × Eva Eliza Aylesworth; child Dorland only"},"FT-0089":{"dir":"FT-0089-methodism-in-alexandria-jefferson-co-ny-circuit","photos":[],"entry":true,"type":"church","title":"Methodism in Alexandria (Jefferson Co. NY) — circuit riders on horseback; town where Earl Stanley Shorts was born"},"FT-0111":{"dir":"FT-0111-crem-dorland-book-fag-ruth-dorland-william-short","photos":[],"entry":true,"type":"book","title":"Crem Dorland book + FAG — Ruth Dorland × William Shorts (Adolphustown FAN; not blood claim)"},"FT-0137":{"dir":"FT-0137-find-a-grave-96207765-rev-alexander-shorts-grind","photos":[],"entry":true,"type":"vital","title":"Find A Grave 96207765 — Rev Alexander Shorts (Grindstone Island Cemetery)"},"FT-0429":{"dir":"FT-0429-black-river-nny-conference-memorial-shorts-negative","photos":[],"entry":true,"type":"church","title":"Black River & Northern NY Conference Memorial — no Shorts sketch (Dorland charge negative)"},"FT-0036":{"dir":"FT-0036-fadedgenes-rev-alexander-shorts-me-charges-ricev","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Alexander Shorts ME charges (Riceville 1869; Napanee 1881)"},"FT-0057":{"dir":"FT-0057-inkerman-me-church-and-parsonage-1868-eva-shorts","photos":["photos/01-inkerman-united-cover-1883.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-inkerman-me-1883-sepia.jpg","photos/04-mills-me-chapter-p9.jpg"],"entry":true,"type":"place","title":"Inkerman ME church & parsonage (1868) — Eva Shorts death context; 1883 red-brick successor"},"FT-0060":{"dir":"FT-0060-canadian-me-charge-ladder-riceville-inkerman-nap","photos":["photos/01-mills-methodism-inkerman.jpg","photos/02-inkerman-fadedgenes-sto.jpg"],"entry":true,"type":"church","title":"Canadian ME charge ladder — Riceville → Inkerman → Napanee (buildings + search negatives)"},"FT-0072":{"dir":"FT-0072-fadedgenes-inkerman-methodist-church-mountain-tw","photos":["photos/01-inkerman-methodist-1883.jpg","photos/02-inkerman-mountain-map.jpg"],"entry":true,"type":"church","title":"fadedgenes — Inkerman Methodist Church (Mountain Twp, Dundas) + 1883 building photo"},"FT-0073":{"dir":"FT-0073-mills-1983-yesterday-and-to-day-history-of-inker","photos":["photos/01-cover-inkerman-united-church.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-methodism-me-parsonage-p9.jpg","photos/04-church-today-1883-building.jpg"],"entry":true,"type":"church","title":"Mills 1983 — Yesterday and To-Day: History of Inkerman United Church (ME parsonage + building photos)"},"FT-0106":{"dir":"FT-0106-arthur-aylesworth-at-quidnessett-ri-settler-and","photos":["photos/01-aylsworth-1887-p36.jpg","photos/02-aylsworth-1887-p37.jpg","photos/03-emigration-ri.jpg"],"entry":true,"type":"church","title":"Arthur Aylesworth at Quidnessett — RI settler & the road to Canada"},"FT-0149":{"dir":"FT-0149-otho-nial-charlotte-bowerman-aylsworth-1887-job","photos":[],"entry":true,"type":"church","title":"Otho Nial × Charlotte Bowerman — Aylsworth 1887; Job Aylesworth spotted fever 1803"},"FT-0139":{"dir":"FT-0139-aylsworth-family-1887-p-89-charlotte-bowerman-da","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) p. 89 — Charlotte Bowerman dau. David; m. Otho Nial 1805"},"FT-0140":{"dir":"FT-0140-quaker-minutes-charlotte-bowerman-membership-and","photos":[],"entry":true,"type":"church","title":"Quaker minutes — Charlotte Bowerman membership & marry-out acknowledgment (1803–1806)"},"FT-0141":{"dir":"FT-0141-bowerman-family-genealogy-1904-david-bowerman-vi","photos":[],"entry":true,"type":"vital","title":"Bowerman family genealogy (1904) — David Bowerman vitals, children, Charlotte adoption note"},"FT-0142":{"dir":"FT-0142-pioneer-life-on-the-bay-of-quinte-1904-p-131-dav","photos":[],"entry":true,"type":"vital","title":"Pioneer Life on the Bay of Quinte (1904) p. 131 — David Bowerman × Catherine Bartlett family"},"FT-0146":{"dir":"FT-0146-bowerman-family-migration-batteau-route-ichabod","photos":[],"entry":true,"type":"church","title":"Bowerman family migration — batteau route, Ichabod Quaker disownment, Joseph Earl Loyalist"},"FT-0147":{"dir":"FT-0147-charlotte-bowerman-adopted-daughter-note-bowerma","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — adopted daughter note (Bowerman genealogy appendix)"},"FT-0148":{"dir":"FT-0148-charlotte-bowerman-quaker-membership-marry-out-a","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — Quaker membership, marry-out, and acknowledgment (1803–1806)"},"FT-0168":{"dir":"FT-0168-bowerman-1904-ichabod-verbank-homestead-bowerman","photos":[],"entry":true,"type":"church","title":"Bowerman 1904 — Ichabod Verbank homestead, Bowerman's Hole, Deborah stayed Dutchess"},"FT-0034":{"dir":"FT-0034-ti-life-archive-grindstone-grenell-wellesley-his","photos":["photos/01-grindstone-church.png","photos/02-historic-church.png","photos/03-historic-church.png","photos/04-historic-church.png","photos/05-historic-church.png","photos/06-historic-church.png","photos/07-historic-church.png","photos/08-historic-church.png","photos/09-historic-church.png","photos/10-historic-church.png","photos/11-dinsmore-church.png","photos/12-church.png","photos/13-church.png","photos/14-church.png","photos/15-church.png","photos/16-picture34.jpg","photos/17-dunsm.jpg","photos/18-picture26.jpg","photos/19-picture27.jpg","photos/20-picture28.jpg","photos/21-picture46.jpg"],"entry":true,"type":"place","title":"TI Life archive — Grindstone / Grenell / Wellesley historic churches (Rick Tague); Shorts section + images"},"FT-0037":{"dir":"FT-0037-ti-life-gabriel-series-mending-alexander-shorts","photos":["photos/01-window.jpg","photos/02-gabriel.jpeg","photos/03-well.png"],"entry":true,"type":"church","title":"TI Life — Gabriel series: mending Alexander Shorts’s Grindstone church (1935–45)"},"FT-0039":{"dir":"FT-0039-ti-life-grindstone-island-lost-in-time-kim-lunma","photos":[],"entry":true,"type":"newspaper","title":"TI Life — Grindstone Island: Lost in Time (Kim Lunman); church as summer heart + Rex Ennis lay preacher"},"FT-0041":{"dir":"FT-0041-ti-life-5-13-11-dig-tague-citation-negative-may","photos":[],"entry":true,"type":"newspaper","title":"TI Life 5/13/11 dig — Tague citation negative; May 13 2011 archive posts are not Grindstone church history"},"FT-0053":{"dir":"FT-0053-baldwin-and-clift-1881-3074-mary-ann-denison-sam","photos":[],"entry":true,"type":"vital","title":"Baldwin & Clift 1881 — #3074 Mary Ann Denison × Samuel D. Shorts (children)"},"FT-0054":{"dir":"FT-0054-find-a-grave-samuel-shorts-280868397-mary-ann-de","photos":[],"entry":true,"type":"vital","title":"Find A Grave — Samuel Shorts 280868397 + Mary Ann Denison Shorts 280868640 (Sexsmith)"},"FT-0058":{"dir":"FT-0058-riceville-methodist-1869-little-white-church-pre","photos":["photos/02-pendleton-methodist-prescott.jpg"],"entry":true,"type":"church","title":"Riceville Methodist — 1869 Little White Church (Prescott) & pastoral-charge history"},"FT-0059":{"dir":"FT-0059-napanee-me-church-grace-united-bridge-and-robert","photos":["photos/01-grace-united-bridge-st.jpg"],"entry":true,"type":"place","title":"Napanee ME church → Grace United (Bridge & Robert) — Alexander’s 1881 charge town"},"FT-0061":{"dir":"FT-0061-ti-life-emmet-c-dodge-stained-glass-series-mid-1","photos":["photos/01-stained-glass-window.png","photos/02-dodge-hall.png","photos/03-emmet-dodge.jpg","photos/04-emmet-portrait.jpg","photos/05-dodge-monument.jpeg"],"entry":true,"type":"church","title":"TI Life — Emmet C. Dodge stained-glass series: mid-1930s Grindstone church rebuild + unpublished MS"},"FT-0062":{"dir":"FT-0062-grindstone-news-12-jul-1998-jesse-calkins-helped","photos":[],"entry":true,"type":"church","title":"Grindstone News 12 Jul 1998 — Jesse Calkins helped Rev. Shorts build the island church"},"FT-0063":{"dir":"FT-0063-grindstone-news-19-aug-2001-mrs-joseph-tercott-1","photos":[],"entry":true,"type":"church","title":"Grindstone News 19 Aug 2001 — Mrs. Joseph Tercott (1947) saw Shorts-era church built on Turcotte land"},"FT-0064":{"dir":"FT-0064-ti-life-lashomb-going-home-chapter-cheese-factor","photos":["photos/01-book-cover.png","photos/02-cheese-factory-1990.png","photos/03-milk-wagon.png","photos/04-factory-deteriorating.png","photos/05-author-scan.png"],"entry":true,"type":"church","title":"TI Life — Lashomb Going Home chapter: Cheese Factory (Emmet Dodge Memoires + Turcotte Thurso)"},"FT-0084":{"dir":"FT-0084-grindstone-island-schoolhouse-history-house-of-g","photos":[],"entry":true,"type":"church","title":"Grindstone Island schoolhouse history — House of Good Temperance served as island church until fire (pre-Shorts fabric)"},"FT-0430":{"dir":"FT-0430-grace-united-napanee-museum-fire-hub-narrative","photos":[],"entry":true,"type":"church","title":"Grace United Napanee — museum object story (1842 ME building, lightning, 1943 fire, community hub)"},"FT-0431":{"dir":"FT-0431-trinity-united-napanee-beaver-names-st-andrews","photos":[],"entry":true,"type":"church","title":"Trinity United Napanee — Beaver names history; St Andrew's Gothic rival & 1930s merger"},"FT-0055":{"dir":"FT-0055-museum-of-lennox-and-addington-denison-christian","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Museum of Lennox & Addington — Denison Christian Cross quilt 2014.36.01 (Mary Anne finishes)"},"FT-0104":{"dir":"FT-0104-capt-george-denison-stonington-founder-and-king","photos":["photos/01-baldwin-1881-p6.jpg"],"entry":true,"type":"church","title":"Capt. George Denison — Stonington founder & King Philip’s War (colonial hinge)"},"FT-0105":{"dir":"FT-0105-uel-land-and-bay-of-quinte-thompson-loyalist-hin","photos":["photos/01-quilt-detail.jpg","photos/02-loyalist-landing-plaque.jpg","photos/03-hay-bay-plaque.jpg"],"entry":true,"type":"artifact","title":"UEL land & Bay of Quinte — Thompson Loyalist hinge (quilt + landing world)"},"FT-0466":{"dir":"FT-0466-stonington-helderberg-robert-denison-knox","photos":[],"entry":true,"type":"newspaper","title":"Stonington families to Helderberg — Robert Denison on Van Rensselaer’s ‘free’ land"},"FT-0469":{"dir":"FT-0469-stonington-first-church-dea-daniel-1733","photos":[],"entry":true,"type":"church","title":"First Church Stonington — Dea. Daniel Denison chosen 5 Jul 1733"},"FT-0465":{"dir":"FT-0465-saybrook-1667-mystic-farm-john-phebe","photos":[],"entry":true,"type":"deed","title":"1667 Saybrook settlement — George’s Mystic-mouth farm to Capt. John × Phebe Lay"},"FT-0458":{"dir":"FT-0458-baldwin-george-denison-cromwell-naseby","photos":[],"entry":true,"type":"military","title":"Baldwin 1881 — Capt. George Denison under Cromwell; wounded at Naseby; Ann as nurse"},"FT-0459":{"dir":"FT-0459-george-denison-will-england-war-sword","photos":[],"entry":true,"type":"military","title":"Capt. George Denison will 1693/4 — great sword & gauntlet from the wars of England"},"FT-0461":{"dir":"FT-0461-wheeler-denison-england-return-jointure","photos":[],"entry":true,"type":"military","title":"Wheeler 1900 — George’s England soldier year, Ann jointure £300, Stonington fame"},"FT-0463":{"dir":"FT-0463-haynes-roxbury-train-band-pequotsepos","photos":[],"entry":true,"type":"military","title":"Haynes 1963 — Roxbury train-band snub, New London captain, Pequotsepos lean-to"},"FT-0407":{"dir":"FT-0407-denison-homestead-pequotsepos-manor-history","photos":[],"entry":true,"type":"place","title":"Denison Homestead / Pequotsepos Manor — land grant, manor fire 1717 rebuild, museum"},"FT-0410":{"dir":"FT-0410-kasper-miscia-nehgr-178-borodell-cumbrian-summary","photos":[],"entry":true,"type":"newspaper","title":"Anna Kasper 2024 — Miscia NEHGR 178 Borodell Cumbrian summary (reject Cork/Broughton mother)"},"FT-0406":{"dir":"FT-0406-maj-gen-daniel-denison-autobiography-1672","photos":[],"entry":true,"type":"military","title":"Maj. Gen. Daniel Denison autobiography (1672) — Lyon 1631, Dudley marriage, George at Marston Moor"},"FT-0460":{"dir":"FT-0460-cromwell-marston-moor-naseby-landscape","photos":[],"entry":true,"type":"military","title":"What ‘serving under Cromwell’ meant — Marston Moor 1644 and Naseby 1645"},"FT-0462":{"dir":"FT-0462-stonington-church-denison-miles-standish","photos":[],"entry":true,"type":"church","title":"Stonington First Church 1874 — Denison as Miles Standish of the settlement; Canonchet"},"FT-0464":{"dir":"FT-0464-caulkins-denison-border-man-southerton","photos":[],"entry":true,"type":"newspaper","title":"Caulkins 1860 — Denison the border man; Southerton magistrate; ‘only except’"},"FT-0035":{"dir":"FT-0035-father-shorts-conversion-first-upper-canada-me-o","photos":[],"entry":true,"type":"church","title":"Father Shorts — conversion, first Upper Canada ME ordination, deathbed (Pringle compiled / CCA tradition)"},"FT-0056":{"dir":"FT-0056-1851-canada-west-census-richmond-twp-lennox-agus","photos":["photos/sexsmith-overview-fag-2014.jpg","photos/sexsmith-row-fag-2014.jpg"],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp, Lennox — Agustis & Ellenor Shorts (+ Sexsmith place)"},"FT-0030":{"dir":"FT-0030-canada-christian-advocate-via-old-hay-bay-shorts","photos":[],"entry":true,"type":"newspaper","title":"Canada Christian Advocate (via Old Hay Bay) — Shorts orphan / Father Shorts vignette"},"FT-0032":{"dir":"FT-0032-fadedgenes-rev-andrew-prindle-me-charge-list-han","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Andrew Prindle ME charge list (Hannah Shorts’s brother)"},"FT-0046":{"dir":"FT-0046-old-hay-bay-church-open-building-photographs-ext","photos":["photos/01-exterior-1908-postcard.jpg","photos/02-exterior-2008.jpg","photos/03-historic-1926-ao.jpg","photos/04-historic-1926-ao-alt.jpg","photos/05-historic-1926-portrait.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church — open building photographs (exterior / historic views)"},"FT-0047":{"dir":"FT-0047-old-hay-bay-church-nhs-parks-canada-historicplac","photos":["photos/01-historicplaces-general-view.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church NHS — Parks Canada / HistoricPlaces designation + Ontario plaque text"},"FT-0049":{"dir":"FT-0049-bowman-united-church-ancaster-exteriors-prindle","photos":["photos/01-bowman-side.jpg","photos/02-bowman-front-door.jpg","photos/03-bowman-side-detail.jpg","photos/04-bowman-historic-bw.jpg"],"entry":true,"type":"place","title":"Bowman United Church, Ancaster — exteriors + Prindle burial / chair relic site"},"FT-0050":{"dir":"FT-0050-me-conference-1829-andrew-prindle-superannuated","photos":[],"entry":true,"type":"church","title":"ME Conference 1829 — Andrew Prindle superannuated; next session at Bowman’s chapel, Ancaster"},"FT-0051":{"dir":"FT-0051-rev-andrew-prindle-fag-burial-sanderson-death-no","photos":[],"entry":true,"type":"church","title":"Rev Andrew Prindle — FAG burial + Sanderson death notice + Yonge Street clergy (beyond FT-0035)"},"FT-0052":{"dir":"FT-0052-upper-canada-me-itinerancy-prindle-niagara-years","photos":[],"entry":true,"type":"church","title":"Upper Canada ME itinerancy — Prindle Niagara years + horseback circuit-rider quotes"},"FT-0075":{"dir":"FT-0075-carroll-case-and-his-cotemporaries-vol-1-rev-and","photos":[],"entry":true,"type":"church","title":"Carroll, Case and his Cotemporaries vol. 1 — Rev Andrew Prindle biographical sketch"},"FT-0076":{"dir":"FT-0076-fadedgenes-bowman-me-church-ancaster-old-slide-p","photos":[],"entry":true,"type":"church","title":"fadedgenes — Bowman ME Church Ancaster (Old Slide) + Prindle chair / Kitty Murray"},"FT-0077":{"dir":"FT-0077-webster-history-of-the-me-church-in-canada-andre","photos":[],"entry":true,"type":"church","title":"Webster, History of the ME Church in Canada — Andrew Prindle first Canadian itinerant"},"FT-0078":{"dir":"FT-0078-bowman-united-church-cemetery-rev-andrew-prindle","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Bowman United Church Cemetery — Rev Andrew Prindle stone (Interment.net)"},"FT-0079":{"dir":"FT-0079-carroll-vols-2-and-5-father-prindle-death-eulogy","photos":[],"entry":true,"type":"church","title":"Carroll vols. 2 & 5 — Father Prindle death eulogy + Bay of Quinte local Deacon Augustus Shorts"},"FT-0112":{"dir":"FT-0112-1851-canada-west-census-richmond-twp-henry-holco","photos":[],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp — Henry Holcomb × Hannah O Shorts household"},"FT-0116":{"dir":"FT-0116-find-a-grave-william-and-eunice-pringle-hay-bay","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — William & Eunice Pringle Hay Bay (95004236 + 125180719)"},"FT-0134":{"dir":"FT-0134-find-a-grave-46280209-hannah-shorts-holcomb-cora","photos":[],"entry":true,"type":"vital","title":"Find A Grave 46280209 — Hannah Shorts Holcomb (Coral Cemetery, MI)"},"FT-0135":{"dir":"FT-0135-find-a-grave-133464095-elizabeth-shorts-hughs-se","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464095 — Elizabeth Shorts Hughs (Sexsmith Cemetery)"},"FT-0136":{"dir":"FT-0136-find-a-grave-133467916-andrew-pringle-shorts-sex","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133467916 — Andrew Pringle Shorts (Sexsmith Cemetery)"},"FT-0138":{"dir":"FT-0138-wikitree-short-3449-philip-short-augustus-son-m","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3449 — Philip Short (Augustus son); m. Hannah Brown 1821"},"FT-0150":{"dir":"FT-0150-deborah-bigelow-pringle-uel-adolphustown-loyalis","photos":[],"entry":true,"type":"vital","title":"Deborah Bigelow Pringle — UEL Adolphustown; Loyalist cemetery tradition"},"FT-0413":{"dir":"FT-0413-eunice-miller-stone-sister-rev-a-prindle","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Eunice Miller stone — sister of the late Rev. A. Prindle (FAG 144753754)"},"FT-0414":{"dir":"FT-0414-hay-bay-1819-drowning-worshippers-memorial","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Hay Bay — 1819 drowning worshippers memorial (dedicated 1961)"},"FT-0428":{"dir":"FT-0428-richmond-hill-early-days-appendix-c-clergy","photos":[],"entry":true,"type":"church","title":"Richmond Hill Early Days — Appendix C full clergy compendium (Prindle Yonge St. 1807/1811)"},"FT-0114":{"dir":"FT-0114-find-a-grave-joel-pringle-jr-59609435-uel-kings","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Jr. 59609435 (UEL King's Rangers bio)"},"FT-0144":{"dir":"FT-0144-napanee-beaver-1970-joel-pringle-jr-uel-patriarc","photos":[],"entry":true,"type":"newspaper","title":"Napanee Beaver (1970) — Joel Pringle Jr UEL patriarch, King's Rangers, batteaux settlement"},"FT-0151":{"dir":"FT-0151-uelac-joseph-pringle-st-johns-arrival-july-1781","photos":[],"entry":true,"type":"vital","title":"UELAC Joseph Pringle — St. John's arrival July 1781; Fredericksburgh grant 1783"},"FT-0167":{"dir":"FT-0167-bigelow-society-deborah-joel-uel-hopestill-prind","photos":[],"entry":true,"type":"church","title":"Bigelow Society — Deborah × Joel UEL; Hopestill Prindle FAN (Benedict in-law)"},"FT-0166":{"dir":"FT-0166-bigelow-society-ebenezer-ship-carpenter-cuba-dea","photos":[],"entry":true,"type":"vital","title":"Bigelow Society — Ebenezer ship carpenter, Cuba death tradition, Ticonderoga alternate"},"FT-0171":{"dir":"FT-0171-compiled-genealogy-deborah-pringle-edward-the-sp","photos":[],"entry":true,"type":"vital","title":"Compiled genealogy — Deborah Pringle × Edward 'The Spy' Hicks (Butler's Rangers son)"},"FT-0129":{"dir":"FT-0129-watertown-vr-roman-index-ebenezer-bigelow-birth","photos":[],"entry":true,"type":"vital","title":"Watertown VR Roman index — Ebenezer Bigelow birth, marriage, baptisms"},"FT-0130":{"dir":"FT-0130-bond-p-127-ebenezer-bigelow-hannah-brown-househo","photos":[],"entry":true,"type":"vital","title":"Bond p.127 — Ebenezer Bigelow × Hannah Brown household"},"FT-0132":{"dir":"FT-0132-bond-brown-p-120-hannah-brown-b-1699","photos":[],"entry":true,"type":"vital","title":"Bond Brown p.120 — Hannah Brown b.1699"},"FT-0131":{"dir":"FT-0131-bond-p-32-ebenezer-bigelow-b-1698-d-in-cuba-trad","photos":[],"entry":true,"type":"vital","title":"Bond p.32 — Ebenezer Bigelow b.1698; d. in Cuba tradition"},"FT-0133":{"dir":"FT-0133-find-a-grave-51809062-ebenezer-bigelow-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 51809062 — Ebenezer Bigelow memorial (secondary death note)"},"FT-0405":{"dir":"FT-0405-joshua-bigelow-king-philips-war-narragansett-grant","photos":[],"entry":true,"type":"military","title":"Joshua Bigelow — King Philip’s War wound, Narragansett No. 2 grant, late move to Westminster"},"FT-0115":{"dir":"FT-0115-find-a-grave-joel-pringle-sr-59610755-west-haven","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Sr. 59610755 (West Haven stone + family bio)"},"FT-0145":{"dir":"FT-0145-joseph-pringle-richmond-township-pioneer-christi","photos":[],"entry":true,"type":"newspaper","title":"Joseph Pringle — Richmond Township pioneer, Christian Guardian obituary (1833)"},"FT-0164":{"dir":"FT-0164-prindle-1906-joel-sr-louisbourg-prisoner-son-joe","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 — Joel Sr Louisbourg prisoner son; Joel Jr Danbury deed & Rev. soldier"},"FT-0124":{"dir":"FT-0124-pane-joyce-jacobus-joseph-prindle-mary-brown-joe","photos":[],"entry":true,"type":"vital","title":"Pane-Joyce (Jacobus) — Joseph Prindle × Mary Brown; Joel × Jemima Benham"},"FT-0127":{"dir":"FT-0127-jacobus-fanh-nathan-benham-sarah-beecher-childre","photos":[],"entry":true,"type":"vital","title":"Jacobus FANH — Nathan Benham × Sarah Beecher; children incl. Jemima"},"FT-0128":{"dir":"FT-0128-find-a-grave-66966847-sarah-beecher-benham-stone","photos":[],"entry":true,"type":"vital","title":"Find A Grave 66966847 — Sarah (Beecher) Benham stone + family grid"},"FT-0165":{"dir":"FT-0165-prindle-1906-beecher-stone-nathan-benham-daughte","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 + Beecher stone — Nathan Benham daughter Jemima × Joel Pringle Sr"},"FT-0162":{"dir":"FT-0162-prindle-1906-william-pringle-the-scotchman-oath","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — William Pringle 'the Scotchman' oath 1654 + immigrant traditions"},"FT-0163":{"dir":"FT-0163-prindle-1906-joseph-sr-scotland-farm-prindle-hil","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — Joseph Sr 'Scotland' farm, Prindle Hill, Serjeant, Episcopal founder"},"FT-0126":{"dir":"FT-0126-find-a-grave-125971521-mary-walker-brown-prindle","photos":[],"entry":true,"type":"vital","title":"Find A Grave 125971521 — Mary Walker Brown Prindle bio + stone"},"FT-0125":{"dir":"FT-0125-find-a-grave-169522429-sgt-joseph-prindle-memori","photos":[],"entry":true,"type":"vital","title":"Find A Grave 169522429 — SGT Joseph Prindle memorial bio + stone"},"FT-0044":{"dir":"FT-0044-adolphustown-place-set-loyalist-landing-1784-old","photos":["photos/01-hay-bay-church-plaque.jpg","photos/02-hay-bay-church-plaque-alt.jpg","photos/03-loyalist-landing-plaque.jpg","photos/04-old-hay-bay-church.jpg","photos/06-loyalist-landing-alt.jpg"],"entry":true,"type":"place","title":"Adolphustown place set — Loyalist Landing 1784 + Old Hay Bay Church plaques / exterior"},"FT-0045":{"dir":"FT-0045-hay-bay-church-deed-abstract-7-june-1811-augustu","photos":[],"entry":true,"type":"deed","title":"Hay Bay Church deed abstract (7 June 1811) — Augustus Shorts named trustee (Van Deursen 1912)"},"FT-0048":{"dir":"FT-0048-webster-1870-bishop-george-genesee-conference-at","photos":[],"entry":true,"type":"church","title":"Webster 1870 — Bishop George / Genesee Conference at Elizabethtown, June 1817 (ordination window)"},"FT-0082":{"dir":"FT-0082-kingston-whig-standard-adolphustown-loyalists-ha","photos":[],"entry":true,"type":"newspaper","title":"Kingston Whig Standard — Adolphustown Loyalists, Hay Bay Church, Elijah Woolsey saddlebag circuit (2021)"},"FT-0083":{"dir":"FT-0083-casey-davis-early-methodist-history-adolphustown","photos":[],"entry":true,"type":"church","title":"Casey / Davis — Early Methodist History: Adolphustown cradle, Losee, Darius Dunham, Hay Bay first church"},"FT-0085":{"dir":"FT-0085-bishop-philander-smith-me-church-in-canada-1847","photos":[],"entry":true,"type":"church","title":"Bishop Philander Smith (ME Church in Canada, 1847–1870) — identity for Hay Bay ‘granddaughter married Bishop Philander Smith’ claim"},"FT-0086":{"dir":"FT-0086-what-is-a-circuit-rider-losee-gallops-hay-bay-co","photos":[],"entry":true,"type":"church","title":"What is a circuit rider? — Losee gallops Hay Bay country; Dunham survives an axe (Carroll 1867)"},"FT-0113":{"dir":"FT-0113-death-notice-david-b-shorts-son-of-philip-shorts","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — David B. Shorts, son of Philip Shorts (Transcript Montreal, 8 Nov 1842)"},"FT-0153":{"dir":"FT-0153-wikitree-short-3451-john-w-short-vitals-research","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3451 — John W Short vitals + researcher note (Susquehanna cluster)"},"FT-0154":{"dir":"FT-0154-wikitree-monk-1058-rosannah-monk-short-vitals","photos":[],"entry":true,"type":"vital","title":"WikiTree Monk-1058 — Rosannah (Monk) Short vitals"},"FT-0155":{"dir":"FT-0155-wikitree-short-3450-augustus-short-parent-link-j","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3450 — Augustus Short parent link (John W × Rosannah Monk)"},"FT-0043":{"dir":"FT-0043-ohs-papers-st-johns-ernesttown-marriage-register","photos":[],"entry":true,"type":"church","title":"OHS Papers — St. John's Ernesttown marriage register (1792) — Philip & Katreen Shorts witnesses"},"FT-0080":{"dir":"FT-0080-hay-bay-canniff-brebner-barbara-monk-casper-hoov","photos":[],"entry":true,"type":"church","title":"Hay Bay + Canniff/Brebner — Barbara Monk × Casper Hoover (Rosannah’s sister; Catharine’s rescue)"},"FT-0087":{"dir":"FT-0087-barbara-monk-hover-s-pewter-platter-palatine-rel","photos":[],"entry":true,"type":"church","title":"Barbara Monk Hover’s pewter platter — Palatine relic, pot-pie bees, and Casper Hover’s death by falling limb"},"FT-0088":{"dir":"FT-0088-vanalstine-loyalist-voyage-shark-at-sea-pork-and","photos":[],"entry":true,"type":"newspaper","title":"VanAlstine Loyalist voyage — shark at sea, pork-and-peas rations, linen tents at Sorel (Canniff tradition)"},"FT-0090":{"dir":"FT-0090-frances-shorts-jacob-heck-married-into-barbara-h","photos":[],"entry":true,"type":"church","title":"Frances Shorts × Jacob Heck — married into Barbara Heck’s family; Heck House on the St. Lawrence"},"FT-0092":{"dir":"FT-0092-catharine-shorts-arra-ferguson-orphan-bride-pict","photos":[],"entry":true,"type":"church","title":"Catharine Shorts × Arra Ferguson — orphan bride; Picton church land; Ferguson & Catherine Streets; class with Dunham’s flock"},"FT-0042":{"dir":"FT-0042-exploring-niagara-butlers-rangers-nominal-list-p","photos":[],"entry":true,"type":"military","title":"Exploring Niagara — Butler's Rangers nominal list (privates) — SHORTS, JOHN E."},"FT-0081":{"dir":"FT-0081-smy-annotated-nominal-roll-of-butler-s-rangers-s","photos":["photos/01-smy-short-john-henry.png","photos/02-smy-source-E52-harvey.png","photos/03-smy-source-E75-ousterhout.png"],"entry":true,"type":"military","title":"Smy — Annotated Nominal Roll of Butler’s Rangers — Short, John Henry (private)"},"FT-0423":{"dir":"FT-0423-nyc-open-data-marriage-index-florence-hahn-seymour-cohn","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Florence Hahn × Seymour Cohn, Manhattan 25642, 2 Sep 1926"},"FT-0416":{"dir":"FT-0416-nyc-open-data-mamlock-sisters-marriage-index-pairs","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Mamlock sisters × Aronsohn / Geiger / Michaels"},"FT-0419":{"dir":"FT-0419-nyc-open-data-death-index-leon-aronsohn-bronx-1500-1921-candidate","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Leon Aronsohn, Bronx 1500, 6 Mar 1921 age 55 (Leo P. candidate)"},"FT-0422":{"dir":"FT-0422-nyc-open-data-death-index-esther-geiger-emma-michaels","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Esther Geiger Manh 1197/1944 · Emma Michaels Manh 6504/1942"},"FT-0190":{"dir":"FT-0190-marriage-index-perkins-belle-stonebraker-1896","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage index — Solomon M. Perkins × Belle Stonebraker (23 Dec 1896)"},"FT-0109":{"dir":"FT-0109-why-barbara-heck-matters-mother-of-methodism-joh","photos":[],"entry":true,"type":"church","title":"Why Barbara Heck matters — Mother of Methodism (John Street → Upper Canada)"},"FT-0110":{"dir":"FT-0110-the-blue-church-augusta-place-pack-why-it-belong","photos":["photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"place","title":"The Blue Church (Augusta) — place pack + why it belongs in a future story"},"FT-0143":{"dir":"FT-0143-find-a-grave-133464931-thomas-godfrey-hughs-spou","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464931 — Thomas Godfrey Hughs (spouse of Elizabeth Shorts)"},"FT-0091":{"dir":"FT-0091-barbara-heck-cards-in-the-fire-embury-preached-m","photos":[],"entry":true,"type":"church","title":"Barbara Heck — cards in the fire, Embury preached, Mother of Methodism; Blue Church monument (mother-in-law of Frances Shorts)"},"FT-0093":{"dir":"FT-0093-1891-adolphustown-wedding-pewter-platter-brought","photos":[],"entry":true,"type":"newspaper","title":"1891 Adolphustown wedding — pewter platter ‘brought to Canada by Barbara Heck’ serves the roast goose"},"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd"},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"}};

@@ -44,6 +44,19 @@
     return true;
   }
 
+  function asAkaList(raw) {
+    if (Array.isArray(raw)) return raw.map((s) => String(s).trim()).filter(Boolean);
+    if (!raw) return [];
+    return String(raw)
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+  }
+
+  function maidenFrom(aka) {
+    return asAkaList(aka).find((s) => /^(née|nee)\b/i.test(s)) || "";
+  }
+
   function normalizeConfidence(value) {
     const raw = String(value || "Unknown").trim();
     if (Object.prototype.hasOwnProperty.call(CONFIDENCE_RANK, raw)) return raw;
@@ -296,7 +309,7 @@
     return "";
   }
 
-  /** Tile label: what the object is (Newspaper), not FT-0103. */
+  /** Type word only: Newspaper, Obituary, … */
   function objectGalleryLabel(o) {
     const type = String(o?.type || inferTypeFromDir(o?.dirName) || "").toLowerCase();
     if (type && OBJECT_TYPE_LABELS[type] && type !== "document") return OBJECT_TYPE_LABELS[type];
@@ -306,6 +319,13 @@
       return short.length > 42 ? `${short.slice(0, 40)}…` : short;
     }
     return humanizeObjectDir(o?.dirName) || OBJECT_TYPE_LABELS[type] || "Document";
+  }
+
+  /** Finder label for the museum: FT-0097 · Obituary */
+  function objectAccessionLabel(o) {
+    const kind = objectGalleryLabel(o);
+    const id = String(o?.id || "").toUpperCase();
+    return /^FT-\d+$/.test(id) ? `${id} · ${kind}` : kind;
   }
 
   /** Infer gallery category from kind + filename (index often stores paths only). */
@@ -374,13 +394,19 @@
         id,
         slug,
         name: raw.name || id,
-        aka: raw.aka || "",
+        aka: asAkaList(raw.aka),
+        maiden: maidenFrom(raw.aka),
         years: raw.years || "",
+        birth: raw.birth ? String(raw.birth) : "",
+        death: raw.death ? String(raw.death) : "",
+        birthPlace: raw.birth_place ? String(raw.birth_place) : "",
+        deathPlace: raw.death_place ? String(raw.death_place) : "",
+        burial: raw.burial ? String(raw.burial) : "",
         confidence: normalizeConfidence(raw.confidence || "Unknown"),
         verified: raw.verified === true,
         status: raw.status || "",
         note: raw.note || "",
-        summary: raw.note || `${raw.name || id}${raw.years ? ` (${raw.years})` : ""}.`,
+        summary: "",
         blocker: raw.blocker ? String(raw.blocker).trim() : "",
         parents: [...(raw.parents || [])],
         spouses: [...(raw.spouses || [])],
@@ -993,6 +1019,8 @@
     edgeClass,
     loadObjectArtifact,
     objectGalleryLabel,
+    objectAccessionLabel,
+    maidenFrom,
     personMediaArtifacts,
     inferGalleryKey,
     galleryLabel,

@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [mary_stanton_denison]
 children: [daniel_denison_jr]
-object_ids: []
+object_ids: [FT-0469]
 confidence: Probable
 verified: false
 status: researching

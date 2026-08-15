@@ -46,8 +46,7 @@ window.PEOPLE_DATA = {
           "id": "alexander",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "Primary focus for the in-law ascent (Parsons / Rudd). Daughter of **Bill Parsons** × **Marcy Parsons**; spouse of **Alexander Shorts**. Living-private — no public vitals/death digs."
+      ]
     },
     "marcy_parsons": {
       "id": "marcy_parsons",
@@ -107,8 +106,7 @@ window.PEOPLE_DATA = {
           "id": "bill_parsons",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "Mother of Morganne Shorts. Married name **Parsons**; maiden **Rudd** (**C444** Locked). Public SABR bio: **Marcy Rae Rudd**, m. Bill 14 Jun 1969. George’s obit names daughter Marcy Parsons × Bill and son **Dan Rudd** × Nancy — soft sibling via shared father George (**C545–C549..."
+      ]
     },
     "marion_orciere": {
       "id": "marion_orciere",
@@ -193,7 +191,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Maternal grandmother of Morganne Shorts (mother of Marcy Parsons). **C442** + **C470 Locked**. Soft vitals from SortedByName SSACI (**C477**): **Marian Eveline**, b. **16 Aug 1926** Riverside/Arlington CA; d. **Oct 1976**; Crestlawn as **Marian E Crabtree**. Aka Crabtree / Har..."
+      "birth": "1926-08-16",
+      "death": "1976-10",
+      "birth_place": "Riverside / Arlington, Riverside County, California, USA",
+      "burial": "Crestlawn Memorial Park, Riverside, Riverside County, California, USA (as Marian E Crabtree)"
     },
     "rachel_g_orciere": {
       "id": "rachel_g_orciere",
@@ -261,7 +262,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Mother of **Marion Orciere**. **C470 / C472 Locked** (Marcy via Alex 2026-08-07). Crestlawn with spouse **Theodore M. Orciere**. Maiden **G** still unknown on free sources."
+      "birth": "1904-12-14",
+      "death": "1997-08-10",
+      "death_place": "Rowan County, Kentucky, USA",
+      "burial": "Crestlawn Memorial Park, Riverside, Riverside County, California, USA"
     },
     "josephine_fife": {
       "id": "josephine_fife",
@@ -323,7 +327,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Mother of **Rachel G. (Fife) Orciere**. Maiden **Humble** from FAG italic + parents grid. Soft **Probable** / `verified: false` — packs **C479** (identity) + **C2041–C2044**. Adjacent Albert plot G-4-265-1."
+      "birth": "1870-09-27",
+      "death": "1942-12-16",
+      "birth_place": "Illinois, USA",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California, USA — G-4-265-2"
     },
     "amy_c_boggs_humble": {
       "id": "amy_c_boggs_humble",
@@ -369,7 +377,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Josephine / Josie (Humble) Fife**. Soft **Probable** / `verified: false` — pack **C2042**. Maiden **Boggs** on FAG. **Own parents still `[]`** — pack **C2271 Blocked** (reopen; prior C2091). Memorial **22543134 loaded** (Playwright): 1846–1921, Sunnyslope;...",
+      "birth": "1846",
+      "death": "1921",
+      "death_place": "Corona, Riverside County, California, USA",
+      "burial": "Corona Sunnyslope Cemetery, Corona, Riverside County, California, USA",
       "blocker": "Unlock: CA death cert 1921 Riverside parent fields; IL/IN/IA marriage li"
     },
     "william_a_humble": {
@@ -416,7 +427,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Josephine / Josie (Humble) Fife** (Rachel G. Fife Orciere’s mother). Soft **Probable** / `verified: false` — pack **C2042**. Named on Josie’s FAG parents grid with spouse **Amy C. (Boggs) Humble**. **Own parents still `[]`** — pack **C2270 Blocked** (reope...",
+      "birth": "1846",
+      "death": "1926-12-14",
+      "birth_place": "Iowa, USA",
+      "death_place": "Corona, Riverside County, California, USA",
+      "burial": "Corona Sunnyslope Cemetery, Corona, Riverside County, California, USA",
       "blocker": "Unlock: CA death cert 14 Dec 1926 Riverside parent fields; 1850/1860 cen"
     },
     "albert_m_fife": {
@@ -464,7 +479,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Father of **Rachel G. (Fife) Orciere**. Soft **Probable** from Riverside census + 1934 obit + Olivewood FAG. Pack **C479**. Parents still **[]** — pack **C2040** → reopen **C2260 Blocked**. FAG first wife **Laura M. Garrison** (d. 1884) not minted (Rachel is Josie’s child). Co..."
+      "birth": "1855",
+      "death": "1934-07-15",
+      "birth_place": "Indiana, USA",
+      "death_place": "California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California, USA — G-4-265-1"
     },
     "theodore_m_orciere": {
       "id": "theodore_m_orciere",
@@ -529,7 +548,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of **Marion Orciere** (Morganne’s maternal grandmother). **C470 / C471 Locked** (Marcy via Alex 2026-08-07). Crestlawn with spouse **Rachel G. Orciere**. FAG had no children linked — family confirmation supplies Marion."
+      "birth": "1903-03-14",
+      "death": "1975-12",
+      "death_place": "Riverside County, California, USA (probable)",
+      "burial": "Crestlawn Memorial Park, Riverside, Riverside County, California, USA"
     },
     "anna_steinborn_orciere": {
       "id": "anna_steinborn_orciere",
@@ -582,7 +604,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Mother of **Theodore M. Orciere**. Soft **Probable** maiden **Steinborn**. Pack **C478**. FAG death **26 Feb 1928** (GB index 25 Feb — keep both). **Do not rewire parents this pass:** `parents` stays **`louise_steinborn`** (C1076 GB “Miss Louise”). FAG names mother **Anna B. S..."
+      "birth": "1875",
+      "death": "1928-02-26",
+      "birth_place": "Missouri, USA",
+      "death_place": "Riverside, Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California, USA — T-1-56-4"
     },
     "louise_steinborn": {
       "id": "louise_steinborn",
@@ -613,7 +639,6 @@ window.PEOPLE_DATA = {
       "aka": [
         "Miss Louise Steinborn"
       ],
-      "note": "Index-only parent of **Anna Steinborn Orciere** (GB “Miss Louise Steinborn”). Pack **C1076**. Parents still **[]** — **C2035 Blocked**. **Conflict:** FAG mother of Anna is **Anna B. Steinborn**; FAG sister **Louisa Steinborn Butler** (b. ~1875, same year as Anna) is a better f...",
       "blocker": "Parents still [] — C2035 Blocked"
     },
     "marin_orciere": {
@@ -671,7 +696,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Father of **Theodore M. Orciere**. Soft **Probable** from FS 1910 (Marion) + 1928 Anna obit index (Marin) + FAG **Marin L.** Pack **C478**. Vitals/plot **C2036**. CADI 1948 mother’s maiden **Vinge** (**C2250**) — parent **given names** still unnamed; `parents: []` (**C2251** /..."
+      "birth": "1879-08-24",
+      "death": "1948-11-18",
+      "birth_place": "France",
+      "death_place": "Los Angeles County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California, USA — T-1-56-5"
     },
     "george_rudd": {
       "id": "george_rudd",
@@ -736,7 +765,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **C448 Locked** (Marcy via Alex 2026-08-07): parents **Clause × Della Rudd**. Deceased. Spouse **Marion Orciere**. Son **Dan Rudd** is Marcy’s **step-brother** (Marion not Dan’s mother — **C549 Locke...",
+      "birth": "1923-05-08",
+      "death": "2012-10-03",
+      "birth_place": "Edmonton, Alberta, Canada",
+      "death_place": "Capistrano Beach, Orange County, California, USA",
+      "burial": "Private services at sea",
       "blocker": "Parents of Clause (C500 Blocked)"
     },
     "della_elizabeth_rudd": {
@@ -832,7 +865,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Mother of **George E. Rudd**. Named **Della** in George’s obituary; Olivewood + SSDI + FAG dual stone support **Della Elizabeth (Olson) Rudd** (12 May 1902 – 29 Aug 1973) at Olivewood with spouse **Claus Y. Rudd**. Soft parents **Isaac Olsen** × **Jennie Olsen** — pack **C505–..."
+      "birth": "1902-05-12",
+      "death": "1973-08-29",
+      "birth_place": "Lyman County, South Dakota, USA",
+      "death_place": "Riverside, Riverside County, California, USA",
+      "burial": "Olivewood Memorial Park, Riverside, California (Sec. H, Row 2, Lot 207, Grave 2); dual stone with Claus Y. Rudd"
     },
     "jennie_olsen": {
       "id": "jennie_olsen",
@@ -926,7 +963,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C507**. FAG + Lyman SD birth + **BC death 1956-09-007015** (open JPEG) corroborate vitals. Maiden conflict kept open: FAG **Andersen**,...",
+      "birth": "1863-07-11",
+      "death": "1956-06-23",
+      "birth_place": "Sweden",
+      "death_place": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada",
+      "burial": "Mountain View Cemetery, Vancouver, British Columbia, Canada",
       "blocker": "Parents (gen-5) Blocked — unlock Swedish birth/emigration or family name"
     },
     "isaac_olsen": {
@@ -1008,7 +1049,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C506**. FAG + Lyman SD birth + **BC death 1947-09-008902** (open JPEG) corroborate vitals. Spelling **Olsen** (FAG/BC) / **Olson** (SD ...",
+      "birth": "1857-12-15",
+      "death": "1947-10-18",
+      "birth_place": "Sweden",
+      "death_place": "Richmond, Metro Vancouver Regional District, British Columbia, Canada",
+      "burial": "Mountain View Cemetery, Vancouver, British Columbia, Canada",
       "blocker": "Parents (gen-5) Blocked — unlock Swedish birth/emigration or family name"
     },
     "clause_rudd": {
@@ -1087,7 +1132,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked** (Marcy via Alex 2026-08-07). Also PE/FAG/Olivewood as **Claus Y. Rudd**. Spouse **Della** Confirmed. CADI birthplace **Minnesota**; 1931 Edmonton directory **Chas Y** (HBC wholesale). Gen-4 parents...",
+      "birth": "1893-06-09",
+      "death": "1976-09-23",
+      "birth_place": "Minnesota, USA (CADI; county unknown)",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Memorial Park, Riverside, California; dual stone with Della E. Rudd",
       "blocker": "Parents (gen-4) — C2240 Blocked; CADI maiden blank; unlock = MN county b"
     },
     "bill_parsons": {
@@ -1258,7 +1307,8 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of **Morganne Shorts**; spouse of **Marcy Parsons**. Former MLB pitcher (Milwaukee Brewers 1971–73, Oakland Athletics 1974). **1971 AL Rookie of the Year runner-up** (BBWAA); **The Sporting News AL Rookie Pitcher of the Year**. Person-card portrait from Wikimedia Common..."
+      "birth": "1948-08-17",
+      "birth_place": "Riverside, Riverside County, California, USA"
     },
     "elizabeth_allen": {
       "id": "elizabeth_allen",
@@ -1375,7 +1425,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Paternal grandmother of Morganne Shorts (mother of Bill Parsons). Maiden **Allen**; FAG full name **Elizabeth Leonard “Betty” Allen Parsons**, b. **14 Jan 1910 Holyoke, MA**, d. **15 Sep 2005**, Olivewood **W-3-264-2**. Press-Enterprise death notice (object **FT-0007**) names ..."
+      "birth": "1910-01-14",
+      "death": "2005-09-15",
+      "birth_place": "Holyoke, Hampden County, Massachusetts, USA",
+      "death_place": "Riverside, Riverside County, California, USA",
+      "burial": "Olivewood Memorial Park, Riverside, California (W-3-264-2)"
     },
     "gerald_allen_parsons": {
       "id": "gerald_allen_parsons",
@@ -1490,7 +1544,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Paternal grandfather of Morganne Shorts (father of Bill Parsons). **C441 Locked** as **Gerald Allen Parsons**. Public dig (Alex authorized 2026-08-07): FAG **Gerald Austin Parsons** shares Olivewood plot **W-3-264** with Betty (grave 1 / 2); SSDI birth matches; sons include **...",
+      "birth": "1909-12-27",
+      "death": "1985-11-19",
+      "birth_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California (W-3-264-1)",
       "blocker": "Open Press-Enterprise / newspaper death notice Nov 1985 (not found free)"
     },
     "harriet_b_foss_parsons": {
@@ -1602,7 +1660,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Mother of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). **LOCKED — legal vital** **FT-0443** (2026-08-13): spouse **Nelson B. Parsons** (**C461**) and parents **Ambrose Foss × Sarah Knight** (**C485**). Maiden **Foss**; Olivewood T-2-1-6. Children Locked **C1087–C..."
+      "birth": "1873-11-15",
+      "death": "1941-06-16",
+      "birth_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California (T-2-1-6)"
     },
     "sarah_knight_foss": {
       "id": "sarah_knight_foss",
@@ -1685,7 +1747,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Mother of **Harriet B. Foss Parsons** (Morganne ascent gen-4). **LOCKED — legal vital** **FT-0443** / pack **C485** (2026-08-13) — named as bride’s mother **Sarah Knight** on Maine VR. Spouse **Ambrose Foss**; FAG child grid includes Harriet. FAG bio notes Ambrose and Sarah ha..."
+      "birth": "1844-08-15",
+      "death": "1934-06-17",
+      "birth_place": "Maine, USA",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "betsy_warren_huntress_knight": {
       "id": "betsy_warren_huntress_knight",
@@ -1756,7 +1822,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Sarah Knight Foss** (Morganne ascent gen-5 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C525** / **C527**. Maiden **Huntress** on FAG title. Parents soft **Robert Huntress** × **Eunice Knight Huntress** — pack **C575–C579**. FAG pare..."
+      "birth": "1823-01-28",
+      "birth_place": "Waterboro, York County, Maine, USA",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "eunice_knight_huntress": {
       "id": "eunice_knight_huntress",
@@ -1841,7 +1910,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Betsy Warren Huntress Knight** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C575** / **C577**. Maiden **Knight** on FAG title; Town House Cemetery Waterboro with spouse Robert. Gen-7 parents soft **Nathaniel B. Knight** × ..."
+      "birth": "1803-03-14",
+      "death": "1845-02-13",
+      "birth_place": "Waterboro, York County, Maine, USA",
+      "death_place": "Waterboro, York County, Maine, USA",
+      "burial": "Town House Cemetery, Waterboro, York County, Maine, USA"
     },
     "hannah_cluff_knight": {
       "id": "hannah_cluff_knight",
@@ -1924,7 +1997,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Eunice Knight Huntress** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C675** / **C677**. Maiden **Cluff** / aka **Clough** (WT Cluff-434). b. **25 Jun 1775** Arundel York ME; d. **5 Aug 1805** Waterboro; wife of **Nathanie..."
+      "birth": "1775-06-25",
+      "death": "1805-08-05",
+      "birth_place": "Arundel, York County, Maine, USA",
+      "death_place": "Waterboro, York County, Maine, USA",
+      "burial": "Rufus Knight Cemetery, Waterboro, York County, Maine, USA"
     },
     "lucy_wakefield_clough": {
       "id": "lucy_wakefield_clough",
@@ -1981,7 +2058,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Hannah Cluff Knight** (Morganne ascent via Eunice). Soft-ingest **Probable** / `verified: false` — pack **C835** / **C837**. Maiden **Wakefield**; b. **1750** Wells; d. **21 Jun 1820** Alfred (some earlier pastes **1821** — held). Daughter of Samuel Wakefi..."
+      "birth": "1750",
+      "death": "1820-06-21",
+      "birth_place": "Wells, York County, Maine, USA",
+      "death_place": "Alfred, York County, Maine, USA"
     },
     "samuel_clough": {
       "id": "samuel_clough",
@@ -2036,7 +2116,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Hannah Cluff Knight** (Morganne ascent via Eunice). Soft-ingest **Probable** / `verified: false` — pack **C835** / **C836**. WikiTree Clough-726 aka **Cluff**; b. **14 May 1749** York (VR); d. **27 May 1827** Alfred. m1 **7 Jun 1770** Wells to **Lucy Wakef..."
+      "birth": "1749-05-14",
+      "death": "1827-05-27",
+      "birth_place": "York, York County, Maine, USA",
+      "death_place": "Alfred, York County, Maine, USA"
     },
     "nathaniel_b_knight": {
       "id": "nathaniel_b_knight",
@@ -2117,7 +2200,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Eunice Knight Huntress** (Morganne ascent gen-7 via Betsy Warren Huntress). Soft-ingest **Probable** / `verified: false` — pack **C675** / **C676**. WikiTree Knight-12905: b. **16 Aug 1772** Somersworth NH; d. **1855** Waterboro York ME; husband of **Hanna..."
+      "birth": "1772-08-16",
+      "death": "1855",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA",
+      "death_place": "Waterboro, York County, Maine, USA",
+      "burial": "Rufus Knight Cemetery, Waterboro, York County, Maine, USA"
     },
     "lydia_roberts_knight": {
       "id": "lydia_roberts_knight",
@@ -2182,7 +2269,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Nathaniel B. Knight** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C830** / **C832**. WikiTree Roberts-11640: b. **31 Jul 1743** Somersworth NH; d. **aft 1801** (son bio alternate **1811** Alfred — hold); wife of **John Kn..."
+      "birth": "1743-07-31",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "sarah_wallingford_roberts": {
       "id": "sarah_wallingford_roberts",
@@ -2225,7 +2313,6 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Lydia Roberts Knight** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C2235** / **C2237**. Maiden **Wallingford**. Tate (NEHGR 74:39) names her as wife of Joshua Roberts and mother of Lydia b. **31 Jul 1743**. Birth/death bl...",
       "blocker": "Parents (John × Mary Tuttle vs Nicholas × Sarah Elithorp) — blocked"
     },
     "joshua_roberts": {
@@ -2270,7 +2357,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Lydia Roberts Knight** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C2235** / **C2236**. Tate (NEHGR 74:39): **Mr. Joshua Roberts’s who Married Sarah Wallingford**; children include **Lydia July 31 1743** (exact match to L..."
+      "birth": "1698-10-11",
+      "death": "1771-12-29",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "john_knight": {
       "id": "john_knight",
@@ -2340,7 +2430,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Nathaniel B. Knight** (Morganne ascent gen-8 via Eunice Knight Huntress). Soft-ingest **Probable** / `verified: false` — pack **C830** / **C831**. WikiTree Knight-5643: b. **abt 1742** Kittery; d. **27 Jul 1819** (District of Maine / Alfred per son bio); h..."
+      "birth": "1742",
+      "death": "1819-07-27",
+      "birth_place": "Kittery, York County, Maine, USA",
+      "death_place": "Alfred, York County, Maine, USA"
     },
     "mehitable_libby_knight": {
       "id": "mehitable_libby_knight",
@@ -2395,7 +2488,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **John Knight** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C2230** / **C2232**. Maiden **Libby**. WikiTree Libby-203: b. **14 Mar 1710** Kittery; wife of Daniel Knight; mother of Zebulon Sr + John. Libby 1882 (11-12): b. *..."
+      "birth": "1710-03-14",
+      "birth_place": "Kittery, York County, Maine, USA"
     },
     "daniel_knight_sr": {
       "id": "daniel_knight_sr",
@@ -2447,7 +2541,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **John Knight** (Morganne ascent gen-9 via Nathaniel B.). Soft-ingest **Probable** / `verified: false` — pack **C2230** / **C2231**. WikiTree Knight-6274: b. **abt 1705** Kittery; d. **abt 1779** Kittery; m. **2 Aug 1734** Mehitable Libby; father of Zebulon ..."
+      "birth": "1705",
+      "death": "1779",
+      "birth_place": "Kittery, York County, Maine, USA",
+      "death_place": "Kittery, York County, Maine, USA"
     },
     "robert_huntress": {
       "id": "robert_huntress",
@@ -2520,7 +2617,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Betsy Warren Huntress Knight** (Morganne ascent gen-6 via Sarah Knight Foss). Soft-ingest **Probable** / `verified: false` — pack **C575** / **C576**. FAG Town House Cemetery Waterboro; spouse **Eunice Knight Huntress**; children grid includes Betsy plus J..."
+      "birth": "1793-04-30",
+      "death": "1860-09-09",
+      "birth_place": "Lincoln, Penobscot County, Maine, USA",
+      "death_place": "Waterboro, York County, Maine, USA",
+      "burial": "Town House Cemetery, Waterboro, York County, Maine, USA"
     },
     "elizabeth_rhoda_warren_huntress": {
       "id": "elizabeth_rhoda_warren_huntress",
@@ -2606,7 +2707,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Robert Huntress** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C670** / **C672**. Maiden **Warren**; aka **Betsey**. WikiTree Warren-13119: b. **abt 1768** Kittery; spouse **William Huntress** m. **2 Oct 1788** Berwick (Yo..."
+      "birth": "1768",
+      "birth_place": "Kittery, York County, Maine, USA"
     },
     "elizabeth_hasty_warren": {
       "id": "elizabeth_hasty_warren",
@@ -2657,7 +2759,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Elizabeth Rhoda Warren Huntress** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C2165** / **C2167**. Maiden **Hasty**. b. **30 May 1725** Kittery; d. **22 Jul 1821** Berwick. m. **James Warren Jr.** **6 Aug 1756** Second Ch..."
+      "birth": "1725-05-30",
+      "death": "1821-07-22",
+      "birth_place": "Kittery, York County, Maine",
+      "death_place": "Berwick, York County, Maine, USA"
     },
     "james_warren_jr": {
       "id": "james_warren_jr",
@@ -2708,7 +2813,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Elizabeth Rhoda Warren Huntress** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C2165** / **C2166**. b. **27 Jul 1723** Kittery; d. **before 21 Oct 1791** Berwick (will 14 Sep–21 Oct 1791). m. **Elizabeth Hasty** **6 Aug 17..."
+      "birth": "1723-07-27",
+      "death": "1791",
+      "birth_place": "Kittery, York County, Maine",
+      "death_place": "Berwick, York County, Maine, USA"
     },
     "william_huntress": {
       "id": "william_huntress",
@@ -2793,7 +2901,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Robert Huntress** (Morganne ascent gen-7 via Betsy Warren Huntress Knight). Soft-ingest **Probable** / `verified: false` — pack **C670** / **C671**. FAG Town House Cemetery Waterboro: b. **8 Sep 1766** Berwick; d. **13 Aug 1844** Waterboro. **Children grid..."
+      "birth": "1766-09-08",
+      "death": "1844-08-13",
+      "birth_place": "Berwick, York County, Maine, USA",
+      "death_place": "Waterboro, York County, Maine, USA",
+      "burial": "Town House Cemetery, Waterboro, York County, Maine, USA"
     },
     "love_hearl_huntress": {
       "id": "love_hearl_huntress",
@@ -2850,7 +2962,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **William Huntress** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C2160** / **C2162**. Maiden **Hearl** (VR **Herl**). Bapt. **before 13 Apr 1735** Berwick; d. **before 1778** (WT). m. **Darling Huntress** **6 Dec 1751** Ber..."
+      "birth": "1735",
+      "death": "1778",
+      "birth_place": "Berwick, York County, Maine",
+      "death_place": "Berwick, York County, Maine, USA"
     },
     "darling_huntress": {
       "id": "darling_huntress",
@@ -2909,7 +3024,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **William Huntress** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C2160** / **C2161**. b. **19 Apr 1730** Newington NH; d. **8 Mar 1815** South Berwick. m. **Love Hearl** **6 Dec 1751** Berwick (VR as Huntriss × Herl). **No ..."
+      "birth": "1730-04-19",
+      "death": "1815-03-08",
+      "birth_place": "Newington, Rockingham County, New Hampshire",
+      "death_place": "South Berwick, York County, Maine, USA"
     },
     "william_h_knight": {
       "id": "william_h_knight",
@@ -2978,7 +3096,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Sarah Knight Foss** (Morganne ascent gen-5 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C525** / **C526**. Bidirectional FAG: Sarah parents grid ↔ William children grid (George William, Sarah, Mercy Ellen, Howard Isaac, Warren H., Id..."
+      "birth": "1819-12-13",
+      "death": "1890-07-15",
+      "birth_place": "Buxton, York County, Maine, USA",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "elizabeth_sawyer_knight": {
       "id": "elizabeth_sawyer_knight",
@@ -3027,7 +3149,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **William H. Knight** (Morganne ascent gen-6). Soft-ingest **Probable** / `verified: false` — pack **C570** / **C572**. Maiden **Sawyer** (WT Sawyer-10166); aka Betsey/Betsy. m. Edmund Knight **2 Mar 1819** Hollis; Buxton register lists her as Edmund’s **2'd...",
+      "birth": "1779",
+      "death": "1857-09-08",
+      "birth_place": "Maine, USA",
+      "death_place": "Dayton, York County, Maine, USA",
       "blocker": "Sawyer parents — BLOCKED C605–C609 : WT unknown; no FAG; no open obit; d"
     },
     "edmund_knight": {
@@ -3095,7 +3220,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **William H. Knight** (Morganne ascent gen-6 via Sarah Knight Foss). Soft-ingest **Probable** / `verified: false` — pack **C570** / **C571**. Gen-7 parents soft **Samuel Knight** × **Hannah Whidden Knight** — pack **C600**. WikiTree Knight-23073 + Buxton Fam..."
+      "birth": "1766-12-15",
+      "death": "1841-02-26",
+      "birth_place": "Buxton, York County, Maine, USA",
+      "death_place": "Buxton, York County, Maine, USA"
     },
     "hannah_whidden_knight": {
       "id": "hannah_whidden_knight",
@@ -3171,7 +3299,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Edmund Knight** (Morganne ascent gen-7). Soft-ingest **Probable** / `verified: false` — pack **C600** / **C602**. Maiden **Whidden** (WT Whidden-575); aka Hannah Knight. b. **~1752** Arundel York ME; d. **1818** (place blank on WT). Wife of **Samuel Knight..."
+      "birth": "1752",
+      "death": "1818",
+      "birth_place": "Arundel, York County, Maine, USA"
     },
     "ruth_merrill_whidden": {
       "id": "ruth_merrill_whidden",
@@ -3261,7 +3391,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Hannah Whidden Knight** (Morganne ascent via Edmund Knight). Soft-ingest **Probable** / `verified: false` — pack **C695** / **C697**; parents soft **C885–C889**. Maiden **Merrill** (aka Merryl); b. **26 Jul 1711** Salisbury VR (WT header **20 Jul** held); ..."
+      "birth": "1711-07-26",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA",
+      "death_place": "Arundel, York County, Maine, USA"
     },
     "mary_allen_merrill": {
       "id": "mary_allen_merrill",
@@ -3326,7 +3458,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C885** / **C887**. Maiden **Allen**/Allin; b. **27 Dec 1681** Salisbury; m. **23 Sep 1702** John Merrill; d. **6 Apr 1736** Salisbury (WT Allen-691). Hoyt footn..."
+      "birth": "1681-12-27",
+      "death": "1736-04-06",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA",
+      "death_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "john_merrill": {
       "id": "john_merrill",
@@ -3389,7 +3524,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Ruth Merrill Whidden** (Morganne ascent via Hannah Whidden Knight). Soft-ingest **Probable** / `verified: false` — pack **C885** / **C886**. b. **7 Oct 1674** Newbury; m. **23 Sep 1702** Salisbury to **Mary Allen**/Allin; d. **17 Jan 1756** Salisbury; FAG ..."
+      "birth": "1674-10-07",
+      "death": "1756-01-17",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Salisbury, Essex County, Massachusetts, USA",
+      "burial": "Pentucket Cemetery, Haverhill, Essex County, Massachusetts, USA"
     },
     "john_whidden": {
       "id": "john_whidden",
@@ -3473,7 +3612,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Hannah Whidden Knight** (Morganne ascent via Edmund Knight). Soft-ingest **Probable** / `verified: false` — pack **C695** / **C696**. WikiTree Whidden-20 aka **Whitten**; b. **~1704** Greenland NH; d. **15 Jun 1787** Arundel (bio also **5 Jun** Kennebunkpo..."
+      "birth": "1704",
+      "death": "1787-06-15",
+      "birth_place": "Greenland, Rockingham County, New Hampshire, USA",
+      "death_place": "Arundel, York County, Maine, USA"
     },
     "sarah_jones_whidden": {
       "id": "sarah_jones_whidden",
@@ -3528,7 +3670,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **John Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C880** / **C882**. Maiden **Jones**; b. **27 Apr 1669** Portsmouth NH; d. **~1722** / living 1722 Greenland (WT). Wife of **Samuel Whidden**/Whitten m. **~1700**; widow..."
+      "birth": "1669-04-27",
+      "death": "1722",
+      "birth_place": "Portsmouth, Rockingham County, New Hampshire, USA",
+      "death_place": "Greenland, Rockingham County, New Hampshire, USA"
     },
     "samuel_whidden": {
       "id": "samuel_whidden",
@@ -3580,7 +3725,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **John Whidden** (Morganne ascent via Hannah Whidden Knight). Soft-ingest **Probable** / `verified: false` — pack **C880** / **C881**. WikiTree Whidden-13; b. **~1670** Greenland NH; d. **~20 Feb 1714** Greenland (alive 22 Aug 1713; dead by 3 Mar 1713/4 per ..."
+      "birth": "1670",
+      "death": "1714-02-20",
+      "birth_place": "Greenland, Rockingham County, New Hampshire, USA",
+      "death_place": "Greenland, Rockingham County, New Hampshire, USA"
     },
     "samuel_knight": {
       "id": "samuel_knight",
@@ -3653,7 +3801,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Edmund Knight** (Morganne ascent gen-7 via William H. Knight). Soft-ingest **Probable** / `verified: false` — pack **C600** / **C601**. WikiTree Knight-9441: b. **12 Feb 1741** Newbury MA; d. **1806** Buxton York ME; husband of **Hannah Whidden**. Edmund W..."
+      "birth": "1741-02-12",
+      "death": "1806",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Buxton, York County, Maine, USA"
     },
     "jane_little_knight": {
       "id": "jane_little_knight",
@@ -3705,7 +3856,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Samuel Knight** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C690** / **C692**. Maiden **Little**; Newbury VR b. **7 Jun 1718** (d. Tristram × Sarah); m. **25 May 1741** Edmund Knight; died **before Jun 1751** (Edmund remarried ..."
+      "birth": "1718-06-07",
+      "death": "bef 1751",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Newbury, Essex County, Massachusetts, USA"
     },
     "edmund_knight_sr": {
       "id": "edmund_knight_sr",
@@ -3778,7 +3932,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Samuel Knight** (Morganne ascent via Edmund Knight of Buxton). Soft-ingest **Probable** / `verified: false` — pack **C690** / **C691**. WikiTree Knight-2196 + Newbury VR: b. **30 Aug 1714** Newbury (s. Richard × Elisabeth); m. **25 May 1741** Jane Little; ..."
+      "birth": "1714-08-30",
+      "death": "1784",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Newbury, Essex County, Massachusetts, USA"
     },
     "elizabeth_jaques_knight": {
       "id": "elizabeth_jaques_knight",
@@ -3834,7 +3991,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Edmund Knight Sr** (Morganne ascent via Samuel Knight). Soft-ingest **Probable** / `verified: false` — pack **C800** / **C802**. Maiden **Jaques** (VR **Elisabeth** on Edmund’s birth). WikiTree Jaques-20 + Newbury VR: b. **28 Oct 1669** Newbury (d. Henry);..."
+      "birth": "1669-10-28",
+      "death": "1743",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Newbury, Essex County, Massachusetts, USA"
     },
     "richard_knight": {
       "id": "richard_knight",
@@ -3893,7 +4053,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Edmund Knight Sr** (Morganne ascent via Samuel Knight). Soft-ingest **Probable** / `verified: false` — pack **C800** / **C801**. WikiTree Knight-2504 + Newbury VR: b. **26 Jul 1666** Newbury (s. John jr.); m. **~1697** Elizabeth Jaques (no VR marriage this..."
+      "birth": "1666-07-26",
+      "death": "1723-06-03",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Newbury, Essex County, Massachusetts, USA",
+      "burial": "First Parish Burying Ground, Newbury, Essex County, Massachusetts, USA"
     },
     "ambrose_foss": {
       "id": "ambrose_foss",
@@ -3964,7 +4128,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Father of **Harriet B. Foss Parsons** (Morganne ascent gen-4). **LOCKED — legal vital** **FT-0443** / pack **C485** (2026-08-13) — named as bride’s father on Maine VR. FAG Riverside Cemetery Fort Fairfield; spouse **Sarah Knight Foss**; child grid includes Harriet. Parents sof..."
+      "birth": "1844-01-16",
+      "death": "1932-06-23",
+      "birth_place": "Massachusetts, USA",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "harriet_n_bunker_foss": {
       "id": "harriet_n_bunker_foss",
@@ -4044,7 +4212,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Ambrose Foss** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C520** / **C522**. Maiden **Bunker** on FAG title; spouse **Daniel W. Foss**; children Ambrose + **Abigail J. Foss Hill** + **Ruth H. Foss Johnston** (**C563**). ..."
+      "birth": "1822-03",
+      "death": "1877-06-07",
+      "birth_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "olive_otis_bunker": {
       "id": "olive_otis_bunker",
@@ -4118,7 +4290,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Harriet N. Bunker Foss** (Morganne ascent gen-6 via Ambrose). Soft-ingest **Probable** / `verified: false` — pack **C565** / **C567**. Maiden **Otis**. Parents soft **Paul Otis** × **Elizabeth Parshley Otis** — pack **C645–C649**. Olive FAG → father Paul; ..."
+      "birth": "1784",
+      "death": "1830-06-24",
+      "birth_place": "Barrington, Strafford County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "elizabeth_parshley_otis": {
       "id": "elizabeth_parshley_otis",
@@ -4165,7 +4341,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Olive Otis Bunker** (Morganne ascent gen-7 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C645** / **C647**. Maiden **Parshley**. Named on Paul Otis FAG bio and NEHGR Otis Genealogy (d. 8 Nov 1837 æ 84; ten children). WikiTree Parshley...",
+      "birth": "1753",
+      "death": "1837-11-08",
       "blocker": "Parshley parents — BLOCKED C765–C769 : WT unknown; no FAG; no open obit;"
     },
     "paul_otis": {
@@ -4237,7 +4414,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Olive Otis Bunker** (Morganne ascent gen-7 via Harriet). Soft-ingest **Probable** / `verified: false` — pack **C645** / **C646**. Olive FAG parents grid → Paul; Paul’s children grid includes Olive. Spouse **Elizabeth Parshley** (FAG bio + NEHGR; no Elizabe..."
+      "birth": "1755-03-04",
+      "death": "1848-07-17",
+      "birth_place": "Barrington, Strafford County, New Hampshire, USA",
+      "death_place": "Gilmanton, Belknap County, New Hampshire, USA",
+      "burial": "Smith Meeting House Cemetery, Gilmanton, Belknap County, New Hampshire, USA"
     },
     "jane_hussey_otis": {
       "id": "jane_hussey_otis",
@@ -4310,7 +4491,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Paul Otis** (Morganne ascent gen-8 via Olive). Soft-ingest **Probable** / `verified: false` — pack **C760** / **C762**. Maiden **Hussey**. NEHGR: Jane Hussey of Dover m. Joshua Otis ~1745; d. 1790 Barrington with Joshua d. 1810. WT Hussey-1579. Named as mo..."
+      "birth": "1724",
+      "death": "1790",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Barrington, Strafford County, New Hampshire, USA"
     },
     "sarah_canney_hussey": {
       "id": "sarah_canney_hussey",
@@ -4353,7 +4537,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Jane Hussey Otis**. Soft-ingest **Probable** / `verified: false` — pack **C2214** / **C2216**. Maiden **Canney**. Webster: Sarah Jane, daughter of Samuel and Sarah Canney of Dover; first wife of Joseph Hussey; died before 1735 (Joseph m2 ~1736). WT b. ~170..."
+      "birth": "1700",
+      "death": "1735",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "joseph_hussey": {
       "id": "joseph_hussey",
@@ -4396,7 +4583,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Jane Hussey Otis**. Soft-ingest **Probable** / `verified: false` — pack **C2214** / **C2215**. Dover VR: son of Richard Hussey × Jane, b. 23 Jun 1699. Webster NHGR 6:101: husbandman of Somersworth; m1 Sarah Jane dau. Samuel × Sarah Canney (she d. before 17..."
+      "birth": "1699-06-23",
+      "death": "1762-02-08",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "joshua_otis": {
       "id": "joshua_otis",
@@ -4470,7 +4660,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Paul Otis** (Morganne ascent gen-8 via Olive Otis Bunker). Soft-ingest **Probable** / `verified: false` — pack **C760** / **C761**. NEHGR Otis Genealogy (1851) p.209–210: Joshua Otis⁴ m. Jane Hussey of Dover ~1745; to Barrington/Strafford 1752; d. 1810 Bar..."
+      "birth": "1720",
+      "death": "1810",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Barrington, Strafford County, New Hampshire, USA"
     },
     "mary_young_otis": {
       "id": "mary_young_otis",
@@ -4515,7 +4708,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Joshua Otis**. Soft-ingest **Probable** / `verified: false` — pack **C2210** / **C2212**. Maiden **Young**. Id `mary_young_otis` vs granddaughter `mary_otis_young` (Joshua’s daughter who married Elder Winthrop Young). NEHGR names her as Stephen’s first wif..."
+      "birth": "1698",
+      "death": "1735",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "stephen_otis_sr": {
       "id": "stephen_otis_sr",
@@ -4564,7 +4760,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Joshua Otis** (Morganne ascent gen-9 via Paul). Soft-ingest **Probable** / `verified: false` — pack **C2210** / **C2211**. Id `stephen_otis_sr` vs grandson `stephen_otis` (1761–1825) and son `stephen_otis_jr` (1731–1817). NEHGR: Stephen³ b. **1698-6-22** (..."
+      "birth": "1698-06-22",
+      "death": "1759",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Madbury, Strafford County, New Hampshire, USA"
     },
     "joseph_s_bunker": {
       "id": "joseph_s_bunker",
@@ -4641,7 +4840,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Harriet N. Bunker Foss** (Morganne ascent gen-6 via Ambrose). Soft-ingest **Probable** / `verified: false` — pack **C565** / **C566**. Bidirectional FAG: Harriet parents grid ↔ Joseph children grid (Ann Rand, Eli, Isaac Lewis, Betsey Walker, Harriet N. Fos..."
+      "birth": "1783-11-01",
+      "death": "1830-05-22",
+      "birth_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "anna_gordon_bunker": {
       "id": "anna_gordon_bunker",
@@ -4704,7 +4907,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Joseph S. Bunker** (Morganne ascent gen-7 via Harriet N. Bunker Foss). Soft-ingest **Probable** / `verified: false` — pack **C640** / **C642**. Maiden **Gordon**. Bidirectional FAG: Joseph parents ↔ Anna children (Joseph, Abraham, Gordon, Timothy+). Spouse...",
+      "birth": "1761-03-08",
+      "death": "1840-04-22",
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA",
       "blocker": "Gordon parents — Blocked C735–C739 : WT unknown; Moran/Durham name no pa"
     },
     "eli_bunker_sr": {
@@ -4788,7 +4995,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Joseph S. Bunker** (Morganne ascent gen-7 via Harriet N. Bunker Foss). Soft-ingest **Probable** / `verified: false` — pack **C640** / **C641**. Bidirectional FAG: Joseph parents ↔ Eli children (Joseph, Abraham, Gordon, Timothy). Spouse **Anna Gordon Bunker..."
+      "birth": "1760-04-22",
+      "death": "1842-08-03",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "sarah_runnels_bunker": {
       "id": "sarah_runnels_bunker",
@@ -4878,7 +5089,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Eli Bunker** (`eli_bunker_sr`; Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C730** / **C732**. Maiden **Runnels**; soft parents **John Runnels** × **Hannah Clark Runnels** (pack **C925–C929**; Runnels 1873 will + Moran D-15..."
+      "birth": "1731-08-04",
+      "death": "1826-01-26",
+      "birth_place": "Lee, Strafford County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "hannah_clark_runnels": {
       "id": "hannah_clark_runnels",
@@ -4934,7 +5149,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Sarah Runnels Bunker** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C925** / **C927**. Maiden **Clark**; m. **23 Dec 1718** Durham to John Runnels (2nd wife). Alive **20 Jun 1756** (named in husband’s will) — reject unsour..."
+      "birth_place": "Oyster River / Durham, Strafford County, New Hampshire, USA"
     },
     "john_runnels": {
       "id": "john_runnels",
@@ -4993,7 +5208,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Sarah Runnels Bunker** (Morganne ascent gen-9). Soft-ingest **Probable** / `verified: false` — pack **C925** / **C926**. Soft b. **~1676** (WT; deposition aged 58 in 1734) — Runnels 1873 also ~1689. m. **23 Dec 1718** Durham to **Hannah Clark** (NEHGR Hugh..."
+      "birth": "1676",
+      "death": "1756",
+      "death_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "jonathan_bunker": {
       "id": "jonathan_bunker",
@@ -5083,7 +5300,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Eli Bunker** (`eli_bunker_sr`; Morganne ascent gen-8 via Joseph S. Bunker). Soft-ingest **Probable** / `verified: false` — pack **C730** / **C731**. Moran D-15: b. 1729 Durham; m. **Dec 1749** Lee to Sarah Runnels; d. **3 Sep 1796** aet 67 Barnstead (Bible..."
+      "birth": "1729",
+      "death": "1796-09-03",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "ann_giles_bunker": {
       "id": "ann_giles_bunker",
@@ -5139,7 +5360,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed mother of **Jonathan Bunker** (`jonathan_bunker`; Morganne ascent via Eli Bunker Sr.). Soft-ingest **Probable** / `verified: false` — pack **C920** / **C922**. Maiden **Giles**, dau. of Mark Giles (Durham fam. 6). Soft birth **1 Oct 1702** (Durham); WT/FAG cite **10 O..."
+      "birth": "1702-10-01",
+      "death": "1797",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA",
+      "death_place": "New Hampshire, USA"
     },
     "joseph_bunker": {
       "id": "joseph_bunker",
@@ -5190,7 +5414,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Jonathan Bunker** (`jonathan_bunker`; Morganne ascent via Eli Bunker Sr.). Soft-ingest **Probable** / `verified: false` — pack **C920** / **C921**. Durham/NHGenealogy family **6** (James²): m. **Ann**, dau. of Mark Giles (b. 1 Oct 1702); will 9 Sep 1778–Au..."
+      "birth": "1702",
+      "death": "1784-07-18",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA",
+      "death_place": "Durham, Strafford County, New Hampshire, USA",
+      "burial": "Durham, Strafford County, New Hampshire, USA"
     },
     "daniel_w_foss": {
       "id": "daniel_w_foss",
@@ -5260,7 +5488,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Proposed father of **Ambrose Foss** (Morganne ascent gen-5). Soft-ingest **Probable** / `verified: false` — pack **C520** / **C521**. FAG Riverside Cemetery Fort Fairfield; spouse **Harriet N. Bunker Foss** (m. 1841 on FAG); children grid Ambrose + **Abigail J. Foss Hill** + *..."
+      "birth": "1819",
+      "death": "1894-06-13",
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "abbie_wentworth_foss": {
       "id": "abbie_wentworth_foss",
@@ -5301,7 +5533,8 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "Proposed mother of **Daniel W. Foss** (Morganne ascent gen-6). Soft-ingest **Possible** / `verified: false` — pack **C560** / **C562**. Maiden **Wentworth** on WikiTree only; **no Find A Grave memorial**; Wentworth genealogy vols checked this pass without a clear Abbie×Ambrose..."
+      "birth": "1802",
+      "birth_place": "Lakeport, Belknap County, New Hampshire, USA"
     },
     "ambrose_foss_sr": {
       "id": "ambrose_foss_sr",
@@ -5341,7 +5574,9 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "Proposed father of **Daniel W. Foss** (Morganne ascent gen-6). Soft-ingest **Possible** / `verified: false` — pack **C560** / **C561**. Named only on WikiTree (Foss-717 / Foss-716); **no Find A Grave memorial** and **no Barrington VR hit** this pass. Distinct from grandson `am..."
+      "birth": "1802",
+      "death": "1833",
+      "birth_place": "Barrington, Strafford County, New Hampshire, USA"
     },
     "nelson_b_parsons": {
       "id": "nelson_b_parsons",
@@ -5436,7 +5671,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of **Gerald Allen / Austin Parsons** (Morganne ascent gen-3). **LOCKED — legal vital** **FT-0443** (2026-08-13): Maine VR marriage names **Percy Parsons** × **Kate Parsons** as groom’s parents and **Hattie B. Foss** as spouse — pack **C1091–C1092** / **C461**. Olivewood...",
+      "birth": "1863-02",
+      "death": "1931-12-25",
+      "birth_place": "Sweden",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California (T-2-1-5)",
       "blocker": "Percy/Kate own parents C2280–C2281 Blocked"
     },
     "kate_parsons": {
@@ -5496,7 +5735,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Mother of **Nelson B. Parsons**. **LOCKED — legal vital** **FT-0443** / pack **C1092** (2026-08-13). Maine marriage parents side names **Kate Parsons** (housekeeper). Identity bridge to **Kristi Parsons** (Sweden, age 47) on 1880 Fort Fairfield census as wife of **William Pars...",
+      "birth_place": "Sweden",
       "blocker": "Parents: 1872 passenger last residence / ME VR Kate×William / CA DC 6718"
     },
     "percy_parsons": {
@@ -5547,7 +5786,7 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Father of **Nelson B. Parsons** (Morganne ascent). **LOCKED — legal vital** **FT-0443** / pack **C1091** (2026-08-13). Named on Maine marriage record parents side (film image **2973**, immediately before face card **2974**) for Nelson × Hattie Foss, 23 Feb 1899 Fort Fairfield....",
+      "birth_place": "Sweden",
       "blocker": "Parents: 1872 passenger last residence / ME VR Kate×William / CA DC 6718"
     },
     "dan_rudd": {
@@ -5598,8 +5837,7 @@ window.PEOPLE_DATA = {
           "id": "nancy_rudd",
           "confidence": "Confirmed"
         }
-      ],
-      "note": "**Step-brother** of **Marcy Parsons**; son of **George E. Rudd**. **C545 / C549 Locked** (Marcy via Alex 2026-08-07). Mother is **not** Marion Orciere. Spouse **Nancy** and sons **Derek** / **Matthew** **Locked** 2026-08-14 (Alex). Living-private."
+      ]
     },
     "kenneth_martin_orciere": {
       "id": "kenneth_martin_orciere",
@@ -5656,7 +5894,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Brother of **Marion Orciere** (Marian Eveline). Soft-ingest **Probable** from SortedByName SSACI (parents Theodore × Rachel G Fife) + FAG. Navy WWII/Korea per SSACI service abstract. Spouse **Alma Moore Orciere** FAG-linked — soft id only this pass. Pack **C476**."
+      "birth": "1923-05-28",
+      "death": "1996-09-15",
+      "birth_place": "Arlington, Riverside County, California, USA",
+      "death_place": "Rowan County, Kentucky, USA",
+      "burial": "Brown Cemetery, Morehead, Rowan County, Kentucky, USA"
     },
     "caney_fife": {
       "id": "caney_fife",
@@ -5690,8 +5932,7 @@ window.PEOPLE_DATA = {
           "id": "josephine_fife",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+      ]
     },
     "roland_fife": {
       "id": "roland_fife",
@@ -5728,8 +5969,7 @@ window.PEOPLE_DATA = {
           "id": "josephine_fife",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+      ]
     },
     "lovel_fife": {
       "id": "lovel_fife",
@@ -5763,8 +6003,7 @@ window.PEOPLE_DATA = {
           "id": "josephine_fife",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+      ]
     },
     "glenn_fife": {
       "id": "glenn_fife",
@@ -5798,8 +6037,7 @@ window.PEOPLE_DATA = {
           "id": "josephine_fife",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Rachel G. (Fife) Orciere** (1910 Temescal household). Soft collateral lean. Pack **C1078**."
+      ]
     },
     "laura_e_humble": {
       "id": "laura_e_humble",
@@ -5834,7 +6072,7 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "Named in **Amy C. Boggs Humble** FAG bio as a child (**1869–**), with Josie and Albert. Soft **Possible** / `verified: false` — pack **C2274**. **Not** linked on Amy’s Family Members children grid (Josie + Albert only). No death, memorial, or census this pass. Do not invent a ..."
+      "birth": "1869"
     },
     "albert_humble": {
       "id": "albert_humble",
@@ -5873,7 +6111,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Josie (Humble) Fife** on her FAG siblings grid. Soft collateral **Probable** / `verified: false` — pack **C2043**. Shared parents William A. Humble × Amy C. Boggs."
+      "birth": "1873",
+      "death": "1942"
     },
     "charles_m_orciere": {
       "id": "charles_m_orciere",
@@ -5915,7 +6154,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Brother of **Theodore M. Orciere**. Soft collateral from 1910 + mother obit. Pack **C1077**."
+      "birth": "1900",
+      "birth_place": "California, USA"
     },
     "william_theodore_olson": {
       "id": "william_theodore_olson",
@@ -5987,7 +6227,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** eldest soft sibling of **Della Elizabeth (Olson) Rudd** (Morganne / Rudd collateral). Soft-ingest **Probable** / `verified: false` — pack **C530**. Named on FAG children grids of **Isaac Olsen** × **Jennie Olsen** and on Della’s siblings grid. Vitals from FAG: b. ..."
+      "birth": "1884",
+      "death": "1963-08-21",
+      "birth_place": "USA",
+      "death_place": "Holden, Lloydminster Census Division, Alberta, Canada",
+      "burial": "Holden Cemetery, Holden, Lloydminster Census Division, Alberta, Canada"
     },
     "mabel_victoria_olson_sizer": {
       "id": "mabel_victoria_olson_sizer",
@@ -6048,7 +6292,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Della Elizabeth (Olson) Rudd**. Soft-ingest **Probable** / `verified: false` — pack **C531**. Named on FAG children grids of **Isaac Olsen** × **Jennie Olsen** and on Della’s siblings grid. Vitals from FAG: b. **1893** South Dakota; d. **1974**; ..."
+      "birth": "1893",
+      "death": "1974",
+      "birth_place": "South Dakota, USA",
+      "burial": "Holden Cemetery, Holden, Lloydminster Census Division, Alberta, Canada"
     },
     "carl_leonard_olson": {
       "id": "carl_leonard_olson",
@@ -6104,7 +6351,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "**Probable** soft sibling of **Della Elizabeth (Olson) Rudd**. Soft-ingest **Probable** / `verified: false` — pack **C532**. Named on FAG children grids of **Isaac Olsen** × **Jennie Olsen** and on Della’s siblings grid. Vitals from FAG: b. **3 Mar 1899** South Dakota; d. **4 ..."
+      "birth": "1899-03-03",
+      "death": "1984-10-04",
+      "birth_place": "South Dakota, USA",
+      "death_place": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada"
     },
     "dorothy_parsons_prichard": {
       "id": "dorothy_parsons_prichard",
@@ -6167,7 +6417,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Named sister of **Gerald Allen / Austin Parsons**; daughter of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Locked **Confirmed** / `verified: true` — pack **C1087** — Alex Y 2026-08-07. Maine birth **Dorothy Parsons** 30 Jan 1900; married name **Prichard** (Alex **Prit..."
+      "birth": "1900-01-30",
+      "death": "1970-09-03",
+      "birth_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California (W-2-9-3)"
     },
     "sarah_mona_parsons": {
       "id": "sarah_mona_parsons",
@@ -6231,7 +6485,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Named sister of **Gerald Allen / Austin Parsons**; daughter of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Locked **Confirmed** / `verified: true` — pack **C1088** — Alex Y 2026-08-07. WikiTree/census call her **Mona** / **S. Mona**; FAG title **Mona Sara**; Maine bir..."
+      "birth": "1901-08-02",
+      "death": "1989-02-12",
+      "birth_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California (T-2-1-7)"
     },
     "harold_ambrose_parsons": {
       "id": "harold_ambrose_parsons",
@@ -6288,7 +6546,10 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Named brother of **Gerald Allen / Austin Parsons**; son of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Locked **Confirmed** / `verified: true` — pack **C1089** — Alex Y 2026-08-07. WikiTree child of Nelson×Harriet; Maine birth 15 Feb 1903; CADI death 3 Jan 1993 Rivers..."
+      "birth": "1903-02-15",
+      "death": "1993-01-03",
+      "birth_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "death_place": "Riverside, Riverside County, California, USA"
     },
     "autis_foss_parsons_hicks": {
       "id": "autis_foss_parsons_hicks",
@@ -6361,7 +6622,11 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "note": "Soft sibling of **Gerald Allen Parsons**; daughter of **Nelson B. Parsons** × **Harriet B. Foss Parsons**. Alex confirmed WikiTree Foss-714 / Parsons-1325 (2026-08-07). Pack **C1090**. Bidirectional FAG: Nelson/Harriet children grids list Autis. Married **Harry Lawrence Hicks*..."
+      "birth": "1904-07-18",
+      "death": "1986-12-04",
+      "birth_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "death_place": "San Bernardino County, California, USA",
+      "burial": "Olivewood Cemetery, Riverside, California (W-3-100-3)"
     },
     "james_knight_huntress": {
       "id": "james_knight_huntress",
@@ -6404,7 +6669,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids. Do not climb spouse/parents of this collateral."
+      "birth": "1828-12-10",
+      "death": "1899-04-08",
+      "birth_place": "Maine, USA",
+      "death_place": "Maine, USA",
+      "burial": "Goodwins Mills Village Cemetery, Lyman, York County, Maine, USA"
     },
     "louisa_jane_huntress": {
       "id": "louisa_jane_huntress",
@@ -6447,7 +6716,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids; Town House Cemetery with parents. Died young (~15). Do not climb."
+      "birth": "1833",
+      "death": "1848-09-27",
+      "birth_place": "Maine, USA",
+      "death_place": "Waterboro, York County, Maine, USA",
+      "burial": "Town House Cemetery, Waterboro, York County, Maine, USA"
     },
     "george_freeman_huntress": {
       "id": "george_freeman_huntress",
@@ -6490,7 +6763,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids. FAG title years **1835–1895**; bio OCR “AGE 59 YEARS,7 MONTHS,26 DAYS” — place/burial not hardened this pass. Do not cl..."
+      "birth": "1835",
+      "death": "1895",
+      "birth_place": "Maine, USA"
     },
     "albion_paris_huntress": {
       "id": "albion_paris_huntress",
@@ -6533,7 +6808,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Betsy Warren Huntress Knight**. Soft-ingest **Probable** / `verified: false` — pack **C579**. On Robert / Eunice / Betsy FAG family grids. FAG bio: **“Son of: Robert and Eunice (Knight) Huntress”**; m. Sarah Calef Hooper 22 Jun 1862 Biddeford (attribute only..."
+      "birth": "1839",
+      "death": "1915",
+      "birth_place": "Maine, USA"
     },
     "nathaniel_b_knight_jr": {
       "id": "nathaniel_b_knight_jr",
@@ -6575,7 +6852,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. Named in WT Knight-12905 children of Hannah marriage: b. **1796** Waterboro; d. **30 Nov 1863** Providence RI; m. Abigail Philbr..."
+      "birth": "1796",
+      "death": "1863-11-30",
+      "birth_place": "Waterboro, York County, Maine, USA",
+      "death_place": "Providence, Providence County, Rhode Island, USA"
     },
     "susan_c_knight_cluff": {
       "id": "susan_c_knight_cluff",
@@ -6618,7 +6898,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. WT Knight-12905: b. **Apr 1797** Waterboro; d. **18 Jan 1876** Alfred; m. Asa Cluff (spouse not soft). Do not climb."
+      "birth": "1797-04",
+      "death": "1876-01-18",
+      "birth_place": "Waterboro, York County, Maine, USA",
+      "death_place": "Alfred, York County, Maine, USA"
     },
     "lucy_knight_yeaton": {
       "id": "lucy_knight_yeaton",
@@ -6660,7 +6943,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. WT Knight-12905: b. **1798** Waterboro; d. **1862** Tamworth NH; m. Reuben D. Yeaton (spouse not soft). Do not climb."
+      "birth": "1798",
+      "death": "1862",
+      "birth_place": "Waterboro, York County, Maine, USA",
+      "death_place": "Tamworth, Carroll County, New Hampshire, USA"
     },
     "samuel_c_knight": {
       "id": "samuel_c_knight",
@@ -6699,7 +6985,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. WT Knight-12905: b. **1799** Waterboro; d. **20 Sep 1873** Cornish York ME; m. Caroline A. Philbrick (spouse not soft). Do not c..."
+      "birth": "1799",
+      "death": "1873-09-20",
+      "birth_place": "Waterboro, York County, Maine, USA",
+      "death_place": "Cornish, York County, Maine, USA"
     },
     "james_knight": {
       "id": "james_knight",
@@ -6738,7 +7027,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Eunice Knight Huntress** (same parents Nathaniel B. × Hannah Cluff). Soft-ingest **Probable** / `verified: false` — pack **C679**. Lean WT name only: b. **1804** Waterboro; death/spouse blank. Do not confuse with nephew **James Knight Huntress**. Do not climb."
+      "birth": "1804",
+      "birth_place": "Waterboro, York County, Maine, USA"
     },
     "susannah_clough_weymouth": {
       "id": "susannah_clough_weymouth",
@@ -6785,7 +7075,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 9 Nov 1795 John Weymouth (WT Clough-726). Spouse climb parked."
+      "birth": "1771",
+      "birth_place": "York County, Maine, USA"
     },
     "jedediah_clough": {
       "id": "jedediah_clough",
@@ -6833,7 +7124,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. aka John; m. 1 Jul 1796 Hannah Weymouth Lyman (WT). Spouse climb parked."
+      "birth": "1773",
+      "death": "1850",
+      "birth_place": "York County, Maine, USA"
     },
     "samuel_clough_jr": {
       "id": "samuel_clough_jr",
@@ -6880,7 +7173,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. ≠ father samuel_clough; m. 30 Sep 1798 Mary Polly Seavey (WT). Spouse climb parked."
+      "birth": "1777",
+      "death": "1825",
+      "birth_place": "York County, Maine, USA"
     },
     "james_clough": {
       "id": "james_clough",
@@ -6926,7 +7221,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. Martha Brice (WT Clough-726). Spouse climb parked."
+      "birth": "1781",
+      "death": "1826",
+      "birth_place": "York County, Maine, USA"
     },
     "lydia_clough_raymond": {
       "id": "lydia_clough_raymond",
@@ -6973,7 +7270,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 4 Dec 1798 Samuel Low Raymond Coxhall (WT). Spouse climb parked."
+      "birth": "1782",
+      "death": "1811",
+      "birth_place": "York County, Maine, USA"
     },
     "simon_clough": {
       "id": "simon_clough",
@@ -7019,7 +7318,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 30 Nov 1805 Sally Parold Alfred (WT). Spouse climb parked."
+      "birth": "1784",
+      "death": "1824",
+      "birth_place": "York County, Maine, USA"
     },
     "nathan_clough": {
       "id": "nathan_clough",
@@ -7065,7 +7366,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. WT Clough-726 child list; lean vitals. Spouse climb parked."
+      "birth": "1790",
+      "death": "1820",
+      "birth_place": "York County, Maine, USA"
     },
     "nicholas_clough": {
       "id": "nicholas_clough",
@@ -7111,7 +7414,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Hannah Cluff Knight**. Soft-ingest **Probable** / `verified: false` — pack **C838**. m. 27 Jun 1812 Hannah Taylor (WT). Spouse climb parked."
+      "birth": "1791",
+      "death": "1827",
+      "birth_place": "York County, Maine, USA"
     },
     "daniel_knight": {
       "id": "daniel_knight",
@@ -7150,7 +7455,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Nathaniel B. Knight** (same parents John × Lydia Roberts). Soft-ingest **Probable** / `verified: false` — pack **C834**. WikiTree Knight-5642: b. **28 Jun 1764** Somersworth NH; brother of Nathaniel; husband Patience Garey parked (no climb). Death blank. Do ..."
+      "birth": "1764-06-28",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "hannah_roberts": {
       "id": "hannah_roberts",
@@ -7185,7 +7491,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Lydia Roberts Knight** (same parents Joshua × Sarah Wallingford). Soft-ingest **Probable** / `verified: false` — pack **C2238**. Tate: **Hannah Roberts Born 1735**. Spouse **not** wired (compiled Foss marriage not opened; Foss line out of scope). **No open o..."
+      "birth": "1735",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "elizabeth_roberts": {
       "id": "elizabeth_roberts",
@@ -7220,7 +7527,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Lydia Roberts Knight** (same parents Joshua × Sarah Wallingford). Soft-ingest **Probable** / `verified: false` — pack **C2238**. Tate: **Elizabeth Aprl 18 1737**. **≠** `elizabeth_roberts_beecher`. **No open obituary text**."
+      "birth": "1737-04-18",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "thomas_roberts": {
       "id": "thomas_roberts",
@@ -7259,7 +7567,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Lydia Roberts Knight** (same parents Joshua × Sarah Wallingford). Soft-ingest **Probable** / `verified: false` — pack **C2238**. Tate: **Thomas Nov. 1740**. Also on WT Roberts-5401 children list. **No open obituary text**."
+      "birth": "1740-11",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "joshua_roberts_jr": {
       "id": "joshua_roberts_jr",
@@ -7298,7 +7607,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Lydia Roberts Knight** (same parents Joshua × Sarah Wallingford). Soft-ingest **Probable** / `verified: false` — pack **C2238**. Tate: **Joshua July 13. 1746**. Also on WT Roberts-5401 children list. **≠** father `joshua_roberts`. Spouse Joanna Wentworth (Ta..."
+      "birth": "1746-07-13",
+      "birth_place": "Somersworth, Strafford County, New Hampshire, USA"
     },
     "zebulon_knight_sr": {
       "id": "zebulon_knight_sr",
@@ -7341,7 +7651,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **John Knight** (same parents Daniel Sr × Mehitable Libby). Soft-ingest **Probable** / `verified: false` — pack **C2234**. WikiTree Knight-25815: b. **1740** Kittery; d. **1810** Kittery; brother of John. Stackpole p. 571: Zebulon m. Anne Emery **10 Mar 1775**..."
+      "birth": "1740",
+      "death": "1810",
+      "birth_place": "Kittery, York County, Maine, USA",
+      "death_place": "Kittery, York County, Maine, USA"
     },
     "eunice_knight_fernald": {
       "id": "eunice_knight_fernald",
@@ -7383,7 +7696,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **John Knight** (same parents Daniel Sr × Mehitable Libby). Soft-ingest **Probable** / `verified: false` — pack **C2234**. Stackpole p. 571: **Eunice** bapt. **12 Sep 1736**; m. George Fernald **6 Dec 1753** (spouse parked). **≠** `eunice_knight_huntress` (Nat..."
+      "birth": "1736-09-12",
+      "birth_place": "Kittery, York County, Maine, USA"
     },
     "lydia_knight_kittery": {
       "id": "lydia_knight_kittery",
@@ -7418,7 +7732,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **John Knight** (same parents Daniel Sr × Mehitable Libby). Soft-ingest **Probable** / `verified: false` — pack **C2234**. Stackpole p. 571: **Lydia** bapt. **12 Sep 1736** (twin of Eunice). **≠** sister-in-law `lydia_roberts_knight`; **≠** `lydia_knight_palme..."
+      "birth": "1736-09-12",
+      "birth_place": "Kittery, York County, Maine, USA"
     },
     "phebe_knight": {
       "id": "phebe_knight",
@@ -7453,7 +7768,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **John Knight** (same parents Daniel Sr × Mehitable Libby). Soft-ingest **Probable** / `verified: false` — pack **C2234**. Stackpole p. 571: **Phebe** bapt. **1 Nov 1739**. **No open obituary text**."
+      "birth": "1739-11-01",
+      "birth_place": "Kittery, York County, Maine, USA"
     },
     "caleb_huntress": {
       "id": "caleb_huntress",
@@ -7496,7 +7812,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1788–1869**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+      "birth": "1788",
+      "death": "1869"
     },
     "rhoda_huntress_carll": {
       "id": "rhoda_huntress_carll",
@@ -7542,7 +7859,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1791–1885**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+      "birth": "1791",
+      "death": "1885"
     },
     "rebecca_huntress": {
       "id": "rebecca_huntress",
@@ -7580,8 +7898,7 @@ window.PEOPLE_DATA = {
           "id": "elizabeth_rhoda_warren_huntress",
           "confidence": "Probable"
         }
-      ],
-      "note": "Named sibling of **Robert Huntress** on WikiTree Huntress-98 only (not on William FAG children grid this pass). Soft-ingest lean **Probable** / `verified: false` — pack **C674**. Vitals unknown. Not climbed."
+      ]
     },
     "aaron_warren_huntress": {
       "id": "aaron_warren_huntress",
@@ -7624,7 +7941,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1798–1882**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+      "birth": "1798",
+      "death": "1882"
     },
     "hosea_hasty_huntress": {
       "id": "hosea_hasty_huntress",
@@ -7667,7 +7985,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1800–1882**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+      "birth": "1800",
+      "death": "1882"
     },
     "james_huntress": {
       "id": "james_huntress",
@@ -7710,7 +8029,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1804–1898**; on William FAG children grid. Not James Knight Huntress (Robert’s son). Spouse/children not climbed. **No open obituary text** t..."
+      "birth": "1804",
+      "death": "1898"
     },
     "betsey_warren_huntress_hammond": {
       "id": "betsey_warren_huntress_hammond",
@@ -7753,7 +8073,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1809–1895**; on William FAG children grid. Not Betsy Warren Huntress Knight (Robert’s daughter). Spouse/children not climbed. **No open obitu..."
+      "birth": "1809",
+      "death": "1895"
     },
     "tyre_ann_huntress_shedd": {
       "id": "tyre_ann_huntress_shedd",
@@ -7799,7 +8120,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Robert Huntress** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C674**. FAG title years **1810–1869**; on William FAG children grid. Spouse/children not climbed. **No open obituary text** this pass."
+      "birth": "1810",
+      "death": "1869"
     },
     "jane_warren_huntress": {
       "id": "jane_warren_huntress",
@@ -7841,7 +8163,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Bapt. **17 Jul 1763**; m. George Huntress Jr. **17 Feb 1785** (VR) — spouse not climbed. **No open obituary text**."
+      "birth": "1763",
+      "birth_place": "Kittery, York County, Maine"
     },
     "gilbert_warren": {
       "id": "gilbert_warren",
@@ -7876,7 +8199,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Named in James Jr. will (Orin Warren 1902). Lean — dates/spouse blank. **No open obituary text**."
+      "birth_place": "Kittery, York County, Maine"
     },
     "aaron_warren": {
       "id": "aaron_warren",
@@ -7923,7 +8246,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. m. **Keziah Huntress** (William’s sister) **4 Mar 1782**. Distinct from `aaron_warren_huntress` (William’s son). Children not climbed. **No open obituary text**."
+      "birth_place": "Kittery, York County, Maine"
     },
     "sarah_warren_jellison": {
       "id": "sarah_warren_jellison",
@@ -7961,7 +8284,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Orin Warren names Sarah (will child) m. Nathaniel Jellison — spouse not climbed. Compiled m. year OCR “1705” is impossible; date held. **No open obituary text**."
+      "birth_place": "Kittery, York County, Maine"
     },
     "samuel_warren_kittery": {
       "id": "samuel_warren_kittery",
@@ -7996,7 +8319,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Will-named (Orin Warren 1902). Lean — dates/spouse blank. **No open obituary text**."
+      "birth_place": "Kittery, York County, Maine"
     },
     "benjamin_warren": {
       "id": "benjamin_warren",
@@ -8031,7 +8354,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Will-named (Orin Warren 1902). Lean — dates/spouse blank. **No open obituary text**."
+      "birth_place": "Kittery, York County, Maine"
     },
     "mary_warren_huntress": {
       "id": "mary_warren_huntress",
@@ -8085,7 +8408,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Twin of Martha (Orin Warren). m. **Darling Huntress Esq.** (William’s brother) **15 Jan 1778**. FAG spouse grid on **96231411**: **1753–1800**. Distinct from `m..."
+      "birth": "1753",
+      "death": "1800-11-23",
+      "birth_place": "Kittery, York County, Maine"
     },
     "martha_warren": {
       "id": "martha_warren",
@@ -8120,7 +8445,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Elizabeth Rhoda Warren Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2168**. Twin of Mary (Orin Warren); d. **27 Oct 1771**. Distinct from `martha_huntress`. **No open obituary text**."
+      "birth": "1753",
+      "death": "1771-10-27",
+      "birth_place": "Kittery, York County, Maine"
     },
     "mary_huntress_lord": {
       "id": "mary_huntress_lord",
@@ -8166,7 +8493,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. b. **30 Oct 1752** Berwick; m. Jacob Lord Jr. **28 Mar 1771** (VR) — spouse not climbed. **No open obituary text**."
+      "birth": "1752-10-30",
+      "birth_place": "Berwick, York County, Maine"
     },
     "darling_huntress_esq": {
       "id": "darling_huntress_esq",
@@ -8221,7 +8549,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. Distinct from father `darling_huntress`. FAG **96231411** Huntress Cemetery Shapleigh: b. **9 Mar 1756** Berwick; d. **20 May 1839** (stone; bio 26 May — hold stone). Bio name..."
+      "birth": "1756-03-09",
+      "death": "1839-05-20",
+      "birth_place": "Berwick, York County, Maine, USA",
+      "death_place": "Shapleigh, York County, Maine, USA",
+      "burial": "Huntress Cemetery, Shapleigh, York County, Maine, USA"
     },
     "martha_huntress": {
       "id": "martha_huntress",
@@ -8260,7 +8592,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. b. **9 Jan 1758** Berwick (WT + Hearl). Distinct from `martha_warren`. Spouse not climbed. **No open obituary text**."
+      "birth": "1758-01-09",
+      "birth_place": "Berwick, York County, Maine"
     },
     "keziah_huntress_warren": {
       "id": "keziah_huntress_warren",
@@ -8315,7 +8648,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. b. **13 Apr 1760** Berwick; m. **Aaron Warren** (Elizabeth’s brother) **4 Mar 1782** Second Church. Orin Warren 1902 misnames her mother as Mary Chick (Darling’s mother) — **r..."
+      "birth": "1760-04-13",
+      "birth_place": "Berwick, York County, Maine"
     },
     "abigail_huntress_wadlin": {
       "id": "abigail_huntress_wadlin",
@@ -8362,7 +8696,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. b. **9 Apr 1762** Berwick; m. John Wadlin Jr. **24 Apr 1785** (VR) — spouse not climbed. **No open obituary text**."
+      "birth": "1762-04-09",
+      "birth_place": "Berwick, York County, Maine"
     },
     "ichabod_huntress": {
       "id": "ichabod_huntress",
@@ -8409,7 +8744,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. b. **4 Oct 1764** Berwick; m. Mary Wadling **25 Jan 1787** (York Co. returns) — spouse not climbed. **No open obituary text**."
+      "birth": "1764-10-04",
+      "birth_place": "Berwick, York County, Maine"
     },
     "robert_huntress_hiram": {
       "id": "robert_huntress_hiram",
@@ -8451,7 +8787,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. **Distinct from** nephew `robert_huntress` (1793–1860, William’s son). b. **bef 1771** Berwick; d. **20 Apr 1850** Hiram (Hearl compiled). Spouse not climbed. **No open obitua..."
+      "birth": "1771",
+      "death": "1850-04-20",
+      "birth_place": "Berwick, York County, Maine",
+      "death_place": "Hiram, Oxford County, Maine, USA"
     },
     "lovey_ann_huntress_wadleigh": {
       "id": "lovey_ann_huntress_wadleigh",
@@ -8494,7 +8833,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **William Huntress**. Soft-ingest **Probable** / `verified: false` — pack **C2164**. b. **abt 1777** Berwick; d. **28 Aug 1855** South Berwick (Hearl compiled). Spouse not climbed. **No open obituary text**."
+      "birth": "1777",
+      "death": "1855-08-28",
+      "birth_place": "Berwick, York County, Maine",
+      "death_place": "South Berwick, York County, Maine, USA"
     },
     "jones_knight": {
       "id": "jones_knight",
@@ -8533,7 +8875,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **William H. Knight** (same parents Edmund × Elizabeth Sawyer). Soft-ingest **Probable** / `verified: false` — named in Buxton Family Records 2nd-wife children on WT Knight-23073 (**Jones Knight Born September 21 1821**). Pack note **C574**. No death/burial fre..."
+      "birth": "1821-09-21",
+      "birth_place": "Buxton, York County, Maine, USA"
     },
     "mary_knight": {
       "id": "mary_knight",
@@ -8572,7 +8915,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **William H. Knight** (same parents Edmund × Elizabeth Sawyer). Soft-ingest **Probable** / `verified: false` — named in Buxton Family Records 2nd-wife children on WT Knight-23073 (**Mary born July 26 1823**). Pack note **C574**. No death/burial free this pass; ..."
+      "birth": "1823-07-26",
+      "birth_place": "Buxton, York County, Maine, USA"
     },
     "ruth_knight": {
       "id": "ruth_knight",
@@ -8611,7 +8955,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **William H. Knight** (same parents Edmund × Elizabeth Sawyer). Soft-ingest **Probable** / `verified: false` — named in Buxton Family Records 2nd-wife children on WT Knight-23073 (**Ruth born Feb. 26 1826**). Pack note **C574**. No death/burial free this pass; ..."
+      "birth": "1826-02-26",
+      "birth_place": "Buxton, York County, Maine, USA"
     },
     "abel_knight": {
       "id": "abel_knight",
@@ -8654,7 +8999,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight** (same parents Samuel × Hannah Whidden). Soft-ingest **Probable** / `verified: false` — pack **C603**. Named on Edmund WT sibling list; WT Knight-29048 + FAG **180681005** Elm Vale South Waterford (30 Nov 1768 – 12 Apr 1832). Spouse/children **..."
+      "birth": "1768-11-30",
+      "death": "1832-04-12",
+      "birth_place": "Buxton, York County, Maine, USA",
+      "death_place": "Waterford, Oxford County, Maine, USA",
+      "burial": "Elm Vale Cemetery, South Waterford, Oxford County, Maine, USA"
     },
     "hannah_knight_libby": {
       "id": "hannah_knight_libby",
@@ -8700,7 +9049,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight**. Soft-ingest **Probable** / `verified: false` — pack **C603**. WT Knight-31934 + FAG **42782806** Ruggles Carmel (16 May 1774 – 25 Jul 1864). Spouse Libby **not** climbed."
+      "birth": "1774-05-16",
+      "death": "1864-07-25",
+      "birth_place": "Buxton, York County, Maine, USA",
+      "death_place": "Carmel, Penobscot County, Maine, USA",
+      "burial": "Ruggles Cemetery, Carmel, Penobscot County, Maine, USA"
     },
     "elizabeth_knight_sawyer": {
       "id": "elizabeth_knight_sawyer",
@@ -8747,7 +9100,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight**. Soft-ingest **Probable** / `verified: false` — pack **C603**. Maiden **Knight**; married name Sawyer (WT Knight-31931). FAG **42650497** South Buxton (17 Dec 1776 – 18 Dec 1863). **Do not confuse** with Edmund's 2nd wife **Elizabeth Sawyer Kn..."
+      "birth": "1776-12-17",
+      "death": "1863-12-18",
+      "birth_place": "Buxton, York County, Maine, USA",
+      "death_place": "Buxton, York County, Maine, USA",
+      "burial": "South Buxton Cemetery, Buxton, York County, Maine, USA"
     },
     "lydia_knight_palmer": {
       "id": "lydia_knight_palmer",
@@ -8789,7 +9146,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight**. Soft-ingest **Probable** / `verified: false` — pack **C603**. Named Lydia (Knight) Palmer on Edmund WT sibling list; mother Whidden-575 cites Buxton birth **26 May 1781**. Death/burial/FAG **not** confirmed this pass (do not invent). Spouse P..."
+      "birth": "1781-05-26",
+      "birth_place": "Buxton, York County, Maine, USA"
     },
     "john_whitten": {
       "id": "john_whitten",
@@ -8834,8 +9192,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Hannah Walker (Bradbury). Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "phineas_whitten": {
       "id": "phineas_whitten",
@@ -8880,8 +9237,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. Bradbury: moved east; WT relationship uncertain. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "samuel_whitten": {
       "id": "samuel_whitten",
@@ -8926,8 +9282,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Hannah Poindexter; Revolutionary service on WT. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "humphrey_whitten": {
       "id": "humphrey_whitten",
@@ -8972,8 +9327,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Hannah Lassel/Lassell. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "israel_whitten": {
       "id": "israel_whitten",
@@ -9018,8 +9372,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Sarah Fairfield; Revolutionary service on WT. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "joseph_whitten": {
       "id": "joseph_whitten",
@@ -9064,8 +9417,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Anna Burnham. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "mary_whitten_waterhouse": {
       "id": "mary_whitten_waterhouse",
@@ -9111,8 +9463,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Samuel Waterhouse. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "ruth_whitten_clay": {
       "id": "ruth_whitten_clay",
@@ -9158,8 +9509,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Mr. Clay. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "martha_whitten_gordon": {
       "id": "martha_whitten_gordon",
@@ -9205,8 +9555,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Mr. Gordon. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "sarah_whitten_davis": {
       "id": "sarah_whitten_davis",
@@ -9252,8 +9601,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Daniel Davis. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "lydia_whitten_wadlin": {
       "id": "lydia_whitten_wadlin",
@@ -9299,8 +9647,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Moses Wadlin. Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "anna_whitten_burbank": {
       "id": "anna_whitten_burbank",
@@ -9347,8 +9694,7 @@ window.PEOPLE_DATA = {
           "id": "ruth_merrill_whidden",
           "confidence": "Probable"
         }
-      ],
-      "note": "Sibling of **Hannah Whidden Knight**. Soft-ingest **Probable** / `verified: false` — pack **C698**. m. Capt. English then John Burbank (Bradbury). Spouses/parents-of-spouse **not** climbed."
+      ]
     },
     "abel_merrill": {
       "id": "abel_merrill",
@@ -9395,7 +9741,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 4 Jan 1702/3 (=1703-01-04) Salisbury VR; m. Mary Harding; removed to Arundel (WT/Bremer). **No UP climb / spouse dig** this pass."
+      "birth": "1703-01-04",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "john_merrill_jr": {
       "id": "john_merrill_jr",
@@ -9445,7 +9792,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 14 Apr 1704 Salisbury VR; m. Mary Hutchins; d. 8 Apr 1784 Kennebunkport (Bremer). Id john_merrill_jr ≠ father john_merrill. **No UP climb / spouse dig**..."
+      "birth": "1704-04-14",
+      "death": "1784-04-08",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA",
+      "death_place": "Kennebunkport, York County, Maine, USA"
     },
     "thomas_merrill": {
       "id": "thomas_merrill",
@@ -9492,7 +9842,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 18 Dec 1708; m. Martha Silley 18 Jul 1728 Salisbury; d. 3 Feb 1791 (WT/Bremer). **No UP climb / spouse dig** this pass."
+      "birth": "1708-12-18",
+      "death": "1791-02-03",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA",
+      "death_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "hannah_merrill_osgood": {
       "id": "hannah_merrill_osgood",
@@ -9542,7 +9895,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 1 Dec 1712 Salisbury VR; m. Jonathan Osgood 5 Sep 1734; d. 7 Oct 1784 (Bremer). **No UP climb / spouse dig** this pass."
+      "birth": "1712-12-01",
+      "death": "1784-10-07",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA",
+      "death_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "nanne_merrill": {
       "id": "nanne_merrill",
@@ -9593,7 +9949,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 17 Feb 1715/6 (=1716-02-17) Salisbury VR (Nanne); aka Nancy; spouse park (Bremer). **No UP climb / spouse dig** this pass."
+      "birth": "1716-02-17",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "humphrey_merrill": {
       "id": "humphrey_merrill",
@@ -9643,7 +10000,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 14 Mar 1718/9 (=1719-03-14) Salisbury VR (Umphory); second Humphrey after infant 1717 death. **No UP climb / spouse dig** this pass."
+      "birth": "1719-03-14",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "martha_merrill_morse": {
       "id": "martha_merrill_morse",
@@ -9693,7 +10051,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 9 May 1721 Salisbury VR; m. Anthony Morse/Moss 22 Dec 1743 (Bremer/WT). **No UP climb / spouse dig** this pass."
+      "birth": "1721-05-09",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "mary_merrill_burnham": {
       "id": "mary_merrill_burnham",
@@ -9743,7 +10102,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft sibling of **Ruth Merrill Whidden** (Morganne ascent). Soft-ingest **Probable** / `verified: false` — pack **C889**. b. 10 Jul 1727 Salisbury VR; m. Joseph Burnham 17 Jan 1744/5 (Bremer). **No UP climb / spouse dig** this pass."
+      "birth": "1727-07-10",
+      "birth_place": "Salisbury, Essex County, Massachusetts, USA"
     },
     "sarah_whidden_bucknell": {
       "id": "sarah_whidden_bucknell",
@@ -9791,7 +10151,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. m. 9 Apr 1717 Greenland to William Bucknell (GDMNH via WT). Spouses/UP climb **not** done."
+      "birth_place": "Greenland, Rockingham County, New Hampshire, USA"
     },
     "samuel_whidden_jr": {
       "id": "samuel_whidden_jr",
@@ -9838,7 +10198,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. Settled Greenland (GDMNH via WT); ≠ father samuel_whidden; ≠ nephew samuel_whitten. Spouses/UP climb **not** done."
+      "birth_place": "Greenland, Rockingham County, New Hampshire, USA"
     },
     "james_whidden": {
       "id": "james_whidden",
@@ -9884,7 +10244,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. Settled Truro, Nova Scotia (GDMNH via WT / Goff). Spouses/UP climb **not** done."
+      "birth_place": "Greenland, Rockingham County, New Hampshire, USA"
     },
     "ichabod_whidden": {
       "id": "ichabod_whidden",
@@ -9930,7 +10290,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **John Whidden**. Soft-ingest **Probable** / `verified: false` — pack **C883**. Settled Newmarket (GDMNH via WT); bp. 1714 Greenland as Whitten. Spouses/UP climb **not** done."
+      "birth_place": "Greenland, Rockingham County, New Hampshire, USA"
     },
     "edmund_knight_jr": {
       "id": "edmund_knight_jr",
@@ -9977,7 +10337,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Samuel Knight** (same parents Edmund Sr × Jane Little). Soft-ingest **Probable** / `verified: false` — pack **C693**. Newbury VR + WT Knight-2195: b. **8 Nov 1744**; d. **21 Sep 1813** Newbury a. 68y 10m. Spouses Sarah Hale / Mary Coffin and children **not** ..."
+      "birth": "1744-11-08",
+      "death": "1813-09-21",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Newbury, Essex County, Massachusetts, USA"
     },
     "henry_knight": {
       "id": "henry_knight",
@@ -10024,7 +10387,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight Sr**. Soft-ingest **Probable** / `verified: false` — pack **C803**. Newbury VR: s. Corp. Richard and Elisabeth, 6 Jul 1697; Pane-Joyce d. ~1773 Falmouth ME. Spouses/descendants **not** climbed (collateral)."
+      "birth": "1697-07-06",
+      "death": "1773",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Falmouth, Cumberland County, Maine, USA"
     },
     "elizabeth_knight_dole": {
       "id": "elizabeth_knight_dole",
@@ -10074,7 +10440,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight Sr**. Soft-ingest **Probable** / `verified: false` — pack **C803**. Newbury VR: d. Corp. Richard and Elizabeth, 11 Mar 1701/2; m. Samuel Dole (WT/Pane); d. 5 Dec 1776. Spouses/descendants **not** climbed (collateral)."
+      "birth": "1702-03-11",
+      "death": "1776-12-05",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA",
+      "death_place": "Newbury, Essex County, Massachusetts, USA"
     },
     "moses_knight": {
       "id": "moses_knight",
@@ -10121,7 +10490,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Full sibling of **Edmund Knight Sr**. Soft-ingest **Probable** / `verified: false` — pack **C803**. Newbury VR: s. Richard and Elizabeth, 27 Sep 1710; Pane-Joyce d. 11 Dec 1788. Spouses/descendants **not** climbed (collateral)."
+      "birth": "1710-09-27",
+      "death": "1788-12-11",
+      "birth_place": "Newbury, Essex County, Massachusetts, USA"
     },
     "abigail_j_foss_hill": {
       "id": "abigail_j_foss_hill",
@@ -10168,7 +10539,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sister of **Ambrose Foss** / daughter of **Daniel W. Foss** × **Harriet N. Bunker Foss**. Soft-ingest **Probable** / `verified: false` — pack **C563**. Bidirectional FAG: Daniel children grid lists Abigail; Abigail parents = Daniel × Harriet N. Bunker. Widow of Archelaus..."
+      "birth": "1846-05-01",
+      "death": "1916-01-27",
+      "birth_place": "Massachusetts, USA",
+      "death_place": "Auburn, Androscoggin County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "ruth_h_foss_johnston": {
       "id": "ruth_h_foss_johnston",
@@ -10215,7 +10590,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sister of **Ambrose Foss** / daughter of **Daniel W. Foss** × **Harriet N. Bunker Foss**. Soft-ingest **Probable** / `verified: false` — pack **C563**. Bidirectional FAG: Daniel children grid lists Ruth; Ruth parents = Daniel × Harriet N. Bunker. Spouse Milton Straw John..."
+      "birth": "1854",
+      "death": "1928-08-26",
+      "death_place": "Fort Fairfield, Aroostook County, Maine, USA",
+      "burial": "Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA"
     },
     "ann_bunker_rand": {
       "id": "ann_bunker_rand",
@@ -10261,7 +10639,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+      "birth": "1804",
+      "death": "1888"
     },
     "eli_bunker": {
       "id": "eli_bunker",
@@ -10304,7 +10683,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+      "birth": "1806",
+      "death": "1879"
     },
     "isaac_lewis_bunker": {
       "id": "isaac_lewis_bunker",
@@ -10347,7 +10727,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+      "birth": "1809",
+      "death": "1858"
     },
     "betsey_bunker_walker": {
       "id": "betsey_bunker_walker",
@@ -10393,7 +10774,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+      "birth": "1813",
+      "death": "1892"
     },
     "abraham_e_bunker": {
       "id": "abraham_e_bunker",
@@ -10440,7 +10822,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Harriet N. Bunker Foss** on Joseph × Olive FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C569**. No UP climb this pass."
+      "birth": "1827",
+      "death": "1903"
     },
     "samuel_otis": {
       "id": "samuel_otis",
@@ -10483,7 +10866,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Olive Otis Bunker** on Paul Otis FAG children grid (and Olive siblings). Soft-ingest **Probable** / `verified: false` — pack **C649**. No UP climb / spouse dig this pass."
+      "birth": "1782",
+      "death": "1816-08-16",
+      "burial": "Smith Meeting House Cemetery, Gilmanton, Belknap County, New Hampshire, USA"
     },
     "paul_otis_jr": {
       "id": "paul_otis_jr",
@@ -10529,7 +10914,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Olive Otis Bunker** on Paul Otis FAG children grid (and Olive siblings). Soft-ingest **Probable** / `verified: false` — pack **C649**. Fairview Cemetery, Dansville MI. No UP climb / spouse dig this pass."
+      "birth": "1787",
+      "death": "1855",
+      "burial": "Fairview Cemetery, Dansville, Ingham County, Michigan, USA"
     },
     "betsey_otis_gilman": {
       "id": "betsey_otis_gilman",
@@ -10577,7 +10964,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Olive Otis Bunker** on Paul Otis FAG children grid (and Olive siblings). Soft-ingest **Probable** / `verified: false` — pack **C649**. Married name Gilman (FAG). No UP climb / spouse dig this pass."
+      "birth": "1789",
+      "death": "1831-11-26",
+      "burial": "Smith Meeting House Cemetery, Gilmanton, Belknap County, New Hampshire, USA"
     },
     "nicholas_otis": {
       "id": "nicholas_otis",
@@ -10620,7 +11009,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 29 Mar 1746; m. Esther Berry; d. 3 Dec 1832 (1924 Otis). **No UP climb / spouse dig** this pass."
+      "birth": "1746-03-29",
+      "death": "1832-12-03",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Barrington, Strafford County, New Hampshire, USA"
     },
     "micajah_otis": {
       "id": "micajah_otis",
@@ -10666,7 +11058,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 21 May 1747; m. Sarah Foss 1769; Free Will Baptist elder; d. 20 May 1821 (1924). **No UP climb / spouse..."
+      "birth": "1747-05-21",
+      "death": "1821-05-20",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Barrington, Strafford County, New Hampshire, USA"
     },
     "elijah_otis": {
       "id": "elijah_otis",
@@ -10709,7 +11104,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 10 Jun 1749; m. Dorothy Locke 19 Jul 1771; d. 8 Apr 1838 Durham (1924/NEHGR). **No UP climb / spouse di..."
+      "birth": "1749-06-10",
+      "death": "1838-04-08",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "mary_otis_young": {
       "id": "mary_otis_young",
@@ -10755,7 +11153,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. m. Elder Winthrop Young; d. 11 Apr 1849 ae 98 (NEHGR; 1924 has 1848). **No UP climb / spouse dig** this pass."
+      "birth": "1750",
+      "death": "1849-04-11",
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Canterbury, Merrimack County, New Hampshire, USA"
     },
     "sarah_otis_parshley": {
       "id": "sarah_otis_parshley",
@@ -10801,7 +11202,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 18 May 1751 (NEHGR; 1924 May 1); m. John B. Parshley; d. 6 Jul 1825. **No UP climb / spouse dig** this ..."
+      "birth": "1751-05-18",
+      "death": "1825-07-06",
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA"
     },
     "stephen_otis": {
       "id": "stephen_otis",
@@ -10847,7 +11251,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 24 Jun 1761; m. Hannah Emerson 30 Nov 1786; d. 4 Dec 1825 (1924). **No UP climb / spouse dig** this pass."
+      "birth": "1761-06-24",
+      "death": "1825-12-04",
+      "birth_place": "Barrington, Strafford County, New Hampshire, USA",
+      "death_place": "New Hampshire, USA"
     },
     "joshua_otis_jr": {
       "id": "joshua_otis_jr",
@@ -10893,7 +11300,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. b. 30 Mar 1764; m. Lydia Meader; d. 4 Mar 1834 Parishville NY (1924). Id joshua_otis_jr vs father joshua_o..."
+      "birth": "1764-03-30",
+      "death": "1834-03-04",
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Parishville, St. Lawrence County, New York, USA"
     },
     "jane_otis_meader": {
       "id": "jane_otis_meader",
@@ -10939,7 +11349,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. m. Moses Meader Jr of Durham 9 Jul 1777; removed Alton; both dead by NEHGR 1851. **No UP climb / spouse di..."
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Alton, Belknap County, New Hampshire, USA"
     },
     "rebecca_otis_wilkinson": {
       "id": "rebecca_otis_wilkinson",
@@ -10985,7 +11396,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Paul Otis** in NEHGR Otis Genealogy (1851) / 1924 Otis memoir under Joshua × Jane Hussey. Soft-ingest **Probable** / `verified: false` — pack **C764**. m. Wilkinson of Alton (NEHGR); both dead by 1851. **No UP climb / spouse dig** this pass."
+      "birth_place": "New Hampshire, USA",
+      "death_place": "Alton, Belknap County, New Hampshire, USA"
     },
     "joseph_hussey_jr": {
       "id": "joseph_hussey_jr",
@@ -11023,7 +11435,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Jane Hussey Otis** (same mother Sarah Canney) in Webster’s first-marriage child list. Soft-ingest **Probable** / `verified: false` — pack **C2217**. Id `joseph_hussey_jr` vs father `joseph_hussey`. Vitals lean (“Joseph, born.”). **No UP climb**. **No op..."
+      "birth_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "sarah_hussey_perkins": {
       "id": "sarah_hussey_perkins",
@@ -11061,7 +11473,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Jane Hussey Otis** in Webster (will: Sarah Perkins). Soft-ingest **Probable** / `verified: false` — pack **C2217**. Vitals lean. **No UP climb / spouse dig**. **No open obituary text**."
+      "birth_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "lydia_hussey_hodgdon": {
       "id": "lydia_hussey_hodgdon",
@@ -11099,7 +11511,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Jane Hussey Otis** in Webster (will: Lydia Hodgdon). Soft-ingest **Probable** / `verified: false` — pack **C2217**. Vitals lean. **No UP climb / spouse dig**. **No open obituary text**."
+      "birth_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "stephen_otis_jr": {
       "id": "stephen_otis_jr",
@@ -11149,7 +11561,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Joshua Otis** (same mother Mary Young) in NEHGR Otis Genealogy. Soft-ingest **Probable** / `verified: false` — pack **C2213**. Id `stephen_otis_jr` vs nephew `stephen_otis` (1761–1825, Joshua’s son) and father `stephen_otis_sr`. b. 1731; settled Barring..."
+      "birth": "1731",
+      "death": "1817-03-13",
+      "birth_place": "Dover, Strafford County, New Hampshire, USA",
+      "death_place": "Barrington, Strafford County, New Hampshire, USA",
+      "burial": "Otis Cemetery, Barrington, Strafford County, New Hampshire, USA"
     },
     "john_otis": {
       "id": "john_otis",
@@ -11192,7 +11608,7 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named full sibling of **Joshua Otis** (same mother Mary Young) in NEHGR. Soft-ingest **Probable** / `verified: false` — pack **C2213**. Unmarried; enlisted in the Revolutionary War and never returned (NEHGR / 1924). Vitals lean. **No UP climb**. **No open obituary text**."
+      "birth_place": "Dover, Strafford County, New Hampshire, USA"
     },
     "abraham_runnels_bunker": {
       "id": "abraham_runnels_bunker",
@@ -11238,7 +11654,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Joseph S. Bunker** on Eli × Anna FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C644**. Barnstead Parade. No UP climb / spouse dig this pass."
+      "birth": "1785-12-13",
+      "death": "1861-09-14",
+      "birth_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "gordon_bunker": {
       "id": "gordon_bunker",
@@ -11281,7 +11701,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Joseph S. Bunker** on Eli × Anna FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C644**. FAG bio: s/o Eli × Anna Gordon; m. Martha Davis 11 Aug 1808 Barnstead (spouse not soft this pass). No UP climb this pass."
+      "birth": "1788",
+      "death": "1872",
+      "birth_place": "Barnstead, Belknap County, New Hampshire, USA"
     },
     "timothy_bunker": {
       "id": "timothy_bunker",
@@ -11328,7 +11750,11 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Joseph S. Bunker** on Eli × Anna FAG children grids. Soft-ingest **Probable** / `verified: false` — pack **C644**. Barnstead Parade (cemetery transcript: Timothy d. 30 Dec 1840 ae 44). No UP climb / spouse dig this pass."
+      "birth": "1796-08-13",
+      "death": "1840-12-30",
+      "birth_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "death_place": "Barnstead, Belknap County, New Hampshire, USA",
+      "burial": "Barnstead Parade Cemetery, Barnstead, Belknap County, New Hampshire, USA"
     },
     "bradbury_bunker": {
       "id": "bradbury_bunker",
@@ -11371,7 +11797,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Revolutionary War drummer; died of fever in service (Moran/Durham). No UP climb / spouse soft this..."
+      "birth": "1752",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "sobriety_bunker_williams": {
       "id": "sobriety_bunker_williams",
@@ -11417,7 +11844,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m. 7 Apr 1777 Samuel Williams of Barnstead (Moran/Durham); later Ohio. No UP climb / spouse soft t..."
+      "birth": "1755",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "sarah_bunker_tibbetts": {
       "id": "sarah_bunker_tibbetts",
@@ -11464,7 +11892,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m1 Bradbury Sinclair; m2 Henry Tibbetts; d. 22 Dec 1834 (Durham/Moran). No UP climb / spouse soft ..."
+      "birth": "1756-01-07",
+      "death": "1834-12-22",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "joseph_bunker_1757": {
       "id": "joseph_bunker_1757",
@@ -11510,7 +11940,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Rev War; d. 1781 unmarried (Moran; father petition 1782). Id distinct from nephew `joseph_s_bunker..."
+      "birth": "1757",
+      "death": "1781",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "jonathan_bunker_jr": {
       "id": "jonathan_bunker_jr",
@@ -11556,7 +11988,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Moran D-15 b. 9 Jan 1764; Durham extract says 1768 — soft uses Moran. No UP climb / spouse soft th..."
+      "birth": "1764-01-09",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "hannah_bunker": {
       "id": "hannah_bunker",
@@ -11599,7 +12032,10 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. d. 1780 Durham (Hist. Durham / Moran). No UP climb / spouse soft this pass."
+      "birth": "1767",
+      "death": "1780",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA",
+      "death_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "isaiah_bunker": {
       "id": "isaiah_bunker",
@@ -11642,7 +12078,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. Moran b. 16 Sep 1769; Durham extract places Isaiah Oct 1750 — soft uses Moran; rem. Maine. No UP c..."
+      "birth": "1769-09-16",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "obadiah_bunker": {
       "id": "obadiah_bunker",
@@ -11685,7 +12122,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m. Judith Collins Berwick Me.; Starksboro Vt. (Durham/Moran). No UP climb / spouse soft this pass."
+      "birth": "1770",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "elijah_bunker": {
       "id": "elijah_bunker",
@@ -11728,7 +12166,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Eli Bunker** (`eli_bunker_sr`) on Moran D-15 / Durham Jonathan×Sarah issue / WikiTree Bunker-516. Soft-ingest **Probable** / `verified: false` — pack **C734**. m. Betsey Smith; rem. Anson Me.; d. 5 Jan 1850 (Durham). No UP climb / spouse soft this pass."
+      "birth": "1772-06-23",
+      "death": "1850-01-05",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "john_runnels_jr": {
       "id": "john_runnels_jr",
@@ -11770,7 +12210,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named half-sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Half-brother of Sarah (1st wife unknown per Runnels). Barrington; Capt. John. Soft lean. (soft ~1716 – aft. 1785 Barrington). Spouses/UP **not** climbed."
+      "birth": "1716",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "abraham_runnels": {
       "id": "abraham_runnels",
@@ -11811,7 +12252,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named half-sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Half-brother of Sarah (1st wife). Soft lean — ≠ Abraham Runnels Bunker. New Durham later. (23 May 1718 – 1804). Spouses/UP **not** climbed."
+      "birth": "1718-05-23",
+      "death": "1804",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "william_runnels": {
       "id": "william_runnels",
@@ -11854,7 +12297,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah (Hannah Clark). Soft lean. (soft ~1721 – ~1773/74). Spouses/UP **not** climbed."
+      "birth": "1721",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "elizabeth_runnels_snell": {
       "id": "elizabeth_runnels_snell",
@@ -11901,7 +12345,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will as Elizabeth Snell (m. Solomon Snell). Soft lean — spouse not climbed. (soft ~1724). Spouses/UP **not** climbed."
+      "birth": "1724",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "joseph_runnels": {
       "id": "joseph_runnels",
@@ -11944,7 +12389,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; tanner; will executor. Soft lean — widow Lydia not climbed. (10 Jun 1727 – ~1765). Spouses/UP **not** climbed."
+      "birth": "1727-06-10",
+      "death": "1765",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "hannah_runnels_willey": {
       "id": "hannah_runnels_willey",
@@ -11992,7 +12439,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah (Runnels); m. Willee/Willey; d. before father’s will leaving Hannah + Elizabeth Willee. Soft lean — WT half-sib label held. (soft ~1734 – before 20 Ju..."
+      "birth": "1734",
+      "death": "1756",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "deliverance_runnels": {
       "id": "deliverance_runnels",
@@ -12035,7 +12484,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will legacy; guardian Hannah 1758. Soft lean — early death presumed by Runnels for youngest four. (soft ~1743 (minor 1758)). Spouses/UP **not** climbed."
+      "birth": "1743",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "stephen_runnels": {
       "id": "stephen_runnels",
@@ -12078,7 +12528,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will under-14. Soft lean — early death presumed. (soft ~1744). Spouses/UP **not** climbed."
+      "birth": "1744",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "solomon_runnels": {
       "id": "solomon_runnels",
@@ -12121,7 +12572,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will under-14 + gun. Soft lean — early death presumed. (soft ~1746). Spouses/UP **not** climbed."
+      "birth": "1746",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "winthrop_runnels": {
       "id": "winthrop_runnels",
@@ -12164,7 +12616,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Named sibling of **Sarah Runnels Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C929**. Full sibling of Sarah; will under-14. Soft lean — early death presumed. (soft ~1749). Spouses/UP **not** climbed."
+      "birth": "1749",
+      "birth_place": "Durham / Lee, Strafford County, New Hampshire, USA"
     },
     "patience_bunker_clements": {
       "id": "patience_bunker_clements",
@@ -12210,7 +12663,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 6: m. Job Clements; widow 1766; WT 1721–1822. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+      "birth": "1721",
+      "death": "1822",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "anna_bunker_stevenson": {
       "id": "anna_bunker_stevenson",
@@ -12257,7 +12712,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 6: m. (1) Lemuel Drew, (2) Joseph Stevenson. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+      "birth": "1725",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "benjamin_bunker": {
       "id": "benjamin_bunker",
@@ -12303,7 +12759,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 11: m. Betty Barnes of Portsmouth; d. 2 Oct 1827 ae 87. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+      "birth": "1740",
+      "death": "1827-10-02",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "james_giles_bunker": {
       "id": "james_giles_bunker",
@@ -12349,7 +12807,9 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Sibling of **Jonathan Bunker**. Soft-ingest **Probable** / `verified: false` — pack **C924**. Durham fam. 6: m. Polly Batchelder of Deerfield 13 Oct 1785 (?); WT James Giles. Spouses/parents-of-spouse **not** climbed. Unnamed Twombly daughter in Durham **not** soft-ingested."
+      "birth": "1741",
+      "death": "1798",
+      "birth_place": "Durham, Strafford County, New Hampshire, USA"
     },
     "eliphalet_j_foss": {
       "id": "eliphalet_j_foss",
@@ -12391,7 +12851,10 @@ window.PEOPLE_DATA = {
           "confidence": "Possible"
         }
       ],
-      "note": "Named brother of **Daniel W. Foss** on WikiTree (Foss-718 / Foss-716). Soft-ingest **Possible** / `verified: false` — collateral under pack **C560** parents; no FAG memorial found this pass. Parents soft **Ambrose Foss Sr.** × **Abbie Wentworth Foss**. **No open obituary.** Do..."
+      "birth": "1826",
+      "death": "1888-04-14",
+      "birth_place": "Lakeport, Belknap County, New Hampshire, USA",
+      "death_place": "Brighton, Somerset County, Maine, USA"
     },
     "perry_parsons": {
       "id": "perry_parsons",
@@ -12429,7 +12892,8 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "note": "Soft brother of **Nelson B. Parsons** (same 1880 step-sons under William × Kristi; Sweden). Pack **C1093**. Likely son of **Percy × Kate** (not the father Percy himself — age ~21 in 1880). Vitals lean."
+      "birth": "1859",
+      "birth_place": "Sweden"
     },
     "alexander": {
       "id": "alexander",
