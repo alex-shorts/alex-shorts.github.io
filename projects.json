@@ -1,0 +1,88 @@
+{
+  "site": {
+    "title": "Alex Shorts",
+    "tagline": "Designer, father, builder of things my family can actually use.",
+    "bio": "Browser-first tools for scripture, learning, and family life. No installs — open a link and go."
+  },
+  "projects": [
+    {
+      "id": "family-tree-alex",
+      "name": "Alexander — Family tree",
+      "desc": "Interactive ancestry graph with portraits, vitals, and source documents.",
+      "history": "A shareable view of our FamilyTree research — people, parent links, photos, and catalogued records. Password-protected for family.",
+      "href": "projects/family-tree-alex/",
+      "accent": "#4a3d32",
+      "private": true,
+      "updated": "2026-08-15",
+      "images": []
+    },
+    {
+      "id": "family-tree-morganne",
+      "name": "Morganne — Family tree",
+      "desc": "Morganne's line from the same research engine — scoped for her side of the family.",
+      "history": "Same FamilyTree database, filtered to Morganne's blood and legal family. Family password required.",
+      "href": "projects/family-tree-morganne/",
+      "accent": "#5c3d4a",
+      "private": true,
+      "updated": "2026-08-15",
+      "images": []
+    },
+    {
+      "id": "proverbs-link",
+      "name": "Proverbs Link",
+      "desc": "Proverbs as a climb — Way of Life (10–31) above, firm foundation (1–9) below.",
+      "history": "Maps Proverbs onto a man's ascent through covering — from the fork between Life and Death to reign with Christ. Themes, Life|Death pairs, matrices, and full verse expansions for study at the table.",
+      "href": "projects/proverbs-link/",
+      "accent": "#8a4b1f",
+      "updated": "2026-08-10",
+      "images": [
+        "projects/proverbs-link/assets/covers/cover-two-paths.png",
+        "projects/proverbs-link/assets/covers/cover-christ.png",
+        "projects/proverbs-link/assets/covers/cover-king.png"
+      ]
+    },
+    {
+      "id": "bible-rainbow",
+      "name": "Bible cross-reference rainbow",
+      "desc": "Zoomable arc map of scripture cross-references — follow links collection by collection.",
+      "history": "Cross-reference data rendered as colored arcs you can explore interactively — pan, zoom, and jump between connected passages.",
+      "href": "projects/bible-rainbow/",
+      "accent": "#3d2f5c",
+      "updated": "2026-08-06",
+      "images": []
+    },
+    {
+      "id": "periodic-table",
+      "name": "Element Campaign",
+      "desc": "Learn the elements with your kid — campaign, drills, duels, and offline play.",
+      "history": "A dad-and-kid periodic table trainer: progress through a campaign, drill symbols and names, duel each other, and keep going without Wi‑Fi.",
+      "href": "projects/periodic-table/",
+      "accent": "#2a4a7a",
+      "updated": "2026-08-06",
+      "images": []
+    },
+    {
+      "id": "bible-worksheets",
+      "name": "Bible worksheets",
+      "desc": "Weekly biblical imagery studies — student sheets, teacher guides, ready to print.",
+      "history": "Print-ready HTML worksheets for family study: verse, stories, coloring, and catechism — open in the browser and print to PDF.",
+      "href": "projects/bible-worksheets/",
+      "accent": "#6b4a2a",
+      "updated": "2026-08-06",
+      "images": [
+        "projects/bible-worksheets/lamb/coloring.png",
+        "projects/bible-worksheets/temple/stack/g3-solomons-temple.png"
+      ]
+    },
+    {
+      "id": "biblical-library-index",
+      "name": "Biblical imagery library",
+      "desc": "Browse the imagery library by author, motif, and shelf — Spurgeon, Puritans, and more.",
+      "history": "Front door to the biblical imagery library: find authors, motifs, and shelf layouts before building a weekly study pack.",
+      "href": "projects/biblical-library-index/",
+      "accent": "#4a3a28",
+      "updated": "2026-08-05",
+      "images": []
+    }
+  ]
+}
