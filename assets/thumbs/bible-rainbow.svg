@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Bible cross-reference rainbow">
+  <rect width="800" height="450" fill="#0c1016"/>
+  <path d="M80 380 Q400 40 720 380" fill="none" stroke="#e8dcc8" stroke-width="3" opacity="0.35"/>
+  <path d="M120 380 Q400 90 680 380" fill="none" stroke="#7eb6ff" stroke-width="4" opacity="0.85"/>
+  <path d="M160 380 Q400 130 640 380" fill="none" stroke="#f0a35e" stroke-width="4" opacity="0.85"/>
+  <path d="M200 380 Q400 170 600 380" fill="none" stroke="#b88cff" stroke-width="4" opacity="0.85"/>
+  <path d="M240 380 Q400 210 560 380" fill="none" stroke="#6ee7b7" stroke-width="4" opacity="0.85"/>
+  <circle cx="400" cy="380" r="6" fill="#e8dcc8"/>
+</svg>

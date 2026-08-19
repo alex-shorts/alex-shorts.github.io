@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tent — Pack review</title>
+  <style>
+    :root { --bg:#f3efe6; --ink:#2a2118; --muted:#6b5c4c; --card:#fffdf8; --line:#d4c4ae; --rec:#3d5a3a; --pick:#2f5d8c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Segoe UI","Iowan Old Style",Georgia,serif; color:var(--ink); background:radial-gradient(ellipse at top,#fff9ef 0%,var(--bg) 55%); line-height:1.35; }
+    .bar { position:sticky; top:0; z-index:20; display:flex; flex-wrap:wrap; gap:.55rem; align-items:center; padding:.65rem 1.25rem; background:#2a241e; color:#f4eee5; font-family:"Segoe UI",system-ui,sans-serif; font-size:.88rem; }
+    .bar code { background:#3a322a; padding:.2rem .45rem; border-radius:4px; font-size:.82rem; }
+    button { border:0; border-radius:4px; padding:.35rem .7rem; cursor:pointer; background:#9a6a4e; color:#fff; font:inherit; }
+    button.secondary { background:#564c42; }
+    header,section { max-width:1100px; margin:0 auto; padding:1.1rem 1.4rem .4rem; }
+    h1 { font-size:1.55rem; margin:0 0 .35rem; }
+    h2 { font-size:1.05rem; margin:1.25rem 0 .55rem; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
+    .lede { color:var(--muted); max-width:52rem; margin:0 0 .75rem; }
+    .how,.gap { background:var(--card); border:1px solid var(--line); border-radius:6px; padding:.7rem .9rem; max-width:52rem; font-size:.92rem; margin:.5rem 0; }
+    .gap { border-left:4px solid #b18448; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:.85rem; padding:.4rem 0 .8rem; }
+    .grid.wide { grid-template-columns:1fr; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.75rem .85rem; cursor:pointer; display:grid; gap:.3rem; }
+    article.selected { border-color:var(--pick); box-shadow:0 0 0 2px var(--pick); }
+    article.recommended { border-color:#9cbc96; }
+    .thumb { aspect-ratio:4/3; background:#ebe4d7; border-radius:4px; overflow:hidden; margin:-.15rem -.15rem .2rem; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .meta { display:flex; flex-wrap:wrap; gap:.3rem; align-items:center; }
+    .id { font-weight:700; font-family:ui-monospace,Consolas,monospace; }
+    .tag { font-size:.68rem; text-transform:uppercase; letter-spacing:.05em; border:1px solid var(--line); border-radius:999px; padding:.1rem .4rem; color:var(--muted); }
+    .tag.rec { color:var(--rec); border-color:#9cbc96; }
+    .tag.gen { color:var(--pick); border-color:#a8c0d8; }
+    h3 { font-size:1rem; margin:0; }
+    p { margin:0; font-size:.88rem; color:var(--muted); }
+    .beat { color:var(--ink); font-size:.9rem; }
+    footer { max-width:1100px; margin:0 auto 2rem; padding:.5rem 1.4rem 2rem; color:var(--muted); font-size:.88rem; }
+    .approved-direction { background:#eef4ec; border:2px solid #789174; border-radius:8px; padding:.8rem 1rem; max-width:52rem; margin:.7rem 0; }
+    article.approved { border-color:#557451; box-shadow:0 0 0 2px #789174; }
+    article[data-approved="1"]::before { content:"APPROVED"; display:inline-block; width:max-content; color:#31522e; border:1px solid #789174; border-radius:999px; padding:.08rem .4rem; font:700 .68rem/1.3 "Segoe UI",sans-serif; letter-spacing:.06em; }
+    @media print {
+      @page { size:Letter; margin:.45in; }
+      body { background:#fff; font-size:10pt; }
+      .bar,.interactive-help { display:none !important; }
+      header,section,footer { max-width:none; padding-left:0; padding-right:0; }
+      article,.how,.gap,.approved-direction { break-inside:avoid; box-shadow:none !important; }
+      .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .grid.wide { grid-template-columns:1fr; }
+      .thumb, .thumb img, article img { display:none !important; }
+      .print-images-note { display:block !important; }
+    }
+    .print-images-note { display:none; }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <strong>Pack review</strong>
+    <span>Line: <code id="line">—</code></span>
+    <button type="button" id="copy">Copy APPROVE line</button>
+    <button type="button" class="secondary" id="useRec">Use approved</button>
+  </div>
+  <header>
+    <h1>Tent — pack review</h1>
+    <p class="lede">Patriarchs live in tents; God pitches his own tent among Israel; Zion is told to stretch the curtains; the Word tents among us. This week is the mobile dwelling — not a rerun of Temple week’s stone house.</p>
+    <div class="how interactive-help">Approved selections are marked below. Copy remains available for a later revision.</div>
+    <div class="gap"><strong>Library note:</strong> no dedicated <code>tent</code> motif. Staged under <code>temple-eden-city</code> on purpose (dwelling / tabernacle cluster). Feed signal is Beale-on-temple; dictionary realia come from Easton, Nave, and Strong’s. Gap <code>no_staged_images</code> filled by twelve generated original plates.</div>
+    <div class="approved-direction">
+      <strong>Approved week direction</strong>
+      <p class="beat"><code>APPROVE PACK — verse V2 · stories C3 C2 C1 C4 · stack G11 G3 G2 G12 · ncc Q52</code></p>
+      <p><strong>Arc:</strong> stretch the household so more children can enter → God fills his wilderness tent → promise arrives at a pilgrim door → the Word tents among us. Memory verse is John 1:14; hope is everlasting dwelling with God (NCC 52).</p>
+    </div>
+    <p class="print-images-note"><strong>Teacher-guide print:</strong> images are omitted here. Use the student sheet for the stack and coloring page.</p>
+  </header>
+
+  <section id="research-report">
+    <h2>Tent in the Bible — usage, symbolism, and typology</h2>
+    <div class="how">
+      <h3>Teacher summary</h3>
+      <p class="beat">A biblical tent is real canvas, cords, stakes, and a door. The week’s movement is <strong>God’s presence traveling with pilgrims, then opening the dwelling wider</strong>. Isaiah 54:2 is the recommended center: enlarge the tent, stretch the curtains, lengthen the cords, strengthen the stakes — because more children are coming. That is restoration pictured as a household that must make room, not a camping tip.</p>
+    </div>
+    <div class="grid wide">
+      <article>
+        <h3>1. Realia and biblical words</h3>
+        <p><strong>Hebrew <em>’ōhel</em> (H168):</strong> a tent “clearly conspicuous from a distance”; covering, home, tabernacle, tent. Nave lists it as ordinary housing for patriarchs, Israel, shepherds, and neighbors; women often had separate tents; Paul still meets tent-makers in Acts 18:3.</p>
+        <p><strong>Hebrew <em>mishkān</em> (H4908), from <em>shākan</em>:</strong> a residence; specifically the Tabernacle (its wooden walls). Easton: movable tent-temple after the mountain pattern; better “tent of meeting” than “tabernacle of the congregation.” Exodus 33:7 is probably Moses’ own tent, not yet the mishkan.</p>
+        <p><strong>Hebrew <em>sukkāh</em> (H5521):</strong> hut or lair; booth of branches. Easton and Nave tie it to Succoth and the Feast of Tabernacles — more leafy and temporary than a woven tent.</p>
+        <p><strong>Greek <em>skēnē / skēnoō</em> (G4633, G4637):</strong> tent; to tent or dwell “as God did in the Tabernacle of old.” This is John’s verb in John 1:14 and returns in Revelation 21:3. <em>Skēnos</em> (G4636) is the body as a temporary residence (2 Cor. 5).</p>
+        <p><strong>Dictionary sources:</strong> Easton “Booth,” “Tabernacle,” “Feast of Tabernacles”; Nave TENT / TABERNACLE / BOOTH; Open Scriptures Strong’s as above. Full notes: <code>context/tent-biblical-report.md</code>.</p>
+      </article>
+      <article>
+        <h3>2. Scripture’s main usage clusters</h3>
+        <p><strong>Sojourning:</strong> Abraham, Isaac, and Jacob pitch tents in the land of promise. Hebrews 11:9 reads that as faith looking for a founded city.</p>
+        <p><strong>Hospitality at the door:</strong> Genesis 18 — heat of the day, tent door, Sarah listening, promise of a son.</p>
+        <p><strong>God’s tent:</strong> cloud at Moses’ tent of meeting (Ex. 33); glory filling the tabernacle (Ex. 40); the LORD moving about in a tent since Egypt (2 Sam. 7:6); David’s tent for the ark beside his cedar house.</p>
+        <p><strong>Booths:</strong> dwell in sukkot so generations remember wilderness dwellings (Lev. 23); Nehemiah 8 rebuilds the practice; John 7 places Jesus at the feast.</p>
+        <p><strong>Enlarge the tent (week center):</strong> Isaiah 54:1–3 — barren Zion will have more children; therefore stretch curtains, lengthen cords, drive stakes. Paul reads 54:1 in Galatians 4:27 of the free woman’s children. Adjacent 54:11–12 is jeweled-city imagery (Beale → Rev. 21), not the tent verse itself.</p>
+        <p><strong>Body, Word, consummation:</strong> 2 Cor. 5 earthly tent vs house from God; John 1:14 the Word tents among us; Rev. 21:3 God’s dwelling with man.</p>
+      </article>
+      <article>
+        <h3>3. Typology and theological controls</h3>
+        <p><strong>Keep tent distinct from Temple week:</strong> this is the mobile, stretched, hospitable dwelling — not Solomon’s house or living stones.</p>
+        <p><strong>Do not collapse ’ōhel, mishkān, and sukkāh.</strong> Patriarchal tents, God’s patterned sanctuary, and leafy booths are related, not identical.</p>
+        <p><strong>Isaiah 54 is household fruitfulness after the Servant’s work</strong> (chs. 52–53). Mission/inclusion belongs here; it is not a generic hospitality slogan and not a church-growth seminar.</p>
+        <p><strong>John 1:14 is the strongest Christological control:</strong> the NT’s own tent-verb for the incarnation. Wemyss (symbol dictionary) already calls the Shekinah-tabernacle a type of Christ’s body; that is 19th-c. comment aligned with John 1 / Col. 2, not a replacement for those texts.</p>
+        <p><strong>2 Cor. 5 hopes for a house from God</strong> — not contempt for embodiment. Revelation 21 completes the verb: God dwells with his people.</p>
+        <p>Beale’s feed note that patriarchs “pitch a tent” (LXX tabernacle) and plant small sanctuaries is useful teacher typology; keep it distinct from the Genesis narrative itself.</p>
+      </article>
+      <article>
+        <h3>4. Approved teaching arc</h3>
+        <p><strong>Stretch the household → God fills his tent → promise at the door → the Word tents among us.</strong></p>
+        <p><strong>C3 · Isaiah 54:</strong> make the dwelling larger; more children are coming.</p>
+        <p><strong>C2 · Exodus 40:</strong> glory fills the tent God told them to make.</p>
+        <p><strong>C1 · Genesis 18:</strong> promise arrives at an ordinary tent door.</p>
+        <p><strong>C4 · John 1:</strong> the Word becomes flesh and dwells (tents) among us.</p>
+        <p><strong>V2 · John 1:14</strong> is the memory verse: the Word tented among us, and we have seen his glory. <strong>Q52</strong> carries the hope to everlasting dwelling with God.</p>
+      </article>
+      <article>
+        <h3>Sources and limits</h3>
+        <p>Local sources used: Easton, Nave’s topical CSV, Open Scriptures Strong’s, Brady Hebrew Strong’s, Wemyss on TABERNACLE, and Beale JETS (feed signal). Catalog lists Ryken DBI and Beale’s full temple book, but those texts are not local, so they are not quoted. ISBE volumes are on disk; a clean “Tent” lemma extract was not obtained this pass (volume filenames drift). Smith’s local scan did not yield a usable Tent headword.</p>
+        <p>Jael’s tent-peg is Scripture and is not age-filtered, but it is not this week’s expanding-dwelling theme.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>1. Foundational verse</h2>
+    <div class="grid wide" id="verse-grid">
+      <article class="recommended" data-group="verse" data-id="V1" data-rec="1">
+        <div class="meta"><span class="id">V1</span><span class="tag rec">Recommended</span></div>
+        <h3>Isaiah 54:2 · ESV</h3>
+        <p class="beat">“Enlarge the place of your tent, and let the curtains of your habitations be stretched out; do not hold back; lengthen your cords and strengthen your stakes.”</p>
+      </article>
+      <article class="approved" data-group="verse" data-id="V2" data-approved="1">
+        <div class="meta"><span class="id">V2</span></div>
+        <h3>John 1:14 · ESV</h3>
+        <p class="beat">“And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.”</p>
+      </article>
+      <article data-group="verse" data-id="V3">
+        <div class="meta"><span class="id">V3</span></div>
+        <h3>Exodus 40:34 · ESV</h3>
+        <p class="beat">“Then the cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle.”</p>
+      </article>
+      <article data-group="verse" data-id="V4">
+        <div class="meta"><span class="id">V4</span></div>
+        <h3>Hebrews 11:9 · ESV</h3>
+        <p class="beat">“By faith he went to live in the land of promise, as in a foreign land, living in tents with Isaac and Jacob, heirs with him of the same promise.”</p>
+      </article>
+      <article data-group="verse" data-id="V5">
+        <div class="meta"><span class="id">V5</span></div>
+        <h3>Revelation 21:3 · ESV (short copywork)</h3>
+        <p class="beat">“Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people.”</p>
+      </article>
+      <article data-group="verse" data-id="V6">
+        <div class="meta"><span class="id">V6</span></div>
+        <h3>2 Samuel 7:6 · ESV</h3>
+        <p class="beat">“I have not lived in a house since the day I brought up the people of Israel from Egypt to this day, but I have been moving about in a tent for my dwelling.”</p>
+      </article>
+      <article data-group="verse" data-id="V7">
+        <div class="meta"><span class="id">V7</span></div>
+        <h3>2 Corinthians 5:1 · ESV</h3>
+        <p class="beat">“For we know that if the tent that is our earthly home is destroyed, we have a building from God, a house not made with hands, eternal in the heavens.”</p>
+      </article>
+      <article data-group="verse" data-id="V8">
+        <div class="meta"><span class="id">V8</span></div>
+        <h3>Psalm 15:1 · ESV</h3>
+        <p class="beat">“O LORD, who shall sojourn in your tent? Who shall dwell on your holy hill?”</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Stories — pick 4</h2>
+    <div class="grid" id="story-grid">
+      <article class="recommended approved" data-group="story" data-id="C1" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g1-abraham-tent-door.png" alt="Abraham runs from the tent door toward three visitors" /></div>
+        <div class="meta"><span class="id">C1</span><span class="tag rec">Recommended</span><span class="tag gen">Image G1</span></div>
+        <h3>The Tent Door — Genesis 18:1–10</h3>
+        <p class="beat"><strong>Beat:</strong> In the heat of the day Abraham sits at his tent door; the LORD appears; he runs to welcome three visitors.</p>
+        <p><strong>Cast:</strong> Abraham, Sarah, three visitors · <strong>Turn:</strong> Promise of a son arrives at an ordinary threshold while Sarah listens from inside.</p>
+        <p><strong>Panel:</strong> Abraham running from a black goat-hair tent door across ochre dust toward three travelers; Sarah’s silhouette at the flap; taut cords and pegs visible.</p>
+        <p><strong>Assigned image:</strong> G1 · <code>library-images/candidates/generated/g1-abraham-tent-door.png</code></p>
+        <p><strong>Connection:</strong> The pilgrim tent is already a place of meeting and promise.</p>
+        <p><strong>Coloring:</strong> Hospitality and heat; no attempt to depict God’s face; keep the three as travelers.</p>
+      </article>
+      <article class="recommended approved" data-group="story" data-id="C2" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g2-glory-fills-tabernacle.png" alt="Glory-cloud fills the wilderness tabernacle" /></div>
+        <div class="meta"><span class="id">C2</span><span class="tag rec">Recommended</span><span class="tag gen">Image G2</span></div>
+        <h3>Glory Fills the Tent — Exodus 40:34–38</h3>
+        <p class="beat"><strong>Beat:</strong> Israel finishes the patterned dwelling; the cloud covers the tent of meeting; glory fills it so Moses cannot enter.</p>
+        <p><strong>Cast:</strong> Moses, Israel, the LORD’s cloud · <strong>Turn:</strong> God himself takes up residence in the tent they made.</p>
+        <p><strong>Panel:</strong> Rectangular sacred tent in the wilderness; a column of fire-lit cloud crashing down into it; tiny awed silhouettes at the court edge.</p>
+        <p><strong>Assigned image:</strong> G2 · <code>library-images/candidates/generated/g2-glory-fills-tabernacle.png</code></p>
+        <p><strong>Connection:</strong> God does not merely visit tents; he pitches his own among his people.</p>
+        <p><strong>Coloring:</strong> Cloud and light as presence; no face or figure of God; wind in the hangings is enough intensity.</p>
+      </article>
+      <article class="recommended approved" data-group="story" data-id="C3" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g3-enlarge-the-tent.png" alt="People stretch tent curtains and drive stakes" /></div>
+        <div class="meta"><span class="id">C3</span><span class="tag rec">Recommended</span><span class="tag gen">Image G3</span></div>
+        <h3>Enlarge the Tent — Isaiah 54:1–3</h3>
+        <p class="beat"><strong>Beat:</strong> Zion, addressed as a barren woman, is told she will have more children than she can now house.</p>
+        <p><strong>Cast:</strong> Zion / the people of God · <strong>Turn:</strong> They must stretch curtains, lengthen cords, and strengthen stakes instead of holding back.</p>
+        <p><strong>Panel:</strong> A great desert tent swelling as people heave curtains outward and hammer long stakes; cords snapping taut in the wind.</p>
+        <p><strong>Assigned image:</strong> G3 · <code>library-images/candidates/generated/g3-enlarge-the-tent.png</code></p>
+        <p><strong>Connection:</strong> God’s restoration looks like a household making room.</p>
+        <p><strong>Coloring:</strong> Work, wind, and scale; no desolate-woman spectacle; keep the physical tent verbs.</p>
+      </article>
+      <article class="recommended approved" data-group="story" data-id="C4" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g4-word-tabernacled.png" alt="Christ walking under tent-shaped glory among people" /></div>
+        <div class="meta"><span class="id">C4</span><span class="tag rec">Recommended</span><span class="tag gen">Image G4</span></div>
+        <h3>The Word Tented Among Us — John 1:14–18</h3>
+        <p class="beat"><strong>Beat:</strong> The Word becomes flesh and dwells (literally tents) among us; we have seen his glory.</p>
+        <p><strong>Cast:</strong> Jesus, those who receive him · <strong>Turn:</strong> The old tabernacle glory is now personal: God with us in a man.</p>
+        <p><strong>Panel:</strong> A first-century man walking into a night village under a tent-shaped canopy of glory; people turning; no Father-figure.</p>
+        <p><strong>Assigned image:</strong> G4 · <code>library-images/candidates/generated/g4-word-tabernacled.png</code></p>
+        <p><strong>Connection:</strong> The expanding dwelling becomes a person before it becomes a city.</p>
+        <p><strong>Coloring:</strong> Mature, not cute; glory as tent-shaped light, not a sticker halo if it can be avoided.</p>
+      </article>
+      <article data-group="story" data-id="C5">
+        <div class="thumb"><img src="library-images/candidates/generated/g5-ark-in-a-tent.png" alt="David looks from a cedar house toward the ark’s tent" /></div>
+        <div class="meta"><span class="id">C5</span><span class="tag gen">Image G5</span></div>
+        <h3>The Ark in a Tent — 2 Samuel 6:17; 7:1–7</h3>
+        <p class="beat"><strong>Beat:</strong> David sits in a house of cedar while the ark of God dwells in a tent; he wants to build a house.</p>
+        <p><strong>Cast:</strong> David, Nathan, the LORD · <strong>Turn:</strong> God recalls that he has been moving about in a tent since Egypt; he will make David a house.</p>
+        <p><strong>Panel:</strong> David on a cedar terrace at dusk looking down at a modest, fiercely lit tent; palace huge, God’s tent small.</p>
+        <p><strong>Assigned image:</strong> G5 · <code>library-images/candidates/generated/g5-ark-in-a-tent.png</code></p>
+        <p><strong>Connection:</strong> God has chosen mobile presence; the house comes on his timetable.</p>
+        <p><strong>Coloring:</strong> Contrast of house and tent; ark only as gold glow, not a magical box.</p>
+      </article>
+      <article data-group="story" data-id="C6">
+        <div class="thumb"><img src="library-images/candidates/generated/g6-feast-of-booths.png" alt="Families build leafy booths on rooftops" /></div>
+        <div class="meta"><span class="id">C6</span><span class="tag gen">Image G6</span></div>
+        <h3>Live in Booths — Nehemiah 8:14–17 (Lev. 23:39–43)</h3>
+        <p class="beat"><strong>Beat:</strong> Returned exiles read that Israel must dwell in leafy booths; they build them on roofs and in courts with great rejoicing.</p>
+        <p><strong>Cast:</strong> Ezra, the people, families · <strong>Turn:</strong> Remembered wilderness homelessness becomes a feast of joy.</p>
+        <p><strong>Panel:</strong> Families lashing branches into sukkot on rooftops and in a courtyard under a harvest moon.</p>
+        <p><strong>Assigned image:</strong> G6 · <code>library-images/candidates/generated/g6-feast-of-booths.png</code></p>
+        <p><strong>Connection:</strong> A booth is not the mishkan; it is a remembered tent of travel.</p>
+        <p><strong>Coloring:</strong> Branches, lashings, lanterns; joyful intensity, not a cute craft fair.</p>
+      </article>
+      <article data-group="story" data-id="C7">
+        <div class="thumb"><img src="library-images/candidates/generated/g7-earthly-tent.png" alt="A storm-torn tent before a solid house of light" /></div>
+        <div class="meta"><span class="id">C7</span><span class="tag gen">Image G7</span></div>
+        <h3>The Earthly Tent — 2 Corinthians 5:1–5</h3>
+        <p class="beat"><strong>Beat:</strong> Paul names the present body a tent that can be taken down, and sets over it a house from God, eternal in the heavens.</p>
+        <p><strong>Cast:</strong> Paul / believers · <strong>Turn:</strong> Groaning in the tent is not despair; the Spirit is a guarantee of a better dwelling.</p>
+        <p><strong>Panel:</strong> A worn tent collapsing in a storm in the foreground; a vast unshaken house of light on the horizon; a traveler between them.</p>
+        <p><strong>Assigned image:</strong> G7 · <code>library-images/candidates/generated/g7-earthly-tent.png</code></p>
+        <p><strong>Connection:</strong> Tent language can mean mortality without hating the body.</p>
+        <p><strong>Coloring:</strong> Weather and contrast; no skeleton, grave, or gore.</p>
+      </article>
+      <article data-group="story" data-id="C8">
+        <div class="thumb"><img src="library-images/candidates/generated/g8-god-dwells-with-man.png" alt="A dwelling of light descends toward a multitude" /></div>
+        <div class="meta"><span class="id">C8</span><span class="tag gen">Image G8</span></div>
+        <h3>God Dwells with Man — Revelation 21:1–4</h3>
+        <p class="beat"><strong>Beat:</strong> John sees a new heaven and earth; a loud voice says the dwelling place of God is with man.</p>
+        <p><strong>Cast:</strong> John, the multitude, God with his people · <strong>Turn:</strong> He will dwell with them; death and tears pass away.</p>
+        <p><strong>Panel:</strong> A colossal dwelling of light descending toward a jewel-toned city and a looking-up multitude; no depiction of God’s face.</p>
+        <p><strong>Assigned image:</strong> G8 · <code>library-images/candidates/generated/g8-god-dwells-with-man.png</code></p>
+        <p><strong>Connection:</strong> The tent-verb of John 1 returns as the end of the story.</p>
+        <p><strong>Coloring:</strong> Scale and light; keep it dwelling-with-people, not a stone-temple rerun if possible.</p>
+      </article>
+      <article data-group="story" data-id="C9">
+        <div class="thumb"><img src="library-images/candidates/generated/g9-tents-looking-to-city.png" alt="Small tents on a ridge facing a city of light" /></div>
+        <div class="meta"><span class="id">C9</span><span class="tag gen">Image G9</span></div>
+        <h3>Living in Tents, Looking for a City — Hebrews 11:8–16</h3>
+        <p class="beat"><strong>Beat:</strong> Abraham obeys, lives in the land as a foreigner in tents with Isaac and Jacob, and looks toward a city with foundations.</p>
+        <p><strong>Cast:</strong> Abraham’s household · <strong>Turn:</strong> They desire a better country; God is not ashamed to be called their God.</p>
+        <p><strong>Panel:</strong> Small night camp of tents on a ridge; a founded city of light waiting on the far horizon; a patriarch looking toward it.</p>
+        <p><strong>Assigned image:</strong> G9 · <code>library-images/candidates/generated/g9-tents-looking-to-city.png</code></p>
+        <p><strong>Connection:</strong> The tent is honest about not-yet-home; it does not despise the promise.</p>
+        <p><strong>Coloring:</strong> Distance and longing; keep the city small on the horizon so the tents remain the subject.</p>
+      </article>
+      <article data-group="story" data-id="C10">
+        <div class="thumb"><img src="library-images/candidates/generated/g10-tent-of-meeting.png" alt="Moses approaches a tent with a pillar of cloud at the door" /></div>
+        <div class="meta"><span class="id">C10</span><span class="tag gen">Image G10</span></div>
+        <h3>The Tent Outside the Camp — Exodus 33:7–11</h3>
+        <p class="beat"><strong>Beat:</strong> Before the mishkan is finished, Moses pitches a tent of meeting outside the camp; everyone watches; the cloud stands at the door.</p>
+        <p><strong>Cast:</strong> Moses, Joshua, Israel, the cloud · <strong>Turn:</strong> The LORD speaks with Moses as a man speaks with his friend.</p>
+        <p><strong>Panel:</strong> Moses walking toward a lone tent outside the camp; a pillar of cloud and fire at the door; the main camp receding.</p>
+        <p><strong>Assigned image:</strong> G10 · <code>library-images/candidates/generated/g10-tent-of-meeting.png</code></p>
+        <p><strong>Connection:</strong> Meeting happens at a tent door even before the full sanctuary exists.</p>
+        <p><strong>Coloring:</strong> Cloud at the door, not a body of God; wind and distance from the camp.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Image stack — pick 3–4</h2>
+    <p class="lede">Generated · original · comic-book. Recommended set is tent-object first: expanding canvas, stretching action, glory-filled sanctuary, cords and stakes. Historic museum plates were not used.</p>
+    <div class="grid" id="stack-grid">
+      <article class="recommended approved" data-group="stack" data-id="G11" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g11-expanding-tent-motif.png" alt="A tent swelling with taut cords and driven stakes" /></div>
+        <div class="meta"><span class="id">G11</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>Expanding tent (motif)</h3>
+        <p>Best tiny-size icon for the week: canvas, cords, stakes, growth.</p>
+      </article>
+      <article class="recommended approved" data-group="stack" data-id="G3" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g3-enlarge-the-tent.png" alt="People enlarge a desert tent" /></div>
+        <div class="meta"><span class="id">G3</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>Stretch the curtains</h3>
+        <p>Isaiah 54 as action, not only as object.</p>
+      </article>
+      <article class="recommended approved" data-group="stack" data-id="G2" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g2-glory-fills-tabernacle.png" alt="Glory fills the tabernacle" /></div>
+        <div class="meta"><span class="id">G2</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>Glory in God’s tent</h3>
+        <p>Single clear descent of presence; reads at stack height.</p>
+      </article>
+      <article class="recommended approved" data-group="stack" data-id="G12" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g12-cords-and-stakes.png" alt="A stake driven and a cord snapping taut" /></div>
+        <div class="meta"><span class="id">G12</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>Cords and stakes</h3>
+        <p>The verse’s last two verbs as a close comic crop.</p>
+      </article>
+      <article data-group="stack" data-id="G1">
+        <div class="thumb"><img src="library-images/candidates/generated/g1-abraham-tent-door.png" alt="Abraham at the tent door" /></div>
+        <div class="meta"><span class="id">G1</span><span class="tag gen">Generated · original</span></div>
+        <h3>Tent door</h3>
+        <p>Hospitality plate; slightly busier than the motif icon.</p>
+      </article>
+      <article data-group="stack" data-id="G4">
+        <div class="thumb"><img src="library-images/candidates/generated/g4-word-tabernacled.png" alt="The Word dwelling among people" /></div>
+        <div class="meta"><span class="id">G4</span><span class="tag gen">Generated · original</span></div>
+        <h3>Word tabernacled</h3>
+        <p>Strong incarnation card; swap in if you want John 1 on the gallery.</p>
+      </article>
+      <article data-group="stack" data-id="G10">
+        <div class="thumb"><img src="library-images/candidates/generated/g10-tent-of-meeting.png" alt="Tent of meeting outside the camp" /></div>
+        <div class="meta"><span class="id">G10</span><span class="tag gen">Generated · original</span></div>
+        <h3>Tent of meeting</h3>
+        <p>Cloud-at-the-door silhouette; good alternate for G2.</p>
+      </article>
+      <article data-group="stack" data-id="G9">
+        <div class="thumb"><img src="library-images/candidates/generated/g9-tents-looking-to-city.png" alt="Tents facing a distant city" /></div>
+        <div class="meta"><span class="id">G9</span><span class="tag gen">Generated · original</span></div>
+        <h3>Looking for a city</h3>
+        <p>Hebrews 11 sojourning; two-depth composition.</p>
+      </article>
+      <article data-group="stack" data-id="G6">
+        <div class="thumb"><img src="library-images/candidates/generated/g6-feast-of-booths.png" alt="Feast of Booths" /></div>
+        <div class="meta"><span class="id">G6</span><span class="tag gen">Generated · original</span></div>
+        <h3>Booths</h3>
+        <p>Sukkah realia; busier at tiny size.</p>
+      </article>
+      <article data-group="stack" data-id="G5">
+        <div class="thumb"><img src="library-images/candidates/generated/g5-ark-in-a-tent.png" alt="Ark tent beside a palace" /></div>
+        <div class="meta"><span class="id">G5</span><span class="tag gen">Generated · original</span></div>
+        <h3>Ark in a tent</h3>
+        <p>Cedar-house contrast; a little dense for 1.5in.</p>
+      </article>
+      <article data-group="stack" data-id="G7">
+        <div class="thumb"><img src="library-images/candidates/generated/g7-earthly-tent.png" alt="Earthly tent and heavenly house" /></div>
+        <div class="meta"><span class="id">G7</span><span class="tag gen">Generated · original</span></div>
+        <h3>Earthly tent</h3>
+        <p>2 Cor. 5 contrast; storm energy.</p>
+      </article>
+      <article data-group="stack" data-id="G8">
+        <div class="thumb"><img src="library-images/candidates/generated/g8-god-dwells-with-man.png" alt="God dwelling with man" /></div>
+        <div class="meta"><span class="id">G8</span><span class="tag gen">Generated · original</span></div>
+        <h3>Dwelling with man</h3>
+        <p>Consummation plate; reads more city/palace than canvas tent.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Catechism</h2>
+    <div class="grid wide" id="ncc-grid">
+      <article class="recommended" data-group="ncc" data-id="Q48" data-rec="1">
+        <div class="meta"><span class="id">Q48</span><span class="tag rec">Recommended</span></div>
+        <h3>Q. What is the church?</h3>
+        <p class="beat">A. God chooses and preserves for himself a community elected for eternal life and united by faith, who love, follow, learn from, and worship God together as his people. God sends us out as his witnesses and to make disciples.</p>
+        <p><strong>Fit:</strong> The enlarged tent is a people, not only a canvas. Isaiah 54’s extra children and Galatians 4’s free-woman household land here as the church making room.</p>
+      </article>
+      <article data-group="ncc" data-id="Q22">
+        <div class="meta"><span class="id">Q22</span></div>
+        <h3>Q. Why must the Redeemer be truly human?</h3>
+        <p class="beat">A. That in human nature he might on our behalf perfectly obey the whole law and suffer the punishment for human sin; and also that he might sympathize with our weaknesses.</p>
+        <p><strong>Fit:</strong> John 1:14 alternate — the Word tents in true flesh, not a visitation from a distance.</p>
+      </article>
+      <article class="approved" data-group="ncc" data-id="Q52" data-approved="1">
+        <div class="meta"><span class="id">Q52</span></div>
+        <h3>Q. What hope does everlasting life hold for us?</h3>
+        <p class="beat">A. It reminds us that this present fallen world is not all there is; soon we will live with and enjoy God forever in the new city, in the new heaven and the new earth, where we will be fully and forever freed from all sin and will inhabit renewed, resurrection bodies in a renewed, restored creation.</p>
+        <p><strong>Fit:</strong> Ties the earthly tent (2 Cor. 5) and Hebrews 11’s looking-for-a-city to Revelation 21’s dwelling of God with man.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    Generated stack labels: <strong>Generated · original · comic-book</strong>; these do not copy Bible Project artwork. Full research: <code>context/tent-biblical-report.md</code>. Coloring and Letter sheets come only after approval.
+  </footer>
+
+  <script>
+    const limits={verse:1,story:4,stack:4,ncc:1}, mins={verse:1,story:4,stack:3,ncc:1};
+    const selected={verse:new Set(),story:new Set(),stack:new Set(),ncc:new Set()};
+    function render(){
+      document.querySelectorAll('article[data-group]').forEach(a=>a.classList.toggle('selected',selected[a.dataset.group].has(a.dataset.id)));
+      const parts=[];
+      if(selected.verse.size)parts.push('verse '+[...selected.verse].join(' '));
+      if(selected.story.size)parts.push('stories '+[...selected.story].join(' '));
+      if(selected.stack.size)parts.push('stack '+[...selected.stack].join(' '));
+      if(selected.ncc.size)parts.push('ncc '+[...selected.ncc].join(' '));
+      document.getElementById('line').textContent=parts.length?'APPROVE PACK — '+parts.join(' · '):'—';
+    }
+    document.querySelectorAll('article[data-group]').forEach(a=>a.addEventListener('click',()=>{
+      const g=a.dataset.group,id=a.dataset.id,set=selected[g];
+      if(limits[g]===1){set.clear();set.add(id);}
+      else if(set.has(id))set.delete(id);
+      else{if(set.size>=limits[g]){alert('Pick up to '+limits[g]+' for '+g);return;}set.add(id);}
+      render();
+    }));
+    document.getElementById('useRec').onclick=()=>{
+      Object.keys(selected).forEach(g=>selected[g].clear());
+      const approved=document.querySelectorAll('article[data-approved="1"]');
+      const defaults=approved.length?approved:document.querySelectorAll('article[data-rec="1"]');
+      defaults.forEach(a=>{const g=a.dataset.group;if(selected[g].size<limits[g])selected[g].add(a.dataset.id);});
+      render();
+    };
+    document.getElementById('copy').onclick=async()=>{
+      for(const g of Object.keys(mins)){if(selected[g].size<mins[g]){alert('Need at least '+mins[g]+' '+g+' pick(s).');return;}}
+      const text=document.getElementById('line').textContent;
+      try{await navigator.clipboard.writeText(text);alert('Copied:\n'+text);}catch{prompt('Copy this:',text);}
+    };
+    document.getElementById('useRec').click();
+  </script>
+</body>
+</html>

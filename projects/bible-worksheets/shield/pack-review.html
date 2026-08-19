@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shield — Pack review</title>
+  <style>
+    :root { --bg:#f3efe6; --ink:#2a2118; --muted:#6b5c4c; --card:#fffdf8; --line:#d4c4ae; --rec:#3d5a3a; --pick:#2f5d8c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Segoe UI","Iowan Old Style",Georgia,serif; color:var(--ink); background:radial-gradient(ellipse at top,#fff9ef 0%,var(--bg) 55%); line-height:1.35; }
+    .bar { position:sticky; top:0; z-index:20; display:flex; flex-wrap:wrap; gap:.55rem; align-items:center; padding:.65rem 1.25rem; background:#2a241e; color:#f4eee5; font-family:"Segoe UI",system-ui,sans-serif; font-size:.88rem; }
+    .bar code { background:#3a322a; padding:.2rem .45rem; border-radius:4px; font-size:.82rem; }
+    button { border:0; border-radius:4px; padding:.35rem .7rem; cursor:pointer; background:#9a6a4e; color:#fff; font:inherit; }
+    button.secondary { background:#564c42; }
+    header,section { max-width:1100px; margin:0 auto; padding:1.1rem 1.4rem .4rem; }
+    h1 { font-size:1.55rem; margin:0 0 .35rem; }
+    h2 { font-size:1.05rem; margin:1.25rem 0 .55rem; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
+    .lede { color:var(--muted); max-width:52rem; margin:0 0 .75rem; }
+    .how,.gap { background:var(--card); border:1px solid var(--line); border-radius:6px; padding:.7rem .9rem; max-width:52rem; font-size:.92rem; margin:.5rem 0; }
+    .gap { border-left:4px solid #b18448; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:.85rem; padding:.4rem 0 .8rem; }
+    .grid.wide { grid-template-columns:1fr; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.75rem .85rem; cursor:pointer; display:grid; gap:.3rem; }
+    article.selected { border-color:var(--pick); box-shadow:0 0 0 2px var(--pick); }
+    article.recommended { border-color:#9cbc96; }
+    .thumb { aspect-ratio:3/4; background:#ebe4d7; border-radius:4px; overflow:hidden; margin:-.15rem -.15rem .2rem; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    #story-grid .thumb { aspect-ratio:16/10; }
+    .meta { display:flex; flex-wrap:wrap; gap:.3rem; align-items:center; }
+    .id { font-weight:700; font-family:ui-monospace,Consolas,monospace; }
+    .tag { font-size:.68rem; text-transform:uppercase; letter-spacing:.05em; border:1px solid var(--line); border-radius:999px; padding:.1rem .4rem; color:var(--muted); }
+    .tag.rec { color:var(--rec); border-color:#9cbc96; }
+    .tag.gen { color:var(--pick); border-color:#a8c0d8; }
+    h3 { font-size:1rem; margin:0; }
+    p { margin:0; font-size:.88rem; color:var(--muted); }
+    .beat { color:var(--ink); font-size:.9rem; }
+    footer { max-width:1100px; margin:0 auto 2rem; padding:.5rem 1.4rem 2rem; color:var(--muted); font-size:.88rem; }
+    .approved-direction { background:#eef4ec; border:2px solid #789174; border-radius:8px; padding:.8rem 1rem; max-width:52rem; margin:.7rem 0; }
+    article.approved { border-color:#557451; box-shadow:0 0 0 2px #789174; }
+    article[data-approved="1"]::before { content:"APPROVED"; display:inline-block; width:max-content; color:#31522e; border:1px solid #789174; border-radius:999px; padding:.08rem .4rem; font:700 .68rem/1.3 "Segoe UI",sans-serif; letter-spacing:.06em; }
+    @media print {
+      @page { size:Letter; margin:.45in; }
+      body { background:#fff; font-size:10pt; }
+      .bar,.interactive-help { display:none !important; }
+      header,section,footer { max-width:none; padding-left:0; padding-right:0; }
+      article,.how,.gap,.approved-direction { break-inside:avoid; box-shadow:none !important; }
+      .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .grid.wide { grid-template-columns:1fr; }
+      .thumb, .thumb img, article img { display:none !important; }
+      .print-images-note { display:block !important; }
+    }
+    .print-images-note { display:none; }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <strong>Pack review</strong>
+    <span>Line: <code id="line">—</code></span>
+    <button type="button" id="copy">Copy APPROVE line</button>
+    <button type="button" class="secondary" id="useRec">Use approved</button>
+  </div>
+  <header>
+    <h1>Shield — pack review</h1>
+    <p class="lede">God first names himself Abram’s shield, David trusts him rather than armor, the Lord defends his city, and faith receives Christ as our sure defense.</p>
+    <div class="how interactive-help">Click cards to select one verse, exactly four stories, 3–4 stack images, and one catechism. Then copy the approval line into chat.</div>
+    <div class="gap"><strong>Library note:</strong> staged under <code>psalm-metaphors</code>. Local Psalm/Spurgeon sources are available, but the feed has no extracted signal entries or staged historic images. These twelve stack/story plates are newly generated original art.</div>
+    <div class="approved-direction">
+      <strong>Approved week direction</strong>
+      <p class="beat"><code>APPROVE PACK — verse V8 · stories C1 C5 C7 C2 · stack G9 G8 G2 G3 · ncc Q30</code></p>
+      <p><strong>Arc:</strong> God’s proven word and covenant promise → unseen surrounding presence → his presence standing between his people and danger → trust in the LORD rather than visible armor.</p>
+    </div>
+    <p class="print-images-note"><strong>Teacher-guide print:</strong> images are omitted here. Use the student sheet for the stack and coloring page.</p>
+  </header>
+
+  <section id="research-report">
+    <h2>Shield in the Bible — usage, symbolism, and typology</h2>
+    <div class="how">
+      <h3>Teacher summary</h3>
+      <p class="beat">A biblical shield is a real defensive weapon, but the controlling metaphor is personal and covenantal: <strong>God himself is the shield of those who take refuge in him.</strong> His word proves true (Prov. 30:5), his presence stands between his people and danger (Ex. 14), and faith receives and rests on him (Eph. 6:16). Shield does not promise a trouble-free life—Abram waits, David enters the valley, Israel walks through the sea, and believers face flaming darts—but it declares God’s faithful presence and keeping.</p>
+    </div>
+    <div class="grid wide">
+      <article>
+        <h3>1. Realia and biblical words</h3>
+        <p><strong>Easton and ISBE:</strong> shields varied in size, form, and material. Construction was commonly wood or wickerwork covered with leather; Ezekiel 39:9 assumes combustible parts. Shields were “anointed” (2 Sam. 1:21; Isa. 21:5), but the dictionaries differ on why: Easton proposes preservation and deflection, while ISBE considers weatherproofing possible but prefers a warrior/weapon consecration setting. The exact purpose should not be overstated.</p>
+        <p><strong>Hebrew <em>māgēn</em> (H4043):</strong> smaller shield/buckler; figuratively a protector—the frequent word behind God as shield.</p>
+        <p><strong>Hebrew <em>tsinnâ</em> (H6793):</strong> large shield/target. <strong><em>Sōḥērāh</em> (H5507):</strong> something surrounding a person, hence shield/buckler in Psalm 91:4.</p>
+        <p><strong>Greek <em>thyreos</em> (G2375):</strong> a large, door-shaped shield—the word in Ephesians 6:16. Paul’s image is substantial defense against flaming missiles, not a decorative emblem. The popular claim that Roman shields were always soaked in water before battle is not established by the consulted local sources.</p>
+        <p><strong>Dictionary sources:</strong> ISBE (1915), “Armor, Arms,” IV.1, printed pp. 252–253; Easton, “Shield,” printed p. 624 (PDF p. 657); Open Scriptures Strong’s H4043, H6793, H5507, G2375.</p>
+      </article>
+      <article>
+        <h3>2. Scripture’s main usage clusters</h3>
+        <p><strong>Literal warfare:</strong> shields accompany spears, bows, helmets, armies, and city defense. Goliath’s shield-bearer magnifies the contrast when David comes “in the name of the LORD” (1 Sam. 17:7, 41, 45).</p>
+        <p><strong>Royal display and rule:</strong> gold shields signify victory and glory (2 Sam. 8:7; 1 Kgs. 10:16–17). Their loss and bronze replacement under Rehoboam expose the fragility of created security (1 Kgs. 14:25–28; 2 Chr. 12:9–12). Princes or kings can be called shields because rulers defend their people (Ps. 47:9; 89:18), while remaining subordinate to God. Psalm 84:9 is best handled separately: it calls God the shield and asks him to look upon his anointed.</p>
+        <p><strong>God himself:</strong> beginning with “I am your shield” (Gen. 15:1), the image gathers covenant presence, refuge, deliverance, favor, faithfulness, salvation, and help (Deut. 33:29; 2 Sam. 22; Pss. 3:3; 18; 28:7; 33:20; 84:11; 115:9–11; 119:114; 144:2; Prov. 2:7; 30:5).</p>
+        <p><strong>Wings and surrounding refuge:</strong> Psalm 91:4 layers pinions, wings, refuge, faithfulness, shield, and buckler. Ruth 2:12 supplies a lived narrative of refuge beneath the LORD’s wings.</p>
+        <p><strong>Topical source:</strong> Nave’s “SHIELD” entry groups shield/buckler/target, physical uses, materials, and figurative texts; canonical occurrences were checked in the local public-domain KJV corpus.</p>
+      </article>
+      <article>
+        <h3>3. Typology and theological controls</h3>
+        <p><strong>Covenant self-gift:</strong> God says “I am your shield” before Abram receives offspring or land. The deepest gift is God himself, not merely insulation from hardship.</p>
+        <p><strong>Refuge is relational:</strong> Psalms and Proverbs pair shield with trust, waiting, refuge, hope, God’s word, and upright walking. The image calls for dependence, never superstition.</p>
+        <p><strong>True and lesser shields:</strong> armor and royal shields are legitimate tools, but cannot bear the weight of ultimate trust. David’s rejected armor, Rehoboam’s lost gold shields, and Psalm 33’s contrast between military strength and the LORD expose misplaced confidence. The proper contrast is not “tools bad, passivity good,” but <em>means are finite and subordinate; trust belongs to the LORD</em>.</p>
+        <p><strong>Faith has an object:</strong> believers stand “in the Lord and in the strength of his might.” Faith shields because it receives God’s promises and rests on Christ—not because our feelings are strong. This is why NCC 30 fits.</p>
+        <p><strong>Christological limit:</strong> the New Testament directly calls <em>faith</em>, not Jesus, the shield in Ephesians 6:16. Christ keeps his people and is the object of faith; John 18:8–9 can be taught as a thematic echo of self-giving protection, not as a direct lexical shield prophecy.</p>
+      </article>
+      <article>
+        <h3>4. Approved teaching arc</h3>
+        <p><strong>Promise → unseen presence → deliverance → practiced trust.</strong></p>
+        <p><strong>C1 · Genesis 15:</strong> God gives himself as Abram’s shield; Abram believes.</p>
+        <p><strong>C5 · 2 Kings 6:</strong> frightened sight is opened to God’s surrounding host.</p>
+        <p><strong>C7 · Exodus 14:</strong> God’s presence stands between his people and the danger they cannot defeat.</p>
+        <p><strong>C2 · 1 Samuel 17:</strong> David refuses misplaced confidence in armor and comes in the LORD’s name.</p>
+        <p><strong>V8 · Proverbs 30:5</strong> gives the interpretive center: God’s word proves true, and he is a shield to those who take refuge in him.</p>
+      </article>
+      <article>
+        <h3>Sources and limits</h3>
+        <p>Local sources used: ISBE (1915) “Armor, Arms,” Easton’s “Shield,” Open Scriptures Strong’s dictionary, Nave’s “SHIELD,” and public-domain KJV/ASV corpora. Full source notes: <code>context/shield-biblical-report.md</code>.</p>
+        <p>Terminology and occurrence totals vary by translation; Smith’s local scan has unusable OCR; local ISBE filenames do not always match the volume named inside. The catalog lists modern imagery dictionaries, but their text is not local, so they are not quoted. Commentary must remain distinct from dictionary definition and Scripture.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>1. Foundational verse</h2>
+    <div class="grid wide" id="verse-grid">
+      <article class="recommended" data-group="verse" data-id="V1" data-rec="1">
+        <div class="meta"><span class="id">V1</span><span class="tag rec">Recommended</span></div>
+        <h3>Psalm 3:3 · ESV</h3>
+        <p class="beat">“But you, O LORD, are a shield about me, my glory, and the lifter of my head.”</p>
+      </article>
+      <article data-group="verse" data-id="V2">
+        <div class="meta"><span class="id">V2</span></div>
+        <h3>Psalm 28:7 · ESV</h3>
+        <p class="beat">“The LORD is my strength and my shield; in him my heart trusts, and I am helped.”</p>
+      </article>
+      <article data-group="verse" data-id="V3">
+        <div class="meta"><span class="id">V3</span></div>
+        <h3>Ephesians 6:16 · ESV (short copywork)</h3>
+        <p class="beat">“In all circumstances take up the shield of faith.”</p>
+      </article>
+      <article data-group="verse" data-id="V4">
+        <div class="meta"><span class="id">V4</span></div>
+        <h3>Genesis 15:1 · ESV</h3>
+        <p class="beat">“Fear not, Abram, I am your shield; your reward shall be very great.”</p>
+      </article>
+      <article data-group="verse" data-id="V5">
+        <div class="meta"><span class="id">V5</span></div>
+        <h3>Psalm 18:30 · ESV</h3>
+        <p class="beat">“This God—his way is perfect; the word of the LORD proves true; he is a shield for all those who take refuge in him.”</p>
+      </article>
+      <article data-group="verse" data-id="V6">
+        <div class="meta"><span class="id">V6</span></div>
+        <h3>Psalm 84:11 · ESV</h3>
+        <p class="beat">“For the LORD God is a sun and shield; the LORD bestows favor and honor.”</p>
+      </article>
+      <article data-group="verse" data-id="V7">
+        <div class="meta"><span class="id">V7</span></div>
+        <h3>Psalm 91:4 · ESV</h3>
+        <p class="beat">“He will cover you with his pinions, and under his wings you will find refuge; his faithfulness is a shield and buckler.”</p>
+      </article>
+      <article class="approved" data-group="verse" data-id="V8" data-approved="1">
+        <div class="meta"><span class="id">V8</span></div>
+        <h3>Proverbs 30:5 · ESV</h3>
+        <p class="beat">“Every word of God proves true; he is a shield to those who take refuge in him.”</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Stories — pick 4</h2>
+    <div class="grid" id="story-grid">
+      <article class="recommended approved" data-group="story" data-id="C1" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g2-abraham-shield.png" alt="Abram beneath stars and a shield of light" /></div>
+        <div class="meta"><span class="id">C1</span><span class="tag rec">Recommended</span><span class="tag gen">Image G2</span></div>
+        <h3>“I Am Your Shield” — Genesis 15:1–6</h3>
+        <p class="beat"><strong>Beat:</strong> Abram is afraid and childless; God comes in a vision and promises himself, descendants, and reward.</p>
+        <p><strong>Cast:</strong> God, Abram · <strong>Turn:</strong> Abram believes the LORD, and it is counted to him as righteousness.</p>
+        <p><strong>Panel:</strong> Abram outside his tents beneath innumerable stars; a broad shield-shaped light stands between him and the dark horizon.</p>
+        <p><strong>Assigned image:</strong> G2 · Abram and the shield of promise.</p>
+        <p><strong>Connection:</strong> God’s protection is personal: before he gives the promise, he gives himself.</p>
+        <p><strong>Coloring:</strong> Quiet night, clear stars, no visible depiction of God.</p>
+      </article>
+      <article class="recommended approved" data-group="story" data-id="C2" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g3-david-goliath-shield.png" alt="David walks toward Goliath and his shield-bearer" /></div>
+        <div class="meta"><span class="id">C2</span><span class="tag rec">Recommended</span><span class="tag gen">Image G3</span></div>
+        <h3>David Refuses Saul’s Armor — 1 Samuel 17:31–50</h3>
+        <p class="beat"><strong>Beat:</strong> Saul dresses David in armor, but David removes it and goes with sling and stones in the LORD’s name.</p>
+        <p><strong>Cast:</strong> David, Saul, Goliath, Israel · <strong>Turn:</strong> David declares that the battle belongs to the LORD.</p>
+        <p><strong>Panel:</strong> David sets Saul’s armor aside and walks toward the valley with sling; Goliath and shield-bearer remain distant.</p>
+        <p><strong>Assigned image:</strong> G3 · Visible armor contrasted with trust.</p>
+        <p><strong>Connection:</strong> A visible shield cannot replace trust in the living God.</p>
+        <p><strong>Coloring:</strong> Before the battle; no impact, injury, or gore.</p>
+      </article>
+      <article data-group="story" data-id="C3">
+        <div class="thumb"><img src="library-images/candidates/generated/g7-david-sings-shield.png" alt="David sings before shield, rock, lamp, and fortress symbols" /></div>
+        <div class="meta"><span class="id">C3</span><span class="tag gen">Image G7</span></div>
+        <h3>David Sings of His Shield — 2 Samuel 22:1–7, 29–37</h3>
+        <p class="beat"><strong>Beat:</strong> After rescue from enemies and Saul, David remembers distress, calls to God, and sings of the LORD as rock, fortress, and shield.</p>
+        <p><strong>Cast:</strong> David, the LORD · <strong>Turn:</strong> Fear becomes praise as David recounts God’s perfect way.</p>
+        <p><strong>Panel:</strong> Older David sets his sword down and sings while layered rock, lamp, fortress, and shield symbols frame him.</p>
+        <p><strong>Assigned image:</strong> G7 · David’s shield-song after rescue.</p>
+        <p><strong>Connection:</strong> We learn God’s protection by remembering and praising what he has done.</p>
+        <p><strong>Coloring:</strong> Thanksgiving scene, not combat.</p>
+      </article>
+      <article class="recommended" data-group="story" data-id="C4" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g4-city-under-shield.png" alt="Jerusalem held within a shield of light" /></div>
+        <div class="meta"><span class="id">C4</span><span class="tag rec">Recommended</span><span class="tag gen">Image G4</span></div>
+        <h3>The LORD Defends Jerusalem — 2 Kings 19:14–20, 32–37</h3>
+        <p class="beat"><strong>Beat:</strong> Hezekiah spreads the threatening letter before the LORD and prays; Isaiah announces that the enemy will not enter the city.</p>
+        <p><strong>Cast:</strong> Hezekiah, Isaiah, Sennacherib’s army, the LORD · <strong>Turn:</strong> God acts, and the Assyrian king returns home.</p>
+        <p><strong>Panel:</strong> Hezekiah kneels by the opened letter; Jerusalem glows within a shield-shaped arc while the army camps outside.</p>
+        <p><strong>Assigned image:</strong> G4 · The defended city.</p>
+        <p><strong>Connection:</strong> God’s people bring threats to him in prayer; the city is defended for his name’s sake.</p>
+        <p><strong>Coloring:</strong> Show prayer and deliverance; no bodies or battle violence.</p>
+      </article>
+      <article class="approved" data-group="story" data-id="C5" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g8-elisha-heavenly-shield.png" alt="Elisha and servant see fiery chariots encircling the hills" /></div>
+        <div class="meta"><span class="id">C5</span><span class="tag gen">Image G8</span></div>
+        <h3>Those With Us Are More — 2 Kings 6:8–23</h3>
+        <p class="beat"><strong>Beat:</strong> An enemy army surrounds Dothan; Elisha prays, and his servant sees the mountain full of horses and chariots of fire.</p>
+        <p><strong>Cast:</strong> Elisha, servant, Syrian army, heavenly host · <strong>Turn:</strong> Opened eyes reveal God’s unseen protection.</p>
+        <p><strong>Panel:</strong> Elisha and servant on the wall; fiery chariots form a protective ring on the hills beyond the besieging army.</p>
+        <p><strong>Assigned image:</strong> G8 · The unseen host encircles Dothan.</p>
+        <p><strong>Connection:</strong> God’s defense can be real before frightened eyes can see it.</p>
+        <p><strong>Coloring:</strong> Awe and light; the blinded army is led safely and fed.</p>
+      </article>
+      <article class="recommended" data-group="story" data-id="C6" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g5-shield-of-faith.png" alt="A shield extinguishes fiery arrows" /></div>
+        <div class="meta"><span class="id">C6</span><span class="tag rec">Recommended</span><span class="tag gen">Image G5</span></div>
+        <h3>Take Up the Shield of Faith — Ephesians 6:10–18</h3>
+        <p class="beat"><strong>Beat:</strong> Paul teaches believers to stand in the Lord’s strength, clothed in God’s armor and praying at all times.</p>
+        <p><strong>Cast:</strong> Paul, the Ephesian church, believers · <strong>Turn:</strong> Flaming darts are answered not by self-confidence but by faith in God.</p>
+        <p><strong>Panel:</strong> A believer kneels behind a tall shield while stylized fiery arrows go dark against it; belt, breastplate, shoes, helmet, and sword remain visible.</p>
+        <p><strong>Assigned image:</strong> G5 · Faith extinguishes flaming missiles.</p>
+        <p><strong>Connection:</strong> Faith is not the strength of our feelings; it receives and rests on the faithful Christ.</p>
+        <p><strong>Coloring:</strong> Symbolic armor lesson, no attacker shown striking a person.</p>
+      </article>
+      <article class="approved" data-group="story" data-id="C7" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g9-red-sea-cloud-shield.png" alt="The pillar of cloud shields families crossing the sea" /></div>
+        <div class="meta"><span class="id">C7</span><span class="tag gen">Image G9</span></div>
+        <h3>The LORD Will Fight for You — Exodus 14:10–31</h3>
+        <p class="beat"><strong>Beat:</strong> Israel is trapped between Pharaoh’s army and the sea; Moses calls them to stand firm and see salvation.</p>
+        <p><strong>Cast:</strong> Moses, Israel, Pharaoh’s army, the LORD · <strong>Turn:</strong> God’s cloud moves behind Israel, the sea opens, and the people cross.</p>
+        <p><strong>Panel:</strong> Families walk between walls of water while the pillar of cloud forms a protective barrier behind them.</p>
+        <p><strong>Assigned image:</strong> G9 · The cloud stands between Israel and danger.</p>
+        <p><strong>Connection:</strong> The LORD stands between his people and the danger they cannot defeat.</p>
+        <p><strong>Coloring:</strong> Focus on crossing and protective cloud; no drowned figures.</p>
+      </article>
+      <article data-group="story" data-id="C8">
+        <div class="thumb"><img src="library-images/candidates/generated/g10-ruth-under-wings.png" alt="Ruth gathers grain under shield-shaped wings" /></div>
+        <div class="meta"><span class="id">C8</span><span class="tag gen">Image G10</span></div>
+        <h3>Refuge Under His Wings — Ruth 2:8–12</h3>
+        <p class="beat"><strong>Beat:</strong> Ruth leaves her people to care for Naomi; Boaz welcomes and protects her among his reapers.</p>
+        <p><strong>Cast:</strong> Ruth, Boaz, Naomi, reapers · <strong>Turn:</strong> Boaz blesses Ruth for seeking refuge under the LORD’s wings.</p>
+        <p><strong>Panel:</strong> Ruth gathers grain while broad wings form a shield-shaped shelter above her; Boaz welcomes her from a respectful distance.</p>
+        <p><strong>Assigned image:</strong> G10 · Wings become shelter and covenant welcome.</p>
+        <p><strong>Connection:</strong> Psalm 91’s wings-and-shield image is lived out through God’s providence and the kindness of his people.</p>
+        <p><strong>Coloring:</strong> Peaceful harvest, generosity, and safety.</p>
+      </article>
+      <article data-group="story" data-id="C9">
+        <div class="thumb"><img src="library-images/candidates/generated/g11-gold-shields-lost.png" alt="Gold shields leave a palace while bronze replacements remain" /></div>
+        <div class="meta"><span class="id">C9</span><span class="tag gen">Image G11</span></div>
+        <h3>The Gold Shields Are Carried Away — 1 Kings 10:16–17; 14:21–28</h3>
+        <p class="beat"><strong>Beat:</strong> Solomon displays ceremonial gold shields; after Rehoboam forsakes the LORD, Egypt carries the treasures away and bronze shields replace them.</p>
+        <p><strong>Cast:</strong> Solomon, Rehoboam, Shishak, palace guard · <strong>Turn:</strong> Glorious defenses made by kings prove temporary and replaceable.</p>
+        <p><strong>Panel:</strong> Gold shields are carried through a palace gate while bronze replacements hang behind a humbled king.</p>
+        <p><strong>Assigned image:</strong> G11 · The fragile glory of created defenses.</p>
+        <p><strong>Connection:</strong> A beautiful shield can symbolize royal glory, but only the LORD is an unfailing shield.</p>
+        <p><strong>Coloring:</strong> Loss and humility without depicting the invasion violently.</p>
+      </article>
+      <article data-group="story" data-id="C10">
+        <div class="thumb"><img src="library-images/candidates/generated/g12-jesus-protects-disciples.png" alt="Jesus steps between arresting officers and his disciples" /></div>
+        <div class="meta"><span class="id">C10</span><span class="tag gen">Image G12</span></div>
+        <h3>“Let These Men Go” — John 18:1–9</h3>
+        <p class="beat"><strong>Beat:</strong> Jesus knowingly meets the arresting party, identifies himself, and requires that his disciples be allowed to leave.</p>
+        <p><strong>Cast:</strong> Jesus, disciples, Judas, soldiers and officers · <strong>Turn:</strong> Jesus gives himself into their hands while standing between danger and his own.</p>
+        <p><strong>Panel:</strong> Jesus steps forward with disciples behind him and the arresting party before him, forming a protective boundary without a literal shield.</p>
+        <p><strong>Assigned image:</strong> G12 · The Shepherd protects his people by giving himself.</p>
+        <p><strong>Connection:</strong> This is a thematic fulfillment, not a lexical “shield” text: Christ’s self-giving protection reveals the personal refuge anticipated by the motif.</p>
+        <p><strong>Coloring:</strong> Reverent standoff; no striking, wounds, or weapons in motion.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Image stack — pick 3–4</h2>
+    <div class="grid" id="stack-grid">
+      <article class="recommended" data-group="stack" data-id="G1" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g1-shield-around-me.png" alt="A worshiper protected by a luminous round shield" /></div>
+        <div class="meta"><span class="id">G1</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>A shield about me</h3><p>Best main-motif card; clear at tiny size and directly serves Psalm 3:3.</p>
+      </article>
+      <article class="recommended approved" data-group="stack" data-id="G2" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g2-abraham-shield.png" alt="Abram under stars beneath a shield of light" /></div>
+        <div class="meta"><span class="id">G2</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>Abram: “I am your shield”</h3><p>Promise and protection in one simple night silhouette.</p>
+      </article>
+      <article class="recommended approved" data-group="stack" data-id="G3" data-rec="1" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g3-david-goliath-shield.png" alt="David approaches Goliath and his shield-bearer" /></div>
+        <div class="meta"><span class="id">G3</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>David trusts the LORD</h3><p>Strong contrast between visible armor and faith in God.</p>
+      </article>
+      <article data-group="stack" data-id="G4">
+        <div class="thumb"><img src="library-images/candidates/generated/g4-city-under-shield.png" alt="Jerusalem held within a shield of light" /></div>
+        <div class="meta"><span class="id">G4</span><span class="tag gen">Generated · original</span></div>
+        <h3>The defended city</h3><p>Most literal protection composition; slightly busier at small size.</p>
+      </article>
+      <article class="recommended" data-group="stack" data-id="G5" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g5-shield-of-faith.png" alt="A shield extinguishes fiery arrows" /></div>
+        <div class="meta"><span class="id">G5</span><span class="tag gen">Generated · original</span><span class="tag rec">Recommended</span></div>
+        <h3>The shield of faith</h3><p>Iconic, high-contrast New Testament fulfillment card.</p>
+      </article>
+      <article data-group="stack" data-id="G6">
+        <div class="thumb"><img src="library-images/candidates/generated/g6-wings-and-shield.png" alt="Protective wings form a shield around a family" /></div>
+        <div class="meta"><span class="id">G6</span><span class="tag gen">Generated · original</span></div>
+        <h3>Under his wings</h3><p>Psalm 91 joins the shield image to refuge for the whole household.</p>
+      </article>
+      <article data-group="stack" data-id="G7">
+        <div class="thumb"><img src="library-images/candidates/generated/g7-david-sings-shield.png" alt="David sings of God as shield" /></div>
+        <div class="meta"><span class="id">G7</span><span class="tag gen">Generated · original</span></div>
+        <h3>David’s shield-song</h3><p>Connects the shield to rock, lamp, fortress, memory, and praise.</p>
+      </article>
+      <article class="approved" data-group="stack" data-id="G8" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g8-elisha-heavenly-shield.png" alt="Heavenly chariots encircle Dothan" /></div>
+        <div class="meta"><span class="id">G8</span><span class="tag gen">Generated · original</span></div>
+        <h3>The unseen defense</h3><p>Protective encirclement rather than a literal shield.</p>
+      </article>
+      <article class="approved" data-group="stack" data-id="G9" data-approved="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g9-red-sea-cloud-shield.png" alt="Cloud shields Israel at the sea" /></div>
+        <div class="meta"><span class="id">G9</span><span class="tag gen">Generated · original</span></div>
+        <h3>The cloud between</h3><p>Shows God placing himself between his people and danger.</p>
+      </article>
+      <article data-group="stack" data-id="G10">
+        <div class="thumb"><img src="library-images/candidates/generated/g10-ruth-under-wings.png" alt="Ruth shelters under wings" /></div>
+        <div class="meta"><span class="id">G10</span><span class="tag gen">Generated · original</span></div>
+        <h3>Refuge under his wings</h3><p>Links Ruth’s story to Psalm 91’s wings, refuge, shield, and faithfulness.</p>
+      </article>
+      <article data-group="stack" data-id="G11">
+        <div class="thumb"><img src="library-images/candidates/generated/g11-gold-shields-lost.png" alt="Royal gold shields are lost" /></div>
+        <div class="meta"><span class="id">G11</span><span class="tag gen">Generated · original</span></div>
+        <h3>Gold shields cannot last</h3><p>A cautionary card contrasting royal display with God’s enduring defense.</p>
+      </article>
+      <article data-group="stack" data-id="G12">
+        <div class="thumb"><img src="library-images/candidates/generated/g12-jesus-protects-disciples.png" alt="Jesus protects his disciples at arrest" /></div>
+        <div class="meta"><span class="id">G12</span><span class="tag gen">Generated · original</span></div>
+        <h3>Christ stands for his own</h3><p>Careful thematic fulfillment: self-giving protection, not a direct shield label.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Catechism</h2>
+    <div class="grid wide" id="ncc-grid">
+      <article class="recommended approved" data-group="ncc" data-id="Q30" data-rec="1" data-approved="1">
+        <div class="meta"><span class="id">Q30</span><span class="tag rec">Recommended</span></div>
+        <h3>Q. What is faith in Jesus Christ?</h3>
+        <p class="beat">A. Faith in Jesus Christ is acknowledging the truth of everything that God has revealed in his Word, trusting in him, and also receiving and resting on him alone for salvation as he is offered to us in the gospel.</p>
+        <p><strong>Fit:</strong> Gives precise meaning to the “shield of faith”: resting on Christ, not confidence in ourselves.</p>
+      </article>
+      <article data-group="ncc" data-id="Q1">
+        <div class="meta"><span class="id">Q1</span></div>
+        <h3>Q. What is our only hope in life and death?</h3>
+        <p class="beat">A. That we are not our own but belong, body and soul, both in life and death, to God and to our Savior Jesus Christ.</p>
+        <p><strong>Fit:</strong> Frames God himself as our hope and refuge, matching Genesis 15:1 and Psalm 3:3.</p>
+      </article>
+      <article data-group="ncc" data-id="Q17">
+        <div class="meta"><span class="id">Q17</span></div>
+        <h3>Q. What is idolatry?</h3>
+        <p class="beat">A. Idolatry is trusting in created things rather than the Creator for our hope and happiness, significance and security.</p>
+        <p><strong>Fit:</strong> Contrasts Saul’s armor and every visible security with trust in the Creator.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>Generated stack labels: <strong>Generated · original · Bible-education illustration</strong>; these do not copy Bible Project artwork. Coloring and final Letter sheets come only after approval.</footer>
+
+  <script>
+    const limits={verse:1,story:4,stack:4,ncc:1}, mins={verse:1,story:4,stack:3,ncc:1};
+    const selected={verse:new Set(),story:new Set(),stack:new Set(),ncc:new Set()};
+    function render(){
+      document.querySelectorAll('article[data-group]').forEach(a=>a.classList.toggle('selected',selected[a.dataset.group].has(a.dataset.id)));
+      const parts=[];
+      if(selected.verse.size)parts.push('verse '+[...selected.verse].join(' '));
+      if(selected.story.size)parts.push('stories '+[...selected.story].join(' '));
+      if(selected.stack.size)parts.push('stack '+[...selected.stack].join(' '));
+      if(selected.ncc.size)parts.push('ncc '+[...selected.ncc].join(' '));
+      document.getElementById('line').textContent=parts.length?'APPROVE PACK — '+parts.join(' · '):'—';
+    }
+    document.querySelectorAll('article[data-group]').forEach(a=>a.addEventListener('click',()=>{
+      const g=a.dataset.group,id=a.dataset.id,set=selected[g];
+      if(limits[g]===1){set.clear();set.add(id);}
+      else if(set.has(id))set.delete(id);
+      else{if(set.size>=limits[g]){alert('Pick up to '+limits[g]+' for '+g);return;}set.add(id);}
+      render();
+    }));
+    document.getElementById('useRec').onclick=()=>{
+      Object.keys(selected).forEach(g=>selected[g].clear());
+      const approved=document.querySelectorAll('article[data-approved="1"]');
+      const defaults=approved.length?approved:document.querySelectorAll('article[data-rec="1"]');
+      defaults.forEach(a=>{const g=a.dataset.group;if(selected[g].size<limits[g])selected[g].add(a.dataset.id);});
+      render();
+    };
+    document.getElementById('copy').onclick=async()=>{
+      for(const g of Object.keys(mins)){if(selected[g].size<mins[g]){alert('Need at least '+mins[g]+' '+g+' pick(s).');return;}}
+      const text=document.getElementById('line').textContent;
+      try{await navigator.clipboard.writeText(text);alert('Copied:\n'+text);}catch{prompt('Copy this:',text);}
+    };
+    document.getElementById('useRec').click();
+  </script>
+</body>
+</html>

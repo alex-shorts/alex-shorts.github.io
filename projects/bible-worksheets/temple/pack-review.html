@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple — Pack review</title>
+  <style>
+    :root {
+      --bg: #f3efe6; --ink: #2a2118; --muted: #6b5c4c; --card: #fffdf8;
+      --line: #d4c4ae; --rec: #3d5a3a; --pick: #2f5d8c; --bad: #8a4b3a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Iowan Old Style", Georgia, serif;
+      color: var(--ink);
+      background: radial-gradient(ellipse at top, #fff9ef 0%, var(--bg) 55%), var(--bg);
+      line-height: 1.35;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 20;
+      display: flex; flex-wrap: wrap; gap: 0.55rem; align-items: center;
+      padding: 0.65rem 1.25rem; background: #2a241e; color: #f4eee5;
+      font-family: "Segoe UI", system-ui, sans-serif; font-size: 0.88rem;
+    }
+    .bar code { background: #3a322a; padding: 0.2rem 0.45rem; border-radius: 4px; font-size: 0.82rem; }
+    .bar button {
+      border: 0; border-radius: 4px; padding: 0.35rem 0.7rem; cursor: pointer;
+      background: #9a6a4e; color: #fff; font: inherit;
+    }
+    .bar button.secondary { background: #564c42; }
+    header, section { max-width: 1100px; margin: 0 auto; padding: 1.1rem 1.4rem 0.4rem; }
+    h1 { font-size: 1.55rem; margin: 0 0 0.35rem; }
+    h2 {
+      font-size: 1.05rem; margin: 1.25rem 0 0.55rem; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .lede { color: var(--muted); max-width: 48rem; margin: 0 0 0.75rem; }
+    .how {
+      background: var(--card); border: 1px solid var(--line); border-radius: 6px;
+      padding: 0.7rem 0.9rem; max-width: 48rem; font-size: 0.92rem;
+    }
+    .gap {
+      background: #f8efe6; border: 1px solid #e0c9a8; border-radius: 6px;
+      padding: 0.55rem 0.85rem; max-width: 48rem; font-size: 0.88rem; margin-top: 0.65rem;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 0.85rem; padding: 0.4rem 0 0.8rem;
+    }
+    .grid.wide { grid-template-columns: 1fr; }
+    article {
+      background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+      padding: 0.75rem 0.85rem; cursor: pointer; display: grid; gap: 0.3rem;
+    }
+    article.selected { border-color: var(--pick); box-shadow: 0 0 0 2px var(--pick); }
+    article.recommended { border-color: #9cbc96; }
+    .thumb { aspect-ratio: 1; background: #ebe4d7; border-radius: 4px; overflow: hidden; margin: -0.15rem -0.15rem 0.2rem; }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+    .id { font-weight: 700; font-family: ui-monospace, Consolas, monospace; }
+    .tag {
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em;
+      border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.4rem; color: var(--muted);
+    }
+    .tag.rec { color: var(--rec); border-color: #9cbc96; }
+    .tag.gen { color: var(--pick); border-color: #a8c0d8; }
+    h3 { font-size: 1rem; margin: 0; }
+    p { margin: 0; font-size: 0.88rem; color: var(--muted); }
+    .beat { color: var(--ink); font-size: 0.9rem; }
+    footer { max-width: 1100px; margin: 0 auto 2rem; padding: 0.5rem 1.4rem 2rem; color: var(--muted); font-size: 0.88rem; }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <strong>Pack review</strong>
+    <span>Line: <code id="line">—</code></span>
+    <button type="button" id="copy">Copy APPROVE line</button>
+    <button type="button" class="secondary" id="useRec">Use recommended</button>
+  </div>
+
+  <header>
+    <h1>Temple — pack review</h1>
+    <p class="lede">Motif <em>temple-eden-city</em> (Eden / Temple / New Jerusalem). Pick verse, four stories, 3–4 stack images, and catechism. Final worksheet HTML is not built until you approve.</p>
+    <div class="how">
+      Click cards to select. Then <strong>Copy APPROVE line</strong> and paste in chat, or reply
+      <code>APPROVE PACK</code> with edits.
+    </div>
+    <div class="gap">
+      <strong>Gap accepted by default path:</strong> no staged library images — stack is generated BP-inspired originals (G1–G8). Historic PD not proposed unless you ask.
+    </div>
+  </header>
+
+  <section>
+    <h2>1. Foundational verse</h2>
+    <div class="grid wide" id="verse-grid">
+      <article class="recommended" data-group="verse" data-id="V1" data-rec="1">
+        <div class="meta"><span class="id">V1</span><span class="tag rec">Recommended</span></div>
+        <h3>Revelation 21:3 · ESV (short)</h3>
+        <p class="beat">“Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people.”</p>
+      </article>
+      <article data-group="verse" data-id="V2">
+        <div class="meta"><span class="id">V2</span></div>
+        <h3>1 Corinthians 3:16 · ESV</h3>
+        <p class="beat">Do you not know that you are God’s temple and that God’s Spirit dwells in you?</p>
+      </article>
+      <article data-group="verse" data-id="V3">
+        <div class="meta"><span class="id">V3</span></div>
+        <h3>John 2:19 · ESV</h3>
+        <p class="beat">Jesus answered them, “Destroy this temple, and in three days I will raise it up.”</p>
+      </article>
+      <article data-group="verse" data-id="V4">
+        <div class="meta"><span class="id">V4</span></div>
+        <h3>Psalm 27:4 · ESV (short)</h3>
+        <p class="beat">One thing have I asked of the Lord… that I may dwell in the house of the Lord all the days of my life.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Stories — pick 4</h2>
+    <div class="grid" id="story-grid">
+      <article class="recommended" data-group="story" data-id="C1" data-rec="1">
+        <div class="meta"><span class="id">C1</span><span class="tag rec">Recommended</span></div>
+        <h3>Garden Temple — Genesis 2:8–15; 3:24</h3>
+        <p class="beat">Beat: God plants Eden as his first sanctuary; Adam is to serve and guard it; after the fall, cherubim bar the way.</p>
+        <p>Cast: Adam and Eve · the LORD God · cherubim at the east · Turn: Presence fills a garden — then holy exclusion.</p>
+        <p>Panel: Eden gate with tree/river medallion and cherubim guarding; garden-as-temple, not a stone building.</p>
+        <p>Connection: The story of the temple begins in a garden.</p>
+        <p>Coloring: Soft garden greens + gold presence-light; cherubim resolute, not grotesque; no gore.</p>
+      </article>
+      <article class="recommended" data-group="story" data-id="C2" data-rec="1">
+        <div class="meta"><span class="id">C2</span><span class="tag rec">Recommended</span></div>
+        <h3>Glory Fills the Tent — Exodus 40:34–38</h3>
+        <p class="beat">Beat: Moses finishes the tabernacle; the cloud covers it and the glory of the LORD fills the tent so Moses cannot enter.</p>
+        <p>Cast: Moses · Israel camped around · cloud of glory · Turn: God moves in — the tent becomes holy dwelling.</p>
+        <p>Panel: Tabernacle silhouette under a bright glory-cloud; people small at the edge.</p>
+        <p>Connection: God chooses to dwell with his people on the way.</p>
+        <p>Coloring: Gold cloud over ochre tent; keep forms simple and readable.</p>
+      </article>
+      <article data-group="story" data-id="C3">
+        <div class="meta"><span class="id">C3</span></div>
+        <h3>House for the Name — 1 Kings 8:10–13</h3>
+        <p class="beat">Beat: Solomon dedicates the temple; priests cannot stand to minister because the cloud fills the house of the LORD.</p>
+        <p>Cast: Solomon · priests · glory-cloud · Turn: The permanent house is filled — same glory, larger sanctuary.</p>
+        <p>Panel: Temple facade with pillars; glory-cloud pouring into the doorway.</p>
+        <p>Connection: From tent to house — God still comes near.</p>
+        <p>Coloring: Geometric temple + soft cloud; avoid ornate interior clutter.</p>
+      </article>
+      <article data-group="story" data-id="C4">
+        <div class="meta"><span class="id">C4</span></div>
+        <h3>River from the Threshold — Ezekiel 47:1–12</h3>
+        <p class="beat">Beat: Ezekiel sees water flowing from under the temple threshold; it deepens to a river that heals and brings life to trees.</p>
+        <p>Cast: Ezekiel · temple doorway · deepening river · trees · Turn: Life pours out from God’s house to the land.</p>
+        <p>Panel: Temple threshold with golden light; river widening toward the viewer; trees on banks.</p>
+        <p>Connection: God’s presence is meant to overflow outward.</p>
+        <p>Coloring: Teal river, soft trees; doorway as light source — no scary vision faces.</p>
+      </article>
+      <article class="recommended" data-group="story" data-id="C5" data-rec="1">
+        <div class="meta"><span class="id">C5</span><span class="tag rec">Recommended</span></div>
+        <h3>This Temple — John 2:13–22</h3>
+        <p class="beat">Beat: Jesus clears the temple courts; challenged, he says “Destroy this temple, and in three days I will raise it up” — speaking of his body.</p>
+        <p>Cast: Jesus · money-changers · disciples · Turn: The true meeting-place with God is Jesus himself.</p>
+        <p>Panel: Jesus standing before a temple silhouette, open hands; courts suggested simply behind.</p>
+        <p>Connection: The stone house points to a living temple — Christ.</p>
+        <p>Coloring: Reverent figure + temple outline; no violence or chaos spectacle.</p>
+      </article>
+      <article data-group="story" data-id="C6">
+        <div class="meta"><span class="id">C6</span></div>
+        <h3>Living Stones — Ephesians 2:19–22</h3>
+        <p class="beat">Beat: Believers are no longer strangers but members of God’s household, built on the apostles and prophets, Christ the cornerstone — a holy temple in the Lord.</p>
+        <p>Cast: Household of faith · cornerstone Christ · Spirit dwelling · Turn: People become the sanctuary.</p>
+        <p>Panel: Simplified figures forming a house outline with gold light at the center (Christ).</p>
+        <p>Connection: The temple expands into a people filled with God’s Spirit.</p>
+        <p>Coloring: Clear human silhouettes as architecture; warm center light; calm, not crowded.</p>
+      </article>
+      <article class="recommended" data-group="story" data-id="C7" data-rec="1">
+        <div class="meta"><span class="id">C7</span><span class="tag rec">Recommended</span></div>
+        <h3>No Temple There — Revelation 21:1–3, 22</h3>
+        <p class="beat">Beat: John sees new heaven and earth and the holy city; the dwelling of God is with man; he sees no temple in the city — its temple is the Lord God and the Lamb.</p>
+        <p>Cast: John · New Jerusalem · God and the Lamb · Turn: Presence fills everything — no separate building needed.</p>
+        <p>Panel: Glowing cube-city with river and tree of life; radiant presence-light; no free-standing temple.</p>
+        <p>Connection: Eden’s hope ends in a garden-city where God dwells fully.</p>
+        <p>Coloring: Jewel ochres + deep blue; soft radiance; meditative, not scary apocalypse.</p>
+      </article>
+      <article data-group="story" data-id="C8">
+        <div class="meta"><span class="id">C8</span></div>
+        <h3>Altar Flags on the Land — Genesis 12:7–8; 28:10–22</h3>
+        <p class="beat">Beat: Abraham and Jacob mark places with altars and tent-shrines where God appears — planting presence-claims across the land on the way to a permanent house.</p>
+        <p>Cast: Patriarchs · altars · Bethel vision · Turn: Small sanctuaries anticipate the greater dwelling.</p>
+        <p>Panel: Simple stone altar on a hill with soft presence-light; tent nearby.</p>
+        <p>Connection: Before the temple, God meets his people at altars.</p>
+        <p>Coloring: Sparse landscape, one altar, soft light; keep quiet and open.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Image stack — pick 3–4</h2>
+    <p class="lede">Generated · original · BP-inspired (not Bible Project IP). Recommended arc: Eden → Tabernacle → Solomon’s house → New Jerusalem.</p>
+    <div class="grid" id="stack-grid">
+      <article class="recommended" data-group="stack" data-id="G1" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g1-eden-garden-temple.png" alt="" /></div>
+        <div class="meta"><span class="id">G1</span><span class="tag gen">Generated</span><span class="tag rec">Recommended</span></div>
+        <h3>Eden garden-temple</h3>
+        <p>Tree + river — week’s garden-sanctuary icon. High stack-fit.</p>
+      </article>
+      <article class="recommended" data-group="stack" data-id="G2" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g2-tabernacle-glory.png" alt="" /></div>
+        <div class="meta"><span class="id">G2</span><span class="tag gen">Generated</span><span class="tag rec">Recommended</span></div>
+        <h3>Tabernacle + glory</h3>
+        <p>Tent under cloud — mobile dwelling. High stack-fit.</p>
+      </article>
+      <article class="recommended" data-group="stack" data-id="G3" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g3-solomons-temple.png" alt="" /></div>
+        <div class="meta"><span class="id">G3</span><span class="tag gen">Generated</span><span class="tag rec">Recommended</span></div>
+        <h3>Solomon’s temple</h3>
+        <p>Clear architectural silhouette. High stack-fit.</p>
+      </article>
+      <article data-group="stack" data-id="G4">
+        <div class="thumb"><img src="library-images/candidates/generated/g4-ark-cherubim.png" alt="" /></div>
+        <div class="meta"><span class="id">G4</span><span class="tag gen">Generated</span></div>
+        <h3>Ark + cherubim</h3>
+        <p>Mercy-seat presence emblem. Strong swap for G2/G3.</p>
+      </article>
+      <article data-group="stack" data-id="G5">
+        <div class="thumb"><img src="library-images/candidates/generated/g5-jesus-true-temple.png" alt="" /></div>
+        <div class="meta"><span class="id">G5</span><span class="tag gen">Generated</span></div>
+        <h3>Jesus the true temple</h3>
+        <p>Christ before temple glow — pairs with C5. Strong swap for G3.</p>
+      </article>
+      <article data-group="stack" data-id="G6">
+        <div class="thumb"><img src="library-images/candidates/generated/g6-living-stones.png" alt="" /></div>
+        <div class="meta"><span class="id">G6</span><span class="tag gen">Generated</span></div>
+        <h3>Living stones</h3>
+        <p>People-as-house — pairs with C6. Medium–high fit.</p>
+      </article>
+      <article class="recommended" data-group="stack" data-id="G7" data-rec="1">
+        <div class="thumb"><img src="library-images/candidates/generated/g7-new-jerusalem.png" alt="" /></div>
+        <div class="meta"><span class="id">G7</span><span class="tag gen">Generated</span><span class="tag rec">Recommended</span></div>
+        <h3>New Jerusalem</h3>
+        <p>Cube-city, river, tree — climax plate. High stack-fit.</p>
+      </article>
+      <article data-group="stack" data-id="G8">
+        <div class="thumb"><img src="library-images/candidates/generated/g8-river-from-temple.png" alt="" /></div>
+        <div class="meta"><span class="id">G8</span><span class="tag gen">Generated</span></div>
+        <h3>River from the temple</h3>
+        <p>Ezekiel overflow — pairs with C4. Strong alternate climax.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Catechism</h2>
+    <div class="grid wide" id="ncc-grid">
+      <article class="recommended" data-group="ncc" data-id="Q48" data-rec="1">
+        <div class="meta"><span class="id">Q48</span><span class="tag rec">Recommended</span></div>
+        <h3>Q. What is the church?</h3>
+        <p class="beat">A. God chooses and preserves for himself a community elected for eternal life and united by faith, who love, follow, learn from, and worship God together as his people. God sends us out as his witnesses and to make disciples.</p>
+        <p>Fit: Living temple / household of God — the people where God dwells by his Spirit (Eph 2; 1 Cor 3).</p>
+      </article>
+      <article data-group="ncc" data-id="Q20">
+        <div class="meta"><span class="id">Q20</span></div>
+        <h3>Q. Who is the Redeemer?</h3>
+        <p class="beat">A. The only Redeemer is the Lord Jesus Christ, the eternal Son of God, in whom God became man and bore the penalty for sin himself.</p>
+        <p>Fit: Jesus is the true temple (John 2) — God with us in a person, not only a building.</p>
+      </article>
+      <article data-group="ncc" data-id="Q6">
+        <div class="meta"><span class="id">Q6</span></div>
+        <h3>Q. How can we glorify God?</h3>
+        <p class="beat">A. We glorify God by enjoying him, loving him, trusting him, and by obeying his will, commands, and law.</p>
+        <p>Fit: Dwelling with God is the point of the temple story — presence enjoyed, not merely visited.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    Paste the copied line in chat to lock the pack. Coloring + Letter sheets come after approval.
+    Research seam: Beale (Eden → temple → New Jerusalem); gap <code>no_staged_images</code> filled via generation.
+  </footer>
+
+  <script>
+    const limits = { verse: 1, story: 4, stack: 4, ncc: 1 };
+    const mins = { verse: 1, story: 4, stack: 3, ncc: 1 };
+    const selected = { verse: new Set(), story: new Set(), stack: new Set(), ncc: new Set() };
+
+    function render() {
+      document.querySelectorAll('article[data-group]').forEach(a => {
+        a.classList.toggle('selected', selected[a.dataset.group].has(a.dataset.id));
+      });
+      const parts = [];
+      if (selected.verse.size) parts.push('verse ' + [...selected.verse].join(' '));
+      if (selected.story.size) parts.push('stories ' + [...selected.story].join(' '));
+      if (selected.stack.size) parts.push('stack ' + [...selected.stack].join(' '));
+      if (selected.ncc.size) parts.push('ncc ' + [...selected.ncc].join(' '));
+      document.getElementById('line').textContent = parts.length
+        ? 'APPROVE PACK — ' + parts.join(' · ')
+        : '—';
+    }
+
+    document.querySelectorAll('article[data-group]').forEach(a => {
+      a.addEventListener('click', () => {
+        const g = a.dataset.group;
+        const id = a.dataset.id;
+        const set = selected[g];
+        if (limits[g] === 1) {
+          set.clear();
+          set.add(id);
+        } else if (set.has(id)) {
+          set.delete(id);
+        } else {
+          if (set.size >= limits[g]) {
+            alert('Pick up to ' + limits[g] + ' for ' + g);
+            return;
+          }
+          set.add(id);
+        }
+        render();
+      });
+    });
+
+    document.getElementById('useRec').onclick = () => {
+      Object.keys(selected).forEach(g => selected[g].clear());
+      document.querySelectorAll('article[data-rec="1"]').forEach(a => {
+        const g = a.dataset.group;
+        if (selected[g].size < limits[g]) selected[g].add(a.dataset.id);
+      });
+      render();
+    };
+
+    document.getElementById('copy').onclick = async () => {
+      for (const g of Object.keys(mins)) {
+        if (selected[g].size < mins[g]) {
+          alert('Need at least ' + mins[g] + ' ' + g + ' pick(s).');
+          return;
+        }
+      }
+      const text = document.getElementById('line').textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        alert('Copied:\n' + text);
+      } catch {
+        prompt('Copy this:', text);
+      }
+    };
+
+    // Preselect recommended
+    document.getElementById('useRec').click();
+  </script>
+</body>
+</html>

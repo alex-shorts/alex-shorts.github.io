@@ -1,0 +1,95 @@
+{
+  "title": "Bible worksheets",
+  "intro": "Weekly biblical imagery studies for family — open a student sheet, print to PDF. Teacher guides and pack reviews show how each week evolved.",
+  "worksheets": [
+    {
+      "id": "shield",
+      "name": "The Shield",
+      "verse": "Proverbs 30:5 — Every word of God proves true; he is a shield to those who take refuge in him.",
+      "status": "New",
+      "updated": "2026-08-19",
+      "thumb": "shield/coloring.png",
+      "student": "shield/student.html",
+      "teacher": "shield/teacher-guide.pdf",
+      "teacherLabel": "Teacher guide",
+      "packReview": "shield/pack-review.html"
+    },
+    {
+      "id": "tent",
+      "name": "The Tent",
+      "verse": "John 1:14 — And the Word became flesh and dwelt among us…",
+      "status": "New",
+      "updated": "2026-08-19",
+      "thumb": "tent/coloring.png",
+      "student": "tent/student.html",
+      "teacher": "tent/teacher-guide.pdf",
+      "teacherLabel": "Teacher guide",
+      "packReview": "tent/pack-review.html"
+    },
+    {
+      "id": "angel-of-the-lord",
+      "name": "The Angel of the Lord",
+      "verse": "In progress — image stack and pack review underway.",
+      "status": "In progress",
+      "updated": "2026-08-19",
+      "thumb": null,
+      "links": [
+        { "label": "Image options", "href": "angel-of-the-lord/image-options.html" }
+      ]
+    },
+    {
+      "id": "bread",
+      "name": "The Bread",
+      "verse": "John 6:35 — I am the bread of life…",
+      "status": "Updated",
+      "updated": "2026-08-15",
+      "thumb": "bread/coloring.png",
+      "student": "bread/student.html",
+      "teacher": "bread/teacher.html",
+      "teacherLabel": "Teacher sheet"
+    },
+    {
+      "id": "lamb",
+      "name": "The Lamb",
+      "verse": "John 1:29 — Behold, the Lamb of God…",
+      "updated": "2026-08-10",
+      "thumb": "lamb/coloring.png",
+      "student": "lamb/student.html",
+      "teacher": "lamb/teacher.html",
+      "teacherLabel": "Teacher sheet"
+    },
+    {
+      "id": "rock",
+      "name": "The Rock",
+      "verse": "1 Corinthians 10:4 — …the Rock was Christ.",
+      "updated": "2026-08-08",
+      "thumb": "rock/coloring.png",
+      "student": "rock/student.html",
+      "teacher": "rock/teacher.html",
+      "teacherLabel": "Teacher sheet"
+    },
+    {
+      "id": "sword",
+      "name": "The Sword",
+      "verse": "Ephesians 6:17 — …the sword of the Spirit, which is the word of God.",
+      "updated": "2026-08-08",
+      "thumb": "sword/coloring.png",
+      "student": "sword/student.html",
+      "teacher": "sword/teacher.html",
+      "teacherLabel": "Teacher sheet",
+      "links": [
+        { "label": "Coloring PDF", "href": "sword/sword.pdf" }
+      ]
+    },
+    {
+      "id": "temple",
+      "name": "The Temple",
+      "verse": "John 2:19 — Destroy this temple, and in three days I will raise it up.",
+      "updated": "2026-08-06",
+      "thumb": "temple/coloring.png",
+      "student": "temple/student.html",
+      "teacher": "temple/teacher.html",
+      "teacherLabel": "Teacher sheet"
+    }
+  ]
+}
