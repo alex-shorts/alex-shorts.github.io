@@ -11,7 +11,7 @@ burial: Greenwood Cemetery, Platteville, Grant County, Wisconsin, USA
 parents: [erastus_d_buck, elizabeth_roxana_baldwin]
 spouses: [sarah_elizabeth_trask]
 children: [guerdon_conde_buck, gertrude_a_buck, clara_h_buck, winifred_kendrick_buck, florence_trask_buck, berenice_buck]
-object_ids: [FT-0029, FT-0175, FT-0176, FT-0197, FT-0198, FT-0200, FT-0201, FT-0360, FT-0361, FT-0362]
+object_ids: [FT-0029, FT-0175, FT-0176, FT-0197, FT-0198, FT-0200, FT-0201, FT-0360, FT-0361, FT-0362, FT-0567]
 confidence: Probable
 verified: false
 status: researching

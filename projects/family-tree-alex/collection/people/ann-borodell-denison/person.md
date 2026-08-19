@@ -34,6 +34,36 @@ sources:
   - label: "Rank Ann Borodell parents C1770 — docs/research/people/proposals/rank-ann-borodell-parents-2026-08-10.md"
     url: ""
 media:
+  - file: media/fag-14911199-04-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-14911199]
+    source: "Find A Grave memorial 14911199 — Memorial photo 251157415"
+    source_url: https://images.findagrave.com/photos/2022/147/14911199_95f61b3a-1328-454c-a69b-65b3150430de.jpeg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-14911199-07-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-14911199]
+    source: "Find A Grave memorial 14911199 — Memorial photo 251157465"
+    source_url: https://images.findagrave.com/photos/2022/147/14911199_8c8af05f-79b5-405f-91b5-495d8ab08dce.jpeg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-14911199-08-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-14911199]
+    source: "Find A Grave memorial 14911199 — Memorial photo 251157480"
+    source_url: https://images.findagrave.com/photos/2022/147/14911199_b7f7db3f-035e-4420-bb89-1b1c6e447af5.jpeg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-14911199-09-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-14911199]
+    source: "Find A Grave memorial 14911199 — Memorial photo 251157408"
+    source_url: https://images.findagrave.com/photos/2022/147/14911199_1c8b8bda-92ad-4fd7-a8d4-b5601b9a34df.jpeg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-14911199-12-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-14911199]
+    source: "Find A Grave memorial 14911199 — Memorial photo 341384180"
+    source_url: https://images.findagrave.com/photos/2026/125/14911199_9fde12f6-0bbd-4c9a-8aa3-61089fda0e87.jpeg?size=original
+    captured_at: 2026-08-19
   - ref: george-denison/media/baldwin-1881-p6-george-ann.jpg
     kind: document
     tags: [baldwin-1881-p6]

@@ -27,6 +27,18 @@ sources:
   - label: "Wave 2 proposal: docs/research/people/proposals/wave-2-samuel-shorts.md"
     url: ""
 media:
+  - file: media/fag-280868397-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-280868397]
+    source: "Find A Grave memorial 280868397"
+    source_url: https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg
+    captured_at: 2026-08-19
+  - file: media/fag-280868397-05-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-280868397]
+    source: "Find A Grave memorial 280868397"
+    source_url: https://images.findagrave.com/photos/2010/146/313_47208015_COR0052JPG.jpg?size=photoThumbnails
+    captured_at: 2026-08-19
   - ref: rev-augustus-shorts/media/fag-133463240-01-headstone.jpg
     kind: headstone
     source: Find A Grave memorial 133463240 (Sexsmith Cemetery overview; Samuel memorial has no personal stone)

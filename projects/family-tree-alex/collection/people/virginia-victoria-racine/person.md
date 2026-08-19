@@ -11,7 +11,7 @@ burial:
 parents: [solomon_racine, pauline_muschini]
 spouses: [myron_mamlock_cole]
 children: [virginia_jill_cole]
-object_ids: [FT-0021, FT-0025, FT-0028, FT-0096, FT-0230, FT-0231]
+object_ids: [FT-0021, FT-0025, FT-0028, FT-0096, FT-0230, FT-0231, FT-0563, FT-0564]
 confidence: Confirmed
 verified: true
 status: researching

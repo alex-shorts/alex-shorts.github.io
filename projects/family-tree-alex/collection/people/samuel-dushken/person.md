@@ -42,4 +42,5 @@ sources:
 
 - Wife’s given name (blank on Pauline’s death cert paste)
 - Own death / immigration / Old Country town
-- HVR image D-M-1927-0021183 still needed (Akamai blocked this wave)
+- HVR image D-M-1927-0021183 still needed (Akamai blocked prior waves)
+- **CONNECT 2026-08-18:** GGG NYC deaths surname **Dushken** = **0**; **Duschkin** = 2 infant Manhattan deaths only (not Samuel); CT Solr **0**; FAG surname **Dushken** = 1 unrelated 1992 Hart Island — no soft parent UP

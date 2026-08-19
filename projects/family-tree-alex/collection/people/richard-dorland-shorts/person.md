@@ -23,6 +23,12 @@ sources:
   - label: "Gloria Conejo Mountain obituary (FT-0005)"
     url: "https://www.conejomountain.com/obituaries/Gloria-Martha-Shorts?obId=43105866"
 media:
+  - file: media/fag-65483876-01-headstone.gif
+    kind: headstone
+    tags: [fag-gallery, fag-65483876]
+    source: "Find A Grave memorial 65483876 — Richard Dorland Shorts"
+    source_url: https://images.findagrave.com/photos/2011/40/65483876_129738501279.gif?size=original
+    captured_at: 2026-08-19
   - file: media/memorial-fag-2011.gif
     kind: headstone
     source: Find A Grave memorial 65483876 (CPL U.S. Army Air Forces, WWII)

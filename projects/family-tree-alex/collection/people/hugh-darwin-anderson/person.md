@@ -11,7 +11,7 @@ burial: Oak Hill Memorial Park, San Jose, Santa Clara County, California, USA
 parents: [john_w_anderson, emily_e_dupray_anderson]
 spouses: [emily_jane_maupin_anderson]
 children: []
-object_ids: []
+object_ids: [FT-0535]
 confidence: Probable
 verified: false
 status: researching

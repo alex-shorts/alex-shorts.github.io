@@ -11,7 +11,7 @@ burial: Live Oak Memorial Park, Monrovia, Los Angeles County, California, USA
 parents: [dorland, effie]
 spouses: [mayme, annabelle]
 children: [richard, don_shorts]
-object_ids: [FT-0004, FT-0067, FT-0069, FT-0152, FT-0215, FT-0370, FT-0371, FT-0372, FT-0373, FT-0374, FT-0397]
+object_ids: [FT-0004, FT-0067, FT-0069, FT-0152, FT-0215, FT-0370, FT-0371, FT-0372, FT-0373, FT-0374, FT-0397, FT-0732]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -23,6 +23,12 @@ sources:
   - label: "SSDI Earl Shorts 549-07-0345"
     url: ""
 media:
+  - file: media/fag-100072423-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-100072423]
+    source: "Find A Grave memorial 100072423 — Earl Stanley Shorts"
+    source_url: https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg?size=original
+    captured_at: 2026-08-19
   - file: media/headstone-live-oak-2012.jpg
     kind: headstone
     source: Find A Grave memorial 100072423 — Live Oak Memorial Park

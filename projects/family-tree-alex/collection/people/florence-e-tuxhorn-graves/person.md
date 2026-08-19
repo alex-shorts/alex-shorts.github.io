@@ -16,7 +16,7 @@ parent_links:
     confidence: Confirmed
 spouses: []
 children: []
-object_ids: []
+object_ids: [FT-0553]
 confidence: Confirmed
 verified: true
 status: cataloged

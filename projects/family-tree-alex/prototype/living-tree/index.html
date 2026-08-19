@@ -8,9 +8,9 @@
   <title>Alexander Shorts — Family tree</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=msuid9ek" />
-  <link rel="stylesheet" href="./cards.css?v=msuid9ek" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css?v=mt0ivdyt" />
+  <link rel="stylesheet" href="./cards.css?v=mt0ivdyt" />
   <script>
     (function(){
       var key = window.__FT_GATE_KEY__;
@@ -23,10 +23,10 @@
     })();
   </script>
 </head>
-<body>
+<body class="sidebar-collapsed">
   <header class="topbar">
     <div class="brand">
-      <span class="proto-tag">SHARE | 15 Aug 2026</span>
+      <span class="proto-tag">SHARE | 19 Aug 2026</span>
       <h1>Living tree</h1>
     </div>
     <p class="lede">Loading collection…</p>
@@ -52,6 +52,32 @@
       <span id="live-stamp" class="live-stamp" aria-live="polite"></span>
     </div>
   </header>
+
+  <aside id="museum-sidebar" class="museum-sidebar" aria-label="Museum and articles" aria-hidden="true">
+    <div class="sidebar-head">
+      <div class="sidebar-head-row">
+        <p class="sidebar-brand">Museum</p>
+        <button type="button" id="sidebar-close" class="sidebar-close" aria-label="Collapse museum sidebar">‹</button>
+      </div>
+      <div class="sidebar-tabs" role="tablist">
+        <button type="button" class="sidebar-tab is-active" data-sidebar-tab="museum" role="tab" aria-selected="true">Artifacts</button>
+        <button type="button" class="sidebar-tab" data-sidebar-tab="articles" role="tab" aria-selected="false">Line articles</button>
+      </div>
+    </div>
+    <div class="sidebar-search-wrap">
+      <input type="search" id="sidebar-search" placeholder="Search FT-####, title, person…" autocomplete="off" aria-label="Search artifacts" />
+    </div>
+    <div class="sidebar-body">
+      <div id="sidebar-panel-museum" class="sidebar-panel" role="tabpanel">
+        <p id="museum-count" class="sidebar-count"></p>
+        <ul id="museum-list" class="sidebar-list"></ul>
+      </div>
+      <div id="sidebar-panel-articles" class="sidebar-panel" role="tabpanel" hidden>
+        <ul id="articles-list" class="sidebar-list"></ul>
+      </div>
+    </div>
+  </aside>
+  <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-label="Open museum sidebar" aria-expanded="false"><span class="sidebar-toggle-label">Museum</span></button>
 
   <main class="stage">
     <div class="zoom-surface" id="zoom-surface">
@@ -100,10 +126,11 @@
   <div id="hint" class="hint">Open from folder (or npm run prototype:tree) · drag · Primary sets blood ascent · paired couple = marriage · curved = parent→child · <a href="./alexander.html">Alexander</a> · <a href="./morganne.html">Morganne</a></div>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-  <script src="./people-data.js?v=msuid9ek"></script>
-  <script src="./data.js?v=msuid9ek"></script>
-  <script src="./cards.js?v=msuid9ek"></script>
-  <script src="./layout.js?v=msuid9ek"></script>
-  <script src="./app.js?v=msuid9ek"></script>
+  <script src="./people-data.js?v=mt0ivdyt"></script>
+  <script src="./data.js?v=mt0ivdyt"></script>
+  <script src="./cards.js?v=mt0ivdyt"></script>
+  <script src="./layout.js?v=mt0ivdyt"></script>
+  <script src="./sidebar.js?v=mt0ivdyt"></script>
+  <script src="./app.js?v=mt0ivdyt"></script>
 </body>
 </html>

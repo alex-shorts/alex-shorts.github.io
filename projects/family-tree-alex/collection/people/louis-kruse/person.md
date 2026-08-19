@@ -5,11 +5,11 @@ name: Heinrich Wilhelm Louis Kruse
 aka:
   - Louis H. Kruse
   - Louis Kruse
-birth: 1872
-death:
-birth_place: Iowa, USA
+birth: 1871-04-11
+death: 1941-07-09
+birth_place: Allamakee County, Iowa, USA
 death_place:
-burial:
+burial: Saint Lukes Cemetery, Eitzen, Houston County, Minnesota, USA
 parents: [henry_kruse, marie_wolf_kruse]
 parent_links:
   - id: henry_kruse
@@ -18,33 +18,33 @@ parent_links:
     confidence: Probable
 spouses: []
 children: []
-object_ids: []
+object_ids: [FT-0737, FT-0739]
 confidence: Probable
 verified: false
 status: cataloged
 sources:
-  - label: "Find A Grave sibling grid — Heinrich Wilhelm Louis Kruse"
-    url: "https://www.findagrave.com/memorial/127003248/henry-kruse"
-  - label: "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman; confirm Johann Heinrich Louis"
+  - label: "Find A Grave 126353799 — Heinrich Wilhelm Louis Kruse"
+    url: "https://www.findagrave.com/memorial/126353799/heinrich_wilhelm_louis-kruse"
+  - label: "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman"
     url: "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
   - label: "IAGenWeb obit William P. Kruse 1995 — son of Louis and Frieda (Heitman) Kruse"
     url: "http://iagenweb.org/boards/allamakee/obituaries/index.cgi?read=306683"
-  - label: "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md"
+  - label: "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md"
     url: ""
 media: []
 ---
 ## Summary
 
-**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1314**). FAG **Heinrich Wilhelm Louis** on sibling grid. St. John's Wheatland: **Louis** m. **Frieda Dorothea Heitman**; confirmation **Johann Heinrich Louis**. Descendant obit (William P. Kruse 1995) names **Louis and Frieda (Heitman) Kruse**. Birth **~1872** IA from compiled FAN — day/month not on free index. Stay `verified: false`.
+**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1314** / **C2743**). FAG **126353799**: **11 Apr 1871** Allamakee – **9 Jul 1941**; Saint Lukes, Eitzen MN. St. John's: **Louis** m. **Frieda Dorothea Heitman**. Parent grid = Henry × Marie only. Stay `verified: false`.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Son of Henry Kruse × Marie Wolf Kruse | Probable | FAG grid + St. John's + descendant obit FAN | https://www.findagrave.com/memorial/127003248/henry-kruse | **C1312** / **C1314** |
-| m. Frieda Dorothea Heitman (St. John's Wheatland) | Probable | IAGenWeb church index | https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm | **C1314** |
-| b. ~1872 Iowa | Probable | Descendant obit FAN (Louis parent of Wm P.) | http://iagenweb.org/boards/allamakee/obituaries/index.cgi?read=306683 | year approximate |
+| Son of Henry Kruse × Marie Wolf Kruse | Probable | FAG parent grid | https://www.findagrave.com/memorial/126353799/heinrich_wilhelm_louis-kruse | **C2743** |
+| m. Frieda Dorothea Heitman (St. John's) | Probable | IAGenWeb church index | https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm | **C1314** |
+| 11 Apr 1871 Allamakee – 9 Jul 1941 | Probable | FAG vitals | https://www.findagrave.com/memorial/126353799/heinrich_wilhelm_louis-kruse | |
 
 ## Open questions
 
-Death date/burial; own FAG memorial; wire spouse Frieda when slug minted.
+Wire spouse Frieda when slug minted; descendant children on FAG not climbed.

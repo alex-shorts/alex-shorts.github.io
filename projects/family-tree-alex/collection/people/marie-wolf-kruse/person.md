@@ -14,7 +14,7 @@ burial: Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA
 parents: []
 spouses: [henry_kruse]
 children: [george_kruse, henry_john_ernest_kruse, william_kruse, minnie_kruse, louis_kruse, maria_dorothea_caroline_kruse_jahn, charles_fredrick_kruse, anna_katherine_elizabeth_kruse_lubberstedt]
-object_ids: []
+object_ids: [FT-0581, FT-0737, FT-0738, FT-0739, FT-0740]
 confidence: Probable
 verified: false
 status: cataloged
@@ -33,6 +33,12 @@ sources:
     url: "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
   - label: "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md"
     url: ""
+  - label: "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md"
+    url: ""
+  - label: "FT-0738 FAG 127003257 parent-grid audit (no parents; maiden Wolf)"
+    url: "https://www.findagrave.com/memorial/127003257/marie-kruse"
+  - label: "FT-0740 Allamakee + Houston 1907–1908 death registers — Mary absent"
+    url: "https://www.iagenweb.org/allamakee/death/1907-08_RO.htm"
 media:
   - file: media/headstone-wheatland-2014.jpg
     kind: headstone
@@ -43,7 +49,7 @@ media:
 ---
 ## Summary
 
-**Probable** mother of Minnie Kruse Gatz (**C430**). Maiden **Wolf** per FAG. Wife of **Henry Kruse** (m. **1862**). Wheatland Cemetery dates match IAGenWeb (**Mary**). Birth **Germany** on FAG aligns with Minnie’s 1900 census (parents b. Germany). **Wolf parents blocked** (**C1311**) — no free parent names. Seven siblings soft-ingested (**C1312**). Stay `verified: false` until Alex Y. **FS skipped**.
+**Probable** mother of Minnie Kruse Gatz (**C430**). Maiden **Wolf** per FAG. Wife of **Henry Kruse** (m. **1862**). Wheatland Cemetery dates match IAGenWeb (**Mary**). Birth **Germany** on FAG aligns with Minnie’s 1900 census (parents b. Germany). **Wolf parents still blocked** (**C2742**) — FAG 127003257 **no Parents row**; Wheatland FAG **Wolf** search **0** (**FT-0738**); death registers omit 26 Jan 1907 (**FT-0740**). Seven siblings already soft-ingested; FAG child IDs on **FT-0737**. Stay `verified: false` until Alex Y. **FS skipped**.
 
 ## Assertions
 
@@ -63,4 +69,4 @@ media:
 
 ## Open questions
 
-Wolf parents Germany (**C1311** blocked); Marie 1907 obit not on IAGenWeb (**C1317**); St. John's marriage register (**C1316**).
+**Parents unnamed** (maiden Wolf / Germany only). No Wolf burials at Wheatland. Unlock: 1862 marriage civil book (Houston MN / Allamakee) or German baptism; death-certificate image.

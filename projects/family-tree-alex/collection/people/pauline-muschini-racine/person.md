@@ -11,7 +11,7 @@ burial: Riverside Cemetery, Saddle Brook, Bergen County, New Jersey (16 Sep 1927
 parents: [samuel_dushken]
 spouses: [solomon_racine]
 children: [virginia_victoria_racine]
-object_ids: [FT-0021, FT-0025, FT-0096, FT-0230, FT-0231]
+object_ids: [FT-0021, FT-0025, FT-0096, FT-0230, FT-0231, FT-0564]
 confidence: Confirmed
 verified: true
 status: researching

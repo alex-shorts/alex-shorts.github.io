@@ -16,7 +16,7 @@ parent_links:
     confidence: Confirmed
 spouses: [minnie_kruse]
 children: [irvin]
-object_ids: [FT-0098, FT-0100]
+object_ids: [FT-0098, FT-0100, FT-0586]
 confidence: Confirmed
 verified: true
 status: cataloged

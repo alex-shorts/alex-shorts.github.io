@@ -18,7 +18,7 @@ parent_links:
     confidence: Confirmed
 spouses: [caroline_waescher]
 children: [ida_tuxhorn]
-object_ids: []
+object_ids: [FT-0580, FT-0584]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -40,6 +40,18 @@ sources:
   - label: "Round 9 proposal: docs/research/people/proposals/round-9-tuxhorn-achilles.md"
     url: ""
 media:
+  - file: media/fag-48236277-02-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-48236277]
+    source: "Find A Grave memorial 48236277 — Memorial photo 27163931"
+    source_url: https://images.findagrave.com/photos/2010/98/48236277_127086965906.jpg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-48236277-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-48236277]
+    source: "Find A Grave memorial 48236277 — Henry F. Achilles Sr."
+    source_url: https://images.findagrave.com/photos/2021/16/48236277_2958bef2-67df-4dcd-8799-f50e5e45dd28.jpeg?size=original
+    captured_at: 2026-08-19
   - file: media/headstone-inman-2010.jpg
     kind: headstone
     shared: true

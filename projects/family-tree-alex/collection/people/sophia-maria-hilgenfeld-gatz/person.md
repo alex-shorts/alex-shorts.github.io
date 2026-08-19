@@ -40,6 +40,18 @@ sources:
   - label: "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md"
     url: ""
 media:
+  - file: media/fag-116578829-02-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-116578829]
+    source: "Find A Grave memorial 116578829 — Memorial photo 88002353"
+    source_url: https://images.findagrave.com/photos/2013/247/116578829_137840855236.jpg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-116578829-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-116578829]
+    source: "Find A Grave memorial 116578829 — Sophia Maria <I>Hilgenfeld</I> Gatz"
+    source_url: https://images.findagrave.com/photos/2013/247/116578829_137840862124.jpg?size=original
+    captured_at: 2026-08-19
   - file: media/headstone-mcpherson-2013.jpg
     kind: headstone
     source: Find A Grave 116578829 — McPherson Cemetery

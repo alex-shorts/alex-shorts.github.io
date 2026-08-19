@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-15",
+  "updated": "2026-08-19",
   "focus_id": "alexander",
   "people": {
     "alexander": {
@@ -23,7 +23,8 @@
       "object_ids": [
         "FT-0392",
         "FT-0396",
-        "FT-0397"
+        "FT-0397",
+        "FT-0470"
       ]
     },
     "heidi": {
@@ -155,7 +156,9 @@
         "FT-0028",
         "FT-0096",
         "FT-0230",
-        "FT-0231"
+        "FT-0231",
+        "FT-0563",
+        "FT-0564"
       ],
       "sources": [
         {
@@ -220,7 +223,8 @@
         "FT-0025",
         "FT-0096",
         "FT-0230",
-        "FT-0231"
+        "FT-0231",
+        "FT-0564"
       ],
       "sources": [
         {
@@ -304,7 +308,7 @@
         "Samuel Dushkin"
       ],
       "birth_place": "Russia",
-      "blocker": "HVR image D-M-1927-0021183 still needed (Akamai blocked this wave)"
+      "blocker": "HVR image D-M-1927-0021183 still needed (Akamai blocked prior waves)"
     },
     "solomon_racine": {
       "id": "solomon_racine",
@@ -337,7 +341,9 @@
         "FT-0230",
         "FT-0412",
         "FT-0415",
-        "FT-0420"
+        "FT-0420",
+        "FT-0564",
+        "FT-0566"
       ],
       "sources": [
         {
@@ -410,7 +416,8 @@
         "FT-0024",
         "FT-0025",
         "FT-0028",
-        "FT-0094"
+        "FT-0094",
+        "FT-0563"
       ],
       "sources": [
         {
@@ -506,7 +513,8 @@
         "FT-0398",
         "FT-0418",
         "FT-0421",
-        "FT-0426"
+        "FT-0426",
+        "FT-0565"
       ],
       "sources": [
         {
@@ -841,7 +849,8 @@
         "FT-0262",
         "FT-0398",
         "FT-0426",
-        "FT-0427"
+        "FT-0427",
+        "FT-0565"
       ],
       "sources": [
         {
@@ -2056,7 +2065,8 @@
         "FT-0201",
         "FT-0360",
         "FT-0361",
-        "FT-0362"
+        "FT-0362",
+        "FT-0567"
       ],
       "sources": [
         {
@@ -4858,7 +4868,10 @@
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "ira_chamberlin",
+        "salome_barnes_chamberlin"
+      ],
       "spouses": [
         "hugh_dupray"
       ],
@@ -4866,10 +4879,23 @@
         "emily_e_dupray_anderson",
         "willis_dupray"
       ],
-      "media": [],
+      "media": [
+        {
+          "file": "media/fag-131309714-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309714 — Mary Ann Chamberlin Dupray",
+          "source_url": "https://images.findagrave.com/photos/2025/282/131309714_933cb650-2800-46c4-9b10-e522560ee83a.jpeg?size=original"
+        }
+      ],
       "portrait": null,
       "object_ids": [
-        "FT-0195"
+        "FT-0195",
+        "FT-0532",
+        "FT-0533",
+        "FT-0534",
+        "FT-0637",
+        "FT-0639",
+        "FT-0644"
       ],
       "sources": [
         {
@@ -4877,14 +4903,28 @@
           "url": "http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm"
         },
         {
-          "label": "Find a Grave memorial 131309714 — Mary Ann Dupray (née Chamberlin) 1823 – 23 Mar 1884, Silver City Cemetery",
+          "label": "Find a Grave memorial 131309714 — parents Ira Chamberlin × Salome Barnes; sister Caroline m. James Story Dupray",
           "url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        },
+        {
+          "label": "Dupray Family Bible — Caroline M Chamberlain birth/marriage (FT-0532)",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
         }
       ],
       "aka": [
         "Mary A. Dupray",
         "Mary Ann Chamberlin",
         "Mary Ann Chamberlain"
+      ],
+      "parent_links": [
+        {
+          "id": "ira_chamberlin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "salome_barnes_chamberlin",
+          "confidence": "Probable"
+        }
       ],
       "spouse_links": [
         {
@@ -4898,6 +4938,299 @@
       "death_place": "Silver City, Mills County, Iowa, USA",
       "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
+    "salome_barnes_chamberlin": {
+      "id": "salome_barnes_chamberlin",
+      "slug": "salome-barnes-chamberlin",
+      "name": "Salome Barnes Chamberlin",
+      "years": "1782-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "thomas_barnes_i",
+        "anna_horsford_barnes"
+      ],
+      "spouses": [
+        "ira_chamberlin"
+      ],
+      "children": [
+        "mary_ann_dupray",
+        "caroline_m_chamberlin_dupray"
+      ],
+      "media": [
+        {
+          "ref": "mary-ann-dupray/media/fag-131309714-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309714 — Mary Ann Dupray (bio names Salome mother)",
+          "source_url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0534",
+        "FT-0637",
+        "FT-0644",
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129594577 — Salome Barnes Chamberlin (parents Thomas Barnes × Anna Hansford; will/probate)",
+          "url": "https://www.findagrave.com/memorial/129594577/salome-chamberlin"
+        }
+      ],
+      "aka": [
+        "Salome Chamberlin"
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_barnes_i",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_horsford_barnes",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ira_chamberlin",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1782",
+      "death": "1862-09-12",
+      "birth_place": "Canaan, Litchfield County, Connecticut, USA",
+      "death_place": "Freedom, Portage County, Ohio, USA",
+      "burial": "Freedom West Cemetery, Freedom Township, Portage County, Ohio, USA"
+    },
+    "anna_horsford_barnes": {
+      "id": "anna_horsford_barnes",
+      "slug": "anna-horsford-barnes",
+      "name": "Anna Horsford Barnes",
+      "years": "1747–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "timothy_horsford_1709",
+        "anne_smithrem_horsford"
+      ],
+      "spouses": [
+        "thomas_barnes_i"
+      ],
+      "children": [
+        "salome_barnes_chamberlin"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129594577 — Salome bio names mother Anna Hansford b. 1747",
+          "url": "https://www.findagrave.com/memorial/129594577/salome-chamberlin"
+        },
+        {
+          "label": "FamilyCentral Anna popup — parents Timothy Horsford × Anne Smithrem",
+          "url": "http://www.familycentral.net/index/person_popup.cfm?ref1=15859%3A107371&mode=ped"
+        }
+      ],
+      "aka": [
+        "Anna Hansford",
+        "Anna Barnes"
+      ],
+      "parent_links": [
+        {
+          "id": "timothy_horsford_1709",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anne_smithrem_horsford",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "thomas_barnes_i",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1747-06-25",
+      "birth_place": "Canaan, Litchfield County, Connecticut"
+    },
+    "anne_smithrem_horsford": {
+      "id": "anne_smithrem_horsford",
+      "slug": "anne-smithrem-horsford",
+      "name": "Anne Smithrem Horsford",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "timothy_horsford_1709"
+      ],
+      "children": [
+        "anna_horsford_barnes"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FamilyCentral Anna Horsford popup — mother Anne Smithrem",
+          "url": "http://www.familycentral.net/index/person_popup.cfm?ref1=15859%3A107371&mode=ped"
+        }
+      ],
+      "aka": [
+        "Anne Smithrem"
+      ],
+      "spouse_links": [
+        {
+          "id": "timothy_horsford_1709",
+          "confidence": "Probable"
+        }
+      ]
+    },
+    "timothy_horsford_1709": {
+      "id": "timothy_horsford_1709",
+      "slug": "timothy-horsford-1709",
+      "name": "Timothy Horsford",
+      "years": "1709-1787",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "anne_smithrem_horsford"
+      ],
+      "children": [
+        "anna_horsford_barnes"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FamilyCentral Anna Horsford popup — father Timothy Horsford",
+          "url": "http://www.familycentral.net/index/person_popup.cfm?ref1=15859%3A107371&mode=ped"
+        },
+        {
+          "label": "FamilyCentral Timothy Horsford pedigree 15859:107395",
+          "url": "http://www.familycentral.net/index/pedigree.cfm?ref1=15859%3A107395"
+        }
+      ],
+      "aka": [
+        "Timothy Hosford"
+      ],
+      "spouse_links": [
+        {
+          "id": "anne_smithrem_horsford",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1709-09-03",
+      "death": "1787-04-08",
+      "birth_place": "Windsor area, Connecticut",
+      "death_place": "South Canaan, Litchfield County, Connecticut, USA",
+      "blocker": "Own parents Blocked this pass (C2669)"
+    },
+    "thomas_barnes_i": {
+      "id": "thomas_barnes_i",
+      "slug": "thomas-barnes-i",
+      "name": "Thomas Barnes",
+      "years": "1745–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "anna_horsford_barnes"
+      ],
+      "children": [
+        "salome_barnes_chamberlin"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129594577 — Salome Barnes Chamberlin bio names father Thomas Barnes b. 1745",
+          "url": "https://www.findagrave.com/memorial/129594577/salome-chamberlin"
+        },
+        {
+          "label": "FamilyCentral Thomas×Anna family group — m. 24 Apr 1770 Canaan; parents Blocked",
+          "url": "http://www.familycentral.net/index/family.cfm?ref1=15859%3A107370&ref2=15859%3A107371"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_horsford_barnes",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1745-05-15",
+      "birth_place": "Hampton, Windham County, Connecticut"
+    },
+    "ira_chamberlin": {
+      "id": "ira_chamberlin",
+      "slug": "ira-chamberlin",
+      "name": "Ira Chamberlin",
+      "years": "1791–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "salome_barnes_chamberlin"
+      ],
+      "children": [
+        "mary_ann_dupray",
+        "caroline_m_chamberlin_dupray"
+      ],
+      "media": [
+        {
+          "ref": "mary-ann-dupray/media/fag-131309714-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309714 — Mary Ann Dupray (bio names Ira father)",
+          "source_url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0534",
+        "FT-0637",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129589435 — Ira Chamberlin Freedom (partition heirs; no parents named)",
+          "url": "https://www.findagrave.com/memorial/129589435/ira-chamberlin"
+        },
+        {
+          "label": "Dupray Family Bible — Caroline M Chamberlain b. Sheffield Berkshire Co Mass 1820",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        }
+      ],
+      "aka": [
+        "Ira Chamberlain"
+      ],
+      "spouse_links": [
+        {
+          "id": "salome_barnes_chamberlin",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1791",
+      "birth_place": "Dana, Worcester County, Massachusetts, USA"
+    },
     "hugh_dupray": {
       "id": "hugh_dupray",
       "slug": "hugh-dupray",
@@ -4906,7 +5239,9 @@
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "thomas_dupray"
+      ],
       "spouses": [
         "mary_ann_dupray"
       ],
@@ -4914,17 +5249,40 @@
         "emily_e_dupray_anderson",
         "willis_dupray"
       ],
-      "media": [],
+      "media": [
+        {
+          "file": "media/fag-131309621-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309621 — Hugh Dupray",
+          "source_url": "https://images.findagrave.com/photos/2025/282/131309621_63ab3e2a-758a-4696-9aba-483bee08af3a.jpeg?size=original"
+        }
+      ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0532",
+        "FT-0533",
+        "FT-0597",
+        "FT-0638",
+        "FT-0639"
+      ],
       "sources": [
         {
           "label": "Silver City Community History — Emily E. Dupray parents Hugh Dupray (1815–1892) × Mary A. Dupray, innkeepers",
           "url": "http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm"
         },
         {
-          "label": "Find a Grave memorial 131309621 — Hugh Dupray 1815 – 3 Jul 1892, Silver City Cemetery",
+          "label": "Find a Grave memorial 131309621 — Hugh Dupray 1815 – 3 Jul 1892; son of Thomas Dupray; m. Mary Ann Chamberlin 12 Oct 1841 Portage Co. OH",
           "url": "https://www.findagrave.com/memorial/131309621/hugh-dupray"
+        },
+        {
+          "label": "Dupray Family Bible — collateral James S. × Caroline M. Chamberlin (FT-0532)",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_dupray",
+          "confidence": "Probable"
         }
       ],
       "spouse_links": [
@@ -4938,6 +5296,185 @@
       "birth_place": "Pennsylvania, USA",
       "death_place": "Silver City, Mills County, Iowa, USA",
       "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
+    },
+    "thomas_dupray": {
+      "id": "thomas_dupray",
+      "slug": "thomas-dupray",
+      "name": "Thomas Dupray",
+      "years": "1792-1858",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hugh_depree_meadville",
+        "ruth_mead_dupray"
+      ],
+      "spouses": [
+        "christina_miller_dupray"
+      ],
+      "children": [
+        "hugh_dupray",
+        "james_story_dupray",
+        "frederick_miller_dupray"
+      ],
+      "media": [
+        {
+          "ref": "hugh-dupray/media/fag-131309621-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309621 — Hugh Dupray (son; bio names Thomas father)",
+          "source_url": "https://www.findagrave.com/memorial/131309621/hugh-dupray"
+        },
+        {
+          "ref": "christina-miller-dupray/media/fag-34451832-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 34451832 — Christina Miller Dupray (Possible spouse FAN)",
+          "source_url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0532",
+        "FT-0533",
+        "FT-0597",
+        "FT-0598",
+        "FT-0599",
+        "FT-0600",
+        "FT-0601",
+        "FT-0638",
+        "FT-0639",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 131309621 — Hugh Dupray bio names father Thomas Dupray",
+          "url": "https://www.findagrave.com/memorial/131309621/hugh-dupray"
+        },
+        {
+          "label": "FAG memorial 34451832 — Christina Miller Dupray wife of Thomas; children James Story + Frederick Miller",
+          "url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        },
+        {
+          "label": "Dupray Family Bible (Dubuque IAGenWeb) — James S. Dupray b. Franklin Venango Co PA 1816",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        },
+        {
+          "label": "Portage OHGenWeb query010 — Thomas b. 23 Oct 1792 Meadville PA; d. 19 Oct 1858 Clarinda IA (Tier D)",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        }
+      ],
+      "aka": [
+        "Thomas Dupree"
+      ],
+      "parent_links": [
+        {
+          "id": "hugh_depree_meadville",
+          "confidence": "Possible"
+        },
+        {
+          "id": "ruth_mead_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "christina_miller_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1792-10-23",
+      "death": "1858-10-19",
+      "birth_place": "Meadville, Crawford County, Pennsylvania, USA",
+      "death_place": "Clarinda, Page County, Iowa, USA"
+    },
+    "ruth_mead_dupray": {
+      "id": "ruth_mead_dupray",
+      "slug": "ruth-mead-dupray",
+      "name": "Ruth Mead",
+      "years": "1761–",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hugh_depree_meadville"
+      ],
+      "children": [
+        "thomas_dupray"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0598",
+        "FT-0599",
+        "FT-0601"
+      ],
+      "sources": [
+        {
+          "label": "Portage OHGenWeb query010 — Ruth MEAD mother of Thomas Dupray (1997; Tier D)",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        },
+        {
+          "label": "Western Pennsylvania Genealogy — Ruth Mead wife of Hugh Depree; d. of Darius Mead × Ruth Curtis",
+          "url": "https://west-penn-families.com/venango/f107402.htm"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hugh_depree_meadville",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1761-04-16"
+    },
+    "hugh_depree_meadville": {
+      "id": "hugh_depree_meadville",
+      "slug": "hugh-depree-meadville",
+      "name": "Hugh Depree",
+      "years": "1756-1795",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ruth_mead_dupray"
+      ],
+      "children": [
+        "thomas_dupray"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0598",
+        "FT-0599",
+        "FT-0601"
+      ],
+      "sources": [
+        {
+          "label": "Portage OHGenWeb query010 — Patti Parker lists Thomas Dupray son of Hugh DUPREE × Ruth MEAD (1997; Tier D)",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        },
+        {
+          "label": "Western Pennsylvania Genealogy — Hugh Depree × Ruth Mead family group (compiled; no children listed)",
+          "url": "https://west-penn-families.com/venango/f107402.htm"
+        },
+        {
+          "label": "Crawford County CCG family index — DuPray/Dupree, Hugh & Ruth (Mead)",
+          "url": "https://crawfordcopa.com/topicidx/families"
+        }
+      ],
+      "aka": [
+        "Hugh Dupray",
+        "Hugh Dupree"
+      ],
+      "spouse_links": [
+        {
+          "id": "ruth_mead_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1756",
+      "death": "1795",
+      "death_place": "Meadville, Crawford County, Pennsylvania, USA"
     },
     "john_w_anderson": {
       "id": "john_w_anderson",
@@ -4981,7 +5518,8 @@
         "FT-0334",
         "FT-0335",
         "FT-0439",
-        "FT-0440"
+        "FT-0440",
+        "FT-0536"
       ],
       "sources": [
         {
@@ -5072,6 +5610,18 @@
       ],
       "media": [
         {
+          "file": "media/fag-183422612-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 183422612 — Memorial photo 198333413",
+          "source_url": "https://images.findagrave.com/photos/2020/20/183422612_857754ec-ae02-4380-9233-be9e5389e20e.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-183422612-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 183422612 — Gloria Martha <I>Gatz</I> Shorts",
+          "source_url": "https://images.findagrave.com/photos/2017/257/183422612_1505495320.jpg?size=original"
+        },
+        {
           "file": "media/portrait.jpg",
           "kind": "portrait",
           "source": "Conejo Mountain Funeral Home obituary (same image also on Find A Grave 183422612)",
@@ -5092,7 +5642,10 @@
         "FT-0102",
         "FT-0313",
         "FT-0315",
-        "FT-0397"
+        "FT-0397",
+        "FT-0582",
+        "FT-0583",
+        "FT-0585"
       ],
       "sources": [
         {
@@ -5160,7 +5713,11 @@
         "FT-0005",
         "FT-0103",
         "FT-0313",
-        "FT-0314"
+        "FT-0314",
+        "FT-0553",
+        "FT-0579",
+        "FT-0582",
+        "FT-0585"
       ],
       "sources": [
         {
@@ -5203,7 +5760,8 @@
         "florence_graves",
         "martha",
         "henry_f_tuxhorn",
-        "wilma_prather"
+        "wilma_prather",
+        "ruth_straka"
       ],
       "media": [
         {
@@ -5220,7 +5778,13 @@
         }
       ],
       "portrait": "media/portrait-studio.jpg",
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553",
+        "FT-0579",
+        "FT-0580",
+        "FT-0582",
+        "FT-0584"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48237386",
@@ -5286,6 +5850,12 @@
       ],
       "media": [
         {
+          "file": "media/fag-48236265-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236265 — Caroline <I>Waescher</I> Achilles",
+          "source_url": "https://images.findagrave.com/photos/2010/98/48236265_127086953140.jpg?size=original"
+        },
+        {
           "ref": "henry-f-achilles/media/headstone-inman-2010.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 48236265 — joint stone with Henry F. (canonical bytes under henry-f-achilles)",
@@ -5293,7 +5863,10 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0580",
+        "FT-0584"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48236265",
@@ -5439,6 +6012,18 @@
       ],
       "media": [
         {
+          "file": "media/fag-48236277-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236277 — Memorial photo 27163931",
+          "source_url": "https://images.findagrave.com/photos/2010/98/48236277_127086965906.jpg?size=original"
+        },
+        {
+          "file": "media/fag-48236277-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236277 — Henry F. Achilles Sr.",
+          "source_url": "https://images.findagrave.com/photos/2021/16/48236277_2958bef2-67df-4dcd-8799-f50e5e45dd28.jpeg?size=original"
+        },
+        {
           "file": "media/headstone-inman-2010.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 48236277 — joint stone with Caroline",
@@ -5452,7 +6037,10 @@
         }
       ],
       "portrait": "media/portrait-fag-2021.jpeg",
-      "object_ids": [],
+      "object_ids": [
+        "FT-0580",
+        "FT-0584"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48236277",
@@ -5925,7 +6513,10 @@
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "paul_achilles",
+        "catharine_mehrdorf"
+      ],
       "spouses": [
         "marie_lucie_luddecke"
       ],
@@ -5941,18 +6532,221 @@
           "url": "https://gedbas.genealogy.net/person/show/1133068906"
         },
         {
+          "label": "GEDBAS 1133067803 / 1133067804 — parents Paul Achilles × Catharine Mehrdorf",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
           "label": "GEDBAS 1133073186 — son Heinrich Paul Christoph Achilles names these parents",
           "url": "https://gedbas.genealogy.net/person/show/1133073186"
         },
         {
           "label": "DNA Achilles–Linde parents: docs/research/people/proposals/dna-achilles-linde-parents-2026-08-10.md",
           "url": ""
+        },
+        {
+          "label": "Achilles/Wischer UP CONNECT: docs/research/people/proposals/achilles-wischer-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "paul_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catharine_mehrdorf",
+          "confidence": "Probable"
         }
       ],
       "birth": "1700-08-25",
       "death": "1754-06-09",
       "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
       "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
+    },
+    "catharine_mehrdorf": {
+      "id": "catharine_mehrdorf",
+      "slug": "catharine-mehrdorf-apelnstedt",
+      "name": "Catharine Mehrdorf",
+      "years": "1655–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "paul_achilles"
+      ],
+      "children": [
+        "paul_christoph_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133067804 — Catharine Mehrdorf *1655 Apelnstedt (Rosendahl 42734; parents blank)",
+          "url": "https://gedbas.genealogy.net/person/show/1133067804"
+        },
+        {
+          "label": "GEDBAS 1133068906 — son Paul Christoph Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133068906"
+        },
+        {
+          "label": "Achilles/Wischer UP CONNECT: docs/research/people/proposals/achilles-wischer-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Catharine Achilles"
+      ],
+      "birth": "1655-03-28",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "Own parents unknown on free GEDBAS | Blocked | GEDBAS 1133067804 Parents"
+    },
+    "paul_achilles": {
+      "id": "paul_achilles",
+      "slug": "paul-achilles-apelnstedt",
+      "name": "Paul Achilles",
+      "years": "1652-1718",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
+      ],
+      "spouses": [
+        "catharine_mehrdorf"
+      ],
+      "children": [
+        "paul_christoph_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133067803 — Paul Achilles *1652 +1718 Apelnstedt (Rosendahl 42734; parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
+          "label": "GEDBAS 1133068906 — son Paul Christoph Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133068906"
+        },
+        {
+          "label": "Achilles/Wischer UP CONNECT: docs/research/people/proposals/achilles-wischer-up-2026-08-18.md",
+          "url": ""
+        },
+        {
+          "label": "GEDBAS 1133067138 / 1133071719 — parents Hans Achilles × Hogrefe N.N.",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        },
+        {
+          "label": "Hans Achilles UP CONNECT: docs/research/people/proposals/hans-achilles-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "hans_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hogrefe_nn",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1652-03-19",
+      "death": "1718-08-03",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "Parish images; Hans/Hogrefe gen-back blocked on GEDBAS (C2584–C2585)."
+    },
+    "hogrefe_nn": {
+      "id": "hogrefe_nn",
+      "slug": "frau-nn-hogrefe",
+      "name": "Frau N.N. Hogrefe",
+      "years": "1605-1661",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hans_achilles"
+      ],
+      "children": [
+        "catharina_achilles_1644",
+        "margarethe_achilles_1645",
+        "cordt_achilles",
+        "paul_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133071719 — Frau N.N. Hogrefe ~1605 Dettum +~1661 (Rosendahl 42734; spouse Hans Achilles; no Parents section)",
+          "url": "https://gedbas.genealogy.net/person/show/1133071719"
+        },
+        {
+          "label": "GEDBAS 1133067803 — son Paul Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
+          "label": "Hans Achilles UP CONNECT: docs/research/people/proposals/hans-achilles-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Hogrefe",
+        "Achilles"
+      ],
+      "birth": "1605",
+      "death": "1661",
+      "birth_place": "Dettum bei Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Dettum bei Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "No Parents section — gen-back Blocked C2585"
+    },
+    "hans_achilles": {
+      "id": "hans_achilles",
+      "slug": "hans-achilles-apelnstedt",
+      "name": "Hans Achilles",
+      "years": "1598-1672",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hogrefe_nn"
+      ],
+      "children": [
+        "catharina_achilles_1644",
+        "margarethe_achilles_1645",
+        "cordt_achilles",
+        "paul_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133067138 — Hans Achilles ~1598 +1672 Apelnstedt (Rosendahl 42734; spouse Hogrefe N.N.; no Parents section)",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        },
+        {
+          "label": "GEDBAS 1133067803 — son Paul Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
+          "label": "Hans Achilles UP CONNECT: docs/research/people/proposals/hans-achilles-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "birth": "1598",
+      "death": "1672-09-01",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "No Parents section on GEDBAS person/show — gen-back Blocked C2584"
     },
     "leo_tuxhorn": {
       "id": "leo_tuxhorn",
@@ -5974,7 +6768,8 @@
         "florence_graves",
         "martha",
         "henry_f_tuxhorn",
-        "wilma_prather"
+        "wilma_prather",
+        "ruth_straka"
       ],
       "media": [
         {
@@ -5995,7 +6790,10 @@
         "FT-0103",
         "FT-0107",
         "FT-0314",
-        "FT-0408"
+        "FT-0408",
+        "FT-0553",
+        "FT-0579",
+        "FT-0582"
       ],
       "sources": [
         {
@@ -6280,7 +7078,10 @@
       "object_ids": [
         "FT-0005",
         "FT-0098",
-        "FT-0354"
+        "FT-0354",
+        "FT-0583",
+        "FT-0585",
+        "FT-0586"
       ],
       "sources": [
         {
@@ -6372,6 +7173,18 @@
       ],
       "media": [
         {
+          "file": "media/fag-116548907-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116548907 — Memorial photo 87956158",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548907_137833712544.jpg?size=original"
+        },
+        {
+          "file": "media/fag-116548907-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116548907 — Minnie <I>Kruse</I> Gatz",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548907_137833720257.jpg?size=original"
+        },
+        {
           "file": "media/headstone-mcpherson-2013.jpg",
           "kind": "headstone",
           "source": "Find A Grave 116548907 — McPherson Cemetery",
@@ -6391,7 +7204,11 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0581",
+        "FT-0586",
+        "FT-0737"
+      ],
       "sources": [
         {
           "label": "Find A Grave 116548907",
@@ -6492,7 +7309,13 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0581",
+        "FT-0737",
+        "FT-0738",
+        "FT-0739",
+        "FT-0740"
+      ],
       "sources": [
         {
           "label": "Find A Grave 127003257",
@@ -6521,6 +7344,18 @@
         {
           "label": "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
           "url": ""
+        },
+        {
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
+          "url": ""
+        },
+        {
+          "label": "FT-0738 FAG 127003257 parent-grid audit (no parents; maiden Wolf)",
+          "url": "https://www.findagrave.com/memorial/127003257/marie-kruse"
+        },
+        {
+          "label": "FT-0740 Allamakee + Houston 1907–1908 death registers — Mary absent",
+          "url": "https://www.iagenweb.org/allamakee/death/1907-08_RO.htm"
         }
       ],
       "aka": [
@@ -6532,7 +7367,7 @@
       "death": "1907-01-26",
       "birth_place": "Germany",
       "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA",
-      "blocker": "Wolf parents Germany (C1311 blocked); Marie 1907 obit not on IAGenWeb (C"
+      "blocker": "Parents unnamed (maiden Wolf / Germany only). No Wolf burials at Wheatla"
     },
     "henry_kruse": {
       "id": "henry_kruse",
@@ -6565,7 +7400,14 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0581",
+        "FT-0737",
+        "FT-0738",
+        "FT-0739",
+        "FT-0740",
+        "FT-0741"
+      ],
       "sources": [
         {
           "label": "Find A Grave 127003248",
@@ -6594,12 +7436,28 @@
         {
           "label": "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
           "url": ""
+        },
+        {
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
+          "url": ""
+        },
+        {
+          "label": "FT-0737 FAG 127003248 parent-grid audit (no parents)",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "FT-0740 Allamakee + Houston 1907–1908 death registers — Henry absent",
+          "url": "https://www.iagenweb.org/allamakee/death/1907-08_RO.htm"
+        },
+        {
+          "label": "FT-0741 Past & Present Allamakee — St. John's trustee 1884",
+          "url": "https://archive.org/details/pastpresentofall01hanc"
         }
       ],
       "birth": "1828-10-29",
       "death": "1908-11-29",
       "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA",
-      "blocker": "Gen-back parents blocked (C1310) — no parent names on FAG"
+      "blocker": "Gen-back parents still blocked (C2741) — FAG 127003248 no Pare"
     },
     "charles_c_gatz": {
       "id": "charles_c_gatz",
@@ -6642,7 +7500,8 @@
       "portrait": null,
       "object_ids": [
         "FT-0098",
-        "FT-0100"
+        "FT-0100",
+        "FT-0586"
       ],
       "sources": [
         {
@@ -6749,6 +7608,18 @@
         "charles_c_gatz"
       ],
       "media": [
+        {
+          "file": "media/fag-116578829-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578829 — Memorial photo 88002353",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578829_137840855236.jpg?size=original"
+        },
+        {
+          "file": "media/fag-116578829-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578829 — Sophia Maria <I>Hilgenfeld</I> Gatz",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578829_137840862124.jpg?size=original"
+        },
         {
           "file": "media/headstone-mcpherson-2013.jpg",
           "kind": "headstone",
@@ -7135,6 +8006,18 @@
       ],
       "media": [
         {
+          "file": "media/fag-116578895-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578895 — Memorial photo 88002392",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578895_137840861568.jpg?size=original"
+        },
+        {
+          "file": "media/fag-116578895-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578895 — John Wilhelm Gatz",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578895_137840866831.jpg?size=original"
+        },
+        {
           "file": "media/headstone-mcpherson-2013.jpg",
           "kind": "headstone",
           "source": "Find A Grave 116578895 — McPherson Cemetery",
@@ -7287,6 +8170,12 @@
       ],
       "media": [
         {
+          "file": "media/fag-65483876-01-headstone.gif",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 65483876 — Richard Dorland Shorts",
+          "source_url": "https://images.findagrave.com/photos/2011/40/65483876_129738501279.gif?size=original"
+        },
+        {
           "file": "media/memorial-fag-2011.gif",
           "kind": "headstone",
           "source": "Find A Grave memorial 65483876 (CPL U.S. Army Air Forces, WWII)",
@@ -7348,6 +8237,12 @@
         "don_shorts"
       ],
       "media": [
+        {
+          "file": "media/fag-100072401-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 100072401 — Annabelle L <I>Merritt</I> Shorts",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072401_135191952551.jpg?size=original"
+        },
         {
           "file": "media/headstone-live-oak-2012.jpg",
           "kind": "headstone",
@@ -7916,6 +8811,12 @@
       ],
       "media": [
         {
+          "file": "media/fag-100072423-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 100072423 — Earl Stanley Shorts",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg?size=original"
+        },
+        {
           "file": "media/headstone-live-oak-2012.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 100072423 — Live Oak Memorial Park",
@@ -7934,7 +8835,8 @@
         "FT-0372",
         "FT-0373",
         "FT-0374",
-        "FT-0397"
+        "FT-0397",
+        "FT-0732"
       ],
       "sources": [
         {
@@ -8060,6 +8962,18 @@
       ],
       "media": [
         {
+          "file": "media/fag-8850577-03-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 8850577",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg?size=photoThumbnails"
+        },
+        {
+          "file": "media/fag-8850577-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 8850577",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633&size=photoThumbnails"
+        },
+        {
           "file": "media/fag-8850577-mount-hope-full.jpg",
           "kind": "other",
           "source": "Find A Grave Mount Hope Cemetery overview (Dorland/Effie Section W context; no individual Dorland stone)",
@@ -8153,6 +9067,12 @@
         "dorland"
       ],
       "media": [
+        {
+          "file": "media/fag-138634881-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 138634881 — Eva Eliza <I>Aylesworth</I> Shorts",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633&size=original"
+        },
         {
           "file": "media/knights-cemetery-fag-cover.jpeg",
           "kind": "headstone",
@@ -10488,6 +11408,36 @@
       ],
       "media": [
         {
+          "file": "media/fag-14911199-04-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157415",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_95f61b3a-1328-454c-a69b-65b3150430de.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-07-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157465",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_8c8af05f-79b5-405f-91b5-495d8ab08dce.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-08-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157480",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_b7f7db3f-035e-4420-bb89-1b1c6e447af5.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-09-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157408",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_1c8b8bda-92ad-4fd7-a8d4-b5601b9a34df.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-12-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 341384180",
+          "source_url": "https://images.findagrave.com/photos/2026/125/14911199_9fde12f6-0bbd-4c9a-8aa3-61089fda0e87.jpeg?size=original"
+        },
+        {
           "ref": "george-denison/media/baldwin-1881-p6-george-ann.jpg",
           "kind": "document",
           "source": "Baldwin & Clift 1881 p.6 — shared under george-denison",
@@ -11533,6 +12483,18 @@
       ],
       "media": [
         {
+          "file": "media/fag-280868397-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 280868397",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        },
+        {
+          "file": "media/fag-280868397-05-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 280868397",
+          "source_url": "https://images.findagrave.com/photos/2010/146/313_47208015_COR0052JPG.jpg?size=photoThumbnails"
+        },
+        {
           "ref": "rev-augustus-shorts/media/fag-133463240-01-headstone.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 133463240 (Sexsmith Cemetery overview; Samuel memorial has no personal stone)",
@@ -11609,6 +12571,21 @@
         "hannah_shorts_holcomb"
       ],
       "media": [
+        {
+          "file": "media/fag-130725257-04-headstone.jpg"
+        },
+        {
+          "file": "media/fag-133462968-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 130725257",
+          "source_url": "https://images.findagrave.com/photos/2021/182/144753754_6be5ed9c-e9d4-4fdb-b4a3-63b123cfb392.jpeg?size=photoThumbnails"
+        },
+        {
+          "file": "media/fag-130725257-05-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 130725257",
+          "source_url": "https://images.findagrave.com/photos/2014/201/132492394_1405988525.jpg?size=photoThumbnails"
+        },
         {
           "file": "media/fag-133462968-sexsmith-row.jpg",
           "kind": "headstone",
@@ -17563,7 +18540,9 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0535"
+      ],
       "sources": [
         {
           "label": "FAG memorial 229213602 — Hugh Darwin Anderson 12 Oct 1877 – 6 Jun 1964 Oak Hill Birch Lawn Lot 604 Sp 2",
@@ -17640,6 +18619,161 @@
           "confidence": "Probable"
         }
       ]
+    },
+    "caroline_m_chamberlin_dupray": {
+      "id": "caroline_m_chamberlin_dupray",
+      "slug": "caroline-m-chamberlin-dupray",
+      "name": "Caroline M. Chamberlin Dupray",
+      "years": "1820-1865",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ira_chamberlin",
+        "salome_barnes_chamberlin"
+      ],
+      "spouses": [
+        "james_story_dupray"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0532",
+        "FT-0534",
+        "FT-0637",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 131309714 — Mary Ann Dupray bio: sister Caroline M. Chamberlin m. James Story Dupray",
+          "url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        },
+        {
+          "label": "Dupray Family Bible — Caroline M Chamberlain b. 11 Jun 1820; m. James S Dupray 24 May 1842 Bavaria Portage Co Ohio",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        }
+      ],
+      "aka": [
+        "Caroline M. Chamberlain"
+      ],
+      "parent_links": [
+        {
+          "id": "ira_chamberlin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "salome_barnes_chamberlin",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "james_story_dupray",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1820-06-11",
+      "death": "1865-02-22",
+      "birth_place": "Sheffield, Berkshire County, Massachusetts, USA"
+    },
+    "james_story_dupray": {
+      "id": "james_story_dupray",
+      "slug": "james-story-dupray",
+      "name": "James Story Dupray",
+      "years": "1816-1876",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "thomas_dupray"
+      ],
+      "spouses": [
+        "caroline_m_chamberlin_dupray"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0532",
+        "FT-0597",
+        "FT-0638",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "Dupray Family Bible — James S. Dupray b. 27 Sep 1816 Franklin Venango Co PA; m. Caroline M Chamberlain 24 May 1842",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        },
+        {
+          "label": "FAG memorial 34451832 — Christina Miller Dupray child James Story Dupray",
+          "url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        }
+      ],
+      "aka": [
+        "James S. Dupray"
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "caroline_m_chamberlin_dupray",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1816-09-27",
+      "death": "1876-12-06",
+      "birth_place": "Franklin, Venango County, Pennsylvania, USA"
+    },
+    "frederick_miller_dupray": {
+      "id": "frederick_miller_dupray",
+      "slug": "frederick-miller-dupray",
+      "name": "Frederick Miller Dupray",
+      "years": "1831–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "thomas_dupray"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0597",
+        "FT-0598",
+        "FT-0600"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 34451832 — Christina Miller Dupray child Frederick Miller Dupray",
+          "url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        },
+        {
+          "label": "History of Western Iowa 1882 — Frederick M. Dupray b. Ohio 1831; Mondamin hotel/blacksmith",
+          "url": "https://freepages.rootsweb.com/~cooverfamily/books/western_43.html"
+        },
+        {
+          "label": "Portage OHGenWeb query010 — Frederick Miller Dupray b. 12 Oct 1831 Charleston Portage OH",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        }
+      ],
+      "aka": [
+        "Frederick M. Dupray"
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_dupray",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1831-10-12",
+      "birth_place": "Charleston, Portage County, Ohio, USA"
     },
     "carla": {
       "id": "carla",
@@ -17730,7 +18864,9 @@
         }
       ],
       "portrait": "media/portrait-2022.jpeg",
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48237526",
@@ -17784,7 +18920,9 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48236712",
@@ -17837,7 +18975,9 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 27952385",
@@ -17884,7 +19024,9 @@
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 167363109",
@@ -17908,17 +19050,61 @@
       "death": "1972-08-18",
       "burial": "Mount Lebanon Cemetery, Saint Ann, St. Louis County, Missouri, USA"
     },
-    "george_kruse": {
-      "id": "george_kruse",
-      "slug": "george-kruse",
-      "name": "George Kruse",
+    "ruth_straka": {
+      "id": "ruth_straka",
+      "slug": "ruth-tuxhorn-straka",
+      "name": "Ruth Straka",
       "years": "",
       "confidence": "Probable",
       "verified": false,
-      "status": "cataloged",
+      "status": "researching",
       "parents": [
-        "henry_kruse",
-        "marie_wolf_kruse"
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0553"
+      ],
+      "sources": [
+        {
+          "label": "Hutchinson News 10 Jan 1951 via FAG 48237386 — survivor Mrs. Ruth Straka, McPherson",
+          "url": "https://www.findagrave.com/memorial/48237386/ida_l-tuxhorn"
+        },
+        {
+          "label": "FT-0553 Hutchinson News Ida L. Tuxhorn obituary",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Ruth Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "leo_tuxhorn",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ida_tuxhorn",
+          "confidence": "Probable"
+        }
+      ],
+      "death_place": "McPherson, McPherson County, Kansas, USA"
+    },
+    "catharina_achilles_1644": {
+      "id": "catharina_achilles_1644",
+      "slug": "catharina-achilles-apelnstedt-1644",
+      "name": "Catharina Achilles",
+      "years": "1644-1727",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
       ],
       "spouses": [],
       "children": [],
@@ -17927,30 +19113,126 @@
       "object_ids": [],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Henry Kruse 127003248 / Minnie 116548907",
-          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+          "label": "GEDBAS 1133065722 — Catharina Achilles ~1644 Apelnstedt +1727 Dettum (parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133065722"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
-          "url": ""
+          "label": "GEDBAS 1133067138 — Hans Achilles child grid names Catharina",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        }
+      ],
+      "aka": [
+        "Hogrefe"
+      ],
+      "parent_links": [
+        {
+          "id": "hans_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hogrefe_nn",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1644",
+      "death": "1727-08-17",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Dettum bei Wolfenbüttel, Braunschweig, Germany",
+      "burial": "1727-08-21"
+    },
+    "margarethe_achilles_1645": {
+      "id": "margarethe_achilles_1645",
+      "slug": "margarethe-achilles-apelnstedt-1645",
+      "name": "Margarethe Achilles",
+      "years": "1645-1695",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133068936 — Margarethe Achilles Mar 1645 Apelnstedt +1695 (parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133068936"
+        },
+        {
+          "label": "GEDBAS 1133067138 — Hans Achilles child grid names Margarethe Mar 1645",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        }
+      ],
+      "aka": [
+        "FutterMenger"
+      ],
+      "parent_links": [
+        {
+          "id": "hans_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hogrefe_nn",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1645-03",
+      "death": "1695-06-28",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "burial": "1695-06-28"
+    },
+    "cordt_achilles": {
+      "id": "cordt_achilles",
+      "slug": "cordt-achilles-apelnstedt-1649",
+      "name": "Cordt Achilles",
+      "years": "1649-1663",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133072479 — Cordt Achilles *12 Jun 1649 +1663 Apelnstedt (parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133072479"
+        },
+        {
+          "label": "GEDBAS 1133067138 — Hans Achilles child grid names Cordt 12 Jun 1649",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
         }
       ],
       "parent_links": [
         {
-          "id": "henry_kruse",
+          "id": "hans_achilles",
           "confidence": "Probable"
         },
         {
-          "id": "marie_wolf_kruse",
+          "id": "hogrefe_nn",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1649-06-12",
+      "death": "1663",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
-    "henry_john_ernest_kruse": {
-      "id": "henry_john_ernest_kruse",
-      "slug": "henry-john-ernest-kruse",
-      "name": "Henry John Ernest Kruse",
-      "years": "",
+    "george_kruse": {
+      "id": "george_kruse",
+      "slug": "george-kruse",
+      "name": "George Kruse",
+      "years": "1861-1936",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -17962,14 +19244,20 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
+        {
+          "label": "Find A Grave 95440915 — George Kruse",
+          "url": "https://www.findagrave.com/memorial/95440915/george-kruse"
+        },
         {
           "label": "Find A Grave sibling grid — Henry Kruse 127003248",
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -17982,7 +19270,61 @@
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1861-04",
+      "death": "1936-03-04",
+      "birth_place": "Germany",
+      "death_place": "North Dakota, USA",
+      "burial": "IOOF Cemetery, Cando, Towner County, North Dakota, USA"
+    },
+    "henry_john_ernest_kruse": {
+      "id": "henry_john_ernest_kruse",
+      "slug": "henry-john-ernest-kruse",
+      "name": "Henry John Ernest Kruse",
+      "years": "1862-1948",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0737"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 139035468 — Henry John Ernest Kruse",
+          "url": "https://www.findagrave.com/memorial/139035468/henry_john_ernest-kruse"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1862-08-28",
+      "death": "1948-11-04",
+      "birth_place": "Germany",
+      "death_place": "Falls City, Richardson County, Nebraska, USA",
+      "burial": "Steele Cemetery, Falls City, Richardson County, Nebraska, USA"
     },
     "william_kruse": {
       "id": "william_kruse",
@@ -18000,8 +19342,14 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
+        {
+          "label": "Find A Grave 127003267 — William Kruse",
+          "url": "https://www.findagrave.com/memorial/127003267/william-kruse"
+        },
         {
           "label": "IAGenWeb Wheatland Cemetery — Kruse, William 1865 / 1943",
           "url": "https://iagenweb.org/allamakee/cemetery/Wheatland.htm"
@@ -18011,7 +19359,7 @@
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18025,15 +19373,17 @@
           "confidence": "Probable"
         }
       ],
-      "birth": "1865",
-      "death": "1943",
+      "birth": "1865-03-30",
+      "death": "1943-03-23",
+      "birth_place": "Germany",
+      "death_place": "Houston County, Minnesota, USA",
       "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA"
     },
     "louis_kruse": {
       "id": "louis_kruse",
       "slug": "louis-kruse",
       "name": "Heinrich Wilhelm Louis Kruse",
-      "years": "1872–",
+      "years": "1871-1941",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18045,14 +19395,17 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737",
+        "FT-0739"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Heinrich Wilhelm Louis Kruse",
-          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+          "label": "Find A Grave 126353799 — Heinrich Wilhelm Louis Kruse",
+          "url": "https://www.findagrave.com/memorial/126353799/heinrich_wilhelm_louis-kruse"
         },
         {
-          "label": "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman; confirm Johann Heinrich Louis",
+          "label": "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman",
           "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
         },
         {
@@ -18060,7 +19413,7 @@
           "url": "http://iagenweb.org/boards/allamakee/obituaries/index.cgi?read=306683"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18078,14 +19431,16 @@
           "confidence": "Probable"
         }
       ],
-      "birth": "1872",
-      "birth_place": "Iowa, USA"
+      "birth": "1871-04-11",
+      "death": "1941-07-09",
+      "birth_place": "Allamakee County, Iowa, USA",
+      "burial": "Saint Lukes Cemetery, Eitzen, Houston County, Minnesota, USA"
     },
     "maria_dorothea_caroline_kruse_jahn": {
       "id": "maria_dorothea_caroline_kruse_jahn",
       "slug": "maria-dorothea-caroline-kruse-jahn",
       "name": "Maria Dorothea Caroline Kruse Jahn",
-      "years": "",
+      "years": "1873-1913",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18097,18 +19452,21 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737",
+        "FT-0739"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Maria Dorothea Caroline Mary Kruse Jahn",
-          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+          "label": "Find A Grave 44678117 — Maria Dorothea Caroline Kruse Jahn",
+          "url": "https://www.findagrave.com/memorial/44678117/maria_dorothea_caroline-jahn"
         },
         {
           "label": "IAGenWeb St. John's — Maria D.C.M. Kruse confirm; m. Johann Jacob John",
           "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18125,13 +19483,17 @@
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1873-02-18",
+      "death": "1913-07-13",
+      "birth_place": "Union City Township, Allamakee County, Iowa, USA",
+      "burial": "Monitor Church of the Brethren Cemetery, McPherson, McPherson County, Kansas, USA"
     },
     "charles_fredrick_kruse": {
       "id": "charles_fredrick_kruse",
       "slug": "charles-fredrick-kruse",
       "name": "Charles Fredrick Kruse",
-      "years": "",
+      "years": "1875-1940",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18143,14 +19505,20 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Charles Fredrick Kruse",
+          "label": "Find A Grave 90273777 — Charles Fredrick Kruse",
+          "url": "https://www.findagrave.com/memorial/90273777/charles_fredrick-kruse"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18163,13 +19531,18 @@
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1875-06-24",
+      "death": "1940-11-08",
+      "birth_place": "Allamakee County, Iowa, USA",
+      "death_place": "Seattle, King County, Washington, USA",
+      "burial": "Crown Hill Cemetery, Seattle, King County, Washington, USA"
     },
     "anna_katherine_elizabeth_kruse_lubberstedt": {
       "id": "anna_katherine_elizabeth_kruse_lubberstedt",
       "slug": "anna-katherine-elizabeth-kruse-lubberstedt",
       "name": "Anna Katherine Elizabeth Kruse Lubberstedt",
-      "years": "",
+      "years": "1879-1946",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18181,14 +19554,20 @@
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Anna Katherine Elizabeth Kruse Lubberstedt",
+          "label": "Find A Grave 120363051 — Anna Katherine Elizabeth Kruse Lubberstedt",
+          "url": "https://www.findagrave.com/memorial/120363051/anna_katherine_elizabeth-lubberstedt"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18201,7 +19580,11 @@
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1879",
+      "death": "1946-10-31",
+      "birth_place": "Union City Township, Allamakee County, Iowa, USA",
+      "burial": "Evangelical Lutheran Immanuel Cemetery, Wakefield, Dixon County, Nebraska, USA"
     },
     "don_shorts": {
       "id": "don_shorts",

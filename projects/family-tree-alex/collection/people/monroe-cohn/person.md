@@ -11,7 +11,7 @@ burial: Mt. Carmel Cemetery
 parents: [solomon_cohn, bertha_pottesham]
 spouses: [mamie_mamlock]
 children: [myron_mamlock_cole, seymour_cohn]
-object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0099, FT-0240, FT-0261, FT-0262, FT-0398, FT-0426, FT-0427]
+object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0099, FT-0240, FT-0261, FT-0262, FT-0398, FT-0426, FT-0427, FT-0565]
 confidence: Confirmed
 verified: true
 status: researching

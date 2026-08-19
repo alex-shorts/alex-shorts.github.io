@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [charles_c_gatz]
 children: [irvin]
-object_ids: []
+object_ids: [FT-0581, FT-0586, FT-0737]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -46,6 +46,18 @@ sources:
   - label: "Free-sources wave: docs/research/people/proposals/free-sources-wave.md"
     url: ""
 media:
+  - file: media/fag-116548907-02-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-116548907]
+    source: "Find A Grave memorial 116548907 — Memorial photo 87956158"
+    source_url: https://images.findagrave.com/photos/2013/246/116548907_137833712544.jpg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-116548907-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-116548907]
+    source: "Find A Grave memorial 116548907 — Minnie <I>Kruse</I> Gatz"
+    source_url: https://images.findagrave.com/photos/2013/246/116548907_137833720257.jpg?size=original
+    captured_at: 2026-08-19
   - file: media/headstone-mcpherson-2013.jpg
     kind: headstone
     source: Find A Grave 116548907 — McPherson Cemetery

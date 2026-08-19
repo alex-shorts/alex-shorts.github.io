@@ -22,6 +22,8 @@
     groupIntoGalleries,
     loadObjectArtifact,
     objectAccessionLabel,
+    hangObituaryOnPerson,
+    objectPanelLabel,
     loadPeopleIndex,
     neighborIds,
     personMediaArtifacts,
@@ -82,6 +84,8 @@ const legend = document.getElementById("legend");
 
 let visible = new Set();
 let showSiblings = false;
+/** Temporary sibling overlay: restore `prevVisible` on click-off. */
+let siblingPeek = null;
 const COMBINED_ROOTS = ["alexander", "morganne"];
 let combinedMode = false;
 let bootCombined = false;
@@ -363,14 +367,10 @@ function expandUp(id, { all = false } = {}) {
   const depth = all ? Infinity : 1;
   if (!revealIds(collectAncestors(id, people, depth))) return;
   render();
-  selectPerson(id);
 }
 
 function expandDown(id) {
-  const people = getPeople();
-  if (!revealIds(collectChildren(id, people))) return;
-  render();
-  selectPerson(id);
+  enterSiblingPeek(id);
 }
 
 /**
@@ -409,19 +409,63 @@ function collapseUp(id) {
     return;
   }
   render();
-  selectPerson(id);
 }
 
 function collapseDown(id) {
+  if (siblingPeek?.parentId === id) {
+    exitSiblingPeek();
+    return;
+  }
   if (!collapseFromSeeds(id, getPeople()[id]?.children || [])) return;
   render();
-  selectPerson(id);
+}
+
+function peekHotSet() {
+  if (!siblingPeek) return null;
+  const people = getPeople();
+  const hot = new Set();
+  for (const c of collectChildren(siblingPeek.parentId, people)) {
+    if (!visible.has(c)) continue;
+    hot.add(c);
+    for (const pid of people[c]?.parents || []) {
+      if (visible.has(pid)) hot.add(pid);
+    }
+  }
+  if (visible.has(siblingPeek.parentId)) hot.add(siblingPeek.parentId);
+  return hot;
+}
+
+function enterSiblingPeek(id) {
+  if (siblingPeek?.parentId === id) {
+    exitSiblingPeek();
+    return;
+  }
+  if (siblingPeek) {
+    visible = new Set(siblingPeek.prevVisible);
+    siblingPeek = null;
+  }
+  const prevVisible = new Set(visible);
+  revealIds(collectChildren(id, getPeople()));
+  siblingPeek = { parentId: id, prevVisible };
+  selectedId = null;
+  panel.hidden = true;
+  render();
+}
+
+function exitSiblingPeek() {
+  if (!siblingPeek) return;
+  visible = siblingPeek.prevVisible;
+  siblingPeek = null;
+  selectedId = null;
+  panel.hidden = true;
+  render();
 }
 
 function attachCardUi(d) {
   const c = GEN_COLORS[d.generation] || GEN_COLORS[2];
   const upOpen = collapsibleUp(d.id);
   const downHidden = hiddenDown(d.id).length > 0;
+  const downOpen = siblingPeek?.parentId === d.id || collapsibleDown(d.id);
   const stall = stallInfo(d.blocker);
   d.collateral = !d.lineRelevant;
   d.ui = {
@@ -445,8 +489,9 @@ function attachCardUi(d) {
     upOpen,
     showOne: upOpen || hiddenUpOne(d.id).length > 0,
     showAll: !upOpen && hiddenUpDeep(d.id).length > 0,
+    showKids: downHidden || downOpen || collectChildren(d.id, getPeople()).length > 1,
     downHidden,
-    downOpen: collapsibleDown(d.id),
+    downOpen,
   };
 }
 
@@ -459,8 +504,11 @@ function cardLayerHooks() {
     },
     onExpandAll: (id) => expandUp(id, { all: true }),
     onExpandKids: (id) => {
-      if (hiddenDown(id).length) expandDown(id);
-      else collapseDown(id);
+      if (siblingPeek?.parentId === id || (!hiddenDown(id).length && collapsibleDown(id))) {
+        collapseDown(id);
+      } else {
+        enterSiblingPeek(id);
+      }
     },
     onDragStart: (event, id) => {
       const d = liveNodes.get(id);
@@ -689,14 +737,18 @@ function layoutAligned(nodes, { hard = true } = {}) {
 
 function applyHighlight() {
   const people = getPeople();
+  const peek = peekHotSet();
   const hot = new Set();
-  if (selectedId && people[selectedId]) {
+  if (peek) {
+    for (const id of peek) hot.add(id);
+  } else if (selectedId && people[selectedId]) {
     hot.add(selectedId);
     for (const id of neighborIds(people[selectedId])) if (visible.has(id)) hot.add(id);
   }
-  window.TreeCards.highlight(selectedId, hot);
+  window.TreeCards.highlight(selectedId, hot, { peek: Boolean(peek) });
+  zoomSurface.classed("is-sib-peek", Boolean(peek));
   gLinks.selectAll("path.child").classed("dim", (d) => {
-    if (!selectedId) return false;
+    if (!peek && !selectedId) return false;
     const t = typeof d.target === "object" ? d.target.id : d.target;
     const parents = d.union || [
       typeof d.source === "object" ? d.source.id : d.source,
@@ -706,6 +758,11 @@ function applyHighlight() {
 }
 
 function selectPerson(id) {
+  const peek = peekHotSet();
+  if (peek && !peek.has(id)) {
+    exitSiblingPeek();
+    return;
+  }
   selectedId = id;
   applyHighlight();
   openPanel(id);
@@ -1069,6 +1126,7 @@ function setPrimaryPerson(id) {
     combinedMode = false;
   }
   if (!people[id]) return;
+  siblingPeek = null;
   setFocusId(id);
   dnaByPrimary = null;
   dnaPrimaryId = null;
@@ -1098,9 +1156,9 @@ async function fillArtifacts(person) {
   for (const oid of person.objectIds || []) {
     if (!objectCache.has(oid)) objectCache.set(oid, await loadObjectArtifact(oid));
     const obj = objectCache.get(oid);
-    if (obj && (obj.bodyText || obj.photos?.length || obj.audio || obj.videos?.length)) {
-      objects.push(obj);
-    }
+    if (!obj || (!obj.bodyText && !obj.photos?.length && !obj.audio && !obj.videos?.length)) continue;
+    if (!hangObituaryOnPerson(obj, person.id, getPeople())) continue;
+    objects.push(obj);
   }
 
   panelGalleries = new Map();
@@ -1138,13 +1196,13 @@ async function fillArtifacts(person) {
   }
 
   for (const o of objects) {
-    const kind = objectAccessionLabel(o);
+    const kind = objectPanelLabel(o, person, getPeople());
     if (o.photos?.length) {
       const gid = `object:${o.id}:photos`;
       const transcript = extractObjectTranscript(o.bodyText);
       const slides = o.photos.map((src) => ({
         src,
-        caption: o.title,
+        caption: kind,
         transcript,
       }));
       panelGalleries.set(gid, { label: kind, items: slides });
@@ -1255,7 +1313,6 @@ function resetFocus() {
 }
 
 function buildLegend() {
-  const gens = [...new Set(simulation.nodes().map((n) => n.generation))].sort((a, b) => a - b);
   const lines = [
     `<span><i class="swatch line line-confirmed"></i>Confirmed</span>`,
     `<span><i class="swatch line line-probable"></i>Probable</span>`,
@@ -1265,12 +1322,6 @@ function buildLegend() {
     (t) => `<span><i class="swatch stall" style="--c:${t.color}"></i>${escapeHtml(t.label)}</span>`
   );
   legend.innerHTML =
-    `<span class="legend-group">${gens
-      .map((g) => {
-        const c = GEN_COLORS[g] || GEN_COLORS[0];
-        return `<span><i class="swatch" style="--c:${c.fill}"></i>${escapeHtml(c.label)}</span>`;
-      })
-      .join("")}</span>` +
     `<span class="legend-group">${lines.join("")}</span>` +
     `<span class="legend-group">${stalls.join("")}</span>`;
 }
@@ -1289,6 +1340,10 @@ function resize() {
 
 zoomSurface.on("click", (event) => {
   if (event.target.closest(".card-host")) return;
+  if (siblingPeek) {
+    exitSiblingPeek();
+    return;
+  }
   selectedId = null;
   applyHighlight();
   panel.hidden = true;
@@ -1398,6 +1453,7 @@ document.getElementById("toggle-physics").addEventListener("change", (e) => {
 });
 document.getElementById("toggle-siblings").addEventListener("change", (e) => {
   showSiblings = e.target.checked;
+  siblingPeek = null;
   nodePos.clear();
   visible = baselineVisible();
   if (selectedId && !visible.has(selectedId)) selectedId = getFocusId();
@@ -1418,6 +1474,53 @@ async function boot() {
           "FT-0097 · Obituary",
         "object tiles keep FT-#### for database lookup"
       );
+      {
+        const { hangObituaryOnPerson, objectPanelLabel } = window.ShareData;
+        const full = {
+          george_rudd: {
+            id: "george_rudd",
+            name: "George E. Rudd",
+            sex: "m",
+            parents: [],
+            spouses: [],
+            children: ["marcy_parsons"],
+          },
+          marcy_parsons: {
+            id: "marcy_parsons",
+            name: "Marcy Parsons",
+            parents: ["george_rudd"],
+            spouses: ["bill_parsons"],
+            children: [],
+          },
+          bill_parsons: {
+            id: "bill_parsons",
+            name: "Bill Parsons",
+            parents: [],
+            spouses: ["marcy_parsons"],
+            children: [],
+          },
+        };
+        const obit = {
+          type: "obituary",
+          id: "FT-0008",
+          title: "Press-Enterprise — George E. Rudd",
+          personIds: ["george_rudd", "marcy_parsons", "bill_parsons"],
+        };
+        console.assert(hangObituaryOnPerson(obit, "george_rudd", full), "obit hangs on the deceased");
+        console.assert(
+          !hangObituaryOnPerson(obit, "bill_parsons", full),
+          "obit does not hang on a named survivor"
+        );
+        const pruned = { marcy_parsons: full.marcy_parsons, bill_parsons: full.bill_parsons };
+        console.assert(
+          hangObituaryOnPerson(obit, "marcy_parsons", pruned),
+          "obit hangs on kin when the deceased has no node"
+        );
+        console.assert(
+          /father|mother|parent/i.test(objectPanelLabel(obit, pruned.marcy_parsons, pruned)),
+          "off-tree obit names the connection"
+        );
+      }
       console.assert(
         formatVitalDate("1828-05-12") === "12 May 1828",
         "vital dates read as day month year"
@@ -1593,6 +1696,7 @@ async function boot() {
     // Show full graph undimmed first — selection dims most parent→child edges
     selectedId = null;
     setTimeout(fitView, 550);
+    window.TreeSidebar?.init?.();
   } catch (err) {
     console.error(err);
     panel.hidden = false;
@@ -1603,5 +1707,14 @@ async function boot() {
 }
 
 window.addEventListener("resize", resize);
+
+window.TreeApp = {
+  selectPerson,
+  openPanel,
+  openLightbox,
+  openLightboxGallery,
+  loadObjectArtifact,
+};
+
 boot();
 })();

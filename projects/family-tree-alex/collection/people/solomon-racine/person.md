@@ -11,7 +11,7 @@ burial:
 parents: []
 spouses: [pauline_muschini]
 children: [virginia_victoria_racine]
-object_ids: [FT-0021, FT-0025, FT-0096, FT-0230, FT-0412, FT-0415, FT-0420]
+object_ids: [FT-0021, FT-0025, FT-0096, FT-0230, FT-0412, FT-0415, FT-0420, FT-0564, FT-0566]
 confidence: Confirmed
 verified: true
 status: researching

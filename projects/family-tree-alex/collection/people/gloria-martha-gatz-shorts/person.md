@@ -11,7 +11,7 @@ burial: Conejo Mountain Memorial Park, Camarillo, Ventura County, California, US
 parents: [irvin, martha]
 spouses: [richard]
 children: [william, carla, gigi]
-object_ids: [FT-0004, FT-0005, FT-0101, FT-0102, FT-0313, FT-0315, FT-0397]
+object_ids: [FT-0004, FT-0005, FT-0101, FT-0102, FT-0313, FT-0315, FT-0397, FT-0582, FT-0583, FT-0585]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -23,6 +23,18 @@ sources:
   - label: "Richard VC Star obituary (FT-0004)"
     url: "https://www.findagrave.com/memorial/65483876/richard-dorland-shorts"
 media:
+  - file: media/fag-183422612-02-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-183422612]
+    source: "Find A Grave memorial 183422612 — Memorial photo 198333413"
+    source_url: https://images.findagrave.com/photos/2020/20/183422612_857754ec-ae02-4380-9233-be9e5389e20e.jpeg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-183422612-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-183422612]
+    source: "Find A Grave memorial 183422612 — Gloria Martha <I>Gatz</I> Shorts"
+    source_url: https://images.findagrave.com/photos/2017/257/183422612_1505495320.jpg?size=original
+    captured_at: 2026-08-19
   - file: media/portrait.jpg
     kind: portrait
     source: Conejo Mountain Funeral Home obituary (same image also on Find A Grave 183422612)

@@ -15,8 +15,8 @@ parent_links:
   - id: caroline_waescher
     confidence: Confirmed
 spouses: [leo_tuxhorn]
-children: [carrie_williams, florence_graves, martha, henry_f_tuxhorn, wilma_prather]
-object_ids: []
+children: [carrie_williams, florence_graves, martha, henry_f_tuxhorn, wilma_prather, ruth_straka]
+object_ids: [FT-0553, FT-0579, FT-0580, FT-0582, FT-0584]
 confidence: Confirmed
 verified: true
 status: cataloged

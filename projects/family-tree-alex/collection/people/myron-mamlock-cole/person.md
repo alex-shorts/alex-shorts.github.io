@@ -11,7 +11,7 @@ burial:
 parents: [monroe_cohn, mamie_mamlock]
 spouses: [virginia_victoria_racine]
 children: [virginia_jill_cole]
-object_ids: [FT-0023, FT-0024, FT-0025, FT-0028, FT-0094]
+object_ids: [FT-0023, FT-0024, FT-0025, FT-0028, FT-0094, FT-0563]
 confidence: Confirmed
 verified: true
 status: researching

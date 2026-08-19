@@ -41,6 +41,12 @@ sources:
   - label: "Free-sources wave: docs/research/people/proposals/free-sources-wave.md"
     url: ""
 media:
+  - file: media/fag-100072401-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-100072401]
+    source: "Find A Grave memorial 100072401 — Annabelle L <I>Merritt</I> Shorts"
+    source_url: https://images.findagrave.com/photos/2012/306/100072401_135191952551.jpg?size=original
+    captured_at: 2026-08-19
   - file: media/headstone-live-oak-2012.jpg
     kind: headstone
     source: Find A Grave memorial 100072401 — Live Oak Memorial Park

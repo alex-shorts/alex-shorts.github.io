@@ -1,6 +1,6 @@
 window.PEOPLE_DATA = {
   "version": 1,
-  "updated": "2026-08-15",
+  "updated": "2026-08-19",
   "focus_id": "alexander",
   "people": {
     "alexander": {
@@ -23,7 +23,8 @@ window.PEOPLE_DATA = {
       "object_ids": [
         "FT-0392",
         "FT-0396",
-        "FT-0397"
+        "FT-0397",
+        "FT-0470"
       ]
     },
     "heidi": {
@@ -155,7 +156,9 @@ window.PEOPLE_DATA = {
         "FT-0028",
         "FT-0096",
         "FT-0230",
-        "FT-0231"
+        "FT-0231",
+        "FT-0563",
+        "FT-0564"
       ],
       "sources": [
         {
@@ -220,7 +223,8 @@ window.PEOPLE_DATA = {
         "FT-0025",
         "FT-0096",
         "FT-0230",
-        "FT-0231"
+        "FT-0231",
+        "FT-0564"
       ],
       "sources": [
         {
@@ -304,7 +308,7 @@ window.PEOPLE_DATA = {
         "Samuel Dushkin"
       ],
       "birth_place": "Russia",
-      "blocker": "HVR image D-M-1927-0021183 still needed (Akamai blocked this wave)"
+      "blocker": "HVR image D-M-1927-0021183 still needed (Akamai blocked prior waves)"
     },
     "solomon_racine": {
       "id": "solomon_racine",
@@ -337,7 +341,9 @@ window.PEOPLE_DATA = {
         "FT-0230",
         "FT-0412",
         "FT-0415",
-        "FT-0420"
+        "FT-0420",
+        "FT-0564",
+        "FT-0566"
       ],
       "sources": [
         {
@@ -410,7 +416,8 @@ window.PEOPLE_DATA = {
         "FT-0024",
         "FT-0025",
         "FT-0028",
-        "FT-0094"
+        "FT-0094",
+        "FT-0563"
       ],
       "sources": [
         {
@@ -506,7 +513,8 @@ window.PEOPLE_DATA = {
         "FT-0398",
         "FT-0418",
         "FT-0421",
-        "FT-0426"
+        "FT-0426",
+        "FT-0565"
       ],
       "sources": [
         {
@@ -841,7 +849,8 @@ window.PEOPLE_DATA = {
         "FT-0262",
         "FT-0398",
         "FT-0426",
-        "FT-0427"
+        "FT-0427",
+        "FT-0565"
       ],
       "sources": [
         {
@@ -2056,7 +2065,8 @@ window.PEOPLE_DATA = {
         "FT-0201",
         "FT-0360",
         "FT-0361",
-        "FT-0362"
+        "FT-0362",
+        "FT-0567"
       ],
       "sources": [
         {
@@ -4858,7 +4868,10 @@ window.PEOPLE_DATA = {
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "ira_chamberlin",
+        "salome_barnes_chamberlin"
+      ],
       "spouses": [
         "hugh_dupray"
       ],
@@ -4866,10 +4879,23 @@ window.PEOPLE_DATA = {
         "emily_e_dupray_anderson",
         "willis_dupray"
       ],
-      "media": [],
+      "media": [
+        {
+          "file": "media/fag-131309714-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309714 — Mary Ann Chamberlin Dupray",
+          "source_url": "https://images.findagrave.com/photos/2025/282/131309714_933cb650-2800-46c4-9b10-e522560ee83a.jpeg?size=original"
+        }
+      ],
       "portrait": null,
       "object_ids": [
-        "FT-0195"
+        "FT-0195",
+        "FT-0532",
+        "FT-0533",
+        "FT-0534",
+        "FT-0637",
+        "FT-0639",
+        "FT-0644"
       ],
       "sources": [
         {
@@ -4877,14 +4903,28 @@ window.PEOPLE_DATA = {
           "url": "http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm"
         },
         {
-          "label": "Find a Grave memorial 131309714 — Mary Ann Dupray (née Chamberlin) 1823 – 23 Mar 1884, Silver City Cemetery",
+          "label": "Find a Grave memorial 131309714 — parents Ira Chamberlin × Salome Barnes; sister Caroline m. James Story Dupray",
           "url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        },
+        {
+          "label": "Dupray Family Bible — Caroline M Chamberlain birth/marriage (FT-0532)",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
         }
       ],
       "aka": [
         "Mary A. Dupray",
         "Mary Ann Chamberlin",
         "Mary Ann Chamberlain"
+      ],
+      "parent_links": [
+        {
+          "id": "ira_chamberlin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "salome_barnes_chamberlin",
+          "confidence": "Probable"
+        }
       ],
       "spouse_links": [
         {
@@ -4898,6 +4938,299 @@ window.PEOPLE_DATA = {
       "death_place": "Silver City, Mills County, Iowa, USA",
       "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
     },
+    "salome_barnes_chamberlin": {
+      "id": "salome_barnes_chamberlin",
+      "slug": "salome-barnes-chamberlin",
+      "name": "Salome Barnes Chamberlin",
+      "years": "1782-1862",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "thomas_barnes_i",
+        "anna_horsford_barnes"
+      ],
+      "spouses": [
+        "ira_chamberlin"
+      ],
+      "children": [
+        "mary_ann_dupray",
+        "caroline_m_chamberlin_dupray"
+      ],
+      "media": [
+        {
+          "ref": "mary-ann-dupray/media/fag-131309714-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309714 — Mary Ann Dupray (bio names Salome mother)",
+          "source_url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0534",
+        "FT-0637",
+        "FT-0644",
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129594577 — Salome Barnes Chamberlin (parents Thomas Barnes × Anna Hansford; will/probate)",
+          "url": "https://www.findagrave.com/memorial/129594577/salome-chamberlin"
+        }
+      ],
+      "aka": [
+        "Salome Chamberlin"
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_barnes_i",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_horsford_barnes",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "ira_chamberlin",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1782",
+      "death": "1862-09-12",
+      "birth_place": "Canaan, Litchfield County, Connecticut, USA",
+      "death_place": "Freedom, Portage County, Ohio, USA",
+      "burial": "Freedom West Cemetery, Freedom Township, Portage County, Ohio, USA"
+    },
+    "anna_horsford_barnes": {
+      "id": "anna_horsford_barnes",
+      "slug": "anna-horsford-barnes",
+      "name": "Anna Horsford Barnes",
+      "years": "1747–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "timothy_horsford_1709",
+        "anne_smithrem_horsford"
+      ],
+      "spouses": [
+        "thomas_barnes_i"
+      ],
+      "children": [
+        "salome_barnes_chamberlin"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129594577 — Salome bio names mother Anna Hansford b. 1747",
+          "url": "https://www.findagrave.com/memorial/129594577/salome-chamberlin"
+        },
+        {
+          "label": "FamilyCentral Anna popup — parents Timothy Horsford × Anne Smithrem",
+          "url": "http://www.familycentral.net/index/person_popup.cfm?ref1=15859%3A107371&mode=ped"
+        }
+      ],
+      "aka": [
+        "Anna Hansford",
+        "Anna Barnes"
+      ],
+      "parent_links": [
+        {
+          "id": "timothy_horsford_1709",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anne_smithrem_horsford",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "thomas_barnes_i",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1747-06-25",
+      "birth_place": "Canaan, Litchfield County, Connecticut"
+    },
+    "anne_smithrem_horsford": {
+      "id": "anne_smithrem_horsford",
+      "slug": "anne-smithrem-horsford",
+      "name": "Anne Smithrem Horsford",
+      "years": "",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "timothy_horsford_1709"
+      ],
+      "children": [
+        "anna_horsford_barnes"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FamilyCentral Anna Horsford popup — mother Anne Smithrem",
+          "url": "http://www.familycentral.net/index/person_popup.cfm?ref1=15859%3A107371&mode=ped"
+        }
+      ],
+      "aka": [
+        "Anne Smithrem"
+      ],
+      "spouse_links": [
+        {
+          "id": "timothy_horsford_1709",
+          "confidence": "Probable"
+        }
+      ]
+    },
+    "timothy_horsford_1709": {
+      "id": "timothy_horsford_1709",
+      "slug": "timothy-horsford-1709",
+      "name": "Timothy Horsford",
+      "years": "1709-1787",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "anne_smithrem_horsford"
+      ],
+      "children": [
+        "anna_horsford_barnes"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FamilyCentral Anna Horsford popup — father Timothy Horsford",
+          "url": "http://www.familycentral.net/index/person_popup.cfm?ref1=15859%3A107371&mode=ped"
+        },
+        {
+          "label": "FamilyCentral Timothy Horsford pedigree 15859:107395",
+          "url": "http://www.familycentral.net/index/pedigree.cfm?ref1=15859%3A107395"
+        }
+      ],
+      "aka": [
+        "Timothy Hosford"
+      ],
+      "spouse_links": [
+        {
+          "id": "anne_smithrem_horsford",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1709-09-03",
+      "death": "1787-04-08",
+      "birth_place": "Windsor area, Connecticut",
+      "death_place": "South Canaan, Litchfield County, Connecticut, USA",
+      "blocker": "Own parents Blocked this pass (C2669)"
+    },
+    "thomas_barnes_i": {
+      "id": "thomas_barnes_i",
+      "slug": "thomas-barnes-i",
+      "name": "Thomas Barnes",
+      "years": "1745–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "anna_horsford_barnes"
+      ],
+      "children": [
+        "salome_barnes_chamberlin"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0656"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129594577 — Salome Barnes Chamberlin bio names father Thomas Barnes b. 1745",
+          "url": "https://www.findagrave.com/memorial/129594577/salome-chamberlin"
+        },
+        {
+          "label": "FamilyCentral Thomas×Anna family group — m. 24 Apr 1770 Canaan; parents Blocked",
+          "url": "http://www.familycentral.net/index/family.cfm?ref1=15859%3A107370&ref2=15859%3A107371"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_horsford_barnes",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1745-05-15",
+      "birth_place": "Hampton, Windham County, Connecticut"
+    },
+    "ira_chamberlin": {
+      "id": "ira_chamberlin",
+      "slug": "ira-chamberlin",
+      "name": "Ira Chamberlin",
+      "years": "1791–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "salome_barnes_chamberlin"
+      ],
+      "children": [
+        "mary_ann_dupray",
+        "caroline_m_chamberlin_dupray"
+      ],
+      "media": [
+        {
+          "ref": "mary-ann-dupray/media/fag-131309714-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309714 — Mary Ann Dupray (bio names Ira father)",
+          "source_url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0534",
+        "FT-0637",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "FAG 129589435 — Ira Chamberlin Freedom (partition heirs; no parents named)",
+          "url": "https://www.findagrave.com/memorial/129589435/ira-chamberlin"
+        },
+        {
+          "label": "Dupray Family Bible — Caroline M Chamberlain b. Sheffield Berkshire Co Mass 1820",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        }
+      ],
+      "aka": [
+        "Ira Chamberlain"
+      ],
+      "spouse_links": [
+        {
+          "id": "salome_barnes_chamberlin",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1791",
+      "birth_place": "Dana, Worcester County, Massachusetts, USA"
+    },
     "hugh_dupray": {
       "id": "hugh_dupray",
       "slug": "hugh-dupray",
@@ -4906,7 +5239,9 @@ window.PEOPLE_DATA = {
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "thomas_dupray"
+      ],
       "spouses": [
         "mary_ann_dupray"
       ],
@@ -4914,17 +5249,40 @@ window.PEOPLE_DATA = {
         "emily_e_dupray_anderson",
         "willis_dupray"
       ],
-      "media": [],
+      "media": [
+        {
+          "file": "media/fag-131309621-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309621 — Hugh Dupray",
+          "source_url": "https://images.findagrave.com/photos/2025/282/131309621_63ab3e2a-758a-4696-9aba-483bee08af3a.jpeg?size=original"
+        }
+      ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0532",
+        "FT-0533",
+        "FT-0597",
+        "FT-0638",
+        "FT-0639"
+      ],
       "sources": [
         {
           "label": "Silver City Community History — Emily E. Dupray parents Hugh Dupray (1815–1892) × Mary A. Dupray, innkeepers",
           "url": "http://iagenweb.org/mills/bios/1879_silver_city/SC_A.htm"
         },
         {
-          "label": "Find a Grave memorial 131309621 — Hugh Dupray 1815 – 3 Jul 1892, Silver City Cemetery",
+          "label": "Find a Grave memorial 131309621 — Hugh Dupray 1815 – 3 Jul 1892; son of Thomas Dupray; m. Mary Ann Chamberlin 12 Oct 1841 Portage Co. OH",
           "url": "https://www.findagrave.com/memorial/131309621/hugh-dupray"
+        },
+        {
+          "label": "Dupray Family Bible — collateral James S. × Caroline M. Chamberlin (FT-0532)",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_dupray",
+          "confidence": "Probable"
         }
       ],
       "spouse_links": [
@@ -4938,6 +5296,185 @@ window.PEOPLE_DATA = {
       "birth_place": "Pennsylvania, USA",
       "death_place": "Silver City, Mills County, Iowa, USA",
       "burial": "Silver City Cemetery, Silver City, Mills County, Iowa, USA"
+    },
+    "thomas_dupray": {
+      "id": "thomas_dupray",
+      "slug": "thomas-dupray",
+      "name": "Thomas Dupray",
+      "years": "1792-1858",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hugh_depree_meadville",
+        "ruth_mead_dupray"
+      ],
+      "spouses": [
+        "christina_miller_dupray"
+      ],
+      "children": [
+        "hugh_dupray",
+        "james_story_dupray",
+        "frederick_miller_dupray"
+      ],
+      "media": [
+        {
+          "ref": "hugh-dupray/media/fag-131309621-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 131309621 — Hugh Dupray (son; bio names Thomas father)",
+          "source_url": "https://www.findagrave.com/memorial/131309621/hugh-dupray"
+        },
+        {
+          "ref": "christina-miller-dupray/media/fag-34451832-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 34451832 — Christina Miller Dupray (Possible spouse FAN)",
+          "source_url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0532",
+        "FT-0533",
+        "FT-0597",
+        "FT-0598",
+        "FT-0599",
+        "FT-0600",
+        "FT-0601",
+        "FT-0638",
+        "FT-0639",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 131309621 — Hugh Dupray bio names father Thomas Dupray",
+          "url": "https://www.findagrave.com/memorial/131309621/hugh-dupray"
+        },
+        {
+          "label": "FAG memorial 34451832 — Christina Miller Dupray wife of Thomas; children James Story + Frederick Miller",
+          "url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        },
+        {
+          "label": "Dupray Family Bible (Dubuque IAGenWeb) — James S. Dupray b. Franklin Venango Co PA 1816",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        },
+        {
+          "label": "Portage OHGenWeb query010 — Thomas b. 23 Oct 1792 Meadville PA; d. 19 Oct 1858 Clarinda IA (Tier D)",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        }
+      ],
+      "aka": [
+        "Thomas Dupree"
+      ],
+      "parent_links": [
+        {
+          "id": "hugh_depree_meadville",
+          "confidence": "Possible"
+        },
+        {
+          "id": "ruth_mead_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "christina_miller_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1792-10-23",
+      "death": "1858-10-19",
+      "birth_place": "Meadville, Crawford County, Pennsylvania, USA",
+      "death_place": "Clarinda, Page County, Iowa, USA"
+    },
+    "ruth_mead_dupray": {
+      "id": "ruth_mead_dupray",
+      "slug": "ruth-mead-dupray",
+      "name": "Ruth Mead",
+      "years": "1761–",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hugh_depree_meadville"
+      ],
+      "children": [
+        "thomas_dupray"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0598",
+        "FT-0599",
+        "FT-0601"
+      ],
+      "sources": [
+        {
+          "label": "Portage OHGenWeb query010 — Ruth MEAD mother of Thomas Dupray (1997; Tier D)",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        },
+        {
+          "label": "Western Pennsylvania Genealogy — Ruth Mead wife of Hugh Depree; d. of Darius Mead × Ruth Curtis",
+          "url": "https://west-penn-families.com/venango/f107402.htm"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "hugh_depree_meadville",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1761-04-16"
+    },
+    "hugh_depree_meadville": {
+      "id": "hugh_depree_meadville",
+      "slug": "hugh-depree-meadville",
+      "name": "Hugh Depree",
+      "years": "1756-1795",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "ruth_mead_dupray"
+      ],
+      "children": [
+        "thomas_dupray"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0598",
+        "FT-0599",
+        "FT-0601"
+      ],
+      "sources": [
+        {
+          "label": "Portage OHGenWeb query010 — Patti Parker lists Thomas Dupray son of Hugh DUPREE × Ruth MEAD (1997; Tier D)",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        },
+        {
+          "label": "Western Pennsylvania Genealogy — Hugh Depree × Ruth Mead family group (compiled; no children listed)",
+          "url": "https://west-penn-families.com/venango/f107402.htm"
+        },
+        {
+          "label": "Crawford County CCG family index — DuPray/Dupree, Hugh & Ruth (Mead)",
+          "url": "https://crawfordcopa.com/topicidx/families"
+        }
+      ],
+      "aka": [
+        "Hugh Dupray",
+        "Hugh Dupree"
+      ],
+      "spouse_links": [
+        {
+          "id": "ruth_mead_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1756",
+      "death": "1795",
+      "death_place": "Meadville, Crawford County, Pennsylvania, USA"
     },
     "john_w_anderson": {
       "id": "john_w_anderson",
@@ -4981,7 +5518,8 @@ window.PEOPLE_DATA = {
         "FT-0334",
         "FT-0335",
         "FT-0439",
-        "FT-0440"
+        "FT-0440",
+        "FT-0536"
       ],
       "sources": [
         {
@@ -5072,6 +5610,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-183422612-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 183422612 — Memorial photo 198333413",
+          "source_url": "https://images.findagrave.com/photos/2020/20/183422612_857754ec-ae02-4380-9233-be9e5389e20e.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-183422612-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 183422612 — Gloria Martha <I>Gatz</I> Shorts",
+          "source_url": "https://images.findagrave.com/photos/2017/257/183422612_1505495320.jpg?size=original"
+        },
+        {
           "file": "media/portrait.jpg",
           "kind": "portrait",
           "source": "Conejo Mountain Funeral Home obituary (same image also on Find A Grave 183422612)",
@@ -5092,7 +5642,10 @@ window.PEOPLE_DATA = {
         "FT-0102",
         "FT-0313",
         "FT-0315",
-        "FT-0397"
+        "FT-0397",
+        "FT-0582",
+        "FT-0583",
+        "FT-0585"
       ],
       "sources": [
         {
@@ -5160,7 +5713,11 @@ window.PEOPLE_DATA = {
         "FT-0005",
         "FT-0103",
         "FT-0313",
-        "FT-0314"
+        "FT-0314",
+        "FT-0553",
+        "FT-0579",
+        "FT-0582",
+        "FT-0585"
       ],
       "sources": [
         {
@@ -5203,7 +5760,8 @@ window.PEOPLE_DATA = {
         "florence_graves",
         "martha",
         "henry_f_tuxhorn",
-        "wilma_prather"
+        "wilma_prather",
+        "ruth_straka"
       ],
       "media": [
         {
@@ -5220,7 +5778,13 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": "media/portrait-studio.jpg",
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553",
+        "FT-0579",
+        "FT-0580",
+        "FT-0582",
+        "FT-0584"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48237386",
@@ -5286,6 +5850,12 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-48236265-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236265 — Caroline <I>Waescher</I> Achilles",
+          "source_url": "https://images.findagrave.com/photos/2010/98/48236265_127086953140.jpg?size=original"
+        },
+        {
           "ref": "henry-f-achilles/media/headstone-inman-2010.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 48236265 — joint stone with Henry F. (canonical bytes under henry-f-achilles)",
@@ -5293,7 +5863,10 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0580",
+        "FT-0584"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48236265",
@@ -5439,6 +6012,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-48236277-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236277 — Memorial photo 27163931",
+          "source_url": "https://images.findagrave.com/photos/2010/98/48236277_127086965906.jpg?size=original"
+        },
+        {
+          "file": "media/fag-48236277-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 48236277 — Henry F. Achilles Sr.",
+          "source_url": "https://images.findagrave.com/photos/2021/16/48236277_2958bef2-67df-4dcd-8799-f50e5e45dd28.jpeg?size=original"
+        },
+        {
           "file": "media/headstone-inman-2010.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 48236277 — joint stone with Caroline",
@@ -5452,7 +6037,10 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": "media/portrait-fag-2021.jpeg",
-      "object_ids": [],
+      "object_ids": [
+        "FT-0580",
+        "FT-0584"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48236277",
@@ -5925,7 +6513,10 @@ window.PEOPLE_DATA = {
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "paul_achilles",
+        "catharine_mehrdorf"
+      ],
       "spouses": [
         "marie_lucie_luddecke"
       ],
@@ -5941,18 +6532,221 @@ window.PEOPLE_DATA = {
           "url": "https://gedbas.genealogy.net/person/show/1133068906"
         },
         {
+          "label": "GEDBAS 1133067803 / 1133067804 — parents Paul Achilles × Catharine Mehrdorf",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
           "label": "GEDBAS 1133073186 — son Heinrich Paul Christoph Achilles names these parents",
           "url": "https://gedbas.genealogy.net/person/show/1133073186"
         },
         {
           "label": "DNA Achilles–Linde parents: docs/research/people/proposals/dna-achilles-linde-parents-2026-08-10.md",
           "url": ""
+        },
+        {
+          "label": "Achilles/Wischer UP CONNECT: docs/research/people/proposals/achilles-wischer-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "paul_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "catharine_mehrdorf",
+          "confidence": "Probable"
         }
       ],
       "birth": "1700-08-25",
       "death": "1754-06-09",
       "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
       "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
+    },
+    "catharine_mehrdorf": {
+      "id": "catharine_mehrdorf",
+      "slug": "catharine-mehrdorf-apelnstedt",
+      "name": "Catharine Mehrdorf",
+      "years": "1655–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "paul_achilles"
+      ],
+      "children": [
+        "paul_christoph_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133067804 — Catharine Mehrdorf *1655 Apelnstedt (Rosendahl 42734; parents blank)",
+          "url": "https://gedbas.genealogy.net/person/show/1133067804"
+        },
+        {
+          "label": "GEDBAS 1133068906 — son Paul Christoph Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133068906"
+        },
+        {
+          "label": "Achilles/Wischer UP CONNECT: docs/research/people/proposals/achilles-wischer-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Catharine Achilles"
+      ],
+      "birth": "1655-03-28",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "Own parents unknown on free GEDBAS | Blocked | GEDBAS 1133067804 Parents"
+    },
+    "paul_achilles": {
+      "id": "paul_achilles",
+      "slug": "paul-achilles-apelnstedt",
+      "name": "Paul Achilles",
+      "years": "1652-1718",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
+      ],
+      "spouses": [
+        "catharine_mehrdorf"
+      ],
+      "children": [
+        "paul_christoph_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133067803 — Paul Achilles *1652 +1718 Apelnstedt (Rosendahl 42734; parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
+          "label": "GEDBAS 1133068906 — son Paul Christoph Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133068906"
+        },
+        {
+          "label": "Achilles/Wischer UP CONNECT: docs/research/people/proposals/achilles-wischer-up-2026-08-18.md",
+          "url": ""
+        },
+        {
+          "label": "GEDBAS 1133067138 / 1133071719 — parents Hans Achilles × Hogrefe N.N.",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        },
+        {
+          "label": "Hans Achilles UP CONNECT: docs/research/people/proposals/hans-achilles-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "hans_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hogrefe_nn",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1652-03-19",
+      "death": "1718-08-03",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "Parish images; Hans/Hogrefe gen-back blocked on GEDBAS (C2584–C2585)."
+    },
+    "hogrefe_nn": {
+      "id": "hogrefe_nn",
+      "slug": "frau-nn-hogrefe",
+      "name": "Frau N.N. Hogrefe",
+      "years": "1605-1661",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hans_achilles"
+      ],
+      "children": [
+        "catharina_achilles_1644",
+        "margarethe_achilles_1645",
+        "cordt_achilles",
+        "paul_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133071719 — Frau N.N. Hogrefe ~1605 Dettum +~1661 (Rosendahl 42734; spouse Hans Achilles; no Parents section)",
+          "url": "https://gedbas.genealogy.net/person/show/1133071719"
+        },
+        {
+          "label": "GEDBAS 1133067803 — son Paul Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
+          "label": "Hans Achilles UP CONNECT: docs/research/people/proposals/hans-achilles-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Hogrefe",
+        "Achilles"
+      ],
+      "birth": "1605",
+      "death": "1661",
+      "birth_place": "Dettum bei Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Dettum bei Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "No Parents section — gen-back Blocked C2585"
+    },
+    "hans_achilles": {
+      "id": "hans_achilles",
+      "slug": "hans-achilles-apelnstedt",
+      "name": "Hans Achilles",
+      "years": "1598-1672",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "hogrefe_nn"
+      ],
+      "children": [
+        "catharina_achilles_1644",
+        "margarethe_achilles_1645",
+        "cordt_achilles",
+        "paul_achilles"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133067138 — Hans Achilles ~1598 +1672 Apelnstedt (Rosendahl 42734; spouse Hogrefe N.N.; no Parents section)",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        },
+        {
+          "label": "GEDBAS 1133067803 — son Paul Achilles names these parents",
+          "url": "https://gedbas.genealogy.net/person/show/1133067803"
+        },
+        {
+          "label": "Hans Achilles UP CONNECT: docs/research/people/proposals/hans-achilles-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "birth": "1598",
+      "death": "1672-09-01",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "blocker": "No Parents section on GEDBAS person/show — gen-back Blocked C2584"
     },
     "leo_tuxhorn": {
       "id": "leo_tuxhorn",
@@ -5974,7 +6768,8 @@ window.PEOPLE_DATA = {
         "florence_graves",
         "martha",
         "henry_f_tuxhorn",
-        "wilma_prather"
+        "wilma_prather",
+        "ruth_straka"
       ],
       "media": [
         {
@@ -5995,7 +6790,10 @@ window.PEOPLE_DATA = {
         "FT-0103",
         "FT-0107",
         "FT-0314",
-        "FT-0408"
+        "FT-0408",
+        "FT-0553",
+        "FT-0579",
+        "FT-0582"
       ],
       "sources": [
         {
@@ -6280,7 +7078,10 @@ window.PEOPLE_DATA = {
       "object_ids": [
         "FT-0005",
         "FT-0098",
-        "FT-0354"
+        "FT-0354",
+        "FT-0583",
+        "FT-0585",
+        "FT-0586"
       ],
       "sources": [
         {
@@ -6372,6 +7173,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-116548907-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116548907 — Memorial photo 87956158",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548907_137833712544.jpg?size=original"
+        },
+        {
+          "file": "media/fag-116548907-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116548907 — Minnie <I>Kruse</I> Gatz",
+          "source_url": "https://images.findagrave.com/photos/2013/246/116548907_137833720257.jpg?size=original"
+        },
+        {
           "file": "media/headstone-mcpherson-2013.jpg",
           "kind": "headstone",
           "source": "Find A Grave 116548907 — McPherson Cemetery",
@@ -6391,7 +7204,11 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0581",
+        "FT-0586",
+        "FT-0737"
+      ],
       "sources": [
         {
           "label": "Find A Grave 116548907",
@@ -6492,7 +7309,13 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0581",
+        "FT-0737",
+        "FT-0738",
+        "FT-0739",
+        "FT-0740"
+      ],
       "sources": [
         {
           "label": "Find A Grave 127003257",
@@ -6521,6 +7344,18 @@ window.PEOPLE_DATA = {
         {
           "label": "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
           "url": ""
+        },
+        {
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
+          "url": ""
+        },
+        {
+          "label": "FT-0738 FAG 127003257 parent-grid audit (no parents; maiden Wolf)",
+          "url": "https://www.findagrave.com/memorial/127003257/marie-kruse"
+        },
+        {
+          "label": "FT-0740 Allamakee + Houston 1907–1908 death registers — Mary absent",
+          "url": "https://www.iagenweb.org/allamakee/death/1907-08_RO.htm"
         }
       ],
       "aka": [
@@ -6532,7 +7367,7 @@ window.PEOPLE_DATA = {
       "death": "1907-01-26",
       "birth_place": "Germany",
       "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA",
-      "blocker": "Wolf parents Germany (C1311 blocked); Marie 1907 obit not on IAGenWeb (C"
+      "blocker": "Parents unnamed (maiden Wolf / Germany only). No Wolf burials at Wheatla"
     },
     "henry_kruse": {
       "id": "henry_kruse",
@@ -6565,7 +7400,14 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0581",
+        "FT-0737",
+        "FT-0738",
+        "FT-0739",
+        "FT-0740",
+        "FT-0741"
+      ],
       "sources": [
         {
           "label": "Find A Grave 127003248",
@@ -6594,12 +7436,28 @@ window.PEOPLE_DATA = {
         {
           "label": "DNA Kruse-Wolf gen-back: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
           "url": ""
+        },
+        {
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
+          "url": ""
+        },
+        {
+          "label": "FT-0737 FAG 127003248 parent-grid audit (no parents)",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "FT-0740 Allamakee + Houston 1907–1908 death registers — Henry absent",
+          "url": "https://www.iagenweb.org/allamakee/death/1907-08_RO.htm"
+        },
+        {
+          "label": "FT-0741 Past & Present Allamakee — St. John's trustee 1884",
+          "url": "https://archive.org/details/pastpresentofall01hanc"
         }
       ],
       "birth": "1828-10-29",
       "death": "1908-11-29",
       "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA",
-      "blocker": "Gen-back parents blocked (C1310) — no parent names on FAG"
+      "blocker": "Gen-back parents still blocked (C2741) — FAG 127003248 no Pare"
     },
     "charles_c_gatz": {
       "id": "charles_c_gatz",
@@ -6642,7 +7500,8 @@ window.PEOPLE_DATA = {
       "portrait": null,
       "object_ids": [
         "FT-0098",
-        "FT-0100"
+        "FT-0100",
+        "FT-0586"
       ],
       "sources": [
         {
@@ -6749,6 +7608,18 @@ window.PEOPLE_DATA = {
         "charles_c_gatz"
       ],
       "media": [
+        {
+          "file": "media/fag-116578829-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578829 — Memorial photo 88002353",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578829_137840855236.jpg?size=original"
+        },
+        {
+          "file": "media/fag-116578829-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578829 — Sophia Maria <I>Hilgenfeld</I> Gatz",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578829_137840862124.jpg?size=original"
+        },
         {
           "file": "media/headstone-mcpherson-2013.jpg",
           "kind": "headstone",
@@ -7135,6 +8006,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-116578895-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578895 — Memorial photo 88002392",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578895_137840861568.jpg?size=original"
+        },
+        {
+          "file": "media/fag-116578895-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 116578895 — John Wilhelm Gatz",
+          "source_url": "https://images.findagrave.com/photos/2013/247/116578895_137840866831.jpg?size=original"
+        },
+        {
           "file": "media/headstone-mcpherson-2013.jpg",
           "kind": "headstone",
           "source": "Find A Grave 116578895 — McPherson Cemetery",
@@ -7287,6 +8170,12 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-65483876-01-headstone.gif",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 65483876 — Richard Dorland Shorts",
+          "source_url": "https://images.findagrave.com/photos/2011/40/65483876_129738501279.gif?size=original"
+        },
+        {
           "file": "media/memorial-fag-2011.gif",
           "kind": "headstone",
           "source": "Find A Grave memorial 65483876 (CPL U.S. Army Air Forces, WWII)",
@@ -7348,6 +8237,12 @@ window.PEOPLE_DATA = {
         "don_shorts"
       ],
       "media": [
+        {
+          "file": "media/fag-100072401-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 100072401 — Annabelle L <I>Merritt</I> Shorts",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072401_135191952551.jpg?size=original"
+        },
         {
           "file": "media/headstone-live-oak-2012.jpg",
           "kind": "headstone",
@@ -7916,6 +8811,12 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-100072423-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 100072423 — Earl Stanley Shorts",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg?size=original"
+        },
+        {
           "file": "media/headstone-live-oak-2012.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 100072423 — Live Oak Memorial Park",
@@ -7934,7 +8835,8 @@ window.PEOPLE_DATA = {
         "FT-0372",
         "FT-0373",
         "FT-0374",
-        "FT-0397"
+        "FT-0397",
+        "FT-0732"
       ],
       "sources": [
         {
@@ -8060,6 +8962,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-8850577-03-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 8850577",
+          "source_url": "https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg?size=photoThumbnails"
+        },
+        {
+          "file": "media/fag-8850577-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 8850577",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633&size=photoThumbnails"
+        },
+        {
           "file": "media/fag-8850577-mount-hope-full.jpg",
           "kind": "other",
           "source": "Find A Grave Mount Hope Cemetery overview (Dorland/Effie Section W context; no individual Dorland stone)",
@@ -8153,6 +9067,12 @@ window.PEOPLE_DATA = {
         "dorland"
       ],
       "media": [
+        {
+          "file": "media/fag-138634881-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 138634881 — Eva Eliza <I>Aylesworth</I> Shorts",
+          "source_url": "https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633&size=original"
+        },
         {
           "file": "media/knights-cemetery-fag-cover.jpeg",
           "kind": "headstone",
@@ -10488,6 +11408,36 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-14911199-04-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157415",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_95f61b3a-1328-454c-a69b-65b3150430de.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-07-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157465",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_8c8af05f-79b5-405f-91b5-495d8ab08dce.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-08-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157480",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_b7f7db3f-035e-4420-bb89-1b1c6e447af5.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-09-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 251157408",
+          "source_url": "https://images.findagrave.com/photos/2022/147/14911199_1c8b8bda-92ad-4fd7-a8d4-b5601b9a34df.jpeg?size=original"
+        },
+        {
+          "file": "media/fag-14911199-12-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 14911199 — Memorial photo 341384180",
+          "source_url": "https://images.findagrave.com/photos/2026/125/14911199_9fde12f6-0bbd-4c9a-8aa3-61089fda0e87.jpeg?size=original"
+        },
+        {
           "ref": "george-denison/media/baldwin-1881-p6-george-ann.jpg",
           "kind": "document",
           "source": "Baldwin & Clift 1881 p.6 — shared under george-denison",
@@ -11533,6 +12483,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/fag-280868397-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 280868397",
+          "source_url": "https://images.findagrave.com/photos/2014/208/133463240_1406581439.jpg"
+        },
+        {
+          "file": "media/fag-280868397-05-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 280868397",
+          "source_url": "https://images.findagrave.com/photos/2010/146/313_47208015_COR0052JPG.jpg?size=photoThumbnails"
+        },
+        {
           "ref": "rev-augustus-shorts/media/fag-133463240-01-headstone.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 133463240 (Sexsmith Cemetery overview; Samuel memorial has no personal stone)",
@@ -11609,6 +12571,21 @@ window.PEOPLE_DATA = {
         "hannah_shorts_holcomb"
       ],
       "media": [
+        {
+          "file": "media/fag-130725257-04-headstone.jpg"
+        },
+        {
+          "file": "media/fag-133462968-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 130725257",
+          "source_url": "https://images.findagrave.com/photos/2021/182/144753754_6be5ed9c-e9d4-4fdb-b4a3-63b123cfb392.jpeg?size=photoThumbnails"
+        },
+        {
+          "file": "media/fag-130725257-05-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 130725257",
+          "source_url": "https://images.findagrave.com/photos/2014/201/132492394_1405988525.jpg?size=photoThumbnails"
+        },
         {
           "file": "media/fag-133462968-sexsmith-row.jpg",
           "kind": "headstone",
@@ -17563,7 +18540,9 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0535"
+      ],
       "sources": [
         {
           "label": "FAG memorial 229213602 — Hugh Darwin Anderson 12 Oct 1877 – 6 Jun 1964 Oak Hill Birch Lawn Lot 604 Sp 2",
@@ -17640,6 +18619,161 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ]
+    },
+    "caroline_m_chamberlin_dupray": {
+      "id": "caroline_m_chamberlin_dupray",
+      "slug": "caroline-m-chamberlin-dupray",
+      "name": "Caroline M. Chamberlin Dupray",
+      "years": "1820-1865",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "ira_chamberlin",
+        "salome_barnes_chamberlin"
+      ],
+      "spouses": [
+        "james_story_dupray"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0532",
+        "FT-0534",
+        "FT-0637",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 131309714 — Mary Ann Dupray bio: sister Caroline M. Chamberlin m. James Story Dupray",
+          "url": "https://www.findagrave.com/memorial/131309714/mary-ann-dupray"
+        },
+        {
+          "label": "Dupray Family Bible — Caroline M Chamberlain b. 11 Jun 1820; m. James S Dupray 24 May 1842 Bavaria Portage Co Ohio",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        }
+      ],
+      "aka": [
+        "Caroline M. Chamberlain"
+      ],
+      "parent_links": [
+        {
+          "id": "ira_chamberlin",
+          "confidence": "Probable"
+        },
+        {
+          "id": "salome_barnes_chamberlin",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "james_story_dupray",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1820-06-11",
+      "death": "1865-02-22",
+      "birth_place": "Sheffield, Berkshire County, Massachusetts, USA"
+    },
+    "james_story_dupray": {
+      "id": "james_story_dupray",
+      "slug": "james-story-dupray",
+      "name": "James Story Dupray",
+      "years": "1816-1876",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "thomas_dupray"
+      ],
+      "spouses": [
+        "caroline_m_chamberlin_dupray"
+      ],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0532",
+        "FT-0597",
+        "FT-0638",
+        "FT-0644"
+      ],
+      "sources": [
+        {
+          "label": "Dupray Family Bible — James S. Dupray b. 27 Sep 1816 Franklin Venango Co PA; m. Caroline M Chamberlain 24 May 1842",
+          "url": "http://www.iagenweb.org/dubuque/religious/DuprayFB.htm"
+        },
+        {
+          "label": "FAG memorial 34451832 — Christina Miller Dupray child James Story Dupray",
+          "url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        }
+      ],
+      "aka": [
+        "James S. Dupray"
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_dupray",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "caroline_m_chamberlin_dupray",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1816-09-27",
+      "death": "1876-12-06",
+      "birth_place": "Franklin, Venango County, Pennsylvania, USA"
+    },
+    "frederick_miller_dupray": {
+      "id": "frederick_miller_dupray",
+      "slug": "frederick-miller-dupray",
+      "name": "Frederick Miller Dupray",
+      "years": "1831–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "thomas_dupray"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0597",
+        "FT-0598",
+        "FT-0600"
+      ],
+      "sources": [
+        {
+          "label": "FAG memorial 34451832 — Christina Miller Dupray child Frederick Miller Dupray",
+          "url": "https://www.findagrave.com/memorial/34451832/christina-miller-dupray"
+        },
+        {
+          "label": "History of Western Iowa 1882 — Frederick M. Dupray b. Ohio 1831; Mondamin hotel/blacksmith",
+          "url": "https://freepages.rootsweb.com/~cooverfamily/books/western_43.html"
+        },
+        {
+          "label": "Portage OHGenWeb query010 — Frederick Miller Dupray b. 12 Oct 1831 Charleston Portage OH",
+          "url": "https://portage.ohgenweb.org/queries/query010.htm"
+        }
+      ],
+      "aka": [
+        "Frederick M. Dupray"
+      ],
+      "parent_links": [
+        {
+          "id": "thomas_dupray",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1831-10-12",
+      "birth_place": "Charleston, Portage County, Ohio, USA"
     },
     "carla": {
       "id": "carla",
@@ -17730,7 +18864,9 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": "media/portrait-2022.jpeg",
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48237526",
@@ -17784,7 +18920,9 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 48236712",
@@ -17837,7 +18975,9 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 27952385",
@@ -17884,7 +19024,9 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0553"
+      ],
       "sources": [
         {
           "label": "Find A Grave 167363109",
@@ -17908,17 +19050,61 @@ window.PEOPLE_DATA = {
       "death": "1972-08-18",
       "burial": "Mount Lebanon Cemetery, Saint Ann, St. Louis County, Missouri, USA"
     },
-    "george_kruse": {
-      "id": "george_kruse",
-      "slug": "george-kruse",
-      "name": "George Kruse",
+    "ruth_straka": {
+      "id": "ruth_straka",
+      "slug": "ruth-tuxhorn-straka",
+      "name": "Ruth Straka",
       "years": "",
       "confidence": "Probable",
       "verified": false,
-      "status": "cataloged",
+      "status": "researching",
       "parents": [
-        "henry_kruse",
-        "marie_wolf_kruse"
+        "leo_tuxhorn",
+        "ida_tuxhorn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0553"
+      ],
+      "sources": [
+        {
+          "label": "Hutchinson News 10 Jan 1951 via FAG 48237386 — survivor Mrs. Ruth Straka, McPherson",
+          "url": "https://www.findagrave.com/memorial/48237386/ida_l-tuxhorn"
+        },
+        {
+          "label": "FT-0553 Hutchinson News Ida L. Tuxhorn obituary",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Ruth Tuxhorn"
+      ],
+      "parent_links": [
+        {
+          "id": "leo_tuxhorn",
+          "confidence": "Probable"
+        },
+        {
+          "id": "ida_tuxhorn",
+          "confidence": "Probable"
+        }
+      ],
+      "death_place": "McPherson, McPherson County, Kansas, USA"
+    },
+    "catharina_achilles_1644": {
+      "id": "catharina_achilles_1644",
+      "slug": "catharina-achilles-apelnstedt-1644",
+      "name": "Catharina Achilles",
+      "years": "1644-1727",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
       ],
       "spouses": [],
       "children": [],
@@ -17927,30 +19113,126 @@ window.PEOPLE_DATA = {
       "object_ids": [],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Henry Kruse 127003248 / Minnie 116548907",
-          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+          "label": "GEDBAS 1133065722 — Catharina Achilles ~1644 Apelnstedt +1727 Dettum (parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133065722"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
-          "url": ""
+          "label": "GEDBAS 1133067138 — Hans Achilles child grid names Catharina",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        }
+      ],
+      "aka": [
+        "Hogrefe"
+      ],
+      "parent_links": [
+        {
+          "id": "hans_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hogrefe_nn",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1644",
+      "death": "1727-08-17",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Dettum bei Wolfenbüttel, Braunschweig, Germany",
+      "burial": "1727-08-21"
+    },
+    "margarethe_achilles_1645": {
+      "id": "margarethe_achilles_1645",
+      "slug": "margarethe-achilles-apelnstedt-1645",
+      "name": "Margarethe Achilles",
+      "years": "1645-1695",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133068936 — Margarethe Achilles Mar 1645 Apelnstedt +1695 (parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133068936"
+        },
+        {
+          "label": "GEDBAS 1133067138 — Hans Achilles child grid names Margarethe Mar 1645",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
+        }
+      ],
+      "aka": [
+        "FutterMenger"
+      ],
+      "parent_links": [
+        {
+          "id": "hans_achilles",
+          "confidence": "Probable"
+        },
+        {
+          "id": "hogrefe_nn",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1645-03",
+      "death": "1695-06-28",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "burial": "1695-06-28"
+    },
+    "cordt_achilles": {
+      "id": "cordt_achilles",
+      "slug": "cordt-achilles-apelnstedt-1649",
+      "name": "Cordt Achilles",
+      "years": "1649-1663",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "hans_achilles",
+        "hogrefe_nn"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [],
+      "sources": [
+        {
+          "label": "GEDBAS 1133072479 — Cordt Achilles *12 Jun 1649 +1663 Apelnstedt (parents Hans Achilles–Hogrefe N.N.)",
+          "url": "https://gedbas.genealogy.net/person/show/1133072479"
+        },
+        {
+          "label": "GEDBAS 1133067138 — Hans Achilles child grid names Cordt 12 Jun 1649",
+          "url": "https://gedbas.genealogy.net/person/show/1133067138"
         }
       ],
       "parent_links": [
         {
-          "id": "henry_kruse",
+          "id": "hans_achilles",
           "confidence": "Probable"
         },
         {
-          "id": "marie_wolf_kruse",
+          "id": "hogrefe_nn",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1649-06-12",
+      "death": "1663",
+      "birth_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany",
+      "death_place": "Apelnstedt, Wolfenbüttel, Braunschweig, Germany"
     },
-    "henry_john_ernest_kruse": {
-      "id": "henry_john_ernest_kruse",
-      "slug": "henry-john-ernest-kruse",
-      "name": "Henry John Ernest Kruse",
-      "years": "",
+    "george_kruse": {
+      "id": "george_kruse",
+      "slug": "george-kruse",
+      "name": "George Kruse",
+      "years": "1861-1936",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -17962,14 +19244,20 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
+        {
+          "label": "Find A Grave 95440915 — George Kruse",
+          "url": "https://www.findagrave.com/memorial/95440915/george-kruse"
+        },
         {
           "label": "Find A Grave sibling grid — Henry Kruse 127003248",
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -17982,7 +19270,61 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1861-04",
+      "death": "1936-03-04",
+      "birth_place": "Germany",
+      "death_place": "North Dakota, USA",
+      "burial": "IOOF Cemetery, Cando, Towner County, North Dakota, USA"
+    },
+    "henry_john_ernest_kruse": {
+      "id": "henry_john_ernest_kruse",
+      "slug": "henry-john-ernest-kruse",
+      "name": "Henry John Ernest Kruse",
+      "years": "1862-1948",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "cataloged",
+      "parents": [
+        "henry_kruse",
+        "marie_wolf_kruse"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0737"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 139035468 — Henry John Ernest Kruse",
+          "url": "https://www.findagrave.com/memorial/139035468/henry_john_ernest-kruse"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
+          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+        },
+        {
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
+          "url": ""
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "henry_kruse",
+          "confidence": "Probable"
+        },
+        {
+          "id": "marie_wolf_kruse",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1862-08-28",
+      "death": "1948-11-04",
+      "birth_place": "Germany",
+      "death_place": "Falls City, Richardson County, Nebraska, USA",
+      "burial": "Steele Cemetery, Falls City, Richardson County, Nebraska, USA"
     },
     "william_kruse": {
       "id": "william_kruse",
@@ -18000,8 +19342,14 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
+        {
+          "label": "Find A Grave 127003267 — William Kruse",
+          "url": "https://www.findagrave.com/memorial/127003267/william-kruse"
+        },
         {
           "label": "IAGenWeb Wheatland Cemetery — Kruse, William 1865 / 1943",
           "url": "https://iagenweb.org/allamakee/cemetery/Wheatland.htm"
@@ -18011,7 +19359,7 @@ window.PEOPLE_DATA = {
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18025,15 +19373,17 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "birth": "1865",
-      "death": "1943",
+      "birth": "1865-03-30",
+      "death": "1943-03-23",
+      "birth_place": "Germany",
+      "death_place": "Houston County, Minnesota, USA",
       "burial": "Wheatland Cemetery, New Albin, Allamakee County, Iowa, USA"
     },
     "louis_kruse": {
       "id": "louis_kruse",
       "slug": "louis-kruse",
       "name": "Heinrich Wilhelm Louis Kruse",
-      "years": "1872–",
+      "years": "1871-1941",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18045,14 +19395,17 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737",
+        "FT-0739"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Heinrich Wilhelm Louis Kruse",
-          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+          "label": "Find A Grave 126353799 — Heinrich Wilhelm Louis Kruse",
+          "url": "https://www.findagrave.com/memorial/126353799/heinrich_wilhelm_louis-kruse"
         },
         {
-          "label": "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman; confirm Johann Heinrich Louis",
+          "label": "IAGenWeb St. John's Wheatland — Louis Kruse × Frieda Dorothea Heitman",
           "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
         },
         {
@@ -18060,7 +19413,7 @@ window.PEOPLE_DATA = {
           "url": "http://iagenweb.org/boards/allamakee/obituaries/index.cgi?read=306683"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18078,14 +19431,16 @@ window.PEOPLE_DATA = {
           "confidence": "Probable"
         }
       ],
-      "birth": "1872",
-      "birth_place": "Iowa, USA"
+      "birth": "1871-04-11",
+      "death": "1941-07-09",
+      "birth_place": "Allamakee County, Iowa, USA",
+      "burial": "Saint Lukes Cemetery, Eitzen, Houston County, Minnesota, USA"
     },
     "maria_dorothea_caroline_kruse_jahn": {
       "id": "maria_dorothea_caroline_kruse_jahn",
       "slug": "maria-dorothea-caroline-kruse-jahn",
       "name": "Maria Dorothea Caroline Kruse Jahn",
-      "years": "",
+      "years": "1873-1913",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18097,18 +19452,21 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737",
+        "FT-0739"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Maria Dorothea Caroline Mary Kruse Jahn",
-          "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
+          "label": "Find A Grave 44678117 — Maria Dorothea Caroline Kruse Jahn",
+          "url": "https://www.findagrave.com/memorial/44678117/maria_dorothea_caroline-jahn"
         },
         {
           "label": "IAGenWeb St. John's — Maria D.C.M. Kruse confirm; m. Johann Jacob John",
           "url": "https://www.iagenweb.org/allamakee/church/StJohns_Wheatland.htm"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18125,13 +19483,17 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1873-02-18",
+      "death": "1913-07-13",
+      "birth_place": "Union City Township, Allamakee County, Iowa, USA",
+      "burial": "Monitor Church of the Brethren Cemetery, McPherson, McPherson County, Kansas, USA"
     },
     "charles_fredrick_kruse": {
       "id": "charles_fredrick_kruse",
       "slug": "charles-fredrick-kruse",
       "name": "Charles Fredrick Kruse",
-      "years": "",
+      "years": "1875-1940",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18143,14 +19505,20 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Charles Fredrick Kruse",
+          "label": "Find A Grave 90273777 — Charles Fredrick Kruse",
+          "url": "https://www.findagrave.com/memorial/90273777/charles_fredrick-kruse"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18163,13 +19531,18 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1875-06-24",
+      "death": "1940-11-08",
+      "birth_place": "Allamakee County, Iowa, USA",
+      "death_place": "Seattle, King County, Washington, USA",
+      "burial": "Crown Hill Cemetery, Seattle, King County, Washington, USA"
     },
     "anna_katherine_elizabeth_kruse_lubberstedt": {
       "id": "anna_katherine_elizabeth_kruse_lubberstedt",
       "slug": "anna-katherine-elizabeth-kruse-lubberstedt",
       "name": "Anna Katherine Elizabeth Kruse Lubberstedt",
-      "years": "",
+      "years": "1879-1946",
       "confidence": "Probable",
       "verified": false,
       "status": "cataloged",
@@ -18181,14 +19554,20 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0737"
+      ],
       "sources": [
         {
-          "label": "Find A Grave sibling grid — Anna Katherine Elizabeth Kruse Lubberstedt",
+          "label": "Find A Grave 120363051 — Anna Katherine Elizabeth Kruse Lubberstedt",
+          "url": "https://www.findagrave.com/memorial/120363051/anna_katherine_elizabeth-lubberstedt"
+        },
+        {
+          "label": "Find A Grave sibling grid — Henry Kruse 127003248",
           "url": "https://www.findagrave.com/memorial/127003248/henry-kruse"
         },
         {
-          "label": "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md",
+          "label": "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md",
           "url": ""
         }
       ],
@@ -18201,7 +19580,11 @@ window.PEOPLE_DATA = {
           "id": "marie_wolf_kruse",
           "confidence": "Probable"
         }
-      ]
+      ],
+      "birth": "1879",
+      "death": "1946-10-31",
+      "birth_place": "Union City Township, Allamakee County, Iowa, USA",
+      "burial": "Evangelical Lutheran Immanuel Cemetery, Wakefield, Dixon County, Nebraska, USA"
     },
     "don_shorts": {
       "id": "don_shorts",
@@ -22618,4 +24001,4 @@ window.PEOPLE_DATA = {
     }
   }
 };
-window.OBJECTS_INDEX = {"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)"},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only"},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"},"FT-0028":{"dir":"FT-0028-california-county-marriage-jon-martin-anderson-v","photos":[],"entry":true,"type":"vital","title":"California county marriage — Jon Martin Anderson × Virginia Jill Cole (Los Angeles 19 Jun 1955)"},"FT-0021":{"dir":"FT-0021-nyc-birth-certificate-virginia-victoria-racien-m","photos":["photos/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan-p1.png"],"entry":true,"type":"vital","title":"NYC birth certificate — Virginia Victoria Racien (Manhattan 1902 #41933)"},"FT-0025":{"dir":"FT-0025-nyc-marriage-certificate-myron-w-cohn-virginia-v","photos":["photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png","photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Myron W. Cohn × Virginia V. Racine (Manhattan 1926/1927 #778)"},"FT-0096":{"dir":"FT-0096-what-tailor-meant-solomon-racien-racine-near-w-3","photos":[],"entry":true,"type":"newspaper","title":"What ‘tailor’ meant — Solomon Racien (Racine) near W 35th and New York’s garment boom (~1902)"},"FT-0230":{"dir":"FT-0230-find-a-grave-93478005-pauline-bess-dushken-le-racine","photos":[],"entry":true,"type":"vital","title":"Find A Grave 93478005 — Pauline Bess Dushken Le Racine memorial + death-cert paste"},"FT-0231":{"dir":"FT-0231-nyc-open-data-death-index-pauline-b-racine-21183","photos":[],"entry":true,"type":"vital","title":"NYC Digitized Death Certificate Index — Pauline B Racine, cert. 21183, Manhattan 1927"},"FT-0412":{"dir":"FT-0412-ny-county-nat-index-salomon-racien-1899","photos":[],"entry":true,"type":"vital","title":"NY County naturalization index — Salomon Racien, 24 Jul 1899 (arrived NYC Jul 1888)"},"FT-0415":{"dir":"FT-0415-castle-garden-july-1888-arrival-window-salomon-racien","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden arrival window — Salomon Racien, July 1888 (pre-Ellis)"},"FT-0420":{"dir":"FT-0420-castle-garden-process-and-1888-rush-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden process — registry, rush of 1888, Russian-Jewish tailor class (Solomon era)"},"FT-0023":{"dir":"FT-0023-nyc-death-certificate-monroe-cohn-manhattan-1921","photos":["photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png","photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Monroe Cohn (Manhattan 1921 #29268)"},"FT-0024":{"dir":"FT-0024-nyc-death-certificate-mamie-cohn-manhattan-1945","photos":["photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png","photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Mamie Cohn (Manhattan 1945 #12625)"},"FT-0094":{"dir":"FT-0094-what-a-shoe-jobber-was-monroe-cohn-s-trade-not-s","photos":[],"entry":true,"type":"newspaper","title":"What a shoe jobber was — Monroe Cohn’s trade (not shoemaker, not shop clerk)"},"FT-0022":{"dir":"FT-0022-nyc-marriage-certificate-monroe-cohn-mamie-mamlo","photos":["photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png","photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Monroe Cohn × Mamie Mamlock (Manhattan 1893 #13078)"},"FT-0095":{"dir":"FT-0095-rabbi-aaron-wise-of-rodeph-sholom-marries-monroe","photos":[],"entry":true,"type":"church","title":"Rabbi Aaron Wise of Rodeph Sholom marries Monroe Cohn × Mamie Mamlock (Lexington & 63rd world, 1893)"},"FT-0240":{"dir":"FT-0240-find-a-grave-95985316-mamie-cohn-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 95985316 — Mamie Cohn memorial (Mt Carmel; no bio; no grave photo)"},"FT-0260":{"dir":"FT-0260-allemannia-1867-rosa-mamlock-children-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Allemannia 1867 — Rosa Mamlock lands with four children; Mamie born later in NYC"},"FT-0261":{"dir":"FT-0261-washington-heights-jewish-drift-monroe-cohn-1921-death","photos":[],"entry":true,"type":"newspaper","title":"Washington Heights Jewish surge — Monroe Cohn's Fort Washington Ave death address (1921)"},"FT-0262":{"dir":"FT-0262-west-end-widow-mamie-cohn-305-west-end-ave-1945","photos":[],"entry":true,"type":"newspaper","title":"West End widow — Mamie Cohn's 305 West End Ave last years on the quiet UWS spine"},"FT-0306":{"dir":"FT-0306-albert-mamlock-bronx-brook-av-deed-1901","photos":[],"entry":true,"type":"deed","title":"Albert Mamlock buys Bronx lot — Brook av near 171st st (1901)"},"FT-0398":{"dir":"FT-0398-cohn-mamlock-oval-studio-portraits-framed-set-ph","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg","photos/05.jpg","photos/06.jpg","photos/07.jpg"],"entry":true,"type":"photo","title":"Cohn / Mamlock oval studio portraits (framed set) + photographer backs"},"FT-0418":{"dir":"FT-0418-nyc-open-data-death-index-albert-mamlock-manhattan-12843-1937","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Albert Mamlock, Manhattan 12843, 24 May 1937 age 79"},"FT-0421":{"dir":"FT-0421-allemannia-ship-castle-garden-1867-mamlock-landing","photos":[],"entry":true,"type":"newspaper","title":"Allemannia (HAL) + Castle Garden 1867 — mother-and-children German landing world (Mamlock)"},"FT-0426":{"dir":"FT-0426-mt-carmel-cemetery-jewish-burial-world-monroe-mamie","photos":[],"entry":true,"type":"newspaper","title":"Mt. Carmel Cemetery (Glendale) — NYC Jewish burial world (Monroe & Mamie)"},"FT-0305":{"dir":"FT-0305-germania-1867-moritz-blamchen-mamlock-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Germania 1867 — Moritz Mamlock merchant + wife Blamchen land before Rosa party"},"FT-0099":{"dir":"FT-0099-what-shoes-looked-like-1890-1920-the-stock-a-sho","photos":["photos/01-crawford-oxfords-ad-1902.jpg","photos/02-shoe-store-interior-1901.jpg","photos/03-american-high-boots-1899-1900.jpg","photos/04-mens-factory-lace-boots.jpg","photos/05-boots-shoes-storefront-poster-c1878.jpg","photos/06-gilpin-shoe-storefront-1899.jpg"],"entry":true,"type":"newspaper","title":"What shoes looked like ~1890–1920 — the stock a shoe jobber moved"},"FT-0427":{"dir":"FT-0427-hartford-german-jewish-merchant-world-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Hartford German-Jewish merchant world — clothing & downtown trade color (Solomon Cohn era)"},"FT-0417":{"dir":"FT-0417-nyc-open-data-death-index-bertha-cohn-kings-10639-1925","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Bertha Cohn, Kings 10639, 22 May 1925 age 79 (candidate)"},"FT-0395":{"dir":"FT-0395-orange-county-register-a-life-story-kay-heil-did","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"newspaper","title":"Orange County Register — “A Life Story: Kay Heil did it her way” (2007)"},"FT-0390":{"dir":"FT-0390-tri-delta-sorority-eugene-or-1928-29-grandma-kay","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"photo","title":"Tri Delta sorority — Eugene OR 1928–29 (Grandma Kay) + Clemens genealogy note"},"FT-0391":{"dir":"FT-0391-registration-of-marriage-john-a-blakely-emma-a-m","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"vital","title":"Registration of Marriage — John A. Blakely × Emma A. More (1868, Grant Co. WI)"},"FT-0393":{"dir":"FT-0393-american-red-cross-volunteer-special-services-ce","photos":["photos/01.jpg"],"entry":true,"type":"artifact","title":"American Red Cross Volunteer Special Services Certificate — Kathleen Anderson (1945)"},"FT-0394":{"dir":"FT-0394-park-st-school-hood-river-classroom-medical-insp","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"photo","title":"Park St. School, Hood River — classroom / medical inspection (Glendora Blakely)"},"FT-0399":{"dir":"FT-0399-clipping-mrs-glendora-m-blakeley-public-welfare","photos":["photos/01.jpg"],"entry":true,"type":"newspaper","title":"Clipping — Mrs. Glendora M. Blakeley, public welfare chairman"},"FT-0403":{"dir":"FT-0403-mrs-glendora-blakely-bloomington-nurse-la-mesa","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Glendora Blakely — Bloomington city nurse; died La Mesa Calif. (1960)"},"FT-0404":{"dir":"FT-0404-platteville-journal-john-a-blakely-gar-obit-1937","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Platteville Journal / Grant County News — John A. Blakely G.A.R. obituary (15 Sep 1937)"},"FT-0029":{"dir":"FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl","photos":["photos/01.jpg","photos/source-clip.jpg"],"entry":true,"type":"obituary","title":"Death Claims Dr. Guerdon C. Buck Monday Morning (Platteville ~22 Jun 1932)"},"FT-0175":{"dir":"FT-0175-dr-e-j-buck-runaway-injury-death-grant-county-wi","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Dr. E. J. Buck — runaway injury death (Grant County Witness 26 Jun 1901)"},"FT-0176":{"dir":"FT-0176-mrs-sarah-trask-buck-seattle-death-platteville-j","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Sarah Trask Buck — Seattle death (Platteville Journal 30 Sep 1943)"},"FT-0200":{"dir":"FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877","photos":[],"entry":true,"type":"newspaper","title":"Erastus J. Buck, M.D. — United States Biographical Dictionary (Wisconsin vol., 1877)"},"FT-0201":{"dir":"FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876","photos":[],"entry":true,"type":"place","title":"Mrs. S. E. Buck — Platteville Normal School teacher of Reading (1876–1880)"},"FT-0360":{"dir":"FT-0360-e-j-buck-md-butterfield-grant-county-1881","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — History of Grant County (Butterfield 1881) biographical sketch"},"FT-0197":{"dir":"FT-0197-1895-wi-veteran-census-erastus-buck-surgeon-18th","photos":[],"entry":true,"type":"military","title":"1895 Wisconsin veteran census — Erastus Buck, Surgeon, 18th Wis. Inf., Platteville"},"FT-0198":{"dir":"FT-0198-heath-ma-baptism-erastus-s-erastus-roxana-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Erastus s. Erastus and Roxana, Oct 1827"},"FT-0361":{"dir":"FT-0361-e-j-buck-westfield-montello-express-1876","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — Westfield “first class physician” vignette (Montello Express 1876)"},"FT-0362":{"dir":"FT-0362-e-j-buck-ymla-vice-president-platteville-1881","photos":[],"entry":true,"type":"place","title":"E. J. Buck — Young Men’s Library Association vice president (Platteville ~1881)"},"FT-0281":{"dir":"FT-0281-heath-ma-death-lucy-d-col-david-sarah-deane-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Lucy D., d. Col. David and Sarah Deane, May 1827"},"FT-0282":{"dir":"FT-0282-heath-ma-baptism-roxanda-d-david-1801","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Roxanda, d. David, bp. 22 Nov 1801"},"FT-0280":{"dir":"FT-0280-heath-ma-death-sarah-deane-w-col-david-1809","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Sarah Deane [w. Col. David], 30 Apr 1809"},"FT-0292":{"dir":"FT-0292-david-baldwin-heath-pioneer-land-church-pew","photos":[],"entry":true,"type":"place","title":"David Baldwin — early Heath/Charlemont landholder and church pew 6 (Everts + Connecticut Valley)"},"FT-0286":{"dir":"FT-0286-heath-ma-birth-erastus-ch-william-lt-william-1798","photos":[],"entry":true,"type":"vital","title":"Heath MA birth — Erastus ch. William (Lt. William and w.), Jan 1798"},"FT-0283":{"dir":"FT-0283-heath-ma-deaths-buck-william-sarah-william-jr","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Lt. William Buck, Sarah (Sally) Buck, and William Jr."},"FT-0284":{"dir":"FT-0284-heath-ma-deaths-maxwell-hugh-corbett-benjamin-anna","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Hugh Maxwell, Sarah Corbett, Benjamin Lt., Anna Winslow"},"FT-0285":{"dir":"FT-0285-heath-ma-marriages-buck-1785-maxwell-winslow-1762","photos":[],"entry":true,"type":"vital","title":"Heath MA marriages — Buck 1785 and Maxwell × Winslow 1762"},"FT-0287":{"dir":"FT-0287-find-a-grave-48687650-benjamin-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 48687650 — LTC Benjamin Butler Maxwell Sr memorial"},"FT-0288":{"dir":"FT-0288-find-a-grave-87173271-anna-winslow-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 87173271 — Anna Winslow Maxwell memorial"},"FT-0322":{"dir":"FT-0322-aane-benjamin-maxwell-brother-minuteman","photos":[],"entry":true,"type":"military","title":"AANE Deerfield — Lt. Benjamin Maxwell: son of Hugh I × Sarah Corbett; brother of Col. Hugh; Capt. Rice Minute-Man"},"FT-0289":{"dir":"FT-0289-find-a-grave-25190915-hugh-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 25190915 — Hugh Maxwell (1701–1759) memorial"},"FT-0290":{"dir":"FT-0290-hugh-maxwell-heath-founding-revolution-narrative","photos":[],"entry":true,"type":"place","title":"Col. Hugh Maxwell — Heath incorporation, Irish origin, and Revolutionary narrative (Everts 1879 + MS 27)"},"FT-0320":{"dir":"FT-0320-christian-patriot-col-hugh-maxwell-memoir","photos":[],"entry":true,"type":"military","title":"The Christian Patriot (1833) — Col. Hugh Maxwell memoir: two Hughs, Fort William Henry, Bunker Hill, later war, death at sea"},"FT-0321":{"dir":"FT-0321-shays-rebellion-stcc-col-hugh-maxwell","photos":[],"entry":true,"type":"military","title":"Shays' Rebellion STCC narrative — Col. Hugh Maxwell military career, Stickney letter, Cincinnati, Shays"},"FT-0323":{"dir":"FT-0323-franklin-biographical-review-maxwell-rangers","photos":[],"entry":true,"type":"military","title":"Biographical Review Franklin Co. (1895) — Hugh Sr. / Col. Hugh Jr. / Benjamin Minute-Man + Rogers's Rangers claim"},"FT-0324":{"dir":"FT-0324-white-charlemont-plantation-maxwell-revwar","photos":[],"entry":true,"type":"military","title":"Joseph White, Charlemont as a Plantation (1855/58) — Col. Hugh & Lt. Benjamin Maxwell Rev War / FIW narrative"},"FT-0325":{"dir":"FT-0325-greenfield-recorder-west-county-revwar-maxwell","photos":[],"entry":true,"type":"newspaper","title":"Greenfield Recorder (2026) — western Franklin County Rev War stories: Charlemont Maxwell Minute-Men + Heath naming"},"FT-0326":{"dir":"FT-0326-ma-state-library-blog-hugh-maxwell-ms27","photos":[],"entry":true,"type":"military","title":"MA State Library blog (2014) — interpretive note on Hugh Maxwell MS 27 military papers"},"FT-0327":{"dir":"FT-0327-brown-bedford-maxwell-warriors","photos":[],"entry":true,"type":"military","title":"Abram English Brown, History of Bedford (1891) — Maxwell FIW warriors; elder Hugh epitaph 1759; Christian Patriot"},"FT-0328":{"dir":"FT-0328-americancenturies-pvma-maxwell-agriculture","photos":[],"entry":true,"type":"place","title":"American Centuries / PVMA — Col. Hugh Maxwell Mass. Society for Agriculture certificate (1794) interpretive label"},"FT-0329":{"dir":"FT-0329-nason-gazetteer-heath-maxwell-no-tories","photos":[],"entry":true,"type":"place","title":"Nason/Varney Gazetteer (1890) — Heath: Col. Hugh Maxwell, Bunker Hill wound, no Tories"},"FT-0432":{"dir":"FT-0432-fort-william-henry-1757-siege-massacre-context","photos":[],"entry":true,"type":"military","title":"Fort William Henry 1757 — siege and column attack (surrounding event for Col. Hugh’s escape)"},"FT-0433":{"dir":"FT-0433-robortella-steps-west-preemption-line-survey","photos":[],"entry":true,"type":"place","title":"Steps West — Col. Hugh Maxwell’s 1788 Pre-emption Line survey (Robortella + Historic Geneva)"},"FT-0434":{"dir":"FT-0434-heitman-lt-col-hugh-maxwell-continental-commissions","photos":[],"entry":true,"type":"military","title":"Heitman register — Lt. Col. Hugh Maxwell (Mass.) Continental commissions; Washington papers name his company"},"FT-0435":{"dir":"FT-0435-mssrw-hugh-maxwell-charlemont-abstract","photos":[],"entry":true,"type":"military","title":"MSSRW vol. 10 — Maxwell, Hugh of Charlemont (service abstract)"},"FT-0436":{"dir":"FT-0436-heath-south-cemetery-maxwell-cenotaph-land-gift","photos":[],"entry":true,"type":"place","title":"Heath South Cemetery — Col. Hugh Maxwell land gift (1791) and grandchildren’s cenotaph (1859)"},"FT-0437":{"dir":"FT-0437-pvma-burgoyne-flag-maxwell-regimental-fragment","photos":[],"entry":true,"type":"military","title":"PVMA Memorial Hall — Burgoyne flag remnant + Col. Hugh Maxwell regimental flag fragment"},"FT-0291":{"dir":"FT-0291-william-buck-heath-first-settler-church-pew","photos":[],"entry":true,"type":"place","title":"Lt. William Buck — western Heath first settler and founding-church pew (Everts 1879)"},"FT-0438":{"dir":"FT-0438-hotten-increase-1635-william-roger-buck","photos":[],"entry":true,"type":"vital","title":"Hotten Original Lists — Increase 1635: William Buck 50 (plowwright) + Roger Buck 18"},"FT-0182":{"dir":"FT-0182-mills-birth-index-marion-azalia-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. birth index 1904–1906 — Marion L. & Azalia Gayle Anderson (mother Stonebraker)"},"FT-0173":{"dir":"FT-0173-henderson-christian-church-history-stonebraker-f","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Henderson Christian Church history — Stonebraker founding members (1877)"},"FT-0178":{"dir":"FT-0178-marriage-license-hugh-d-anderson-bertha-stonebra","photos":[],"entry":true,"type":"newspaper","title":"Marriage license — Hugh D. Anderson × Bertha Stonebraker (Tribune 29 May 1902)"},"FT-0183":{"dir":"FT-0183-delayed-birth-azalia-ursula-lucille-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. delayed births — Azalia Gaile & Ursula Lucille Anderson (Hugh D. × Urtha Stonebraker)"},"FT-0192":{"dir":"FT-0192-marriage-return-hugh-anderson-urtha-stonebraker-1902","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage return 1902 — Hugh D. Anderson × Urtha Stonebraker"},"FT-0340":{"dir":"FT-0340-malvern-leader-stonebraker-anderson-marriage-1902","photos":[],"entry":true,"type":"newspaper","title":"Malvern Leader — Stonebraker–Anderson marriage at J. A. Stonebraker home (5 Jun 1902)"},"FT-0341":{"dir":"FT-0341-henderson-times-1910-pioneer-stonebraker","photos":[],"entry":true,"type":"newspaper","title":"Henderson Times 15 Dec 1910 — pioneer roll names J. A. Stonebraker"},"FT-0342":{"dir":"FT-0342-1910-atlas-stonebraker-section-8","photos":[],"entry":true,"type":"place","title":"1910 Mills atlas — J. A. & P. H. Stonebraker landowners, Anderson Twp Sec. 8"},"FT-0191":{"dir":"FT-0191-1905-henderson-census-stonebraker-cluster","photos":[],"entry":true,"type":"census","title":"1905 IA State Census — Henderson — J. A. / P. H. / F. G. Stonebraker (cards 166–168)"},"FT-0196":{"dir":"FT-0196-henderson-christian-church-1942-fire-rebuild","photos":[],"entry":true,"type":"church","title":"Henderson Christian Church — 1942 fire and wartime rebuild"},"FT-0177":{"dir":"FT-0177-silver-city-community-history-harry-w-anderson-b","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson bio (John W. × Emily Dupray)"},"FT-0195":{"dir":"FT-0195-silver-city-anderson-favorite-family-stories","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Anderson Favorite Family Stories"},"FT-0307":{"dir":"FT-0307-silver-city-harry-w-anderson-trade-career","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson trade career"},"FT-0343":{"dir":"FT-0343-hugh-dupree-horseshoe-bookends-family-oral","photos":[],"entry":true,"type":"newspaper","title":"Family oral — Hugh Dupree Anderson made Alex’s horseshoe bookends"},"FT-0439":{"dir":"FT-0439-silver-city-times-harry-hugh-farm-1913","photos":[],"entry":true,"type":"newspaper","title":"Silver City Times — Harry Anderson sold farm to brother Hugh (2 Oct 1913)"},"FT-0440":{"dir":"FT-0440-silver-city-times-emily-anderson-death-1923","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Silver City Times — Mrs. Emily Anderson death notice (8 Nov 1923)"},"FT-0330":{"dir":"FT-0330-jw-anderson-silver-creek-supervisor-wheat-1869","photos":[],"entry":true,"type":"newspaper","title":"Pottawattamie notes — J. W. Anderson Silver Creek supervisor (1869) + wheat crop"},"FT-0332":{"dir":"FT-0332-mills-western-stage-coonville-st-joseph","photos":[],"entry":true,"type":"newspaper","title":"Mills County early transportation — Western Stage Line Coonville to St. Joseph"},"FT-0333":{"dir":"FT-0333-coonville-glenwood-wortman-1881","photos":[],"entry":true,"type":"newspaper","title":"Coonville / Glenwood — Wortman & 1881 history (meet-story place frame)"},"FT-0335":{"dir":"FT-0335-ingraham-plumer-inn-stage-landscape","photos":[],"entry":true,"type":"newspaper","title":"Ingraham / Silver City — Flanagan–Huffaker settling + Wortman Stage Coach Inn"},"FT-0331":{"dir":"FT-0331-silver-creek-twp-jw-anderson-trustee-1882","photos":[],"entry":true,"type":"newspaper","title":"Silver Creek Township history — J. W. Anderson trustee (1882) + stage-station landscape"},"FT-0334":{"dir":"FT-0334-chicago-dray-teamster-trade-context","photos":[],"entry":true,"type":"newspaper","title":"Encyclopedia of Chicago — Teamsters / horse-team drayage (profession unpack)"},"FT-0005":{"dir":"FT-0005-conejo-mountain-funeral-home-gloria-martha-short","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Conejo Mountain Funeral Home — Gloria Martha Shorts"},"FT-0380":{"dir":"FT-0380-deseret-1972-utah-swim-shorts-thousand-oaks-recruit","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — Utah swim preview names Bill Shorts of Thousand Oaks (1972)"},"FT-0381":{"dir":"FT-0381-chronicle-1973-01-utah-development-meet-shorts-backstroke","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts backstroke placings + photo caption (1973)"},"FT-0382":{"dir":"FT-0382-tribune-1973-02-shorts-bio-thousand-oaks-business","photos":[],"entry":true,"type":"newspaper","title":"Salt Lake Tribune — Bill Shorts bio (Thousand Oaks, business major, 6'4 backstroke)"},"FT-0383":{"dir":"FT-0383-chronicle-1973-02-frosh-backstroke-firsts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — frosh Bill Shorts wins 200 back, second in 100 (1973)"},"FT-0384":{"dir":"FT-0384-wac-1974-medley-relay-shorts-backstroke-lead","photos":[],"entry":true,"type":"newspaper","title":"WAC swimming championships 1974 — Bill Shorts leads off Utah medley relay"},"FT-0385":{"dir":"FT-0385-chronicle-1975-03-wac-preview-shorts-favorite","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — 1975 WAC preview: Shorts favorite in backstroke"},"FT-0386":{"dir":"FT-0386-deseret-1975-03-wac-medley-record-shorts","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — 1975 WAC: Utah medley relay meet record (Shorts lead-off)"},"FT-0387":{"dir":"FT-0387-chronicle-1975-03-ncaa-cleveland-roster-shorts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts named to Utah NCAA Cleveland roster (1975)"},"FT-0388":{"dir":"FT-0388-captain-wac-100-back-champ-1975-76-season","photos":[],"entry":true,"type":"newspaper","title":"Team captain Bill Shorts — WAC 100 backstroke champion (1975–76 season stack)"},"FT-0389":{"dir":"FT-0389-wac-1976-shorts-defend-third-place","photos":[],"entry":true,"type":"newspaper","title":"1976 WAC — defending backstroke champ Bill Shorts finishes third"},"FT-0004":{"dir":"FT-0004-ventura-county-star-richard-dorland-shorts-28-oc","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Ventura County Star — Richard Dorland Shorts (28 Oct 2009)"},"FT-0101":{"dir":"FT-0101-they-met-at-the-hollywood-palladium-gloria-richa","photos":["photos/01-hollywood-palladium.jpg","photos/02-gloria-portrait.jpg","photos/03-gloria-obit-card.jpg"],"entry":true,"type":"newspaper","title":"They met at the Hollywood Palladium — Gloria × Richard danced to Woody Herman"},"FT-0102":{"dir":"FT-0102-secretary-at-the-long-beach-shipyards-gloria-s-w","photos":["photos/01-liberty-ship.jpg"],"entry":true,"type":"newspaper","title":"Secretary at the Long Beach shipyards — Gloria’s wartime / postwar work world"},"FT-0313":{"dir":"FT-0313-gloria-bellflower-wartime-school-boom","photos":[],"entry":true,"type":"newspaper","title":"Bellflower 1942 — wartime boomtown where Gloria finished high school"},"FT-0315":{"dir":"FT-0315-long-beach-women-wwii-historian-burnett","photos":[],"entry":true,"type":"newspaper","title":"Long Beach women in the WWII yards — local historian context for Gloria’s shipyard years"},"FT-0103":{"dir":"FT-0103-tuxhorn-germans-on-the-plains-westphalia-mcphers","photos":["photos/01-leo-tuxhorn-portrait.jpg"],"entry":true,"type":"newspaper","title":"Tuxhorn Germans on the Plains — Westphalia → McPherson; Nemaha surname neighbors"},"FT-0314":{"dir":"FT-0314-august-tuxhorn-1884-farm-fire-death","photos":[],"entry":true,"type":"newspaper","title":"August Tuxhorn’s 1884 farm fire — Leo’s father, McPherson County"},"FT-0107":{"dir":"FT-0107-dornberg-bielefeld-america-westphalia-emigration","photos":["photos/01-memorial-fag.png","photos/01-tuxhorn-fag.png"],"entry":true,"type":"census","title":"Dornberg / Bielefeld → America — Westphalia emigration peak (Tuxhorn hinge)"},"FT-0408":{"dir":"FT-0408-democratic-sentinel-august-tuxhorn-1884-wire","photos":[],"entry":true,"type":"newspaper","title":"Democratic Sentinel (Rensselaer IN) — August Tuxhorn McPherson wire, 21 Nov 1884"},"FT-0409":{"dir":"FT-0409-mcpherson-settler-elizabeth-tuxhorn-groveland-1876","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS settler list — Elizabeth Tuxhorn (Birkenbuel), Groveland 1876"},"FT-0411":{"dir":"FT-0411-mcpherson-probate-index-tuxhorn-august-d52-e104","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS probate journal index — Tuxhorn August D52 (1891) / E104 (1894)"},"FT-0098":{"dir":"FT-0098-altmark-germans-on-the-kansas-prairie-gatz-hilge","photos":[],"entry":true,"type":"newspaper","title":"Altmark Germans on the Kansas prairie — Gatz × Hilgenfeld, McPherson Pioneer Register, and what ‘farmer’ meant"},"FT-0354":{"dir":"FT-0354-irvin-satc-wwi-student-army-training-corps","photos":[],"entry":true,"type":"newspaper","title":"Irvin Carl Gatz — Pvt Student Army Training Corps (WWI title unpack)"},"FT-0100":{"dir":"FT-0100-prairie-housing-and-tools-1870-1905-soddy-to-fra","photos":["photos/01-chrisman-sisters-sod.jpg","photos/02-rawding-family-sod-house-1886.jpg","photos/03-haumont-two-story-sod-1886.jpg","photos/04-family-sod-house-prairie.jpg","photos/05-farm-family-sod-nebraska.jpg","photos/06-horse-drawn-plow.jpg"],"entry":true,"type":"newspaper","title":"Prairie housing & tools ~1870–1905 — soddy to frame, plow work (context for Gatz farmers)"},"FT-0097":{"dir":"FT-0097-falls-city-journal-1899-johann-ludwig-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1899 — Johann Ludwig Hilgenfeld, 92; names daughter Sophia Gatz"},"FT-0350":{"dir":"FT-0350-falls-city-journal-1941-anna-deckinger-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1941 — Anna Deckinger Hilgenfeld (FAN farm + McPherson sister)"},"FT-0351":{"dir":"FT-0351-richardson-1890-farmers-hilgenfield-arago","photos":[],"entry":true,"type":"newspaper","title":"Nebraska State Gazetteer 1890 — Hilgenfield farmers at Arago / Falls City"},"FT-0352":{"dir":"FT-0352-andreas-falls-city-deutsche-gesellschaft-arago","photos":[],"entry":true,"type":"newspaper","title":"Andreas 1882 — Falls City Die Deutsche Gesellschaft + Arago German farming community"},"FT-0353":{"dir":"FT-0353-barrington-german-pioneer-influx-lines","photos":[],"entry":true,"type":"newspaper","title":"Barrington area — German pioneer influx 1840s–1850s (Hilgenfeld sojourn landscape)"},"FT-0355":{"dir":"FT-0355-wendemark-altmark-marschhufendorf-place","photos":[],"entry":true,"type":"newspaper","title":"Wendemark (Altmärkische Wische) — Marschhufendorf place for Gatz × Hilgenfeld wedding"},"FT-0108":{"dir":"FT-0108-don-shorts-at-blue-church-plaque-methodism-claim","photos":["photos/01-ontarioplaques-don-shorts-comment.png","photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"newspaper","title":"Don Shorts at Blue Church plaque — Methodism claim + who is buried here? (2010)"},"FT-0310":{"dir":"FT-0310-richard-panama-sixth-af-operations-specialist","photos":[],"entry":true,"type":"newspaper","title":"Operations Specialist in Panama — Richard’s WWII AAF world (Sixth Air Force)"},"FT-0311":{"dir":"FT-0311-richard-fire-career-arcadia-huntington-burbank","photos":[],"entry":true,"type":"newspaper","title":"Arcadia → Huntington Park → Burbank Captain — Richard’s fire departments in local histories"},"FT-0312":{"dir":"FT-0312-south-gate-high-1941-industrial-suburb","photos":[],"entry":true,"type":"newspaper","title":"South Gate High 1941 — industrial suburb where Richard graduated"},"FT-0370":{"dir":"FT-0370-1929-socal-move-south-gate-firestone-boom","photos":[],"entry":true,"type":"newspaper","title":"1929 Rochester → Southern California — Firestone / South Gate boom year"},"FT-0372":{"dir":"FT-0372-highland-park-figueroa-shoe-retail-world","photos":[],"entry":true,"type":"newspaper","title":"Highland Park Figueroa — retail / shoe-store strip where Earl kept shop"},"FT-0373":{"dir":"FT-0373-south-gate-depression-quake-industry","photos":[],"entry":true,"type":"newspaper","title":"South Gate childhood suburb — Depression, 1933 quake, factory jobs"},"FT-0374":{"dir":"FT-0374-south-pasadena-later-residence-world","photos":[],"entry":true,"type":"newspaper","title":"South Pasadena later home — trolley suburb where Earl died"},"FT-0152":{"dir":"FT-0152-find-a-grave-100072423-earl-stanley-shorts-memor","photos":[],"entry":true,"type":"vital","title":"Find A Grave 100072423 — Earl Stanley Shorts memorial extract"},"FT-0172":{"dir":"FT-0172-charles-merritt-brights-disease-gorham-ontario-c","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Charles Merritt — Bright's disease, Gorham (Ontario County Chronicle 21 May 1902)"},"FT-0174":{"dir":"FT-0174-1850-us-census-hopewell-ontario-ny-henry-tessima","photos":["photos/01.jpg"],"entry":true,"type":"census","title":"1850 US Census — Hopewell, Ontario, NY — Henry Tessiman household (fam 259)"},"FT-0217":{"dir":"FT-0217-woodlawn-cemetery-register-merritt-lot-207","photos":[],"entry":true,"type":"church","title":"Woodlawn Cemetery register — Charles J. & Ann L. Merritt, Sec 10 Lot 207"},"FT-0218":{"dir":"FT-0218-charles-merritt-probate-ann-l-executor-jun-1902","photos":[],"entry":true,"type":"newspaper","title":"Charles Merritt probate — Ann L. Merritt executor (Ontario County Chronicle 4 Jun 1902)"},"FT-0219":{"dir":"FT-0219-find-a-grave-121146760-charles-merritt-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 121146760 — Charles Merritt memorial extract"},"FT-0270":{"dir":"FT-0270-1855-census-hopewell-ontario-ny-tesseyman-fam-027","photos":[],"entry":true,"type":"census","title":"1855 NY State Census index — Hopewell, Ontario, NY — Tesseyman household (fam 027)"},"FT-0401":{"dir":"FT-0401-abbie-tesseyman-pneumonia-chapinville-1898","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Abbie Tesseyman — pneumonia, Chapinville (Ontario County Journal 30 Dec 1898)"},"FT-0271":{"dir":"FT-0271-1875-census-canandaigua-ontario-ny-ethelinda-tesseyman-fam-465","photos":[],"entry":true,"type":"census","title":"1875 NY State Census index — Canandaigua, Ontario, NY — Ethelinda Tesseyman (fam 465)"},"FT-0067":{"dir":"FT-0067-pringle-benham-compiled-dorland-shortts-239-mini","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled — Dorland Shortts #239 minister; m. Effie Earl 1879; d. Marcy 1945"},"FT-0069":{"dir":"FT-0069-find-a-grave-8850577-rev-dorland-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850577 — Rev Dorland Shorts memorial extract (no bio; no stone photo)"},"FT-0215":{"dir":"FT-0215-find-a-grave-8850579-effie-eliza-earl-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850579 — Effie Eliza Earl Shorts memorial extract (no bio; no stone photo)"},"FT-0371":{"dir":"FT-0371-rochester-shoe-industry-mckelvey-decline","photos":[],"entry":true,"type":"newspaper","title":"Rochester shoe-town decline — McKelvey city-historian frame for leaving ~1929"},"FT-0066":{"dir":"FT-0066-mount-hope-cemetery-section-w-stone-list-rev-dor","photos":[],"entry":true,"type":"vital","title":"Mount Hope Cemetery Section W stone list — Rev. Dorland Shorts & Effie E."},"FT-0216":{"dir":"FT-0216-ny-state-death-index-1918-effie-shorts-cert-37880","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1918 — Effie E. Shorts, cert. 37880, East Rochester"},"FT-0031":{"dir":"FT-0031-grindstone-island-umc-history-rev-alexander-shor","photos":["photos/01-altar.jpg","photos/02-stained-glass.jpg","photos/03-church-front.jpg","photos/04-church-door.jpg","photos/05-quilt.jpg"],"entry":true,"type":"church","title":"Grindstone Island UMC History — Rev Alexander Shorts, circuit rider (full page + images)"},"FT-0033":{"dir":"FT-0033-thousand-islands-life-grindstone-stained-glass-s","photos":["photos/01-church-stained-glass-hero.png","photos/02-rev-alexander-shorts.jpeg","photos/03-church-graphic.png","photos/04-church-exterior.png","photos/05-nancy-keziah-photo.png"],"entry":true,"type":"church","title":"Thousand Islands Life — Grindstone stained-glass series: Rev. Alexander Shorts (full article + images)"},"FT-0038":{"dir":"FT-0038-shorts-me-builders-connection-map-hay-bay-napane","photos":[],"entry":true,"type":"church","title":"Shorts ME builders — connection map (Hay Bay → Napanee → Grindstone → Dorland)"},"FT-0040":{"dir":"FT-0040-aylsworth-family-1887-eva-eliza-aylesworth-m-rev","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) — Eva Eliza Aylesworth m. Rev. Alexander Shorts; died leaving son Dorian"},"FT-0065":{"dir":"FT-0065-ny-state-death-index-1945-dorland-shorts-cert-52","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1945 — Dorland Shorts, cert. 52286, Marcy"},"FT-0068":{"dir":"FT-0068-maynard-methodist-church-marcy-ny-erie-canal-vil","photos":["photos/01-maynard-methodist-church.png","photos/02-maynard-interior.jpg"],"entry":true,"type":"place","title":"Maynard Methodist Church (Marcy NY) — Erie Canal Village history + photos"},"FT-0070":{"dir":"FT-0070-find-a-grave-138634881-eva-eliza-aylesworth-shor","photos":["photos/01-cemetery-cover.jpeg"],"entry":true,"type":"vital","title":"Find A Grave 138634881 — Eva Eliza Aylesworth Shorts (Knight's Cemetery)"},"FT-0071":{"dir":"FT-0071-knights-cemetery-transcript-kns-96-eva-eliza-sho","photos":["photos/01-cemetery-overview-2013.jpg","photos/02-cemetery-overview-2019.jpeg","photos/03-cemetery-overview-2024.jpeg"],"entry":true,"type":"vital","title":"Knight's Cemetery transcript — KNS 96 Eva Eliza Shorts stone + cemetery intro"},"FT-0074":{"dir":"FT-0074-pringle-benham-compiled-gen-110-alexander-shortt","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled gen. §110 — Alexander Shortts × Eva Eliza Aylesworth; child Dorland only"},"FT-0089":{"dir":"FT-0089-methodism-in-alexandria-jefferson-co-ny-circuit","photos":[],"entry":true,"type":"church","title":"Methodism in Alexandria (Jefferson Co. NY) — circuit riders on horseback; town where Earl Stanley Shorts was born"},"FT-0111":{"dir":"FT-0111-crem-dorland-book-fag-ruth-dorland-william-short","photos":[],"entry":true,"type":"book","title":"Crem Dorland book + FAG — Ruth Dorland × William Shorts (Adolphustown FAN; not blood claim)"},"FT-0137":{"dir":"FT-0137-find-a-grave-96207765-rev-alexander-shorts-grind","photos":[],"entry":true,"type":"vital","title":"Find A Grave 96207765 — Rev Alexander Shorts (Grindstone Island Cemetery)"},"FT-0429":{"dir":"FT-0429-black-river-nny-conference-memorial-shorts-negative","photos":[],"entry":true,"type":"church","title":"Black River & Northern NY Conference Memorial — no Shorts sketch (Dorland charge negative)"},"FT-0036":{"dir":"FT-0036-fadedgenes-rev-alexander-shorts-me-charges-ricev","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Alexander Shorts ME charges (Riceville 1869; Napanee 1881)"},"FT-0057":{"dir":"FT-0057-inkerman-me-church-and-parsonage-1868-eva-shorts","photos":["photos/01-inkerman-united-cover-1883.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-inkerman-me-1883-sepia.jpg","photos/04-mills-me-chapter-p9.jpg"],"entry":true,"type":"place","title":"Inkerman ME church & parsonage (1868) — Eva Shorts death context; 1883 red-brick successor"},"FT-0060":{"dir":"FT-0060-canadian-me-charge-ladder-riceville-inkerman-nap","photos":["photos/01-mills-methodism-inkerman.jpg","photos/02-inkerman-fadedgenes-sto.jpg"],"entry":true,"type":"church","title":"Canadian ME charge ladder — Riceville → Inkerman → Napanee (buildings + search negatives)"},"FT-0072":{"dir":"FT-0072-fadedgenes-inkerman-methodist-church-mountain-tw","photos":["photos/01-inkerman-methodist-1883.jpg","photos/02-inkerman-mountain-map.jpg"],"entry":true,"type":"church","title":"fadedgenes — Inkerman Methodist Church (Mountain Twp, Dundas) + 1883 building photo"},"FT-0073":{"dir":"FT-0073-mills-1983-yesterday-and-to-day-history-of-inker","photos":["photos/01-cover-inkerman-united-church.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-methodism-me-parsonage-p9.jpg","photos/04-church-today-1883-building.jpg"],"entry":true,"type":"church","title":"Mills 1983 — Yesterday and To-Day: History of Inkerman United Church (ME parsonage + building photos)"},"FT-0106":{"dir":"FT-0106-arthur-aylesworth-at-quidnessett-ri-settler-and","photos":["photos/01-aylsworth-1887-p36.jpg","photos/02-aylsworth-1887-p37.jpg","photos/03-emigration-ri.jpg"],"entry":true,"type":"church","title":"Arthur Aylesworth at Quidnessett — RI settler & the road to Canada"},"FT-0149":{"dir":"FT-0149-otho-nial-charlotte-bowerman-aylsworth-1887-job","photos":[],"entry":true,"type":"church","title":"Otho Nial × Charlotte Bowerman — Aylsworth 1887; Job Aylesworth spotted fever 1803"},"FT-0139":{"dir":"FT-0139-aylsworth-family-1887-p-89-charlotte-bowerman-da","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) p. 89 — Charlotte Bowerman dau. David; m. Otho Nial 1805"},"FT-0140":{"dir":"FT-0140-quaker-minutes-charlotte-bowerman-membership-and","photos":[],"entry":true,"type":"church","title":"Quaker minutes — Charlotte Bowerman membership & marry-out acknowledgment (1803–1806)"},"FT-0141":{"dir":"FT-0141-bowerman-family-genealogy-1904-david-bowerman-vi","photos":[],"entry":true,"type":"vital","title":"Bowerman family genealogy (1904) — David Bowerman vitals, children, Charlotte adoption note"},"FT-0142":{"dir":"FT-0142-pioneer-life-on-the-bay-of-quinte-1904-p-131-dav","photos":[],"entry":true,"type":"vital","title":"Pioneer Life on the Bay of Quinte (1904) p. 131 — David Bowerman × Catherine Bartlett family"},"FT-0146":{"dir":"FT-0146-bowerman-family-migration-batteau-route-ichabod","photos":[],"entry":true,"type":"church","title":"Bowerman family migration — batteau route, Ichabod Quaker disownment, Joseph Earl Loyalist"},"FT-0147":{"dir":"FT-0147-charlotte-bowerman-adopted-daughter-note-bowerma","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — adopted daughter note (Bowerman genealogy appendix)"},"FT-0148":{"dir":"FT-0148-charlotte-bowerman-quaker-membership-marry-out-a","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — Quaker membership, marry-out, and acknowledgment (1803–1806)"},"FT-0168":{"dir":"FT-0168-bowerman-1904-ichabod-verbank-homestead-bowerman","photos":[],"entry":true,"type":"church","title":"Bowerman 1904 — Ichabod Verbank homestead, Bowerman's Hole, Deborah stayed Dutchess"},"FT-0034":{"dir":"FT-0034-ti-life-archive-grindstone-grenell-wellesley-his","photos":["photos/01-grindstone-church.png","photos/02-historic-church.png","photos/03-historic-church.png","photos/04-historic-church.png","photos/05-historic-church.png","photos/06-historic-church.png","photos/07-historic-church.png","photos/08-historic-church.png","photos/09-historic-church.png","photos/10-historic-church.png","photos/11-dinsmore-church.png","photos/12-church.png","photos/13-church.png","photos/14-church.png","photos/15-church.png","photos/16-picture34.jpg","photos/17-dunsm.jpg","photos/18-picture26.jpg","photos/19-picture27.jpg","photos/20-picture28.jpg","photos/21-picture46.jpg"],"entry":true,"type":"place","title":"TI Life archive — Grindstone / Grenell / Wellesley historic churches (Rick Tague); Shorts section + images"},"FT-0037":{"dir":"FT-0037-ti-life-gabriel-series-mending-alexander-shorts","photos":["photos/01-window.jpg","photos/02-gabriel.jpeg","photos/03-well.png"],"entry":true,"type":"church","title":"TI Life — Gabriel series: mending Alexander Shorts’s Grindstone church (1935–45)"},"FT-0039":{"dir":"FT-0039-ti-life-grindstone-island-lost-in-time-kim-lunma","photos":[],"entry":true,"type":"newspaper","title":"TI Life — Grindstone Island: Lost in Time (Kim Lunman); church as summer heart + Rex Ennis lay preacher"},"FT-0041":{"dir":"FT-0041-ti-life-5-13-11-dig-tague-citation-negative-may","photos":[],"entry":true,"type":"newspaper","title":"TI Life 5/13/11 dig — Tague citation negative; May 13 2011 archive posts are not Grindstone church history"},"FT-0053":{"dir":"FT-0053-baldwin-and-clift-1881-3074-mary-ann-denison-sam","photos":[],"entry":true,"type":"vital","title":"Baldwin & Clift 1881 — #3074 Mary Ann Denison × Samuel D. Shorts (children)"},"FT-0054":{"dir":"FT-0054-find-a-grave-samuel-shorts-280868397-mary-ann-de","photos":[],"entry":true,"type":"vital","title":"Find A Grave — Samuel Shorts 280868397 + Mary Ann Denison Shorts 280868640 (Sexsmith)"},"FT-0058":{"dir":"FT-0058-riceville-methodist-1869-little-white-church-pre","photos":["photos/02-pendleton-methodist-prescott.jpg"],"entry":true,"type":"church","title":"Riceville Methodist — 1869 Little White Church (Prescott) & pastoral-charge history"},"FT-0059":{"dir":"FT-0059-napanee-me-church-grace-united-bridge-and-robert","photos":["photos/01-grace-united-bridge-st.jpg"],"entry":true,"type":"place","title":"Napanee ME church → Grace United (Bridge & Robert) — Alexander’s 1881 charge town"},"FT-0061":{"dir":"FT-0061-ti-life-emmet-c-dodge-stained-glass-series-mid-1","photos":["photos/01-stained-glass-window.png","photos/02-dodge-hall.png","photos/03-emmet-dodge.jpg","photos/04-emmet-portrait.jpg","photos/05-dodge-monument.jpeg"],"entry":true,"type":"church","title":"TI Life — Emmet C. Dodge stained-glass series: mid-1930s Grindstone church rebuild + unpublished MS"},"FT-0062":{"dir":"FT-0062-grindstone-news-12-jul-1998-jesse-calkins-helped","photos":[],"entry":true,"type":"church","title":"Grindstone News 12 Jul 1998 — Jesse Calkins helped Rev. Shorts build the island church"},"FT-0063":{"dir":"FT-0063-grindstone-news-19-aug-2001-mrs-joseph-tercott-1","photos":[],"entry":true,"type":"church","title":"Grindstone News 19 Aug 2001 — Mrs. Joseph Tercott (1947) saw Shorts-era church built on Turcotte land"},"FT-0064":{"dir":"FT-0064-ti-life-lashomb-going-home-chapter-cheese-factor","photos":["photos/01-book-cover.png","photos/02-cheese-factory-1990.png","photos/03-milk-wagon.png","photos/04-factory-deteriorating.png","photos/05-author-scan.png"],"entry":true,"type":"church","title":"TI Life — Lashomb Going Home chapter: Cheese Factory (Emmet Dodge Memoires + Turcotte Thurso)"},"FT-0084":{"dir":"FT-0084-grindstone-island-schoolhouse-history-house-of-g","photos":[],"entry":true,"type":"church","title":"Grindstone Island schoolhouse history — House of Good Temperance served as island church until fire (pre-Shorts fabric)"},"FT-0430":{"dir":"FT-0430-grace-united-napanee-museum-fire-hub-narrative","photos":[],"entry":true,"type":"church","title":"Grace United Napanee — museum object story (1842 ME building, lightning, 1943 fire, community hub)"},"FT-0431":{"dir":"FT-0431-trinity-united-napanee-beaver-names-st-andrews","photos":[],"entry":true,"type":"church","title":"Trinity United Napanee — Beaver names history; St Andrew's Gothic rival & 1930s merger"},"FT-0055":{"dir":"FT-0055-museum-of-lennox-and-addington-denison-christian","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Museum of Lennox & Addington — Denison Christian Cross quilt 2014.36.01 (Mary Anne finishes)"},"FT-0104":{"dir":"FT-0104-capt-george-denison-stonington-founder-and-king","photos":["photos/01-baldwin-1881-p6.jpg"],"entry":true,"type":"church","title":"Capt. George Denison — Stonington founder & King Philip’s War (colonial hinge)"},"FT-0105":{"dir":"FT-0105-uel-land-and-bay-of-quinte-thompson-loyalist-hin","photos":["photos/01-quilt-detail.jpg","photos/02-loyalist-landing-plaque.jpg","photos/03-hay-bay-plaque.jpg"],"entry":true,"type":"artifact","title":"UEL land & Bay of Quinte — Thompson Loyalist hinge (quilt + landing world)"},"FT-0466":{"dir":"FT-0466-stonington-helderberg-robert-denison-knox","photos":[],"entry":true,"type":"newspaper","title":"Stonington families to Helderberg — Robert Denison on Van Rensselaer’s ‘free’ land"},"FT-0469":{"dir":"FT-0469-stonington-first-church-dea-daniel-1733","photos":[],"entry":true,"type":"church","title":"First Church Stonington — Dea. Daniel Denison chosen 5 Jul 1733"},"FT-0465":{"dir":"FT-0465-saybrook-1667-mystic-farm-john-phebe","photos":[],"entry":true,"type":"deed","title":"1667 Saybrook settlement — George’s Mystic-mouth farm to Capt. John × Phebe Lay"},"FT-0458":{"dir":"FT-0458-baldwin-george-denison-cromwell-naseby","photos":[],"entry":true,"type":"military","title":"Baldwin 1881 — Capt. George Denison under Cromwell; wounded at Naseby; Ann as nurse"},"FT-0459":{"dir":"FT-0459-george-denison-will-england-war-sword","photos":[],"entry":true,"type":"military","title":"Capt. George Denison will 1693/4 — great sword & gauntlet from the wars of England"},"FT-0461":{"dir":"FT-0461-wheeler-denison-england-return-jointure","photos":[],"entry":true,"type":"military","title":"Wheeler 1900 — George’s England soldier year, Ann jointure £300, Stonington fame"},"FT-0463":{"dir":"FT-0463-haynes-roxbury-train-band-pequotsepos","photos":[],"entry":true,"type":"military","title":"Haynes 1963 — Roxbury train-band snub, New London captain, Pequotsepos lean-to"},"FT-0407":{"dir":"FT-0407-denison-homestead-pequotsepos-manor-history","photos":[],"entry":true,"type":"place","title":"Denison Homestead / Pequotsepos Manor — land grant, manor fire 1717 rebuild, museum"},"FT-0410":{"dir":"FT-0410-kasper-miscia-nehgr-178-borodell-cumbrian-summary","photos":[],"entry":true,"type":"newspaper","title":"Anna Kasper 2024 — Miscia NEHGR 178 Borodell Cumbrian summary (reject Cork/Broughton mother)"},"FT-0406":{"dir":"FT-0406-maj-gen-daniel-denison-autobiography-1672","photos":[],"entry":true,"type":"military","title":"Maj. Gen. Daniel Denison autobiography (1672) — Lyon 1631, Dudley marriage, George at Marston Moor"},"FT-0460":{"dir":"FT-0460-cromwell-marston-moor-naseby-landscape","photos":[],"entry":true,"type":"military","title":"What ‘serving under Cromwell’ meant — Marston Moor 1644 and Naseby 1645"},"FT-0462":{"dir":"FT-0462-stonington-church-denison-miles-standish","photos":[],"entry":true,"type":"church","title":"Stonington First Church 1874 — Denison as Miles Standish of the settlement; Canonchet"},"FT-0464":{"dir":"FT-0464-caulkins-denison-border-man-southerton","photos":[],"entry":true,"type":"newspaper","title":"Caulkins 1860 — Denison the border man; Southerton magistrate; ‘only except’"},"FT-0035":{"dir":"FT-0035-father-shorts-conversion-first-upper-canada-me-o","photos":[],"entry":true,"type":"church","title":"Father Shorts — conversion, first Upper Canada ME ordination, deathbed (Pringle compiled / CCA tradition)"},"FT-0056":{"dir":"FT-0056-1851-canada-west-census-richmond-twp-lennox-agus","photos":["photos/sexsmith-overview-fag-2014.jpg","photos/sexsmith-row-fag-2014.jpg"],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp, Lennox — Agustis & Ellenor Shorts (+ Sexsmith place)"},"FT-0030":{"dir":"FT-0030-canada-christian-advocate-via-old-hay-bay-shorts","photos":[],"entry":true,"type":"newspaper","title":"Canada Christian Advocate (via Old Hay Bay) — Shorts orphan / Father Shorts vignette"},"FT-0032":{"dir":"FT-0032-fadedgenes-rev-andrew-prindle-me-charge-list-han","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Andrew Prindle ME charge list (Hannah Shorts’s brother)"},"FT-0046":{"dir":"FT-0046-old-hay-bay-church-open-building-photographs-ext","photos":["photos/01-exterior-1908-postcard.jpg","photos/02-exterior-2008.jpg","photos/03-historic-1926-ao.jpg","photos/04-historic-1926-ao-alt.jpg","photos/05-historic-1926-portrait.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church — open building photographs (exterior / historic views)"},"FT-0047":{"dir":"FT-0047-old-hay-bay-church-nhs-parks-canada-historicplac","photos":["photos/01-historicplaces-general-view.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church NHS — Parks Canada / HistoricPlaces designation + Ontario plaque text"},"FT-0049":{"dir":"FT-0049-bowman-united-church-ancaster-exteriors-prindle","photos":["photos/01-bowman-side.jpg","photos/02-bowman-front-door.jpg","photos/03-bowman-side-detail.jpg","photos/04-bowman-historic-bw.jpg"],"entry":true,"type":"place","title":"Bowman United Church, Ancaster — exteriors + Prindle burial / chair relic site"},"FT-0050":{"dir":"FT-0050-me-conference-1829-andrew-prindle-superannuated","photos":[],"entry":true,"type":"church","title":"ME Conference 1829 — Andrew Prindle superannuated; next session at Bowman’s chapel, Ancaster"},"FT-0051":{"dir":"FT-0051-rev-andrew-prindle-fag-burial-sanderson-death-no","photos":[],"entry":true,"type":"church","title":"Rev Andrew Prindle — FAG burial + Sanderson death notice + Yonge Street clergy (beyond FT-0035)"},"FT-0052":{"dir":"FT-0052-upper-canada-me-itinerancy-prindle-niagara-years","photos":[],"entry":true,"type":"church","title":"Upper Canada ME itinerancy — Prindle Niagara years + horseback circuit-rider quotes"},"FT-0075":{"dir":"FT-0075-carroll-case-and-his-cotemporaries-vol-1-rev-and","photos":[],"entry":true,"type":"church","title":"Carroll, Case and his Cotemporaries vol. 1 — Rev Andrew Prindle biographical sketch"},"FT-0076":{"dir":"FT-0076-fadedgenes-bowman-me-church-ancaster-old-slide-p","photos":[],"entry":true,"type":"church","title":"fadedgenes — Bowman ME Church Ancaster (Old Slide) + Prindle chair / Kitty Murray"},"FT-0077":{"dir":"FT-0077-webster-history-of-the-me-church-in-canada-andre","photos":[],"entry":true,"type":"church","title":"Webster, History of the ME Church in Canada — Andrew Prindle first Canadian itinerant"},"FT-0078":{"dir":"FT-0078-bowman-united-church-cemetery-rev-andrew-prindle","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Bowman United Church Cemetery — Rev Andrew Prindle stone (Interment.net)"},"FT-0079":{"dir":"FT-0079-carroll-vols-2-and-5-father-prindle-death-eulogy","photos":[],"entry":true,"type":"church","title":"Carroll vols. 2 & 5 — Father Prindle death eulogy + Bay of Quinte local Deacon Augustus Shorts"},"FT-0112":{"dir":"FT-0112-1851-canada-west-census-richmond-twp-henry-holco","photos":[],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp — Henry Holcomb × Hannah O Shorts household"},"FT-0116":{"dir":"FT-0116-find-a-grave-william-and-eunice-pringle-hay-bay","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — William & Eunice Pringle Hay Bay (95004236 + 125180719)"},"FT-0134":{"dir":"FT-0134-find-a-grave-46280209-hannah-shorts-holcomb-cora","photos":[],"entry":true,"type":"vital","title":"Find A Grave 46280209 — Hannah Shorts Holcomb (Coral Cemetery, MI)"},"FT-0135":{"dir":"FT-0135-find-a-grave-133464095-elizabeth-shorts-hughs-se","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464095 — Elizabeth Shorts Hughs (Sexsmith Cemetery)"},"FT-0136":{"dir":"FT-0136-find-a-grave-133467916-andrew-pringle-shorts-sex","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133467916 — Andrew Pringle Shorts (Sexsmith Cemetery)"},"FT-0138":{"dir":"FT-0138-wikitree-short-3449-philip-short-augustus-son-m","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3449 — Philip Short (Augustus son); m. Hannah Brown 1821"},"FT-0150":{"dir":"FT-0150-deborah-bigelow-pringle-uel-adolphustown-loyalis","photos":[],"entry":true,"type":"vital","title":"Deborah Bigelow Pringle — UEL Adolphustown; Loyalist cemetery tradition"},"FT-0413":{"dir":"FT-0413-eunice-miller-stone-sister-rev-a-prindle","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Eunice Miller stone — sister of the late Rev. A. Prindle (FAG 144753754)"},"FT-0414":{"dir":"FT-0414-hay-bay-1819-drowning-worshippers-memorial","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Hay Bay — 1819 drowning worshippers memorial (dedicated 1961)"},"FT-0428":{"dir":"FT-0428-richmond-hill-early-days-appendix-c-clergy","photos":[],"entry":true,"type":"church","title":"Richmond Hill Early Days — Appendix C full clergy compendium (Prindle Yonge St. 1807/1811)"},"FT-0114":{"dir":"FT-0114-find-a-grave-joel-pringle-jr-59609435-uel-kings","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Jr. 59609435 (UEL King's Rangers bio)"},"FT-0144":{"dir":"FT-0144-napanee-beaver-1970-joel-pringle-jr-uel-patriarc","photos":[],"entry":true,"type":"newspaper","title":"Napanee Beaver (1970) — Joel Pringle Jr UEL patriarch, King's Rangers, batteaux settlement"},"FT-0151":{"dir":"FT-0151-uelac-joseph-pringle-st-johns-arrival-july-1781","photos":[],"entry":true,"type":"vital","title":"UELAC Joseph Pringle — St. John's arrival July 1781; Fredericksburgh grant 1783"},"FT-0167":{"dir":"FT-0167-bigelow-society-deborah-joel-uel-hopestill-prind","photos":[],"entry":true,"type":"church","title":"Bigelow Society — Deborah × Joel UEL; Hopestill Prindle FAN (Benedict in-law)"},"FT-0166":{"dir":"FT-0166-bigelow-society-ebenezer-ship-carpenter-cuba-dea","photos":[],"entry":true,"type":"vital","title":"Bigelow Society — Ebenezer ship carpenter, Cuba death tradition, Ticonderoga alternate"},"FT-0171":{"dir":"FT-0171-compiled-genealogy-deborah-pringle-edward-the-sp","photos":[],"entry":true,"type":"vital","title":"Compiled genealogy — Deborah Pringle × Edward 'The Spy' Hicks (Butler's Rangers son)"},"FT-0129":{"dir":"FT-0129-watertown-vr-roman-index-ebenezer-bigelow-birth","photos":[],"entry":true,"type":"vital","title":"Watertown VR Roman index — Ebenezer Bigelow birth, marriage, baptisms"},"FT-0130":{"dir":"FT-0130-bond-p-127-ebenezer-bigelow-hannah-brown-househo","photos":[],"entry":true,"type":"vital","title":"Bond p.127 — Ebenezer Bigelow × Hannah Brown household"},"FT-0132":{"dir":"FT-0132-bond-brown-p-120-hannah-brown-b-1699","photos":[],"entry":true,"type":"vital","title":"Bond Brown p.120 — Hannah Brown b.1699"},"FT-0131":{"dir":"FT-0131-bond-p-32-ebenezer-bigelow-b-1698-d-in-cuba-trad","photos":[],"entry":true,"type":"vital","title":"Bond p.32 — Ebenezer Bigelow b.1698; d. in Cuba tradition"},"FT-0133":{"dir":"FT-0133-find-a-grave-51809062-ebenezer-bigelow-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 51809062 — Ebenezer Bigelow memorial (secondary death note)"},"FT-0405":{"dir":"FT-0405-joshua-bigelow-king-philips-war-narragansett-grant","photos":[],"entry":true,"type":"military","title":"Joshua Bigelow — King Philip’s War wound, Narragansett No. 2 grant, late move to Westminster"},"FT-0115":{"dir":"FT-0115-find-a-grave-joel-pringle-sr-59610755-west-haven","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Sr. 59610755 (West Haven stone + family bio)"},"FT-0145":{"dir":"FT-0145-joseph-pringle-richmond-township-pioneer-christi","photos":[],"entry":true,"type":"newspaper","title":"Joseph Pringle — Richmond Township pioneer, Christian Guardian obituary (1833)"},"FT-0164":{"dir":"FT-0164-prindle-1906-joel-sr-louisbourg-prisoner-son-joe","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 — Joel Sr Louisbourg prisoner son; Joel Jr Danbury deed & Rev. soldier"},"FT-0124":{"dir":"FT-0124-pane-joyce-jacobus-joseph-prindle-mary-brown-joe","photos":[],"entry":true,"type":"vital","title":"Pane-Joyce (Jacobus) — Joseph Prindle × Mary Brown; Joel × Jemima Benham"},"FT-0127":{"dir":"FT-0127-jacobus-fanh-nathan-benham-sarah-beecher-childre","photos":[],"entry":true,"type":"vital","title":"Jacobus FANH — Nathan Benham × Sarah Beecher; children incl. Jemima"},"FT-0128":{"dir":"FT-0128-find-a-grave-66966847-sarah-beecher-benham-stone","photos":[],"entry":true,"type":"vital","title":"Find A Grave 66966847 — Sarah (Beecher) Benham stone + family grid"},"FT-0165":{"dir":"FT-0165-prindle-1906-beecher-stone-nathan-benham-daughte","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 + Beecher stone — Nathan Benham daughter Jemima × Joel Pringle Sr"},"FT-0162":{"dir":"FT-0162-prindle-1906-william-pringle-the-scotchman-oath","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — William Pringle 'the Scotchman' oath 1654 + immigrant traditions"},"FT-0163":{"dir":"FT-0163-prindle-1906-joseph-sr-scotland-farm-prindle-hil","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — Joseph Sr 'Scotland' farm, Prindle Hill, Serjeant, Episcopal founder"},"FT-0126":{"dir":"FT-0126-find-a-grave-125971521-mary-walker-brown-prindle","photos":[],"entry":true,"type":"vital","title":"Find A Grave 125971521 — Mary Walker Brown Prindle bio + stone"},"FT-0125":{"dir":"FT-0125-find-a-grave-169522429-sgt-joseph-prindle-memori","photos":[],"entry":true,"type":"vital","title":"Find A Grave 169522429 — SGT Joseph Prindle memorial bio + stone"},"FT-0044":{"dir":"FT-0044-adolphustown-place-set-loyalist-landing-1784-old","photos":["photos/01-hay-bay-church-plaque.jpg","photos/02-hay-bay-church-plaque-alt.jpg","photos/03-loyalist-landing-plaque.jpg","photos/04-old-hay-bay-church.jpg","photos/06-loyalist-landing-alt.jpg"],"entry":true,"type":"place","title":"Adolphustown place set — Loyalist Landing 1784 + Old Hay Bay Church plaques / exterior"},"FT-0045":{"dir":"FT-0045-hay-bay-church-deed-abstract-7-june-1811-augustu","photos":[],"entry":true,"type":"deed","title":"Hay Bay Church deed abstract (7 June 1811) — Augustus Shorts named trustee (Van Deursen 1912)"},"FT-0048":{"dir":"FT-0048-webster-1870-bishop-george-genesee-conference-at","photos":[],"entry":true,"type":"church","title":"Webster 1870 — Bishop George / Genesee Conference at Elizabethtown, June 1817 (ordination window)"},"FT-0082":{"dir":"FT-0082-kingston-whig-standard-adolphustown-loyalists-ha","photos":[],"entry":true,"type":"newspaper","title":"Kingston Whig Standard — Adolphustown Loyalists, Hay Bay Church, Elijah Woolsey saddlebag circuit (2021)"},"FT-0083":{"dir":"FT-0083-casey-davis-early-methodist-history-adolphustown","photos":[],"entry":true,"type":"church","title":"Casey / Davis — Early Methodist History: Adolphustown cradle, Losee, Darius Dunham, Hay Bay first church"},"FT-0085":{"dir":"FT-0085-bishop-philander-smith-me-church-in-canada-1847","photos":[],"entry":true,"type":"church","title":"Bishop Philander Smith (ME Church in Canada, 1847–1870) — identity for Hay Bay ‘granddaughter married Bishop Philander Smith’ claim"},"FT-0086":{"dir":"FT-0086-what-is-a-circuit-rider-losee-gallops-hay-bay-co","photos":[],"entry":true,"type":"church","title":"What is a circuit rider? — Losee gallops Hay Bay country; Dunham survives an axe (Carroll 1867)"},"FT-0113":{"dir":"FT-0113-death-notice-david-b-shorts-son-of-philip-shorts","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — David B. Shorts, son of Philip Shorts (Transcript Montreal, 8 Nov 1842)"},"FT-0153":{"dir":"FT-0153-wikitree-short-3451-john-w-short-vitals-research","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3451 — John W Short vitals + researcher note (Susquehanna cluster)"},"FT-0154":{"dir":"FT-0154-wikitree-monk-1058-rosannah-monk-short-vitals","photos":[],"entry":true,"type":"vital","title":"WikiTree Monk-1058 — Rosannah (Monk) Short vitals"},"FT-0155":{"dir":"FT-0155-wikitree-short-3450-augustus-short-parent-link-j","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3450 — Augustus Short parent link (John W × Rosannah Monk)"},"FT-0043":{"dir":"FT-0043-ohs-papers-st-johns-ernesttown-marriage-register","photos":[],"entry":true,"type":"church","title":"OHS Papers — St. John's Ernesttown marriage register (1792) — Philip & Katreen Shorts witnesses"},"FT-0080":{"dir":"FT-0080-hay-bay-canniff-brebner-barbara-monk-casper-hoov","photos":[],"entry":true,"type":"church","title":"Hay Bay + Canniff/Brebner — Barbara Monk × Casper Hoover (Rosannah’s sister; Catharine’s rescue)"},"FT-0087":{"dir":"FT-0087-barbara-monk-hover-s-pewter-platter-palatine-rel","photos":[],"entry":true,"type":"church","title":"Barbara Monk Hover’s pewter platter — Palatine relic, pot-pie bees, and Casper Hover’s death by falling limb"},"FT-0088":{"dir":"FT-0088-vanalstine-loyalist-voyage-shark-at-sea-pork-and","photos":[],"entry":true,"type":"newspaper","title":"VanAlstine Loyalist voyage — shark at sea, pork-and-peas rations, linen tents at Sorel (Canniff tradition)"},"FT-0090":{"dir":"FT-0090-frances-shorts-jacob-heck-married-into-barbara-h","photos":[],"entry":true,"type":"church","title":"Frances Shorts × Jacob Heck — married into Barbara Heck’s family; Heck House on the St. Lawrence"},"FT-0092":{"dir":"FT-0092-catharine-shorts-arra-ferguson-orphan-bride-pict","photos":[],"entry":true,"type":"church","title":"Catharine Shorts × Arra Ferguson — orphan bride; Picton church land; Ferguson & Catherine Streets; class with Dunham’s flock"},"FT-0042":{"dir":"FT-0042-exploring-niagara-butlers-rangers-nominal-list-p","photos":[],"entry":true,"type":"military","title":"Exploring Niagara — Butler's Rangers nominal list (privates) — SHORTS, JOHN E."},"FT-0081":{"dir":"FT-0081-smy-annotated-nominal-roll-of-butler-s-rangers-s","photos":["photos/01-smy-short-john-henry.png","photos/02-smy-source-E52-harvey.png","photos/03-smy-source-E75-ousterhout.png"],"entry":true,"type":"military","title":"Smy — Annotated Nominal Roll of Butler’s Rangers — Short, John Henry (private)"},"FT-0423":{"dir":"FT-0423-nyc-open-data-marriage-index-florence-hahn-seymour-cohn","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Florence Hahn × Seymour Cohn, Manhattan 25642, 2 Sep 1926"},"FT-0416":{"dir":"FT-0416-nyc-open-data-mamlock-sisters-marriage-index-pairs","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Mamlock sisters × Aronsohn / Geiger / Michaels"},"FT-0419":{"dir":"FT-0419-nyc-open-data-death-index-leon-aronsohn-bronx-1500-1921-candidate","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Leon Aronsohn, Bronx 1500, 6 Mar 1921 age 55 (Leo P. candidate)"},"FT-0422":{"dir":"FT-0422-nyc-open-data-death-index-esther-geiger-emma-michaels","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Esther Geiger Manh 1197/1944 · Emma Michaels Manh 6504/1942"},"FT-0190":{"dir":"FT-0190-marriage-index-perkins-belle-stonebraker-1896","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage index — Solomon M. Perkins × Belle Stonebraker (23 Dec 1896)"},"FT-0109":{"dir":"FT-0109-why-barbara-heck-matters-mother-of-methodism-joh","photos":[],"entry":true,"type":"church","title":"Why Barbara Heck matters — Mother of Methodism (John Street → Upper Canada)"},"FT-0110":{"dir":"FT-0110-the-blue-church-augusta-place-pack-why-it-belong","photos":["photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"place","title":"The Blue Church (Augusta) — place pack + why it belongs in a future story"},"FT-0143":{"dir":"FT-0143-find-a-grave-133464931-thomas-godfrey-hughs-spou","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464931 — Thomas Godfrey Hughs (spouse of Elizabeth Shorts)"},"FT-0091":{"dir":"FT-0091-barbara-heck-cards-in-the-fire-embury-preached-m","photos":[],"entry":true,"type":"church","title":"Barbara Heck — cards in the fire, Embury preached, Mother of Methodism; Blue Church monument (mother-in-law of Frances Shorts)"},"FT-0093":{"dir":"FT-0093-1891-adolphustown-wedding-pewter-platter-brought","photos":[],"entry":true,"type":"newspaper","title":"1891 Adolphustown wedding — pewter platter ‘brought to Canada by Barbara Heck’ serves the roast goose"},"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd"},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"}};
+window.OBJECTS_INDEX = {"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)","person_ids":["alexander"]},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only","person_ids":["alexander"]},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)","person_ids":["alexander","annabelle","earl","richard","gloria","dorland"]},"FT-0470":{"dir":"FT-0470-dan-rudd-alex-interview-2026-08-17","photos":[],"entry":true,"type":"narration","title":"Dan Rudd × Alex Shorts interview (17 Aug 2026)","person_ids":["dan_rudd","alexander","marcy_parsons","george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0028":{"dir":"FT-0028-california-county-marriage-jon-martin-anderson-v","photos":[],"entry":true,"type":"vital","title":"California county marriage — Jon Martin Anderson × Virginia Jill Cole (Los Angeles 19 Jun 1955)","person_ids":["john_anderson","virginia_jill_cole","marion_lawrence_anderson","kathleen_blakely","myron_mamlock_cole","virginia_victoria_racine","heidi"]},"FT-0021":{"dir":"FT-0021-nyc-birth-certificate-virginia-victoria-racien-m","photos":["photos/B-M-1902-0041933-virginia-victoria-racien-birth-manhattan-p1.png"],"entry":true,"type":"vital","title":"NYC birth certificate — Virginia Victoria Racien (Manhattan 1902 #41933)","person_ids":["virginia_victoria_racine","solomon_racine","pauline_muschini"]},"FT-0025":{"dir":"FT-0025-nyc-marriage-certificate-myron-w-cohn-virginia-v","photos":["photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p1.png","photos/M-M-1927-0000778-myron-cohn-virginia-racine-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Myron W. Cohn × Virginia V. Racine (Manhattan 1926/1927 #778)","person_ids":["myron_mamlock_cole","virginia_victoria_racine","monroe_cohn","mamie_mamlock","solomon_racine","pauline_muschini"]},"FT-0096":{"dir":"FT-0096-what-tailor-meant-solomon-racien-racine-near-w-3","photos":[],"entry":true,"type":"newspaper","title":"What ‘tailor’ meant — Solomon Racien (Racine) near W 35th and New York’s garment boom (~1902)","person_ids":["solomon_racine","pauline_muschini","virginia_victoria_racine"]},"FT-0230":{"dir":"FT-0230-find-a-grave-93478005-pauline-bess-dushken-le-racine","photos":[],"entry":true,"type":"vital","title":"Find A Grave 93478005 — Pauline Bess Dushken Le Racine memorial + death-cert paste","person_ids":["pauline_muschini","solomon_racine","samuel_dushken","virginia_victoria_racine"]},"FT-0231":{"dir":"FT-0231-nyc-open-data-death-index-pauline-b-racine-21183","photos":[],"entry":true,"type":"vital","title":"NYC Digitized Death Certificate Index — Pauline B Racine, cert. 21183, Manhattan 1927","person_ids":["pauline_muschini","virginia_victoria_racine"]},"FT-0563":{"dir":"FT-0563-municipal-building-marriage-bureau-myron-virginia-1926","photos":[],"entry":true,"type":"newspaper","title":"NYC Municipal Building marriage bureau — Myron × Virginia civil wedding world (Dec 1926)","person_ids":["myron_mamlock_cole","virginia_victoria_racine"]},"FT-0564":{"dir":"FT-0564-riverside-cemetery-pauline-racine-burial-world-1927","photos":[],"entry":true,"type":"place","title":"Riverside Cemetery (Saddle Brook) — Pauline Racine burial world (1927)","person_ids":["pauline_muschini","solomon_racine","virginia_victoria_racine"]},"FT-0412":{"dir":"FT-0412-ny-county-nat-index-salomon-racien-1899","photos":[],"entry":true,"type":"vital","title":"NY County naturalization index — Salomon Racien, 24 Jul 1899 (arrived NYC Jul 1888)","person_ids":["solomon_racine"]},"FT-0415":{"dir":"FT-0415-castle-garden-july-1888-arrival-window-salomon-racien","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden arrival window — Salomon Racien, July 1888 (pre-Ellis)","person_ids":["solomon_racine"]},"FT-0420":{"dir":"FT-0420-castle-garden-process-and-1888-rush-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Castle Garden process — registry, rush of 1888, Russian-Jewish tailor class (Solomon era)","person_ids":["solomon_racine"]},"FT-0566":{"dir":"FT-0566-solomon-racine-south-boulevard-naturalization-1899","photos":[],"entry":true,"type":"newspaper","title":"The Boulevard (1899) — Solomon Racien naturalization address before garment midtown","person_ids":["solomon_racine"]},"FT-0023":{"dir":"FT-0023-nyc-death-certificate-monroe-cohn-manhattan-1921","photos":["photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p1.png","photos/D-M-1921-0029268-monroe-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Monroe Cohn (Manhattan 1921 #29268)","person_ids":["monroe_cohn","mamie_mamlock","solomon_cohn","bertha_pottesham","myron_mamlock_cole","seymour_cohn"]},"FT-0024":{"dir":"FT-0024-nyc-death-certificate-mamie-cohn-manhattan-1945","photos":["photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p1.png","photos/D-M-1945-0012625-mamie-cohn-death-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC death certificate — Mamie Cohn (Manhattan 1945 #12625)","person_ids":["mamie_mamlock","monroe_cohn","mayer_mamlock","rochelle_kahn","myron_mamlock_cole","seymour_cohn"]},"FT-0094":{"dir":"FT-0094-what-a-shoe-jobber-was-monroe-cohn-s-trade-not-s","photos":[],"entry":true,"type":"newspaper","title":"What a shoe jobber was — Monroe Cohn’s trade (not shoemaker, not shop clerk)","person_ids":["monroe_cohn","mamie_mamlock","myron_mamlock_cole"]},"FT-0022":{"dir":"FT-0022-nyc-marriage-certificate-monroe-cohn-mamie-mamlo","photos":["photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p1.png","photos/M-M-1893-0013078-monroe-cohn-mamie-mamlock-marriage-manhattan-p2.png"],"entry":true,"type":"vital","title":"NYC marriage certificate — Monroe Cohn × Mamie Mamlock (Manhattan 1893 #13078)","person_ids":["monroe_cohn","mamie_mamlock","solomon_cohn","bertha_pottesham","mayer_mamlock","rochelle_kahn"]},"FT-0095":{"dir":"FT-0095-rabbi-aaron-wise-of-rodeph-sholom-marries-monroe","photos":[],"entry":true,"type":"church","title":"Rabbi Aaron Wise of Rodeph Sholom marries Monroe Cohn × Mamie Mamlock (Lexington & 63rd world, 1893)","person_ids":["monroe_cohn","mamie_mamlock"]},"FT-0240":{"dir":"FT-0240-find-a-grave-95985316-mamie-cohn-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 95985316 — Mamie Cohn memorial (Mt Carmel; no bio; no grave photo)","person_ids":["mamie_mamlock","monroe_cohn"]},"FT-0260":{"dir":"FT-0260-allemannia-1867-rosa-mamlock-children-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Allemannia 1867 — Rosa Mamlock lands with four children; Mamie born later in NYC","person_ids":["rosa_mamlock","mamie_mamlock","rochelle_kahn","mayer_mamlock","albert_mamlock","franciska_mamlock","emma_mamlock","jenny_mamlock"]},"FT-0261":{"dir":"FT-0261-washington-heights-jewish-drift-monroe-cohn-1921-death","photos":[],"entry":true,"type":"newspaper","title":"Washington Heights Jewish surge — Monroe Cohn's Fort Washington Ave death address (1921)","person_ids":["monroe_cohn","mamie_mamlock"]},"FT-0262":{"dir":"FT-0262-west-end-widow-mamie-cohn-305-west-end-ave-1945","photos":[],"entry":true,"type":"newspaper","title":"West End widow — Mamie Cohn's 305 West End Ave last years on the quiet UWS spine","person_ids":["mamie_mamlock","monroe_cohn"]},"FT-0306":{"dir":"FT-0306-albert-mamlock-bronx-brook-av-deed-1901","photos":[],"entry":true,"type":"deed","title":"Albert Mamlock buys Bronx lot — Brook av near 171st st (1901)","person_ids":["albert_mamlock","mayer_mamlock","mamie_mamlock"]},"FT-0398":{"dir":"FT-0398-cohn-mamlock-oval-studio-portraits-framed-set-ph","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg","photos/05.jpg","photos/06.jpg","photos/07.jpg"],"entry":true,"type":"photo","title":"Cohn / Mamlock oval studio portraits (framed set) + photographer backs","person_ids":["monroe_cohn","mamie_mamlock"]},"FT-0418":{"dir":"FT-0418-nyc-open-data-death-index-albert-mamlock-manhattan-12843-1937","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Albert Mamlock, Manhattan 12843, 24 May 1937 age 79","person_ids":["albert_mamlock","mamie_mamlock"]},"FT-0421":{"dir":"FT-0421-allemannia-ship-castle-garden-1867-mamlock-landing","photos":[],"entry":true,"type":"newspaper","title":"Allemannia (HAL) + Castle Garden 1867 — mother-and-children German landing world (Mamlock)","person_ids":["rosa_mamlock","albert_mamlock","franciska_mamlock","emma_mamlock","jenny_mamlock","mamie_mamlock","rochelle_kahn"]},"FT-0426":{"dir":"FT-0426-mt-carmel-cemetery-jewish-burial-world-monroe-mamie","photos":[],"entry":true,"type":"newspaper","title":"Mt. Carmel Cemetery (Glendale) — NYC Jewish burial world (Monroe & Mamie)","person_ids":["monroe_cohn","mamie_mamlock"]},"FT-0565":{"dir":"FT-0565-yorkville-east-60s-monroe-mamie-wedding-1893","photos":[],"entry":true,"type":"newspaper","title":"Yorkville / East 60s — Monroe × Mamie wedding neighborhood (Oct 1893)","person_ids":["monroe_cohn","mamie_mamlock"]},"FT-0305":{"dir":"FT-0305-germania-1867-moritz-blamchen-mamlock-hamburg-new-york","photos":[],"entry":true,"type":"newspaper","title":"Germania 1867 — Moritz Mamlock merchant + wife Blamchen land before Rosa party","person_ids":["mayer_mamlock","rochelle_kahn","rosa_mamlock","albert_mamlock","franciska_mamlock","emma_mamlock","jenny_mamlock"]},"FT-0099":{"dir":"FT-0099-what-shoes-looked-like-1890-1920-the-stock-a-sho","photos":["photos/01-crawford-oxfords-ad-1902.jpg","photos/02-shoe-store-interior-1901.jpg","photos/03-american-high-boots-1899-1900.jpg","photos/04-mens-factory-lace-boots.jpg","photos/05-boots-shoes-storefront-poster-c1878.jpg","photos/06-gilpin-shoe-storefront-1899.jpg"],"entry":true,"type":"newspaper","title":"What shoes looked like ~1890–1920 — the stock a shoe jobber moved","person_ids":["monroe_cohn"]},"FT-0427":{"dir":"FT-0427-hartford-german-jewish-merchant-world-solomon-era","photos":[],"entry":true,"type":"newspaper","title":"Hartford German-Jewish merchant world — clothing & downtown trade color (Solomon Cohn era)","person_ids":["solomon_cohn","monroe_cohn","bertha_pottesham"]},"FT-0417":{"dir":"FT-0417-nyc-open-data-death-index-bertha-cohn-kings-10639-1925","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Bertha Cohn, Kings 10639, 22 May 1925 age 79 (candidate)","person_ids":["bertha_pottesham"]},"FT-0395":{"dir":"FT-0395-orange-county-register-a-life-story-kay-heil-did","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"newspaper","title":"Orange County Register — “A Life Story: Kay Heil did it her way” (2007)","person_ids":["kathleen_blakely","john_anderson"]},"FT-0390":{"dir":"FT-0390-tri-delta-sorority-eugene-or-1928-29-grandma-kay","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"photo","title":"Tri Delta sorority — Eugene OR 1928–29 (Grandma Kay) + Clemens genealogy note","person_ids":["kathleen_blakely"]},"FT-0391":{"dir":"FT-0391-registration-of-marriage-john-a-blakely-emma-a-m","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"vital","title":"Registration of Marriage — John A. Blakely × Emma A. More (1868, Grant Co. WI)","person_ids":["kathleen_blakely","emma_a_more","john_a_blakely"]},"FT-0393":{"dir":"FT-0393-american-red-cross-volunteer-special-services-ce","photos":["photos/01.jpg"],"entry":true,"type":"artifact","title":"American Red Cross Volunteer Special Services Certificate — Kathleen Anderson (1945)","person_ids":["kathleen_blakely"]},"FT-0394":{"dir":"FT-0394-park-st-school-hood-river-classroom-medical-insp","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"photo","title":"Park St. School, Hood River — classroom / medical inspection (Glendora Blakely)","person_ids":["kathleen_blakely","glendora_blakely"]},"FT-0399":{"dir":"FT-0399-clipping-mrs-glendora-m-blakeley-public-welfare","photos":["photos/01.jpg"],"entry":true,"type":"newspaper","title":"Clipping — Mrs. Glendora M. Blakeley, public welfare chairman","person_ids":["kathleen_blakely","glendora_blakely"]},"FT-0403":{"dir":"FT-0403-mrs-glendora-blakely-bloomington-nurse-la-mesa","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Glendora Blakely — Bloomington city nurse; died La Mesa Calif. (1960)","person_ids":["glendora_blakely","kathleen_blakely","lillian_e_blakely","john_a_blakely","emma_a_more"],"subject_id":"glendora_blakely"},"FT-0404":{"dir":"FT-0404-platteville-journal-john-a-blakely-gar-obit-1937","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Platteville Journal / Grant County News — John A. Blakely G.A.R. obituary (15 Sep 1937)","subject_id":"john_a_blakely"},"FT-0029":{"dir":"FT-0029-death-claims-dr-guerdon-c-buck-monday-morning-pl","photos":["photos/01.jpg","photos/source-clip.jpg"],"entry":true,"type":"obituary","title":"Death Claims Dr. Guerdon C. Buck Monday Morning (Platteville ~22 Jun 1932)","person_ids":["guerdon_conde_buck","erastus_junior_buck","sarah_elizabeth_trask","hulda_gertrude_moore","gertrude_a_buck","clara_h_buck","winifred_kendrick_buck","florence_trask_buck","berenice_buck"],"subject_id":"guerdon_conde_buck"},"FT-0175":{"dir":"FT-0175-dr-e-j-buck-runaway-injury-death-grant-county-wi","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Dr. E. J. Buck — runaway injury death (Grant County Witness 26 Jun 1901)","person_ids":["erastus_junior_buck","sarah_elizabeth_trask","guerdon_conde_buck","clara_h_buck","winifred_kendrick_buck","florence_trask_buck","berenice_buck","gertrude_a_buck"],"subject_id":"erastus_junior_buck"},"FT-0176":{"dir":"FT-0176-mrs-sarah-trask-buck-seattle-death-platteville-j","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Mrs. Sarah Trask Buck — Seattle death (Platteville Journal 30 Sep 1943)","person_ids":["sarah_elizabeth_trask","erastus_junior_buck","guerdon_conde_buck","gertrude_a_buck","clara_h_buck","winifred_kendrick_buck","florence_trask_buck","berenice_buck"],"subject_id":"sarah_elizabeth_trask"},"FT-0200":{"dir":"FT-0200-erastus-j-buck-biographical-dictionary-wisconsin-1877","photos":[],"entry":true,"type":"newspaper","title":"Erastus J. Buck, M.D. — United States Biographical Dictionary (Wisconsin vol., 1877)","person_ids":["erastus_junior_buck","sarah_elizabeth_trask"]},"FT-0201":{"dir":"FT-0201-mrs-s-e-buck-platteville-normal-reading-teacher-1876","photos":[],"entry":true,"type":"place","title":"Mrs. S. E. Buck — Platteville Normal School teacher of Reading (1876–1880)","person_ids":["sarah_elizabeth_trask","erastus_junior_buck"]},"FT-0360":{"dir":"FT-0360-e-j-buck-md-butterfield-grant-county-1881","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — History of Grant County (Butterfield 1881) biographical sketch","person_ids":["erastus_junior_buck","sarah_elizabeth_trask","erastus_d_buck"]},"FT-0197":{"dir":"FT-0197-1895-wi-veteran-census-erastus-buck-surgeon-18th","photos":[],"entry":true,"type":"military","title":"1895 Wisconsin veteran census — Erastus Buck, Surgeon, 18th Wis. Inf., Platteville","person_ids":["erastus_junior_buck"]},"FT-0198":{"dir":"FT-0198-heath-ma-baptism-erastus-s-erastus-roxana-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Erastus s. Erastus and Roxana, Oct 1827","person_ids":["erastus_junior_buck","erastus_d_buck","elizabeth_roxana_baldwin"]},"FT-0361":{"dir":"FT-0361-e-j-buck-westfield-montello-express-1876","photos":[],"entry":true,"type":"newspaper","title":"E. J. Buck, M.D. — Westfield “first class physician” vignette (Montello Express 1876)","person_ids":["erastus_junior_buck"]},"FT-0362":{"dir":"FT-0362-e-j-buck-ymla-vice-president-platteville-1881","photos":[],"entry":true,"type":"place","title":"E. J. Buck — Young Men’s Library Association vice president (Platteville ~1881)","person_ids":["erastus_junior_buck"]},"FT-0567":{"dir":"FT-0567-18th-wisconsin-shiloh-surgeon-service-landscape","photos":[],"entry":true,"type":"military","title":"18th Wisconsin at Shiloh — surgeon service landscape (Erastus J. Buck)","person_ids":["erastus_junior_buck"]},"FT-0281":{"dir":"FT-0281-heath-ma-death-lucy-d-col-david-sarah-deane-1827","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Lucy D., d. Col. David and Sarah Deane, May 1827","person_ids":["david_baldwin","sarah_deane_baldwin","elizabeth_roxana_baldwin"]},"FT-0282":{"dir":"FT-0282-heath-ma-baptism-roxanda-d-david-1801","photos":[],"entry":true,"type":"vital","title":"Heath MA baptism — Roxanda, d. David, bp. 22 Nov 1801","person_ids":["elizabeth_roxana_baldwin","david_baldwin"]},"FT-0280":{"dir":"FT-0280-heath-ma-death-sarah-deane-w-col-david-1809","photos":[],"entry":true,"type":"vital","title":"Heath MA death — Sarah Deane [w. Col. David], 30 Apr 1809","person_ids":["sarah_deane_baldwin","david_baldwin"]},"FT-0292":{"dir":"FT-0292-david-baldwin-heath-pioneer-land-church-pew","photos":[],"entry":true,"type":"place","title":"David Baldwin — early Heath/Charlemont landholder and church pew 6 (Everts + Connecticut Valley)","person_ids":["david_baldwin"]},"FT-0286":{"dir":"FT-0286-heath-ma-birth-erastus-ch-william-lt-william-1798","photos":[],"entry":true,"type":"vital","title":"Heath MA birth — Erastus ch. William (Lt. William and w.), Jan 1798","person_ids":["william_buck","erastus_d_buck"]},"FT-0283":{"dir":"FT-0283-heath-ma-deaths-buck-william-sarah-william-jr","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Lt. William Buck, Sarah (Sally) Buck, and William Jr.","person_ids":["william_buck","sarah_maxwell_buck"]},"FT-0284":{"dir":"FT-0284-heath-ma-deaths-maxwell-hugh-corbett-benjamin-anna","photos":[],"entry":true,"type":"vital","title":"Heath MA deaths — Hugh Maxwell, Sarah Corbett, Benjamin Lt., Anna Winslow","person_ids":["hugh_maxwell","sarah_corbett_maxwell","benjamin_maxwell","anna_winslow_maxwell","sarah_maxwell_buck"]},"FT-0285":{"dir":"FT-0285-heath-ma-marriages-buck-1785-maxwell-winslow-1762","photos":[],"entry":true,"type":"vital","title":"Heath MA marriages — Buck 1785 and Maxwell × Winslow 1762","person_ids":["william_buck","sarah_maxwell_buck","benjamin_maxwell","anna_winslow_maxwell"]},"FT-0287":{"dir":"FT-0287-find-a-grave-48687650-benjamin-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 48687650 — LTC Benjamin Butler Maxwell Sr memorial","person_ids":["benjamin_maxwell","hugh_maxwell","sarah_corbett_maxwell","anna_winslow_maxwell","sarah_maxwell_buck"]},"FT-0288":{"dir":"FT-0288-find-a-grave-87173271-anna-winslow-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 87173271 — Anna Winslow Maxwell memorial","person_ids":["anna_winslow_maxwell","benjamin_maxwell","sarah_maxwell_buck"]},"FT-0322":{"dir":"FT-0322-aane-benjamin-maxwell-brother-minuteman","photos":[],"entry":true,"type":"military","title":"AANE Deerfield — Lt. Benjamin Maxwell: son of Hugh I × Sarah Corbett; brother of Col. Hugh; Capt. Rice Minute-Man","person_ids":["benjamin_maxwell","hugh_maxwell","sarah_corbett_maxwell","anna_winslow_maxwell"]},"FT-0289":{"dir":"FT-0289-find-a-grave-25190915-hugh-maxwell-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 25190915 — Hugh Maxwell (1701–1759) memorial","person_ids":["hugh_maxwell","sarah_corbett_maxwell","benjamin_maxwell"]},"FT-0290":{"dir":"FT-0290-hugh-maxwell-heath-founding-revolution-narrative","photos":[],"entry":true,"type":"place","title":"Col. Hugh Maxwell — Heath incorporation, Irish origin, and Revolutionary narrative (Everts 1879 + MS 27)","person_ids":["benjamin_maxwell"]},"FT-0320":{"dir":"FT-0320-christian-patriot-col-hugh-maxwell-memoir","photos":[],"entry":true,"type":"military","title":"The Christian Patriot (1833) — Col. Hugh Maxwell memoir: two Hughs, Fort William Henry, Bunker Hill, later war, death at sea","person_ids":["benjamin_maxwell","hugh_maxwell"]},"FT-0321":{"dir":"FT-0321-shays-rebellion-stcc-col-hugh-maxwell","photos":[],"entry":true,"type":"military","title":"Shays' Rebellion STCC narrative — Col. Hugh Maxwell military career, Stickney letter, Cincinnati, Shays","person_ids":["benjamin_maxwell"]},"FT-0323":{"dir":"FT-0323-franklin-biographical-review-maxwell-rangers","photos":[],"entry":true,"type":"military","title":"Biographical Review Franklin Co. (1895) — Hugh Sr. / Col. Hugh Jr. / Benjamin Minute-Man + Rogers's Rangers claim","person_ids":["benjamin_maxwell","hugh_maxwell","sarah_corbett_maxwell"]},"FT-0324":{"dir":"FT-0324-white-charlemont-plantation-maxwell-revwar","photos":[],"entry":true,"type":"military","title":"Joseph White, Charlemont as a Plantation (1855/58) — Col. Hugh & Lt. Benjamin Maxwell Rev War / FIW narrative","person_ids":["benjamin_maxwell"]},"FT-0325":{"dir":"FT-0325-greenfield-recorder-west-county-revwar-maxwell","photos":[],"entry":true,"type":"newspaper","title":"Greenfield Recorder (2026) — western Franklin County Rev War stories: Charlemont Maxwell Minute-Men + Heath naming","person_ids":["benjamin_maxwell"]},"FT-0326":{"dir":"FT-0326-ma-state-library-blog-hugh-maxwell-ms27","photos":[],"entry":true,"type":"military","title":"MA State Library blog (2014) — interpretive note on Hugh Maxwell MS 27 military papers","person_ids":["benjamin_maxwell"]},"FT-0327":{"dir":"FT-0327-brown-bedford-maxwell-warriors","photos":[],"entry":true,"type":"military","title":"Abram English Brown, History of Bedford (1891) — Maxwell FIW warriors; elder Hugh epitaph 1759; Christian Patriot","person_ids":["hugh_maxwell","benjamin_maxwell"]},"FT-0328":{"dir":"FT-0328-americancenturies-pvma-maxwell-agriculture","photos":[],"entry":true,"type":"place","title":"American Centuries / PVMA — Col. Hugh Maxwell Mass. Society for Agriculture certificate (1794) interpretive label","person_ids":["benjamin_maxwell"]},"FT-0329":{"dir":"FT-0329-nason-gazetteer-heath-maxwell-no-tories","photos":[],"entry":true,"type":"place","title":"Nason/Varney Gazetteer (1890) — Heath: Col. Hugh Maxwell, Bunker Hill wound, no Tories","person_ids":["benjamin_maxwell"]},"FT-0432":{"dir":"FT-0432-fort-william-henry-1757-siege-massacre-context","photos":[],"entry":true,"type":"military","title":"Fort William Henry 1757 — siege and column attack (surrounding event for Col. Hugh’s escape)","person_ids":["benjamin_maxwell"]},"FT-0433":{"dir":"FT-0433-robortella-steps-west-preemption-line-survey","photos":[],"entry":true,"type":"place","title":"Steps West — Col. Hugh Maxwell’s 1788 Pre-emption Line survey (Robortella + Historic Geneva)","person_ids":["benjamin_maxwell"]},"FT-0434":{"dir":"FT-0434-heitman-lt-col-hugh-maxwell-continental-commissions","photos":[],"entry":true,"type":"military","title":"Heitman register — Lt. Col. Hugh Maxwell (Mass.) Continental commissions; Washington papers name his company","person_ids":["benjamin_maxwell"]},"FT-0435":{"dir":"FT-0435-mssrw-hugh-maxwell-charlemont-abstract","photos":[],"entry":true,"type":"military","title":"MSSRW vol. 10 — Maxwell, Hugh of Charlemont (service abstract)","person_ids":["benjamin_maxwell"]},"FT-0436":{"dir":"FT-0436-heath-south-cemetery-maxwell-cenotaph-land-gift","photos":[],"entry":true,"type":"place","title":"Heath South Cemetery — Col. Hugh Maxwell land gift (1791) and grandchildren’s cenotaph (1859)","person_ids":["benjamin_maxwell"]},"FT-0437":{"dir":"FT-0437-pvma-burgoyne-flag-maxwell-regimental-fragment","photos":[],"entry":true,"type":"military","title":"PVMA Memorial Hall — Burgoyne flag remnant + Col. Hugh Maxwell regimental flag fragment","person_ids":["benjamin_maxwell"]},"FT-0291":{"dir":"FT-0291-william-buck-heath-first-settler-church-pew","photos":[],"entry":true,"type":"place","title":"Lt. William Buck — western Heath first settler and founding-church pew (Everts 1879)","person_ids":["william_buck"]},"FT-0438":{"dir":"FT-0438-hotten-increase-1635-william-roger-buck","photos":[],"entry":true,"type":"vital","title":"Hotten Original Lists — Increase 1635: William Buck 50 (plowwright) + Roger Buck 18","person_ids":["william_buck_cambridge","roger_buck"]},"FT-0182":{"dir":"FT-0182-mills-birth-index-marion-azalia-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. birth index 1904–1906 — Marion L. & Azalia Gayle Anderson (mother Stonebraker)","person_ids":["hugh_dupree_anderson","urtha_stonebraker","marion_lawrence_anderson","azalea_gayle_anderson"]},"FT-0173":{"dir":"FT-0173-henderson-christian-church-history-stonebraker-f","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Henderson Christian Church history — Stonebraker founding members (1877)","person_ids":["j_a_stonebraker","p_h_stonebraker","belle_stonebraker","urtha_stonebraker","f_g_stonebraker","solomon_m_perkins"]},"FT-0178":{"dir":"FT-0178-marriage-license-hugh-d-anderson-bertha-stonebra","photos":[],"entry":true,"type":"newspaper","title":"Marriage license — Hugh D. Anderson × Bertha Stonebraker (Tribune 29 May 1902)","person_ids":["hugh_dupree_anderson","urtha_stonebraker"]},"FT-0183":{"dir":"FT-0183-delayed-birth-azalia-ursula-lucille-anderson","photos":[],"entry":true,"type":"vital","title":"Mills Co. delayed births — Azalia Gaile & Ursula Lucille Anderson (Hugh D. × Urtha Stonebraker)","person_ids":["hugh_dupree_anderson","urtha_stonebraker","azalea_gayle_anderson","lucille_anderson"]},"FT-0192":{"dir":"FT-0192-marriage-return-hugh-anderson-urtha-stonebraker-1902","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage return 1902 — Hugh D. Anderson × Urtha Stonebraker","person_ids":["hugh_dupree_anderson","urtha_stonebraker"]},"FT-0340":{"dir":"FT-0340-malvern-leader-stonebraker-anderson-marriage-1902","photos":[],"entry":true,"type":"newspaper","title":"Malvern Leader — Stonebraker–Anderson marriage at J. A. Stonebraker home (5 Jun 1902)","person_ids":["hugh_dupree_anderson","urtha_stonebraker","j_a_stonebraker","p_h_stonebraker"]},"FT-0341":{"dir":"FT-0341-henderson-times-1910-pioneer-stonebraker","photos":[],"entry":true,"type":"newspaper","title":"Henderson Times 15 Dec 1910 — pioneer roll names J. A. Stonebraker","person_ids":["j_a_stonebraker","urtha_stonebraker","hugh_dupree_anderson"]},"FT-0342":{"dir":"FT-0342-1910-atlas-stonebraker-section-8","photos":[],"entry":true,"type":"place","title":"1910 Mills atlas — J. A. & P. H. Stonebraker landowners, Anderson Twp Sec. 8","person_ids":["j_a_stonebraker","p_h_stonebraker","urtha_stonebraker","hugh_dupree_anderson"]},"FT-0191":{"dir":"FT-0191-1905-henderson-census-stonebraker-cluster","photos":[],"entry":true,"type":"census","title":"1905 IA State Census — Henderson — J. A. / P. H. / F. G. Stonebraker (cards 166–168)","person_ids":["j_a_stonebraker","p_h_stonebraker","f_g_stonebraker"]},"FT-0196":{"dir":"FT-0196-henderson-christian-church-1942-fire-rebuild","photos":[],"entry":true,"type":"church","title":"Henderson Christian Church — 1942 fire and wartime rebuild","person_ids":["j_a_stonebraker"]},"FT-0177":{"dir":"FT-0177-silver-city-community-history-harry-w-anderson-b","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson bio (John W. × Emily Dupray)","person_ids":["john_w_anderson","emily_e_dupray_anderson","harry_w_anderson","hugh_dupree_anderson"]},"FT-0195":{"dir":"FT-0195-silver-city-anderson-favorite-family-stories","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Anderson Favorite Family Stories","person_ids":["john_w_anderson","emily_e_dupray_anderson","harry_w_anderson","hugh_dupree_anderson"]},"FT-0307":{"dir":"FT-0307-silver-city-harry-w-anderson-trade-career","photos":[],"entry":true,"type":"newspaper","title":"Silver City Community History — Harry W. Anderson trade career","person_ids":["john_w_anderson","emily_e_dupray_anderson","harry_w_anderson","hugh_dupree_anderson"]},"FT-0343":{"dir":"FT-0343-hugh-dupree-horseshoe-bookends-family-oral","photos":[],"entry":true,"type":"newspaper","title":"Family oral — Hugh Dupree Anderson made Alex’s horseshoe bookends","person_ids":["hugh_dupree_anderson"]},"FT-0439":{"dir":"FT-0439-silver-city-times-harry-hugh-farm-1913","photos":[],"entry":true,"type":"newspaper","title":"Silver City Times — Harry Anderson sold farm to brother Hugh (2 Oct 1913)","person_ids":["harry_w_anderson","hugh_dupree_anderson","john_w_anderson","emily_e_dupray_anderson"]},"FT-0440":{"dir":"FT-0440-silver-city-times-emily-anderson-death-1923","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Silver City Times — Mrs. Emily Anderson death notice (8 Nov 1923)","person_ids":["emily_e_dupray_anderson","harry_w_anderson","hugh_dupree_anderson","ed_e_u_anderson","john_w_anderson"],"subject_id":"emily_e_dupray_anderson"},"FT-0330":{"dir":"FT-0330-jw-anderson-silver-creek-supervisor-wheat-1869","photos":[],"entry":true,"type":"newspaper","title":"Pottawattamie notes — J. W. Anderson Silver Creek supervisor (1869) + wheat crop","person_ids":["john_w_anderson","emily_e_dupray_anderson"]},"FT-0332":{"dir":"FT-0332-mills-western-stage-coonville-st-joseph","photos":[],"entry":true,"type":"newspaper","title":"Mills County early transportation — Western Stage Line Coonville to St. Joseph","person_ids":["john_w_anderson","emily_e_dupray_anderson"]},"FT-0333":{"dir":"FT-0333-coonville-glenwood-wortman-1881","photos":[],"entry":true,"type":"newspaper","title":"Coonville / Glenwood — Wortman & 1881 history (meet-story place frame)","person_ids":["john_w_anderson","emily_e_dupray_anderson"]},"FT-0335":{"dir":"FT-0335-ingraham-plumer-inn-stage-landscape","photos":[],"entry":true,"type":"newspaper","title":"Ingraham / Silver City — Flanagan–Huffaker settling + Wortman Stage Coach Inn","person_ids":["john_w_anderson","emily_e_dupray_anderson"]},"FT-0532":{"dir":"FT-0532-dupray-family-bible-dubuque","photos":[],"entry":true,"type":"church","title":"Dupray Family Bible — James S. × Caroline M. Chamberlin births/marriages","person_ids":["james_story_dupray","caroline_m_chamberlin_dupray","thomas_dupray","mary_ann_dupray","hugh_dupray"]},"FT-0533":{"dir":"FT-0533-hugh-dupray-fag-bio-thomas-father","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Hugh Dupray bio (son of Thomas; Ohio marriage)","person_ids":["hugh_dupray","thomas_dupray","mary_ann_dupray"]},"FT-0534":{"dir":"FT-0534-mary-ann-dupray-fag-chamberlin-parents","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Mary Ann Dupray bio (Ira × Salome; Caroline sibling)","person_ids":["mary_ann_dupray","ira_chamberlin","salome_barnes_chamberlin","caroline_m_chamberlin_dupray"]},"FT-0637":{"dir":"FT-0637-chamberlin-freedom-township-settlement-1824","photos":[],"entry":true,"type":"place","title":"Chamberlin — Ira × Salome settled Freedom Township, Portage Co. OH (1824)","person_ids":["ira_chamberlin","salome_barnes_chamberlin","mary_ann_dupray","caroline_m_chamberlin_dupray"]},"FT-0639":{"dir":"FT-0639-frederick-dupray-mondamin-hotel-1882","photos":[],"entry":true,"type":"newspaper","title":"Frederick M. Dupray — Mondamin hotel & blacksmith (History of Western Iowa, 1882)","person_ids":["hugh_dupray","thomas_dupray","mary_ann_dupray"]},"FT-0644":{"dir":"FT-0644-dupray-civil-war-letters-james-s-12th-ia","photos":[],"entry":true,"type":"military","title":"Dupray Civil War letters — James S. 12th IA; homecoming to dead wife Caroline","person_ids":["james_story_dupray","caroline_m_chamberlin_dupray","thomas_dupray","mary_ann_dupray","ira_chamberlin","salome_barnes_chamberlin"]},"FT-0656":{"dir":"FT-0656-familycentral-anna-horsford-timothy-smithrem","photos":[],"entry":true,"type":"vital","title":"FamilyCentral — Anna Horsford parents Timothy Horsford × Anne Smithrem","person_ids":["anna_horsford_barnes","timothy_horsford_1709","anne_smithrem_horsford","thomas_barnes_i","salome_barnes_chamberlin"]},"FT-0597":{"dir":"FT-0597-christina-dupray-fag-children-grid","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Christina Miller Dupray children grid (James Story + Frederick Miller)","person_ids":["christina_miller_dupray","james_story_dupray","frederick_miller_dupray","thomas_dupray"]},"FT-0638":{"dir":"FT-0638-thomas-dupray-portage-clarinda-migration","photos":[],"entry":true,"type":"newspaper","title":"Thomas Dupray — Meadville PA → Portage OH → Clarinda IA (compiled query)","person_ids":["thomas_dupray","christina_miller_dupray","hugh_dupray","james_story_dupray"]},"FT-0598":{"dir":"FT-0598-portage-ohgenweb-thomas-dupray-query","photos":[],"entry":true,"type":"compiled","title":"Portage OHGenWeb query010 — Thomas Dupray vitals + Hugh × Ruth parent FAN","person_ids":["thomas_dupray","hugh_depree_meadville","ruth_mead_dupray","christina_miller_dupray","frederick_miller_dupray"]},"FT-0599":{"dir":"FT-0599-hugh-depree-ruth-mead-west-penn","photos":[],"entry":true,"type":"compiled","title":"Western Pennsylvania Genealogy — Hugh Depree × Ruth Mead family group","person_ids":["hugh_depree_meadville","ruth_mead_dupray","thomas_dupray"]},"FT-0600":{"dir":"FT-0600-frederick-dupray-western-iowa-1882","photos":[],"entry":true,"type":"biography","title":"History of Western Iowa 1882 — Frederick M. Dupray Mondamin bio","person_ids":["frederick_miller_dupray","thomas_dupray"]},"FT-0601":{"dir":"FT-0601-thomas-dupray-parents-negative-ledger","photos":[],"entry":true,"type":"ledger","title":"Thomas Dupray gen-back negatives — Page Co cemetery + primary gap","person_ids":["thomas_dupray","hugh_depree_meadville","ruth_mead_dupray"]},"FT-0331":{"dir":"FT-0331-silver-creek-twp-jw-anderson-trustee-1882","photos":[],"entry":true,"type":"newspaper","title":"Silver Creek Township history — J. W. Anderson trustee (1882) + stage-station landscape","person_ids":["john_w_anderson"]},"FT-0334":{"dir":"FT-0334-chicago-dray-teamster-trade-context","photos":[],"entry":true,"type":"newspaper","title":"Encyclopedia of Chicago — Teamsters / horse-team drayage (profession unpack)","person_ids":["john_w_anderson"]},"FT-0536":{"dir":"FT-0536-john-w-anderson-parents-negative-ledger","photos":[],"entry":true,"type":"research_note","title":"John W. Anderson parents — free-source negative ledger (1907–1908)","person_ids":["john_w_anderson"]},"FT-0005":{"dir":"FT-0005-conejo-mountain-funeral-home-gloria-martha-short","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Conejo Mountain Funeral Home — Gloria Martha Shorts","person_ids":["gloria","richard","irvin","martha","carla","william","gigi"]},"FT-0380":{"dir":"FT-0380-deseret-1972-utah-swim-shorts-thousand-oaks-recruit","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — Utah swim preview names Bill Shorts of Thousand Oaks (1972)","person_ids":["william"]},"FT-0381":{"dir":"FT-0381-chronicle-1973-01-utah-development-meet-shorts-backstroke","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts backstroke placings + photo caption (1973)","person_ids":["william"]},"FT-0382":{"dir":"FT-0382-tribune-1973-02-shorts-bio-thousand-oaks-business","photos":[],"entry":true,"type":"newspaper","title":"Salt Lake Tribune — Bill Shorts bio (Thousand Oaks, business major, 6'4 backstroke)","person_ids":["william"]},"FT-0383":{"dir":"FT-0383-chronicle-1973-02-frosh-backstroke-firsts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — frosh Bill Shorts wins 200 back, second in 100 (1973)","person_ids":["william"]},"FT-0384":{"dir":"FT-0384-wac-1974-medley-relay-shorts-backstroke-lead","photos":[],"entry":true,"type":"newspaper","title":"WAC swimming championships 1974 — Bill Shorts leads off Utah medley relay","person_ids":["william"]},"FT-0385":{"dir":"FT-0385-chronicle-1975-03-wac-preview-shorts-favorite","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — 1975 WAC preview: Shorts favorite in backstroke","person_ids":["william"]},"FT-0386":{"dir":"FT-0386-deseret-1975-03-wac-medley-record-shorts","photos":[],"entry":true,"type":"newspaper","title":"Deseret News — 1975 WAC: Utah medley relay meet record (Shorts lead-off)","person_ids":["william"]},"FT-0387":{"dir":"FT-0387-chronicle-1975-03-ncaa-cleveland-roster-shorts","photos":[],"entry":true,"type":"newspaper","title":"Daily Utah Chronicle — Bill Shorts named to Utah NCAA Cleveland roster (1975)","person_ids":["william"]},"FT-0388":{"dir":"FT-0388-captain-wac-100-back-champ-1975-76-season","photos":[],"entry":true,"type":"newspaper","title":"Team captain Bill Shorts — WAC 100 backstroke champion (1975–76 season stack)","person_ids":["william"]},"FT-0389":{"dir":"FT-0389-wac-1976-shorts-defend-third-place","photos":[],"entry":true,"type":"newspaper","title":"1976 WAC — defending backstroke champ Bill Shorts finishes third","person_ids":["william"]},"FT-0004":{"dir":"FT-0004-ventura-county-star-richard-dorland-shorts-28-oc","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Ventura County Star — Richard Dorland Shorts (28 Oct 2009)","person_ids":["richard","gloria","earl","annabelle"]},"FT-0101":{"dir":"FT-0101-they-met-at-the-hollywood-palladium-gloria-richa","photos":["photos/01-hollywood-palladium.jpg","photos/02-gloria-portrait.jpg","photos/03-gloria-obit-card.jpg"],"entry":true,"type":"newspaper","title":"They met at the Hollywood Palladium — Gloria × Richard danced to Woody Herman","person_ids":["gloria","richard"]},"FT-0102":{"dir":"FT-0102-secretary-at-the-long-beach-shipyards-gloria-s-w","photos":["photos/01-liberty-ship.jpg"],"entry":true,"type":"newspaper","title":"Secretary at the Long Beach shipyards — Gloria’s wartime / postwar work world","person_ids":["gloria"]},"FT-0313":{"dir":"FT-0313-gloria-bellflower-wartime-school-boom","photos":[],"entry":true,"type":"newspaper","title":"Bellflower 1942 — wartime boomtown where Gloria finished high school","person_ids":["gloria","martha"]},"FT-0315":{"dir":"FT-0315-long-beach-women-wwii-historian-burnett","photos":[],"entry":true,"type":"newspaper","title":"Long Beach women in the WWII yards — local historian context for Gloria’s shipyard years","person_ids":["gloria"]},"FT-0582":{"dir":"FT-0582-inman-mcpherson-prairie-landscape","photos":[],"entry":true,"type":"newspaper","title":"Inman & McPherson prairie — German/Mennonite settlement world around Martha's childhood","person_ids":["martha","gloria","leo_tuxhorn","ida_tuxhorn"]},"FT-0583":{"dir":"FT-0583-irvin-gatz-wwi-satc","photos":[],"entry":true,"type":"military","title":"Irvin Carl Gatz — WWI Student Army Training Corps marker + SATC class color","person_ids":["irvin","gloria"]},"FT-0585":{"dir":"FT-0585-mcpherson-one-room-schools","photos":[],"entry":true,"type":"newspaper","title":"McPherson rural schools — one-room schoolhouse world (Gloria farm childhood context)","person_ids":["gloria","irvin","martha"]},"FT-0103":{"dir":"FT-0103-tuxhorn-germans-on-the-plains-westphalia-mcphers","photos":["photos/01-leo-tuxhorn-portrait.jpg"],"entry":true,"type":"newspaper","title":"Tuxhorn Germans on the Plains — Westphalia → McPherson; Nemaha surname neighbors","person_ids":["martha","leo_tuxhorn","frederick_tuxhorn"]},"FT-0314":{"dir":"FT-0314-august-tuxhorn-1884-farm-fire-death","photos":[],"entry":true,"type":"newspaper","title":"August Tuxhorn’s 1884 farm fire — Leo’s father, McPherson County","person_ids":["frederick_tuxhorn","leo_tuxhorn","elizabeth_birkenbeuel","martha"]},"FT-0553":{"dir":"FT-0553-hutchinson-news-ida-l-tuxhorn-1951","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Hutchinson News — Mrs. Ida L. Tuxhorn (1951)","person_ids":["ida_tuxhorn","leo_tuxhorn","henry_f_tuxhorn","carrie_williams","florence_graves","martha","wilma_prather"],"subject_id":"ida_tuxhorn"},"FT-0579":{"dir":"FT-0579-inman-aschman-early-settlers","photos":[],"entry":true,"type":"newspaper","title":"Inman early settlers — Aschman family owned land where the town stands","person_ids":["martha","leo_tuxhorn","ida_tuxhorn"]},"FT-0580":{"dir":"FT-0580-achilles-pioneer-little-valley-1872","photos":[],"entry":true,"type":"newspaper","title":"Achilles Pioneer Register — Henry Frederick, Little Valley 1872","person_ids":["henry_f_achilles","ida_tuxhorn","caroline_waescher"]},"FT-0584":{"dir":"FT-0584-achilles-iowa-to-inman-migration","photos":[],"entry":true,"type":"obituary","title":"Achilles Iowa to Inman — Lee County birth, age-nine Kansas move (Ida obit + GEDBAS)","person_ids":["henry_f_achilles","caroline_waescher","ida_tuxhorn"],"subject_id":"henry_f_achilles"},"FT-0107":{"dir":"FT-0107-dornberg-bielefeld-america-westphalia-emigration","photos":["photos/01-memorial-fag.png","photos/01-tuxhorn-fag.png"],"entry":true,"type":"census","title":"Dornberg / Bielefeld → America — Westphalia emigration peak (Tuxhorn hinge)","person_ids":["frederick_tuxhorn","leo_tuxhorn"]},"FT-0408":{"dir":"FT-0408-democratic-sentinel-august-tuxhorn-1884-wire","photos":[],"entry":true,"type":"newspaper","title":"Democratic Sentinel (Rensselaer IN) — August Tuxhorn McPherson wire, 21 Nov 1884","person_ids":["frederick_tuxhorn","elizabeth_birkenbeuel","leo_tuxhorn"]},"FT-0409":{"dir":"FT-0409-mcpherson-settler-elizabeth-tuxhorn-groveland-1876","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS settler list — Elizabeth Tuxhorn (Birkenbuel), Groveland 1876","person_ids":["elizabeth_birkenbeuel","frederick_tuxhorn"]},"FT-0411":{"dir":"FT-0411-mcpherson-probate-index-tuxhorn-august-d52-e104","photos":[],"entry":true,"type":"deed","title":"McPherson Co. KS probate journal index — Tuxhorn August D52 (1891) / E104 (1894)","person_ids":["frederick_tuxhorn","elizabeth_birkenbeuel"]},"FT-0098":{"dir":"FT-0098-altmark-germans-on-the-kansas-prairie-gatz-hilge","photos":[],"entry":true,"type":"newspaper","title":"Altmark Germans on the Kansas prairie — Gatz × Hilgenfeld, McPherson Pioneer Register, and what ‘farmer’ meant","person_ids":["john_wilhelm_gatz","sophia_maria_hilgenfeld","charles_c_gatz","irvin"]},"FT-0354":{"dir":"FT-0354-irvin-satc-wwi-student-army-training-corps","photos":[],"entry":true,"type":"newspaper","title":"Irvin Carl Gatz — Pvt Student Army Training Corps (WWI title unpack)","person_ids":["irvin"]},"FT-0586":{"dir":"FT-0586-gatz-groveland-jackson-farm-township","photos":[],"entry":true,"type":"census","title":"Gatz farm townships — Jackson 1900, Groveland 1910 (Charles × Minnie × Irvin)","person_ids":["charles_c_gatz","minnie_kruse","irvin"]},"FT-0581":{"dir":"FT-0581-wheatland-bush-kirche-kruse-world","photos":[],"entry":true,"type":"church","title":"St. John's Wheatland — Bush Kirche German river-country world (Kruse parents FAN)","person_ids":["minnie_kruse","henry_kruse","marie_wolf_kruse"]},"FT-0737":{"dir":"FT-0737-henry-kruse-fag-parent-grid-audit","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Henry Kruse 127003248 parent-grid audit (no parents)","person_ids":["henry_kruse","marie_wolf_kruse","george_kruse","henry_john_ernest_kruse","william_kruse","minnie_kruse","louis_kruse","maria_dorothea_caroline_kruse_jahn","charles_fredrick_kruse","anna_katherine_elizabeth_kruse_lubberstedt"]},"FT-0738":{"dir":"FT-0738-marie-wolf-kruse-fag-parent-grid-audit","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Marie Wolf Kruse 127003257 parent-grid audit (no parents)","person_ids":["marie_wolf_kruse","henry_kruse"]},"FT-0739":{"dir":"FT-0739-st-johns-wheatland-kruse-church-index","photos":[],"entry":true,"type":"church","title":"St. John's Wheatland — Darcy Fritche index (Kruse / Heitman / John rows)","person_ids":["henry_kruse","marie_wolf_kruse","louis_kruse","maria_dorothea_caroline_kruse_jahn"]},"FT-0740":{"dir":"FT-0740-kruse-1907-1908-death-register-negatives","photos":[],"entry":true,"type":"vital","title":"Allamakee + Houston death registers 1907–1908 — Henry/Mary Kruse absent","person_ids":["henry_kruse","marie_wolf_kruse"]},"FT-0741":{"dir":"FT-0741-past-present-allamakee-1884-st-johns-trustees","photos":[],"entry":true,"type":"church","title":"Past and Present of Allamakee County (1913) — St. John's Union City trustees 1884","person_ids":["henry_kruse"]},"FT-0100":{"dir":"FT-0100-prairie-housing-and-tools-1870-1905-soddy-to-fra","photos":["photos/01-chrisman-sisters-sod.jpg","photos/02-rawding-family-sod-house-1886.jpg","photos/03-haumont-two-story-sod-1886.jpg","photos/04-family-sod-house-prairie.jpg","photos/05-farm-family-sod-nebraska.jpg","photos/06-horse-drawn-plow.jpg"],"entry":true,"type":"newspaper","title":"Prairie housing & tools ~1870–1905 — soddy to frame, plow work (context for Gatz farmers)","person_ids":["john_wilhelm_gatz","sophia_maria_hilgenfeld","charles_c_gatz"]},"FT-0097":{"dir":"FT-0097-falls-city-journal-1899-johann-ludwig-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1899 — Johann Ludwig Hilgenfeld, 92; names daughter Sophia Gatz","person_ids":["johann_ludwig_hilgenfeld","catharine_dorothea_lonsman","sophia_maria_hilgenfeld"],"subject_id":"johann_ludwig_hilgenfeld"},"FT-0350":{"dir":"FT-0350-falls-city-journal-1941-anna-deckinger-hilgenfeld","photos":[],"entry":true,"type":"obituary","title":"Falls City Journal 1941 — Anna Deckinger Hilgenfeld (FAN farm + McPherson sister)","person_ids":["johann_ludwig_hilgenfeld","sophia_maria_hilgenfeld"],"subject_id":"johann_ludwig_hilgenfeld"},"FT-0351":{"dir":"FT-0351-richardson-1890-farmers-hilgenfield-arago","photos":[],"entry":true,"type":"newspaper","title":"Nebraska State Gazetteer 1890 — Hilgenfield farmers at Arago / Falls City","person_ids":["johann_ludwig_hilgenfeld","sophia_maria_hilgenfeld"]},"FT-0352":{"dir":"FT-0352-andreas-falls-city-deutsche-gesellschaft-arago","photos":[],"entry":true,"type":"newspaper","title":"Andreas 1882 — Falls City Die Deutsche Gesellschaft + Arago German farming community","person_ids":["johann_ludwig_hilgenfeld","catharine_dorothea_lonsman","sophia_maria_hilgenfeld"]},"FT-0353":{"dir":"FT-0353-barrington-german-pioneer-influx-lines","photos":[],"entry":true,"type":"newspaper","title":"Barrington area — German pioneer influx 1840s–1850s (Hilgenfeld sojourn landscape)","person_ids":["johann_ludwig_hilgenfeld","catharine_dorothea_lonsman","sophia_maria_hilgenfeld"]},"FT-0355":{"dir":"FT-0355-wendemark-altmark-marschhufendorf-place","photos":[],"entry":true,"type":"newspaper","title":"Wendemark (Altmärkische Wische) — Marschhufendorf place for Gatz × Hilgenfeld wedding","person_ids":["john_wilhelm_gatz","sophia_maria_hilgenfeld"]},"FT-0108":{"dir":"FT-0108-don-shorts-at-blue-church-plaque-methodism-claim","photos":["photos/01-ontarioplaques-don-shorts-comment.png","photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"newspaper","title":"Don Shorts at Blue Church plaque — Methodism claim + who is buried here? (2010)","person_ids":["don_shorts","richard","frances_shorts_heck"]},"FT-0310":{"dir":"FT-0310-richard-panama-sixth-af-operations-specialist","photos":[],"entry":true,"type":"newspaper","title":"Operations Specialist in Panama — Richard’s WWII AAF world (Sixth Air Force)","person_ids":["richard"]},"FT-0311":{"dir":"FT-0311-richard-fire-career-arcadia-huntington-burbank","photos":[],"entry":true,"type":"newspaper","title":"Arcadia → Huntington Park → Burbank Captain — Richard’s fire departments in local histories","person_ids":["richard"]},"FT-0312":{"dir":"FT-0312-south-gate-high-1941-industrial-suburb","photos":[],"entry":true,"type":"newspaper","title":"South Gate High 1941 — industrial suburb where Richard graduated","person_ids":["richard"]},"FT-0370":{"dir":"FT-0370-1929-socal-move-south-gate-firestone-boom","photos":[],"entry":true,"type":"newspaper","title":"1929 Rochester → Southern California — Firestone / South Gate boom year","person_ids":["earl","annabelle","richard"]},"FT-0372":{"dir":"FT-0372-highland-park-figueroa-shoe-retail-world","photos":[],"entry":true,"type":"newspaper","title":"Highland Park Figueroa — retail / shoe-store strip where Earl kept shop","person_ids":["earl","richard"]},"FT-0373":{"dir":"FT-0373-south-gate-depression-quake-industry","photos":[],"entry":true,"type":"newspaper","title":"South Gate childhood suburb — Depression, 1933 quake, factory jobs","person_ids":["earl","annabelle","richard"]},"FT-0374":{"dir":"FT-0374-south-pasadena-later-residence-world","photos":[],"entry":true,"type":"newspaper","title":"South Pasadena later home — trolley suburb where Earl died","person_ids":["earl","annabelle","richard"]},"FT-0152":{"dir":"FT-0152-find-a-grave-100072423-earl-stanley-shorts-memor","photos":[],"entry":true,"type":"vital","title":"Find A Grave 100072423 — Earl Stanley Shorts memorial extract","person_ids":["earl","dorland","effie","mayme","annabelle","lena"]},"FT-0172":{"dir":"FT-0172-charles-merritt-brights-disease-gorham-ontario-c","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Charles Merritt — Bright's disease, Gorham (Ontario County Chronicle 21 May 1902)","person_ids":["charles_j_merritt","ann_l_merritt","george_merritt","charles_e_merritt"],"subject_id":"charles_j_merritt"},"FT-0174":{"dir":"FT-0174-1850-us-census-hopewell-ontario-ny-henry-tessima","photos":["photos/01.jpg"],"entry":true,"type":"census","title":"1850 US Census — Hopewell, Ontario, NY — Henry Tessiman household (fam 259)","person_ids":["henry_tesseyman","abigail_j_tesseyman","ann_l_merritt","clarrissa_e_tesseyman","ethelinda_j_tesseyman","robert_e_tesseyman","artemisia_h_tesseyman"]},"FT-0217":{"dir":"FT-0217-woodlawn-cemetery-register-merritt-lot-207","photos":[],"entry":true,"type":"church","title":"Woodlawn Cemetery register — Charles J. & Ann L. Merritt, Sec 10 Lot 207","person_ids":["charles_j_merritt","ann_l_merritt"]},"FT-0218":{"dir":"FT-0218-charles-merritt-probate-ann-l-executor-jun-1902","photos":[],"entry":true,"type":"newspaper","title":"Charles Merritt probate — Ann L. Merritt executor (Ontario County Chronicle 4 Jun 1902)","person_ids":["charles_j_merritt","ann_l_merritt"]},"FT-0219":{"dir":"FT-0219-find-a-grave-121146760-charles-merritt-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 121146760 — Charles Merritt memorial extract","person_ids":["charles_j_merritt","ann_l_merritt"]},"FT-0270":{"dir":"FT-0270-1855-census-hopewell-ontario-ny-tesseyman-fam-027","photos":[],"entry":true,"type":"census","title":"1855 NY State Census index — Hopewell, Ontario, NY — Tesseyman household (fam 027)","person_ids":["henry_tesseyman","abigail_j_tesseyman","ann_l_merritt","ethelinda_j_tesseyman","robert_e_tesseyman","arietta_tesseyman","elizabeth_tesseyman","harriet_a_tesseyman"]},"FT-0401":{"dir":"FT-0401-abbie-tesseyman-pneumonia-chapinville-1898","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Abbie Tesseyman — pneumonia, Chapinville (Ontario County Journal 30 Dec 1898)","person_ids":["abigail_j_tesseyman","robert_e_tesseyman","william_h_tesseyman","ann_l_merritt","mrs_a_o_squires","ethelinda_j_tesseyman","henry_tesseyman"],"subject_id":"abigail_j_tesseyman"},"FT-0271":{"dir":"FT-0271-1875-census-canandaigua-ontario-ny-ethelinda-tesseyman-fam-465","photos":[],"entry":true,"type":"census","title":"1875 NY State Census index — Canandaigua, Ontario, NY — Ethelinda Tesseyman (fam 465)","person_ids":["ethelinda_j_tesseyman","henry_tesseyman","abigail_j_tesseyman"]},"FT-0067":{"dir":"FT-0067-pringle-benham-compiled-dorland-shortts-239-mini","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled — Dorland Shortts #239 minister; m. Effie Earl 1879; d. Marcy 1945","person_ids":["dorland","effie","lena","earl"]},"FT-0069":{"dir":"FT-0069-find-a-grave-8850577-rev-dorland-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850577 — Rev Dorland Shorts memorial extract (no bio; no stone photo)","person_ids":["dorland","effie","alexander_shorts","eva_aylesworth","lena","earl"]},"FT-0215":{"dir":"FT-0215-find-a-grave-8850579-effie-eliza-earl-shorts-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 8850579 — Effie Eliza Earl Shorts memorial extract (no bio; no stone photo)","person_ids":["effie","dorland","lena","earl"]},"FT-0371":{"dir":"FT-0371-rochester-shoe-industry-mckelvey-decline","photos":[],"entry":true,"type":"newspaper","title":"Rochester shoe-town decline — McKelvey city-historian frame for leaving ~1929","person_ids":["earl"]},"FT-0732":{"dir":"FT-0732-mayme-garrett-shorts-fag-276633586","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — May F. “Mayme” Garrett Shorts 276633586","person_ids":["mayme","james_h_garrett","mary_josephine_yarman","earl"]},"FT-0066":{"dir":"FT-0066-mount-hope-cemetery-section-w-stone-list-rev-dor","photos":[],"entry":true,"type":"vital","title":"Mount Hope Cemetery Section W stone list — Rev. Dorland Shorts & Effie E.","person_ids":["dorland","effie"]},"FT-0216":{"dir":"FT-0216-ny-state-death-index-1918-effie-shorts-cert-37880","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1918 — Effie E. Shorts, cert. 37880, East Rochester","person_ids":["effie"]},"FT-0031":{"dir":"FT-0031-grindstone-island-umc-history-rev-alexander-shor","photos":["photos/01-altar.jpg","photos/02-stained-glass.jpg","photos/03-church-front.jpg","photos/04-church-door.jpg","photos/05-quilt.jpg"],"entry":true,"type":"church","title":"Grindstone Island UMC History — Rev Alexander Shorts, circuit rider (full page + images)","person_ids":["alexander_shorts","dorland"]},"FT-0033":{"dir":"FT-0033-thousand-islands-life-grindstone-stained-glass-s","photos":["photos/01-church-stained-glass-hero.png","photos/02-rev-alexander-shorts.jpeg","photos/03-church-graphic.png","photos/04-church-exterior.png","photos/05-nancy-keziah-photo.png"],"entry":true,"type":"church","title":"Thousand Islands Life — Grindstone stained-glass series: Rev. Alexander Shorts (full article + images)","person_ids":["alexander_shorts","dorland","eva_aylesworth"]},"FT-0038":{"dir":"FT-0038-shorts-me-builders-connection-map-hay-bay-napane","photos":[],"entry":true,"type":"church","title":"Shorts ME builders — connection map (Hay Bay → Napanee → Grindstone → Dorland)","person_ids":["augustus_shorts","alexander_shorts","dorland","hannah_pringle_shorts"]},"FT-0040":{"dir":"FT-0040-aylsworth-family-1887-eva-eliza-aylesworth-m-rev","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) — Eva Eliza Aylesworth m. Rev. Alexander Shorts; died leaving son Dorian","person_ids":["eva_aylesworth","alexander_shorts","dorland"]},"FT-0065":{"dir":"FT-0065-ny-state-death-index-1945-dorland-shorts-cert-52","photos":[],"entry":true,"type":"vital","title":"NY State Death Index 1945 — Dorland Shorts, cert. 52286, Marcy","person_ids":["dorland"]},"FT-0068":{"dir":"FT-0068-maynard-methodist-church-marcy-ny-erie-canal-vil","photos":["photos/01-maynard-methodist-church.png","photos/02-maynard-interior.jpg"],"entry":true,"type":"place","title":"Maynard Methodist Church (Marcy NY) — Erie Canal Village history + photos","person_ids":["dorland"]},"FT-0070":{"dir":"FT-0070-find-a-grave-138634881-eva-eliza-aylesworth-shor","photos":["photos/01-cemetery-cover.jpeg"],"entry":true,"type":"vital","title":"Find A Grave 138634881 — Eva Eliza Aylesworth Shorts (Knight's Cemetery)","person_ids":["eva_aylesworth","alexander_shorts","dorland"]},"FT-0071":{"dir":"FT-0071-knights-cemetery-transcript-kns-96-eva-eliza-sho","photos":["photos/01-cemetery-overview-2013.jpg","photos/02-cemetery-overview-2019.jpeg","photos/03-cemetery-overview-2024.jpeg"],"entry":true,"type":"vital","title":"Knight's Cemetery transcript — KNS 96 Eva Eliza Shorts stone + cemetery intro","person_ids":["eva_aylesworth","alexander_shorts","dorland"]},"FT-0074":{"dir":"FT-0074-pringle-benham-compiled-gen-110-alexander-shortt","photos":[],"entry":true,"type":"vital","title":"Pringle/Benham compiled gen. §110 — Alexander Shortts × Eva Eliza Aylesworth; child Dorland only","person_ids":["eva_aylesworth","alexander_shorts","dorland"]},"FT-0089":{"dir":"FT-0089-methodism-in-alexandria-jefferson-co-ny-circuit","photos":[],"entry":true,"type":"church","title":"Methodism in Alexandria (Jefferson Co. NY) — circuit riders on horseback; town where Earl Stanley Shorts was born","person_ids":["dorland"]},"FT-0111":{"dir":"FT-0111-crem-dorland-book-fag-ruth-dorland-william-short","photos":[],"entry":true,"type":"book","title":"Crem Dorland book + FAG — Ruth Dorland × William Shorts (Adolphustown FAN; not blood claim)","person_ids":["dorland"]},"FT-0137":{"dir":"FT-0137-find-a-grave-96207765-rev-alexander-shorts-grind","photos":[],"entry":true,"type":"vital","title":"Find A Grave 96207765 — Rev Alexander Shorts (Grindstone Island Cemetery)","person_ids":["alexander_shorts","samuel_shorts","mary_ann_denison","eva_aylesworth","dorland"]},"FT-0429":{"dir":"FT-0429-black-river-nny-conference-memorial-shorts-negative","photos":[],"entry":true,"type":"church","title":"Black River & Northern NY Conference Memorial — no Shorts sketch (Dorland charge negative)","person_ids":["dorland"]},"FT-0036":{"dir":"FT-0036-fadedgenes-rev-alexander-shorts-me-charges-ricev","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Alexander Shorts ME charges (Riceville 1869; Napanee 1881)","person_ids":["alexander_shorts","eva_aylesworth"]},"FT-0057":{"dir":"FT-0057-inkerman-me-church-and-parsonage-1868-eva-shorts","photos":["photos/01-inkerman-united-cover-1883.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-inkerman-me-1883-sepia.jpg","photos/04-mills-me-chapter-p9.jpg"],"entry":true,"type":"place","title":"Inkerman ME church & parsonage (1868) — Eva Shorts death context; 1883 red-brick successor","person_ids":["alexander_shorts","eva_aylesworth"]},"FT-0060":{"dir":"FT-0060-canadian-me-charge-ladder-riceville-inkerman-nap","photos":["photos/01-mills-methodism-inkerman.jpg","photos/02-inkerman-fadedgenes-sto.jpg"],"entry":true,"type":"church","title":"Canadian ME charge ladder — Riceville → Inkerman → Napanee (buildings + search negatives)","person_ids":["alexander_shorts","eva_aylesworth"]},"FT-0072":{"dir":"FT-0072-fadedgenes-inkerman-methodist-church-mountain-tw","photos":["photos/01-inkerman-methodist-1883.jpg","photos/02-inkerman-mountain-map.jpg"],"entry":true,"type":"church","title":"fadedgenes — Inkerman Methodist Church (Mountain Twp, Dundas) + 1883 building photo","person_ids":["eva_aylesworth","alexander_shorts"]},"FT-0073":{"dir":"FT-0073-mills-1983-yesterday-and-to-day-history-of-inker","photos":["photos/01-cover-inkerman-united-church.jpg","photos/02-inkerman-church-carriage-sheds.jpg","photos/03-methodism-me-parsonage-p9.jpg","photos/04-church-today-1883-building.jpg"],"entry":true,"type":"church","title":"Mills 1983 — Yesterday and To-Day: History of Inkerman United Church (ME parsonage + building photos)","person_ids":["eva_aylesworth","alexander_shorts"]},"FT-0106":{"dir":"FT-0106-arthur-aylesworth-at-quidnessett-ri-settler-and","photos":["photos/01-aylsworth-1887-p36.jpg","photos/02-aylsworth-1887-p37.jpg","photos/03-emigration-ri.jpg"],"entry":true,"type":"church","title":"Arthur Aylesworth at Quidnessett — RI settler & the road to Canada","person_ids":["arthur_aylesworth","eva_aylesworth"]},"FT-0149":{"dir":"FT-0149-otho-nial-charlotte-bowerman-aylsworth-1887-job","photos":[],"entry":true,"type":"church","title":"Otho Nial × Charlotte Bowerman — Aylsworth 1887; Job Aylesworth spotted fever 1803","person_ids":["charlotte_bowerman_aylesworth","otho_nial_aylesworth","jonathan_aylesworth","eva_aylesworth"]},"FT-0139":{"dir":"FT-0139-aylsworth-family-1887-p-89-charlotte-bowerman-da","photos":[],"entry":true,"type":"vital","title":"Aylsworth Family (1887) p. 89 — Charlotte Bowerman dau. David; m. Otho Nial 1805","person_ids":["charlotte_bowerman_aylesworth","david_bowerman","otho_nial_aylesworth","jonathan_aylesworth"]},"FT-0140":{"dir":"FT-0140-quaker-minutes-charlotte-bowerman-membership-and","photos":[],"entry":true,"type":"church","title":"Quaker minutes — Charlotte Bowerman membership & marry-out acknowledgment (1803–1806)","person_ids":["charlotte_bowerman_aylesworth","catherine_bartlett_bowerman"]},"FT-0141":{"dir":"FT-0141-bowerman-family-genealogy-1904-david-bowerman-vi","photos":[],"entry":true,"type":"vital","title":"Bowerman family genealogy (1904) — David Bowerman vitals, children, Charlotte adoption note","person_ids":["david_bowerman","charlotte_bowerman_aylesworth","catherine_bartlett_bowerman"]},"FT-0142":{"dir":"FT-0142-pioneer-life-on-the-bay-of-quinte-1904-p-131-dav","photos":[],"entry":true,"type":"vital","title":"Pioneer Life on the Bay of Quinte (1904) p. 131 — David Bowerman × Catherine Bartlett family","person_ids":["david_bowerman","catherine_bartlett_bowerman","charlotte_bowerman_aylesworth"]},"FT-0146":{"dir":"FT-0146-bowerman-family-migration-batteau-route-ichabod","photos":[],"entry":true,"type":"church","title":"Bowerman family migration — batteau route, Ichabod Quaker disownment, Joseph Earl Loyalist","person_ids":["david_bowerman","ichabod_bowerman","charlotte_bowerman_aylesworth"]},"FT-0147":{"dir":"FT-0147-charlotte-bowerman-adopted-daughter-note-bowerma","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — adopted daughter note (Bowerman genealogy appendix)","person_ids":["charlotte_bowerman_aylesworth","david_bowerman","catherine_bartlett_bowerman"]},"FT-0148":{"dir":"FT-0148-charlotte-bowerman-quaker-membership-marry-out-a","photos":[],"entry":true,"type":"church","title":"Charlotte Bowerman — Quaker membership, marry-out, and acknowledgment (1803–1806)","person_ids":["charlotte_bowerman_aylesworth","catherine_bartlett_bowerman","otho_nial_aylesworth","david_bowerman"]},"FT-0168":{"dir":"FT-0168-bowerman-1904-ichabod-verbank-homestead-bowerman","photos":[],"entry":true,"type":"church","title":"Bowerman 1904 — Ichabod Verbank homestead, Bowerman's Hole, Deborah stayed Dutchess","person_ids":["ichabod_bowerman","david_bowerman","charlotte_bowerman_aylesworth"]},"FT-0034":{"dir":"FT-0034-ti-life-archive-grindstone-grenell-wellesley-his","photos":["photos/01-grindstone-church.png","photos/02-historic-church.png","photos/03-historic-church.png","photos/04-historic-church.png","photos/05-historic-church.png","photos/06-historic-church.png","photos/07-historic-church.png","photos/08-historic-church.png","photos/09-historic-church.png","photos/10-historic-church.png","photos/11-dinsmore-church.png","photos/12-church.png","photos/13-church.png","photos/14-church.png","photos/15-church.png","photos/16-picture34.jpg","photos/17-dunsm.jpg","photos/18-picture26.jpg","photos/19-picture27.jpg","photos/20-picture28.jpg","photos/21-picture46.jpg"],"entry":true,"type":"place","title":"TI Life archive — Grindstone / Grenell / Wellesley historic churches (Rick Tague); Shorts section + images","person_ids":["alexander_shorts"]},"FT-0037":{"dir":"FT-0037-ti-life-gabriel-series-mending-alexander-shorts","photos":["photos/01-window.jpg","photos/02-gabriel.jpeg","photos/03-well.png"],"entry":true,"type":"church","title":"TI Life — Gabriel series: mending Alexander Shorts’s Grindstone church (1935–45)","person_ids":["alexander_shorts"]},"FT-0039":{"dir":"FT-0039-ti-life-grindstone-island-lost-in-time-kim-lunma","photos":[],"entry":true,"type":"newspaper","title":"TI Life — Grindstone Island: Lost in Time (Kim Lunman); church as summer heart + Rex Ennis lay preacher","person_ids":["alexander_shorts"]},"FT-0041":{"dir":"FT-0041-ti-life-5-13-11-dig-tague-citation-negative-may","photos":[],"entry":true,"type":"newspaper","title":"TI Life 5/13/11 dig — Tague citation negative; May 13 2011 archive posts are not Grindstone church history","person_ids":["alexander_shorts"]},"FT-0053":{"dir":"FT-0053-baldwin-and-clift-1881-3074-mary-ann-denison-sam","photos":[],"entry":true,"type":"vital","title":"Baldwin & Clift 1881 — #3074 Mary Ann Denison × Samuel D. Shorts (children)","person_ids":["mary_ann_denison","samuel_shorts","alexander_shorts","robert_shorts"]},"FT-0054":{"dir":"FT-0054-find-a-grave-samuel-shorts-280868397-mary-ann-de","photos":[],"entry":true,"type":"vital","title":"Find A Grave — Samuel Shorts 280868397 + Mary Ann Denison Shorts 280868640 (Sexsmith)","person_ids":["samuel_shorts","mary_ann_denison","augustus_shorts","hannah_pringle_shorts","alexander_shorts","robert_shorts"]},"FT-0058":{"dir":"FT-0058-riceville-methodist-1869-little-white-church-pre","photos":["photos/02-pendleton-methodist-prescott.jpg"],"entry":true,"type":"church","title":"Riceville Methodist — 1869 Little White Church (Prescott) & pastoral-charge history","person_ids":["alexander_shorts"]},"FT-0059":{"dir":"FT-0059-napanee-me-church-grace-united-bridge-and-robert","photos":["photos/01-grace-united-bridge-st.jpg"],"entry":true,"type":"place","title":"Napanee ME church → Grace United (Bridge & Robert) — Alexander’s 1881 charge town","person_ids":["alexander_shorts"]},"FT-0061":{"dir":"FT-0061-ti-life-emmet-c-dodge-stained-glass-series-mid-1","photos":["photos/01-stained-glass-window.png","photos/02-dodge-hall.png","photos/03-emmet-dodge.jpg","photos/04-emmet-portrait.jpg","photos/05-dodge-monument.jpeg"],"entry":true,"type":"church","title":"TI Life — Emmet C. Dodge stained-glass series: mid-1930s Grindstone church rebuild + unpublished MS","person_ids":["alexander_shorts"]},"FT-0062":{"dir":"FT-0062-grindstone-news-12-jul-1998-jesse-calkins-helped","photos":[],"entry":true,"type":"church","title":"Grindstone News 12 Jul 1998 — Jesse Calkins helped Rev. Shorts build the island church","person_ids":["alexander_shorts"]},"FT-0063":{"dir":"FT-0063-grindstone-news-19-aug-2001-mrs-joseph-tercott-1","photos":[],"entry":true,"type":"church","title":"Grindstone News 19 Aug 2001 — Mrs. Joseph Tercott (1947) saw Shorts-era church built on Turcotte land","person_ids":["alexander_shorts"]},"FT-0064":{"dir":"FT-0064-ti-life-lashomb-going-home-chapter-cheese-factor","photos":["photos/01-book-cover.png","photos/02-cheese-factory-1990.png","photos/03-milk-wagon.png","photos/04-factory-deteriorating.png","photos/05-author-scan.png"],"entry":true,"type":"church","title":"TI Life — Lashomb Going Home chapter: Cheese Factory (Emmet Dodge Memoires + Turcotte Thurso)","person_ids":["alexander_shorts"]},"FT-0084":{"dir":"FT-0084-grindstone-island-schoolhouse-history-house-of-g","photos":[],"entry":true,"type":"church","title":"Grindstone Island schoolhouse history — House of Good Temperance served as island church until fire (pre-Shorts fabric)","person_ids":["alexander_shorts"]},"FT-0430":{"dir":"FT-0430-grace-united-napanee-museum-fire-hub-narrative","photos":[],"entry":true,"type":"church","title":"Grace United Napanee — museum object story (1842 ME building, lightning, 1943 fire, community hub)","person_ids":["alexander_shorts"]},"FT-0431":{"dir":"FT-0431-trinity-united-napanee-beaver-names-st-andrews","photos":[],"entry":true,"type":"church","title":"Trinity United Napanee — Beaver names history; St Andrew's Gothic rival & 1930s merger","person_ids":["alexander_shorts"]},"FT-0055":{"dir":"FT-0055-museum-of-lennox-and-addington-denison-christian","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Museum of Lennox & Addington — Denison Christian Cross quilt 2014.36.01 (Mary Anne finishes)","person_ids":["elizabeth_thompson","nathan_denison","mary_ann_denison"]},"FT-0104":{"dir":"FT-0104-capt-george-denison-stonington-founder-and-king","photos":["photos/01-baldwin-1881-p6.jpg"],"entry":true,"type":"church","title":"Capt. George Denison — Stonington founder & King Philip’s War (colonial hinge)","person_ids":["george_denison","nathan_denison","mary_ann_denison"]},"FT-0105":{"dir":"FT-0105-uel-land-and-bay-of-quinte-thompson-loyalist-hin","photos":["photos/01-quilt-detail.jpg","photos/02-loyalist-landing-plaque.jpg","photos/03-hay-bay-plaque.jpg"],"entry":true,"type":"artifact","title":"UEL land & Bay of Quinte — Thompson Loyalist hinge (quilt + landing world)","person_ids":["elizabeth_thompson","nathan_denison","mary_ann_denison"]},"FT-0466":{"dir":"FT-0466-stonington-helderberg-robert-denison-knox","photos":[],"entry":true,"type":"newspaper","title":"Stonington families to Helderberg — Robert Denison on Van Rensselaer’s ‘free’ land","person_ids":["robert_denison","nathan_denison","daniel_denison_jr","esther_wheeler_denison"]},"FT-0469":{"dir":"FT-0469-stonington-first-church-dea-daniel-1733","photos":[],"entry":true,"type":"church","title":"First Church Stonington — Dea. Daniel Denison chosen 5 Jul 1733","person_ids":["daniel_denison_sr"]},"FT-0465":{"dir":"FT-0465-saybrook-1667-mystic-farm-john-phebe","photos":[],"entry":true,"type":"deed","title":"1667 Saybrook settlement — George’s Mystic-mouth farm to Capt. John × Phebe Lay","person_ids":["john_denison","phoebe_lay_denison","george_denison","ann_borodell_denison"]},"FT-0458":{"dir":"FT-0458-baldwin-george-denison-cromwell-naseby","photos":[],"entry":true,"type":"military","title":"Baldwin 1881 — Capt. George Denison under Cromwell; wounded at Naseby; Ann as nurse","person_ids":["george_denison","ann_borodell_denison","john_denison"]},"FT-0459":{"dir":"FT-0459-george-denison-will-england-war-sword","photos":[],"entry":true,"type":"military","title":"Capt. George Denison will 1693/4 — great sword & gauntlet from the wars of England","person_ids":["george_denison","ann_borodell_denison","john_denison"]},"FT-0461":{"dir":"FT-0461-wheeler-denison-england-return-jointure","photos":[],"entry":true,"type":"military","title":"Wheeler 1900 — George’s England soldier year, Ann jointure £300, Stonington fame","person_ids":["george_denison","ann_borodell_denison","daniel_denison_maj_gen","john_denison"]},"FT-0463":{"dir":"FT-0463-haynes-roxbury-train-band-pequotsepos","photos":[],"entry":true,"type":"military","title":"Haynes 1963 — Roxbury train-band snub, New London captain, Pequotsepos lean-to","person_ids":["george_denison","ann_borodell_denison","john_denison"]},"FT-0407":{"dir":"FT-0407-denison-homestead-pequotsepos-manor-history","photos":[],"entry":true,"type":"place","title":"Denison Homestead / Pequotsepos Manor — land grant, manor fire 1717 rebuild, museum","person_ids":["george_denison","ann_borodell_denison"]},"FT-0410":{"dir":"FT-0410-kasper-miscia-nehgr-178-borodell-cumbrian-summary","photos":[],"entry":true,"type":"newspaper","title":"Anna Kasper 2024 — Miscia NEHGR 178 Borodell Cumbrian summary (reject Cork/Broughton mother)","person_ids":["ann_borodell_denison","john_borodell","robert_borodell","nicholas_borodell","ellice_unknown_borodell","margaret_borodell_mitchell","john_borodell_jr","george_denison"]},"FT-0406":{"dir":"FT-0406-maj-gen-daniel-denison-autobiography-1672","photos":[],"entry":true,"type":"military","title":"Maj. Gen. Daniel Denison autobiography (1672) — Lyon 1631, Dudley marriage, George at Marston Moor","person_ids":["daniel_denison_maj_gen","william_denison","margaret_chandler_denison","george_denison"]},"FT-0460":{"dir":"FT-0460-cromwell-marston-moor-naseby-landscape","photos":[],"entry":true,"type":"military","title":"What ‘serving under Cromwell’ meant — Marston Moor 1644 and Naseby 1645","person_ids":["george_denison"]},"FT-0462":{"dir":"FT-0462-stonington-church-denison-miles-standish","photos":[],"entry":true,"type":"church","title":"Stonington First Church 1874 — Denison as Miles Standish of the settlement; Canonchet","person_ids":["george_denison"]},"FT-0464":{"dir":"FT-0464-caulkins-denison-border-man-southerton","photos":[],"entry":true,"type":"newspaper","title":"Caulkins 1860 — Denison the border man; Southerton magistrate; ‘only except’","person_ids":["george_denison"]},"FT-0035":{"dir":"FT-0035-father-shorts-conversion-first-upper-canada-me-o","photos":[],"entry":true,"type":"church","title":"Father Shorts — conversion, first Upper Canada ME ordination, deathbed (Pringle compiled / CCA tradition)","person_ids":["augustus_shorts","hannah_pringle_shorts","samuel_shorts"]},"FT-0056":{"dir":"FT-0056-1851-canada-west-census-richmond-twp-lennox-agus","photos":["photos/sexsmith-overview-fag-2014.jpg","photos/sexsmith-row-fag-2014.jpg"],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp, Lennox — Agustis & Ellenor Shorts (+ Sexsmith place)","person_ids":["augustus_shorts","hannah_pringle_shorts","samuel_shorts"]},"FT-0030":{"dir":"FT-0030-canada-christian-advocate-via-old-hay-bay-shorts","photos":[],"entry":true,"type":"newspaper","title":"Canada Christian Advocate (via Old Hay Bay) — Shorts orphan / Father Shorts vignette"},"FT-0032":{"dir":"FT-0032-fadedgenes-rev-andrew-prindle-me-charge-list-han","photos":[],"entry":true,"type":"church","title":"fadedgenes — Rev Andrew Prindle ME charge list (Hannah Shorts’s brother)","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0046":{"dir":"FT-0046-old-hay-bay-church-open-building-photographs-ext","photos":["photos/01-exterior-1908-postcard.jpg","photos/02-exterior-2008.jpg","photos/03-historic-1926-ao.jpg","photos/04-historic-1926-ao-alt.jpg","photos/05-historic-1926-portrait.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church — open building photographs (exterior / historic views)","person_ids":["augustus_shorts","hannah_pringle_shorts"]},"FT-0047":{"dir":"FT-0047-old-hay-bay-church-nhs-parks-canada-historicplac","photos":["photos/01-historicplaces-general-view.jpg"],"entry":true,"type":"place","title":"Old Hay Bay Church NHS — Parks Canada / HistoricPlaces designation + Ontario plaque text","person_ids":["augustus_shorts","hannah_pringle_shorts"]},"FT-0049":{"dir":"FT-0049-bowman-united-church-ancaster-exteriors-prindle","photos":["photos/01-bowman-side.jpg","photos/02-bowman-front-door.jpg","photos/03-bowman-side-detail.jpg","photos/04-bowman-historic-bw.jpg"],"entry":true,"type":"place","title":"Bowman United Church, Ancaster — exteriors + Prindle burial / chair relic site","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0050":{"dir":"FT-0050-me-conference-1829-andrew-prindle-superannuated","photos":[],"entry":true,"type":"church","title":"ME Conference 1829 — Andrew Prindle superannuated; next session at Bowman’s chapel, Ancaster","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0051":{"dir":"FT-0051-rev-andrew-prindle-fag-burial-sanderson-death-no","photos":[],"entry":true,"type":"church","title":"Rev Andrew Prindle — FAG burial + Sanderson death notice + Yonge Street clergy (beyond FT-0035)","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0052":{"dir":"FT-0052-upper-canada-me-itinerancy-prindle-niagara-years","photos":[],"entry":true,"type":"church","title":"Upper Canada ME itinerancy — Prindle Niagara years + horseback circuit-rider quotes","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0075":{"dir":"FT-0075-carroll-case-and-his-cotemporaries-vol-1-rev-and","photos":[],"entry":true,"type":"church","title":"Carroll, Case and his Cotemporaries vol. 1 — Rev Andrew Prindle biographical sketch","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0076":{"dir":"FT-0076-fadedgenes-bowman-me-church-ancaster-old-slide-p","photos":[],"entry":true,"type":"church","title":"fadedgenes — Bowman ME Church Ancaster (Old Slide) + Prindle chair / Kitty Murray","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0077":{"dir":"FT-0077-webster-history-of-the-me-church-in-canada-andre","photos":[],"entry":true,"type":"church","title":"Webster, History of the ME Church in Canada — Andrew Prindle first Canadian itinerant","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0078":{"dir":"FT-0078-bowman-united-church-cemetery-rev-andrew-prindle","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Bowman United Church Cemetery — Rev Andrew Prindle stone (Interment.net)","person_ids":["hannah_pringle_shorts","augustus_shorts"],"subject_id":"hannah_pringle_shorts"},"FT-0079":{"dir":"FT-0079-carroll-vols-2-and-5-father-prindle-death-eulogy","photos":[],"entry":true,"type":"church","title":"Carroll vols. 2 & 5 — Father Prindle death eulogy + Bay of Quinte local Deacon Augustus Shorts","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0112":{"dir":"FT-0112-1851-canada-west-census-richmond-twp-henry-holco","photos":[],"entry":true,"type":"census","title":"1851 Canada West Census — Richmond Twp — Henry Holcomb × Hannah O Shorts household","person_ids":["hannah_shorts_holcomb","augustus_shorts","hannah_pringle_shorts"]},"FT-0116":{"dir":"FT-0116-find-a-grave-william-and-eunice-pringle-hay-bay","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — William & Eunice Pringle Hay Bay (95004236 + 125180719)","person_ids":["william_pringle","eunice_benedict_pringle","hannah_pringle_shorts"],"subject_id":"william_pringle"},"FT-0134":{"dir":"FT-0134-find-a-grave-46280209-hannah-shorts-holcomb-cora","photos":[],"entry":true,"type":"vital","title":"Find A Grave 46280209 — Hannah Shorts Holcomb (Coral Cemetery, MI)","person_ids":["hannah_shorts_holcomb","augustus_shorts","hannah_pringle_shorts"]},"FT-0135":{"dir":"FT-0135-find-a-grave-133464095-elizabeth-shorts-hughs-se","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464095 — Elizabeth Shorts Hughs (Sexsmith Cemetery)","person_ids":["elizabeth_shorts_hughes","augustus_shorts","hannah_pringle_shorts"]},"FT-0136":{"dir":"FT-0136-find-a-grave-133467916-andrew-pringle-shorts-sex","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133467916 — Andrew Pringle Shorts (Sexsmith Cemetery)","person_ids":["andrew_pringle_shorts","augustus_shorts","hannah_pringle_shorts"]},"FT-0138":{"dir":"FT-0138-wikitree-short-3449-philip-short-augustus-son-m","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3449 — Philip Short (Augustus son); m. Hannah Brown 1821","person_ids":["philip_shorts_hallowell","augustus_shorts","hannah_pringle_shorts"]},"FT-0150":{"dir":"FT-0150-deborah-bigelow-pringle-uel-adolphustown-loyalis","photos":[],"entry":true,"type":"vital","title":"Deborah Bigelow Pringle — UEL Adolphustown; Loyalist cemetery tradition","person_ids":["deborah_bigelow_pringle","joel_pringle_jr","william_pringle","hannah_pringle_shorts"]},"FT-0413":{"dir":"FT-0413-eunice-miller-stone-sister-rev-a-prindle","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Eunice Miller stone — sister of the late Rev. A. Prindle (FAG 144753754)","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0414":{"dir":"FT-0414-hay-bay-1819-drowning-worshippers-memorial","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Hay Bay — 1819 drowning worshippers memorial (dedicated 1961)","person_ids":["augustus_shorts","hannah_pringle_shorts"]},"FT-0428":{"dir":"FT-0428-richmond-hill-early-days-appendix-c-clergy","photos":[],"entry":true,"type":"church","title":"Richmond Hill Early Days — Appendix C full clergy compendium (Prindle Yonge St. 1807/1811)","person_ids":["hannah_pringle_shorts","augustus_shorts"]},"FT-0114":{"dir":"FT-0114-find-a-grave-joel-pringle-jr-59609435-uel-kings","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Jr. 59609435 (UEL King's Rangers bio)","person_ids":["joel_pringle_jr","deborah_bigelow_pringle","william_pringle","timothy_pringle_ue","joseph_pringle_ue","joel_pringle_iii"],"subject_id":"joel_pringle_jr"},"FT-0144":{"dir":"FT-0144-napanee-beaver-1970-joel-pringle-jr-uel-patriarc","photos":[],"entry":true,"type":"newspaper","title":"Napanee Beaver (1970) — Joel Pringle Jr UEL patriarch, King's Rangers, batteaux settlement"},"FT-0151":{"dir":"FT-0151-uelac-joseph-pringle-st-johns-arrival-july-1781","photos":[],"entry":true,"type":"vital","title":"UELAC Joseph Pringle — St. John's arrival July 1781; Fredericksburgh grant 1783","person_ids":["joseph_pringle_ue","joel_pringle_jr","william_pringle"]},"FT-0167":{"dir":"FT-0167-bigelow-society-deborah-joel-uel-hopestill-prind","photos":[],"entry":true,"type":"church","title":"Bigelow Society — Deborah × Joel UEL; Hopestill Prindle FAN (Benedict in-law)","person_ids":["deborah_bigelow_pringle","joel_pringle_jr","ebenezer_bigelow_1698","william_pringle"]},"FT-0166":{"dir":"FT-0166-bigelow-society-ebenezer-ship-carpenter-cuba-dea","photos":[],"entry":true,"type":"vital","title":"Bigelow Society — Ebenezer ship carpenter, Cuba death tradition, Ticonderoga alternate","person_ids":["ebenezer_bigelow_1698","deborah_bigelow_pringle"]},"FT-0171":{"dir":"FT-0171-compiled-genealogy-deborah-pringle-edward-the-sp","photos":[],"entry":true,"type":"vital","title":"Compiled genealogy — Deborah Pringle × Edward 'The Spy' Hicks (Butler's Rangers son)","person_ids":["joel_pringle_jr","deborah_bigelow_pringle","timothy_pringle_ue"]},"FT-0129":{"dir":"FT-0129-watertown-vr-roman-index-ebenezer-bigelow-birth","photos":[],"entry":true,"type":"vital","title":"Watertown VR Roman index — Ebenezer Bigelow birth, marriage, baptisms","person_ids":["ebenezer_bigelow_1698","hannah_brown_bigelow"]},"FT-0130":{"dir":"FT-0130-bond-p-127-ebenezer-bigelow-hannah-brown-househo","photos":[],"entry":true,"type":"vital","title":"Bond p.127 — Ebenezer Bigelow × Hannah Brown household","person_ids":["ebenezer_bigelow_1698","hannah_brown_bigelow"]},"FT-0132":{"dir":"FT-0132-bond-brown-p-120-hannah-brown-b-1699","photos":[],"entry":true,"type":"vital","title":"Bond Brown p.120 — Hannah Brown b.1699","person_ids":["hannah_brown_bigelow"]},"FT-0131":{"dir":"FT-0131-bond-p-32-ebenezer-bigelow-b-1698-d-in-cuba-trad","photos":[],"entry":true,"type":"vital","title":"Bond p.32 — Ebenezer Bigelow b.1698; d. in Cuba tradition","person_ids":["ebenezer_bigelow_1698"]},"FT-0133":{"dir":"FT-0133-find-a-grave-51809062-ebenezer-bigelow-memorial","photos":[],"entry":true,"type":"vital","title":"Find A Grave 51809062 — Ebenezer Bigelow memorial (secondary death note)","person_ids":["ebenezer_bigelow_1698"]},"FT-0405":{"dir":"FT-0405-joshua-bigelow-king-philips-war-narragansett-grant","photos":[],"entry":true,"type":"military","title":"Joshua Bigelow — King Philip’s War wound, Narragansett No. 2 grant, late move to Westminster","person_ids":["joshua_bigelow_1655","john_bigelow_watertown","mary_warren_bigelow"]},"FT-0115":{"dir":"FT-0115-find-a-grave-joel-pringle-sr-59610755-west-haven","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Joel Pringle Sr. 59610755 (West Haven stone + family bio)","person_ids":["joel_pringle_sr","joel_pringle_jr"],"subject_id":"joel_pringle_sr"},"FT-0145":{"dir":"FT-0145-joseph-pringle-richmond-township-pioneer-christi","photos":[],"entry":true,"type":"newspaper","title":"Joseph Pringle — Richmond Township pioneer, Christian Guardian obituary (1833)","person_ids":["joseph_pringle_ue","joel_pringle_jr","lois_pringle_dafoe"]},"FT-0164":{"dir":"FT-0164-prindle-1906-joel-sr-louisbourg-prisoner-son-joe","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 — Joel Sr Louisbourg prisoner son; Joel Jr Danbury deed & Rev. soldier","person_ids":["joel_pringle_sr","joel_pringle_jr","jemima_benham_pringle","nathan_benham_1679"]},"FT-0124":{"dir":"FT-0124-pane-joyce-jacobus-joseph-prindle-mary-brown-joe","photos":[],"entry":true,"type":"vital","title":"Pane-Joyce (Jacobus) — Joseph Prindle × Mary Brown; Joel × Jemima Benham","person_ids":["joseph_prindle_sr","mary_brown_prindle","joel_pringle_sr","jemima_benham_pringle"]},"FT-0127":{"dir":"FT-0127-jacobus-fanh-nathan-benham-sarah-beecher-childre","photos":[],"entry":true,"type":"vital","title":"Jacobus FANH — Nathan Benham × Sarah Beecher; children incl. Jemima","person_ids":["nathan_benham_1679","sarah_beecher_benham","jemima_benham_pringle"]},"FT-0128":{"dir":"FT-0128-find-a-grave-66966847-sarah-beecher-benham-stone","photos":[],"entry":true,"type":"vital","title":"Find A Grave 66966847 — Sarah (Beecher) Benham stone + family grid","person_ids":["sarah_beecher_benham","nathan_benham_1679","jemima_benham_pringle"]},"FT-0165":{"dir":"FT-0165-prindle-1906-beecher-stone-nathan-benham-daughte","photos":[],"entry":true,"type":"vital","title":"Prindle 1906 + Beecher stone — Nathan Benham daughter Jemima × Joel Pringle Sr","person_ids":["nathan_benham_1679","jemima_benham_pringle","joel_pringle_sr"]},"FT-0162":{"dir":"FT-0162-prindle-1906-william-pringle-the-scotchman-oath","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — William Pringle 'the Scotchman' oath 1654 + immigrant traditions","person_ids":["joseph_prindle_sr","joel_pringle_sr"]},"FT-0163":{"dir":"FT-0163-prindle-1906-joseph-sr-scotland-farm-prindle-hil","photos":[],"entry":true,"type":"church","title":"Prindle 1906 — Joseph Sr 'Scotland' farm, Prindle Hill, Serjeant, Episcopal founder","person_ids":["joseph_prindle_sr","joel_pringle_sr"]},"FT-0126":{"dir":"FT-0126-find-a-grave-125971521-mary-walker-brown-prindle","photos":[],"entry":true,"type":"vital","title":"Find A Grave 125971521 — Mary Walker Brown Prindle bio + stone","person_ids":["mary_brown_prindle"]},"FT-0125":{"dir":"FT-0125-find-a-grave-169522429-sgt-joseph-prindle-memori","photos":[],"entry":true,"type":"vital","title":"Find A Grave 169522429 — SGT Joseph Prindle memorial bio + stone","person_ids":["joseph_prindle_sr"]},"FT-0044":{"dir":"FT-0044-adolphustown-place-set-loyalist-landing-1784-old","photos":["photos/01-hay-bay-church-plaque.jpg","photos/02-hay-bay-church-plaque-alt.jpg","photos/03-loyalist-landing-plaque.jpg","photos/04-old-hay-bay-church.jpg","photos/06-loyalist-landing-alt.jpg"],"entry":true,"type":"place","title":"Adolphustown place set — Loyalist Landing 1784 + Old Hay Bay Church plaques / exterior","person_ids":["john_shorts","rosannah_monk_shorts","augustus_shorts"]},"FT-0045":{"dir":"FT-0045-hay-bay-church-deed-abstract-7-june-1811-augustu","photos":[],"entry":true,"type":"deed","title":"Hay Bay Church deed abstract (7 June 1811) — Augustus Shorts named trustee (Van Deursen 1912)","person_ids":["augustus_shorts","hannah_mary_shorts"]},"FT-0048":{"dir":"FT-0048-webster-1870-bishop-george-genesee-conference-at","photos":[],"entry":true,"type":"church","title":"Webster 1870 — Bishop George / Genesee Conference at Elizabethtown, June 1817 (ordination window)","person_ids":["augustus_shorts"]},"FT-0082":{"dir":"FT-0082-kingston-whig-standard-adolphustown-loyalists-ha","photos":[],"entry":true,"type":"newspaper","title":"Kingston Whig Standard — Adolphustown Loyalists, Hay Bay Church, Elijah Woolsey saddlebag circuit (2021)","person_ids":["augustus_shorts","john_shorts"]},"FT-0083":{"dir":"FT-0083-casey-davis-early-methodist-history-adolphustown","photos":[],"entry":true,"type":"church","title":"Casey / Davis — Early Methodist History: Adolphustown cradle, Losee, Darius Dunham, Hay Bay first church","person_ids":["augustus_shorts"]},"FT-0085":{"dir":"FT-0085-bishop-philander-smith-me-church-in-canada-1847","photos":[],"entry":true,"type":"church","title":"Bishop Philander Smith (ME Church in Canada, 1847–1870) — identity for Hay Bay ‘granddaughter married Bishop Philander Smith’ claim","person_ids":["augustus_shorts"]},"FT-0086":{"dir":"FT-0086-what-is-a-circuit-rider-losee-gallops-hay-bay-co","photos":[],"entry":true,"type":"church","title":"What is a circuit rider? — Losee gallops Hay Bay country; Dunham survives an axe (Carroll 1867)","person_ids":["augustus_shorts"]},"FT-0113":{"dir":"FT-0113-death-notice-david-b-shorts-son-of-philip-shorts","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — David B. Shorts, son of Philip Shorts (Transcript Montreal, 8 Nov 1842)","person_ids":["philip_shorts_hallowell","augustus_shorts"],"subject_id":"philip_shorts_hallowell"},"FT-0153":{"dir":"FT-0153-wikitree-short-3451-john-w-short-vitals-research","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3451 — John W Short vitals + researcher note (Susquehanna cluster)","person_ids":["john_shorts","rosannah_monk_shorts","augustus_shorts"]},"FT-0154":{"dir":"FT-0154-wikitree-monk-1058-rosannah-monk-short-vitals","photos":[],"entry":true,"type":"vital","title":"WikiTree Monk-1058 — Rosannah (Monk) Short vitals","person_ids":["rosannah_monk_shorts","john_shorts","augustus_shorts"]},"FT-0155":{"dir":"FT-0155-wikitree-short-3450-augustus-short-parent-link-j","photos":[],"entry":true,"type":"vital","title":"WikiTree Short-3450 — Augustus Short parent link (John W × Rosannah Monk)","person_ids":["augustus_shorts","john_shorts","rosannah_monk_shorts"]},"FT-0043":{"dir":"FT-0043-ohs-papers-st-johns-ernesttown-marriage-register","photos":[],"entry":true,"type":"church","title":"OHS Papers — St. John's Ernesttown marriage register (1792) — Philip & Katreen Shorts witnesses"},"FT-0080":{"dir":"FT-0080-hay-bay-canniff-brebner-barbara-monk-casper-hoov","photos":[],"entry":true,"type":"church","title":"Hay Bay + Canniff/Brebner — Barbara Monk × Casper Hoover (Rosannah’s sister; Catharine’s rescue)","person_ids":["rosannah_monk_shorts","barbara_monk_hover","caspar_huber_uel","catharine_shorts"]},"FT-0087":{"dir":"FT-0087-barbara-monk-hover-s-pewter-platter-palatine-rel","photos":[],"entry":true,"type":"church","title":"Barbara Monk Hover’s pewter platter — Palatine relic, pot-pie bees, and Casper Hover’s death by falling limb","person_ids":["barbara_monk_hover","caspar_huber_uel","rosannah_monk_shorts","john_shorts"]},"FT-0088":{"dir":"FT-0088-vanalstine-loyalist-voyage-shark-at-sea-pork-and","photos":[],"entry":true,"type":"newspaper","title":"VanAlstine Loyalist voyage — shark at sea, pork-and-peas rations, linen tents at Sorel (Canniff tradition)","person_ids":["john_shorts","rosannah_monk_shorts"]},"FT-0090":{"dir":"FT-0090-frances-shorts-jacob-heck-married-into-barbara-h","photos":[],"entry":true,"type":"church","title":"Frances Shorts × Jacob Heck — married into Barbara Heck’s family; Heck House on the St. Lawrence","person_ids":["frances_shorts_heck","john_shorts","rosannah_monk_shorts"]},"FT-0092":{"dir":"FT-0092-catharine-shorts-arra-ferguson-orphan-bride-pict","photos":[],"entry":true,"type":"church","title":"Catharine Shorts × Arra Ferguson — orphan bride; Picton church land; Ferguson & Catherine Streets; class with Dunham’s flock","person_ids":["catharine_shorts","john_shorts","rosannah_monk_shorts"]},"FT-0042":{"dir":"FT-0042-exploring-niagara-butlers-rangers-nominal-list-p","photos":[],"entry":true,"type":"military","title":"Exploring Niagara — Butler's Rangers nominal list (privates) — SHORTS, JOHN E.","person_ids":["john_shorts"]},"FT-0081":{"dir":"FT-0081-smy-annotated-nominal-roll-of-butler-s-rangers-s","photos":["photos/01-smy-short-john-henry.png","photos/02-smy-source-E52-harvey.png","photos/03-smy-source-E75-ousterhout.png"],"entry":true,"type":"military","title":"Smy — Annotated Nominal Roll of Butler’s Rangers — Short, John Henry (private)","person_ids":["john_shorts"]},"FT-0423":{"dir":"FT-0423-nyc-open-data-marriage-index-florence-hahn-seymour-cohn","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Florence Hahn × Seymour Cohn, Manhattan 25642, 2 Sep 1926","person_ids":["florence_hahn","seymour_cohn"]},"FT-0416":{"dir":"FT-0416-nyc-open-data-mamlock-sisters-marriage-index-pairs","photos":[],"entry":true,"type":"vital","title":"NYC Open Data marriage index — Mamlock sisters × Aronsohn / Geiger / Michaels","person_ids":["franciska_mamlock","leo_p_aronsohn","esther_mamlock","charles_geiger","emma_mamlock","aloe_michaels"]},"FT-0419":{"dir":"FT-0419-nyc-open-data-death-index-leon-aronsohn-bronx-1500-1921-candidate","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Leon Aronsohn, Bronx 1500, 6 Mar 1921 age 55 (Leo P. candidate)","person_ids":["leo_p_aronsohn","franciska_mamlock"]},"FT-0422":{"dir":"FT-0422-nyc-open-data-death-index-esther-geiger-emma-michaels","photos":[],"entry":true,"type":"vital","title":"NYC Open Data death index — Esther Geiger Manh 1197/1944 · Emma Michaels Manh 6504/1942","person_ids":["esther_mamlock","emma_mamlock"]},"FT-0190":{"dir":"FT-0190-marriage-index-perkins-belle-stonebraker-1896","photos":[],"entry":true,"type":"vital","title":"Mills Co. marriage index — Solomon M. Perkins × Belle Stonebraker (23 Dec 1896)","person_ids":["belle_stonebraker","solomon_m_perkins"]},"FT-0535":{"dir":"FT-0535-emily-jane-maupin-anderson-fag-parents","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Emily Jane Maupin Anderson parent grid","person_ids":["emily_jane_maupin_anderson","jarrett_tobias_maupin","lucinda_adeline_hastain_maupin","susan_ann_maupin_brendel","samuel_clayborn_maupin","hugh_darwin_anderson"]},"FT-0109":{"dir":"FT-0109-why-barbara-heck-matters-mother-of-methodism-joh","photos":[],"entry":true,"type":"church","title":"Why Barbara Heck matters — Mother of Methodism (John Street → Upper Canada)","person_ids":["frances_shorts_heck","don_shorts"]},"FT-0110":{"dir":"FT-0110-the-blue-church-augusta-place-pack-why-it-belong","photos":["photos/02-blue-church-exterior.jpg","photos/03-blue-church-roadside.jpg"],"entry":true,"type":"place","title":"The Blue Church (Augusta) — place pack + why it belongs in a future story","person_ids":["frances_shorts_heck","don_shorts"]},"FT-0143":{"dir":"FT-0143-find-a-grave-133464931-thomas-godfrey-hughs-spou","photos":[],"entry":true,"type":"vital","title":"Find A Grave 133464931 — Thomas Godfrey Hughs (spouse of Elizabeth Shorts)","person_ids":["elizabeth_shorts_hughes"]},"FT-0091":{"dir":"FT-0091-barbara-heck-cards-in-the-fire-embury-preached-m","photos":[],"entry":true,"type":"church","title":"Barbara Heck — cards in the fire, Embury preached, Mother of Methodism; Blue Church monument (mother-in-law of Frances Shorts)","person_ids":["frances_shorts_heck"]},"FT-0093":{"dir":"FT-0093-1891-adolphustown-wedding-pewter-platter-brought","photos":[],"entry":true,"type":"newspaper","title":"1891 Adolphustown wedding — pewter platter ‘brought to Canada by Barbara Heck’ serves the roast goose","person_ids":["frances_shorts_heck"]},"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd","marcy_parsons","bill_parsons","morganne","dan_rudd","nancy_rudd","derek_rudd","matthew_rudd"]},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)","person_ids":["bill_parsons","marcy_parsons","george_rudd","morganne"]}};

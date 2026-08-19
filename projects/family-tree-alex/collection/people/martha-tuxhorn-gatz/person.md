@@ -11,7 +11,7 @@ burial: Olive Lawn Memorial Park, La Mirada, Los Angeles County, California, USA
 parents: [leo_tuxhorn, ida_tuxhorn]
 spouses: [irvin]
 children: [gloria]
-object_ids: [FT-0005, FT-0103, FT-0313, FT-0314]
+object_ids: [FT-0005, FT-0103, FT-0313, FT-0314, FT-0553, FT-0579, FT-0582, FT-0585]
 confidence: Confirmed
 verified: true
 status: cataloged

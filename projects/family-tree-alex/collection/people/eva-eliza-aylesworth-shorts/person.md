@@ -40,6 +40,12 @@ sources:
   - label: "Ontario cluster wave: docs/research/people/proposals/ontario-cluster-wave.md"
     url: ""
 media:
+  - file: media/fag-138634881-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-138634881]
+    source: "Find A Grave memorial 138634881 — Eva Eliza <I>Aylesworth</I> Shorts"
+    source_url: https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633&size=original
+    captured_at: 2026-08-19
   - file: media/knights-cemetery-fag-cover.jpeg
     kind: headstone
     source: "Find A Grave memorial 138634881 (cemetery cover; no individual stone photo on memorial)"

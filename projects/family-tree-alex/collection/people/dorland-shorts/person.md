@@ -33,6 +33,18 @@ sources:
   - label: "FamilySearch wave soft-ingest: docs/research/people/proposals/familysearch-wave.md (C94–C95)"
     url: ""
 media:
+  - file: media/fag-8850577-03-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-8850577]
+    source: "Find A Grave memorial 8850577"
+    source_url: https://images.findagrave.com/photos/2012/306/100072423_135191958703.jpg?size=photoThumbnails
+    captured_at: 2026-08-19
+  - file: media/fag-8850577-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-8850577]
+    source: "Find A Grave memorial 8850577"
+    source_url: https://images.findagrave.com/photos/2020/200/UNCEM_2276932_2544aade-8d32-49df-9e92-4e7a61f99599.jpeg?v=1595089633&size=photoThumbnails
+    captured_at: 2026-08-19
   - file: media/fag-8850577-mount-hope-full.jpg
     kind: other
     tags: [mount-hope, fag-gallery, fag-8850577]

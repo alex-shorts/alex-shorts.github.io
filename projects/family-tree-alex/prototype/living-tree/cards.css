@@ -201,6 +201,25 @@
   opacity: 0.32;
 }
 
+.card-host.is-dim.is-peek-dim {
+  opacity: 0.18;
+}
+
+.card-host.is-collateral.is-dim.is-peek-dim {
+  opacity: 0.22;
+}
+
+.card-host.is-peek-hot,
+.card-host.is-peek-hot.is-collateral,
+.card-host.is-peek-hot.is-dim,
+.card-host.is-peek-hot.is-sprawled {
+  opacity: 1;
+}
+
+.card-host.is-peek-hot {
+  z-index: 6;
+}
+
 .card-host.is-selected .person-card {
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 55%, transparent);
 }
@@ -210,12 +229,12 @@
   opacity: 0.75;
 }
 
-/* Expand +/− — top-left, behind the card so they peek from under the edge */
+/* Expand +/− sit above the card so the hit target is the button, not the portrait */
 .expand-row-top {
   position: absolute;
   left: calc(var(--card-w) / -2 + 2px);
   top: calc(var(--card-h) / -2 - 13px);
-  z-index: 0;
+  z-index: 8;
   display: flex;
   gap: 3px;
   transform: none;
@@ -275,7 +294,7 @@
   position: absolute;
   left: calc(var(--card-w) / -2 + 2px);
   top: calc(var(--card-h) / 2 - 4px);
-  z-index: 0;
+  z-index: 8;
   transform: none;
 }
 

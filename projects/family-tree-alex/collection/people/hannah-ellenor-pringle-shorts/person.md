@@ -50,6 +50,24 @@ sources:
   - label: "Pringle PDF Gen4 — seven children of Augustus × Hannah (#50–56)"
     url: "https://www.pollymoth.com/genealogies/pri247283.pdf"
 media:
+  - file: media/fag-130725257-04-headstone.jpg
+  - file: media/fag-133462968-02-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-133462968]
+    source: "Find A Grave memorial 133462968 — Memorial photo 106164388"
+    source_url: https://images.findagrave.com/photos/2014/208/133462968_1406580803.jpg
+    captured_at: 2026-08-19
+    kind: headstone
+    tags: [fag-gallery, fag-130725257]
+    source: "Find A Grave memorial 130725257"
+    source_url: https://images.findagrave.com/photos/2021/182/144753754_6be5ed9c-e9d4-4fdb-b4a3-63b123cfb392.jpeg?size=photoThumbnails
+    captured_at: 2026-08-19
+  - file: media/fag-130725257-05-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-130725257]
+    source: "Find A Grave memorial 130725257"
+    source_url: https://images.findagrave.com/photos/2014/201/132492394_1405988525.jpg?size=photoThumbnails
+    captured_at: 2026-08-19
   - file: media/fag-133462968-sexsmith-row.jpg
     kind: headstone
     shared: true

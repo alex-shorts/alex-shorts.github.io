@@ -37,6 +37,18 @@ sources:
   - label: "DNA Gatz ascent: docs/research/people/proposals/dna-gatz-ascent.md"
     url: ""
 media:
+  - file: media/fag-116578895-02-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-116578895]
+    source: "Find A Grave memorial 116578895 — Memorial photo 88002392"
+    source_url: https://images.findagrave.com/photos/2013/247/116578895_137840861568.jpg?size=original
+    captured_at: 2026-08-19
+  - file: media/fag-116578895-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-116578895]
+    source: "Find A Grave memorial 116578895 — John Wilhelm Gatz"
+    source_url: https://images.findagrave.com/photos/2013/247/116578895_137840866831.jpg?size=original
+    captured_at: 2026-08-19
   - file: media/headstone-mcpherson-2013.jpg
     kind: headstone
     source: Find A Grave 116578895 — McPherson Cemetery

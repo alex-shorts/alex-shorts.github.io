@@ -54,6 +54,7 @@
       ui.upOpen ? "1" : "0",
       ui.showOne ? "1" : "0",
       ui.showAll ? "1" : "0",
+      ui.showKids ? "1" : "0",
       ui.downHidden ? "1" : "0",
       ui.downOpen ? "1" : "0",
     ].join("|");
@@ -141,14 +142,14 @@
     }
     if (all) all.hidden = !ui.showAll;
     if (kids) {
-      kids.hidden = !(ui.downHidden || ui.downOpen);
-      kids.classList.toggle("is-collapse", !ui.downHidden && ui.downOpen);
-      if (ui.downHidden) {
-        kids.setAttribute("aria-label", "Expand children");
-        kids.title = "Expand children";
-      } else if (ui.downOpen) {
-        kids.setAttribute("aria-label", "Collapse children");
-        kids.title = "Collapse children";
+      kids.hidden = !(ui.showKids || ui.downHidden || ui.downOpen);
+      kids.classList.toggle("is-collapse", Boolean(ui.downOpen));
+      if (ui.downOpen) {
+        kids.setAttribute("aria-label", "Hide siblings");
+        kids.title = "Hide siblings";
+      } else {
+        kids.setAttribute("aria-label", "Show siblings");
+        kids.title = "Show siblings";
       }
     }
   }
@@ -158,12 +159,24 @@
   }
 
   function bindHost(host, id) {
+    host.addEventListener(
+      "pointerdown",
+      (event) => {
+        if (event.target.closest(".expand-btn")) event.stopPropagation();
+      },
+      true
+    );
     host.addEventListener("click", (event) => {
       event.stopPropagation();
-      if (event.target.closest(".expand-one")) hooks.onExpandOne?.(id);
-      else if (event.target.closest(".expand-all")) hooks.onExpandAll?.(id);
-      else if (event.target.closest(".expand-kids")) hooks.onExpandKids?.(id);
-      else if (!event.target.closest(".expand-btn")) hooks.onSelect?.(id);
+      const btn = event.target.closest(".expand-btn");
+      if (btn) {
+        event.preventDefault();
+        if (btn.classList.contains("expand-one")) hooks.onExpandOne?.(id);
+        else if (btn.classList.contains("expand-all")) hooks.onExpandAll?.(id);
+        else if (btn.classList.contains("expand-kids")) hooks.onExpandKids?.(id);
+        return;
+      }
+      hooks.onSelect?.(id);
     });
     if (!global.d3) return;
     global.d3.select(host).call(
@@ -255,11 +268,16 @@
     }
   }
 
-  function highlight(selectedId, hot) {
+  function highlight(selectedId, hot, opts = {}) {
+    const peek = opts.peek === true;
     for (const [id, host] of hostById) {
+      const isHot = hot.has(id);
       host.classList.toggle("is-selected", id === selectedId);
-      host.classList.toggle("is-dim", Boolean(selectedId) && !hot.has(id));
-      if (id === selectedId) host.style.zIndex = "4";
+      host.classList.toggle("is-peek-hot", peek && isHot);
+      host.classList.toggle("is-dim", (peek || Boolean(selectedId)) && !isHot);
+      host.classList.toggle("is-peek-dim", peek && !isHot);
+      if (peek && isHot) host.style.zIndex = "6";
+      else if (id === selectedId) host.style.zIndex = "4";
     }
   }
 

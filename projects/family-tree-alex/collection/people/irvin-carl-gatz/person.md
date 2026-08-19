@@ -16,7 +16,7 @@ parent_links:
     confidence: Confirmed
 spouses: [martha]
 children: [gloria]
-object_ids: [FT-0005, FT-0098, FT-0354]
+object_ids: [FT-0005, FT-0098, FT-0354, FT-0583, FT-0585, FT-0586]
 confidence: Confirmed
 verified: true
 status: cataloged

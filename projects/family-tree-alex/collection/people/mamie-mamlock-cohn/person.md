@@ -11,7 +11,7 @@ burial: Mt. Carmel Cemetery, Brooklyn
 parents: [mayer_mamlock, rochelle_kahn]
 spouses: [monroe_cohn]
 children: [myron_mamlock_cole, seymour_cohn]
-object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0240, FT-0260, FT-0261, FT-0262, FT-0306, FT-0398, FT-0418, FT-0421, FT-0426]
+object_ids: [FT-0022, FT-0023, FT-0024, FT-0025, FT-0094, FT-0095, FT-0240, FT-0260, FT-0261, FT-0262, FT-0306, FT-0398, FT-0418, FT-0421, FT-0426, FT-0565]
 confidence: Confirmed
 verified: true
 status: researching

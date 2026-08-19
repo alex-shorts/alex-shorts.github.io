@@ -19,7 +19,7 @@ parent_links:
     confidence: Possible
 spouses: [henry_f_achilles]
 children: [ida_tuxhorn]
-object_ids: []
+object_ids: [FT-0580, FT-0584]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -35,6 +35,12 @@ sources:
   - label: "Round 9 proposal: docs/research/people/proposals/round-9-tuxhorn-achilles.md"
     url: ""
 media:
+  - file: media/fag-48236265-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-48236265]
+    source: "Find A Grave memorial 48236265 — Caroline <I>Waescher</I> Achilles"
+    source_url: https://images.findagrave.com/photos/2010/98/48236265_127086953140.jpg?size=original
+    captured_at: 2026-08-19
   - ref: henry-f-achilles/media/headstone-inman-2010.jpg
     kind: headstone
     source: Find A Grave memorial 48236265 — joint stone with Henry F. (canonical bytes under henry-f-achilles)

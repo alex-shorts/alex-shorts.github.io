@@ -328,6 +328,195 @@
     return /^FT-\d+$/.test(id) ? `${id} · ${kind}` : kind;
   }
 
+  /** Sidebar list: human title primary (not FT-####). */
+  function objectListTitle(o) {
+    const title = String(o?.title || "").trim();
+    if (title && !isAccessionId(title)) {
+      return title.length > 80 ? `${title.slice(0, 78)}…` : title;
+    }
+    return humanizeObjectDir(o?.dirName || o?.dir) || "Artifact";
+  }
+
+  /** Sidebar list: accession + type as secondary line. */
+  function objectListMeta(o) {
+    const id = String(o?.id || "").toUpperCase();
+    const type = String(o?.type || inferTypeFromDir(o?.dirName || o?.dir) || "").toLowerCase();
+    const kind = (type && OBJECT_TYPE_LABELS[type]) || type || "Document";
+    return /^FT-\d+$/.test(id) ? `${id} · ${kind}` : kind;
+  }
+
+  function yamlIds(v) {
+    if (Array.isArray(v)) return v.map((s) => String(s).trim()).filter(Boolean);
+    const s = String(v || "").trim();
+    const m = s.match(/^\[(.*)\]$/);
+    if (m) {
+      return m[1]
+        .split(",")
+        .map((x) => x.trim())
+        .filter(Boolean);
+    }
+    return s ? [s] : [];
+  }
+
+  function foldName(s) {
+    return String(s || "")
+      .toLowerCase()
+      .replace(/[“”"']/g, "")
+      .replace(/\bn[ée]e\b/g, "")
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function nameInTitle(person, title) {
+    if (!person) return false;
+    const t = foldName(title);
+    const names = [person.name, ...(person.aka || [])];
+    return names.some((n) => {
+      const parts = foldName(n)
+        .split(" ")
+        .filter((w) => w.length > 1);
+      if (!parts.length) return false;
+      if (parts.length === 1) return t.includes(parts[0]);
+      return t.includes(parts[0]) && t.includes(parts[parts.length - 1]);
+    });
+  }
+
+  function obituarySubjectIds(obj, people) {
+    if (String(obj?.type || "").toLowerCase() !== "obituary") return [];
+    const declared = yamlIds(obj.subjectIds || obj.subject_id || obj.subjectId || "");
+    if (declared.length) return declared;
+    const ids = yamlIds(obj.personIds || obj.person_ids || "");
+    const title = String(obj.title || "");
+    const hits = ids.filter((id) => nameInTitle(people[id], title));
+    if (hits.length) return hits;
+    return ids[0] ? [ids[0]] : [];
+  }
+
+  function parentRole(subject, people) {
+    const sex = people[subject]?.sex;
+    if (sex === "f") return "mother";
+    if (sex === "m") return "father";
+    return "parent";
+  }
+
+  function childRole(subject, people) {
+    const sex = people[subject]?.sex;
+    if (sex === "f") return "daughter";
+    if (sex === "m") return "son";
+    return "child";
+  }
+
+  function givenName(person) {
+    return String(person?.name || "").split(/\s+/)[0] || "Family";
+  }
+
+  function subjectObituaryName(obj, subjectId, people) {
+    if (people[subjectId]?.name) return people[subjectId].name;
+    const title = String(obj.title || "");
+    const parts = title.split(/[—–]/);
+    if (parts.length > 1) {
+      return parts
+        .slice(1)
+        .join("—")
+        .replace(/\s*\([^)]*\)\s*$/, "")
+        .trim();
+    }
+    return "Family";
+  }
+
+  /** When an obit hangs on a relative: "George E. Rudd's Obituary — Marcy's father" */
+  function obituaryConnectionLabel(obj, viewer, people) {
+    const subjects = obituarySubjectIds(obj, people);
+    const subjectId = subjects.find((id) => (viewer.parents || []).includes(id)) || subjects[0] || "";
+    const who = subjectObituaryName(obj, subjectId, people);
+    const first = givenName(viewer);
+    if (subjectId && (viewer.parents || []).includes(subjectId)) {
+      return `${who}'s Obituary — ${first}'s ${parentRole(subjectId, people)}`;
+    }
+    if (subjectId && (viewer.children || []).includes(subjectId)) {
+      return `${who}'s Obituary — ${first}'s ${childRole(subjectId, people)}`;
+    }
+    if (subjectId && (viewer.spouses || []).includes(subjectId)) {
+      return `${who}'s Obituary — ${first}'s spouse`;
+    }
+    for (const sid of viewer.spouses || []) {
+      const spouse = people[sid];
+      if (!spouse || !subjectId) continue;
+      if ((spouse.parents || []).includes(subjectId)) {
+        return `${who}'s Obituary — ${givenName(spouse)}'s ${parentRole(subjectId, people)}`;
+      }
+    }
+    return `${who}'s Obituary`;
+  }
+
+  /**
+   * Obituaries belong to the deceased when they have a node on this tree.
+   * Named survivors do not get the clipping. If the deceased is not on this
+   * tree, hang it on mentioned kin with a connection label.
+   */
+  function hangObituaryOnPerson(obj, personId, people) {
+    if (String(obj?.type || "").toLowerCase() !== "obituary") return true;
+    const subjects = obituarySubjectIds(obj, people);
+    if (!subjects.length) return true;
+    const onTree = subjects.filter((id) => people[id]);
+    if (onTree.length) return onTree.includes(personId);
+    return true;
+  }
+
+  function objectPanelLabel(obj, person, people) {
+    if (String(obj?.type || "").toLowerCase() !== "obituary") {
+      return objectAccessionLabel(obj);
+    }
+    const subjects = obituarySubjectIds(obj, people);
+    if (subjects.includes(person.id)) return objectAccessionLabel(obj);
+    return obituaryConnectionLabel(obj, person, people);
+  }
+
+  {
+    const full = {
+      george_rudd: {
+        id: "george_rudd",
+        name: "George E. Rudd",
+        sex: "m",
+        parents: [],
+        spouses: [],
+        children: ["marcy_parsons"],
+      },
+      marcy_parsons: {
+        id: "marcy_parsons",
+        name: "Marcy Parsons",
+        parents: ["george_rudd"],
+        spouses: ["bill_parsons"],
+        children: [],
+      },
+      bill_parsons: {
+        id: "bill_parsons",
+        name: "Bill Parsons",
+        parents: [],
+        spouses: ["marcy_parsons"],
+        children: [],
+      },
+    };
+    const obit = {
+      type: "obituary",
+      id: "FT-0008",
+      title: "Press-Enterprise — George E. Rudd",
+      personIds: ["george_rudd", "marcy_parsons", "bill_parsons"],
+    };
+    console.assert(hangObituaryOnPerson(obit, "george_rudd", full), "obit hangs on deceased");
+    console.assert(!hangObituaryOnPerson(obit, "bill_parsons", full), "obit must not hang on survivor");
+    const pruned = { marcy_parsons: full.marcy_parsons, bill_parsons: full.bill_parsons };
+    console.assert(
+      hangObituaryOnPerson(obit, "marcy_parsons", pruned),
+      "obit hangs on kin when deceased has no node"
+    );
+    console.assert(
+      /father|mother|parent/i.test(objectPanelLabel(obit, pruned.marcy_parsons, pruned)),
+      "off-tree obit names the connection"
+    );
+  }
+
   /** Infer gallery category from kind + filename (index often stores paths only). */
   function inferGalleryKey(name, kind) {
     const k = String(kind || "").toLowerCase();
@@ -916,12 +1105,17 @@
 
     const rawTitle = String(meta.title || row?.title || "").trim();
     const title = rawTitle && !isAccessionId(rawTitle) ? rawTitle : humanizeObjectDir(dirName) || objectId;
+    const personIds = yamlIds(meta.person_ids || row?.person_ids);
+    const subjectId = String(meta.subject_id || meta.owner || row?.subject_id || "").trim();
 
     return {
       id: objectId,
       dirName,
       title,
       type,
+      personIds,
+      subjectId,
+      subject_id: subjectId,
       sourceUrl: meta.source_url || "",
       bodyPath: entryUrl,
       bodyText: body || "",
@@ -993,6 +1187,31 @@
     return items;
   }
 
+  function flattenObjectsIndex(idx) {
+    return Object.entries(idx || {}).map(([id, row]) => ({
+      id,
+      dir: row.dir || id,
+      dirName: row.dir || id,
+      title: String(row.title || "").trim() || humanizeObjectDir(row.dir || id),
+      type: String(row.type || inferTypeFromDir(row.dir || id) || "document").toLowerCase(),
+      person_ids: yamlIds(row.person_ids || row.personIds || []),
+      photos: row.photos || [],
+    }));
+  }
+
+  function searchObjects(query, idx, map) {
+    const rows = flattenObjectsIndex(idx);
+    const q = String(query || "")
+      .trim()
+      .toLowerCase();
+    if (!q) return rows;
+    return rows.filter((row) => {
+      const peopleNames = (row.person_ids || []).map((pid) => map[pid]?.name || pid).join(" ");
+      const hay = [row.id, row.title, row.type, row.dir, peopleNames].join(" ").toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
   global.ShareData = {
     GEN_COLORS,
     PEOPLE_ROOT,
@@ -1018,8 +1237,15 @@
     childConfidence,
     edgeClass,
     loadObjectArtifact,
+    ensureObjectsIndex,
+    flattenObjectsIndex,
+    searchObjects,
     objectGalleryLabel,
     objectAccessionLabel,
+    objectListTitle,
+    objectListMeta,
+    hangObituaryOnPerson,
+    objectPanelLabel,
     maidenFrom,
     personMediaArtifacts,
     inferGalleryKey,

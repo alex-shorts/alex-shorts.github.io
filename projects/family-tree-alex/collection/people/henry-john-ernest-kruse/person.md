@@ -3,11 +3,11 @@ id: henry_john_ernest_kruse
 slug: henry-john-ernest-kruse
 name: Henry John Ernest Kruse
 aka: []
-birth:
-death:
-birth_place:
-death_place:
-burial:
+birth: 1862-08-28
+death: 1948-11-04
+birth_place: Germany
+death_place: Falls City, Richardson County, Nebraska, USA
+burial: Steele Cemetery, Falls City, Richardson County, Nebraska, USA
 parents: [henry_kruse, marie_wolf_kruse]
 parent_links:
   - id: henry_kruse
@@ -16,27 +16,30 @@ parent_links:
     confidence: Probable
 spouses: []
 children: []
-object_ids: []
+object_ids: [FT-0737]
 confidence: Probable
 verified: false
 status: cataloged
 sources:
+  - label: "Find A Grave 139035468 — Henry John Ernest Kruse"
+    url: "https://www.findagrave.com/memorial/139035468/henry_john_ernest-kruse"
   - label: "Find A Grave sibling grid — Henry Kruse 127003248"
     url: "https://www.findagrave.com/memorial/127003248/henry-kruse"
-  - label: "DNA Kruse-Wolf parents: docs/research/people/proposals/dna-kruse-wolf-parents-2026-08-08.md"
+  - label: "Lean CONNECT 2026-08-18: docs/research/people/proposals/kruse-wolf-up-2026-08-18.md"
     url: ""
 media: []
 ---
 ## Summary
 
-**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312**). FAG grid name only. Distinct from unrelated Henry H. Kruse (Amanda Meyer line). Stay `verified: false`.
+**Probable** son of **Henry Kruse** × **Marie “Mary” Wolf Kruse** (**C1312** / **C2743**). FAG **139035468**: **28 Aug 1862** Germany – **4 Nov 1948** Falls City, NE; Steele Cemetery. Parent grid = Henry × Marie only. Distinct from unrelated Henry H. Kruse (Amanda Meyer line). Stay `verified: false`.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Son of Henry Kruse × Marie Wolf Kruse | Probable | FAG sibling grid | https://www.findagrave.com/memorial/127003248/henry-kruse | **C1312** |
+| Son of Henry Kruse × Marie Wolf Kruse | Probable | FAG parent grid | https://www.findagrave.com/memorial/139035468/henry_john_ernest-kruse | **C2743** |
+| 28 Aug 1862 Germany – 4 Nov 1948 Falls City NE | Probable | FAG vitals | https://www.findagrave.com/memorial/139035468/henry_john_ernest-kruse | |
 
 ## Open questions
 
-Vitals; own memorial; obit.
+Spouse Kathrina Brecht on FAG — not ingested (in-law).
