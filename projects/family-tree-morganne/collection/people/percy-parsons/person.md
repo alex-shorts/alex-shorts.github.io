@@ -11,7 +11,7 @@ burial:
 parents: []
 spouses: [kate_parsons]
 children: [nelson_b_parsons, perry_parsons]
-object_ids: [FT-0443]
+object_ids: [FT-0443, FT-0571, FT-0572, FT-0578]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -56,5 +56,5 @@ Father of **Nelson B. Parsons** (Morganne ascent). **LOCKED — legal vital** **
 ## Open questions
 
 - Birth/death/burial; relation to 1880 Perry (likely son, not this Percy)
-- **Parents:** 1872 passenger last residence / ME VR Kate×William / CA DC 67186 — **C2280 Blocked**
+- **Parents:** 1872 passenger last residence / ME VR Kate×William / CA DC 67186 — **C2280 Blocked**. 1870 New Sweden first-settler Perssons ≠ this Percy (**C2372**) — [`marcy-line-sweden-canada-2026-08-17.md`](../../../docs/research/people/proposals/marcy-line-sweden-canada-2026-08-17.md)
 ---

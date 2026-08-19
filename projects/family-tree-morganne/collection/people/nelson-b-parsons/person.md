@@ -11,7 +11,7 @@ burial: Olivewood Cemetery, Riverside, California (T-2-1-5)
 parents: [percy_parsons, kate_parsons]
 spouses: [harriet_b_foss_parsons]
 children: [dorothy_parsons_prichard, sarah_mona_parsons, harold_ambrose_parsons, autis_foss_parsons_hicks, gerald_allen_parsons]
-object_ids: [FT-0010, FT-0443]
+object_ids: [FT-0010, FT-0443, FT-0572, FT-0573]
 confidence: Confirmed
 verified: true
 status: cataloged

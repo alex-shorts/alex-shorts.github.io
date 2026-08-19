@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-15",
+  "updated": "2026-08-19",
   "objects": {
     "FT-0008": {
       "dir": "FT-0008-press-enterprise-george-e-rudd",
@@ -9,21 +9,161 @@
       ],
       "entry": true,
       "type": "obituary",
-      "title": "Press-Enterprise — George E. Rudd"
+      "title": "Press-Enterprise — George E. Rudd",
+      "person_ids": [
+        "george_rudd",
+        "clause_rudd",
+        "della_elizabeth_rudd",
+        "marcy_parsons",
+        "bill_parsons",
+        "morganne",
+        "dan_rudd",
+        "nancy_rudd",
+        "derek_rudd",
+        "matthew_rudd"
+      ]
     },
     "FT-0457": {
       "dir": "FT-0457-sabr-bill-parsons-married-marcy-rae-rudd",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"
+      "title": "SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)",
+      "person_ids": [
+        "bill_parsons",
+        "marcy_parsons",
+        "george_rudd",
+        "morganne"
+      ]
+    },
+    "FT-0470": {
+      "dir": "FT-0470-dan-rudd-alex-interview-2026-08-17",
+      "photos": [],
+      "entry": true,
+      "type": "narration",
+      "title": "Dan Rudd × Alex Shorts interview (17 Aug 2026)",
+      "person_ids": [
+        "dan_rudd",
+        "alexander",
+        "marcy_parsons",
+        "george_rudd",
+        "clause_rudd",
+        "della_elizabeth_rudd"
+      ]
+    },
+    "FT-0576": {
+      "dir": "FT-0576-riverside-orange-empire-citrus-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Riverside Orange Empire — citrus landscape for Marion Orciere’s youth",
+      "person_ids": [
+        "marion_orciere",
+        "theodore_m_orciere",
+        "rachel_g_orciere"
+      ]
+    },
+    "FT-0577": {
+      "dir": "FT-0577-crestlawn-riverside-orciere-burials",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Crestlawn Memorial Park — Riverside resting place (Orciere family)",
+      "person_ids": [
+        "marion_orciere",
+        "theodore_m_orciere",
+        "rachel_g_orciere"
+      ]
     },
     "FT-0455": {
       "dir": "FT-0455-hbc-edmonton-downtown-rudd-years",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)"
+      "title": "HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)",
+      "person_ids": [
+        "clause_rudd",
+        "george_rudd",
+        "della_elizabeth_rudd"
+      ]
+    },
+    "FT-0497": {
+      "dir": "FT-0497-mnopedia-swedish-minnesota-farm-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "MNopedia — Swedish Minnesota farm settlements (Claus’s birth-state landscape)",
+      "person_ids": [
+        "clause_rudd",
+        "george_rudd"
+      ]
+    },
+    "FT-0498": {
+      "dir": "FT-0498-great-plains-dakota-swedish-farm-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Great Plains — Swedish farm settlements in the Dakotas (landscape, not a named Rudd farm)",
+      "person_ids": [
+        "clause_rudd",
+        "george_rudd"
+      ]
+    },
+    "FT-0501": {
+      "dir": "FT-0501-corona-eighth-and-joy-market-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Corona 8th & Joy — lemon-capital landscape for the family market",
+      "person_ids": [
+        "george_rudd",
+        "clause_rudd",
+        "della_elizabeth_rudd"
+      ]
+    },
+    "FT-0502": {
+      "dir": "FT-0502-la-restaurant-row-encore",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "L.A. Restaurant Row — The Encore on La Cienega",
+      "person_ids": [
+        "george_rudd"
+      ]
+    },
+    "FT-0590": {
+      "dir": "FT-0590-westmount-126th-boarding-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Westmount 126th Street — where Claus boarded in 1931",
+      "person_ids": [
+        "clause_rudd",
+        "della_elizabeth_rudd",
+        "george_rudd"
+      ]
+    },
+    "FT-0591": {
+      "dir": "FT-0591-corona-lemon-boom-1930s-arrival",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Corona lemon boom — landscape when the Rudds arrived (1931)",
+      "person_ids": [
+        "george_rudd",
+        "clause_rudd",
+        "della_elizabeth_rudd"
+      ]
+    },
+    "FT-0592": {
+      "dir": "FT-0592-riverside-coachman-university-avenue",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Riverside University Avenue — The Coachman building landscape",
+      "person_ids": [
+        "george_rudd"
+      ]
     },
     "FT-0015": {
       "dir": "FT-0015-death-notice-isaac-olsen-fag-scan",
@@ -32,7 +172,17 @@
       ],
       "entry": true,
       "type": "obituary",
-      "title": "Death notice — Isaac Olsen (FAG scan)"
+      "title": "Death notice — Isaac Olsen (FAG scan)",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen",
+        "della_elizabeth_rudd",
+        "carl_leonard_olson",
+        "william_theodore_olson",
+        "anna_augusta_olson_mclachlin",
+        "pearl_olson_williams",
+        "mabel_victoria_olson_sizer"
+      ]
     },
     "FT-0016": {
       "dir": "FT-0016-death-notice-jennie-olsen-fag-scan",
@@ -41,7 +191,17 @@
       ],
       "entry": true,
       "type": "obituary",
-      "title": "Death notice — Jennie Olsen (FAG scan)"
+      "title": "Death notice — Jennie Olsen (FAG scan)",
+      "person_ids": [
+        "jennie_olsen",
+        "isaac_olsen",
+        "della_elizabeth_rudd",
+        "carl_leonard_olson",
+        "william_theodore_olson",
+        "anna_augusta_olson_mclachlin",
+        "pearl_olson_williams",
+        "mabel_victoria_olson_sizer"
+      ]
     },
     "FT-0020": {
       "dir": "FT-0020-death-notice-william-olson-fag-scan",
@@ -50,56 +210,849 @@
       ],
       "entry": true,
       "type": "obituary",
-      "title": "Death notice — William Olson (FAG scan)"
+      "title": "Death notice — William Olson (FAG scan)",
+      "person_ids": [
+        "william_theodore_olson",
+        "della_elizabeth_rudd",
+        "carl_leonard_olson",
+        "mabel_victoria_olson_sizer",
+        "clause_rudd",
+        "anna_augusta_olson_mclachlin",
+        "pearl_olson_williams"
+      ]
     },
     "FT-0445": {
       "dir": "FT-0445-sdgenweb-lyman-birth-olson-della-1902",
       "photos": [],
       "entry": true,
       "type": "vital",
-      "title": "SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)"
+      "title": "SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)",
+      "person_ids": [
+        "della_elizabeth_rudd",
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
     },
     "FT-0456": {
       "dir": "FT-0456-olivewood-memorial-park-claus-della-burial",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "Olivewood Memorial Park founding — burial landscape for Claus × Della"
+      "title": "Olivewood Memorial Park founding — burial landscape for Claus × Della",
+      "person_ids": [
+        "della_elizabeth_rudd",
+        "clause_rudd"
+      ]
+    },
+    "FT-0503": {
+      "dir": "FT-0503-lyman-county-sd-homestead-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Lyman County, South Dakota — homestead wave around Della’s 1902 birth",
+      "person_ids": [
+        "della_elizabeth_rudd",
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0504": {
+      "dir": "FT-0504-holden-alberta-homestead-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Holden, Alberta — homestead village in Isaac × Jennie’s Canada years",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen",
+        "della_elizabeth_rudd"
+      ]
+    },
+    "FT-0511": {
+      "dir": "FT-0511-1911-census-strathcona-isaac-olson",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1911 Canada Census — Strathcona, Alberta — Isaac Olson household",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen",
+        "mabel_victoria_olson_sizer",
+        "carl_leonard_olson",
+        "pearl_olson_williams",
+        "della_elizabeth_rudd"
+      ]
+    },
+    "FT-0596": {
+      "dir": "FT-0596-fag-family-grid-mabel-victoria-olson-sizer",
+      "photos": [],
+      "entry": true,
+      "type": "memorial",
+      "title": "Find a Grave — Mabel Victoria Olson Sizer family grid",
+      "person_ids": [
+        "mabel_victoria_olson_sizer",
+        "isaac_olsen",
+        "jennie_olsen",
+        "della_elizabeth_rudd"
+      ]
     },
     "FT-0013": {
       "dir": "FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008",
       "photos": [],
       "entry": true,
       "type": "vital",
-      "title": "BC Registration of Death — Isaac Olsen (1947-09-008902)"
+      "title": "BC Registration of Death — Isaac Olsen (1947-09-008902)",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
     },
     "FT-0014": {
       "dir": "FT-0014-bc-registration-of-death-jennie-olsen-56-09-0070",
       "photos": [],
       "entry": true,
       "type": "vital",
-      "title": "BC Registration of Death — Jennie Olsen (56-09-007015)"
+      "title": "BC Registration of Death — Jennie Olsen (56-09-007015)",
+      "person_ids": [
+        "jennie_olsen",
+        "isaac_olsen"
+      ]
+    },
+    "FT-0487": {
+      "dir": "FT-0487-bc-registration-of-death-carl-leonard-olson",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "vital",
+      "title": "BC Registration of Death — Carl Leonard Olson (1984-09-016583)",
+      "person_ids": [
+        "carl_leonard_olson",
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0488": {
+      "dir": "FT-0488-paa-death-index-william-theodore-olson-1963",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Alberta death index 1963 — William Theodor Olson (Tofield 006-953)",
+      "person_ids": [
+        "william_theodore_olson",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0509": {
+      "dir": "FT-0509-1900-census-lyman-sd-isaac-olson",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1900 US Census — Lyman, SD — Isaac Olson household",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen",
+        "william_theodore_olson",
+        "anna_augusta_olson_mclachlin",
+        "mabel_victoria_olson_sizer",
+        "carl_leonard_olson"
+      ]
+    },
+    "FT-0523": {
+      "dir": "FT-0523-fag-negative-jennie-l-rudd-adult",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Find a Grave — Jennie L. Rud/Rudd adult death/burial negative (~1895 MN)",
+      "person_ids": [
+        "jennie_l_rudd",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0543": {
+      "dir": "FT-0543-interment-mountain-view-olsen-plot",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "interment.net — Mountain View Cemetery plot ABRAY-*-16-005-0007 (Isaac × Jennie Olsen)",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0552": {
+      "dir": "FT-0552-fag-gravesite-isaac-jennie-olsen-mountain-view",
+      "photos": [],
+      "entry": true,
+      "type": "memorial",
+      "title": "Find a Grave — Isaac × Jennie Olsen Mountain View gravesite notes",
+      "person_ids": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0554": {
+      "dir": "FT-0554-fag-family-grid-william-theodore-olson",
+      "photos": [],
+      "entry": true,
+      "type": "memorial",
+      "title": "Find a Grave — William Theodore Olson family grid",
+      "person_ids": [
+        "william_theodore_olson",
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0555": {
+      "dir": "FT-0555-fag-bio-carl-leonard-olson-bc-pointer",
+      "photos": [],
+      "entry": true,
+      "type": "memorial",
+      "title": "Find a Grave — Carl Leonard Olson bio (BC Archives pointer)",
+      "person_ids": [
+        "carl_leonard_olson",
+        "isaac_olsen",
+        "jennie_olsen"
+      ]
+    },
+    "FT-0480": {
+      "dir": "FT-0480-bc-death-anna-augusta-mclachlin-1970",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "BC Registration of Death — Anna Augusta McLachlin (1970-09-003207, FAG transcription)",
+      "person_ids": [
+        "anna_augusta_olson_mclachlin",
+        "isaac_olsen"
+      ]
     },
     "FT-0444": {
       "dir": "FT-0444-henderson-edmonton-1931-chas-y-rudd",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)"
+      "title": "Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)",
+      "person_ids": [
+        "clause_rudd"
+      ]
     },
     "FT-0454": {
       "dir": "FT-0454-hbc-wholesale-claus-rudd-edmonton-trade",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade"
+      "title": "What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0493": {
+      "dir": "FT-0493-hogman-soldatnamn-andersson-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Högman — Swedish soldatnamn: Andersson patronymic vs soldier surname",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0494": {
+      "dir": "FT-0494-aberg-soldiers-surnames-sweden-1984",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Åberg 1984 — Soldiers' surnames in Sweden (War Archives historian)",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0495": {
+      "dir": "FT-0495-rudd-class-soldatnamn-rude-rote",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Rudd-class soldier names — rote Rude / Rudha (example, not this family)",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0496": {
+      "dir": "FT-0496-swedish-service-length-not-two-year-swap",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "Swedish service length — allotted career vs 1901 conscription (not a 2-year swap)",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0500": {
+      "dir": "FT-0500-revillon-edmonton-claus-wholesale",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Revillon Frères Edmonton warehouse — Claus’s 1921 wholesale clerk job",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0506": {
+      "dir": "FT-0506-1910-census-roberts-sd-carl-j-rud",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1910 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud household",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "fritz_e_rudd",
+        "clause_rudd",
+        "jennie_l_rudd",
+        "hattie_a_rudd",
+        "carl_h_rudd"
+      ]
+    },
+    "FT-0508": {
+      "dir": "FT-0508-elca-baptism-klaus-jorgen-rud-1893",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham, Minnesota",
+      "person_ids": [
+        "clause_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0510": {
+      "dir": "FT-0510-wwi-draft-claus-yugue-rud-louisburg",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "WWI draft — Claus Yugue Rud, born Louisburg, Minnesota",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0525": {
+      "dir": "FT-0525-olivewood-negative-fritz-jennie-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Olivewood Riverside — Fritz E. / Jennie L. Rud not buried with Claus/Albin",
+      "person_ids": [
+        "fritz_e_rudd",
+        "jennie_l_rudd",
+        "clause_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0562": {
+      "dir": "FT-0562-louisburg-platted-1887-birthplace",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Louisburg platted 1887 — Claus's named birthplace hamlet (Lac qui Parle Co.)",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0568": {
+      "dir": "FT-0568-bellingham-perry-pioneer-railroad-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Bellingham / Perry area pioneer landscape — sod houses, monthly preaching, GN railroad 1887",
+      "person_ids": [
+        "clause_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0569": {
+      "dir": "FT-0569-lqp-scandinavian-lutheran-home-church",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Lac qui Parle Scandinavian Lutheran — home services, Swedish worship, Providence church",
+      "person_ids": [
+        "clause_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0570": {
+      "dir": "FT-0570-roberts-county-1892-homestead-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Roberts County, SD — 1892 reservation opening & farm homestead landscape",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "clause_rudd",
+        "fritz_e_rudd",
+        "jennie_l_rudd",
+        "hattie_a_rudd",
+        "carl_h_rudd"
+      ]
+    },
+    "FT-0587": {
+      "dir": "FT-0587-henderson-edmonton-1921-claus-revillon",
+      "photos": [],
+      "entry": true,
+      "type": "newspaper",
+      "title": "Henderson’s Edmonton City Directory 1921 — Rudd Claus T (Revillon Whol)",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0588": {
+      "dir": "FT-0588-revillon-edmonton-arrival-lore",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Revillon Frères arrival lore — train banner and HBC rivalry (Edmonton)",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0589": {
+      "dir": "FT-0589-edmonton-boardwalk-wholesale-district",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Boardwalk Building — Revillon’s wholesale-district neighbor",
+      "person_ids": [
+        "clause_rudd"
+      ]
+    },
+    "FT-0593": {
+      "dir": "FT-0593-hagfors-brukssamhalle-uddeholm-1873",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Hagfors brukssamhälle — Uddeholm ironworks founding (Carl × Maria Sweden door)",
+      "person_ids": [
+        "albin_edward_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "clause_rudd"
+      ]
+    },
+    "FT-0594": {
+      "dir": "FT-0594-varmland-emigration-wave-1880s",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Värmland emigration wave — 1880s peak (Carl × Maria generation)",
+      "person_ids": [
+        "albin_edward_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "clause_rudd"
+      ]
+    },
+    "FT-0595": {
+      "dir": "FT-0595-norra-rada-parish-landscape",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Norra Råda parish landscape — rural bruk patchwork (Albin 1887 door)",
+      "person_ids": [
+        "albin_edward_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "clause_rudd"
+      ]
+    },
+    "FT-0507": {
+      "dir": "FT-0507-numident-albin-edward-rudd-parents",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "NUMIDENT — Albin Edward Rudd, parents Carl J. Rudd × Marie Edison",
+      "person_ids": [
+        "albin_edward_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0512": {
+      "dir": "FT-0512-norra-rada-c7-entry-128-rudstrom",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda C/7 birth 1887 entry 128 — Maria Karolina, Rudström Karl Johan",
+      "person_ids": [
+        "carl_j_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0513": {
+      "dir": "FT-0513-norra-rada-c7-july11-julia-maria-rudstrom",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda C/7 1887 entry 130 — Julia Maria, 11 Jul (Rudström Karolina)",
+      "person_ids": [
+        "albin_edward_rudd",
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0514": {
+      "dir": "FT-0514-norra-rada-c7-rudstrom-svensdotter-johan-alexander",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda C/7 1887 — Johan Alexander, Rudström × Svensdotter",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0515": {
+      "dir": "FT-0515-norra-rada-hf-sida-97-risater",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda husförhör A I/20a — ledger sida 97 (Risäter & Brödheden)",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0516": {
+      "dir": "FT-0516-norra-rada-c7-albin-negative-july1887",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda C/7 July 1887 band — no Albin Edward Rud birth line",
+      "person_ids": [
+        "albin_edward_rudd",
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0518": {
+      "dir": "FT-0518-fag-olivewood-negative-maria-rudd-death",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Find a Grave + Olivewood — Maria Rud/Edison death/burial negative",
+      "person_ids": [
+        "maria_edison_rudd",
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0520": {
+      "dir": "FT-0520-census-negative-carl-maria-1920-1930-roberts",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "1920 / 1930 US census — Carl J. × Maria Rud negative (no open Roberts transcription)",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0521": {
+      "dir": "FT-0521-emigration-negative-carl-rud-sweden-mn",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Emigration negative — Carl Rud × Maria Edison Sweden→MN window 1887–1895",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0652": {
+      "dir": "FT-0652-norra-rada-hf-stjernsfors-negative-carl-maria",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF Stjernsfors band — negative for Carl J. × Maria Edison",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0653": {
+      "dir": "FT-0653-norra-rada-hf-hagfors-bru-negative-carl-maria",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF Hagfors bru band — negative for Carl J. × Maria Edison",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0654": {
+      "dir": "FT-0654-norra-rada-hf-emigration-rudstrom-lines",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF — N. Amerika notes on Rudström / Risäter lines (no Carl×Maria)",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0661": {
+      "dir": "FT-0661-1930-census-roberts-sd-carl-j-hugo",
+      "photos": [],
+      "entry": true,
+      "type": "census",
+      "title": "1930 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud × Hugo C. Rud",
+      "person_ids": [
+        "carl_j_rudd",
+        "carl_h_rudd"
+      ]
+    },
+    "FT-0676": {
+      "dir": "FT-0676-mnhs-negative-rudd-deaths",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "MNHS People Search — Carl × Maria × Fritz Rud/Rudd MN death index negative",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "fritz_e_rudd"
+      ]
+    },
+    "FT-0677": {
+      "dir": "FT-0677-norra-rada-gustafsdal-heading-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF 1886–90 — Gustafsdal not a register heading",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0678": {
+      "dir": "FT-0678-norra-rada-b3-1887-utflyttning-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda B/3 1887 utflyttning — negative Carl J. × Maria / Albin America",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0679": {
+      "dir": "FT-0679-norra-rada-b3-1888-1889-utflyttning-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda B/3 1888–1889 utflyttning — negative Carl×Maria/Albin America",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0686": {
+      "dir": "FT-0686-maria-edison-rudd-death-window-negative",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Maria Edison Rudd — death/burial window 1910–1930 negative (FAG × Roberts GT × Olivewood)",
+      "person_ids": [
+        "maria_edison_rudd",
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0693": {
+      "dir": "FT-0693-open-emi-negative-rudd-1889",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Open emigration negative — Karl/Carl Rud × Maria × Albin 1888–1891 (1930 arrival 1889)",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0694": {
+      "dir": "FT-0694-norra-rada-hf-stjernsfors-torps-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF Stjernsfors torps — negative for Rudström Karl Johan / Carl×Maria",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ]
+    },
+    "FT-0762": {
+      "dir": "FT-0762-norra-rada-b3-1890-utflyttning-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda B/3 1890 utflyttning — negative Carl J. × Maria / Albin America",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0763": {
+      "dir": "FT-0763-norra-rada-b3-1891-utflyttning-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda B/3 1891 utflyttning — negative Carl×Maria/Albin America",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0764": {
+      "dir": "FT-0764-norra-rada-b3-1892-utflyttning-negative",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda B/3 1892 utflyttning — negative Carl×Maria/Albin America",
+      "person_ids": [
+        "carl_j_rudd",
+        "maria_edison_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0517": {
+      "dir": "FT-0517-fag-negative-carl-j-rudd-death-burial",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Find a Grave — Carl J. Rud/Rudd death/burial negative (1869±5 Sweden)",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0519": {
+      "dir": "FT-0519-roberts-sd-birth-andrew-rud-not-carl-j",
+      "photos": [],
+      "entry": true,
+      "type": "vital",
+      "title": "Roberts Co., SD birth register — Andrew Rud × Gunhild (≠ Carl J. × Maria)",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0597": {
+      "dir": "FT-0597-christina-dupray-fag-children-grid",
+      "photos": [],
+      "entry": true,
+      "type": "memorial",
+      "title": "Find a Grave — Christina Miller Dupray children grid (James Story + Frederick Miller)",
+      "person_ids": [
+        "christina_miller_dupray",
+        "james_story_dupray",
+        "frederick_miller_dupray",
+        "thomas_dupray"
+      ]
+    },
+    "FT-0651": {
+      "dir": "FT-0651-norra-rada-hf-sida-47-rastrom-hafversbol",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF A I/20a sida 47 — Karl Johan Råström, Hafversbol",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0655": {
+      "dir": "FT-0655-norra-rada-c7-p47-persson-collision",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "C/7 entry 128 HF p.47 — Persson Maria Karolina date collision",
+      "person_ids": [
+        "carl_j_rudd",
+        "albin_edward_rudd"
+      ]
+    },
+    "FT-0680": {
+      "dir": "FT-0680-norra-rada-ai20b-sida-47-by-byberg",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF A I/20b sida 47 — 1/2 By (Byberg), not Gustafsdal",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0681": {
+      "dir": "FT-0681-norra-rada-ai19a-gustafsdal-loose-notes",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda HF A I/19a — Gustafsdal place-notes on loose list",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0682": {
+      "dir": "FT-0682-1923-plat-rud-c-j-minnesota-twp",
+      "photos": [],
+      "entry": true,
+      "type": "deed",
+      "title": "1923 Roberts Co. plat index — Rud C. J., Sec. 21 T128N R51W Minnesota Twp",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0689": {
+      "dir": "FT-0689-fag-negative-carl-j-rudd-1861",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Find a Grave — Carl J. Rud/Rudd death/burial negative (1861±5 Sweden; SD/MN/CA)",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0765": {
+      "dir": "FT-0765-norra-rada-ai18a-sida-259-thorsby",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda A I/18a sida 259 — Thorsby, not Gustafsdahl",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
+    },
+    "FT-0766": {
+      "dir": "FT-0766-norra-rada-ai19a-sida-259-uddeholm",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "Norra Råda A I/19a sida 259 — Uddeholm, not Gustafsdahl",
+      "person_ids": [
+        "carl_j_rudd"
+      ]
     },
     "FT-0006": {
       "dir": "FT-0006-bill-parsons-baseball-card-rolodex",
       "photos": [],
       "entry": true,
       "type": "artifact",
-      "title": "Bill Parsons baseball-card rolodex"
+      "title": "Bill Parsons baseball-card rolodex",
+      "person_ids": [
+        "bill_parsons"
+      ]
     },
     "FT-0007": {
       "dir": "FT-0007-press-enterprise-elizabeth-betty-a-parsons",
@@ -108,28 +1061,51 @@
       ],
       "entry": true,
       "type": "obituary",
-      "title": "Press-Enterprise — Elizabeth “Betty” A. Parsons"
+      "title": "Press-Enterprise — Elizabeth “Betty” A. Parsons",
+      "person_ids": [
+        "elizabeth_allen",
+        "gerald_allen_parsons",
+        "bill_parsons"
+      ]
     },
     "FT-0010": {
       "dir": "FT-0010-parsons-allen-wedding-notice-wee-kirk-o-the-heat",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "Parsons–Allen wedding notice — Wee Kirk o' the Heather"
+      "title": "Parsons–Allen wedding notice — Wee Kirk o' the Heather",
+      "person_ids": [
+        "gerald_allen_parsons",
+        "elizabeth_allen",
+        "raymond_philip_allen",
+        "ina_louise_squier_allen",
+        "harriet_b_foss_parsons",
+        "nelson_b_parsons",
+        "harold_ambrose_parsons",
+        "autis_foss_parsons_hicks"
+      ]
     },
     "FT-0012": {
       "dir": "FT-0012-betty-allen-among-pasadena-nursing-graduates",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "Betty Allen among Pasadena nursing graduates"
+      "title": "Betty Allen among Pasadena nursing graduates",
+      "person_ids": [
+        "elizabeth_allen",
+        "raymond_philip_allen",
+        "ina_louise_squier_allen"
+      ]
     },
     "FT-0011": {
       "dir": "FT-0011-pitcher-parsons-scheduled-vs-former-teammates-ni",
       "photos": [],
       "entry": true,
       "type": "newspaper",
-      "title": "Pitcher Parsons scheduled vs former teammates — nightball (1936)"
+      "title": "Pitcher Parsons scheduled vs former teammates — nightball (1936)",
+      "person_ids": [
+        "gerald_allen_parsons"
+      ]
     },
     "FT-0443": {
       "dir": "FT-0443-maine-vr-marriage-nelson-hattie-foss",
@@ -141,6 +1117,235 @@
       "type": "vital",
       "title": "Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"
     },
+    "FT-0573": {
+      "dir": "FT-0573-aroostook-potato-starch-industry",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Aroostook potato starch industry — Nelson Parsons’s trade unpacked",
+      "person_ids": [
+        "nelson_b_parsons",
+        "harriet_b_foss_parsons",
+        "ambrose_foss",
+        "daniel_w_foss"
+      ]
+    },
+    "FT-0742": {
+      "dir": "FT-0742-nhgr-vol3-darling-huntris-baptism",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "NHGR vol. 3 — Newington church baptisms (Darling son of Christopher × Mary)",
+      "person_ids": [
+        "darling_huntress",
+        "christopher_huntress",
+        "mary_chick_huntress",
+        "christopher_huntress_jr",
+        "martha_huntress_lord_berwick",
+        "mary_huntress_rollins",
+        "george_huntress_newington"
+      ]
+    },
+    "FT-0743": {
+      "dir": "FT-0743-nhgr-vol4-noah-elizabeth-huntris",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "NHGR vol. 4 — Newington baptisms Noah & Elizabeth Huntris; Darling × Love covenant",
+      "person_ids": [
+        "noah_huntress",
+        "elizabeth_huntress_stevens",
+        "christopher_huntress",
+        "mary_chick_huntress",
+        "darling_huntress"
+      ]
+    },
+    "FT-0745": {
+      "dir": "FT-0745-athenaeum-christopher-huntress",
+      "photos": [],
+      "entry": true,
+      "type": "reference",
+      "title": "Portsmouth Athenaeum — Christopher Huntress 1703–1782 catalog",
+      "person_ids": [
+        "christopher_huntress",
+        "mary_chick_huntress",
+        "darling_huntress",
+        "christopher_huntress_jr",
+        "martha_huntress_lord_berwick",
+        "mary_huntress_rollins",
+        "george_huntress_newington",
+        "david_huntress_newington",
+        "nathan_huntress_newington",
+        "noah_huntress",
+        "elizabeth_huntress_stevens"
+      ]
+    },
+    "FT-0744": {
+      "dir": "FT-0744-stackpole-kittery-chick-huntress",
+      "photos": [],
+      "entry": true,
+      "type": "reference",
+      "title": "Stackpole Old Kittery p.319 — Mary Chick m. Christopher Huntress of Newington",
+      "person_ids": [
+        "mary_chick_huntress",
+        "christopher_huntress"
+      ]
+    },
+    "FT-0746": {
+      "dir": "FT-0746-nehgr-1868-huntress-sib-marriages",
+      "photos": [],
+      "entry": true,
+      "type": "church",
+      "title": "NEHGR 22 (1868) Newington marriages — Huntress siblings; FAG negative",
+      "person_ids": [
+        "christopher_huntress_jr",
+        "martha_huntress_lord_berwick",
+        "mary_huntress_rollins",
+        "christopher_huntress"
+      ]
+    },
+    "FT-0575": {
+      "dir": "FT-0575-barnstead-nh-bunker-pioneers",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Barnstead, NH — Bunker pioneers and Parade ground (Harriet N. Bunker stem)",
+      "person_ids": [
+        "harriet_n_bunker_foss",
+        "joseph_s_bunker",
+        "olive_otis_bunker"
+      ]
+    },
+    "FT-0574": {
+      "dir": "FT-0574-daniel-w-foss-11th-maine-appomattox",
+      "photos": [],
+      "entry": true,
+      "type": "military",
+      "title": "11th Maine Infantry — late-war Petersburg and Appomattox (Daniel W. Foss’s regiment)",
+      "person_ids": [
+        "daniel_w_foss"
+      ]
+    },
+    "FT-0572": {
+      "dir": "FT-0572-swedish-colony-fort-fairfield-welcome-route",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "Swedish colonists — St. John River route and Fort Fairfield welcome (1870)",
+      "person_ids": [
+        "percy_parsons",
+        "kate_parsons",
+        "nelson_b_parsons"
+      ]
+    },
+    "FT-0571": {
+      "dir": "FT-0571-new-sweden-maine-swedish-colony-founding",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "New Sweden — Maine Swedish Colony founding (1870)",
+      "person_ids": [
+        "percy_parsons",
+        "kate_parsons"
+      ]
+    },
+    "FT-0578": {
+      "dir": "FT-0578-swedish-1872-labor-diversion-outer-colony",
+      "photos": [],
+      "entry": true,
+      "type": "place",
+      "title": "1871–72 Swedish influx — labor diversion and outer Aroostook settlement",
+      "person_ids": [
+        "percy_parsons",
+        "kate_parsons"
+      ]
+    },
+    "FT-0556": {
+      "dir": "FT-0556-fag-inscription-anna-augusta-mclachlin",
+      "photos": [],
+      "entry": true,
+      "type": "memorial",
+      "title": "Find a Grave — Anna Augusta McLachlin inscription and gravesite",
+      "person_ids": [
+        "anna_augusta_olson_mclachlin"
+      ]
+    },
+    "FT-0542": {
+      "dir": "FT-0542-fag-albin-edward-rudd-memorial",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Find A Grave — Albin Edward Rudd memorial extract",
+      "person_ids": [
+        "albin_edward_rudd",
+        "margaret_emma_fuller_rudd",
+        "robert_fuller_rudd"
+      ],
+      "subject_id": "albin_edward_rudd"
+    },
+    "FT-0544": {
+      "dir": "FT-0544-fag-margaret-emma-fuller-rudd-memorial",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Find A Grave — Margaret Emma Fuller Rudd memorial extract",
+      "person_ids": [
+        "margaret_emma_fuller_rudd",
+        "albin_edward_rudd",
+        "robert_fuller_rudd"
+      ],
+      "subject_id": "margaret_emma_fuller_rudd"
+    },
+    "FT-0545": {
+      "dir": "FT-0545-fag-robert-fuller-rudd-memorial",
+      "photos": [
+        "photos/01.jpg"
+      ],
+      "entry": true,
+      "type": "obituary",
+      "title": "Find A Grave — Robert Fuller Rudd memorial extract",
+      "person_ids": [
+        "robert_fuller_rudd",
+        "albin_edward_rudd",
+        "margaret_emma_fuller_rudd"
+      ],
+      "subject_id": "robert_fuller_rudd"
+    },
+    "FT-0522": {
+      "dir": "FT-0522-fag-negative-fritz-e-rudd-adult",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Find a Grave — Fritz E. Rud/Rudd adult death/burial negative (~1892 MN)",
+      "person_ids": [
+        "fritz_e_rudd"
+      ]
+    },
+    "FT-0524": {
+      "dir": "FT-0524-wwi-ssdi-negative-fritz-e-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "WWI draft + SSDI — Fritz E. Rud/Rudd negative (free indexes)",
+      "person_ids": [
+        "fritz_e_rudd"
+      ]
+    },
+    "FT-0526": {
+      "dir": "FT-0526-newspaper-obit-negative-fritz-jennie-rudd",
+      "photos": [],
+      "entry": true,
+      "type": "research_note",
+      "title": "Newspaper / obituary — Fritz E. & Jennie L. Rud negative (no open text)",
+      "person_ids": [
+        "fritz_e_rudd",
+        "jennie_l_rudd"
+      ]
+    },
     "FT-0392": {
       "dir": "FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr",
       "photos": [
@@ -148,14 +1353,20 @@
       ],
       "entry": true,
       "type": "photo",
-      "title": "Young man in US Navy sailor uniform (studio portrait)"
+      "title": "Young man in US Navy sailor uniform (studio portrait)",
+      "person_ids": [
+        "alexander"
+      ]
     },
     "FT-0396": {
       "dir": "FT-0396-school-open-house-photo-second-grade-audio-marke",
       "photos": [],
       "entry": true,
       "type": "artifact",
-      "title": "School open-house photo (second grade) — audio marker only"
+      "title": "School open-house photo (second grade) — audio marker only",
+      "person_ids": [
+        "alexander"
+      ]
     },
     "FT-0397": {
       "dir": "FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the",
@@ -167,7 +1378,15 @@
       ],
       "entry": true,
       "type": "artifact",
-      "title": "Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"
+      "title": "Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)",
+      "person_ids": [
+        "alexander",
+        "annabelle",
+        "earl",
+        "richard",
+        "gloria",
+        "dorland"
+      ]
     }
   }
 }

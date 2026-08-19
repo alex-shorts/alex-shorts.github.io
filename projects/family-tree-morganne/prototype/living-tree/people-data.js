@@ -1,6 +1,6 @@
 window.PEOPLE_DATA = {
   "version": 1,
-  "updated": "2026-08-15",
+  "updated": "2026-08-19",
   "focus_id": "morganne",
   "people": {
     "morganne": {
@@ -70,7 +70,8 @@ window.PEOPLE_DATA = {
       "portrait": null,
       "object_ids": [
         "FT-0008",
-        "FT-0457"
+        "FT-0457",
+        "FT-0470"
       ],
       "sources": [
         {
@@ -84,6 +85,10 @@ window.PEOPLE_DATA = {
         {
           "label": "Press-Enterprise — George E. Rudd obituary (daughter Marcy Parsons)",
           "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        },
+        {
+          "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — half-sister via George; FT-0470",
+          "url": ""
         }
       ],
       "aka": [
@@ -135,7 +140,10 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0576",
+        "FT-0577"
+      ],
       "sources": [
         {
           "label": "Family corroboration (Marcy via Alex, 2026-08-07) — parents Theodore × Rachel Orciere",
@@ -224,7 +232,10 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0576",
+        "FT-0577"
+      ],
       "sources": [
         {
           "label": "Family corroboration (Marcy via Alex, 2026-08-07) — mother of Marion Orciere",
@@ -513,7 +524,10 @@ window.PEOPLE_DATA = {
         }
       ],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0576",
+        "FT-0577"
+      ],
       "sources": [
         {
           "label": "Family corroboration (Marcy via Alex, 2026-08-07) — father of Marion Orciere",
@@ -726,11 +740,23 @@ window.PEOPLE_DATA = {
       "object_ids": [
         "FT-0008",
         "FT-0455",
-        "FT-0457"
+        "FT-0457",
+        "FT-0470",
+        "FT-0497",
+        "FT-0498",
+        "FT-0501",
+        "FT-0502",
+        "FT-0590",
+        "FT-0591",
+        "FT-0592"
       ],
       "sources": [
         {
-          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy step-brother",
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy half-brother via George",
+          "url": ""
+        },
+        {
+          "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Edmonton 1923; Corona store; FT-0470",
           "url": ""
         },
         {
@@ -770,7 +796,7 @@ window.PEOPLE_DATA = {
       "birth_place": "Edmonton, Alberta, Canada",
       "death_place": "Capistrano Beach, Orange County, California, USA",
       "burial": "Private services at sea",
-      "blocker": "Parents of Clause (C500 Blocked)"
+      "blocker": "Parents of Clause (C500 / C2240 Blocked); brothers Fritz / Hugo / Albin "
     },
     "della_elizabeth_rudd": {
       "id": "della_elizabeth_rudd",
@@ -795,7 +821,13 @@ window.PEOPLE_DATA = {
           "file": "media/headstone-olivewood-fag-2013.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 103950419 — Olivewood dual stone CLAUS Y. 1893–1976 / DELLA E. 1902–1973",
-          "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg"
+          "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg?size=original"
+        },
+        {
+          "file": "media/fag-103950419-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 103950419 — Della Elizabeth Olson Rudd (gallery capture)",
+          "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg?size=original"
         }
       ],
       "portrait": null,
@@ -806,7 +838,15 @@ window.PEOPLE_DATA = {
         "FT-0020",
         "FT-0445",
         "FT-0455",
-        "FT-0456"
+        "FT-0456",
+        "FT-0470",
+        "FT-0501",
+        "FT-0503",
+        "FT-0504",
+        "FT-0511",
+        "FT-0590",
+        "FT-0591",
+        "FT-0596"
       ],
       "sources": [
         {
@@ -884,14 +924,19 @@ window.PEOPLE_DATA = {
         "isaac_olsen"
       ],
       "children": [
+        "anna_augusta_olson_mclachlin",
         "william_theodore_olson",
         "mabel_victoria_olson_sizer",
+        "pearl_olson_williams",
         "carl_leonard_olson",
         "della_elizabeth_rudd"
       ],
       "media": [
         {
-          "file": "media/bc-death-1956-09-007015.jpg",
+          "file": "media/bc-death-1956-09-007015.jpg"
+        },
+        {
+          "file": "media/fag-26322002-01-headstone.jpg",
           "kind": "document",
           "source": "BC Archives — Registration of Death 1956-09-007015",
           "source_url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004438083/004438083_02045.jpg"
@@ -907,6 +952,12 @@ window.PEOPLE_DATA = {
           "kind": "document",
           "source": "Find A Grave 26322001 — Isaac Olsen death-notice scan (FT-0015)",
           "source_url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        },
+        {
+          "ref": "isaac-olsen/media/fag-26322001-01-headstone.png",
+          "kind": "photo",
+          "source": "Find A Grave memorial 26322001 — shared Mountain View plot (no stone; FT-0552)",
+          "source_url": "https://images.findagrave.com/photos/2026/160/26322001_b6726728-9565-4494-8171-32a99aaeab4b.png?size=original"
         }
       ],
       "portrait": null,
@@ -915,9 +966,29 @@ window.PEOPLE_DATA = {
         "FT-0014",
         "FT-0015",
         "FT-0016",
-        "FT-0445"
+        "FT-0445",
+        "FT-0487",
+        "FT-0488",
+        "FT-0503",
+        "FT-0504",
+        "FT-0509",
+        "FT-0511",
+        "FT-0523",
+        "FT-0543",
+        "FT-0552",
+        "FT-0554",
+        "FT-0555",
+        "FT-0596"
       ],
       "sources": [
+        {
+          "label": "FamilySearch 1900 US Census — Johnanna Olson, 36, b. Sweden; wife of Isaac, Lyman SD (FT-0509)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMRH-1L1"
+        },
+        {
+          "label": "FamilySearch 1911 Canada Census — Jennie Olson, 49, wife of Isaac; Strathcona AB; Bella ≈ Della (FT-0511)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QV9P-GGC7"
+        },
         {
           "label": "Find A Grave 26322002 — Jennie Andersen Olsen",
           "url": "https://www.findagrave.com/memorial/26322002/jennie-olsen"
@@ -983,14 +1054,19 @@ window.PEOPLE_DATA = {
         "jennie_olsen"
       ],
       "children": [
+        "anna_augusta_olson_mclachlin",
         "william_theodore_olson",
         "mabel_victoria_olson_sizer",
+        "pearl_olson_williams",
         "carl_leonard_olson",
         "della_elizabeth_rudd"
       ],
       "media": [
         {
-          "file": "media/bc-death-1947-09-008902.jpg",
+          "file": "media/bc-death-1947-09-008902.jpg"
+        },
+        {
+          "file": "media/fag-26322001-02-headstone.jpg",
           "kind": "vital-record",
           "source": "BC Archives — Registration of Death 1947-09-008902",
           "source_url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg"
@@ -1000,6 +1076,12 @@ window.PEOPLE_DATA = {
           "kind": "document",
           "source": "Find A Grave 26322001 — Isaac Olsen death-notice scan (FT-0015)",
           "source_url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        },
+        {
+          "file": "media/fag-26322001-01-headstone.png",
+          "kind": "photo",
+          "source": "Find A Grave memorial 26322001 — Mountain View plot (unmarked grass; FT-0552)",
+          "source_url": "https://images.findagrave.com/photos/2026/160/26322001_b6726728-9565-4494-8171-32a99aaeab4b.png?size=original"
         }
       ],
       "portrait": null,
@@ -1008,12 +1090,27 @@ window.PEOPLE_DATA = {
         "FT-0014",
         "FT-0015",
         "FT-0016",
-        "FT-0445"
+        "FT-0445",
+        "FT-0480",
+        "FT-0487",
+        "FT-0503",
+        "FT-0504",
+        "FT-0509",
+        "FT-0511",
+        "FT-0543",
+        "FT-0552",
+        "FT-0554",
+        "FT-0555",
+        "FT-0596"
       ],
       "sources": [
         {
-          "label": "Find A Grave 26322001 — Isaac Olsen",
-          "url": "https://www.findagrave.com/memorial/26322001/isaac-olsen"
+          "label": "FamilySearch 1900 US Census — Isaac Olson, Lyman SD; wife Johnanna; children Carl, William, Mabel, Annie (ark MMRH-1L1 / FT-0509)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMRH-1L1"
+        },
+        {
+          "label": "FamilySearch 1911 Canada Census — Isaac Olson, Strathcona AB; wife Jennie; children Mabel, Carl, Pearl, Bella (ark QV9P-GGC7 / FT-0511)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QV9P-GGC7"
         },
         {
           "label": "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)",
@@ -1064,7 +1161,10 @@ window.PEOPLE_DATA = {
       "confidence": "Confirmed",
       "verified": true,
       "status": "cataloged",
-      "parents": [],
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
       "spouses": [
         "della_elizabeth_rudd"
       ],
@@ -1072,6 +1172,12 @@ window.PEOPLE_DATA = {
         "george_rudd"
       ],
       "media": [
+        {
+          "file": "media/fag-103950403-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 103950403 — Olivewood dual stone CLAUS Y. / DELLA E.",
+          "source_url": "https://images.findagrave.com/photos/2013/22/103950403_135900119757.jpg?size=original"
+        },
         {
           "ref": "della-elizabeth-rudd/media/headstone-olivewood-fag-2013.jpg",
           "kind": "headstone",
@@ -1086,12 +1192,58 @@ window.PEOPLE_DATA = {
         "FT-0444",
         "FT-0454",
         "FT-0455",
-        "FT-0456"
+        "FT-0456",
+        "FT-0470",
+        "FT-0493",
+        "FT-0494",
+        "FT-0495",
+        "FT-0496",
+        "FT-0497",
+        "FT-0498",
+        "FT-0500",
+        "FT-0501",
+        "FT-0506",
+        "FT-0508",
+        "FT-0510",
+        "FT-0525",
+        "FT-0562",
+        "FT-0568",
+        "FT-0569",
+        "FT-0570",
+        "FT-0587",
+        "FT-0588",
+        "FT-0589",
+        "FT-0590",
+        "FT-0591",
+        "FT-0592",
+        "FT-0593",
+        "FT-0594",
+        "FT-0595"
       ],
       "sources": [
         {
           "label": "Family corroboration (Marcy via Alex, 2026-08-07) — father of George E. Rudd",
           "url": ""
+        },
+        {
+          "label": "FamilySearch 1910 US Census — Claus Rud, 16, son of Carl J Rud × Maria Rud; Minnesota Twp, Roberts Co., SD (ark MPXD-SXJ)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXJ"
+        },
+        {
+          "label": "FamilySearch ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham MN; parents Karl Rud × Marie (ark QVNB-CY88)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QVNB-CY88"
+        },
+        {
+          "label": "FamilySearch WWI draft — Claus Yugue Rud b. 9 Jun 1893 Louisburg MN; Phillips Co. MT (ark K8QJ-VBP)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:K8QJ-VBP"
+        },
+        {
+          "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — brothers Fritz/Hugo/Albin; Claus Young B; Anderson lore; FT-0470",
+          "url": ""
+        },
+        {
+          "label": "Find A Grave 74876188 — proposed brother Albin Edward Rudd (Olivewood Q-1-241-4); son Robert Fuller b. 1916 Alberta",
+          "url": "https://www.findagrave.com/memorial/74876188/albin-edward-rudd"
         },
         {
           "label": "Press-Enterprise — George E. Rudd obituary (names parents Clause and Della Rudd)",
@@ -1118,13 +1270,31 @@ window.PEOPLE_DATA = {
           "url": "https://www.ancestry.com/search/collections/5180/records/6365872"
         },
         {
+          "label": "Henderson Edmonton 1921 — Rudd Claus T clk Revillon Whol (OCR T vs Y; not a parent household)",
+          "url": "https://archive.org/stream/P002962-15/P002962-15_djvu.txt"
+        },
+        {
           "label": "Henderson Edmonton 1931 — Rudd Chas Y slsmn H B Co Whol, rooms 10995 126th St (householder Ernest E. Turner)",
           "url": "https://archive.org/stream/P002962-25/P002962-25_djvu.txt"
         }
       ],
       "aka": [
         "Claus Y. Rudd",
-        "Claus Rudd"
+        "Claus Rudd",
+        "Claus Young B Rudd",
+        "Claus Yugue Rud",
+        "Klaus Jorgen Rud",
+        "Claus Rud"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
       ],
       "spouse_links": [
         {
@@ -1134,10 +1304,234 @@ window.PEOPLE_DATA = {
       ],
       "birth": "1893-06-09",
       "death": "1976-09-23",
-      "birth_place": "Minnesota, USA (CADI; county unknown)",
+      "birth_place": "Louisburg, Lac qui Parle County, Minnesota, USA",
       "death_place": "Riverside County, California, USA",
-      "burial": "Olivewood Memorial Park, Riverside, California; dual stone with Della E. Rudd",
-      "blocker": "Parents (gen-4) — C2240 Blocked; CADI maiden blank; unlock = MN county b"
+      "burial": "Olivewood Memorial Park, Riverside, California; dual stone with Della E. Rudd"
+    },
+    "maria_edison_rudd": {
+      "id": "maria_edison_rudd",
+      "slug": "maria-edison-rudd",
+      "name": "Maria Edison Rudd",
+      "years": "1858–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "carl_j_rudd"
+      ],
+      "children": [
+        "albin_edward_rudd",
+        "fritz_e_rudd",
+        "clause_rudd",
+        "jennie_l_rudd",
+        "hattie_a_rudd",
+        "carl_h_rudd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0506",
+        "FT-0507",
+        "FT-0508",
+        "FT-0512",
+        "FT-0513",
+        "FT-0514",
+        "FT-0515",
+        "FT-0516",
+        "FT-0518",
+        "FT-0520",
+        "FT-0521",
+        "FT-0568",
+        "FT-0569",
+        "FT-0570",
+        "FT-0593",
+        "FT-0594",
+        "FT-0595",
+        "FT-0652",
+        "FT-0653",
+        "FT-0654",
+        "FT-0661",
+        "FT-0676",
+        "FT-0677",
+        "FT-0678",
+        "FT-0679",
+        "FT-0686",
+        "FT-0693",
+        "FT-0694",
+        "FT-0762",
+        "FT-0763",
+        "FT-0764"
+      ],
+      "sources": [
+        {
+          "label": "FamilySearch 1910 US Census — Maria Rud, wife of Carl J Rud, age 52, b. Sweden; Minnesota Twp, Roberts Co., SD",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        },
+        {
+          "label": "FamilySearch NUMIDENT — son Albin Edward Rudd names mother Marie Edison (ark 6K4Q-6GNP)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:6K4Q-6GNP"
+        },
+        {
+          "label": "CADI 1940–1997 — Albin Edward Rudd mother’s maiden Edeson (Ancestry 5180 / 6365809)",
+          "url": "https://www.ancestry.com/search/collections/5180/records/6365809"
+        },
+        {
+          "label": "FamilySearch ELCA baptism 1893 Bellingham MN — Klaus Jorgen Rud, mother Marie (ark QVNB-CY88)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QVNB-CY88"
+        },
+        {
+          "label": "Norra Råda C/7 — Kristina Maria Svensdotter named mother on Johan Alexander Aug 1887 line only; not Edison/Edeson (FT-0514)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00046525_00445"
+        },
+        {
+          "label": "Norra Råda husförhör A I/20a ledger sida 97 (bild 102) — no Maria Edison household (FT-0515)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038472_00102"
+        },
+        {
+          "label": "Connect 2026-08-18 — open emigration negative Maria with Karl/Carl + Albin 1888–1891 (FT-0693)",
+          "url": "https://www.emiweb.se/databaser/passagerarlistor-for-svenska-hamnar/"
+        },
+        {
+          "label": "Norra Råda A I/20a Stjernsfors torps pag. 374–383 — no Maria Edison household (FT-0694)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038472_00378"
+        }
+      ],
+      "aka": [
+        "Maria Rud",
+        "Marie",
+        "Marie Edison",
+        "Edeson",
+        "Maria Edeson Rudd"
+      ],
+      "spouse_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1858",
+      "birth_place": "Sweden",
+      "blocker": "Own parents unnamed — 1910 census lists Sweden only (C2411). Maiden Edis"
+    },
+    "carl_j_rudd": {
+      "id": "carl_j_rudd",
+      "slug": "carl-j-rudd",
+      "name": "Carl J. Rud",
+      "years": "1869–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "maria_edison_rudd"
+      ],
+      "children": [
+        "albin_edward_rudd",
+        "fritz_e_rudd",
+        "clause_rudd",
+        "jennie_l_rudd",
+        "hattie_a_rudd",
+        "carl_h_rudd"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0506",
+        "FT-0507",
+        "FT-0508",
+        "FT-0512",
+        "FT-0513",
+        "FT-0514",
+        "FT-0515",
+        "FT-0516",
+        "FT-0517",
+        "FT-0518",
+        "FT-0519",
+        "FT-0520",
+        "FT-0521",
+        "FT-0568",
+        "FT-0569",
+        "FT-0570",
+        "FT-0593",
+        "FT-0594",
+        "FT-0595",
+        "FT-0597",
+        "FT-0651",
+        "FT-0652",
+        "FT-0653",
+        "FT-0654",
+        "FT-0655",
+        "FT-0661",
+        "FT-0676",
+        "FT-0677",
+        "FT-0678",
+        "FT-0679",
+        "FT-0680",
+        "FT-0681",
+        "FT-0682",
+        "FT-0686",
+        "FT-0689",
+        "FT-0693",
+        "FT-0694",
+        "FT-0762",
+        "FT-0763",
+        "FT-0764",
+        "FT-0765",
+        "FT-0766"
+      ],
+      "sources": [
+        {
+          "label": "FamilySearch 1910 US Census — Carl J Rud, Minnesota Twp, Roberts Co., SD; age 41, b. Sweden; wife Maria; children Claus, Hattie A, Fritz E, Carl H Jr, Jennie L (ark MPXD-SXX)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        },
+        {
+          "label": "FamilySearch NUMIDENT — son Albin Edward Rudd names father Carl J Rudd (ark 6K4Q-6GNP)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:6K4Q-6GNP"
+        },
+        {
+          "label": "FamilySearch ELCA baptism 1893 Bellingham MN — Klaus Jorgen Rud, father Karl Rud (ark QVNB-CY88)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:QVNB-CY88"
+        },
+        {
+          "label": "Norra Råda C/7 entry 128 — Maria Karolina 18 Jun 1887, Rudström Karl Johan (af.) × Andersson Britta Maria; HF p.97 (FT-0512)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00046525_00442"
+        },
+        {
+          "label": "Norra Råda C/7 entry ~175 — Johan Alexander 18 Aug 1887, Rudström Karl Johan × Kristina Maria Svensdotter, Stjernsfors; HF p.97 (FT-0514)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00046525_00445"
+        },
+        {
+          "label": "Norra Råda husförhör A I/20a ledger sida 97 (bild 102) — Risäter, no Rudström household (FT-0515)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038472_00102"
+        },
+        {
+          "label": "Norra Råda C/7 July 1887 band — no Albin Edward Rud birth line (FT-0516)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00046525_00442"
+        },
+        {
+          "label": "Connect 2026-08-18 — open emigration negative Karl/Carl Rud × Maria × Albin 1888–1891 (FT-0693); 1930 arrival 1889 still unconfirmed by port list",
+          "url": "https://www.emiweb.se/databaser/passagerarlistor-for-svenska-hamnar/"
+        },
+        {
+          "label": "Norra Råda A I/20a Stjernsfors torps pag. 374–383 — no Rudström Karl Johan / Carl×Maria household (FT-0694)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038472_00378"
+        }
+      ],
+      "aka": [
+        "Carl J. Rudd",
+        "Karl Rud",
+        "Carl J Rud"
+      ],
+      "spouse_links": [
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1869",
+      "birth_place": "Sweden",
+      "blocker": "Own parents unnamed — 1910 census lists Sweden only (C2410). Norra Råda "
     },
     "bill_parsons": {
       "id": "bill_parsons",
@@ -1602,7 +1996,8 @@ window.PEOPLE_DATA = {
       "portrait": null,
       "object_ids": [
         "FT-0010",
-        "FT-0443"
+        "FT-0443",
+        "FT-0573"
       ],
       "sources": [
         {
@@ -1694,7 +2089,8 @@ window.PEOPLE_DATA = {
       ],
       "portrait": null,
       "object_ids": [
-        "FT-0443"
+        "FT-0443",
+        "FT-0573"
       ],
       "sources": [
         {
@@ -2975,7 +3371,10 @@ window.PEOPLE_DATA = {
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
-      "parents": [],
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
       "spouses": [
         "love_hearl_huntress"
       ],
@@ -2992,8 +3391,16 @@ window.PEOPLE_DATA = {
       ],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0742",
+        "FT-0743",
+        "FT-0745"
+      ],
       "sources": [
+        {
+          "label": "NHGR vol. 3 — Newington church: Darling son of Christopher Huntris & Mary bp. 19 Apr 1730",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
         {
           "label": "WikiTree Huntress-107 — Darling Huntress",
           "url": "https://www.wikitree.com/wiki/Huntress-107"
@@ -3018,6 +3425,16 @@ window.PEOPLE_DATA = {
       "aka": [
         "Darling Huntriss"
       ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
       "spouse_links": [
         {
           "id": "love_hearl_huntress",
@@ -3028,6 +3445,134 @@ window.PEOPLE_DATA = {
       "death": "1815-03-08",
       "birth_place": "Newington, Rockingham County, New Hampshire",
       "death_place": "South Berwick, York County, Maine, USA"
+    },
+    "mary_chick_huntress": {
+      "id": "mary_chick_huntress",
+      "slug": "mary-chick-huntress",
+      "name": "Mary Chick Huntress",
+      "years": "1703–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "christopher_huntress"
+      ],
+      "children": [
+        "christopher_huntress_jr",
+        "martha_huntress_lord_berwick",
+        "darling_huntress",
+        "mary_huntress_rollins",
+        "george_huntress_newington",
+        "david_huntress_newington",
+        "nathan_huntress_newington",
+        "noah_huntress",
+        "elizabeth_huntress_stevens"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0742",
+        "FT-0743",
+        "FT-0744",
+        "FT-0745"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 3 — Newington church: Darling son of Christopher Huntris & Mary bp. 19 Apr 1730",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
+        {
+          "label": "Stackpole Old Kittery p.319 — Mary, dau. Richard Chick × Martha Lord, m. Christopher Huntress, int. 26 Oct 1724",
+          "url": "https://archive.org/details/oldkitteryandhe00stacgoog/page/319/mode/2up"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Mary Chick, dau. Richard Chick and Martha Lord, b. c1703 Kittery, m. 1724",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        },
+        {
+          "label": "WikiTree Chick-256 — Mary (Chick) Huntress",
+          "url": "https://www.wikitree.com/wiki/Chick-256"
+        }
+      ],
+      "aka": [
+        "Mary Chick",
+        "Mary Huntris"
+      ],
+      "spouse_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1703",
+      "birth_place": "Kittery, York County, Maine",
+      "death_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "christopher_huntress": {
+      "id": "christopher_huntress",
+      "slug": "christopher-huntress",
+      "name": "Christopher Huntress",
+      "years": "1703-1782",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "mary_chick_huntress"
+      ],
+      "children": [
+        "christopher_huntress_jr",
+        "martha_huntress_lord_berwick",
+        "darling_huntress",
+        "mary_huntress_rollins",
+        "george_huntress_newington",
+        "david_huntress_newington",
+        "nathan_huntress_newington",
+        "noah_huntress",
+        "elizabeth_huntress_stevens"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0742",
+        "FT-0743",
+        "FT-0744",
+        "FT-0745",
+        "FT-0746"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 3 — Newington church: Darling son of Christopher Huntris & Mary bp. 19 Apr 1730",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Huntress, Christopher, 1703–1782",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        },
+        {
+          "label": "Stackpole Old Kittery p.319 — Mary Chick m. Christopher Huntress of Newington, int. 26 Oct 1724",
+          "url": "https://archive.org/details/oldkitteryandhe00stacgoog/page/319/mode/2up"
+        },
+        {
+          "label": "WikiTree Huntress-18 — Christopher Huntress",
+          "url": "https://www.wikitree.com/wiki/Huntress-18"
+        }
+      ],
+      "aka": [
+        "Christopher Huntris",
+        "Lieut. Christopher Huntress"
+      ],
+      "spouse_links": [
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1703-04-19",
+      "death": "1782-08-06",
+      "birth_place": "Portsmouth, Rockingham County, New Hampshire",
+      "death_place": "Newington, Rockingham County, New Hampshire"
     },
     "william_h_knight": {
       "id": "william_h_knight",
@@ -4080,7 +4625,8 @@ window.PEOPLE_DATA = {
       "media": [],
       "portrait": null,
       "object_ids": [
-        "FT-0443"
+        "FT-0443",
+        "FT-0573"
       ],
       "sources": [
         {
@@ -4156,7 +4702,9 @@ window.PEOPLE_DATA = {
       ],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0575"
+      ],
       "sources": [
         {
           "label": "Find A Grave — Harriet N. Bunker Foss (43860310)",
@@ -4243,7 +4791,9 @@ window.PEOPLE_DATA = {
       ],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0575"
+      ],
       "sources": [
         {
           "label": "Find A Grave 110452588 — Olive Otis Bunker",
@@ -4790,7 +5340,9 @@ window.PEOPLE_DATA = {
       ],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0575"
+      ],
       "sources": [
         {
           "label": "Find A Grave 37548610 — Joseph Bunker",
@@ -5442,7 +5994,10 @@ window.PEOPLE_DATA = {
       ],
       "media": [],
       "portrait": null,
-      "object_ids": [],
+      "object_ids": [
+        "FT-0573",
+        "FT-0574"
+      ],
       "sources": [
         {
           "label": "Find A Grave — Daniel W. Foss (26237974)",
@@ -5623,7 +6178,9 @@ window.PEOPLE_DATA = {
       "portrait": null,
       "object_ids": [
         "FT-0010",
-        "FT-0443"
+        "FT-0443",
+        "FT-0572",
+        "FT-0573"
       ],
       "sources": [
         {
@@ -5705,7 +6262,10 @@ window.PEOPLE_DATA = {
       ],
       "portrait": null,
       "object_ids": [
-        "FT-0443"
+        "FT-0443",
+        "FT-0571",
+        "FT-0572",
+        "FT-0578"
       ],
       "sources": [
         {
@@ -5764,7 +6324,10 @@ window.PEOPLE_DATA = {
       ],
       "portrait": null,
       "object_ids": [
-        "FT-0443"
+        "FT-0443",
+        "FT-0571",
+        "FT-0572",
+        "FT-0578"
       ],
       "sources": [
         {
@@ -5810,11 +6373,16 @@ window.PEOPLE_DATA = {
       "media": [],
       "portrait": null,
       "object_ids": [
-        "FT-0008"
+        "FT-0008",
+        "FT-0470"
       ],
       "sources": [
         {
-          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — Marcy’s step-brother; son of George",
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — Marcy’s half-brother via George (worded step at ingest; Dan corrected 2026-08-17)",
+          "url": ""
+        },
+        {
+          "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Marcy is half-sister, not step; FT-0470",
           "url": ""
         },
         {
@@ -6157,6 +6725,83 @@ window.PEOPLE_DATA = {
       "birth": "1900",
       "birth_place": "California, USA"
     },
+    "anna_augusta_olson_mclachlin": {
+      "id": "anna_augusta_olson_mclachlin",
+      "slug": "anna-augusta-olson-mclachlin",
+      "name": "Anna Augusta Olson McLachlin",
+      "years": "1881-1970",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/fag-180802821-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 180802821 — Anna Augusta Olson McLachlin",
+          "source_url": "https://images.findagrave.com/photos/2022/18/UNCEM_1968312_0b57a319-e475-4534-8656-e1fe128d10f9.jpeg?v=1642520363&size=original"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0015",
+        "FT-0016",
+        "FT-0020",
+        "FT-0480",
+        "FT-0509",
+        "FT-0556"
+      ],
+      "sources": [
+        {
+          "label": "Find A Grave 180802821 — Anna Augusta Olson McLachlin",
+          "url": "https://www.findagrave.com/memorial/180802821/anna-augusta-mclachlin"
+        },
+        {
+          "label": "BC Archives death 1970-09-003207 — transcribed on FAG (father Isiac Olson, Sweden; husband John Robert McLachlin)",
+          "url": "https://www.findagrave.com/memorial/180802821/anna-augusta-mclachlin"
+        },
+        {
+          "label": "FT-0020 — William Olson 1963 death notice — sister Mrs. Anna McLachlin of Vancouver",
+          "url": "https://images.findagrave.com/photos/2023/216/139634471_44e915d5-d04b-457d-a6f8-0a747ee97f2d.jpeg"
+        },
+        {
+          "label": "FT-0016 — Jennie Olsen 1956 death notice — daughter Mrs. J. R. McLachlin",
+          "url": "https://images.findagrave.com/photos/2023/216/26322002_bc11fb44-fffa-4a73-b6d0-85402550f722.jpeg"
+        },
+        {
+          "label": "FT-0015 — Isaac Olsen 1947 death notice — daughter Mrs. J. R. McLaughlin, Vancouver",
+          "url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        }
+      ],
+      "aka": [
+        "Anna Augusta Olson",
+        "Anna Olson McLachlin",
+        "Anna Augusta McLachlin",
+        "Mrs. J. R. McLachlin",
+        "Mrs. J. R. McLaughlin",
+        "née Olson"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1881-11-10",
+      "death": "1970-02-13",
+      "birth_place": "Edmonton, Edmonton Census Division, Alberta, Canada",
+      "death_place": "Valleyview Hospital, Essondale, Coquitlam, British Columbia, Canada",
+      "burial": "Pacific Heritage Cemetery (Masonic Cemetery), Burnaby, British Columbia, Canada; plot 819-02-B"
+    },
     "william_theodore_olson": {
       "id": "william_theodore_olson",
       "slug": "william-theodore-olson",
@@ -6173,28 +6818,46 @@ window.PEOPLE_DATA = {
       "children": [],
       "media": [
         {
+          "file": "media/fag-139634471-01-headstone.jpg"
+        },
+        {
+          "file": "media/fag-139634471-02-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 139634471 — WILLIAM T. OLSON 1884–1963 Holden",
+          "source_url": "https://images.findagrave.com/photos/2014/338/139634471_1417830155.jpg?size=original"
+        },
+        {
           "file": "media/newspaper-obituary-fag-2023.jpeg",
           "kind": "document",
           "source": "Find A Grave 139634471 — William Olson death notice (FT-0020)",
           "source_url": "https://images.findagrave.com/photos/2023/216/139634471_44e915d5-d04b-457d-a6f8-0a747ee97f2d.jpeg"
-        },
-        {
-          "file": "media/headstone-fag.jpg",
-          "kind": "headstone",
-          "source": "Find A Grave 139634471 — WILLIAM T. OLSON 1884–1963 Holden",
-          "source_url": "https://images.findagrave.com/photos/2014/338/139634471_1417830155.jpg"
         }
       ],
       "portrait": null,
       "object_ids": [
         "FT-0015",
         "FT-0016",
-        "FT-0020"
+        "FT-0020",
+        "FT-0488",
+        "FT-0509",
+        "FT-0554"
       ],
       "sources": [
         {
+          "label": "FamilySearch 1900 US Census — William Olson, 16, b. Kansas; son of Isaac × Johnanna, Lyman SD (FT-0509)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MMRH-1L1"
+        },
+        {
           "label": "Find A Grave 139634471 — William Theodore Olson",
           "url": "https://www.findagrave.com/memorial/139634471/william_theodore-olson"
+        },
+        {
+          "label": "PAA death index 1963 — OLSON WILLIAM THEODOR; 21 Aug 1963 Tofield 006-953; mother MATTSON (FT-0488)",
+          "url": "https://provincialarchives.alberta.ca/sites/default/files/2018-11/deaths-o-1954-1965_0.pdf"
+        },
+        {
+          "label": "EPL Edmonton Obituaries index — Olson, William; 1963 August 23",
+          "url": "https://www2.epl.ca/Obituaries/ObituariesResults.cfm?TheName=Olson&TheYear=1963&TheYear2=1963"
         },
         {
           "label": "Find A Grave 26322001 — father Isaac Olsen (children grid)",
@@ -6229,7 +6892,7 @@ window.PEOPLE_DATA = {
       ],
       "birth": "1884",
       "death": "1963-08-21",
-      "birth_place": "USA",
+      "birth_place": "Kansas, USA",
       "death_place": "Holden, Lloydminster Census Division, Alberta, Canada",
       "burial": "Holden Cemetery, Holden, Lloydminster Census Division, Alberta, Canada"
     },
@@ -6253,16 +6916,31 @@ window.PEOPLE_DATA = {
           "kind": "headstone",
           "source": "Find A Grave 139168614 — SIZER / Dick 1888–1956 / Mabel 1893–1974",
           "source_url": "https://images.findagrave.com/photos/2017/284/139168614_ff0d6967-ff31-41f7-b466-e1df36b187a9.jpeg"
+        },
+        {
+          "file": "media/fag-139168614-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 139168614 — Mabel Victoria Olson Sizer",
+          "source_url": "https://images.findagrave.com/photos/2017/284/139168614_ff0d6967-ff31-41f7-b466-e1df36b187a9.jpeg?size=original"
         }
       ],
       "portrait": null,
       "object_ids": [
-        "FT-0020"
+        "FT-0015",
+        "FT-0016",
+        "FT-0020",
+        "FT-0509",
+        "FT-0511",
+        "FT-0596"
       ],
       "sources": [
         {
           "label": "Find A Grave 139168614 — Mabel Victoria Olson Sizer",
           "url": "https://www.findagrave.com/memorial/139168614/mabel_victoria-sizer"
+        },
+        {
+          "label": "EPL Edmonton Obituaries index — Sizer, M.; 1974 November 28 (candidate)",
+          "url": "https://www2.epl.ca/Obituaries/ObituariesResults.cfm?TheName=Sizer&TheYear=1974&TheYear2=1974"
         },
         {
           "label": "Find A Grave 26322001 — father Isaac Olsen (children grid)",
@@ -6297,11 +6975,11 @@ window.PEOPLE_DATA = {
       "birth_place": "South Dakota, USA",
       "burial": "Holden Cemetery, Holden, Lloydminster Census Division, Alberta, Canada"
     },
-    "carl_leonard_olson": {
-      "id": "carl_leonard_olson",
-      "slug": "carl-leonard-olson",
-      "name": "Carl Leonard Olson",
-      "years": "1899-1984",
+    "pearl_olson_williams": {
+      "id": "pearl_olson_williams",
+      "slug": "pearl-olson-williams",
+      "name": "Pearl Olson Williams",
+      "years": "",
       "confidence": "Probable",
       "verified": false,
       "status": "researching",
@@ -6316,9 +6994,87 @@ window.PEOPLE_DATA = {
       "object_ids": [
         "FT-0015",
         "FT-0016",
-        "FT-0020"
+        "FT-0020",
+        "FT-0511"
       ],
       "sources": [
+        {
+          "label": "FT-0020 — William Olson 1963 death notice — sister Mrs. Pearl Williams of India",
+          "url": "https://images.findagrave.com/photos/2023/216/139634471_44e915d5-d04b-457d-a6f8-0a747ee97f2d.jpeg"
+        },
+        {
+          "label": "FT-0016 — Jennie Olsen 1956 death notice — daughter Mrs. L. E. Williams",
+          "url": "https://images.findagrave.com/photos/2023/216/26322002_bc11fb44-fffa-4a73-b6d0-85402550f722.jpeg"
+        },
+        {
+          "label": "FT-0015 — Isaac Olsen 1947 death notice — daughter Mrs. L. E. Williams, Lulu Island",
+          "url": "https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg"
+        }
+      ],
+      "aka": [
+        "Pearl Williams",
+        "Mrs. Pearl Williams",
+        "Mrs. L. E. Williams",
+        "née Olson"
+      ],
+      "parent_links": [
+        {
+          "id": "isaac_olsen",
+          "confidence": "Probable"
+        },
+        {
+          "id": "jennie_olsen",
+          "confidence": "Probable"
+        }
+      ]
+    },
+    "carl_leonard_olson": {
+      "id": "carl_leonard_olson",
+      "slug": "carl-leonard-olson",
+      "name": "Carl Leonard Olson",
+      "years": "1899-1984",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "isaac_olsen",
+        "jennie_olsen"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [
+        {
+          "file": "media/bc-death-1984-09-016583.jpg",
+          "kind": "vital-record",
+          "source": "BC Archives — Registration of Death 1984-09-016583 (FT-0487)",
+          "source_url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004479511/004479511_01320.jpg"
+        },
+        {
+          "file": "media/fag-269531277-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 269531277 — PVT Carl Leonard Olson",
+          "source_url": "https://images.findagrave.com/photos/2026/113/269531277_dbd0051b-f3e1-4019-8f3e-e0dbbb5b9723.jpeg?size=original"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0015",
+        "FT-0016",
+        "FT-0020",
+        "FT-0487",
+        "FT-0509",
+        "FT-0511",
+        "FT-0555"
+      ],
+      "sources": [
+        {
+          "label": "BC Archives death 1984-09-016583 — CARL LEONARD OLSON; Vancouver 4 Oct 1984",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/Genealogy/Results?search=Search&as.type_death=true&as.registration_num=1984-09-016583"
+        },
+        {
+          "label": "BC Archives death image 004479511_01320.jpg",
+          "url": "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004479511/004479511_01320.jpg"
+        },
         {
           "label": "Find A Grave 269531277 — PVT Carl Leonard Olson",
           "url": "https://www.findagrave.com/memorial/269531277/carl_leonard-olson"
@@ -6344,17 +7100,343 @@ window.PEOPLE_DATA = {
       "parent_links": [
         {
           "id": "isaac_olsen",
-          "confidence": "Probable"
+          "confidence": "Confirmed"
         },
         {
           "id": "jennie_olsen",
-          "confidence": "Probable"
+          "confidence": "Confirmed"
         }
       ],
       "birth": "1899-03-03",
       "death": "1984-10-04",
       "birth_place": "South Dakota, USA",
-      "death_place": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada"
+      "death_place": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada",
+      "burial": "Cremated 11 Oct 1984, Vancouver Crematorium Ltd., Fraser Street, Vancouver, British Columbia, Canada"
+    },
+    "albin_edward_rudd": {
+      "id": "albin_edward_rudd",
+      "slug": "albin-edward-rudd",
+      "name": "Albin Edward Rudd",
+      "years": "1887-1949",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [
+        "margaret_emma_fuller_rudd"
+      ],
+      "children": [
+        "robert_fuller_rudd"
+      ],
+      "media": [
+        {
+          "file": "media/fag-74876188-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 74876188 — Albin Edward Rudd",
+          "source_url": "https://images.findagrave.com/photos/2011/224/74876188_131327917961.jpg?size=original"
+        },
+        {
+          "ref": "margaret-emma-fuller-rudd/media/fag-196389831-01-headstone.jpg",
+          "kind": "headstone",
+          "source": "Find A Grave memorial 196389831 — spouse Margaret Emma Fuller Rudd (plot Q-1-240-1 adjacent Q-1-241-4)",
+          "source_url": "https://images.findagrave.com/photos/2021/303/196389831_41fbf644-f702-47b7-a6a5-8bdce5cc9f02.jpeg?size=original"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0470",
+        "FT-0507",
+        "FT-0512",
+        "FT-0513",
+        "FT-0514",
+        "FT-0515",
+        "FT-0516",
+        "FT-0521",
+        "FT-0525",
+        "FT-0542",
+        "FT-0544",
+        "FT-0545",
+        "FT-0593",
+        "FT-0594",
+        "FT-0595",
+        "FT-0654",
+        "FT-0655",
+        "FT-0678",
+        "FT-0679",
+        "FT-0693",
+        "FT-0762",
+        "FT-0763",
+        "FT-0764"
+      ],
+      "sources": [
+        {
+          "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Claus brothers Fritz/Hugo/Albin; FT-0470",
+          "url": ""
+        },
+        {
+          "label": "Find A Grave 74876188 — Albin Edward Rudd (1887–16 Aug 1949), Olivewood Q-1-241-4; spouse Margaret Emma Fuller; son Robert Fuller",
+          "url": "https://www.findagrave.com/memorial/74876188/albin-edward-rudd"
+        },
+        {
+          "label": "Olivewood Memorial Park — Albin Edward Rudd (16 Aug 1949), section q row 1 lot 241 grave 4",
+          "url": "https://olivewoodcem.mykeeper.com/AlbinEdwardRudd"
+        },
+        {
+          "label": "FamilySearch NUMIDENT — Albin Edward Rudd b. 11 Jul 1887 Vermland, Sweden; parents Marie Edison, Carl J Rudd (ark 6K4Q-6GNP)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:6K4Q-6GNP"
+        },
+        {
+          "label": "CADI 1940–1997 (Ancestry 5180 / 6365809) — Albin Edward Rudd b. 11 Jul 1887 Other Country; d. 16 Aug 1949 Riverside; mother’s maiden Edeson; SSN blank",
+          "url": "https://www.ancestry.com/search/collections/5180/records/6365809"
+        },
+        {
+          "label": "Find A Grave 72640033 — son Robert Fuller Rudd b. 13 Jun 1916 Alberta (parents grid names Albin × Margaret)",
+          "url": "https://www.findagrave.com/memorial/72640033/robert_fuller-rudd"
+        },
+        {
+          "label": "Press-Enterprise — George E. Rudd obituary (1931 uncle, aunt, cousin Robert Rudd)",
+          "url": "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+        },
+        {
+          "label": "Connect 2026-08-18 — open emigration negative infant Albin 1888–1891 (FT-0693); reject Fredrikstad Johan Albin 1856 (C2733)",
+          "url": "https://www.emiweb.se/databaser/passagerarlistor-for-svenska-hamnar/"
+        }
+      ],
+      "aka": [
+        "Albin Rudd",
+        "Albin E. Rudd"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "margaret_emma_fuller_rudd",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1887-07-11",
+      "death": "1949-08-16",
+      "birth_place": "Värmland (Vermland), Sweden",
+      "death_place": "Riverside County, California, USA",
+      "burial": "Olivewood Cemetery (Memorial Park), Riverside, California; plot Q-1-241-4"
+    },
+    "fritz_e_rudd": {
+      "id": "fritz_e_rudd",
+      "slug": "fritz-e-rudd",
+      "name": "Fritz E. Rud",
+      "years": "1892–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0506",
+        "FT-0522",
+        "FT-0524",
+        "FT-0525",
+        "FT-0526",
+        "FT-0570",
+        "FT-0676"
+      ],
+      "sources": [
+        {
+          "label": "FamilySearch 1910 US Census — Fritz E Rud, son, 18, b. Minnesota; Minnesota Twp, Roberts Co., SD (household of Carl J × Maria)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        },
+        {
+          "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Claus brothers Fritz/Hugo/Albin; FT-0470",
+          "url": ""
+        },
+        {
+          "label": "Connect 2026-08-18 — FAG negative Fritz E. adult death/burial (~1892 MN); FT-0522",
+          "url": "https://www.findagrave.com/memorial/search?firstname=Fritz&lastname=Rud&birthyear=1892&birthyearoffset=3"
+        },
+        {
+          "label": "Connect 2026-08-18 — WWI draft/SSDI negative Fritz E.; FT-0524",
+          "url": "http://files.usgwarchives.net/sd/military/ww1/ww1-draft-df.txt"
+        },
+        {
+          "label": "Connect 2026-08-18 — Olivewood negative (not with Claus/Albin); FT-0525",
+          "url": "https://olivewoodcem.mykeeper.com/ClausYRudd"
+        }
+      ],
+      "aka": [
+        "Fritz E. Rudd",
+        "Fritz Rud"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1892",
+      "birth_place": "Minnesota, USA"
+    },
+    "jennie_l_rudd": {
+      "id": "jennie_l_rudd",
+      "slug": "jennie-l-rudd",
+      "name": "Jennie L. Rud",
+      "years": "1895–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0506",
+        "FT-0523",
+        "FT-0525",
+        "FT-0526",
+        "FT-0570"
+      ],
+      "sources": [
+        {
+          "label": "FamilySearch 1910 US Census — Jennie L Rud, daughter, 15, b. Minnesota; Minnesota Twp, Roberts Co., SD",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        },
+        {
+          "label": "Connect 2026-08-18 — FAG negative Jennie L. adult death/burial (~1895 MN); FT-0523",
+          "url": "https://www.findagrave.com/memorial/search?firstname=Jennie&lastname=Rud&birthyear=1895&birthyearoffset=5&location=Minnesota&locationId=state_25"
+        },
+        {
+          "label": "Connect 2026-08-18 — Olivewood negative (not with Claus/Albin); FT-0525",
+          "url": "https://olivewoodcem.mykeeper.com/ClausYRudd"
+        }
+      ],
+      "aka": [
+        "Jennie L. Rudd"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1895",
+      "birth_place": "Minnesota, USA"
+    },
+    "hattie_a_rudd": {
+      "id": "hattie_a_rudd",
+      "slug": "hattie-a-rudd",
+      "name": "Hattie A. Rud",
+      "years": "1897–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0506",
+        "FT-0570"
+      ],
+      "sources": [
+        {
+          "label": "FamilySearch 1910 US Census — Hattie A Rud, daughter, 13, b. South Dakota; Minnesota Twp, Roberts Co., SD",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        }
+      ],
+      "aka": [
+        "Hattie A. Rudd"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1897",
+      "birth_place": "South Dakota, USA"
+    },
+    "carl_h_rudd": {
+      "id": "carl_h_rudd",
+      "slug": "carl-h-rudd",
+      "name": "Carl H. Rud Jr.",
+      "years": "1899–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0506",
+        "FT-0570",
+        "FT-0661"
+      ],
+      "sources": [
+        {
+          "label": "FamilySearch 1910 US Census — Carl H Rud Jr, son, 11, b. South Dakota; Minnesota Twp, Roberts Co., SD",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        },
+        {
+          "label": "FamilySearch 1930 US Census — Hugo C Rud, son, 29, b. South Dakota; Carl J Rud 69 widowed; Minnesota Twp, Roberts Co., SD (FT-0661)",
+          "url": "https://www.familysearch.org/ark:/61903/1:1:XQVN-1FQ"
+        }
+      ],
+      "aka": [
+        "Carl H. Rudd",
+        "Carl H Rud Jr"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1899",
+      "birth_place": "South Dakota, USA"
     },
     "dorothy_parsons_prichard": {
       "id": "dorothy_parsons_prichard",
@@ -8837,6 +9919,373 @@ window.PEOPLE_DATA = {
       "death": "1855-08-28",
       "birth_place": "Berwick, York County, Maine",
       "death_place": "South Berwick, York County, Maine, USA"
+    },
+    "christopher_huntress_jr": {
+      "id": "christopher_huntress_jr",
+      "slug": "christopher-huntress-jr",
+      "name": "Christopher Huntress Jr.",
+      "years": "1728–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0742",
+        "FT-0745",
+        "FT-0746"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 3 — Christopher son of Christopher Huntris & Mary bp. 13 Oct 1728",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
+        {
+          "label": "NEHGR 22 (1868) — Christopher Huntris of Newington m. Elizabeth Pearson of Hampton",
+          "url": "https://archive.org/details/newenglandhistor1868wate"
+        }
+      ],
+      "aka": [
+        "Ensign Christopher Huntress",
+        "Christopher Huntris Junr"
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1728-10-13",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "martha_huntress_lord_berwick": {
+      "id": "martha_huntress_lord_berwick",
+      "slug": "martha-huntress-lord-berwick",
+      "name": "Martha Huntress Lord",
+      "years": "1728–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0742",
+        "FT-0745",
+        "FT-0746"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 3 — Martha daughter of Christopher & Mary Huntris bp. 13 Oct 1728",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
+        {
+          "label": "NEHGR 22 (1868) — Joseph Lord of Berwick and Martha Huntris of Newington",
+          "url": "https://archive.org/details/newenglandhistor1868wate"
+        }
+      ],
+      "aka": [
+        "Martha Huntris"
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1728-10-13",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "mary_huntress_rollins": {
+      "id": "mary_huntress_rollins",
+      "slug": "mary-huntress-rollins",
+      "name": "Mary Huntress Rollins",
+      "years": "1732–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0742",
+        "FT-0745",
+        "FT-0746"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 3 — Mary daughter of Christopher & Mary Huntris bp. 7 May 1732",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
+        {
+          "label": "NEHGR 22 (1868) — Samuel Rawlins and Mary Huntris",
+          "url": "https://archive.org/details/newenglandhistor1868wate"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Mary Huntress bp. 7 May 1732, m. Lawrence Rollins",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        }
+      ],
+      "aka": [
+        "Mary Huntris",
+        "Mary Rawlings",
+        "Mary Rawlins"
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1732-05-07",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "george_huntress_newington": {
+      "id": "george_huntress_newington",
+      "slug": "george-huntress-newington",
+      "name": "George Huntress",
+      "years": "1734–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0742",
+        "FT-0745"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 3 — 3 Feb 1734 Christopher Huntis and wife had a son baptized George",
+          "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
+        },
+        {
+          "label": "Portsmouth Athenaeum — George Huntress bp. 3 Feb 1734",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1734-02-03",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "david_huntress_newington": {
+      "id": "david_huntress_newington",
+      "slug": "david-huntress-newington",
+      "name": "David Huntress",
+      "years": "1737–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0745"
+      ],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — David Huntress bp. 13 Mar 1737",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        },
+        {
+          "label": "WikiTree Huntress-18 — David bp. 13 Mar 1737; likely died young (not in 1763 will)",
+          "url": "https://www.wikitree.com/wiki/Huntress-18"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1737-03-13",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "nathan_huntress_newington": {
+      "id": "nathan_huntress_newington",
+      "slug": "nathan-huntress-newington",
+      "name": "Nathan Huntress",
+      "years": "1739–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0745"
+      ],
+      "sources": [
+        {
+          "label": "Portsmouth Athenaeum — Nathan Huntress b. c1739",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        },
+        {
+          "label": "WikiTree Huntress-18 — Nathan b. about 1739; named in Christopher will",
+          "url": "https://www.wikitree.com/wiki/Huntress-18"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1739",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "noah_huntress": {
+      "id": "noah_huntress",
+      "slug": "noah-huntress",
+      "name": "Noah Huntress",
+      "years": "1742–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0743",
+        "FT-0745"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 4 p.16 — Noah son of Christopher & Mary Huntris bp. 20 Feb 1742/3",
+          "url": "https://archive.org/details/newhampshiregene04newh/page/16/mode/2up"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Noah Huntress bp. 20 Feb 1742, m. Abigail Pickering",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        }
+      ],
+      "aka": [
+        "Noah Huntris"
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1742-02-20",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
+    },
+    "elizabeth_huntress_stevens": {
+      "id": "elizabeth_huntress_stevens",
+      "slug": "elizabeth-huntress-stevens",
+      "name": "Elizabeth Huntress Stevens",
+      "years": "1744–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "christopher_huntress",
+        "mary_chick_huntress"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0743",
+        "FT-0745"
+      ],
+      "sources": [
+        {
+          "label": "NHGR vol. 4 p.17 — Elizabeth daughter of Christopher Huntris & Mary bp. 18 Mar 1743/4",
+          "url": "https://archive.org/details/newhampshiregene04newh/page/17/mode/2up"
+        },
+        {
+          "label": "Portsmouth Athenaeum — Elizabeth Huntress bp. 18 Mar 1743/44, m. Stevens",
+          "url": "https://athenaeum.pastperfectonline.com/byperson?keyword=Huntress%2C+Christopher%2C+1703-1782"
+        }
+      ],
+      "aka": [
+        "Elizabeth Huntris"
+      ],
+      "parent_links": [
+        {
+          "id": "christopher_huntress",
+          "confidence": "Probable"
+        },
+        {
+          "id": "mary_chick_huntress",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1744-03-18",
+      "birth_place": "Newington, Rockingham County, New Hampshire"
     },
     "jones_knight": {
       "id": "jones_knight",
@@ -12915,9 +14364,10 @@ window.PEOPLE_DATA = {
       "object_ids": [
         "FT-0392",
         "FT-0396",
-        "FT-0397"
+        "FT-0397",
+        "FT-0470"
       ]
     }
   }
 };
-window.OBJECTS_INDEX = {"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd"},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)"},"FT-0455":{"dir":"FT-0455-hbc-edmonton-downtown-rudd-years","photos":[],"entry":true,"type":"newspaper","title":"HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)"},"FT-0015":{"dir":"FT-0015-death-notice-isaac-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Isaac Olsen (FAG scan)"},"FT-0016":{"dir":"FT-0016-death-notice-jennie-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Jennie Olsen (FAG scan)"},"FT-0020":{"dir":"FT-0020-death-notice-william-olson-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — William Olson (FAG scan)"},"FT-0445":{"dir":"FT-0445-sdgenweb-lyman-birth-olson-della-1902","photos":[],"entry":true,"type":"vital","title":"SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)"},"FT-0456":{"dir":"FT-0456-olivewood-memorial-park-claus-della-burial","photos":[],"entry":true,"type":"newspaper","title":"Olivewood Memorial Park founding — burial landscape for Claus × Della"},"FT-0013":{"dir":"FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Isaac Olsen (1947-09-008902)"},"FT-0014":{"dir":"FT-0014-bc-registration-of-death-jennie-olsen-56-09-0070","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Jennie Olsen (56-09-007015)"},"FT-0444":{"dir":"FT-0444-henderson-edmonton-1931-chas-y-rudd","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)"},"FT-0454":{"dir":"FT-0454-hbc-wholesale-claus-rudd-edmonton-trade","photos":[],"entry":true,"type":"newspaper","title":"What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade"},"FT-0006":{"dir":"FT-0006-bill-parsons-baseball-card-rolodex","photos":[],"entry":true,"type":"artifact","title":"Bill Parsons baseball-card rolodex"},"FT-0007":{"dir":"FT-0007-press-enterprise-elizabeth-betty-a-parsons","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — Elizabeth “Betty” A. Parsons"},"FT-0010":{"dir":"FT-0010-parsons-allen-wedding-notice-wee-kirk-o-the-heat","photos":[],"entry":true,"type":"newspaper","title":"Parsons–Allen wedding notice — Wee Kirk o' the Heather"},"FT-0012":{"dir":"FT-0012-betty-allen-among-pasadena-nursing-graduates","photos":[],"entry":true,"type":"newspaper","title":"Betty Allen among Pasadena nursing graduates"},"FT-0011":{"dir":"FT-0011-pitcher-parsons-scheduled-vs-former-teammates-ni","photos":[],"entry":true,"type":"newspaper","title":"Pitcher Parsons scheduled vs former teammates — nightball (1936)"},"FT-0443":{"dir":"FT-0443-maine-vr-marriage-nelson-hattie-foss","photos":["photos/01-parents-side.png","photos/02-face.png"],"entry":true,"type":"vital","title":"Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"},"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)"},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only"},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)"}};
+window.OBJECTS_INDEX = {"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd","marcy_parsons","bill_parsons","morganne","dan_rudd","nancy_rudd","derek_rudd","matthew_rudd"]},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)","person_ids":["bill_parsons","marcy_parsons","george_rudd","morganne"]},"FT-0470":{"dir":"FT-0470-dan-rudd-alex-interview-2026-08-17","photos":[],"entry":true,"type":"narration","title":"Dan Rudd × Alex Shorts interview (17 Aug 2026)","person_ids":["dan_rudd","alexander","marcy_parsons","george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0576":{"dir":"FT-0576-riverside-orange-empire-citrus-landscape","photos":[],"entry":true,"type":"place","title":"Riverside Orange Empire — citrus landscape for Marion Orciere’s youth","person_ids":["marion_orciere","theodore_m_orciere","rachel_g_orciere"]},"FT-0577":{"dir":"FT-0577-crestlawn-riverside-orciere-burials","photos":[],"entry":true,"type":"place","title":"Crestlawn Memorial Park — Riverside resting place (Orciere family)","person_ids":["marion_orciere","theodore_m_orciere","rachel_g_orciere"]},"FT-0455":{"dir":"FT-0455-hbc-edmonton-downtown-rudd-years","photos":[],"entry":true,"type":"newspaper","title":"HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)","person_ids":["clause_rudd","george_rudd","della_elizabeth_rudd"]},"FT-0497":{"dir":"FT-0497-mnopedia-swedish-minnesota-farm-landscape","photos":[],"entry":true,"type":"place","title":"MNopedia — Swedish Minnesota farm settlements (Claus’s birth-state landscape)","person_ids":["clause_rudd","george_rudd"]},"FT-0498":{"dir":"FT-0498-great-plains-dakota-swedish-farm-landscape","photos":[],"entry":true,"type":"place","title":"Great Plains — Swedish farm settlements in the Dakotas (landscape, not a named Rudd farm)","person_ids":["clause_rudd","george_rudd"]},"FT-0501":{"dir":"FT-0501-corona-eighth-and-joy-market-landscape","photos":[],"entry":true,"type":"place","title":"Corona 8th & Joy — lemon-capital landscape for the family market","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0502":{"dir":"FT-0502-la-restaurant-row-encore","photos":[],"entry":true,"type":"place","title":"L.A. Restaurant Row — The Encore on La Cienega","person_ids":["george_rudd"]},"FT-0590":{"dir":"FT-0590-westmount-126th-boarding-landscape","photos":[],"entry":true,"type":"place","title":"Westmount 126th Street — where Claus boarded in 1931","person_ids":["clause_rudd","della_elizabeth_rudd","george_rudd"]},"FT-0591":{"dir":"FT-0591-corona-lemon-boom-1930s-arrival","photos":[],"entry":true,"type":"place","title":"Corona lemon boom — landscape when the Rudds arrived (1931)","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0592":{"dir":"FT-0592-riverside-coachman-university-avenue","photos":[],"entry":true,"type":"place","title":"Riverside University Avenue — The Coachman building landscape","person_ids":["george_rudd"]},"FT-0015":{"dir":"FT-0015-death-notice-isaac-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Isaac Olsen (FAG scan)","person_ids":["isaac_olsen","jennie_olsen","della_elizabeth_rudd","carl_leonard_olson","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams","mabel_victoria_olson_sizer"]},"FT-0016":{"dir":"FT-0016-death-notice-jennie-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Jennie Olsen (FAG scan)","person_ids":["jennie_olsen","isaac_olsen","della_elizabeth_rudd","carl_leonard_olson","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams","mabel_victoria_olson_sizer"]},"FT-0020":{"dir":"FT-0020-death-notice-william-olson-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — William Olson (FAG scan)","person_ids":["william_theodore_olson","della_elizabeth_rudd","carl_leonard_olson","mabel_victoria_olson_sizer","clause_rudd","anna_augusta_olson_mclachlin","pearl_olson_williams"]},"FT-0445":{"dir":"FT-0445-sdgenweb-lyman-birth-olson-della-1902","photos":[],"entry":true,"type":"vital","title":"SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0456":{"dir":"FT-0456-olivewood-memorial-park-claus-della-burial","photos":[],"entry":true,"type":"newspaper","title":"Olivewood Memorial Park founding — burial landscape for Claus × Della","person_ids":["della_elizabeth_rudd","clause_rudd"]},"FT-0503":{"dir":"FT-0503-lyman-county-sd-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Lyman County, South Dakota — homestead wave around Della’s 1902 birth","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0504":{"dir":"FT-0504-holden-alberta-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Holden, Alberta — homestead village in Isaac × Jennie’s Canada years","person_ids":["isaac_olsen","jennie_olsen","della_elizabeth_rudd"]},"FT-0511":{"dir":"FT-0511-1911-census-strathcona-isaac-olson","photos":[],"entry":true,"type":"census","title":"1911 Canada Census — Strathcona, Alberta — Isaac Olson household","person_ids":["isaac_olsen","jennie_olsen","mabel_victoria_olson_sizer","carl_leonard_olson","pearl_olson_williams","della_elizabeth_rudd"]},"FT-0596":{"dir":"FT-0596-fag-family-grid-mabel-victoria-olson-sizer","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Mabel Victoria Olson Sizer family grid","person_ids":["mabel_victoria_olson_sizer","isaac_olsen","jennie_olsen","della_elizabeth_rudd"]},"FT-0013":{"dir":"FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Isaac Olsen (1947-09-008902)","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0014":{"dir":"FT-0014-bc-registration-of-death-jennie-olsen-56-09-0070","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Jennie Olsen (56-09-007015)","person_ids":["jennie_olsen","isaac_olsen"]},"FT-0487":{"dir":"FT-0487-bc-registration-of-death-carl-leonard-olson","photos":["photos/01.jpg"],"entry":true,"type":"vital","title":"BC Registration of Death — Carl Leonard Olson (1984-09-016583)","person_ids":["carl_leonard_olson","isaac_olsen","jennie_olsen"]},"FT-0488":{"dir":"FT-0488-paa-death-index-william-theodore-olson-1963","photos":[],"entry":true,"type":"vital","title":"Alberta death index 1963 — William Theodor Olson (Tofield 006-953)","person_ids":["william_theodore_olson","jennie_olsen"]},"FT-0509":{"dir":"FT-0509-1900-census-lyman-sd-isaac-olson","photos":[],"entry":true,"type":"census","title":"1900 US Census — Lyman, SD — Isaac Olson household","person_ids":["isaac_olsen","jennie_olsen","william_theodore_olson","anna_augusta_olson_mclachlin","mabel_victoria_olson_sizer","carl_leonard_olson"]},"FT-0523":{"dir":"FT-0523-fag-negative-jennie-l-rudd-adult","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Jennie L. Rud/Rudd adult death/burial negative (~1895 MN)","person_ids":["jennie_l_rudd","jennie_olsen"]},"FT-0543":{"dir":"FT-0543-interment-mountain-view-olsen-plot","photos":[],"entry":true,"type":"place","title":"interment.net — Mountain View Cemetery plot ABRAY-*-16-005-0007 (Isaac × Jennie Olsen)","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0552":{"dir":"FT-0552-fag-gravesite-isaac-jennie-olsen-mountain-view","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Isaac × Jennie Olsen Mountain View gravesite notes","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0554":{"dir":"FT-0554-fag-family-grid-william-theodore-olson","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — William Theodore Olson family grid","person_ids":["william_theodore_olson","isaac_olsen","jennie_olsen"]},"FT-0555":{"dir":"FT-0555-fag-bio-carl-leonard-olson-bc-pointer","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Carl Leonard Olson bio (BC Archives pointer)","person_ids":["carl_leonard_olson","isaac_olsen","jennie_olsen"]},"FT-0480":{"dir":"FT-0480-bc-death-anna-augusta-mclachlin-1970","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Anna Augusta McLachlin (1970-09-003207, FAG transcription)","person_ids":["anna_augusta_olson_mclachlin","isaac_olsen"]},"FT-0444":{"dir":"FT-0444-henderson-edmonton-1931-chas-y-rudd","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)","person_ids":["clause_rudd"]},"FT-0454":{"dir":"FT-0454-hbc-wholesale-claus-rudd-edmonton-trade","photos":[],"entry":true,"type":"newspaper","title":"What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade","person_ids":["clause_rudd"]},"FT-0493":{"dir":"FT-0493-hogman-soldatnamn-andersson-rudd","photos":[],"entry":true,"type":"military","title":"Högman — Swedish soldatnamn: Andersson patronymic vs soldier surname","person_ids":["clause_rudd"]},"FT-0494":{"dir":"FT-0494-aberg-soldiers-surnames-sweden-1984","photos":[],"entry":true,"type":"military","title":"Åberg 1984 — Soldiers' surnames in Sweden (War Archives historian)","person_ids":["clause_rudd"]},"FT-0495":{"dir":"FT-0495-rudd-class-soldatnamn-rude-rote","photos":[],"entry":true,"type":"military","title":"Rudd-class soldier names — rote Rude / Rudha (example, not this family)","person_ids":["clause_rudd"]},"FT-0496":{"dir":"FT-0496-swedish-service-length-not-two-year-swap","photos":[],"entry":true,"type":"military","title":"Swedish service length — allotted career vs 1901 conscription (not a 2-year swap)","person_ids":["clause_rudd"]},"FT-0500":{"dir":"FT-0500-revillon-edmonton-claus-wholesale","photos":[],"entry":true,"type":"place","title":"Revillon Frères Edmonton warehouse — Claus’s 1921 wholesale clerk job","person_ids":["clause_rudd"]},"FT-0506":{"dir":"FT-0506-1910-census-roberts-sd-carl-j-rud","photos":[],"entry":true,"type":"census","title":"1910 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud household","person_ids":["carl_j_rudd","maria_edison_rudd","fritz_e_rudd","clause_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd"]},"FT-0508":{"dir":"FT-0508-elca-baptism-klaus-jorgen-rud-1893","photos":[],"entry":true,"type":"church","title":"ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham, Minnesota","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0510":{"dir":"FT-0510-wwi-draft-claus-yugue-rud-louisburg","photos":[],"entry":true,"type":"military","title":"WWI draft — Claus Yugue Rud, born Louisburg, Minnesota","person_ids":["clause_rudd"]},"FT-0525":{"dir":"FT-0525-olivewood-negative-fritz-jennie-rudd","photos":[],"entry":true,"type":"research_note","title":"Olivewood Riverside — Fritz E. / Jennie L. Rud not buried with Claus/Albin","person_ids":["fritz_e_rudd","jennie_l_rudd","clause_rudd","albin_edward_rudd"]},"FT-0562":{"dir":"FT-0562-louisburg-platted-1887-birthplace","photos":[],"entry":true,"type":"place","title":"Louisburg platted 1887 — Claus's named birthplace hamlet (Lac qui Parle Co.)","person_ids":["clause_rudd"]},"FT-0568":{"dir":"FT-0568-bellingham-perry-pioneer-railroad-landscape","photos":[],"entry":true,"type":"place","title":"Bellingham / Perry area pioneer landscape — sod houses, monthly preaching, GN railroad 1887","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0569":{"dir":"FT-0569-lqp-scandinavian-lutheran-home-church","photos":[],"entry":true,"type":"church","title":"Lac qui Parle Scandinavian Lutheran — home services, Swedish worship, Providence church","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0570":{"dir":"FT-0570-roberts-county-1892-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Roberts County, SD — 1892 reservation opening & farm homestead landscape","person_ids":["carl_j_rudd","maria_edison_rudd","clause_rudd","fritz_e_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd"]},"FT-0587":{"dir":"FT-0587-henderson-edmonton-1921-claus-revillon","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1921 — Rudd Claus T (Revillon Whol)","person_ids":["clause_rudd"]},"FT-0588":{"dir":"FT-0588-revillon-edmonton-arrival-lore","photos":[],"entry":true,"type":"place","title":"Revillon Frères arrival lore — train banner and HBC rivalry (Edmonton)","person_ids":["clause_rudd"]},"FT-0589":{"dir":"FT-0589-edmonton-boardwalk-wholesale-district","photos":[],"entry":true,"type":"place","title":"Boardwalk Building — Revillon’s wholesale-district neighbor","person_ids":["clause_rudd"]},"FT-0593":{"dir":"FT-0593-hagfors-brukssamhalle-uddeholm-1873","photos":[],"entry":true,"type":"place","title":"Hagfors brukssamhälle — Uddeholm ironworks founding (Carl × Maria Sweden door)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0594":{"dir":"FT-0594-varmland-emigration-wave-1880s","photos":[],"entry":true,"type":"place","title":"Värmland emigration wave — 1880s peak (Carl × Maria generation)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0595":{"dir":"FT-0595-norra-rada-parish-landscape","photos":[],"entry":true,"type":"place","title":"Norra Råda parish landscape — rural bruk patchwork (Albin 1887 door)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0507":{"dir":"FT-0507-numident-albin-edward-rudd-parents","photos":[],"entry":true,"type":"vital","title":"NUMIDENT — Albin Edward Rudd, parents Carl J. Rudd × Marie Edison","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0512":{"dir":"FT-0512-norra-rada-c7-entry-128-rudstrom","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 birth 1887 entry 128 — Maria Karolina, Rudström Karl Johan","person_ids":["carl_j_rudd","albin_edward_rudd"]},"FT-0513":{"dir":"FT-0513-norra-rada-c7-july11-julia-maria-rudstrom","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 1887 entry 130 — Julia Maria, 11 Jul (Rudström Karolina)","person_ids":["albin_edward_rudd","carl_j_rudd"]},"FT-0514":{"dir":"FT-0514-norra-rada-c7-rudstrom-svensdotter-johan-alexander","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 1887 — Johan Alexander, Rudström × Svensdotter","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0515":{"dir":"FT-0515-norra-rada-hf-sida-97-risater","photos":[],"entry":true,"type":"church","title":"Norra Råda husförhör A I/20a — ledger sida 97 (Risäter & Brödheden)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0516":{"dir":"FT-0516-norra-rada-c7-albin-negative-july1887","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 July 1887 band — no Albin Edward Rud birth line","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0518":{"dir":"FT-0518-fag-olivewood-negative-maria-rudd-death","photos":[],"entry":true,"type":"research_note","title":"Find a Grave + Olivewood — Maria Rud/Edison death/burial negative","person_ids":["maria_edison_rudd","carl_j_rudd"]},"FT-0520":{"dir":"FT-0520-census-negative-carl-maria-1920-1930-roberts","photos":[],"entry":true,"type":"research_note","title":"1920 / 1930 US census — Carl J. × Maria Rud negative (no open Roberts transcription)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0521":{"dir":"FT-0521-emigration-negative-carl-rud-sweden-mn","photos":[],"entry":true,"type":"research_note","title":"Emigration negative — Carl Rud × Maria Edison Sweden→MN window 1887–1895","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0652":{"dir":"FT-0652-norra-rada-hf-stjernsfors-negative-carl-maria","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Stjernsfors band — negative for Carl J. × Maria Edison","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0653":{"dir":"FT-0653-norra-rada-hf-hagfors-bru-negative-carl-maria","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Hagfors bru band — negative for Carl J. × Maria Edison","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0654":{"dir":"FT-0654-norra-rada-hf-emigration-rudstrom-lines","photos":[],"entry":true,"type":"church","title":"Norra Råda HF — N. Amerika notes on Rudström / Risäter lines (no Carl×Maria)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0661":{"dir":"FT-0661-1930-census-roberts-sd-carl-j-hugo","photos":[],"entry":true,"type":"census","title":"1930 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud × Hugo C. Rud","person_ids":["carl_j_rudd","carl_h_rudd"]},"FT-0676":{"dir":"FT-0676-mnhs-negative-rudd-deaths","photos":[],"entry":true,"type":"research_note","title":"MNHS People Search — Carl × Maria × Fritz Rud/Rudd MN death index negative","person_ids":["carl_j_rudd","maria_edison_rudd","fritz_e_rudd"]},"FT-0677":{"dir":"FT-0677-norra-rada-gustafsdal-heading-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda HF 1886–90 — Gustafsdal not a register heading","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0678":{"dir":"FT-0678-norra-rada-b3-1887-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1887 utflyttning — negative Carl J. × Maria / Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0679":{"dir":"FT-0679-norra-rada-b3-1888-1889-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1888–1889 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0686":{"dir":"FT-0686-maria-edison-rudd-death-window-negative","photos":[],"entry":true,"type":"research_note","title":"Maria Edison Rudd — death/burial window 1910–1930 negative (FAG × Roberts GT × Olivewood)","person_ids":["maria_edison_rudd","carl_j_rudd"]},"FT-0693":{"dir":"FT-0693-open-emi-negative-rudd-1889","photos":[],"entry":true,"type":"research_note","title":"Open emigration negative — Karl/Carl Rud × Maria × Albin 1888–1891 (1930 arrival 1889)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0694":{"dir":"FT-0694-norra-rada-hf-stjernsfors-torps-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Stjernsfors torps — negative for Rudström Karl Johan / Carl×Maria","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0762":{"dir":"FT-0762-norra-rada-b3-1890-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1890 utflyttning — negative Carl J. × Maria / Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0763":{"dir":"FT-0763-norra-rada-b3-1891-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1891 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0764":{"dir":"FT-0764-norra-rada-b3-1892-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1892 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0517":{"dir":"FT-0517-fag-negative-carl-j-rudd-death-burial","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Carl J. Rud/Rudd death/burial negative (1869±5 Sweden)","person_ids":["carl_j_rudd"]},"FT-0519":{"dir":"FT-0519-roberts-sd-birth-andrew-rud-not-carl-j","photos":[],"entry":true,"type":"vital","title":"Roberts Co., SD birth register — Andrew Rud × Gunhild (≠ Carl J. × Maria)","person_ids":["carl_j_rudd"]},"FT-0597":{"dir":"FT-0597-christina-dupray-fag-children-grid","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Christina Miller Dupray children grid (James Story + Frederick Miller)","person_ids":["christina_miller_dupray","james_story_dupray","frederick_miller_dupray","thomas_dupray"]},"FT-0651":{"dir":"FT-0651-norra-rada-hf-sida-47-rastrom-hafversbol","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/20a sida 47 — Karl Johan Råström, Hafversbol","person_ids":["carl_j_rudd"]},"FT-0655":{"dir":"FT-0655-norra-rada-c7-p47-persson-collision","photos":[],"entry":true,"type":"church","title":"C/7 entry 128 HF p.47 — Persson Maria Karolina date collision","person_ids":["carl_j_rudd","albin_edward_rudd"]},"FT-0680":{"dir":"FT-0680-norra-rada-ai20b-sida-47-by-byberg","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/20b sida 47 — 1/2 By (Byberg), not Gustafsdal","person_ids":["carl_j_rudd"]},"FT-0681":{"dir":"FT-0681-norra-rada-ai19a-gustafsdal-loose-notes","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/19a — Gustafsdal place-notes on loose list","person_ids":["carl_j_rudd"]},"FT-0682":{"dir":"FT-0682-1923-plat-rud-c-j-minnesota-twp","photos":[],"entry":true,"type":"deed","title":"1923 Roberts Co. plat index — Rud C. J., Sec. 21 T128N R51W Minnesota Twp","person_ids":["carl_j_rudd"]},"FT-0689":{"dir":"FT-0689-fag-negative-carl-j-rudd-1861","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Carl J. Rud/Rudd death/burial negative (1861±5 Sweden; SD/MN/CA)","person_ids":["carl_j_rudd"]},"FT-0765":{"dir":"FT-0765-norra-rada-ai18a-sida-259-thorsby","photos":[],"entry":true,"type":"church","title":"Norra Råda A I/18a sida 259 — Thorsby, not Gustafsdahl","person_ids":["carl_j_rudd"]},"FT-0766":{"dir":"FT-0766-norra-rada-ai19a-sida-259-uddeholm","photos":[],"entry":true,"type":"church","title":"Norra Råda A I/19a sida 259 — Uddeholm, not Gustafsdahl","person_ids":["carl_j_rudd"]},"FT-0006":{"dir":"FT-0006-bill-parsons-baseball-card-rolodex","photos":[],"entry":true,"type":"artifact","title":"Bill Parsons baseball-card rolodex","person_ids":["bill_parsons"]},"FT-0007":{"dir":"FT-0007-press-enterprise-elizabeth-betty-a-parsons","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — Elizabeth “Betty” A. Parsons","person_ids":["elizabeth_allen","gerald_allen_parsons","bill_parsons"]},"FT-0010":{"dir":"FT-0010-parsons-allen-wedding-notice-wee-kirk-o-the-heat","photos":[],"entry":true,"type":"newspaper","title":"Parsons–Allen wedding notice — Wee Kirk o' the Heather","person_ids":["gerald_allen_parsons","elizabeth_allen","raymond_philip_allen","ina_louise_squier_allen","harriet_b_foss_parsons","nelson_b_parsons","harold_ambrose_parsons","autis_foss_parsons_hicks"]},"FT-0012":{"dir":"FT-0012-betty-allen-among-pasadena-nursing-graduates","photos":[],"entry":true,"type":"newspaper","title":"Betty Allen among Pasadena nursing graduates","person_ids":["elizabeth_allen","raymond_philip_allen","ina_louise_squier_allen"]},"FT-0011":{"dir":"FT-0011-pitcher-parsons-scheduled-vs-former-teammates-ni","photos":[],"entry":true,"type":"newspaper","title":"Pitcher Parsons scheduled vs former teammates — nightball (1936)","person_ids":["gerald_allen_parsons"]},"FT-0443":{"dir":"FT-0443-maine-vr-marriage-nelson-hattie-foss","photos":["photos/01-parents-side.png","photos/02-face.png"],"entry":true,"type":"vital","title":"Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"},"FT-0573":{"dir":"FT-0573-aroostook-potato-starch-industry","photos":[],"entry":true,"type":"place","title":"Aroostook potato starch industry — Nelson Parsons’s trade unpacked","person_ids":["nelson_b_parsons","harriet_b_foss_parsons","ambrose_foss","daniel_w_foss"]},"FT-0742":{"dir":"FT-0742-nhgr-vol3-darling-huntris-baptism","photos":[],"entry":true,"type":"church","title":"NHGR vol. 3 — Newington church baptisms (Darling son of Christopher × Mary)","person_ids":["darling_huntress","christopher_huntress","mary_chick_huntress","christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","george_huntress_newington"]},"FT-0743":{"dir":"FT-0743-nhgr-vol4-noah-elizabeth-huntris","photos":[],"entry":true,"type":"church","title":"NHGR vol. 4 — Newington baptisms Noah & Elizabeth Huntris; Darling × Love covenant","person_ids":["noah_huntress","elizabeth_huntress_stevens","christopher_huntress","mary_chick_huntress","darling_huntress"]},"FT-0745":{"dir":"FT-0745-athenaeum-christopher-huntress","photos":[],"entry":true,"type":"reference","title":"Portsmouth Athenaeum — Christopher Huntress 1703–1782 catalog","person_ids":["christopher_huntress","mary_chick_huntress","darling_huntress","christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","george_huntress_newington","david_huntress_newington","nathan_huntress_newington","noah_huntress","elizabeth_huntress_stevens"]},"FT-0744":{"dir":"FT-0744-stackpole-kittery-chick-huntress","photos":[],"entry":true,"type":"reference","title":"Stackpole Old Kittery p.319 — Mary Chick m. Christopher Huntress of Newington","person_ids":["mary_chick_huntress","christopher_huntress"]},"FT-0746":{"dir":"FT-0746-nehgr-1868-huntress-sib-marriages","photos":[],"entry":true,"type":"church","title":"NEHGR 22 (1868) Newington marriages — Huntress siblings; FAG negative","person_ids":["christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","christopher_huntress"]},"FT-0575":{"dir":"FT-0575-barnstead-nh-bunker-pioneers","photos":[],"entry":true,"type":"place","title":"Barnstead, NH — Bunker pioneers and Parade ground (Harriet N. Bunker stem)","person_ids":["harriet_n_bunker_foss","joseph_s_bunker","olive_otis_bunker"]},"FT-0574":{"dir":"FT-0574-daniel-w-foss-11th-maine-appomattox","photos":[],"entry":true,"type":"military","title":"11th Maine Infantry — late-war Petersburg and Appomattox (Daniel W. Foss’s regiment)","person_ids":["daniel_w_foss"]},"FT-0572":{"dir":"FT-0572-swedish-colony-fort-fairfield-welcome-route","photos":[],"entry":true,"type":"place","title":"Swedish colonists — St. John River route and Fort Fairfield welcome (1870)","person_ids":["percy_parsons","kate_parsons","nelson_b_parsons"]},"FT-0571":{"dir":"FT-0571-new-sweden-maine-swedish-colony-founding","photos":[],"entry":true,"type":"place","title":"New Sweden — Maine Swedish Colony founding (1870)","person_ids":["percy_parsons","kate_parsons"]},"FT-0578":{"dir":"FT-0578-swedish-1872-labor-diversion-outer-colony","photos":[],"entry":true,"type":"place","title":"1871–72 Swedish influx — labor diversion and outer Aroostook settlement","person_ids":["percy_parsons","kate_parsons"]},"FT-0556":{"dir":"FT-0556-fag-inscription-anna-augusta-mclachlin","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Anna Augusta McLachlin inscription and gravesite","person_ids":["anna_augusta_olson_mclachlin"]},"FT-0542":{"dir":"FT-0542-fag-albin-edward-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Albin Edward Rudd memorial extract","person_ids":["albin_edward_rudd","margaret_emma_fuller_rudd","robert_fuller_rudd"],"subject_id":"albin_edward_rudd"},"FT-0544":{"dir":"FT-0544-fag-margaret-emma-fuller-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Margaret Emma Fuller Rudd memorial extract","person_ids":["margaret_emma_fuller_rudd","albin_edward_rudd","robert_fuller_rudd"],"subject_id":"margaret_emma_fuller_rudd"},"FT-0545":{"dir":"FT-0545-fag-robert-fuller-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Robert Fuller Rudd memorial extract","person_ids":["robert_fuller_rudd","albin_edward_rudd","margaret_emma_fuller_rudd"],"subject_id":"robert_fuller_rudd"},"FT-0522":{"dir":"FT-0522-fag-negative-fritz-e-rudd-adult","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Fritz E. Rud/Rudd adult death/burial negative (~1892 MN)","person_ids":["fritz_e_rudd"]},"FT-0524":{"dir":"FT-0524-wwi-ssdi-negative-fritz-e-rudd","photos":[],"entry":true,"type":"research_note","title":"WWI draft + SSDI — Fritz E. Rud/Rudd negative (free indexes)","person_ids":["fritz_e_rudd"]},"FT-0526":{"dir":"FT-0526-newspaper-obit-negative-fritz-jennie-rudd","photos":[],"entry":true,"type":"research_note","title":"Newspaper / obituary — Fritz E. & Jennie L. Rud negative (no open text)","person_ids":["fritz_e_rudd","jennie_l_rudd"]},"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)","person_ids":["alexander"]},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only","person_ids":["alexander"]},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)","person_ids":["alexander","annabelle","earl","richard","gloria","dorland"]}};

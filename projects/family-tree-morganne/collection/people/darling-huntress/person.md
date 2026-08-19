@@ -8,7 +8,7 @@ death: "1815-03-08"
 birth_place: Newington, Rockingham County, New Hampshire
 death_place: South Berwick, York County, Maine, USA
 burial: ""
-parents: []
+parents: [christopher_huntress, mary_chick_huntress]
 spouses: [love_hearl_huntress]
 children:
   - mary_huntress_lord
@@ -20,14 +20,21 @@ children:
   - william_huntress
   - robert_huntress_hiram
   - lovey_ann_huntress_wadleigh
-object_ids: []
+object_ids: [FT-0742, FT-0743, FT-0745]
 confidence: Probable
 verified: false
 status: researching
+parent_links:
+  - id: christopher_huntress
+    confidence: Probable
+  - id: mary_chick_huntress
+    confidence: Probable
 spouse_links:
   - id: love_hearl_huntress
     confidence: Probable
 sources:
+  - label: "NHGR vol. 3 — Newington church: Darling son of Christopher Huntris & Mary bp. 19 Apr 1730"
+    url: "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record"
   - label: "WikiTree Huntress-107 — Darling Huntress"
     url: "https://www.wikitree.com/wiki/Huntress-107"
   - label: "Maine Genealogy Archives — Berwick Marriages 1710–1828 (Darling Huntriss & Love Herl, 6 Dec 1751)"
@@ -42,18 +49,20 @@ media: []
 ---
 ## Summary
 
-Proposed father of **William Huntress** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C2160** / **C2161**. b. **19 Apr 1730** Newington NH; d. **8 Mar 1815** South Berwick. m. **Love Hearl** **6 Dec 1751** Berwick (VR as Huntriss × Herl). **No own FAG** this pass. Son Maj. Darling FAG bio names this pair as parents and names brother William. Gen-10 Christopher × Mary Chick — **parked**. **No open obituary text**.
+Proposed father of **William Huntress** (Morganne ascent gen-8). Soft-ingest **Probable** / `verified: false` — pack **C2160** / **C2161**. Parents **Christopher Huntress** × **Mary Chick Huntress** — pack **C2751–C2753**. b. **19 Apr 1730** Newington (NHGR vol. 3: “Darling son to Christopher Huntris & Mary his wife was bapt d”); d. **8 Mar 1815** South Berwick. m. **Love Hearl** **6 Dec 1751** Berwick (VR as Huntriss × Herl). **No own FAG**. Son Maj. Darling FAG bio names this pair as parents and names brother William. Gen-11 George × Sarah Morrell / Richard Chick × Martha Lord — **parked C2759**. **No open obituary text**.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
 | Father of William Huntress | Probable | WT Huntress-99/107; Hearl compiled; Maj. Darling FAG bio | https://www.wikitree.com/wiki/Huntress-107 | Pack **C2160**; William FAG parents blank |
+| Parents Christopher Huntress × Mary Chick | Probable | NHGR vol. 3 Newington baptisms | https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record | Pack **C2751–C2753** / **C2755** |
 | Spouse Love Hearl; m. 6 Dec 1751 Berwick | Probable | Berwick Marriages 1710–1828 | https://archives.mainegenealogy.net/2006/05/berwick-marriages-1710-1828.html | Pack **C2163**; VR Darling Huntriss & Love Herl |
-| b. 19 Apr 1730 Newington; d. 8 Mar 1815 South Berwick | Probable | WT Huntress-107; Portsmouth Athenaeum bp. | https://www.wikitree.com/wiki/Huntress-107 | Pack **C2161**; no own FAG |
+| b. 19 Apr 1730 Newington; d. 8 Mar 1815 South Berwick | Probable | NHGR vol. 3; WT Huntress-107; Portsmouth Athenaeum | https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record | Pack **C2161**; no own FAG |
 
 ## Sources
 
+- [NHGR vol. 3 — Darling bp. 19 Apr 1730](https://scholars.unh.edu/cgi/viewcontent.cgi?article=1002&context=genealogical_record)
 - [WikiTree Huntress-107](https://www.wikitree.com/wiki/Huntress-107)
 - [Berwick Marriages 1710–1828](https://archives.mainegenealogy.net/2006/05/berwick-marriages-1710-1828.html)
 - [Find A Grave 96231411 — Maj. Darling Huntress](https://www.findagrave.com/memorial/96231411/darling-huntress)
@@ -63,5 +72,5 @@ Proposed father of **William Huntress** (Morganne ascent gen-8). Soft-ingest **P
 ## Open questions
 
 - Own burial / FAG
-- Gen-10 Christopher Huntress × Mary Chick — parked **C2169**
+- Gen-11 George Huntress × Sarah Morrell / Richard Chick × Martha Lord — parked **C2759**
 ---

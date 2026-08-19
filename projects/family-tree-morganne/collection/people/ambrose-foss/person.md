@@ -11,7 +11,7 @@ burial: Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA
 parents: [daniel_w_foss, harriet_n_bunker_foss]
 spouses: [sarah_knight_foss]
 children: [harriet_b_foss_parsons]
-object_ids: [FT-0443]
+object_ids: [FT-0443, FT-0573]
 confidence: Confirmed
 verified: true
 status: cataloged

@@ -14,7 +14,7 @@ burial: Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA
 parents: [william_h_knight, betsy_warren_huntress_knight]
 spouses: [ambrose_foss]
 children: [harriet_b_foss_parsons]
-object_ids: [FT-0443]
+object_ids: [FT-0443, FT-0573]
 confidence: Confirmed
 verified: true
 status: cataloged

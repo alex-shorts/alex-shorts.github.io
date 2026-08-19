@@ -18,7 +18,7 @@ burial: Crestlawn Memorial Park, Riverside, Riverside County, California, USA (a
 parents: [theodore_m_orciere, rachel_g_orciere]
 spouses: [george_rudd]
 children: [marcy_parsons]
-object_ids: []
+object_ids: [FT-0576, FT-0577]
 confidence: Confirmed
 verified: true
 status: cataloged

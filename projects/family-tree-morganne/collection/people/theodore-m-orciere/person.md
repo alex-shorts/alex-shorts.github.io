@@ -16,7 +16,7 @@ parent_links:
     confidence: Probable
 spouses: [rachel_g_orciere]
 children: [marion_orciere, kenneth_martin_orciere]
-object_ids: []
+object_ids: [FT-0576, FT-0577]
 confidence: Confirmed
 verified: true
 status: cataloged

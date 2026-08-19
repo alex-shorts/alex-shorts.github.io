@@ -12,7 +12,7 @@ burial: Private services at sea
 parents: [clause_rudd, della_elizabeth_rudd]
 spouses: [marion_orciere]
 children: [marcy_parsons, dan_rudd]
-object_ids: [FT-0008, FT-0455, FT-0457]
+object_ids: [FT-0008, FT-0455, FT-0457, FT-0470, FT-0497, FT-0498, FT-0501, FT-0502, FT-0590, FT-0591, FT-0592]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -25,7 +25,9 @@ spouse_links:
   - id: marion_orciere
     confidence: Confirmed
 sources:
-  - label: "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy step-brother"
+  - label: "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy half-brother via George"
+    url: ""
+  - label: "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Edmonton 1923; Corona store; FT-0470"
     url: ""
   - label: "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry"
     url: ""
@@ -37,16 +39,16 @@ media: []
 ---
 ## Summary
 
-Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **C448 Locked** (Marcy via Alex 2026-08-07): parents **Clause × Della Rudd**. Deceased. Spouse **Marion Orciere**. Son **Dan Rudd** is Marcy’s **step-brother** (Marion not Dan’s mother — **C549 Locked**).
+Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **C448 Locked** (Marcy via Alex 2026-08-07): parents **Clause × Della Rudd**. Deceased. Spouse **Marion Orciere**. Son **Dan Rudd** is Marcy’s **half-brother** (shared father George; Marion not Dan’s mother — **C549 Locked**; Dan corrected “step” in **FT-0470**).
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
 | Father of Marcy Parsons | Confirmed | Family corroboration + George obit | https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/ | Pack **C442** Locked |
-| Father of Dan Rudd | Confirmed | PE survivors + Marcy (step-brother of Marcy) | Same | Pack **C545** Locked |
+| Father of Dan Rudd | Confirmed | PE survivors + Marcy + Dan FT-0470 (half-brother of Marcy) | Same | Pack **C545** Locked |
 | Spouse Marion Orciere | Confirmed | Family corroboration |  | Pack **C442**; not named in 2012 survivors |
-| Birth 8 May 1923 Edmonton; death 3 Oct 2012 Capistrano Beach | Probable | Press-Enterprise obit | Same | Pack **C452** awaiting Y |
+| Birth 8 May 1923 Edmonton; death 3 Oct 2012 Capistrano Beach | Probable | Press-Enterprise obit; Dan FT-0470 confirms Edmonton 1923 | Same | Pack **C452** awaiting Y |
 | Parents Clause × Della Rudd | Confirmed | Marcy via Alex 2026-08-07 + PE/FT-0008 | Same | Pack **C448** Locked |
 
 ## Attributes
@@ -62,6 +64,7 @@ Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **
 
 - Family corroboration (Marcy via Alex, 2026-08-07)
 - Family corroboration (Alex, 2026-08-07)
+- Family corroboration (Dan Rudd × Alex **FT-0470**, 2026-08-17) — Edmonton 1923; Corona store
 - [Press-Enterprise — George E. Rudd](https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/) — object **FT-0008**
 - [SABR — Bill Parsons](https://sabr.org/bioproj/person/bill-parsons/)
 
@@ -69,6 +72,6 @@ Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **
 
 - Marion living/deceased / marriage end
 - Dan’s birth mother name
-- Della’s parents — awaiting Dan (**C505**)
-- Parents of Clause (**C500** Blocked)
+- Della’s parents — Dan does not independently know above Isaac × Jennie (**C505** still hold; FT-0470)
+- Parents of Clause (**C500** / **C2240** Blocked); brothers Fritz / Hugo / Albin named in FT-0470; **Albin Edward** + 1931 uncle/aunt/cousin Robert proposed **C2300–C2303**
 ---

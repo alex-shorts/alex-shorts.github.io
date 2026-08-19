@@ -14,7 +14,7 @@ burial: Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA
 parents: [joseph_s_bunker, olive_otis_bunker]
 spouses: [daniel_w_foss]
 children: [ambrose_foss, abigail_j_foss_hill, ruth_h_foss_johnston]
-object_ids: []
+object_ids: [FT-0575]
 confidence: Probable
 verified: false
 status: researching

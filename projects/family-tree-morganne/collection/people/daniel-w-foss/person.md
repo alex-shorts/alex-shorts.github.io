@@ -12,7 +12,7 @@ burial: Riverside Cemetery, Fort Fairfield, Aroostook County, Maine, USA
 parents: [ambrose_foss_sr, abbie_wentworth_foss]
 spouses: [harriet_n_bunker_foss]
 children: [ambrose_foss, abigail_j_foss_hill, ruth_h_foss_johnston]
-object_ids: []
+object_ids: [FT-0574, FT-0573]
 confidence: Probable
 verified: false
 status: researching

@@ -15,7 +15,7 @@ burial: Olivewood Cemetery, Riverside, California (T-2-1-6)
 parents: [ambrose_foss, sarah_knight_foss]
 spouses: [nelson_b_parsons]
 children: [dorothy_parsons_prichard, sarah_mona_parsons, harold_ambrose_parsons, autis_foss_parsons_hicks, gerald_allen_parsons]
-object_ids: [FT-0010, FT-0443]
+object_ids: [FT-0010, FT-0443, FT-0573]
 confidence: Confirmed
 verified: true
 status: cataloged

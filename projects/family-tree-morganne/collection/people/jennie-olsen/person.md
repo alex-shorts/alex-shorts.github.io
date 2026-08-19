@@ -14,8 +14,8 @@ death_place: Vancouver, Metro Vancouver Regional District, British Columbia, Can
 burial: Mountain View Cemetery, Vancouver, British Columbia, Canada
 parents: []
 spouses: [isaac_olsen]
-children: [william_theodore_olson, mabel_victoria_olson_sizer, carl_leonard_olson, della_elizabeth_rudd]
-object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445]
+children: [anna_augusta_olson_mclachlin, william_theodore_olson, mabel_victoria_olson_sizer, pearl_olson_williams, carl_leonard_olson, della_elizabeth_rudd]
+object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445, FT-0487, FT-0488, FT-0503, FT-0504, FT-0509, FT-0511, FT-0523, FT-0543, FT-0552, FT-0554, FT-0555, FT-0596]
 confidence: Probable
 verified: false
 status: researching
@@ -23,6 +23,10 @@ spouse_links:
   - id: isaac_olsen
     confidence: Probable
 sources:
+  - label: "FamilySearch 1900 US Census — Johnanna Olson, 36, b. Sweden; wife of Isaac, Lyman SD (FT-0509)"
+    url: "https://www.familysearch.org/ark:/61903/1:1:MMRH-1L1"
+  - label: "FamilySearch 1911 Canada Census — Jennie Olson, 49, wife of Isaac; Strathcona AB; Bella ≈ Della (FT-0511)"
+    url: "https://www.familysearch.org/ark:/61903/1:1:QV9P-GGC7"
   - label: "Find A Grave 26322002 — Jennie Andersen Olsen"
     url: "https://www.findagrave.com/memorial/26322002/jennie-olsen"
   - label: "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)"
@@ -41,6 +45,12 @@ sources:
     url: "https://images.findagrave.com/photos/2023/216/26322002_bc11fb44-fffa-4a73-b6d0-85402550f722.jpeg"
 media:
   - file: media/bc-death-1956-09-007015.jpg
+  - file: media/fag-26322002-01-headstone.jpg
+    kind: headstone
+    tags: [fag-gallery, fag-26322002]
+    source: "Find A Grave memorial 26322002 — Jennie <I>Andersen</I> Olsen"
+    source_url: https://images.findagrave.com/photos/2023/216/26322002_bc11fb44-fffa-4a73-b6d0-85402550f722.jpeg?size=original
+    captured_at: 2026-08-19
     kind: document
     source: "BC Archives — Registration of Death 1956-09-007015"
     source_url: "https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004438083/004438083_02045.jpg"
@@ -58,10 +68,19 @@ media:
     source: "Find A Grave 26322001 — Isaac Olsen death-notice scan (FT-0015)"
     source_url: https://images.findagrave.com/photos/2023/216/26322001_1ab234e9-6598-43c0-b1d3-2d852037bce4.jpeg
     captured_at: 2026-08-07
+  - ref: isaac-olsen/media/fag-26322001-01-headstone.png
+    kind: photo
+    shared: true
+    tags: [fag-gallery, fag-26322001, plot]
+    appears: [isaac_olsen, jennie_olsen]
+    source: "Find A Grave memorial 26322001 — shared Mountain View plot (no stone; FT-0552)"
+    source_url: https://images.findagrave.com/photos/2026/160/26322001_b6726728-9565-4494-8171-32a99aaeab4b.png?size=original
+    captured_at: 2026-08-18
+    note: "Unmarked grass; FAG gravesite — no stone for this plot"
 ---
 ## Summary
 
-Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C507**. FAG + Lyman SD birth + **BC death 1956-09-007015** (open JPEG) corroborate vitals. Maiden conflict kept open: FAG **Andersen**, SD **Matson**, Isaac death spouse **Anderson** — **not resolved**. Spouse **Isaac Olsen**. Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Isaac. Soft children (FAG grid / **C530–C534**): William, Mabel, Carl, Della. **Parents Blocked (C540)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1956 death notice on FAG → **FT-0016** (names Mrs. C. Y. Rudd). No stone photo on FAG this pass (notice + BC death image only).
+Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C507**. FAG + Lyman SD birth + **BC death 1956-09-007015** (open JPEG) corroborate vitals. Maiden conflict kept open: FAG **Andersen**, SD **Matson**, Isaac death spouse **Anderson** — **not resolved**. Spouse **Isaac Olsen**. Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Isaac. Soft children: FAG grid William, Mabel, Carl, Della (**C530–C534**); obit-named **Anna Augusta Olson McLachlin** and **Pearl Olson Williams** (**C2320–C2329**). **Parents Blocked (C540)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1956 death notice on FAG → **FT-0016** (names Mrs. C. Y. Rudd). FAG gravesite **FT-0552**: **There is no stone for this plot** (shared ABRAY-*-16-005-0007 with Isaac; plot photo on Isaac memorial).
 
 ## Assertions
 
@@ -88,7 +107,7 @@ Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Sof
 
 ## Open questions
 
-- **Parents (gen-5) Blocked** — unlock Swedish birth/emigration or family names (**C540** / **C544**)
+- **Parents (gen-5) Blocked** — unlock Swedish birth/emigration or family names (**C540** / **C544**). Reopen **2026-08-17** (**C2350–C2364**) still unnamed — [`isaac-jennie-olsen-parents-up-2026-08-17.md`](../../../docs/research/people/proposals/isaac-jennie-olsen-parents-up-2026-08-17.md). RA BirthRecord **1863-07-11**: **0** Jenny; two **Johanna** parked (do not pick) — **C2371** / [`marcy-line-sweden-canada-2026-08-17.md`](../../../docs/research/people/proposals/marcy-line-sweden-canada-2026-08-17.md)
 - Resolve Matson vs Andersen vs Anderson maiden — keep all until vital image names one
 - Open Vancouver Sun 26 Jun 1956 death notice text — paywalled clip only this pass
 ---

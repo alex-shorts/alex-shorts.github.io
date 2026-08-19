@@ -16,7 +16,7 @@ burial: Olivewood Memorial Park, Riverside, California (Sec. H, Row 2, Lot 207, 
 parents: [isaac_olsen, jennie_olsen]
 spouses: [clause_rudd]
 children: [george_rudd]
-object_ids: [FT-0008, FT-0015, FT-0016, FT-0020, FT-0445, FT-0455, FT-0456]
+object_ids: [FT-0008, FT-0015, FT-0016, FT-0020, FT-0445, FT-0455, FT-0456, FT-0470, FT-0501, FT-0503, FT-0504, FT-0511, FT-0590, FT-0591, FT-0596]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -49,16 +49,25 @@ media:
   - file: media/headstone-olivewood-fag-2013.jpg
     kind: headstone
     shared: true
-    tags: [olivewood-dual, della_elizabeth_rudd, clause_rudd]
+    tags: [olivewood-dual, fag-gallery, fag-103950419, della_elizabeth_rudd, clause_rudd]
     appears: [della_elizabeth_rudd, clause_rudd]
     source: "Find A Grave memorial 103950419 — Olivewood dual stone CLAUS Y. 1893–1976 / DELLA E. 1902–1973"
-    source_url: https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg
-    captured_at: 2026-08-07
-    note: "Identical bytes also hosted as FAG photo 103950403_135900119757.jpg on Claus memorial; one binary only"
+    source_url: https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg?size=original
+    captured_at: 2026-08-18
+    note: "Canonical dual-stone binary; identical bytes as fag-103950419-01-headstone.jpg and clause-rudd/media/fag-103950403-01-headstone.jpg (103950403 photo id)"
+  - file: media/fag-103950419-01-headstone.jpg
+    kind: headstone
+    shared: true
+    tags: [fag-gallery, fag-103950419, olivewood-dual]
+    appears: [della_elizabeth_rudd, clause_rudd]
+    source: "Find A Grave memorial 103950419 — Della Elizabeth Olson Rudd (gallery capture)"
+    source_url: https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg?size=original
+    captured_at: 2026-08-18
+    note: "Duplicate bytes of headstone-olivewood-fag-2013.jpg — gallery script filename"
 ---
 ## Summary
 
-Mother of **George E. Rudd**. Named **Della** in George’s obituary; Olivewood + SSDI + FAG dual stone support **Della Elizabeth (Olson) Rudd** (12 May 1902 – 29 Aug 1973) at Olivewood with spouse **Claus Y. Rudd**. Soft parents **Isaac Olsen** × **Jennie Olsen** — pack **C505–C509** (FAG parents grid + Lyman SD birth **OLSON,DELLA** exact DOB). Soft-ingest **Probable** / `verified: false` — pack **C448**. Maiden **Olson** from FAG title + SD birth surname. Soft siblings (FAG): **William Theodore Olson**, **Mabel Victoria Olson Sizer**, **Carl Leonard Olson** — pack **C530–C534**. Death day: cemetery/FAG **29 Aug 1973**; SSDI month-index often day 1 — prefer cemetery/FAG for day.
+Mother of **George E. Rudd**. Named **Della** in George’s obituary; Olivewood + SSDI + FAG dual stone support **Della Elizabeth (Olson) Rudd** (12 May 1902 – 29 Aug 1973) at Olivewood with spouse **Claus Y. Rudd**. Soft parents **Isaac Olsen** × **Jennie Olsen** — pack **C505–C509** (FAG parents grid + Lyman SD birth **OLSON,DELLA** exact DOB). Soft-ingest **Probable** / `verified: false` — pack **C448**. Maiden **Olson** from FAG title + SD birth surname. Soft siblings (FAG): **William Theodore Olson**, **Mabel Victoria Olson Sizer**, **Carl Leonard Olson** — pack **C530–C534**. Soft siblings (parent/brother notices): **Anna Augusta Olson McLachlin**, **Pearl Olson Williams** — pack **C2320–C2329**. Death day: cemetery/FAG **29 Aug 1973**; SSDI month-index often day 1 — prefer cemetery/FAG for day.
 
 ## Assertions
 
@@ -87,4 +96,5 @@ Mother of **George E. Rudd**. Named **Della** in George’s obituary; Olivewood 
 - Press-Enterprise / newspaper death notice for Della 1973 — **not found open** (no FT mint)
 - Mother maiden **Matson** (SD birth) vs **Andersen** (FAG) — pack **C509**
 - Exact plot GPS from mykeeper SPA (Sec H / R2 / L207 / G2 kept from prior capture)
+- Dan (FT-0470) does not independently know people above Isaac × Jennie; he misread William Olsen of Holden as Della’s father (catalog: brother, **FT-0020**). He had thought Della was Sweden-born; now accepts parents were. **C505** still hold.
 ---

@@ -13,7 +13,7 @@ burial:
 parents: []
 spouses: [percy_parsons, william_parsons_ff]
 children: [nelson_b_parsons, perry_parsons]
-object_ids: [FT-0443]
+object_ids: [FT-0443, FT-0571, FT-0572, FT-0578]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -58,5 +58,5 @@ Mother of **Nelson B. Parsons**. **LOCKED — legal vital** **FT-0443** / pack *
 ## Open questions
 
 - Exact birth name / death; Swedish parish
-- **Parents:** 1872 passenger last residence / ME VR Kate×William / CA DC 67186 — **C2281 Blocked**
+- **Parents:** 1872 passenger last residence / ME VR Kate×William / CA DC 67186 — **C2281 Blocked**. 1870 New Sweden first settlers ≠ this Kristi (**C2372**)
 ---

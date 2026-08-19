@@ -14,7 +14,7 @@ burial:
 parents: [george_rudd, marion_orciere]
 spouses: [bill_parsons]
 children: [morganne]
-object_ids: [FT-0008, FT-0457]
+object_ids: [FT-0008, FT-0457, FT-0470]
 confidence: Confirmed
 verified: true
 status: living-private
@@ -33,11 +33,13 @@ sources:
     url: "https://sabr.org/bioproj/person/bill-parsons/"
   - label: "Press-Enterprise — George E. Rudd obituary (daughter Marcy Parsons)"
     url: "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
+  - label: "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — half-sister via George; FT-0470"
+    url: ""
 media: []
 ---
 ## Summary
 
-Mother of Morganne Shorts. Married name **Parsons**; maiden **Rudd** (**C444** Locked). Public SABR bio: **Marcy Rae Rudd**, m. Bill 14 Jun 1969. George’s obit names daughter Marcy Parsons × Bill and son **Dan Rudd** × Nancy — soft sibling via shared father George (**C545–C549**); Dan not wired to Marion without a source. **Living-private** for death digs; Alex authorized public dig for ancestry/parent facts.
+Mother of Morganne Shorts. Married name **Parsons**; maiden **Rudd** (**C444** Locked). Public SABR bio: **Marcy Rae Rudd**, m. Bill 14 Jun 1969. George’s obit names daughter Marcy Parsons × Bill and son **Dan Rudd** × Nancy — **half-siblings** via shared father George (**C545–C549**); Dan not wired to Marion. Dan confirmed the half-sister wording **2026-08-17** (**FT-0470**). **Living-private** for death digs; Alex authorized public dig for ancestry/parent facts.
 
 ## Assertions
 
@@ -59,4 +61,4 @@ Mother of Morganne Shorts. Married name **Parsons**; maiden **Rudd** (**C444** L
 - Birth year / place (family only while living)
 - **No public death cluster**
 - Mother Marion status (not in George 2012 survivors)
-- Whether Marion is also mother of brother Dan (obit silent on Dan’s mother)
+- Dan’s birth mother still unnamed (FT-0470: half-siblings via George; Marion still not claimed)
