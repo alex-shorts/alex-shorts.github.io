@@ -33,6 +33,24 @@
       "updated": "2026-08-23"
     },
     {
+      "id": "drive",
+      "name": "Drive — Spark year",
+      "desc": "Cycle 24: kart, dirt, ATV, Texas license ladder, Team O'Neil Stage 1 rally school.",
+      "href": "projects/drive/",
+      "image": "projects/drive/thumb.svg",
+      "private": true,
+      "updated": "2026-08-23"
+    },
+    {
+      "id": "cowboy",
+      "name": "Cowboy — Spark year",
+      "desc": "Cycle 3: ride, rope, livestock, ranch apprenticeship week — land after Hunter.",
+      "href": "projects/cowboy/",
+      "image": "projects/cowboy/thumb.svg",
+      "private": true,
+      "updated": "2026-08-23"
+    },
+    {
       "id": "proverbs-link",
       "name": "Proverbs - A Foundation & A Climb",
       "desc": "Proverbs as a climb — Way of Life (10–31) above, firm foundation (1–9) below.",

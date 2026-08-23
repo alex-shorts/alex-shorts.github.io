@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drive — Spark checklist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="theme-light.css" />
+  <style>
+    :root {
+      --drive: #1f4e79;
+      --drive-mid: #3a6d9e;
+      --drive-soft: #dce8f4;
+      --accent: #7eb8e8;
+      --paper: #f0f4f8;
+      --ink: #141c24;
+      --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(900px 520px at 12% -10%, rgba(31, 78, 121, 0.14), transparent 58%),
+        radial-gradient(700px 420px at 100% 0%, rgba(126, 184, 232, 0.12), transparent 52%),
+        var(--paper);
+      font-family: var(--sans);
+    }
+    a { color: #1a5a8a; }
+    a:hover { color: var(--drive); }
+    .wrap { max-width: 720px; padding: 0 1.1rem 2.2rem; }
+    .print-only { display: none; }
+    .mast {
+      margin: 0 -1.1rem 0.7rem; padding: 0.85rem 1.1rem 1.05rem;
+      background: linear-gradient(115deg, #0f2d4a 0%, #1f4e79 50%, #2a3f5c 100%);
+      color: #eef4fa; border-radius: 0 0 18px 18px;
+    }
+    .mast .site-nav { margin: 0 0 0.7rem; }
+    .mast .site-nav a {
+      background: rgba(238, 244, 250, 0.08); color: #c8d8e8; border-color: rgba(238, 244, 250, 0.18);
+      font-size: 0.72rem; padding: 0.22rem 0.55rem;
+    }
+    .mast .site-nav a.active { background: rgba(126, 184, 232, 0.22); color: #eef4fa; border-color: var(--accent); }
+    .mast .eyebrow { color: var(--accent); margin: 0 0 0.25rem; }
+    .mast h1 { font-size: clamp(1.85rem, 4.5vw, 2.6rem); font-weight: 500; letter-spacing: -0.03em; color: #eef4fa; margin: 0 0 0.3rem; line-height: 1.05; }
+    .mast .lede { color: #b8c9dc; max-width: 40rem; font-size: 0.92rem; margin: 0 0 0.55rem; line-height: 1.45; }
+    .hero-row { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .mast .tag { background: rgba(238, 244, 250, 0.08); color: #c8d8e8; border-color: rgba(238, 244, 250, 0.2); }
+    .print-btn { font: inherit; font-size: 0.72rem; font-weight: 700; cursor: pointer; margin-left: auto; border-radius: 999px; padding: 0.28rem 0.75rem; border: 1px solid var(--accent); background: var(--accent); color: #0f2d4a; }
+    .section-lede { margin: 0 0 0.5rem; font-size: 0.88rem; line-height: 1.45; }
+    .check-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 0.35rem; }
+    .check-head h2 { margin: 0; font-size: 1.1rem; font-weight: 500; }
+    .check-reset { font: inherit; font-size: 0.72rem; color: #7a7368; background: none; border: none; text-decoration: underline; cursor: pointer; padding: 0; margin-left: auto; }
+    .check-bars { display: grid; gap: 0.35rem; margin: 0 0 0.75rem; }
+    @media (min-width: 520px) { .check-bars { grid-template-columns: repeat(4, 1fr); } }
+    .check-bar { background: #f8fafc; border: 1px solid #cdd8e4; border-radius: 8px; padding: 0.4rem 0.5rem; }
+    .check-bar.ok { background: #e8f0f8; border-color: #a8c4e0; }
+    .check-bar .lbl { font-size: 0.62rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; color: var(--drive-mid); margin-bottom: 0.1rem; }
+    .check-bar .nums { font-size: 0.78rem; font-weight: 700; }
+    .check-bar .meter { height: 4px; background: #d4dde8; border-radius: 2px; margin-top: 0.25rem; overflow: hidden; }
+    .check-bar .meter span { display: block; height: 100%; background: var(--drive); border-radius: 2px; }
+    .check-bar.ok .meter span { background: #3a6d9e; }
+    .check-layers { display: grid; gap: 0.75rem; }
+    .check-layer h3 { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: #7a7368; margin: 0 0 0.35rem; }
+    .check-nodes { display: grid; gap: 0.3rem; }
+    @media (min-width: 560px) { .check-nodes.cols-2 { grid-template-columns: 1fr 1fr; } }
+    .check-item {
+      display: grid; grid-template-columns: auto 1fr; gap: 0.45rem; align-items: start;
+      width: 100%; text-align: left; font: inherit; cursor: pointer;
+      border: 1px solid #cdd8e4; border-radius: 8px; padding: 0.45rem 0.55rem; background: #fff; color: inherit;
+    }
+    .check-item:hover { border-color: var(--drive-mid); }
+    .check-item.done { background: #e8f0f8; border-color: #a8c4e0; }
+    .check-item.opt { border-style: dashed; background: #f8fafc; }
+    .check-item .box { width: 1.05rem; height: 1.05rem; border: 2px solid #b8b0a4; border-radius: 4px; margin-top: 0.1rem; display: grid; place-content: center; font-size: 0.72rem; font-weight: 800; color: #fff; }
+    .check-item.done .box { background: var(--drive); border-color: var(--drive); }
+    .check-item .tl { font-weight: 700; font-size: 0.84rem; line-height: 1.25; }
+    .check-item .tm { font-size: 0.74rem; color: #6a6358; margin-top: 0.12rem; line-height: 1.3; display: block; }
+    .check-item .req { font-size: 0.65rem; font-weight: 700; color: #9a4a1a; }
+    .check-item .opt-tag { font-size: 0.62rem; font-weight: 700; color: var(--drive-mid); }
+    footer { margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid #cdd8e4; color: #7a7368; font-size: 0.78rem; }
+    @media print {
+      @page { size: letter; margin: 0.45in; }
+      body { background: #fff !important; }
+      .wrap { max-width: none; padding: 0; }
+      .screen-only { display: none !important; }
+      .mast { background: none; color: #111; margin: 0 0 0.4rem; padding: 0 0 0.35rem; border-bottom: 2px solid var(--drive); border-radius: 0; }
+      .mast h1 { color: #111; font-size: 18pt; }
+      .check-reset { display: none; }
+      .check-item { break-inside: avoid; cursor: default; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+            <nav class="site-nav screen-only" aria-label="Primary">
+        <a href="../../">Projects</a>
+        <a href="./">Plan</a>
+        <a class="active" href="checklist.html">Checklist</a>
+      </nav>
+      <p class="eyebrow screen-only">Cycle 24 · Spark year</p>
+      <h1>Drive checklist</h1>
+      <p class="lede">Tap each task when it's truly done. Progress saves in this browser. <a href="./" style="color:#c8d8e8">← Back to the one-pager</a></p>
+      <div class="hero-row screen-only">
+        <span class="tag">Foundation → Build → Climax</span>
+        <button type="button" class="print-btn" onclick="window.print()">Print</button>
+      </div>
+    </header>
+
+    <p class="section-lede">Foundation + climax are required for Spark. Build is the machine and road hours. Optional rows are warm-ups or transcript frosting.</p>
+
+    <div class="check-head">
+      <h2>Progress</h2>
+      <button type="button" class="check-reset screen-only" id="check-reset" hidden>Reset all</button>
+    </div>
+    <div class="check-bars" id="check-bars" aria-live="polite"></div>
+
+    <div class="check-layers" id="check-layers">
+      <div class="check-layer" data-layer="foundation">
+        <h3>Foundation — gates (all required)</h3>
+        <div class="check-nodes cols-2">
+          <button type="button" class="check-item" data-id="gate-de-provider"><span class="box" aria-hidden="true"></span><span><span class="tl">Parent-taught driver ed selected</span><span class="tm">TDLR-approved course · paperwork filed</span></span></button>
+          <button type="button" class="check-item" data-id="gate-classroom"><span class="box" aria-hidden="true"></span><span><span class="tl">Driver-ed classroom started (age 14)</span><span class="tm">Before learner permit application</span></span></button>
+          <button type="button" class="check-item" data-id="gate-ittd"><span class="box" aria-hidden="true"></span><span><span class="tl">ITTD account created</span><span class="tm">Finish modules before driving test — not the week before</span></span></button>
+          <button type="button" class="check-item" data-id="gate-logbook"><span class="box" aria-hidden="true"></span><span><span class="tl">BTW + machine hour log started</span><span class="tm">Paper logbook · date · machine · coach · notes</span></span></button>
+        </div>
+      </div>
+
+      <div class="check-layer" data-layer="build">
+        <h3>Build — machines &amp; road</h3>
+        <div class="check-nodes cols-2">
+          <button type="button" class="check-item" data-id="build-kart"><span class="box" aria-hidden="true"></span><span><span class="tl">Kart coaching — 3+ sessions</span><span class="tm">K1-on-1 Richardson + DKC rental coaching · no league</span></span></button>
+          <button type="button" class="check-item" data-id="build-msf"><span class="box" aria-hidden="true"></span><span><span class="tl">MSF DirtBike School teen — card</span><span class="tm">Irving campus or Texas Dirt 2 Adventure basic</span></span></button>
+          <button type="button" class="check-item" data-id="build-trail"><span class="box" aria-hidden="true"></span><span><span class="tl">Intro trail ride (coached)</span><span class="tm">After MSF · no MX track · father/son OK</span></span></button>
+          <button type="button" class="check-item" data-id="build-atv"><span class="box" aria-hidden="true"></span><span><span class="tl">ASI ATV RiderCourse teen — card</span><span class="tm">Closed range · then easy Barnwell trails</span></span></button>
+          <button type="button" class="check-item" data-id="build-learner"><span class="box" aria-hidden="true"></span><span><span class="tl">Texas learner permit (age 15)</span><span class="tm">6-month hold starts · parent in front seat</span></span></button>
+          <button type="button" class="check-item" data-id="build-btw"><span class="box" aria-hidden="true"></span><span><span class="tl">30+ BTW practice hours logged</span><span class="tm">Night · highway · parking · weather</span></span></button>
+        </div>
+      </div>
+
+      <div class="check-layer" data-layer="climax">
+        <h3>Climax — proofs (all required)</h3>
+        <div class="check-nodes cols-2">
+          <button type="button" class="check-item" data-id="climax-ittd"><span class="box" aria-hidden="true"></span><span><span class="tl">ITTD complete</span><span class="tm">Within 90 days of driving test</span></span></button>
+          <button type="button" class="check-item" data-id="climax-provisional"><span class="box" aria-hidden="true"></span><span><span class="tl">Texas provisional license (age 16)</span><span class="tm">Driving test passed · DE certificate filed</span></span></button>
+          <button type="button" class="check-item" data-id="climax-oneil"><span class="box" aria-hidden="true"></span><span><span class="tl">Team O'Neil Stage 1 certificate</span><span class="tm">5-day rally school · book after provisional</span></span></button>
+        </div>
+      </div>
+
+      <div class="check-layer" data-layer="optional">
+        <h3>Optional — pick &amp; choose</h3>
+        <div class="check-nodes cols-2">
+          <button type="button" class="check-item opt" data-id="opt-kid-camp"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Kid camp while still 14</span><span class="tm">Iron Horse 8–14 or Cycle Ranch Learn to Ride 7–13</span></span></button>
+          <button type="button" class="check-item opt" data-id="opt-tjc"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>TJC College Success DE</span><span class="tm">Winter Flex 9th · EDUC 1300 — HS4CC not Drive proof</span></span></button>
+          <button type="button" class="check-item opt" data-id="opt-algebra-clep"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>College Algebra CLEP</span><span class="tm">Only if Algebra I spine is solid</span></span></button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="./">Drive one-pager</a> · Cycle 24 · progress saves on this device only
+    </footer>
+  </div>
+  <script>
+    (function () {
+      const KEY = "drive-spark-checklist-v1";
+      const LAYERS = {
+        foundation: ["gate-de-provider", "gate-classroom", "gate-ittd", "gate-logbook"],
+        build: ["build-kart", "build-msf", "build-trail", "build-atv", "build-learner", "build-btw"],
+        climax: ["climax-ittd", "climax-provisional", "climax-oneil"],
+        optional: ["opt-kid-camp", "opt-tjc", "opt-algebra-clep"]
+      };
+      const LABELS = { foundation: "Foundation", build: "Build", climax: "Climax", optional: "Optional" };
+      let done = {};
+      try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (_) { done = {}; }
+      function save() { localStorage.setItem(KEY, JSON.stringify(done)); }
+      function isDone(id) { return !!done[id]; }
+      function setDone(id, on) {
+        if (on) done[id] = true; else delete done[id];
+        save();
+        render();
+      }
+      function renderItem(btn) {
+        const id = btn.dataset.id;
+        const on = isDone(id);
+        btn.classList.toggle("done", on);
+        btn.querySelector(".box").textContent = on ? "✓" : "";
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+      }
+      function renderBars() {
+        const el = document.getElementById("check-bars");
+        if (!el) return;
+        el.innerHTML = Object.entries(LAYERS).map(([layer, ids]) => {
+          const n = ids.filter((id) => isDone(id)).length;
+          const t = ids.length;
+          const pct = t ? Math.round((n / t) * 100) : 0;
+          const ok = n === t;
+          return `<div class="check-bar${ok ? " ok" : ""}">
+            <div class="lbl">${LABELS[layer]}</div>
+            <div class="nums">${n} / ${t}</div>
+            <div class="meter"><span style="width:${pct}%"></span></div>
+          </div>`;
+        }).join("");
+      }
+      function render() {
+        document.querySelectorAll(".check-item").forEach(renderItem);
+        renderBars();
+        const reset = document.getElementById("check-reset");
+        if (reset) reset.hidden = !Object.keys(done).length;
+      }
+      document.getElementById("check-layers")?.addEventListener("click", (e) => {
+        const btn = e.target.closest(".check-item");
+        if (!btn) return;
+        const id = btn.dataset.id;
+        setDone(id, !isDone(id));
+      });
+      document.getElementById("check-reset")?.addEventListener("click", () => {
+        if (confirm("Reset all Drive checklist progress on this device?")) {
+          done = {};
+          save();
+          render();
+        }
+      });
+      render();
+    })();
+  </script>
+</body>
+</html>

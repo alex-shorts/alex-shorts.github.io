@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drive — Spark year</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="theme-light.css" />
+  <style>
+    :root {
+      --drive: #1f4e79;
+      --drive-mid: #3a6d9e;
+      --drive-soft: #dce8f4;
+      --accent: #7eb8e8;
+      --paper: #f0f4f8;
+      --ink: #141c24;
+      --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(900px 520px at 12% -10%, rgba(31, 78, 121, 0.14), transparent 58%),
+        radial-gradient(700px 420px at 100% 0%, rgba(126, 184, 232, 0.12), transparent 52%),
+        var(--paper);
+      font-family: var(--sans);
+    }
+    a { color: #1a5a8a; }
+    a:hover { color: var(--drive); }
+    .wrap { max-width: 980px; padding: 0 1.1rem 2.2rem; }
+    .print-only { display: none; }
+    .mast {
+      margin: 0 -1.1rem 0.7rem; padding: 0.85rem 1.1rem 1.05rem;
+      background: linear-gradient(115deg, #0f2d4a 0%, #1f4e79 50%, #2a3f5c 100%);
+      color: #eef4fa; border-radius: 0 0 18px 18px;
+    }
+    .mast .site-nav { margin: 0 0 0.7rem; }
+    .mast .site-nav a {
+      background: rgba(238, 244, 250, 0.08); color: #c8d8e8; border-color: rgba(238, 244, 250, 0.18);
+      font-size: 0.72rem; padding: 0.22rem 0.55rem;
+    }
+    .mast .site-nav a.active { background: rgba(126, 184, 232, 0.22); color: #eef4fa; border-color: var(--accent); }
+    .mast .eyebrow { color: var(--accent); margin: 0 0 0.25rem; }
+    .mast h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); font-weight: 500; letter-spacing: -0.03em; color: #eef4fa; margin: 0 0 0.3rem; line-height: 1; }
+    .mast .lede { color: #b8c9dc; max-width: 46rem; font-size: 0.95rem; margin: 0 0 0.55rem; }
+    .mast .lede em { color: #eef4fa; font-style: italic; font-family: var(--serif); }
+    .why-block {
+      margin: 0 -1.1rem 0.85rem; padding: 0.85rem 1.1rem 0.95rem;
+      background: #f8fafc; border-top: 3px solid var(--drive); border-bottom: 1px solid #cdd8e4;
+    }
+    .why-block h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; color: var(--drive); margin: 0 0 0.35rem; }
+    .why-block .why-lede { font-size: 0.92rem; line-height: 1.45; max-width: 52rem; margin: 0 0 0.5rem; }
+    .why-block .why-action { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: #2a3f5c; margin: 0.45rem 0 0; padding-top: 0.45rem; border-top: 1px solid #d4dde8; }
+    .why-block ul { margin: 0.35rem 0 0; padding-left: 1.15rem; font-size: 0.84rem; line-height: 1.4; }
+    .why-block li { margin: 0.15rem 0; }
+    .hero-row { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .mast .tag { background: rgba(238, 244, 250, 0.08); color: #c8d8e8; border-color: rgba(238, 244, 250, 0.2); }
+    .mast .tag-gold { background: rgba(126, 184, 232, 0.18); color: var(--accent); border-color: rgba(126, 184, 232, 0.4); }
+    .print-btn { font: inherit; font-size: 0.72rem; font-weight: 700; cursor: pointer; margin-left: auto; border-radius: 999px; padding: 0.28rem 0.75rem; border: 1px solid var(--accent); background: var(--accent); color: #0f2d4a; }
+    section { margin: 0.95rem 0; scroll-margin-top: 0.5rem; }
+    h2 { font-size: 1.15rem; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 0.2rem; }
+    h3 { font-size: 0.95rem; font-weight: 500; margin: 0.7rem 0 0.2rem; }
+    .section-lede { margin: 0 0 0.4rem; font-size: 0.88rem; }
+    .stats { gap: 0.4rem; margin: 0.4rem 0 0.5rem; }
+    .stat { background: #f8fafc; border-color: #cdd8e4; padding: 0.55rem 0.65rem; }
+    .stat b { color: var(--drive); font-weight: 500; font-size: 1.15rem; }
+    .callout { margin: 0.4rem 0; padding: 0.5rem 0.7rem; font-size: 0.88rem; }
+    .callout.coral { border-left-color: #9a4a1a; background: #f6ebe0; }
+    table { font-size: 0.82rem; }
+    th { background: var(--drive-soft); color: var(--drive); padding: 0.35rem 0.5rem; }
+    td { padding: 0.35rem 0.5rem; }
+    tr:nth-child(even) td { background: #f0f4f8; }
+    tr.climax td { background: #dce8f4 !important; }
+    table .mode { font-weight: 750; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; }
+    table .mode.gate { color: #1a5a8a; }
+    table .mode.range { color: var(--drive); }
+    table .mode.climax { color: #7a4a12; }
+    table .mode.extra { color: #7a7368; }
+    table .mode.opt { color: #3a6d9e; }
+    .split { display: grid; gap: 0.55rem; }
+    @media (min-width: 700px) { .split { grid-template-columns: 1fr 1fr 1fr; } }
+    .split .panel { background: #f8fafc; border-color: #cdd8e4; padding: 0.7rem 0.8rem; }
+    .split .panel h3 { color: var(--drive); margin: 0 0 0.25rem; }
+    .clean-list li { background: transparent; border: none; box-shadow: none; padding: 0.12rem 0; border-bottom: 1px solid #d4dde8; border-radius: 0; font-size: 0.82rem; }
+    .chip-note { margin: 0.4rem 0 0; padding: 0.3rem 0.65rem; font-size: 0.78rem; background: var(--drive-soft); border-color: #a8c4e0; color: #2a3f5c; }
+    .draft-banner { margin: 0 -1.1rem 0.85rem; padding: 0.55rem 1.1rem; background: #eef4fa; border-top: 1px dashed var(--accent); border-bottom: 1px dashed var(--accent); font-size: 0.84rem; line-height: 1.4; }
+    .draft-banner strong { color: #1a5a8a; }
+    footer { margin-top: 0.8rem; padding-top: 0.5rem; border-top-color: #cdd8e4; color: #7a7368; font-size: 0.78rem; }
+    @media print {
+      @page { size: letter; margin: 0.42in; }
+      html { font-size: 10.5px; }
+      body { background: #fff !important; }
+      .wrap { max-width: none; padding: 0; }
+      .print-only { display: block; }
+      .screen-only { display: none !important; }
+      .mast { background: none; color: #111; margin: 0 0 0.35rem; padding: 0 0 0.3rem; border-radius: 0; border-bottom: 2.5px solid var(--drive); }
+      .mast h1 { color: #1c1914; font-size: 22pt; }
+      .why-block, .draft-banner { display: none; }
+      section { margin: 0.38rem 0; break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+            <nav class="site-nav screen-only" aria-label="Primary">
+        <a href="../../">Projects</a>
+        <a href="checklist.html">Checklist</a>
+        <a class="active" href="./">Plan</a>
+      </nav>
+      <p class="print-only print-kicker">Cycle 24 · 9th-grade Spark · East Texas 2027–28 · light DE OK</p>
+      <p class="eyebrow screen-only">Cycle 24 · Spark year · East Texas 2027–28</p>
+      <h1>Drive</h1>
+      <p class="lede">
+        Cycle 24 · 9th-grade <em>Spark</em> — machines, licenses, and control. Kart, dirt bike, ATV as a beginner at 15 → Texas learner → provisional at 16 → Team O'Neil Stage 1. <em>Competence, not racing.</em> Beside <a href="../cowboy/" style="color:#eef4fa">Cowboy</a>; after <a href="../hunter/" style="color:#eef4fa">Hunter</a>.
+      </p>
+      <div class="hero-row screen-only">
+        <span class="tag">9th-grade Spark</span>
+        <span class="tag">Light TJC OK</span>
+        <span class="tag tag-gold">Beside Cowboy</span>
+        <span class="tag">Draft — pick &amp; choose</span>
+        <button type="button" class="print-btn" onclick="window.print()">Print</button>
+      </div>
+    </header>
+
+    <section class="why-block" id="why">
+      <h2>Why this cycle — control before speed</h2>
+      <p class="why-lede">
+        <strong>Summary:</strong> A man who cannot operate machines safely is a passenger in his own life. This year he earns <strong>seat time on small machines</strong> — throttle, clutch, weight transfer, panic recovery — then the legal right to drive on Texas roads, then a week of rally-school car control. Not kart leagues. Not race camps. Not mud-park chaos. The bar is the same as Hunter: <strong>proof on paper</strong> before the climax.
+      </p>
+      <ul>
+        <li><strong>Beginner blocks only at 15.</strong> MSF DirtBike School teen, ASI ATV RiderCourse, K1-on-1 + DKC rental coaching — stacked days, not competition series.</li>
+        <li><strong>License is a credential, not the whole story.</strong> Classroom at 14 · learner at 15 (6-month hold) · provisional at 16 · ITTD within 90 days of the driving test.</li>
+        <li><strong>Team O'Neil Stage 1 is the climax</strong> — 5-day rally school in New Hampshire. Book after provisional is in hand. No license required for Stage 1; we still wait until 16.</li>
+        <li><strong>Physics rides along.</strong> Motion, friction, vectors — HS physics intuition + optional GC. Algebra CLEP only if the math spine is already there.</li>
+        <li><strong>Off the list:</strong> Underground Compound, Swan race training, DKC KA100/league, K1 Challenge GP, intermediate MX at Cycle Ranch.</li>
+      </ul>
+      <p class="why-action">
+        The call: log every hour, finish what you start, never confuse a race fantasy for skill. Control the machine — then earn the road — then earn the rally week.
+      </p>
+    </section>
+
+    <section id="aim">
+      <div class="stats">
+        <div class="stat"><b>4 machines</b><span>Kart · dirt · ATV · rally car</span></div>
+        <div class="stat"><b>Age 15</b><span>Learner + beginner year</span></div>
+        <div class="stat"><b>Age 16</b><span>Provisional + O'Neil</span></div>
+        <div class="stat"><b>5 days</b><span>Team O'Neil Stage 1</span></div>
+      </div>
+      <div class="callout coral">
+        <strong>Summer before 9th (age 14):</strong> last window for kid camps — Iron Horse (ages 8–14) or Cycle Ranch Learn to Ride (7–13). Optional warm-up only; the real cycle starts with driver-ed classroom.
+      </div>
+    </section>
+
+    <p class="draft-banner screen-only"><strong>Draft plan.</strong> Proofs below are the bar. Milestone tasks live on the <a href="checklist.html">checklist page</a>. Team O'Neil may slip to summer after 9th if provisional lands late — that's fine.</p>
+
+    <section id="year">
+      <h2>Year map — license + machines</h2>
+      <p class="section-lede">Parallel tracks: Texas driver ed (14–16) and beginner machine blocks (15). Rally school after provisional.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Window</th><th>Mode</th><th>He does</th><th>Done when</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Summer → fall (age 14)</td>
+              <td class="mode gate">Gate</td>
+              <td>Parent-taught or approved <strong>driver-ed classroom</strong> starts. Register ITTD account for later. Optional: Iron Horse / Cycle Ranch kids camp if still 14.</td>
+              <td>Classroom hours underway · ITTD login</td>
+            </tr>
+            <tr>
+              <td>Fall → spring (age 15)</td>
+              <td class="mode range">Machines</td>
+              <td><strong>K1-on-1</strong> (Richardson) + <strong>DKC rental coaching</strong> — throttle, brake, racing line on rentals, not league. <strong>MSF DirtBike School</strong> teen (Irving) → Intro to Trail Riding. <strong>ASI ATV</strong> teen class → easy Barnwell trails coached.</td>
+              <td>MSF card · ASI card · lesson log (10+ hrs)</td>
+            </tr>
+            <tr>
+              <td>On 15th birthday</td>
+              <td class="mode gate">License</td>
+              <td><strong>Texas learner permit</strong> — classroom + vision + fee. Parent in front seat every drive. 6-month hold before driving test.</td>
+              <td>Learner permit in wallet</td>
+            </tr>
+            <tr>
+              <td>15 → 16 (hold period)</td>
+              <td class="mode range">Road</td>
+              <td>BTW hours logged with parent. Night + highway reps. Texas Dirt 2 Adventure father/son day if dirt bike needs more seat time (no MX).</td>
+              <td>30+ practice hours logged · ITTD complete</td>
+            </tr>
+            <tr>
+              <td>Age 16</td>
+              <td class="mode climax">Climax</td>
+              <td><strong>Provisional license</strong> (ITTD within 90 days of test). Then book <strong>Team O'Neil Stage 1</strong> — 5-day rally school. Do not book Stage 2–4 yet.</td>
+              <td>Provisional + O'Neil certificate</td>
+            </tr>
+            <tr>
+              <td>After Spark</td>
+              <td class="mode extra">Optional</td>
+              <td>Physics DE/AP when ready. College Algebra CLEP if math spine is solid. Cycle 3 light both summers if you want more kart/dirt days.</td>
+              <td>Transcript frosting only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="watch">
+      <h2>Watch — motion &amp; judgment</h2>
+      <p class="section-lede">Rides under HS physics and driver ed. GC is orientation — seat time is the adventure. One film or lecture per machine block; debrief: what moved, what failed, what panic costs.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>When</th><th>Watch / read</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Before kart block</td>
+              <td>Great Courses <em>Physics in Your Life</em> — forces &amp; friction (selections)</td>
+              <td>Why the kart slides before you feel it in the seat.</td>
+            </tr>
+            <tr>
+              <td>Before dirt / ATV</td>
+              <td>GC <em>The Science of Flight</em> — stability &amp; control (selections) OR MSF pre-course videos</td>
+              <td>Weight shift, counter-steer, looking through the turn.</td>
+            </tr>
+            <tr>
+              <td>Learner year</td>
+              <td>Texas ITTD modules + parent BTW curriculum</td>
+              <td>Not optional for provisional — do it early, not the week before the test.</td>
+            </tr>
+            <tr>
+              <td>Before O'Neil</td>
+              <td>Team O'Neil prep email + <em>The Art of War</em> (terrain chapter) — Great Book</td>
+              <td>Rally is terrain, timing, and not overreaching — same ethic as Hunter.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="proofs">
+      <h2>Six proofs</h2>
+      <p class="section-lede">Spark is incomplete if any credential is skipped. Intermediate logs for parent review.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th></th><th>Proof</th><th>Train / bar</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Kart</strong></td>
+              <td>Stacked beginner coaching log — K1-on-1 + DKC rentals</td>
+              <td>3+ coached sessions · line · brake markers · no league entry</td>
+            </tr>
+            <tr>
+              <td><strong>Dirt</strong></td>
+              <td>MSF DirtBike School teen completion card</td>
+              <td>Irving campus (12–15) or Texas Dirt 2 Adventure basic school — no MX track days</td>
+            </tr>
+            <tr>
+              <td><strong>ATV</strong></td>
+              <td>ASI ATV RiderCourse teen card</td>
+              <td>Closed range first · then easy Barnwell trails with you — no mud parks</td>
+            </tr>
+            <tr>
+              <td><strong>Learner</strong></td>
+              <td>Texas learner permit (age 15)</td>
+              <td>6-month hold · parent-supervised road hours logged</td>
+            </tr>
+            <tr>
+              <td><strong>Provisional</strong></td>
+              <td>Texas provisional license (age 16)</td>
+              <td>ITTD complete · driving test passed · DE certificate on file</td>
+            </tr>
+            <tr class="climax">
+              <td><strong>Rally</strong></td>
+              <td>Team O'Neil Stage 1 certificate</td>
+              <td>5-day school · car control · skidpad · stage roads — not competition</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="train">
+      <h2>Where to train — DFW + East TX</h2>
+      <p class="section-lede">Book beginner blocks in fall/winter so spring is road hours, not scheduling chaos.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Venue</th><th>What</th><th>Link / note</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>K1 Speed Richardson</strong></td>
+              <td>K1-on-1 coaching — indoor kart fundamentals</td>
+              <td><a href="https://www.k1speed.com/race-classes.html">k1speed.com</a> · not Challenge GP</td>
+            </tr>
+            <tr>
+              <td><strong>Dallas Karting Complex</strong></td>
+              <td>Rental kart coaching — outdoor line &amp; passing judgment</td>
+              <td><a href="https://dallaskartingcomplex.com/kart-rentals">dallaskartingcomplex.com</a> · not KA100 league</td>
+            </tr>
+            <tr>
+              <td><strong>MSF Campus Irving</strong></td>
+              <td>DirtBike School teen (12–15)</td>
+              <td><a href="https://www.msf-campus.org/CourseLocations.aspx">msf-campus.org</a></td>
+            </tr>
+            <tr>
+              <td><strong>Texas Dirt 2 Adventure</strong></td>
+              <td>Basic dirtbike school — father/son friendly, no MX</td>
+              <td><a href="https://texasdirt2adventure.com/basic-dirtbike-school-1">texasdirt2adventure.com</a></td>
+            </tr>
+            <tr>
+              <td><strong>ASI ATV RiderCourse</strong></td>
+              <td>Teen closed-range ATV cert</td>
+              <td><a href="https://atvsafety.org/atv-ridercourse/">atvsafety.org</a> · find TX class</td>
+            </tr>
+            <tr>
+              <td><strong>Cycle Ranch</strong></td>
+              <td>Learn to Ride (kids 7–13) OR teen intro only — <em>not</em> intermediate MX</td>
+              <td><a href="https://cycleranchmx.com/products/learn-to-ride-dirt-bike">cycleranchmx.com</a></td>
+            </tr>
+            <tr>
+              <td><strong>Team O'Neil</strong></td>
+              <td>Stage 1 rally school — book after provisional</td>
+              <td><a href="https://teamoneil.com/driving-courses/">teamoneil.com</a> · NH travel</td>
+            </tr>
+            <tr>
+              <td><strong>TX DPS / TDLR</strong></td>
+              <td>Learner + provisional + parent-taught DE</td>
+              <td><a href="https://www.tdlr.texas.gov/driver/education/parent-taught/learner-license.htm">tdlr.texas.gov</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>Log every session:</strong> date · machine · hours · coach · one thing to fix next time. Same discipline as Hunter range logs.</p>
+    </section>
+
+    <section id="off">
+      <h2>Off the list — do not substitute</h2>
+      <div class="split">
+        <div class="panel">
+          <h3>Race fantasy</h3>
+          <ul class="clean-list">
+            <li>Underground Compound race training</li>
+            <li>Swan race camp</li>
+            <li>DKC KA100 / league series</li>
+            <li>K1 Challenge GP</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Wrong difficulty</h3>
+          <ul class="clean-list">
+            <li>Cycle Ranch intermediate MX</li>
+            <li>Mud parks / unsupervised ATV trails</li>
+            <li>Team O'Neil Stage 2–4 (too soon)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Not this year</h3>
+          <ul class="clean-list">
+            <li>CLEP Physics (TJC doesn't take it)</li>
+            <li>Street racing · unsupervised highway speed</li>
+            <li>Pilot / PPL overlap (different cycle)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="next">
+      <h2>Next steps — open the year in order</h2>
+      <ol class="clean-list" style="padding-left:1.2rem;font-size:0.88rem;line-height:1.5">
+        <li>Pick parent-taught driver ed provider · start classroom at 14</li>
+        <li>Create ITTD account · buy a paper logbook for BTW hours</li>
+        <li>Book MSF DirtBike School + ASI ATV for the month he turns 15 (or just after)</li>
+        <li>Schedule K1-on-1 + one DKC coaching day before dirt bike (kart panic is cheaper)</li>
+        <li>Learner permit on 15th birthday · 6-month road calendar with parent</li>
+        <li>Provisional at 16 · ITTD done · driving test scheduled</li>
+        <li>Book Team O'Neil Stage 1 for the first open week after provisional</li>
+      </ol>
+    </section>
+
+    <section id="clep">
+      <h2>Optional frosting — after Spark</h2>
+      <p class="section-lede">Skills first. TJC <strong>College Success (EDUC 1300)</strong> in winter Flex is fine in 9th if readiness is there — that's HS4CC, not Drive proof. CLEP only when the class spine is solid.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Exam</th><th>When</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>College Algebra CLEP</td>
+              <td>After Algebra I mastery</td>
+              <td>Only if he's already in the math spine — not a Drive requirement</td>
+            </tr>
+            <tr>
+              <td>Physics DE / AP Physics 1</td>
+              <td>10th–11th</td>
+              <td>Academic layer for motion science — no CLEP Physics at TJC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Cycle 24 Drive · 9th-grade Spark · <a href="checklist.html">Checklist</a> · <a href="../hunter/">Hunter (8th)</a> · <a href="../cowboy/">Cowboy (9th)</a>
+    </footer>
+  </div>
+</body>
+</html>
