@@ -174,6 +174,99 @@
       font-size: 0.95rem;
       font-weight: 600;
     }
+    .chase-search {
+      display: flex;
+      gap: 0.35rem;
+      margin-bottom: 0.65rem;
+    }
+    .chase-search input {
+      flex: 1;
+      min-width: 0;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 0.45rem 0.55rem;
+      font: inherit;
+      font-size: 0.82rem;
+    }
+    .chase-search input::placeholder { color: var(--muted); }
+    .chase-search button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--chip-on);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 0.45rem 0.65rem;
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .chase-trail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0.5rem 0 0.75rem;
+    }
+    .chase-crumb {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      padding: 0.2rem 0.45rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--chip);
+    }
+    .chase-crumb.on {
+      border-color: #8a9aac;
+      background: var(--chip-on);
+      color: var(--text);
+    }
+    .chase-crumb.arrow {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 0.2rem 0;
+      font-weight: 400;
+    }
+    .chase-forks {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .chase-fork {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 0.55rem 0.65rem;
+      text-align: left;
+      cursor: pointer;
+      font: inherit;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .chase-fork:hover {
+      border-color: #6a7a8c;
+      background: var(--chip-on);
+    }
+    .chase-fork .ref {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .chase-fork .meta {
+      margin-top: 0.2rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .chase-scripture {
+      margin-top: 0.75rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid var(--line);
+    }
     .refs-body {
       flex: 1;
       min-height: 0;
@@ -688,14 +781,25 @@
       </div>
       <div class="refs-empty" id="refsEmpty">
         <p class="refs-empty-intro">
-          Each arc is a cross-reference between two chapters. Pick a
-          <strong>collection</strong> under the graph (Torah, Gospels…) to zoom in,
-          then a book — or open a top verse below.
+          <strong>Thread chase</strong> — pick a verse, choose two hops, see where scripture leads.
+          Each arc on the graph is a chapter-to-chapter cross-reference.
         </p>
-        <h3 class="refs-section-label">Top 25 verses</h3>
-        <div class="top-list" id="topVerseList"></div>
+        <h3 class="refs-section-label">Start a chase</h3>
+        <div class="chase-search">
+          <input type="text" id="chaseSearch" placeholder="e.g. John 3:16" autocomplete="off" />
+          <button type="button" id="chaseSearchBtn">Go</button>
+        </div>
+        <p class="muted-note" id="chaseSearchErr" hidden></p>
+        <h3 class="refs-section-label">Good trailheads</h3>
+        <div class="top-list" id="trailheadList"></div>
       </div>
       <div class="refs-body" id="refsBody">
+        <div id="chaseSection" hidden>
+          <h3 class="refs-section-label" id="chaseStepLabel">Your trail</h3>
+          <div class="chase-trail" id="chaseTrail"></div>
+          <div class="chase-forks" id="chaseForks"></div>
+          <div class="chase-scripture" id="chaseScripture"></div>
+        </div>
         <div id="verseSection">
           <h3 class="refs-section-label" id="verseSectionLabel">Verse links</h3>
           <div class="verse-list" id="verseList"></div>
@@ -790,6 +894,7 @@
       selectedVerseKey: null,
       expandedVerseKey: null,
       viewRange: null, // { i0, i1 } zoom window or null
+      chase: null, // { trail: [{i,v}], step: 0|1|2|3 }
       scriptureCache: new Map(),
       activeEdgeIndices: [],
       dpr: Math.min(window.devicePixelRatio || 1, 2),
@@ -1074,6 +1179,244 @@
       return verseLinksForChapter(i).filter((link) => link.lv === v);
     }
 
+    const CHASE_MAX_HOPS = 2;
+
+    function verseKeyIv(i, v) {
+      return `${i}:${v}`;
+    }
+
+    function verseAt(i, v) {
+      const ch = state.data.chapters[i];
+      return { i, v, book: ch.book, chapter: ch.chapter, label: `${ch.book} ${ch.chapter}:${v}` };
+    }
+
+    function chaseForks(i, v) {
+      if (!state.data?.chaseForks) return [];
+      return state.data.chaseForks[verseKeyIv(i, v)] || [];
+    }
+
+    function resolveBookName(query) {
+      const q = query.trim().toLowerCase().replace(/\./g, "");
+      if (!q || !state.data) return null;
+      const books = state.data.books.map((b) => b.name);
+      const exact = books.find((b) => b.toLowerCase() === q);
+      if (exact) return exact;
+      const starts = books.filter((b) => b.toLowerCase().startsWith(q));
+      if (starts.length === 1) return starts[0];
+      const contains = books.filter((b) => b.toLowerCase().includes(q));
+      if (contains.length === 1) return contains[0];
+      const abbrevs = {
+        gen: "Genesis", ex: "Exodus", exod: "Exodus", lev: "Leviticus", num: "Numbers", deut: "Deuteronomy",
+        josh: "Joshua", judg: "Judges", rut: "Ruth", "1sam": "1 Samuel", "2sam": "2 Samuel",
+        "1kgs": "1 Kings", "2kgs": "2 Kings", "1chr": "1 Chronicles", "2chr": "2 Chronicles",
+        ezr: "Ezra", neh: "Nehemiah", est: "Esther", ps: "Psalms", psa: "Psalms", prov: "Proverbs",
+        eccl: "Ecclesiastes", song: "Song of Solomon", isa: "Isaiah", jer: "Jeremiah", lam: "Lamentations",
+        ezek: "Ezekiel", dan: "Daniel", hos: "Hosea", joel: "Joel", amos: "Amos", obad: "Obadiah",
+        jon: "Jonah", mic: "Micah", nah: "Nahum", hab: "Habakkuk", zeph: "Zephaniah", hag: "Haggai",
+        zech: "Zechariah", mal: "Malachi", matt: "Matthew", mk: "Mark", lk: "Luke", jn: "John",
+        acts: "Acts", rom: "Romans", "1cor": "1 Corinthians", "2cor": "2 Corinthians", gal: "Galatians",
+        eph: "Ephesians", phil: "Philippians", col: "Colossians", "1thess": "1 Thessalonians",
+        "2thess": "2 Thessalonians", "1tim": "1 Timothy", "2tim": "2 Timothy", tit: "Titus", phlm: "Philemon",
+        heb: "Hebrews", jas: "James", "1pet": "1 Peter", "2pet": "2 Peter", "1jn": "1 John",
+        "2jn": "2 John", "3jn": "3 John", jude: "Jude", rev: "Revelation",
+      };
+      if (abbrevs[q]) return abbrevs[q];
+      return null;
+    }
+
+    function parseVerseQuery(raw) {
+      const q = raw.trim();
+      const m = q.match(/^(.+?)\s+(\d+)\s*[:.]\s*(\d+)\s*$/);
+      if (!m) return null;
+      const book = resolveBookName(m[1]);
+      if (!book) return null;
+      const chapter = Number(m[2]);
+      const verse = Number(m[3]);
+      const row = state.data.chapters.find((c) => c.book === book && c.chapter === chapter);
+      if (!row) return null;
+      return { i: row.i, v: verse };
+    }
+
+    function chaseTrailChapters() {
+      if (!state.chase?.trail?.length) return [];
+      return state.chase.trail.map((t) => t.i);
+    }
+
+    function chaseTrailPairs() {
+      const trail = state.chase?.trail || [];
+      const pairs = [];
+      for (let n = 1; n < trail.length; n += 1) {
+        pairs.push([trail[n - 1].i, trail[n].i]);
+      }
+      return pairs;
+    }
+
+    function zoomToChaseTrail() {
+      const trail = state.chase?.trail;
+      if (!trail?.length) return;
+      const indices = trail.map((t) => t.i);
+      const i0 = Math.min(...indices);
+      const i1 = Math.max(...indices);
+      setViewRange({ i0, i1 });
+    }
+
+    function clearChase() {
+      state.chase = null;
+      const err = document.getElementById("chaseSearchErr");
+      if (err) {
+        err.hidden = true;
+        err.textContent = "";
+      }
+    }
+
+    function startChase(i, v) {
+      state.selectedGroup = null;
+      state.expandedGroup = null;
+      state.selectedBook = null;
+      state.selectedChapter = i;
+      state.selectedEdge = -1;
+      state.selectedVerseKey = null;
+      state.expandedVerseKey = null;
+      state.chase = { trail: [verseAt(i, v)], step: 1 };
+      state.selectedVerse = { i, v };
+      const err = document.getElementById("chaseSearchErr");
+      if (err) {
+        err.hidden = true;
+        err.textContent = "";
+      }
+      zoomToChaseTrail();
+      renderLegend();
+      renderRefsPanel();
+      updateHoverHint();
+      draw();
+      document.getElementById("refsBody").scrollTop = 0;
+    }
+
+    function chooseChaseFork(fork) {
+      if (!state.chase || state.chase.step > CHASE_MAX_HOPS) return;
+      const dest = verseAt(fork.oi, fork.ov);
+      state.chase.trail.push(dest);
+      state.chase.step += 1;
+      state.selectedVerse = { i: dest.i, v: dest.v };
+      state.selectedChapter = dest.i;
+      zoomToChaseTrail();
+      renderRefsPanel();
+      draw();
+      if (state.chase.step > CHASE_MAX_HOPS) {
+        loadChaseScripture();
+      }
+    }
+
+    async function loadChaseScripture() {
+      if (!state.chase?.trail?.length) return;
+      const el = document.getElementById("chaseScripture");
+      el.innerHTML = state.chase.trail.map((t) =>
+        `<div class="scripture-side"><div class="scripture-ref">${escapeHtml(t.label)}</div><div class="scripture-text pending">Loading KJV…</div></div>`
+      ).join("");
+      await Promise.all(state.chase.trail.map((t) => fetchScripture(t.book, t.chapter, t.v)));
+      if (!state.chase) return;
+      el.innerHTML = state.chase.trail.map((t) => {
+        const cache = state.scriptureCache.get(scriptureKey(t.book, t.chapter, t.v));
+        return scriptureHtml(t.label, cache);
+      }).join("");
+    }
+
+    function renderTrailheads() {
+      const list = document.getElementById("trailheadList");
+      if (!state.data) {
+        list.innerHTML = "";
+        return;
+      }
+      const rows = (state.data.topCrossReferenced || []).slice(0, 8);
+      list.innerHTML = rows.map((row, rank) => {
+        const ref = `${row.book} ${row.chapter}:${row.v}`;
+        return `
+          <button type="button" class="top-row" data-rank="${rank}">
+            <span class="top-rank">${rank + 1}</span>
+            <span>
+              <div class="top-ref">${escapeHtml(ref)}</div>
+              <div class="top-sub">${(row.refs || 0).toLocaleString()} cross-refs</div>
+            </span>
+            <span class="top-count"><strong>${chaseForks(row.i, row.v).length}</strong>forks</span>
+          </button>
+        `;
+      }).join("");
+      list.querySelectorAll(".top-row").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const row = rows[Number(btn.dataset.rank)];
+          startChase(row.i, row.v);
+        });
+      });
+    }
+
+    function renderChasePanel() {
+      const chase = state.chase;
+      const header = document.getElementById("refsHeader");
+      const empty = document.getElementById("refsEmpty");
+      const body = document.getElementById("refsBody");
+      const chaseSection = document.getElementById("chaseSection");
+      const verseSection = document.getElementById("verseSection");
+      const chapterSection = document.getElementById("chapterSection");
+      const bookLinksSection = document.getElementById("bookLinksSection");
+
+      if (!chase?.trail?.length) return false;
+
+      header.classList.remove("empty");
+      empty.classList.add("hidden");
+      body.classList.add("on");
+      chaseSection.hidden = false;
+      verseSection.hidden = true;
+      chapterSection.hidden = true;
+      bookLinksSection.hidden = true;
+
+      const hopsLeft = Math.max(0, CHASE_MAX_HOPS - (chase.step - 1));
+      const done = chase.step > CHASE_MAX_HOPS;
+      document.querySelector(".refs-kicker").textContent = "Thread chase";
+      document.getElementById("refsTitle").textContent = done ? "You arrived" : `Hop ${chase.step} of ${CHASE_MAX_HOPS}`;
+      document.getElementById("refsMeta").innerHTML = done
+        ? `<strong>${chase.trail.length}</strong> verses · your 2-hop trail`
+        : `Choose where to go next · <strong>${hopsLeft}</strong> hop${hopsLeft === 1 ? "" : "s"} left`;
+
+      document.getElementById("chaseStepLabel").textContent = done ? "Your trail" : "Choose your next hop";
+      document.getElementById("chaseTrail").innerHTML = chase.trail.map((t, idx) => {
+        const arrow = idx < chase.trail.length - 1 ? `<span class="chase-crumb arrow">→</span>` : "";
+        return `<span class="chase-crumb${idx === chase.trail.length - 1 ? " on" : ""}">${escapeHtml(t.label)}</span>${arrow}`;
+      }).join("");
+
+      const forksEl = document.getElementById("chaseForks");
+      const scriptureEl = document.getElementById("chaseScripture");
+      if (done) {
+        forksEl.innerHTML = `<p class="muted-note">Trail complete. Clear to start another chase.</p>`;
+        if (!scriptureEl.innerHTML) loadChaseScripture();
+      } else {
+        const cur = chase.trail[chase.trail.length - 1];
+        const forks = chaseForks(cur.i, cur.v);
+        scriptureEl.innerHTML = "";
+        if (!forks.length) {
+          forksEl.innerHTML = `<p class="muted-note">No strong forks for this verse in the dataset.</p>`;
+        } else {
+          forksEl.innerHTML = forks.map((fork, idx) => {
+            const dest = state.data.chapters[fork.oi];
+            const ref = `${dest.book} ${dest.chapter}:${fork.ov}`;
+            return `
+              <button type="button" class="chase-fork" data-fork="${idx}">
+                <div class="ref">${escapeHtml(ref)}</div>
+                <div class="meta">${(fork.votes || 0).toLocaleString()} votes · cross-reference link</div>
+              </button>
+            `;
+          }).join("");
+          forksEl.querySelectorAll(".chase-fork").forEach((btn) => {
+            btn.addEventListener("click", () => chooseChaseFork(forks[Number(btn.dataset.fork)]));
+          });
+        }
+        fetchScripture(cur.book, cur.chapter, cur.v).then(() => {
+          if (!state.chase) return;
+          scriptureEl.innerHTML = scriptureHtml(cur.label, state.scriptureCache.get(scriptureKey(cur.book, cur.chapter, cur.v)));
+        });
+      }
+      return true;
+    }
+
     async function fetchScripture(book, chapter, verse) {
       const key = scriptureKey(book, chapter, verse);
       if (state.scriptureCache.has(key)) {
@@ -1125,6 +1468,7 @@
       state.selectedVerse = null;
       state.selectedVerseKey = null;
       state.expandedVerseKey = null;
+      clearChase();
       setViewRange(null);
       renderLegend();
       renderRefsPanel();
@@ -1261,6 +1605,11 @@
       const chapterSection = document.getElementById("chapterSection");
       const bookLinksSection = document.getElementById("bookLinksSection");
       const bookLinksList = document.getElementById("bookLinksList");
+      const chaseSection = document.getElementById("chaseSection");
+
+      if (renderChasePanel()) return;
+
+      chaseSection.hidden = true;
 
       if (state.data && state.selectedChapter < 0 && (state.selectedBook || state.selectedGroup)) {
         const sectionMap = new Map(state.data.sections.map((s) => [s.id, s]));
@@ -1336,8 +1685,12 @@
         document.getElementById("refsTitle").textContent = "—";
         document.getElementById("refsMeta").textContent = "";
         document.getElementById("verseSectionLabel").textContent = "Verse links";
-        renderTopVerseList();
+        renderTrailheads();
         return;
+      }
+
+      if (state.chase) {
+        clearChase();
       }
 
       const ch = state.data.chapters[state.selectedChapter];
@@ -1508,9 +1861,15 @@
       const sectionMap = new Map(data.sections.map((s) => [s.id, s]));
       const focusCh = focusChapterIndex();
       const focusEd = focusEdgeIndex();
+      const chaseActive = (state.chase?.trail?.length || 0) > 0;
+      const chaseChapters = new Set(chaseTrailChapters());
+      const chasePairs = chaseTrailPairs();
       const regionFocus = (state.selectedBook != null || state.selectedGroup != null) && state.selectedChapter < 0;
-      // Always dim non-focused arcs on hover / selection
-      const hoverOn = regionFocus || focusCh >= 0 || focusEd >= 0;
+      const hoverOn = chaseActive || regionFocus || focusCh >= 0 || focusEd >= 0;
+
+      function edgeOnChaseTrail(e) {
+        return chasePairs.some(([a, b]) => (e.a === a && e.b === b) || (e.a === b && e.b === a));
+      }
 
       const g = ctx.createLinearGradient(0, 0, 0, h);
       g.addColorStop(0, "#0c1016");
@@ -1531,7 +1890,9 @@
       const maxSpan = chapters.length - 1;
       for (const idx of sorted) {
         const e = edges[idx];
-        const focused = regionFocus
+        const focused = chaseActive
+          ? edgeOnChaseTrail(e)
+          : regionFocus
           ? edgeCrossesFocus(e)
           : (!hoverOn || e.a === focusCh || e.b === focusCh || idx === focusEd);
         const x0 = pxX(chapters[e.a].x, m);
@@ -1576,15 +1937,18 @@
         const x1 = pxX(ch.x1, m);
         const bh = Math.max(2 * state.dpr, barNorm(ch) * m.barMax);
         const inFocus = chapterInFocusBand(ch.i);
-        const dim = regionFocus
+        const inChase = chaseChapters.has(ch.i);
+        const dim = chaseActive
+          ? !inChase
+          : regionFocus
           ? !inFocus
           : (hoverOn && ch.i !== focusCh && focusCh >= 0 && ch.i !== selectedOther);
         ctx.globalAlpha = dim ? 0.18 : 1;
         ctx.fillStyle = sec.color;
         ctx.fillRect(x0, m.baseline, Math.max(1, x1 - x0), bh);
         ctx.fillRect(x0, m.baseline + bh + 2 * state.dpr, Math.max(1, x1 - x0), bandH);
-        if (ch.i === state.selectedChapter || ch.i === selectedOther || (regionFocus && inFocus)) {
-          ctx.strokeStyle = (ch.i === state.selectedChapter || (regionFocus && inFocus))
+        if (ch.i === state.selectedChapter || ch.i === selectedOther || (regionFocus && inFocus) || (chaseActive && inChase)) {
+          ctx.strokeStyle = (ch.i === state.selectedChapter || (chaseActive && inChase) || (regionFocus && inFocus))
             ? "rgba(240,230,216,0.9)"
             : "rgba(232,220,200,0.55)";
           ctx.lineWidth = Math.max(1, state.dpr);
@@ -1809,6 +2173,28 @@
       document.getElementById("resetZoom").addEventListener("click", () => clearSelection());
       document.getElementById("clearSelection").addEventListener("click", clearSelection);
 
+      const chaseSearch = document.getElementById("chaseSearch");
+      const chaseSearchBtn = document.getElementById("chaseSearchBtn");
+      function submitChaseSearch() {
+        const err = document.getElementById("chaseSearchErr");
+        const hit = parseVerseQuery(chaseSearch.value);
+        if (!hit) {
+          err.hidden = false;
+          err.textContent = "Try “John 3:16” or “Genesis 1:1”.";
+          return;
+        }
+        if (!chaseForks(hit.i, hit.v).length) {
+          err.hidden = false;
+          err.textContent = "No cross-reference forks for that verse in this dataset.";
+          return;
+        }
+        startChase(hit.i, hit.v);
+      }
+      chaseSearchBtn.addEventListener("click", submitChaseSearch);
+      chaseSearch.addEventListener("keydown", (ev) => {
+        if (ev.key === "Enter") submitChaseSearch();
+      });
+
       document.getElementById("inspiration").innerHTML = data.inspiration.map((item) => `
         <a href="${item.url}" target="_blank" rel="noopener noreferrer">
           <div class="t">${item.title}</div>
@@ -1847,6 +2233,7 @@
       if (state.selectedChapter === ch) {
         clearSelection();
       } else {
+        clearChase();
         const book = state.data.chapters[ch];
         const bookMeta = (state.data.books || []).find((b) => b.name === book.book);
         state.selectedGroup = bookMeta ? bookMeta.group : null;
