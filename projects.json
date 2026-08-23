@@ -24,6 +24,15 @@
       "updated": "2026-08-19"
     },
     {
+      "id": "hunter",
+      "name": "Hunter — Spark year",
+      "desc": "Cycle 25 one-pager: 4-H, hunt, dress, prize gun, and optional US History I CLEP frosting.",
+      "href": "projects/hunter/",
+      "image": "projects/hunter/thumb.svg",
+      "private": true,
+      "updated": "2026-08-23"
+    },
+    {
       "id": "proverbs-link",
       "name": "Proverbs - A Foundation & A Climb",
       "desc": "Proverbs as a climb — Way of Life (10–31) above, firm foundation (1–9) below.",
