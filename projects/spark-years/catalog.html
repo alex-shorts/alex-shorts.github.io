@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classes per CLEP</title>
+  <link rel="stylesheet" href="theme-light.css" />
+  <script src="data/clep-class-browser-data.js"></script>
+  <style>
+    .wrap { max-width: 1120px; padding: 1rem 1rem 2.2rem; }
+    .eyebrow { margin: 0 0 0.2rem; }
+    h1 { font-size: clamp(1.55rem, 3.4vw, 2rem); margin: 0 0 0.3rem; }
+    .lede { margin: 0 0 0.5rem; font-size: 0.95rem; max-width: none; }
+    .chip-note {
+      display: block; margin: 0 0 0.5rem; padding: 0.22rem 0.6rem;
+      font-size: 0.78rem;
+    }
+    .site-nav { margin: 0 0 0.55rem; gap: 0.3rem; }
+    .toolbar {
+      position: sticky; top: 0; z-index: 6;
+      display: grid; gap: 0.35rem;
+      background: rgba(247, 244, 239, 0.94);
+      backdrop-filter: blur(10px);
+      padding: 0.4rem 0 0.5rem;
+      margin: 0 0 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .toolbar .row { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+    .toolbar input[type="search"], .toolbar select {
+      flex: 1 1 14rem; font: inherit; font-size: 0.88rem;
+      border: 1px solid var(--line-strong); border-radius: 999px;
+      padding: 0.32rem 0.75rem; background: #fff;
+    }
+    .toolbar select { flex: 0 1 12rem; }
+    .toolbar button, .legend .swatch {
+      font: inherit; cursor: pointer;
+      border: 1px solid var(--line); background: var(--panel);
+      border-radius: 999px; padding: 0.22rem 0.55rem;
+      font-size: 0.72rem; font-weight: 700; color: var(--soft);
+    }
+    .toolbar button.on { color: var(--mint); border-color: #b8d9d2; background: var(--accent-soft); }
+    .count-line { margin: 0; font-size: 0.78rem; color: var(--muted); }
+
+    .legend { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0 0 0.45rem; }
+    .legend .swatch { cursor: default; }
+    .legend .primary { background: #e8f5ec; border-color: #b7dcc4; color: var(--ok); }
+    .legend .supporting { background: var(--clep-soft); border-color: #b8cce0; color: var(--sky); }
+    .legend .cycle { background: #faf6ea; border-color: #e0d2a8; color: var(--gold); }
+
+    .cat {
+      font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+      font-weight: 700; color: var(--sky); margin: 0.7rem 0 0.25rem;
+    }
+    .exam {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; box-shadow: var(--shadow);
+      padding: 0.55rem 0.7rem 0.55rem; margin: 0 0 0.38rem;
+    }
+    .exam.notjc { opacity: 0.92; }
+    .exam-head { display: flex; flex-wrap: wrap; gap: 0.18rem 0.35rem; align-items: baseline; margin: 0 0 0.15rem; }
+    .exam-head h2 { font-size: clamp(1.45rem, 2.4vw, 1.85rem); margin: 0; flex: 1 1 12rem; line-height: 1.15; font-weight: 650; }
+    .exam-meta { margin: 0 0 0.28rem; font-size: 0.78rem; color: var(--soft); line-height: 1.35; }
+    .exam-meta a { font-weight: 650; }
+    .scope { margin: 0 0 0.35rem; }
+    .scope-what { margin: 0; font-size: 0.84rem; color: var(--text); line-height: 1.35; }
+    .covers, .cycles {
+      margin: 0.18rem 0 0; font-size: 0.75rem; color: var(--soft); line-height: 1.35;
+    }
+    .covers strong, .cycles strong { color: var(--mint); font-weight: 700; }
+    .cycles a { color: var(--gold); font-weight: 650; text-decoration: none; }
+    .cycles a:hover { color: var(--mint); text-decoration: underline; }
+
+    .takes { display: grid; gap: 0.28rem; }
+    .takes-head {
+      font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em;
+      text-transform: uppercase; font-weight: 700; color: var(--mint);
+      margin: 0 0 0.08rem;
+    }
+    .take {
+      display: grid; gap: 0.15rem 0.55rem; align-items: center;
+      border: 1px solid var(--line); border-radius: 8px;
+      padding: 0.35rem 0.5rem; background: #fff;
+    }
+    @media (min-width: 720px) {
+      .take { grid-template-columns: 1fr auto; }
+    }
+    .take.primary { background: #f3faf5; border-color: #c5e2ce; }
+    .take.supporting { background: #f4f8fc; border-color: #c9d9ea; }
+    .take.exam-class { background: var(--clep-soft); border-color: #b8cce0; }
+    .take.gc { background: #faf6ea; border-color: #e0d2a8; }
+    .take .name {
+      font-weight: 700; font-size: 0.88rem; color: var(--text);
+      text-decoration: none;
+    }
+    .take .name:hover { color: var(--sky); }
+    .take .where { display: inline; margin: 0 0 0 0.35rem; font-size: 0.75rem; color: var(--soft); font-weight: 500; }
+    .take .how { display: block; margin-top: 0.08rem; font-size: 0.74rem; color: var(--muted); line-height: 1.3; }
+    .open-class {
+      display: inline-block; text-decoration: none; font-size: 0.72rem; font-weight: 700;
+      border-radius: 999px; padding: 0.22rem 0.55rem; white-space: nowrap;
+      background: var(--sky); color: #fff; border: 1px solid var(--sky);
+    }
+    .open-class:hover { background: var(--mint); border-color: var(--mint); color: #fff; }
+    .open-class.missing { background: #fff; color: var(--sky); border-color: var(--line); }
+    .gc-lane {
+      margin-top: 0.4rem; padding-top: 0.35rem;
+      border-top: 1px dashed var(--line);
+    }
+    .empty-msg {
+      display: none; background: var(--panel); border: 1px dashed var(--line);
+      border-radius: 12px; padding: 0.85rem; color: var(--soft); text-align: center;
+    }
+    footer { margin-top: 1.2rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Canonical databases</p>
+    <h1>Classes per CLEP</h1>
+    <p class="lede">Each exam: what it covers, which Preparation cycles it could apply to, then the classes you can take.</p>
+
+        <nav class="site-nav" aria-label="Primary">
+      <a href="../../">Projects</a>
+      <a href="index.html">Cycles</a>
+      <a class="active" href="catalog.html">CLEP classes</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+
+    <p class="chip-note">Class name and <strong>Open class page</strong> go to the real course. Cycle names are tags only.</p>
+
+    <div class="toolbar">
+      <div class="row">
+        <input type="search" id="q" placeholder="Filter exams, classes, or Great Courses…" autocomplete="off" />
+      </div>
+      <div class="row" role="group" aria-label="Filters">
+        <button type="button" data-filter="tjc" id="f-tjc">TJC posts</button>
+        <button type="button" data-filter="likely" id="f-likely">Family likely</button>
+        <select id="cycle" aria-label="Filter by cycle">
+          <option value="">Any cycle</option>
+        </select>
+      </div>
+      <p class="count-line" id="count"></p>
+    </div>
+
+    <div class="legend">
+      <span class="swatch primary">Primary</span>
+      <span class="swatch supporting">Supporting</span>
+      <span class="swatch cycle">Cycle</span>
+    </div>
+
+    <div id="board"></div>
+    <p class="empty-msg" id="empty">No exams match those filters.</p>
+
+    <footer>
+      Data from <code>databases/_build.py</code>. Physics and Stats are not CLEP exams at TJC — they stay on the class list as DE/AP.
+    </footer>
+  </div>
+
+  <script>
+    const PLAN = {
+      likely: "Family likely",
+      optional: "Optional",
+      skip: "Skip",
+      "skip-tjc": "Not at TJC",
+      frosting: "Frosting",
+    };
+    const COST = { free: "Free", paid: "Paid", mixed: "Mixed" };
+    const DB = window.CLEP_CLASS_DB || {};
+    const exams = Array.isArray(DB) ? DB : (DB.exams || []);
+    const usable = (row) => row && row.support !== "light";
+    const board = document.getElementById("board");
+    const empty = document.getElementById("empty");
+    const countEl = document.getElementById("count");
+    const q = document.getElementById("q");
+    const cycleSel = document.getElementById("cycle");
+    const filters = { tjc: false, likely: false };
+
+    const escape = (s) => String(s || "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+    function pill(text, cls) {
+      if (!text) return "";
+      return `<span class="pill ${cls || ""}">${escape(text)}</span>`;
+    }
+
+    function openBtn(url, label) {
+      if (url) {
+        return `<a class="open-class" href="${escape(url)}" target="_blank" rel="noopener">${escape(label)}</a>`;
+      }
+      return `<span class="open-class missing">No public page yet</span>`;
+    }
+
+    function takeRow(c) {
+      const url = c.class_url || c.saylor_url || "";
+      const cost = COST[c.cost] || c.cost;
+      const where = `${c.available_at || "Homeschool"}${cost ? " · " + cost : ""}`;
+      const extra = [];
+      if (c.saylor_url && c.saylor_url !== url) {
+        extra.push(`<a href="${escape(c.saylor_url)}" target="_blank" rel="noopener">Also on Saylor</a>`);
+      }
+      const nameHref = url || c.explore || "#";
+      const external = !!url;
+      return `<article class="take ${escape(c.support)}">
+        <div>
+          <a class="name" href="${escape(nameHref)}" ${external ? 'target="_blank" rel="noopener"' : ""}>${escape(c.class_name)}</a>
+          <span class="where">Available at ${escape(where)}</span>
+          <span class="how">${escape(c.how)}</span>
+          ${extra.length ? `<span class="how">${extra.join(" · ")}</span>` : ""}
+        </div>
+        ${openBtn(url, "Open class page")}
+      </article>`;
+    }
+
+    function examClassRow(exam) {
+      if (!exam.modern_states_url) return "";
+      return `<article class="take exam-class">
+        <div>
+          <a class="name" href="${escape(exam.modern_states_url)}" target="_blank" rel="noopener">Modern States · ${escape(exam.official_name)}</a>
+          <span class="where">Available at Modern States · free class + CLEP voucher</span>
+          <span class="how">The free course built to this exam. Pair with the OpenStax / Saylor class below.</span>
+        </div>
+        ${openBtn(exam.modern_states_url, "Open class page")}
+      </article>`;
+    }
+
+    function gcCard(g) {
+      const hours = g.hours != null ? g.hours + "h" : "";
+      const where = [g.source || "Great Courses", g.tier, hours].filter(Boolean).join(" · ");
+      const url = g.url || "";
+      return `<article class="take gc ${escape(g.support)}">
+        <div>
+          <a class="name" href="${escape(url || g.book_url || "#")}" ${url ? 'target="_blank" rel="noopener"' : ""}>${escape(g.id)} · ${escape(g.title)}</a>
+          <span class="where">Available at ${escape(where)}</span>
+          <span class="how">${escape(g.how)}</span>
+        </div>
+        ${openBtn(url || g.book_url, url ? "Open class page" : "Open in book DB")}
+      </article>`;
+    }
+
+    function scopeBox(exam) {
+      const cycles = exam.cycles || [];
+      const covers = exam.student_covers || "";
+      if (!exam.student_what && !covers && !cycles.length) return "";
+      const cycleLinks = cycles.map((c) => escape(c.name)).join(" · ");
+      return `<div class="scope">
+        ${exam.student_what ? `<p class="scope-what">${escape(exam.student_what)}</p>` : ""}
+        ${covers ? `<p class="covers"><strong>Covers</strong> ${escape(covers)}</p>` : ""}
+        ${cycleLinks ? `<p class="cycles"><strong>Cycles</strong> ${cycleLinks}</p>` : ""}
+      </div>`;
+    }
+
+    function examCard(exam) {
+      const tjc = exam.tjc_posts === "yes";
+      const credit = tjc
+        ? `TJC ${escape(exam.tjc_courses)} · ${escape(exam.tjc_credits)} cr${exam.tjc_min_score ? " @ " + escape(exam.tjc_min_score) : ""}`
+        : "TJC does not post this exam";
+      const alt = exam.tjc_alt ? ` · ${escape(exam.tjc_alt)}` : "";
+      const gcs = (exam.great_courses || []).filter(usable);
+      const classes = (exam.classes || []).filter(usable);
+      return `<article class="exam${tjc ? "" : " notjc"}" data-exam="${escape(exam.clep_id)}" data-cat="${escape(exam.category)}">
+        <div class="exam-head">
+          <h2>${escape(exam.official_name)}</h2>
+          ${pill(tjc ? "TJC posts" : "Not at TJC", tjc ? "tag-sky" : "tag-coral")}
+          ${pill(PLAN[exam.family_plan] || exam.family_plan, exam.family_plan === "likely" ? "tag-mint" : exam.family_plan === "frosting" ? "tag-violet" : "")}
+        </div>
+        <p class="exam-meta">
+          ${credit}${alt}. ${escape(exam.notes)}
+          <a href="${escape(exam.college_board_url)}" target="_blank" rel="noopener">CLEP exam page</a>
+        </p>
+        ${scopeBox(exam)}
+        <div class="takes">
+          <p class="takes-head">Classes you can take</p>
+          ${examClassRow(exam)}
+          ${classes.map(takeRow).join("")}
+        </div>
+        ${gcs.length ? `<div class="gc-lane"><p class="takes-head">Great Courses from Preparation</p><div class="takes">${gcs.map(gcCard).join("")}</div></div>` : ""}
+      </article>`;
+    }
+
+    const groups = [];
+    for (const exam of exams) {
+      if (!groups.length || groups[groups.length - 1].cat !== exam.category) {
+        groups.push({ cat: exam.category, html: [] });
+      }
+      groups[groups.length - 1].html.push(examCard(exam));
+    }
+    board.innerHTML = groups.map((g) =>
+      `<p class="cat" data-cat-head="${escape(g.cat)}">${escape(g.cat)}</p>${g.html.join("")}`
+    ).join("");
+
+    function hay(exam) {
+      const parts = [exam.official_name, exam.notes, exam.tjc_courses, exam.family_plan, exam.student_what, exam.student_covers, exam.cycle_names];
+      for (const c of exam.cycles || []) parts.push(c.name);
+      for (const c of (exam.classes || []).filter(usable)) parts.push(c.class_name, c.how, c.saylor_id, c.tjc_course);
+      for (const g of (exam.great_courses || []).filter(usable)) parts.push(g.id, g.title, g.source, g.how);
+      return parts.join(" ").toLowerCase();
+    }
+    const haystack = Object.fromEntries(exams.map((e) => [e.clep_id, hay(e)]));
+
+    function apply() {
+      const query = q.value.trim().toLowerCase();
+      let shown = 0;
+      document.querySelectorAll(".exam").forEach((el) => {
+        const exam = exams.find((e) => e.clep_id === el.dataset.exam);
+        let ok = true;
+        if (filters.tjc && exam.tjc_posts !== "yes") ok = false;
+        if (filters.likely && exam.family_plan !== "likely") ok = false;
+        if (cycleSel.value && !(exam.cycles || []).some((c) => String(c.n) === cycleSel.value)) ok = false;
+        if (query && !haystack[exam.clep_id].includes(query)) ok = false;
+        el.hidden = !ok;
+        if (ok) shown += 1;
+      });
+      document.querySelectorAll("[data-cat-head]").forEach((h) => {
+        const cat = h.getAttribute("data-cat-head");
+        const any = [...document.querySelectorAll(".exam")].some((e) => e.dataset.cat === cat && !e.hidden);
+        h.hidden = !any;
+      });
+      empty.style.display = shown ? "none" : "block";
+      countEl.textContent = `${shown} of ${exams.length} exams`;
+    }
+
+    const cycleSeen = new Map();
+    for (const exam of exams) {
+      for (const c of exam.cycles || []) {
+        if (!cycleSeen.has(c.n)) cycleSeen.set(c.n, c.name);
+      }
+    }
+    [...cycleSeen.entries()].sort((a, b) => a[0] - b[0]).forEach(([n, name]) => {
+      const opt = document.createElement("option");
+      opt.value = String(n);
+      opt.textContent = name;
+      cycleSel.appendChild(opt);
+    });
+
+    document.querySelectorAll(".toolbar [data-filter]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.filter;
+        filters[key] = !filters[key];
+        btn.classList.toggle("on", filters[key]);
+        apply();
+      });
+    });
+    q.addEventListener("input", apply);
+    cycleSel.addEventListener("change", apply);
+    apply();
+  </script>
+</body>
+</html>

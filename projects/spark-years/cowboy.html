@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cowboy — Spark year</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,650;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="spark-timeline.css" />
+  <style>
+    :root {
+      --cowboy: #8a4b12;
+      --cowboy-mid: #a66a2a;
+      --cowboy-soft: #f0e4d4;
+      --tan: #c4a35a;
+      --paper: #f3eee4;
+      --ink: #1c1914;
+      --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(900px 520px at 12% -10%, rgba(138, 75, 18, 0.14), transparent 58%),
+        radial-gradient(700px 420px at 100% 0%, rgba(196, 163, 90, 0.12), transparent 52%),
+        var(--paper);
+      font-family: var(--sans);
+    }
+    a { color: #7a3d0f; }
+    a:hover { color: var(--cowboy); }
+    .wrap { max-width: 980px; padding: 0 1.1rem 2.2rem; }
+    .print-only { display: none; }
+    .mast {
+      margin: 0 -1.1rem 0.7rem; padding: 0.85rem 1.1rem 1.05rem;
+      background: linear-gradient(115deg, #4a2a0a 0%, #8a4b12 50%, #5c3d1a 100%);
+      color: #f6f1e4; border-radius: 0 0 18px 18px;
+    }
+    .mast .site-nav { margin: 0 0 0.7rem; }
+    .mast .site-nav a {
+      background: rgba(246, 241, 228, 0.08); color: #e6dfce; border-color: rgba(246, 241, 228, 0.18);
+      font-size: 0.72rem; padding: 0.22rem 0.55rem;
+    }
+    .mast .site-nav a.active { background: rgba(196, 163, 90, 0.22); color: #f6f1e4; border-color: var(--tan); }
+    .mast .eyebrow { color: var(--tan); margin: 0 0 0.25rem; }
+    .mast h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); font-weight: 500; letter-spacing: -0.03em; color: #f6f1e4; margin: 0 0 0.3rem; line-height: 1; }
+    .mast .lede { color: #d9d0bb; max-width: 46rem; font-size: 0.95rem; margin: 0 0 0.55rem; }
+    .mast .lede em { color: #f6f1e4; font-style: italic; font-family: var(--serif); }
+    .why-block {
+      margin: 0 -1.1rem 0.85rem; padding: 0.85rem 1.1rem 0.95rem;
+      background: #faf6ee; border-top: 3px solid var(--cowboy); border-bottom: 1px solid #ddd4c4;
+    }
+    .why-block h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; color: var(--cowboy); margin: 0 0 0.35rem; }
+    .why-block .why-lede { font-size: 0.92rem; line-height: 1.45; max-width: 52rem; margin: 0 0 0.5rem; }
+    .why-block .why-action { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: #4a3a22; margin: 0.45rem 0 0; padding-top: 0.45rem; border-top: 1px solid #e4dccb; }
+    .why-block ul { margin: 0.35rem 0 0; padding-left: 1.15rem; font-size: 0.84rem; line-height: 1.4; }
+    .why-block li { margin: 0.15rem 0; }
+    .hero-row { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .mast .tag { background: rgba(246, 241, 228, 0.08); color: #e6dfce; border-color: rgba(246, 241, 228, 0.2); }
+    .mast .tag-gold { background: rgba(196, 163, 90, 0.18); color: var(--tan); border-color: rgba(196, 163, 90, 0.4); }
+    .print-btn { font: inherit; font-size: 0.72rem; font-weight: 700; cursor: pointer; margin-left: auto; border-radius: 999px; padding: 0.28rem 0.75rem; border: 1px solid var(--tan); background: var(--tan); color: #4a2a0a; }
+    section { margin: 0.95rem 0; scroll-margin-top: 0.5rem; }
+    h2 { font-size: 1.15rem; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 0.2rem; }
+    h3 { font-size: 0.95rem; font-weight: 500; margin: 0.7rem 0 0.2rem; }
+    .section-lede { margin: 0 0 0.4rem; font-size: 0.88rem; }
+    .stats { gap: 0.4rem; margin: 0.4rem 0 0.5rem; }
+    .stat { background: #faf6ee; border-color: #ddd4c4; padding: 0.55rem 0.65rem; }
+    .stat b { color: var(--cowboy); font-weight: 500; font-size: 1.15rem; }
+    .callout { margin: 0.4rem 0; padding: 0.5rem 0.7rem; font-size: 0.88rem; }
+    .callout.coral { border-left-color: #9a4a1a; background: #f6ebe0; }
+    table { font-size: 0.82rem; }
+    th { background: var(--cowboy-soft); color: var(--cowboy); padding: 0.35rem 0.5rem; }
+    td { padding: 0.35rem 0.5rem; }
+    tr:nth-child(even) td { background: #f3eee4; }
+    tr.climax td { background: #efe6d0 !important; }
+    table .mode { font-weight: 750; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; }
+    table .mode.gate { color: #7a3d0f; }
+    table .mode.range { color: var(--cowboy); }
+    table .mode.climax { color: #7a4a12; }
+    table .mode.extra { color: #7a7368; }
+    table .mode.opt { color: #5a6b3a; }
+    .split { display: grid; gap: 0.55rem; }
+    @media (min-width: 700px) { .split { grid-template-columns: 1fr 1fr 1fr; } }
+    .split .panel { background: #faf6ee; border-color: #ddd4c4; padding: 0.7rem 0.8rem; }
+    .split .panel h3 { color: var(--cowboy); margin: 0 0 0.25rem; }
+    .clean-list li { background: transparent; border: none; box-shadow: none; padding: 0.12rem 0; border-bottom: 1px solid #e4dccb; border-radius: 0; font-size: 0.82rem; }
+    .chip-note { margin: 0.4rem 0 0; padding: 0.3rem 0.65rem; font-size: 0.78rem; background: var(--cowboy-soft); border-color: #d4c4a8; color: #4a463c; }
+    .draft-banner { margin: 0 -1.1rem 0.85rem; padding: 0.55rem 1.1rem; background: #f0ebe0; border-top: 1px dashed var(--tan); border-bottom: 1px dashed var(--tan); font-size: 0.84rem; line-height: 1.4; }
+    .draft-banner strong { color: #7a4a12; }
+    footer { margin-top: 0.8rem; padding-top: 0.5rem; border-top-color: #ddd4c4; color: #7a7368; font-size: 0.78rem; }
+    @media print {
+      @page { size: letter; margin: 0.42in; }
+      html { font-size: 10.5px; }
+      body { background: #fff !important; }
+      .wrap { max-width: none; padding: 0; }
+      .print-only { display: block; }
+      .screen-only { display: none !important; }
+      .mast { background: none; color: #111; border-bottom: 2.5px solid var(--cowboy); }
+      .why-block, .draft-banner { display: none; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+            <nav class="site-nav screen-only" aria-label="Primary">
+        <a href="../../">Projects</a>
+        <a href="./">Cycles</a>
+        <a href="catalog.html">CLEP classes</a>
+        <a href="resources.html">Resources</a>
+        <a href="checklists/cowboy.html">Checklist</a>
+        <a class="active" href="cowboy.html">Plan</a>
+      </nav>
+      <p class="print-only print-kicker">Cycle 3 · 9th-grade Spark · East Texas 2027–28 · light DE OK</p>
+      <p class="eyebrow screen-only">Cycle 3 · Spark year · East Texas 2027–28</p>
+      <h1>Cowboy</h1>
+      <p class="lede">
+        Cycle 3 · 9th-grade <em>Spark</em> — ride, rope, shoe, and work livestock on real land. The climax is a <strong>ranch apprenticeship week</strong> with a signed skills checklist — not a dude-ranch vacation.
+      </p>
+      <div class="hero-row screen-only">
+        <span class="tag">9th-grade Spark</span>
+        <span class="tag">Light TJC OK</span>
+        <span class="tag tag-gold">Land · after Hunter</span>
+        <span class="tag">Draft — pick &amp; choose</span>
+        <button type="button" class="print-btn" onclick="window.print()">Print</button>
+      </div>
+    </header>
+
+    <section class="why-block" id="why">
+      <h2>Why this cycle — earn your place on the land</h2>
+      <p class="why-lede">
+        <strong>Summary:</strong> Hunter taught him to take from the land with ethics. Cowboy teaches him to <strong>work the land</strong> — animals that depend on you, gear that fails if you skip maintenance, weather you cannot negotiate. He rides, ropes, handles livestock, and finishes a real ranch block where a foreman would notice if he slacked. GC and history give context; <strong>saddle hours are the adventure</strong>.
+      </p>
+      <ul>
+        <li><strong>Ride before romance.</strong> Lessons or a structured camp first — then open range with a mentor who will correct bad habits.</li>
+        <li><strong>Rope on a dummy, then live.</strong> Ground work before heroics. A missed loop is cheaper than a kicked horse.</li>
+        <li><strong>Ranch week is the climax.</strong> Working cattle ranch internship or a booked ranch-skills week — chores, feeding, fencing, moving stock. Mentor letter + signed checklist + photo log.</li>
+        <li><strong>Overlaps Hunter ethics.</strong> Same conservation thread: know what you manage, don't waste, give back (habitat, stock care, AgriLife projects).</li>
+        <li><strong>Not this year:</strong> Uruguay maxim trip, farrier certification, rodeo competition as the bar, or substituting a trail ride for ranch work.</li>
+      </ul>
+      <p class="why-action">
+        The call: show up before dawn, do the unglamorous chore, ask the ranch lead what broke and how they fixed it. A man who can work stock is harder to fake than a man who can post on Instagram.
+      </p>
+    </section>
+
+    <section id="aim">
+      <div class="stats">
+        <div class="stat"><b>Ride</b><span>Balance · reins · trail sense</span></div>
+        <div class="stat"><b>Rope</b><span>Dummy → live handling</span></div>
+        <div class="stat"><b>Ranch</b><span>5–7 day apprenticeship</span></div>
+        <div class="stat"><b>West</b><span>History + land literacy</span></div>
+      </div>
+      <div class="callout coral">
+        <strong>Book the ranch week before spring.</strong> East TX working-ranch opportunities fill early. Idaho-style horseback camp is a later optional upgrade once basics exist — not a substitute for the TX climax.
+      </div>
+    </section>
+
+    <section id="finale-timeline" class="spark-timeline">
+      <h2>Road to the finale</h2>
+      <p class="section-lede">Saddle hours and ranch chores build to one working week with a signed checklist.</p>
+      <ol class="timeline-track horizontal" aria-label="Year timeline">
+        <li class="tl-step"><span class="tl-when">Fall 9th</span><span class="tl-what">AgriLife contact · riding lessons · gear + First Aid</span><span class="tl-links"><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">Smith AgriLife</a> · <a href="https://www.redcross.org/take-a-class">Red Cross</a></span></li>
+        <li class="tl-step"><span class="tl-when">Fall → winter</span><span class="tl-what">Rope dummy · livestock handling hours</span></li>
+        <li class="tl-step"><span class="tl-when">Winter → spring</span><span class="tl-what">Book ranch week · American West GC + US History II</span><span class="tl-links"><a href="https://www.thegreatcourses.com/courses/the-american-west-history-myth-and-legacy">American West GC</a></span></li>
+        <li class="tl-step climax"><span class="tl-when">Spring break / May</span><span class="tl-what">FINALE — ranch apprenticeship week + mentor letter</span><span class="tl-links">Working ranch — book through AgriLife or family network</span></li>
+      </ol>
+    </section>
+
+    <p class="draft-banner screen-only"><strong>Draft plan.</strong> Proofs below are the bar. Milestone tasks live on the <a href="checklists/cowboy.html">checklist page</a>. Farrier clinic, 4-H livestock show, and Uruguay-style travel are optional layers.</p>
+
+    <section id="year">
+      <h2>Year map — saddle to ranch</h2>
+      <p class="section-lede">Fall builds skills; spring is the ranch block. Summer can extend hours if Drive travel allows.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Window</th><th>Mode</th><th>He does</th><th>Done when</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fall (9th)</td>
+              <td class="mode gate">Gate</td>
+              <td>Smith County AgriLife / 4-H contact. Riding lessons or structured intro camp. Red Cross First Aid current. Helmet + boots that fit.</td>
+              <td>Coach or camp lead · first-aid card · gear check</td>
+            </tr>
+            <tr>
+              <td>Fall → winter</td>
+              <td class="mode range">Skills</td>
+              <td>Weekly riding (balance, stop, turn, open gate). Rope dummy — swing, loop, dally basics. Livestock handling at a barn or 4-H project animal.</td>
+              <td>10+ saddle hours · rope log · animal hours logged</td>
+            </tr>
+            <tr>
+              <td>Winter → spring</td>
+              <td class="mode range">Land</td>
+              <td><em>The American West</em> GC + HS US History II class. AgriLife animal-science reading. Scout ranch week dates; confirm mentor.</td>
+              <td>Ranch week booked · skills pre-check with mentor</td>
+            </tr>
+            <tr>
+              <td>Spring break or May</td>
+              <td class="mode climax">Climax</td>
+              <td><strong>Ranch apprenticeship week</strong> — chores, feeding, fencing, move cattle/sheep/goats as the ranch runs. Parent may stay nearby; he works the block.</td>
+              <td>Mentor letter · signed checklist · photo/video log</td>
+            </tr>
+            <tr>
+              <td>After Spark</td>
+              <td class="mode extra">Optional</td>
+              <td>Idaho horseback adventure camp. Farrier intro clinic. 4-H livestock show. Bio / US History II CLEP if class spine is solid.</td>
+              <td>Stretch goals only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="watch">
+      <h2>Watch — the West &amp; the work</h2>
+      <p class="section-lede">Rides under 9th US History II and Ag literacy. GC cannot teach riding — only context. Debrief: whose land, whose labor, what broke when we stopped stewarding.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>When</th><th>Watch / read</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fall</td>
+              <td>Great Courses <em>The American West: History, Myth, and Legacy</em> (selections)</td>
+              <td>Cattle, railroads, open range — vocabulary before the ranch week.</td>
+            </tr>
+            <tr>
+              <td>Winter</td>
+              <td>Ken Burns <em>The West</em> (episodes as class hits them) — parent co-watch</td>
+              <td>Land, conflict, expansion — tie to Hunter conservation thread.</td>
+            </tr>
+            <tr>
+              <td>Parallel</td>
+              <td>GC <em>Nature Watching</em> + OpenStax Biology (livestock units)</td>
+              <td>Animal behavior, habitat, health — not a substitute for barn hours.</td>
+            </tr>
+            <tr>
+              <td>Great Books</td>
+              <td><em>Anabasis</em> selections · <em>Self-Reliance</em> · <em>Life on the Mississippi</em> selections</td>
+              <td>March, self-reliance, American work voice — one chapter per month.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="proofs">
+      <h2>Four proofs</h2>
+      <p class="section-lede">Spark is incomplete without the ranch climax artifacts. Riding and rope are build layers; the mentor sign-off is the bar.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th></th><th>Proof</th><th>Train / bar</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ride</strong></td>
+              <td>10+ logged saddle hours with instruction</td>
+              <td>Lessons, camp, or mentor rides — walk, trot, control on trail</td>
+            </tr>
+            <tr>
+              <td><strong>Rope</strong></td>
+              <td>Rope skills checklist (dummy + live if offered)</td>
+              <td>Ground tie · swing · loop · safe dally intro — coach signed</td>
+            </tr>
+            <tr>
+              <td><strong>Stock</strong></td>
+              <td>Livestock handling hours log</td>
+              <td>Feed, water, move, basic health observation — 4-H or barn</td>
+            </tr>
+            <tr class="climax">
+              <td><strong>Ranch</strong></td>
+              <td>Mentor letter + ranch skills checklist + media log</td>
+              <td>5–7 day working block · real chores · foreman would rehire</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="train">
+      <h2>Where to train — East Texas</h2>
+      <p class="section-lede">Start with AgriLife and local instructors; book ranch week through a working operation, not a trail-ride outfitter alone.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>What</th><th>Link / note</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Smith County AgriLife / 4-H</strong></td>
+              <td>County agents · livestock projects · riding contacts</td>
+              <td><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">agrilifeextension.tamu.edu</a> · 903-590-2980</td>
+            </tr>
+            <tr>
+              <td><strong>Texas A&M AgriLife Extension</strong></td>
+              <td>State animal-science resources · 4-H curriculum</td>
+              <td><a href="https://agrilifeextension.tamu.edu/">agrilifeextension.tamu.edu</a></td>
+            </tr>
+            <tr>
+              <td><strong>Local riding instruction</strong></td>
+              <td>Weekly lessons — balance, stops, gates, trail prep</td>
+              <td>Book through AgriLife referral or trusted barn · helmet required</td>
+            </tr>
+            <tr>
+              <td><strong>Working ranch week</strong></td>
+              <td>Cattle / stock apprenticeship — East TX or NE TX ranch</td>
+              <td>Family network first · TYHP-adjacent land contacts · avoid pure trail rides as climax</td>
+            </tr>
+            <tr>
+              <td><strong>Red Cross First Aid / CPR</strong></td>
+              <td>Barn and trail safety credential</td>
+              <td><a href="https://www.redcross.org/take-a-class">redcross.org</a></td>
+            </tr>
+            <tr>
+              <td><strong>Idaho-style camp</strong> <span class="mode opt">later</span></td>
+              <td>Multi-day horseback adventure once basics exist</td>
+              <td>Prep maxim reference — not the 9th-grade TX climax</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>Skills checklist (ranch climax):</strong> catch &amp; halter · groom · saddle (with help) · open/close gate mounted · move herd on foot · feed routine · fence repair assist · rope dummy pass · ranch safety briefing signed.</p>
+    </section>
+
+    <section id="land">
+      <h2>How he gets on a ranch</h2>
+      <p class="section-lede">Line up the ranch block before Christmas. Hunter land contacts may overlap — ask Mac and family network.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Path</th><th>What</th><th>Use if</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A · Family / friend ranch</strong></td>
+              <td>Known operation — he works, not tours</td>
+              <td>You have a contact who will assign real chores</td>
+            </tr>
+            <tr>
+              <td><strong>B · AgriLife / 4-H lead</strong></td>
+              <td>Agent refers to a working ranch internship or show-stock barn with labor expectations</td>
+              <td>No family ranch · need a vetted mentor</td>
+            </tr>
+            <tr>
+              <td><strong>C · Booked ranch-skills week</strong></td>
+              <td>Paid working-ranch program (verify it is chores + instruction, not trail ride only)</td>
+              <td>Need a structured week without a family tie</td>
+            </tr>
+            <tr>
+              <td><strong>D · Lease / hunt land overlap</strong> <span class="mode opt">opt</span></td>
+              <td>Same land as Hunter — stock work if the leaseholder runs cattle</td>
+              <td>Annual lease family already holds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="off">
+      <h2>Off the list — do not substitute</h2>
+      <div class="split">
+        <div class="panel">
+          <h3>Wrong climax</h3>
+          <ul class="clean-list">
+            <li>Trail ride / dude ranch afternoon</li>
+            <li>Rodeo competition as the only proof</li>
+            <li>Uruguay maxim ranch (save for later)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Wrong pace</h3>
+          <ul class="clean-list">
+            <li>Open-range gallop before balance</li>
+            <li>Live roping without dummy reps</li>
+            <li>Stock work without first aid</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Not required</h3>
+          <ul class="clean-list">
+            <li>Farrier certification</li>
+            <li>Bio CLEP before class spine</li>
+            <li>Ag DE unless TJC offers a fit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="next">
+      <h2>Next steps — open the year in order</h2>
+      <ol class="clean-list" style="padding-left:1.2rem;font-size:0.88rem;line-height:1.5">
+        <li>Call Smith County AgriLife — riding referrals + 4-H livestock path</li>
+        <li>Book weekly lessons or a fall intro camp · buy helmet + boots</li>
+        <li>Red Cross First Aid if card is expired</li>
+        <li>Set up rope dummy practice at home or barn · log 15 min × 3/week</li>
+        <li>Confirm ranch week dates + mentor · deposit if required</li>
+        <li>Start <em>American West</em> GC alongside US History II class</li>
+        <li>Execute ranch week · collect letter, checklist, photos before school ends</li>
+      </ol>
+    </section>
+
+    <section id="clep">
+      <h2>Optional frosting — after Spark</h2>
+      <p class="section-lede">Ranch week is the adventure. CLEP rides the academic class — not the other way around.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Exam</th><th>When</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>US History II CLEP</td>
+              <td>After 9th US History II class + West GC</td>
+              <td>Natural follow-on from Hunter year's Hist I thread</td>
+            </tr>
+            <tr>
+              <td>Biology CLEP</td>
+              <td>After HS Biology + OpenStax units</td>
+              <td>Livestock / animal-science literacy — optional</td>
+            </tr>
+            <tr>
+              <td>Intro Psych CLEP</td>
+              <td>Later</td>
+              <td>Handler stress / animal behavior crossover — low priority</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="all-links">
+      <h2>All training links · events · courses</h2>
+      <p class="section-lede">Every bookable gate, camp, class, and competition in one place. Register early — spring slots fill.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Use for</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">Smith County AgriLife</a></strong></td><td>4-H · livestock · referrals</td><td><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">agrilifeextension.tamu.edu/counties/smith-county/</a> · 903-590-2980</td></tr>
+            <tr><td><strong><a href="https://agrilifeextension.tamu.edu/">Texas A&M AgriLife Extension</a></strong></td><td>State resources</td><td><a href="https://agrilifeextension.tamu.edu/">agrilifeextension.tamu.edu/</a></td></tr>
+            <tr><td><strong><a href="https://www.redcross.org/take-a-class">Red Cross First Aid</a></strong></td><td>Credential</td><td><a href="https://www.redcross.org/take-a-class">www.redcross.org/take-a-class</a></td></tr>
+            <tr><td><strong><a href="https://www.thegreatcourses.com/courses/the-american-west-history-myth-and-legacy">American West (Great Courses)</a></strong></td><td>Watch shelf</td><td><a href="https://www.thegreatcourses.com/courses/the-american-west-history-myth-and-legacy">www.thegreatcourses.com/courses/the-american-west-history-myth-and-legacy</a></td></tr>
+            <tr><td><strong><a href="https://www.pbs.org/kenburns/the-west/">Ken Burns The West</a></strong></td><td>Doc co-watch</td><td><a href="https://www.pbs.org/kenburns/the-west/">www.pbs.org/kenburns/the-west/</a></td></tr>
+            <tr><td><strong><a href="https://openstax.org/details/books/biology-2e">OpenStax Biology</a></strong></td><td>Livestock units</td><td><a href="https://openstax.org/details/books/biology-2e">openstax.org/details/books/biology-2e</a></td></tr>
+            <tr><td><strong><a href="https://modernstates.org/course/history-of-the-united-states-ii/">Modern States US History II</a></strong></td><td>Optional CLEP</td><td><a href="https://modernstates.org/course/history-of-the-united-states-ii/">modernstates.org/course/history-of-the-united-states-ii/</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Cycle 3 Cowboy · 9th-grade Spark · <a href="checklists/cowboy.html">Checklist</a>
+    </footer>
+  </div>
+</body>
+</html>

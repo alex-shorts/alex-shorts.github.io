@@ -1,0 +1,147 @@
+/* Spark year — road-to-finale timeline (include after theme-light.css) */
+.spark-timeline {
+  margin: 0.95rem 0;
+  padding: 0.75rem 0.85rem;
+  background: #faf6ee;
+  border: 1px solid #ddd4c4;
+  border-radius: 10px;
+}
+.spark-timeline h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 0.15rem;
+}
+.spark-timeline .section-lede {
+  margin: 0 0 0.55rem;
+}
+.timeline-track {
+  display: grid;
+  gap: 0;
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 0.15rem;
+  list-style: none;
+}
+.timeline-track::before {
+  content: "";
+  position: absolute;
+  left: 0.42rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 3px;
+  background: linear-gradient(180deg, var(--tl-line, #b8b0a4) 0%, var(--tl-climax, #7a4a12) 100%);
+  border-radius: 2px;
+}
+.tl-step {
+  position: relative;
+  padding: 0.35rem 0 0.35rem 1.35rem;
+}
+.tl-step::before {
+  content: "";
+  position: absolute;
+  left: 0.18rem;
+  top: 0.55rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--tl-dot, #8a8478);
+  z-index: 1;
+}
+.tl-step.climax {
+  background: var(--tl-climax-bg, #efe6d0);
+  margin: 0.15rem -0.5rem;
+  padding: 0.55rem 0.55rem 0.55rem 1.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--tl-climax-border, #d4c4a8);
+}
+.tl-step.climax::before {
+  width: 0.7rem;
+  height: 0.7rem;
+  left: 0.1rem;
+  top: 0.65rem;
+  background: var(--tl-climax, #7a4a12);
+  border-color: var(--tl-climax, #7a4a12);
+  box-shadow: 0 0 0 3px rgba(122, 74, 18, 0.2);
+}
+.tl-when {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tl-muted, #7a7368);
+  margin-bottom: 0.08rem;
+}
+.tl-step.climax .tl-when {
+  color: var(--tl-climax, #7a4a12);
+}
+.tl-what {
+  display: block;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+.tl-step.climax .tl-what {
+  font-size: 0.92rem;
+}
+.tl-links {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
+.tl-links a {
+  white-space: nowrap;
+}
+.tl-links a + a::before {
+  content: " · ";
+  color: #9a9488;
+}
+
+@media (min-width: 720px) {
+  .timeline-track.horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0.5rem 0 0;
+    overflow-x: auto;
+  }
+  .timeline-track.horizontal::before {
+    left: 0.5rem;
+    right: 0.5rem;
+    top: 0.35rem;
+    bottom: auto;
+    width: auto;
+    height: 3px;
+  }
+  .timeline-track.horizontal .tl-step {
+    flex: 1;
+    min-width: 7.5rem;
+    padding: 1.1rem 0.35rem 0;
+    text-align: center;
+  }
+  .timeline-track.horizontal .tl-step::before {
+    left: 50%;
+    top: 0.12rem;
+    transform: translateX(-50%);
+  }
+  .timeline-track.horizontal .tl-step.climax {
+    margin: 0;
+    padding: 1.1rem 0.35rem 0.35rem;
+    flex: 1.15;
+  }
+}
+
+@media print {
+  .spark-timeline {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.4rem;
+    break-inside: avoid;
+  }
+  .tl-step.climax {
+    background: #f5f0e6;
+  }
+}

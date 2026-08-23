@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hunter — Spark year</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="spark-timeline.css" />
+  <style>
+    :root {
+      --hunter: #3f4d2c;
+      --hunter-mid: #6a7848;
+      --hunter-soft: #e8ecd8;
+      --amber: #c4a35a;
+      --paper: #f3eee4;
+      --ink: #1c1914;
+      --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(900px 520px at 12% -10%, rgba(63, 77, 44, 0.16), transparent 58%),
+        radial-gradient(700px 420px at 100% 0%, rgba(196, 163, 90, 0.12), transparent 52%),
+        var(--paper);
+      font-family: var(--sans);
+    }
+    a { color: #3d5a28; }
+    a:hover { color: var(--hunter); }
+    .wrap { max-width: 980px; padding: 0 1.1rem 2.2rem; }
+    .print-only { display: none; }
+
+    .mast {
+      margin: 0 -1.1rem 0.7rem;
+      padding: 0.85rem 1.1rem 1.05rem;
+      background: linear-gradient(115deg, #2a331d 0%, #3f4d2c 50%, #4a3a22 100%);
+      color: #f6f1e4;
+      border-radius: 0 0 18px 18px;
+    }
+    .mast .site-nav { margin: 0 0 0.7rem; }
+    .mast .site-nav a {
+      background: rgba(246, 241, 228, 0.08); color: #e6dfce; border-color: rgba(246, 241, 228, 0.18);
+      font-size: 0.72rem; padding: 0.22rem 0.55rem;
+    }
+    .mast .site-nav a.active { background: rgba(196, 163, 90, 0.22); color: #f6f1e4; border-color: var(--amber); }
+    .mast .eyebrow { color: var(--amber); margin: 0 0 0.25rem; }
+    .mast h1 {
+      font-size: clamp(2.1rem, 5vw, 3.1rem); font-weight: 500; letter-spacing: -0.03em;
+      color: #f6f1e4; margin: 0 0 0.3rem; line-height: 1;
+    }
+    .mast .lede { color: #d9d0bb; max-width: 46rem; font-size: 0.95rem; margin: 0 0 0.55rem; }
+    .mast .lede em { color: #f6f1e4; font-style: italic; font-family: var(--serif); }
+    .why-block {
+      margin: 0 -1.1rem 0.85rem; padding: 0.85rem 1.1rem 0.95rem;
+      background: #faf6ee; border-top: 3px solid var(--hunter);
+      border-bottom: 1px solid #ddd4c4;
+    }
+    .why-block h2 {
+      font-family: var(--serif); font-size: 1.35rem; font-weight: 500;
+      letter-spacing: -0.02em; color: var(--hunter); margin: 0 0 0.35rem;
+    }
+    .why-block .why-lede {
+      font-size: 0.92rem; line-height: 1.45; max-width: 52rem; margin: 0 0 0.5rem;
+    }
+    .why-block .why-action {
+      font-family: var(--serif); font-size: 1.05rem; font-style: italic;
+      color: #4a3a22; margin: 0.45rem 0 0; padding-top: 0.45rem;
+      border-top: 1px solid #e4dccb;
+    }
+    .why-block ul {
+      margin: 0.35rem 0 0; padding-left: 1.15rem; font-size: 0.84rem; line-height: 1.4;
+    }
+    .why-block li { margin: 0.15rem 0; }
+    .hero-row { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .mast .tag {
+      background: rgba(246, 241, 228, 0.08); color: #e6dfce; border-color: rgba(246, 241, 228, 0.2);
+    }
+    .mast .tag-gold { background: rgba(196, 163, 90, 0.18); color: var(--amber); border-color: rgba(196, 163, 90, 0.4); }
+    .print-btn {
+      font: inherit; font-size: 0.72rem; font-weight: 700; cursor: pointer;
+      margin-left: auto; border-radius: 999px; padding: 0.28rem 0.75rem;
+      border: 1px solid var(--amber); background: var(--amber); color: #2a331d;
+    }
+
+    section { margin: 0.95rem 0; scroll-margin-top: 0.5rem; }
+    h2 { font-size: 1.15rem; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 0.2rem; }
+    h3 { font-size: 0.95rem; font-weight: 500; margin: 0.7rem 0 0.2rem; }
+    .section-lede { margin: 0 0 0.4rem; font-size: 0.88rem; max-width: none; }
+    .stats { gap: 0.4rem; margin: 0.4rem 0 0.5rem; }
+    .stat { background: #faf6ee; border-color: #ddd4c4; padding: 0.55rem 0.65rem; }
+    .stat b { color: var(--hunter); font-weight: 500; font-size: 1.15rem; }
+    .callout { margin: 0.4rem 0; padding: 0.5rem 0.7rem; font-size: 0.88rem; }
+    .callout.coral { border-left-color: #9a4a1a; background: #f6ebe0; }
+
+    table { font-size: 0.82rem; }
+    th { background: #e8ecd8; color: var(--hunter); padding: 0.35rem 0.5rem; }
+    td { padding: 0.35rem 0.5rem; }
+    tr:nth-child(even) td { background: #f3eee4; }
+    tr.climax td { background: #efe6d0 !important; }
+    table .mode { font-weight: 750; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; }
+    table .mode.gate { color: #3d5a28; }
+    table .mode.range { color: var(--hunter); }
+    table .mode.climax { color: #7a4a12; }
+    table .mode.match { color: #4a3a6a; }
+    table .mode.extra { color: #7a7368; }
+
+    .split { display: grid; gap: 0.55rem; }
+    @media (min-width: 700px) { .split { grid-template-columns: 1fr 1fr 1fr; } }
+    .split .panel { background: #faf6ee; border-color: #ddd4c4; padding: 0.7rem 0.8rem; }
+    .split .panel h3 { color: var(--hunter); margin: 0 0 0.25rem; }
+    .clean-list li {
+      background: transparent; border: none; box-shadow: none; padding: 0.12rem 0;
+      border-bottom: 1px solid #e4dccb; border-radius: 0; font-size: 0.82rem;
+    }
+    .chip-note { margin: 0.4rem 0 0; padding: 0.3rem 0.65rem; font-size: 0.78rem; background: var(--hunter-soft); border-color: #c5cfb0; color: #4a463c; }
+    .draft-banner {
+      margin: 0 -1.1rem 0.85rem; padding: 0.55rem 1.1rem;
+      background: #f0ebe0; border-top: 1px dashed #c4a35a; border-bottom: 1px dashed #c4a35a;
+      font-size: 0.84rem; line-height: 1.4;
+    }
+    .draft-banner strong { color: #7a4a12; }
+    table .mode.opt { color: #5a6b3a; }
+
+    footer { margin-top: 0.8rem; padding-top: 0.5rem; border-top-color: #ddd4c4; color: #7a7368; font-size: 0.78rem; }
+
+    @media print {
+      @page { size: letter; margin: 0.42in; }
+      html { font-size: 10.5px; }
+      body { background: #fff !important; color: #111; }
+      .wrap { max-width: none; padding: 0; }
+      .print-only { display: block; }
+      .screen-only { display: none !important; }
+      .mast {
+        background: none; color: #111; margin: 0 0 0.35rem; padding: 0 0 0.3rem;
+        border-radius: 0; border-bottom: 2.5px solid #3f4d2c;
+      }
+      .mast h1 { color: #1c1914; font-size: 22pt; margin: 0 0 0.1rem; }
+      .print-kicker { font-size: 8pt; letter-spacing: 0.08em; text-transform: uppercase; color: #3f4d2c; font-weight: 700; margin: 0 0 0.15rem; }
+      .mast .lede { color: #333; font-size: 9pt; margin: 0; }
+      .why-block { margin: 0 0 0.3rem; padding: 0.25rem 0 0.35rem; background: none; border-top: none; border-bottom: 1px solid #ccc; }
+      .why-block h2 { font-size: 11pt; margin: 0 0 0.12rem; }
+      .why-block .why-lede { font-size: 8.5pt; margin: 0; }
+      .why-block .why-action { font-size: 9pt; margin: 0.2rem 0 0; padding-top: 0.2rem; }
+      .why-block ul { font-size: 8pt; margin: 0.15rem 0 0; }
+      section { margin: 0.38rem 0; break-inside: avoid; }
+      h2 { font-size: 11pt; margin: 0 0 0.12rem; }
+      h3 { font-size: 9pt; margin: 0 0 0.12rem; }
+      .section-lede { font-size: 8.5pt; margin: 0 0 0.18rem; }
+      .stats { grid-template-columns: repeat(4, 1fr); gap: 0.2rem; margin: 0.2rem 0 0.25rem; }
+      .stat { padding: 0.2rem 0.3rem; box-shadow: none; }
+      .stat b { font-size: 10pt; }
+      .stat span { font-size: 7.5pt; }
+      .callout { padding: 0.25rem 0.4rem; margin: 0.2rem 0; font-size: 8.5pt; box-shadow: none; }
+      table { font-size: 7.8pt; box-shadow: none; border-radius: 0; }
+      th, td { padding: 0.16rem 0.28rem; }
+      .split { grid-template-columns: 1fr 1fr 1fr; gap: 0.3rem; }
+      .split .panel { padding: 0.3rem 0.4rem; box-shadow: none; }
+      .clean-list li { font-size: 7.8pt; padding: 0.05rem 0; }
+      .chip-note { display: none; }
+      .draft-banner { display: none; }
+      footer { font-size: 7.5pt; margin-top: 0.3rem; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+            <nav class="site-nav screen-only" aria-label="Primary">
+        <a href="../../">Projects</a>
+        <a href="./">Cycles</a>
+        <a href="catalog.html">CLEP classes</a>
+        <a href="resources.html">Resources</a>
+        <a href="checklists/hunter.html">Checklist</a>
+        <a class="active" href="hunter.html">Plan</a>
+      </nav>
+      <p class="print-only print-kicker">Cycle 25 · 8th-grade Spark · East Texas 2026–27 · not dual credit</p>
+      <p class="eyebrow screen-only">Cycle 25 · Spark year · East Texas 2026–27</p>
+      <h1>Hunter</h1>
+      <p class="lede">
+        Cycle 25 · 8th-grade <em>Spark</em> — East Texas 2026–27. Food, ethics, fieldcraft, and competence on rifle, handgun, and shotgun. Not a tactical school. Not dual credit yet.
+      </p>
+      <div class="hero-row screen-only">
+        <span class="tag">8th-grade Spark</span>
+        <span class="tag">Not dual credit</span>
+        <span class="tag tag-gold">Beside Drive</span>
+        <span class="tag">Draft — pick &amp; choose</span>
+        <button type="button" class="print-btn" onclick="window.print()">Print</button>
+      </div>
+    </header>
+
+    <section class="why-block" id="why">
+      <h2>Why this cycle — a call to manhood and action</h2>
+      <p class="why-lede">
+        <strong>Summary:</strong> This year he learns what a man does with power over life and death — slowly, under mentors, on paper and on the range, then in the field. He earns hunter education, becomes safe and useful on <strong>rifle, handgun, and shotgun</strong>, shoots in real 4-H competition, takes a legal mentored deer hunt, and <strong>field-dresses what he takes</strong>. The family eats what he harvests. Win not required; waste, shortcuts, and theater are not allowed.
+      </p>
+      <ul>
+        <li><strong>Food, not fantasy.</strong> Hunting is provision and responsibility — not combat cosplay, not unsupervised access, not carrying as a minor.</li>
+        <li><strong>Skill before climax.</strong> Hunter ed and months of live-fire come before the trigger on a deer. January is the hunt; April is the scorecard; both matter.</li>
+        <li><strong>Three platforms, one character.</strong> Rifle for the hunt and match precision; shotgun for birds and trap; handgun for discipline, patience, and the permission that law and coaches require.</li>
+        <li><strong>Proof on paper.</strong> License, card, scorecard, tag, dress notes, and a family meal — so the story is true when he is older.</li>
+        <li><strong>The prize is a gun of his own</strong> — earned, not given on day one. His choice from a shortlist you approve. Locked. Supervised only.</li>
+      </ul>
+      <p class="why-action">
+        The call: show up weekly, obey range law, take the shot only when the mentor says yes, dress what you kill, and compete even when you are not the best shooter in the squad. That is the work of becoming a man who can be trusted with arms.
+      </p>
+    </section>
+
+    <section id="aim">
+      <div class="stats">
+        <div class="stat"><b>3 guns</b><span>Rifle · handgun · shotgun sprint</span></div>
+        <div class="stat"><b>Jan 4–17</b><span>Hunt + dress (youth late)</span></div>
+        <div class="stat"><b>April</b><span>District IV three-gun day</span></div>
+        <div class="stat"><b>His gun</b><span>Prize after Spark is complete</span></div>
+      </div>
+      <div class="callout coral">
+        <strong>Skip Oct 30–Nov 1 as the shooter</strong> (too fast). Climax is <strong>Jan 4–17, 2027</strong> — ~20 weeks of hunter ed and rifle first. Sit with a mentor in October if invited.
+      </div>
+    </section>
+
+    <section id="finale-timeline" class="spark-timeline">
+      <h2>Road to the finale</h2>
+      <p class="section-lede">Four proofs — the January hunt and April scorecard are both required. The prize gun waits until all are done.</p>
+      <ol class="timeline-track horizontal" aria-label="Year timeline">
+        <li class="tl-step"><span class="tl-when">Now → Sep 2026</span><span class="tl-what">Gate — 4-H · hunter ed · youth license · coaches</span><span class="tl-links"><a href="https://texas.4honline.com/">4-H Online</a> · <a href="https://tpwd.texas.gov/education/hunter-education">Hunter ed</a> · <a href="https://agrilifeextension.tamu.edu/counties/smith-county/">AgriLife</a></span></li>
+        <li class="tl-step"><span class="tl-when">Sep → Dec</span><span class="tl-what">Range — weekly live-fire on all three platforms</span><span class="tl-links"><a href="https://rosecityflyingclays.com/">Rose City</a> · <a href="https://vaultarms.com/gun-range/">Vault Arms</a></span></li>
+        <li class="tl-step climax"><span class="tl-when">Jan 4–17, 2027</span><span class="tl-what">FINALE — mentored deer · he field-dresses · family meal</span><span class="tl-links"><a href="https://tpwd.texas.gov/regulations/outdoor-annual/hunting/">Youth late season</a> · <a href="https://www.tyhp.org/">TYHP</a></span></li>
+        <li class="tl-step"><span class="tl-when">April 2027</span><span class="tl-what">Official 4-H scorecard (District IV and/or Extravaganza)</span><span class="tl-links"><a href="https://d44-h.tamu.edu/district-shooting-sports-contest-information/">District IV</a> · <a href="https://texas4-h.tamu.edu/events/shooting-sports/">Extravaganza</a></span></li>
+        <li class="tl-step"><span class="tl-when">After Spark</span><span class="tl-what">Prize — his own gun, earned and locked</span></li>
+      </ol>
+    </section>
+
+    <p class="draft-banner screen-only"><strong>Draft plan.</strong> The proofs below are the bar. Sections marked <em>optional</em> are mentor ideas — dove before deer, caliber steps, conservation projects, extra hunts. Pick what fits the year; skip the rest. Milestone tasks live on the <a href="checklists/hunter.html">checklist page</a>.</p>
+
+    <section id="year">
+      <h2>Year map — skills sprint</h2>
+      <p class="section-lede">Parallel tracks: deer rifle for January; .22 rifle / pistol / shotgun for 4-H and April. LTC, Sharpshooter-on-everything, and CLEP wait.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Window</th><th>Mode</th><th>He does</th><th>Done when</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Now → late Sep</td>
+              <td class="mode gate">Gate</td>
+              <td>Join 4-H. Find coaches for <strong>rifle, pistol, shotgun</strong>. Hunter-ed field day + online. $7 youth license.</td>
+              <td>Enrolled · card · license in Hunt &amp; Fish</td>
+            </tr>
+            <tr>
+              <td>Sep → Dec</td>
+              <td class="mode range">Range</td>
+              <td>Weekly: deer rifle zero; .22 3-position; shotgun trap reps; pistol slow fire (coach only). Postal League scores from the club. Outdoor Annual at home.</td>
+              <td>NRA Marksman on rifle (stretch: all three)</td>
+            </tr>
+            <tr>
+              <td>Sep → Nov <span class="mode opt">optional</span></td>
+              <td class="mode opt">Birds</td>
+              <td>Comfort behind the barrel <em>before</em> the deer climax: dove day lease, duck with a guide, or mentor hunt. Not required for Spark — see <a href="#options">options</a>.</td>
+              <td>Shotgun reps + first harvest story if it happens</td>
+            </tr>
+            <tr>
+              <td>Jan 4–17, 2027</td>
+              <td class="mode climax">Climax</td>
+              <td>Mentored East TX deer. He shoots when the mentor says yes. Same weekend: he field-dresses + family meal. <em>Optional:</em> plan <strong>2+ deer sits</strong> in general season if late youth is the only window.</td>
+              <td>Tag + dress notes + meal</td>
+            </tr>
+            <tr>
+              <td>April</td>
+              <td class="mode match">Match</td>
+              <td><strong>District IV:</strong> smallbore + pistol + trap (one day). <strong>Extravaganza:</strong> Hunting &amp; Wildlife + Light Rifle (second weekend — not shotgun).</td>
+              <td>Official 4-H scorecard(s)</td>
+            </tr>
+            <tr>
+              <td>May → Jul</td>
+              <td class="mode extra">Optional</td>
+              <td>State Games (no qualifier). Marksman gaps on shotgun/pistol. Shop the prize with him.</td>
+              <td>Second card if he wants it</td>
+            </tr>
+            <tr>
+              <td>After Spark</td>
+              <td class="mode climax">Prize</td>
+              <td>His own gun — he helps choose. You buy it. All proofs first: ed + Marksman rifle + scorecard + hunt + dress + meal.</td>
+              <td>Named gun in the safe. Used only with you.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="watch">
+      <h2>Watch — liberty and rights</h2>
+      <p class="section-lede">Rides under his American history class. Soft enrichment, not CLEP. Hillsdale free account first. After every film: who could hunt, who owned land, whose rights counted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>When</th><th>Watch</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Now → Thanksgiving</td>
+              <td>Hillsdale <em>Colonial America</em> · 6 × ~30 min</td>
+              <td>Wilderness, militia, self-government. Closest overlap with hunting.</td>
+            </tr>
+            <tr>
+              <td>Winter break</td>
+              <td>Hillsdale <em>Revolutionary America</em> · ~2h feature</td>
+              <td>Liberty as the war’s argument. Pair with the Shorts Loyalist family story.</td>
+            </tr>
+            <tr>
+              <td>Jan → Mar</td>
+              <td>Hillsdale Constitution 101 · one lecture / week</td>
+              <td>Natural rights. Don’t grind all 12 before the deer.</td>
+            </tr>
+            <tr>
+              <td>When class hits it</td>
+              <td>Burns <em>The West</em> · <em>Abolitionists</em> · <em>Eyes on the Prize</em></td>
+              <td>Land / rights incomplete / rights fought for. Parent co-watch. Burns Civil War optional.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="proofs">
+      <h2>Four proofs + three platforms</h2>
+      <p class="section-lede">Spark is incomplete if any proof is skipped. Intermediate (grades 6–8) for 4-H.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th></th><th>Proof</th><th>Train / bar</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Rifle</strong></td>
+              <td>Deer hunt + .22 match rifle. Two guns: centerfire for the field, bolt .22 for 4-H (no semi/pump/AR stock).</td>
+              <td>3-position at 50 ft, iron sights, OBI, single-load. NRA Marksman on rifle.</td>
+            </tr>
+            <tr>
+              <td><strong>Handgun</strong></td>
+              <td>.22 pistol under a certified 4-H coach. Parent permission card in the case (required under 18).</td>
+              <td>Two-hand standing, iron sights, 50 ft: slow → timed → rapid. District pistol event.</td>
+            </tr>
+            <tr>
+              <td><strong>Shotgun</strong></td>
+              <td>Trap at District IV — Intermediates shoot <strong>100 birds</strong> (4×25). 12 ga or smaller.</td>
+              <td>Mount, hold, lead. Weekly at Rose City with Smith SAFE or Henderson 4-H.</td>
+            </tr>
+            <tr>
+              <td><strong>April</strong></td>
+              <td>Official 4-H scorecard under an RO. Win not required.</td>
+              <td>District IV = all three live-fire in one day. Extravaganza = knowledge + standing .22 (cap 2 events).</td>
+            </tr>
+            <tr>
+              <td><strong>January</strong></td>
+              <td>Mentored deer + he dresses + family meal.</td>
+              <td>Licensed adult. Hit without dress = incomplete. Waste = fail.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="april">
+      <h2>April competitions — what to enter &amp; train</h2>
+      <p class="section-lede">2027 dates not posted yet — 2026 was Apr 18 (Extravaganza) and Apr 25 (District IV). Register on <a href="https://texas.4honline.com/">4-H Online</a> when the county opens.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Meet</th><th>Enter (Intermediate)</th><th>What to train</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>District IV</strong><br><span class="mode match">Three-gun day</span></td>
+              <td>Smallbore rifle + pistol + trap ($40/discipline, pick 1–3)</td>
+              <td>Rifle: 10 prone, 10 standing, 10 kneeling, .22 bolt, 50 ft. Pistol: 30 shots, two-hand standing. Trap: 100 birds.</td>
+              <td><a href="https://d44-h.tamu.edu/district-shooting-sports-contest-information/">Info</a> · <a href="https://d44-h.tamu.edu/files/2026/02/2026-District-IV-Shooting-Sports-Contest-Memo.pdf">2026 memo</a></td>
+            </tr>
+            <tr>
+              <td><strong>Extravaganza</strong><br><span class="mode match">Add-ons</span></td>
+              <td>Hunting &amp; Wildlife (no live fire) + Light Rifle or 3P smallbore. <strong>Do not pick shotgun</strong> — shotgun eats the whole day there.</td>
+              <td>TPWD Hunter Ed manual + Outdoor Annual. Standing scoped .22 OR 3P iron sights.</td>
+              <td><a href="https://texas4-h.tamu.edu/events/shooting-sports/">Events</a> · <a href="https://texas4-h.tamu.edu/wp-content/uploads/shooting_sports_extravaganza_handbook_registration_2026.pdf">2026 handbook</a></td>
+            </tr>
+            <tr>
+              <td><strong>Postal League</strong><br><span class="mode range">All winter</span></td>
+              <td>Rifle + pistol + shotgun from home club — statewide rank, not the only climax.</td>
+              <td>Shoot Oct–Mar at practice; submit scores Feb–Mar (2026–27 rules due late fall).</td>
+              <td><a href="https://texas4-h.tamu.edu/projects/shooting-sports/">Shooting sports</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout coral">
+        <strong>Pistol is the bottleneck.</strong> No certified 4-H pistol coach = no District pistol. Ask AgriLife this week. Extravaganza allows only <strong>2 events</strong>; first- or second-year shooters only.
+      </div>
+    </section>
+
+    <section id="train">
+      <h2>Where to train · weekly focus</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Place</th><th>Use for</th><th>Contact</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Smith County AgriLife</strong></td>
+              <td>Enroll 4-H · find rifle / pistol / shotgun coaches</td>
+              <td>1517 W Front St #116 · <a href="tel:9035902980">903-590-2980</a> · Skyler Shively</td>
+            </tr>
+            <tr>
+              <td><strong>Rose City Flying Clays</strong></td>
+              <td>Shotgun home: trap, skeet, sporting. Smith SAFE + Henderson + Cherokee 4-H. 4-H member rates.</td>
+              <td>8474 CR 485, Tyler · <a href="https://rosecityflyingclays.com/">rosecityflyingclays.com</a> · 903-258-5477</td>
+            </tr>
+            <tr>
+              <td><strong>Henderson County 4-H Shotgun</strong></td>
+              <td>Coached shotgun if Smith bench is thin. Buffalo Creek Trap, Ben Wheeler.</td>
+              <td>Misty Adair 903-539-7473 · Shannon Silvey 903-724-0375</td>
+            </tr>
+            <tr>
+              <td><strong>Vault Arms</strong> (indoor)</td>
+              <td>.22 rifle 3P + .22 pistol midweek reps. Parent on the line. Not trap.</td>
+              <td>417 W Elm St · <a href="https://vaultarms.com/gun-range/">vaultarms.com</a> · 903-705-7026</td>
+            </tr>
+            <tr>
+              <td><strong>5H Shooting Sports</strong> (Frankston)</td>
+              <td>Deer rifle zero &amp; field positions (~35 min south). Clays backup.</td>
+              <td><a href="https://5hshootingsports.com/">5hshootingsports.com</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>Weekly:</strong> range commands · OBI · prone / kneeling / standing (.22) · pistol slow-timed-rapid · trap mount &amp; lead → 100 birds · hunter-ed + Outdoor Annual · deer rifle separate for January. <strong>Recoil ladder (optional):</strong> BB → .22 → .410 shotgun → centerfire deer rifle — don’t skip steps if he’s flinching.</p>
+    </section>
+
+    <section id="land">
+      <h2>How he gets on a deer</h2>
+      <p class="section-lede">Line up land before Christmas. Hunter ed + license must be on file before any TYHP hunt. <strong>Late youth (Jan 4–17) is a narrow window</strong> — if that’s the primary plan, book backup sits in general season too.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Path</th><th>What</th><th>Cost / catch</th><th>Use if</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A · Family land</strong></td>
+              <td>Private land + licensed adult who has dressed deer and will let him work.</td>
+              <td>Permission in writing. You control the weekend.</td>
+              <td>Ranch, lease, or a friend who hunts.</td>
+            </tr>
+            <tr>
+              <td><strong>A2 · Day lease</strong> <span class="mode opt">opt</span></td>
+              <td>Single-day or weekend access — dove, deer, or both. Common within ~2 hrs of Tyler.</td>
+              <td>Per-day fee. Book early in season.</td>
+              <td>No family ranch; want a low-commitment try before an annual lease.</td>
+            </tr>
+            <tr>
+              <td><strong>A3 · Annual lease</strong> <span class="mode opt">opt</span></td>
+              <td>Split a year lease with another family. Scout, set stands, return all season.</td>
+              <td>Up-front cost + travel. Worth it if you’ll hunt monthly.</td>
+              <td>Serious about deer + maybe dove on the same place.</td>
+            </tr>
+            <tr>
+              <td><strong>B · TYHP</strong></td>
+              <td>Mentored hunts, lodging, meals. Parent goes. Ages 9–17.</td>
+              <td>$200 youth + adult. Adult needs TWA membership (~$35).</td>
+              <td>You need a mentor who is not you.</td>
+            </tr>
+            <tr>
+              <td><strong>C · Public draw</strong></td>
+              <td>TPWD public hunts after hunter ed.</td>
+              <td>Draw odds. General-deer apply-by Sep 15.</td>
+              <td>Backup if A and B miss.</td>
+            </tr>
+            <tr>
+              <td><strong>D · Mentor invite</strong> <span class="mode opt">opt</span></td>
+              <td>Friend or cousin with a spot — dove, duck, or deer. Parent goes; kid follows range law.</td>
+              <td>Depends on birds / schedule. Hit or miss on waterfowl.</td>
+              <td>Someone offers (e.g. dove this fall; duck guide near Corsicana).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="options">
+      <h2>Options — mentor notes (pick &amp; choose)</h2>
+      <p class="section-lede">Feedback from Mac McGowan and similar families. <strong>None of this replaces the Spark proofs.</strong> Use what helps; ignore what doesn’t. Core stays: hunter ed, 4-H on three platforms, January deer + dress, April scorecard.</p>
+
+      <h3>Optional animal progression — small game before deer</h3>
+      <p class="section-lede">Some families run a ladder so the first harvest isn’t a deer. Shotgun field time is the hardest to keep safe — earn it on doves or ducks before January.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Step</th><th>Hunt</th><th>Notes</th><th>Spark?</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Dove</strong> (Sep–Oct, Central Zone)</td>
+              <td>Day lease within a couple hours of Tyler; cousin / mentor spots possible. Good shotgun rehearsal — not the climax.</td>
+              <td>Optional · strong if hunter ed is done</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Duck</strong></td>
+              <td>Guided day hunts are easy to book (e.g. Corsicana area). Birds are hit-or-miss locally — still worth it for barrel time and ethics.</td>
+              <td>Optional</td>
+            </tr>
+            <tr>
+              <td>—</td>
+              <td><strong>Turkey</strong></td>
+              <td>Hardest hunt to line up. Mac’s family would <em>skip</em> turkey in the ladder.</td>
+              <td>Skip unless you already have land + mentor</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Deer</strong></td>
+              <td>January climax stays. Plan more than one sit — late youth is a short window; Sheridan’s family got their deer on the <em>last morning</em> they could hunt.</td>
+              <td><strong>Required</strong> (one legal harvest + dress)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Caliber &amp; platform ladder — beat recoil shyness</h3>
+      <p class="section-lede">Recoil fear is real at every age. Start small; move up only when groups stay clean.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Stage</th><th>Tool</th><th>For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>BB gun / air rifle</td><td>Safe handling, sight picture, no kick</td></tr>
+            <tr><td>2</td><td>.22 rifle (bolt)</td><td>4-H smallbore · NRA Marksman · old competition rifles borrow well</td></tr>
+            <tr><td>3</td><td>.410 shotgun</td><td>First live shells moving — lighter than 12 ga</td></tr>
+            <tr><td>4</td><td>Centerfire rifle (.243 class) or 20 ga</td><td>Deer rifle · trap / dove when he’s not flinching (Sheridan: .243 rifle, moving to 20 ga; younger sister still on .22 + .410)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>Borrow gear:</strong> mentors may loan firearms — e.g. vintage bolt .22 match rifle (~1960s). Ask before you buy his prize gun.</p>
+
+      <h3>Safety &amp; care — where accidents actually happen</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Platform</th><th>Risk profile</th><th>Train for</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Shotgun in the field</strong></td>
+              <td>Highest practical risk — moving hunters, swinging on birds, excitement</td>
+              <td>Muzzle discipline, zone of fire, unload before crossing fences. Dove / duck <em>before</em> deer if he’s new to field carry.</td>
+            </tr>
+            <tr>
+              <td><strong>Pistol</strong></td>
+              <td>Range accidents — coach + parent on the line only</td>
+              <td>4-H certified coach · permission card in case · slow fire first</td>
+            </tr>
+            <tr>
+              <td><strong>Rifle</strong></td>
+              <td>Easier to control — bench, blind, static target</td>
+              <td>Deer climax lives here once field safety is habit</td>
+            </tr>
+            <tr>
+              <td><strong>Cleaning &amp; maintenance</strong> <span class="mode opt">opt proof</span></td>
+              <td>Part of owning — not optional in the long run</td>
+              <td>Strip rifle / shotgun / pistol (with you). Name the parts. Clean after range and after the hunt so it works when it must.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Conservation &amp; the animal — give back</h3>
+      <p class="section-lede">Hunting is tied to American conservation history — not the same as generic environmentalism. Study what you pursue: diet, habits, habitat. Know why we don’t have passenger pigeons, why bison nearly vanished, and why wood ducks and whitetails are abundant when managed well.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Topic</th><th>Do / discuss</th><th>When</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Species you hunt</td>
+              <td>What deer / dove / ducks eat · daily patterns · fair-chase ethics</td>
+              <td>Before each hunt type</td>
+            </tr>
+            <tr>
+              <td>Conservation story</td>
+              <td>Pittman–Robertson · state regs · surplus game vs extinction stories (passenger pigeon · buffalo recovery · managed whitetail)</td>
+              <td>American history class + Outdoor Annual</td>
+            </tr>
+            <tr>
+              <td>Give back</td>
+              <td>Build &amp; hang <strong>wood duck boxes</strong> in spring (Mac’s girls do this). Habitat work counts as much as harvest.</td>
+              <td>Spring after Spark — or start planning in winter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Open invites &amp; leads (as of Aug 2026)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Lead</th><th>What</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mac — dove</td>
+              <td>Cousin often has day-lease dove spots within a few hours. Long season — timing depends on birds.</td>
+              <td>Invite on the table · ask Mac when season firms up</td>
+            </tr>
+            <tr>
+              <td>Mac — local duck</td>
+              <td>Happy to take y’all out; local birds hit-or-miss but good time. Get comfortable behind a barrel first.</td>
+              <td>After trap / dove reps</td>
+            </tr>
+            <tr>
+              <td>Corsicana guide</td>
+              <td>Guided duck day — reliable way to book waterfowl</td>
+              <td>Research name + book when ready</td>
+            </tr>
+            <tr>
+              <td>Mac’s dad — Coleman lease</td>
+              <td>Strong deer country; dad must be physically present; he’s very busy</td>
+              <td>Long shot · don’t plan Spark around it</td>
+            </tr>
+            <tr>
+              <td>Annual lease split</td>
+              <td>Mac open to sharing a lease if you go that direction</td>
+              <td>Talk if day leases aren’t enough</td>
+            </tr>
+            <tr>
+              <td>Loaner firearms</td>
+              <td>Mac has “firearms out the yin yang” — including old bolt .22 comp rifle</td>
+              <td>Ask before buying match / deer guns</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>On track:</strong> Mac confirmed hunter ed + 4-H shooting is the right spine. Everything here is seasoning.</p>
+    </section>
+
+    <section id="calendar">
+      <h2>East Texas calendar</h2>
+      <p class="section-lede">Smith County / Tyler. 4-H 2027 match dates not posted — block last year’s weekends.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>When</th><th>What</th><th>For him</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sep 1 – Oct 25</td>
+              <td>Dove · Central Zone</td>
+              <td><strong>Optional</strong> shotgun field hunt — day lease or mentor invite. Hunter ed first. See <a href="#options">options</a>.</td>
+            </tr>
+            <tr>
+              <td>Sep 25–27 / Oct 1 – Feb 28</td>
+              <td>Squirrel (youth weekend, then general)</td>
+              <td>Knife rehearsal before a deer.</td>
+            </tr>
+            <tr>
+              <td>Tue Oct 13, 6–7 pm</td>
+              <td>Smith County 4-H new-member meeting</td>
+              <td>Tyler Extension. Ask for rifle coach first. 903-590-2980.</td>
+            </tr>
+            <tr>
+              <td>Oct 23–25</td>
+              <td>TYHP Couch Mountain (Camp Co., ~1 hr)</td>
+              <td>Closest mentored deer. Stretch if the rifle is new.</td>
+            </tr>
+            <tr>
+              <td>Oct 30 – Nov 1</td>
+              <td>Youth deer weekend</td>
+              <td>Skip as the shooter. Sit with a mentor if invited.</td>
+            </tr>
+            <tr>
+              <td>Nov 7 – Jan 3</td>
+              <td>White-tail general · North Zone</td>
+              <td>Backup only if groups and ethics are already there.</td>
+            </tr>
+            <tr class="climax">
+              <td><strong>Jan 4–17, 2027</strong></td>
+              <td>Youth late deer</td>
+              <td>Primary climax. Same weekend: he field-dresses. TYHP Rocky Creek shotgun Jan 8–10 if Path B.</td>
+            </tr>
+            <tr>
+              <td>Mid / late April</td>
+              <td>Extravaganza or District IV</td>
+              <td>First scorecard. 2026: Apr 18 Brownwood · Apr 25 Texarkana.</td>
+            </tr>
+            <tr>
+              <td>Mid–late July</td>
+              <td>4-H State Games</td>
+              <td>Optional second card. No qualifier.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="open">
+      <h2>Next steps — open the year</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Do this</th><th>Where</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Call AgriLife. Ask for certified coaches in <strong>rifle, pistol, and shotgun</strong>. New-member meeting Tue Oct 13, 6–7 pm.</td>
+              <td><a href="tel:9035902980">903-590-2980</a> · <a href="https://agrilifeextension.tamu.edu/counties/smith-county/">Smith County 4-H</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Enroll on 4-H Online. No enrollment = no match, no club insurance at the range.</td>
+              <td><a href="https://texas.4honline.com/">texas.4honline.com</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Register hunter-ed <strong>field day</strong> first (under 17). Then free online course. $15 at field day.</td>
+              <td><a href="https://tpwd.elementlms.com/course-category/hunter-education-field-course/">TPWD field courses</a> · zip 75701</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Buy Youth Hunting License Item 169 ($7). Sync to Texas Hunt &amp; Fish.</td>
+              <td><a href="https://tpwd.texas.gov/business/licenses/">TPWD licenses</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Create TYHP youth account. Apply to hunts even if you have family land.</td>
+              <td><a href="https://tyhp.org/youth-hunters/">tyhp.org</a> · <a href="https://tyhp.org/youth-hunt-schedule/">hunt schedule PDF</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Start weekly practice: Rose City (shotgun) + Vault Arms or coach range (.22 rifle/pistol) + deer rifle on the side.</td>
+              <td>See <a href="#train">Where to train</a> above</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="prize">
+      <h2>Final prize — a gun of his own</h2>
+      <p class="section-lede">You buy it. He helps choose. Not a day-one surprise — it is what he gets when Spark is finished. Locked in the family safe. Used only with you. He does not carry. He does not go to the safe alone. Model TBD; shortlist is yours, preference is his. Shop after April so the choice comes from a year of live-fire, not a catalog.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Gate (all required)</th><th>If he chooses</th><th>Fits Spark if</th><th>You veto</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Hunter ed · Marksman on the hunt rifle · official 4-H scorecard · mentored deer · he dresses · family meal</td>
+              <td><strong>Hunt rifle</strong> (bolt, deer caliber)</td>
+              <td>He hunted with this class of gun. Next year’s Sharpshooter lives here.</td>
+              <td>AR / tactical as the first gun. Semi if 4-H can’t use it.</td>
+            </tr>
+            <tr>
+              <td><strong>Shotgun</strong> (20 or 12; pump or over-under)</td>
+              <td>Trap, dove, future birds. He already swings one at Rose City.</td>
+              <td>Pistol-grip / “home defense” furniture.</td>
+            </tr>
+            <tr>
+              <td><strong>.22 bolt</strong> (his match rifle)</td>
+              <td>4-H home gun he can grow in. Cheaper reps than a deer rifle.</td>
+              <td>A pistol as the prize — too early; LTC is 18+.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note">Legal owner can be you; the story is that it is <em>his</em>. Locked. He does not carry. He does not go to the safe alone. Shop after April so the choice is informed by a year of live-fire, not a catalog. When you pick a shortlist, we can price it.</p>
+    </section>
+
+    <section id="credit">
+      <h2>Log · wait · off the list</h2>
+      <div class="split">
+        <div class="panel">
+          <h3>Log this year</h3>
+          <ul class="clean-list">
+            <li>Hunter ed · youth license</li>
+            <li>4-H rifle · pistol · shotgun</li>
+            <li>NRA Marksman (rifle first; all three stretch)</li>
+            <li>PE / outdoor · foods for the meal</li>
+            <li>Ethics + Outdoor Annual</li>
+            <li>Gun cleaning / strip-down (optional — with you)</li>
+            <li>American history — Hillsdale Colonial + Revolutionary · Constitution 101 slow</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Wait</h3>
+          <ul class="clean-list">
+            <li>CLEP Bio / Psych / Am Gov</li>
+            <li>US History I CLEP — optional; see last section</li>
+            <li>TJC dual enrollment overlay</li>
+            <li>Texas LTC (18+)</li>
+            <li>Unsupervised range · tactical schools</li>
+            <li>USPSA / IDPA as the first bar</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Off the list</h3>
+          <ul class="clean-list">
+            <li>Hunt without license or permission</li>
+            <li>Carrying as a minor</li>
+            <li>A shot without a dress</li>
+            <li>Waste of meat</li>
+            <li>Prize gun without the proofs — or unsupervised access to it</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="clep">
+      <h2>Optional frosting — US History I CLEP</h2>
+      <p class="section-lede">
+        His 8th-grade American history class already covers colonization through Reconstruction — the same span as <strong>CLEP History of the United States I</strong> → TJC <strong>HIST 1301</strong> (3 college hours at score 50). Hillsdale films and Constitution 101 are the <em>learning</em>. This section is exam prep only. Run it <strong>after April</strong> so it does not steal time from the hunt, match, or dress. HS credit stands whether or not he passes.
+      </p>
+
+      <h3>What Modern States is</h3>
+      <p class="section-lede">
+        <a href="https://modernstates.org/">Modern States</a> is a free nonprofit: short college-style lectures + readings + quizzes aligned to each CLEP exam. It is <strong>not</strong> a second history class — it teaches CLEP question style. Finish the course (75% quiz average + 75% on the course final) and Modern States pays the CLEP exam fee via a voucher. You still schedule the real exam at a testing center (~$0 exam + ~$20–30 site fee; voucher covers the exam). Account: age <strong>13+</strong>. Course: <a href="https://modernstates.org/course/history-of-the-united-states-i/">History of the United States I</a>.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Step</th><th>What he does</th><th>Done when</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 · Learn (already running)</td>
+              <td>American history class + Hillsdale <em>Colonial America</em> + <em>Revolutionary America</em> + Constitution 101 (slow)</td>
+              <td>All year — not for credit yet</td>
+            </tr>
+            <tr>
+              <td>2 · Exam shape</td>
+              <td>Modern States US History I — all 7 modules below + every “Check for Understanding” quiz</td>
+              <td>May–Jun (~20–30 hrs extra if class was solid)</td>
+            </tr>
+            <tr>
+              <td>3 · Voucher</td>
+              <td>Quiz average ≥ 75% + course final ≥ 75% → request CLEP voucher in the course</td>
+              <td>Before scheduling the exam</td>
+            </tr>
+            <tr>
+              <td>4 · Gate</td>
+              <td>2–3 timed practice tests ≥ ~60% (don’t reuse the same test)</td>
+              <td>Only then schedule CLEP</td>
+            </tr>
+            <tr>
+              <td>5 · Sit</td>
+              <td>CLEP: 120 multiple-choice questions, 90 minutes. Pass 50 → HIST 1301 when he enrolls at TJC</td>
+              <td>Summer or early fall — not before April match</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Modern States — 7 modules to complete</h3>
+      <p class="section-lede">Work in order. Each module has videos, readings, and quizzes. ~70% of the CLEP is 1790–1877 — modules 4–7 are the heaviest; don’t skip them even if the Revolution unit felt easy.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Module</th><th>CLEP era</th><th>Overlap with class / Hillsdale</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>The Colonial Period</td>
+              <td>Exploration → 18th c.</td>
+              <td>Hillsdale <em>Colonial America</em> · class opening units</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>The American Revolution</td>
+              <td>1763 → 1783</td>
+              <td><em>Revolutionary America</em> feature · Shorts Loyalist family story</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>The United States Constitution</td>
+              <td>1787 → ratification</td>
+              <td>Constitution 101 lectures · Outdoor Annual / rights thread on Hunter</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>The New Nation (1789–1824)</td>
+              <td>Federalists → Monroe</td>
+              <td>Class mid-year — <strong>CLEP-heavy</strong></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Jacksonian Democracy &amp; Westward Expansion (1824–1850)</td>
+              <td>Jackson · manifest destiny</td>
+              <td>Class + optional Burns <em>The West</em> later</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Sectional Conflict &amp; Causes of the Civil War (1850–1860)</td>
+              <td>Compromise · Kansas-Nebraska · Dred Scott</td>
+              <td><em>Abolitionists</em> when class hits slavery</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>The Civil War &amp; Reconstruction (1860–1877)</td>
+              <td>War → end of Reconstruction</td>
+              <td>Class finale · optional Burns <em>Civil War</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>Not this year:</strong> CLEP US History II (1865–present). <strong>Don’t:</strong> let Modern States replace the class or the Hillsdale watch shelf. <strong>Do:</strong> treat it as frosting after Spark proofs + April match.</p>
+    </section>
+
+    <section id="all-links">
+      <h2>All training links · events · courses</h2>
+      <p class="section-lede">Every bookable gate, camp, class, and competition in one place. Register early — spring slots fill.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Use for</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">Smith County AgriLife / 4-H</a></strong></td><td>Enroll · coaches</td><td><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">agrilifeextension.tamu.edu/counties/smith-county/</a> · 903-590-2980</td></tr>
+            <tr><td><strong><a href="https://texas.4honline.com/">4-H Online</a></strong></td><td>Registration · insurance</td><td><a href="https://texas.4honline.com/">texas.4honline.com/</a></td></tr>
+            <tr><td><strong><a href="https://tpwd.texas.gov/education/hunter-education">TPWD Hunter Education</a></strong></td><td>Classroom + field day</td><td><a href="https://tpwd.texas.gov/education/hunter-education">tpwd.texas.gov/education/hunter-education</a></td></tr>
+            <tr><td><strong><a href="https://www.tyhp.org/">Texas Youth Hunting Program</a></strong></td><td>Mentored hunts</td><td><a href="https://www.tyhp.org/">www.tyhp.org/</a></td></tr>
+            <tr><td><strong><a href="https://d44-h.tamu.edu/district-shooting-sports-contest-information/">District IV Shooting Sports</a></strong></td><td>April three-gun</td><td><a href="https://d44-h.tamu.edu/district-shooting-sports-contest-information/">d44-h.tamu.edu/district-shooting-sports-contest-information/</a></td></tr>
+            <tr><td><strong><a href="https://texas4-h.tamu.edu/events/shooting-sports/">4-H Extravaganza</a></strong></td><td>April add-on events</td><td><a href="https://texas4-h.tamu.edu/events/shooting-sports/">texas4-h.tamu.edu/events/shooting-sports/</a></td></tr>
+            <tr><td><strong><a href="https://rosecityflyingclays.com/">Rose City Flying Clays</a></strong></td><td>Trap / shotgun</td><td><a href="https://rosecityflyingclays.com/">rosecityflyingclays.com/</a> · 903-258-5477</td></tr>
+            <tr><td><strong><a href="https://vaultarms.com/gun-range/">Vault Arms</a></strong></td><td>.22 rifle + pistol</td><td><a href="https://vaultarms.com/gun-range/">vaultarms.com/gun-range/</a> · 903-705-7026</td></tr>
+            <tr><td><strong><a href="https://5hshootingsports.com/">5H Shooting Sports</a></strong></td><td>Deer rifle zero</td><td><a href="https://5hshootingsports.com/">5hshootingsports.com/</a></td></tr>
+            <tr><td><strong><a href="https://mqp.nra.org/">NRA Marksmanship Program</a></strong></td><td>Marksman quals</td><td><a href="https://mqp.nra.org/">mqp.nra.org/</a></td></tr>
+            <tr><td><strong><a href="https://online.hillsdale.edu/courses/promo/colonialamerica">Hillsdale Colonial America</a></strong></td><td>Watch shelf</td><td><a href="https://online.hillsdale.edu/courses/promo/colonialamerica">online.hillsdale.edu/courses/promo/colonialamerica</a></td></tr>
+            <tr><td><strong><a href="https://modernstates.org/course/history-of-the-united-states-i/">Modern States US History I</a></strong></td><td>Optional CLEP</td><td><a href="https://modernstates.org/course/history-of-the-united-states-i/">modernstates.org/course/history-of-the-united-states-i/</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Cycle 25 Hunter · Spark year · Aug 23, 2026 · <a href="checklists/hunter.html">Checklist</a> · Prize after proofs · Optional CLEP after April.
+    </footer>
+  </div>
+</body>
+</html>

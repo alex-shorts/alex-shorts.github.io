@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Spark Years — 11 cycles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@0,9..144,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="theme-light.css"/>
+  <style>
+    body { font-family: "Source Sans 3", sans-serif; background: #f3eee4; color: #1c1914; margin: 0; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 1.1rem 2.5rem; }
+    .mast { margin: 0 -1.1rem 1rem; padding: 1rem 1.1rem 1.2rem;
+      background: linear-gradient(115deg, #1a2a1f 0%, #3f4d2c 45%, #2a3f5c 100%);
+      color: #f6f1e4; border-radius: 0 0 18px 18px; }
+    .mast h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 0.35rem; font-weight: 500; }
+    .mast .lede { color: #d9d0bb; max-width: 40rem; margin: 0; font-size: 0.95rem; line-height: 1.45; }
+    .mast .site-nav a { background: rgba(255,255,255,0.08); color: #e6dfce; font-size: 0.72rem; }
+    .mast .site-nav a.active { background: rgba(196,163,90,0.25); color: #fff; }
+    .hub-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
+    .hub-tools a { font-size: 0.82rem; font-weight: 700; text-decoration: none; padding: 0.4rem 0.85rem;
+      border-radius: 999px; border: 1px solid #c5bfb0; background: #faf6ee; color: #3d5a28; }
+    .grid { display: grid; gap: 0.65rem; }
+    @media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .cycle-card { display: block; text-decoration: none; color: inherit; background: #faf6ee;
+      border: 1px solid #ddd4c4; border-radius: 12px; padding: 0.75rem 0.85rem; border-left: 4px solid var(--cycle); }
+    .cycle-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+    .cycle-card .label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7a7368; }
+    .cycle-card h3 { font-family: Fraunces, Georgia, serif; margin: 0.15rem 0; font-size: 1.35rem; color: var(--cycle); }
+    .cycle-card p { margin: 0; font-size: 0.82rem; line-height: 1.4; color: #4a4540; }
+    .cycle-card .links { display: block; margin-top: 0.45rem; font-size: 0.72rem; font-weight: 700; color: #7a7368; }
+    .cycle-card .links a { color: var(--cycle); }
+    footer { margin-top: 1.5rem; padding-top: 0.75rem; border-top: 1px solid #ddd4c4; font-size: 0.78rem; color: #7a7368; }
+  </style>
+</head><body><div class="wrap"><header class="mast">
+      <nav class="site-nav screen-only" aria-label="Primary">
+        <a href="../../">Projects</a>
+        <a class="active" href="./">Cycles</a>
+        <a href="catalog.html">CLEP classes</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+  <p class="eyebrow" style="color:#c4a35a;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 0.25rem">Preparation · HS4CC</p>
+  <h1>Spark Years</h1>
+  <p class="lede">Eleven cycles — each with a one-pager, checklist, timeline, and training links. Pick a cycle; credit rides behind the mission.</p>
+</header>
+<div class="hub-tools">
+  <a href="catalog.html">Full CLEP course catalog</a>
+  <a href="resources.html">Supporting resources</a>
+</div>
+<div class="grid">
+        <a class="cycle-card" href="medic.html" style="--cycle:#0f6b5c">
+          <div class="label">Cycle 1 · 10th-grade · 2028–29</div>
+          <h3>Medic</h3>
+          <p>CPR · FR/EMT cert · ride-along hours</p>
+          <span class="links">Plan · <a href="checklists/medic.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="pilot.html" style="--cycle:#1a4a7a">
+          <div class="label">Cycle 2 · 10th-grade · 2028–29</div>
+          <h3>Pilot</h3>
+          <p>Discovery flights · ground school · FAA written</p>
+          <span class="links">Plan · <a href="checklists/pilot.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="cowboy.html" style="--cycle:#8a4b12">
+          <div class="label">Cycle 3 · 9th-grade · 2027–28</div>
+          <h3>Cowboy</h3>
+          <p>Ride · rope · ranch apprenticeship week</p>
+          <span class="links">Plan · <a href="checklists/cowboy.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="builder.html" style="--cycle:#3d6b2a">
+          <div class="label">Cycle 4 · 11th-grade · 2029–30</div>
+          <h3>Builder</h3>
+          <p>OSHA-10 · family cabin weathertight</p>
+          <span class="links">Plan · <a href="checklists/builder.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="fighter.html" style="--cycle:#8a3d1f">
+          <div class="label">Cycle 9 · 10th-grade · 2028–29</div>
+          <h3>Fighter</h3>
+          <p>Gym block · belt grading or local bout</p>
+          <span class="links">Plan · <a href="checklists/fighter.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="sailor.html" style="--cycle:#0b4f8a">
+          <div class="label">Cycle 10 · 10th-grade · 2028–29</div>
+          <h3>Sailor</h3>
+          <p>ASA 101 · Texas 200 · Gulf charter</p>
+          <span class="links">Plan · <a href="checklists/sailor.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="entrepreneur.html" style="--cycle:#5c3d8a">
+          <div class="label">Cycle 13 · 10th-grade · 2028–29</div>
+          <h3>Entrepreneur</h3>
+          <p>SBDC · launch · 10 paying customers</p>
+          <span class="links">Plan · <a href="checklists/entrepreneur.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="humanitarian.html" style="--cycle:#8a2848">
+          <div class="label">Cycle 18 · 11th-grade · 2029–30</div>
+          <h3>Humanitarian</h3>
+          <p>Local service · Samaritan's Purse deploy</p>
+          <span class="links">Plan · <a href="checklists/humanitarian.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="basketball.html" style="--cycle:#c45c26">
+          <div class="label">Cycle 22 · 10th-grade · 2028–29</div>
+          <h3>Basketball</h3>
+          <p>Daily craft · coaching assignment · film</p>
+          <span class="links">Plan · <a href="checklists/basketball.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="drive.html" style="--cycle:#1f4e79">
+          <div class="label">Cycle 24 · 9th-grade · 2027–28</div>
+          <h3>Drive</h3>
+          <p>Kart · license ladder · Team O'Neil Stage 1</p>
+          <span class="links">Plan · <a href="checklists/drive.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+        <a class="cycle-card" href="hunter.html" style="--cycle:#3f4d2c">
+          <div class="label">Cycle 25 · 8th-grade · 2026–27</div>
+          <h3>Hunter</h3>
+          <p>4-H · mentored deer · dress · prize gun</p>
+          <span class="links">Plan · <a href="checklists/hunter.html" onclick="event.stopPropagation()">Checklist</a></span>
+        </a>
+</div>
+<footer>Private family site · Tyler / East TX · TJC path</footer>
+</div></body></html>

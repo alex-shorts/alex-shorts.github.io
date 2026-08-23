@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Spark Years">
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1a2a1f"/><stop offset="50%" stop-color="#3f4d2c"/><stop offset="100%" stop-color="#2a3f5c"/>
+  </linearGradient></defs>
+  <circle cx="200" cy="115" r="70" fill="none" stroke="#c4a35a" stroke-width="2" opacity="0.5"/>
+  <text x="200" y="220" text-anchor="middle" fill="#f6f1e4" font-family="Georgia, serif" font-size="38" font-weight="600">Spark Years</text>
+  <text x="200" y="255" text-anchor="middle" fill="#d9d0bb" font-family="system-ui, sans-serif" font-size="13" letter-spacing="4">11 CYCLES</text>
+</svg>
