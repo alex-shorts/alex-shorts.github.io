@@ -123,55 +123,6 @@
     .draft-banner strong { color: #7a4a12; }
     table .mode.opt { color: #5a6b3a; }
 
-    /* Spark checklist — Preparation-style tasks */
-    .check-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 0.35rem; }
-    .check-reset {
-      font: inherit; font-size: 0.72rem; color: #7a7368; background: none; border: none;
-      text-decoration: underline; cursor: pointer; padding: 0; margin-left: auto;
-    }
-    .check-bars { display: grid; gap: 0.35rem; margin: 0 0 0.65rem; }
-    @media (min-width: 640px) { .check-bars { grid-template-columns: repeat(4, 1fr); } }
-    .check-bar {
-      background: #faf6ee; border: 1px solid #ddd4c4; border-radius: 8px; padding: 0.4rem 0.5rem;
-    }
-    .check-bar.ok { background: #eef3e4; border-color: #b8c9a0; }
-    .check-bar .lbl {
-      font-size: 0.62rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--hunter-mid); margin-bottom: 0.1rem;
-    }
-    .check-bar .nums { font-size: 0.78rem; font-weight: 700; }
-    .check-bar .meter {
-      height: 4px; background: #e4dccb; border-radius: 2px; margin-top: 0.25rem; overflow: hidden;
-    }
-    .check-bar .meter span { display: block; height: 100%; background: var(--hunter); border-radius: 2px; }
-    .check-bar.ok .meter span { background: #5a7a3a; }
-    .check-layers { display: grid; gap: 0.65rem; }
-    .check-layer h3 {
-      font-size: 0.68rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase;
-      color: #7a7368; margin: 0 0 0.35rem;
-    }
-    .check-nodes { display: grid; gap: 0.3rem; }
-    @media (min-width: 640px) { .check-nodes.cols-2 { grid-template-columns: 1fr 1fr; } }
-    .check-item {
-      display: grid; grid-template-columns: auto 1fr; gap: 0.45rem; align-items: start;
-      width: 100%; text-align: left; font: inherit; cursor: pointer;
-      border: 1px solid #ddd4c4; border-radius: 8px; padding: 0.45rem 0.55rem;
-      background: #fff; color: inherit;
-    }
-    .check-item:hover { border-color: var(--hunter-mid); }
-    .check-item.done { background: #eef3e4; border-color: #b8c9a0; }
-    .check-item.opt { border-style: dashed; background: #faf8f4; }
-    .check-item .box {
-      width: 1.05rem; height: 1.05rem; border: 2px solid #b8b0a4; border-radius: 4px;
-      margin-top: 0.1rem; display: grid; place-content: center; font-size: 0.72rem; font-weight: 800;
-      color: #fff; flex-shrink: 0;
-    }
-    .check-item.done .box { background: var(--hunter); border-color: var(--hunter); }
-    .check-item .tl { font-weight: 700; font-size: 0.84rem; line-height: 1.25; }
-    .check-item .tm { font-size: 0.74rem; color: #6a6358; margin-top: 0.12rem; line-height: 1.3; }
-    .check-item .req { font-size: 0.65rem; font-weight: 700; color: #9a4a1a; margin-top: 0.15rem; }
-    .check-item .opt-tag { font-size: 0.62rem; font-weight: 700; color: var(--hunter-mid); }
-
     footer { margin-top: 0.8rem; padding-top: 0.5rem; border-top-color: #ddd4c4; color: #7a7368; font-size: 0.78rem; }
 
     @media print {
@@ -209,9 +160,6 @@
       .clean-list li { font-size: 7.8pt; padding: 0.05rem 0; }
       .chip-note { display: none; }
       .draft-banner { display: none; }
-      .check-reset { display: none; }
-      .check-item { cursor: default; break-inside: avoid; }
-      .check-item .box { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
       footer { font-size: 7.5pt; margin-top: 0.3rem; }
       a { color: inherit; text-decoration: none; }
     }
@@ -222,8 +170,8 @@
     <header class="mast">
       <nav class="site-nav screen-only" aria-label="Primary">
         <a href="../../">Projects</a>
-        <a href="#checklist">Checklist</a>
-        <a class="active" href="./">Hunter</a>
+        <a href="checklist.html">Checklist</a>
+        <a class="active" href="./">Plan</a>
       </nav>
       <p class="print-only print-kicker">Cycle 25 · 8th-grade Spark · East Texas 2026–27 · not dual credit</p>
       <p class="eyebrow screen-only">Cycle 25 · Spark year · East Texas 2026–27</p>
@@ -269,72 +217,7 @@
       </div>
     </section>
 
-    <p class="draft-banner screen-only"><strong>Draft plan.</strong> The proofs below are the bar. Sections marked <em>optional</em> are mentor ideas — dove before deer, caliber steps, conservation projects, extra hunts. Pick what fits the year; skip the rest.</p>
-
-    <section id="checklist">
-      <div class="check-head">
-        <h2 style="margin:0">Spark checklist</h2>
-        <button type="button" class="check-reset screen-only" id="check-reset" hidden>Reset all</button>
-      </div>
-      <p class="section-lede">Tap each task when it’s truly done — like <em>The Preparation</em>. Saves in this browser. <strong>Foundation + climax</strong> are required for Spark; build items are the weekly work; optional rows are pick-and-choose.</p>
-
-      <div class="check-bars" id="check-bars" aria-live="polite"></div>
-
-      <div class="check-layers" id="check-layers">
-        <div class="check-layer" data-layer="foundation">
-          <h3>Foundation — gates (all required)</h3>
-          <div class="check-nodes cols-2">
-            <button type="button" class="check-item" data-id="gate-4h"><span class="box" aria-hidden="true"></span><span><span class="tl">Enrolled in Smith County 4-H</span><span class="tm">4-H Online · insurance at the range</span></span></button>
-            <button type="button" class="check-item" data-id="gate-hunter-ed"><span class="box" aria-hidden="true"></span><span><span class="tl">Hunter education card</span><span class="tm">Field day registered first · then online · card in Hunt &amp; Fish</span></span></button>
-            <button type="button" class="check-item" data-id="gate-license"><span class="box" aria-hidden="true"></span><span><span class="tl">Youth hunting license ($7)</span><span class="tm">Item 169 · synced to Texas Hunt &amp; Fish</span></span></button>
-            <button type="button" class="check-item" data-id="gate-rifle-coach"><span class="box" aria-hidden="true"></span><span><span class="tl">Rifle coach assigned</span><span class="tm">AgriLife 903-590-2980 · Oct 13 new-member meeting</span></span></button>
-            <button type="button" class="check-item" data-id="gate-shotgun-coach"><span class="box" aria-hidden="true"></span><span><span class="tl">Shotgun coach / club path</span><span class="tm">Rose City · Smith SAFE · Henderson 4-H</span></span></button>
-            <button type="button" class="check-item" data-id="gate-pistol-coach"><span class="box" aria-hidden="true"></span><span><span class="tl">Pistol coach assigned</span><span class="tm req">Bottleneck — no certified coach = no District pistol</span></span></button>
-            <button type="button" class="check-item" data-id="gate-land"><span class="box" aria-hidden="true"></span><span><span class="tl">Deer hunt land lined up</span><span class="tm">Before Christmas · family / lease / TYHP / mentor</span></span></button>
-          </div>
-        </div>
-
-        <div class="check-layer" data-layer="build">
-          <h3>Build — range &amp; platforms</h3>
-          <div class="check-nodes cols-2">
-            <button type="button" class="check-item" data-id="build-weekly"><span class="box" aria-hidden="true"></span><span><span class="tl">Weekly range habit (4+ weeks logged)</span><span class="tm">Deer rifle · .22 3P · trap · pistol slow fire</span></span></button>
-            <button type="button" class="check-item" data-id="build-deer-zero"><span class="box" aria-hidden="true"></span><span><span class="tl">Deer rifle zeroed + field positions</span><span class="tm">5H or coach range · separate from .22 match gun</span></span></button>
-            <button type="button" class="check-item" data-id="build-rifle-marksman"><span class="box" aria-hidden="true"></span><span><span class="tl">NRA Marksman — rifle</span><span class="tm req">Required</span></span></button>
-            <button type="button" class="check-item" data-id="build-shotgun-marksman"><span class="box" aria-hidden="true"></span><span><span class="tl">NRA Marksman — shotgun</span><span class="tm">Stretch goal · trap reps at Rose City</span></span></button>
-            <button type="button" class="check-item" data-id="build-pistol-marksman"><span class="box" aria-hidden="true"></span><span><span class="tl">NRA Marksman — pistol</span><span class="tm">Stretch · permission card in case</span></span></button>
-            <button type="button" class="check-item" data-id="build-cleaning"><span class="box" aria-hidden="true"></span><span><span class="tl">Strip &amp; clean each platform</span><span class="tm">With you · name the parts · after range + after hunt</span></span></button>
-            <button type="button" class="check-item" data-id="build-outdoor-annual"><span class="box" aria-hidden="true"></span><span><span class="tl">Outdoor Annual studied</span><span class="tm">Regs quiz at home · seasons in the calendar</span></span></button>
-          </div>
-        </div>
-
-        <div class="check-layer" data-layer="climax">
-          <h3>Climax — proofs (all required)</h3>
-          <div class="check-nodes cols-2">
-            <button type="button" class="check-item" data-id="climax-hunt"><span class="box" aria-hidden="true"></span><span><span class="tl">Mentored deer — legal shot</span><span class="tm">Jan 4–17 youth late primary · backup sits in general season</span></span></button>
-            <button type="button" class="check-item" data-id="climax-dress"><span class="box" aria-hidden="true"></span><span><span class="tl">He field-dresses the deer</span><span class="tm">Hit without dress = incomplete</span></span></button>
-            <button type="button" class="check-item" data-id="climax-meal"><span class="box" aria-hidden="true"></span><span><span class="tl">Family meal from the harvest</span><span class="tm">Process the meat · waste = fail</span></span></button>
-            <button type="button" class="check-item" data-id="climax-4h"><span class="box" aria-hidden="true"></span><span><span class="tl">Official 4-H scorecard</span><span class="tm">April District IV and/or Extravaganza · win not required</span></span></button>
-          </div>
-        </div>
-
-        <div class="check-layer" data-layer="prize">
-          <h3>Prize — after Spark</h3>
-          <div class="check-nodes">
-            <button type="button" class="check-item" data-id="prize-gun"><span class="box" aria-hidden="true"></span><span><span class="tl">His own gun — earned</span><span class="tm">All proofs above first · he helps choose · locked · supervised only</span></span></button>
-          </div>
-        </div>
-
-        <div class="check-layer" data-layer="optional">
-          <h3>Optional — pick &amp; choose</h3>
-          <div class="check-nodes cols-2">
-            <button type="button" class="check-item opt" data-id="opt-dove"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Dove hunt</span><span class="tm">Sep–Oct · day lease or mentor · hunter ed first</span></span></button>
-            <button type="button" class="check-item opt" data-id="opt-duck"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Duck hunt</span><span class="tm">Guide (e.g. Corsicana) or Mac invite · after trap reps</span></span></button>
-            <button type="button" class="check-item opt" data-id="opt-woodduck"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Wood duck boxes hung</span><span class="tm">Spring give-back · conservation thread</span></span></button>
-            <button type="button" class="check-item opt" data-id="opt-clep"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>US History I CLEP passed</span><span class="tm">After April · Modern States + voucher</span></span></button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <p class="draft-banner screen-only"><strong>Draft plan.</strong> The proofs below are the bar. Sections marked <em>optional</em> are mentor ideas — dove before deer, caliber steps, conservation projects, extra hunts. Pick what fits the year; skip the rest. Milestone tasks live on the <a href="checklist.html">checklist page</a>.</p>
 
     <section id="year">
       <h2>Year map — skills sprint</h2>
@@ -1022,82 +905,8 @@
     </section>
 
     <footer>
-      Cycle 25 Hunter · Spark year · Aug 23, 2026 · Prize: his own gun after the proofs · Optional: US History I CLEP via Modern States after April.
+      Cycle 25 Hunter · Spark year · Aug 23, 2026 · <a href="checklist.html">Checklist</a> · Prize after proofs · Optional CLEP after April.
     </footer>
   </div>
-  <script>
-    (function () {
-      const KEY = "hunter-spark-checklist-v1";
-      const LAYERS = {
-        foundation: ["gate-4h", "gate-hunter-ed", "gate-license", "gate-rifle-coach", "gate-shotgun-coach", "gate-pistol-coach", "gate-land"],
-        build: ["build-weekly", "build-deer-zero", "build-rifle-marksman", "build-shotgun-marksman", "build-pistol-marksman", "build-cleaning", "build-outdoor-annual"],
-        climax: ["climax-hunt", "climax-dress", "climax-meal", "climax-4h"],
-        prize: ["prize-gun"],
-        optional: ["opt-dove", "opt-duck", "opt-woodduck", "opt-clep"]
-      };
-      const LABELS = { foundation: "Foundation", build: "Build", climax: "Climax", prize: "Prize", optional: "Optional" };
-
-      let done = {};
-      try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (_) { done = {}; }
-
-      function save() { localStorage.setItem(KEY, JSON.stringify(done)); }
-
-      function isDone(id) { return !!done[id]; }
-
-      function setDone(id, on) {
-        if (on) done[id] = true; else delete done[id];
-        save();
-        render();
-      }
-
-      function renderItem(btn) {
-        const id = btn.dataset.id;
-        const on = isDone(id);
-        btn.classList.toggle("done", on);
-        btn.querySelector(".box").textContent = on ? "✓" : "";
-        btn.setAttribute("aria-pressed", on ? "true" : "false");
-      }
-
-      function renderBars() {
-        const el = document.getElementById("check-bars");
-        if (!el) return;
-        el.innerHTML = Object.entries(LAYERS).map(([layer, ids]) => {
-          const n = ids.filter((id) => isDone(id)).length;
-          const t = ids.length;
-          const pct = t ? Math.round((n / t) * 100) : 0;
-          const ok = n === t;
-          return `<div class="check-bar${ok ? " ok" : ""}">
-            <div class="lbl">${LABELS[layer]}</div>
-            <div class="nums">${n} / ${t}</div>
-            <div class="meter"><span style="width:${pct}%"></span></div>
-          </div>`;
-        }).join("");
-      }
-
-      function render() {
-        document.querySelectorAll(".check-item").forEach(renderItem);
-        renderBars();
-        const reset = document.getElementById("check-reset");
-        const any = Object.keys(done).length > 0;
-        if (reset) reset.hidden = !any;
-      }
-
-      document.getElementById("check-layers")?.addEventListener("click", (e) => {
-        const btn = e.target.closest(".check-item");
-        if (!btn) return;
-        const id = btn.dataset.id;
-        setDone(id, !isDone(id));
-      });
-
-      document.getElementById("check-reset")?.addEventListener("click", () => {
-        if (!confirm("Clear all checklist progress on this device?")) return;
-        done = {};
-        save();
-        render();
-      });
-
-      render();
-    })();
-  </script>
 </body>
 </html>
