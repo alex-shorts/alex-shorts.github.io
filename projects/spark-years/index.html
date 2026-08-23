@@ -20,9 +20,12 @@
     .grid { display: grid; gap: 0.65rem; }
     @media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
     @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
-    .cycle-card { display: block; text-decoration: none; color: inherit; background: #faf6ee;
-      border: 1px solid #ddd4c4; border-radius: 12px; padding: 0.75rem 0.85rem; border-left: 4px solid var(--cycle); }
+    .cycle-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; background: #faf6ee;
+      border: 1px solid #ddd4c4; border-radius: 12px; overflow: hidden; }
     .cycle-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+    .cycle-card .cycle-thumb { aspect-ratio: 4 / 3; overflow: hidden; background: #e8e2d8; }
+    .cycle-card .cycle-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cycle-card .cycle-body { padding: 0.75rem 0.85rem; border-left: 4px solid var(--cycle); flex: 1; }
     .cycle-card .label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7a7368; }
     .cycle-card h3 { font-family: Fraunces, Georgia, serif; margin: 0.15rem 0; font-size: 1.35rem; color: var(--cycle); }
     .cycle-card p { margin: 0; font-size: 0.82rem; line-height: 1.4; color: #4a4540; }
@@ -47,70 +50,103 @@
 </div>
 <div class="grid">
         <a class="cycle-card" href="medic.html" style="--cycle:#0f6b5c">
-          <div class="label">Cycle 1 · 10th-grade · 2028–29</div>
-          <h3>Medic</h3>
-          <p>CPR · FR/EMT cert · ride-along hours</p>
-          <span class="links">Plan · <a href="checklists/medic.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/medic.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 1 · 10th-grade · 2028–29</div>
+            <h3>Medic</h3>
+            <p>CPR · FR/EMT cert · ride-along hours</p>
+            <span class="links">Plan · <a href="checklists/medic.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="pilot.html" style="--cycle:#1a4a7a">
-          <div class="label">Cycle 2 · 10th-grade · 2028–29</div>
-          <h3>Pilot</h3>
-          <p>Discovery flights · ground school · FAA written</p>
-          <span class="links">Plan · <a href="checklists/pilot.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/pilot.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 2 · 10th-grade · 2028–29</div>
+            <h3>Pilot</h3>
+            <p>Discovery flights · ground school · FAA written</p>
+            <span class="links">Plan · <a href="checklists/pilot.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="cowboy.html" style="--cycle:#8a4b12">
-          <div class="label">Cycle 3 · 9th-grade · 2027–28</div>
-          <h3>Cowboy</h3>
-          <p>Ride · rope · ranch apprenticeship week</p>
-          <span class="links">Plan · <a href="checklists/cowboy.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/cowboy.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 3 · 9th-grade · 2027–28</div>
+            <h3>Cowboy</h3>
+            <p>Ride · rope · ranch apprenticeship week</p>
+            <span class="links">Plan · <a href="checklists/cowboy.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="builder.html" style="--cycle:#3d6b2a">
-          <div class="label">Cycle 4 · 11th-grade · 2029–30</div>
-          <h3>Builder</h3>
-          <p>OSHA-10 · family cabin weathertight</p>
-          <span class="links">Plan · <a href="checklists/builder.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/builder.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 4 · 11th-grade · 2029–30</div>
+            <h3>Builder</h3>
+            <p>OSHA-10 · family cabin weathertight</p>
+            <span class="links">Plan · <a href="checklists/builder.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="fighter.html" style="--cycle:#8a3d1f">
-          <div class="label">Cycle 9 · 10th-grade · 2028–29</div>
-          <h3>Fighter</h3>
-          <p>Gym block · belt grading or local bout</p>
-          <span class="links">Plan · <a href="checklists/fighter.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/fighter.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 9 · 10th-grade · 2028–29</div>
+            <h3>Fighter</h3>
+            <p>Gym block · belt grading or local bout</p>
+            <span class="links">Plan · <a href="checklists/fighter.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="sailor.html" style="--cycle:#0b4f8a">
-          <div class="label">Cycle 10 · 10th-grade · 2028–29</div>
-          <h3>Sailor</h3>
-          <p>ASA 101 · Texas 200 · Gulf charter</p>
-          <span class="links">Plan · <a href="checklists/sailor.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/sailor.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 10 · 10th-grade · 2028–29</div>
+            <h3>Sailor</h3>
+            <p>ASA 101 · Texas 200 · Gulf charter</p>
+            <span class="links">Plan · <a href="checklists/sailor.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="entrepreneur.html" style="--cycle:#5c3d8a">
-          <div class="label">Cycle 13 · 10th-grade · 2028–29</div>
-          <h3>Entrepreneur</h3>
-          <p>SBDC · launch · 10 paying customers</p>
-          <span class="links">Plan · <a href="checklists/entrepreneur.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/entrepreneur.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 13 · 10th-grade · 2028–29</div>
+            <h3>Entrepreneur</h3>
+            <p>SBDC · launch · 10 paying customers</p>
+            <span class="links">Plan · <a href="checklists/entrepreneur.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="humanitarian.html" style="--cycle:#8a2848">
-          <div class="label">Cycle 18 · 11th-grade · 2029–30</div>
-          <h3>Humanitarian</h3>
-          <p>Local service · Samaritan's Purse deploy</p>
-          <span class="links">Plan · <a href="checklists/humanitarian.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/humanitarian.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 18 · 11th-grade · 2029–30</div>
+            <h3>Humanitarian</h3>
+            <p>Local service · Samaritan's Purse deploy</p>
+            <span class="links">Plan · <a href="checklists/humanitarian.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="basketball.html" style="--cycle:#c45c26">
-          <div class="label">Cycle 22 · 10th-grade · 2028–29</div>
-          <h3>Basketball</h3>
-          <p>Daily craft · coaching assignment · film</p>
-          <span class="links">Plan · <a href="checklists/basketball.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/basketball.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 22 · 10th-grade · 2028–29</div>
+            <h3>Basketball</h3>
+            <p>Daily craft · coaching assignment · film</p>
+            <span class="links">Plan · <a href="checklists/basketball.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="drive.html" style="--cycle:#1f4e79">
-          <div class="label">Cycle 24 · 9th-grade · 2027–28</div>
-          <h3>Drive</h3>
-          <p>Kart · license ladder · Team O'Neil Stage 1</p>
-          <span class="links">Plan · <a href="checklists/drive.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/drive.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 24 · 9th-grade · 2027–28</div>
+            <h3>Drive</h3>
+            <p>Kart · license ladder · Team O'Neil Stage 1</p>
+            <span class="links">Plan · <a href="checklists/drive.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
         <a class="cycle-card" href="hunter.html" style="--cycle:#3f4d2c">
-          <div class="label">Cycle 25 · 8th-grade · 2026–27</div>
-          <h3>Hunter</h3>
-          <p>4-H · mentored deer · dress · prize gun</p>
-          <span class="links">Plan · <a href="checklists/hunter.html" onclick="event.stopPropagation()">Checklist</a></span>
+          <div class="cycle-thumb"><img src="images/hunter.svg" alt="" loading="lazy" /></div>
+          <div class="cycle-body">
+            <div class="label">Cycle 25 · 8th-grade · 2026–27</div>
+            <h3>Hunter</h3>
+            <p>4-H · mentored deer · dress · prize gun</p>
+            <span class="links">Plan · <a href="checklists/hunter.html" onclick="event.stopPropagation()">Checklist</a></span>
+          </div>
         </a>
 </div>
 <footer>Private family site · Tyler / East TX · TJC path</footer>

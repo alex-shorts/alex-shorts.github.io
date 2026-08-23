@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Drive">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2d4a"/>
+      <stop offset="55%" stop-color="#1f4e79"/>
+      <stop offset="100%" stop-color="#2a3f5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <path d="M80 200 Q120 140 200 150 Q280 160 320 200" fill="none" stroke="#7eb8e8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="130" y="155" width="140" height="45" rx="12" fill="#dce8f4" opacity="0.9"/>
+  <circle cx="155" cy="205" r="18" fill="#7eb8e8"/>
+  <circle cx="245" cy="205" r="18" fill="#7eb8e8"/>
+  <text x="200" y="250" text-anchor="middle" fill="#eef4fa" font-family="Georgia, serif" font-size="42" font-weight="600">Drive</text>
+  <text x="200" y="278" text-anchor="middle" fill="#b8c9dc" font-family="system-ui, sans-serif" font-size="14" letter-spacing="3">SPARK YEAR</text>
+</svg>
