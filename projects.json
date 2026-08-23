@@ -25,8 +25,8 @@
     },
     {
       "id": "spark-years",
-      "name": "Spark Years",
-      "desc": "11 Preparation cycles — plans, checklists, CLEP catalog, and training links.",
+      "name": "The Preparation",
+      "desc": "11 Spark cycles — plans, checklists, CLEP catalog, and training links.",
       "href": "projects/spark-years/",
       "image": "projects/spark-years/thumb.svg",
       "private": true,
