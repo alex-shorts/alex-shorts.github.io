@@ -115,6 +115,63 @@
       border-bottom: 1px solid #e4dccb; border-radius: 0; font-size: 0.82rem;
     }
     .chip-note { margin: 0.4rem 0 0; padding: 0.3rem 0.65rem; font-size: 0.78rem; background: var(--hunter-soft); border-color: #c5cfb0; color: #4a463c; }
+    .draft-banner {
+      margin: 0 -1.1rem 0.85rem; padding: 0.55rem 1.1rem;
+      background: #f0ebe0; border-top: 1px dashed #c4a35a; border-bottom: 1px dashed #c4a35a;
+      font-size: 0.84rem; line-height: 1.4;
+    }
+    .draft-banner strong { color: #7a4a12; }
+    table .mode.opt { color: #5a6b3a; }
+
+    /* Spark checklist — Preparation-style tasks */
+    .check-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 0.35rem; }
+    .check-reset {
+      font: inherit; font-size: 0.72rem; color: #7a7368; background: none; border: none;
+      text-decoration: underline; cursor: pointer; padding: 0; margin-left: auto;
+    }
+    .check-bars { display: grid; gap: 0.35rem; margin: 0 0 0.65rem; }
+    @media (min-width: 640px) { .check-bars { grid-template-columns: repeat(4, 1fr); } }
+    .check-bar {
+      background: #faf6ee; border: 1px solid #ddd4c4; border-radius: 8px; padding: 0.4rem 0.5rem;
+    }
+    .check-bar.ok { background: #eef3e4; border-color: #b8c9a0; }
+    .check-bar .lbl {
+      font-size: 0.62rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--hunter-mid); margin-bottom: 0.1rem;
+    }
+    .check-bar .nums { font-size: 0.78rem; font-weight: 700; }
+    .check-bar .meter {
+      height: 4px; background: #e4dccb; border-radius: 2px; margin-top: 0.25rem; overflow: hidden;
+    }
+    .check-bar .meter span { display: block; height: 100%; background: var(--hunter); border-radius: 2px; }
+    .check-bar.ok .meter span { background: #5a7a3a; }
+    .check-layers { display: grid; gap: 0.65rem; }
+    .check-layer h3 {
+      font-size: 0.68rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase;
+      color: #7a7368; margin: 0 0 0.35rem;
+    }
+    .check-nodes { display: grid; gap: 0.3rem; }
+    @media (min-width: 640px) { .check-nodes.cols-2 { grid-template-columns: 1fr 1fr; } }
+    .check-item {
+      display: grid; grid-template-columns: auto 1fr; gap: 0.45rem; align-items: start;
+      width: 100%; text-align: left; font: inherit; cursor: pointer;
+      border: 1px solid #ddd4c4; border-radius: 8px; padding: 0.45rem 0.55rem;
+      background: #fff; color: inherit;
+    }
+    .check-item:hover { border-color: var(--hunter-mid); }
+    .check-item.done { background: #eef3e4; border-color: #b8c9a0; }
+    .check-item.opt { border-style: dashed; background: #faf8f4; }
+    .check-item .box {
+      width: 1.05rem; height: 1.05rem; border: 2px solid #b8b0a4; border-radius: 4px;
+      margin-top: 0.1rem; display: grid; place-content: center; font-size: 0.72rem; font-weight: 800;
+      color: #fff; flex-shrink: 0;
+    }
+    .check-item.done .box { background: var(--hunter); border-color: var(--hunter); }
+    .check-item .tl { font-weight: 700; font-size: 0.84rem; line-height: 1.25; }
+    .check-item .tm { font-size: 0.74rem; color: #6a6358; margin-top: 0.12rem; line-height: 1.3; }
+    .check-item .req { font-size: 0.65rem; font-weight: 700; color: #9a4a1a; margin-top: 0.15rem; }
+    .check-item .opt-tag { font-size: 0.62rem; font-weight: 700; color: var(--hunter-mid); }
+
     footer { margin-top: 0.8rem; padding-top: 0.5rem; border-top-color: #ddd4c4; color: #7a7368; font-size: 0.78rem; }
 
     @media print {
@@ -151,6 +208,10 @@
       .split .panel { padding: 0.3rem 0.4rem; box-shadow: none; }
       .clean-list li { font-size: 7.8pt; padding: 0.05rem 0; }
       .chip-note { display: none; }
+      .draft-banner { display: none; }
+      .check-reset { display: none; }
+      .check-item { cursor: default; break-inside: avoid; }
+      .check-item .box { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
       footer { font-size: 7.5pt; margin-top: 0.3rem; }
       a { color: inherit; text-decoration: none; }
     }
@@ -161,6 +222,7 @@
     <header class="mast">
       <nav class="site-nav screen-only" aria-label="Primary">
         <a href="../../">Projects</a>
+        <a href="#checklist">Checklist</a>
         <a class="active" href="./">Hunter</a>
       </nav>
       <p class="print-only print-kicker">Cycle 25 · 8th-grade Spark · East Texas 2026–27 · not dual credit</p>
@@ -173,6 +235,7 @@
         <span class="tag">8th-grade Spark</span>
         <span class="tag">Not dual credit</span>
         <span class="tag tag-gold">Beside Drive</span>
+        <span class="tag">Draft — pick &amp; choose</span>
         <button type="button" class="print-btn" onclick="window.print()">Print</button>
       </div>
     </header>
@@ -206,6 +269,73 @@
       </div>
     </section>
 
+    <p class="draft-banner screen-only"><strong>Draft plan.</strong> The proofs below are the bar. Sections marked <em>optional</em> are mentor ideas — dove before deer, caliber steps, conservation projects, extra hunts. Pick what fits the year; skip the rest.</p>
+
+    <section id="checklist">
+      <div class="check-head">
+        <h2 style="margin:0">Spark checklist</h2>
+        <button type="button" class="check-reset screen-only" id="check-reset" hidden>Reset all</button>
+      </div>
+      <p class="section-lede">Tap each task when it’s truly done — like <em>The Preparation</em>. Saves in this browser. <strong>Foundation + climax</strong> are required for Spark; build items are the weekly work; optional rows are pick-and-choose.</p>
+
+      <div class="check-bars" id="check-bars" aria-live="polite"></div>
+
+      <div class="check-layers" id="check-layers">
+        <div class="check-layer" data-layer="foundation">
+          <h3>Foundation — gates (all required)</h3>
+          <div class="check-nodes cols-2">
+            <button type="button" class="check-item" data-id="gate-4h"><span class="box" aria-hidden="true"></span><span><span class="tl">Enrolled in Smith County 4-H</span><span class="tm">4-H Online · insurance at the range</span></span></button>
+            <button type="button" class="check-item" data-id="gate-hunter-ed"><span class="box" aria-hidden="true"></span><span><span class="tl">Hunter education card</span><span class="tm">Field day registered first · then online · card in Hunt &amp; Fish</span></span></button>
+            <button type="button" class="check-item" data-id="gate-license"><span class="box" aria-hidden="true"></span><span><span class="tl">Youth hunting license ($7)</span><span class="tm">Item 169 · synced to Texas Hunt &amp; Fish</span></span></button>
+            <button type="button" class="check-item" data-id="gate-rifle-coach"><span class="box" aria-hidden="true"></span><span><span class="tl">Rifle coach assigned</span><span class="tm">AgriLife 903-590-2980 · Oct 13 new-member meeting</span></span></button>
+            <button type="button" class="check-item" data-id="gate-shotgun-coach"><span class="box" aria-hidden="true"></span><span><span class="tl">Shotgun coach / club path</span><span class="tm">Rose City · Smith SAFE · Henderson 4-H</span></span></button>
+            <button type="button" class="check-item" data-id="gate-pistol-coach"><span class="box" aria-hidden="true"></span><span><span class="tl">Pistol coach assigned</span><span class="tm req">Bottleneck — no certified coach = no District pistol</span></span></button>
+            <button type="button" class="check-item" data-id="gate-land"><span class="box" aria-hidden="true"></span><span><span class="tl">Deer hunt land lined up</span><span class="tm">Before Christmas · family / lease / TYHP / mentor</span></span></button>
+          </div>
+        </div>
+
+        <div class="check-layer" data-layer="build">
+          <h3>Build — range &amp; platforms</h3>
+          <div class="check-nodes cols-2">
+            <button type="button" class="check-item" data-id="build-weekly"><span class="box" aria-hidden="true"></span><span><span class="tl">Weekly range habit (4+ weeks logged)</span><span class="tm">Deer rifle · .22 3P · trap · pistol slow fire</span></span></button>
+            <button type="button" class="check-item" data-id="build-deer-zero"><span class="box" aria-hidden="true"></span><span><span class="tl">Deer rifle zeroed + field positions</span><span class="tm">5H or coach range · separate from .22 match gun</span></span></button>
+            <button type="button" class="check-item" data-id="build-rifle-marksman"><span class="box" aria-hidden="true"></span><span><span class="tl">NRA Marksman — rifle</span><span class="tm req">Required</span></span></button>
+            <button type="button" class="check-item" data-id="build-shotgun-marksman"><span class="box" aria-hidden="true"></span><span><span class="tl">NRA Marksman — shotgun</span><span class="tm">Stretch goal · trap reps at Rose City</span></span></button>
+            <button type="button" class="check-item" data-id="build-pistol-marksman"><span class="box" aria-hidden="true"></span><span><span class="tl">NRA Marksman — pistol</span><span class="tm">Stretch · permission card in case</span></span></button>
+            <button type="button" class="check-item" data-id="build-cleaning"><span class="box" aria-hidden="true"></span><span><span class="tl">Strip &amp; clean each platform</span><span class="tm">With you · name the parts · after range + after hunt</span></span></button>
+            <button type="button" class="check-item" data-id="build-outdoor-annual"><span class="box" aria-hidden="true"></span><span><span class="tl">Outdoor Annual studied</span><span class="tm">Regs quiz at home · seasons in the calendar</span></span></button>
+          </div>
+        </div>
+
+        <div class="check-layer" data-layer="climax">
+          <h3>Climax — proofs (all required)</h3>
+          <div class="check-nodes cols-2">
+            <button type="button" class="check-item" data-id="climax-hunt"><span class="box" aria-hidden="true"></span><span><span class="tl">Mentored deer — legal shot</span><span class="tm">Jan 4–17 youth late primary · backup sits in general season</span></span></button>
+            <button type="button" class="check-item" data-id="climax-dress"><span class="box" aria-hidden="true"></span><span><span class="tl">He field-dresses the deer</span><span class="tm">Hit without dress = incomplete</span></span></button>
+            <button type="button" class="check-item" data-id="climax-meal"><span class="box" aria-hidden="true"></span><span><span class="tl">Family meal from the harvest</span><span class="tm">Process the meat · waste = fail</span></span></button>
+            <button type="button" class="check-item" data-id="climax-4h"><span class="box" aria-hidden="true"></span><span><span class="tl">Official 4-H scorecard</span><span class="tm">April District IV and/or Extravaganza · win not required</span></span></button>
+          </div>
+        </div>
+
+        <div class="check-layer" data-layer="prize">
+          <h3>Prize — after Spark</h3>
+          <div class="check-nodes">
+            <button type="button" class="check-item" data-id="prize-gun"><span class="box" aria-hidden="true"></span><span><span class="tl">His own gun — earned</span><span class="tm">All proofs above first · he helps choose · locked · supervised only</span></span></button>
+          </div>
+        </div>
+
+        <div class="check-layer" data-layer="optional">
+          <h3>Optional — pick &amp; choose</h3>
+          <div class="check-nodes cols-2">
+            <button type="button" class="check-item opt" data-id="opt-dove"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Dove hunt</span><span class="tm">Sep–Oct · day lease or mentor · hunter ed first</span></span></button>
+            <button type="button" class="check-item opt" data-id="opt-duck"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Duck hunt</span><span class="tm">Guide (e.g. Corsicana) or Mac invite · after trap reps</span></span></button>
+            <button type="button" class="check-item opt" data-id="opt-woodduck"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>Wood duck boxes hung</span><span class="tm">Spring give-back · conservation thread</span></span></button>
+            <button type="button" class="check-item opt" data-id="opt-clep"><span class="box" aria-hidden="true"></span><span><span class="tl"><span class="opt-tag">Opt · </span>US History I CLEP passed</span><span class="tm">After April · Modern States + voucher</span></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="year">
       <h2>Year map — skills sprint</h2>
       <p class="section-lede">Parallel tracks: deer rifle for January; .22 rifle / pistol / shotgun for 4-H and April. LTC, Sharpshooter-on-everything, and CLEP wait.</p>
@@ -228,9 +358,15 @@
               <td>NRA Marksman on rifle (stretch: all three)</td>
             </tr>
             <tr>
+              <td>Sep → Nov <span class="mode opt">optional</span></td>
+              <td class="mode opt">Birds</td>
+              <td>Comfort behind the barrel <em>before</em> the deer climax: dove day lease, duck with a guide, or mentor hunt. Not required for Spark — see <a href="#options">options</a>.</td>
+              <td>Shotgun reps + first harvest story if it happens</td>
+            </tr>
+            <tr>
               <td>Jan 4–17, 2027</td>
               <td class="mode climax">Climax</td>
-              <td>Mentored East TX deer. He shoots when the mentor says yes. Same weekend: he field-dresses + family meal.</td>
+              <td>Mentored East TX deer. He shoots when the mentor says yes. Same weekend: he field-dresses + family meal. <em>Optional:</em> plan <strong>2+ deer sits</strong> in general season if late youth is the only window.</td>
               <td>Tag + dress notes + meal</td>
             </tr>
             <tr>
@@ -400,12 +536,12 @@
           </tbody>
         </table>
       </div>
-      <p class="chip-note"><strong>Weekly:</strong> range commands · OBI · prone / kneeling / standing (.22) · pistol slow-timed-rapid · trap mount &amp; lead → 100 birds · hunter-ed + Outdoor Annual · deer rifle separate for January.</p>
+      <p class="chip-note"><strong>Weekly:</strong> range commands · OBI · prone / kneeling / standing (.22) · pistol slow-timed-rapid · trap mount &amp; lead → 100 birds · hunter-ed + Outdoor Annual · deer rifle separate for January. <strong>Recoil ladder (optional):</strong> BB → .22 → .410 shotgun → centerfire deer rifle — don’t skip steps if he’s flinching.</p>
     </section>
 
     <section id="land">
       <h2>How he gets on a deer</h2>
-      <p class="section-lede">Line up land before Christmas. Hunter ed + license must be on file before any TYHP hunt.</p>
+      <p class="section-lede">Line up land before Christmas. Hunter ed + license must be on file before any TYHP hunt. <strong>Late youth (Jan 4–17) is a narrow window</strong> — if that’s the primary plan, book backup sits in general season too.</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -419,6 +555,18 @@
               <td>Ranch, lease, or a friend who hunts.</td>
             </tr>
             <tr>
+              <td><strong>A2 · Day lease</strong> <span class="mode opt">opt</span></td>
+              <td>Single-day or weekend access — dove, deer, or both. Common within ~2 hrs of Tyler.</td>
+              <td>Per-day fee. Book early in season.</td>
+              <td>No family ranch; want a low-commitment try before an annual lease.</td>
+            </tr>
+            <tr>
+              <td><strong>A3 · Annual lease</strong> <span class="mode opt">opt</span></td>
+              <td>Split a year lease with another family. Scout, set stands, return all season.</td>
+              <td>Up-front cost + travel. Worth it if you’ll hunt monthly.</td>
+              <td>Serious about deer + maybe dove on the same place.</td>
+            </tr>
+            <tr>
               <td><strong>B · TYHP</strong></td>
               <td>Mentored hunts, lodging, meals. Parent goes. Ages 9–17.</td>
               <td>$200 youth + adult. Adult needs TWA membership (~$35).</td>
@@ -430,9 +578,173 @@
               <td>Draw odds. General-deer apply-by Sep 15.</td>
               <td>Backup if A and B miss.</td>
             </tr>
+            <tr>
+              <td><strong>D · Mentor invite</strong> <span class="mode opt">opt</span></td>
+              <td>Friend or cousin with a spot — dove, duck, or deer. Parent goes; kid follows range law.</td>
+              <td>Depends on birds / schedule. Hit or miss on waterfowl.</td>
+              <td>Someone offers (e.g. dove this fall; duck guide near Corsicana).</td>
+            </tr>
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section id="options">
+      <h2>Options — mentor notes (pick &amp; choose)</h2>
+      <p class="section-lede">Feedback from Mac McGowan and similar families. <strong>None of this replaces the Spark proofs.</strong> Use what helps; ignore what doesn’t. Core stays: hunter ed, 4-H on three platforms, January deer + dress, April scorecard.</p>
+
+      <h3>Optional animal progression — small game before deer</h3>
+      <p class="section-lede">Some families run a ladder so the first harvest isn’t a deer. Shotgun field time is the hardest to keep safe — earn it on doves or ducks before January.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Step</th><th>Hunt</th><th>Notes</th><th>Spark?</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Dove</strong> (Sep–Oct, Central Zone)</td>
+              <td>Day lease within a couple hours of Tyler; cousin / mentor spots possible. Good shotgun rehearsal — not the climax.</td>
+              <td>Optional · strong if hunter ed is done</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Duck</strong></td>
+              <td>Guided day hunts are easy to book (e.g. Corsicana area). Birds are hit-or-miss locally — still worth it for barrel time and ethics.</td>
+              <td>Optional</td>
+            </tr>
+            <tr>
+              <td>—</td>
+              <td><strong>Turkey</strong></td>
+              <td>Hardest hunt to line up. Mac’s family would <em>skip</em> turkey in the ladder.</td>
+              <td>Skip unless you already have land + mentor</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Deer</strong></td>
+              <td>January climax stays. Plan more than one sit — late youth is a short window; Sheridan’s family got their deer on the <em>last morning</em> they could hunt.</td>
+              <td><strong>Required</strong> (one legal harvest + dress)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Caliber &amp; platform ladder — beat recoil shyness</h3>
+      <p class="section-lede">Recoil fear is real at every age. Start small; move up only when groups stay clean.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Stage</th><th>Tool</th><th>For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>BB gun / air rifle</td><td>Safe handling, sight picture, no kick</td></tr>
+            <tr><td>2</td><td>.22 rifle (bolt)</td><td>4-H smallbore · NRA Marksman · old competition rifles borrow well</td></tr>
+            <tr><td>3</td><td>.410 shotgun</td><td>First live shells moving — lighter than 12 ga</td></tr>
+            <tr><td>4</td><td>Centerfire rifle (.243 class) or 20 ga</td><td>Deer rifle · trap / dove when he’s not flinching (Sheridan: .243 rifle, moving to 20 ga; younger sister still on .22 + .410)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>Borrow gear:</strong> mentors may loan firearms — e.g. vintage bolt .22 match rifle (~1960s). Ask before you buy his prize gun.</p>
+
+      <h3>Safety &amp; care — where accidents actually happen</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Platform</th><th>Risk profile</th><th>Train for</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Shotgun in the field</strong></td>
+              <td>Highest practical risk — moving hunters, swinging on birds, excitement</td>
+              <td>Muzzle discipline, zone of fire, unload before crossing fences. Dove / duck <em>before</em> deer if he’s new to field carry.</td>
+            </tr>
+            <tr>
+              <td><strong>Pistol</strong></td>
+              <td>Range accidents — coach + parent on the line only</td>
+              <td>4-H certified coach · permission card in case · slow fire first</td>
+            </tr>
+            <tr>
+              <td><strong>Rifle</strong></td>
+              <td>Easier to control — bench, blind, static target</td>
+              <td>Deer climax lives here once field safety is habit</td>
+            </tr>
+            <tr>
+              <td><strong>Cleaning &amp; maintenance</strong> <span class="mode opt">opt proof</span></td>
+              <td>Part of owning — not optional in the long run</td>
+              <td>Strip rifle / shotgun / pistol (with you). Name the parts. Clean after range and after the hunt so it works when it must.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Conservation &amp; the animal — give back</h3>
+      <p class="section-lede">Hunting is tied to American conservation history — not the same as generic environmentalism. Study what you pursue: diet, habits, habitat. Know why we don’t have passenger pigeons, why bison nearly vanished, and why wood ducks and whitetails are abundant when managed well.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Topic</th><th>Do / discuss</th><th>When</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Species you hunt</td>
+              <td>What deer / dove / ducks eat · daily patterns · fair-chase ethics</td>
+              <td>Before each hunt type</td>
+            </tr>
+            <tr>
+              <td>Conservation story</td>
+              <td>Pittman–Robertson · state regs · surplus game vs extinction stories (passenger pigeon · buffalo recovery · managed whitetail)</td>
+              <td>American history class + Outdoor Annual</td>
+            </tr>
+            <tr>
+              <td>Give back</td>
+              <td>Build &amp; hang <strong>wood duck boxes</strong> in spring (Mac’s girls do this). Habitat work counts as much as harvest.</td>
+              <td>Spring after Spark — or start planning in winter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Open invites &amp; leads (as of Aug 2026)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Lead</th><th>What</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mac — dove</td>
+              <td>Cousin often has day-lease dove spots within a few hours. Long season — timing depends on birds.</td>
+              <td>Invite on the table · ask Mac when season firms up</td>
+            </tr>
+            <tr>
+              <td>Mac — local duck</td>
+              <td>Happy to take y’all out; local birds hit-or-miss but good time. Get comfortable behind a barrel first.</td>
+              <td>After trap / dove reps</td>
+            </tr>
+            <tr>
+              <td>Corsicana guide</td>
+              <td>Guided duck day — reliable way to book waterfowl</td>
+              <td>Research name + book when ready</td>
+            </tr>
+            <tr>
+              <td>Mac’s dad — Coleman lease</td>
+              <td>Strong deer country; dad must be physically present; he’s very busy</td>
+              <td>Long shot · don’t plan Spark around it</td>
+            </tr>
+            <tr>
+              <td>Annual lease split</td>
+              <td>Mac open to sharing a lease if you go that direction</td>
+              <td>Talk if day leases aren’t enough</td>
+            </tr>
+            <tr>
+              <td>Loaner firearms</td>
+              <td>Mac has “firearms out the yin yang” — including old bolt .22 comp rifle</td>
+              <td>Ask before buying match / deer guns</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chip-note"><strong>On track:</strong> Mac confirmed hunter ed + 4-H shooting is the right spine. Everything here is seasoning.</p>
     </section>
 
     <section id="calendar">
@@ -447,7 +759,7 @@
             <tr>
               <td>Sep 1 – Oct 25</td>
               <td>Dove · Central Zone</td>
-              <td>Only if hunter ed is done. Shotgun rehearsal, not the climax.</td>
+              <td><strong>Optional</strong> shotgun field hunt — day lease or mentor invite. Hunter ed first. See <a href="#options">options</a>.</td>
             </tr>
             <tr>
               <td>Sep 25–27 / Oct 1 – Feb 28</td>
@@ -579,6 +891,7 @@
             <li>NRA Marksman (rifle first; all three stretch)</li>
             <li>PE / outdoor · foods for the meal</li>
             <li>Ethics + Outdoor Annual</li>
+            <li>Gun cleaning / strip-down (optional — with you)</li>
             <li>American history — Hillsdale Colonial + Revolutionary · Constitution 101 slow</li>
           </ul>
         </div>
@@ -712,5 +1025,79 @@
       Cycle 25 Hunter · Spark year · Aug 23, 2026 · Prize: his own gun after the proofs · Optional: US History I CLEP via Modern States after April.
     </footer>
   </div>
+  <script>
+    (function () {
+      const KEY = "hunter-spark-checklist-v1";
+      const LAYERS = {
+        foundation: ["gate-4h", "gate-hunter-ed", "gate-license", "gate-rifle-coach", "gate-shotgun-coach", "gate-pistol-coach", "gate-land"],
+        build: ["build-weekly", "build-deer-zero", "build-rifle-marksman", "build-shotgun-marksman", "build-pistol-marksman", "build-cleaning", "build-outdoor-annual"],
+        climax: ["climax-hunt", "climax-dress", "climax-meal", "climax-4h"],
+        prize: ["prize-gun"],
+        optional: ["opt-dove", "opt-duck", "opt-woodduck", "opt-clep"]
+      };
+      const LABELS = { foundation: "Foundation", build: "Build", climax: "Climax", prize: "Prize", optional: "Optional" };
+
+      let done = {};
+      try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (_) { done = {}; }
+
+      function save() { localStorage.setItem(KEY, JSON.stringify(done)); }
+
+      function isDone(id) { return !!done[id]; }
+
+      function setDone(id, on) {
+        if (on) done[id] = true; else delete done[id];
+        save();
+        render();
+      }
+
+      function renderItem(btn) {
+        const id = btn.dataset.id;
+        const on = isDone(id);
+        btn.classList.toggle("done", on);
+        btn.querySelector(".box").textContent = on ? "✓" : "";
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+      }
+
+      function renderBars() {
+        const el = document.getElementById("check-bars");
+        if (!el) return;
+        el.innerHTML = Object.entries(LAYERS).map(([layer, ids]) => {
+          const n = ids.filter((id) => isDone(id)).length;
+          const t = ids.length;
+          const pct = t ? Math.round((n / t) * 100) : 0;
+          const ok = n === t;
+          return `<div class="check-bar${ok ? " ok" : ""}">
+            <div class="lbl">${LABELS[layer]}</div>
+            <div class="nums">${n} / ${t}</div>
+            <div class="meter"><span style="width:${pct}%"></span></div>
+          </div>`;
+        }).join("");
+      }
+
+      function render() {
+        document.querySelectorAll(".check-item").forEach(renderItem);
+        renderBars();
+        const reset = document.getElementById("check-reset");
+        const any = Object.keys(done).length > 0;
+        if (reset) reset.hidden = !any;
+      }
+
+      document.getElementById("check-layers")?.addEventListener("click", (e) => {
+        const btn = e.target.closest(".check-item");
+        if (!btn) return;
+        const id = btn.dataset.id;
+        setDone(id, !isDone(id));
+      });
+
+      document.getElementById("check-reset")?.addEventListener("click", () => {
+        if (!confirm("Clear all checklist progress on this device?")) return;
+        done = {};
+        save();
+        render();
+      });
+
+      render();
+    })();
+  </script>
 </body>
 </html>
