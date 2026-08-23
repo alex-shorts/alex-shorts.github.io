@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Builder">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1f3d14"/><stop offset="100%" stop-color="#3d6b2a"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <path d="M120 200 L200 100 L280 200 Z" fill="none" stroke="#8ab86a" stroke-width="3"/>
+  <rect x="155" y="160" width="90" height="40" fill="#e8f0e4" opacity="0.85"/>
+  <text x="200" y="250" text-anchor="middle" fill="#f6f1e4" font-family="Georgia,serif" font-size="42" font-weight="600">Builder</text>
+  <text x="200" y="278" text-anchor="middle" fill="#d9d0bb" font-family="system-ui,sans-serif" font-size="14" letter-spacing="3">SPARK YEAR</text>
+</svg>

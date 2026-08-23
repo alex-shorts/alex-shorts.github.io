@@ -51,6 +51,33 @@
       "updated": "2026-08-23"
     },
     {
+      "id": "sailor",
+      "name": "Sailor — Spark year",
+      "desc": "Cycle 10: ASA 101, Texas 200 crew passage, Gulf deep-sea charter.",
+      "href": "projects/sailor/",
+      "image": "projects/sailor/thumb.svg",
+      "private": true,
+      "updated": "2026-08-23"
+    },
+    {
+      "id": "fighter",
+      "name": "Fighter — Spark year",
+      "desc": "Cycle 9: local gym block, belt grading or amateur bout climax.",
+      "href": "projects/fighter/",
+      "image": "projects/fighter/thumb.svg",
+      "private": true,
+      "updated": "2026-08-23"
+    },
+    {
+      "id": "builder",
+      "name": "Builder — Spark year",
+      "desc": "Cycle 4: OSHA-10, family cabin raise, weathertight portfolio.",
+      "href": "projects/builder/",
+      "image": "projects/builder/thumb.svg",
+      "private": true,
+      "updated": "2026-08-23"
+    },
+    {
       "id": "proverbs-link",
       "name": "Proverbs - A Foundation & A Climb",
       "desc": "Proverbs as a climb — Way of Life (10–31) above, firm foundation (1–9) below.",
