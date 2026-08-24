@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Chef">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#5a2040"/><stop offset="100%" stop-color="#8a3d5c"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="105" rx="48" ry="28" fill="#f6f1e4"/>
+  <rect x="170" y="125" width="60" height="50" rx="8" fill="#f6f1e4"/>
+  <text x="200" y="260" text-anchor="middle" fill="#f6f1e4" font-family="Georgia,serif" font-size="42" font-weight="600">Chef</text>
+</svg>

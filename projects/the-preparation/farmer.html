@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Farmer — Spark year</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@0,9..144,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="theme-light.css"/><link rel="stylesheet" href="spark-timeline.css"/><style>    :root {
+      --cycle: #3d6b2a; --cycle-mid: #5a8a42; --cycle-soft: #e8f0e4; --accent: #a8c878;
+      --paper: #f3eee4; --ink: #1c1914; --tl-climax: #3d6b2a; --tl-climax-bg: #e8f0e4;
+      --serif: "Fraunces", Georgia, serif; --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+    body { color: var(--ink); background: radial-gradient(900px 520px at 12% -10%, rgba(61, 107, 42, 0.12), transparent 58%), var(--paper); font-family: var(--sans); }
+    a { color: #3d6b2a; } a:hover { color: var(--cycle); }
+    .wrap { max-width: 980px; padding: 0 1.1rem 2.2rem; }
+    .mast { margin: 0 -1.1rem 0.7rem; padding: 0.85rem 1.1rem; background: linear-gradient(115deg, #2a4a18 0%, #3d6b2a 50%, #4a5c28 100%); color: #f6f1e4; border-radius: 0 0 18px 18px; }
+    .mast .site-nav { margin: 0 0 0.7rem; }
+    .mast .site-nav a { background: rgba(255,255,255,0.08); color: #e6dfce; font-size: 0.72rem; padding: 0.22rem 0.55rem; }
+    .mast .site-nav a.active { background: rgba(255,255,255,0.2); border-color: var(--accent); }
+    .mast h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 500; color: #f6f1e4; margin: 0; }
+    .mast .lede { color: #d9d0bb; font-size: 0.95rem; max-width: 46rem; }
+    .mast .lede em { color: #fff; font-family: var(--serif); font-style: italic; }
+    .why-block { margin: 0 -1.1rem 0.85rem; padding: 0.85rem 1.1rem; background: #faf6ee; border-top: 3px solid var(--cycle); }
+    .why-block h2 { font-family: var(--serif); color: var(--cycle); font-size: 1.35rem; margin: 0 0 0.35rem; }
+    .why-block ul { font-size: 0.84rem; padding-left: 1.15rem; }
+    .why-block .why-action { font-family: var(--serif); font-style: italic; margin-top: 0.45rem; padding-top: 0.45rem; border-top: 1px solid #e4dccb; }
+    .hero-row { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .mast .tag { background: rgba(255,255,255,0.08); color: #e6dfce; }
+    .mast .tag-gold { background: rgba(255,255,255,0.15); color: var(--accent); }
+    .print-btn { font: inherit; font-size: 0.72rem; font-weight: 700; cursor: pointer; margin-left: auto; border-radius: 999px; padding: 0.28rem 0.75rem; border: 1px solid var(--accent); background: var(--accent); }
+    section { margin: 0.95rem 0; }
+    h2 { font-size: 1.15rem; font-weight: 500; margin: 0 0 0.2rem; }
+    .section-lede { font-size: 0.88rem; margin: 0 0 0.4rem; }
+    .stat b { color: var(--cycle); }
+    table th { background: var(--cycle-soft); color: var(--cycle); }
+    tr.climax td { background: var(--cycle-soft) !important; }
+    .callout.coral { border-left-color: #9a4a1a; background: #f6ebe0; padding: 0.5rem 0.7rem; font-size: 0.88rem; }
+    .draft-banner { margin: 0 -1.1rem 0.85rem; padding: 0.55rem 1.1rem; background: #f0ebe0; border-top: 1px dashed var(--accent); font-size: 0.84rem; }
+    footer { font-size: 0.78rem; color: #7a7368; border-top: 1px solid #ddd4c4; padding-top: 0.5rem; }
+    @media print { .draft-banner, .why-block { display: none; } }
+
+    .cycle-hero { margin: 0 -1.1rem 0.85rem; border-bottom: 1px solid #ddd4c4; }
+    .cycle-hero img { width: 100%; max-height: 300px; object-fit: cover; object-position: center top; display: block; }
+
+</style></head><body>
+<div class="wrap"><header class="mast">
+      <nav class="site-nav screen-only" aria-label="Primary">
+        <a href="../../">Projects</a>
+        <a href="./">The Preparation</a>
+        <a href="catalog.html">CLEP classes</a>
+        <a href="resources.html">Resources</a>
+        <a href="checklists/farmer.html">Checklist</a>
+        <a class="active" href="farmer.html">Plan</a>
+      </nav>
+<p class="eyebrow">Cycle 12 · 11th-grade Spark · 2029–30</p>
+<h1>Farmer</h1><p class="lede">Cycle 12 · 11th-grade <em>Spark</em> — a <strong>full season grow/raise</strong>. East TX AgriLife / home food system, with optional Oahu regenerative block via family friends. Climax: yield/chore log + host letter.</p>
+<div class="hero-row"><span class="tag">11th-grade Spark</span><span class="tag tag-gold">Season on land</span>
+<button type="button" class="print-btn" onclick="window.print()">Print</button></div></header>
+<figure class="cycle-hero"><img src="images/farmer-hero.jpg" alt="" loading="lazy" /></figure>
+
+<section class="why-block"><h2>Why this cycle — feed people from land you work</h2>
+<p class="why-lede">Not a weekend garden. <strong>Chores that stack for a season</strong> — plus a mentor or host who will sign what he actually did.</p><ul>        <li><strong>AgriLife first</strong> for local path and livestock referrals.</li>
+        <li><strong>Optional Oahu:</strong> WWOOF / Mohala / MAʻO-class hosts with family base.</li>
+        <li><strong>Climax:</strong> season log + mentor/host letter.</li>
+        <li><strong>Off the list:</strong> buying produce and calling it a harvest.</li></ul>
+<p class="why-action">The call: show up for the chore when you don't feel like it, measure the yield, and thank the host in writing.</p></section>
+<section id="aim"><div class="stats">        <div class="stat"><b>Plan</b><span>Season sheet</span></div>
+        <div class="stat"><b>8+ wks</b><span>Chore log</span></div>
+        <div class="stat"><b>Field</b><span>Host days</span></div>
+        <div class="stat"><b>Letter</b><span>Signed</span></div></div>
+<div class="callout coral"><strong>Align Oahu travel with school calendar.</strong> East TX season still counts if travel slips.</div></section>
+    <section id="finale-timeline" class="spark-timeline">
+      <h2>Road to the finale</h2>
+      <p class="section-lede">A real season on land — East TX food system plus optional Oahu regenerative block with family friends.</p>
+      <ol class="timeline-track horizontal" aria-label="Year timeline">
+        <li class="tl-step"><span class="tl-when">Fall</span><span class="tl-what">AgriLife contact · garden / livestock plan · chore log started</span><span class="tl-links"><a href="https://agrilifeextension.tamu.edu/">AgriLife</a></span></li>
+        <li class="tl-step"><span class="tl-when">Winter → spring</span><span class="tl-what">Season work · optional Oahu host farm days</span><span class="tl-links"><a href="https://wwoofusa.org/">WWOOF</a> · <a href="https://mohalafarms.org/">Mohala Farms</a></span></li>
+        <li class="tl-step climax"><span class="tl-when">Season end</span><span class="tl-what">FINALE — yield/chore log + host or mentor letter</span><span class="tl-links"><a href="https://tylersbdc.com/">Tyler SBDC (ag biz)</a></span></li>
+      </ol>
+    </section>
+<p class="draft-banner screen-only">Milestones on <a href="checklists/farmer.html">checklist</a>.</p>
+<section id="year"><h2>Year map</h2><table><thead><tr><th>Window</th><th>He does</th><th>Links</th></tr></thead><tbody>
+<tr><td>Fall</td><td>AgriLife · season plan · chore log</td><td><a href="https://agrilifeextension.tamu.edu/">AgriLife</a></td></tr>
+<tr><td>Winter → spring</td><td>Field work · optional Oahu block</td><td><a href="https://wwoofusa.org/">WWOOF</a> · <a href="https://mohalafarms.org/">Mohala</a></td></tr>
+<tr class="climax"><td>Season end</td><td><strong>Yield log + host letter</strong></td><td><a href="https://tylersbdc.com/">SBDC ag</a></td></tr>
+</tbody></table></section>
+    <section id="all-links">
+      <h2>All training links · events · courses</h2>
+      <p class="section-lede">Every bookable gate, camp, class, and competition in one place. Register early — spring slots fill.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Use for</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong><a href="https://agrilifeextension.tamu.edu/">Texas A&M AgriLife Extension</a></strong></td><td>State resources</td><td><a href="https://agrilifeextension.tamu.edu/">agrilifeextension.tamu.edu/</a></td></tr>
+            <tr><td><strong><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">Smith County AgriLife</a></strong></td><td>Local 4-H / ag</td><td><a href="https://agrilifeextension.tamu.edu/counties/smith-county/">agrilifeextension.tamu.edu/counties/smith-county/</a> · 903-590-2980</td></tr>
+            <tr><td><strong><a href="https://wwoofusa.org/">WWOOF USA</a></strong></td><td>Find host farms</td><td><a href="https://wwoofusa.org/">wwoofusa.org/</a></td></tr>
+            <tr><td><strong><a href="https://mohalafarms.org/">Mohala Farms (Oʻahu)</a></strong></td><td>North Shore regenerative</td><td><a href="https://mohalafarms.org/">mohalafarms.org/</a></td></tr>
+            <tr><td><strong><a href="https://www.maoorganicfarms.org/">MAʻO Organic Farms</a></strong></td><td>Oʻahu youth farm</td><td><a href="https://www.maoorganicfarms.org/">www.maoorganicfarms.org/</a></td></tr>
+            <tr><td><strong><a href="https://tylersbdc.com/">Tyler SBDC</a></strong></td><td>Ag business layer</td><td><a href="https://tylersbdc.com/">tylersbdc.com/</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<footer>Cycle 12 Farmer · <a href="checklists/farmer.html">Checklist</a></footer>
+</div></body></html>

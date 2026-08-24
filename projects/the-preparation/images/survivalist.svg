@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Survivalist">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1f3d14"/><stop offset="100%" stop-color="#3d6b2a"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <path d="M200 70 L260 190 L140 190 Z" fill="none" stroke="#c4a35a" stroke-width="4"/>
+  <path d="M200 190 L200 220" stroke="#e8ecd8" stroke-width="3"/>
+  <text x="200" y="260" text-anchor="middle" fill="#f6f1e4" font-family="Georgia,serif" font-size="36" font-weight="600">Survivalist</text>
+</svg>

@@ -1,10 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Entrepreneur">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5c3d8a"/>
-      <stop offset="100%" stop-color="#1c1914"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Entrepreneur Investor">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#064a3f"/><stop offset="100%" stop-color="#0f6b5c"/></linearGradient></defs>
   <rect width="400" height="300" fill="url(#bg)"/>
-  <text x="200" y="155" text-anchor="middle" fill="#f6f1e4" font-family="Georgia, serif" font-size="40" font-weight="600">Entrepreneur</text>
+  <path d="M120 200 L160 120 L200 160 L240 100 L280 200" fill="none" stroke="#c4a8e8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="280" cy="100" r="8" fill="#e8d4ff"/>
+  <text x="200" y="250" text-anchor="middle" fill="#f6f1e4" font-family="Georgia,serif" font-size="26" font-weight="600">Entrepreneur · Investor</text>
 </svg>
