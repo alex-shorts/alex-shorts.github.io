@@ -12,5 +12,4 @@
   <circle cx="155" cy="205" r="18" fill="#7eb8e8"/>
   <circle cx="245" cy="205" r="18" fill="#7eb8e8"/>
   <text x="200" y="250" text-anchor="middle" fill="#eef4fa" font-family="Georgia, serif" font-size="42" font-weight="600">Drive</text>
-  <text x="200" y="278" text-anchor="middle" fill="#b8c9dc" font-family="system-ui, sans-serif" font-size="14" letter-spacing="3">SPARK YEAR</text>
 </svg>

@@ -7,5 +7,4 @@
   </defs>
   <rect width="400" height="300" fill="url(#bg)"/>
   <text x="200" y="155" text-anchor="middle" fill="#f6f1e4" font-family="Georgia, serif" font-size="40" font-weight="600">Basketball</text>
-  <text x="200" y="195" text-anchor="middle" fill="#d9d0bb" font-family="system-ui, sans-serif" font-size="14" letter-spacing="3">SPARK YEAR</text>
 </svg>

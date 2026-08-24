@@ -5,5 +5,4 @@
   <path d="M120 200 L200 100 L280 200 Z" fill="none" stroke="#8ab86a" stroke-width="3"/>
   <rect x="155" y="160" width="90" height="40" fill="#e8f0e4" opacity="0.85"/>
   <text x="200" y="250" text-anchor="middle" fill="#f6f1e4" font-family="Georgia,serif" font-size="42" font-weight="600">Builder</text>
-  <text x="200" y="278" text-anchor="middle" fill="#d9d0bb" font-family="system-ui,sans-serif" font-size="14" letter-spacing="3">SPARK YEAR</text>
 </svg>
