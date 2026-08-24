@@ -489,9 +489,40 @@ body::before {
 
 .ptable-key-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.3rem 0.45rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem 0.55rem;
   margin-top: 0.15rem;
+  align-items: start;
+}
+
+.ptable-key-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.ptable-key-col-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.1rem;
+}
+
+.ptable-key .key-state {
+  width: 100%;
+  padding: 0.28rem 0.4rem;
+  font-size: 0.78rem;
+  border-radius: 8px;
+  gap: 0.4rem;
+}
+
+.ptable-key .key-state .ex {
+  width: 1.45rem;
+  height: 1.45rem;
+  font-size: 0.72rem;
 }
 
 .key-chip {
@@ -3112,7 +3143,7 @@ button.btn:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; 
       <div class="player-names">
         <label class="dad">P1 <input id="name-dad" type="text" maxlength="16" aria-label="Player 1 name" /></label>
         <label class="kid">P2 <input id="name-kid" type="text" maxlength="16" aria-label="Player 2 name" /></label>
-        <label class="scope-label" title="Elements available for Learn, Drill, Place, Quests, and Climb">
+        <label class="scope-label" title="Elements available for Learn, Drill, Place, and Game">
           Scope
           <select id="study-scope" aria-label="Study element range"></select>
         </label>
@@ -3126,35 +3157,20 @@ button.btn:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; 
       <button type="button" data-view="build">Build</button>
       <button type="button" data-view="drill">Drill</button>
       <button type="button" data-view="place">Place</button>
-      <button type="button" data-view="climb">Climb</button>
-      <button type="button" data-view="quests">Quests</button>
+      <button type="button" data-view="climb">Game</button>
     </nav>
 
     <section id="view-hq" class="view active" aria-label="Campaign headquarters">
-      <div class="hero-panel">
-        <h2>Tonight's mission</h2>
-        <p>
-          Set the <strong>study scope</strong> for the school year (start at H–Ca / first 20).
-          Learn, Drill, Place, Quests, and Period Climb only use elements in that range — widen it later.
-        </p>
-        <div class="stats-row" id="hq-stats"></div>
-      </div>
-      <div class="mission-card" id="tonight-mission"></div>
-      <h3 class="section-title">Periodic table · H → Og</h3>
+      <h3 class="section-title">Periodic table · 118 elements</h3>
       <div class="ptable-wrap">
         <div class="ptable" id="element-grid" role="grid" aria-label="Periodic table elements 1 to 118"></div>
       </div>
       <div class="ptable-legend" id="ptable-legend" hidden></div>
-      <p class="tip" style="margin-top:0.5rem">
-        Prefer the <strong>Scope</strong> control in the header. Head-to-head race lives in the
-        <strong>Climb</strong> tab (P1 WASD · P2 arrows).
-      </p>
       <label class="unlock-toggle" title="Shortcut: sets study scope to the full table">
         <input type="checkbox" id="unlock-all" />
         <span>Full table (118)</span>
         <em>sets study scope to all elements — same as Scope → Full table</em>
       </label>
-      <div class="tip" id="hq-tip"></div>
       <p class="attribution">
         Lab photos © Jurii / <a href="https://images-of-elements.com/" style="color:var(--mint)">images-of-elements.com</a>, CC BY 3.0 ·
         World photos via Openverse (CC), stored locally in <code>images/world/</code>
@@ -3165,10 +3181,6 @@ button.btn:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; 
       <div class="picker-row">
         <label for="learn-select">Element</label>
         <select id="learn-select"></select>
-      </div>
-      <div class="learn-modes" id="learn-modes" role="tablist" aria-label="Learn mode">
-        <button type="button" data-learn="explore" class="on">Explore</button>
-        <button type="button" data-learn="gag">Gags</button>
       </div>
       <div class="dossier" id="dossier"></div>
     </section>
@@ -3212,16 +3224,6 @@ button.btn:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; 
       </div>
     </section>
 
-    <section id="view-quests" class="view" aria-label="House quests">
-      <div class="hero-panel">
-        <h2>House quests</h2>
-        <p>
-          Match the photo to something in your house, then tap <strong>We found it</strong>.
-          Thirty seconds of “this is that” beats another textbook page.
-        </p>
-      </div>
-      <div class="quest-list" id="quest-list"></div>
-    </section>
   </div>
 
   <script>
@@ -10027,38 +10029,11 @@ const PLAYERS = [
     if (name === "drill") startDrill(drillForceZ);
     if (name === "place") startPlace();
     if (name === "climb") loadClimbFrame(false);
-    if (name === "quests") renderQuests();
     drillForceZ = null;
   }
 
   function renderHQ() {
-    const mastered = ELEMENTS.filter((e) => isMastered(e.z)).length;
-    const questsDone = Object.keys(state.quests).length;
     const unlock = unlockedCount();
-    const mission = tonightMission();
-
-    const inScopeMastered = ELEMENTS.filter((e) => e.z <= unlock && isMastered(e.z)).length;
-    $("#hq-stats").innerHTML = `
-      <div class="stat"><div class="n">${inScopeMastered}/${unlock}</div><div class="l">Mastered</div></div>
-      <div class="stat"><div class="n">${state.bestStreak}</div><div class="l">Best streak</div></div>
-      <div class="stat"><div class="n">${questsDone}</div><div class="l">Quests done</div></div>
-      <div class="stat"><div class="n">${unlock}</div><div class="l">In scope</div></div>
-    `;
-
-    $("#tonight-mission").innerHTML = `
-      <img src="${mission.photo}" alt="${mission.photoAlt}" />
-      <div>
-        <h3>Tonight’s pick: ${mission.symbol} — ${mission.name}</h3>
-        <p><strong>${mission.gag.emoji}</strong> ${mission.gag.line}</p>
-      </div>
-      <button class="btn copper" id="go-mission">Explore it</button>
-    `;
-    $("#go-mission").onclick = () => {
-      currentZ = mission.z;
-      state.learnMode = "explore";
-      state.learnViz = "world";
-      showView("learn");
-    };
 
     renderPeriodicBoard();
 
@@ -10087,10 +10062,6 @@ const PLAYERS = [
       save();
       renderHQ();
     };
-
-    const tip = $("#hq-tip");
-    tip.innerHTML = `<strong>Study scope: ${studyLabel()}.</strong> Learn, Drill, Place, Climb, and Quests only quiz elements in this range. Widen it as the school year progresses. Open the <button type="button" class="linkish" id="go-climb">Climb</button> tab for a head-to-head race.`;
-    $("#go-climb")?.addEventListener("click", () => showView("climb"));
 
     const tag = $(".brand .tag");
     if (tag) tag.textContent = studyLabel() + " · study scope";
@@ -10159,7 +10130,7 @@ const PLAYERS = [
     if (sub) {
       sub.innerHTML = tableFilter
         ? `Showing <strong>${filterLabel(tableFilter)}</strong> — click again or Clear to reset.`
-        : "Click Solid / Liquid / Gas / Unknown or a family to highlight matches.";
+        : "Tap a family or state chip above to highlight matches.";
     }
     clearBtns.forEach((b) => {
       b.hidden = !tableFilter;
@@ -10217,20 +10188,31 @@ const PLAYERS = [
     html += `<div class="ptable-fblock-banner" style="grid-column:2 / span 18;grid-row:11">Actinides</div>`;
 
     html += `
-      <aside class="ptable-key" style="grid-column:4 / span 10;grid-row:2 / span 3" aria-label="Element family color key">
+      <aside class="ptable-key" style="grid-column:4 / span 10;grid-row:2 / span 3" aria-label="Element filters">
         <strong class="ptable-key-title">Element families</strong>
-        <p class="ptable-key-sub">Tap a chip — or use Solid / Liquid / Gas below.</p>
+        <p class="ptable-key-sub">Tap a chip to highlight matches.</p>
         <div class="ptable-key-grid">
-          <button type="button" class="key-chip alkali" data-filter-kind="category" data-filter-value="alkali-metal" aria-pressed="false"><i></i>Alkali metal</button>
-          <button type="button" class="key-chip alkaline" data-filter-kind="category" data-filter-value="alkaline-earth" aria-pressed="false"><i></i>Alkaline earth</button>
-          <button type="button" class="key-chip transition" data-filter-kind="category" data-filter-value="transition-metal" aria-pressed="false"><i></i>Transition metal</button>
-          <button type="button" class="key-chip post" data-filter-kind="category" data-filter-value="post-transition" aria-pressed="false"><i></i>Post-transition</button>
-          <button type="button" class="key-chip metalloid" data-filter-kind="category" data-filter-value="metalloid" aria-pressed="false"><i></i>Metalloid</button>
-          <button type="button" class="key-chip nonmetal" data-filter-kind="category" data-filter-value="nonmetal" aria-pressed="false"><i></i>Nonmetal</button>
-          <button type="button" class="key-chip halogen" data-filter-kind="category" data-filter-value="halogen" aria-pressed="false"><i></i>Halogen</button>
-          <button type="button" class="key-chip noble" data-filter-kind="category" data-filter-value="noble-gas" aria-pressed="false"><i></i>Noble gas</button>
-          <button type="button" class="key-chip lanthanide" data-filter-kind="category" data-filter-value="lanthanide" aria-pressed="false"><i></i>Lanthanide</button>
-          <button type="button" class="key-chip actinide" data-filter-kind="category" data-filter-value="actinide" aria-pressed="false"><i></i>Actinide</button>
+          <div class="ptable-key-col">
+            <button type="button" class="key-chip alkali" data-filter-kind="category" data-filter-value="alkali-metal" aria-pressed="false"><i></i>Alkali metal</button>
+            <button type="button" class="key-chip transition" data-filter-kind="category" data-filter-value="transition-metal" aria-pressed="false"><i></i>Transition metal</button>
+            <button type="button" class="key-chip metalloid" data-filter-kind="category" data-filter-value="metalloid" aria-pressed="false"><i></i>Metalloid</button>
+            <button type="button" class="key-chip halogen" data-filter-kind="category" data-filter-value="halogen" aria-pressed="false"><i></i>Halogen</button>
+            <button type="button" class="key-chip lanthanide" data-filter-kind="category" data-filter-value="lanthanide" aria-pressed="false"><i></i>Lanthanide</button>
+          </div>
+          <div class="ptable-key-col">
+            <button type="button" class="key-chip alkaline" data-filter-kind="category" data-filter-value="alkaline-earth" aria-pressed="false"><i></i>Alkaline earth</button>
+            <button type="button" class="key-chip post" data-filter-kind="category" data-filter-value="post-transition" aria-pressed="false"><i></i>Post-transition</button>
+            <button type="button" class="key-chip nonmetal" data-filter-kind="category" data-filter-value="nonmetal" aria-pressed="false"><i></i>Nonmetal</button>
+            <button type="button" class="key-chip noble" data-filter-kind="category" data-filter-value="noble-gas" aria-pressed="false"><i></i>Noble gas</button>
+            <button type="button" class="key-chip actinide" data-filter-kind="category" data-filter-value="actinide" aria-pressed="false"><i></i>Actinide</button>
+          </div>
+          <div class="ptable-key-col" role="group" aria-label="State of matter">
+            <div class="ptable-key-col-label">State</div>
+            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="solid" aria-pressed="false"><span class="ex">C</span> Solid</button>
+            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="liquid" aria-pressed="false"><span class="ex">Hg</span> Liquid</button>
+            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="gas" aria-pressed="false"><span class="ex">H</span> Gas</button>
+            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="unknown" aria-pressed="false"><span class="ex">Rf</span> Unknown</button>
+          </div>
         </div>
       </aside>`;
 
@@ -10280,47 +10262,8 @@ const PLAYERS = [
       legend.innerHTML = `
         <div class="ptable-legend-head">
           <h4>Filter the table</h4>
-          <p id="ptable-legend-status">Click Solid / Liquid / Gas / Unknown or a family to highlight matches.</p>
+          <p id="ptable-legend-status">Tap a family or state chip above to highlight matches.</p>
           <button type="button" class="key-clear" hidden>Clear filter</button>
-        </div>
-        <div class="legend-states">
-          <h5>State of matter</h5>
-          <div class="key-states" role="group" aria-label="State of matter">
-            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="solid" aria-pressed="false"><span class="ex">C</span> Solid</button>
-            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="liquid" aria-pressed="false"><span class="ex">Hg</span> Liquid</button>
-            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="gas" aria-pressed="false"><span class="ex">H</span> Gas</button>
-            <button type="button" class="key-state" data-filter-kind="state" data-filter-value="unknown" aria-pressed="false"><span class="ex">Rf</span> Unknown</button>
-          </div>
-        </div>
-        <div class="legend-families">
-          <h5>Classification</h5>
-          <div class="legend-family-cols">
-            <div class="legend-col">
-              <button type="button" class="legend-col-head" data-filter-kind="family" data-filter-value="metals" aria-pressed="false">Metals</button>
-              <div class="key-family-chips">
-                <button type="button" class="key-chip alkali" data-filter-kind="category" data-filter-value="alkali-metal" aria-pressed="false"><i></i>Alkali metals</button>
-                <button type="button" class="key-chip alkaline" data-filter-kind="category" data-filter-value="alkaline-earth" aria-pressed="false"><i></i>Alkaline earth metals</button>
-                <button type="button" class="key-chip lanthanide" data-filter-kind="category" data-filter-value="lanthanide" aria-pressed="false"><i></i>Lanthanoids</button>
-                <button type="button" class="key-chip actinide" data-filter-kind="category" data-filter-value="actinide" aria-pressed="false"><i></i>Actinoids</button>
-                <button type="button" class="key-chip transition" data-filter-kind="category" data-filter-value="transition-metal" aria-pressed="false"><i></i>Transition metals</button>
-                <button type="button" class="key-chip post" data-filter-kind="category" data-filter-value="post-transition" aria-pressed="false"><i></i>Post-transition metals</button>
-              </div>
-            </div>
-            <div class="legend-col">
-              <button type="button" class="legend-col-head" data-filter-kind="family" data-filter-value="metalloids" aria-pressed="false">Metalloids</button>
-              <div class="key-family-chips">
-                <button type="button" class="key-chip metalloid" data-filter-kind="category" data-filter-value="metalloid" aria-pressed="false"><i></i>Metalloids</button>
-              </div>
-            </div>
-            <div class="legend-col">
-              <button type="button" class="legend-col-head" data-filter-kind="family" data-filter-value="nonmetals" aria-pressed="false">Nonmetals</button>
-              <div class="key-family-chips">
-                <button type="button" class="key-chip nonmetal" data-filter-kind="category" data-filter-value="nonmetal" aria-pressed="false"><i></i>Reactive nonmetals</button>
-                <button type="button" class="key-chip halogen" data-filter-kind="category" data-filter-value="halogen" aria-pressed="false"><i></i>Halogens</button>
-                <button type="button" class="key-chip noble" data-filter-kind="category" data-filter-value="noble-gas" aria-pressed="false"><i></i>Noble gases</button>
-              </div>
-            </div>
-          </div>
         </div>`;
       bindTableFilters(legend);
     }
@@ -10514,13 +10457,10 @@ const PLAYERS = [
   function renderLearn() {
     if (!isUnlocked(currentZ)) currentZ = 1;
     const e = elByZ(currentZ);
-    const mode = state.learnMode === "gag" ? "gag" : "explore";
-    if (state.learnMode !== mode) {
-      state.learnMode = mode;
-      save();
-    }
+    state.learnMode = "explore";
+    if (state.learnViz === "world" || state.learnViz === "gag") state.learnViz = "photo";
     const viz = state.learnViz || "photo";
-    const exploreViz = ["photo", "world", "atom"].includes(viz) ? viz : "photo";
+    const exploreViz = ["photo", "atom"].includes(viz) ? viz : "photo";
 
     const sel = $("#learn-select");
     const unlocked = ELEMENTS.filter((x) => isUnlocked(x.z));
@@ -10538,28 +10478,22 @@ const PLAYERS = [
       })
       .join("");
 
-    $$("#learn-modes button").forEach((b) => b.classList.toggle("on", b.dataset.learn === mode));
-
     const dossier = $("#dossier");
     dossier.classList.remove("dossier-magazine", "learn-stack");
 
-    const captionLeft = mode === "gag"
-      ? "If you laugh, it sticks"
-      : exploreViz === "world"
-        ? "Real-world photo examples"
-        : exploreViz === "atom"
-          ? "Diagram = electrons · table = capacity"
-          : e.state + " · " + CATEGORY_LABELS[e.category];
+    const captionLeft =
+      exploreViz === "atom"
+        ? "Diagram = electrons · table = capacity"
+        : e.state + " · " + CATEGORY_LABELS[e.category];
 
-    if (mode === "explore") {
+    {
       dossier.innerHTML = `
           <div class="atom-stage">
             <div class="viz-tabs" id="viz-tabs">
               <button type="button" data-viz="photo" class="${exploreViz === "photo" ? "on" : ""}">Lab photo</button>
-              <button type="button" data-viz="world" class="${exploreViz === "world" ? "on" : ""}">In the world</button>
               <button type="button" data-viz="atom" class="${exploreViz === "atom" ? "on" : ""}">Atom</button>
             </div>
-            <div class="viz-panel ${exploreViz === "world" ? "viz-panel-tall" : ""} ${exploreViz === "atom" ? "viz-panel-atom" : ""}" id="viz-panel"></div>
+            <div class="viz-panel ${exploreViz === "atom" ? "viz-panel-atom" : ""}" id="viz-panel"></div>
             <div class="atom-caption">
               <span>${captionLeft}</span>
               <span>${exploreViz === "atom" ? "K L M… shells" : "Shells " + e.shells.join(" · ")}</span>
@@ -10581,11 +10515,10 @@ const PLAYERS = [
               </div>
             </div>
             <div class="fact"><h3>Physical feel</h3><p>${e.feel}</p></div>
-            <div class="fact copper"><h3>In the world</h3><p>${e.world}</p></div>
             <div class="fact"><h3>You've touched it</h3><p>${e.youTouch}</p></div>
             <div class="fact gold"><h3>Quick hook</h3><p>${e.hook}</p></div>
             ${exploreArticleHTML(e)}
-            <div class="tip"><strong>Explore tip:</strong> Use the tabs for lab / world / atom visuals. The encyclopedia box below the facts goes deeper.</div>
+            <div class="tip"><strong>Explore tip:</strong> Switch Lab photo / Atom for visuals. The encyclopedia box below goes deeper.</div>
             <div class="dossier-actions">
               <button class="btn" id="prev-el">← Prev</button>
               <button class="btn primary" id="quiz-this">Quiz this</button>
@@ -10599,74 +10532,29 @@ const PLAYERS = [
       $("#viz-tabs").onclick = (ev) => {
         const b = ev.target.closest("[data-viz]");
         if (!b) return;
-        state.learnViz = b.dataset.viz;
+        const next = b.dataset.viz === "atom" ? "atom" : "photo";
+        state.learnViz = next;
         save();
         $$("#viz-tabs button").forEach((x) => x.classList.toggle("on", x === b));
-        panel.classList.toggle("viz-panel-tall", b.dataset.viz === "world");
-        panel.classList.toggle("viz-panel-atom", b.dataset.viz === "atom");
-        renderVizPanel(panel, e, b.dataset.viz);
+        panel.classList.toggle("viz-panel-tall", false);
+        panel.classList.toggle("viz-panel-atom", next === "atom");
+        renderVizPanel(panel, e, next);
         const cap = $(".atom-caption span");
         if (cap) {
           cap.textContent =
-            b.dataset.viz === "world"
-              ? "Real-world photo examples"
-              : b.dataset.viz === "atom"
-                ? "Diagram = electrons · table = capacity"
-                : e.state + " · " + CATEGORY_LABELS[e.category];
+            next === "atom"
+              ? "Diagram = electrons · table = capacity"
+              : e.state + " · " + CATEGORY_LABELS[e.category];
         }
         const capRight = $(".atom-caption span:last-child");
         if (capRight && capRight !== cap) {
           capRight.textContent =
-            b.dataset.viz === "atom" ? "K L M… shells" : "Shells " + e.shells.join(" · ");
+            next === "atom" ? "K L M… shells" : "Shells " + e.shells.join(" · ");
         }
       };
 
       bindLearnNav(e);
-      return;
     }
-
-    dossier.innerHTML = `
-      <div class="atom-stage">
-        <div class="viz-tabs" id="viz-tabs">
-          <button type="button" data-viz="gag" class="on">Comic gag</button>
-        </div>
-        <div class="viz-panel" id="viz-panel"></div>
-        <div class="atom-caption">
-          <span>If you laugh, it sticks</span>
-          <span>Shells ${e.shells.join(" · ")}</span>
-        </div>
-      </div>
-      <div class="dossier-body">
-        <div class="el-head">
-          <div class="badge-big">
-            <span class="sym">${e.symbol}</span>
-            <span class="z">#${e.z}</span>
-          </div>
-          <div>
-            <h2>${e.name}</h2>
-            <div class="chips">
-              <span class="chip hot">${CATEGORY_LABELS[e.category] || e.category}</span>
-              <span class="chip">${e.state}</span>
-              <span class="chip cool">${e.mass} u</span>
-            </div>
-          </div>
-        </div>
-        <div class="gag-card">
-          <h3>Comic gag · ${e.symbol}</h3>
-          <p class="place">${e.gag.vibe}</p>
-          <p class="line">${e.gag.emoji} ${e.gag.line}</p>
-          <p class="emotion">Shortcut: <strong>${e.hook}</strong></p>
-        </div>
-        <div class="tip"><strong>Gag tip:</strong> Read it in a ridiculous voice. Say “${e.symbol} is ${e.name}.” Then switch to Explore for visuals + the encyclopedia article below.</div>
-        <div class="dossier-actions">
-          <button class="btn" id="prev-el">← Prev</button>
-          <button class="btn primary" id="quiz-this">Quiz this</button>
-          <button class="btn" id="next-el">Next →</button>
-        </div>
-      </div>`;
-
-    $("#viz-panel").innerHTML = gagHTML(e);
-    bindLearnNav(e);
   }
 
   function bindLearnNav(e) {
@@ -11417,14 +11305,6 @@ const PLAYERS = [
     document.addEventListener("fullscreenchange", syncClimbFsLabel);
     document.addEventListener("webkitfullscreenchange", syncClimbFsLabel);
 
-    $("#learn-modes").addEventListener("click", (ev) => {
-      const b = ev.target.closest("[data-learn]");
-      if (!b) return;
-      state.learnMode = b.dataset.learn;
-      save();
-      renderLearn();
-    });
-
     $("#name-dad").value = state.names.dad;
     $("#name-kid").value = state.names.kid;
     $("#name-dad").addEventListener("change", (e) => {
@@ -11463,7 +11343,9 @@ const PLAYERS = [
 
   document.addEventListener("DOMContentLoaded", () => {
     bindChrome();
-    const start = state.lastView === "duel" ? "climb" : (state.lastView || "hq");
+    let start = state.lastView || "hq";
+    if (start === "duel") start = "climb";
+    if (start === "quests" || start === "gag") start = "hq";
     showView(start);
   });
 })();
