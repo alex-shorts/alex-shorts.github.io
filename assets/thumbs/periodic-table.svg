@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Element diagram">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#1a2230"/>
+      <stop offset="55%" stop-color="#12151a"/>
+      <stop offset="100%" stop-color="#0d1014"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="48%" r="45%">
+      <stop offset="0%" stop-color="#e08a45" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#3dceb2" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#12151a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a3340"/>
+      <stop offset="100%" stop-color="#1a1f27"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="360" fill="url(#bg)"/>
+  <rect width="480" height="360" fill="url(#glow)"/>
+
+  <!-- soft grid hint -->
+  <g stroke="rgba(61,206,178,0.08)" stroke-width="1">
+    <path d="M40 80 H440 M40 140 H440 M40 200 H440 M40 260 H440"/>
+    <path d="M100 40 V320 M180 40 V320 M260 40 V320 M340 40 V320"/>
+  </g>
+
+  <!-- Bohr-style atom -->
+  <g transform="translate(168 188)">
+    <ellipse cx="0" cy="0" rx="118" ry="42" fill="none" stroke="#3dceb2" stroke-width="1.5" opacity="0.55" transform="rotate(-18)"/>
+    <ellipse cx="0" cy="0" rx="118" ry="42" fill="none" stroke="#e08a45" stroke-width="1.5" opacity="0.45" transform="rotate(38)"/>
+    <ellipse cx="0" cy="0" rx="78" ry="28" fill="none" stroke="#6eb5ff" stroke-width="1.25" opacity="0.5" transform="rotate(-55)"/>
+    <circle cx="0" cy="0" r="16" fill="#e08a45"/>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#f0c090" stroke-width="2" opacity="0.7"/>
+    <!-- electrons -->
+    <circle cx="92" cy="-28" r="5" fill="#60a5fa"/>
+    <circle cx="-86" cy="22" r="5" fill="#3dceb2"/>
+    <circle cx="38" cy="68" r="4.5" fill="#f0a35e"/>
+  </g>
+
+  <!-- Element tile overlay -->
+  <g transform="translate(292 78)">
+    <rect width="132" height="148" rx="14" fill="url(#tile)" stroke="#e08a45" stroke-width="2.5"/>
+    <text x="14" y="28" fill="#e8ecef" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="700" opacity="0.9">3</text>
+    <text x="66" y="88" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, system-ui, sans-serif" font-size="52" font-weight="800">Li</text>
+    <text x="66" y="118" text-anchor="middle" fill="#c8d0d8" font-family="Segoe UI, system-ui, sans-serif" font-size="15" font-weight="600">Lithium</text>
+    <text x="66" y="138" text-anchor="middle" fill="#3dceb2" font-family="Consolas, monospace" font-size="12" font-weight="700">6.94 u</text>
+  </g>
+</svg>

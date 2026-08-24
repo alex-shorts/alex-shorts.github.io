@@ -51,10 +51,10 @@
     {
       "id": "periodic-table",
       "name": "Element Campaign",
-      "desc": "Learn the elements with your kid — campaign, drills, duels, and offline play.",
+      "desc": "Learn the elements with your kid — campaign, drills, place, and head-to-head game.",
       "href": "projects/periodic-table/",
-      "image": "projects/periodic-table/images/world/c-diamond.jpg",
-      "updated": "2026-08-06"
+      "image": "assets/thumbs/periodic-table.svg",
+      "updated": "2026-08-23"
     },
     {
       "id": "bible-worksheets",
