@@ -14,6 +14,27 @@
 .spark-timeline .section-lede {
   margin: 0 0 0.55rem;
 }
+.book-capstones {
+  margin: 0.95rem 0;
+  padding: 0.75rem 0.85rem;
+  background: #f4f0e8;
+  border: 1px dashed #c4a35a;
+  border-radius: 10px;
+}
+.book-capstones h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 0.15rem;
+}
+.book-capstones .cap-opt {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a4b12;
+  margin-right: 0.25rem;
+}
 .timeline-track {
   display: grid;
   gap: 0;
