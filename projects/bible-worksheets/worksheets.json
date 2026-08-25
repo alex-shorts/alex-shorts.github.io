@@ -41,6 +41,23 @@
       ]
     },
     {
+      "id": "dragon",
+      "name": "The Dragon",
+      "verse": "Romans 16:20 — The God of peace will soon crush Satan under your feet.",
+      "status": "New",
+      "updated": "2026-08-25",
+      "teacher": "dragon/teacher-guide.pdf",
+      "teacherLabel": "Teacher guide",
+      "links": [
+        {
+          "label": "Versions (K2)",
+          "href": "dragon/versions/index.html"
+        }
+      ],
+      "thumb": "dragon/coloring.png",
+      "student": "dragon/student.html"
+    },
+    {
       "id": "bread",
       "name": "The Bread",
       "verse": "John 6:35 — I am the bread of life…",

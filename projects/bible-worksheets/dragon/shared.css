@@ -1,0 +1,117 @@
+@page { size: letter; margin: 0; }
+:root {
+  --ink: #2e261e;
+  --ink-soft: #5a4c3c;
+  --mute: #8a7b68;
+  --rule: #c9b9a4;
+  --dot: #6e5f4e;
+  --paper: #f6f0e6;
+  --paper-deep: #ebe2d3;
+  --panel: #e8dfcf;
+  --oak: #7a5a3a;
+  --clay: #9a6a4e;
+  --accent: var(--oak);
+  --card: rgba(255, 253, 248, 0.55);
+  --caption-bg: color-mix(in srgb, #fffcf6 88%, transparent);
+  --desk: #d4cbbd;
+  --margin: 0.38in;
+  --page-w: 8.5in;
+  --page-h: 11in;
+  --radius: 8px;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-ui: "Segoe UI", system-ui, sans-serif;
+  --font-script: "Segoe Script", "Lucida Handwriting", cursive;
+  --theme-size: 16pt;
+  --node-size: 10pt;
+  --q-size: 7.25pt;
+  --track: 0.04em;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0; color: var(--ink);
+  font-family: var(--font-body);
+  background: var(--desk);
+}
+.toolbar {
+  position: sticky; top: 0; z-index: 20; display: flex; gap: 0.5rem;
+  align-items: center; flex-wrap: wrap; padding: 0.55rem 0.8rem;
+  background: #2a241e; color: #f4eee5; font-family: var(--font-ui); font-size: 13px;
+}
+.toolbar a, .toolbar button {
+  border: 0; border-radius: 4px; padding: 0.4rem 0.75rem; background: #9a6a4e;
+  color: #fff; font: inherit; cursor: pointer; text-decoration: none;
+}
+.toolbar .secondary { background: #564c42; }
+.sheet { width: var(--page-w); margin: 0.35in auto 0.6in; }
+.page {
+  width: var(--page-w); height: var(--page-h); padding: var(--margin);
+  background: linear-gradient(180deg, #f8f2e9 0%, var(--paper) 38%, var(--paper-deep) 100%);
+  overflow: hidden; display: flex; flex-direction: column;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+.mast { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.06in; }
+.series {
+  margin: 0; font-size: 8.5pt; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); font-family: var(--font-ui);
+}
+.theme {
+  margin: 0; font-size: var(--theme-size); font-weight: 600;
+  letter-spacing: var(--track); line-height: 1; font-family: var(--font-display);
+}
+.copywork {
+  border-top: 1px solid var(--rule); border-bottom: none;
+  padding: 0.06in 0 0; margin-bottom: 0;
+}
+.verse-ref { margin: 0 0 0.03in; font-size: 12pt; color: var(--mute); letter-spacing: 0.04em; }
+.verse-trace {
+  margin: 0 0 0.05in; font-family: var(--font-script);
+  font-size: 13pt; line-height: 1.15; color: transparent; -webkit-text-stroke: 1px var(--accent);
+}
+.hand-lines { display: grid; gap: 0.06in; }
+.hand-line { position: relative; height: 0.22in; border-bottom: 1.6px solid var(--dot); }
+.hand-line::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 45%;
+  border-top: 1.25px dotted var(--dot);
+}
+.hand-line::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 0;
+  border-top: 1.25px solid color-mix(in srgb, var(--dot) 70%, transparent);
+}
+.node-lead {
+  display: grid; grid-template-columns: auto 1fr; column-gap: 0.07in; row-gap: 0.02in;
+  margin-bottom: 0.04in; align-items: start;
+}
+.node-num {
+  grid-column: 1; grid-row: 1; align-self: center;
+  width: 0.16in; height: 0.16in; border-radius: 50%;
+  border: 1px solid var(--accent); color: var(--accent);
+  font: 7pt/1 var(--font-ui); display: grid; place-items: center;
+}
+.node-head { grid-column: 2; grid-row: 1; margin: 0; line-height: 1.1; }
+.node-title { font-size: var(--node-size); font-weight: 600; font-family: var(--font-display); }
+.node-ref { grid-column: 2; grid-row: 2; font-size: 8pt; color: var(--clay); font-weight: 400; }
+.node-q { margin: 0; padding-left: 0.14in; font-size: var(--q-size); line-height: 1.18; color: var(--ink-soft); }
+.node-q li { margin: 0; }
+.node-summary { display: none; }
+.summary-line { border-bottom: 1.5px solid var(--dot); min-height: 0.13in; }
+.catechism { margin-top: 0.06in; padding-top: 0.05in; border-top: 1px solid var(--rule); }
+.catechism-label {
+  margin: 0 0 0.02in; font-size: 7.5pt; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); font-family: var(--font-ui);
+}
+.catechism .qa { margin: 0.015in 0; font-size: 8pt; line-height: 1.2; }
+.meaning { margin: 0 0 0.06in; font-size: 8pt; color: var(--ink-soft); }
+.coloring-page { padding: var(--margin); }
+.coloring-frame { flex: 1; position: relative; border: 1px solid var(--rule); background: #fff; }
+.coloring-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+figcaption { margin: 0; font-size: 6.5pt; font-family: var(--font-ui); }
+@media print {
+  body { background: #fff; }
+  .toolbar { display: none !important; }
+  .sheet { margin: 0; }
+}
+body.front-only .coloring-page,
+body.front-only .toolbar { display: none !important; }
+body.front-only .sheet { margin: 0; }
