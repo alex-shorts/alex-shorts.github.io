@@ -15,7 +15,7 @@ See [index.html](index.html) — driven by `worksheets.json`.
 | Angel of the Lord (in progress) | — | [image options](angel-of-the-lord/image-options.html) |
 | Bread | [student](bread/student.html) | [teacher](bread/teacher.html) |
 | Lamb | [student](lamb/student.html) | [teacher](lamb/teacher.html) |
-| Rock | [student](rock/student.html) | [teacher](rock/teacher.html) |
+| Rock | [student](rock/student.html) · [versions](rock/versions/index.html) | [teacher](rock/teacher.html) |
 | Sword | [student](sword/student.html) | [teacher](sword/teacher.html) |
 | Temple | [student](temple/student.html) | [teacher](temple/teacher.html) |
 

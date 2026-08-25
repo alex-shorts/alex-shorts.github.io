@@ -34,7 +34,10 @@
       "updated": "2026-08-19",
       "thumb": null,
       "links": [
-        { "label": "Image options", "href": "angel-of-the-lord/image-options.html" }
+        {
+          "label": "Image options",
+          "href": "angel-of-the-lord/image-options.html"
+        }
       ]
     },
     {
@@ -61,12 +64,19 @@
     {
       "id": "rock",
       "name": "The Rock",
-      "verse": "1 Corinthians 10:4 — …the Rock was Christ.",
-      "updated": "2026-08-08",
+      "verse": "Isaiah 26:4 — Trust in the LORD forever, for the LORD GOD is an everlasting rock.",
+      "updated": "2026-08-25",
       "thumb": "rock/coloring.png",
       "student": "rock/student.html",
       "teacher": "rock/teacher.html",
-      "teacherLabel": "Teacher sheet"
+      "teacherLabel": "Teacher sheet",
+      "status": "Updated",
+      "links": [
+        {
+          "label": "Versions (K5 · K1 · v1)",
+          "href": "rock/versions/index.html"
+        }
+      ]
     },
     {
       "id": "sword",
@@ -78,7 +88,10 @@
       "teacher": "sword/teacher.html",
       "teacherLabel": "Teacher sheet",
       "links": [
-        { "label": "Coloring PDF", "href": "sword/sword.pdf" }
+        {
+          "label": "Coloring PDF",
+          "href": "sword/sword.pdf"
+        }
       ]
     },
     {
