@@ -806,16 +806,32 @@
 
     window.addEventListener("scroll", updateClimbCue, { passive: true });
 
-    function bootClimb() {
-      const pack = window.CLIMB_PACK;
-      if (!pack?.hierarchy || !pack?.verseMap) {
-        document.getElementById("climb").innerHTML =
-          `<p style="padding:1rem;color:#5a5348">Could not load climb pack. Run <code>python scripts/build_file_packs.py</code>.</p>`;
-        return;
+    async function bootClimb() {
+      const climbEl = document.getElementById("climb");
+      try {
+        if (window.CLIMB_PACK?.hierarchy && window.CLIMB_PACK?.verseMap) {
+          state.data = window.CLIMB_PACK.hierarchy;
+          state.verseMap = window.CLIMB_PACK.verseMap;
+          render();
+          return;
+        }
+        const [data, verseMap] = await Promise.all([
+          fetch("./proposals/theme-ontology/hierarchy-map-data.json").then((r) => {
+            if (!r.ok) throw new Error(`hierarchy map (${r.status})`);
+            return r.json();
+          }),
+          fetch("./data/category-verse-map.json").then((r) => {
+            if (!r.ok) throw new Error(`verse map (${r.status})`);
+            return r.json();
+          }),
+        ]);
+        state.data = data;
+        state.verseMap = verseMap;
+        render();
+      } catch (err) {
+        climbEl.innerHTML =
+          `<p style="padding:1rem;color:#5a5348">Could not load climb data: ${escapeHtml(err.message)}</p>`;
       }
-      state.data = pack.hierarchy;
-      state.verseMap = pack.verseMap;
-      render();
     }
 
     bootClimb();

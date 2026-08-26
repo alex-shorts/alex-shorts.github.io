@@ -784,54 +784,9 @@
         "altitude": "peak",
         "notes": "Faithful over little; share His rule.",
         "extension": true,
-        "life": [
-          {
-            "id": "reign-with-christ",
-            "name": "Share His rule",
-            "kind": "role",
-            "layer": "identity",
-            "notes": "Sit with Him; reign with Him.",
-            "extension": true,
-            "value": 6,
-            "children": null,
-            "builds_on": [
-              "strength-for-others",
-              "justice",
-              "discipline"
-            ],
-            "role": "peak"
-          },
-          {
-            "id": "speech-power-fruit",
-            "name": "Shepherding word",
-            "kind": "practice",
-            "layer": "fruit",
-            "notes": "A tongue that shepherds under the Lamb.",
-            "extension": false,
-            "value": 3,
-            "children": null,
-            "builds_on": [
-              "speech-power-fruit"
-            ],
-            "role": "peak"
-          },
-          {
-            "id": "trials-suffering",
-            "name": "Trained through trials",
-            "kind": "practice",
-            "layer": "formation",
-            "notes": "The Father’s training for wider trust.",
-            "extension": false,
-            "value": 3,
-            "children": null,
-            "builds_on": [
-              "discipline"
-            ],
-            "role": "peak"
-          }
-        ],
+        "life": [],
         "death": [],
-        "life_weight": 12,
+        "life_weight": 1,
         "death_weight": 0
       }
     ]
