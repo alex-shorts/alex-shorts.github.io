@@ -235,7 +235,6 @@
       const links = [];
       if (w.student) links.push(linkHtml("Student", w.student));
       if (w.teacher) links.push(linkHtml(w.teacherLabel || "Teacher", w.teacher));
-      if (w.familyRecap) links.push(linkHtml(w.familyRecapLabel || "After this week", w.familyRecap));
       if (w.packReview) links.push(linkHtml("Pack review", w.packReview));
       (w.links || []).forEach(l => links.push(linkHtml(l.label, l.href)));
 
