@@ -457,27 +457,6 @@
       max-width: 34rem;
     }
     .site-foot .nav { justify-content: center; margin-top: 0.9rem; }
-    .climb-cue {
-      position: sticky;
-      bottom: 0.85rem;
-      z-index: 5;
-      display: flex;
-      justify-content: center;
-      pointer-events: none;
-      margin-top: -0.25rem;
-    }
-    .climb-cue span {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(247, 242, 232, 0.92);
-      border: 1px solid var(--line);
-      padding: 0.4rem 0.75rem;
-      box-shadow: 0 6px 18px rgba(40, 30, 18, 0.08);
-    }
-    .climb-cue[hidden] { display: none; }
     .hint {
       font-size: 0.85rem;
       color: var(--muted);
@@ -561,7 +540,7 @@
         <strong>Romans 13:1–7</strong>
         <p>Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God.</p>
       </div>
-      <p class="hint">Theme lines are verse paraphrases. Click the <strong>office</strong> or <strong>theme</strong>. Scroll down to climb.</p>
+      <p class="hint">Theme lines are verse paraphrases. Click the <strong>office</strong> or <strong>theme</strong>.</p>
     </header>
 
     <div class="col-heads" aria-hidden="true">
@@ -571,7 +550,6 @@
     </div>
 
     <div class="climb" id="climb"></div>
-    <div class="climb-cue" id="climbCue" hidden><span>↓ Scroll down to climb</span></div>
 
     <footer class="site-foot" id="foundation">
       <p class="frame">
@@ -604,7 +582,6 @@
     }
 
     const climbEl = document.getElementById("climb");
-    const cueEl = document.getElementById("climbCue");
     let openId = null;
 
     function primaryPassage(r) {
@@ -689,14 +666,7 @@
       }
     }
 
-    function updateCue() {
-      if (!cueEl) return;
-      cueEl.hidden = window.scrollY > 320;
-    }
-
     renderClimb();
-    updateCue();
-    window.addEventListener("scroll", updateCue, { passive: true });
   </script>
 </body>
 </html>
