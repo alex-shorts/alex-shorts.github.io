@@ -81,9 +81,13 @@
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.45);
       padding: 0.75rem 1rem;
-      margin: 0.85rem auto 0;
-      max-width: 36rem;
-      text-align: left;
+      margin: 0.75rem 0 0.55rem;
+    }
+    .page-head {
+      margin-bottom: 0.75rem;
+    }
+    .page-head .hint {
+      margin: 0.75rem 0 0;
     }
     .foundation-banner.theme {
       border: 2px solid rgba(61, 52, 40, 0.28);
@@ -131,7 +135,7 @@
     .col-heads .death { color: var(--death); text-align: right; }
     .climb {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       gap: 0.65rem;
     }
     .rung {
@@ -549,6 +553,17 @@
     <span class="side-door-label">The Climb</span>
   </a>
   <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">Man &amp; Woman · Order under the throne</p>
+      <h1>The Order</h1>
+      <p class="lede">A God of Order — the submission climb from family to throne.</p>
+      <div class="foundation-banner theme">
+        <strong>Romans 13:1–7</strong>
+        <p>Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God.</p>
+      </div>
+      <p class="hint">Theme lines are verse paraphrases. Click the <strong>office</strong> or <strong>theme</strong>. Scroll down to climb.</p>
+    </header>
+
     <div class="col-heads" aria-hidden="true">
       <span class="spine">Office</span>
       <span class="life">Leads</span>
@@ -556,20 +571,12 @@
     </div>
 
     <div class="climb" id="climb"></div>
-    <div class="climb-cue" id="climbCue" hidden><span>↑ Scroll up to climb</span></div>
+    <div class="climb-cue" id="climbCue" hidden><span>↓ Scroll down to climb</span></div>
 
     <footer class="site-foot" id="foundation">
-      <p class="eyebrow">Man &amp; Woman · Order under the throne</p>
-      <h1>The Order</h1>
-      <p class="lede">A God of Order — the submission climb from family to throne.</p>
       <p class="frame">
         Family → Work → Marriage → body → elders → governors → kings → nation/exile → God’s throne (Christ).
       </p>
-      <div class="foundation-banner theme">
-        <strong>Romans 13:1–7</strong>
-        <p>Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God.</p>
-      </div>
-      <p class="hint">Theme lines are verse paraphrases. Click the <strong>office</strong> or <strong>theme</strong>.</p>
       <p class="frame">
         Same fractal at every scale. Strength is for those under your care.
         When men forbid what God commands: Acts 5:29.
@@ -684,26 +691,11 @@
 
     function updateCue() {
       if (!cueEl) return;
-      const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-      const fromBottom = max - window.scrollY;
-      cueEl.hidden = fromBottom > 320;
-    }
-
-    function startAtFoundation() {
-      history.scrollRestoration = "manual";
-      const go = () => {
-        const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-        window.scrollTo(0, max);
-        updateCue();
-      };
-      requestAnimationFrame(() => requestAnimationFrame(go));
-      setTimeout(go, 50);
-      setTimeout(go, 250);
-      window.addEventListener("load", go, { once: true });
+      cueEl.hidden = window.scrollY > 320;
     }
 
     renderClimb();
-    startAtFoundation();
+    updateCue();
     window.addEventListener("scroll", updateCue, { passive: true });
   </script>
 </body>
