@@ -93,7 +93,9 @@
           "label": "Versions (K5 · K1 · v1)",
           "href": "rock/versions/index.html"
         }
-      ]
+      ],
+      "familyRecap": "rock/family-recap.html",
+      "familyRecapLabel": "After this week"
     },
     {
       "id": "sword",

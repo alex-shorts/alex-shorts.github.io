@@ -1,0 +1,70 @@
+{
+  "theme_id": "rock",
+  "notes": "After Rock week: watch Water of Life to see the living-water thread you traced in node D; use place links sparingly — say when a site is tradition, not proof.",
+  "recap_videos": [
+    {
+      "id": "water-of-life",
+      "title": "Bible Project — Water of Life",
+      "url": "https://bibleproject.com/explore/video/water-of-life/",
+      "series": "biblical-themes",
+      "when": "After completing the week — ties nodes A (wilderness rock) and D (living water)",
+      "duration_hint": "~5 min",
+      "pairs_with_resource": "water-of-life"
+    },
+    {
+      "id": "the-mountain",
+      "title": "Bible Project — The Mountain (optional)",
+      "url": "https://bibleproject.com/explore/video/mountain/",
+      "series": "biblical-themes",
+      "when": "Optional second recap if you emphasized God on the rock / Eden mountain",
+      "pairs_with_resource": "the-mountain"
+    }
+  ],
+  "by_node": {
+    "A": {
+      "label": "Water from the Rock — Exodus 17",
+      "supporting_links": [
+        {
+          "kind": "place-documentary",
+          "title": "Negev / wilderness — split rock traditions (curate your favorite)",
+          "url": null,
+          "note": "Add your YouTube link here — e.g. Negev geological features some tour as Meribah/Kadesh associations. Teach: landscape illuminates; Scripture names the event.",
+          "curation": "alex"
+        },
+        {
+          "kind": "map",
+          "title": "Wilderness of Sin / Rephidim region",
+          "url": "https://bibleproject.com/guides/the-wilderness/",
+          "note": "BP guide — geography of wilderness, not a single pinned rock"
+        }
+      ]
+    },
+    "B": {
+      "label": "The LORD is the Rock — Deut 32 / 2 Sam 22",
+      "supporting_links": []
+    },
+    "C": {
+      "label": "House on the Rock — Matthew 7",
+      "supporting_links": []
+    },
+    "D": {
+      "label": "Living water — John 7 / Ezek 47",
+      "supporting_links": [
+        {
+          "kind": "bp-guide",
+          "title": "Water of Life — study guide (deeper)",
+          "url": "https://bibleproject.com/guides/the-mountain/",
+          "note": "Guide paired with Water of Life theme in BP catalog"
+        }
+      ]
+    }
+  },
+  "supporting_links_general": [
+    {
+      "kind": "place-documentary",
+      "title": "Temple Mount / Gihon spring (Jerusalem water systems)",
+      "url": null,
+      "note": "Curate: connects Ezek 47 temple river thread from node D"
+    }
+  ]
+}

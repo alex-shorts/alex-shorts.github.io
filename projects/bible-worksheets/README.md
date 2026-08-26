@@ -16,7 +16,7 @@ See [index.html](index.html) — driven by `worksheets.json`.
 | Dragon (new) | [student](dragon/student.html) · [versions](dragon/versions/index.html) | [PDF](dragon/teacher-guide.pdf) |
 | Bread | [student](bread/student.html) | [teacher](bread/teacher.html) |
 | Lamb | [student](lamb/student.html) | [teacher](lamb/teacher.html) |
-| Rock | [student](rock/student.html) · [versions](rock/versions/index.html) | [teacher](rock/teacher.html) |
+| Rock | [student](rock/student.html) · [versions](rock/versions/index.html) · [after this week](rock/family-recap.html) | [teacher](rock/teacher.html) |
 | Sword | [student](sword/student.html) | [teacher](sword/teacher.html) |
 | Temple | [student](temple/student.html) | [teacher](temple/teacher.html) |
 
