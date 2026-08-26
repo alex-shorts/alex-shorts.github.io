@@ -168,12 +168,13 @@
 }
 
 .spark-semester {
-  margin: 0.95rem 0;
+  margin: 1.25rem 0 0.5rem;
   padding: 0.75rem 0.85rem;
   background: #f8f4ec;
   border: 1px solid #ddd4c4;
   border-left: 4px solid var(--cycle, #8a4b12);
   border-radius: 10px;
+  border-top: 2px dashed #ddd4c4;
 }
 .spark-semester h2,
 .spark-semester h3 {
