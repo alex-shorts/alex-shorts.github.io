@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Order · A God of Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1612;
+      --muted: #5a5348;
+      --paper: #f7f2e8;
+      --line: rgba(26, 22, 18, 0.14);
+      --accent: #8a4b1f;
+      --leads: #2f5d3a;
+      --leads-bg: #e4efe7;
+      --leads-block: #c5d9cb;
+      --submits: #5c4a2e;
+      --submits-bg: #efe8dc;
+      --submits-block: #ddd2c0;
+      --spine: #3d3428;
+      --spine-bg: #ebe4d6;
+      --peak: #c9a227;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcfaf6, var(--paper));
+      min-height: 100vh;
+    }
+    .wrap {
+      width: min(1100px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 1.5rem 0 3rem;
+    }
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 0.3rem;
+    }
+    h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .lede {
+      margin: 0.55rem 0 0;
+      max-width: 42rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1rem;
+      margin: 0.85rem 0 1.1rem;
+      font-size: 0.9rem;
+    }
+    .nav a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+    .foundation-banner {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0 0.55rem;
+    }
+    .foundation-banner.theme {
+      background: color-mix(in srgb, var(--leads-bg) 55%, white);
+      border-color: color-mix(in srgb, var(--leads) 28%, var(--line));
+    }
+    .foundation-banner strong {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+    }
+    .foundation-banner p {
+      margin: 0.35rem 0 0;
+      color: var(--ink);
+      line-height: 1.5;
+      font-size: 0.98rem;
+    }
+    .foundation-banner .ref {
+      font-weight: 700;
+      color: var(--accent);
+      margin-right: 0.35rem;
+    }
+    .foundation-banner .muted {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .foundation-banner.theme p:last-child {
+      margin-bottom: 0;
+    }
+    .col-heads {
+      display: grid;
+      grid-template-columns: minmax(160px, 200px) 1fr 1fr;
+      gap: 0.55rem;
+      margin-bottom: 0.45rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+    }
+    .col-heads span { padding: 0.35rem 0.5rem; }
+    .col-heads .spine { color: var(--spine); }
+    .col-heads .leads { color: var(--leads); }
+    .col-heads .submits { color: var(--submits); text-align: right; }
+    .climb {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0.85rem;
+    }
+    .rung {
+      display: grid;
+      grid-template-columns: minmax(160px, 200px) 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.55rem;
+      align-items: stretch;
+    }
+    .rung .axis {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      align-self: stretch;
+    }
+    .rung .flank.leads { grid-column: 2; grid-row: 1; }
+    .rung .flank.submits { grid-column: 3; grid-row: 1; }
+    .rung .primary {
+      grid-column: 2 / 4;
+      grid-row: 2;
+    }
+    .primary {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+      padding: 0.65rem 0.8rem 0.75rem;
+      cursor: pointer;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      width: 100%;
+      align-self: start;
+    }
+    .primary:hover { filter: brightness(1.02); }
+    .rung.is-open .primary {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+    }
+    .rung.is-open .axis {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+    }
+    .primary .p-label {
+      margin: 0 0 0.4rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .primary .snap {
+      margin: 0;
+      line-height: 1.45;
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--ink);
+    }
+    .primary .snap-hint {
+      margin: 0.4rem 0 0;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .primary .expand-body {
+      display: none;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--line);
+    }
+    .rung.is-open .primary .expand-body {
+      display: block;
+    }
+    .rung.is-open .primary .snap-hint {
+      display: none;
+    }
+    .expand-body .passage {
+      margin-top: 0.75rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid var(--line);
+    }
+    .expand-body .passage:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+    .expand-body .passage h3 {
+      margin: 0 0 0.4rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1rem;
+    }
+    .expand-body .verse {
+      margin: 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .expand-body .verse .ref {
+      font-weight: 700;
+      color: var(--accent);
+      margin-right: 0.35rem;
+    }
+    .expand-body .meta {
+      margin: 0 0 0.5rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .flank {
+      border: 1px solid var(--line);
+      padding: 0.7rem 0.75rem 0.8rem;
+      min-height: 4.5rem;
+    }
+    .flank.submits { background: var(--submits-bg); }
+    .flank.leads { background: var(--leads-bg); }
+    .flank .role {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.35rem;
+    }
+    .flank .who {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: 1.08rem;
+      line-height: 1.2;
+      margin: 0 0 0.35rem;
+    }
+    .flank .duty {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .axis {
+      border: 1.5px solid rgba(61, 52, 40, 0.35);
+      background: var(--spine-bg);
+      padding: 0.75rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      font: inherit;
+      color: inherit;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+    }
+    .axis:hover { filter: brightness(1.02); }
+    .axis[aria-selected="true"] {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+    }
+    .axis.peak {
+      background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg));
+      border-color: color-mix(in srgb, var(--peak) 50%, var(--spine));
+    }
+    .axis .n {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.25rem;
+    }
+    .axis .name {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+    .axis .short {
+      margin: 0.3rem 0 0;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+    .axis .charter {
+      margin: 0.4rem 0 0;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.3;
+    }
+    .detail {
+      margin-top: 1rem;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid var(--line);
+      padding: 1rem 1.15rem 1.2rem;
+    }
+    .detail .meta {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.35rem;
+    }
+    .detail h2 {
+      margin: 0 0 0.35rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.45rem;
+    }
+    .detail .builds {
+      margin: 0 0 0.85rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .pair .card {
+      border: 1px solid var(--line);
+      padding: 0.75rem 0.85rem;
+    }
+    .pair .card.leads { background: color-mix(in srgb, var(--leads-block) 45%, white); }
+    .pair .card.submits { background: color-mix(in srgb, var(--submits-block) 45%, white); }
+    .pair .card h3 {
+      margin: 0 0 0.3rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .pair .card .who {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 0 0 0.35rem;
+    }
+    .pair .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .passage {
+      margin-top: 0.85rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--line);
+    }
+    .passage h3 {
+      margin: 0 0 0.45rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+    }
+    .verse {
+      margin: 0 0 0.45rem;
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+    .verse .ref {
+      font-weight: 700;
+      color: var(--accent);
+      margin-right: 0.35rem;
+    }
+    .site-foot {
+      margin-top: 1.75rem;
+      padding: 1.35rem 0 0.5rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+    .site-foot h1 { font-size: clamp(1.55rem, 3vw, 2.1rem); }
+    .site-foot .lede { margin: 0.55rem auto 0; max-width: 36rem; }
+    .site-foot .frame {
+      margin: 0.85rem auto 0;
+      max-width: 36rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .site-foot .nav { justify-content: center; margin-top: 0.9rem; }
+    .climb-cue {
+      position: sticky;
+      bottom: 0.85rem;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+      margin-top: -0.25rem;
+    }
+    .climb-cue span {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(247, 242, 232, 0.92);
+      border: 1px solid var(--line);
+      padding: 0.4rem 0.75rem;
+      box-shadow: 0 6px 18px rgba(40, 30, 18, 0.08);
+    }
+    .climb-cue[hidden] { display: none; }
+    .hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    .side-door {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.75rem 0.5rem;
+      min-width: 2.75rem;
+      background: color-mix(in srgb, var(--paper) 92%, white);
+      border: 1px solid var(--line);
+      border-left: 0;
+      border-radius: 0 0.35rem 0.35rem 0;
+      box-shadow: 4px 0 16px rgba(40, 30, 18, 0.06);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .side-door:hover {
+      background: #fff;
+      color: var(--ink);
+    }
+    .side-door-label {
+      writing-mode: vertical-rl;
+    }
+    .side-door-arrow {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    @media (max-width: 640px) {
+      .side-door {
+        top: auto;
+        bottom: 0.75rem;
+        transform: none;
+        flex-direction: row;
+        border-left: 1px solid var(--line);
+        border-radius: 0.35rem;
+        padding: 0.5rem 0.75rem;
+        left: 0.75rem;
+      }
+      .side-door-label {
+        writing-mode: horizontal-tb;
+      }
+    }
+    @media (max-width: 860px) {
+      .col-heads, .rung, .pair { grid-template-columns: 1fr; }
+      .col-heads .leads, .col-heads .submits { text-align: left; }
+      .rung .axis,
+      .rung .flank.leads,
+      .rung .flank.submits,
+      .rung .primary {
+        grid-column: 1;
+        grid-row: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="side-door" href="./climb.html" aria-label="Back to The Climb">
+    <span class="side-door-arrow" aria-hidden="true">←</span>
+    <span class="side-door-label">The Climb</span>
+  </a>
+  <div class="wrap">
+    <p class="eyebrow">Man &amp; Woman · Order under the throne</p>
+    <h1>The Order</h1>
+    <p class="lede">A God of Order — the submission climb from family to throne.</p>
+
+    <div class="foundation-banner theme">
+      <strong>Romans 13:1–7</strong>
+      <p>Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God.</p>
+    </div>
+
+    <p class="hint">Theme lines are verse paraphrases. Click the <strong>office</strong> or <strong>theme</strong>.</p>
+
+    <div class="col-heads" aria-hidden="true">
+      <span class="spine">Office</span>
+      <span class="leads">Leads</span>
+      <span class="submits">Submits</span>
+    </div>
+
+    <div class="climb" id="climb"></div>
+    <div class="climb-cue" id="climbCue" hidden><span>↑ Scroll up to climb</span></div>
+
+    <footer class="site-foot" id="foundation">
+      <h1>The Order</h1>
+      <p class="lede">
+        Family → Work → Marriage → body → elders → governors → kings → nation/exile → God’s throne (Christ).
+      </p>
+      <p class="frame">
+        Same fractal at every scale. Strength is for those under your care.
+        When men forbid what God commands: Acts 5:29.
+      </p>
+      <nav class="nav">
+        <a href="./climb.html">The Climb</a>
+        <a href="./index.html">The Way of Life</a>
+        <a href="./proverbs-1-9.html">Foundation</a>
+        <a href="./verses.html">Verses</a>
+        <a href="./themes.html">Themes</a>
+        <a href="./reports/">Reports</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    const DATA = {"title": "The Submission Climb", "translation": "ESV", "note": "Bottom rung first. Nation · Exile = posture under rulers who do not honor God (Jer 29; sojourners).", "foundation": "Psalm 89:14", "rungs": [{"id": "child", "name": "Family", "scope": "Parents & children", "builds": "First submission learned — character that later upholds every higher rung", "leads": {"who": "Parents", "duty": "Do not provoke; bring up in the discipline and instruction of the Lord; train the way."}, "submits": {"who": "Children", "duty": "Obey in the Lord; honor father and mother."}, "charter": "Eph 6:1–4", "passages": [{"label": "Eph 6:1–4", "verses": [{"ref": "Ephesians 6:1", "chapter": 6, "verse": 1, "text": "Children, obey your parents in the Lord, for this is right."}, {"ref": "Ephesians 6:2", "chapter": 6, "verse": 2, "text": "“Honor your father and mother” (this is the first commandment with a promise),"}, {"ref": "Ephesians 6:3", "chapter": 6, "verse": 3, "text": "“that it may go well with you and that you may live long in the land.”"}, {"ref": "Ephesians 6:4", "chapter": 6, "verse": 4, "text": "Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord."}], "primary": true, "snapshot": "Children, obey your parents in the Lord—this is right—and honor your father and mother. Fathers, do not provoke your children, but bring them up in the discipline and instruction of the Lord."}, {"label": "Col 3:20–21", "verses": [{"ref": "Colossians 3:20", "chapter": 3, "verse": 20, "text": "Children, obey your parents in everything, for this pleases the Lord."}, {"ref": "Colossians 3:21", "chapter": 3, "verse": 21, "text": "Fathers, do not provoke your children, lest they become discouraged."}]}, {"label": "Matt 15:4", "verses": [{"ref": "Matthew 15:4", "chapter": 15, "verse": 4, "text": "For God commanded, ‘Honor your father and your mother,’ and, ‘Whoever reviles father or mother must surely die.’"}]}], "office": "Family", "snapshot": "Children, obey your parents in the Lord—this is right—and honor your father and mother. Fathers, do not provoke your children, but bring them up in the discipline and instruction of the Lord."}, {"id": "worker", "name": "Work", "scope": "Masters & workers", "builds": "Work under authority with sincerity — same heart later required under elders and rulers", "leads": {"who": "Masters", "duty": "Treat justly and fairly; stop threatening; remember the Master in heaven shows no partiality."}, "submits": {"who": "Workers / bondservants", "duty": "Obey with sincere heart as to Christ — not eye-service; even toward unjust, with respect (Peter)."}, "charter": "Eph 6:5–9", "passages": [{"label": "Eph 6:5–9", "verses": [{"ref": "Ephesians 6:5", "chapter": 6, "verse": 5, "text": "Bondservants, obey your earthly masters with fear and trembling, with a sincere heart, as you would Christ,"}, {"ref": "Ephesians 6:6", "chapter": 6, "verse": 6, "text": "not by the way of eye-service, as people-pleasers, but as bondservants of Christ, doing the will of God from the heart,"}, {"ref": "Ephesians 6:7", "chapter": 6, "verse": 7, "text": "rendering service with a good will as to the Lord and not to man,"}, {"ref": "Ephesians 6:8", "chapter": 6, "verse": 8, "text": "knowing that whatever good anyone does, this he will receive back from the Lord, whether he is a bondservant or is free."}, {"ref": "Ephesians 6:9", "chapter": 6, "verse": 9, "text": "Masters, do the same to them, and stop your threatening, knowing that he who is both their Master and yours is in heaven, and that there is no partiality with him."}], "primary": true, "snapshot": "Bondservants, obey your earthly masters with a sincere heart, as you would Christ—not by eye-service, but as servants of Christ. Masters, do the same to them, and stop threatening, knowing that you and they have the same Master in heaven."}, {"label": "Col 3:22–25", "verses": [{"ref": "Colossians 3:22", "chapter": 3, "verse": 22, "text": "Bondservants, obey in everything those who are your earthly masters, not by way of eye-service, as people-pleasers, but with sincerity of heart, fearing the Lord."}, {"ref": "Colossians 3:23", "chapter": 3, "verse": 23, "text": "Whatever you do, work heartily, as for the Lord and not for men,"}, {"ref": "Colossians 3:24", "chapter": 3, "verse": 24, "text": "knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ."}, {"ref": "Colossians 3:25", "chapter": 3, "verse": 25, "text": "For the wrongdoer will be paid back for the wrong he has done, and there is no partiality."}]}, {"label": "Col 4:1", "verses": [{"ref": "Colossians 4:1", "chapter": 4, "verse": 1, "text": "Masters, treat your bondservants justly and fairly, knowing that you also have a Master in heaven."}]}, {"label": "Titus 2:9–10", "verses": [{"ref": "Titus 2:9", "chapter": 2, "verse": 9, "text": "Bondservants are to be submissive to their own masters in everything; they are to be well-pleasing, not argumentative,"}, {"ref": "Titus 2:10", "chapter": 2, "verse": 10, "text": "not pilfering, but showing all good faith, so that in everything they may adorn the doctrine of God our Savior."}]}, {"label": "1 Pet 2:18", "verses": [{"ref": "1 Peter 2:18", "chapter": 2, "verse": 18, "text": "Servants, be subject to your masters with all respect, not only to the good and gentle but also to the unjust."}]}, {"label": "1 Tim 6:1–2", "verses": [{"ref": "1 Timothy 6:1", "chapter": 6, "verse": 1, "text": "Let all who are under a yoke as bondservants regard their own masters as worthy of all honor, so that the name of God and the teaching may not be reviled."}, {"ref": "1 Timothy 6:2", "chapter": 6, "verse": 2, "text": "Those who have believing masters must not be disrespectful on the ground that they are brothers; rather they must serve all the better since those who benefit by their good service are believers and beloved. Teach and urge these things."}]}], "office": "Work", "snapshot": "Bondservants, obey your earthly masters with a sincere heart, as you would Christ—not by eye-service, but as servants of Christ. Masters, do the same to them, and stop threatening, knowing that you and they have the same Master in heaven."}, {"id": "wife", "name": "Marriage", "scope": "Husband & wife", "builds": "Covenant core of the home — the proving ground for elder/deacon (1 Tim 3)", "leads": {"who": "Husband", "duty": "Love as Christ loved the church; give himself up; nourish and cherish; honor as co-heir; manage the household well."}, "submits": {"who": "Wife", "duty": "Submit to her own husband as to the Lord; respect; learn under older women to love husband and children, be self-controlled and pure (Titus 2)."}, "charter": "Eph 5:22–33", "passages": [{"label": "Eph 5:22–33", "verses": [{"ref": "Ephesians 5:22", "chapter": 5, "verse": 22, "text": "Wives, submit to your own husbands, as to the Lord."}, {"ref": "Ephesians 5:23", "chapter": 5, "verse": 23, "text": "For the husband is the head of the wife even as Christ is the head of the church, his body, and is himself its Savior."}, {"ref": "Ephesians 5:24", "chapter": 5, "verse": 24, "text": "Now as the church submits to Christ, so also wives should submit in everything to their husbands."}, {"ref": "Ephesians 5:25", "chapter": 5, "verse": 25, "text": "Husbands, love your wives, as Christ loved the church and gave himself up for her,"}, {"ref": "Ephesians 5:26", "chapter": 5, "verse": 26, "text": "that he might sanctify her, having cleansed her by the washing of water with the word,"}, {"ref": "Ephesians 5:27", "chapter": 5, "verse": 27, "text": "so that he might present the church to himself in splendor, without spot or wrinkle or any such thing, that she might be holy and without blemish."}, {"ref": "Ephesians 5:28", "chapter": 5, "verse": 28, "text": "In the same way husbands should love their wives as their own bodies. He who loves his wife loves himself."}, {"ref": "Ephesians 5:29", "chapter": 5, "verse": 29, "text": "For no one ever hated his own flesh, but nourishes and cherishes it, just as Christ does the church,"}, {"ref": "Ephesians 5:30", "chapter": 5, "verse": 30, "text": "because we are members of his body."}, {"ref": "Ephesians 5:31", "chapter": 5, "verse": 31, "text": "“Therefore a man shall leave his father and mother and hold fast to his wife, and the two shall become one flesh.”"}, {"ref": "Ephesians 5:32", "chapter": 5, "verse": 32, "text": "This mystery is profound, and I am saying that it refers to Christ and the church."}, {"ref": "Ephesians 5:33", "chapter": 5, "verse": 33, "text": "However, let each one of you love his wife as himself, and let the wife see that she respects her husband."}], "primary": true, "snapshot": "Wives, submit to your own husbands as to the Lord, for the husband is the head of the wife as Christ is head of the church. Husbands, love your wives as Christ loved the church and gave himself up for her."}, {"label": "Col 3:18–19", "primary": false, "verses": [{"ref": "Colossians 3:18", "chapter": 3, "verse": 18, "text": "Wives, submit to your husbands, as is fitting in the Lord."}, {"ref": "Colossians 3:19", "chapter": 3, "verse": 19, "text": "Husbands, love your wives, and do not be harsh with them."}]}, {"label": "1 Pet 3:1–7", "primary": false, "verses": [{"ref": "1 Peter 3:1", "chapter": 3, "verse": 1, "text": "Likewise, wives, be subject to your own husbands, so that even if some do not obey the word, they may be won without a word by the conduct of their wives,"}, {"ref": "1 Peter 3:2", "chapter": 3, "verse": 2, "text": "when they see your respectful and pure conduct."}, {"ref": "1 Peter 3:3", "chapter": 3, "verse": 3, "text": "Do not let your adorning be external—the braiding of hair and the putting on of gold jewelry, or the clothing you wear—"}, {"ref": "1 Peter 3:4", "chapter": 3, "verse": 4, "text": "but let your adorning be the hidden person of the heart with the imperishable beauty of a gentle and quiet spirit, which in God's sight is very precious."}, {"ref": "1 Peter 3:5", "chapter": 3, "verse": 5, "text": "For this is how the holy women who hoped in God used to adorn themselves, by submitting to their own husbands,"}, {"ref": "1 Peter 3:6", "chapter": 3, "verse": 6, "text": "as Sarah obeyed Abraham, calling him lord. And you are her children, if you do good and do not fear anything that is frightening."}, {"ref": "1 Peter 3:7", "chapter": 3, "verse": 7, "text": "Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered."}]}, {"label": "Titus 2:1–8", "primary": false, "verses": [{"ref": "Titus 2:1", "chapter": 2, "verse": 1, "text": "But as for you, teach what accords with sound doctrine."}, {"ref": "Titus 2:2", "chapter": 2, "verse": 2, "text": "Older men are to be sober-minded, dignified, self-controlled, sound in faith, in love, and in steadfastness."}, {"ref": "Titus 2:3", "chapter": 2, "verse": 3, "text": "Older women likewise are to be reverent in behavior, not slanderers or slaves to much wine. They are to teach what is good,"}, {"ref": "Titus 2:4", "chapter": 2, "verse": 4, "text": "and so train the young women to love their husbands and children,"}, {"ref": "Titus 2:5", "chapter": 2, "verse": 5, "text": "to be self-controlled, pure, working at home, kind, and submissive to their own husbands, that the word of God may not be reviled."}, {"ref": "Titus 2:6", "chapter": 2, "verse": 6, "text": "Likewise, urge the younger men to be self-controlled."}, {"ref": "Titus 2:7", "chapter": 2, "verse": 7, "text": "Show yourself in all respects to be a model of good works, and in your teaching show integrity, dignity,"}, {"ref": "Titus 2:8", "chapter": 2, "verse": 8, "text": "and sound speech that cannot be condemned, so that an opponent may be put to shame, having nothing evil to say about us."}]}, {"label": "1 Cor 11:3–12", "primary": false, "verses": [{"ref": "1 Corinthians 11:3", "chapter": 11, "verse": 3, "text": "But I want you to understand that the head of every man is Christ, the head of a wife is her husband, and the head of Christ is God."}, {"ref": "1 Corinthians 11:4", "chapter": 11, "verse": 4, "text": "Every man who prays or prophesies with his head covered dishonors his head,"}, {"ref": "1 Corinthians 11:5", "chapter": 11, "verse": 5, "text": "but every wife who prays or prophesies with her head uncovered dishonors her head, since it is the same as if her head were shaven."}, {"ref": "1 Corinthians 11:6", "chapter": 11, "verse": 6, "text": "For if a wife will not cover her head, then she should cut her hair short. But since it is disgraceful for a wife to cut off her hair or shave her head, let her cover her head."}, {"ref": "1 Corinthians 11:7", "chapter": 11, "verse": 7, "text": "For a man ought not to cover his head, since he is the image and glory of God, but woman is the glory of man."}, {"ref": "1 Corinthians 11:8", "chapter": 11, "verse": 8, "text": "For man was not made from woman, but woman from man."}, {"ref": "1 Corinthians 11:9", "chapter": 11, "verse": 9, "text": "Neither was man created for woman, but woman for man."}, {"ref": "1 Corinthians 11:10", "chapter": 11, "verse": 10, "text": "That is why a wife ought to have a symbol of authority on her head, because of the angels."}, {"ref": "1 Corinthians 11:11", "chapter": 11, "verse": 11, "text": "Nevertheless, in the Lord woman is not independent of man nor man of woman;"}, {"ref": "1 Corinthians 11:12", "chapter": 11, "verse": 12, "text": "for as woman was made from man, so man is now born of woman. And all things are from God."}]}, {"label": "Heb 13:4", "primary": false, "verses": [{"ref": "Hebrews 13:4", "chapter": 13, "verse": 4, "text": "Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous."}]}, {"label": "Matt 19:4–6", "primary": false, "verses": [{"ref": "Matthew 19:4", "chapter": 19, "verse": 4, "text": "He answered, “Have you not read that he who created them from the beginning made them male and female,"}, {"ref": "Matthew 19:5", "chapter": 19, "verse": 5, "text": "and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’?"}, {"ref": "Matthew 19:6", "chapter": 19, "verse": 6, "text": "So they are no longer two but one flesh. What therefore God has joined together, let not man separate.”"}]}, {"label": "Mark 10:6–9", "primary": false, "verses": [{"ref": "Mark 10:6", "chapter": 10, "verse": 6, "text": "But from the beginning of creation, ‘God made them male and female.’"}, {"ref": "Mark 10:7", "chapter": 10, "verse": 7, "text": "‘Therefore a man shall leave his father and mother and hold fast to his wife,"}, {"ref": "Mark 10:8", "chapter": 10, "verse": 8, "text": "and the two shall become one flesh.’ So they are no longer two but one flesh."}, {"ref": "Mark 10:9", "chapter": 10, "verse": 9, "text": "What therefore God has joined together, let not man separate.”"}]}, {"label": "Gen 2:18–25", "primary": false, "verses": [{"ref": "Genesis 2:18", "chapter": 2, "verse": 18, "text": "Then the Lord God said, “It is not good that the man should be alone; I will make him a helper fit for him.”"}, {"ref": "Genesis 2:19", "chapter": 2, "verse": 19, "text": "Now out of the ground the Lord God had formed every beast of the field and every bird of the heavens and brought them to the man to see what he would call them. And whatever the man called every living creature, that was its name."}, {"ref": "Genesis 2:20", "chapter": 2, "verse": 20, "text": "The man gave names to all livestock and to the birds of the heavens and to every beast of the field. But for Adam there was not found a helper fit for him."}, {"ref": "Genesis 2:21", "chapter": 2, "verse": 21, "text": "So the Lord God caused a deep sleep to fall upon the man, and while he slept took one of his ribs and closed up its place with flesh."}, {"ref": "Genesis 2:22", "chapter": 2, "verse": 22, "text": "And the rib that the Lord God had taken from the man he made into a woman and brought her to the man."}, {"ref": "Genesis 2:23", "chapter": 2, "verse": 23, "text": "Then the man said, “This at last is bone of my bones and flesh of my flesh; she shall be called Woman, because she was taken out of Man.”"}, {"ref": "Genesis 2:24", "chapter": 2, "verse": 24, "text": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh."}, {"ref": "Genesis 2:25", "chapter": 2, "verse": 25, "text": "And the man and his wife were both naked and were not ashamed."}]}, {"label": "1 Tim 3:2–5", "primary": false, "verses": [{"ref": "1 Timothy 3:2", "chapter": 3, "verse": 2, "text": "Therefore an overseer must be above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach,"}, {"ref": "1 Timothy 3:3", "chapter": 3, "verse": 3, "text": "not a drunkard, not violent but gentle, not quarrelsome, not a lover of money."}, {"ref": "1 Timothy 3:4", "chapter": 3, "verse": 4, "text": "He must manage his own household well, with all dignity keeping his children submissive,"}, {"ref": "1 Timothy 3:5", "chapter": 3, "verse": 5, "text": "for if someone does not know how to manage his own household, how will he care for God's church?"}]}, {"label": "1 Tim 3:11–12", "primary": false, "verses": [{"ref": "1 Timothy 3:11", "chapter": 3, "verse": 11, "text": "Their wives likewise must be dignified, not slanderers, but sober-minded, faithful in all things."}, {"ref": "1 Timothy 3:12", "chapter": 3, "verse": 12, "text": "Let deacons each be the husband of one wife, managing their children and their own households well."}]}, {"label": "Prov 31:10–12", "primary": false, "verses": [{"ref": "Proverbs 31:10", "chapter": 31, "verse": 10, "text": "An excellent wife who can find? She is far more precious than jewels."}, {"ref": "Proverbs 31:11", "chapter": 31, "verse": 11, "text": "The heart of her husband trusts in her, and he will have no lack of gain."}, {"ref": "Proverbs 31:12", "chapter": 31, "verse": 12, "text": "She does him good, and not harm, all the days of her life."}]}], "office": "Marriage", "snapshot": "Wives, submit to your own husbands as to the Lord, for the husband is the head of the wife as Christ is head of the church. Husbands, love your wives as Christ loved the church and gave himself up for her."}, {"id": "church-body", "name": "Church · Body", "scope": "One another under Christ", "builds": "Mutual honor under Christ — the people who will also submit to soul-watching leaders", "leads": {"who": "Christ · fellow laborers", "duty": "Serve; wash feet; count others more significant; do not lord it like Gentile rulers."}, "submits": {"who": "Believers (one another)", "duty": "Submit to one another out of reverence for Christ; outdo in honor; be subject to fellow workers."}, "charter": "Eph 5:21", "passages": [{"label": "Eph 5:21", "verses": [{"ref": "Ephesians 5:21", "chapter": 5, "verse": 21, "text": "submitting to one another out of reverence for Christ."}], "primary": true, "snapshot": "Submitting to one another out of reverence for Christ."}, {"label": "Phil 2:3–8", "verses": [{"ref": "Philippians 2:3", "chapter": 2, "verse": 3, "text": "Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves."}, {"ref": "Philippians 2:4", "chapter": 2, "verse": 4, "text": "Let each of you look not only to his own interests, but also to the interests of others."}, {"ref": "Philippians 2:5", "chapter": 2, "verse": 5, "text": "Have this mind among yourselves, which is yours in Christ Jesus,"}, {"ref": "Philippians 2:6", "chapter": 2, "verse": 6, "text": "who, though he was in the form of God, did not count equality with God a thing to be grasped,"}, {"ref": "Philippians 2:7", "chapter": 2, "verse": 7, "text": "but emptied himself, by taking the form of a servant, being born in the likeness of men."}, {"ref": "Philippians 2:8", "chapter": 2, "verse": 8, "text": "And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross."}]}, {"label": "Rom 12:10", "verses": [{"ref": "Romans 12:10", "chapter": 12, "verse": 10, "text": "Love one another with brotherly affection. Outdo one another in showing honor."}]}, {"label": "1 Cor 16:15–16", "verses": [{"ref": "1 Corinthians 16:15", "chapter": 16, "verse": 15, "text": "Now I urge you, brothers—you know that the household of Stephanas were the first converts in Achaia, and that they have devoted themselves to the service of the saints—"}, {"ref": "1 Corinthians 16:16", "chapter": 16, "verse": 16, "text": "be subject to such as these, and to every fellow worker and laborer."}]}, {"label": "1 Thess 5:12–15", "verses": [{"ref": "1 Thessalonians 5:12", "chapter": 5, "verse": 12, "text": "We ask you, brothers, to respect those who labor among you and are over you in the Lord and admonish you,"}, {"ref": "1 Thessalonians 5:13", "chapter": 5, "verse": 13, "text": "and to esteem them very highly in love because of their work. Be at peace among yourselves."}, {"ref": "1 Thessalonians 5:14", "chapter": 5, "verse": 14, "text": "And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all."}, {"ref": "1 Thessalonians 5:15", "chapter": 5, "verse": 15, "text": "See that no one repays anyone evil for evil, but always seek to do good to one another and to everyone."}]}, {"label": "Matt 20:25–28", "verses": [{"ref": "Matthew 20:25", "chapter": 20, "verse": 25, "text": "But Jesus called them to him and said, “You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them."}, {"ref": "Matthew 20:26", "chapter": 20, "verse": 26, "text": "It shall not be so among you. But whoever would be great among you must be your servant,"}, {"ref": "Matthew 20:27", "chapter": 20, "verse": 27, "text": "and whoever would be first among you must be your slave,"}, {"ref": "Matthew 20:28", "chapter": 20, "verse": 28, "text": "even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many.”"}]}], "office": "Church · Body", "snapshot": "Submitting to one another out of reverence for Christ."}, {"id": "church-leaders", "name": "Church · Oversight", "scope": "Elders & flock", "builds": "Household competence (rungs below) qualifies a man for this office (1 Tim 3)", "leads": {"who": "Elders / overseers", "duty": "Watch over souls; shepherd willingly, not domineering; give account to God; able to teach; manage household well first."}, "submits": {"who": "The flock", "duty": "Obey and submit so leaders may watch with joy, not groaning; respect those who labor among you."}, "charter": "Heb 13:17", "passages": [{"label": "Heb 13:17", "verses": [{"ref": "Hebrews 13:17", "chapter": 13, "verse": 17, "text": "Obey your leaders and submit to them, for they are keeping watch over your souls, as those who will have to give an account. Let them do this with joy and not with groaning, for that would be of no advantage to you."}], "primary": true, "snapshot": "Obey your leaders and submit to them, for they are keeping watch over your souls as those who will give an account. Let them do this with joy and not with groaning, for that would be of no advantage to you."}, {"label": "Heb 13:7", "verses": [{"ref": "Hebrews 13:7", "chapter": 13, "verse": 7, "text": "Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith."}]}, {"label": "1 Pet 5:1–5", "verses": [{"ref": "1 Peter 5:1", "chapter": 5, "verse": 1, "text": "So I exhort the elders among you, as a fellow elder and a witness of the sufferings of Christ, as well as a partaker in the glory that is going to be revealed:"}, {"ref": "1 Peter 5:2", "chapter": 5, "verse": 2, "text": "shepherd the flock of God that is among you, exercising oversight, not under compulsion, but willingly, as God would have you; not for shameful gain, but eagerly;"}, {"ref": "1 Peter 5:3", "chapter": 5, "verse": 3, "text": "not domineering over those in your charge, but being examples to the flock."}, {"ref": "1 Peter 5:4", "chapter": 5, "verse": 4, "text": "And when the chief Shepherd appears, you will receive the unfading crown of glory."}, {"ref": "1 Peter 5:5", "chapter": 5, "verse": 5, "text": "Likewise, you who are younger, be subject to the elders. Clothe yourselves, all of you, with humility toward one another, for “God opposes the proud but gives grace to the humble.”"}]}, {"label": "1 Tim 3:1–7", "verses": [{"ref": "1 Timothy 3:1", "chapter": 3, "verse": 1, "text": "The saying is trustworthy: If anyone aspires to the office of overseer, he desires a noble task."}, {"ref": "1 Timothy 3:2", "chapter": 3, "verse": 2, "text": "Therefore an overseer must be above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach,"}, {"ref": "1 Timothy 3:3", "chapter": 3, "verse": 3, "text": "not a drunkard, not violent but gentle, not quarrelsome, not a lover of money."}, {"ref": "1 Timothy 3:4", "chapter": 3, "verse": 4, "text": "He must manage his own household well, with all dignity keeping his children submissive,"}, {"ref": "1 Timothy 3:5", "chapter": 3, "verse": 5, "text": "for if someone does not know how to manage his own household, how will he care for God's church?"}, {"ref": "1 Timothy 3:6", "chapter": 3, "verse": 6, "text": "He must not be a recent convert, or he may become puffed up with conceit and fall into the condemnation of the devil."}, {"ref": "1 Timothy 3:7", "chapter": 3, "verse": 7, "text": "Moreover, he must be well thought of by outsiders, so that he may not fall into disgrace, into a snare of the devil."}]}, {"label": "1 Tim 3:14–15", "verses": [{"ref": "1 Timothy 3:14", "chapter": 3, "verse": 14, "text": "I hope to come to you soon, but I am writing these things to you so that,"}, {"ref": "1 Timothy 3:15", "chapter": 3, "verse": 15, "text": "if I delay, you may know how one ought to behave in the household of God, which is the church of the living God, a pillar and buttress of the truth."}]}, {"label": "1 Tim 5:17–20", "verses": [{"ref": "1 Timothy 5:17", "chapter": 5, "verse": 17, "text": "Let the elders who rule well be considered worthy of double honor, especially those who labor in preaching and teaching."}, {"ref": "1 Timothy 5:18", "chapter": 5, "verse": 18, "text": "For the Scripture says, “You shall not muzzle an ox when it treads out the grain,” and, “The laborer deserves his wages.”"}, {"ref": "1 Timothy 5:19", "chapter": 5, "verse": 19, "text": "Do not admit a charge against an elder except on the evidence of two or three witnesses."}, {"ref": "1 Timothy 5:20", "chapter": 5, "verse": 20, "text": "As for those who persist in sin, rebuke them in the presence of all, so that the rest may stand in fear."}]}, {"label": "Titus 1:5–9", "verses": [{"ref": "Titus 1:5", "chapter": 1, "verse": 5, "text": "This is why I left you in Crete, so that you might put what remained into order, and appoint elders in every town as I directed you—"}, {"ref": "Titus 1:6", "chapter": 1, "verse": 6, "text": "if anyone is above reproach, the husband of one wife, and his children are believers and not open to the charge of debauchery or insubordination."}, {"ref": "Titus 1:7", "chapter": 1, "verse": 7, "text": "For an overseer, as God's steward, must be above reproach. He must not be arrogant or quick-tempered or a drunkard or violent or greedy for gain,"}, {"ref": "Titus 1:8", "chapter": 1, "verse": 8, "text": "but hospitable, a lover of good, self-controlled, upright, holy, and disciplined."}, {"ref": "Titus 1:9", "chapter": 1, "verse": 9, "text": "He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it."}]}], "office": "Church · Oversight", "snapshot": "Obey your leaders and submit to them, for they are keeping watch over your souls as those who will give an account. Let them do this with joy and not with groaning, for that would be of no advantage to you."}, {"id": "local-gov", "name": "Civil · Local", "scope": "Governors & citizens", "builds": "Near civil order — same submission posture, nearer office than the emperor", "leads": {"who": "Governors", "duty": "Punish those who do evil and praise those who do good (Peter’s framing)."}, "submits": {"who": "Citizens", "duty": "Be subject for the Lord’s sake to every human institution — including governors."}, "charter": "1 Pet 2:13–14", "passages": [{"label": "1 Pet 2:13–14", "verses": [{"ref": "1 Peter 2:13", "chapter": 2, "verse": 13, "text": "Be subject for the Lord's sake to every human institution, whether it be to the emperor as supreme,"}, {"ref": "1 Peter 2:14", "chapter": 2, "verse": 14, "text": "or to governors as sent by him to punish those who do evil and to praise those who do good."}], "primary": true, "snapshot": "Be subject for the Lord’s sake to every human institution, whether to the emperor as supreme, or to governors sent by him to punish those who do evil and to praise those who do good."}, {"label": "1 Pet 2:15–17", "verses": [{"ref": "1 Peter 2:15", "chapter": 2, "verse": 15, "text": "For this is the will of God, that by doing good you should put to silence the ignorance of foolish people."}, {"ref": "1 Peter 2:16", "chapter": 2, "verse": 16, "text": "Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God."}, {"ref": "1 Peter 2:17", "chapter": 2, "verse": 17, "text": "Honor everyone. Love the brotherhood. Fear God. Honor the emperor."}]}, {"label": "Titus 3:1–2", "verses": [{"ref": "Titus 3:1", "chapter": 3, "verse": 1, "text": "Remind them to be submissive to rulers and authorities, to be obedient, to be ready for every good work,"}, {"ref": "Titus 3:2", "chapter": 3, "verse": 2, "text": "to speak evil of no one, to avoid quarreling, to be gentle, and to show perfect courtesy toward all people."}]}], "office": "Civil · Local", "snapshot": "Be subject for the Lord’s sake to every human institution, whether to the emperor as supreme, or to governors sent by him to punish those who do evil and to praise those who do good."}, {"id": "kings", "name": "Civil · Kings", "scope": "Rulers & people", "builds": "Widest earthly common grace — taxes, honor, prayer for those in high position", "leads": {"who": "Kings & governing authorities", "duty": "God’s servants for good; bear the sword against wrongdoing (Rom 13)."}, "submits": {"who": "The people", "duty": "Be subject; pay taxes; respect; honor; pray for kings and all in high positions."}, "charter": "Rom 13:1–7", "passages": [{"label": "Rom 13:1–7", "verses": [{"ref": "Romans 13:1", "chapter": 13, "verse": 1, "text": "Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God."}, {"ref": "Romans 13:2", "chapter": 13, "verse": 2, "text": "Therefore whoever resists the authorities resists what God has appointed, and those who resist will incur judgment."}, {"ref": "Romans 13:3", "chapter": 13, "verse": 3, "text": "For rulers are not a terror to good conduct, but to bad. Would you have no fear of the one who is in authority? Then do what is good, and you will receive his approval,"}, {"ref": "Romans 13:4", "chapter": 13, "verse": 4, "text": "for he is God's servant for your good. But if you do wrong, be afraid, for he does not bear the sword in vain. For he is the servant of God, an avenger who carries out God's wrath on the wrongdoer."}, {"ref": "Romans 13:5", "chapter": 13, "verse": 5, "text": "Therefore one must be in subjection, not only to avoid God's wrath but also for the sake of conscience."}, {"ref": "Romans 13:6", "chapter": 13, "verse": 6, "text": "For because of this you also pay taxes, for the authorities are ministers of God, attending to this very thing."}, {"ref": "Romans 13:7", "chapter": 13, "verse": 7, "text": "Pay to all what is owed to them: taxes to whom taxes are owed, revenue to whom revenue is owed, respect to whom respect is owed, honor to whom honor is owed."}], "primary": true, "snapshot": "Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God."}, {"label": "1 Pet 2:13–17", "verses": [{"ref": "1 Peter 2:13", "chapter": 2, "verse": 13, "text": "Be subject for the Lord's sake to every human institution, whether it be to the emperor as supreme,"}, {"ref": "1 Peter 2:14", "chapter": 2, "verse": 14, "text": "or to governors as sent by him to punish those who do evil and to praise those who do good."}, {"ref": "1 Peter 2:15", "chapter": 2, "verse": 15, "text": "For this is the will of God, that by doing good you should put to silence the ignorance of foolish people."}, {"ref": "1 Peter 2:16", "chapter": 2, "verse": 16, "text": "Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God."}, {"ref": "1 Peter 2:17", "chapter": 2, "verse": 17, "text": "Honor everyone. Love the brotherhood. Fear God. Honor the emperor."}]}, {"label": "1 Tim 2:1–2", "verses": [{"ref": "1 Timothy 2:1", "chapter": 2, "verse": 1, "text": "First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people,"}, {"ref": "1 Timothy 2:2", "chapter": 2, "verse": 2, "text": "for kings and all who are in high positions, that we may lead a peaceful and quiet life, godly and dignified in every way."}]}, {"label": "Matt 22:21", "verses": [{"ref": "Matthew 22:21", "chapter": 22, "verse": 21, "text": "They said, “Caesar's.” Then he said to them, “Therefore render to Caesar the things that are Caesar's, and to God the things that are God's.”"}]}, {"label": "Titus 3:1", "verses": [{"ref": "Titus 3:1", "chapter": 3, "verse": 1, "text": "Remind them to be submissive to rulers and authorities, to be obedient, to be ready for every good work,"}]}], "office": "Civil · Kings", "snapshot": "Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God."}, {"id": "nation-exile", "name": "Nation · Exile", "office": "Nation · Exile", "scope": "Under a non–God-honoring ruler", "builds": "When the nation that holds you does not honor God — still seek its peace, render what is due, and keep God first when commanded to sin", "leads": {"who": "The host nation / captors / pagan rulers", "duty": "God may use even ungodly rulers; they remain accountable to Him. (The exile’s call is chiefly to the people under them.)"}, "submits": {"who": "God’s people in diaspora / sojourners", "duty": "Seek the welfare of the city; pray for it; live quietly and peaceably; render to Caesar what is Caesar’s; honor the emperor — yet obey God rather than men when commanded against the Lord."}, "charter": "Jeremiah 29:4–7", "snapshot": "Build houses and live in them; seek the welfare of the city where I have sent you into exile, and pray to the Lord on its behalf, for in its welfare you will find your welfare.", "peak": false, "passages": [{"label": "Jer 29:4–7", "primary": true, "verses": [{"ref": "Jeremiah 29:4", "chapter": 29, "verse": 4, "text": "“Thus says the Lord of hosts, the God of Israel, to all the exiles whom I have sent into exile from Jerusalem to Babylon:"}, {"ref": "Jeremiah 29:5", "chapter": 29, "verse": 5, "text": "Build houses and live in them; plant gardens and eat their produce."}, {"ref": "Jeremiah 29:6", "chapter": 29, "verse": 6, "text": "Take wives and have sons and daughters; take wives for your sons, and give your daughters in marriage, that they may bear sons and daughters; multiply there, and do not decrease."}, {"ref": "Jeremiah 29:7", "chapter": 29, "verse": 7, "text": "But seek the welfare of the city where I have sent you into exile, and pray to the Lord on its behalf, for in its welfare you will find your welfare."}], "snapshot": "Build houses and live in them; seek the welfare of the city where I have sent you into exile, and pray to the Lord on its behalf, for in its welfare you will find your welfare."}, {"label": "1 Pet 2:11–17", "primary": false, "verses": [{"ref": "1 Peter 2:11", "chapter": 2, "verse": 11, "text": "Beloved, I urge you as sojourners and exiles to abstain from the passions of the flesh, which wage war against your soul."}, {"ref": "1 Peter 2:12", "chapter": 2, "verse": 12, "text": "Keep your conduct among the Gentiles honorable, so that when they speak against you as evildoers, they may see your good deeds and glorify God on the day of visitation."}, {"ref": "1 Peter 2:13", "chapter": 2, "verse": 13, "text": "Be subject for the Lord's sake to every human institution, whether it be to the emperor as supreme,"}, {"ref": "1 Peter 2:14", "chapter": 2, "verse": 14, "text": "or to governors as sent by him to punish those who do evil and to praise those who do good."}, {"ref": "1 Peter 2:15", "chapter": 2, "verse": 15, "text": "For this is the will of God, that by doing good you should put to silence the ignorance of foolish people."}, {"ref": "1 Peter 2:16", "chapter": 2, "verse": 16, "text": "Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God."}, {"ref": "1 Peter 2:17", "chapter": 2, "verse": 17, "text": "Honor everyone. Love the brotherhood. Fear God. Honor the emperor."}]}, {"label": "Matt 22:15–22", "primary": false, "verses": [{"ref": "Matthew 22:15", "chapter": 22, "verse": 15, "text": "Then the Pharisees went and plotted how to entangle him in his words."}, {"ref": "Matthew 22:16", "chapter": 22, "verse": 16, "text": "And they sent their disciples to him, along with the Herodians, saying, “Teacher, we know that you are true and teach the way of God truthfully, and you do not care about anyone's opinion, for you are not swayed by appearances."}, {"ref": "Matthew 22:17", "chapter": 22, "verse": 17, "text": "Tell us, then, what you think. Is it lawful to pay taxes to Caesar, or not?”"}, {"ref": "Matthew 22:18", "chapter": 22, "verse": 18, "text": "But Jesus, aware of their malice, said, “Why put me to the test, you hypocrites?"}, {"ref": "Matthew 22:19", "chapter": 22, "verse": 19, "text": "Show me the coin for the tax.” And they brought him a denarius."}, {"ref": "Matthew 22:20", "chapter": 22, "verse": 20, "text": "And Jesus said to them, “Whose likeness and inscription is this?”"}, {"ref": "Matthew 22:21", "chapter": 22, "verse": 21, "text": "They said, “Caesar's.” Then he said to them, “Therefore render to Caesar the things that are Caesar's, and to God the things that are God's.”"}, {"ref": "Matthew 22:22", "chapter": 22, "verse": 22, "text": "When they heard it, they marveled. And they left him and went away."}]}, {"label": "Dan 1:8–9", "primary": false, "verses": [{"ref": "Daniel 1:8", "chapter": 1, "verse": 8, "text": "But Daniel resolved that he would not defile himself with the king's food, or with the wine that he drank. Therefore he asked the chief of the eunuchs to allow him not to defile himself."}, {"ref": "Daniel 1:9", "chapter": 1, "verse": 9, "text": "And God gave Daniel favor and compassion in the sight of the chief of the eunuchs,"}]}, {"label": "Dan 1:17–21", "primary": false, "verses": [{"ref": "Daniel 1:17", "chapter": 1, "verse": 17, "text": "As for these four youths, God gave them learning and skill in all literature and wisdom, and Daniel had understanding in all visions and dreams."}, {"ref": "Daniel 1:18", "chapter": 1, "verse": 18, "text": "At the end of the time, when the king had commanded that they should be brought in, the chief of the eunuchs brought them in before Nebuchadnezzar."}, {"ref": "Daniel 1:19", "chapter": 1, "verse": 19, "text": "And the king spoke with them, and among all of them none was found like Daniel, Hananiah, Mishael, and Azariah. Therefore they stood before the king."}, {"ref": "Daniel 1:20", "chapter": 1, "verse": 20, "text": "And in every matter of wisdom and understanding about which the king inquired of them, he found them ten times better than all the magicians and enchanters that were in all his kingdom."}, {"ref": "Daniel 1:21", "chapter": 1, "verse": 21, "text": "And Daniel was there until the first year of King Cyrus."}]}, {"label": "Dan 3:16–18", "primary": false, "verses": [{"ref": "Daniel 3:16", "chapter": 3, "verse": 16, "text": "Shadrach, Meshach, and Abednego answered and said to the king, “O Nebuchadnezzar, we have no need to answer you in this matter."}, {"ref": "Daniel 3:17", "chapter": 3, "verse": 17, "text": "If this be so, our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us out of your hand, O king."}, {"ref": "Daniel 3:18", "chapter": 3, "verse": 18, "text": "But if not, be it known to you, O king, that we will not serve your gods or worship the golden image that you have set up.”"}]}, {"label": "Dan 6:10", "primary": false, "verses": [{"ref": "Daniel 6:10", "chapter": 6, "verse": 10, "text": "When Daniel knew that the document had been signed, he went to his house where he had windows in his upper chamber open toward Jerusalem. He got down on his knees three times a day and prayed and gave thanks before his God, as he had done previously."}]}, {"label": "1 Tim 2:1–2", "primary": false, "verses": [{"ref": "1 Timothy 2:1", "chapter": 2, "verse": 1, "text": "First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people,"}, {"ref": "1 Timothy 2:2", "chapter": 2, "verse": 2, "text": "for kings and all who are in high positions, that we may lead a peaceful and quiet life, godly and dignified in every way."}]}, {"label": "Titus 3:1–2", "primary": false, "verses": [{"ref": "Titus 3:1", "chapter": 3, "verse": 1, "text": "Remind them to be submissive to rulers and authorities, to be obedient, to be ready for every good work,"}, {"ref": "Titus 3:2", "chapter": 3, "verse": 2, "text": "to speak evil of no one, to avoid quarreling, to be gentle, and to show perfect courtesy toward all people."}]}, {"label": "Rom 12:18", "primary": false, "verses": [{"ref": "Romans 12:18", "chapter": 12, "verse": 18, "text": "If possible, so far as it depends on you, live peaceably with all."}]}]}, {"id": "throne", "name": "God's Throne", "scope": "Father, Son, and all under Christ", "builds": "Every human office is derivative of this throne — righteousness and justice; all rule subject to Christ; Acts 5:29 when men forbid what God commands", "leads": {"who": "God the Father & the Lord Jesus Christ", "duty": "Reigns; throne founded on righteousness and justice; puts all enemies under Christ’s feet; disciplines sons for their good; shepherds."}, "submits": {"who": "Everyone", "duty": "Submit to God; obey Christ. When human authority contradicts God: obey God rather than men (Acts 5:29)."}, "charter": "Psalm 89:14", "peak": true, "passages": [{"label": "Psalm 89:14", "verses": [{"ref": "Psalm 89:14", "chapter": 89, "verse": 14, "text": "Righteousness and justice are the foundation of your throne; steadfast love and faithfulness go before you."}], "primary": true, "snapshot": "Righteousness and justice are the foundation of your throne; steadfast love and faithfulness go before you."}, {"label": "Ps 97:2", "verses": [{"ref": "Psalm 97:2", "chapter": 97, "verse": 2, "text": "Clouds and thick darkness are all around him; righteousness and justice are the foundation of his throne."}], "primary": false}, {"label": "Jas 4:7", "verses": [{"ref": "James 4:7", "chapter": 4, "verse": 7, "text": "Submit yourselves therefore to God. Resist the devil, and he will flee from you."}], "primary": false}, {"label": "1 Cor 14:33", "verses": [{"ref": "1 Corinthians 14:33", "chapter": 14, "verse": 33, "text": "For God is not a God of confusion but of peace. As in all the churches of the saints,"}], "primary": false}, {"label": "1 Cor 14:40", "verses": [{"ref": "1 Corinthians 14:40", "chapter": 14, "verse": 40, "text": "But all things should be done decently and in order."}], "primary": false}, {"label": "Heb 12:9–11", "verses": [{"ref": "Hebrews 12:9", "chapter": 12, "verse": 9, "text": "Besides this, we have had earthly fathers who disciplined us and we respected them. Shall we not much more be subject to the Father of spirits and live?"}, {"ref": "Hebrews 12:10", "chapter": 12, "verse": 10, "text": "For they disciplined us for a short time as it seemed best to them, but he disciplines us for our good, that we may share his holiness."}, {"ref": "Hebrews 12:11", "chapter": 12, "verse": 11, "text": "For the moment all discipline seems painful rather than pleasant, but later it yields the peaceful fruit of righteousness to those who have been trained by it."}], "primary": false}, {"label": "1 Cor 15:24–28 (support)", "verses": [{"ref": "1 Corinthians 15:24", "chapter": 15, "verse": 24, "text": "Then comes the end, when he delivers the kingdom to God the Father after destroying every rule and every authority and power."}, {"ref": "1 Corinthians 15:25", "chapter": 15, "verse": 25, "text": "For he must reign until he has put all his enemies under his feet."}, {"ref": "1 Corinthians 15:26", "chapter": 15, "verse": 26, "text": "The last enemy to be destroyed is death."}, {"ref": "1 Corinthians 15:27", "chapter": 15, "verse": 27, "text": "For “God has put all things in subjection under his feet.” But when it says, “all things are put in subjection,” it is plain that he is excepted who put all things in subjection under him."}, {"ref": "1 Corinthians 15:28", "chapter": 15, "verse": 28, "text": "When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all."}], "primary": false}, {"label": "Acts 5:29 (support)", "verses": [{"ref": "Acts 5:29", "chapter": 5, "verse": 29, "text": "But Peter and the apostles answered, “We must obey God rather than men."}], "primary": false}, {"label": "Acts 4:19–20", "verses": [{"ref": "Acts 4:19", "chapter": 4, "verse": 19, "text": "But Peter and John answered them, “Whether it is right in the sight of God to listen to you rather than to God, you must judge,"}, {"ref": "Acts 4:20", "chapter": 4, "verse": 20, "text": "for we cannot but speak of what we have seen and heard.”"}], "primary": false}, {"label": "1 Cor 11:3", "verses": [{"ref": "1 Corinthians 11:3", "chapter": 11, "verse": 3, "text": "But I want you to understand that the head of every man is Christ, the head of a wife is her husband, and the head of Christ is God."}], "primary": false}], "office": "God's Throne", "snapshot": "Righteousness and justice are the foundation of your throne; steadfast love and faithfulness go before you."}]};
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    const climbEl = document.getElementById("climb");
+    const cueEl = document.getElementById("climbCue");
+    let openId = null;
+
+    function primaryPassage(r) {
+      return r.passages.find((p) => p.primary) || r.passages[0];
+    }
+
+    function passageRef(p) {
+      const verses = p.verses || [];
+      if (!verses.length) return p.label || "";
+      if (verses.length === 1) return verses[0].ref;
+      const first = verses[0];
+      const last = verses[verses.length - 1];
+      const head = first.ref.replace(/:\d+$/, "");
+      return head + ":" + first.verse + "–" + last.verse;
+    }
+
+    function passageBlock(p) {
+      const verses = p.verses || [];
+      if (!verses.length) return "";
+      const ref = passageRef(p);
+      const text = verses.map((v) => v.text).join(" ");
+      return `<p class="verse"><span class="ref">${escapeHtml(ref)}</span>${escapeHtml(text)}</p>`;
+    }
+
+    function expandHtml(r) {
+      const primary = primaryPassage(r);
+      const ordered = [primary, ...r.passages.filter((p) => p !== primary)];
+      const passages = ordered.map((p, idx) => {
+        const title = idx === 0 ? `Full ESV · ${passageRef(p)}` : passageRef(p);
+        return `<div class="passage"><h3>${escapeHtml(title)}</h3>${passageBlock(p)}</div>`;
+      }).join("");
+      return `<div class="expand-body"><p class="meta">All passages in this office</p>${passages}</div>`;
+    }
+
+    function renderClimb() {
+      climbEl.innerHTML = DATA.rungs.map((r, i) => {
+        const n = i + 1;
+        const peak = r.peak ? " peak" : "";
+        const primary = primaryPassage(r);
+        const office = r.office || r.name;
+        const snap = r.snapshot || primary.snapshot || "";
+        const ref = passageRef(primary);
+        const isOpen = openId === r.id;
+        return `
+          <div class="rung${isOpen ? " is-open" : ""}" data-id="${escapeHtml(r.id)}">
+            <button type="button" class="axis${peak}" data-id="${escapeHtml(r.id)}" aria-expanded="${isOpen ? "true" : "false"}">
+              <span class="n">Rung ${n}</span>
+              <p class="name">${escapeHtml(office)}</p>
+              <p class="short">${escapeHtml(r.scope)}</p>
+            </button>
+            <div class="flank leads">
+              <p class="role">Leads</p>
+              <p class="who">${escapeHtml(r.leads.who)}</p>
+              <p class="duty">${escapeHtml(r.leads.duty)}</p>
+            </div>
+            <div class="flank submits">
+              <p class="role">Submits</p>
+              <p class="who">${escapeHtml(r.submits.who)}</p>
+              <p class="duty">${escapeHtml(r.submits.duty)}</p>
+            </div>
+            <button type="button" class="primary" data-id="${escapeHtml(r.id)}" aria-expanded="${isOpen ? "true" : "false"}">
+              <p class="p-label">Theme · ${escapeHtml(ref)} · paraphrase</p>
+              <p class="snap">${escapeHtml(snap)}</p>
+              <p class="snap-hint">${isOpen ? "Click to collapse" : "Click to expand full ESV"}</p>
+              ${expandHtml(r)}
+            </button>
+          </div>`;
+      }).join("");
+
+      climbEl.querySelectorAll(".axis, .primary").forEach((btn) => {
+        btn.addEventListener("click", () => toggleRung(btn.dataset.id));
+      });
+    }
+
+    function toggleRung(id) {
+      openId = openId === id ? null : id;
+      renderClimb();
+      if (openId) {
+        const el = climbEl.querySelector('.rung[data-id="' + openId + '"]');
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    }
+
+    function updateCue() {
+      cueEl.hidden = !(window.scrollY < 120);
+    }
+
+    renderClimb();
+    updateCue();
+    window.addEventListener("scroll", updateCue, { passive: true });
+  </script>
+</body>
+</html>

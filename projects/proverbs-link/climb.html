@@ -58,6 +58,12 @@
       color: var(--muted);
       line-height: 1.5;
     }
+    .lede a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
     .nav {
       display: flex;
       flex-wrap: wrap;
@@ -73,17 +79,28 @@
     }
 
     .col-heads {
+      position: sticky;
+      top: 0;
+      z-index: 6;
       display: grid;
       grid-template-columns: 1fr minmax(180px, 220px) 1fr;
       gap: 0.55rem;
-      margin-bottom: 0.45rem;
+      margin: 0 0 0.45rem;
+      padding: 0.45rem 0 0.5rem;
+      background: #fcfaf6;
       font-family: Fraunces, Georgia, serif;
       font-size: 0.95rem;
       letter-spacing: 0.04em;
     }
-    .col-heads span { padding: 0.35rem 0.5rem; }
+    .col-heads span, .col-heads a.spine { padding: 0.35rem 0.5rem; }
     .col-heads .life { color: var(--life); }
-    .col-heads .spine { color: var(--spine); text-align: center; }
+    .col-heads .spine {
+      color: var(--spine);
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--spine) 40%, transparent);
+    }
+    .col-heads a.spine:hover { color: var(--accent); }
     .col-heads .death { color: var(--death); text-align: right; }
 
     .climb {
@@ -143,6 +160,11 @@
       font-size: 0.9rem;
       font-weight: 600;
     }
+    .flank.empty {
+      background: transparent;
+      border-color: transparent;
+      min-height: 0;
+    }
 
     .axis {
       border: 1.5px solid rgba(61, 52, 40, 0.35);
@@ -196,6 +218,11 @@
       line-height: 1.25;
       max-width: 9.5rem;
     }
+    .axis .cover-label[data-report] {
+      cursor: pointer;
+      border-bottom: 1px solid color-mix(in srgb, var(--muted) 50%, transparent);
+    }
+    .axis .cover-label[data-report]:hover { color: var(--accent); }
     .axis .alt {
       margin: 0.25rem 0 0;
       font-size: 0.72rem;
@@ -446,13 +473,72 @@
       box-shadow: 0 6px 18px rgba(40, 30, 18, 0.08);
     }
     .climb-cue[hidden] { display: none; }
+
+    .side-door {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.75rem 0.5rem;
+      min-width: 2.75rem;
+      background: color-mix(in srgb, var(--paper) 92%, white);
+      border: 1px solid var(--line);
+      border-right: 0;
+      border-radius: 0.35rem 0 0 0.35rem;
+      box-shadow: -4px 0 16px rgba(40, 30, 18, 0.06);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .side-door:hover {
+      background: #fff;
+      color: var(--ink);
+    }
+    .side-door-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+    .side-door-arrow {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    @media (max-width: 640px) {
+      .side-door {
+        top: auto;
+        bottom: 0.75rem;
+        transform: none;
+        flex-direction: row;
+        border-right: 1px solid var(--line);
+        border-radius: 0.35rem;
+        padding: 0.5rem 0.75rem;
+        right: 0.75rem;
+      }
+      .side-door-label {
+        writing-mode: horizontal-tb;
+        transform: none;
+      }
+    }
   </style>
 </head>
 <body>
+  <a class="side-door" href="./order.html" aria-label="Open The Order">
+    <span class="side-door-label">The Order</span>
+    <span class="side-door-arrow" aria-hidden="true">→</span>
+  </a>
   <div class="wrap">
-    <div class="col-heads" aria-hidden="true">
+    <div class="col-heads">
       <span class="life">Way of Life</span>
-      <span class="spine">Covering</span>
+      <a class="spine" href="./reports/covering/man-under-covering.html">Covering</a>
       <span class="death">Way of Death</span>
     </div>
 
@@ -463,6 +549,8 @@
       <h1>A Man's Climb - Proverbs</h1>
       <p class="lede">
         <strong>Way of Life</strong> versus <strong>Way of Death</strong>. Scroll up to climb.
+        Click <a href="./reports/covering/man-under-covering.html">Covering</a> for the covering report.
+        Open <a href="./order.html">The Order</a> for the submission climb.
         Click a category for its verses.
       </p>
       <p class="frame">
@@ -474,11 +562,14 @@
         <a href="./verses.html">Verses</a>
         <a href="./themes.html">Themes</a>
         <a href="./matrices.html">Matrices</a>
+        <a href="./bibles.html">Bibles</a>
+        <a href="./order.html">The Order</a>
         <a href="./reports/">Reports</a>
       </nav>
     </footer>
   </div>
 
+  <script src="./data/packs/climb-pack.js"></script>
   <script>
     const state = { data: null, verseMap: null };
 
@@ -486,30 +577,37 @@
       "two-paths": {
         src: "./assets/covers/cover-two-paths.png",
         label: "The fork",
+        report: "./reports/covering/man-under-covering.html#chain",
       },
       child: {
         src: "./assets/covers/cover-child.png",
         label: "Parents’ covering",
+        report: "./reports/covering/man-under-covering.html#hard-heads",
       },
       "youth-man": {
         src: "./assets/covers/cover-youth.png",
         label: "His own covering",
+        report: "./reports/covering/man-under-covering.html#refuge",
       },
       "husband-household": {
         src: "./assets/covers/cover-household.png",
         label: "Household covering",
+        report: "./reports/covering/man-under-covering.html#hiding-place",
       },
       ruler: {
         src: "./assets/covers/cover-ruler.png",
         label: "Community covering",
+        report: "./reports/covering/man-under-covering.html#centurion",
       },
       king: {
         src: "./assets/covers/cover-king.png",
         label: "Temple · nation",
+        report: "./reports/covering/man-under-covering.html#hiding-place",
       },
       "reign-with-christ": {
         src: "./assets/covers/cover-christ.png",
         label: "Cosmos under Christ",
+        report: "./reports/covering/man-under-covering.html#son",
       },
     };
 
@@ -527,10 +625,14 @@
       "child",
       "youth-man",
       "husband-household",
+      "reign-with-christ",
     ]);
 
     function renderFlank(nodes, side, bandId) {
       if (!nodes || !nodes.length) {
+        if (bandId === "reign-with-christ" && side === "life") {
+          return `<div class="flank life empty" data-band="${escapeHtml(bandId)}" aria-hidden="true"></div>`;
+        }
         return `<div class="flank void" data-band="${escapeHtml(bandId)}">No telos — climb ends, or falls</div>`;
       }
 
@@ -615,17 +717,20 @@
           const cover = COVER[st.id];
           const coverHtml = cover
             ? `<img class="cover" src="${escapeHtml(cover.src)}" alt="" width="148" height="148" loading="lazy" />
-               <p class="cover-label">${escapeHtml(cover.label)}</p>`
+               <p class="cover-label"${cover.report ? ` data-report="${escapeHtml(cover.report)}"` : ""}>${escapeHtml(cover.label)}</p>`
             : "";
           const presentationOnly = PRESENTATION_ONLY_STAGES.has(st.id);
+          const showCategoryHint = presentationOnly && st.id !== "reign-with-christ";
           const axisInner = `
               ${coverHtml}
               <p class="name">${escapeHtml(st.name)}</p>
               <p class="short">${escapeHtml(st.short || "")}</p>
               ${
-                presentationOnly
+                showCategoryHint
                   ? `<p class="axis-hint">Choose a category →</p>`
-                  : `<p class="t-go">${verseCountLabel(st.id)} →</p>`
+                  : presentationOnly
+                    ? ""
+                    : `<p class="t-go">${verseCountLabel(st.id)} →</p>`
               }
           `;
           const axis = presentationOnly
@@ -644,6 +749,17 @@
         .join("");
 
       startAtFoundation();
+      bindCoveringReports();
+    }
+
+    function bindCoveringReports() {
+      document.getElementById("climb").addEventListener("click", (e) => {
+        const label = e.target.closest(".cover-label[data-report]");
+        if (!label) return;
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.href = label.getAttribute("data-report");
+      });
     }
 
     function startAtFoundation() {
@@ -677,19 +793,19 @@
 
     window.addEventListener("scroll", updateClimbCue, { passive: true });
 
-    Promise.all([
-      fetch("./proposals/theme-ontology/hierarchy-map-data.json").then((r) => r.json()),
-      fetch("./data/category-verse-map.json").then((r) => r.json()),
-    ])
-      .then(([data, verseMap]) => {
-        state.data = data;
-        state.verseMap = verseMap;
-        render();
-      })
-      .catch((err) => {
+    function bootClimb() {
+      const pack = window.CLIMB_PACK;
+      if (!pack?.hierarchy || !pack?.verseMap) {
         document.getElementById("climb").innerHTML =
-          `<p style="padding:1rem;color:#5a5348">Could not load: ${escapeHtml(err.message)}</p>`;
-      });
+          `<p style="padding:1rem;color:#5a5348">Could not load climb pack. Run <code>python scripts/build_file_packs.py</code>.</p>`;
+        return;
+      }
+      state.data = pack.hierarchy;
+      state.verseMap = pack.verseMap;
+      render();
+    }
+
+    bootClimb();
   </script>
 </body>
 </html>
