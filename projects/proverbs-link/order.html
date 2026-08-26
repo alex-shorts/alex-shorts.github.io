@@ -14,12 +14,12 @@
       --paper: #f7f2e8;
       --line: rgba(26, 22, 18, 0.14);
       --accent: #8a4b1f;
-      --leads: #2f5d3a;
-      --leads-bg: #e4efe7;
-      --leads-block: #c5d9cb;
-      --submits: #5c4a2e;
-      --submits-bg: #efe8dc;
-      --submits-block: #ddd2c0;
+      --life: #2f5d3a;
+      --life-bg: #e4efe7;
+      --life-block: #c5d9cb;
+      --death: #8a3b2a;
+      --death-bg: #f3e6e2;
+      --death-block: #e0c4bc;
       --spine: #3d3428;
       --spine-bg: #ebe4d6;
       --peak: #c9a227;
@@ -33,7 +33,7 @@
       min-height: 100vh;
     }
     .wrap {
-      width: min(1100px, calc(100% - 1.5rem));
+      width: min(1180px, calc(100% - 1.5rem));
       margin: 0 auto;
       padding: 1.5rem 0 3rem;
     }
@@ -54,15 +54,21 @@
     }
     .lede {
       margin: 0.55rem 0 0;
-      max-width: 42rem;
+      max-width: 46rem;
       color: var(--muted);
       line-height: 1.5;
+    }
+    .lede a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
     }
     .nav {
       display: flex;
       flex-wrap: wrap;
       gap: 0.65rem 1rem;
-      margin: 0.85rem 0 1.1rem;
+      margin: 0.75rem 0 1rem;
       font-size: 0.9rem;
     }
     .nav a {
@@ -78,8 +84,8 @@
       margin: 0.75rem 0 0.55rem;
     }
     .foundation-banner.theme {
-      background: color-mix(in srgb, var(--leads-bg) 55%, white);
-      border-color: color-mix(in srgb, var(--leads) 28%, var(--line));
+      background: color-mix(in srgb, var(--life-bg) 70%, #fff);
+      border-color: color-mix(in srgb, var(--life) 35%, var(--line));
     }
     .foundation-banner strong {
       font-family: Fraunces, Georgia, serif;
@@ -104,22 +110,27 @@
       margin-bottom: 0;
     }
     .col-heads {
+      position: sticky;
+      top: 0;
+      z-index: 6;
       display: grid;
       grid-template-columns: minmax(160px, 200px) 1fr 1fr;
       gap: 0.55rem;
       margin-bottom: 0.45rem;
+      padding: 0.45rem 0 0.5rem;
+      background: #fcfaf6;
       font-family: Fraunces, Georgia, serif;
       font-size: 0.95rem;
       letter-spacing: 0.04em;
     }
     .col-heads span { padding: 0.35rem 0.5rem; }
     .col-heads .spine { color: var(--spine); }
-    .col-heads .leads { color: var(--leads); }
-    .col-heads .submits { color: var(--submits); text-align: right; }
+    .col-heads .life { color: var(--life); }
+    .col-heads .death { color: var(--death); text-align: right; }
     .climb {
       display: flex;
       flex-direction: column-reverse;
-      gap: 0.85rem;
+      gap: 0.65rem;
     }
     .rung {
       display: grid;
@@ -133,15 +144,15 @@
       grid-row: 1 / 3;
       align-self: stretch;
     }
-    .rung .flank.leads { grid-column: 2; grid-row: 1; }
-    .rung .flank.submits { grid-column: 3; grid-row: 1; }
+    .rung .flank.life { grid-column: 2; grid-row: 1; }
+    .rung .flank.death { grid-column: 3; grid-row: 1; }
     .rung .primary {
       grid-column: 2 / 4;
       grid-row: 2;
     }
     .primary {
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.78);
+      background: rgba(255,255,255,0.72);
       padding: 0.65rem 0.8rem 0.75rem;
       cursor: pointer;
       text-align: left;
@@ -229,11 +240,11 @@
     }
     .flank {
       border: 1px solid var(--line);
-      padding: 0.7rem 0.75rem 0.8rem;
-      min-height: 4.5rem;
+      padding: 0.65rem 0.7rem 0.75rem;
+      min-height: 5.5rem;
     }
-    .flank.submits { background: var(--submits-bg); }
-    .flank.leads { background: var(--leads-bg); }
+    .flank.life { background: var(--life-bg); }
+    .flank.death { background: var(--death-bg); }
     .flank .role {
       font-size: 0.68rem;
       font-weight: 700;
@@ -258,7 +269,7 @@
     .axis {
       border: 1.5px solid rgba(61, 52, 40, 0.35);
       background: var(--spine-bg);
-      padding: 0.75rem 0.5rem;
+      padding: 0.7rem 0.55rem 0.75rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -270,6 +281,7 @@
       width: 100%;
       height: 100%;
       min-height: 0;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
     }
     .axis:hover { filter: brightness(1.02); }
     .axis[aria-selected="true"] {
@@ -346,8 +358,8 @@
       border: 1px solid var(--line);
       padding: 0.75rem 0.85rem;
     }
-    .pair .card.leads { background: color-mix(in srgb, var(--leads-block) 45%, white); }
-    .pair .card.submits { background: color-mix(in srgb, var(--submits-block) 45%, white); }
+    .pair .card.life { background: color-mix(in srgb, var(--life-block) 55%, white); }
+    .pair .card.death { background: color-mix(in srgb, var(--death-block) 55%, white); }
     .pair .card h3 {
       margin: 0 0 0.3rem;
       font-size: 0.7rem;
@@ -398,7 +410,7 @@
     .site-foot .lede { margin: 0.55rem auto 0; max-width: 36rem; }
     .site-foot .frame {
       margin: 0.85rem auto 0;
-      max-width: 36rem;
+      max-width: 34rem;
       font-size: 0.92rem;
       color: var(--muted);
       line-height: 1.5;
@@ -432,25 +444,24 @@
     }
     .side-door {
       position: fixed;
-      left: 0;
+      left: 0.75rem;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 8;
+      z-index: 20;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.25rem;
-      padding: 0.75rem 0.5rem;
-      min-width: 2.75rem;
-      background: color-mix(in srgb, var(--paper) 92%, white);
-      border: 1px solid var(--line);
-      border-left: 0;
-      border-radius: 0 0.35rem 0.35rem 0;
-      box-shadow: 4px 0 16px rgba(40, 30, 18, 0.06);
+      gap: 0.35rem;
+      padding: 0.9rem 0.65rem;
+      min-width: 3.1rem;
+      background: color-mix(in srgb, var(--life-bg) 88%, white);
+      border: 2px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+      border-radius: 0.45rem;
+      box-shadow: 0 8px 24px rgba(40, 30, 18, 0.12);
       color: var(--accent);
       font-weight: 700;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       text-decoration: none;
       line-height: 1.2;
@@ -459,23 +470,23 @@
     .side-door:hover {
       background: #fff;
       color: var(--ink);
+      border-color: var(--accent);
     }
     .side-door-label {
       writing-mode: vertical-rl;
     }
     .side-door-arrow {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       line-height: 1;
+      font-weight: 700;
     }
     @media (max-width: 640px) {
       .side-door {
         top: auto;
-        bottom: 0.75rem;
+        bottom: 0.85rem;
         transform: none;
         flex-direction: row;
-        border-left: 1px solid var(--line);
-        border-radius: 0.35rem;
-        padding: 0.5rem 0.75rem;
+        padding: 0.55rem 0.85rem;
         left: 0.75rem;
       }
       .side-door-label {
@@ -486,8 +497,8 @@
       .col-heads, .rung, .pair { grid-template-columns: 1fr; }
       .col-heads .leads, .col-heads .submits { text-align: left; }
       .rung .axis,
-      .rung .flank.leads,
-      .rung .flank.submits,
+      .rung .flank.life,
+      .rung .flank.death,
       .rung .primary {
         grid-column: 1;
         grid-row: auto;
@@ -514,8 +525,8 @@
 
     <div class="col-heads" aria-hidden="true">
       <span class="spine">Office</span>
-      <span class="leads">Leads</span>
-      <span class="submits">Submits</span>
+      <span class="life">Leads</span>
+      <span class="death">Submits</span>
     </div>
 
     <div class="climb" id="climb"></div>
@@ -604,12 +615,12 @@
               <p class="name">${escapeHtml(office)}</p>
               <p class="short">${escapeHtml(r.scope)}</p>
             </button>
-            <div class="flank leads">
+            <div class="flank life">
               <p class="role">Leads</p>
               <p class="who">${escapeHtml(r.leads.who)}</p>
               <p class="duty">${escapeHtml(r.leads.duty)}</p>
             </div>
-            <div class="flank submits">
+            <div class="flank death">
               <p class="role">Submits</p>
               <p class="who">${escapeHtml(r.submits.who)}</p>
               <p class="duty">${escapeHtml(r.submits.duty)}</p>
