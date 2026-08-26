@@ -337,6 +337,7 @@
         <a href="./themes.html">Themes</a>
         <a href="./verses.html">Verses</a>
         <a href="./matrices.html">Matrices</a>
+        <a href="./bibles.html">Bibles</a>
         <a href="./reports/">Reports</a>
       </div>
     </header>
@@ -350,6 +351,7 @@
     <div id="board"></div>
   </div>
 
+  <script src="./data/packs/foundation-pack.js"></script>
   <script>
     const CAT_META = {
       wisdom: { name: "Wisdom", color: "#652cb3" },
@@ -492,9 +494,9 @@
 
     async function boot() {
       try {
-        const res = await fetch("./data/proverbs-1-9/board.json?v=nohero");
-        if (!res.ok) throw new Error(`Failed to load board.json (${res.status})`);
-        state.data = await res.json();
+        const pack = window.FOUNDATION_PACK;
+        if (!pack?.board) throw new Error("Foundation pack missing. Run python scripts/build_file_packs.py");
+        state.data = pack.board;
         const hash = (location.hash || "").replace("#", "");
         if (hash === "categories") setView("categories");
         else setView("master");

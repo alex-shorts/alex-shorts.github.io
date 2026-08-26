@@ -66,56 +66,48 @@
       line-height: 1.45;
       font-size: 0.95rem;
     }
-    .note {
-      margin: 0.85rem 0 1rem;
-      padding: 0.7rem 0.85rem;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.65);
-      color: var(--muted);
-      font-size: 0.9rem;
-      line-height: 1.45;
-    }
     .pair-heads {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.65rem;
-      margin: 1rem 0 0.45rem;
+      gap: 0.35rem;
+      margin: 0.65rem 0 0.3rem;
     }
     .pair-heads h2 {
       margin: 0;
       font-family: Fraunces, Georgia, serif;
-      font-size: 1.25rem;
-      padding: 0.55rem 0.7rem;
+      font-size: 1.05rem;
+      padding: 0.35rem 0.55rem;
       border: 1px solid var(--line);
     }
     .pair-heads .left { background: var(--life-bg); color: var(--life); }
     .pair-heads .right { background: var(--death-bg); color: var(--death); }
 
-    .pair-rows { display: flex; flex-direction: column; gap: 0.45rem; }
-    .pair-row {
+    /* Dense two-column pack: no empty placeholder cells */
+    .pair-rows {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.65rem;
-      align-items: stretch;
-    }
-    .pair-row.intact {
-      grid-template-columns: 1fr;
+      gap: 0.28rem;
+      grid-auto-flow: dense;
+      align-items: start;
     }
     .cell {
       border: 1px solid var(--line);
-      padding: 0.7rem 0.85rem;
+      padding: 0.4rem 0.55rem;
       background: rgba(255,255,255,0.72);
-      min-height: 3.2rem;
+      min-height: 0;
     }
     .cell.life {
+      grid-column: 1;
       background: color-mix(in srgb, var(--life-bg) 55%, white);
-      border-left: 4px solid var(--life);
+      border-left: 3px solid var(--life);
     }
     .cell.death {
+      grid-column: 2;
       background: color-mix(in srgb, var(--death-bg) 55%, white);
-      border-left: 4px solid var(--death);
+      border-left: 3px solid var(--death);
     }
     .cell.both {
+      grid-column: 1 / -1;
       background: linear-gradient(
         90deg,
         color-mix(in srgb, var(--life-bg) 50%, white) 0%,
@@ -123,35 +115,30 @@
         color-mix(in srgb, var(--death-bg) 50%, white) 52%,
         color-mix(in srgb, var(--death-bg) 50%, white) 100%
       );
-      border-left: 4px solid var(--life);
-      border-right: 4px solid var(--death);
-    }
-    .cell.empty {
-      background: transparent;
-      border-style: dashed;
-      opacity: 0.4;
+      border-left: 3px solid var(--life);
+      border-right: 3px solid var(--death);
     }
     .lean {
       display: inline-block;
-      font-size: 0.68rem;
+      font-size: 0.64rem;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      margin-left: 0.45rem;
+      margin-left: 0.35rem;
       color: var(--muted);
     }
     .cell.both .lean { color: var(--accent); }
     .ref {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 700;
       color: var(--muted);
       letter-spacing: 0.04em;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.12rem;
     }
     .cell p {
       margin: 0;
-      line-height: 1.45;
-      font-size: 0.98rem;
+      line-height: 1.35;
+      font-size: 0.92rem;
       white-space: pre-line;
     }
 
@@ -161,19 +148,28 @@
     }
     .passage {
       display: grid;
-      grid-template-columns: 6rem 1fr;
-      gap: 0.65rem;
-      padding: 0.7rem 1rem;
+      grid-template-columns: 5.5rem 1fr;
+      gap: 0.4rem;
+      padding: 0.4rem 0.7rem;
       border-top: 1px solid var(--line);
     }
     .passage:first-child { border-top: 0; }
-    .passage .ref { padding-top: 0.15rem; }
-    .passage p { margin: 0; line-height: 1.5; white-space: pre-line; }
+    .passage .ref { padding-top: 0.05rem; }
+    .passage p { margin: 0; line-height: 1.35; white-space: pre-line; font-size: 0.92rem; }
 
     .section-label {
-      margin: 1.25rem 0 0.5rem;
+      margin: 0.85rem 0 0.35rem;
       font-family: Fraunces, Georgia, serif;
-      font-size: 1.15rem;
+      font-size: 1.05rem;
+    }
+    .note {
+      margin: 0.55rem 0 0.65rem;
+      padding: 0.45rem 0.65rem;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.65);
+      color: var(--muted);
+      font-size: 0.85rem;
+      line-height: 1.35;
     }
     .links { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
     .links a {
@@ -215,8 +211,9 @@
       opacity: 0.92;
     }
     @media (max-width: 720px) {
-      .pair-heads, .pair-row { grid-template-columns: 1fr; }
-      .passage { grid-template-columns: 1fr; gap: 0.2rem; }
+      .pair-heads, .pair-rows { grid-template-columns: 1fr; }
+      .cell.life, .cell.death, .cell.both { grid-column: 1; }
+      .passage { grid-template-columns: 1fr; gap: 0.15rem; }
     }
   </style>
 </head>
@@ -228,6 +225,7 @@
       <a href="./proverbs-1-9.html">Foundation</a>
       <a href="./themes.html">Themes</a>
       <a href="./matrices.html">Matrices</a>
+      <a href="./bibles.html">Bibles</a>
       <a href="./reports/">Reports</a>
     </nav>
     <p class="eyebrow" id="eyebrow">Category verses</p>
@@ -246,6 +244,7 @@
     <div class="note" id="note" hidden></div>
     <div id="body"></div>
   </div>
+  <script src="./data/packs/verses-pack.js"></script>
   <script>
     const TRANSLATIONS = {
       CJB: { root: "./data/cjb", label: "CJB" },
@@ -473,7 +472,10 @@
     }
 
     async function loadMatrixColumn(meta) {
-      const data = await fetch("./" + meta.matrix_file).then((r) => r.json());
+      const pack = window.VERSES_PACK;
+      const data =
+        pack?.matrices?.[meta.matrix_file] ||
+        (await fetch("./" + meta.matrix_file).then((r) => r.json()));
       const col = data.columns.find((c) => c.id === meta.column_id);
       if (!col) return { label: meta.label, passages: [], related: [] };
       return { label: col.name, passages: col.proverbs || [], related: col.related || [] };
@@ -482,7 +484,7 @@
     function pairRowsHtml(pair) {
       const leftLabel = pair.left.label;
       const rightLabel = pair.right.label;
-      const rows = pair.rows
+      const cells = pair.rows
         .map((row) => {
           const full = row.full || row.left || row.right || "";
           const ref = escapeHtml(refShort(row.ref));
@@ -490,22 +492,20 @@
             ? `<span class="lean">${escapeHtml(row.correlation_band)}</span>`
             : "";
           if (row.mode === "split" || row.mode === "both") {
-            return `<div class="pair-row intact">
-              <div class="cell both">
-                <div class="ref">${ref}<span class="lean">life · death</span>${band}</div>
-                ${verseTextEl(row.ref, full)}
-              </div>
+            return `<div class="cell both">
+              <div class="ref">${ref}<span class="lean">life · death</span>${band}</div>
+              ${verseTextEl(row.ref, full)}
             </div>`;
           }
           if (row.mode === "left_only" || (row.left && !row.right)) {
-            return `<div class="pair-row">
-              <div class="cell life"><div class="ref">${ref}<span class="lean">${escapeHtml(leftLabel)}</span>${band}</div>${verseTextEl(row.ref, full)}</div>
-              <div class="cell empty"></div>
+            return `<div class="cell life">
+              <div class="ref">${ref}<span class="lean">${escapeHtml(leftLabel)}</span>${band}</div>
+              ${verseTextEl(row.ref, full)}
             </div>`;
           }
-          return `<div class="pair-row">
-            <div class="cell empty"></div>
-            <div class="cell death"><div class="ref">${ref}<span class="lean">${escapeHtml(rightLabel)}</span>${band}</div>${verseTextEl(row.ref, full)}</div>
+          return `<div class="cell death">
+            <div class="ref">${ref}<span class="lean">${escapeHtml(rightLabel)}</span>${band}</div>
+            ${verseTextEl(row.ref, full)}
           </div>`;
         })
         .join("");
@@ -515,7 +515,7 @@
           <h2 class="left">${escapeHtml(leftLabel)}</h2>
           <h2 class="right">${escapeHtml(rightLabel)}</h2>
         </div>
-        <div class="pair-rows">${rows}</div>
+        <div class="pair-rows">${cells}</div>
       `;
     }
 
@@ -743,14 +743,12 @@
         return;
       }
 
-      const [map, themesData, climbData, pairsData] = await Promise.all([
-        fetch("./data/category-verse-map.json").then((r) => r.json()),
-        fetch("./data/themes.json").then((r) => r.json()),
-        fetch("./proposals/theme-ontology/hierarchy-map-data.json").then((r) => r.json()),
-        fetch("./data/verse-pairs.json").then((r) => r.json()),
-      ]);
+      const pack = window.VERSES_PACK;
+      if (!pack?.verseMap || !pack?.themes || !pack?.hierarchy || !pack?.pairs) {
+        throw new Error("Verses pack missing. Run python scripts/build_file_packs.py");
+      }
 
-      await resolveAndRender(id, map, themesData, climbData, pairsData);
+      await resolveAndRender(id, pack.verseMap, pack.themes, pack.hierarchy, pack.pairs);
     }
 
     window.addEventListener("hashchange", () => boot());

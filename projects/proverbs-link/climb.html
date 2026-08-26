@@ -102,6 +102,16 @@
     }
     .col-heads a.spine:hover { color: var(--accent); }
     .col-heads .death { color: var(--death); text-align: right; }
+    .col-heads .order-link {
+      display: inline-block;
+      margin-left: 0.65rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      white-space: nowrap;
+    }
+    .col-heads .order-link:hover { color: var(--ink); }
 
     .climb {
       display: flex;
@@ -476,25 +486,24 @@
 
     .side-door {
       position: fixed;
-      right: 0;
+      right: 0.75rem;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 8;
+      z-index: 20;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.25rem;
-      padding: 0.75rem 0.5rem;
-      min-width: 2.75rem;
-      background: color-mix(in srgb, var(--paper) 92%, white);
-      border: 1px solid var(--line);
-      border-right: 0;
-      border-radius: 0.35rem 0 0 0.35rem;
-      box-shadow: -4px 0 16px rgba(40, 30, 18, 0.06);
+      gap: 0.35rem;
+      padding: 0.9rem 0.65rem;
+      min-width: 3.1rem;
+      background: color-mix(in srgb, var(--life-bg) 88%, white);
+      border: 2px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+      border-radius: 0.45rem;
+      box-shadow: 0 8px 24px rgba(40, 30, 18, 0.12);
       color: var(--accent);
       font-weight: 700;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       text-decoration: none;
       line-height: 1.2;
@@ -503,43 +512,47 @@
     .side-door:hover {
       background: #fff;
       color: var(--ink);
+      border-color: var(--accent);
     }
     .side-door-label {
       writing-mode: vertical-rl;
       transform: rotate(180deg);
     }
     .side-door-arrow {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       line-height: 1;
+      font-weight: 700;
     }
     @media (max-width: 640px) {
       .side-door {
         top: auto;
-        bottom: 0.75rem;
+        bottom: 0.85rem;
         transform: none;
         flex-direction: row;
-        border-right: 1px solid var(--line);
-        border-radius: 0.35rem;
-        padding: 0.5rem 0.75rem;
+        padding: 0.55rem 0.85rem;
         right: 0.75rem;
       }
       .side-door-label {
         writing-mode: horizontal-tb;
         transform: none;
       }
+      .col-heads .order-link {
+        display: block;
+        margin: 0.25rem 0 0;
+      }
     }
   </style>
 </head>
 <body>
-  <a class="side-door" href="./order.html" aria-label="Open The Order">
-    <span class="side-door-label">The Order</span>
+  <a class="side-door" href="./order.html" aria-label="Open God of Order">
+    <span class="side-door-label">God of Order</span>
     <span class="side-door-arrow" aria-hidden="true">→</span>
   </a>
   <div class="wrap">
     <div class="col-heads">
       <span class="life">Way of Life</span>
       <a class="spine" href="./reports/covering/man-under-covering.html">Covering</a>
-      <span class="death">Way of Death</span>
+      <span class="death">Way of Death<a class="order-link" href="./order.html">God of Order →</a></span>
     </div>
 
     <div class="climb" id="climb"></div>
@@ -550,7 +563,7 @@
       <p class="lede">
         <strong>Way of Life</strong> versus <strong>Way of Death</strong>. Scroll up to climb.
         Click <a href="./reports/covering/man-under-covering.html">Covering</a> for the covering report.
-        Open <a href="./order.html">The Order</a> for the submission climb.
+        Open <a href="./order.html">God of Order</a> for the submission climb.
         Click a category for its verses.
       </p>
       <p class="frame">
@@ -563,7 +576,7 @@
         <a href="./themes.html">Themes</a>
         <a href="./matrices.html">Matrices</a>
         <a href="./bibles.html">Bibles</a>
-        <a href="./order.html">The Order</a>
+        <a href="./order.html">God of Order</a>
         <a href="./reports/">Reports</a>
       </nav>
     </footer>
