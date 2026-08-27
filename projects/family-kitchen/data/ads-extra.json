@@ -1,0 +1,97 @@
+{
+  "week": "2026-08-31",
+  "note": "Clip-if-you-go only. Not loaded by Family Kitchen unless already wired. Walmart / Target / Brookshire's / Checkout 51 / skip clips.",
+  "clips": [
+    {
+      "id": "walmart-dannon",
+      "name": "Walmart Cash Dannon 32 oz",
+      "store": "Walmart",
+      "offer": "$0.45 cash, clip in the Walmart app, limit 5. Ad list 8/25–8/31.",
+      "rebate_usd": 0.45,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "checkout51",
+      "name": "Checkout 51 $2 on $10+ fresh beef",
+      "store": "Checkout 51",
+      "offer": "Activate by 2026-08-27, receipt by 2026-09-02. Skip Golden Star rice (Azure 25 lb).",
+      "rebate_usd": 2.0,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-wm-vf",
+      "name": "Ibotta Walmart VF eggs $0.50",
+      "store": "Walmart",
+      "offer": "Vital Farms Organic Pasture-Raised Eggs 12 ct $0.50 back.",
+      "rebate_usd": 0.5,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-nellie",
+      "name": "Ibotta Nellie's $0.75",
+      "store": "Walmart",
+      "offer": "Nellie's Free Range Eggs 12 ct $0.75.",
+      "rebate_usd": 0.75,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-oak",
+      "name": "Ibotta Oak Farms milk $0.25",
+      "store": "Walmart",
+      "offer": "Oak Farms milk any fat $0.25.",
+      "rebate_usd": 0.25,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-justbare",
+      "name": "Ibotta Just Bare $2.00",
+      "store": "Walmart",
+      "offer": "Just Bare Chicken Breast Bites 1.2 lb or Wings $2.00.",
+      "rebate_usd": 2.0,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-aldi",
+      "name": "Ibotta Aldi receipt $1.00",
+      "store": "Aldi",
+      "offer": "Any grocery receipt $1.00.",
+      "rebate_usd": 1.0,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-westbrae",
+      "name": "Ibotta Westbrae beans $0.75",
+      "store": "Sprouts",
+      "offer": "Westbrae beans $0.75. Off — Azure beans cover this.",
+      "rebate_usd": 0.75,
+      "default_checked": false,
+      "only_if_already_going": true,
+      "skip_reason": "Azure beans cover this"
+    },
+    {
+      "id": "ibotta-brookshire",
+      "name": "Ibotta Brookshire's receipt $1",
+      "store": "Brookshire's",
+      "offer": "Any grocery receipt $1 only if that trip already happens. No new trip.",
+      "rebate_usd": 1.0,
+      "default_checked": false,
+      "only_if_already_going": true
+    },
+    {
+      "id": "ibotta-target",
+      "name": "Ibotta Target VF / Stringles",
+      "store": "Target",
+      "offer": "Through Sat 8/29 only if already there: VF eggs $1 / $2.25; Organic Valley Stringles $1.25. No single known-back amount.",
+      "rebate_usd": null,
+      "default_checked": false,
+      "only_if_already_going": true
+    }
+  ]
+}
