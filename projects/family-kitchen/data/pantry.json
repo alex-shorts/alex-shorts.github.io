@@ -1,0 +1,43 @@
+{
+  "updated": "2026-08-27",
+  "note": "on_hand is household status. Do not invent quantities. azure_do_not_rebuy is cart 8804714 already-in. Homemaker writes this file; the phone only marks locally until Refresh.",
+  "on_hand": [
+    { "id": "GP073", "name": "Chicken wheat animal feed, organic", "status": "unknown" },
+    { "id": "GP559", "name": "Whole field peas animal feed, organic", "status": "unknown" },
+    { "id": "BP045", "name": "Vanilla extract, organic", "status": "unknown" },
+    { "id": "SW437", "name": "Honey, raw wildflower, organic", "status": "unknown" },
+    { "id": "OL251", "name": "EVOO, extra virgin cold pressed, organic", "status": "unknown" },
+    { "id": "HS217", "name": "Taco seasoning mix", "status": "unknown" },
+    { "id": "HS186", "name": "Pumpkin pie spice", "status": "unknown" },
+    { "id": "FL013", "name": "Cornmeal, organic", "status": "unknown" },
+    { "id": "OL219", "name": "Palm fruit shortening, organic", "status": "unknown" },
+    { "id": "GR338", "name": "Thai jasmine white rice, organic", "status": "unknown" },
+    { "id": "GR111", "name": "Hard white wheat, organic", "status": "unknown" },
+    { "id": "GR064", "name": "Soft white wheat, organic", "status": "unknown" },
+    { "id": "CE065", "name": "Rolled oats, organic", "status": "unknown" },
+    { "id": "GR022", "name": "Yellow popcorn, organic", "status": "unknown" },
+    { "id": "GR172", "name": "Multicolored popcorn, organic", "status": "unknown" },
+    { "id": "GR359", "name": "White popcorn, organic", "status": "unknown" },
+    { "id": "OL457", "name": "Coconut oil, expeller pressed, organic", "status": "unknown" }
+  ],
+  "leftovers": [],
+  "azure_do_not_rebuy": [
+    { "sku": "GP073", "name": "Chicken wheat animal feed, organic", "size": "50 lb ×2" },
+    { "sku": "GP559", "name": "Whole field peas animal feed, organic", "size": "50 lb ×2" },
+    { "sku": "BP045", "name": "Vanilla extract, organic", "size": "32 oz" },
+    { "sku": "SW437", "name": "Honey, raw wildflower, organic", "size": "12 lb ×2" },
+    { "sku": "OL251", "name": "EVOO, extra virgin cold pressed, organic", "size": "1 gal ×3" },
+    { "sku": "HS217", "name": "Taco seasoning mix", "size": "1 lb" },
+    { "sku": "HS186", "name": "Pumpkin pie spice", "size": "4 oz" },
+    { "sku": "FL013", "name": "Cornmeal, organic", "size": "5 lb ×2" },
+    { "sku": "OL219", "name": "Palm fruit shortening, organic", "size": "4 lb" },
+    { "sku": "GR338", "name": "Thai jasmine white rice, organic", "size": "25 lb" },
+    { "sku": "GR111", "name": "Hard white wheat, organic", "size": "25 lb" },
+    { "sku": "GR064", "name": "Soft white wheat, organic", "size": "25 lb" },
+    { "sku": "CE065", "name": "Rolled oats, organic", "size": "25 lb" },
+    { "sku": "GR022", "name": "Yellow popcorn, organic", "size": "25 lb" },
+    { "sku": "GR172", "name": "Multicolored popcorn, organic", "size": "5 lb ×2" },
+    { "sku": "GR359", "name": "White popcorn, organic", "size": "5 lb ×2" },
+    { "sku": "OL457", "name": "Coconut oil, expeller pressed, organic", "size": "6×64 oz" }
+  ]
+}

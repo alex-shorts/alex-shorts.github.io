@@ -1,0 +1,419 @@
+{
+  "order_id": "8804714",
+  "status": "open_not_placed",
+  "draft": true,
+  "account": "Alex #1365541",
+  "drop": {
+    "name": "Tyler TX",
+    "route": "Rose D794841",
+    "address": "8668 South Broadway Ave, Tyler, TX 75703",
+    "week_of": "2026-09-13",
+    "cutoff": "2026-09-09"
+  },
+  "note": "Draft only. Order 8804714 is NOT placed. Nothing from proposed_adds was added to the live cart. Prices from grocery-receipts/azure-proposed-adds.json and .md, pulled Aug 27, 2026 Tyler-drop catalog.",
+  "totals": {
+    "items_usd": 802.34,
+    "shipping_usd": 69.58,
+    "order_usd": 871.92,
+    "azure_cash_receiving_usd": 16.01,
+    "units": 25,
+    "distinct_products": 17,
+    "weight_lb": 442.4,
+    "volume_ft3": 11.7,
+    "climate": "room_temp"
+  },
+  "already_on_cart": [
+    {
+      "sku": "GP073",
+      "name": "Chicken wheat animal feed, organic",
+      "size": "50 lb",
+      "qty": 2,
+      "unit_usd": 34.91,
+      "line_usd": 69.82,
+      "toggle": false,
+      "reason": "already on the drop \u2014 animal feed"
+    },
+    {
+      "sku": "GP559",
+      "name": "Whole field peas animal feed, organic",
+      "size": "50 lb",
+      "qty": 2,
+      "unit_usd": 38.69,
+      "line_usd": 77.38,
+      "toggle": false,
+      "reason": "already on the drop \u2014 animal feed"
+    },
+    {
+      "sku": "BP045",
+      "name": "Vanilla extract, organic",
+      "size": "32 floz",
+      "qty": 1,
+      "unit_usd": 33.18,
+      "line_usd": 33.18,
+      "toggle": false,
+      "reason": "already on the drop"
+    },
+    {
+      "sku": "SW437",
+      "name": "Honey, raw wildflower, organic",
+      "size": "12 lb",
+      "qty": 2,
+      "unit_usd": 72.18,
+      "line_usd": 144.36,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy honey"
+    },
+    {
+      "sku": "OL251",
+      "name": "EVOO, extra virgin cold pressed, organic",
+      "size": "1 gal",
+      "qty": 3,
+      "unit_usd": 42.98,
+      "line_usd": 128.94,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy oil"
+    },
+    {
+      "sku": "HS217",
+      "name": "Taco seasoning mix (soon discontinued)",
+      "size": "1 lb",
+      "qty": 1,
+      "unit_usd": 9.25,
+      "line_usd": 9.25,
+      "toggle": false,
+      "reason": "already on the drop"
+    },
+    {
+      "sku": "HS186",
+      "name": "Pumpkin pie spice",
+      "size": "4 oz",
+      "qty": 1,
+      "unit_usd": 4.58,
+      "line_usd": 4.58,
+      "toggle": false,
+      "reason": "already on the drop"
+    },
+    {
+      "sku": "FL013",
+      "name": "Cornmeal, organic",
+      "size": "5 lb",
+      "qty": 2,
+      "unit_usd": 7.0,
+      "line_usd": 14.0,
+      "toggle": false,
+      "reason": "already on the drop"
+    },
+    {
+      "sku": "OL219",
+      "name": "Palm fruit shortening, organic",
+      "size": "4 lb",
+      "qty": 1,
+      "unit_usd": 16.2,
+      "line_usd": 16.2,
+      "toggle": false,
+      "reason": "already on the drop"
+    },
+    {
+      "sku": "GR338",
+      "name": "Thai jasmine white rice, organic",
+      "size": "25 lb",
+      "qty": 1,
+      "unit_usd": 50.58,
+      "line_usd": 50.58,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy rice"
+    },
+    {
+      "sku": "GR111",
+      "name": "Hard white wheat, organic",
+      "size": "25 lb",
+      "qty": 1,
+      "unit_usd": 36.97,
+      "line_usd": 36.97,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy wheat"
+    },
+    {
+      "sku": "GR064",
+      "name": "Soft white wheat, organic",
+      "size": "25 lb",
+      "qty": 1,
+      "unit_usd": 21.5,
+      "line_usd": 21.5,
+      "toggle": false,
+      "reason": "already on the drop"
+    },
+    {
+      "sku": "CE065",
+      "name": "Rolled oats, organic",
+      "size": "25 lb",
+      "qty": 1,
+      "unit_usd": 28.08,
+      "line_usd": 28.08,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy oats"
+    },
+    {
+      "sku": "GR022",
+      "name": "Yellow popcorn, organic",
+      "size": "25 lb",
+      "qty": 1,
+      "unit_usd": 31.5,
+      "line_usd": 31.5,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy popcorn"
+    },
+    {
+      "sku": "GR172",
+      "name": "Multicolored popcorn, organic",
+      "size": "5 lb",
+      "qty": 2,
+      "unit_usd": 10.61,
+      "line_usd": 21.22,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy popcorn"
+    },
+    {
+      "sku": "GR359",
+      "name": "White popcorn, organic",
+      "size": "5 lb",
+      "qty": 2,
+      "unit_usd": 8.17,
+      "line_usd": 16.34,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy popcorn"
+    },
+    {
+      "sku": "OL457",
+      "name": "Coconut oil, expeller pressed, organic",
+      "size": "6 x 64 floz glass",
+      "qty": 1,
+      "unit_usd": 98.44,
+      "line_usd": 98.44,
+      "toggle": false,
+      "reason": "already on the drop \u2014 do not rebuy oil"
+    }
+  ],
+  "skip_rebuy": [
+    "popcorn",
+    "honey",
+    "oil",
+    "wheat",
+    "oats",
+    "rice",
+    "animal feed",
+    "milk powder"
+  ],
+  "first_pass_add_total_usd": 299.36,
+  "proposed_adds": [
+    {
+      "id": "lentils",
+      "sku": "BE024",
+      "name": "Green lentils, organic",
+      "size": "25 lb",
+      "unit_usd": 38.51,
+      "usd_per_lb": 1.54,
+      "in_stock": "694",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Soup, chili extender, no soak. Cheapest dry protein on the list."
+    },
+    {
+      "id": "black",
+      "sku": "BE006",
+      "name": "Black beans, organic",
+      "size": "25 lb",
+      "unit_usd": 39.54,
+      "usd_per_lb": 1.58,
+      "in_stock": "2143",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Rice bowls, burritos, chili."
+    },
+    {
+      "id": "pinto",
+      "sku": "BE041",
+      "name": "Pinto beans, organic",
+      "size": "25 lb",
+      "unit_usd": 48.12,
+      "usd_per_lb": 1.92,
+      "in_stock": "4859",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Chili, bowls, refried."
+    },
+    {
+      "id": "great-northern",
+      "sku": "BE015",
+      "name": "Great Northern beans, organic",
+      "size": "25 lb",
+      "unit_usd": 44.21,
+      "usd_per_lb": 1.77,
+      "in_stock": "1209",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Soup and white-bean pots."
+    },
+    {
+      "id": "yeast",
+      "sku": "BP080",
+      "name": "Dry active yeast",
+      "size": "5 lb",
+      "unit_usd": 28.38,
+      "usd_per_lb": 5.68,
+      "in_stock": "907",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Daily milled sandwich bread. Azure bulk dry active (no Red Star listing this pull)."
+    },
+    {
+      "id": "salt",
+      "sku": "BP067",
+      "name": "Sea salt",
+      "size": "50 lb",
+      "unit_usd": 39.84,
+      "usd_per_lb": 0.8,
+      "in_stock": "840",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Cheapest bulk salt. Bread and cooking."
+    },
+    {
+      "id": "tomatoes",
+      "sku": "GY1421",
+      "name": "Crushed tomatoes with basil, organic",
+      "size": "12 x 28 oz",
+      "unit_usd": 32.08,
+      "usd_per_can": 2.67,
+      "in_stock": "210",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Chili, pasta sauce, soup."
+    },
+    {
+      "id": "spaghetti",
+      "sku": "PA015",
+      "name": "Semolina spaghetti, organic",
+      "size": "10 lb",
+      "unit_usd": 28.68,
+      "usd_per_lb": 2.87,
+      "in_stock": "2571",
+      "default_checked": true,
+      "pass": "first",
+      "why": "Same price as WW PA016, far more stock (2,571 vs 132). Pasta night."
+    },
+    {
+      "id": "peanut-butter",
+      "sku": "NB430",
+      "name": "Peanut butter, creamy salted, organic",
+      "size": "16.75 lb pail",
+      "unit_usd": 85.3,
+      "usd_per_lb": 5.09,
+      "in_stock": "58",
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Cheapest bulk PB. Only 58 pails left."
+    },
+    {
+      "id": "acv",
+      "sku": "CO129",
+      "name": "Raw apple cider vinegar, organic",
+      "size": "1 gal",
+      "unit_usd": 13.88,
+      "in_stock": "458",
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Dressings, soaking beans."
+    },
+    {
+      "id": "tomato-powder",
+      "sku": "HS1764",
+      "name": "Tomato powder, organic",
+      "size": "1 lb",
+      "unit_usd": 14.02,
+      "in_stock": "3366",
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Shelf-stable paste/sauce, no extra cans."
+    },
+    {
+      "id": "spaghetti-ww",
+      "sku": "PA016",
+      "name": "Whole-wheat spaghetti, organic",
+      "size": "10 lb",
+      "unit_usd": 28.68,
+      "usd_per_lb": 2.87,
+      "in_stock": "132",
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Same price as PA015. Add only if they want both."
+    },
+    {
+      "id": "kidney",
+      "sku": "BE055",
+      "name": "Kidney beans, organic",
+      "size": "5 lb",
+      "unit_usd": 13.37,
+      "usd_per_lb": 2.67,
+      "in_stock": null,
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Chili-only size. Skip the 25 lb kidney (BE054 $62.00)."
+    },
+    {
+      "id": "baking-soda",
+      "sku": "BP009",
+      "name": "Baking soda",
+      "size": "5 lb",
+      "unit_usd": 8.29,
+      "in_stock": "2994",
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Quick breads."
+    },
+    {
+      "id": "garlic",
+      "sku": "HS277",
+      "name": "Garlic powder, organic",
+      "size": "1 lb",
+      "unit_usd": 12.65,
+      "in_stock": "4286",
+      "default_checked": false,
+      "pass": "optional",
+      "why": "Beans, bread, rubs."
+    }
+  ],
+  "skipped": [
+    {
+      "sku": "BP351",
+      "name": "Whole milk powder, organic",
+      "size": "5 lb",
+      "unit_usd": 57.14,
+      "usd_per_lb": 11.43,
+      "reason": "Not cheap protein. Skip."
+    },
+    {
+      "sku": "BE054",
+      "name": "Kidney beans 25 lb",
+      "unit_usd": 62.0,
+      "reason": "Use 5 lb BE055 if they want kidney."
+    },
+    {
+      "sku": "BE050",
+      "name": "Navy beans 25 lb",
+      "unit_usd": 48.58,
+      "reason": "Great Northern + lentils cover white-bean pots cheaper this pass."
+    },
+    {
+      "sku": "BE036",
+      "name": "Garbanzo 25 lb",
+      "unit_usd": 52.8,
+      "reason": "Not on first-pass; pricier than black/pinto/GN/lentils."
+    },
+    {
+      "name": "wheat / oats / rice / EVOO / honey / popcorn",
+      "reason": "Already on 8804714. Do not rebuy."
+    }
+  ],
+  "price_source": "/workspace/grocery-receipts/azure-proposed-adds.json + azure-proposed-adds.md (Aug 27, 2026). BE055 5 lb $13.37 from the md (25 lb kidney is in the json at $62.00)."
+}

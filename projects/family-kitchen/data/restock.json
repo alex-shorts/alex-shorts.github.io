@@ -1,0 +1,72 @@
+{
+  "updated": "2026-08-27",
+  "note": "Not recipes. Standing household food and supplies that meals miss. Bought is filled from receipts or store emails, not invented.",
+  "capture": {
+    "how": [
+      "Photo of a receipt (Morganne or Alex)",
+      "Forwarded Walmart / Instacart / Sprouts email",
+      "Azure cart we already have"
+    ],
+    "do_not": [
+      "Invent line items",
+      "Use Monarch merchant totals as item-level buys",
+      "Turn snacks into recipes"
+    ]
+  },
+  "lanes": ["meals", "restock", "bought"],
+  "standing_restock": [
+    {
+      "id": "alex-lunch-beef",
+      "name": "85/15 ground beef",
+      "why": "Alex M–F lunch, 2.5 lb/week",
+      "prefer": "Aldi Simply Nature organic grass-fed when $5.99/lb",
+      "qty_hint": "2.5 lb"
+    },
+    {
+      "id": "gold-potatoes",
+      "name": "Gold potatoes",
+      "why": "Alex lunch roast",
+      "qty_hint": "3–5 lb"
+    },
+    {
+      "id": "eggs",
+      "name": "Eggs",
+      "why": "Breakfast / Sunday leftover-heavy",
+      "prefer": "Sprouts Vital Farms when on ad",
+      "qty_hint": "2 cartons · 24 eggs (12 ct)"
+    },
+    {
+      "id": "produce",
+      "name": "In-season produce",
+      "why": "Not a recipe. Sprouts or Aldi in-store.",
+      "prefer": "organic when the price wins"
+    },
+    {
+      "id": "mushrooms",
+      "name": "Fresh white-button mushrooms",
+      "why": "Optional with Alex lunch. Never canned.",
+      "optional": true,
+      "qty_hint": "8–16 oz"
+    },
+    {
+      "id": "dairy",
+      "name": "Milk / yogurt",
+      "why": "Restock, not a meal. Fill from receipts until the usual brands are known."
+    },
+    {
+      "id": "snacks-fruit",
+      "name": "Snacks and fruit",
+      "why": "Will never come from a dinner recipe. Learn from receipts."
+    },
+    {
+      "id": "household",
+      "name": "Soap / paper / household",
+      "why": "Homemaker owns supplies. Azure Charlie’s Soap when that drop is the buy."
+    }
+  ],
+  "bought": {
+    "week": "2026-08-31",
+    "items": [],
+    "note": "Empty until a receipt or store email is logged. Do not invent."
+  }
+}

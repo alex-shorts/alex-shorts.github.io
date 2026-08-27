@@ -1,0 +1,653 @@
+{
+  "week": "2026-08-31",
+  "week_label": "Aug 31–Sep 6 2026",
+  "title": "Family Kitchen",
+  "draft": true,
+  "household": {
+    "people": 7,
+    "nursing_baby": true,
+    "notes": "Tall/active, high protein and calories. Grocery target about $2000/month.",
+    "diet": "No pork. Bacon only rarely, never a default buy or sale swap."
+  },
+  "goal": "Feed 7, ship what we can.",
+  "alex_lunch": {
+    "locked": true,
+    "days": "Mon–Fri",
+    "name": "190g smash patty 85/15 + roasted gold potatoes",
+    "mushrooms": "optional, never canned"
+  },
+  "daily": {
+    "bread": "Milled overnight no-knead sandwich bread (hard white wheat GR111). Yeast BP080 and sea salt BP067 if those adds stay on.",
+    "breakfast": "Oats (CE065). Honey on the cart.",
+    "sunday": "Leftover-heavy / bread + eggs if needed."
+  },
+  "meals": [
+    {
+      "id": "white-chicken-chili",
+      "name": "White chicken chili",
+      "leftover": "Chili again / over rice or bread",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": true,
+      "plate_label": "staple share, protein TBD",
+      "source": "Ashley Fehr / The Recipe Rebel",
+      "source_url": "https://www.thereciperebel.com/easy-crockpot-white-chicken-chili/",
+      "photo": "recipe-photos/web/white-chicken-chili.jpg",
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "onion / green chilies / corn / cream cheese / broth if not on hand"
+      ],
+      "uses_azure": [
+        "Great Northern BE015",
+        "rice GR338 (leftover over rice)",
+        "hard white wheat GR111 (leftover bread)",
+        "taco HS217"
+      ]
+    },
+    {
+      "id": "crockpot-tuscan",
+      "name": "Crockpot Tuscan chicken",
+      "leftover": "Tuscan chicken + milled bread",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": true,
+      "plate_label": "staple share, protein TBD",
+      "source": "Ashley Fehr / The Recipe Rebel",
+      "source_url": "https://www.thereciperebel.com/crockpot-tuscan-chicken/",
+      "photo": "recipe-photos/web/tuscan-chicken.jpg",
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "heavy cream / sun-dried tomatoes / Parmesan / fresh spinach if not on hand"
+      ],
+      "uses_azure": [
+        "hard white wheat GR111 (leftover milled bread)",
+        "EVOO OL251",
+        "semolina spaghetti PA015 (optional, recipe says serve over pasta)"
+      ]
+    },
+    {
+      "id": "spinach-ricotta-chicken",
+      "name": "Spinach ricotta chicken bake",
+      "leftover": "Bake again",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": true,
+      "plate_label": "staple share, protein TBD",
+      "source": "Easy Family Recipes",
+      "source_url": "https://easyfamilyrecipes.com/spinach-ricotta-chicken-bake/",
+      "photo": "recipe-photos/web/spinach-ricotta-chicken-bake.jpg",
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "ricotta / mozzarella / Parmesan / frozen spinach if not on hand"
+      ],
+      "uses_azure": [
+        "crushed tomatoes GY1421 (marinara stand-in)"
+      ]
+    },
+    {
+      "id": "keto-green-chile",
+      "name": "Keto green chile chicken",
+      "leftover": "Leftover chicken for lunches",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "organic chicken, price after shops, dairy TBD",
+      "source": "Easy Family Recipes",
+      "source_url": "https://easyfamilyrecipes.com/keto-green-chile-chicken/",
+      "photo": "recipe-photos/web/green-chile-chicken.jpg",
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "cream cheese / green chiles / Monterey jack if not on hand"
+      ],
+      "uses_azure": [],
+      "note": "Optional swap. Not on the default board."
+    },
+    {
+      "id": "chili",
+      "name": "Big pot chili",
+      "leftover": "Leftover chili over rice or baked potatoes",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share, protein TBD",
+      "staple_share_usd_per_plate": 1.0,
+      "staple_share_usd_for_14": 14.05,
+      "staple_assumptions": {
+        "pinto_lb": 1.5,
+        "pinto_usd": 2.89,
+        "lentils_lb": 0.5,
+        "lentils_usd": 0.77,
+        "tomatoes_cans": 2,
+        "tomatoes_usd": 5.35,
+        "rice_lb": 2.0,
+        "rice_usd": 4.05,
+        "evoo_floz": 2,
+        "evoo_usd": 0.67,
+        "taco_oz": 0.5,
+        "taco_usd": 0.29,
+        "salt_lb": 0.04,
+        "salt_usd": 0.03
+      },
+      "needs_store": [
+        "beef (Aldi organic 85/15 $5.99/lb through Tue 9/1, or Sprouts organic grass-fed BOGO 50%)",
+        "onion / peppers if not on hand"
+      ],
+      "uses_azure": [
+        "pinto BE041",
+        "lentils BE024",
+        "crushed tomatoes GY1421",
+        "rice GR338",
+        "EVOO OL251",
+        "taco HS217"
+      ]
+    },
+    {
+      "id": "roast",
+      "name": "Roast chicken and vegetables",
+      "leftover": "Leftover chicken tacos (taco seasoning + milled tortillas or bread) and stock",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share, protein TBD",
+      "staple_share_usd_per_plate": 0.27,
+      "staple_share_usd_for_14": 3.83,
+      "staple_assumptions": {
+        "wheat_lb": 1.5,
+        "wheat_usd": 2.22,
+        "taco_oz": 1.0,
+        "taco_usd": 0.58,
+        "evoo_floz": 3,
+        "evoo_usd": 1.01,
+        "salt_lb": 0.03,
+        "salt_usd": 0.02
+      },
+      "needs_store": [
+        "chicken (Super 1 thighs/drums $0.97/lb through Tue 9/1 is the volume buy)",
+        "roasting vegetables (Sprouts organic potatoes BOGO 50%)"
+      ],
+      "uses_azure": [
+        "hard white wheat GR111",
+        "taco HS217",
+        "EVOO OL251"
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta night",
+      "leftover": "Leftover baked pasta the next day",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share, protein TBD",
+      "staple_share_usd_per_plate": 0.95,
+      "staple_share_usd_for_14": 13.26,
+      "staple_assumptions": {
+        "spaghetti_lb": 2.0,
+        "spaghetti_usd": 5.74,
+        "tomatoes_cans": 2,
+        "tomatoes_usd": 5.35,
+        "evoo_floz": 2,
+        "evoo_usd": 0.67,
+        "wheat_bread_lb": 1.0,
+        "wheat_bread_usd": 1.48,
+        "salt_lb": 0.02,
+        "salt_usd": 0.02
+      },
+      "needs_store": [
+        "optional meat or cheese for the bake"
+      ],
+      "uses_azure": [
+        "semolina spaghetti PA015",
+        "crushed tomatoes GY1421",
+        "EVOO OL251",
+        "hard white wheat GR111"
+      ]
+    },
+    {
+      "id": "bowls",
+      "name": "Bean and rice bowls",
+      "leftover": "Leftover burritos",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share (beans counted), extra protein TBD",
+      "staple_share_usd_per_plate": 0.99,
+      "staple_share_usd_for_14": 13.86,
+      "staple_assumptions": {
+        "black_lb": 1.5,
+        "black_usd": 2.37,
+        "pinto_lb": 0.5,
+        "pinto_usd": 0.96,
+        "rice_lb": 2.5,
+        "rice_usd": 5.06,
+        "taco_oz": 1.0,
+        "taco_usd": 0.58,
+        "wheat_lb": 1.5,
+        "wheat_usd": 2.22,
+        "tomatoes_cans": 1,
+        "tomatoes_usd": 2.67
+      },
+      "needs_store": [
+        "optional extras (avocado BOGO 50% at Sprouts, cheese, salsa)"
+      ],
+      "uses_azure": [
+        "black BE006",
+        "pinto BE041",
+        "rice GR338",
+        "taco HS217",
+        "hard white wheat GR111",
+        "crushed tomatoes GY1421"
+      ]
+    },
+    {
+      "id": "soup",
+      "name": "Bone soup with beans",
+      "leftover": "Leftover lunches",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share, vegetables TBD",
+      "staple_share_usd_per_plate": 0.5,
+      "staple_share_usd_for_14": 6.95,
+      "staple_assumptions": {
+        "great_northern_lb": 1.0,
+        "great_northern_usd": 1.77,
+        "lentils_lb": 0.75,
+        "lentils_usd": 1.16,
+        "tomatoes_cans": 1,
+        "tomatoes_usd": 2.67,
+        "evoo_floz": 1,
+        "evoo_usd": 0.34,
+        "rice_lb": 0.5,
+        "rice_usd": 1.01
+      },
+      "needs_store": [
+        "soup vegetables"
+      ],
+      "uses_azure": [
+        "Great Northern BE015",
+        "lentils BE024",
+        "crushed tomatoes GY1421",
+        "rice GR338",
+        "EVOO OL251"
+      ],
+      "note": "Uses leftover roast bones. Sunday can stay leftover-heavy."
+    },
+    {
+      "id": "smash-dinner",
+      "name": "Smash patties and gold potatoes",
+      "leftover": "Leftover patties crumbled into rice bowls",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share, protein TBD",
+      "staple_share_usd_per_plate": 0.35,
+      "staple_share_usd_for_14": 4.86,
+      "staple_assumptions": {
+        "rice_lb": 2.0,
+        "rice_usd": 4.05,
+        "evoo_floz": 2,
+        "evoo_usd": 0.67,
+        "taco_oz": 0.25,
+        "taco_usd": 0.14
+      },
+      "note": "Alex already eats this M–F for lunch. Off by default so dinner is not the same pattern every night.",
+      "needs_store": [
+        "85/15 ground beef (190g patty each, scaled for 7)",
+        "gold potatoes (Sprouts organic BOGO 50%)"
+      ],
+      "uses_azure": [
+        "rice GR338",
+        "EVOO OL251"
+      ]
+    },
+    {
+      "id": "brinner",
+      "name": "Breakfast for dinner",
+      "leftover": "Leftover porridge for breakfast",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "staple share, eggs TBD",
+      "staple_share_usd_per_plate": 0.38,
+      "staple_share_usd_for_14": 5.34,
+      "staple_assumptions": {
+        "oats_lb": 1.5,
+        "oats_usd": 1.68,
+        "cornmeal_lb": 0.75,
+        "cornmeal_usd": 1.05,
+        "wheat_lb": 1.0,
+        "wheat_usd": 1.48,
+        "honey_oz": 3.0,
+        "honey_usd": 1.13
+      },
+      "note": "Sunday can be leftover-heavy / bread + eggs instead.",
+      "needs_store": [
+        "eggs (Sprouts Vital Farms BOGO through Tue 9/1)"
+      ],
+      "uses_azure": [
+        "oats CE065",
+        "cornmeal FL013",
+        "hard white wheat GR111",
+        "honey SW437"
+      ]
+    },
+    {
+      "id": "sheet-pan-fajitas",
+      "name": "Sheet pan chicken fajitas",
+      "leftover": "Leftover fajita chicken and peppers for lunches",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "organic chicken, price after shops",
+      "source": "Sheet Pan Chicken Fajitas (name only — no URL on file)",
+      "photo": null,
+      "note": "Name only. Do not invent a URL.",
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "onion / bell peppers / limes if not on hand"
+      ],
+      "uses_azure": [
+        "taco HS217 (fajita seasoning stand-in)",
+        "EVOO OL251",
+        "hard white wheat GR111 (optional tortillas)"
+      ]
+    },
+    {
+      "id": "lazy-meatball-lasagna",
+      "name": "Lazy meatball lasagna",
+      "leftover": "Leftover lasagna scoops",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "Azure pasta/sauce staple share, meatballs TBD",
+      "source": "Dumb Dinners, Episode 23 (name only — no URL on file)",
+      "photo": null,
+      "note": "Name only. Do not invent a URL.",
+      "needs_store": [
+        "frozen fully cooked meatballs (no meatball sale this week — store TBD)",
+        "ricotta / mozzarella / frozen spinach if not on hand"
+      ],
+      "uses_azure": [
+        "crushed tomatoes GY1421 (marinara stand-in)",
+        "semolina spaghetti PA015 (house pasta; page asks for lasagna sheets — no invented noodle SKU)"
+      ]
+    },
+    {
+      "id": "crockpot-shredded-chicken",
+      "name": "Crockpot shredded chicken",
+      "leftover": "Shredded chicken leftovers for lunches or bowls",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "organic chicken, price after shops",
+      "source": "Ashley Fehr / The Recipe Rebel",
+      "source_url": "https://www.thereciperebel.com/crockpot-shredded-chicken/",
+      "photo": null,
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "chicken broth / seasoning salt if not on hand"
+      ],
+      "uses_azure": [],
+      "note": "Optional swap. Not on the default board."
+    },
+    {
+      "id": "slow-cooker-chicken-and-rice",
+      "name": "Slow cooker chicken and rice",
+      "leftover": "Leftover chicken and rice",
+      "cook_once_pair": true,
+      "servings_per_night": 7,
+      "nights": 2,
+      "default_checked": false,
+      "plate_label": "organic chicken, price after shops, dairy TBD",
+      "source": "Ashley Fehr / The Recipe Rebel",
+      "source_url": "https://www.thereciperebel.com/slow-cooker-chicken-and-rice/",
+      "photo": null,
+      "needs_store": [
+        "organic chicken (price after shops — no organic chicken ad $ this week)",
+        "carrots / onion / roasted red peppers / peas / Parmesan / half-and-half if not on hand"
+      ],
+      "uses_azure": [
+        "rice GR338 (page asks for long-grain white / basmati — house rice stand-in)"
+      ],
+      "note": "Optional swap. Not on the default board."
+    }
+  ],
+  "azure": {
+    "order_id": "8804714",
+    "status": "open_not_placed",
+    "cutoff": "2026-09-09",
+    "drop_week": "2026-09-13",
+    "already_in_usd": 871.92,
+    "first_pass_adds_usd": 299.36,
+    "note": "Azure drop is mid-September. This week's dinners still need store meat, eggs, and produce."
+  },
+  "pickup": {
+    "rule": "Out-of-house shopping is pickup or a short list at 1–2 places.",
+    "stores": [
+      {
+        "id": "super1",
+        "name": "Super 1",
+        "default_checked": false,
+        "why": "Conventional option, not default. Thighs/drums 97¢/lb value pack, limit 2 pkgs, circular 8101577 through Tue 9/1. Meat = organic first."
+      },
+      {
+        "id": "sprouts",
+        "name": "Sprouts",
+        "default_checked": true,
+        "why": "4015 S Broadway #157. Vital Farms pasture eggs BOGO (Flipp 8092657); organic produce BOGOs; organic grass-fed beef BOGO 50%. Ad through Tue 9/1. DELIVERY26AUG $0 delivery shop.sprouts.com $35 min exp Aug 31."
+      },
+      {
+        "id": "aldi",
+        "name": "Aldi",
+        "default_checked": true,
+        "why": "Default pickup. Simply Nature organic grass-fed 85/15 $5.99/lb through Tue 9/1 (circular 8103848). Alex M–F lunch."
+      }
+    ],
+    "walmart": "Packaged later via the Walmart app. Not a default stop this week.",
+    "instacart": "Coming later, we'll tailor around it.",
+    "ship_home": "Azure 8804714 (not placed) + proposed adds. Tyler drop week of Sep 13."
+  },
+  "coupons": {
+    "hint": "Clip a sale. It counts. Only dollars we actually know.",
+    "store_sale_wins": [
+      {
+        "id": "super1-chicken",
+        "when_store": "super1",
+        "name": "Super 1 chicken $0.97/lb",
+        "rebate_usd": null,
+        "note": "Sale price, not a rebate. Counts as a win when Super 1 is checked."
+      },
+      {
+        "id": "sprouts-bogo",
+        "when_store": "sprouts",
+        "name": "Sprouts BOGO produce/eggs",
+        "rebate_usd": null,
+        "note": "No shelf prices. Counts as a win when Sprouts is checked."
+      }
+    ],
+    "clips": [
+      {
+        "id": "delivery26aug",
+        "name": "DELIVERY26AUG",
+        "store": "Sprouts",
+        "offer": "shop.sprouts.com $0 delivery / $35 min, expires 2026-08-31 (last day of this week).",
+        "code": "DELIVERY26AUG",
+        "expires": "2026-08-31",
+        "rebate_usd": null,
+        "default_checked": true,
+        "only_if_already_going": false
+      },
+      {
+        "id": "sprouts-app",
+        "name": "Sprouts app Coupons tab",
+        "store": "Sprouts",
+        "offer": "Clip what’s live in the Sprouts app before you shop.",
+        "rebate_usd": null,
+        "default_checked": true,
+        "only_if_already_going": false
+      },
+      {
+        "id": "walmart-dannon",
+        "name": "Walmart Cash Dannon 32 oz",
+        "store": "Walmart",
+        "offer": "$0.45 cash, clip in the Walmart app, limit 5. Ad list 8/25–8/31.",
+        "rebate_usd": 0.45,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "checkout51",
+        "name": "Checkout 51 $2 on $10+ fresh beef",
+        "store": "Checkout 51",
+        "offer": "Activate by 2026-08-27, receipt by 2026-09-02. Skip Golden Star rice (Azure 25 lb).",
+        "rebate_usd": 2.0,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-wm-vf",
+        "name": "Ibotta Walmart VF eggs $0.50",
+        "store": "Walmart",
+        "offer": "Vital Farms Organic Pasture-Raised Eggs 12 ct $0.50 back.",
+        "rebate_usd": 0.5,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-nellie",
+        "name": "Ibotta Nellie's $0.75",
+        "store": "Walmart",
+        "offer": "Nellie's Free Range Eggs 12 ct $0.75.",
+        "rebate_usd": 0.75,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-oak",
+        "name": "Ibotta Oak Farms milk $0.25",
+        "store": "Walmart",
+        "offer": "Oak Farms milk any fat $0.25.",
+        "rebate_usd": 0.25,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-justbare",
+        "name": "Ibotta Just Bare $2.00",
+        "store": "Walmart",
+        "offer": "Just Bare Chicken Breast Bites 1.2 lb or Wings $2.00.",
+        "rebate_usd": 2.0,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-aldi",
+        "name": "Ibotta Aldi receipt $1.00",
+        "store": "Aldi",
+        "offer": "Any grocery receipt $1.00.",
+        "rebate_usd": 1.0,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-sprouts-vf1",
+        "name": "Ibotta Sprouts VF $1.00",
+        "store": "Sprouts",
+        "offer": "Vital Farms pasture eggs $1.00. Default on because Sprouts is a default pickup.",
+        "rebate_usd": 1.0,
+        "default_checked": true,
+        "only_if_already_going": false
+      },
+      {
+        "id": "ibotta-sprouts-vf225",
+        "name": "Ibotta Sprouts VF $2.25",
+        "store": "Sprouts",
+        "offer": "Vital Farms pasture eggs $2.25 (second offer). Default on because Sprouts is a default pickup.",
+        "rebate_usd": 2.25,
+        "default_checked": true,
+        "only_if_already_going": false
+      },
+      {
+        "id": "ibotta-westbrae",
+        "name": "Ibotta Westbrae beans $0.75",
+        "store": "Sprouts",
+        "offer": "Westbrae beans $0.75. Off — Azure beans cover this.",
+        "rebate_usd": 0.75,
+        "default_checked": false,
+        "only_if_already_going": true,
+        "skip_reason": "Azure beans cover this"
+      },
+      {
+        "id": "ibotta-brookshire",
+        "name": "Ibotta Brookshire's receipt $1",
+        "store": "Brookshire's",
+        "offer": "Any grocery receipt $1 only if that trip already happens. No new trip.",
+        "rebate_usd": 1.0,
+        "default_checked": false,
+        "only_if_already_going": true
+      },
+      {
+        "id": "ibotta-target",
+        "name": "Ibotta Target VF / Stringles",
+        "store": "Target",
+        "offer": "Through Sat 8/29 only if already there: VF eggs $1 / $2.25; Organic Valley Stringles $1.25. No single known-back amount.",
+        "rebate_usd": null,
+        "default_checked": false,
+        "only_if_already_going": true
+      }
+    ],
+    "ibotta": {
+      "rule": "Clip only if that run already happens. Do not add a store trip for Ibotta. Redeem in the Ibotta app (web cannot redeem).",
+      "account_retailers": [
+        "Walmart",
+        "Aldi",
+        "Super 1",
+        "Brookshire's",
+        "Target",
+        "Sam's",
+        "Sprouts"
+      ],
+      "skip": [
+        "Ibotta rice (Azure 25 lb already on 8804714)",
+        "Ibotta EVOO / Fresh Press (Azure 3 gal)",
+        "wheat",
+        "dry beans",
+        "honey",
+        "butter",
+        "raw beef",
+        "Fetch extra trips",
+        "Super 1 Kraft / Oikos / Oscar Mayer unless those brands are already in the cart",
+        "Sam's Seeds of Change rice+beans $2 (Azure rice)"
+      ]
+    }
+  },
+  "grocery_target_usd_month": 2000,
+  "missing_prices": [
+    "No receipt prices for beef, chicken (beyond Super 1 $0.97/lb ad), eggs (Sprouts BOGO, no shelf $ on Flipp), produce BOGO items, or cheese.",
+    "No full plate costs. Staple-share cents use Azure cart + first-pass add unit prices only, with documented quantities.",
+    "Instacart totals: none. Coming later."
+  ],
+  "homemaker_payload_keys": [
+    "Meals",
+    "Azure adds",
+    "Pickup stores",
+    "Wins",
+    "Known back",
+    "Notes"
+  ]
+}

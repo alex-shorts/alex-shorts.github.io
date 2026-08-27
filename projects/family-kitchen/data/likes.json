@@ -1,0 +1,75 @@
+{
+  "updated": "2026-08-27",
+  "household": "Shorts, Tyler TX, feed 7",
+  "rules": [
+    "Human-sourced recipes only, with a URL or cookbook page. No AI recipe text.",
+    "Meat organic first. No-antibiotics / pasture / grass-fed if organic is missing.",
+    "No pork. Bacon only rarely, never a default buy or sale swap.",
+    "Cook once, leftover the next night. Cost per plate. Max 2 go-out stores.",
+    "Do not invent prices."
+  ],
+  "likes": {
+    "patterns": [
+      "Crockpot / dump-and-go",
+      "Chicken bake / sheet pan",
+      "Chili and beans over rice or bread",
+      "Italian-ish cream sauces (Tuscan, ricotta bake)",
+      "Fresh-milled sandwich bread",
+      "High protein, high calorie, leftover-friendly"
+    ],
+    "trusted_authors": [
+      "Ashley Fehr / The Recipe Rebel",
+      "Easy Family Recipes",
+      "Artisan Bread in Five (BreadIn5.com)"
+    ],
+    "proteins": ["chicken", "85/15 beef"],
+    "avoid": ["pork", "ham", "sausage", "pulled pork", "canned mushrooms in patties"]
+  },
+  "weekly_anchors": {
+    "alex_lunch": "190g smash patty 85/15 + roasted gold potatoes, Mon–Fri",
+    "bread": "Overnight no-knead, milled hard white wheat, BreadIn5 master recipe",
+    "azure_use": ["beans", "rice", "wheat", "tomatoes", "oats", "EVOO"]
+  },
+  "known_keepers": [
+    {
+      "name": "Easy Slow Cooker White Chicken Chili",
+      "url": "https://www.thereciperebel.com/easy-crockpot-white-chicken-chili/",
+      "author": "Ashley Fehr"
+    },
+    {
+      "name": "Crockpot Tuscan Chicken",
+      "url": "https://www.thereciperebel.com/crockpot-tuscan-chicken/",
+      "author": "Ashley Fehr"
+    },
+    {
+      "name": "Spinach Ricotta Chicken Bake",
+      "url": "https://easyfamilyrecipes.com/spinach-ricotta-chicken-bake/",
+      "author": "Easy Family Recipes"
+    },
+    {
+      "name": "Keto Green Chile Chicken",
+      "url": "https://easyfamilyrecipes.com/keto-green-chile-chicken/",
+      "author": "Easy Family Recipes"
+    }
+  ],
+  "name_only_until_url": [
+    "Sheet pan chicken fajitas",
+    "Dumb Dinners lazy meatball lasagna, episode 23"
+  ],
+  "new_candidates": [
+    {
+      "name": "Crockpot Shredded Chicken",
+      "url": "https://www.thereciperebel.com/crockpot-shredded-chicken/",
+      "author": "Ashley Fehr",
+      "why": "Same author as chili/Tuscan. Cook-once protein for leftovers.",
+      "status": "swap"
+    },
+    {
+      "name": "Slow Cooker Chicken and Rice",
+      "url": "https://www.thereciperebel.com/slow-cooker-chicken-and-rice/",
+      "author": "Ashley Fehr",
+      "why": "Crockpot plus Azure rice. Leftover-friendly.",
+      "status": "swap"
+    }
+  ]
+}

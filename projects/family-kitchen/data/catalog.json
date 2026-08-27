@@ -1,0 +1,461 @@
+{
+  "updated": "2026-08-27",
+  "note": "Store item history is not on Alex's Gmail; catalog grows when receipts are emailed. Do not invent Walmart, Instacart, or Sprouts SKUs. Azure lines are from data/azure-cart.json (order 8804714 open, not placed). Already-on-cart items show as in_pantry / do_not_rebuy and are not default-checked. No pork. Bacon is not a catalog default.",
+  "counts": {
+    "azure": 32,
+    "standing": 8,
+    "memory": 3,
+    "total": 43,
+    "azure_already_on_cart": 17,
+    "azure_proposed_adds": 15
+  },
+  "items": [
+    {
+      "id": "GP073",
+      "name": "Chicken wheat animal feed, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GP073",
+      "size": "50 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GP559",
+      "name": "Whole field peas animal feed, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GP559",
+      "size": "50 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "BP045",
+      "name": "Vanilla extract, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BP045",
+      "size": "32 floz",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "SW437",
+      "name": "Honey, raw wildflower, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "SW437",
+      "size": "12 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "OL251",
+      "name": "EVOO, extra virgin cold pressed, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "OL251",
+      "size": "1 gal",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "HS217",
+      "name": "Taco seasoning mix (soon discontinued)",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "HS217",
+      "size": "1 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "HS186",
+      "name": "Pumpkin pie spice",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "HS186",
+      "size": "4 oz",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "FL013",
+      "name": "Cornmeal, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "FL013",
+      "size": "5 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "OL219",
+      "name": "Palm fruit shortening, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "OL219",
+      "size": "4 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GR338",
+      "name": "Thai jasmine white rice, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GR338",
+      "size": "25 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GR111",
+      "name": "Hard white wheat, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GR111",
+      "size": "25 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GR064",
+      "name": "Soft white wheat, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GR064",
+      "size": "25 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "CE065",
+      "name": "Rolled oats, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "CE065",
+      "size": "25 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GR022",
+      "name": "Yellow popcorn, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GR022",
+      "size": "25 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GR172",
+      "name": "Multicolored popcorn, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GR172",
+      "size": "5 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "GR359",
+      "name": "White popcorn, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GR359",
+      "size": "5 lb",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "OL457",
+      "name": "Coconut oil, expeller pressed, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "OL457",
+      "size": "6 x 64 floz glass",
+      "in_pantry": true,
+      "do_not_rebuy": true,
+      "cart": "already_on_cart"
+    },
+    {
+      "id": "lentils",
+      "name": "Green lentils, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BE024",
+      "size": "25 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "black",
+      "name": "Black beans, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BE006",
+      "size": "25 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "pinto",
+      "name": "Pinto beans, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BE041",
+      "size": "25 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "great-northern",
+      "name": "Great Northern beans, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BE015",
+      "size": "25 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "yeast",
+      "name": "Dry active yeast",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BP080",
+      "size": "5 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "salt",
+      "name": "Sea salt",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BP067",
+      "size": "50 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "tomatoes",
+      "name": "Crushed tomatoes with basil, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "GY1421",
+      "size": "12 x 28 oz",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "spaghetti",
+      "name": "Semolina spaghetti, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "PA015",
+      "size": "10 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "peanut-butter",
+      "name": "Peanut butter, creamy salted, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "NB430",
+      "size": "16.75 lb pail",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "acv",
+      "name": "Raw apple cider vinegar, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "CO129",
+      "size": "1 gal",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "tomato-powder",
+      "name": "Tomato powder, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "HS1764",
+      "size": "1 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "spaghetti-ww",
+      "name": "Whole-wheat spaghetti, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "PA016",
+      "size": "10 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "kidney",
+      "name": "Kidney beans, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BE055",
+      "size": "5 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "baking-soda",
+      "name": "Baking soda",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "BP009",
+      "size": "5 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "garlic",
+      "name": "Garlic powder, organic",
+      "source": "azure",
+      "addable": true,
+      "default_on_list": false,
+      "sku": "HS277",
+      "size": "1 lb",
+      "cart": "proposed_add"
+    },
+    {
+      "id": "alex-lunch-beef",
+      "name": "85/15 ground beef",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": true,
+      "qty_hint": "2.5 lb",
+      "why": "Alex M–F lunch, 2.5 lb/week"
+    },
+    {
+      "id": "gold-potatoes",
+      "name": "Gold potatoes",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": true,
+      "qty_hint": "3–5 lb",
+      "why": "Alex lunch roast"
+    },
+    {
+      "id": "eggs",
+      "name": "Eggs",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": false,
+      "qty_hint": "2 cartons · 24 eggs (12 ct)",
+      "why": "Breakfast / Sunday leftover-heavy"
+    },
+    {
+      "id": "produce",
+      "name": "In-season produce",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": false,
+      "why": "Not a recipe. Sprouts or Aldi in-store."
+    },
+    {
+      "id": "mushrooms",
+      "name": "Fresh white-button mushrooms",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": false,
+      "qty_hint": "8–16 oz",
+      "why": "Optional with Alex lunch. Never canned.",
+      "optional": true
+    },
+    {
+      "id": "dairy",
+      "name": "Milk / yogurt",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": false,
+      "why": "Restock, not a meal. Fill from receipts until the usual brands are known."
+    },
+    {
+      "id": "snacks-fruit",
+      "name": "Snacks and fruit",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": false,
+      "why": "Will never come from a dinner recipe. Learn from receipts."
+    },
+    {
+      "id": "household",
+      "name": "Soap / paper / household",
+      "source": "standing",
+      "addable": true,
+      "default_on_list": false,
+      "why": "Homemaker owns supplies. Azure Charlie’s Soap when that drop is the buy."
+    },
+    {
+      "id": "quinoa",
+      "name": "Quinoa",
+      "source": "memory",
+      "addable": true,
+      "default_on_list": false,
+      "note": "2022 Azure repeat. Name only; no SKU on file."
+    },
+    {
+      "id": "charlies-soap",
+      "name": "Charlie's Soap",
+      "source": "memory",
+      "addable": true,
+      "default_on_list": false,
+      "note": "2022 Azure repeat. Name only; no SKU on file."
+    },
+    {
+      "id": "azure-clean-dish",
+      "name": "Azure Clean dish",
+      "source": "memory",
+      "addable": true,
+      "default_on_list": false,
+      "note": "2022 Azure repeat. Name only; no SKU on file."
+    }
+  ]
+}

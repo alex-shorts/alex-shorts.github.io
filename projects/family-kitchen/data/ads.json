@@ -1,0 +1,67 @@
+{
+  "week": "2026-08-31",
+  "through": "2026-09-01",
+  "note": "Verified Tyler ads only, through about Tue Sep 1 2026. No invented prices. Super 1 chicken is a conventional swap, not the default protein. Organic chicken has no ad $ this week — leave protein TBD. No pork ads (household does not eat pork; bacon rare only, never a default buy).",
+  "ads": [
+    {
+      "store": "Aldi",
+      "circular_id": "8103848",
+      "through": "2026-09-01",
+      "default_pickup": true,
+      "items": [
+        {
+          "name": "Simply Nature organic grass-fed 85/15",
+          "price": "$5.99/lb",
+          "note": "Alex M–F lunch default. Prefer through Sep 1 2026."
+        }
+      ]
+    },
+    {
+      "store": "Sprouts",
+      "location": "4015 S Broadway #157",
+      "circular_id": "8092657",
+      "circular_source": "Flipp",
+      "through": "2026-09-01",
+      "default_pickup": true,
+      "items": [
+        {
+          "name": "Vital Farms pasture eggs",
+          "offer": "BOGO"
+        },
+        {
+          "name": "Organic produce",
+          "offer": "BOGO"
+        },
+        {
+          "name": "Organic grass-fed beef",
+          "offer": "BOGO 50%"
+        }
+      ],
+      "codes": [
+        {
+          "code": "DELIVERY26AUG",
+          "offer": "$0 delivery",
+          "url": "shop.sprouts.com",
+          "min_usd": 35,
+          "expires": "2026-08-31"
+        }
+      ]
+    },
+    {
+      "store": "Super 1",
+      "circular_id": "8101577",
+      "through": "2026-09-01",
+      "default_pickup": false,
+      "tag": "conventional option, not default",
+      "items": [
+        {
+          "name": "Chicken thighs/drums",
+          "price": "97¢/lb",
+          "pack": "value pack",
+          "limit": "2 pkgs",
+          "note": "Conventional swap — not the default protein. Meat = organic first."
+        }
+      ]
+    }
+  ]
+}

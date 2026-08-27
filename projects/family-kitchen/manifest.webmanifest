@@ -1,0 +1,9 @@
+{
+  "name": "Family Kitchen",
+  "short_name": "Kitchen",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3e6cf",
+  "theme_color": "#f3e6cf",
+  "description": "Week board for Morganne — meals, leftovers, store lists. Draft only."
+}

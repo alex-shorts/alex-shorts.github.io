@@ -1,0 +1,131 @@
+{
+  "updated": "2026-08-27",
+  "note": "Imported from the published recipe cards. Empty ingredients/steps means Homemaker has not landed text yet — do not invent method. Food photos only from recipe-photos/web.",
+  "recipes": [
+    {
+      "id": "white-chicken-chili",
+      "url": "https://www.thereciperebel.com/easy-crockpot-white-chicken-chili/",
+      "title": "Easy Crockpot White Chicken Chili",
+      "author": "Ashley Fehr / The Recipe Rebel",
+      "servings_base": 4,
+      "servings_default": 7,
+      "photos": ["recipe-photos/web/white-chicken-chili.jpg"],
+      "ingredients": [
+        "2½ cups low sodium chicken broth, divided",
+        "1 can canned white kidney beans (540 ml or 19oz) drained and rinsed, divided",
+        "1 can sweet corn (341 ml or 12oz) drained",
+        "½ medium onion, finely diced",
+        "1 can canned green chiles (127 ml or 4.3oz)",
+        "2 cloves garlic, minced",
+        "1 tablespoon chili powder",
+        "1 teaspoon cumin",
+        "1 teaspoon salt",
+        "4 boneless skinless chicken breasts (about 2 lb)",
+        "4 oz cream cheese, room temperature (125 grams)"
+      ],
+      "steps": [
+        "In a blender or food processor, blend ½ cup chicken broth with ½ cup of white beans until smooth. Pour into a 3-5 quart slow cooker.",
+        "Add the remaining chicken broth and beans, along with corn, onion, green chiles, garlic, chili powder, cumin and salt. Stir and nestle the chicken breasts down into the liquid.",
+        "Cover and cook on low for 4-5 hours, or on high for 2-3 hours, until onion is tender and chicken breasts reach an internal temperature of 165 degrees F (the chicken should be cooked in about 3 hours on low).",
+        "Remove the chicken from the crockpot and stir in cubed, room temperature cream cheese. Cover.",
+        "Shred the chicken and add back into the slow cooker. Stir to incorporate the melted cheese. Taste and adjust seasonings as desired."
+      ]
+    },
+    {
+      "id": "crockpot-tuscan",
+      "url": "https://www.thereciperebel.com/crockpot-tuscan-chicken/",
+      "title": "Crockpot Tuscan Chicken",
+      "author": "Ashley Fehr / The Recipe Rebel",
+      "servings_base": 4,
+      "servings_default": 7,
+      "photos": ["recipe-photos/web/tuscan-chicken.jpg"],
+      "ingredients": [
+        "4 boneless, skinless chicken breasts (about 2 lbs)",
+        "½ teaspoon salt",
+        "½ teaspoon Italian seasoning",
+        "¼ teaspoon paprika",
+        "⅛ teaspoon pepper",
+        "1 cup heavy whipping cream",
+        "1 tablespoon cornstarch",
+        "3 cloves garlic, finely minced",
+        "¼ teaspoon salt",
+        "⅛ teaspoon pepper",
+        "⅓ cup sun-dried tomatoes, oil packed, drained and chopped",
+        "¼ cup grated Parmesan cheese",
+        "1 cup chopped fresh spinach"
+      ],
+      "steps": [
+        "Place the chicken in a 3- to 4-quart slow cooker.",
+        "In a small bowl, combine the salt, Italian seasoning, paprika, and pepper. Sprinkle the mixture evenly over the chicken.",
+        "In a medium bowl, whisk together the cream, cornstarch, garlic, salt, and pepper.",
+        "Stir in the tomatoes and Parmesan and pour over the chicken in the slow cooker.",
+        "Cover the slow cooker and cook on low for 3 hours, or until a meat thermometer inserted into the chicken reaches 165°F. If the sauce separates as it cooks, simply stir it until smooth. Stir in the spinach.",
+        "Taste and adjust seasonings as desired. Remove from the slow cooker and serve."
+      ]
+    },
+    {
+      "id": "spinach-ricotta-chicken",
+      "url": "https://easyfamilyrecipes.com/spinach-ricotta-chicken-bake/",
+      "title": "Spinach Ricotta Chicken Bake",
+      "author": "Easy Family Recipes",
+      "servings_default": 7,
+      "photos": ["recipe-photos/web/spinach-ricotta-chicken-bake.jpg"],
+      "ingredients": [
+        "2 pounds boneless, skinless chicken breasts, cut into 6 pieces",
+        "1½ teaspoons salt, divided",
+        "½ teaspoon pepper",
+        "16 ounces ricotta cheese",
+        "8 ounces frozen spinach, thawed and squeezed dry",
+        "2 cloves garlic",
+        "1 egg (optional)",
+        "2 cups marinara sauce",
+        "1 cup mozzarella cheese",
+        "1/4 cup parmesan cheese"
+      ],
+      "steps": [
+        "Preheat oven to 375˚F.",
+        "Pour half of the marinara in a large baking dish. Place your chicken on top and season with ½ teaspoon of each salt and pepper.",
+        "In a small bowl, stir together the ricotta cheese, spinach, garlic, and remaining teaspoon of salt.",
+        "Optional: Mix in one egg.",
+        "Top the chicken with the ricotta cheese mixture, then pour the remaining marinara sauce over top.",
+        "You can top with the mozzarella and parmesan cheese now, or wait until 10 minutes before the end of the baking time depending on if you like your cheese to brown, or stay extra melty.",
+        "Bake uncovered for 30-40 minutes, or until the chicken is cooked through (165˚F internal temp.) Once done you can garnish with fresh herbs (optional) and serve warm."
+      ]
+    },
+    {
+      "id": "keto-green-chile",
+      "url": "https://easyfamilyrecipes.com/keto-green-chile-chicken/",
+      "title": "Green Chile Chicken",
+      "author": "Easy Family Recipes",
+      "servings_default": 7,
+      "photos": ["recipe-photos/web/green-chile-chicken.jpg"],
+      "ingredients": [
+        "3-4 boneless skinless chicken breasts, trimmed",
+        "1 8 oz package cream cheese, softened",
+        "1 4 oz can chopped green chilis",
+        "1 cup monterey jack cheese, shredded",
+        "1/2 tsp garlic powder",
+        "1/4 tsp cumin",
+        "1/4 tsp salt",
+        "1/4 tsp pepper"
+      ],
+      "steps": [
+        "Heat the oven to 375F.",
+        "In a medium bowl, mix the cream cheese, garlic powder, cumin, salt and pepper until combined. Then stir in the green chilis and stir until evenly mixed.",
+        "Lay the chicken breasts flat in a baking dish. Cover the chicken breasts with the green chili mixture. Then top with the monterey jack cheese.",
+        "Bake on the middle rack for 35-45 minutes or until chicken is cooked through and the juices run clear.",
+        "Serve hot over sautéed spinach or cauliflower rice."
+      ]
+    },
+    {
+      "id": "milled-bread",
+      "url": "https://www.breadin5.com/",
+      "title": "Artisan Bread in Five Minutes a Day — Master Recipe",
+      "author": "Artisan Bread in Five (BreadIn5.com)",
+      "servings_default": 7,
+      "photos": [],
+      "ingredients": [],
+      "steps": []
+    }
+  ]
+}
