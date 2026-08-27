@@ -3,7 +3,7 @@
   "short_name": "Kitchen",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#dce6dc",
-  "theme_color": "#dce6dc",
+  "background_color": "#edd4c2",
+  "theme_color": "#edd4c2",
   "description": "Week board for Morganne — meals, leftovers, store lists. Draft only."
 }
