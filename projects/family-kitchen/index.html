@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3e6cf">
+<title>Family Kitchen</title>
+<style>
+:root {
+  --cream: #f3e6cf;
+  --paper: #fbf3e4;
+  --ink: #2a1f16;
+  --muted: #6a5444;
+  --line: #d8c6ae;
+  --olive: #3d4c30;
+  --olive-d: #2a351f;
+  --chip: #e7edd9;
+  --copper: #8a4528;
+  --locked: #efe4d0;
+  --warn: #8a4528;
+  --ok: #3d4c30;
+  --bar: #2a1f16;
+  --bar-ink: #f7edd8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.4;
+  padding-bottom: 168px;
+}
+header.hero {
+  padding: 22px 18px 16px;
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(138,69,40,.12), transparent 50%),
+    linear-gradient(180deg, #efe0c4, var(--cream));
+  border-bottom: 1px solid var(--line);
+}
+header.hero h1 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+.week { font-weight: 650; font-size: 1.02rem; }
+.goal { color: var(--muted); margin: 6px 0 0; font-size: .98rem; }
+.badge-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.badge {
+  display: inline-block;
+  background: var(--chip);
+  color: var(--olive-d);
+  border: 1px solid #c9d3b6;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: .78rem;
+  font-weight: 650;
+}
+main { padding: 10px 12px 8px; max-width: 520px; margin: 0 auto; }
+details.sec {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+details.sec > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px 16px;
+  font-weight: 750;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 56px;
+}
+details.sec > summary::-webkit-details-marker { display: none; }
+details.sec > summary::after {
+  content: " ";
+  width: 10px; height: 10px;
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  transform: rotate(45deg);
+  margin-top: -6px;
+  flex: 0 0 auto;
+}
+details.sec[open] > summary::after { transform: rotate(225deg); margin-top: 4px; }
+.sec-body { padding: 0 12px 14px; }
+.hint { color: var(--muted); font-size: .9rem; margin: 0 12px 12px; }
+.card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fffaf0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 12px;
+  margin: 8px 0;
+  min-height: 56px;
+}
+.card.locked { background: var(--locked); }
+.card.on { border-color: #9aaf80; background: #f3f7ea; }
+.card.clip { min-height: 48px; }
+.card input[type=checkbox] {
+  width: 26px; height: 26px;
+  margin: 4px 0 0;
+  accent-color: var(--olive);
+  flex: 0 0 auto;
+}
+.card .txt { flex: 1; min-width: 0; }
+.card-thumb {
+  display: block;
+  width: 88px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 0 0 auto;
+  background: var(--locked);
+}
+.swap-card > .card-thumb {
+  margin-bottom: 8px;
+}
+.card h3 {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+}
+.meta { color: var(--muted); font-size: .88rem; }
+.price {
+  font-weight: 750;
+  color: var(--olive-d);
+  margin-top: 4px;
+  font-size: .92rem;
+}
+.tag {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  background: #efe0c8;
+  color: var(--copper);
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 0 4px 4px 0;
+}
+.tag.ok { background: var(--chip); color: var(--olive-d); }
+.tag.lock { background: #e5d3bc; color: #5a3d28; }
+.tag.win {
+  display: none;
+  background: #f0d9c8;
+  color: var(--copper);
+}
+.card.on .tag.win,
+.store-row.on .tag.win { display: inline-block; }
+.badge.live-win {
+  background: var(--olive);
+  color: #f7edd8;
+  border-color: var(--olive-d);
+}
+.store-row, .coupon {
+  background: #fffaf0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  margin: 8px 0;
+}
+.store-row { display: flex; gap: 12px; align-items: flex-start; min-height: 48px; }
+.store-row.on { border-color: #9aaf80; background: #f3f7ea; }
+.store-row input { width: 26px; height: 26px; margin-top: 3px; accent-color: var(--olive); }
+.coupon h3 { margin: 0 0 4px; font-size: .98rem; }
+.onlyif {
+  background: #f7efe0;
+  border-style: dashed;
+}
+.card.on,
+.card.on.onlyif {
+  border-color: #9aaf80;
+  background: #f3f7ea;
+}
+textarea {
+  width: 100%;
+  min-height: 96px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  font: inherit;
+  background: #fffaf0;
+  color: var(--ink);
+}
+pre.payload {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #2a1f16;
+  color: #f7edd8;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: .82rem;
+  line-height: 1.45;
+  margin: 8px 0 0;
+}
+footer.note {
+  max-width: 520px;
+  margin: 8px auto 0;
+  padding: 8px 18px 24px;
+  color: var(--muted);
+  font-size: .88rem;
+  text-align: center;
+}
+.bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  background: var(--bar);
+  color: var(--bar-ink);
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 20;
+  box-shadow: 0 -8px 24px rgba(42,31,22,.18);
+}
+.bar .count { flex: 1; font-size: .82rem; font-weight: 650; line-height: 1.3; }
+.bar .count .back { color: #c9d7b0; font-size: .78rem; font-weight: 700; }
+.bar button, .bar a.btn {
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 12px;
+  font: inherit;
+  font-weight: 750;
+  font-size: .92rem;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f3e6cf;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bar a.btn { background: #c9d7b0; }
+.bar button:active, .bar a.btn:active { transform: scale(.98); }
+.toast {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: 92px;
+  transform: translateX(-50%);
+  background: var(--olive-d);
+  color: #f7edd8;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .88rem;
+  z-index: 30;
+}
+.toast.show { display: block; }
+.subhead { font-size: .82rem; font-weight: 650; color: var(--muted); margin: 10px 4px 4px; text-transform: uppercase; letter-spacing: .04em; }
+.lines { margin: 0; padding: 0 4px; }
+.lines li { list-style: none; padding: 6px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; color: var(--muted); }
+.lines li:last-child { border-bottom: 0; }
+.add-total { font-weight: 750; color: var(--olive-d); margin: 8px 4px 0; }
+
+#lists-screen { display: none; }
+body.view-lists #pick-ui { display: none; }
+body.view-lists #lists-screen { display: block; }
+body.view-lists .pick-only { display: none !important; }
+.lists-only { display: none !important; }
+body.view-lists .lists-only { display: inline-flex !important; }
+.bar { flex-wrap: wrap; }
+.bar .count { flex: 1 1 100%; }
+.bar button.primary {
+  background: var(--olive);
+  color: #f7edd8;
+}
+.lists-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 4px 4px;
+}
+.lists-head h2 {
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+  font-size: 1.45rem;
+  margin: 8px 0 0;
+  letter-spacing: -0.02em;
+}
+button.edit-picks {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--olive);
+  font: inherit;
+  font-weight: 750;
+  min-height: 48px;
+  padding: 8px 4px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.list-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  margin: 12px 0;
+  overflow: hidden;
+}
+.list-card .lc-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid var(--line);
+  background: #fffaf0;
+}
+.list-card .lc-head h3 {
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+  font-size: 1.12rem;
+  margin: 0;
+  flex: 1 1 auto;
+}
+.list-card .lc-head .count-chip {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.tag.fulfill { text-transform: uppercase; letter-spacing: .04em; }
+.tag.fulfill.drop { background: #efe0c8; color: var(--copper); }
+.tag.fulfill.pickup { background: var(--chip); color: var(--olive-d); }
+.tag.fulfill.instore { background: var(--chip); color: var(--olive-d); }
+.tag.fulfill.delivery { background: #e8dcc8; color: #5a3d28; }
+.tag.fulfill.tbd { background: #efe4d0; color: #5a3d28; }
+.list-line {
+  padding: 12px 14px;
+  border-bottom: 1px dashed var(--line);
+  min-height: 48px;
+}
+.list-line:last-child { border-bottom: 0; }
+.list-line .item { font-weight: 700; }
+.list-line .qty { font-size: .9rem; color: var(--ink); margin-top: 2px; }
+.list-line .price { font-weight: 750; color: var(--olive-d); margin-top: 2px; font-size: .92rem; }
+.list-line .meal { font-size: .82rem; color: var(--muted); margin-top: 2px; }
+.list-line.already .item { font-weight: 550; color: var(--muted); }
+.list-line.optional .item { font-weight: 650; }
+.list-sub {
+  padding: 10px 14px 4px;
+  font-size: .78rem;
+  font-weight: 750;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.list-card details.already-block { padding: 0 4px 10px; }
+.list-card details.already-block > summary {
+  cursor: pointer;
+  padding: 10px 10px;
+  font-weight: 700;
+  color: var(--olive-d);
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+.add-sum { font-weight: 750; color: var(--olive-d); padding: 10px 14px 14px; }
+#lists-preview {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #2a1f16;
+  color: #f7edd8;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: .82rem;
+  line-height: 1.45;
+  margin: 8px 0 0;
+}
+
+.card { flex-wrap: wrap; }
+.card-check {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex: 1 1 220px;
+  min-width: 0;
+  cursor: pointer;
+}
+.card-actions {
+  flex: 1 1 100%;
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.card-btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--chip);
+  color: var(--olive-d);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 750;
+  font-size: .92rem;
+  min-height: 48px;
+  min-width: 48px;
+  cursor: pointer;
+}
+.card-btn.primary {
+  background: var(--olive);
+  color: #f7edd8;
+  border-color: var(--olive-d);
+}
+.card-btn.ghost {
+  background: #fffaf0;
+  color: var(--ink);
+}
+.card-btn:active { transform: scale(.98); }
+.tag.src { background: #efe0c8; color: var(--copper); text-transform: none; letter-spacing: 0; }
+.tag.src.sale { background: #f0d9c8; }
+.tag.src.house { background: #e5d3bc; color: #5a3d28; }
+.source-line {
+  color: var(--ink);
+  font-size: .88rem;
+  font-weight: 650;
+  margin: 2px 0 6px;
+  line-height: 1.35;
+}
+.source-line a {
+  color: var(--olive);
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.swap-rail {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  margin: 10px 0;
+  padding: 14px 12px 12px;
+}
+.swap-rail h2 {
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+  font-size: 1.12rem;
+  margin: 0 8px 4px;
+}
+.swap-card {
+  background: #fffaf0;
+  border: 1px dashed #9aaf80;
+  border-radius: 14px;
+  padding: 12px;
+  margin: 8px 0;
+}
+.swap-card.quiet {
+  border-style: solid;
+  border-color: var(--line);
+}
+.swap-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+}
+.swap-card .why { font-size: .9rem; margin: 0 0 6px; }
+.swap-card .src-line { color: var(--muted); font-size: .86rem; margin: 0 0 10px; }
+#recipe-view { display: none; }
+body.view-recipe #pick-ui { display: none; }
+body.view-recipe #lists-screen { display: none; }
+body.view-recipe #recipe-view { display: block; }
+body.view-recipe .bar { display: none; }
+body.view-recipe { padding-bottom: 32px; }
+.recipe-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 4px 4px;
+}
+.recipe-head h2 {
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+  font-size: 1.45rem;
+  margin: 8px 0 0;
+  letter-spacing: -0.02em;
+}
+button.back-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--olive);
+  font: inherit;
+  font-weight: 750;
+  min-height: 48px;
+  padding: 8px 4px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.recipe-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  margin: 12px 0;
+}
+.recipe-photo {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 10px 0 4px;
+  background: var(--locked);
+}
+#photo-rail[hidden] { display: none; }
+.swap-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 4px;
+}
+.stepper button {
+  appearance: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--chip);
+  color: var(--olive-d);
+  font: inherit;
+  font-weight: 800;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.stepper .n {
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  min-width: 2.2ch;
+  text-align: center;
+}
+.scale-note { color: var(--muted); font-size: .88rem; margin: 0 0 10px; }
+.ing-list { margin: 0; padding: 0; }
+.ing-list li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: .92rem;
+}
+.ing-list li:last-child { border-bottom: 0; }
+.ing-list .ing-name { font-weight: 700; }
+.ing-list .ing-meta { color: var(--muted); font-size: .86rem; margin-top: 2px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>Family Kitchen</h1>
+  <div class="week">Week of Aug 31–Sep 6 2026</div>
+  <p class="goal">Feed 7, ship what we can.</p>
+  <div class="badge-row">
+    <span class="badge">Draft only</span>
+    <span class="badge">Azure 8804714 not placed</span>
+    <span class="badge">Foundry Coffee stays</span>
+    <span class="badge" id="wins-badge">0 wins</span>
+  </div>
+</header>
+<main>
+<div id="pick-ui">
+
+<details class="sec" open>
+  <summary>This week’s meals</summary>
+  <p class="hint">Cook once, eat twice. Open a card to change servings (default 7). Staple share uses Azure prices we already have — meat and produce still say price after shops. Meat: organic first. No-antibiotics / pasture / grass-fed if organic isn’t there.</p>
+  <div class="sec-body" id="meals"></div>
+</details>
+
+<div class="swap-rail" id="swap-rail">
+  <h2>Based on this week’s sales</h2>
+  <p class="hint" style="margin:0 8px 8px">Suggested swaps from real Tyler ads (Aug 26–Sep 1) plus printed pages that fit those ads. Swap in adds a meal card. Swap out any dinner that is not locked. Alex lunch stays.</p>
+  <div id="swap-cards"></div>
+</div>
+
+<div class="swap-rail" id="photo-rail">
+  <h2>From your photos</h2>
+  <p class="hint" style="margin:0 8px 8px">Saved printed pages that are not a clean fit for this week’s ads. Swap in anyway if you want it on the board.</p>
+  <div id="photo-cards"></div>
+</div>
+
+<details class="sec" open>
+  <summary>Alex weekday lunch</summary>
+  <div class="sec-body">
+    <div class="card locked">
+      <div class="txt">
+        <span class="tag lock">Locked · Mon–Fri</span>
+        <h3>Smash patty and gold potatoes</h3>
+        <div class="meta">190g smash patty, 85/15. Roasted gold potatoes. Mushrooms optional, never canned. Not optional — this is the weekday lunch.</div>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="card-btn" data-act="open" data-id="alex-lunch">Open</button>
+      </div>
+    </div>
+    <div class="card locked">
+      <div class="txt">
+        <span class="tag lock">Daily</span>
+        <h3>Milled overnight no-knead sandwich bread</h3>
+        <div class="source-line"><a href="https://www.breadin5.com/" target="_blank" rel="noopener">Artisan Bread in Five (BreadIn5.com footer on their photos)</a></div>
+        <div class="meta">GR111 already on 8804714. Yeast BP080 and sea salt BP067 if those adds stay on. Book method is a stored wet dough; we mill fresh and do overnight no-knead.</div>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="card-btn" data-act="open" data-id="milled-bread">Open</button>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="sec" open>
+  <summary>Azure order (not placed)</summary>
+  <p class="hint">Tyler drop week of Sep 13 · cutoff Wed Sep 9. Already-in $871.92 cannot be unchecked. This week’s dinners still need store meat, eggs, and produce — the drop is mid-September.</p>
+  <div class="sec-body">
+    <div class="card locked">
+      <div class="txt">
+        <span class="tag lock">Already on the drop</span>
+        <h3>Cart 8804714 · $871.92</h3>
+        <div class="meta">Items $802.34 + ship $69.58. Feed, oils, honey, rice, wheat, oats, cornmeal, taco seasoning, popcorn, vanilla, shortening, pumpkin spice.</div>
+        <details style="margin-top:8px">
+          <summary style="cursor:pointer;font-weight:700;color:var(--olive-d)">Show lines already on the drop</summary>
+          <ul class="lines">
+            <li>GP073 Chicken wheat feed 50 lb ×2 · $69.82</li>
+            <li>GP559 Field peas feed 50 lb ×2 · $77.38</li>
+            <li>BP045 Vanilla 32 oz · $33.18</li>
+            <li>SW437 Honey 12 lb ×2 · $144.36</li>
+            <li>OL251 EVOO 1 gal ×3 · $128.94</li>
+            <li>HS217 Taco seasoning 1 lb · $9.25</li>
+            <li>HS186 Pumpkin pie spice 4 oz · $4.58</li>
+            <li>FL013 Cornmeal 5 lb ×2 · $14.00</li>
+            <li>OL219 Palm shortening 4 lb · $16.20</li>
+            <li>GR338 Jasmine rice 25 lb · $50.58</li>
+            <li>GR111 Hard white wheat 25 lb · $36.97</li>
+            <li>GR064 Soft white wheat 25 lb · $21.50</li>
+            <li>CE065 Rolled oats 25 lb · $28.08</li>
+            <li>GR022 Yellow popcorn 25 lb · $31.50</li>
+            <li>GR172 Multi popcorn 5 lb ×2 · $21.22</li>
+            <li>GR359 White popcorn 5 lb ×2 · $16.34</li>
+            <li>OL457 Coconut oil 6×64 oz · $98.44</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+    <div class="subhead">First-pass adds · about $299.36 if you keep these</div>
+    <div id="adds-first"></div>
+    <div class="subhead">Optional adds</div>
+    <div id="adds-opt"></div>
+    <div class="add-total" id="add-total"></div>
+  </div>
+</details>
+
+<details class="sec" open>
+  <summary>Ship vs go-out</summary>
+  <p class="hint">Ship the Azure drop home. Out-of-house is pickup or a short list at 1–2 stores. Walmart app for packaged later. Instacart: coming later, we’ll tailor around it.</p>
+  <div class="sec-body">
+    <div class="card locked">
+      <div class="txt">
+        <span class="tag lock">Ship home</span>
+        <h3>Azure Tyler drop</h3>
+        <div class="meta">Already-in staples plus whatever adds you check. Pickup week of Sep 13. Not this week’s meat run.</div>
+      </div>
+    </div>
+    <label class="store-row"><input type="checkbox" data-kind="store" data-id="super1" data-name="Super 1"><div class="txt"><span class="tag win">Win</span><strong>Super 1</strong><div class="meta">Conventional sale option: chicken thighs or drums $0.97/lb, limit 2 pkgs, circular 8101577 through Tue Sep 1. Not this week’s default protein.</div></div></label>
+    <label class="store-row"><input type="checkbox" data-kind="store" data-id="sprouts" data-name="Sprouts" checked><div class="txt"><span class="tag win">Win</span><strong>Sprouts</strong><div class="meta">Produce and eggs. Vital Farms eggs BOGO; organic produce BOGO 50%; organic peaches BOGO. Organic grass-fed beef BOGO 50% is the organic beef alternative (Flipp 8092657). Ad through Tue Sep 1.</div></div></label>
+    <label class="store-row"><input type="checkbox" data-kind="store" data-id="aldi" data-name="Aldi" checked><div class="txt"><span class="tag win">Win</span><strong>Aldi</strong><div class="meta">Alex lunch / smash: Simply Nature organic 85/15 $5.99/lb through Tue Sep 1 (circular 8103848). Gold potatoes here or Sprouts.</div></div></label>
+    <div class="card locked">
+      <div class="txt">
+        <span class="tag">Later</span>
+        <h3>Walmart packaged · Instacart later</h3>
+        <div class="meta">Walmart app for boxed goods later. Instacart is coming later — we’ll tailor around it. Not this week’s default stop.</div>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="sec" open>
+  <summary>Coupons this week</summary>
+  <p class="hint">Clip a sale. It counts. Only dollars we actually know.</p>
+  <div class="sec-body" id="clips"></div>
+</details>
+
+<details class="sec" open>
+  <summary>Notes</summary>
+  <div class="sec-body">
+    <textarea id="notes" placeholder="Anything Alex should know — leftovers in the fridge, a no, a yes, a swap."></textarea>
+  </div>
+</details>
+
+<details class="sec">
+  <summary>What you’ll send</summary>
+  <div class="sec-body">
+    <pre class="payload" id="preview"></pre>
+  </div>
+</details>
+
+</div>
+
+<section id="lists-screen" hidden>
+  <div class="lists-head">
+    <h2>This week’s lists</h2>
+    <button type="button" class="edit-picks" id="edit-picks">Edit picks</button>
+  </div>
+  <p class="hint">Confirm does not order. These are the locked picks for this pass — draft only until Alex says send.</p>
+  <div id="list-cards"></div>
+  <details class="sec">
+    <summary>Copyable lists</summary>
+    <div class="sec-body">
+      <pre class="payload" id="lists-preview"></pre>
+    </div>
+  </details>
+</section>
+
+<section id="recipe-view" hidden>
+  <div class="recipe-head">
+    <h2 id="recipe-title">Recipe</h2>
+    <button type="button" class="back-btn" id="recipe-back">Back</button>
+  </div>
+  <div id="recipe-body"></div>
+</section>
+
+</main>
+<footer class="note">Draft only. Nothing is ordered until Alex says send.</footer>
+<div class="bar">
+  <div class="count" id="count">0 selected</div>
+  <button type="button" class="primary pick-only" id="confirm">Confirm</button>
+  <button type="button" class="primary lists-only" id="copy-lists">Copy lists</button>
+  <button type="button" id="copy">Copy reply</button>
+  <a class="btn" id="email" href="mailto:ashorts@gmail.com">Email Alex</a>
+</div>
+<div class="toast" id="toast">Copied</div>
+
+<script>
+(function () {
+  const MEALS = [
+    {id:"chili", name:"Big pot chili", leftover:"Leftover chili over rice or baked potatoes", leftoverPair:"Big pot chili → leftover chili over rice or baked potatoes", plate:"staple share ~$1.00/plate, protein TBD", on:true, defaultOn:true, servings:7, source:"Family Kitchen draft", sourceKind:"draft", chickenLbAt7:3, ingredients:[
+      {name:"Pinto beans BE041", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Green lentils BE024", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Crushed tomatoes GY1421", detail:"12 × 28 oz · Azure proposed add", scale:"azure"},
+      {name:"Thai jasmine rice GR338", detail:"25 lb · already on 8804714", scale:"azure"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"},
+      {name:"Taco seasoning HS217", detail:"already on 8804714", scale:"azure"},
+      {name:"Onions", detail:"Sprouts category — no shelf $", scale:"produce"},
+      {name:"Optional peppers", detail:"Sprouts category if you see them — no shelf $", scale:"produce"},
+      {name:"Organic chicken", detail:"Preferred. No organic chicken ad $ this week — price after shops. Super 1 $0.97/lb thighs/drums is the conventional sale alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:3},
+      {name:"Organic beef", detail:"Aldi Simply Nature organic 85/15 $5.99/lb through 9/1 (circular 8103848), or Sprouts organic grass-fed BOGO 50% (Flipp 8092657) — no invented Sprouts shelf $", scale:"protein"}
+    ]},
+    {id:"roast", name:"Roast chicken and vegetables", leftover:"Leftover chicken tacos + stock", leftoverPair:"Roast chicken + vegetables → leftover chicken tacos + stock", plate:"staple share ~$0.27/plate, protein TBD", on:true, defaultOn:true, servings:7, source:"Family Kitchen draft", sourceKind:"draft", chickenLbAt7:5, ingredients:[
+      {name:"Organic chicken", detail:"Preferred. No organic chicken ad $ this week — price after shops. Super 1 $0.97/lb thighs/drums is the conventional sale alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:5},
+      {name:"Roasting vegetables", detail:"Sprouts category / organic produce BOGO 50% — no shelf $", scale:"produce"},
+      {name:"Hard white wheat GR111", detail:"25 lb · already on 8804714 · milled tortillas or bread", scale:"azure"},
+      {name:"Taco seasoning HS217", detail:"already on 8804714", scale:"azure"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"}
+    ]},
+    {id:"pasta", name:"Pasta night", leftover:"Leftover baked pasta next day", leftoverPair:"Pasta night → leftover baked pasta", plate:"staple share ~$0.95/plate, protein TBD", on:true, defaultOn:true, servings:7, source:"Family Kitchen draft", sourceKind:"draft", ingredients:[
+      {name:"Semolina spaghetti PA015", detail:"10 lb · Azure proposed add", scale:"azure"},
+      {name:"Crushed tomatoes GY1421", detail:"12 × 28 oz · Azure proposed add", scale:"azure"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"},
+      {name:"Hard white wheat GR111", detail:"already on 8804714 · bread on the side", scale:"azure"},
+      {name:"Optional meat or cheese for the bake", detail:"No invented brand or shelf $", scale:"protein"}
+    ]},
+    {id:"smash-dinner", name:"Smash patties and gold potatoes", leftover:"Leftover patties crumbled into rice bowls", leftoverPair:"Smash dinner → leftover patties crumbled into rice bowls", plate:"staple share ~$0.35/plate, protein TBD", on:false, defaultOn:false, servings:7, source:"This week's sale · Aldi Simply Nature organic 85/15 $5.99/lb through 9/1 (circular 8103848)", sourceKind:"sale", extra:"Same pattern as Alex lunch — off unless you want it for dinner too.", ingredients:[
+      {name:"85/15 ground beef", detail:"Aldi Simply Nature organic $5.99/lb through 9/1 (circular 8103848) · 190g per serving, estimate scales", scale:"protein", pattyG:190},
+      {name:"Gold potatoes", detail:"Aldi 3–5 lb when that stop is on, or Sprouts if you see them — no invented store $", scale:"produce"},
+      {name:"Thai jasmine rice GR338", detail:"already on 8804714 · leftover bowls", scale:"azure"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"}
+    ]},
+    {id:"bowls", name:"Bean and rice bowls", leftover:"Leftover burritos", leftoverPair:"Bean and rice bowls → leftover burritos", plate:"staple share ~$0.99/plate (beans counted), extra protein TBD", on:true, defaultOn:true, servings:7, source:"Family Kitchen draft", sourceKind:"draft", ingredients:[
+      {name:"Black beans BE006", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Pinto beans BE041", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Thai jasmine rice GR338", detail:"25 lb · already on 8804714", scale:"azure"},
+      {name:"Taco seasoning HS217", detail:"already on 8804714", scale:"azure"},
+      {name:"Hard white wheat GR111", detail:"already on 8804714 · milled tortillas", scale:"azure"},
+      {name:"Crushed tomatoes GY1421", detail:"Azure proposed add", scale:"azure"},
+      {name:"Optional extras", detail:"Sprouts avocado BOGO 50% if you see them — no invented $", scale:"produce"}
+    ]},
+    {id:"brinner", name:"Egg-heavy breakfast for dinner", leftover:"Leftover porridge breakfast", leftoverPair:"Breakfast-for-dinner → leftover porridge breakfast", plate:"staple share ~$0.38/plate, eggs TBD", on:false, defaultOn:false, servings:7, source:"This week's sale · Sprouts Vital Farms eggs BOGO + Ibotta VF $1+$2.25", sourceKind:"sale", extra:"Sunday can be leftover-heavy / bread + eggs instead.", ingredients:[
+      {name:"Vital Farms pasture-raised eggs", detail:"Sprouts BOGO through 9/1 · Ibotta VF $1+$2.25 if those wins are clipped · no shelf $", scale:"protein"},
+      {name:"Rolled oats CE065", detail:"25 lb · already on 8804714", scale:"azure"},
+      {name:"Cornmeal FL013", detail:"already on 8804714", scale:"azure"},
+      {name:"Hard white wheat GR111", detail:"already on 8804714 · toast / bread", scale:"azure"},
+      {name:"Honey SW437", detail:"already on 8804714", scale:"azure"}
+    ]},
+    {id:"soup", name:"Bone soup with beans", leftover:"Leftover lunches", leftoverPair:"Bone soup with beans → leftover lunches", plate:"staple share ~$0.50/plate, vegetables TBD", on:true, defaultOn:true, servings:7, source:"Family Kitchen draft", sourceKind:"draft", extra:"Uses leftover roast bones.", chickenLbAt7:2, ingredients:[
+      {name:"Great Northern beans BE015", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Green lentils BE024", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Crushed tomatoes GY1421", detail:"Azure proposed add", scale:"azure"},
+      {name:"Thai jasmine rice GR338", detail:"already on 8804714", scale:"azure"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"},
+      {name:"Roast bones", detail:"From roast / sheet-pan if those meals are on", scale:"none"},
+      {name:"Soup vegetables", detail:"Sprouts onions, carrots, celery — categories, no shelf $", scale:"produce"}
+    ]},
+    {id:"sheet-pan-fajitas", name:"Sheet Pan Chicken Fajitas", leftover:"Leftover fajita chicken and peppers for lunches", leftoverPair:"Sheet Pan Chicken Fajitas → leftover lunches", plate:"staple share, organic chicken, price after shops", on:false, defaultOn:false, railOnly:true, servings:8, author:null, source:"Sheet Pan Chicken Fajitas (printed page, Aug 27) · organic chicken preferred (price after shops); Super 1 $0.97/lb conventional alt, limit 2 pkgs, circular 8101577 through 9/1", sourceKind:"photo", chickenLbAt7:2.625, ingredients:[
+      {name:"Organic chicken", detail:"Preferred. Page: 3 lb chicken breast at 8 servings. No organic chicken ad $ — price after shops. Super 1 $0.97/lb thighs/drums is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:2.625},
+      {name:"Yellow onion", detail:"Page: 2 medium · Sprouts category — no shelf $", scale:"produce"},
+      {name:"Green bell pepper", detail:"Page: 2 · Sprouts category — no shelf $", scale:"produce"},
+      {name:"Red, yellow or orange bell pepper", detail:"Page: 2 · Sprouts category — no shelf $", scale:"produce"},
+      {name:"Fajita seasoning", detail:"Page: 4 tbsp · HS217 taco seasoning already on 8804714 can stand in", scale:"azure"},
+      {name:"Oil", detail:"Page: 2 tbsp · EVOO OL251 already on 8804714", scale:"azure"},
+      {name:"Limes", detail:"Page: 2 · no store $", scale:"produce"},
+      {name:"Optional tortillas", detail:"Page lists flour tortillas · milled wheat GR111 already on 8804714 if you make them", scale:"azure"}
+    ]},
+    {id:"pork-chops", name:"Pork chop night", leftover:"Leftover chops sliced into bowls or lunches", leftoverPair:"Pork chop night → leftover chops in bowls or lunches", plate:"protein Super 1 $2.97/lb, produce TBD", on:false, defaultOn:false, railOnly:true, servings:7, source:"This week's sale · Super 1 Super Pack boneless pork chops $2.97/lb through 9/1", sourceKind:"sale", porkLbAt7:3.5, ingredients:[
+      {name:"Super Pack boneless pork chops", detail:"Super 1 $2.97/lb through 9/1 · estimate scales", scale:"protein", baseLbAt7:3.5},
+      {name:"Onions / roasting vegetables", detail:"Sprouts category — no shelf $", scale:"produce"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"}
+    ]},
+    {id:"extra-bean-pot", name:"Extra bean pot / lentil soup", leftover:"Leftover beans over rice or lunches", leftoverPair:"Extra bean pot → leftover beans over rice or lunches", plate:"staple share (Azure beans), produce TBD", on:false, defaultOn:false, railOnly:true, servings:7, source:"Family Kitchen draft · Azure proposed lentils / black / pinto (bulk, no sale $ needed)", sourceKind:"draft", ingredients:[
+      {name:"Green lentils BE024", detail:"25 lb · Azure proposed add · bulk does not scale down", scale:"azure"},
+      {name:"Black beans BE006", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Pinto beans BE041", detail:"25 lb · Azure proposed add", scale:"azure"},
+      {name:"Crushed tomatoes GY1421", detail:"Azure proposed add", scale:"azure"},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"},
+      {name:"Thai jasmine rice GR338", detail:"already on 8804714", scale:"azure"},
+      {name:"Onions", detail:"Sprouts category — no shelf $", scale:"produce"}
+    ]},
+    {id:"roast-veg-chicken", name:"Roast veg + chicken", leftover:"Leftover roast veg + chicken for bowls", leftoverPair:"Roast veg + chicken → leftover bowls", plate:"produce sale, organic chicken, price after shops", on:false, defaultOn:false, railOnly:true, servings:7, source:"This week's sale · Sprouts organic produce BOGO 50% / peaches BOGO · organic chicken preferred", sourceKind:"sale", chickenLbAt7:4.5, ingredients:[
+      {name:"Roasting vegetables", detail:"Sprouts organic produce BOGO 50% — categories, no shelf $", scale:"produce"},
+      {name:"Optional organic peaches", detail:"Sprouts peaches BOGO through 9/1 — no shelf $", scale:"produce"},
+      {name:"Organic chicken", detail:"Preferred. No organic chicken ad $ — price after shops. Super 1 $0.97/lb thighs/drums is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:4.5},
+      {name:"EVOO OL251", detail:"already on 8804714", scale:"azure"}
+    ]},
+    {id:"white-chicken-chili", name:"Easy Slow Cooker White Chicken Chili", leftover:"Leftover chili bowls / lunches", leftoverPair:"Easy Slow Cooker White Chicken Chili → leftover bowls", plate:"staple share, organic chicken, price after shops", on:false, defaultOn:false, railOnly:true, servings:8, author:"Ashley Fehr", source:"Easy Slow Cooker White Chicken Chili — Ashley Fehr (printed page, Aug 27) · organic chicken preferred; Super 1 $0.97/lb conventional alt, limit 2 pkgs, circular 8101577 through 9/1", sourceKind:"photo", sourceUrl:"https://www.thereciperebel.com/easy-crockpot-white-chicken-chili/", sourceLinkText:"Ashley Fehr / The Recipe Rebel", chickenLbAt7:1.75, ingredients:[
+      {name:"Organic chicken", detail:"Preferred. Page: 8 breasts, about 2 lb at 8 servings. No organic chicken ad $ — price after shops. Super 1 $0.97/lb thighs/drums is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:1.75},
+      {name:"Great Northern beans BE015", detail:"Page: 2 cans white kidney beans, drained · Azure proposed add as the house white bean", scale:"azure"},
+      {name:"Low sodium chicken broth", detail:"Page: 5 cups, divided · no store $", scale:"none"},
+      {name:"Sweet corn", detail:"Page: 2 cans (12 oz), drained · store category, no shelf $", scale:"none"},
+      {name:"Onion", detail:"Page: 1 medium, finely diced · Sprouts category — no shelf $", scale:"produce"},
+      {name:"Canned green chilies", detail:"Page: 2 cans (4.5 oz) · no invented brand", scale:"none"},
+      {name:"Garlic", detail:"Page: 4 cloves minced", scale:"none"},
+      {name:"Chili powder, cumin, salt", detail:"Page amounts · HS217 taco seasoning already on 8804714 can stand in", scale:"azure"},
+      {name:"Cream cheese", detail:"Page: 8 oz room temperature · no store $", scale:"none"}
+    ]},
+    {id:"keto-green-chile", name:"Keto Green Chile Chicken", leftover:"Leftover chicken for lunches", leftoverPair:"Keto Green Chile Chicken → leftover lunches", plate:"organic chicken, price after shops, dairy TBD", on:false, defaultOn:false, railOnly:true, servings:8, source:"Keto Green Chile Chicken (printed page, Aug 27) · organic chicken preferred; Super 1 $0.97/lb conventional alt, limit 2 pkgs, circular 8101577 through 9/1", sourceKind:"photo", sourceUrl:"https://easyfamilyrecipes.com/keto-green-chile-chicken/", sourceLinkText:"Easy Family Recipes", ingredients:[
+      {name:"Organic chicken", detail:"Preferred. Page: 3–4 boneless skinless breasts, trimmed · no weight printed. No organic chicken ad $ — price after shops. Super 1 $0.97/lb thighs/drums is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein"},
+      {name:"Cream cheese", detail:"Page: 8 oz package, softened · no store $", scale:"none"},
+      {name:"Chopped green chilis", detail:"Page: 1 can (4 oz) · no invented brand", scale:"none"},
+      {name:"Monterey jack cheese", detail:"Page: 1 cup shredded · no store $", scale:"none"},
+      {name:"Garlic powder, cumin, salt, pepper", detail:"Page: 1/2 tsp garlic powder, 1/4 tsp each cumin, salt, pepper", scale:"none"}
+    ]},
+    {id:"crockpot-tuscan", name:"Crockpot Tuscan Chicken", leftover:"Leftover chicken and sauce over pasta or rice", leftoverPair:"Crockpot Tuscan Chicken → leftover over pasta or rice", plate:"staple share, organic chicken, price after shops", on:false, defaultOn:false, railOnly:true, servings:8, author:"Ashley Fehr", source:"Crockpot Tuscan Chicken — Ashley Fehr (printed page, Aug 27; also on p.143 of her cookbook — book title not printed) · organic chicken preferred; Super 1 $0.97/lb conventional alt, limit 2 pkgs, circular 8101577 through 9/1", sourceKind:"photo", sourceUrl:"https://www.thereciperebel.com/crockpot-tuscan-chicken/", sourceLinkText:"Ashley Fehr / The Recipe Rebel", chickenLbAt7:1.75, ingredients:[
+      {name:"Organic chicken", detail:"Preferred. Page: 8 breasts, about 2 lb at 8 servings (thighs ok, aim 2 lb). No organic chicken ad $ — price after shops. Super 1 $0.97/lb thighs/drums is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:1.75},
+      {name:"Salt, Italian seasoning, paprika, pepper", detail:"Page amounts on the chicken", scale:"none"},
+      {name:"Heavy whipping cream", detail:"Page: 2 cups · no store $", scale:"none"},
+      {name:"Cornstarch", detail:"Page: 2 tbsp", scale:"none"},
+      {name:"Garlic", detail:"Page: 6 cloves finely minced", scale:"none"},
+      {name:"Sun-dried tomatoes", detail:"Page: oil packed, drained and chopped · no store $", scale:"none"},
+      {name:"Grated Parmesan", detail:"Page: 1/2 cup · no store $", scale:"none"},
+      {name:"Fresh spinach", detail:"Page: 2 cups chopped · Sprouts category — no shelf $", scale:"produce"},
+      {name:"Optional pasta to serve over", detail:"Page says serve over pasta · PA015 semolina spaghetti Azure proposed add", scale:"azure"}
+    ]},
+    {id:"spinach-ricotta-chicken", name:"Spinach Ricotta Chicken Bake", leftover:"Leftover bake for lunches", leftoverPair:"Spinach Ricotta Chicken Bake → leftover lunches", plate:"staple share, organic chicken, price after shops", on:false, defaultOn:false, railOnly:true, servings:8, source:"Spinach Ricotta Chicken Bake (printed page, Aug 27) · organic chicken preferred; Super 1 $0.97/lb conventional alt, limit 2 pkgs, circular 8101577 through 9/1", sourceKind:"photo", sourceUrl:"https://easyfamilyrecipes.com/spinach-ricotta-chicken-bake/", sourceLinkText:"Easy Family Recipes", chickenLbAt7:2.336, ingredients:[
+      {name:"Organic chicken", detail:"Preferred. Page as printed: 2.67 lb, cut into pieces, at 8 servings. No organic chicken ad $ — price after shops. Super 1 $0.97/lb thighs/drums is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1", scale:"protein", baseLbAt7:2.336},
+      {name:"Ricotta cheese", detail:"Page as printed: 21.33 oz · no store $", scale:"none"},
+      {name:"Frozen spinach", detail:"Page as printed: 10.67 oz, thawed and squeezed dry · no store $", scale:"none"},
+      {name:"Garlic", detail:"Page as printed: 2.67 cloves", scale:"none"},
+      {name:"Marinara sauce", detail:"Page as printed: 2.67 cups · GY1421 crushed tomatoes Azure proposed add can stand in", scale:"azure"},
+      {name:"Mozzarella and Parmesan", detail:"Page as printed: 1.33 cup mozzarella, 0.33 cup Parmesan · no store $", scale:"none"},
+      {name:"Salt and pepper", detail:"Page as printed · optional egg noted on the page", scale:"none"}
+    ]},
+    {id:"lazy-meatball-lasagna", name:"Lazy Meatball Lasagna", leftover:"Leftover lasagna scoops", leftoverPair:"Lazy Meatball Lasagna → leftover scoops", plate:"Azure pasta/sauce staple share, meatballs TBD", on:false, defaultOn:false, railOnly:true, photoRail:true, servings:7, source:"Dumb Dinners, Episode 23 — Lazy Meatball Lasagna (printed page, Aug 27)", sourceKind:"photo", ingredients:[
+      {name:"Marinara sauce", detail:"Page: 1 jar 24–25 oz · GY1421 crushed tomatoes Azure proposed add can stand in · no invented jar brand", scale:"azure"},
+      {name:"Water", detail:"Page: 1¼ cups", scale:"none"},
+      {name:"Oven-ready lasagna noodles", detail:"Page: 8–10, broken · Azure PA015 is spaghetti, not lasagna sheets — no invented noodle SKU", scale:"azure"},
+      {name:"Whole milk ricotta", detail:"Page: 1 cup · no store $", scale:"none"},
+      {name:"Shredded whole milk mozzarella", detail:"Page: 2 cups, divided · no store $", scale:"none"},
+      {name:"Frozen fully cooked meatballs", detail:"Page: 20–25 (½ oz) · no meatball sale this week", scale:"protein"},
+      {name:"Frozen chopped spinach", detail:"Page: 1 cup · no store $", scale:"none"},
+      {name:"Italian seasoning, garlic powder, pinch of salt", detail:"Page amounts", scale:"none"}
+    ]}
+  ];
+  const HOUSE = [
+    {id:"alex-lunch", name:"Smash patty and gold potatoes", leftover:"Weekday lunch — same plate each day", leftoverPair:"Locked Mon–Fri lunch (not a cook-once leftover pair)", source:"House pattern (Alex)", sourceKind:"house", locked:true, noServings:true, servingsNote:"Locked weekday lunch for Alex. Not a dinner servings scale.", ingredients:[
+      {name:"85/15 smash patty", detail:"190g · Aldi Simply Nature organic $5.99/lb through 9/1 (circular 8103848) · 2.5 lb for the week when Aldi is the stop", scale:"none"},
+      {name:"Gold potatoes", detail:"Roasted · 3–5 lb when Aldi is on, or Sprouts if you see them — no invented store $", scale:"none"},
+      {name:"Optional fresh white-button mushrooms", detail:"8–16 oz · never canned · never mixed into patties", scale:"none"}
+    ]},
+    {id:"milled-bread", name:"Milled overnight no-knead sandwich bread", leftover:"Daily loaf — leftover slices for toast and sandwiches", leftoverPair:"Daily bread (hard white wheat)", source:"The New Artisan Bread in Five Minutes a Day — Master Recipe (photos) · adapted to fresh-milled wheat", sourceKind:"photo", sourceUrl:"https://www.breadin5.com/", sourceLinkText:"Artisan Bread in Five (BreadIn5.com footer on their photos)", locked:true, noServings:true, servingsNote:"House bread, adapted. Book Master Recipe (photos pp. 54–67) is a stored wet dough with all-purpose flour; we mill fresh wheat and do overnight no-knead — not the book method exactly. Azure bulk wheat does not scale down.", ingredients:[
+      {name:"Hard white wheat GR111, milled fresh", detail:"25 lb · already on 8804714 · stands in for the book’s all-purpose flour (Master Recipe table)", scale:"azure"},
+      {name:"Dry active yeast BP080", detail:"5 lb · Azure proposed add if that add stays on · book: granulated yeast", scale:"azure"},
+      {name:"Sea salt BP067", detail:"50 lb · Azure proposed add if that add stays on · book: kosher salt", scale:"azure"},
+      {name:"Water", detail:"Book Master Recipe uses lukewarm water; we do an overnight rise — not claimed as the book bake", scale:"none"}
+    ]}
+  ];
+  const SUGGESTIONS = [
+    {id:"white-chicken-chili", why:"Organic chicken preferred (price after shops — no organic chicken ad $). Super 1 $0.97/lb is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1. Printed page, Aug 27 — Ashley Fehr."},
+    {id:"keto-green-chile", why:"Organic chicken preferred (price after shops). Super 1 $0.97/lb is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1. Printed page, Aug 27."},
+    {id:"sheet-pan-fajitas", why:"Organic chicken preferred (price after shops). Super 1 $0.97/lb is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1. Printed page, Aug 27 — leftover is lunches."},
+    {id:"crockpot-tuscan", why:"Organic chicken preferred (price after shops). Super 1 $0.97/lb is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1. Printed page, Aug 27 — Ashley Fehr (also on p.143 of her cookbook; book title not printed)."},
+    {id:"spinach-ricotta-chicken", why:"Organic chicken preferred (price after shops). Super 1 $0.97/lb is the conventional alternative, limit 2 pkgs, circular 8101577 through 9/1. Printed page, Aug 27."},
+    {id:"pork-chops", why:"Super 1 Super Pack boneless pork chops $2.97/lb through 9/1."},
+    {id:"brinner", why:"Sprouts Vital Farms eggs BOGO + Ibotta VF $1+$2.25 when those wins are on.", showIf:"vf-wins"},
+    {id:"smash-dinner", why:"Aldi Simply Nature organic 85/15 $5.99/lb through 9/1 (circular 8103848). Alex lunch already uses this pattern — only if you want smash for dinner too.", quiet:true},
+    {id:"extra-bean-pot", why:"Azure proposed lentils / black / pinto — bulk, no sale $ needed."},
+    {id:"roast-veg-chicken", why:"Sprouts organic produce BOGO 50% and organic peaches BOGO. Organic chicken preferred (price after shops). Super 1 $0.97/lb is the conventional alternative, limit 2 pkgs."}
+  ];
+  const PHOTO_SUGGESTIONS = [
+    {id:"lazy-meatball-lasagna", why:"Printed page from your photos (Dumb Dinners, Episode 23). Pasta is Azure; there is no meatball sale this week, so this is not a sale swap."}
+  ];
+  const PHOTOS = {
+    "white-chicken-chili": {src:"recipe-photos/web/white-chicken-chili.jpg", caption:"Easy Slow Cooker White Chicken Chili — Ashley Fehr / The Recipe Rebel"},
+    "crockpot-tuscan": {src:"recipe-photos/web/tuscan-chicken.jpg", caption:"Crockpot Tuscan Chicken — Ashley Fehr / The Recipe Rebel"},
+    "keto-green-chile": {src:"recipe-photos/web/green-chile-chicken.jpg", caption:"Keto Green Chile Chicken — Easy Family Recipes"},
+    "spinach-ricotta-chicken": {src:"recipe-photos/web/spinach-ricotta-chicken-bake.jpg", caption:"Spinach Ricotta Chicken Bake — Easy Family Recipes"}
+  };
+  const ADDS = [
+    {id:"lentils", sku:"BE024", name:"Green lentils", size:"25 lb", price:38.51, on:true, pass:"first"},
+    {id:"black", sku:"BE006", name:"Black beans", size:"25 lb", price:39.54, on:true, pass:"first"},
+    {id:"pinto", sku:"BE041", name:"Pinto beans", size:"25 lb", price:48.12, on:true, pass:"first"},
+    {id:"great-northern", sku:"BE015", name:"Great Northern beans", size:"25 lb", price:44.21, on:true, pass:"first"},
+    {id:"yeast", sku:"BP080", name:"Dry active yeast", size:"5 lb", price:28.38, on:true, pass:"first"},
+    {id:"salt", sku:"BP067", name:"Sea salt", size:"50 lb", price:39.84, on:true, pass:"first"},
+    {id:"tomatoes", sku:"GY1421", name:"Crushed tomatoes with basil", size:"12 × 28 oz", price:32.08, on:true, pass:"first"},
+    {id:"spaghetti", sku:"PA015", name:"Semolina spaghetti", size:"10 lb", price:28.68, on:true, pass:"first"},
+    {id:"peanut-butter", sku:"NB430", name:"Peanut butter, creamy salted", size:"16.75 lb pail", price:85.30, on:false, pass:"opt", extra:"58 left."},
+    {id:"acv", sku:"CO129", name:"Raw apple cider vinegar", size:"1 gal", price:13.88, on:false, pass:"opt"},
+    {id:"tomato-powder", sku:"HS1764", name:"Tomato powder", size:"1 lb", price:14.02, on:false, pass:"opt"},
+    {id:"spaghetti-ww", sku:"PA016", name:"Whole-wheat spaghetti", size:"10 lb", price:28.68, on:false, pass:"opt", extra:"Same price as semolina. Only if you want both."},
+    {id:"kidney", sku:"BE055", name:"Kidney beans", size:"5 lb", price:13.37, on:false, pass:"opt", extra:"Skip the 25 lb kidney at $62."},
+    {id:"baking-soda", sku:"BP009", name:"Baking soda", size:"5 lb", price:8.29, on:false, pass:"opt"},
+    {id:"garlic", sku:"HS277", name:"Garlic powder", size:"1 lb", price:12.65, on:false, pass:"opt"}
+  ];
+  const CLIPS = [
+    {id:"delivery26aug", name:"DELIVERY26AUG", meta:"Sprouts · shop.sprouts.com · $0 delivery / $35 min · expires Aug 31, last day of this week.", back:"", on:true},
+    {id:"sprouts-app", name:"Sprouts app Coupons tab", meta:"Clip what’s live in the Sprouts app before you shop.", back:"", on:true},
+    {id:"walmart-dannon", name:"Walmart Cash Dannon 32 oz", meta:"$0.45 cash, clip in the Walmart app, limit 5. Ad list 8/25–8/31. Only if a Walmart run already happens.", back:"0.45", on:false, onlyif:true},
+    {id:"checkout51", name:"Checkout 51 $2 on $10+ fresh beef", meta:"Activate by Aug 27, upload receipt by Sep 2. Skip the rice rebate — Azure already has 25 lb rice.", back:"2.00", on:false},
+    {id:"ibotta-wm-vf", name:"Ibotta Walmart VF eggs $0.50", meta:"Walmart · Vital Farms Organic Pasture-Raised Eggs 12 ct. Redeem in Ibotta. Only if that run already happens.", back:"0.50", on:false, onlyif:true},
+    {id:"ibotta-nellie", name:"Ibotta Nellie's $0.75", meta:"Walmart · Nellie's Free Range Eggs 12 ct. Only if a Walmart run already happens.", back:"0.75", on:false, onlyif:true},
+    {id:"ibotta-oak", name:"Ibotta Oak Farms milk $0.25", meta:"Walmart · Oak Farms milk any fat. Only if a Walmart run already happens.", back:"0.25", on:false, onlyif:true},
+    {id:"ibotta-justbare", name:"Ibotta Just Bare $2.00", meta:"Walmart · Just Bare Chicken Breast Bites 1.2 lb or Wings. Only if a Walmart run already happens.", back:"2.00", on:false, onlyif:true},
+    {id:"ibotta-aldi", name:"Ibotta Aldi receipt $1.00", meta:"Any Aldi grocery receipt. Stays off unless Aldi is already a stop.", back:"1.00", on:false, onlyif:true},
+    {id:"ibotta-sprouts-vf1", name:"Ibotta Sprouts VF $1.00", meta:"Sprouts · Vital Farms pasture eggs. Redeem in Ibotta.", back:"1.00", on:true},
+    {id:"ibotta-sprouts-vf225", name:"Ibotta Sprouts VF $2.25", meta:"Sprouts · Vital Farms pasture eggs (second offer). Redeem in Ibotta.", back:"2.25", on:true},
+    {id:"ibotta-westbrae", name:"Ibotta Westbrae beans $0.75", meta:"Azure beans cover this.", back:"0.75", on:false, onlyif:true},
+    {id:"ibotta-brookshire", name:"Ibotta Brookshire's receipt $1", meta:"Any receipt $1 only if that trip already happens. No new trip.", back:"1.00", on:false, onlyif:true},
+    {id:"ibotta-target", name:"Ibotta Target VF / Stringles", meta:"Through Sat Aug 29 only if already there — VF eggs $1 / $2.25 · Organic Valley Stringles $1.25. Amount depends on what you buy, so no known-back total.", back:"", on:false, onlyif:true}
+  ];
+  const STORE_WINS = [
+    {store:"aldi", name:"Aldi organic 85/15 $5.99/lb"},
+    {store:"sprouts", name:"Sprouts BOGO produce/eggs"},
+    {store:"super1", name:"Super 1 conventional chicken $0.97/lb"}
+  ];
+  const ALREADY_IN = [
+    {sku:"GP073", name:"Chicken wheat feed, organic", size:"50 lb ×2", price:69.82},
+    {sku:"GP559", name:"Field peas feed, organic", size:"50 lb ×2", price:77.38},
+    {sku:"BP045", name:"Vanilla extract, organic", size:"32 oz", price:33.18},
+    {sku:"SW437", name:"Honey, raw wildflower, organic", size:"12 lb ×2", price:144.36},
+    {sku:"OL251", name:"EVOO, cold pressed, organic", size:"1 gal ×3", price:128.94},
+    {sku:"HS217", name:"Taco seasoning mix", size:"1 lb", price:9.25},
+    {sku:"HS186", name:"Pumpkin pie spice", size:"4 oz", price:4.58},
+    {sku:"FL013", name:"Cornmeal, organic", size:"5 lb ×2", price:14.00},
+    {sku:"OL219", name:"Palm fruit shortening, organic", size:"4 lb", price:16.20},
+    {sku:"GR338", name:"Thai jasmine white rice, organic", size:"25 lb", price:50.58},
+    {sku:"GR111", name:"Hard white wheat, organic", size:"25 lb", price:36.97},
+    {sku:"GR064", name:"Soft white wheat, organic", size:"25 lb", price:21.50},
+    {sku:"CE065", name:"Rolled oats, organic", size:"25 lb", price:28.08},
+    {sku:"GR022", name:"Yellow popcorn, organic", size:"25 lb", price:31.50},
+    {sku:"GR172", name:"Multicolored popcorn, organic", size:"5 lb ×2", price:21.22},
+    {sku:"GR359", name:"White popcorn, organic", size:"5 lb ×2", price:16.34},
+    {sku:"OL457", name:"Coconut oil, expeller pressed, organic", size:"6×64 oz", price:98.44}
+  ];
+  const ADD_MEALS = {
+    lentils:["chili","soup","extra-bean-pot"],
+    black:["bowls","extra-bean-pot"],
+    pinto:["chili","bowls","extra-bean-pot"],
+    "great-northern":["soup","white-chicken-chili"],
+    yeast:["daily bread"],
+    salt:["daily bread"],
+    tomatoes:["chili","pasta","bowls","soup","spinach-ricotta-chicken","lazy-meatball-lasagna"],
+    spaghetti:["pasta","lazy-meatball-lasagna","crockpot-tuscan"],
+    "peanut-butter":["pantry"],
+    acv:["pantry"],
+    "tomato-powder":["chili","soup"],
+    "spaghetti-ww":["pasta"],
+    kidney:["chili"],
+    "baking-soda":["daily bread"],
+    garlic:["chili","roast","soup","extra-bean-pot"]
+  };
+  const MEAL_LABEL = {
+    chili:"chili",
+    roast:"roast",
+    pasta:"pasta",
+    "smash-dinner":"smash-patties dinner",
+    bowls:"bean and rice bowls",
+    brinner:"breakfast-for-dinner",
+    soup:"soup",
+    "sheet-pan-fajitas":"sheet-pan fajitas",
+    "white-chicken-chili":"white chicken chili",
+    "keto-green-chile":"keto green chile chicken",
+    "crockpot-tuscan":"crockpot tuscan chicken",
+    "spinach-ricotta-chicken":"spinach ricotta chicken bake",
+    "lazy-meatball-lasagna":"lazy meatball lasagna",
+    "pork-chops":"pork chop night",
+    "extra-bean-pot":"extra bean pot",
+    "roast-veg-chicken":"roast veg + chicken"
+  };
+  const WALMART_CLIPS = {
+    "walmart-dannon":{item:"Dannon 32 oz yogurt", qty:"32 oz", note:"Walmart Cash $0.45"},
+    "ibotta-wm-vf":{item:"Vital Farms Organic Pasture-Raised Eggs", qty:"12 ct", note:"Ibotta $0.50"},
+    "ibotta-nellie":{item:"Nellie's Free Range Eggs", qty:"12 ct", note:"Ibotta $0.75"},
+    "ibotta-oak":{item:"Oak Farms milk, any fat", qty:"", note:"Ibotta $0.25"},
+    "ibotta-justbare":{item:"Just Bare chicken breast bites or wings", qty:"1.2 lb bites or wings", note:"Ibotta $2.00"}
+  };
+
+  function money(n){ return "$" + n.toFixed(2); }
+  function mealById(id){
+    var i, m;
+    for (i = 0; i < MEALS.length; i++) if (MEALS[i].id === id) return MEALS[i];
+    for (i = 0; i < HOUSE.length; i++) if (HOUSE[i].id === id) return HOUSE[i];
+    return null;
+  }
+  function recipeById(id){ return mealById(id); }
+  function sourceLinkHtml(m){
+    if (m && m.sourceUrl && m.sourceLinkText) {
+      return '<div class="source-line"><a href="'+escAttr(m.sourceUrl)+'" target="_blank" rel="noopener">'+esc(m.sourceLinkText)+"</a></div>";
+    }
+    return "";
+  }
+  function thumbHtml(id){
+    var photo = PHOTOS[id];
+    if (!photo || !photo.src) return "";
+    return '<img class="card-thumb" alt="'+escAttr(photo.caption || "")+'" src="'+escAttr(photo.src)+'" onerror="this.remove()">';
+  }
+  function vfWinsOn(){
+    return storeOn("sprouts") || clipOn("ibotta-sprouts-vf1") || clipOn("ibotta-sprouts-vf225");
+  }
+  function suggestionVisible(s){
+    var m = mealById(s.id);
+    if (!m || m.on) return false;
+    if (s.showIf === "vf-wins" && !vfWinsOn()) return false;
+    return true;
+  }
+  function swapInNames(){
+    var out = [];
+    SUGGESTIONS.concat(PHOTO_SUGGESTIONS).forEach(function(s){
+      var m = mealById(s.id);
+      if (m && m.on) out.push(m.name);
+    });
+    return out;
+  }
+  function servingsPayload(){
+    return MEALS.filter(function(m){ return m.on && !m.noServings; })
+      .map(function(m){ return m.id + "=" + m.servings; })
+      .join(", ") || "none";
+  }
+  function scaleLb(base, servings){
+    return base * ((servings || 7) / 7);
+  }
+  function lbRangeText(lb){
+    if (lb <= 0) return "";
+    var lo = Math.max(1, Math.round(lb));
+    var hi = Math.max(lo + 1, Math.round(lb * 1.25));
+    return "about " + lo + "–" + hi + " lb";
+  }
+  function chickenEstimate(){
+    var selected = selectedMealIds();
+    var roastType = selected.has("roast") || selected.has("roast-veg-chicken");
+    var lb = 0;
+    MEALS.forEach(function(m){
+      if (!m.on || !m.chickenLbAt7) return;
+      if (m.id === "soup" && roastType) return;
+      lb += scaleLb(m.chickenLbAt7, m.servings);
+    });
+    return lb > 0 ? lbRangeText(lb) : "";
+  }
+  function ingredientQtyNote(ing, m){
+    if (ing.scale === "azure") return "Azure bulk doesn’t scale down.";
+    if (ing.scale === "protein" && ing.baseLbAt7) {
+      return lbRangeText(scaleLb(ing.baseLbAt7, m.servings)) + " at " + m.servings + " servings · estimate scales.";
+    }
+    if (ing.scale === "protein" && ing.pattyG) {
+      var lb = (ing.pattyG * (m.servings || 7)) / 453.592;
+      return "about " + (Math.round(lb * 10) / 10) + " lb (" + ing.pattyG + "g × " + m.servings + ") · estimate scales.";
+    }
+    if (ing.scale === "produce") return "Store produce qty estimate scales with servings. No invented shelf $.";
+    return "";
+  }
+
+  function mealCard(m){
+    var actions = "";
+    if (m.on) {
+      actions += '<button type="button" class="card-btn" data-act="open" data-id="'+m.id+'">Open</button>';
+      if (!m.locked) {
+        actions += '<button type="button" class="card-btn ghost" data-act="swap-out" data-id="'+m.id+'">Swap out</button>';
+      }
+    }
+    return '<div class="card'+(m.on?" on":"")+'">'+
+      '<label class="card-check">'+
+      '<input type="checkbox" data-kind="meal" data-id="'+m.id+'" data-name="'+escAttr(m.name)+'" '+(m.on?"checked":"")+'>'+
+      thumbHtml(m.id)+
+      '<div class="txt"><span class="tag ok">Cook once + leftover</span>'+
+      '<span class="tag">'+m.servings+' servings</span>'+
+      '<h3>'+esc(m.name)+'</h3>'+
+      sourceLinkHtml(m)+
+      '<div class="meta">'+esc(m.leftover)+(m.extra?" · "+esc(m.extra):"")+'</div>'+
+      '<div class="price">'+esc(m.plate)+'</div></div></label>'+
+      (actions ? '<div class="card-actions">'+actions+"</div>" : "")+
+      "</div>";
+  }
+  function swapCard(s){
+    var m = mealById(s.id);
+    if (!m) return "";
+    return '<article class="swap-card'+(s.quiet?" quiet":"")+'">'+
+      thumbHtml(m.id)+
+      "<h3>"+esc(m.name)+"</h3>"+
+      sourceLinkHtml(m)+
+      '<p class="why"><strong>Why: </strong>'+esc(s.why)+"</p>"+
+      '<div class="swap-actions">'+
+      '<button type="button" class="card-btn" data-act="open" data-id="'+m.id+'">Open</button>'+
+      '<button type="button" class="card-btn primary" data-act="swap-in" data-id="'+m.id+'">Swap in</button>'+
+      "</div></article>";
+  }
+  function renderMeals(){
+    var html = "";
+    MEALS.forEach(function(m){
+      if (m.railOnly && !m.on) return;
+      html += mealCard(m);
+    });
+    document.getElementById("meals").innerHTML = html;
+  }
+  function renderRail(){
+    var html = "";
+    SUGGESTIONS.forEach(function(s){
+      if (suggestionVisible(s)) html += swapCard(s);
+    });
+    if (!html) html = '<p class="hint" style="margin:8px">No unused sale swaps right now. Swap out a dinner to see it here again.</p>';
+    document.getElementById("swap-cards").innerHTML = html;
+    var photoHtml = "";
+    PHOTO_SUGGESTIONS.forEach(function(s){
+      if (suggestionVisible(s)) photoHtml += swapCard(s);
+    });
+    var photoRail = document.getElementById("photo-rail");
+    var photoCards = document.getElementById("photo-cards");
+    if (photoCards) photoCards.innerHTML = photoHtml;
+    if (photoRail) photoRail.hidden = !photoHtml;
+  }
+  function openRecipe(id){
+    var m = recipeById(id);
+    if (!m) return;
+    document.getElementById("recipe-title").textContent = m.name;
+    document.getElementById("recipe-body").innerHTML = recipeHtml(m);
+    document.body.classList.add("view-recipe");
+    document.getElementById("pick-ui").hidden = true;
+    document.getElementById("lists-screen").hidden = true;
+    document.getElementById("recipe-view").hidden = false;
+    window.scrollTo(0, 0);
+  }
+  function closeRecipe(){
+    document.body.classList.remove("view-recipe");
+    document.getElementById("recipe-view").hidden = true;
+    if (document.body.classList.contains("view-lists")) {
+      document.getElementById("pick-ui").hidden = true;
+      document.getElementById("lists-screen").hidden = false;
+    } else {
+      document.getElementById("pick-ui").hidden = false;
+      document.getElementById("lists-screen").hidden = true;
+    }
+    window.scrollTo(0, 0);
+  }
+  function recipeHtml(m){
+    var html = '<article class="recipe-card">';
+    if (m.locked) html += '<span class="tag lock">Locked</span>';
+    html += "<h3 style=\"margin:8px 0 6px\">"+esc(m.name)+"</h3>";
+    html += sourceLinkHtml(m);
+    var photo = PHOTOS[m.id];
+    if (photo && photo.src) {
+      html += '<img class="recipe-photo" alt="'+escAttr(photo.caption || "")+'" src="'+escAttr(photo.src)+'" onerror="this.parentNode && this.remove()">';
+      if (photo.caption) html += '<div class="meta">'+esc(photo.caption)+"</div>";
+    }
+    if (m.noServings) {
+      html += '<p class="scale-note" style="margin-top:12px">'+(m.servingsNote ? esc(m.servingsNote) : "House pattern — not a servings scale.")+"</p>";
+    } else {
+      html += '<div class="stepper">'+
+        '<button type="button" data-act="serv-down" data-id="'+m.id+'" aria-label="Fewer servings">−</button>'+
+        '<span class="n" id="serv-n">'+m.servings+"</span>"+
+        '<button type="button" data-act="serv-up" data-id="'+m.id+'" aria-label="More servings">+</button>'+
+        "<span class=\"meta\">servings</span></div>";
+      html += '<p class="scale-note">Azure bulk doesn’t scale down. Store protein and produce qty estimates scale. Min 2, max 14.</p>';
+    }
+    html += '<div class="subhead" style="margin-top:8px">Cook-once leftover pair</div>';
+    html += '<p class="meta" style="margin:0 0 10px">'+esc(m.leftoverPair || m.leftover)+"</p>";
+    html += '<div class="subhead">Ingredients</div><ul class="ing-list">';
+    (m.ingredients || []).forEach(function(ing){
+      var note = m.noServings ? "" : ingredientQtyNote(ing, m);
+      html += "<li><div class=\"ing-name\">"+esc(ing.name)+"</div>"+
+        '<div class="ing-meta">'+esc(ing.detail)+(note ? " · "+esc(note) : "")+"</div></li>";
+    });
+    html += "</ul></article>";
+    html += '<button type="button" class="card-btn" id="recipe-back-2">Back</button>';
+    return html;
+  }
+  function setServings(id, next){
+    var m = mealById(id);
+    if (!m || m.noServings) return;
+    var n = Math.max(2, Math.min(14, next));
+    m.servings = n;
+    var label = document.getElementById("serv-n");
+    if (label) label.textContent = n;
+    var body = document.getElementById("recipe-body");
+    if (body && document.body.classList.contains("view-recipe")) {
+      body.innerHTML = recipeHtml(m);
+    }
+    renderMeals();
+    paint();
+  }
+  function escAttr(s){
+    return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;");
+  }
+  function addCard(a){
+    return '<label class="card'+(a.on?" on":"")+'">'+
+      '<input type="checkbox" data-kind="add" data-id="'+a.id+'" data-name="'+a.sku+" "+a.name+'" data-price="'+a.price+'" '+(a.on?"checked":"")+'>'+
+      '<div class="txt"><span class="tag">'+a.sku+'</span>'+
+      '<h3>'+a.name+'</h3>'+
+      '<div class="meta">'+a.size+(a.extra?" · "+a.extra:"")+'</div>'+
+      '<div class="price">'+money(a.price)+'</div></div></label>';
+  }
+  function clipCard(c){
+    const cls = "card clip" + (c.on ? " on" : "") + (c.onlyif ? " onlyif" : "");
+    const backTag = c.back
+      ? '<span class="tag">$'+Number(c.back).toFixed(2)+' back</span>'
+      : '<span class="tag">no $ back</span>';
+    const only = c.onlyif ? '<span class="tag">Only if we already go</span>' : "";
+    return '<label class="'+cls+'">'+
+      '<input type="checkbox" data-kind="win" data-id="'+c.id+'" data-name="'+c.name+'" data-back="'+c.back+'" '+(c.on?"checked":"")+'>'+
+      '<div class="txt"><span class="tag win">Win</span>'+backTag+only+
+      '<h3>'+c.name+'</h3>'+
+      '<div class="meta">'+c.meta+'</div></div></label>';
+  }
+
+  renderMeals();
+  renderRail();
+  document.getElementById("adds-first").innerHTML = ADDS.filter(a=>a.pass==="first").map(addCard).join("");
+  document.getElementById("adds-opt").innerHTML = ADDS.filter(a=>a.pass==="opt").map(addCard).join("");
+  document.getElementById("clips").innerHTML = CLIPS.map(clipCard).join("");
+
+  function checked(kind){
+    return Array.from(document.querySelectorAll('input[data-kind="'+kind+'"]:checked'));
+  }
+  function names(kind){
+    if (kind === "meal") {
+      var meals = MEALS.filter(function(m){ return m.on; }).map(function(m){ return m.name; });
+      return meals.length ? meals.join(", ") : "none";
+    }
+    const xs = checked(kind).map(el => el.getAttribute("data-name"));
+    return xs.length ? xs.join(", ") : "none";
+  }
+  function storeWinNames(){
+    const ids = new Set(checked("store").map(function(el){ return el.getAttribute("data-id"); }));
+    return STORE_WINS.filter(function(w){ return ids.has(w.store); }).map(function(w){ return w.name; });
+  }
+  function clipWinNames(){
+    return checked("win").map(function(el){ return el.getAttribute("data-name"); });
+  }
+  function allWinNames(){
+    return storeWinNames().concat(clipWinNames());
+  }
+  function knownBack(){
+    var n = 0;
+    checked("win").forEach(function(el){
+      var raw = el.getAttribute("data-back");
+      if (raw) n += parseFloat(raw);
+    });
+    return n;
+  }
+  function build(){
+    const notes = (document.getElementById("notes").value || "").trim() || "none";
+    const wins = allWinNames();
+    const swaps = swapInNames();
+    return [
+      "FAMILY KITCHEN PICKS",
+      "Week: 2026-08-31",
+      "Meals: " + names("meal"),
+      "Servings: " + servingsPayload(),
+      "Swaps in: " + (swaps.length ? swaps.join(", ") : "none"),
+      "Azure adds: " + names("add"),
+      "Pickup stores: " + names("store"),
+      "Wins: " + (wins.length ? wins.join(", ") : "none"),
+      "Known back: " + money(knownBack()),
+      "Notes: " + notes
+    ].join("\n");
+  }
+  function selectedMealIds(){
+    return new Set(MEALS.filter(function(m){ return m.on; }).map(function(m){ return m.id; }));
+  }
+  function storeOn(id){
+    var el = document.querySelector('input[data-kind="store"][data-id="'+id+'"]');
+    return !!(el && el.checked);
+  }
+  function clipOn(id){
+    var el = document.querySelector('input[data-kind="win"][data-id="'+id+'"]');
+    return !!(el && el.checked);
+  }
+  function mealSupport(ids){
+    var selected = selectedMealIds();
+    var out = [];
+    ids.forEach(function(id){
+      if (id === "daily bread" || id === "pantry" || id === "Alex lunch") {
+        if (out.indexOf(id) === -1) out.push(id);
+      } else if (selected.has(id)) {
+        var lab = MEAL_LABEL[id] || id;
+        if (out.indexOf(lab) === -1) out.push(lab);
+      }
+    });
+    return out.join(", ");
+  }
+  function chickenMealTags(){
+    return mealSupport(["chili","roast","soup","roast-veg-chicken","sheet-pan-fajitas","white-chicken-chili","keto-green-chile","crockpot-tuscan","spinach-ricotta-chicken"]);
+  }
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+  function lineHtml(line){
+    var cls = "list-line" + (line.already ? " already" : "") + (line.optional ? " optional" : "");
+    var chips = "";
+    (line.chips || []).forEach(function(c){
+      chips += '<span class="tag ok">'+esc(c)+"</span>";
+    });
+    if (line.already) chips += '<span class="tag lock">Already on the drop</span>';
+    if (line.optional && !(line.chips && line.chips.length)) chips += '<span class="tag">Optional</span>';
+    var html = '<div class="'+cls+'">';
+    if (chips) html += chips;
+    html += '<div class="item">'+esc(line.item)+"</div>";
+    if (line.qty) html += '<div class="qty">'+esc(line.qty)+(line.estimate ? " · estimate" : "")+"</div>";
+    if (line.price) html += '<div class="price">'+esc(line.price)+"</div>";
+    if (line.meals) html += '<div class="meal">'+esc(line.meals)+"</div>";
+    if (line.note) html += '<div class="meal">'+esc(line.note)+"</div>";
+    html += "</div>";
+    return html;
+  }
+  function cardHtml(card){
+    var fulfillClass = card.fulfillKey || "tbd";
+    var head = '<div class="lc-head"><h3>'+esc(card.name)+"</h3>"+
+      '<span class="tag fulfill '+fulfillClass+'">'+esc(card.fulfill)+"</span>"+
+      '<span class="count-chip">'+esc(card.countLabel)+"</span></div>";
+    var body = "";
+    if (card.meta) body += '<p class="hint" style="margin:10px 14px 4px">'+esc(card.meta)+"</p>";
+    if (card.addLines && card.addLines.length) {
+      body += '<div class="list-sub">Add to 8804714</div>';
+      card.addLines.forEach(function(ln){ body += lineHtml(ln); });
+      if (card.addTotal != null) body += '<div class="add-sum">Add total: '+money(card.addTotal)+" — not on the cart yet</div>";
+    }
+    if (card.lines && card.lines.length) {
+      card.lines.forEach(function(ln){ body += lineHtml(ln); });
+    }
+    if (card.alreadyLines && card.alreadyLines.length) {
+      body += '<details class="already-block"><summary>Already on 8804714 · '+card.alreadyLines.length+" lines, not re-bought</summary>";
+      card.alreadyLines.forEach(function(ln){ body += lineHtml(ln); });
+      body += "</details>";
+    }
+    return '<article class="list-card">'+head+body+"</article>";
+  }
+  function dashMeals(meals){
+    return meals ? " — " + meals : "";
+  }
+  function copyLine(line){
+    var bits = ["- "];
+    if (line.copyPrefix) bits[0] = "- " + line.copyPrefix + " ";
+    bits.push(line.item);
+    if (line.qty) bits.push(", " + line.qty);
+    if (line.price) bits.push(", " + line.price);
+    if (line.chips && line.chips.length) bits.push(" (" + line.chips.join(" / ") + ")");
+    bits.push(dashMeals(line.meals));
+    return bits.join("");
+  }
+  function collectLists(){
+    var cards = [];
+    var blocks = [];
+    var selected = selectedMealIds();
+    var super1 = storeOn("super1");
+    var sprouts = storeOn("sprouts");
+    var aldi = storeOn("aldi");
+
+    // Azure — always
+    var addLines = [];
+    var addTotal = 0;
+    checked("add").forEach(function(el){
+      var id = el.getAttribute("data-id");
+      var a = ADDS.filter(function(x){ return x.id === id; })[0];
+      if (!a) return;
+      addTotal += a.price;
+      addLines.push({
+        item: a.sku + " " + a.name,
+        qty: a.size,
+        price: money(a.price),
+        meals: mealSupport(ADD_MEALS[a.id] || []),
+        copyPrefix: "ADD"
+      });
+    });
+    var alreadyLines = ALREADY_IN.map(function(x){
+      return {
+        item: x.sku + " " + x.name,
+        qty: x.size,
+        price: money(x.price),
+        already: true
+      };
+    });
+    cards.push({
+      id: "azure",
+      name: "Azure Tyler drop",
+      fulfill: "Drop",
+      fulfillKey: "drop",
+      countLabel: addLines.length + " to add · " + alreadyLines.length + " already on",
+      meta: "Pickup week of Sep 13 · 8668 South Broadway. Already-in lines stay on 8804714 — not a new buy.",
+      addLines: addLines,
+      addTotal: addLines.length ? addTotal : null,
+      alreadyLines: alreadyLines
+    });
+    var azureCopy = ["AZURE DROP (drop / week of Sep 13)"];
+    addLines.forEach(function(ln){
+      azureCopy.push("- ADD " + ln.item + " " + ln.qty + " " + ln.price);
+    });
+    if (addLines.length) azureCopy.push("Add total: " + money(addTotal));
+    azureCopy.push("Already on 8804714: " + alreadyLines.length + " lines, not re-bought.");
+    blocks.push(azureCopy.join("\n"));
+
+    // Super 1
+    if (super1) {
+      var s1 = [];
+      var chickenTags = chickenMealTags();
+      if (chickenTags) {
+        s1.push({
+          item: "Chicken thighs or drums",
+          qty: "limit 2 pkgs",
+          estimate: true,
+          price: "$0.97/lb through 9/1",
+          meals: chickenTags,
+          note: "Conventional sale (circular 8101577). Not the default protein. Organic chicken preferred — no organic chicken ad $ this week. No Ibotta on this chicken."
+        });
+      }
+      if (selected.has("pork-chops")) {
+        var pork = mealById("pork-chops");
+        var pTxt = lbRangeText(scaleLb(pork.porkLbAt7 || 3.5, pork.servings));
+        s1.push({
+          item: "Super Pack boneless pork chops",
+          qty: pTxt + " (scales with servings)",
+          estimate: true,
+          price: "$2.97/lb through 9/1",
+          meals: "pork chop night"
+        });
+      }
+      if (!aldi) {
+        s1.push({
+          item: "Gold potatoes, if you see them",
+          meals: "Alex lunch"
+        });
+      }
+      if (s1.length) {
+        cards.push({
+          id: "super1",
+          name: "Super 1",
+          fulfill: "Pickup",
+          fulfillKey: "pickup",
+          countLabel: s1.length + (s1.length === 1 ? " item" : " items"),
+          meta: "Conventional sale option. $0.97/lb chicken, limit 2 pkgs, circular 8101577 through Tue Sep 1. Not the default protein.",
+          lines: s1
+        });
+        var s1copy = ["SUPER 1 (pickup)"];
+        s1.forEach(function(ln){
+          if (ln.item.indexOf("Chicken") === 0) {
+            s1copy.push("- Chicken thighs or drums, limit 2 pkgs, $0.97/lb through 9/1 (conventional sale, circular 8101577)" + dashMeals(ln.meals));
+          } else {
+            s1copy.push(copyLine(ln));
+          }
+        });
+        blocks.push(s1copy.join("\n"));
+      }
+    }
+
+    // Sprouts
+    if (sprouts) {
+      var sp = [];
+      var bogo = true; // store is on → Sprouts BOGO win
+      var vf1 = clipOn("ibotta-sprouts-vf1");
+      var vf225 = clipOn("ibotta-sprouts-vf225");
+      var vfChips = [];
+      if (bogo) vfChips.push("BOGO");
+      if (vf1 && vf225) vfChips.push("Ibotta VF $1+$2.25");
+      else if (vf1) vfChips.push("Ibotta VF $1");
+      else if (vf225) vfChips.push("Ibotta VF $2.25");
+      var aromatics = selected.has("chili") || selected.has("roast") || selected.has("soup")
+        || selected.has("extra-bean-pot") || selected.has("sheet-pan-fajitas")
+        || selected.has("roast-veg-chicken") || selected.has("pork-chops")
+        || selected.has("white-chicken-chili") || selected.has("crockpot-tuscan");
+      if (aromatics) {
+        if (selected.has("chili") || selected.has("soup") || selected.has("extra-bean-pot") || selected.has("pork-chops")
+            || selected.has("white-chicken-chili") || selected.has("sheet-pan-fajitas")) {
+          sp.push({item:"Onions", meals: mealSupport(["chili","soup","extra-bean-pot","pork-chops","white-chicken-chili","sheet-pan-fajitas"]) || "chili aromatics"});
+        } else {
+          sp.push({item:"Onions", meals: "chili aromatics"});
+        }
+        sp.push({item:"Carrots", meals: mealSupport(["roast","soup","roast-veg-chicken"]) || "soup veg"});
+        sp.push({item:"Celery", meals: mealSupport(["chili","soup","extra-bean-pot"]) || "soup veg"});
+      }
+      if (selected.has("roast") || selected.has("roast-veg-chicken")) {
+        sp.push({item:"Roasting vegetables", meals: mealSupport(["roast","roast-veg-chicken"]) || "roast"});
+      }
+      if (selected.has("sheet-pan-fajitas")) {
+        sp.push({item:"Bell peppers", meals:"sheet-pan fajitas"});
+        sp.push({item:"Limes, if you see them", meals:"sheet-pan fajitas"});
+      }
+      if (selected.has("crockpot-tuscan")) {
+        sp.push({item:"Fresh spinach", meals:"crockpot tuscan chicken"});
+      }
+      if (selected.has("roast-veg-chicken")) {
+        sp.push({item:"Optional organic peaches", optional:true, chips: bogo ? ["BOGO"] : [], meals:"roast veg + chicken"});
+      }
+      sp.push({item:"Optional fruit from BOGO", optional:true, chips: bogo ? ["BOGO"] : []});
+      if (aldi) {
+        /* potatoes live on Aldi */
+      } else if (super1) {
+        sp.push({item:"Optional gold potatoes if Super 1 does not have them", optional:true, meals:"Alex lunch"});
+      } else {
+        sp.push({item:"Gold potatoes, if you see them", meals:"Alex lunch"});
+      }
+      var eggChips = vfChips.slice();
+      sp.push({
+        item: "Optional Vital Farms eggs",
+        optional: true,
+        chips: eggChips,
+        meals: selected.has("brinner") ? "breakfast-for-dinner" : ""
+      });
+      var sproutMeta = "Walk it in-store.";
+      if (clipOn("delivery26aug")) {
+        sproutMeta += " shop.sprouts.com is optional delivery with DELIVERY26AUG through Aug 31.";
+      } else {
+        sproutMeta += " shop.sprouts.com is optional delivery if you want it later.";
+      }
+      cards.push({
+        id: "sprouts",
+        name: "Sprouts",
+        fulfill: "In-store",
+        fulfillKey: "instore",
+        countLabel: sp.length + (sp.length === 1 ? " item" : " items"),
+        meta: sproutMeta,
+        lines: sp
+      });
+      var spcopy = ["SPROUTS (in-store)"];
+      sp.forEach(function(ln){
+        var extra = "";
+        if (ln.item.indexOf("Vital Farms") !== -1 && ln.chips && ln.chips.length) {
+          extra = " (" + ln.chips.join(" / ") + ")";
+        }
+        var prefix = ln.optional && ln.item.indexOf("Optional") !== 0 ? "Optional " : "";
+        if (ln.item.indexOf("Optional") === 0 || !ln.optional) prefix = "";
+        spcopy.push("- " + prefix + ln.item + extra + dashMeals(ln.meals));
+      });
+      blocks.push(spcopy.join("\n"));
+    }
+
+    // Aldi
+    if (aldi) {
+      var al = [];
+      al.push({
+        item: "85/15 ground beef",
+        qty: "2.5 lb",
+        price: "Simply Nature organic $5.99/lb through 9/1 (circular 8103848)",
+        meals: "Alex lunch",
+        note: "Alex lunch. Optional smash dinner uses the same sale if that meal is on."
+      });
+      if (selected.has("smash-dinner")) {
+        var sm = mealById("smash-dinner");
+        var dLb = (190 * (sm.servings || 7)) / 453.592;
+        al.push({
+          item: "85/15 ground beef for smash dinner",
+          qty: "about " + (Math.round(dLb * 10) / 10) + " lb (190g × " + sm.servings + " servings, estimate)",
+          estimate: true,
+          price: "Simply Nature organic $5.99/lb through 9/1 (circular 8103848)",
+          meals: "smash-patties dinner"
+        });
+      }
+      al.push({
+        item: "Gold potatoes",
+        qty: "3–5 lb",
+        meals: "Alex lunch"
+      });
+      al.push({
+        item: "Optional fresh white-button mushrooms",
+        qty: "8–16 oz",
+        optional: true,
+        note: "Never canned. Never mixed into patties.",
+        meals: "Alex lunch"
+      });
+      al.push({
+        item: "Optional Friendly Farms Greek yogurt",
+        qty: "32 oz",
+        price: "$2.79 ad through 9/1",
+        optional: true,
+        note: "From the ad — not required."
+      });
+      al.push({
+        item: "Optional lactose-free milk",
+        qty: "64 oz",
+        price: "$2.99 ad through 9/1",
+        optional: true,
+        note: "From the ad — not required."
+      });
+      cards.push({
+        id: "aldi",
+        name: "Aldi",
+        fulfill: "In-store",
+        fulfillKey: "instore",
+        countLabel: al.length + " items",
+        meta: "Alex lunch 85/15 lives here. Optional smash dinner uses the same sale. Circular 8103848 through Tue Sep 1.",
+        lines: al
+      });
+      var alcopy = ["ALDI (in-store)"];
+      al.forEach(function(ln){ alcopy.push(copyLine(ln)); });
+      blocks.push(alcopy.join("\n"));
+    }
+
+    // Walmart — only if a Walmart clip is on (no store checkbox)
+    var wmLines = [];
+    Object.keys(WALMART_CLIPS).forEach(function(id){
+      if (!clipOn(id)) return;
+      var w = WALMART_CLIPS[id];
+      wmLines.push({
+        item: w.item,
+        qty: w.qty,
+        note: w.note,
+        chips: [w.note]
+      });
+    });
+    if (wmLines.length) {
+      cards.push({
+        id: "walmart",
+        name: "Walmart",
+        fulfill: "Delivery",
+        fulfillKey: "delivery",
+        countLabel: wmLines.length + (wmLines.length === 1 ? " item" : " items"),
+        meta: "Clipped items only. Walmart app later. Not a new required stop unless you already go.",
+        lines: wmLines
+      });
+      var wmcopy = ["WALMART (delivery)"];
+      wmLines.forEach(function(ln){
+        wmcopy.push("- " + ln.item + (ln.qty ? ", " + ln.qty : "") + (ln.note ? " — " + ln.note : ""));
+      });
+      blocks.push(wmcopy.join("\n"));
+    }
+
+    // Needs a home — locked lunch must not vanish
+    var home = [];
+    if (!aldi) {
+      home.push({
+        item: "85/15 for Alex lunch — store TBD, Aldi organic $5.99/lb through 9/1 (circular 8103848)",
+        meals: "Alex lunch"
+      });
+      if (selected.has("smash-dinner")) {
+        var smh = mealById("smash-dinner");
+        var hLb = (190 * (smh.servings || 7)) / 453.592;
+        home.push({
+          item: "85/15 for smash dinner — store TBD, about " + (Math.round(hLb * 10) / 10) + " lb estimate, Aldi $5.99/lb when available",
+          meals: "smash-patties dinner"
+        });
+      }
+    }
+    if (!aldi && !super1 && !sprouts) {
+      home.push({
+        item: "Gold potatoes for Alex lunch — store TBD",
+        meals: "Alex lunch"
+      });
+    }
+    if (selected.has("lazy-meatball-lasagna")) {
+      home.push({
+        item: "Frozen fully cooked meatballs — store TBD, no meatball sale this week",
+        meals: "lazy meatball lasagna"
+      });
+    }
+    if (home.length) {
+      cards.push({
+        id: "needs-home",
+        name: "Needs a home",
+        fulfill: "TBD",
+        fulfillKey: "tbd",
+        countLabel: home.length + (home.length === 1 ? " item" : " items"),
+        meta: "Locked Alex lunch. Not assigned to a selected store.",
+        lines: home
+      });
+      var hcopy = ["NEEDS A HOME"];
+      home.forEach(function(ln){ hcopy.push("- " + ln.item); });
+      blocks.push(hcopy.join("\n"));
+    }
+
+    var text = "FAMILY KITCHEN LISTS\nWeek: 2026-08-31\n\n" + blocks.join("\n\n");
+    return {cards: cards, text: text};
+  }
+  var lastLists = null;
+  function renderLists(data){
+    lastLists = data;
+    document.getElementById("list-cards").innerHTML = data.cards.map(cardHtml).join("");
+    document.getElementById("lists-preview").textContent = data.text;
+  }
+  function showLists(){
+    renderLists(collectLists());
+    document.body.classList.add("view-lists");
+    document.getElementById("pick-ui").hidden = true;
+    document.getElementById("lists-screen").hidden = false;
+    window.scrollTo(0, 0);
+  }
+  function hideLists(){
+    document.body.classList.remove("view-lists");
+    document.getElementById("pick-ui").hidden = false;
+    document.getElementById("lists-screen").hidden = true;
+    window.scrollTo(0, 0);
+  }
+  function paint(){
+    document.querySelectorAll("label.card, label.store-row, div.card").forEach(function(lab){
+      const box = lab.querySelector('input[type=checkbox]');
+      if (box) lab.classList.toggle("on", box.checked);
+    });
+    renderRail();
+    const n = MEALS.filter(function(m){ return m.on; }).length + checked("add").length + checked("store").length;
+    const wins = allWinNames();
+    const w = wins.length;
+    const back = knownBack();
+    document.getElementById("count").innerHTML =
+      n + " selected · " + w + " win" + (w === 1 ? "" : "s") +
+      '<div class="back">' + money(back) + " known back</div>";
+    const badge = document.getElementById("wins-badge");
+    badge.textContent = w + " win" + (w === 1 ? "" : "s");
+    badge.classList.toggle("live-win", w > 0);
+    let addSum = 0;
+    checked("add").forEach(function(el){ addSum += parseFloat(el.getAttribute("data-price")||"0"); });
+    document.getElementById("add-total").textContent = "Adds checked: " + money(addSum) + " (not on the cart yet)";
+    const text = build();
+    document.getElementById("preview").textContent = text;
+    const mail = "mailto:ashorts@gmail.com?subject=" +
+      encodeURIComponent("Family Kitchen picks") + "&body=" + encodeURIComponent(text);
+    document.getElementById("email").setAttribute("href", mail);
+  }
+  function toast(msg){
+    const t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    setTimeout(function(){ t.classList.remove("show"); }, 1400);
+  }
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly","");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        const ok = document.execCommand("copy");
+        document.body.removeChild(ta);
+        ok ? resolve() : reject();
+      } catch (e) {
+        document.body.removeChild(ta);
+        reject(e);
+      }
+    });
+  }
+  document.addEventListener("change", function(e){
+    var t = e.target;
+    if (t && t.getAttribute && t.getAttribute("data-kind") === "meal") {
+      var m = mealById(t.getAttribute("data-id"));
+      if (m) {
+        m.on = !!t.checked;
+        if (!m.on && m.railOnly) renderMeals();
+      }
+    }
+    paint();
+  });
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest ? e.target.closest("[data-act]") : null;
+    if (!btn) {
+      if (e.target.id === "recipe-back-2") closeRecipe();
+      return;
+    }
+    var act = btn.getAttribute("data-act");
+    var id = btn.getAttribute("data-id");
+    var m = mealById(id);
+    if (act === "open") {
+      e.preventDefault();
+      openRecipe(id);
+    } else if (act === "swap-in" && m) {
+      e.preventDefault();
+      m.on = true;
+      renderMeals();
+      renderRail();
+      paint();
+    } else if (act === "swap-out" && m && !m.locked) {
+      e.preventDefault();
+      m.on = false;
+      renderMeals();
+      renderRail();
+      paint();
+    } else if (act === "serv-down" && m) {
+      e.preventDefault();
+      setServings(id, (m.servings || 7) - 1);
+    } else if (act === "serv-up" && m) {
+      e.preventDefault();
+      setServings(id, (m.servings || 7) + 1);
+    }
+  });
+  document.getElementById("recipe-back").addEventListener("click", closeRecipe);
+  document.getElementById("notes").addEventListener("input", paint);
+  document.getElementById("copy").addEventListener("click", function(){
+    copyText(build()).then(function(){ toast("Copied — paste to Homemaker"); })
+      .catch(function(){ toast("Copy failed — use Email Alex"); });
+  });
+  document.getElementById("confirm").addEventListener("click", function(){
+    showLists();
+    toast("Lists ready — nothing ordered");
+  });
+  document.getElementById("edit-picks").addEventListener("click", function(){
+    hideLists();
+  });
+  document.getElementById("copy-lists").addEventListener("click", function(){
+    var text = (lastLists && lastLists.text) ? lastLists.text : collectLists().text;
+    copyText(text).then(function(){ toast("Lists copied"); })
+      .catch(function(){ toast("Copy failed — select the lists text"); });
+  });
+  paint();
+})();
+</script>
+</body>
+</html>

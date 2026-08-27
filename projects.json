@@ -6,6 +6,15 @@
   },
   "projects": [
     {
+      "id": "family-kitchen",
+      "name": "Family Kitchen",
+      "desc": "Week board for Morganne — meals, leftovers, store lists. Draft only.",
+      "href": "projects/family-kitchen/",
+      "image": "projects/family-kitchen/recipe-photos/web/white-chicken-chili.jpg",
+      "private": true,
+      "updated": "2026-08-27"
+    },
+    {
       "id": "family-tree-alex",
       "name": "Alexander — Family tree",
       "desc": "Interactive ancestry graph with portraits, vitals, and source documents.",
