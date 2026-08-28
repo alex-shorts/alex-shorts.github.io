@@ -67,6 +67,15 @@
       background: #3a1860;
     }
     .ko-cell.ask.reveal { background: #5a2040; color: #f0c040; }
+    .ko-cell.misplaced {
+      background: #4a1828;
+      color: #ffb8b8;
+      box-shadow: inset 0 0 0 3px #e03838;
+    }
+    .ko-cell.misplaced-name {
+      background: #3a1420;
+      color: #ffd0d0;
+    }
     .ko-base-row .ko-cell.filled { background: #182848; }
     .ko-overlay, .ko-prompt {
       display: flex;
@@ -191,6 +200,12 @@
       font-weight: 800;
       font-size: clamp(16px, 2.2vh, 28px);
       color: #e05050;
+    }
+    .ko-misplaced-note {
+      font-weight: 700;
+      font-size: clamp(15px, 2vh, 24px);
+      color: #ffb0b0;
+      line-height: 1.25;
     }
     .ko-answer {
       font-weight: 800;

@@ -3,7 +3,7 @@ import { sparkBurst } from "../motion/transitions.js";
 import { markSeen, bumpMiss, clearDue, missCount, isWarm, markWarm, markTyped, scaffoldOf } from "../systems/save.js";
 import { answerOk } from "./metric-grade.js";
 import { setFightKeys, clearStuckKeys } from "../input/controls.js";
-import { COLS, hintCells, targetCell } from "./chart-map.js";
+import { COLS, hintCells, targetCell, cellsForAnswer } from "./chart-map.js";
 
 const MCQ_MS = 15000;
 
@@ -36,24 +36,29 @@ function place(el) {
   });
 }
 
-function fillChart(table, rows, itemId, { reveal = false } = {}) {
+function fillChart(table, rows, itemId, { reveal = false, misplaced = [] } = {}) {
   const [tr, tc] = targetCell(itemId);
   const hints = hintCells(itemId, scaffoldOf());
+  const homeKeys = new Set(misplaced.map(([r, c]) => `${r},${c}`));
+  const homeRows = new Set(misplaced.map(([r]) => r));
   table.querySelectorAll("td[data-r]").forEach((td) => {
     const r = +td.dataset.r;
     const c = +td.dataset.c;
     const key = `${r},${c}`;
     const ask = r === tr && c === tc;
-    const show = hints.has(key) || (reveal && ask);
+    const home = !ask && homeKeys.has(key);
+    const homeName = !ask && !home && homeRows.has(r) && c === 0;
+    const show = hints.has(key) || (reveal && ask) || home || homeName;
     const val = rows[r]?.[c] ?? "";
     td.className = ask ? "ko-cell ask" : "ko-cell";
     if (show) {
       td.textContent = c === 3 ? prettyMetric(val) : val;
       td.classList.add("filled");
       if (ask) td.classList.add("reveal");
+      if (home) td.classList.add("misplaced");
+      if (homeName) td.classList.add("misplaced-name");
     } else {
       td.textContent = "\u00a0";
-      td.classList.remove("filled", "reveal");
     }
   });
 }
@@ -139,14 +144,15 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     onWhiff?.();
   }
 
-  function showCorrect() {
+  function showCorrect(got = "") {
     if (reviewing || closed) return;
     reviewing = true;
     timerAnim?.cancel?.();
     bumpMiss(raw.id);
     sfx.miss();
     const dumpRows = scene.cache.json.get("metric-deck")?.dump?.rows || [];
-    if (chartTable) fillChart(chartTable, dumpRows, raw.id, { reveal: true });
+    const homes = cellsForAnswer(dumpRows, got, targetCell(raw.id));
+    if (chartTable) fillChart(chartTable, dumpRows, raw.id, { reveal: true, misplaced: homes });
     prompt.querySelectorAll(".ko-grid, .ko-timer, .ko-chips, .ko-input, .ko-enter, .ko-hint").forEach((el) => el.remove());
     prompt.classList.add("ko-miss");
     const tag = document.createElement("div");
@@ -155,21 +161,30 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     const ans = document.createElement("div");
     ans.className = "ko-answer";
     ans.textContent = prettyMetric(correct);
-    const got = document.createElement("button");
-    got.type = "button";
-    got.className = "ko-gotit";
-    got.textContent = "Got it  ·  Enter";
-    got.addEventListener("click", ackMiss);
     prompt.appendChild(tag);
     prompt.appendChild(ans);
-    prompt.appendChild(got);
-    got.focus();
+    if (homes.length && String(got).trim()) {
+      const note = document.createElement("div");
+      note.className = "ko-misplaced-note";
+      const where = homes
+        .map(([r, c]) => `${dumpRows[r]?.[0] ?? ""} · ${COLS[c]}`)
+        .join(" · ");
+      note.textContent = `Your answer ${prettyMetric(String(got).trim())} belongs at ${where}.`;
+      prompt.appendChild(note);
+    }
+    const gotBtn = document.createElement("button");
+    gotBtn.type = "button";
+    gotBtn.className = "ko-gotit";
+    gotBtn.textContent = "Got it  ·  Enter";
+    gotBtn.addEventListener("click", ackMiss);
+    prompt.appendChild(gotBtn);
+    gotBtn.focus();
   }
 
-  function finish(ok) {
+  function finish(ok, got = "") {
     if (closed || reviewing) return;
     if (!ok) {
-      showCorrect();
+      showCorrect(got);
       return;
     }
     markSeen(raw.id);
@@ -288,7 +303,10 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     go.type = "button";
     go.className = "ko-enter";
     go.textContent = "Enter";
-    go.addEventListener("click", () => finish(answerOk(inp.value, item.answer) || answerOk(inp.value, raw.answer)));
+    go.addEventListener("click", () => {
+      const ok = answerOk(inp.value, item.answer) || answerOk(inp.value, raw.answer);
+      finish(ok, inp.value);
+    });
     prompt.appendChild(go);
 
     onKey = (e) => {
@@ -304,7 +322,8 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
       if (e.key === "Enter") {
         e.preventDefault();
         e.stopPropagation();
-        finish(answerOk(inp.value, item.answer) || answerOk(inp.value, raw.answer));
+        const ok = answerOk(inp.value, item.answer) || answerOk(inp.value, raw.answer);
+        finish(ok, inp.value);
       }
     };
     document.addEventListener("keydown", onKey, true);
@@ -330,7 +349,8 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
   function pick(n) {
     if (closed || reviewing || n >= choices.length) return;
     const c = choices[n];
-    finish(c === item.answer || c === raw.answer || answerOk(c, item.answer) || answerOk(c, raw.answer));
+    const ok = c === item.answer || c === raw.answer || answerOk(c, item.answer) || answerOk(c, raw.answer);
+    finish(ok, c);
   }
 
   choices.forEach((c, n) => {

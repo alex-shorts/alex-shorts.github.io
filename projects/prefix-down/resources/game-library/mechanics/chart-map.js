@@ -1,4 +1,4 @@
-import { COLS } from "./metric-grade.js";
+import { COLS, cellOk, answerOk } from "./metric-grade.js";
 
 export { COLS };
 
@@ -74,6 +74,25 @@ export function mapItem(id) {
 
 export function targetCell(id) {
   return mapItem(id)[0] || [BASE_ROW, 0];
+}
+
+/** Chart cells that already hold `got`. Prefer an exact string match so M ≠ m. */
+export function cellsForAnswer(rows, got, skip = null) {
+  const text = String(got ?? "").trim();
+  if (!text) return [];
+  const skipKey = skip ? `${skip[0]},${skip[1]}` : "";
+  const exact = [];
+  const fuzzy = [];
+  (rows || []).forEach((row, r) => {
+    (row || []).forEach((want, c) => {
+      if (`${r},${c}` === skipKey) return;
+      const w = String(want ?? "").trim();
+      if (!w) return;
+      if (text === w) exact.push([r, c]);
+      else if (cellOk(text, want, c) || answerOk(text, want)) fuzzy.push([r, c]);
+    });
+  });
+  return exact.length ? exact : fuzzy;
 }
 
 export function givenCells(id) {
