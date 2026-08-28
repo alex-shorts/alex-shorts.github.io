@@ -11,7 +11,8 @@
       "desc": "Street brawler that drills the metric chart — punch, hop rockets, then fill or tile the 13×4 grid.",
       "href": "projects/prefix-down/",
       "image": "assets/thumbs/prefix-down.svg",
-      "updated": "2026-08-27"
+      "lane": "school",
+      "updated": "2026-08-28"
     },
     {
       "id": "family-kitchen",
@@ -19,6 +20,7 @@
       "desc": "Week board for Morganne — meals, leftovers, store lists. Draft only.",
       "href": "projects/family-kitchen/",
       "image": "projects/family-kitchen/recipe-photos/web/white-chicken-chili.jpg",
+      "lane": "personal",
       "private": true,
       "updated": "2026-08-27"
     },
@@ -28,6 +30,7 @@
       "desc": "Interactive ancestry graph with portraits, vitals, and source documents.",
       "href": "projects/family-tree-alex/",
       "image": "assets/thumbs/family-tree-alex.png",
+      "lane": "personal",
       "private": true,
       "updated": "2026-08-19"
     },
@@ -37,6 +40,7 @@
       "desc": "Morganne's line from the same research engine — scoped for her side of the family.",
       "href": "projects/family-tree-morganne/",
       "image": "assets/thumbs/family-tree-morganne.png",
+      "lane": "personal",
       "private": true,
       "updated": "2026-08-19"
     },
@@ -46,6 +50,7 @@
       "desc": "Spark cycles — plans, checklists, CLEP catalog, and training links.",
       "href": "projects/the-preparation/",
       "image": "projects/the-preparation/thumb.svg",
+      "lane": "personal",
       "private": true,
       "updated": "2026-08-23"
     },
@@ -55,6 +60,7 @@
       "desc": "Proverbs as a climb — Way of Life (10–31) above, firm foundation (1–9) below.",
       "href": "projects/proverbs-link/",
       "image": "projects/proverbs-link/assets/covers/cover-two-paths.png",
+      "lane": "personal",
       "updated": "2026-08-10"
     },
     {
@@ -63,14 +69,16 @@
       "desc": "Zoomable arc map of scripture cross-references — follow links collection by collection.",
       "href": "projects/bible-rainbow/",
       "image": "assets/thumbs/bible-rainbow.svg",
+      "lane": "personal",
       "updated": "2026-08-06"
     },
     {
       "id": "periodic-table",
-      "name": "Element Campaign",
+      "name": "Element One",
       "desc": "Learn the elements with your kid — campaign, drills, place, and head-to-head game.",
       "href": "projects/periodic-table/",
       "image": "assets/thumbs/periodic-table.svg",
+      "lane": "school",
       "updated": "2026-08-23"
     },
     {
@@ -79,6 +87,7 @@
       "desc": "Weekly biblical imagery studies — student sheets, teacher guides, ready to print.",
       "href": "projects/bible-worksheets/",
       "image": "projects/bible-worksheets/lamb/coloring.png",
+      "lane": "personal",
       "updated": "2026-08-25"
     }
   ]

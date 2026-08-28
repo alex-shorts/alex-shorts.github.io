@@ -41,7 +41,7 @@
     }
 
     .wrap {
-      width: min(640px, calc(100% - 1.5rem));
+      width: min(1100px, calc(100% - 1.5rem));
       margin: 0 auto;
       padding: 2.25rem 0 4rem;
     }
@@ -88,8 +88,23 @@
       font-size: 0.98rem;
     }
 
-    .section-note {
-      margin: 0 0 0.85rem;
+    .lanes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.35rem 1.5rem;
+      align-items: start;
+    }
+
+    .lane {
+      display: grid;
+      gap: 0.75rem;
+      min-width: 0;
+    }
+
+    .lane-head {
+      margin: 0;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--line);
       font-size: 0.78rem;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -207,6 +222,12 @@
       background: rgba(255, 255, 255, 0.55);
     }
 
+    @media (max-width: 820px) {
+      .lanes {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 520px) {
       .card {
         grid-template-columns: 1fr;
@@ -226,8 +247,16 @@
       <p class="bio" id="site-bio"></p>
     </header>
 
-    <p class="section-note">Recently updated</p>
-    <div class="list" id="list"></div>
+    <div class="lanes">
+      <section class="lane" aria-labelledby="lane-personal">
+        <h2 class="lane-head" id="lane-personal">Personal</h2>
+        <div class="list" id="list-personal"></div>
+      </section>
+      <section class="lane" aria-labelledby="lane-school">
+        <h2 class="lane-head" id="lane-school">School</h2>
+        <div class="list" id="list-school"></div>
+      </section>
+    </div>
 
     <footer>
       Add or edit projects in <code>projects.json</code>, then push to GitHub.
@@ -267,8 +296,19 @@
       </a>`;
     }
 
+    function byUpdated(a, b) {
+      return (b.updated || "0000-01-01").localeCompare(a.updated || "0000-01-01");
+    }
+
+    function fillLane(el, projects) {
+      el.innerHTML = projects.length
+        ? projects.map(cardHtml).join("")
+        : `<p class="empty">Nothing here yet.</p>`;
+    }
+
     async function init() {
-      const list = document.getElementById("list");
+      const personal = document.getElementById("list-personal");
+      const school = document.getElementById("list-school");
       try {
         const res = await fetch("projects.json", { cache: "no-store" });
         if (!res.ok) throw new Error(res.statusText);
@@ -278,18 +318,19 @@
         document.getElementById("site-bio").textContent = data.site?.bio || "";
         document.title = `${data.site?.title || "Alex Shorts"} — Projects`;
 
-        const projects = (data.projects || []).sort((a, b) => {
-          const da = a.updated || "0000-01-01";
-          const db = b.updated || "0000-01-01";
-          return db.localeCompare(da);
-        });
-
-        list.innerHTML = projects.length
-          ? projects.map(cardHtml).join("")
-          : `<p class="empty">No projects in projects.json yet.</p>`;
+        const projects = data.projects || [];
+        fillLane(
+          personal,
+          projects.filter((p) => (p.lane || "personal") !== "school").sort(byUpdated)
+        );
+        fillLane(
+          school,
+          projects.filter((p) => p.lane === "school").sort(byUpdated)
+        );
       } catch (err) {
         document.getElementById("site-tagline").textContent = "Could not load projects.json.";
-        list.innerHTML = `<p class="empty">Could not load projects.</p>`;
+        personal.innerHTML = `<p class="empty">Could not load projects.</p>`;
+        school.innerHTML = "";
         console.error(err);
       }
     }
