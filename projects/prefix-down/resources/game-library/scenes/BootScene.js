@@ -1,4 +1,5 @@
 import { preloadLibrary, bootLibrary } from "../phaser/preload.js";
+import { resetSave } from "../systems/save.js";
 
 export class BootScene extends Phaser.Scene {
   constructor() {
@@ -28,6 +29,9 @@ export class BootScene extends Phaser.Scene {
       console.error(err);
       return;
     }
+    const q = new URLSearchParams(location.search);
+    if (q.has("reset")) resetSave();
+    if (q.has("practice")) this.registry.set("practiceFight", true);
     const start = this.registry.get("startScene");
     if (start) {
       this.scene.start(start);

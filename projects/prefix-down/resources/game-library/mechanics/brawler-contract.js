@@ -6,7 +6,7 @@ import { STAGE_SCALE } from "../layouts/city.js";
 
 export const BRAWLER = {
   scene: "BrawlerScene",
-  width: 12800,
+  width: 7800,
   walkSpeed: 420,
   laneSpeed: 220,
   punchRange: 220,
@@ -33,23 +33,23 @@ export function roadLayout(H) {
 
 const BLOCK_A = [
   { x: 2200, foes: [["wolf", -120, 1], ["thug", 140, 2]] },
-  { x: 5200, foes: [["bot", 80, 1], ["thug", -160, 0]] },
-  { x: 8200, foes: [["wolf", -80, 0], ["bot", 160, 2]] },
-  { x: 11200, foes: [["boss", 40, 1], ["wolf", 180, 0]] },
+  { x: 3700, foes: [["bot", 80, 1], ["thug", -160, 0]] },
+  { x: 5200, foes: [["wolf", -80, 0], ["bot", 160, 2]] },
+  { x: 6700, foes: [["boss", 40, 1], ["wolf", 180, 0]] },
 ];
 
 const BLOCK_B = [
   { x: 2200, foes: [["wolf", -160, 0], ["bot", 80, 2]] },
-  { x: 5200, foes: [["brute", -120, 1], ["wolf", 140, 0]] },
-  { x: 8200, foes: [["bot", -180, 0], ["wolf", 40, 1], ["thug", 180, 2]] },
-  { x: 11200, foes: [["boss", 0, 1], ["bot", 160, 0]] },
+  { x: 3700, foes: [["brute", -120, 1], ["wolf", 140, 0]] },
+  { x: 5200, foes: [["bot", -180, 0], ["wolf", 40, 1], ["thug", 180, 2]] },
+  { x: 6700, foes: [["boss", 0, 1], ["bot", 160, 0]] },
 ];
 
 const BLOCK_C = [
   { x: 2200, foes: [["wolf", -100, 1], ["bot", 140, 0]] },
-  { x: 5200, foes: [["wolf", -200, 0], ["bot", 0, 2], ["brute", 160, 1]] },
-  { x: 8200, foes: [["bot", -80, 0], ["wolf", 120, 2]] },
-  { x: 11200, foes: [["boss", 40, 1], ["wolf", -140, 0], ["bot", 180, 2]] },
+  { x: 3700, foes: [["wolf", -200, 0], ["bot", 0, 2], ["brute", 160, 1]] },
+  { x: 5200, foes: [["bot", -80, 0], ["wolf", 120, 2]] },
+  { x: 6700, foes: [["boss", 40, 1], ["wolf", -140, 0], ["bot", 180, 2]] },
 ];
 
 /** Three street blocks. Chart dump only after the last. */

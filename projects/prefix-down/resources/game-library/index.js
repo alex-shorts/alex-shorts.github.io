@@ -35,6 +35,7 @@ export { InventoryScene } from "./mechanics/inventory.js";
 export { BrawlerScene } from "./mechanics/brawler.js";
 export { ChartDumpScene } from "./mechanics/chart-dump.js";
 export { ChartTilesScene } from "./mechanics/chart-tiles.js";
+export { ChartReviewScene } from "./mechanics/chart-review.js";
 
 import { BootScene } from "./scenes/BootScene.js";
 import { HubScene } from "./scenes/HubScene.js";
@@ -61,6 +62,7 @@ import { InventoryScene } from "./mechanics/inventory.js";
 import { BrawlerScene } from "./mechanics/brawler.js";
 import { ChartDumpScene } from "./mechanics/chart-dump.js";
 import { ChartTilesScene } from "./mechanics/chart-tiles.js";
+import { ChartReviewScene } from "./mechanics/chart-review.js";
 
 export const SCENES = [
   BootScene,
@@ -88,6 +90,7 @@ export const SCENES = [
   BrawlerScene,
   ChartDumpScene,
   ChartTilesScene,
+  ChartReviewScene,
 ];
 
-export const METRIC_SCENES = [BootScene, TitleScene, BrawlerScene, ChartDumpScene, ChartTilesScene];
+export const METRIC_SCENES = [BootScene, TitleScene, ChartReviewScene, BrawlerScene, ChartDumpScene, ChartTilesScene];

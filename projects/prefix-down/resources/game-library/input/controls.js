@@ -2,7 +2,7 @@
 
 export function makeControls(scene) {
   const k = scene.input.keyboard.addKeys(
-    "W,A,S,D,T,UP,DOWN,LEFT,RIGHT,SPACE,ENTER,E,Z,X,C,ESC,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,F,J,K",
+    "W,A,S,D,T,R,P,UP,DOWN,LEFT,RIGHT,SPACE,ENTER,E,Z,X,C,ESC,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,F,J,K",
     false,
   );
   const touch = { x: 0, y: 0, jump: false, action: false, cancel: false };
@@ -50,6 +50,18 @@ export function makeControls(scene) {
 }
 
 /** Phaser capture eats WASD/Z/X while a DOM field is focused. */
+export function clearStuckKeys(scene) {
+  Object.values(scene.ctrl?.k || {}).forEach((key) => {
+    if (!key || typeof key !== "object") return;
+    if (typeof key.reset === "function") key.reset();
+    else {
+      key.isDown = false;
+      key.isUp = true;
+    }
+  });
+  if (scene.hero?.body) scene.hero.setVelocity(0, 0);
+}
+
 export function setFightKeys(scene, on) {
   const kb = scene.input?.keyboard;
   if (kb) kb.enabled = on;
@@ -58,6 +70,7 @@ export function setFightKeys(scene, on) {
     key.enabled = on;
     if ("preventDefault" in key) key.preventDefault = on;
   });
+  if (on) clearStuckKeys(scene);
 }
 
 export function driveTopDown(sprite, vec, speed) {

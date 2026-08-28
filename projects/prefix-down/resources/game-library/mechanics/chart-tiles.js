@@ -34,18 +34,6 @@ export class ChartTilesScene extends Phaser.Scene {
 
   create() {
     this.cameras.main.setBackgroundColor(THEMES.snes.bg);
-    this.add.text(24, 16, "TILE CHART  ·  drag every chip to its cell", {
-      fontFamily: '"Nunito", "Segoe UI", sans-serif',
-      fontSize: "32px",
-      color: "#f0c040",
-      resolution: 3,
-    });
-    this.add.text(24, 56, "ESC  ·  back     Top = largest     Middle = BASE     Bottom = smallest", {
-      fontFamily: '"Nunito", "Segoe UI", sans-serif',
-      fontSize: "22px",
-      color: "#a090c0",
-      resolution: 3,
-    });
     if (this.input?.keyboard) this.input.keyboard.enabled = false;
 
     const dump = this.cache.json.get("metric-deck")?.dump;
@@ -66,7 +54,28 @@ export class ChartTilesScene extends Phaser.Scene {
     this.wrap = document.createElement("div");
     this.wrap.id = "metric-tiles";
     this.wrap.className = "tile-chart";
+    const canvas = document.querySelector("#game canvas") || document.querySelector("canvas");
+    if (canvas) {
+      const b = canvas.getBoundingClientRect();
+      Object.assign(this.wrap.style, {
+        position: "fixed",
+        left: `${b.left}px`,
+        top: `${b.top}px`,
+        width: `${b.width}px`,
+        height: `${b.height}px`,
+        transform: "none",
+        maxHeight: "none",
+        maxWidth: "none",
+        margin: "0",
+      });
+    }
     (document.getElementById("game") || document.body).appendChild(this.wrap);
+
+    const headBar = document.createElement("div");
+    headBar.className = "tile-head";
+    headBar.innerHTML =
+      "<strong>TILE CHART</strong>  ·  drag every chip  ·  ESC back  ·  Top = Tera  ·  Middle = BASE  ·  Bottom = pico";
+    this.wrap.appendChild(headBar);
 
     const model = document.createElement("p");
     model.className = "tile-model";
@@ -114,9 +123,6 @@ export class ChartTilesScene extends Phaser.Scene {
 
     const wells = document.createElement("div");
     wells.className = "tile-wells";
-    const spacer = document.createElement("div");
-    spacer.className = "tile-well-spacer";
-    wells.appendChild(spacer);
     this.banks = COLS.map((name, c) => {
       const well = document.createElement("div");
       well.className = "tile-well";

@@ -7,40 +7,102 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nunito&family=Pixelify+Sans&family=Press+Start+2P&family=Silkscreen&family=Tiny5&family=VT323&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./resources/game-library/assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="../../resources/game-library/assets/fonts/fonts.css" />
   <style>
     html, body { margin: 0; height: 100%; background: #0a0614; }
     #game { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
     canvas { image-rendering: pixelated; }
     #boot-err { position: fixed; left: 16px; right: 16px; top: 16px; color: #f0c040; font-family: monospace; white-space: pre-wrap; }
-    .ko-overlay {
+    .ko-shell {
       display: flex;
       flex-direction: column;
-      gap: 1.2%;
-      padding: 1.6% 2%;
-      background: rgba(10, 6, 22, 0.96);
-      border: 6px solid #f0c040;
+      pointer-events: none;
+      font-family: Nunito, "Segoe UI", sans-serif;
+    }
+    .ko-chart, .ko-prompt { pointer-events: auto; }
+    .ko-chart {
+      flex: 1 1 56%;
+      min-height: 0;
+      padding: 10px 14px 8px;
+      background: #0c0618;
+      border-bottom: 3px solid #f0c040;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .ko-chart table {
+      width: 100%;
+      flex: 1 1 auto;
+      height: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .ko-chart thead { height: 8%; }
+    .ko-chart th {
+      font-size: clamp(18px, 2.2vh, 28px);
+      color: #f0c040;
+      padding: 6px 10px;
+      text-align: left;
+      font-weight: 800;
+      height: 8%;
+    }
+    .ko-chart tbody tr { height: calc(92% / 13); }
+    .ko-cell {
+      border: 1px solid #3a2a58;
+      padding: 4px 10px;
+      font-size: clamp(16px, 2.1vh, 26px);
+      font-weight: 800;
+      background: #12081c;
+      color: transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 0;
+      vertical-align: middle;
+      line-height: 1.15;
+    }
+    .ko-cell.filled { color: #fff6dc; background: #1a1440; }
+    .ko-cell.ask {
+      box-shadow: inset 0 0 0 3px #f0c040;
+      background: #3a1860;
+    }
+    .ko-cell.ask.reveal { background: #5a2040; color: #f0c040; }
+    .ko-base-row .ko-cell.filled { background: #182848; }
+    .ko-overlay, .ko-prompt {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 10px 16px 12px;
+      background: #0c0618;
+      border: 4px solid #f0c040;
       color: #f8f0d8;
       font-family: Nunito, "Segoe UI", sans-serif;
       pointer-events: auto;
     }
+    .ko-prompt {
+      flex: 0 0 38%;
+      min-height: 0;
+      overflow: hidden;
+      border: 0;
+      border-top: 2px solid #504070;
+    }
     .ko-stem {
       font-weight: 800;
-      font-size: clamp(36px, 7.2vh, 84px);
+      font-size: clamp(22px, 3.2vh, 42px);
       line-height: 1.15;
       color: #fff6dc;
       flex: 0 0 auto;
     }
     .ko-hint {
-      font-size: clamp(20px, 2.6vh, 32px);
-      color: #b8a8d8;
+      font-size: clamp(16px, 2vh, 24px);
+      color: #d0c4e8;
     }
     .ko-timer {
-      height: 14px;
+      height: 10px;
       background: #3a1820;
       border-radius: 4px;
       overflow: hidden;
-      flex: 0 0 14px;
+      flex: 0 0 10px;
     }
     .ko-timer-fg {
       height: 100%;
@@ -53,17 +115,17 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      gap: 2%;
+      gap: 10px;
       min-height: 0;
     }
     .ko-choice {
       display: flex;
       align-items: center;
-      gap: 3%;
+      gap: 12px;
       margin: 0;
-      padding: 2% 3%;
-      border: 4px solid #f0c040;
-      border-radius: 12px;
+      padding: 10px 14px;
+      border: 3px solid #f0c040;
+      border-radius: 10px;
       background: #1c3a9a;
       color: #f8f0d8;
       cursor: pointer;
@@ -73,66 +135,66 @@
     .ko-choice:hover, .ko-choice:focus { background: #2a52c8; }
     .ko-num {
       flex: 0 0 auto;
-      width: 1.4em;
-      height: 1.4em;
+      width: 1.5em;
+      height: 1.5em;
       display: grid;
       place-items: center;
       border-radius: 8px;
       background: #f0c040;
       color: #120818;
       font-weight: 800;
-      font-size: clamp(28px, 5vh, 56px);
+      font-size: clamp(20px, 2.8vh, 36px);
     }
     .ko-lab {
       font-weight: 800;
-      font-size: clamp(32px, 6.2vh, 72px);
+      font-size: clamp(24px, 3.6vh, 48px);
       line-height: 1.1;
     }
     .ko-input {
       width: 100%;
       box-sizing: border-box;
-      font-size: clamp(36px, 6vh, 72px);
+      font-size: clamp(22px, 3.2vh, 40px);
       font-family: Nunito, "Segoe UI", sans-serif;
       font-weight: 700;
-      padding: 12px 16px;
+      padding: 8px 12px;
       background: #1a1030;
       color: #f8f0d8;
-      border: 4px solid #f0c040;
-      border-radius: 10px;
+      border: 3px solid #f0c040;
+      border-radius: 8px;
     }
     .ko-chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
     }
     .ko-chip, .ko-enter {
       font-family: inherit;
       font-weight: 800;
       cursor: pointer;
-      border-radius: 10px;
-      border: 3px solid #f0c040;
+      border-radius: 8px;
+      border: 2px solid #f0c040;
       background: #241848;
       color: #f8f0d8;
-      padding: 8px 14px;
-      font-size: clamp(22px, 3.4vh, 40px);
+      padding: 6px 10px;
+      font-size: clamp(16px, 2vh, 24px);
     }
     .ko-chip:hover, .ko-enter:hover { background: #3a2868; }
-    .ko-exp { min-width: 3.2em; }
+    .ko-exp { min-width: 2.8em; }
     .ko-enter {
       background: #c07020;
       color: #120810;
-      font-size: clamp(28px, 4vh, 48px);
-      padding: 10px 24px;
+      font-size: clamp(14px, 1.9vh, 22px);
+      padding: 6px 12px;
       align-self: flex-start;
     }
     .ko-wrong {
       font-weight: 800;
-      font-size: clamp(28px, 4vh, 48px);
+      font-size: clamp(16px, 2.2vh, 28px);
       color: #e05050;
     }
     .ko-answer {
       font-weight: 800;
-      font-size: clamp(48px, 10vh, 120px);
+      font-size: clamp(22px, 4vh, 48px);
       line-height: 1.1;
       color: #f0c040;
       flex: 1 1 auto;
@@ -143,106 +205,197 @@
       font-family: inherit;
       font-weight: 800;
       cursor: pointer;
-      border-radius: 12px;
-      border: 4px solid #f0c040;
+      border-radius: 8px;
+      border: 3px solid #f0c040;
       background: #c07020;
       color: #120810;
-      font-size: clamp(32px, 5vh, 64px);
-      padding: 16px 32px;
+      font-size: clamp(16px, 2.2vh, 28px);
+      padding: 8px 16px;
       align-self: flex-start;
     }
     .ko-gotit:hover, .ko-gotit:focus { background: #e09030; }
     .tile-chart {
       position: absolute;
-      left: 2%;
-      right: 2%;
-      top: 96px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
       z-index: 20;
       width: auto;
-      max-width: 1680px;
-      margin: 0 auto;
-      max-height: 82%;
-      overflow: auto;
+      max-width: none;
+      margin: 0;
+      max-height: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
       background: #1a1030;
-      padding: 12px 16px 16px;
+      padding: 8px 10px 10px;
       font-family: Nunito, "Segoe UI", sans-serif;
       color: #f8f0d8;
       border: 2px solid #f0c040;
       box-sizing: border-box;
     }
-    .tile-model { margin: 0 0 10px; font-size: 18px; color: #c8b8e0; }
-    .tile-board { display: flex; flex-direction: column; gap: 12px; }
-    .tile-grid { border-collapse: collapse; width: 100%; }
-    .tile-grid th { padding: 4px 6px; font-size: 16px; color: #f0c040; }
+    .tile-head {
+      flex: 0 0 auto;
+      font-size: clamp(13px, 1.6vh, 20px);
+      color: #c8b8e0;
+      margin: 0 0 6px;
+    }
+    .tile-head strong { color: #f0c040; }
+    .tile-model { margin: 0 0 6px; font-size: clamp(12px, 1.4vh, 16px); color: #c8b8e0; flex: 0 0 auto; }
+    .tile-board {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+      gap: 10px;
+      align-items: stretch;
+    }
+    .tile-grid { border-collapse: collapse; width: 100%; height: 100%; table-layout: fixed; }
+    .tile-grid th { padding: 2px 4px; font-size: clamp(11px, 1.3vh, 15px); color: #f0c040; }
     .tile-rowlab { width: 2.2em; color: #a090c0 !important; font-weight: 700; }
     .tile-slot {
-      min-width: 9.5em;
-      height: 44px;
+      min-width: 0;
+      height: auto;
       border: 1px dashed #504070;
       background: #120c24;
       vertical-align: middle;
-      padding: 2px;
+      padding: 1px;
     }
     .tile-slot.over { border-color: #f0c040; background: #2a1848; }
     .tile-slot.ok { background: #1a3a20; border-style: solid; border-color: #3a8a40; }
     .tile-slot.bad { background: #4a1820; border-style: solid; border-color: #c04040; }
     .tile-wells {
       display: grid;
-      grid-template-columns: 2.2em 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 6px;
-      align-items: start;
+      min-height: 0;
+      height: 100%;
     }
-    .tile-well-spacer { min-height: 1px; }
     .tile-well {
-      min-height: 120px;
-      max-height: 22vh;
-      overflow: auto;
+      min-height: 0;
+      max-height: none;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      gap: 6px;
-      padding: 8px;
+      gap: 3px;
+      padding: 4px;
       background: #120c24;
       border: 1px solid #504070;
     }
     .tile-well h3 {
-      margin: 0 0 4px;
-      font-size: 14px;
+      margin: 0;
+      flex: 0 0 auto;
+      font-size: clamp(10px, 1.2vh, 14px);
       color: #f0c040;
     }
     .tile-well.over { border-color: #f0c040; background: #2a1848; }
     .tile-chip {
       margin: 0;
-      padding: 6px 8px;
-      font: 700 15px Nunito, "Segoe UI", sans-serif;
+      padding: 2px 4px;
+      font: 700 clamp(9px, 1.15vh, 14px) Nunito, "Segoe UI", sans-serif;
       color: #fff6dc;
       background: #2a1a58;
-      border: 2px solid #f0c040;
-      border-radius: 8px;
+      border: 1px solid #f0c040;
+      border-radius: 6px;
       cursor: grab;
       touch-action: none;
       width: 100%;
       box-sizing: border-box;
-      line-height: 1.15;
+      line-height: 1.1;
+      flex: 1 1 0;
+      min-height: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
-    .tile-slot .tile-chip { width: 100%; }
+    .tile-slot .tile-chip { width: 100%; flex: none; height: 100%; }
     .tile-chip.dragging {
       position: fixed;
       z-index: 80;
       cursor: grabbing;
       box-shadow: 0 8px 18px #0008;
       margin: 0;
+      flex: none;
+      white-space: normal;
     }
-    .tile-bar { display: flex; gap: 10px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+    .tile-bar { display: flex; gap: 10px; align-items: center; margin-top: 6px; flex-wrap: wrap; flex: 0 0 auto; }
     .tile-grade, .tile-reset {
-      font: 800 20px Nunito, "Segoe UI", sans-serif;
-      padding: 8px 16px;
-      border-radius: 10px;
+      font: 800 clamp(14px, 1.8vh, 20px) Nunito, "Segoe UI", sans-serif;
+      padding: 6px 12px;
+      border-radius: 8px;
       border: 3px solid #f0c040;
       cursor: pointer;
     }
     .tile-grade { background: #c07020; color: #120810; }
     .tile-reset { background: #241848; color: #f8f0d8; }
     .tile-score { font-size: 20px; font-weight: 800; color: #f0c040; }
+    .chart-review {
+      position: absolute;
+      left: 50%;
+      top: 118px;
+      transform: translateX(-50%);
+      z-index: 30;
+      width: min(92%, 1680px);
+      max-height: 78%;
+      overflow: auto;
+      background: #12081c;
+      border: 4px solid #f0c040;
+      padding: 14px 16px 18px;
+      font-family: Nunito, "Segoe UI", sans-serif;
+      color: #fff6dc;
+    }
+    .chart-review table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    .chart-review th {
+      text-align: left;
+      padding: 6px 8px;
+      font-size: clamp(12px, 1.2vw, 20px);
+      color: #f0c040;
+      border-bottom: 2px solid #504070;
+    }
+    .chart-review td {
+      padding: 6px 8px;
+      font-size: clamp(12px, 1.35vw, 22px);
+      font-weight: 800;
+      border: 2px solid #0a0614;
+      word-break: break-word;
+    }
+    .chart-review th:nth-child(3), .chart-review td:nth-child(3) { width: 34%; }
+    .chart-review th:nth-child(4), .chart-review td:nth-child(4) { width: 18%; }
+    .chart-review-legend {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .chart-review-swatch {
+      display: inline-block;
+      padding: 6px 12px;
+      font-weight: 800;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+    .chart-review-tally { margin-left: auto; font-weight: 700; color: #c8b8e0; font-size: 18px; }
+    .chart-review-bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 12px; }
+    .chart-review-go, .chart-review-reset {
+      margin-top: 0;
+      font: 800 26px Nunito, "Segoe UI", sans-serif;
+      padding: 10px 22px;
+      border: 4px solid #f0c040;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .chart-review-go {
+      background: #1c3a9a;
+      color: #fff6dc;
+    }
+    .chart-review-go:hover, .chart-review-go:focus { background: #22c45a; color: #06140a; }
+    .chart-review-reset {
+      background: #241848;
+      color: #fff6dc;
+    }
+    .chart-review-reset:hover, .chart-review-reset:focus { background: #5a2040; }
   </style>
 </head>
 <body>

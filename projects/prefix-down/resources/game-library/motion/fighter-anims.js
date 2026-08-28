@@ -55,8 +55,8 @@ export const FIGHTERS = {
       hit: "wolf-hurt.png",
     },
     sheet: { jump: "idle", fall: "idle", kick: "punch", death: "hit" },
-    frames: { idle: 4, run: 4, jump: 4, fall: 4, punch: 3, kick: 3, hit: 2, death: 4 },
-    rates: { idle: 8, run: 12, jump: 8, fall: 8, punch: 12, kick: 12, hit: 10, death: 8 },
+    frames: { idle: 6, run: 8, jump: 6, fall: 6, punch: 5, kick: 5, hit: 2, death: 4 },
+    rates: { idle: 10, run: 14, jump: 10, fall: 10, punch: 14, kick: 14, hit: 10, death: 8 },
   },
   bot: {
     id: "bot",
@@ -71,8 +71,8 @@ export const FIGHTERS = {
       hit: "bot-hurt.png",
     },
     sheet: { jump: "idle", fall: "idle", kick: "punch", death: "hit" },
-    frames: { idle: 4, run: 4, jump: 4, fall: 4, punch: 4, kick: 4, hit: 2, death: 4 },
-    rates: { idle: 8, run: 10, jump: 8, fall: 8, punch: 10, kick: 10, hit: 10, death: 8 },
+    frames: { idle: 6, run: 8, jump: 6, fall: 6, punch: 5, kick: 5, hit: 2, death: 4 },
+    rates: { idle: 10, run: 14, jump: 10, fall: 10, punch: 16, kick: 16, hit: 10, death: 8 },
   },
 };
 
@@ -107,8 +107,8 @@ export function registerFighterAnims(scene) {
   if (!scene.anims.exists("rocket-fly")) {
     scene.anims.create({
       key: "rocket-fly",
-      frames: scene.anims.generateFrameNumbers("rocket-fly", { start: 0, end: 2 }),
-      frameRate: 12,
+      frames: scene.anims.generateFrameNumbers("rocket-fly", { start: 0, end: 3 }),
+      frameRate: 16,
       repeat: -1,
     });
   }

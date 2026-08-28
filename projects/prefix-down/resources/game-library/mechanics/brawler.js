@@ -55,7 +55,7 @@ export class BrawlerScene extends Phaser.Scene {
     this.cameras.main.setDeadzone(W * 0.22, 0);
 
     this.foes = this.physics.add.group();
-    this.rockets = this.physics.add.group();
+    this.rockets = this.add.group();
     this.slices = this.physics.add.group();
     this.ctrl = makeControls(this);
     this.hud = createBrawlerHud(this);
@@ -115,13 +115,16 @@ export class BrawlerScene extends Phaser.Scene {
     }
 
     const v = this.ctrl.vector();
+    const lockedMove = this.time.now < (this.ignoreMoveUntil || 0);
+    const vx = lockedMove ? 0 : v.x;
+    const vy = lockedMove ? 0 : v.y;
     if (!this.hero.air) {
-      this.hero.setVelocity(v.x * BRAWLER.walkSpeed, v.y * BRAWLER.laneSpeed);
+      this.hero.setVelocity(vx * BRAWLER.walkSpeed, vy * BRAWLER.laneSpeed);
       this.hero.y = Phaser.Math.Clamp(this.hero.y, this.road.laneMin, this.road.laneMax);
       this.hero.x = Phaser.Math.Clamp(this.hero.x, 40, BRAWLER.width - 40);
       this.hero.laneY = this.hero.y;
     } else {
-      this.hero.setVelocity(v.x * BRAWLER.walkSpeed, 0);
+      this.hero.setVelocity(vx * BRAWLER.walkSpeed, 0);
     }
 
     if (this.fightOn) {
@@ -132,9 +135,9 @@ export class BrawlerScene extends Phaser.Scene {
       }
     }
 
-    faceFighter(this.hero, v.x, FIGHTERS.ash);
+    faceFighter(this.hero, vx, FIGHTERS.ash);
     if (this.hero.air) playFighter(this.hero, this.hero.body.velocity.y < 0 ? "jump" : "fall");
-    else playFighter(this.hero, v.x || v.y ? "run" : "idle");
+    else playFighter(this.hero, vx || vy ? "run" : "idle");
 
     if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.SPACE)) this.tryJump();
     if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.Z) || Phaser.Input.Keyboard.JustDown(this.ctrl.k.J)) {
@@ -201,7 +204,7 @@ export class BrawlerScene extends Phaser.Scene {
       if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.D)) this.goDump();
       if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.T)) fadeTo(this, homeOf(this));
     } else if (this.overlay.kind === "clear") {
-      if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.ENTER) || this.ctrl.action()) this.goDump();
+      if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.ENTER) || this.ctrl.action()) this.goReview();
       if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.ESC)) fadeTo(this, homeOf(this));
     } else if (this.overlay.kind === "dead") {
       if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.ENTER)) this.scene.restart();
@@ -215,6 +218,11 @@ export class BrawlerScene extends Phaser.Scene {
     fadeTo(this, "ChartDumpScene");
   }
 
+  goReview() {
+    this.closeOverlay();
+    fadeTo(this, "ChartReviewScene");
+  }
+
   openPause() {
     this.brawlerLocked = true;
     this.overlay = { kind: "pause", root: this.makeSheet("PAUSE", "ENTER resume   D chart   T title") };
@@ -225,7 +233,7 @@ export class BrawlerScene extends Phaser.Scene {
     this.freezeCombat();
     this.goT.setText("");
     sfx.correct();
-    this.overlay = { kind: "clear", root: this.makeSheet("STAGE CLEAR", "ENTER blank chart   ESC title") };
+    this.overlay = { kind: "clear", root: this.makeSheet("STAGE CLEAR", "ENTER learning chart   ESC title") };
   }
 
   openDead() {
@@ -255,7 +263,6 @@ export class BrawlerScene extends Phaser.Scene {
   freezeCombat() {
     this.hero.setVelocity(0);
     this.foes.getChildren().forEach((e) => e.active && e.body && e.setVelocity(0));
-    this.rockets?.getChildren().forEach((r) => r.active && r.body && r.setVelocity(0));
   }
 
   sortDepth() {
@@ -347,6 +354,10 @@ export class BrawlerScene extends Phaser.Scene {
   }
 
   askKo(target) {
+    if (this.registry.get("practiceFight") || new URLSearchParams(location.search).has("practice")) {
+      this.finishKo(target);
+      return;
+    }
     const item = this.nextItem();
     this.hud.toast?.("FINISH HIM");
     openStrike(this, item, {
@@ -456,7 +467,7 @@ export class BrawlerScene extends Phaser.Scene {
       if (now - (e.lastHit || 0) > 1400) {
         e.lastHit = now;
         lockBusy(e, "punch");
-        this.time.delayedCall(180, () => {
+        this.time.delayedCall(220, () => {
           if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
           this.spawnRocket(e);
         });
@@ -466,11 +477,11 @@ export class BrawlerScene extends Phaser.Scene {
 
   spawnRocket(e) {
     const dir = Math.sign(this.hero.x - e.x) || -1;
-    const r = this.physics.add.sprite(e.x + dir * 90, e.y - 132, "rocket-fly", 0);
+    const r = this.add.sprite(e.x + dir * 128, e.y - 210, "rocket-fly", 0);
     r.setOrigin(0.5, 0.5).setScale(4);
     r.setFlipX(dir < 0);
-    r.body.setAllowGravity(false);
-    r.setVelocity(dir * 420, 0);
+    r.dir = dir;
+    r.spd = 560;
     r.laneY = e.y;
     r.anims?.play("rocket-fly", true);
     r.setDepth(e.y + 4);
@@ -479,8 +490,10 @@ export class BrawlerScene extends Phaser.Scene {
   }
 
   driveRockets() {
+    const dt = this.game.loop.delta / 1000;
     this.rockets.getChildren().forEach((r) => {
       if (!r.active) return;
+      r.x += r.dir * r.spd * dt;
       if (Math.abs(r.x - this.hero.x) > 2400) {
         r.destroy();
         return;

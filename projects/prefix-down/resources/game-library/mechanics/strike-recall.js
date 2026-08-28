@@ -1,8 +1,9 @@
 import { sfx } from "../audio/sfx.js";
 import { sparkBurst } from "../motion/transitions.js";
-import { markSeen, bumpMiss, clearDue, missCount, isWarm, markWarm } from "../systems/save.js";
+import { markSeen, bumpMiss, clearDue, missCount, isWarm, markWarm, markTyped, scaffoldOf } from "../systems/save.js";
 import { answerOk } from "./metric-grade.js";
-import { setFightKeys } from "../input/controls.js";
+import { setFightKeys, clearStuckKeys } from "../input/controls.js";
+import { COLS, hintCells, targetCell } from "./chart-map.js";
 
 const MCQ_MS = 15000;
 
@@ -22,23 +23,38 @@ function canvasBox() {
   return c ? c.getBoundingClientRect() : { left: 0, top: 0, width: innerWidth, height: innerHeight, right: innerWidth, bottom: innerHeight };
 }
 
-/** Street band on the 2560×1440 canvas: below shops, full sidewalk + road. */
-function panelBox() {
-  const r = canvasBox();
-  const top = r.top + r.height * 0.36;
-  return { left: r.left, top, width: r.width, height: Math.max(120, r.bottom - top) };
-}
-
 function place(el) {
-  const b = panelBox();
+  const r = canvasBox();
   Object.assign(el.style, {
     position: "fixed",
-    left: `${b.left}px`,
-    top: `${b.top}px`,
-    width: `${b.width}px`,
-    height: `${b.height}px`,
+    left: `${r.left}px`,
+    top: `${r.top}px`,
+    width: `${r.width}px`,
+    height: `${r.height}px`,
     zIndex: "80",
     boxSizing: "border-box",
+  });
+}
+
+function fillChart(table, rows, itemId, { reveal = false } = {}) {
+  const [tr, tc] = targetCell(itemId);
+  const hints = hintCells(itemId, scaffoldOf());
+  table.querySelectorAll("td[data-r]").forEach((td) => {
+    const r = +td.dataset.r;
+    const c = +td.dataset.c;
+    const key = `${r},${c}`;
+    const ask = r === tr && c === tc;
+    const show = hints.has(key) || (reveal && ask);
+    const val = rows[r]?.[c] ?? "";
+    td.className = ask ? "ko-cell ask" : "ko-cell";
+    if (show) {
+      td.textContent = c === 3 ? prettyMetric(val) : val;
+      td.classList.add("filled");
+      if (ask) td.classList.add("reveal");
+    } else {
+      td.textContent = "\u00a0";
+      td.classList.remove("filled", "reveal");
+    }
   });
 }
 
@@ -84,10 +100,10 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
   scene.brawlerLocked = true;
   let closed = false;
   const root = scene.add.container(0, 0).setDepth(4000).setScrollFactor(0);
-  const dim = scene.add.rectangle(W / 2, H * 0.18, W, H * 0.36, 0x080414, 0.55);
-  root.add(dim);
 
   let wrap;
+  let prompt;
+  let chartTable;
   let timerAnim;
   let onKey;
   let onResize;
@@ -104,6 +120,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     }
     if (scene.input?.keyboard) scene.input.keyboard.enabled = true;
     setFightKeys(scene, true);
+    clearStuckKeys(scene);
   }
 
   function closeOut() {
@@ -112,6 +129,8 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     cleanupDom();
     root.destroy();
     scene.brawlerLocked = false;
+    scene.ignoreMoveUntil = scene.time.now + 120;
+    scene.hero?.setVelocity(0, 0);
   }
 
   function ackMiss() {
@@ -126,8 +145,10 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     timerAnim?.cancel?.();
     bumpMiss(raw.id);
     sfx.miss();
-    wrap.querySelectorAll(".ko-grid, .ko-timer, .ko-chips, .ko-input, .ko-enter, .ko-hint").forEach((el) => el.remove());
-    wrap.classList.add("ko-miss");
+    const dumpRows = scene.cache.json.get("metric-deck")?.dump?.rows || [];
+    if (chartTable) fillChart(chartTable, dumpRows, raw.id, { reveal: true });
+    prompt.querySelectorAll(".ko-grid, .ko-timer, .ko-chips, .ko-input, .ko-enter, .ko-hint").forEach((el) => el.remove());
+    prompt.classList.add("ko-miss");
     const tag = document.createElement("div");
     tag.className = "ko-wrong";
     tag.textContent = "Wrong";
@@ -139,9 +160,9 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     got.className = "ko-gotit";
     got.textContent = "Got it  ·  Enter";
     got.addEventListener("click", ackMiss);
-    wrap.appendChild(tag);
-    wrap.appendChild(ans);
-    wrap.appendChild(got);
+    prompt.appendChild(tag);
+    prompt.appendChild(ans);
+    prompt.appendChild(got);
     got.focus();
   }
 
@@ -154,7 +175,8 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     markSeen(raw.id);
     clearDue(raw.id);
     if (item.parent) clearDue(item.parent.id);
-    if (!typeIn) markWarm(raw.id);
+    if (typeIn) markTyped(raw.id);
+    else markWarm(raw.id);
     sfx.correct();
     sparkBurst(scene, W / 2, H * 0.7);
     closeOut();
@@ -172,7 +194,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
 
   wrap = document.createElement("div");
   wrap.id = "ko-overlay";
-  wrap.className = typeIn ? "ko-overlay ko-type" : "ko-overlay ko-mcq";
+  wrap.className = "ko-shell";
   place(wrap);
   onResize = () => {
     if (wrap) place(wrap);
@@ -180,10 +202,46 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
   window.addEventListener("resize", onResize);
   scene.scale?.on?.("resize", onResize);
 
+  const dumpRows = scene.cache.json.get("metric-deck")?.dump?.rows || [];
+  const chart = document.createElement("div");
+  chart.className = "ko-chart";
+  chartTable = document.createElement("table");
+  const thead = document.createElement("thead");
+  const head = document.createElement("tr");
+  COLS.forEach((c) => {
+    const th = document.createElement("th");
+    th.textContent = c;
+    head.appendChild(th);
+  });
+  thead.appendChild(head);
+  chartTable.appendChild(thead);
+  const tbody = document.createElement("tbody");
+  for (let r = 0; r < 13; r++) {
+    const tr = document.createElement("tr");
+    if (r === 6) tr.className = "ko-base-row";
+    for (let c = 0; c < 4; c++) {
+      const td = document.createElement("td");
+      td.className = "ko-cell";
+      td.dataset.r = String(r);
+      td.dataset.c = String(c);
+      td.textContent = "\u00a0";
+      tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  }
+  chartTable.appendChild(tbody);
+  chart.appendChild(chartTable);
+  wrap.appendChild(chart);
+  fillChart(chartTable, dumpRows, raw.id);
+
+  prompt = document.createElement("div");
+  prompt.className = typeIn ? "ko-prompt ko-type" : "ko-prompt ko-mcq";
+  wrap.appendChild(prompt);
+
   const stem = document.createElement("div");
   stem.className = "ko-stem";
   stem.textContent = item.stem;
-  wrap.appendChild(stem);
+  prompt.appendChild(stem);
 
   if (scene.input?.keyboard) scene.input.keyboard.enabled = false;
   setFightKeys(scene, false);
@@ -192,7 +250,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     const hint = document.createElement("div");
     hint.className = "ko-hint";
     hint.textContent = "Type or tap a symbol  ·  Enter to lock in  ·  no timer";
-    wrap.appendChild(hint);
+    prompt.appendChild(hint);
 
     const inp = document.createElement("input");
     inp.className = "ko-input";
@@ -200,7 +258,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     inp.spellcheck = false;
     inp.placeholder = "answer";
     inp.addEventListener("keydown", (e) => e.stopPropagation());
-    wrap.appendChild(inp);
+    prompt.appendChild(inp);
 
     const tokens = document.createElement("div");
     tokens.className = "ko-chips";
@@ -212,7 +270,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
       b.addEventListener("click", () => insertAtCursor(inp, chip.insert));
       tokens.appendChild(b);
     });
-    wrap.appendChild(tokens);
+    prompt.appendChild(tokens);
 
     const exps = document.createElement("div");
     exps.className = "ko-chips ko-exps";
@@ -224,14 +282,14 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
       b.addEventListener("click", () => insertAtCursor(inp, chip.insert));
       exps.appendChild(b);
     });
-    wrap.appendChild(exps);
+    prompt.appendChild(exps);
 
     const go = document.createElement("button");
     go.type = "button";
     go.className = "ko-enter";
     go.textContent = "Enter";
     go.addEventListener("click", () => finish(answerOk(inp.value, item.answer) || answerOk(inp.value, raw.answer)));
-    wrap.appendChild(go);
+    prompt.appendChild(go);
 
     onKey = (e) => {
       if (closed) return;
@@ -263,7 +321,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
   const timerFg = document.createElement("div");
   timerFg.className = "ko-timer-fg";
   timer.appendChild(timerFg);
-  wrap.appendChild(timer);
+  prompt.appendChild(timer);
 
   const grid = document.createElement("div");
   grid.className = "ko-grid";
@@ -290,7 +348,7 @@ export function openStrike(scene, raw, { onLand, onWhiff } = {}) {
     b.addEventListener("click", () => pick(n));
     grid.appendChild(b);
   });
-  wrap.appendChild(grid);
+  prompt.appendChild(grid);
 
   onKey = (e) => {
     if (closed) return;
