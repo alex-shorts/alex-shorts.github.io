@@ -1,0 +1,84 @@
+{
+  "id": "demo-recall",
+  "mode": "play",
+  "items": [
+    {
+      "id": "d1",
+      "stem": "Process plants use to make glucose from light, CO2, and water?",
+      "choices": ["respiration", "photosynthesis", "fermentation", "osmosis"],
+      "answer": "photosynthesis",
+      "model": "See: plants make glucose from light + CO2 + water. That process is photosynthesis.",
+      "prereq": {
+        "id": "d1p",
+        "stem": "Do plants make food using light? Name the process.",
+        "choices": ["photosynthesis", "erosion", "gravity"],
+        "answer": "photosynthesis"
+      }
+    },
+    {
+      "id": "d2",
+      "stem": "Year the Declaration of Independence was adopted?",
+      "choices": ["1775", "1776", "1781", "1787"],
+      "answer": "1776",
+      "model": "See: Congress adopted it in 1776.",
+      "prereq": {
+        "id": "d2p",
+        "stem": "Independence year starts with 177_?",
+        "choices": ["1776", "1812", "1492"],
+        "answer": "1776"
+      }
+    },
+    {
+      "id": "d3",
+      "stem": "Planet after Earth, sunward order?",
+      "choices": ["Venus", "Mars", "Jupiter", "Mercury"],
+      "answer": "Mars",
+      "model": "See: Mercury, Venus, Earth, then Mars.",
+      "prereq": {
+        "id": "d3p",
+        "stem": "Red planet next after Earth?",
+        "choices": ["Mars", "Pluto"],
+        "answer": "Mars"
+      }
+    },
+    {
+      "id": "d4",
+      "stem": "State whose capital is Austin?",
+      "choices": ["Arizona", "Texas", "Tennessee", "Oregon"],
+      "answer": "Texas",
+      "model": "See: Austin is the capital of Texas.",
+      "prereq": {
+        "id": "d4p",
+        "stem": "Austin is a capital. Which state?",
+        "choices": ["Texas", "Ohio"],
+        "answer": "Texas"
+      }
+    },
+    {
+      "id": "d5",
+      "stem": "Number of degrees in a right angle?",
+      "choices": ["45", "90", "180", "360"],
+      "answer": "90",
+      "model": "See: a right angle is 90 degrees.",
+      "prereq": {
+        "id": "d5p",
+        "stem": "Right angle: 90 or 180?",
+        "choices": ["90", "180"],
+        "answer": "90"
+      }
+    },
+    {
+      "id": "d6",
+      "stem": "Author of Pride and Prejudice?",
+      "choices": ["Charlotte Bronte", "Jane Austen", "George Eliot", "Mary Shelley"],
+      "answer": "Jane Austen",
+      "model": "See: Jane Austen wrote Pride and Prejudice.",
+      "prereq": {
+        "id": "d6p",
+        "stem": "Pride and Prejudice author last name?",
+        "choices": ["Austen", "Dickens"],
+        "answer": "Austen"
+      }
+    }
+  ]
+}

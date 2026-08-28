@@ -6,6 +6,14 @@
   },
   "projects": [
     {
+      "id": "prefix-down",
+      "name": "Prefix Down",
+      "desc": "Street brawler that drills the metric chart — punch, hop rockets, then fill or tile the 13×4 grid.",
+      "href": "projects/prefix-down/",
+      "image": "assets/thumbs/prefix-down.svg",
+      "updated": "2026-08-27"
+    },
+    {
       "id": "family-kitchen",
       "name": "Family Kitchen",
       "desc": "Week board for Morganne — meals, leftovers, store lists. Draft only.",

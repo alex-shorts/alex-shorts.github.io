@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Prefix Down">
+  <rect width="480" height="360" fill="#120818"/>
+  <rect x="0" y="210" width="480" height="150" fill="#1a1430"/>
+  <rect x="0" y="268" width="480" height="12" fill="#f0c040"/>
+  <text x="40" y="86" fill="#f0c040" font-family="Georgia, serif" font-size="36" font-weight="700">PREFIX DOWN</text>
+  <text x="40" y="118" fill="#f8f0d8" font-family="Georgia, serif" font-size="18">Street brawl · metric chart</text>
+  <rect x="48" y="150" width="70" height="90" rx="8" fill="#c03840"/>
+  <rect x="160" y="158" width="64" height="82" rx="8" fill="#6a5a50"/>
+  <rect x="250" y="164" width="58" height="76" rx="8" fill="#708090"/>
+  <text x="40" y="330" fill="#c8b8e0" font-family="Georgia, serif" font-size="16">Tera ’ pico</text>
+</svg>

@@ -1,0 +1,362 @@
+{
+  "id": "metric-chart",
+  "exam": "metric-chart",
+  "mode": "play",
+  "source": "resources/game-library/content/metric-chart.webp",
+  "dump": {
+    "id": "chart-dump",
+    "stem": "From memory: fill Prefix, Symbol, Multiplier, Exponential for all 13 rows (Tera through pico, including BASE UNIT).",
+    "layout": ["Prefix", "Symbol", "Multiplier", "Exponential"],
+    "rows": [
+      ["Tera", "T", "1,000,000,000,000", "10^12"],
+      ["Giga", "G", "1,000,000,000", "10^9"],
+      ["Mega", "M", "1,000,000", "10^6"],
+      ["kilo", "k", "1,000", "10^3"],
+      ["hecto", "h", "100", "10^2"],
+      ["deca", "da", "10", "10^1"],
+      ["BASE UNIT", "g, L, m", "1", "10^0"],
+      ["deci", "d", "0.1", "10^-1"],
+      ["centi", "c", "0.01", "10^-2"],
+      ["milli", "m", "0.001", "10^-3"],
+      ["micro", "μ", "0.000001", "10^-6"],
+      ["nano", "n", "0.000000001", "10^-9"],
+      ["pico", "p", "0.000000000001", "10^-12"]
+    ]
+  },
+  "helpersFirst": ["base", "kilo", "milli", "centi", "step-10", "mega", "micro"],
+  "items": [
+    {
+      "id": "base-units",
+      "section": "helper",
+      "stem": "BASE UNIT symbols on the chart (mass, volume, length)?",
+      "choices": ["g, L, m", "kg, mL, km", "G, M, k", "μ, n, p"],
+      "answer": "g, L, m",
+      "model": "The middle row is the unit: gram, liter, meter. Multiplier 1, exponential 10^0."
+    },
+    {
+      "id": "base-exp",
+      "section": "helper",
+      "stem": "Exponential for the BASE UNIT?",
+      "choices": ["10^1", "10^0", "10^-1", "10^3"],
+      "answer": "10^0"
+    },
+    {
+      "id": "kilo-meaning",
+      "section": "helper",
+      "stem": "kilo means how many times the base unit?",
+      "choices": ["10", "100", "1,000", "0.001"],
+      "answer": "1,000",
+      "model": "kilo = 1,000 = 10^3. Symbol k."
+    },
+    {
+      "id": "kilo-exp",
+      "section": "helper",
+      "stem": "Exponential for kilo?",
+      "choices": ["10^2", "10^3", "10^6", "10^-3"],
+      "answer": "10^3"
+    },
+    {
+      "id": "kilo-sym",
+      "section": "helper",
+      "stem": "Symbol for kilo?",
+      "choices": ["K", "k", "h", "M"],
+      "answer": "k"
+    },
+    {
+      "id": "milli-meaning",
+      "section": "helper",
+      "stem": "milli means what fraction of the base unit?",
+      "choices": ["0.1", "0.01", "0.001", "0.000001"],
+      "answer": "0.001",
+      "model": "milli = 0.001 = 10^-3. Symbol m (prefix, not meter)."
+    },
+    {
+      "id": "milli-exp",
+      "section": "helper",
+      "stem": "Exponential for milli?",
+      "choices": ["10^-1", "10^-2", "10^-3", "10^-6"],
+      "answer": "10^-3"
+    },
+    {
+      "id": "milli-sym",
+      "section": "helper",
+      "stem": "Symbol for the prefix milli (not the meter)?",
+      "choices": ["M", "μ", "m", "n"],
+      "answer": "m"
+    },
+    {
+      "id": "centi-exp",
+      "section": "helper",
+      "stem": "Exponential for centi?",
+      "choices": ["10^-1", "10^-2", "10^-3", "10^2"],
+      "answer": "10^-2"
+    },
+    {
+      "id": "centi-sym",
+      "section": "helper",
+      "stem": "Symbol for centi?",
+      "choices": ["c", "C", "d", "m"],
+      "answer": "c"
+    },
+    {
+      "id": "step-10",
+      "section": "helper",
+      "stem": "From one row to the next on the middle of the chart (hecto↔deca↔BASE↔deci↔centi), the multiplier changes by?",
+      "choices": ["×2", "×10", "×100", "×1000"],
+      "answer": "×10",
+      "model": "Each of those steps is ×10 or ÷10. Tera/Giga/Mega and micro/nano/pico jump by ×1000."
+    },
+    {
+      "id": "hecto-exp",
+      "section": "ladder",
+      "stem": "Exponential for hecto?",
+      "choices": ["10^1", "10^2", "10^3", "10^-2"],
+      "answer": "10^2"
+    },
+    {
+      "id": "hecto-sym",
+      "section": "ladder",
+      "stem": "Symbol for hecto?",
+      "choices": ["H", "h", "da", "k"],
+      "answer": "h"
+    },
+    {
+      "id": "deca-exp",
+      "section": "ladder",
+      "stem": "Exponential for deca?",
+      "choices": ["10^1", "10^-1", "10^2", "10^0"],
+      "answer": "10^1"
+    },
+    {
+      "id": "deca-sym",
+      "section": "ladder",
+      "stem": "Symbol for deca (not deci)?",
+      "choices": ["d", "da", "D", "h"],
+      "answer": "da"
+    },
+    {
+      "id": "deci-exp",
+      "section": "ladder",
+      "stem": "Exponential for deci?",
+      "choices": ["10^1", "10^-1", "10^-2", "10^0"],
+      "answer": "10^-1"
+    },
+    {
+      "id": "deci-sym",
+      "section": "ladder",
+      "stem": "Symbol for deci (not deca)?",
+      "choices": ["da", "d", "c", "m"],
+      "answer": "d"
+    },
+    {
+      "id": "neighbor-kilo",
+      "section": "ladder",
+      "stem": "Prefix after kilo, toward BASE UNIT?",
+      "choices": ["Mega", "hecto", "deca", "deci"],
+      "answer": "hecto"
+    },
+    {
+      "id": "neighbor-milli",
+      "section": "ladder",
+      "stem": "Prefix after milli, away from BASE UNIT?",
+      "choices": ["centi", "micro", "nano", "deci"],
+      "answer": "micro"
+    },
+    {
+      "id": "mega-exp",
+      "section": "outer",
+      "stem": "Exponential for Mega?",
+      "choices": ["10^3", "10^6", "10^9", "10^-6"],
+      "answer": "10^6"
+    },
+    {
+      "id": "mega-sym",
+      "section": "outer",
+      "stem": "Symbol for Mega (not milli)?",
+      "choices": ["m", "M", "G", "k"],
+      "answer": "M"
+    },
+    {
+      "id": "giga-exp",
+      "section": "outer",
+      "stem": "Exponential for Giga?",
+      "choices": ["10^6", "10^9", "10^12", "10^-9"],
+      "answer": "10^9"
+    },
+    {
+      "id": "giga-sym",
+      "section": "outer",
+      "stem": "Symbol for Giga?",
+      "choices": ["G", "g", "T", "M"],
+      "answer": "G"
+    },
+    {
+      "id": "tera-exp",
+      "section": "outer",
+      "stem": "Exponential for Tera?",
+      "choices": ["10^9", "10^12", "10^6", "10^-12"],
+      "answer": "10^12"
+    },
+    {
+      "id": "tera-sym",
+      "section": "outer",
+      "stem": "Symbol for Tera?",
+      "choices": ["T", "t", "G", "P"],
+      "answer": "T"
+    },
+    {
+      "id": "micro-exp",
+      "section": "outer",
+      "stem": "Exponential for micro?",
+      "choices": ["10^-3", "10^-6", "10^-9", "10^-2"],
+      "answer": "10^-6"
+    },
+    {
+      "id": "micro-sym",
+      "section": "outer",
+      "stem": "Symbol for micro?",
+      "choices": ["m", "M", "μ", "n"],
+      "answer": "μ"
+    },
+    {
+      "id": "nano-exp",
+      "section": "outer",
+      "stem": "Exponential for nano?",
+      "choices": ["10^-6", "10^-9", "10^-12", "10^-3"],
+      "answer": "10^-9"
+    },
+    {
+      "id": "nano-sym",
+      "section": "outer",
+      "stem": "Symbol for nano?",
+      "choices": ["n", "N", "μ", "p"],
+      "answer": "n"
+    },
+    {
+      "id": "pico-exp",
+      "section": "outer",
+      "stem": "Exponential for pico?",
+      "choices": ["10^-9", "10^-12", "10^-6", "10^12"],
+      "answer": "10^-12"
+    },
+    {
+      "id": "pico-sym",
+      "section": "outer",
+      "stem": "Symbol for pico?",
+      "choices": ["p", "P", "n", "μ"],
+      "answer": "p"
+    },
+    {
+      "id": "jump-1000",
+      "section": "outer",
+      "stem": "Tera → Giga → Mega (and micro → nano → pico) each jump is?",
+      "choices": ["×10", "×100", "×1,000", "×1,000,000"],
+      "answer": "×1,000"
+    },
+    {
+      "id": "rev-10e3",
+      "section": "reverse",
+      "stem": "Prefix whose exponential is 10^3?",
+      "choices": ["hecto", "kilo", "Mega", "milli"],
+      "answer": "kilo"
+    },
+    {
+      "id": "rev-10e-3",
+      "section": "reverse",
+      "stem": "Prefix whose exponential is 10^-3?",
+      "choices": ["micro", "centi", "milli", "deci"],
+      "answer": "milli"
+    },
+    {
+      "id": "rev-da",
+      "section": "reverse",
+      "stem": "Prefix for symbol da?",
+      "choices": ["deci", "deca", "deka", "hecto"],
+      "answer": "deca"
+    },
+    {
+      "id": "order-1",
+      "section": "order",
+      "stem": "Top row of the blank chart (largest prefix)?",
+      "choices": ["Giga", "Tera", "Mega", "kilo"],
+      "answer": "Tera"
+    },
+    {
+      "id": "order-after-tera",
+      "section": "order",
+      "stem": "Prefix after Tera, toward BASE UNIT?",
+      "choices": ["Mega", "Giga", "kilo", "pico"],
+      "answer": "Giga"
+    },
+    {
+      "id": "order-after-giga",
+      "section": "order",
+      "stem": "Prefix after Giga, toward BASE UNIT?",
+      "choices": ["Tera", "Mega", "kilo", "micro"],
+      "answer": "Mega"
+    },
+    {
+      "id": "order-after-mega",
+      "section": "order",
+      "stem": "Prefix after Mega, toward BASE UNIT?",
+      "choices": ["Giga", "kilo", "hecto", "milli"],
+      "answer": "kilo"
+    },
+    {
+      "id": "order-center",
+      "section": "order",
+      "stem": "Name of the middle row of the chart?",
+      "choices": ["meter", "BASE UNIT", "deca", "one"],
+      "answer": "BASE UNIT"
+    },
+    {
+      "id": "order-bottom",
+      "section": "order",
+      "stem": "Bottom row of the blank chart (smallest prefix)?",
+      "choices": ["nano", "micro", "pico", "milli"],
+      "answer": "pico"
+    },
+    {
+      "id": "mult-kilo",
+      "section": "multiplier",
+      "stem": "Multiplier for kilo?",
+      "choices": ["100", "1,000", "0.001", "1,000,000"],
+      "answer": "1,000"
+    },
+    {
+      "id": "mult-milli",
+      "section": "multiplier",
+      "stem": "Multiplier for milli?",
+      "choices": ["0.1", "0.01", "0.001", "0.000001"],
+      "answer": "0.001"
+    },
+    {
+      "id": "mult-mega",
+      "section": "multiplier",
+      "stem": "Multiplier for Mega?",
+      "choices": ["1,000", "1,000,000", "1,000,000,000", "0.000001"],
+      "answer": "1,000,000"
+    },
+    {
+      "id": "mult-micro",
+      "section": "multiplier",
+      "stem": "Multiplier for micro?",
+      "choices": ["0.001", "0.000001", "0.000000001", "0.01"],
+      "answer": "0.000001"
+    },
+    {
+      "id": "mult-tera",
+      "section": "multiplier",
+      "stem": "Multiplier for Tera?",
+      "choices": ["1,000,000,000", "1,000,000,000,000", "1,000,000", "10^9"],
+      "answer": "1,000,000,000,000"
+    },
+    {
+      "id": "mult-pico",
+      "section": "multiplier",
+      "stem": "Multiplier for pico?",
+      "choices": ["0.000000001", "0.000000000001", "0.000001", "10^-9"],
+      "answer": "0.000000000001"
+    }
+  ]
+}

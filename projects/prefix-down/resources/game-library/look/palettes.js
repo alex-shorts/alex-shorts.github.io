@@ -1,0 +1,106 @@
+/** SNES / N64-2D / modern-retro palettes. Recolor any sprite by swapping roles. */
+export const SKINS = {
+  royal: {
+    outline: 0x1a1030, skin: 0xf0c8a0, skinDk: 0xc48a6a, hair: 0x4a2060, hairHi: 0x8a40a0,
+    cloth: 0x7040d0, clothHi: 0xb080ff, clothDk: 0x3c2080, accent: 0xf0c040, metal: 0xe8d080,
+    eye: 0x201018, pants: 0x302050, shoe: 0x201830,
+  },
+  forest: {
+    outline: 0x142018, skin: 0xe8c090, skinDk: 0xb07850, hair: 0x2a1810, hairHi: 0x5a3820,
+    cloth: 0x2d8a48, clothHi: 0x70d070, clothDk: 0x185828, accent: 0xe8d060, metal: 0xc0b070,
+    eye: 0x181010, pants: 0x3a3020, shoe: 0x241810,
+  },
+  cinder: {
+    outline: 0x280c0c, skin: 0xe8b898, skinDk: 0xb07058, hair: 0x401010, hairHi: 0x802020,
+    cloth: 0xb03028, clothHi: 0xe06050, clothDk: 0x681018, accent: 0xf0a030, metal: 0xd8c090,
+    eye: 0x200808, pants: 0x302020, shoe: 0x180808,
+  },
+  ocean: {
+    outline: 0x081828, skin: 0xf0d0b0, skinDk: 0xc09070, hair: 0x103848, hairHi: 0x207090,
+    cloth: 0x2070c0, clothHi: 0x50b0f0, clothDk: 0x104070, accent: 0x40e0c0, metal: 0xc0d8e8,
+    eye: 0x081018, pants: 0x183040, shoe: 0x081020,
+  },
+  meadow: {
+    outline: 0x203018, skin: 0xf8d8b0, skinDk: 0xd0a070, hair: 0xc86820, hairHi: 0xf0a040,
+    cloth: 0x48a060, clothHi: 0x88d888, clothDk: 0x286838, accent: 0xf0e8a0, metal: 0xe0d8a8,
+    eye: 0x202010, pants: 0x486038, shoe: 0x283018,
+  },
+  dusk: {
+    outline: 0x181028, skin: 0xe0b8c0, skinDk: 0xb07888, hair: 0x281848, hairHi: 0x584090,
+    cloth: 0x6840a8, clothHi: 0xa070e0, clothDk: 0x382060, accent: 0xf07090, metal: 0xd0c0e8,
+    eye: 0x180818, pants: 0x282040, shoe: 0x140c20,
+  },
+  ice: {
+    outline: 0x102030, skin: 0xf0e0d0, skinDk: 0xc0a090, hair: 0xd0e0f0, hairHi: 0xffffff,
+    cloth: 0x70b0d8, clothHi: 0xb0e0f8, clothDk: 0x387098, accent: 0x90fff0, metal: 0xe8f0ff,
+    eye: 0x203040, pants: 0x486078, shoe: 0x203848,
+  },
+  mint: {
+    outline: 0x143028, skin: 0xffe0c8, skinDk: 0xd0a080, hair: 0x206048, hairHi: 0x40a078,
+    cloth: 0x30c090, clothHi: 0x70f0c0, clothDk: 0x187858, accent: 0xffd060, metal: 0xe8ffe8,
+    eye: 0x102018, pants: 0x285040, shoe: 0x143028,
+  },
+};
+
+export const THEMES = {
+  snes: {
+    id: "snes",
+    label: "SNES",
+    bg: 0x140c28,
+    bg2: 0x241848,
+    ink: 0xf8f0d8,
+    muted: 0xa090c0,
+    accent: 0xf0c040,
+    good: 0x70e070,
+    bad: 0xf06050,
+    panel: 0x302060,
+    panelHi: 0x5040a0,
+    shadow: 0x080418,
+    filter: { vignette: 0.35, quantize: 0 },
+  },
+  n64: {
+    id: "n64",
+    label: "N64 2D",
+    bg: 0x1c2830,
+    bg2: 0x2a4850,
+    ink: 0xf0f4e8,
+    muted: 0x90b0a8,
+    accent: 0xf0d060,
+    good: 0x80e0a0,
+    bad: 0xf08060,
+    panel: 0x245060,
+    panelHi: 0x3a7888,
+    shadow: 0x0c1418,
+    filter: { vignette: 0.45, quantize: 0 },
+  },
+  modern: {
+    id: "modern",
+    label: "Modern retro",
+    bg: 0x12141c,
+    bg2: 0x1e2430,
+    ink: 0xeef2f6,
+    muted: 0x8a94a8,
+    accent: 0x5ee0c0,
+    good: 0x6ee8a0,
+    bad: 0xff6b7a,
+    panel: 0x222836,
+    panelHi: 0x343e52,
+    shadow: 0x08090c,
+    filter: { vignette: 0.22, quantize: 0 },
+  },
+};
+
+export const ARCHETYPES = [
+  { id: "scholar", hat: "mortar", tool: "book" },
+  { id: "knight", hat: "helm", tool: "shield" },
+  { id: "ranger", hat: "hood", tool: "bow" },
+  { id: "mage", hat: "point", tool: "staff" },
+  { id: "scribe", hat: "none", tool: "quill" },
+  { id: "captain", hat: "tricorn", tool: "spyglass" },
+  { id: "monk", hat: "bald", tool: "beads" },
+  { id: "inventor", hat: "goggles", tool: "wrench" },
+  { id: "bard", hat: "feather", tool: "lute" },
+  { id: "librarian", hat: "bun", tool: "stack" },
+  { id: "scout", hat: "cap", tool: "map" },
+  { id: "apprentice", hat: "none", tool: "none" },
+];

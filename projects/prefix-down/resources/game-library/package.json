@@ -1,0 +1,9 @@
+{
+  "name": "dual-credit-game-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bake": "node bake/run.js",
+    "studio": "npx --yes serve ../.. -p 5173"
+  }
+}
