@@ -249,9 +249,17 @@
     {
       "id": "jump-1000",
       "section": "outer",
+      "stem": "Tera → ? → Mega. Missing prefix?",
+      "choices": ["Giga", "kilo", "hecto", "nano"],
+      "answer": "Giga"
+    },
+    {
+      "id": "jump-factor",
+      "section": "outer",
       "stem": "Tera → Giga → Mega (and micro → nano → pico) each jump is?",
       "choices": ["×10", "×100", "×1,000", "×1,000,000"],
-      "answer": "×1,000"
+      "answer": "×1,000",
+      "model": "Those outer rows skip the ×10 ladder. Each hop is ×1,000 (three zeros / 10³)."
     },
     {
       "id": "rev-10e3",

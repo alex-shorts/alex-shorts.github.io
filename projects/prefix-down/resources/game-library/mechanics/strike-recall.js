@@ -3,7 +3,7 @@ import { sparkBurst } from "../motion/transitions.js";
 import { markSeen, bumpMiss, clearDue, missCount, isWarm, markWarm, markTyped, scaffoldOf } from "../systems/save.js";
 import { answerOk } from "./metric-grade.js";
 import { setFightKeys, clearStuckKeys } from "../input/controls.js";
-import { COLS, hintCells, targetCell, cellsForAnswer } from "./chart-map.js";
+import { COLS, hintCells, targetCell, cellsForAnswer, relatedCells } from "./chart-map.js";
 
 const MCQ_MS = 15000;
 
@@ -41,11 +41,12 @@ function fillChart(table, rows, itemId, { reveal = false, misplaced = [] } = {})
   const hints = hintCells(itemId, scaffoldOf());
   const homeKeys = new Set(misplaced.map(([r, c]) => `${r},${c}`));
   const homeRows = new Set(misplaced.map(([r]) => r));
+  const related = new Set(relatedCells(itemId).map(([r, c]) => `${r},${c}`));
   table.querySelectorAll("td[data-r]").forEach((td) => {
     const r = +td.dataset.r;
     const c = +td.dataset.c;
     const key = `${r},${c}`;
-    const ask = r === tr && c === tc;
+    const ask = tr >= 0 && r === tr && c === tc;
     const home = !ask && homeKeys.has(key);
     const homeName = !ask && !home && homeRows.has(r) && c === 0;
     const show = hints.has(key) || (reveal && ask) || home || homeName;
@@ -57,6 +58,7 @@ function fillChart(table, rows, itemId, { reveal = false, misplaced = [] } = {})
       if (ask) td.classList.add("reveal");
       if (home) td.classList.add("misplaced");
       if (homeName) td.classList.add("misplaced-name");
+      if (related.has(key)) td.classList.add("related");
     } else {
       td.textContent = "\u00a0";
     }

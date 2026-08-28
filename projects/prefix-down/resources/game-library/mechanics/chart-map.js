@@ -47,16 +47,41 @@ const GIVEN = {
   "rev-10e3": [[3, 3]],
   "rev-10e-3": [[9, 3]],
   "rev-da": [[5, 1]],
-  "jump-1000": [[0, 0]],
+  "jump-1000": [
+    [0, 0],
+    [2, 0],
+  ],
   "step-10": [[6, 2]],
   "kilo-meaning": [[3, 0]],
   "milli-meaning": [[9, 0]],
   "order-bottom": [[6, 0]],
 };
 
+const RELATED = {
+  "jump-factor": [
+    [0, 0],
+    [1, 0],
+    [2, 0],
+    [10, 0],
+    [11, 0],
+    [12, 0],
+    [0, 3],
+    [1, 3],
+    [2, 3],
+    [10, 3],
+    [11, 3],
+    [12, 3],
+  ],
+};
+
+export function relatedCells(id) {
+  return RELATED[id] ? RELATED[id].map((p) => [...p]) : [];
+}
+
 export function mapItem(id) {
   if (id === "step-10") return [[5, 2]];
   if (id === "jump-1000") return [[1, 0]];
+  if (id === "jump-factor") return relatedCells(id);
   if (EXTRA[id]) return [EXTRA[id]];
   const mult = id.match(/^mult-(.+)$/);
   if (mult) {
@@ -73,6 +98,7 @@ export function mapItem(id) {
 }
 
 export function targetCell(id) {
+  if (id === "jump-factor") return [-1, -1];
   return mapItem(id)[0] || [BASE_ROW, 0];
 }
 
@@ -117,6 +143,10 @@ export function hintCells(id, scaffold) {
   const show = new Set();
   for (let c = 0; c < 4; c++) add(show, BASE_ROW, c);
   givenCells(id).forEach(([r, c]) => add(show, r, c));
+  if (id === "jump-factor") {
+    relatedCells(id).forEach(([r, c]) => add(show, r, c));
+    return show;
+  }
   const [tr, tc] = targetCell(id);
   const n = Math.max(0, Math.min(4, scaffold | 0));
   if (n >= 1) {
@@ -136,6 +166,6 @@ export function hintCells(id, scaffold) {
       for (let c = 0; c < 4; c++) add(show, r, c);
     }
   }
-  show.delete(`${tr},${tc}`);
+  if (tr >= 0) show.delete(`${tr},${tc}`);
   return show;
 }

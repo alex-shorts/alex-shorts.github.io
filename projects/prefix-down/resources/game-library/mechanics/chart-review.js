@@ -26,7 +26,7 @@ function cellScores(items) {
   items.forEach((item) => {
     const m = itemMastery(item.id);
     const cells = mapItem(item.id);
-    const weak = item.id === "step-10" || item.id === "jump-1000" ? 0.25 : 1;
+    const weak = item.id === "step-10" || item.id === "jump-1000" || item.id === "jump-factor" ? 0.25 : 1;
     cells.forEach(([r, c]) => {
       acc[r][c].s += m * weak;
       acc[r][c].w += weak;
