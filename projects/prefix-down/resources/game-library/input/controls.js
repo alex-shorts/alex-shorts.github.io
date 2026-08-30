@@ -1,9 +1,14 @@
 /** Keyboard + pointer + gamepad. Modes: topdown, platform, grid, menu. */
 
 export function makeControls(scene) {
+  try {
+    scene.input.keyboard.addCapture("SPACE,UP,DOWN,LEFT,RIGHT,ENTER");
+  } catch (_) {
+    /* Phaser build without addCapture */
+  }
   const k = scene.input.keyboard.addKeys(
     "W,A,S,D,T,R,P,UP,DOWN,LEFT,RIGHT,SPACE,ENTER,E,Z,X,C,ESC,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,F,J,K",
-    false,
+    true,
   );
   const touch = { x: 0, y: 0, jump: false, action: false, cancel: false };
   return {

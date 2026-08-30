@@ -49,5 +49,6 @@ export const sfx = {
   cook: () => tone(250, 0.09, "square", 0.04),
   alert: () => tone(880, 0.2, "square", 0.05),
   punch: () => tone(200, 0.05, "square", 0.06),
+  jab: () => tone(260, 0.04, "square", 0.05),
   whiff: () => tone(130, 0.07, "triangle", 0.03),
 };

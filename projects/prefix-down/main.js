@@ -26,7 +26,7 @@ function start() {
       homeScene: "TitleScene",
       w: 2560,
       h: 1440,
-      pixelArt: false,
+      pixelArt: true,
     }),
   );
 }

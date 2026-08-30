@@ -15,6 +15,10 @@ import { gameConfig, SCENES } from "./resources/game-library/index.js";
 new Phaser.Game(gameConfig(SCENES, "snes"));
 ```
 
+## New fighter
+
+Idle-first, full-body, 96×63 pack — do not mix close-ups with a small idle. Procedure: [`docs/new-fighter.md`](docs/new-fighter.md).
+
 ## Layout
 
 | Path | What |

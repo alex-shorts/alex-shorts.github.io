@@ -1,5 +1,5 @@
 import { preloadLibrary, bootLibrary } from "../phaser/preload.js";
-import { resetSave } from "../systems/save.js";
+import { loadSave, resetSave, writeSave } from "../systems/save.js";
 
 export class BootScene extends Phaser.Scene {
   constructor() {
@@ -32,12 +32,10 @@ export class BootScene extends Phaser.Scene {
     const q = new URLSearchParams(location.search);
     if (q.has("reset")) resetSave();
     if (q.has("practice")) this.registry.set("practiceFight", true);
-    const start = this.registry.get("startScene");
-    if (start) {
-      this.scene.start(start);
-      return;
-    }
-    if (this.scene.manager.keys.HubScene) this.scene.start("HubScene");
-    else this.scene.start("TitleScene");
+    const fighter = q.get("fighter");
+    if (fighter === "kai" || fighter === "ash") writeSave({ fighterId: fighter });
+    this.registry.set("runOutfit", loadSave().fighterId === "kai" ? "kai" : "ash");
+    const start = q.get("start") || this.registry.get("startScene") || "TitleScene";
+    this.scene.start(start);
   }
 }

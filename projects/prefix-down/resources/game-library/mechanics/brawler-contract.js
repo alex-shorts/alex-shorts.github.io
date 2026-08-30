@@ -3,6 +3,7 @@
  * Clear a round, then walk forward. Three blocks before the blank chart.
  */
 import { STAGE_SCALE } from "../layouts/city.js";
+import { loadSave } from "../systems/save.js";
 
 export const BRAWLER = {
   scene: "BrawlerScene",
@@ -75,6 +76,6 @@ export function levelOf(scene) {
 }
 
 export function outfitOf(scene) {
-  const id = scene.registry.get("runOutfit") || "ash";
-  return id;
+  const id = scene.registry.get("runOutfit") || loadSave().fighterId || "ash";
+  return id === "kai" ? "kai" : "ash";
 }

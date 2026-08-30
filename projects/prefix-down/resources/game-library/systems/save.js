@@ -1,7 +1,7 @@
 const KEY = "dc-game-lib-v1";
 
 function empty() {
-  return { heroId: "sand", theme: "snes", seen: {}, misses: {}, due: {}, warm: {}, typed: {}, scaffold: 0, xp: 0, studs: 0 };
+  return { heroId: "sand", fighterId: "ash", theme: "snes", seen: {}, misses: {}, due: {}, warm: {}, typed: {}, scaffold: 0, xp: 0, studs: 0 };
 }
 
 export function loadSave() {

@@ -1,9 +1,10 @@
-import { BRAWLER, HERO, FOES, STATIONS, roadLayout } from "./brawler-contract.js";
+import { BRAWLER, FOES, STATIONS, roadLayout, outfitOf } from "./brawler-contract.js";
 import { openStrike } from "./strike-recall.js";
 import { createBrawlerHud } from "../layouts/brawler-hud.js";
 import { paintRoad } from "../layouts/city.js";
 import { makeControls } from "../input/controls.js";
 import { FIGHTERS, playFighter, faceFighter, lockBusy, fitFighterBody } from "../motion/fighter-anims.js";
+import { bootCombat, tickCombat, pressPunch, pressKick, tryJump, tickJump, combatBusy, landHero } from "./brawler-combat.js";
 import { metricItems } from "../phaser/preload.js";
 import { THEMES } from "../look/palettes.js";
 import { clearStyle } from "../look/type.js";
@@ -40,17 +41,24 @@ export class BrawlerScene extends Phaser.Scene {
 
     paintRoad(this, BRAWLER.width);
 
-    const spec = FIGHTERS.ash;
-    this.hero = this.physics.add.sprite(280, this.road.floorY, "ash-idle", 0);
-    this.hero.fighterId = "ash";
+    const spec = FIGHTERS[outfitOf(this)] || FIGHTERS.ash;
+    this.hero = this.physics.add.sprite(280, this.road.floorY, `${spec.id}-idle`, 0);
+    this.hero.fighterId = spec.id;
     this.hero.setOrigin(0.5, 1).setScale(spec.scale);
     this.hero.baseScale = spec.scale;
     this.hero.body.setAllowGravity(false);
     fitFighterBody(this.hero, spec);
     this.hero.hp = BRAWLER.maxHp;
     this.hero.air = false;
+    this.hero.airKick = false;
+    this.hero.airDrop = false;
+    this.hero.airHop = false;
+    this.hero.jumpVy = 0;
+    this.hero.jumpsLeft = 0;
     this.hero.laneY = this.road.floorY;
     playFighter(this.hero, "idle");
+    this.hero.setDepth(this.hero.y);
+    bootCombat(this);
     this.cameras.main.startFollow(this.hero, true, 0.14, 0);
     this.cameras.main.setDeadzone(W * 0.22, 0);
 
@@ -61,10 +69,10 @@ export class BrawlerScene extends Phaser.Scene {
     this.hud = createBrawlerHud(this);
     this.hud.setHp(this.hero.hp);
     this.hud.setWave(0, STATIONS.length);
-    this.hud.setFighter(HERO.name);
+    this.hud.setFighter(spec.name, spec.id);
 
     this.add
-      .text(W / 2, H - 28, "Z punch   X kick   SPACE hop rockets   ESC pause", {
+      .text(W / 2, H - 28, "Z punch combo   X kick combo   SPACE double jump   DOWN+X dive   ESC pause", {
         ...clearStyle("#c8b8e0", 28),
       })
       .setOrigin(0.5, 1)
@@ -92,13 +100,32 @@ export class BrawlerScene extends Phaser.Scene {
     this.tweens.add({ targets: this.goT, alpha: { from: 0.25, to: 1 }, duration: 420, yoyo: true, repeat: -1 });
 
     this.hud.toast("WALK THE ROAD");
+    this.maybeAutotest();
+  }
+
+  maybeAutotest() {
+    const q = new URLSearchParams(location.search);
+    if (!q.has("autotest")) return;
+    this.time.delayedCall(700, () => pressPunch(this));
+    this.time.delayedCall(860, () => pressPunch(this));
+    this.time.delayedCall(1020, () => pressPunch(this));
+    this.time.delayedCall(1700, () => {
+      const h = this.hero;
+      const dy = Math.round(h.y - (h.laneY || h.y));
+      const msg = `${h.fighterId} air=${h.air} dy=${dy} atk=${this.atk?.id || "none"} ${h.anims?.currentAnim?.key || "-"}`;
+      this.add
+        .text(80, 72, msg, { ...clearStyle("#f0c040", 28), backgroundColor: "#000000" })
+        .setOrigin(0, 0)
+        .setScrollFactor(0)
+        .setDepth(5000);
+    });
   }
 
   aliveFoes() {
     return this.foes.getChildren().filter((e) => e.active && e.hp > 0);
   }
 
-  update() {
+  update(time, delta) {
     if (this.overlay) {
       this.freezeCombat();
       this.handleOverlayKeys();
@@ -113,18 +140,20 @@ export class BrawlerScene extends Phaser.Scene {
       this.freezeCombat();
       return;
     }
+    tickJump(this, delta);
 
     const v = this.ctrl.vector();
     const lockedMove = this.time.now < (this.ignoreMoveUntil || 0);
-    const vx = lockedMove ? 0 : v.x;
-    const vy = lockedMove ? 0 : v.y;
+    const hold = combatBusy(this) && (!this.hero.air || this.hero.airKick);
+    const vx = lockedMove || hold ? 0 : v.x;
+    const vy = lockedMove || hold ? 0 : v.y;
     if (!this.hero.air) {
       this.hero.setVelocity(vx * BRAWLER.walkSpeed, vy * BRAWLER.laneSpeed);
       this.hero.y = Phaser.Math.Clamp(this.hero.y, this.road.laneMin, this.road.laneMax);
       this.hero.x = Phaser.Math.Clamp(this.hero.x, 40, BRAWLER.width - 40);
       this.hero.laneY = this.hero.y;
     } else {
-      this.hero.setVelocity(vx * BRAWLER.walkSpeed, 0);
+      this.hero.setVelocity((hold ? 0 : vx) * BRAWLER.walkSpeed, 0);
     }
 
     if (this.fightOn) {
@@ -135,17 +164,23 @@ export class BrawlerScene extends Phaser.Scene {
       }
     }
 
-    faceFighter(this.hero, vx, FIGHTERS.ash);
-    if (this.hero.air) playFighter(this.hero, this.hero.body.velocity.y < 0 ? "jump" : "fall");
-    else playFighter(this.hero, vx || vy ? "run" : "idle");
+    if (!combatBusy(this)) {
+      faceFighter(this.hero, vx, FIGHTERS[this.hero.fighterId] || FIGHTERS.ash);
+      if (this.hero.air) {
+        const airAct = this.hero.jumpPhase === "down" ? "fall" : this.hero.jumpPhase === "flip" ? "djump" : "jump";
+        playFighter(this.hero, airAct);
+      }
+      else playFighter(this.hero, vx || vy ? "run" : "idle");
+    }
 
-    if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.SPACE)) this.tryJump();
+    if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.SPACE)) tryJump(this);
     if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.Z) || Phaser.Input.Keyboard.JustDown(this.ctrl.k.J)) {
-      this.tryStrike("punch");
+      pressPunch(this);
     }
     if (Phaser.Input.Keyboard.JustDown(this.ctrl.k.X) || Phaser.Input.Keyboard.JustDown(this.ctrl.k.K)) {
-      this.tryStrike("kick");
+      pressKick(this);
     }
+    tickCombat(this);
 
     if (this.brawlerLocked) {
       this.freezeCombat();
@@ -258,10 +293,16 @@ export class BrawlerScene extends Phaser.Scene {
     this.overlay?.root?.destroy();
     this.overlay = null;
     this.brawlerLocked = false;
+    try {
+      this.hero.jumpTween?.resume?.();
+    } catch (_) {}
   }
 
   freezeCombat() {
     this.hero.setVelocity(0);
+    try {
+      this.hero.jumpTween?.pause?.();
+    } catch (_) {}
     this.foes.getChildren().forEach((e) => e.active && e.body && e.setVelocity(0));
   }
 
@@ -276,23 +317,8 @@ export class BrawlerScene extends Phaser.Scene {
     this.rockets?.getChildren().forEach((r) => r.active && r.setDepth(r.y + 4));
   }
 
-  tryJump() {
-    if (this.hero.air || this.brawlerLocked) return;
-    this.hero.air = true;
-    this.hero.laneY = this.hero.y;
-    sfx.jump();
-    lockBusy(this.hero, "jump");
-    this.tweens.add({
-      targets: this.hero,
-      y: this.hero.laneY - BRAWLER.jump,
-      duration: 220,
-      yoyo: true,
-      ease: "Quad.easeOut",
-      onComplete: () => {
-        this.hero.y = this.hero.laneY;
-        this.hero.air = false;
-      },
-    });
+  landHero() {
+    landHero(this);
   }
 
   nextItem() {
@@ -315,29 +341,9 @@ export class BrawlerScene extends Phaser.Scene {
     return best;
   }
 
-  tryStrike(kind) {
-    if (this.brawlerLocked) return;
-    const now = this.time.now;
-    if (now - this.lastAtk < BRAWLER.attackMs) return;
-    this.lastAtk = now;
-    const range = kind === "kick" ? BRAWLER.kickRange : BRAWLER.punchRange;
-    lockBusy(this.hero, kind);
-    const target = this.nearestFoe(range);
-    if (!target) {
-      sfx.whoosh();
-      return;
-    }
-    sfx.punch();
-    if (target.hp > 1) {
-      this.chip(target);
-      return;
-    }
-    this.askKo(target);
-  }
-
-  chip(target) {
+  chip(target, knock = 1) {
     target.hp -= BRAWLER.chip;
-    target.x += this.hero.flipX ? -36 : 36;
+    target.x += (this.hero.flipX ? -36 : 36) * knock;
     lockBusy(target, "hit");
     this.combo += 1;
     this.showCombo();
@@ -464,7 +470,7 @@ export class BrawlerScene extends Phaser.Scene {
     } else {
       e.setVelocity(0, dy * 36);
       playFighter(e, "idle");
-      if (now - (e.lastHit || 0) > 1400) {
+      if (now - (e.lastHit || 0) > 3000) {
         e.lastHit = now;
         lockBusy(e, "punch");
         this.time.delayedCall(220, () => {
@@ -481,7 +487,7 @@ export class BrawlerScene extends Phaser.Scene {
     r.setOrigin(0.5, 0.5).setScale(4);
     r.setFlipX(dir < 0);
     r.dir = dir;
-    r.spd = 560;
+    r.spd = 476;
     r.laneY = e.y;
     r.anims?.play("rocket-fly", true);
     r.setDepth(e.y + 4);
