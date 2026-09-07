@@ -215,9 +215,9 @@ export class BrawlerScene extends Phaser.Scene {
     this.fightOn = true;
     this.needGo = false;
     this.goT.setText("");
-    this.invulnUntil = this.time.now + 1400;
-    this.hud.setWave(this.waveI + 1, STATIONS.length);
     const boss = st.foes.some((f) => f[0] === "wrecker");
+    this.invulnUntil = this.time.now + (boss ? 3600 : 1400);
+    this.hud.setWave(this.waveI + 1, STATIONS.length);
     this.hud.toast(boss ? "WRECKER" : `ROUND ${this.waveI + 1}`);
     sfx.alert();
     const lane = (i) => Phaser.Math.Clamp(this.road.floorY + (i - 1) * 48, this.road.laneMin, this.road.laneMax);
@@ -336,12 +336,13 @@ export class BrawlerScene extends Phaser.Scene {
 
   nearestFoe(range) {
     let best = null;
-    let bestD = range + 1;
+    let bestD = Infinity;
     this.aliveFoes().forEach((e) => {
       const slack = e.kind === "boss" ? 420 : 14 * 6;
       if (Math.abs(e.y - this.hero.laneY) > slack) return;
+      const reach = e.kind === "boss" ? range + 280 : range;
       const d = Phaser.Math.Distance.Between(this.hero.x, this.hero.laneY, e.x, e.y);
-      if (d < bestD) {
+      if (d <= reach && d < bestD) {
         bestD = d;
         best = e;
       }
@@ -392,6 +393,10 @@ export class BrawlerScene extends Phaser.Scene {
     if (target.kind === "boss" && target.layers > 1) {
       target.layers -= 1;
       target.hp = 1;
+      target.lastHit = this.time.now + 2000;
+      target.atkGen = (target.atkGen || 0) + 1;
+      this.rockets.clear(true, true);
+      this.invulnUntil = this.time.now + 1600;
       lockBusy(target, "hit");
       showWreckerBreak(target);
       sparkBurst(this, target.x, target.y - 80 * (target.scaleY || 6), 14);
@@ -406,6 +411,11 @@ export class BrawlerScene extends Phaser.Scene {
       return;
     }
     lockBusy(target, "death");
+    if (target.kind === "boss") {
+      target.atkGen = (target.atkGen || 0) + 1;
+      this.rockets.clear(true, true);
+      this.invulnUntil = this.time.now + 1200;
+    }
     sparkBurst(this, target.x, target.y - 48 * (target.scaleY || 6), 14);
     flash(this, 0xf0c040, 80);
     shake(this, 180, 0.01);
@@ -431,7 +441,7 @@ export class BrawlerScene extends Phaser.Scene {
     flash(this, 0xe04030, 90);
     shake(this, 150, 0.008);
     sfx.miss();
-    this.invulnUntil = this.time.now + 500;
+    this.invulnUntil = this.time.now + 800;
     if (this.hero.hp <= 0) this.openDead();
   }
 
@@ -487,36 +497,41 @@ export class BrawlerScene extends Phaser.Scene {
     const dx = Math.sign(this.hero.x - e.x) || -1;
     const punchR = 300;
     e.y = Phaser.Math.Clamp(this.road.floorY, this.road.laneMin, this.road.laneMax);
+    if (this.overlay || now < this.invulnUntil || (e.busyUntil && now < e.busyUntil)) {
+      e.setVelocity(0);
+      if (!(e.busyUntil && now < e.busyUntil)) playFighter(e, "idle");
+      return;
+    }
     if (dist < punchR) {
       e.setVelocity(0);
-      if (now - (e.lastHit || 0) > 1600) {
+      if (now - (e.lastHit || 0) > 2000) {
         e.lastHit = now;
+        const gen = e.atkGen || 0;
         lockBusy(e, "punch");
-        this.time.delayedCall(300, () => {
-          if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
+        this.time.delayedCall(360, () => {
+          if (!this.sys.isActive() || !e.active || e.hp <= 0 || gen !== e.atkGen) return;
+          if (this.time.now < this.invulnUntil) return;
           const d = Phaser.Math.Distance.Between(e.x, e.y, this.hero.x, this.hero.laneY);
           if (d < punchR + 50 && !this.hero.air) this.hurtHero(1);
         });
       } else playFighter(e, "idle");
       return;
     }
-    if (dist > 720) {
+    if (dist > 780) {
       e.setVelocity(dx * e.speed, 0);
       playFighter(e, "run");
       return;
     }
     e.setVelocity(0);
     playFighter(e, "idle");
-    if (now - (e.lastHit || 0) > 2200) {
+    if (now - (e.lastHit || 0) > 2800) {
       e.lastHit = now;
+      const gen = e.atkGen || 0;
       lockBusy(e, "punch");
-      this.time.delayedCall(180, () => {
-        if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
+      this.time.delayedCall(420, () => {
+        if (!this.sys.isActive() || !e.active || e.hp <= 0 || gen !== e.atkGen) return;
+        if (this.overlay || this.time.now < this.invulnUntil) return;
         this.spawnRocket(e, this.hero.laneY);
-        this.time.delayedCall(160, () => {
-          if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
-          this.spawnRocket(e, Phaser.Math.Clamp(this.hero.laneY + 48, this.road.laneMin, this.road.laneMax));
-        });
       });
     }
   }
@@ -547,12 +562,12 @@ export class BrawlerScene extends Phaser.Scene {
 
   spawnRocket(e, laneY) {
     const dir = Math.sign(this.hero.x - e.x) || -1;
-    const lift = e.kind === "boss" ? 520 : 210;
+    const lift = e.kind === "boss" ? 120 : 210;
     const r = this.add.sprite(e.x + dir * (e.kind === "boss" ? 220 : 128), e.y - lift, "rocket-fly", 0);
     r.setOrigin(0.5, 0.5).setScale(4);
     r.setFlipX(dir < 0);
     r.dir = dir;
-    r.spd = e.kind === "boss" ? 520 : 476;
+    r.spd = e.kind === "boss" ? 300 : 476;
     r.laneY = laneY ?? e.y;
     r.anims?.play("rocket-fly", true);
     r.setDepth(e.y + 4);
@@ -624,7 +639,8 @@ export class BrawlerScene extends Phaser.Scene {
       e.maxHp = spec.hp;
     }
     e.speed = spec.speed;
-    e.lastHit = this.time.now + 500 + Math.random() * 400;
+    e.atkGen = 0;
+    e.lastHit = this.time.now + (spec.kind === "boss" ? 4200 : 500 + Math.random() * 400);
     e.hpBar = this.add.graphics().setDepth(y + 2);
     playFighter(e, "idle");
     faceFighter(e, this.hero.x - e.x, kit);
