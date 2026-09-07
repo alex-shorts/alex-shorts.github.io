@@ -4,9 +4,9 @@
  * X  kick → hop jump-kick → dive-kick
  * Air X/Z is jumpkick; down+kick in air is divekick.
  */
-import { BRAWLER } from "./brawler-contract.js?r=w7";
-import { FIGHTERS, lockAttack, playFighter } from "../motion/fighter-anims.js?r=w7";
-import { sfx } from "../audio/sfx.js?r=w7";
+import { BRAWLER } from "./brawler-contract.js?r=w8";
+import { FIGHTERS, lockAttack, playFighter } from "../motion/fighter-anims.js?r=w8";
+import { sfx } from "../audio/sfx.js?r=w8";
 
 const WINDOW = 220;
 const HITSTOP = 48;
@@ -317,7 +317,12 @@ function strikeNow(scene, move) {
     return;
   }
   hitstop(scene, move.ender ? HITSTOP + 30 : HITSTOP);
-  if (target.kind === "boss" || target.hp <= 1) {
+  if (target.kind === "boss") {
+    if (target.hp > 1) scene.chip(target, move.ender ? 1.35 : 1);
+    else scene.askKo(target);
+    return;
+  }
+  if (target.hp <= 1) {
     scene.askKo(target);
     return;
   }

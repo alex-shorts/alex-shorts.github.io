@@ -1,13 +1,13 @@
-import { THEMES } from "../look/palettes.js?r=w7";
-import { roadLayout } from "../mechanics/brawler-contract.js?r=w7";
-import { makeControls } from "../input/controls.js?r=w7";
-import { sfx } from "../audio/sfx.js?r=w7";
-import { startBed } from "../audio/music.js?r=w7";
-import { fadeTo, floaty } from "../motion/transitions.js?r=w7";
-import { playFighter, FIGHTERS, PLAYABLE, faceFighter } from "../motion/fighter-anims.js?r=w7";
-import { paintRoad } from "../layouts/city.js?r=w7";
-import { homeOf, loadSave, writeSave } from "../systems/save.js?r=w7";
-import { clearStyle } from "../look/type.js?r=w7";
+import { THEMES } from "../look/palettes.js?r=w8";
+import { roadLayout } from "../mechanics/brawler-contract.js?r=w8";
+import { makeControls } from "../input/controls.js?r=w8";
+import { sfx } from "../audio/sfx.js?r=w8";
+import { startBed } from "../audio/music.js?r=w8";
+import { fadeTo, floaty } from "../motion/transitions.js?r=w8";
+import { playFighter, FIGHTERS, PLAYABLE, faceFighter } from "../motion/fighter-anims.js?r=w8";
+import { paintRoad } from "../layouts/city.js?r=w8";
+import { homeOf, loadSave, writeSave } from "../systems/save.js?r=w8";
+import { clearStyle } from "../look/type.js?r=w8";
 
 function plaque(scene, x, y, str, { color, size, originX = 0.5, originY = 0.5, padX = 36, padY = 18, stroke = 5, weight = "800" } = {}) {
   const t = scene.add

@@ -1,4 +1,4 @@
-import { gameConfig, METRIC_SCENES } from "./resources/game-library/index.js?r=w7";
+import { gameConfig, METRIC_SCENES } from "./resources/game-library/index.js?r=w8";
 
 function showErr(msg) {
   const el = document.getElementById("boot-err");

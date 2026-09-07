@@ -231,7 +231,7 @@ export function faceFighter(sprite, dirX, spec) {
 
 export function playFighter(sprite, act) {
   const id = sprite.fighterId || "ash";
-  if (sprite.maxLayers && sprite.layers < sprite.maxLayers && (act === "idle" || act === "run")) {
+  if (sprite.maxLayers && sprite.layers < sprite.maxLayers && act === "idle") {
     showWreckerBreak(sprite);
     return;
   }

@@ -77,7 +77,7 @@ export const FOES = [
   { id: "boss", fighterId: "punk", kind: "melee", hp: 8, speed: 96, scale: 8.2, tint: 0xe07070 },
   { id: "wolf", fighterId: "wolf", kind: "melee", hp: 4, speed: 150, scale: 6, tint: 0xffffff },
   { id: "bot", fighterId: "bot", kind: "gunner", hp: 4, speed: 88, scale: 6, tint: 0xffffff },
-  { id: "wrecker", fighterId: "wrecker", kind: "boss", hp: 1, layers: 5, speed: 64, scale: 6, tint: 0xffffff },
+  { id: "wrecker", fighterId: "wrecker", kind: "boss", hp: 5, layers: 5, speed: 96, scale: 6, tint: 0xffffff },
 ];
 
 export function levelOf(scene) {

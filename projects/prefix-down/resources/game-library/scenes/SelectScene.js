@@ -1,10 +1,10 @@
-import { THEMES } from "../look/palettes.js?r=w7";
-import { fadeTo } from "../motion/transitions.js?r=w7";
-import { makeControls } from "../input/controls.js?r=w7";
-import { sfx } from "../audio/sfx.js?r=w7";
-import { playFighter, FIGHTERS, PLAYABLE } from "../motion/fighter-anims.js?r=w7";
-import { writeSave } from "../systems/save.js?r=w7";
-import { clearStyle } from "../look/type.js?r=w7";
+import { THEMES } from "../look/palettes.js?r=w8";
+import { fadeTo } from "../motion/transitions.js?r=w8";
+import { makeControls } from "../input/controls.js?r=w8";
+import { sfx } from "../audio/sfx.js?r=w8";
+import { playFighter, FIGHTERS, PLAYABLE } from "../motion/fighter-anims.js?r=w8";
+import { writeSave } from "../systems/save.js?r=w8";
+import { clearStyle } from "../look/type.js?r=w8";
 
 /** Ash vs Kai. ENTER locks the pick and goes to the filled chart. */
 export class SelectScene extends Phaser.Scene {

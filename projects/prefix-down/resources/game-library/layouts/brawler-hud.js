@@ -34,7 +34,7 @@ export function createBrawlerHud(scene) {
     setWave(n, total) {
       wave.setText("ROUND " + n + "/" + total);
     },
-    setBoss(left, max) {
+    setBoss(left, max, hp, maxHp) {
       bossG.clear();
       if (!max) return;
       const w = 38;
@@ -44,8 +44,16 @@ export function createBrawlerHud(scene) {
       let x = W - 24 - total;
       for (let i = 0; i < max; i++) {
         bossG.fillStyle(i < left ? 0xf0c040 : 0x302010, 1);
-        bossG.fillRect(x, 64, w, h);
+        bossG.fillRect(x, 58, w, h);
         x += w + gap;
+      }
+      if (maxHp) {
+        const bw = total;
+        const bx = W - 24 - bw;
+        bossG.fillStyle(0x201018, 1);
+        bossG.fillRect(bx, 78, bw, 8);
+        bossG.fillStyle(0xe07040, 1);
+        bossG.fillRect(bx, 78, Math.max(0, (bw * Math.max(0, hp)) / maxHp), 8);
       }
     },
     setFighter(label, id) {

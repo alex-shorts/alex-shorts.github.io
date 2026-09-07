@@ -1,5 +1,5 @@
 /** Resolve files inside this library from any game. */
-const PACK = "w7";
+const PACK = "w8";
 export function asset(path) {
   const href = new URL(`./assets/${path}`, import.meta.url).href;
   const v = new URLSearchParams(location.search).get("v") || "1";
