@@ -74,8 +74,8 @@ def pack(src_name, n, dest_name):
 
 
 if __name__ == "__main__":
-    pack("wrecker-idle-full.png", 6, "wrecker-idle.png")
-    pack("wrecker-walk-full.png", 6, "wrecker-walk.png")
-    pack("wrecker-punch-full.png", 5, "wrecker-punch.png")
-    pack("wrecker-break-full.png", 6, "wrecker-break.png")
+    pack("wrecker-idle-full.png", 6, "wrecker-idle2.png")
+    pack("wrecker-walk-full.png", 6, "wrecker-walk2.png")
+    pack("wrecker-punch-full.png", 5, "wrecker-punch2.png")
+    pack("wrecker-break-full.png", 6, "wrecker-break2.png")
     print("done")
