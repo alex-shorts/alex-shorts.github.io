@@ -1,17 +1,17 @@
-import { BRAWLER, FOES, STATIONS, roadLayout, outfitOf } from "./brawler-contract.js";
-import { openStrike } from "./strike-recall.js";
-import { createBrawlerHud } from "../layouts/brawler-hud.js";
-import { paintRoad } from "../layouts/city.js";
-import { makeControls } from "../input/controls.js";
-import { FIGHTERS, playFighter, faceFighter, lockBusy, fitFighterBody, showWreckerBreak } from "../motion/fighter-anims.js";
-import { bootCombat, tickCombat, pressPunch, pressKick, tryJump, tickJump, combatBusy, landHero } from "./brawler-combat.js";
-import { metricItems } from "../phaser/preload.js";
-import { THEMES } from "../look/palettes.js";
-import { clearStyle } from "../look/type.js";
-import { sfx } from "../audio/sfx.js";
-import { sparkBurst, flash, shake, fadeTo, xpPop } from "../motion/transitions.js";
-import { pickMetricItem } from "../systems/queue.js";
-import { homeOf } from "../systems/save.js";
+import { BRAWLER, FOES, STATIONS, roadLayout, outfitOf } from "./brawler-contract.js?r=w3";
+import { openStrike } from "./strike-recall.js?r=w3";
+import { createBrawlerHud } from "../layouts/brawler-hud.js?r=w3";
+import { paintRoad } from "../layouts/city.js?r=w3";
+import { makeControls } from "../input/controls.js?r=w3";
+import { FIGHTERS, playFighter, faceFighter, lockBusy, fitFighterBody, showWreckerBreak } from "../motion/fighter-anims.js?r=w3";
+import { bootCombat, tickCombat, pressPunch, pressKick, tryJump, tickJump, combatBusy, landHero } from "./brawler-combat.js?r=w3";
+import { metricItems } from "../phaser/preload.js?r=w3";
+import { THEMES } from "../look/palettes.js?r=w3";
+import { clearStyle } from "../look/type.js?r=w3";
+import { sfx } from "../audio/sfx.js?r=w3";
+import { sparkBurst, flash, shake, fadeTo, xpPop } from "../motion/transitions.js?r=w3";
+import { pickMetricItem } from "../systems/queue.js?r=w3";
+import { homeOf } from "../systems/save.js?r=w3";
 
 const foeOf = (id) => FOES.find((f) => f.id === id);
 

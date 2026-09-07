@@ -1,5 +1,5 @@
-import { preloadLibrary, bootLibrary } from "../phaser/preload.js";
-import { loadSave, resetSave, writeSave } from "../systems/save.js";
+import { preloadLibrary, bootLibrary } from "../phaser/preload.js?r=w3";
+import { loadSave, resetSave, writeSave } from "../systems/save.js?r=w3";
 
 export class BootScene extends Phaser.Scene {
   constructor() {

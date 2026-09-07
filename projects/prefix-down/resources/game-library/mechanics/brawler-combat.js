@@ -4,9 +4,9 @@
  * X  kick → hop jump-kick → dive-kick
  * Air X/Z is jumpkick; down+kick in air is divekick.
  */
-import { BRAWLER } from "./brawler-contract.js";
-import { FIGHTERS, lockAttack, playFighter } from "../motion/fighter-anims.js";
-import { sfx } from "../audio/sfx.js";
+import { BRAWLER } from "./brawler-contract.js?r=w3";
+import { FIGHTERS, lockAttack, playFighter } from "../motion/fighter-anims.js?r=w3";
+import { sfx } from "../audio/sfx.js?r=w3";
 
 const WINDOW = 220;
 const HITSTOP = 48;

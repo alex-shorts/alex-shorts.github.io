@@ -1,7 +1,7 @@
-import { asset } from "../paths.js";
-import { bakeKit } from "./kit-runtime.js";
-import { registerAnims } from "../motion/anims.js";
-import { registerFighterAnims, FIGHTERS, FIGHT_FRAME, fighterSheetKeys, sharpenTextures } from "../motion/fighter-anims.js";
+import { asset } from "../paths.js?r=w3";
+import { bakeKit } from "./kit-runtime.js?r=w3";
+import { registerAnims } from "../motion/anims.js?r=w3";
+import { registerFighterAnims, FIGHTERS, FIGHT_FRAME, fighterSheetKeys, sharpenTextures } from "../motion/fighter-anims.js?r=w3";
 
 const SOF = "vendor/ansimuz-sof";
 
