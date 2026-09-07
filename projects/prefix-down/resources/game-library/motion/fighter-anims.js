@@ -209,8 +209,8 @@ export function fitFighterBody(sprite, spec) {
 }
 
 export function showWreckerBreak(sprite) {
-  const lost = (sprite.maxLayers || 6) - (sprite.layers || 0);
-  const fr = Math.max(1, Math.min(5, lost));
+  const lost = (sprite.maxLayers || 5) - (sprite.layers || 0);
+  const fr = Math.max(1, Math.min(4, lost));
   sprite.anims?.stop();
   if (sprite.scene?.textures?.exists("wrecker-break")) sprite.setTexture("wrecker-break", fr);
   lockFighterSize(sprite);

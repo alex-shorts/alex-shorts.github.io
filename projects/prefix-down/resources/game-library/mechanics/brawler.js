@@ -1,17 +1,17 @@
-import { BRAWLER, FOES, STATIONS, roadLayout, outfitOf } from "./brawler-contract.js?r=w3";
-import { openStrike } from "./strike-recall.js?r=w3";
-import { createBrawlerHud } from "../layouts/brawler-hud.js?r=w3";
-import { paintRoad } from "../layouts/city.js?r=w3";
-import { makeControls } from "../input/controls.js?r=w3";
-import { FIGHTERS, playFighter, faceFighter, lockBusy, fitFighterBody, showWreckerBreak } from "../motion/fighter-anims.js?r=w3";
-import { bootCombat, tickCombat, pressPunch, pressKick, tryJump, tickJump, combatBusy, landHero } from "./brawler-combat.js?r=w3";
-import { metricItems } from "../phaser/preload.js?r=w3";
-import { THEMES } from "../look/palettes.js?r=w3";
-import { clearStyle } from "../look/type.js?r=w3";
-import { sfx } from "../audio/sfx.js?r=w3";
-import { sparkBurst, flash, shake, fadeTo, xpPop } from "../motion/transitions.js?r=w3";
-import { pickMetricItem } from "../systems/queue.js?r=w3";
-import { homeOf } from "../systems/save.js?r=w3";
+import { BRAWLER, FOES, STATIONS, roadLayout, outfitOf } from "./brawler-contract.js?r=w5";
+import { openStrike } from "./strike-recall.js?r=w5";
+import { createBrawlerHud } from "../layouts/brawler-hud.js?r=w5";
+import { paintRoad } from "../layouts/city.js?r=w5";
+import { makeControls } from "../input/controls.js?r=w5";
+import { FIGHTERS, playFighter, faceFighter, lockBusy, lockAttack, fitFighterBody, showWreckerBreak } from "../motion/fighter-anims.js?r=w5";
+import { bootCombat, tickCombat, pressPunch, pressKick, tryJump, tickJump, combatBusy, landHero } from "./brawler-combat.js?r=w5";
+import { metricItems } from "../phaser/preload.js?r=w5";
+import { THEMES } from "../look/palettes.js?r=w5";
+import { clearStyle } from "../look/type.js?r=w5";
+import { sfx } from "../audio/sfx.js?r=w5";
+import { sparkBurst, flash, shake, fadeTo, xpPop } from "../motion/transitions.js?r=w5";
+import { pickMetricItem } from "../systems/queue.js?r=w5";
+import { homeOf } from "../systems/save.js?r=w5";
 
 const foeOf = (id) => FOES.find((f) => f.id === id);
 
@@ -393,7 +393,7 @@ export class BrawlerScene extends Phaser.Scene {
     if (target.kind === "boss" && target.layers > 1) {
       target.layers -= 1;
       target.hp = 1;
-      target.lastHit = this.time.now + 2000;
+      target.lastHit = this.time.now + 700;
       target.atkGen = (target.atkGen || 0) + 1;
       this.rockets.clear(true, true);
       this.invulnUntil = this.time.now + 1600;
@@ -495,42 +495,36 @@ export class BrawlerScene extends Phaser.Scene {
   driveBoss(e, now, spec) {
     const dist = Phaser.Math.Distance.Between(e.x, e.y, this.hero.x, this.hero.laneY);
     const dx = Math.sign(this.hero.x - e.x) || -1;
-    const punchR = 300;
+    const punchR = 520;
     e.y = Phaser.Math.Clamp(this.road.floorY, this.road.laneMin, this.road.laneMax);
-    if (this.overlay || now < this.invulnUntil || (e.busyUntil && now < e.busyUntil)) {
+    if (this.overlay || (e.busyUntil && now < e.busyUntil)) {
       e.setVelocity(0);
       if (!(e.busyUntil && now < e.busyUntil)) playFighter(e, "idle");
       return;
     }
-    if (dist < punchR) {
+    if (dist <= punchR) {
       e.setVelocity(0);
-      if (now - (e.lastHit || 0) > 2000) {
+      if (now - (e.lastHit || 0) > 1800) {
         e.lastHit = now;
         const gen = e.atkGen || 0;
-        lockBusy(e, "punch");
-        this.time.delayedCall(360, () => {
+        lockAttack(e, "punch");
+        this.time.delayedCall(280, () => {
           if (!this.sys.isActive() || !e.active || e.hp <= 0 || gen !== e.atkGen) return;
-          if (this.time.now < this.invulnUntil) return;
+          if (this.overlay || this.time.now < this.invulnUntil) return;
           const d = Phaser.Math.Distance.Between(e.x, e.y, this.hero.x, this.hero.laneY);
-          if (d < punchR + 50 && !this.hero.air) this.hurtHero(1);
+          if (d < punchR + 80 && !this.hero.air) this.hurtHero(1);
         });
       } else playFighter(e, "idle");
       return;
     }
-    if (dist > 780) {
-      e.setVelocity(dx * e.speed, 0);
-      playFighter(e, "run");
-      return;
-    }
-    e.setVelocity(0);
-    playFighter(e, "idle");
-    if (now - (e.lastHit || 0) > 2800) {
-      e.lastHit = now;
+    e.setVelocity(dx * Math.max(90, e.speed * 1.4), 0);
+    playFighter(e, "run");
+    if (dist > 720 && now - (e.lastRocket || 0) > 2800) {
+      e.lastRocket = now;
       const gen = e.atkGen || 0;
-      lockBusy(e, "punch");
-      this.time.delayedCall(420, () => {
+      this.time.delayedCall(180, () => {
         if (!this.sys.isActive() || !e.active || e.hp <= 0 || gen !== e.atkGen) return;
-        if (this.overlay || this.time.now < this.invulnUntil) return;
+        if (this.overlay) return;
         this.spawnRocket(e, this.hero.laneY);
       });
     }
@@ -599,7 +593,7 @@ export class BrawlerScene extends Phaser.Scene {
     if (!g) return;
     g.clear();
     if (e.kind === "boss") {
-      const n = e.maxLayers || 6;
+      const n = e.maxLayers || 5;
       const left = e.layers ?? n;
       const w = 18;
       const gap = 6;
@@ -630,7 +624,7 @@ export class BrawlerScene extends Phaser.Scene {
     e.body.setAllowGravity(false);
     fitFighterBody(e, kit);
     if (spec.kind === "boss") {
-      e.layers = spec.layers || 6;
+      e.layers = spec.layers || 5;
       e.maxLayers = e.layers;
       e.hp = 1;
       e.maxHp = e.maxLayers;
@@ -640,7 +634,7 @@ export class BrawlerScene extends Phaser.Scene {
     }
     e.speed = spec.speed;
     e.atkGen = 0;
-    e.lastHit = this.time.now + (spec.kind === "boss" ? 4200 : 500 + Math.random() * 400);
+    e.lastHit = this.time.now + (spec.kind === "boss" ? 900 : 500 + Math.random() * 400);
     e.hpBar = this.add.graphics().setDepth(y + 2);
     playFighter(e, "idle");
     faceFighter(e, this.hero.x - e.x, kit);
