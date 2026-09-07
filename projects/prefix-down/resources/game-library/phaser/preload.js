@@ -36,8 +36,8 @@ export function preloadLibrary(scene) {
   for (const spec of Object.values(FIGHTERS)) {
     for (const [act, file] of Object.entries(spec.files)) {
       scene.load.spritesheet(`${spec.id}-${act}`, asset(`${SOF}/${file}`), {
-        frameWidth: FIGHT_FRAME.w,
-        frameHeight: FIGHT_FRAME.h,
+        frameWidth: spec.frame?.w || FIGHT_FRAME.w,
+        frameHeight: spec.frame?.h || FIGHT_FRAME.h,
       });
     }
   }

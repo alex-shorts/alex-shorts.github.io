@@ -132,6 +132,23 @@ export const FIGHTERS = {
     frames: { idle: 6, run: 8, jump: 6, fall: 6, djump: 4, jab: 3, punch: 5, smash: 5, kick: 5, jumpkick: 3, divekick: 4, hit: 2, death: 4 },
     rates: { idle: 10, run: 14, jump: 10, fall: 10, djump: 14, jab: 14, punch: 16, smash: 12, kick: 16, jumpkick: 14, divekick: 14, hit: 10, death: 8 },
   },
+  wrecker: {
+    id: "wrecker",
+    name: "Wrecker",
+    faces: 1,
+    scale: 6,
+    frame: { w: 192, h: 176 },
+    body: { w: 70, h: 48, ox: 61, oy: 124 },
+    files: {
+      idle: "wrecker/wrecker-idle.png",
+      run: "wrecker/wrecker-walk.png",
+      punch: "wrecker/wrecker-punch.png",
+      break: "wrecker/wrecker-break.png",
+    },
+    sheet: { jump: "idle", fall: "idle", kick: "punch", death: "break", jab: "punch", smash: "punch", jumpkick: "punch", divekick: "punch", djump: "idle", hit: "break" },
+    frames: { idle: 6, run: 6, jump: 6, fall: 6, djump: 4, jab: 5, punch: 5, smash: 5, kick: 5, jumpkick: 5, divekick: 5, hit: 2, death: 2, break: 6 },
+    rates: { idle: 8, run: 10, jump: 8, fall: 8, djump: 10, jab: 12, punch: 12, smash: 10, kick: 12, jumpkick: 12, divekick: 12, hit: 10, death: 8, break: 1 },
+  },
 };
 
 export const OUTFITS = ["ash", "nox", "sol"];
@@ -165,6 +182,8 @@ export function registerFighterAnims(scene) {
             })
           : act === "smash" && spec.files?.jump && !spec.files?.smash
             ? scene.anims.generateFrameNumbers(sheet, { start: 0, end: 1 })
+          : act === "death" && spec.id === "wrecker"
+            ? scene.anims.generateFrameNumbers(sheet, { start: 4, end: 5 })
             : scene.anims.generateFrameNumbers(sheet, { start: 0, end: n - 1 });
       scene.anims.create({
         key,
@@ -189,6 +208,14 @@ export function fitFighterBody(sprite, spec) {
   sprite.body?.setSize(b.w, b.h).setOffset(b.ox, b.oy);
 }
 
+export function showWreckerBreak(sprite) {
+  const lost = (sprite.maxLayers || 6) - (sprite.layers || 0);
+  const fr = Math.max(1, Math.min(5, lost));
+  sprite.anims?.stop();
+  if (sprite.scene?.textures?.exists("wrecker-break")) sprite.setTexture("wrecker-break", fr);
+  lockFighterSize(sprite);
+}
+
 export function lockFighterSize(sprite) {
   const spec = FIGHTERS[sprite.fighterId];
   const s = sprite.baseScale || spec?.scale || 6;
@@ -204,6 +231,10 @@ export function faceFighter(sprite, dirX, spec) {
 
 export function playFighter(sprite, act) {
   const id = sprite.fighterId || "ash";
+  if (sprite.maxLayers && sprite.layers < sprite.maxLayers && (act === "idle" || act === "run")) {
+    showWreckerBreak(sprite);
+    return;
+  }
   const key = `${id}-${act}`;
   const now = sprite.scene.time.now;
   const attacking = sprite.attackUntil && now < sprite.attackUntil;

@@ -317,11 +317,11 @@ function strikeNow(scene, move) {
     return;
   }
   hitstop(scene, move.ender ? HITSTOP + 30 : HITSTOP);
-  if (target.hp > 1) {
-    scene.chip(target, move.ender ? 1.35 : 1);
+  if (target.kind === "boss" || target.hp <= 1) {
+    scene.askKo(target);
     return;
   }
-  scene.askKo(target);
+  scene.chip(target, move.ender ? 1.35 : 1);
 }
 
 function hitstop(scene, ms) {

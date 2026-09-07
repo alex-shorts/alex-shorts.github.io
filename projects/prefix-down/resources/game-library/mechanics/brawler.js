@@ -3,7 +3,7 @@ import { openStrike } from "./strike-recall.js";
 import { createBrawlerHud } from "../layouts/brawler-hud.js";
 import { paintRoad } from "../layouts/city.js";
 import { makeControls } from "../input/controls.js";
-import { FIGHTERS, playFighter, faceFighter, lockBusy, fitFighterBody } from "../motion/fighter-anims.js";
+import { FIGHTERS, playFighter, faceFighter, lockBusy, fitFighterBody, showWreckerBreak } from "../motion/fighter-anims.js";
 import { bootCombat, tickCombat, pressPunch, pressKick, tryJump, tickJump, combatBusy, landHero } from "./brawler-combat.js";
 import { metricItems } from "../phaser/preload.js";
 import { THEMES } from "../look/palettes.js";
@@ -101,6 +101,12 @@ export class BrawlerScene extends Phaser.Scene {
 
     this.hud.toast("WALK THE ROAD");
     this.maybeAutotest();
+    const q = new URLSearchParams(location.search);
+    if (q.has("boss")) {
+      this.waveI = Math.max(0, STATIONS.length - 1);
+      const st = STATIONS[this.waveI];
+      if (st) this.hero.x = st.x - 520;
+    }
   }
 
   maybeAutotest() {
@@ -211,7 +217,8 @@ export class BrawlerScene extends Phaser.Scene {
     this.goT.setText("");
     this.invulnUntil = this.time.now + 1400;
     this.hud.setWave(this.waveI + 1, STATIONS.length);
-    this.hud.toast(`ROUND ${this.waveI + 1}`);
+    const boss = st.foes.some((f) => f[0] === "wrecker");
+    this.hud.toast(boss ? "WRECKER" : `ROUND ${this.waveI + 1}`);
     sfx.alert();
     const lane = (i) => Phaser.Math.Clamp(this.road.floorY + (i - 1) * 48, this.road.laneMin, this.road.laneMax);
     st.foes.forEach(([id, dx, li]) => this.spawnFoe(id, st.x + dx, lane(li)));
@@ -311,7 +318,7 @@ export class BrawlerScene extends Phaser.Scene {
     this.foes.getChildren().forEach((e) => {
       if (!e.active) return;
       e.setDepth(e.y);
-      if (e.hpBar) e.hpBar.setPosition(e.x, e.y - 56 * (e.scaleY || 6)).setDepth(e.y + 2);
+      if (e.hpBar) e.hpBar.setPosition(e.x, e.y - (e.kind === "boss" ? 168 * (e.scaleY || 6) : 56 * (e.scaleY || 6))).setDepth(e.y + 2);
     });
     this.slices.getChildren().forEach((s) => s.active && s.setDepth(s.y + 1));
     this.rockets?.getChildren().forEach((r) => r.active && r.setDepth(r.y + 4));
@@ -331,7 +338,8 @@ export class BrawlerScene extends Phaser.Scene {
     let best = null;
     let bestD = range + 1;
     this.aliveFoes().forEach((e) => {
-      if (Math.abs(e.y - this.hero.laneY) > 14 * 6) return;
+      const slack = e.kind === "boss" ? 420 : 14 * 6;
+      if (Math.abs(e.y - this.hero.laneY) > slack) return;
       const d = Phaser.Math.Distance.Between(this.hero.x, this.hero.laneY, e.x, e.y);
       if (d < bestD) {
         bestD = d;
@@ -381,6 +389,22 @@ export class BrawlerScene extends Phaser.Scene {
 
   finishKo(target) {
     if (!target?.active) return;
+    if (target.kind === "boss" && target.layers > 1) {
+      target.layers -= 1;
+      target.hp = 1;
+      lockBusy(target, "hit");
+      showWreckerBreak(target);
+      sparkBurst(this, target.x, target.y - 80 * (target.scaleY || 6), 14);
+      flash(this, 0xf0c040, 80);
+      shake(this, 180, 0.012);
+      sfx.hit();
+      xpPop(this, target.x, target.y - 96 * (target.scaleY || 6), `${target.layers} LEFT`);
+      this.combo += 1;
+      this.showCombo();
+      this.paintFoeHp(target);
+      this.hud.toast(`${target.layers} LAYER${target.layers === 1 ? "" : "S"}`);
+      return;
+    }
     lockBusy(target, "death");
     sparkBurst(this, target.x, target.y - 48 * (target.scaleY || 6), 14);
     flash(this, 0xf0c040, 80);
@@ -435,7 +459,8 @@ export class BrawlerScene extends Phaser.Scene {
     this.aliveFoes().forEach((e) => {
       const spec = FIGHTERS[e.fighterId] || FIGHTERS.punk;
       faceFighter(e, this.hero.x - e.x, spec);
-      if (e.kind === "gunner") this.driveGunner(e, now, spec);
+      if (e.kind === "boss") this.driveBoss(e, now, spec);
+      else if (e.kind === "gunner") this.driveGunner(e, now, spec);
       else this.driveMelee(e, now, spec);
       e.y = Phaser.Math.Clamp(e.y, this.road.laneMin, this.road.laneMax);
     });
@@ -454,6 +479,45 @@ export class BrawlerScene extends Phaser.Scene {
     } else {
       e.setVelocity(Math.sign(this.hero.x - e.x) * e.speed, Math.sign(this.hero.laneY - e.y) * 60);
       playFighter(e, "run");
+    }
+  }
+
+  driveBoss(e, now, spec) {
+    const dist = Phaser.Math.Distance.Between(e.x, e.y, this.hero.x, this.hero.laneY);
+    const dx = Math.sign(this.hero.x - e.x) || -1;
+    const punchR = 300;
+    e.y = Phaser.Math.Clamp(this.road.floorY, this.road.laneMin, this.road.laneMax);
+    if (dist < punchR) {
+      e.setVelocity(0);
+      if (now - (e.lastHit || 0) > 1600) {
+        e.lastHit = now;
+        lockBusy(e, "punch");
+        this.time.delayedCall(300, () => {
+          if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
+          const d = Phaser.Math.Distance.Between(e.x, e.y, this.hero.x, this.hero.laneY);
+          if (d < punchR + 50 && !this.hero.air) this.hurtHero(1);
+        });
+      } else playFighter(e, "idle");
+      return;
+    }
+    if (dist > 720) {
+      e.setVelocity(dx * e.speed, 0);
+      playFighter(e, "run");
+      return;
+    }
+    e.setVelocity(0);
+    playFighter(e, "idle");
+    if (now - (e.lastHit || 0) > 2200) {
+      e.lastHit = now;
+      lockBusy(e, "punch");
+      this.time.delayedCall(180, () => {
+        if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
+        this.spawnRocket(e, this.hero.laneY);
+        this.time.delayedCall(160, () => {
+          if (!this.sys.isActive() || !e.active || e.hp <= 0) return;
+          this.spawnRocket(e, Phaser.Math.Clamp(this.hero.laneY + 48, this.road.laneMin, this.road.laneMax));
+        });
+      });
     }
   }
 
@@ -481,14 +545,15 @@ export class BrawlerScene extends Phaser.Scene {
     }
   }
 
-  spawnRocket(e) {
+  spawnRocket(e, laneY) {
     const dir = Math.sign(this.hero.x - e.x) || -1;
-    const r = this.add.sprite(e.x + dir * 128, e.y - 210, "rocket-fly", 0);
+    const lift = e.kind === "boss" ? 520 : 210;
+    const r = this.add.sprite(e.x + dir * (e.kind === "boss" ? 220 : 128), e.y - lift, "rocket-fly", 0);
     r.setOrigin(0.5, 0.5).setScale(4);
     r.setFlipX(dir < 0);
     r.dir = dir;
-    r.spd = 476;
-    r.laneY = e.y;
+    r.spd = e.kind === "boss" ? 520 : 476;
+    r.laneY = laneY ?? e.y;
     r.anims?.play("rocket-fly", true);
     r.setDepth(e.y + 4);
     this.rockets.add(r);
@@ -518,6 +583,20 @@ export class BrawlerScene extends Phaser.Scene {
     const g = e.hpBar;
     if (!g) return;
     g.clear();
+    if (e.kind === "boss") {
+      const n = e.maxLayers || 6;
+      const left = e.layers ?? n;
+      const w = 18;
+      const gap = 6;
+      const total = n * w + (n - 1) * gap;
+      let x = -total / 2;
+      for (let i = 0; i < n; i++) {
+        g.fillStyle(i < left ? 0xf0c040 : 0x302010, 1);
+        g.fillRect(x, -6, w, 12);
+        x += w + gap;
+      }
+      return;
+    }
     g.fillStyle(0x101018, 0.85);
     g.fillRect(-40, -4, 80, 10);
     g.fillStyle(0xe03838, 1);
@@ -535,8 +614,15 @@ export class BrawlerScene extends Phaser.Scene {
     e.baseScale = spec.scale;
     e.body.setAllowGravity(false);
     fitFighterBody(e, kit);
-    e.hp = spec.hp;
-    e.maxHp = spec.hp;
+    if (spec.kind === "boss") {
+      e.layers = spec.layers || 6;
+      e.maxLayers = e.layers;
+      e.hp = 1;
+      e.maxHp = e.maxLayers;
+    } else {
+      e.hp = spec.hp;
+      e.maxHp = spec.hp;
+    }
     e.speed = spec.speed;
     e.lastHit = this.time.now + 500 + Math.random() * 400;
     e.hpBar = this.add.graphics().setDepth(y + 2);
