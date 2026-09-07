@@ -19,6 +19,7 @@ export function createBrawlerHud(scene) {
     .setOrigin(1, 0)
     .setScrollFactor(0)
     .setDepth(3002);
+  const bossG = scene.add.graphics().setScrollFactor(0).setDepth(3003);
   const toastT = scene.add
     .text(W / 2, 108, "", { ...clearStyle("#f0c040", 40), fontStyle: "800" })
     .setOrigin(0.5, 0)
@@ -32,6 +33,20 @@ export function createBrawlerHud(scene) {
     },
     setWave(n, total) {
       wave.setText("ROUND " + n + "/" + total);
+    },
+    setBoss(left, max) {
+      bossG.clear();
+      if (!max) return;
+      const w = 38;
+      const h = 16;
+      const gap = 8;
+      const total = max * w + (max - 1) * gap;
+      let x = W - 24 - total;
+      for (let i = 0; i < max; i++) {
+        bossG.fillStyle(i < left ? 0xf0c040 : 0x302010, 1);
+        bossG.fillRect(x, 64, w, h);
+        x += w + gap;
+      }
     },
     setFighter(label, id) {
       name.setText(String(label || HERO.name).toUpperCase());
