@@ -24,6 +24,7 @@
     loadObjectArtifact,
     objectAccessionLabel,
     hangObituaryOnPerson,
+    hangObjectOnPerson,
     objectPanelLabel,
     loadPeopleIndex,
     neighborIds,
@@ -647,7 +648,21 @@ function dnaShareFor(id) {
 }
 
 function artifactCount(d) {
-  return (d.objectIds?.length || 0) + (d.media?.length || 0);
+  const idx = window.OBJECTS_INDEX || {};
+  const people = getPeople();
+  let n = 0;
+  for (const oid of d.objectIds || []) {
+    const row = idx[oid];
+    const obj = {
+      type: row?.type,
+      owner: row?.owner,
+      subjectId: row?.subject_id || row?.owner,
+      personIds: row?.person_ids,
+      title: row?.title,
+    };
+    if (hangObjectOnPerson(obj, d.id, people)) n += 1;
+  }
+  return n + (d.media?.length || 0);
 }
 
 function render() {
@@ -1177,7 +1192,7 @@ async function fillArtifacts(person) {
     if (!objectCache.has(oid)) objectCache.set(oid, await loadObjectArtifact(oid));
     const obj = objectCache.get(oid);
     if (!obj || (!obj.bodyText && !obj.photos?.length && !obj.audio && !obj.videos?.length)) continue;
-    if (!hangObituaryOnPerson(obj, person.id, getPeople())) continue;
+    if (!hangObjectOnPerson(obj, person.id, getPeople())) continue;
     objects.push(obj);
   }
 
@@ -1495,7 +1510,7 @@ async function boot() {
         "object tiles keep FT-#### for database lookup"
       );
       {
-        const { hangObituaryOnPerson, objectPanelLabel } = window.ShareData;
+        const { hangObituaryOnPerson, hangObjectOnPerson, objectPanelLabel } = window.ShareData;
         const full = {
           george_rudd: {
             id: "george_rudd",
@@ -1539,6 +1554,20 @@ async function boot() {
         console.assert(
           /father|mother|parent/i.test(objectPanelLabel(obit, pruned.marcy_parsons, pruned)),
           "off-tree obit names the connection"
+        );
+        const rudd = {
+          carl_j_rudd: { id: "carl_j_rudd", name: "Carl J. Rudd" },
+          dagmar_maria_rud: { id: "dagmar_maria_rud", name: "Dagmar Maria Rud" },
+        };
+        const map = {
+          type: "place",
+          owner: "carl_j_rudd",
+          personIds: ["carl_j_rudd", "dagmar_maria_rud"],
+        };
+        console.assert(hangObjectOnPerson(map, "carl_j_rudd", rudd), "place hangs on owner");
+        console.assert(
+          !hangObjectOnPerson(map, "dagmar_maria_rud", rudd),
+          "place must not hang on a household child"
         );
       }
       console.assert(

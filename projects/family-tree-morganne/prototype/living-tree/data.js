@@ -199,6 +199,9 @@
     for (const oid of objectIds || []) {
       const row = idx[oid];
       if (!row?.dir || !row.photos?.length) continue;
+      const type = String(row.type || inferTypeFromDir(row.dir) || "").toLowerCase();
+      // Place maps / landscapes are not a face. Hang them on owner in the panel.
+      if (type === "place") continue;
       for (const rel of row.photos) {
         const n = String(rel).toLowerCase();
         if (!/\.(jpe?g|png|webp|gif)(\?|$)/i.test(n)) continue;
@@ -316,6 +319,7 @@
     if (/deed|probate|land/.test(d)) return "deed";
     if (/military|war-|veteran|roster/.test(d)) return "military";
     if (/church|baptism|pew/.test(d)) return "church";
+    if (/ekonom|kartan|landscape|soldattorp|homestead/.test(d)) return "place";
     return "";
   }
 
@@ -474,6 +478,27 @@
     return true;
   }
 
+  function placeOwnerId(obj) {
+    return String(obj?.owner || obj?.subjectId || obj?.subject_id || "").trim();
+  }
+
+  /**
+   * Place packs (maps, soldattorp, church yards) hang on `owner` — the builder
+   * or the person the site is about. Household names in person_ids stay for
+   * search; they do not get the map on their card.
+   */
+  function hangPlaceOnPerson(obj, personId, people) {
+    if (String(obj?.type || "").toLowerCase() !== "place") return true;
+    const ownerId = placeOwnerId(obj);
+    if (!ownerId) return true;
+    if (people[ownerId]) return personId === ownerId;
+    return true;
+  }
+
+  function hangObjectOnPerson(obj, personId, people) {
+    return hangObituaryOnPerson(obj, personId, people) && hangPlaceOnPerson(obj, personId, people);
+  }
+
   function objectPanelLabel(obj, person, people) {
     if (String(obj?.type || "").toLowerCase() !== "obituary") {
       return objectAccessionLabel(obj);
@@ -524,6 +549,28 @@
     console.assert(
       /father|mother|parent/i.test(objectPanelLabel(obit, pruned.marcy_parsons, pruned)),
       "off-tree obit names the connection"
+    );
+  }
+
+  {
+    const rudd = {
+      carl_j_rudd: { id: "carl_j_rudd", name: "Carl J. Rudd" },
+      dagmar_maria_rud: { id: "dagmar_maria_rud", name: "Dagmar Maria Rud" },
+    };
+    const map = {
+      type: "place",
+      owner: "carl_j_rudd",
+      personIds: ["carl_j_rudd", "dagmar_maria_rud"],
+    };
+    console.assert(hangObjectOnPerson(map, "carl_j_rudd", rudd), "place hangs on owner");
+    console.assert(
+      !hangObjectOnPerson(map, "dagmar_maria_rud", rudd),
+      "place must not hang on a household child"
+    );
+    const childOnly = { dagmar_maria_rud: rudd.dagmar_maria_rud };
+    console.assert(
+      hangObjectOnPerson(map, "dagmar_maria_rud", childOnly),
+      "place hangs on kin when owner has no node"
     );
   }
 
@@ -1135,7 +1182,8 @@
     const rawTitle = String(meta.title || row?.title || "").trim();
     const title = rawTitle && !isAccessionId(rawTitle) ? rawTitle : humanizeObjectDir(dirName) || objectId;
     const personIds = yamlIds(meta.person_ids || row?.person_ids);
-    const subjectId = String(meta.subject_id || meta.owner || row?.subject_id || "").trim();
+    const owner = String(meta.owner || row?.owner || "").trim();
+    const subjectId = String(meta.subject_id || owner || row?.subject_id || "").trim();
 
     return {
       id: objectId,
@@ -1143,6 +1191,7 @@
       title,
       type,
       personIds,
+      owner,
       subjectId,
       subject_id: subjectId,
       sourceUrl: meta.source_url || "",
@@ -1275,6 +1324,7 @@
     objectListTitle,
     objectListMeta,
     hangObituaryOnPerson,
+    hangObjectOnPerson,
     objectPanelLabel,
     maidenFrom,
     personMediaArtifacts,

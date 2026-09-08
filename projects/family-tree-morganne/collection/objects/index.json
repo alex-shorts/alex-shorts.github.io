@@ -49,7 +49,8 @@
         "george_rudd",
         "clause_rudd",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "owner": "dan_rudd"
     },
     "FT-0576": {
       "dir": "FT-0576-riverside-orange-empire-citrus-landscape",
@@ -61,7 +62,9 @@
         "marion_orciere",
         "theodore_m_orciere",
         "rachel_g_orciere"
-      ]
+      ],
+      "subject_id": "marion_orciere",
+      "owner": "marion_orciere"
     },
     "FT-0577": {
       "dir": "FT-0577-crestlawn-riverside-orciere-burials",
@@ -73,7 +76,9 @@
         "marion_orciere",
         "theodore_m_orciere",
         "rachel_g_orciere"
-      ]
+      ],
+      "subject_id": "theodore_m_orciere",
+      "owner": "theodore_m_orciere"
     },
     "FT-0455": {
       "dir": "FT-0455-hbc-edmonton-downtown-rudd-years",
@@ -85,7 +90,8 @@
         "clause_rudd",
         "george_rudd",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0497": {
       "dir": "FT-0497-mnopedia-swedish-minnesota-farm-landscape",
@@ -96,7 +102,9 @@
       "person_ids": [
         "clause_rudd",
         "george_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0498": {
       "dir": "FT-0498-great-plains-dakota-swedish-farm-landscape",
@@ -107,7 +115,9 @@
       "person_ids": [
         "clause_rudd",
         "george_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0501": {
       "dir": "FT-0501-corona-eighth-and-joy-market-landscape",
@@ -119,7 +129,9 @@
         "george_rudd",
         "clause_rudd",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "subject_id": "george_rudd",
+      "owner": "george_rudd"
     },
     "FT-0502": {
       "dir": "FT-0502-la-restaurant-row-encore",
@@ -129,7 +141,9 @@
       "title": "L.A. Restaurant Row — The Encore on La Cienega",
       "person_ids": [
         "george_rudd"
-      ]
+      ],
+      "subject_id": "george_rudd",
+      "owner": "george_rudd"
     },
     "FT-0590": {
       "dir": "FT-0590-westmount-126th-boarding-landscape",
@@ -141,7 +155,9 @@
         "clause_rudd",
         "della_elizabeth_rudd",
         "george_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0591": {
       "dir": "FT-0591-corona-lemon-boom-1930s-arrival",
@@ -153,7 +169,9 @@
         "george_rudd",
         "clause_rudd",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "subject_id": "george_rudd",
+      "owner": "george_rudd"
     },
     "FT-0592": {
       "dir": "FT-0592-riverside-coachman-university-avenue",
@@ -163,7 +181,9 @@
       "title": "Riverside University Avenue — The Coachman building landscape",
       "person_ids": [
         "george_rudd"
-      ]
+      ],
+      "subject_id": "george_rudd",
+      "owner": "george_rudd"
     },
     "FT-0839": {
       "dir": "FT-0839-corona-daily-independent-rudd-grocery-1939",
@@ -175,7 +195,8 @@
         "clause_rudd",
         "della_elizabeth_rudd",
         "george_rudd"
-      ]
+      ],
+      "owner": "george_rudd"
     },
     "FT-0840": {
       "dir": "FT-0840-1931-border-crossing-search-negative",
@@ -202,7 +223,8 @@
         "george_rudd",
         "clause_rudd",
         "dan_rudd"
-      ]
+      ],
+      "owner": "george_rudd"
     },
     "FT-0848": {
       "dir": "FT-0848-castor-edmonton-claus-della-george",
@@ -216,7 +238,8 @@
         "clause_rudd",
         "della_elizabeth_rudd",
         "george_rudd"
-      ]
+      ],
+      "owner": "george_rudd"
     },
     "FT-0015": {
       "dir": "FT-0015-death-notice-isaac-olsen-fag-scan",
@@ -284,7 +307,8 @@
         "della_elizabeth_rudd",
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "della_elizabeth_rudd"
     },
     "FT-0456": {
       "dir": "FT-0456-olivewood-memorial-park-claus-della-burial",
@@ -295,7 +319,8 @@
       "person_ids": [
         "della_elizabeth_rudd",
         "clause_rudd"
-      ]
+      ],
+      "owner": "della_elizabeth_rudd"
     },
     "FT-0503": {
       "dir": "FT-0503-lyman-county-sd-homestead-landscape",
@@ -307,7 +332,9 @@
         "della_elizabeth_rudd",
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "subject_id": "della_elizabeth_rudd",
+      "owner": "della_elizabeth_rudd"
     },
     "FT-0504": {
       "dir": "FT-0504-holden-alberta-homestead-landscape",
@@ -319,7 +346,9 @@
         "isaac_olsen",
         "jennie_olsen",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "subject_id": "della_elizabeth_rudd",
+      "owner": "della_elizabeth_rudd"
     },
     "FT-0511": {
       "dir": "FT-0511-1911-census-strathcona-isaac-olson",
@@ -334,7 +363,8 @@
         "carl_leonard_olson",
         "pearl_olson_williams",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "owner": "isaac_olsen"
     },
     "FT-0596": {
       "dir": "FT-0596-fag-family-grid-mabel-victoria-olson-sizer",
@@ -347,7 +377,8 @@
         "isaac_olsen",
         "jennie_olsen",
         "della_elizabeth_rudd"
-      ]
+      ],
+      "owner": "mabel_victoria_olson_sizer"
     },
     "FT-0843": {
       "dir": "FT-0843-lyman-delayed-birth-della-olson-1902",
@@ -362,7 +393,8 @@
         "della_elizabeth_rudd",
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "della_elizabeth_rudd"
     },
     "FT-0847": {
       "dir": "FT-0847-jennie-olson-agnes-seline-clippings",
@@ -381,7 +413,8 @@
         "william_theodore_olson",
         "anna_augusta_olson_mclachlin",
         "pearl_olson_williams"
-      ]
+      ],
+      "owner": "jennie_olsen"
     },
     "FT-0013": {
       "dir": "FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008",
@@ -417,7 +450,8 @@
         "carl_leonard_olson",
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "carl_leonard_olson"
     },
     "FT-0488": {
       "dir": "FT-0488-paa-death-index-william-theodore-olson-1963",
@@ -428,7 +462,8 @@
       "person_ids": [
         "william_theodore_olson",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "william_theodore_olson"
     },
     "FT-0509": {
       "dir": "FT-0509-1900-census-lyman-sd-isaac-olson",
@@ -443,7 +478,8 @@
         "anna_augusta_olson_mclachlin",
         "mabel_victoria_olson_sizer",
         "carl_leonard_olson"
-      ]
+      ],
+      "owner": "isaac_olsen"
     },
     "FT-0523": {
       "dir": "FT-0523-fag-negative-jennie-l-rudd-adult",
@@ -454,7 +490,8 @@
       "person_ids": [
         "jennie_l_rudd",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "jennie_l_rudd"
     },
     "FT-0543": {
       "dir": "FT-0543-interment-mountain-view-olsen-plot",
@@ -465,7 +502,9 @@
       "person_ids": [
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "subject_id": "isaac_olsen",
+      "owner": "isaac_olsen"
     },
     "FT-0552": {
       "dir": "FT-0552-fag-gravesite-isaac-jennie-olsen-mountain-view",
@@ -476,7 +515,8 @@
       "person_ids": [
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "isaac_olsen"
     },
     "FT-0554": {
       "dir": "FT-0554-fag-family-grid-william-theodore-olson",
@@ -488,7 +528,8 @@
         "william_theodore_olson",
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "william_theodore_olson"
     },
     "FT-0555": {
       "dir": "FT-0555-fag-bio-carl-leonard-olson-bc-pointer",
@@ -500,7 +541,8 @@
         "carl_leonard_olson",
         "isaac_olsen",
         "jennie_olsen"
-      ]
+      ],
+      "owner": "carl_leonard_olson"
     },
     "FT-0480": {
       "dir": "FT-0480-bc-death-anna-augusta-mclachlin-1970",
@@ -521,7 +563,8 @@
       "title": "Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0454": {
       "dir": "FT-0454-hbc-wholesale-claus-rudd-edmonton-trade",
@@ -531,7 +574,8 @@
       "title": "What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0493": {
       "dir": "FT-0493-hogman-soldatnamn-andersson-rudd",
@@ -541,7 +585,8 @@
       "title": "Högman — Swedish soldatnamn: Andersson patronymic vs soldier surname",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0494": {
       "dir": "FT-0494-aberg-soldiers-surnames-sweden-1984",
@@ -551,7 +596,8 @@
       "title": "Åberg 1984 — Soldiers' surnames in Sweden (War Archives historian)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0495": {
       "dir": "FT-0495-rudd-class-soldatnamn-rude-rote",
@@ -561,7 +607,8 @@
       "title": "Rudd-class soldier names — rote Rude / Rudha (example, not this family)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0496": {
       "dir": "FT-0496-swedish-service-length-not-two-year-swap",
@@ -571,7 +618,8 @@
       "title": "Swedish service length — allotted career vs 1901 conscription (not a 2-year swap)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0500": {
       "dir": "FT-0500-revillon-edmonton-claus-wholesale",
@@ -581,7 +629,9 @@
       "title": "Revillon Frères Edmonton warehouse — Claus’s 1921 wholesale clerk job",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0506": {
       "dir": "FT-0506-1910-census-roberts-sd-carl-j-rud",
@@ -597,7 +647,8 @@
         "jennie_l_rudd",
         "hattie_a_rudd",
         "carl_h_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0508": {
       "dir": "FT-0508-elca-baptism-klaus-jorgen-rud-1893",
@@ -609,7 +660,8 @@
         "clause_rudd",
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0510": {
       "dir": "FT-0510-wwi-draft-claus-yugue-rud-louisburg",
@@ -619,7 +671,8 @@
       "title": "WWI draft — Claus Yugue Rud, born Louisburg, Minnesota",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0525": {
       "dir": "FT-0525-olivewood-negative-fritz-jennie-rudd",
@@ -632,7 +685,8 @@
         "jennie_l_rudd",
         "clause_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "fritz_e_rudd"
     },
     "FT-0562": {
       "dir": "FT-0562-louisburg-platted-1887-birthplace",
@@ -642,7 +696,9 @@
       "title": "Louisburg platted 1887 — Claus's named birthplace hamlet (Lac qui Parle Co.)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0568": {
       "dir": "FT-0568-bellingham-perry-pioneer-railroad-landscape",
@@ -654,7 +710,9 @@
         "clause_rudd",
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0569": {
       "dir": "FT-0569-lqp-scandinavian-lutheran-home-church",
@@ -666,7 +724,8 @@
         "clause_rudd",
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0570": {
       "dir": "FT-0570-roberts-county-1892-homestead-landscape",
@@ -682,7 +741,9 @@
         "jennie_l_rudd",
         "hattie_a_rudd",
         "carl_h_rudd"
-      ]
+      ],
+      "subject_id": "carl_j_rudd",
+      "owner": "carl_j_rudd"
     },
     "FT-0587": {
       "dir": "FT-0587-henderson-edmonton-1921-claus-revillon",
@@ -692,7 +753,8 @@
       "title": "Henderson’s Edmonton City Directory 1921 — Rudd Claus T (Revillon Whol)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0588": {
       "dir": "FT-0588-revillon-edmonton-arrival-lore",
@@ -702,7 +764,9 @@
       "title": "Revillon Frères arrival lore — train banner and HBC rivalry (Edmonton)",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0589": {
       "dir": "FT-0589-edmonton-boardwalk-wholesale-district",
@@ -712,7 +776,9 @@
       "title": "Boardwalk Building — Revillon’s wholesale-district neighbor",
       "person_ids": [
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "clause_rudd",
+      "owner": "clause_rudd"
     },
     "FT-0593": {
       "dir": "FT-0593-hagfors-brukssamhalle-uddeholm-1873",
@@ -725,7 +791,9 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "albin_edward_rudd",
+      "owner": "albin_edward_rudd"
     },
     "FT-0594": {
       "dir": "FT-0594-varmland-emigration-wave-1880s",
@@ -738,7 +806,9 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "albin_edward_rudd",
+      "owner": "albin_edward_rudd"
     },
     "FT-0595": {
       "dir": "FT-0595-norra-rada-parish-landscape",
@@ -751,7 +821,9 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "clause_rudd"
-      ]
+      ],
+      "subject_id": "albin_edward_rudd",
+      "owner": "albin_edward_rudd"
     },
     "FT-0844": {
       "dir": "FT-0844-lqp-birth-register-claus-yngve-rudd",
@@ -765,7 +837,8 @@
         "clause_rudd",
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0846": {
       "dir": "FT-0846-carl-maria-rudd-studio-portraits",
@@ -783,7 +856,8 @@
         "jennie_l_rudd",
         "hattie_a_rudd",
         "clause_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0849": {
       "dir": "FT-0849-census-1941-albin-affidavit-claus",
@@ -806,7 +880,8 @@
         "carl_h_rudd",
         "dagmar_maria_rud",
         "alma_eugenia_rud"
-      ]
+      ],
+      "owner": "clause_rudd"
     },
     "FT-0507": {
       "dir": "FT-0507-numident-albin-edward-rudd-parents",
@@ -818,7 +893,8 @@
         "albin_edward_rudd",
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "albin_edward_rudd"
     },
     "FT-0512": {
       "dir": "FT-0512-norra-rada-c7-entry-128-rudstrom",
@@ -829,7 +905,8 @@
       "person_ids": [
         "carl_j_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0513": {
       "dir": "FT-0513-norra-rada-c7-july11-julia-maria-rudstrom",
@@ -840,7 +917,8 @@
       "person_ids": [
         "albin_edward_rudd",
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "albin_edward_rudd"
     },
     "FT-0514": {
       "dir": "FT-0514-norra-rada-c7-rudstrom-svensdotter-johan-alexander",
@@ -851,7 +929,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0515": {
       "dir": "FT-0515-norra-rada-hf-sida-97-risater",
@@ -862,7 +941,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0516": {
       "dir": "FT-0516-norra-rada-c7-albin-negative-july1887",
@@ -874,7 +954,8 @@
         "albin_edward_rudd",
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "albin_edward_rudd"
     },
     "FT-0518": {
       "dir": "FT-0518-fag-olivewood-negative-maria-rudd-death",
@@ -885,7 +966,8 @@
       "person_ids": [
         "maria_edison_rudd",
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "maria_edison_rudd"
     },
     "FT-0520": {
       "dir": "FT-0520-census-negative-carl-maria-1920-1930-roberts",
@@ -896,7 +978,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0521": {
       "dir": "FT-0521-emigration-negative-carl-rud-sweden-mn",
@@ -908,7 +991,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0652": {
       "dir": "FT-0652-norra-rada-hf-stjernsfors-negative-carl-maria",
@@ -919,7 +1003,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0653": {
       "dir": "FT-0653-norra-rada-hf-hagfors-bru-negative-carl-maria",
@@ -930,7 +1015,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0654": {
       "dir": "FT-0654-norra-rada-hf-emigration-rudstrom-lines",
@@ -942,7 +1028,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0661": {
       "dir": "FT-0661-1930-census-roberts-sd-carl-j-hugo",
@@ -953,7 +1040,8 @@
       "person_ids": [
         "carl_j_rudd",
         "carl_h_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0676": {
       "dir": "FT-0676-mnhs-negative-rudd-deaths",
@@ -965,7 +1053,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "fritz_e_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0677": {
       "dir": "FT-0677-norra-rada-gustafsdal-heading-negative",
@@ -976,7 +1065,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0678": {
       "dir": "FT-0678-norra-rada-b3-1887-utflyttning-negative",
@@ -988,7 +1078,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0679": {
       "dir": "FT-0679-norra-rada-b3-1888-1889-utflyttning-negative",
@@ -1000,7 +1091,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0686": {
       "dir": "FT-0686-maria-edison-rudd-death-window-negative",
@@ -1011,7 +1103,8 @@
       "person_ids": [
         "maria_edison_rudd",
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "maria_edison_rudd"
     },
     "FT-0693": {
       "dir": "FT-0693-open-emi-negative-rudd-1889",
@@ -1023,7 +1116,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0694": {
       "dir": "FT-0694-norra-rada-hf-stjernsfors-torps-negative",
@@ -1034,7 +1128,8 @@
       "person_ids": [
         "carl_j_rudd",
         "maria_edison_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0762": {
       "dir": "FT-0762-norra-rada-b3-1890-utflyttning-negative",
@@ -1046,7 +1141,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0763": {
       "dir": "FT-0763-norra-rada-b3-1891-utflyttning-negative",
@@ -1058,7 +1154,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0764": {
       "dir": "FT-0764-norra-rada-b3-1892-utflyttning-negative",
@@ -1070,7 +1167,8 @@
         "carl_j_rudd",
         "maria_edison_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0802": {
       "dir": "FT-0802-kila-ai24-p384-soldattorp-94",
@@ -1134,7 +1232,9 @@
         "albin_edward_rudd",
         "alma_eugenia_rud",
         "dagmar_maria_rud"
-      ]
+      ],
+      "subject_id": "carl_j_rudd",
+      "owner": "carl_j_rudd"
     },
     "FT-0816": {
       "dir": "FT-0816-kila-c-1887-albin-edvard",
@@ -1167,7 +1267,9 @@
         "albin_edward_rudd",
         "alma_eugenia_rud",
         "dagmar_maria_rud"
-      ]
+      ],
+      "subject_id": "carl_j_rudd",
+      "owner": "carl_j_rudd"
     },
     "FT-0818": {
       "dir": "FT-0818-ekonom-1966-hitta-ruderud-kila",
@@ -1185,7 +1287,9 @@
         "albin_edward_rudd",
         "alma_eugenia_rud",
         "dagmar_maria_rud"
-      ]
+      ],
+      "subject_id": "carl_j_rudd",
+      "owner": "carl_j_rudd"
     },
     "FT-0841": {
       "dir": "FT-0841-carl-maria-death-bracket-deep-pass",
@@ -1208,7 +1312,8 @@
       "title": "Langserud A I/11 Esbjörbyn — Anna b. 8 Nov 1826, Olof Andersson × Catharina Andersdotter",
       "person_ids": [
         "anna_ersdotter"
-      ]
+      ],
+      "owner": "anna_ersdotter"
     },
     "FT-0836": {
       "dir": "FT-0836-langserud-ci4-8nov-stina-caisa-negative",
@@ -1248,7 +1353,8 @@
       "title": "Långserud A I/10–11 Gisslebyn — no Erik Andersson × Märta Andersdotter HF (FT-0837)",
       "person_ids": [
         "anna_ersdotter"
-      ]
+      ],
+      "owner": "anna_ersdotter"
     },
     "FT-0807": {
       "dir": "FT-0807-svanskog-ci6-1826-nicolaus",
@@ -1352,7 +1458,8 @@
       "title": "Find a Grave — Carl J. Rud/Rudd death/burial negative (1869±5 Sweden)",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0519": {
       "dir": "FT-0519-roberts-sd-birth-andrew-rud-not-carl-j",
@@ -1362,7 +1469,8 @@
       "title": "Roberts Co., SD birth register — Andrew Rud × Gunhild (≠ Carl J. × Maria)",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0597": {
       "dir": "FT-0597-christina-dupray-fag-children-grid",
@@ -1375,7 +1483,8 @@
         "james_story_dupray",
         "frederick_miller_dupray",
         "thomas_dupray"
-      ]
+      ],
+      "owner": "christina_miller_dupray"
     },
     "FT-0651": {
       "dir": "FT-0651-norra-rada-hf-sida-47-rastrom-hafversbol",
@@ -1385,7 +1494,8 @@
       "title": "Norra Råda HF A I/20a sida 47 — Karl Johan Råström, Hafversbol",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0655": {
       "dir": "FT-0655-norra-rada-c7-p47-persson-collision",
@@ -1396,7 +1506,8 @@
       "person_ids": [
         "carl_j_rudd",
         "albin_edward_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0680": {
       "dir": "FT-0680-norra-rada-ai20b-sida-47-by-byberg",
@@ -1406,7 +1517,8 @@
       "title": "Norra Råda HF A I/20b sida 47 — 1/2 By (Byberg), not Gustafsdal",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0681": {
       "dir": "FT-0681-norra-rada-ai19a-gustafsdal-loose-notes",
@@ -1416,7 +1528,8 @@
       "title": "Norra Råda HF A I/19a — Gustafsdal place-notes on loose list",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0682": {
       "dir": "FT-0682-1923-plat-rud-c-j-minnesota-twp",
@@ -1426,7 +1539,8 @@
       "title": "1923 Roberts Co. plat index — Rud C. J., Sec. 21 T128N R51W Minnesota Twp",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0689": {
       "dir": "FT-0689-fag-negative-carl-j-rudd-1861",
@@ -1436,7 +1550,8 @@
       "title": "Find a Grave — Carl J. Rud/Rudd death/burial negative (1861±5 Sweden; SD/MN/CA)",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0765": {
       "dir": "FT-0765-norra-rada-ai18a-sida-259-thorsby",
@@ -1446,7 +1561,8 @@
       "title": "Norra Råda A I/18a sida 259 — Thorsby, not Gustafsdahl",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0766": {
       "dir": "FT-0766-norra-rada-ai19a-sida-259-uddeholm",
@@ -1456,7 +1572,8 @@
       "title": "Norra Råda A I/19a sida 259 — Uddeholm, not Gustafsdahl",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0803": {
       "dir": "FT-0803-gillberga-ci7-1859-carl-johan",
@@ -1498,7 +1615,8 @@
       "title": "Gillbergs kompani 1881 — rote 94 Södra Rud / Rud (Kila)",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0852": {
       "dir": "FT-0852-carl-j-rudd-death-1930-1941-free-ladder-miss",
@@ -1508,7 +1626,8 @@
       "title": "Carl J. Rudd death ~1930–1941 — free-web ladder miss this pass",
       "person_ids": [
         "carl_j_rudd"
-      ]
+      ],
+      "owner": "carl_j_rudd"
     },
     "FT-0809": {
       "dir": "FT-0809-varmskog-c6-1827-maria-oakta",
@@ -1559,7 +1678,8 @@
       "title": "Värmskog C/6 Födde 1794 — no Cajsa Nilsdotter (C3007 miss)",
       "person_ids": [
         "cajsa_nilsdotter"
-      ]
+      ],
+      "owner": "cajsa_nilsdotter"
     },
     "FT-0808": {
       "dir": "FT-0808-animskog-c3-1810-fredrik",
@@ -1583,7 +1703,8 @@
       "title": "Bill Parsons baseball-card rolodex",
       "person_ids": [
         "bill_parsons"
-      ]
+      ],
+      "owner": "bill_parsons"
     },
     "FT-0007": {
       "dir": "FT-0007-press-enterprise-elizabeth-betty-a-parsons",
@@ -1646,7 +1767,8 @@
       ],
       "entry": true,
       "type": "vital",
-      "title": "Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"
+      "title": "Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)",
+      "owner": "nelson_b_parsons"
     },
     "FT-0573": {
       "dir": "FT-0573-aroostook-potato-starch-industry",
@@ -1659,7 +1781,9 @@
         "harriet_b_foss_parsons",
         "ambrose_foss",
         "daniel_w_foss"
-      ]
+      ],
+      "subject_id": "nelson_b_parsons",
+      "owner": "nelson_b_parsons"
     },
     "FT-0742": {
       "dir": "FT-0742-nhgr-vol3-darling-huntris-baptism",
@@ -1675,7 +1799,8 @@
         "martha_huntress_lord_berwick",
         "mary_huntress_rollins",
         "george_huntress_newington"
-      ]
+      ],
+      "owner": "darling_huntress"
     },
     "FT-0743": {
       "dir": "FT-0743-nhgr-vol4-noah-elizabeth-huntris",
@@ -1689,7 +1814,8 @@
         "christopher_huntress",
         "mary_chick_huntress",
         "darling_huntress"
-      ]
+      ],
+      "owner": "christopher_huntress"
     },
     "FT-0745": {
       "dir": "FT-0745-athenaeum-christopher-huntress",
@@ -1709,7 +1835,8 @@
         "nathan_huntress_newington",
         "noah_huntress",
         "elizabeth_huntress_stevens"
-      ]
+      ],
+      "owner": "christopher_huntress"
     },
     "FT-0744": {
       "dir": "FT-0744-stackpole-kittery-chick-huntress",
@@ -1720,7 +1847,8 @@
       "person_ids": [
         "mary_chick_huntress",
         "christopher_huntress"
-      ]
+      ],
+      "owner": "mary_chick_huntress"
     },
     "FT-0746": {
       "dir": "FT-0746-nehgr-1868-huntress-sib-marriages",
@@ -1733,7 +1861,8 @@
         "martha_huntress_lord_berwick",
         "mary_huntress_rollins",
         "christopher_huntress"
-      ]
+      ],
+      "owner": "christopher_huntress"
     },
     "FT-0575": {
       "dir": "FT-0575-barnstead-nh-bunker-pioneers",
@@ -1745,7 +1874,9 @@
         "harriet_n_bunker_foss",
         "joseph_s_bunker",
         "olive_otis_bunker"
-      ]
+      ],
+      "subject_id": "harriet_n_bunker_foss",
+      "owner": "harriet_n_bunker_foss"
     },
     "FT-0574": {
       "dir": "FT-0574-daniel-w-foss-11th-maine-appomattox",
@@ -1755,7 +1886,8 @@
       "title": "11th Maine Infantry — late-war Petersburg and Appomattox (Daniel W. Foss’s regiment)",
       "person_ids": [
         "daniel_w_foss"
-      ]
+      ],
+      "owner": "daniel_w_foss"
     },
     "FT-0572": {
       "dir": "FT-0572-swedish-colony-fort-fairfield-welcome-route",
@@ -1767,7 +1899,9 @@
         "percy_parsons",
         "kate_parsons",
         "nelson_b_parsons"
-      ]
+      ],
+      "subject_id": "percy_parsons",
+      "owner": "percy_parsons"
     },
     "FT-0571": {
       "dir": "FT-0571-new-sweden-maine-swedish-colony-founding",
@@ -1778,7 +1912,9 @@
       "person_ids": [
         "percy_parsons",
         "kate_parsons"
-      ]
+      ],
+      "subject_id": "percy_parsons",
+      "owner": "percy_parsons"
     },
     "FT-0578": {
       "dir": "FT-0578-swedish-1872-labor-diversion-outer-colony",
@@ -1789,7 +1925,9 @@
       "person_ids": [
         "percy_parsons",
         "kate_parsons"
-      ]
+      ],
+      "subject_id": "percy_parsons",
+      "owner": "percy_parsons"
     },
     "FT-0556": {
       "dir": "FT-0556-fag-inscription-anna-augusta-mclachlin",
@@ -1799,7 +1937,8 @@
       "title": "Find a Grave — Anna Augusta McLachlin inscription and gravesite",
       "person_ids": [
         "anna_augusta_olson_mclachlin"
-      ]
+      ],
+      "owner": "anna_augusta_olson_mclachlin"
     },
     "FT-0542": {
       "dir": "FT-0542-fag-albin-edward-rudd-memorial",
@@ -1814,7 +1953,8 @@
         "margaret_emma_fuller_rudd",
         "robert_fuller_rudd"
       ],
-      "subject_id": "albin_edward_rudd"
+      "subject_id": "albin_edward_rudd",
+      "owner": "albin_edward_rudd"
     },
     "FT-0544": {
       "dir": "FT-0544-fag-margaret-emma-fuller-rudd-memorial",
@@ -1829,7 +1969,8 @@
         "albin_edward_rudd",
         "robert_fuller_rudd"
       ],
-      "subject_id": "margaret_emma_fuller_rudd"
+      "subject_id": "margaret_emma_fuller_rudd",
+      "owner": "margaret_emma_fuller_rudd"
     },
     "FT-0545": {
       "dir": "FT-0545-fag-robert-fuller-rudd-memorial",
@@ -1844,7 +1985,8 @@
         "albin_edward_rudd",
         "margaret_emma_fuller_rudd"
       ],
-      "subject_id": "robert_fuller_rudd"
+      "subject_id": "robert_fuller_rudd",
+      "owner": "robert_fuller_rudd"
     },
     "FT-0522": {
       "dir": "FT-0522-fag-negative-fritz-e-rudd-adult",
@@ -1854,7 +1996,8 @@
       "title": "Find a Grave — Fritz E. Rud/Rudd adult death/burial negative (~1892 MN)",
       "person_ids": [
         "fritz_e_rudd"
-      ]
+      ],
+      "owner": "fritz_e_rudd"
     },
     "FT-0524": {
       "dir": "FT-0524-wwi-ssdi-negative-fritz-e-rudd",
@@ -1864,7 +2007,8 @@
       "title": "WWI draft + SSDI — Fritz E. Rud/Rudd negative (free indexes)",
       "person_ids": [
         "fritz_e_rudd"
-      ]
+      ],
+      "owner": "fritz_e_rudd"
     },
     "FT-0526": {
       "dir": "FT-0526-newspaper-obit-negative-fritz-jennie-rudd",
@@ -1875,7 +2019,8 @@
       "person_ids": [
         "fritz_e_rudd",
         "jennie_l_rudd"
-      ]
+      ],
+      "owner": "fritz_e_rudd"
     },
     "FT-0392": {
       "dir": "FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr",
@@ -1887,7 +2032,8 @@
       "title": "Young man in US Navy sailor uniform (studio portrait)",
       "person_ids": [
         "alexander"
-      ]
+      ],
+      "owner": "alexander"
     },
     "FT-0396": {
       "dir": "FT-0396-school-open-house-photo-second-grade-audio-marke",
@@ -1897,7 +2043,8 @@
       "title": "School open-house photo (second grade) — audio marker only",
       "person_ids": [
         "alexander"
-      ]
+      ],
+      "owner": "alexander"
     },
     "FT-0397": {
       "dir": "FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the",
@@ -1917,7 +2064,8 @@
         "richard",
         "gloria",
         "dorland"
-      ]
+      ],
+      "owner": "alexander"
     },
     "FT-0795": {
       "dir": "FT-0795-holman-family-bible-merritt-shorts-1874",
@@ -1977,7 +2125,8 @@
         "alexander",
         "nicholas",
         "samuel"
-      ]
+      ],
+      "owner": "annabelle"
     }
   }
 }
