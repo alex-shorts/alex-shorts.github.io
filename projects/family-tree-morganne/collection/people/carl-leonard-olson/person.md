@@ -14,7 +14,7 @@ burial: Cremated 11 Oct 1984, Vancouver Crematorium Ltd., Fraser Street, Vancouv
 parents: [isaac_olsen, jennie_olsen]
 spouses: []
 children: []
-object_ids: [FT-0015, FT-0016, FT-0020, FT-0487, FT-0509, FT-0511, FT-0555]
+object_ids: [FT-0015, FT-0016, FT-0020, FT-0487, FT-0509, FT-0511, FT-0555, FT-0847]
 confidence: Confirmed
 verified: true
 status: cataloged

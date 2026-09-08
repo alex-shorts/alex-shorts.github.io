@@ -15,7 +15,7 @@ burial:
 parents: [isaac_olsen, jennie_olsen]
 spouses: []
 children: []
-object_ids: [FT-0015, FT-0016, FT-0020, FT-0511]
+object_ids: [FT-0015, FT-0016, FT-0020, FT-0511, FT-0847]
 confidence: Probable
 verified: false
 status: researching

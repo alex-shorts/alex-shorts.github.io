@@ -13,7 +13,7 @@ burial: Holden Cemetery, Holden, Lloydminster Census Division, Alberta, Canada
 parents: [isaac_olsen, jennie_olsen]
 spouses: []
 children: []
-object_ids: [FT-0015, FT-0016, FT-0020, FT-0488, FT-0509, FT-0554]
+object_ids: [FT-0015, FT-0016, FT-0020, FT-0488, FT-0509, FT-0554, FT-0847]
 confidence: Probable
 verified: false
 status: researching

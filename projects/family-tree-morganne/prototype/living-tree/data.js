@@ -24,7 +24,14 @@
     Unknown: 0,
   };
 
-  let focusId = "alexander";
+  let focusId = "";
+  let family = {
+    primaries: [],
+    default_primary: "",
+    dna_root: "",
+    known_adoptees: {},
+    hinges: [],
+  };
   let people = {};
   /** Accession id → { dir, photos[], entry } from collection/objects/index.json */
   let objectsIndex = null;
@@ -32,6 +39,9 @@
 
   function getFocusId() {
     return focusId;
+  }
+  function getFamily() {
+    return family;
   }
   function getPeople() {
     return people;
@@ -568,12 +578,31 @@
     }
     const fromWindow =
       typeof global.__TREE_PRIMARY__ === "string" ? global.__TREE_PRIMARY__.trim() : "";
-    const candidate = fromQuery || fromWindow || index.focus_id || "alexander";
+    const fam = index.family || {};
+    const fallback =
+      index.focus_id || fam.default_primary || (fam.primaries && fam.primaries[0]) || "";
+    const candidate = fromQuery || fromWindow || fallback;
     if (index.people && index.people[candidate]) return candidate;
-    return index.focus_id || "alexander";
+    if (fallback && index.people && index.people[fallback]) return fallback;
+    const keys = Object.keys(index.people || {});
+    return keys[0] || "";
+  }
+
+  function hydrateFamily(index) {
+    const raw = index.family || {};
+    family = {
+      id: raw.id || "",
+      name: raw.name || "",
+      primaries: Array.isArray(raw.primaries) ? raw.primaries : [],
+      default_primary: raw.default_primary || "",
+      dna_root: raw.dna_root || "",
+      known_adoptees: raw.known_adoptees && typeof raw.known_adoptees === "object" ? raw.known_adoptees : {},
+      hinges: Array.isArray(raw.hinges) ? raw.hinges : [],
+    };
   }
 
   function hydrate(index) {
+    hydrateFamily(index);
     focusId = resolveFocusId(index);
     people = {};
     for (const [id, raw] of Object.entries(index.people || {})) {
@@ -1217,6 +1246,7 @@
     PEOPLE_ROOT,
     OBJECTS_ROOT,
     getFocusId,
+    getFamily,
     setFocusId,
     getPeople,
     loadPeopleIndex,

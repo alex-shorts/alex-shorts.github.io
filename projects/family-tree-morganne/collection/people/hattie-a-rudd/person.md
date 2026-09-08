@@ -4,6 +4,7 @@ slug: hattie-a-rudd
 name: Hattie A. Rud
 aka:
   - Hattie A. Rudd
+  - Alma H. Rudd
 birth: "1897"
 death:
 birth_place: South Dakota, USA
@@ -12,7 +13,7 @@ burial:
 parents: [carl_j_rudd, maria_edison_rudd]
 spouses: []
 children: []
-object_ids: [FT-0506, FT-0570]
+object_ids: [FT-0506, FT-0570, FT-0846, FT-0849]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -24,10 +25,12 @@ parent_links:
 sources:
   - label: "FamilySearch 1910 US Census — Hattie A Rud, daughter, 13, b. South Dakota; Minnesota Twp, Roberts Co., SD"
     url: "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+  - label: "1941 Census Bureau letter FT-0849 — 1900 household daughter Rudd, Alma H. (living; not Alma Eugenia d. 1888)"
+    url: ""
 ---
 ## Summary
 
-**Confirmed** sister of **Claus Y. Rudd**. Locked **2026-08-17** — pack **C2397**. **1910** household: **Hattie A Rud**, 13, b. South Dakota. Collateral — do not climb.
+**Confirmed** sister of **Claus Y. Rudd**. Locked **2026-08-17** — pack **C2397**. **1910** household: **Hattie A Rud**, 13, b. South Dakota. **1900** extract (**FT-0849**) lists **Alma H.** among the living children — treat as aka for this daughter (not Alma Eugenia, who died 1888). Collateral — do not climb.
 
 ## Assertions
 

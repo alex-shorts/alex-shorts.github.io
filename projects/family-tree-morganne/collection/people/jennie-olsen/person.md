@@ -7,6 +7,7 @@ aka:
   - Jennie Anderson
   - Jennie Matson
   - Jennie Olson
+  - Jeannie Olson
 birth: "1863-07-11"
 death: "1956-06-23"
 birth_place: Sweden
@@ -15,10 +16,10 @@ burial: Mountain View Cemetery, Vancouver, British Columbia, Canada
 parents: []
 spouses: [isaac_olsen]
 children: [anna_augusta_olson_mclachlin, william_theodore_olson, mabel_victoria_olson_sizer, pearl_olson_williams, carl_leonard_olson, della_elizabeth_rudd]
-object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445, FT-0487, FT-0488, FT-0503, FT-0504, FT-0509, FT-0511, FT-0523, FT-0543, FT-0552, FT-0554, FT-0555, FT-0596]
-confidence: Probable
-verified: false
-status: researching
+object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445, FT-0487, FT-0488, FT-0503, FT-0504, FT-0509, FT-0511, FT-0523, FT-0543, FT-0552, FT-0554, FT-0555, FT-0596, FT-0843, FT-0847]
+confidence: Confirmed
+verified: true
+status: cataloged
 spouse_links:
   - id: isaac_olsen
     confidence: Probable
@@ -31,6 +32,8 @@ sources:
     url: "https://www.findagrave.com/memorial/26322002/jennie-olsen"
   - label: "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)"
     url: "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+  - label: "Lyman Co. SD delayed birth FT-0843 — mother Jennie Matson of Della Elizabeth Olson; birthplace Temskoge, Sweden"
+    url: ""
   - label: "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA; mother JENNIE MATSON"
     url: "https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf"
   - label: "BC Archives death 1956-09-007015 — JENNIE OLSEN; Vancouver 23 Jun 1956; parents not known"
@@ -80,15 +83,16 @@ media:
 ---
 ## Summary
 
-Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C507**. FAG + Lyman SD birth + **BC death 1956-09-007015** (open JPEG) corroborate vitals. Maiden conflict kept open: FAG **Andersen**, SD **Matson**, Isaac death spouse **Anderson** — **not resolved**. Spouse **Isaac Olsen**. Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Isaac. Soft children: FAG grid William, Mabel, Carl, Della (**C530–C534**); obit-named **Anna Augusta Olson McLachlin** and **Pearl Olson Williams** (**C2320–C2329**). **Parents Blocked (C540)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1956 death notice on FAG → **FT-0016** (names Mrs. C. Y. Rudd). FAG gravesite **FT-0552**: **There is no stone for this plot** (shared ABRAY-*-16-005-0007 with Isaac; plot photo on Isaac memorial).
+**Confirmed** mother of **Della Elizabeth (Olson) Rudd** — pack **C505** **LOCKED — legal vital** **FT-0843** (delayed birth names **Jennie Matson**). FAG + Lyman index **FT-0445** + **BC death 1956-09-007015** corroborate. Maiden conflict **kept open on the attribute** (**C509**): this cert + SD index **Matson**; Isaac death spouse **Anderson**; FAG **Andersen**. Spouse **Isaac Olsen**. Delayed BC birthplace spelling **Temskoge, Sweden** (parish not locked). Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Isaac. Children: FAG grid William, Mabel, Carl, Della (**C530–C534**); obit-named **Anna Augusta Olson McLachlin** and **Pearl Olson Williams** (**C2320–C2329**). **Parents Blocked (C540)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1956 death notice on FAG → **FT-0016** (names Mrs. C. Y. Rudd). FAG gravesite **FT-0552**: **There is no stone for this plot** (shared ABRAY-*-16-005-0007 with Isaac; plot photo on Isaac memorial).
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Mother of Della Elizabeth Olson Rudd | Probable | FAG Della parents + Lyman SD birth | https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd | Pack **C505** |
+| Mother of Della Elizabeth Olson Rudd | Confirmed | FT-0843 delayed BC names Jennie Matson |  | Pack **C505** **LOCKED — legal vital** |
 | Spouse Isaac Olsen | Probable | FAG + BC death spouse field | https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004438083/004438083_02045.jpg | Pack **C506** / **C542** |
-| Maiden **Matson** (SD birth mother name) | Probable | Lyman SD births PDF | https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf | Pack **C509** / **C543**; conflicts Andersen/Anderson |
+| Maiden **Matson** (Della delayed BC + SD index) | Confirmed | FT-0843 + FT-0445 |  | Form on Della’s birth vital; **C509** still open vs Anderson/Andersen |
+| Birthplace **Temskoge, Sweden** (as written) | Possible | FT-0843 mother birthplace |  | Parish not locked — do not invent Tännskoga/Timskoga |
 | Maiden **Andersen** (FAG title) | Possible | FAG 26322002 | Same | Community; do not treat as Confirmed |
 | Maiden **Anderson** (Isaac BC death spouse) | Possible | Isaac death JPEG | https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg | Pack **C537** / **C543** |
 | b. 11 Jul 1863 Sweden; d. 23 Jun 1956 Vancouver; Mountain View | Probable | FAG + BC 1956-09-007015 | Same JPEG | Soft vitals **C507** / **C541** |
@@ -99,6 +103,7 @@ Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Sof
 
 - [Find A Grave — Jennie Andersen Olsen (26322002)](https://www.findagrave.com/memorial/26322002/jennie-olsen)
 - [Find A Grave — Della Elizabeth Olson Rudd (103950419)](https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd)
+- [FT-0843 — Lyman delayed birth, names mother Jennie Matson](../../objects/FT-0843-lyman-delayed-birth-della-olson-1902/)
 - [SDGenWeb Lyman births PDF (mother JENNIE MATSON)](https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf)
 - [BC Archives Genealogy — Jennie Olsen death 1956](https://search-collections.royalbcmuseum.bc.ca/Genealogy/Results?search=Search&as.type_death=true&as.first_name=Jennie&as.last_name=Olsen&as.start_year_str=1956&as.end_year_str=1956)
 - [BC Archives death image 004438083_02045.jpg](https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004438083/004438083_02045.jpg)
@@ -108,6 +113,7 @@ Proposed mother of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Sof
 ## Open questions
 
 - **Parents (gen-5) Blocked** — unlock Swedish birth/emigration or family names (**C540** / **C544**). Reopen **2026-08-17** (**C2350–C2364**) still unnamed — [`isaac-jennie-olsen-parents-up-2026-08-17.md`](../../../docs/research/people/proposals/isaac-jennie-olsen-parents-up-2026-08-17.md). RA BirthRecord **1863-07-11**: **0** Jenny; two **Johanna** parked (do not pick) — **C2371** / [`marcy-line-sweden-canada-2026-08-17.md`](../../../docs/research/people/proposals/marcy-line-sweden-canada-2026-08-17.md)
-- Resolve Matson vs Andersen vs Anderson maiden — keep all until vital image names one
+- Resolve Matson vs Andersen vs Anderson maiden — **C509** still open (two official forms: Matson on Della BC, Anderson on Isaac DC)
+- Birthplace spelling **Temskoge, Sweden** on FT-0843 — Swedish parish still unnamed (**C540**)
 - Open Vancouver Sun 26 Jun 1956 death notice text — paywalled clip only this pass
 ---

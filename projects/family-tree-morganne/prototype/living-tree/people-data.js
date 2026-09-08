@@ -1,6 +1,6 @@
 window.PEOPLE_DATA = {
   "version": 1,
-  "updated": "2026-08-19",
+  "updated": "2026-09-08",
   "focus_id": "morganne",
   "people": {
     "morganne": {
@@ -479,6 +479,10 @@ window.PEOPLE_DATA = {
         {
           "label": "FS GenealogyBank — Albert M Fife d. 15 Jul 1934; spouse Josephine; child Mrs T M Orcierr",
           "url": ""
+        },
+        {
+          "label": "1870 IN M593-301 Carrollton Twp. Carroll Co. — IA populationschedu0301unit leaves 292–318 imaged; Albert not named (C2260 negative)",
+          "url": "https://archive.org/details/populationschedu0301unit"
         }
       ],
       "aka": [
@@ -494,7 +498,8 @@ window.PEOPLE_DATA = {
       "death": "1934-07-15",
       "birth_place": "Indiana, USA",
       "death_place": "California, USA",
-      "burial": "Olivewood Cemetery, Riverside, California, USA — G-4-265-1"
+      "burial": "Olivewood Cemetery, Riverside, California, USA — G-4-265-1",
+      "blocker": "Parents still unnamed (Kiles × Mary Ann Morgan compiled lead — not on 18"
     },
     "theodore_m_orciere": {
       "id": "theodore_m_orciere",
@@ -735,8 +740,21 @@ window.PEOPLE_DATA = {
         "marcy_parsons",
         "dan_rudd"
       ],
-      "media": [],
-      "portrait": null,
+      "media": [
+        {
+          "file": "media/portrait-edmonton-studio.jpg",
+          "kind": "portrait",
+          "source": "Castor Ltd. Edmonton studio (Dan Rudd, 2026-09-06) — George cropped from FT-0848",
+          "source_url": ""
+        },
+        {
+          "file": "media/edmonton-studio-castor.jpg",
+          "kind": "photo",
+          "source": "Castor Ltd. Edmonton — Claus, Della, and George (FT-0848)",
+          "source_url": ""
+        }
+      ],
+      "portrait": "media/portrait-edmonton-studio.jpg",
       "object_ids": [
         "FT-0008",
         "FT-0455",
@@ -748,11 +766,19 @@ window.PEOPLE_DATA = {
         "FT-0502",
         "FT-0590",
         "FT-0591",
-        "FT-0592"
+        "FT-0592",
+        "FT-0839",
+        "FT-0840",
+        "FT-0845",
+        "FT-0848"
       ],
       "sources": [
         {
           "label": "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy half-brother via George",
+          "url": ""
+        },
+        {
+          "label": "Family corroboration (Dan Rudd email 2026-09-06) — George’s handwriting on pre-Rud name Fredrick Gillborg; FT-0845",
           "url": ""
         },
         {
@@ -795,8 +821,7 @@ window.PEOPLE_DATA = {
       "death": "2012-10-03",
       "birth_place": "Edmonton, Alberta, Canada",
       "death_place": "Capistrano Beach, Orange County, California, USA",
-      "burial": "Private services at sea",
-      "blocker": "Parents of Clause (C500 / C2240 Blocked); brothers Fritz / Hugo / Albin "
+      "burial": "Private services at sea"
     },
     "della_elizabeth_rudd": {
       "id": "della_elizabeth_rudd",
@@ -818,6 +843,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/portrait-edmonton-studio.jpg",
+          "kind": "portrait",
+          "source": "Castor Ltd. Edmonton studio (Dan Rudd, 2026-09-06) — Della cropped from FT-0848",
+          "source_url": ""
+        },
+        {
+          "ref": "george-rudd/media/edmonton-studio-castor.jpg",
+          "kind": "photo",
+          "source": "Castor Ltd. Edmonton — Claus, Della, and George (FT-0848)",
+          "source_url": ""
+        },
+        {
           "file": "media/headstone-olivewood-fag-2013.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 103950419 — Olivewood dual stone CLAUS Y. 1893–1976 / DELLA E. 1902–1973",
@@ -830,7 +867,7 @@ window.PEOPLE_DATA = {
           "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg?size=original"
         }
       ],
-      "portrait": null,
+      "portrait": "media/portrait-edmonton-studio.jpg",
       "object_ids": [
         "FT-0008",
         "FT-0015",
@@ -846,11 +883,16 @@ window.PEOPLE_DATA = {
         "FT-0511",
         "FT-0590",
         "FT-0591",
-        "FT-0596"
+        "FT-0596",
+        "FT-0839",
+        "FT-0840",
+        "FT-0843",
+        "FT-0847",
+        "FT-0848"
       ],
       "sources": [
         {
-          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — mother of George E. Rudd; Della parents hold for Dan",
+          "label": "Family corroboration (Marcy via Alex, 2026-08-07) — mother of George E. Rudd",
           "url": ""
         },
         {
@@ -868,6 +910,10 @@ window.PEOPLE_DATA = {
         {
           "label": "SSDI index mirror — Della Rudd b. 12 May 1902 d. Aug 1973 last res. Riverside 92504",
           "url": "https://www.locateancestors.com/rudd-born-in-1902/"
+        },
+        {
+          "label": "Lyman Co. SD delayed birth (19 Sep 1941) — Della Elizabeth Olson b. 12 May 1902 Oacoma; Isaac Olson × Jennie Matson (FT-0843)",
+          "url": ""
         },
         {
           "label": "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA 12 May 1902; ISAAC OLSON × JENNIE MATSON",
@@ -892,11 +938,11 @@ window.PEOPLE_DATA = {
       "parent_links": [
         {
           "id": "isaac_olsen",
-          "confidence": "Probable"
+          "confidence": "Confirmed"
         },
         {
           "id": "jennie_olsen",
-          "confidence": "Probable"
+          "confidence": "Confirmed"
         }
       ],
       "spouse_links": [
@@ -907,7 +953,7 @@ window.PEOPLE_DATA = {
       ],
       "birth": "1902-05-12",
       "death": "1973-08-29",
-      "birth_place": "Lyman County, South Dakota, USA",
+      "birth_place": "Oacoma, Lyman County, South Dakota, USA",
       "death_place": "Riverside, Riverside County, California, USA",
       "burial": "Olivewood Memorial Park, Riverside, California (Sec. H, Row 2, Lot 207, Grave 2); dual stone with Claus Y. Rudd"
     },
@@ -916,9 +962,9 @@ window.PEOPLE_DATA = {
       "slug": "jennie-olsen",
       "name": "Jennie Olsen",
       "years": "1863-1956",
-      "confidence": "Probable",
-      "verified": false,
-      "status": "researching",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
       "parents": [],
       "spouses": [
         "isaac_olsen"
@@ -978,7 +1024,9 @@ window.PEOPLE_DATA = {
         "FT-0552",
         "FT-0554",
         "FT-0555",
-        "FT-0596"
+        "FT-0596",
+        "FT-0843",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -996,6 +1044,10 @@ window.PEOPLE_DATA = {
         {
           "label": "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)",
           "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        },
+        {
+          "label": "Lyman Co. SD delayed birth FT-0843 — mother Jennie Matson of Della Elizabeth Olson; birthplace Temskoge, Sweden",
+          "url": ""
         },
         {
           "label": "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA; mother JENNIE MATSON",
@@ -1026,7 +1078,8 @@ window.PEOPLE_DATA = {
         "Jennie Andersen Olsen",
         "Jennie Anderson",
         "Jennie Matson",
-        "Jennie Olson"
+        "Jennie Olson",
+        "Jeannie Olson"
       ],
       "spouse_links": [
         {
@@ -1046,9 +1099,9 @@ window.PEOPLE_DATA = {
       "slug": "isaac-olsen",
       "name": "Isaac Olsen",
       "years": "1857-1947",
-      "confidence": "Probable",
-      "verified": false,
-      "status": "researching",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
       "parents": [],
       "spouses": [
         "jennie_olsen"
@@ -1101,7 +1154,9 @@ window.PEOPLE_DATA = {
         "FT-0552",
         "FT-0554",
         "FT-0555",
-        "FT-0596"
+        "FT-0596",
+        "FT-0843",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -1115,6 +1170,10 @@ window.PEOPLE_DATA = {
         {
           "label": "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)",
           "url": "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+        },
+        {
+          "label": "Lyman Co. SD delayed birth FT-0843 — father Isaac Olson of Della Elizabeth Olson, Oacoma 12 May 1902",
+          "url": ""
         },
         {
           "label": "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA 12 May 1902; father ISAAC OLSON",
@@ -1173,6 +1232,18 @@ window.PEOPLE_DATA = {
       ],
       "media": [
         {
+          "file": "media/portrait-edmonton-studio.jpg",
+          "kind": "portrait",
+          "source": "Castor Ltd. Edmonton studio (Dan Rudd, 2026-09-06) — Claus cropped from FT-0848",
+          "source_url": ""
+        },
+        {
+          "ref": "george-rudd/media/edmonton-studio-castor.jpg",
+          "kind": "photo",
+          "source": "Castor Ltd. Edmonton — Claus, Della, and George (FT-0848)",
+          "source_url": ""
+        },
+        {
           "file": "media/fag-103950403-01-headstone.jpg",
           "kind": "headstone",
           "source": "Find A Grave memorial 103950403 — Olivewood dual stone CLAUS Y. / DELLA E.",
@@ -1185,7 +1256,7 @@ window.PEOPLE_DATA = {
           "source_url": "https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg"
         }
       ],
-      "portrait": null,
+      "portrait": "media/portrait-edmonton-studio.jpg",
       "object_ids": [
         "FT-0008",
         "FT-0020",
@@ -1218,7 +1289,14 @@ window.PEOPLE_DATA = {
         "FT-0592",
         "FT-0593",
         "FT-0594",
-        "FT-0595"
+        "FT-0595",
+        "FT-0839",
+        "FT-0840",
+        "FT-0844",
+        "FT-0845",
+        "FT-0846",
+        "FT-0848",
+        "FT-0849"
       ],
       "sources": [
         {
@@ -1228,6 +1306,10 @@ window.PEOPLE_DATA = {
         {
           "label": "FamilySearch 1910 US Census — Claus Rud, 16, son of Carl J Rud × Maria Rud; Minnesota Twp, Roberts Co., SD (ark MPXD-SXJ)",
           "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXJ"
+        },
+        {
+          "label": "Lac qui Parle certified birth register 6 Oct 1941 — Claus Yngve Rudd b. 9 Jun 1893 Louisburg; Carl Johan Rudd × Maria Ed (FT-0844)",
+          "url": ""
         },
         {
           "label": "FamilySearch ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham MN; parents Karl Rud × Marie (ark QVNB-CY88)",
@@ -1283,6 +1365,8 @@ window.PEOPLE_DATA = {
         "Claus Rudd",
         "Claus Young B Rudd",
         "Claus Yugue Rud",
+        "Claus Yngve Rudd",
+        "Claus Yngve Rud",
         "Klaus Jorgen Rud",
         "Claus Rud"
       ],
@@ -1311,25 +1395,43 @@ window.PEOPLE_DATA = {
     "maria_edison_rudd": {
       "id": "maria_edison_rudd",
       "slug": "maria-edison-rudd",
-      "name": "Maria Edison Rudd",
-      "years": "1858–",
+      "name": "Maria Nikolausdotter Ed",
+      "years": "1857–",
       "confidence": "Confirmed",
       "verified": true,
       "status": "cataloged",
-      "parents": [],
+      "parents": [
+        "niklas_larsson_ed",
+        "anna_ersdotter"
+      ],
       "spouses": [
         "carl_j_rudd"
       ],
       "children": [
+        "alma_eugenia_rud",
         "albin_edward_rudd",
+        "dagmar_maria_rud",
         "fritz_e_rudd",
         "clause_rudd",
         "jennie_l_rudd",
         "hattie_a_rudd",
         "carl_h_rudd"
       ],
-      "media": [],
-      "portrait": null,
+      "media": [
+        {
+          "file": "media/portrait-studio.jpg",
+          "kind": "portrait",
+          "source": "Family album scan (Dan Rudd, 2026-09-06) — Marie Edeson Rudd studio portrait, cropped from FT-0846",
+          "source_url": ""
+        },
+        {
+          "ref": "carl-j-rudd/media/album-studio-portraits.jpg",
+          "kind": "photo",
+          "source": "Family album scan (Dan Rudd, 2026-09-06) — hinged studio portraits, FT-0846",
+          "source_url": ""
+        }
+      ],
+      "portrait": "media/portrait-studio.jpg",
       "object_ids": [
         "FT-0506",
         "FT-0507",
@@ -1361,9 +1463,36 @@ window.PEOPLE_DATA = {
         "FT-0694",
         "FT-0762",
         "FT-0763",
-        "FT-0764"
+        "FT-0764",
+        "FT-0802",
+        "FT-0804",
+        "FT-0806",
+        "FT-0812",
+        "FT-0816",
+        "FT-0817",
+        "FT-0818",
+        "FT-0841",
+        "FT-0844",
+        "FT-0846",
+        "FT-0849"
       ],
       "sources": [
+        {
+          "label": "Lac qui Parle certified birth register FT-0844 — mother Maria Ed of Claus Yngve Rudd, Louisburg 9 Jun 1893",
+          "url": ""
+        },
+        {
+          "label": "Långserud C I/9 — Maria 5 May 1857 Ed, Sold. Niklas Larsson Ed × Anna Ersdotter age 30 (FT-0804)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00048233"
+        },
+        {
+          "label": "Kila A I/24 p.384 — Maria Nikolausdotter Ed b. 5 May 1857 Långserud; America 20 Feb 1891 with Albin + Dagmar (C0037902_00335)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037902_00335"
+        },
+        {
+          "label": "Långserud A I/17 fol.123 — D. Maja 5 May 1857 in Niklas × Anna household (C0038179_00149)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038179_00149"
+        },
         {
           "label": "FamilySearch 1910 US Census — Maria Rud, wife of Carl J Rud, age 52, b. Sweden; Minnesota Twp, Roberts Co., SD",
           "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
@@ -1398,11 +1527,23 @@ window.PEOPLE_DATA = {
         }
       ],
       "aka": [
+        "Maria Edison Rudd",
         "Maria Rud",
         "Marie",
         "Marie Edison",
         "Edeson",
-        "Maria Edeson Rudd"
+        "Maria Edeson Rudd",
+        "Maria Ed"
+      ],
+      "parent_links": [
+        {
+          "id": "niklas_larsson_ed",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "anna_ersdotter",
+          "confidence": "Confirmed"
+        }
       ],
       "spouse_links": [
         {
@@ -1410,32 +1551,423 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "birth": "1858",
-      "birth_place": "Sweden",
-      "blocker": "Own parents unnamed — 1910 census lists Sweden only (C2411). Maiden Edis"
+      "birth": "1857-05-05",
+      "birth_place": "Ed, Långserud, Värmland, Sweden"
     },
-    "carl_j_rudd": {
-      "id": "carl_j_rudd",
-      "slug": "carl-j-rudd",
-      "name": "Carl J. Rud",
-      "years": "1869–",
+    "anna_ersdotter": {
+      "id": "anna_ersdotter",
+      "slug": "anna-ersdotter",
+      "name": "Anna Ersdotter",
+      "years": "1826–",
       "confidence": "Confirmed",
       "verified": true,
       "status": "cataloged",
       "parents": [],
       "spouses": [
+        "niklas_larsson_ed"
+      ],
+      "children": [
+        "august_niklasson_ed",
+        "johannes_niklasson_ed",
+        "maria_edison_rudd",
+        "lotta_niklasdotter_ed"
+      ],
+      "media": [
+        {
+          "ref": "niklas-larsson-ed/media/langserud-kyrka-ext.jpg",
+          "kind": "photo",
+          "source": "Långseruds kyrka — Anna's birth parish (Wikimedia)",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:L%C3%A5ngseruds_kyrka"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0804",
+        "FT-0806",
+        "FT-0835",
+        "FT-0836",
+        "FT-0837",
+        "FT-0838",
+        "FT-0851"
+      ],
+      "sources": [
+        {
+          "label": "Långserud A I/17 fol.123 Ed — Hustru Anna Ersdotter b. 8 Nov 1826 Långserud (C0038179_00149)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038179_00149"
+        },
+        {
+          "label": "Långserud C I/9 — mother of Maria 5 May 1857, Anna Ersdotter age 30",
+          "url": ""
+        },
+        {
+          "label": "Långserud C I/4 November 1826 — EXPLICIT MISS; 8 Nov is Stina Caisa (C0038193)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038193"
+        },
+        {
+          "label": "Långserud A I/10–11 Gisslebyn — EXPLICIT MISS; no Erik Andersson × Märta Andersdotter HF (FT-0851)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038173_00128"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "niklas_larsson_ed",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1826-11-08",
+      "birth_place": "Långserud, Värmland, Sweden",
+      "blocker": "Parents unknown — Esbjörbyn Anna b. 1828 (FT-0835 image) vs HF 8 Nov 182"
+    },
+    "niklas_larsson_ed": {
+      "id": "niklas_larsson_ed",
+      "slug": "niklas-larsson-ed",
+      "name": "Niklas Larsson Ed",
+      "years": "1826–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "lars_hansson",
+        "maria_andersdotter_getrud"
+      ],
+      "spouses": [
+        "anna_ersdotter"
+      ],
+      "children": [
+        "august_niklasson_ed",
+        "johannes_niklasson_ed",
+        "maria_edison_rudd",
+        "lotta_niklasdotter_ed"
+      ],
+      "media": [
+        {
+          "file": "media/langserud-kyrka-ext.jpg",
+          "kind": "photo",
+          "source": "Långseruds kyrka — soldatnamn Ed parish (Wikimedia)",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:L%C3%A5ngseruds_kyrka"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0804",
+        "FT-0806",
+        "FT-0807",
+        "FT-0810",
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog C I/6 — Nicolaus 9 Feb 1826 Getrud; Lars Hansson × Maria Andersdotter age 45 (00098106_00042)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00098106_00042"
+        },
+        {
+          "label": "Långserud A I/17 fol.123 Ed — Sold. Niklas Larsson Ed b. 9 Feb 1826 Svanskog (C0038179_00149)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038179_00149"
+        },
+        {
+          "label": "Långserud C I/9 — father of Maria 5 May 1857, Sold. Niklas Larsson Ed (FT-0804)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00048233"
+        },
+        {
+          "label": "CONFLICT Svanskog A I/11 p.272 Gaterud — Niclas 9 Feb 1826 in Nils Persson × Cajsa Nilsdotter household, enk. Maria Andersdotter b. 22 Sep 1766 (C0039061_00163)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00163"
+        }
+      ],
+      "aka": [
+        "Nikolaus Larsson Ed",
+        "Nicolaus",
+        "Sold. Niklas Larsson Ed"
+      ],
+      "parent_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "anna_ersdotter",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1826-02-09",
+      "birth_place": "Getrud (Gaterud), Svanskog, Värmland, Sweden"
+    },
+    "maria_andersdotter_getrud": {
+      "id": "maria_andersdotter_getrud",
+      "slug": "maria-andersdotter-getrud",
+      "name": "Maria Andersdotter",
+      "years": "1791–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "anders_nilsson",
+        "maja_gaterud"
+      ],
+      "spouses": [
+        "lars_hansson"
+      ],
+      "children": [
+        "andreas_larsson_gaterud",
+        "gustaf_larsson_gaterud",
+        "nils_larsson_gaterud",
+        "maria_larsdotter_gaterud",
+        "niklas_larsson_ed",
+        "thomas_larsson_gaterud"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0807",
+        "FT-0810",
+        "FT-0814",
+        "FT-0853",
+        "FT-0854",
+        "FT-0855"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog C I/4 C0039078_00039 — Maria f. 10 Dec 1791 Gaterud; Anders Nilsson × Maria Thomasdotter (FT-0855)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039078_00039"
+        },
+        {
+          "label": "Svanskog A I/5 Gaterud fol.44 C0039055_00054 — Dott. Maja 1791 under Anders Nilsson × hust. Maja (FT-0854)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039055_00054"
+        },
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — H. Maria Andersdr b. 10 Dec 1791; M.far Anders Nilss. 1748; Nicolaus 9 Feb 1826",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        },
+        {
+          "label": "Svanskog C I/6 — mother of Nicolaus 9 Feb 1826, Maria Andersdotter age 45 (~1781) (00098106_00042)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00098106_00042"
+        },
+        {
+          "label": "CONFLICT — Gaterud HF enk. Maria Andersdotter b. 22 Sep 1766 in the same Niclas 9 Feb 1826 household (C0039061_00163)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00163"
+        }
+      ],
+      "aka": [
+        "Maja"
+      ],
+      "parent_links": [
+        {
+          "id": "anders_nilsson",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maja_gaterud",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1791-12-10",
+      "birth_place": "Gaterud, Svanskog, Värmland, Sweden"
+    },
+    "maja_gaterud": {
+      "id": "maja_gaterud",
+      "slug": "maja-gaterud",
+      "name": "Maria Thomasdotter",
+      "years": "1751–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "anders_nilsson"
+      ],
+      "children": [
+        "annika_andersdotter_gaterud",
+        "stina_andersdotter_gaterud",
+        "maria_andersdotter_getrud",
+        "britta_andersdotter_gaterud"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0854",
+        "FT-0855"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog C I/4 C0039078_00039 — mother of Maria 10 Dec 1791 Gaterud, Maria Thomasdotter (FT-0855)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039078_00039"
+        },
+        {
+          "label": "Svanskog A I/5 Gaterud fol.44 C0039055_00054 — hust. Maja/Marja b.1751 under Anders Nilsson (FT-0854)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039055_00054"
+        }
+      ],
+      "aka": [
+        "Maja",
+        "Marja"
+      ],
+      "spouse_links": [
+        {
+          "id": "anders_nilsson",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1751",
+      "birth_place": "Svanskog, Värmland, Sweden"
+    },
+    "anders_nilsson": {
+      "id": "anders_nilsson",
+      "slug": "anders-nilsson",
+      "name": "Anders Nilsson",
+      "years": "1748–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "maja_gaterud"
+      ],
+      "children": [
+        "annika_andersdotter_gaterud",
+        "stina_andersdotter_gaterud",
+        "maria_andersdotter_getrud",
+        "britta_andersdotter_gaterud"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0814",
+        "FT-0853",
+        "FT-0854",
+        "FT-0855"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog C I/4 C0039078_00039 — father of Maria 10 Dec 1791 Gaterud (FT-0855)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039078_00039"
+        },
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — M.far E. Anders Nilss. b. 1748 Skg",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        },
+        {
+          "label": "Svanskog A I/5 Gaterud fol.44 C0039055_00054 — Bde. Anders Nilsson 1748 with Dott. Maja 1791",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039055_00054"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "maja_gaterud",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1748",
+      "birth_place": "Svanskog, Värmland, Sweden"
+    },
+    "lars_hansson": {
+      "id": "lars_hansson",
+      "slug": "lars-hansson",
+      "name": "Lars Hansson",
+      "years": "1791–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [
+        "maria_andersdotter_getrud"
+      ],
+      "children": [
+        "andreas_larsson_gaterud",
+        "gustaf_larsson_gaterud",
+        "nils_larsson_gaterud",
+        "maria_larsdotter_gaterud",
+        "niklas_larsson_ed",
+        "thomas_larsson_gaterud"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0807",
+        "FT-0810",
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — B. Lars Hansson b. 23 May 1791 Värmskog x Maria Andersdr; Nicolaus 9 Feb 1826",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        },
+        {
+          "label": "Svanskog C I/6 — father of Nicolaus 9 Feb 1826 Getrud, Lars Hansson (00098106_00042)",
+          "url": "https://sok.riksarkivet.se/bildvisning/00098106_00042"
+        },
+        {
+          "label": "CONFLICT — Gaterud HF p.272 lists Niclas 9 Feb 1826 under Nils Persson, not Lars Hansson (C0039061_00163)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00163"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1791-05-23",
+      "birth_place": "Värmskog, Värmland, Sweden"
+    },
+    "carl_j_rudd": {
+      "id": "carl_j_rudd",
+      "slug": "carl-j-rudd",
+      "name": "Karl Johan Fredriksson Rud",
+      "years": "1859–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "fredrik_svensson",
+        "maja_andersdotter"
+      ],
+      "spouses": [
         "maria_edison_rudd"
       ],
       "children": [
+        "alma_eugenia_rud",
         "albin_edward_rudd",
+        "dagmar_maria_rud",
         "fritz_e_rudd",
         "clause_rudd",
         "jennie_l_rudd",
         "hattie_a_rudd",
         "carl_h_rudd"
       ],
-      "media": [],
-      "portrait": null,
+      "media": [
+        {
+          "file": "media/portrait-studio.jpg",
+          "kind": "portrait",
+          "source": "Family album scan (Dan Rudd, 2026-09-06) — Carl Johan Rudd studio portrait, cropped from FT-0846",
+          "source_url": ""
+        },
+        {
+          "file": "media/ruderud-ekonom-map.png",
+          "kind": "photo",
+          "source": "Ekonomiska kartan 1966 10C 3e — Ruderud window (FT-0818)",
+          "source_url": "https://historiskakartor.lantmateriet.se/data/image-service/document.pdf?archive=RAK&id=J133-10C3e66"
+        },
+        {
+          "file": "media/album-studio-portraits.jpg",
+          "kind": "photo",
+          "source": "Family album scan (Dan Rudd, 2026-09-06) — hinged studio portraits, FT-0846",
+          "source_url": ""
+        }
+      ],
+      "portrait": "media/portrait-studio.jpg",
       "object_ids": [
         "FT-0506",
         "FT-0507",
@@ -1478,9 +2010,46 @@ window.PEOPLE_DATA = {
         "FT-0763",
         "FT-0764",
         "FT-0765",
-        "FT-0766"
+        "FT-0766",
+        "FT-0802",
+        "FT-0803",
+        "FT-0805",
+        "FT-0812",
+        "FT-0813",
+        "FT-0816",
+        "FT-0817",
+        "FT-0818",
+        "FT-0841",
+        "FT-0844",
+        "FT-0846",
+        "FT-0849",
+        "FT-0852"
       ],
       "sources": [
+        {
+          "label": "Lac qui Parle certified birth register FT-0844 — father Carl Johan Rudd of Claus Yngve Rudd, Louisburg 9 Jun 1893",
+          "url": ""
+        },
+        {
+          "label": "Ekonomiska kartan 1966 + Hitta — Ruderud, Kila location lock (FT-0818)",
+          "url": "https://historiskakartor.lantmateriet.se/data/image-service/document.pdf?archive=RAK&id=J133-10C3e66"
+        },
+        {
+          "label": "ISOF Ortnamnsregistret — Ruderud soldattorp, Kila sn (FT-0817)",
+          "url": "https://www4.isof.se/NAU/scans/_s1sx001/322119a1.htm"
+        },
+        {
+          "label": "Gillberga C I/7 — Carl Johan 16 Aug 1859 Mon, Fredrik Svensson × Maja Andersdotter age 32 (C0037321_00101)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037321_00101"
+        },
+        {
+          "label": "Kila A I/24 p.384 Soldattorp 94 — Karl Johan Fredriksson Rud b. 16 Aug 1859 Gillberga; vigde 6 Jun 1884; America 3 Mar 1889 (C0037902_00335)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037902_00335"
+        },
+        {
+          "label": "Gillberga A I/19 p.481 Mohn — Carl Johan in Fredrik × Maja household (C0037302_00502)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037302_00502"
+        },
         {
           "label": "FamilySearch 1910 US Census — Carl J Rud, Minnesota Twp, Roberts Co., SD; age 41, b. Sweden; wife Maria; children Claus, Hattie A, Fritz E, Carl H Jr, Jennie L (ark MPXD-SXX)",
           "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
@@ -1519,9 +2088,22 @@ window.PEOPLE_DATA = {
         }
       ],
       "aka": [
+        "Carl J. Rud",
         "Carl J. Rudd",
         "Karl Rud",
-        "Carl J Rud"
+        "Carl J Rud",
+        "Carl Johan Rud",
+        "Carl G. Rudd"
+      ],
+      "parent_links": [
+        {
+          "id": "fredrik_svensson",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maja_andersdotter",
+          "confidence": "Confirmed"
+        }
       ],
       "spouse_links": [
         {
@@ -1529,9 +2111,301 @@ window.PEOPLE_DATA = {
           "confidence": "Confirmed"
         }
       ],
-      "birth": "1869",
-      "birth_place": "Sweden",
-      "blocker": "Own parents unnamed — 1910 census lists Sweden only (C2410). Norra Råda "
+      "birth": "1859-08-16",
+      "birth_place": "Gillberga, Värmland, Sweden"
+    },
+    "maja_andersdotter": {
+      "id": "maja_andersdotter",
+      "slug": "maja-andersdotter",
+      "name": "Maja Andersdotter",
+      "years": "1827–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "cajsa_nilsdotter",
+        "anders_andersson_johanneberg"
+      ],
+      "spouses": [
+        "fredrik_svensson"
+      ],
+      "children": [
+        "sven_petter_svensson",
+        "anders_gustaf_svensson",
+        "carl_j_rudd"
+      ],
+      "media": [
+        {
+          "file": "media/gillberga-kyrka-ext.jpg",
+          "kind": "photo",
+          "source": "Gillberga kyrka — parish of Carl Johan's 1859 birth (Wikimedia)",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:Gillberga_kyrka,_V%C3%A4rmland"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0803",
+        "FT-0805",
+        "FT-0809"
+      ],
+      "sources": [
+        {
+          "label": "Värmskog C/6 — Maria 23 Apr 1827 Tollersrud, oäkta; mother pigan Cajsa Nilsdotter; alleged father fältjägare Anders Andersson of Johanneberg (C0039415_00137)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039415_00137"
+        },
+        {
+          "label": "Gillberga A I/19 p.481 — Maja/Maria Andersdotter b. 23 Apr 1827 Värmskog (C0037302_00502)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037302_00502"
+        },
+        {
+          "label": "Gillberga C I/7 — mother of Carl Johan, Maja Andersdotter age 32 (C0037321_00101)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037321_00101"
+        }
+      ],
+      "aka": [
+        "Maria Andersdotter",
+        "Maja Andersdr"
+      ],
+      "parent_links": [
+        {
+          "id": "cajsa_nilsdotter",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "anders_andersson_johanneberg",
+          "confidence": "Possible"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "fredrik_svensson",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1827-04-23",
+      "birth_place": "Tollersrud, Värmskog, Värmland, Sweden"
+    },
+    "anders_andersson_johanneberg": {
+      "id": "anders_andersson_johanneberg",
+      "slug": "anders-andersson-johanneberg",
+      "name": "Anders Andersson",
+      "years": "1802–",
+      "confidence": "Possible",
+      "verified": false,
+      "status": "researching",
+      "parents": [],
+      "spouses": [],
+      "children": [
+        "maja_andersdotter"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0809",
+        "FT-0815"
+      ],
+      "sources": [
+        {
+          "label": "Värmskog A I/11 p.233 Johanneberg — Fältj. Anders Andersson b. ~1802 vg; in 217/27, out Palais 145/28; no wife/kids on page (C0039395_00245)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039395_00245"
+        },
+        {
+          "label": "Värmskog C/6 — alleged father of oäkta Maria 23 Apr 1827, fältjägare Anders Andersson of Johanneberg (C0039415_00137)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039415_00137"
+        }
+      ],
+      "aka": [
+        "Fältjägare Anders Andersson"
+      ],
+      "birth": "1802",
+      "birth_place": "Värmskog, Värmland, Sweden"
+    },
+    "cajsa_nilsdotter": {
+      "id": "cajsa_nilsdotter",
+      "slug": "cajsa-nilsdotter",
+      "name": "Cajsa Nilsdotter",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [],
+      "children": [
+        "maja_andersdotter"
+      ],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0809",
+        "FT-0811",
+        "FT-0850"
+      ],
+      "sources": [
+        {
+          "label": "Värmskog C/6 — pigan Cajsa Nilsdotter, mother of oäkta Maria 23 Apr 1827 Tollersrud (C0039415_00137)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039415_00137"
+        },
+        {
+          "label": "Värmskog A I/11 p.199 Tollersrud — candidate piga Cajsa Nilsdotter b. 7 Sep 1794 Värmskog, stays 1826–30 (C0039395_00210)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039395_00210"
+        },
+        {
+          "label": "Värmskog C/6 Födde 1794 — EXPLICIT YEAR MISS; no Cajsa Nilsdotter (FT-0850)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039415_00010"
+        }
+      ],
+      "birth_place": "Värmskog (inferred from 1827 C-book; candidate HF 7 Sep 1794)"
+    },
+    "fredrik_svensson": {
+      "id": "fredrik_svensson",
+      "slug": "fredrik-svensson",
+      "name": "Fredrik Svensson",
+      "years": "1810–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "sven_fredriksson",
+        "cajsa_larsdotter"
+      ],
+      "spouses": [
+        "maja_andersdotter"
+      ],
+      "children": [
+        "sven_petter_svensson",
+        "anders_gustaf_svensson",
+        "carl_j_rudd"
+      ],
+      "media": [
+        {
+          "file": "media/animskog-kyrka-ext.jpg",
+          "kind": "photo",
+          "source": "Ånimskogs kyrka — baptism parish (Wikimedia)",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:%C3%85nimskogs_kyrka"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0803",
+        "FT-0805",
+        "FT-0808"
+      ],
+      "sources": [
+        {
+          "label": "Ånimskog C/3 — Fredrik 19 Sep 1810 (bapt. 20), late add; Sven Fredriksson × Cajsa Larsdotter (C0046183_00109)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0046183_00109"
+        },
+        {
+          "label": "Gillberga A I/19 p.481 Mohn — Fredrik Svensson b. 19 Sep 1810 Ånimskog (C0037302_00502)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037302_00502"
+        },
+        {
+          "label": "Gillberga C I/7 — father of Carl Johan 16 Aug 1859, statdräng Fredrik Svensson (C0037321_00101)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037321_00101"
+        }
+      ],
+      "aka": [
+        "Fredric Svensson"
+      ],
+      "parent_links": [
+        {
+          "id": "sven_fredriksson",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "cajsa_larsdotter",
+          "confidence": "Confirmed"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "maja_andersdotter",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1810-09-19",
+      "birth_place": "Ånimskog, Älvsborg (Dalsland), Sweden"
+    },
+    "cajsa_larsdotter": {
+      "id": "cajsa_larsdotter",
+      "slug": "cajsa-larsdotter",
+      "name": "Cajsa Larsdotter",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "sven_fredriksson"
+      ],
+      "children": [
+        "fredrik_svensson"
+      ],
+      "media": [
+        {
+          "ref": "fredrik-svensson/media/animskog-kyrka-ext.jpg",
+          "kind": "photo",
+          "source": "Ånimskogs kyrka — named on Fredrik's 1810 C-book (Wikimedia)",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:%C3%85nimskogs_kyrka"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0808"
+      ],
+      "sources": [
+        {
+          "label": "Ånimskog C/3 — mother of Fredrik 19 Sep 1810, Cajsa Larsdotter (C0046183_00109)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0046183_00109"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "sven_fredriksson",
+          "confidence": "Confirmed"
+        }
+      ]
+    },
+    "sven_fredriksson": {
+      "id": "sven_fredriksson",
+      "slug": "sven-fredriksson",
+      "name": "Sven Fredriksson",
+      "years": "",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [],
+      "spouses": [
+        "cajsa_larsdotter"
+      ],
+      "children": [
+        "fredrik_svensson"
+      ],
+      "media": [
+        {
+          "ref": "fredrik-svensson/media/animskog-kyrka-ext.jpg",
+          "kind": "photo",
+          "source": "Ånimskogs kyrka — named on Fredrik's 1810 C-book (Wikimedia)",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:%C3%85nimskogs_kyrka"
+        }
+      ],
+      "portrait": null,
+      "object_ids": [
+        "FT-0808"
+      ],
+      "sources": [
+        {
+          "label": "Ånimskog C/3 — father of Fredrik 19 Sep 1810, Sven Fredriksson (C0046183_00109)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0046183_00109"
+        }
+      ],
+      "spouse_links": [
+        {
+          "id": "cajsa_larsdotter",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth_place": "Ånimskog (inferred)"
     },
     "bill_parsons": {
       "id": "bill_parsons",
@@ -6374,9 +7248,16 @@ window.PEOPLE_DATA = {
       "portrait": null,
       "object_ids": [
         "FT-0008",
-        "FT-0470"
+        "FT-0470",
+        "FT-0843",
+        "FT-0844",
+        "FT-0845"
       ],
       "sources": [
+        {
+          "label": "Family corroboration (Dan Rudd email 2026-09-06) — boxes: Della delayed BC, Claus register, George’s Gillborg note (FT-0843–0845)",
+          "url": ""
+        },
         {
           "label": "Family corroboration (Marcy via Alex, 2026-08-07) — Marcy’s half-brother via George (worded step at ingest; Dan corrected 2026-08-17)",
           "url": ""
@@ -6754,7 +7635,8 @@ window.PEOPLE_DATA = {
         "FT-0020",
         "FT-0480",
         "FT-0509",
-        "FT-0556"
+        "FT-0556",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -6840,7 +7722,8 @@ window.PEOPLE_DATA = {
         "FT-0020",
         "FT-0488",
         "FT-0509",
-        "FT-0554"
+        "FT-0554",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -6931,7 +7814,8 @@ window.PEOPLE_DATA = {
         "FT-0020",
         "FT-0509",
         "FT-0511",
-        "FT-0596"
+        "FT-0596",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -6995,7 +7879,8 @@ window.PEOPLE_DATA = {
         "FT-0015",
         "FT-0016",
         "FT-0020",
-        "FT-0511"
+        "FT-0511",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -7064,7 +7949,8 @@ window.PEOPLE_DATA = {
         "FT-0487",
         "FT-0509",
         "FT-0511",
-        "FT-0555"
+        "FT-0555",
+        "FT-0847"
       ],
       "sources": [
         {
@@ -7112,6 +7998,50 @@ window.PEOPLE_DATA = {
       "birth_place": "South Dakota, USA",
       "death_place": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada",
       "burial": "Cremated 11 Oct 1984, Vancouver Crematorium Ltd., Fraser Street, Vancouver, British Columbia, Canada"
+    },
+    "alma_eugenia_rud": {
+      "id": "alma_eugenia_rud",
+      "slug": "alma-eugenia-rud",
+      "name": "Alma Eugenia Rud",
+      "years": "1885-1888",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0802",
+        "FT-0812",
+        "FT-0817",
+        "FT-0818",
+        "FT-0849"
+      ],
+      "sources": [
+        {
+          "label": "Kila A I/24 p.384 Soldattorpet N:o 94 — Alma Eugenia 5 Aug 1885, d. 3 Mar 1888 (C0037902_00335)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037902_00335"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1885-08-05",
+      "death": "1888-03-03",
+      "birth_place": "Kila, Värmland, Sweden",
+      "death_place": "Kila, Värmland, Sweden"
     },
     "albin_edward_rudd": {
       "id": "albin_edward_rudd",
@@ -7169,9 +8099,21 @@ window.PEOPLE_DATA = {
         "FT-0693",
         "FT-0762",
         "FT-0763",
-        "FT-0764"
+        "FT-0764",
+        "FT-0802",
+        "FT-0812",
+        "FT-0816",
+        "FT-0817",
+        "FT-0818",
+        "FT-0840",
+        "FT-0846",
+        "FT-0849"
       ],
       "sources": [
+        {
+          "label": "Kila A I/24 p.384 — Albin Edvard 11 Jul 1887; utfl America 20 Feb 1891 with Maria and Dagmar (C0037902_00335)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037902_00335"
+        },
         {
           "label": "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Claus brothers Fritz/Hugo/Albin; FT-0470",
           "url": ""
@@ -7207,7 +8149,9 @@ window.PEOPLE_DATA = {
       ],
       "aka": [
         "Albin Rudd",
-        "Albin E. Rudd"
+        "Albin E. Rudd",
+        "Albin Evald Rudd",
+        "Albin Edvard Rudd"
       ],
       "parent_links": [
         {
@@ -7227,9 +8171,59 @@ window.PEOPLE_DATA = {
       ],
       "birth": "1887-07-11",
       "death": "1949-08-16",
-      "birth_place": "Värmland (Vermland), Sweden",
+      "birth_place": "Kila, Värmland, Sweden",
       "death_place": "Riverside County, California, USA",
       "burial": "Olivewood Cemetery (Memorial Park), Riverside, California; plot Q-1-241-4"
+    },
+    "dagmar_maria_rud": {
+      "id": "dagmar_maria_rud",
+      "slug": "dagmar-maria-rud",
+      "name": "Dagmar Maria Rud",
+      "years": "1889–",
+      "confidence": "Confirmed",
+      "verified": true,
+      "status": "cataloged",
+      "parents": [
+        "carl_j_rudd",
+        "maria_edison_rudd"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0802",
+        "FT-0812",
+        "FT-0817",
+        "FT-0818",
+        "FT-0849"
+      ],
+      "sources": [
+        {
+          "label": "Kila A I/24 p.384 — Dagmar Maria 8 May 1889; utfl America 20 Feb 1891 with Maria and Albin (C0037902_00335)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037902_00335"
+        },
+        {
+          "label": "1941 Census Bureau letter FT-0849 — 1900 household daughter Rudd, Dora N.",
+          "url": ""
+        }
+      ],
+      "aka": [
+        "Dora N. Rudd",
+        "Dagmar Rud"
+      ],
+      "parent_links": [
+        {
+          "id": "carl_j_rudd",
+          "confidence": "Confirmed"
+        },
+        {
+          "id": "maria_edison_rudd",
+          "confidence": "Confirmed"
+        }
+      ],
+      "birth": "1889-05-08",
+      "birth_place": "Kila, Värmland, Sweden"
     },
     "fritz_e_rudd": {
       "id": "fritz_e_rudd",
@@ -7254,7 +8248,9 @@ window.PEOPLE_DATA = {
         "FT-0525",
         "FT-0526",
         "FT-0570",
-        "FT-0676"
+        "FT-0676",
+        "FT-0846",
+        "FT-0849"
       ],
       "sources": [
         {
@@ -7316,7 +8312,9 @@ window.PEOPLE_DATA = {
         "FT-0523",
         "FT-0525",
         "FT-0526",
-        "FT-0570"
+        "FT-0570",
+        "FT-0846",
+        "FT-0849"
       ],
       "sources": [
         {
@@ -7366,16 +8364,23 @@ window.PEOPLE_DATA = {
       "portrait": null,
       "object_ids": [
         "FT-0506",
-        "FT-0570"
+        "FT-0570",
+        "FT-0846",
+        "FT-0849"
       ],
       "sources": [
         {
           "label": "FamilySearch 1910 US Census — Hattie A Rud, daughter, 13, b. South Dakota; Minnesota Twp, Roberts Co., SD",
           "url": "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXX"
+        },
+        {
+          "label": "1941 Census Bureau letter FT-0849 — 1900 household daughter Rudd, Alma H. (living; not Alma Eugenia d. 1888)",
+          "url": ""
         }
       ],
       "aka": [
-        "Hattie A. Rudd"
+        "Hattie A. Rudd",
+        "Alma H. Rudd"
       ],
       "parent_links": [
         {
@@ -7409,7 +8414,8 @@ window.PEOPLE_DATA = {
       "object_ids": [
         "FT-0506",
         "FT-0570",
-        "FT-0661"
+        "FT-0661",
+        "FT-0849"
       ],
       "sources": [
         {
@@ -7437,6 +8443,505 @@ window.PEOPLE_DATA = {
       ],
       "birth": "1899",
       "birth_place": "South Dakota, USA"
+    },
+    "august_niklasson_ed": {
+      "id": "august_niklasson_ed",
+      "slug": "august-niklasson-ed",
+      "name": "August Niklasson Ed",
+      "years": "1852–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "niklas_larsson_ed",
+        "anna_ersdotter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0806"
+      ],
+      "sources": [
+        {
+          "label": "Långserud A I/17 fol.123 — Son August 9 Jul 1852 (C0038179_00149)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038179_00149"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "niklas_larsson_ed",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_ersdotter",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1852-07-09",
+      "birth_place": "Långserud, Värmland, Sweden"
+    },
+    "johannes_niklasson_ed": {
+      "id": "johannes_niklasson_ed",
+      "slug": "johannes-niklasson-ed",
+      "name": "Johannes Niklasson Ed",
+      "years": "1854–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "niklas_larsson_ed",
+        "anna_ersdotter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0806"
+      ],
+      "sources": [
+        {
+          "label": "Långserud A I/17 fol.123 — Son Johannes 22 Jun 1854 (one pass read 22 May) (C0038179_00149)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038179_00149"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "niklas_larsson_ed",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_ersdotter",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1854-06-22",
+      "birth_place": "Långserud, Värmland, Sweden"
+    },
+    "lotta_niklasdotter_ed": {
+      "id": "lotta_niklasdotter_ed",
+      "slug": "lotta-niklasdotter-ed",
+      "name": "Lotta Niklasdotter Ed",
+      "years": "1860–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "niklas_larsson_ed",
+        "anna_ersdotter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0806"
+      ],
+      "sources": [
+        {
+          "label": "Långserud A I/17 fol.123 — D. Lotta 25 Nov 1860 (C0038179_00149)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0038179_00149"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "niklas_larsson_ed",
+          "confidence": "Probable"
+        },
+        {
+          "id": "anna_ersdotter",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1860-11-25",
+      "birth_place": "Långserud, Värmland, Sweden"
+    },
+    "andreas_larsson_gaterud": {
+      "id": "andreas_larsson_gaterud",
+      "slug": "andreas-larsson-gaterud",
+      "name": "Andreas Larsson",
+      "years": "1815–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lars_hansson",
+        "maria_andersdotter_getrud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — Barn Andreas 27 Jul 1815 ibm under B. Lars Hansson × H. Maria Andersdr",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1815-07-27",
+      "birth_place": "Gaterud, Svanskog, Värmland, Sweden"
+    },
+    "gustaf_larsson_gaterud": {
+      "id": "gustaf_larsson_gaterud",
+      "slug": "gustaf-larsson-gaterud",
+      "name": "Gustaf Larsson",
+      "years": "1817–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lars_hansson",
+        "maria_andersdotter_getrud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — Barn Gustaf 14 Dec 1817 ibm under B. Lars Hansson × H. Maria Andersdr",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1817-12-14",
+      "birth_place": "Gaterud, Svanskog, Värmland, Sweden"
+    },
+    "nils_larsson_gaterud": {
+      "id": "nils_larsson_gaterud",
+      "slug": "nils-larsson-gaterud",
+      "name": "Nils Larsson",
+      "years": "1820–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lars_hansson",
+        "maria_andersdotter_getrud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — Barn Nils 11 Aug 1820 ibm under B. Lars Hansson × H. Maria Andersdr",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1820-08-11",
+      "birth_place": "Gaterud, Svanskog, Värmland, Sweden"
+    },
+    "maria_larsdotter_gaterud": {
+      "id": "maria_larsdotter_gaterud",
+      "slug": "maria-larsdotter-gaterud",
+      "name": "Maria Larsdotter",
+      "years": "1823–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lars_hansson",
+        "maria_andersdotter_getrud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — Barn Maria 7 Jun 1823 ibm under B. Lars Hansson × H. Maria Andersdr",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1823-06-07",
+      "birth_place": "Gaterud, Svanskog, Värmland, Sweden"
+    },
+    "thomas_larsson_gaterud": {
+      "id": "thomas_larsson_gaterud",
+      "slug": "thomas-larsson-gaterud",
+      "name": "Thomas Larsson",
+      "years": "1829–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "lars_hansson",
+        "maria_andersdotter_getrud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0814",
+        "FT-0853"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/11 Gaterud C0039061_00161 — Barn Thomas 3 Nov 1829 ibm under B. Lars Hansson × H. Maria Andersdr",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039061_00161"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "lars_hansson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maria_andersdotter_getrud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1829-11-03",
+      "birth_place": "Gaterud, Svanskog, Värmland, Sweden"
+    },
+    "annika_andersdotter_gaterud": {
+      "id": "annika_andersdotter_gaterud",
+      "slug": "annika-andersdotter-gaterud",
+      "name": "Annika Andersdotter",
+      "years": "1779–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "anders_nilsson",
+        "maja_gaterud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0854"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/5 Gaterud fol.44 C0039055_00054 — Dott. Annika 1779 under Anders Nilsson × hust. Maja",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039055_00054"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "anders_nilsson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maja_gaterud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1779",
+      "birth_place": "Svanskog, Värmland, Sweden"
+    },
+    "stina_andersdotter_gaterud": {
+      "id": "stina_andersdotter_gaterud",
+      "slug": "stina-andersdotter-gaterud",
+      "name": "Stina Andersdotter",
+      "years": "1786–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "anders_nilsson",
+        "maja_gaterud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0854"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/5 Gaterud fol.44 C0039055_00054 — Dott. Stina 1786 under Anders Nilsson × hust. Maja",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039055_00054"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "anders_nilsson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maja_gaterud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1786",
+      "birth_place": "Svanskog, Värmland, Sweden"
+    },
+    "britta_andersdotter_gaterud": {
+      "id": "britta_andersdotter_gaterud",
+      "slug": "britta-andersdotter-gaterud",
+      "name": "Britta Andersdotter",
+      "years": "1801–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "anders_nilsson",
+        "maja_gaterud"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0854"
+      ],
+      "sources": [
+        {
+          "label": "Svanskog A I/5 Gaterud fol.44 C0039055_00054 — Dott. Britta 1801 under Anders Nilsson × hust. Maja",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0039055_00054"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "anders_nilsson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maja_gaterud",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1801",
+      "birth_place": "Svanskog, Värmland, Sweden"
+    },
+    "sven_petter_svensson": {
+      "id": "sven_petter_svensson",
+      "slug": "sven-petter-svensson",
+      "name": "Sven Petter Svensson",
+      "years": "1845–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "fredrik_svensson",
+        "maja_andersdotter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0805"
+      ],
+      "sources": [
+        {
+          "label": "Gillberga A I/19 p.481 Mohn — Sven Petter 1 Dec 1845 Tösse (foster / first-marriage / premarital note) (C0037302_00502)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037302_00502"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "fredrik_svensson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maja_andersdotter",
+          "confidence": "Possible"
+        }
+      ],
+      "birth": "1845-12-01",
+      "birth_place": "Tösse, Sweden"
+    },
+    "anders_gustaf_svensson": {
+      "id": "anders_gustaf_svensson",
+      "slug": "anders-gustaf-svensson",
+      "name": "Anders Gustaf Svensson",
+      "years": "1856–",
+      "confidence": "Probable",
+      "verified": false,
+      "status": "researching",
+      "parents": [
+        "fredrik_svensson",
+        "maja_andersdotter"
+      ],
+      "spouses": [],
+      "children": [],
+      "media": [],
+      "portrait": null,
+      "object_ids": [
+        "FT-0805"
+      ],
+      "sources": [
+        {
+          "label": "Gillberga A I/19 p.481 — Anders Gustaf 4 Dec 1856 Gillberga (C0037302_00502)",
+          "url": "https://sok.riksarkivet.se/bildvisning/C0037302_00502"
+        }
+      ],
+      "parent_links": [
+        {
+          "id": "fredrik_svensson",
+          "confidence": "Probable"
+        },
+        {
+          "id": "maja_andersdotter",
+          "confidence": "Probable"
+        }
+      ],
+      "birth": "1856-12-04",
+      "birth_place": "Gillberga, Värmland, Sweden"
     },
     "dorothy_parsons_prichard": {
       "id": "dorothy_parsons_prichard",
@@ -14365,9 +15870,10 @@ window.PEOPLE_DATA = {
         "FT-0392",
         "FT-0396",
         "FT-0397",
-        "FT-0470"
+        "FT-0470",
+        "FT-0795"
       ]
     }
   }
 };
-window.OBJECTS_INDEX = {"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd","marcy_parsons","bill_parsons","morganne","dan_rudd","nancy_rudd","derek_rudd","matthew_rudd"]},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)","person_ids":["bill_parsons","marcy_parsons","george_rudd","morganne"]},"FT-0470":{"dir":"FT-0470-dan-rudd-alex-interview-2026-08-17","photos":[],"entry":true,"type":"narration","title":"Dan Rudd × Alex Shorts interview (17 Aug 2026)","person_ids":["dan_rudd","alexander","marcy_parsons","george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0576":{"dir":"FT-0576-riverside-orange-empire-citrus-landscape","photos":[],"entry":true,"type":"place","title":"Riverside Orange Empire — citrus landscape for Marion Orciere’s youth","person_ids":["marion_orciere","theodore_m_orciere","rachel_g_orciere"]},"FT-0577":{"dir":"FT-0577-crestlawn-riverside-orciere-burials","photos":[],"entry":true,"type":"place","title":"Crestlawn Memorial Park — Riverside resting place (Orciere family)","person_ids":["marion_orciere","theodore_m_orciere","rachel_g_orciere"]},"FT-0455":{"dir":"FT-0455-hbc-edmonton-downtown-rudd-years","photos":[],"entry":true,"type":"newspaper","title":"HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)","person_ids":["clause_rudd","george_rudd","della_elizabeth_rudd"]},"FT-0497":{"dir":"FT-0497-mnopedia-swedish-minnesota-farm-landscape","photos":[],"entry":true,"type":"place","title":"MNopedia — Swedish Minnesota farm settlements (Claus’s birth-state landscape)","person_ids":["clause_rudd","george_rudd"]},"FT-0498":{"dir":"FT-0498-great-plains-dakota-swedish-farm-landscape","photos":[],"entry":true,"type":"place","title":"Great Plains — Swedish farm settlements in the Dakotas (landscape, not a named Rudd farm)","person_ids":["clause_rudd","george_rudd"]},"FT-0501":{"dir":"FT-0501-corona-eighth-and-joy-market-landscape","photos":[],"entry":true,"type":"place","title":"Corona 8th & Joy — lemon-capital landscape for the family market","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0502":{"dir":"FT-0502-la-restaurant-row-encore","photos":[],"entry":true,"type":"place","title":"L.A. Restaurant Row — The Encore on La Cienega","person_ids":["george_rudd"]},"FT-0590":{"dir":"FT-0590-westmount-126th-boarding-landscape","photos":[],"entry":true,"type":"place","title":"Westmount 126th Street — where Claus boarded in 1931","person_ids":["clause_rudd","della_elizabeth_rudd","george_rudd"]},"FT-0591":{"dir":"FT-0591-corona-lemon-boom-1930s-arrival","photos":[],"entry":true,"type":"place","title":"Corona lemon boom — landscape when the Rudds arrived (1931)","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0592":{"dir":"FT-0592-riverside-coachman-university-avenue","photos":[],"entry":true,"type":"place","title":"Riverside University Avenue — The Coachman building landscape","person_ids":["george_rudd"]},"FT-0015":{"dir":"FT-0015-death-notice-isaac-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Isaac Olsen (FAG scan)","person_ids":["isaac_olsen","jennie_olsen","della_elizabeth_rudd","carl_leonard_olson","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams","mabel_victoria_olson_sizer"]},"FT-0016":{"dir":"FT-0016-death-notice-jennie-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Jennie Olsen (FAG scan)","person_ids":["jennie_olsen","isaac_olsen","della_elizabeth_rudd","carl_leonard_olson","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams","mabel_victoria_olson_sizer"]},"FT-0020":{"dir":"FT-0020-death-notice-william-olson-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — William Olson (FAG scan)","person_ids":["william_theodore_olson","della_elizabeth_rudd","carl_leonard_olson","mabel_victoria_olson_sizer","clause_rudd","anna_augusta_olson_mclachlin","pearl_olson_williams"]},"FT-0445":{"dir":"FT-0445-sdgenweb-lyman-birth-olson-della-1902","photos":[],"entry":true,"type":"vital","title":"SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0456":{"dir":"FT-0456-olivewood-memorial-park-claus-della-burial","photos":[],"entry":true,"type":"newspaper","title":"Olivewood Memorial Park founding — burial landscape for Claus × Della","person_ids":["della_elizabeth_rudd","clause_rudd"]},"FT-0503":{"dir":"FT-0503-lyman-county-sd-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Lyman County, South Dakota — homestead wave around Della’s 1902 birth","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0504":{"dir":"FT-0504-holden-alberta-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Holden, Alberta — homestead village in Isaac × Jennie’s Canada years","person_ids":["isaac_olsen","jennie_olsen","della_elizabeth_rudd"]},"FT-0511":{"dir":"FT-0511-1911-census-strathcona-isaac-olson","photos":[],"entry":true,"type":"census","title":"1911 Canada Census — Strathcona, Alberta — Isaac Olson household","person_ids":["isaac_olsen","jennie_olsen","mabel_victoria_olson_sizer","carl_leonard_olson","pearl_olson_williams","della_elizabeth_rudd"]},"FT-0596":{"dir":"FT-0596-fag-family-grid-mabel-victoria-olson-sizer","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Mabel Victoria Olson Sizer family grid","person_ids":["mabel_victoria_olson_sizer","isaac_olsen","jennie_olsen","della_elizabeth_rudd"]},"FT-0013":{"dir":"FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Isaac Olsen (1947-09-008902)","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0014":{"dir":"FT-0014-bc-registration-of-death-jennie-olsen-56-09-0070","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Jennie Olsen (56-09-007015)","person_ids":["jennie_olsen","isaac_olsen"]},"FT-0487":{"dir":"FT-0487-bc-registration-of-death-carl-leonard-olson","photos":["photos/01.jpg"],"entry":true,"type":"vital","title":"BC Registration of Death — Carl Leonard Olson (1984-09-016583)","person_ids":["carl_leonard_olson","isaac_olsen","jennie_olsen"]},"FT-0488":{"dir":"FT-0488-paa-death-index-william-theodore-olson-1963","photos":[],"entry":true,"type":"vital","title":"Alberta death index 1963 — William Theodor Olson (Tofield 006-953)","person_ids":["william_theodore_olson","jennie_olsen"]},"FT-0509":{"dir":"FT-0509-1900-census-lyman-sd-isaac-olson","photos":[],"entry":true,"type":"census","title":"1900 US Census — Lyman, SD — Isaac Olson household","person_ids":["isaac_olsen","jennie_olsen","william_theodore_olson","anna_augusta_olson_mclachlin","mabel_victoria_olson_sizer","carl_leonard_olson"]},"FT-0523":{"dir":"FT-0523-fag-negative-jennie-l-rudd-adult","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Jennie L. Rud/Rudd adult death/burial negative (~1895 MN)","person_ids":["jennie_l_rudd","jennie_olsen"]},"FT-0543":{"dir":"FT-0543-interment-mountain-view-olsen-plot","photos":[],"entry":true,"type":"place","title":"interment.net — Mountain View Cemetery plot ABRAY-*-16-005-0007 (Isaac × Jennie Olsen)","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0552":{"dir":"FT-0552-fag-gravesite-isaac-jennie-olsen-mountain-view","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Isaac × Jennie Olsen Mountain View gravesite notes","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0554":{"dir":"FT-0554-fag-family-grid-william-theodore-olson","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — William Theodore Olson family grid","person_ids":["william_theodore_olson","isaac_olsen","jennie_olsen"]},"FT-0555":{"dir":"FT-0555-fag-bio-carl-leonard-olson-bc-pointer","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Carl Leonard Olson bio (BC Archives pointer)","person_ids":["carl_leonard_olson","isaac_olsen","jennie_olsen"]},"FT-0480":{"dir":"FT-0480-bc-death-anna-augusta-mclachlin-1970","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Anna Augusta McLachlin (1970-09-003207, FAG transcription)","person_ids":["anna_augusta_olson_mclachlin","isaac_olsen"]},"FT-0444":{"dir":"FT-0444-henderson-edmonton-1931-chas-y-rudd","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)","person_ids":["clause_rudd"]},"FT-0454":{"dir":"FT-0454-hbc-wholesale-claus-rudd-edmonton-trade","photos":[],"entry":true,"type":"newspaper","title":"What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade","person_ids":["clause_rudd"]},"FT-0493":{"dir":"FT-0493-hogman-soldatnamn-andersson-rudd","photos":[],"entry":true,"type":"military","title":"Högman — Swedish soldatnamn: Andersson patronymic vs soldier surname","person_ids":["clause_rudd"]},"FT-0494":{"dir":"FT-0494-aberg-soldiers-surnames-sweden-1984","photos":[],"entry":true,"type":"military","title":"Åberg 1984 — Soldiers' surnames in Sweden (War Archives historian)","person_ids":["clause_rudd"]},"FT-0495":{"dir":"FT-0495-rudd-class-soldatnamn-rude-rote","photos":[],"entry":true,"type":"military","title":"Rudd-class soldier names — rote Rude / Rudha (example, not this family)","person_ids":["clause_rudd"]},"FT-0496":{"dir":"FT-0496-swedish-service-length-not-two-year-swap","photos":[],"entry":true,"type":"military","title":"Swedish service length — allotted career vs 1901 conscription (not a 2-year swap)","person_ids":["clause_rudd"]},"FT-0500":{"dir":"FT-0500-revillon-edmonton-claus-wholesale","photos":[],"entry":true,"type":"place","title":"Revillon Frères Edmonton warehouse — Claus’s 1921 wholesale clerk job","person_ids":["clause_rudd"]},"FT-0506":{"dir":"FT-0506-1910-census-roberts-sd-carl-j-rud","photos":[],"entry":true,"type":"census","title":"1910 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud household","person_ids":["carl_j_rudd","maria_edison_rudd","fritz_e_rudd","clause_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd"]},"FT-0508":{"dir":"FT-0508-elca-baptism-klaus-jorgen-rud-1893","photos":[],"entry":true,"type":"church","title":"ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham, Minnesota","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0510":{"dir":"FT-0510-wwi-draft-claus-yugue-rud-louisburg","photos":[],"entry":true,"type":"military","title":"WWI draft — Claus Yugue Rud, born Louisburg, Minnesota","person_ids":["clause_rudd"]},"FT-0525":{"dir":"FT-0525-olivewood-negative-fritz-jennie-rudd","photos":[],"entry":true,"type":"research_note","title":"Olivewood Riverside — Fritz E. / Jennie L. Rud not buried with Claus/Albin","person_ids":["fritz_e_rudd","jennie_l_rudd","clause_rudd","albin_edward_rudd"]},"FT-0562":{"dir":"FT-0562-louisburg-platted-1887-birthplace","photos":[],"entry":true,"type":"place","title":"Louisburg platted 1887 — Claus's named birthplace hamlet (Lac qui Parle Co.)","person_ids":["clause_rudd"]},"FT-0568":{"dir":"FT-0568-bellingham-perry-pioneer-railroad-landscape","photos":[],"entry":true,"type":"place","title":"Bellingham / Perry area pioneer landscape — sod houses, monthly preaching, GN railroad 1887","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0569":{"dir":"FT-0569-lqp-scandinavian-lutheran-home-church","photos":[],"entry":true,"type":"church","title":"Lac qui Parle Scandinavian Lutheran — home services, Swedish worship, Providence church","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0570":{"dir":"FT-0570-roberts-county-1892-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Roberts County, SD — 1892 reservation opening & farm homestead landscape","person_ids":["carl_j_rudd","maria_edison_rudd","clause_rudd","fritz_e_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd"]},"FT-0587":{"dir":"FT-0587-henderson-edmonton-1921-claus-revillon","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1921 — Rudd Claus T (Revillon Whol)","person_ids":["clause_rudd"]},"FT-0588":{"dir":"FT-0588-revillon-edmonton-arrival-lore","photos":[],"entry":true,"type":"place","title":"Revillon Frères arrival lore — train banner and HBC rivalry (Edmonton)","person_ids":["clause_rudd"]},"FT-0589":{"dir":"FT-0589-edmonton-boardwalk-wholesale-district","photos":[],"entry":true,"type":"place","title":"Boardwalk Building — Revillon’s wholesale-district neighbor","person_ids":["clause_rudd"]},"FT-0593":{"dir":"FT-0593-hagfors-brukssamhalle-uddeholm-1873","photos":[],"entry":true,"type":"place","title":"Hagfors brukssamhälle — Uddeholm ironworks founding (Carl × Maria Sweden door)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0594":{"dir":"FT-0594-varmland-emigration-wave-1880s","photos":[],"entry":true,"type":"place","title":"Värmland emigration wave — 1880s peak (Carl × Maria generation)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0595":{"dir":"FT-0595-norra-rada-parish-landscape","photos":[],"entry":true,"type":"place","title":"Norra Råda parish landscape — rural bruk patchwork (Albin 1887 door)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0507":{"dir":"FT-0507-numident-albin-edward-rudd-parents","photos":[],"entry":true,"type":"vital","title":"NUMIDENT — Albin Edward Rudd, parents Carl J. Rudd × Marie Edison","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0512":{"dir":"FT-0512-norra-rada-c7-entry-128-rudstrom","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 birth 1887 entry 128 — Maria Karolina, Rudström Karl Johan","person_ids":["carl_j_rudd","albin_edward_rudd"]},"FT-0513":{"dir":"FT-0513-norra-rada-c7-july11-julia-maria-rudstrom","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 1887 entry 130 — Julia Maria, 11 Jul (Rudström Karolina)","person_ids":["albin_edward_rudd","carl_j_rudd"]},"FT-0514":{"dir":"FT-0514-norra-rada-c7-rudstrom-svensdotter-johan-alexander","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 1887 — Johan Alexander, Rudström × Svensdotter","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0515":{"dir":"FT-0515-norra-rada-hf-sida-97-risater","photos":[],"entry":true,"type":"church","title":"Norra Råda husförhör A I/20a — ledger sida 97 (Risäter & Brödheden)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0516":{"dir":"FT-0516-norra-rada-c7-albin-negative-july1887","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 July 1887 band — no Albin Edward Rud birth line","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0518":{"dir":"FT-0518-fag-olivewood-negative-maria-rudd-death","photos":[],"entry":true,"type":"research_note","title":"Find a Grave + Olivewood — Maria Rud/Edison death/burial negative","person_ids":["maria_edison_rudd","carl_j_rudd"]},"FT-0520":{"dir":"FT-0520-census-negative-carl-maria-1920-1930-roberts","photos":[],"entry":true,"type":"research_note","title":"1920 / 1930 US census — Carl J. × Maria Rud negative (no open Roberts transcription)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0521":{"dir":"FT-0521-emigration-negative-carl-rud-sweden-mn","photos":[],"entry":true,"type":"research_note","title":"Emigration negative — Carl Rud × Maria Edison Sweden→MN window 1887–1895","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0652":{"dir":"FT-0652-norra-rada-hf-stjernsfors-negative-carl-maria","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Stjernsfors band — negative for Carl J. × Maria Edison","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0653":{"dir":"FT-0653-norra-rada-hf-hagfors-bru-negative-carl-maria","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Hagfors bru band — negative for Carl J. × Maria Edison","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0654":{"dir":"FT-0654-norra-rada-hf-emigration-rudstrom-lines","photos":[],"entry":true,"type":"church","title":"Norra Råda HF — N. Amerika notes on Rudström / Risäter lines (no Carl×Maria)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0661":{"dir":"FT-0661-1930-census-roberts-sd-carl-j-hugo","photos":[],"entry":true,"type":"census","title":"1930 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud × Hugo C. Rud","person_ids":["carl_j_rudd","carl_h_rudd"]},"FT-0676":{"dir":"FT-0676-mnhs-negative-rudd-deaths","photos":[],"entry":true,"type":"research_note","title":"MNHS People Search — Carl × Maria × Fritz Rud/Rudd MN death index negative","person_ids":["carl_j_rudd","maria_edison_rudd","fritz_e_rudd"]},"FT-0677":{"dir":"FT-0677-norra-rada-gustafsdal-heading-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda HF 1886–90 — Gustafsdal not a register heading","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0678":{"dir":"FT-0678-norra-rada-b3-1887-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1887 utflyttning — negative Carl J. × Maria / Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0679":{"dir":"FT-0679-norra-rada-b3-1888-1889-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1888–1889 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0686":{"dir":"FT-0686-maria-edison-rudd-death-window-negative","photos":[],"entry":true,"type":"research_note","title":"Maria Edison Rudd — death/burial window 1910–1930 negative (FAG × Roberts GT × Olivewood)","person_ids":["maria_edison_rudd","carl_j_rudd"]},"FT-0693":{"dir":"FT-0693-open-emi-negative-rudd-1889","photos":[],"entry":true,"type":"research_note","title":"Open emigration negative — Karl/Carl Rud × Maria × Albin 1888–1891 (1930 arrival 1889)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0694":{"dir":"FT-0694-norra-rada-hf-stjernsfors-torps-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Stjernsfors torps — negative for Rudström Karl Johan / Carl×Maria","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0762":{"dir":"FT-0762-norra-rada-b3-1890-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1890 utflyttning — negative Carl J. × Maria / Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0763":{"dir":"FT-0763-norra-rada-b3-1891-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1891 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0764":{"dir":"FT-0764-norra-rada-b3-1892-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1892 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0517":{"dir":"FT-0517-fag-negative-carl-j-rudd-death-burial","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Carl J. Rud/Rudd death/burial negative (1869±5 Sweden)","person_ids":["carl_j_rudd"]},"FT-0519":{"dir":"FT-0519-roberts-sd-birth-andrew-rud-not-carl-j","photos":[],"entry":true,"type":"vital","title":"Roberts Co., SD birth register — Andrew Rud × Gunhild (≠ Carl J. × Maria)","person_ids":["carl_j_rudd"]},"FT-0597":{"dir":"FT-0597-christina-dupray-fag-children-grid","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Christina Miller Dupray children grid (James Story + Frederick Miller)","person_ids":["christina_miller_dupray","james_story_dupray","frederick_miller_dupray","thomas_dupray"]},"FT-0651":{"dir":"FT-0651-norra-rada-hf-sida-47-rastrom-hafversbol","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/20a sida 47 — Karl Johan Råström, Hafversbol","person_ids":["carl_j_rudd"]},"FT-0655":{"dir":"FT-0655-norra-rada-c7-p47-persson-collision","photos":[],"entry":true,"type":"church","title":"C/7 entry 128 HF p.47 — Persson Maria Karolina date collision","person_ids":["carl_j_rudd","albin_edward_rudd"]},"FT-0680":{"dir":"FT-0680-norra-rada-ai20b-sida-47-by-byberg","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/20b sida 47 — 1/2 By (Byberg), not Gustafsdal","person_ids":["carl_j_rudd"]},"FT-0681":{"dir":"FT-0681-norra-rada-ai19a-gustafsdal-loose-notes","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/19a — Gustafsdal place-notes on loose list","person_ids":["carl_j_rudd"]},"FT-0682":{"dir":"FT-0682-1923-plat-rud-c-j-minnesota-twp","photos":[],"entry":true,"type":"deed","title":"1923 Roberts Co. plat index — Rud C. J., Sec. 21 T128N R51W Minnesota Twp","person_ids":["carl_j_rudd"]},"FT-0689":{"dir":"FT-0689-fag-negative-carl-j-rudd-1861","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Carl J. Rud/Rudd death/burial negative (1861±5 Sweden; SD/MN/CA)","person_ids":["carl_j_rudd"]},"FT-0765":{"dir":"FT-0765-norra-rada-ai18a-sida-259-thorsby","photos":[],"entry":true,"type":"church","title":"Norra Råda A I/18a sida 259 — Thorsby, not Gustafsdahl","person_ids":["carl_j_rudd"]},"FT-0766":{"dir":"FT-0766-norra-rada-ai19a-sida-259-uddeholm","photos":[],"entry":true,"type":"church","title":"Norra Råda A I/19a sida 259 — Uddeholm, not Gustafsdahl","person_ids":["carl_j_rudd"]},"FT-0006":{"dir":"FT-0006-bill-parsons-baseball-card-rolodex","photos":[],"entry":true,"type":"artifact","title":"Bill Parsons baseball-card rolodex","person_ids":["bill_parsons"]},"FT-0007":{"dir":"FT-0007-press-enterprise-elizabeth-betty-a-parsons","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — Elizabeth “Betty” A. Parsons","person_ids":["elizabeth_allen","gerald_allen_parsons","bill_parsons"]},"FT-0010":{"dir":"FT-0010-parsons-allen-wedding-notice-wee-kirk-o-the-heat","photos":[],"entry":true,"type":"newspaper","title":"Parsons–Allen wedding notice — Wee Kirk o' the Heather","person_ids":["gerald_allen_parsons","elizabeth_allen","raymond_philip_allen","ina_louise_squier_allen","harriet_b_foss_parsons","nelson_b_parsons","harold_ambrose_parsons","autis_foss_parsons_hicks"]},"FT-0012":{"dir":"FT-0012-betty-allen-among-pasadena-nursing-graduates","photos":[],"entry":true,"type":"newspaper","title":"Betty Allen among Pasadena nursing graduates","person_ids":["elizabeth_allen","raymond_philip_allen","ina_louise_squier_allen"]},"FT-0011":{"dir":"FT-0011-pitcher-parsons-scheduled-vs-former-teammates-ni","photos":[],"entry":true,"type":"newspaper","title":"Pitcher Parsons scheduled vs former teammates — nightball (1936)","person_ids":["gerald_allen_parsons"]},"FT-0443":{"dir":"FT-0443-maine-vr-marriage-nelson-hattie-foss","photos":["photos/01-parents-side.png","photos/02-face.png"],"entry":true,"type":"vital","title":"Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"},"FT-0573":{"dir":"FT-0573-aroostook-potato-starch-industry","photos":[],"entry":true,"type":"place","title":"Aroostook potato starch industry — Nelson Parsons’s trade unpacked","person_ids":["nelson_b_parsons","harriet_b_foss_parsons","ambrose_foss","daniel_w_foss"]},"FT-0742":{"dir":"FT-0742-nhgr-vol3-darling-huntris-baptism","photos":[],"entry":true,"type":"church","title":"NHGR vol. 3 — Newington church baptisms (Darling son of Christopher × Mary)","person_ids":["darling_huntress","christopher_huntress","mary_chick_huntress","christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","george_huntress_newington"]},"FT-0743":{"dir":"FT-0743-nhgr-vol4-noah-elizabeth-huntris","photos":[],"entry":true,"type":"church","title":"NHGR vol. 4 — Newington baptisms Noah & Elizabeth Huntris; Darling × Love covenant","person_ids":["noah_huntress","elizabeth_huntress_stevens","christopher_huntress","mary_chick_huntress","darling_huntress"]},"FT-0745":{"dir":"FT-0745-athenaeum-christopher-huntress","photos":[],"entry":true,"type":"reference","title":"Portsmouth Athenaeum — Christopher Huntress 1703–1782 catalog","person_ids":["christopher_huntress","mary_chick_huntress","darling_huntress","christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","george_huntress_newington","david_huntress_newington","nathan_huntress_newington","noah_huntress","elizabeth_huntress_stevens"]},"FT-0744":{"dir":"FT-0744-stackpole-kittery-chick-huntress","photos":[],"entry":true,"type":"reference","title":"Stackpole Old Kittery p.319 — Mary Chick m. Christopher Huntress of Newington","person_ids":["mary_chick_huntress","christopher_huntress"]},"FT-0746":{"dir":"FT-0746-nehgr-1868-huntress-sib-marriages","photos":[],"entry":true,"type":"church","title":"NEHGR 22 (1868) Newington marriages — Huntress siblings; FAG negative","person_ids":["christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","christopher_huntress"]},"FT-0575":{"dir":"FT-0575-barnstead-nh-bunker-pioneers","photos":[],"entry":true,"type":"place","title":"Barnstead, NH — Bunker pioneers and Parade ground (Harriet N. Bunker stem)","person_ids":["harriet_n_bunker_foss","joseph_s_bunker","olive_otis_bunker"]},"FT-0574":{"dir":"FT-0574-daniel-w-foss-11th-maine-appomattox","photos":[],"entry":true,"type":"military","title":"11th Maine Infantry — late-war Petersburg and Appomattox (Daniel W. Foss’s regiment)","person_ids":["daniel_w_foss"]},"FT-0572":{"dir":"FT-0572-swedish-colony-fort-fairfield-welcome-route","photos":[],"entry":true,"type":"place","title":"Swedish colonists — St. John River route and Fort Fairfield welcome (1870)","person_ids":["percy_parsons","kate_parsons","nelson_b_parsons"]},"FT-0571":{"dir":"FT-0571-new-sweden-maine-swedish-colony-founding","photos":[],"entry":true,"type":"place","title":"New Sweden — Maine Swedish Colony founding (1870)","person_ids":["percy_parsons","kate_parsons"]},"FT-0578":{"dir":"FT-0578-swedish-1872-labor-diversion-outer-colony","photos":[],"entry":true,"type":"place","title":"1871–72 Swedish influx — labor diversion and outer Aroostook settlement","person_ids":["percy_parsons","kate_parsons"]},"FT-0556":{"dir":"FT-0556-fag-inscription-anna-augusta-mclachlin","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Anna Augusta McLachlin inscription and gravesite","person_ids":["anna_augusta_olson_mclachlin"]},"FT-0542":{"dir":"FT-0542-fag-albin-edward-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Albin Edward Rudd memorial extract","person_ids":["albin_edward_rudd","margaret_emma_fuller_rudd","robert_fuller_rudd"],"subject_id":"albin_edward_rudd"},"FT-0544":{"dir":"FT-0544-fag-margaret-emma-fuller-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Margaret Emma Fuller Rudd memorial extract","person_ids":["margaret_emma_fuller_rudd","albin_edward_rudd","robert_fuller_rudd"],"subject_id":"margaret_emma_fuller_rudd"},"FT-0545":{"dir":"FT-0545-fag-robert-fuller-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Robert Fuller Rudd memorial extract","person_ids":["robert_fuller_rudd","albin_edward_rudd","margaret_emma_fuller_rudd"],"subject_id":"robert_fuller_rudd"},"FT-0522":{"dir":"FT-0522-fag-negative-fritz-e-rudd-adult","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Fritz E. Rud/Rudd adult death/burial negative (~1892 MN)","person_ids":["fritz_e_rudd"]},"FT-0524":{"dir":"FT-0524-wwi-ssdi-negative-fritz-e-rudd","photos":[],"entry":true,"type":"research_note","title":"WWI draft + SSDI — Fritz E. Rud/Rudd negative (free indexes)","person_ids":["fritz_e_rudd"]},"FT-0526":{"dir":"FT-0526-newspaper-obit-negative-fritz-jennie-rudd","photos":[],"entry":true,"type":"research_note","title":"Newspaper / obituary — Fritz E. & Jennie L. Rud negative (no open text)","person_ids":["fritz_e_rudd","jennie_l_rudd"]},"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)","person_ids":["alexander"]},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only","person_ids":["alexander"]},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)","person_ids":["alexander","annabelle","earl","richard","gloria","dorland"]}};
+window.OBJECTS_INDEX = {"FT-0008":{"dir":"FT-0008-press-enterprise-george-e-rudd","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — George E. Rudd","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd","marcy_parsons","bill_parsons","morganne","dan_rudd","nancy_rudd","derek_rudd","matthew_rudd"]},"FT-0457":{"dir":"FT-0457-sabr-bill-parsons-married-marcy-rae-rudd","photos":[],"entry":true,"type":"newspaper","title":"SABR — Bill Parsons married Marcy Rae Rudd (14 Jun 1969)","person_ids":["bill_parsons","marcy_parsons","george_rudd","morganne"]},"FT-0470":{"dir":"FT-0470-dan-rudd-alex-interview-2026-08-17","photos":[],"entry":true,"type":"narration","title":"Dan Rudd × Alex Shorts interview (17 Aug 2026)","person_ids":["dan_rudd","alexander","marcy_parsons","george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0576":{"dir":"FT-0576-riverside-orange-empire-citrus-landscape","photos":[],"entry":true,"type":"place","title":"Riverside Orange Empire — citrus landscape for Marion Orciere’s youth","person_ids":["marion_orciere","theodore_m_orciere","rachel_g_orciere"]},"FT-0577":{"dir":"FT-0577-crestlawn-riverside-orciere-burials","photos":[],"entry":true,"type":"place","title":"Crestlawn Memorial Park — Riverside resting place (Orciere family)","person_ids":["marion_orciere","theodore_m_orciere","rachel_g_orciere"]},"FT-0455":{"dir":"FT-0455-hbc-edmonton-downtown-rudd-years","photos":[],"entry":true,"type":"newspaper","title":"HBC downtown Edmonton landscape — Rudd family years (before 1931 exit)","person_ids":["clause_rudd","george_rudd","della_elizabeth_rudd"]},"FT-0497":{"dir":"FT-0497-mnopedia-swedish-minnesota-farm-landscape","photos":[],"entry":true,"type":"place","title":"MNopedia — Swedish Minnesota farm settlements (Claus’s birth-state landscape)","person_ids":["clause_rudd","george_rudd"]},"FT-0498":{"dir":"FT-0498-great-plains-dakota-swedish-farm-landscape","photos":[],"entry":true,"type":"place","title":"Great Plains — Swedish farm settlements in the Dakotas (landscape, not a named Rudd farm)","person_ids":["clause_rudd","george_rudd"]},"FT-0501":{"dir":"FT-0501-corona-eighth-and-joy-market-landscape","photos":[],"entry":true,"type":"place","title":"Corona 8th & Joy — lemon-capital landscape for the family market","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0502":{"dir":"FT-0502-la-restaurant-row-encore","photos":[],"entry":true,"type":"place","title":"L.A. Restaurant Row — The Encore on La Cienega","person_ids":["george_rudd"]},"FT-0590":{"dir":"FT-0590-westmount-126th-boarding-landscape","photos":[],"entry":true,"type":"place","title":"Westmount 126th Street — where Claus boarded in 1931","person_ids":["clause_rudd","della_elizabeth_rudd","george_rudd"]},"FT-0591":{"dir":"FT-0591-corona-lemon-boom-1930s-arrival","photos":[],"entry":true,"type":"place","title":"Corona lemon boom — landscape when the Rudds arrived (1931)","person_ids":["george_rudd","clause_rudd","della_elizabeth_rudd"]},"FT-0592":{"dir":"FT-0592-riverside-coachman-university-avenue","photos":[],"entry":true,"type":"place","title":"Riverside University Avenue — The Coachman building landscape","person_ids":["george_rudd"]},"FT-0839":{"dir":"FT-0839-corona-daily-independent-rudd-grocery-1939","photos":[],"entry":true,"type":"newspaper","title":"Corona Daily Independent — Rudd's Grocery, 718 Joy (1939 directory)","person_ids":["clause_rudd","della_elizabeth_rudd","george_rudd"]},"FT-0840":{"dir":"FT-0840-1931-border-crossing-search-negative","photos":[],"entry":true,"type":"research_note","title":"1931 Rudd Edmonton→US border crossing — FamilySearch search negative","person_ids":["clause_rudd","della_elizabeth_rudd","george_rudd","albin_edward_rudd"]},"FT-0845":{"dir":"FT-0845-george-rudd-fredrick-gillborg-name-note","photos":["photos/01.jpg"],"entry":true,"type":"artifact","title":"George Rudd handwritten note — name before Rud was Fredrick Gillborg","person_ids":["george_rudd","clause_rudd","dan_rudd"]},"FT-0848":{"dir":"FT-0848-castor-edmonton-claus-della-george","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Castor Ltd. Edmonton studio — Claus, Della, and George Rudd","person_ids":["clause_rudd","della_elizabeth_rudd","george_rudd"]},"FT-0015":{"dir":"FT-0015-death-notice-isaac-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Isaac Olsen (FAG scan)","person_ids":["isaac_olsen","jennie_olsen","della_elizabeth_rudd","carl_leonard_olson","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams","mabel_victoria_olson_sizer"]},"FT-0016":{"dir":"FT-0016-death-notice-jennie-olsen-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — Jennie Olsen (FAG scan)","person_ids":["jennie_olsen","isaac_olsen","della_elizabeth_rudd","carl_leonard_olson","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams","mabel_victoria_olson_sizer"]},"FT-0020":{"dir":"FT-0020-death-notice-william-olson-fag-scan","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Death notice — William Olson (FAG scan)","person_ids":["william_theodore_olson","della_elizabeth_rudd","carl_leonard_olson","mabel_victoria_olson_sizer","clause_rudd","anna_augusta_olson_mclachlin","pearl_olson_williams"]},"FT-0445":{"dir":"FT-0445-sdgenweb-lyman-birth-olson-della-1902","photos":[],"entry":true,"type":"vital","title":"SDGenWeb Lyman Co. births — OLSON,DELLA 12 May 1902 (Isaac × Jennie Matson)","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0456":{"dir":"FT-0456-olivewood-memorial-park-claus-della-burial","photos":[],"entry":true,"type":"newspaper","title":"Olivewood Memorial Park founding — burial landscape for Claus × Della","person_ids":["della_elizabeth_rudd","clause_rudd"]},"FT-0503":{"dir":"FT-0503-lyman-county-sd-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Lyman County, South Dakota — homestead wave around Della’s 1902 birth","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0504":{"dir":"FT-0504-holden-alberta-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Holden, Alberta — homestead village in Isaac × Jennie’s Canada years","person_ids":["isaac_olsen","jennie_olsen","della_elizabeth_rudd"]},"FT-0511":{"dir":"FT-0511-1911-census-strathcona-isaac-olson","photos":[],"entry":true,"type":"census","title":"1911 Canada Census — Strathcona, Alberta — Isaac Olson household","person_ids":["isaac_olsen","jennie_olsen","mabel_victoria_olson_sizer","carl_leonard_olson","pearl_olson_williams","della_elizabeth_rudd"]},"FT-0596":{"dir":"FT-0596-fag-family-grid-mabel-victoria-olson-sizer","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Mabel Victoria Olson Sizer family grid","person_ids":["mabel_victoria_olson_sizer","isaac_olsen","jennie_olsen","della_elizabeth_rudd"]},"FT-0843":{"dir":"FT-0843-lyman-delayed-birth-della-olson-1902","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"vital","title":"Lyman Co. SD delayed birth — Della Elizabeth Olson, 12 May 1902 Oacoma","person_ids":["della_elizabeth_rudd","isaac_olsen","jennie_olsen"]},"FT-0847":{"dir":"FT-0847-jennie-olson-agnes-seline-clippings","photos":["photos/01.jpg"],"entry":true,"type":"newspaper","title":"Clippings — Jennie Olson funeral and Agnes Seline Olson (two women)","person_ids":["jennie_olsen","della_elizabeth_rudd","isaac_olsen","carl_leonard_olson","mabel_victoria_olson_sizer","william_theodore_olson","anna_augusta_olson_mclachlin","pearl_olson_williams"]},"FT-0013":{"dir":"FT-0013-bc-registration-of-death-isaac-olsen-1947-09-008","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Isaac Olsen (1947-09-008902)","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0014":{"dir":"FT-0014-bc-registration-of-death-jennie-olsen-56-09-0070","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Jennie Olsen (56-09-007015)","person_ids":["jennie_olsen","isaac_olsen"]},"FT-0487":{"dir":"FT-0487-bc-registration-of-death-carl-leonard-olson","photos":["photos/01.jpg"],"entry":true,"type":"vital","title":"BC Registration of Death — Carl Leonard Olson (1984-09-016583)","person_ids":["carl_leonard_olson","isaac_olsen","jennie_olsen"]},"FT-0488":{"dir":"FT-0488-paa-death-index-william-theodore-olson-1963","photos":[],"entry":true,"type":"vital","title":"Alberta death index 1963 — William Theodor Olson (Tofield 006-953)","person_ids":["william_theodore_olson","jennie_olsen"]},"FT-0509":{"dir":"FT-0509-1900-census-lyman-sd-isaac-olson","photos":[],"entry":true,"type":"census","title":"1900 US Census — Lyman, SD — Isaac Olson household","person_ids":["isaac_olsen","jennie_olsen","william_theodore_olson","anna_augusta_olson_mclachlin","mabel_victoria_olson_sizer","carl_leonard_olson"]},"FT-0523":{"dir":"FT-0523-fag-negative-jennie-l-rudd-adult","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Jennie L. Rud/Rudd adult death/burial negative (~1895 MN)","person_ids":["jennie_l_rudd","jennie_olsen"]},"FT-0543":{"dir":"FT-0543-interment-mountain-view-olsen-plot","photos":[],"entry":true,"type":"place","title":"interment.net — Mountain View Cemetery plot ABRAY-*-16-005-0007 (Isaac × Jennie Olsen)","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0552":{"dir":"FT-0552-fag-gravesite-isaac-jennie-olsen-mountain-view","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Isaac × Jennie Olsen Mountain View gravesite notes","person_ids":["isaac_olsen","jennie_olsen"]},"FT-0554":{"dir":"FT-0554-fag-family-grid-william-theodore-olson","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — William Theodore Olson family grid","person_ids":["william_theodore_olson","isaac_olsen","jennie_olsen"]},"FT-0555":{"dir":"FT-0555-fag-bio-carl-leonard-olson-bc-pointer","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Carl Leonard Olson bio (BC Archives pointer)","person_ids":["carl_leonard_olson","isaac_olsen","jennie_olsen"]},"FT-0480":{"dir":"FT-0480-bc-death-anna-augusta-mclachlin-1970","photos":[],"entry":true,"type":"vital","title":"BC Registration of Death — Anna Augusta McLachlin (1970-09-003207, FAG transcription)","person_ids":["anna_augusta_olson_mclachlin","isaac_olsen"]},"FT-0444":{"dir":"FT-0444-henderson-edmonton-1931-chas-y-rudd","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1931 — Rudd Chas Y (H B Co Whol)","person_ids":["clause_rudd"]},"FT-0454":{"dir":"FT-0454-hbc-wholesale-claus-rudd-edmonton-trade","photos":[],"entry":true,"type":"newspaper","title":"What HBC Wholesale was — Claus Y. Rudd’s 1931 Edmonton trade","person_ids":["clause_rudd"]},"FT-0493":{"dir":"FT-0493-hogman-soldatnamn-andersson-rudd","photos":[],"entry":true,"type":"military","title":"Högman — Swedish soldatnamn: Andersson patronymic vs soldier surname","person_ids":["clause_rudd"]},"FT-0494":{"dir":"FT-0494-aberg-soldiers-surnames-sweden-1984","photos":[],"entry":true,"type":"military","title":"Åberg 1984 — Soldiers' surnames in Sweden (War Archives historian)","person_ids":["clause_rudd"]},"FT-0495":{"dir":"FT-0495-rudd-class-soldatnamn-rude-rote","photos":[],"entry":true,"type":"military","title":"Rudd-class soldier names — rote Rude / Rudha (example, not this family)","person_ids":["clause_rudd"]},"FT-0496":{"dir":"FT-0496-swedish-service-length-not-two-year-swap","photos":[],"entry":true,"type":"military","title":"Swedish service length — allotted career vs 1901 conscription (not a 2-year swap)","person_ids":["clause_rudd"]},"FT-0500":{"dir":"FT-0500-revillon-edmonton-claus-wholesale","photos":[],"entry":true,"type":"place","title":"Revillon Frères Edmonton warehouse — Claus’s 1921 wholesale clerk job","person_ids":["clause_rudd"]},"FT-0506":{"dir":"FT-0506-1910-census-roberts-sd-carl-j-rud","photos":[],"entry":true,"type":"census","title":"1910 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud household","person_ids":["carl_j_rudd","maria_edison_rudd","fritz_e_rudd","clause_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd"]},"FT-0508":{"dir":"FT-0508-elca-baptism-klaus-jorgen-rud-1893","photos":[],"entry":true,"type":"church","title":"ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham, Minnesota","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0510":{"dir":"FT-0510-wwi-draft-claus-yugue-rud-louisburg","photos":[],"entry":true,"type":"military","title":"WWI draft — Claus Yugue Rud, born Louisburg, Minnesota","person_ids":["clause_rudd"]},"FT-0525":{"dir":"FT-0525-olivewood-negative-fritz-jennie-rudd","photos":[],"entry":true,"type":"research_note","title":"Olivewood Riverside — Fritz E. / Jennie L. Rud not buried with Claus/Albin","person_ids":["fritz_e_rudd","jennie_l_rudd","clause_rudd","albin_edward_rudd"]},"FT-0562":{"dir":"FT-0562-louisburg-platted-1887-birthplace","photos":[],"entry":true,"type":"place","title":"Louisburg platted 1887 — Claus's named birthplace hamlet (Lac qui Parle Co.)","person_ids":["clause_rudd"]},"FT-0568":{"dir":"FT-0568-bellingham-perry-pioneer-railroad-landscape","photos":[],"entry":true,"type":"place","title":"Bellingham / Perry area pioneer landscape — sod houses, monthly preaching, GN railroad 1887","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0569":{"dir":"FT-0569-lqp-scandinavian-lutheran-home-church","photos":[],"entry":true,"type":"church","title":"Lac qui Parle Scandinavian Lutheran — home services, Swedish worship, Providence church","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0570":{"dir":"FT-0570-roberts-county-1892-homestead-landscape","photos":[],"entry":true,"type":"place","title":"Roberts County, SD — 1892 reservation opening & farm homestead landscape","person_ids":["carl_j_rudd","maria_edison_rudd","clause_rudd","fritz_e_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd"]},"FT-0587":{"dir":"FT-0587-henderson-edmonton-1921-claus-revillon","photos":[],"entry":true,"type":"newspaper","title":"Henderson’s Edmonton City Directory 1921 — Rudd Claus T (Revillon Whol)","person_ids":["clause_rudd"]},"FT-0588":{"dir":"FT-0588-revillon-edmonton-arrival-lore","photos":[],"entry":true,"type":"place","title":"Revillon Frères arrival lore — train banner and HBC rivalry (Edmonton)","person_ids":["clause_rudd"]},"FT-0589":{"dir":"FT-0589-edmonton-boardwalk-wholesale-district","photos":[],"entry":true,"type":"place","title":"Boardwalk Building — Revillon’s wholesale-district neighbor","person_ids":["clause_rudd"]},"FT-0593":{"dir":"FT-0593-hagfors-brukssamhalle-uddeholm-1873","photos":[],"entry":true,"type":"place","title":"Hagfors brukssamhälle — Uddeholm ironworks founding (Carl × Maria Sweden door)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0594":{"dir":"FT-0594-varmland-emigration-wave-1880s","photos":[],"entry":true,"type":"place","title":"Värmland emigration wave — 1880s peak (Carl × Maria generation)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0595":{"dir":"FT-0595-norra-rada-parish-landscape","photos":[],"entry":true,"type":"place","title":"Norra Råda parish landscape — rural bruk patchwork (Albin 1887 door)","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd","clause_rudd"]},"FT-0844":{"dir":"FT-0844-lqp-birth-register-claus-yngve-rudd","photos":["photos/01.jpg"],"entry":true,"type":"vital","title":"Lac qui Parle birth register — Claus Yngve Rudd, 9 Jun 1893 Louisburg","person_ids":["clause_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0846":{"dir":"FT-0846-carl-maria-rudd-studio-portraits","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Studio portraits — Marie Johnson Rudd and Carl Johan Rudd, captioned siblings","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd","fritz_e_rudd","jennie_l_rudd","hattie_a_rudd","clause_rudd"]},"FT-0849":{"dir":"FT-0849-census-1941-albin-affidavit-claus","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"census","title":"1941 Census Bureau letter + Albin affidavit — Claus Y. Rudd household","person_ids":["clause_rudd","albin_edward_rudd","carl_j_rudd","maria_edison_rudd","fritz_e_rudd","jennie_l_rudd","hattie_a_rudd","carl_h_rudd","dagmar_maria_rud","alma_eugenia_rud"]},"FT-0507":{"dir":"FT-0507-numident-albin-edward-rudd-parents","photos":[],"entry":true,"type":"vital","title":"NUMIDENT — Albin Edward Rudd, parents Carl J. Rudd × Marie Edison","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0512":{"dir":"FT-0512-norra-rada-c7-entry-128-rudstrom","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 birth 1887 entry 128 — Maria Karolina, Rudström Karl Johan","person_ids":["carl_j_rudd","albin_edward_rudd"]},"FT-0513":{"dir":"FT-0513-norra-rada-c7-july11-julia-maria-rudstrom","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 1887 entry 130 — Julia Maria, 11 Jul (Rudström Karolina)","person_ids":["albin_edward_rudd","carl_j_rudd"]},"FT-0514":{"dir":"FT-0514-norra-rada-c7-rudstrom-svensdotter-johan-alexander","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 1887 — Johan Alexander, Rudström × Svensdotter","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0515":{"dir":"FT-0515-norra-rada-hf-sida-97-risater","photos":[],"entry":true,"type":"church","title":"Norra Råda husförhör A I/20a — ledger sida 97 (Risäter & Brödheden)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0516":{"dir":"FT-0516-norra-rada-c7-albin-negative-july1887","photos":[],"entry":true,"type":"church","title":"Norra Råda C/7 July 1887 band — no Albin Edward Rud birth line","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0518":{"dir":"FT-0518-fag-olivewood-negative-maria-rudd-death","photos":[],"entry":true,"type":"research_note","title":"Find a Grave + Olivewood — Maria Rud/Edison death/burial negative","person_ids":["maria_edison_rudd","carl_j_rudd"]},"FT-0520":{"dir":"FT-0520-census-negative-carl-maria-1920-1930-roberts","photos":[],"entry":true,"type":"research_note","title":"1920 / 1930 US census — Carl J. × Maria Rud negative (no open Roberts transcription)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0521":{"dir":"FT-0521-emigration-negative-carl-rud-sweden-mn","photos":[],"entry":true,"type":"research_note","title":"Emigration negative — Carl Rud × Maria Edison Sweden→MN window 1887–1895","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0652":{"dir":"FT-0652-norra-rada-hf-stjernsfors-negative-carl-maria","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Stjernsfors band — negative for Carl J. × Maria Edison","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0653":{"dir":"FT-0653-norra-rada-hf-hagfors-bru-negative-carl-maria","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Hagfors bru band — negative for Carl J. × Maria Edison","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0654":{"dir":"FT-0654-norra-rada-hf-emigration-rudstrom-lines","photos":[],"entry":true,"type":"church","title":"Norra Råda HF — N. Amerika notes on Rudström / Risäter lines (no Carl×Maria)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0661":{"dir":"FT-0661-1930-census-roberts-sd-carl-j-hugo","photos":[],"entry":true,"type":"census","title":"1930 US Census — Minnesota Twp, Roberts Co., SD — Carl J. Rud × Hugo C. Rud","person_ids":["carl_j_rudd","carl_h_rudd"]},"FT-0676":{"dir":"FT-0676-mnhs-negative-rudd-deaths","photos":[],"entry":true,"type":"research_note","title":"MNHS People Search — Carl × Maria × Fritz Rud/Rudd MN death index negative","person_ids":["carl_j_rudd","maria_edison_rudd","fritz_e_rudd"]},"FT-0677":{"dir":"FT-0677-norra-rada-gustafsdal-heading-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda HF 1886–90 — Gustafsdal not a register heading","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0678":{"dir":"FT-0678-norra-rada-b3-1887-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1887 utflyttning — negative Carl J. × Maria / Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0679":{"dir":"FT-0679-norra-rada-b3-1888-1889-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1888–1889 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0686":{"dir":"FT-0686-maria-edison-rudd-death-window-negative","photos":[],"entry":true,"type":"research_note","title":"Maria Edison Rudd — death/burial window 1910–1930 negative (FAG × Roberts GT × Olivewood)","person_ids":["maria_edison_rudd","carl_j_rudd"]},"FT-0693":{"dir":"FT-0693-open-emi-negative-rudd-1889","photos":[],"entry":true,"type":"research_note","title":"Open emigration negative — Karl/Carl Rud × Maria × Albin 1888–1891 (1930 arrival 1889)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0694":{"dir":"FT-0694-norra-rada-hf-stjernsfors-torps-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda HF Stjernsfors torps — negative for Rudström Karl Johan / Carl×Maria","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0762":{"dir":"FT-0762-norra-rada-b3-1890-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1890 utflyttning — negative Carl J. × Maria / Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0763":{"dir":"FT-0763-norra-rada-b3-1891-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1891 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0764":{"dir":"FT-0764-norra-rada-b3-1892-utflyttning-negative","photos":[],"entry":true,"type":"church","title":"Norra Råda B/3 1892 utflyttning — negative Carl×Maria/Albin America","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd"]},"FT-0802":{"dir":"FT-0802-kila-ai24-p384-soldattorp-94","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Kila A I/24 p.384 — Soldattorpet N:o 94 Rud, Karl Johan x Maria Ed","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd","alma_eugenia_rud","dagmar_maria_rud"]},"FT-0804":{"dir":"FT-0804-langserud-ci9-1857-maria-ed","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Langserud C I/9 — Maria 5 May 1857, Niklas Larsson Ed x Anna Ersdotter","person_ids":["maria_edison_rudd","niklas_larsson_ed","anna_ersdotter"]},"FT-0806":{"dir":"FT-0806-langserud-ai17-fol123-ed","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Langserud A I/17 fol.123 Ed — Niklas Larsson Ed x Anna Ersdotter","person_ids":["niklas_larsson_ed","anna_ersdotter","maria_edison_rudd","august_niklasson_ed","johannes_niklasson_ed","lotta_niklasdotter_ed"]},"FT-0812":{"dir":"FT-0812-kilabygden-rud-2018-soldattorp","photos":[],"entry":true,"type":"place","title":"Kila hembygdsförening — Rud 2018 (soldattorp Ruderud)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd","alma_eugenia_rud","dagmar_maria_rud"]},"FT-0816":{"dir":"FT-0816-kila-c-1887-albin-edvard","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Kila C — Albin Edvard Karlsson Rud 11 Jul 1887","person_ids":["albin_edward_rudd","carl_j_rudd","maria_edison_rudd"]},"FT-0817":{"dir":"FT-0817-isof-ruderud-soldattorp-kila","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg"],"entry":true,"type":"place","title":"ISOF Ortnamnsregistret — Ruderud soldattorp, Kila","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd","alma_eugenia_rud","dagmar_maria_rud"]},"FT-0818":{"dir":"FT-0818-ekonom-1966-hitta-ruderud-kila","photos":["photos/01-ekonom-3e-center.png","photos/02-ekonom-10C3e-ruderud-window.png","photos/03-hitta-rud-ruderud-labeled.png"],"entry":true,"type":"place","title":"Ekonomiska kartan 1966 + Hitta — Ruderud, Kila (location lock)","person_ids":["carl_j_rudd","maria_edison_rudd","albin_edward_rudd","alma_eugenia_rud","dagmar_maria_rud"]},"FT-0841":{"dir":"FT-0841-carl-maria-death-bracket-deep-pass","photos":[],"entry":true,"type":"research_note","title":"Carl J Rud × Maria Rud — death/burial bracket deep pass (1910–1940)","person_ids":["carl_j_rudd","maria_edison_rudd"]},"FT-0835":{"dir":"FT-0835-langserud-ai11-esbjorbyn-anna-1826","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Langserud A I/11 Esbjörbyn — Anna b. 8 Nov 1826, Olof Andersson × Catharina Andersdotter","person_ids":["anna_ersdotter"]},"FT-0836":{"dir":"FT-0836-langserud-ci4-8nov-stina-caisa-negative","photos":[],"entry":true,"type":"church","title":"Langserud C I/4 8 Nov 1826 Botten — Stina Caisa (Anna Ersdotter miss negative)","person_ids":["anna_ersdotter"]},"FT-0837":{"dir":"FT-0837-langserud-ci4-gisslebyn-anna-caisa-1826","photos":[],"entry":true,"type":"church","title":"Langserud C I/4 21 Sep 1826 Gisslebyn — Erik Andersson × Märta Andersdotter → Anna Caisa","person_ids":["anna_ersdotter"]},"FT-0838":{"dir":"FT-0838-langserud-ci4-macken-anna-stina-1826","photos":[],"entry":true,"type":"church","title":"Langserud C I/4 22 Nov 1826 Macken — Erik Nilsson × Maja Ersdotter → Anna Stina","person_ids":["anna_ersdotter"]},"FT-0851":{"dir":"FT-0851-langserud-gisslebyn-hf-erik-andersson-miss","photos":[],"entry":true,"type":"research_note","title":"Långserud A I/10–11 Gisslebyn — no Erik Andersson × Märta Andersdotter HF (FT-0837)","person_ids":["anna_ersdotter"]},"FT-0807":{"dir":"FT-0807-svanskog-ci6-1826-nicolaus","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Svanskog C I/6 — Nicolaus 9 Feb 1826, Lars Hansson x Maria Andersdotter","person_ids":["niklas_larsson_ed","lars_hansson","maria_andersdotter_getrud"]},"FT-0810":{"dir":"FT-0810-svanskog-ai11-gaterud-niclas-conflict","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Svanskog A I/11 p.272 Gaterud — Niclas 9 Feb 1826 in Nils Persson household (conflict)","person_ids":["niklas_larsson_ed","lars_hansson","maria_andersdotter_getrud"]},"FT-0814":{"dir":"FT-0814-svanskog-ai11-gaterud-lars-household","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Svanskog A I/11 Gaterud — Lars Hansson × Maria Andersdotter, son Nicolaus 9 Feb 1826","person_ids":["lars_hansson","maria_andersdotter_getrud","niklas_larsson_ed","anders_nilsson","andreas_larsson_gaterud","gustaf_larsson_gaterud","nils_larsson_gaterud","maria_larsdotter_gaterud","thomas_larsson_gaterud"]},"FT-0853":{"dir":"FT-0853-svanskog-ai11-gaterud-mfar-anders-nilsson","photos":[],"entry":true,"type":"church","title":"Svanskog A I/11 Gaterud — M.far Anders Nilsson (1748) under Lars × Maria household","person_ids":["anders_nilsson","maria_andersdotter_getrud","lars_hansson","niklas_larsson_ed","andreas_larsson_gaterud","gustaf_larsson_gaterud","nils_larsson_gaterud","maria_larsdotter_gaterud","thomas_larsson_gaterud"]},"FT-0854":{"dir":"FT-0854-svanskog-ai5-gaterud-anders-maja-1791","photos":[],"entry":true,"type":"church","title":"Svanskog A I/5 Gaterud fol.44 — Anders Nilsson × Maja, daughter Maja 1791","person_ids":["anders_nilsson","maja_gaterud","annika_andersdotter_gaterud","stina_andersdotter_gaterud","maria_andersdotter_getrud","britta_andersdotter_gaterud"]},"FT-0855":{"dir":"FT-0855-svanskog-ci4-1791-maria-andersdotter","photos":[],"entry":true,"type":"vital","title":"Svanskog C I/4 — Maria 10 Dec 1791 Gaterud, Anders Nilsson × Maria Thomasdotter","person_ids":["maria_andersdotter_getrud","anders_nilsson","maja_gaterud"]},"FT-0517":{"dir":"FT-0517-fag-negative-carl-j-rudd-death-burial","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Carl J. Rud/Rudd death/burial negative (1869±5 Sweden)","person_ids":["carl_j_rudd"]},"FT-0519":{"dir":"FT-0519-roberts-sd-birth-andrew-rud-not-carl-j","photos":[],"entry":true,"type":"vital","title":"Roberts Co., SD birth register — Andrew Rud × Gunhild (≠ Carl J. × Maria)","person_ids":["carl_j_rudd"]},"FT-0597":{"dir":"FT-0597-christina-dupray-fag-children-grid","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Christina Miller Dupray children grid (James Story + Frederick Miller)","person_ids":["christina_miller_dupray","james_story_dupray","frederick_miller_dupray","thomas_dupray"]},"FT-0651":{"dir":"FT-0651-norra-rada-hf-sida-47-rastrom-hafversbol","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/20a sida 47 — Karl Johan Råström, Hafversbol","person_ids":["carl_j_rudd"]},"FT-0655":{"dir":"FT-0655-norra-rada-c7-p47-persson-collision","photos":[],"entry":true,"type":"church","title":"C/7 entry 128 HF p.47 — Persson Maria Karolina date collision","person_ids":["carl_j_rudd","albin_edward_rudd"]},"FT-0680":{"dir":"FT-0680-norra-rada-ai20b-sida-47-by-byberg","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/20b sida 47 — 1/2 By (Byberg), not Gustafsdal","person_ids":["carl_j_rudd"]},"FT-0681":{"dir":"FT-0681-norra-rada-ai19a-gustafsdal-loose-notes","photos":[],"entry":true,"type":"church","title":"Norra Råda HF A I/19a — Gustafsdal place-notes on loose list","person_ids":["carl_j_rudd"]},"FT-0682":{"dir":"FT-0682-1923-plat-rud-c-j-minnesota-twp","photos":[],"entry":true,"type":"deed","title":"1923 Roberts Co. plat index — Rud C. J., Sec. 21 T128N R51W Minnesota Twp","person_ids":["carl_j_rudd"]},"FT-0689":{"dir":"FT-0689-fag-negative-carl-j-rudd-1861","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Carl J. Rud/Rudd death/burial negative (1861±5 Sweden; SD/MN/CA)","person_ids":["carl_j_rudd"]},"FT-0765":{"dir":"FT-0765-norra-rada-ai18a-sida-259-thorsby","photos":[],"entry":true,"type":"church","title":"Norra Råda A I/18a sida 259 — Thorsby, not Gustafsdahl","person_ids":["carl_j_rudd"]},"FT-0766":{"dir":"FT-0766-norra-rada-ai19a-sida-259-uddeholm","photos":[],"entry":true,"type":"church","title":"Norra Råda A I/19a sida 259 — Uddeholm, not Gustafsdahl","person_ids":["carl_j_rudd"]},"FT-0803":{"dir":"FT-0803-gillberga-ci7-1859-carl-johan","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Gillberga C I/7 — Carl Johan 16 Aug 1859, Fredrik Svensson x Maja Andersdotter","person_ids":["carl_j_rudd","fredrik_svensson","maja_andersdotter"]},"FT-0805":{"dir":"FT-0805-gillberga-ai19-p481-mohn","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Gillberga A I/19 p.481 Mohn — Fredrik Svensson x Maja Andersdotter","person_ids":["fredrik_svensson","maja_andersdotter","carl_j_rudd","sven_petter_svensson","anders_gustaf_svensson"]},"FT-0813":{"dir":"FT-0813-gillbergs-kompani-1881-rote-94","photos":[],"entry":true,"type":"military","title":"Gillbergs kompani 1881 — rote 94 Södra Rud / Rud (Kila)","person_ids":["carl_j_rudd"]},"FT-0852":{"dir":"FT-0852-carl-j-rudd-death-1930-1941-free-ladder-miss","photos":[],"entry":true,"type":"research_note","title":"Carl J. Rudd death ~1930–1941 — free-web ladder miss this pass","person_ids":["carl_j_rudd"]},"FT-0809":{"dir":"FT-0809-varmskog-c6-1827-maria-oakta","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Varmskog C/6 — Maria 23 Apr 1827 oakta, Cajsa Nilsdotter","person_ids":["maja_andersdotter","cajsa_nilsdotter","anders_andersson_johanneberg"]},"FT-0815":{"dir":"FT-0815-varmskog-ai11-johanneberg-anders","photos":["photos/01.jpg","photos/02.jpg"],"entry":true,"type":"church","title":"Värmskog A I/11 p.233 Johanneberg — Fältjägare Anders Andersson","person_ids":["anders_andersson_johanneberg"]},"FT-0811":{"dir":"FT-0811-varmskog-ai11-tollersrud-cajsa","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Varmskog A I/11 p.199 Tollersrud — piga Cajsa Nilsdotter candidates","person_ids":["cajsa_nilsdotter"]},"FT-0850":{"dir":"FT-0850-varmskog-c6-1794-cajsa-nilsdotter-miss","photos":["photos/01-sept-1794.jpg"],"entry":true,"type":"research_note","title":"Värmskog C/6 Födde 1794 — no Cajsa Nilsdotter (C3007 miss)","person_ids":["cajsa_nilsdotter"]},"FT-0808":{"dir":"FT-0808-animskog-c3-1810-fredrik","photos":["photos/01.jpg"],"entry":true,"type":"church","title":"Animskog C/3 — Fredrik 19 Sep 1810, Sven Fredriksson x Cajsa Larsdotter","person_ids":["fredrik_svensson","sven_fredriksson","cajsa_larsdotter"]},"FT-0006":{"dir":"FT-0006-bill-parsons-baseball-card-rolodex","photos":[],"entry":true,"type":"artifact","title":"Bill Parsons baseball-card rolodex","person_ids":["bill_parsons"]},"FT-0007":{"dir":"FT-0007-press-enterprise-elizabeth-betty-a-parsons","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Press-Enterprise — Elizabeth “Betty” A. Parsons","person_ids":["elizabeth_allen","gerald_allen_parsons","bill_parsons"]},"FT-0010":{"dir":"FT-0010-parsons-allen-wedding-notice-wee-kirk-o-the-heat","photos":[],"entry":true,"type":"newspaper","title":"Parsons–Allen wedding notice — Wee Kirk o' the Heather","person_ids":["gerald_allen_parsons","elizabeth_allen","raymond_philip_allen","ina_louise_squier_allen","harriet_b_foss_parsons","nelson_b_parsons","harold_ambrose_parsons","autis_foss_parsons_hicks"]},"FT-0012":{"dir":"FT-0012-betty-allen-among-pasadena-nursing-graduates","photos":[],"entry":true,"type":"newspaper","title":"Betty Allen among Pasadena nursing graduates","person_ids":["elizabeth_allen","raymond_philip_allen","ina_louise_squier_allen"]},"FT-0011":{"dir":"FT-0011-pitcher-parsons-scheduled-vs-former-teammates-ni","photos":[],"entry":true,"type":"newspaper","title":"Pitcher Parsons scheduled vs former teammates — nightball (1936)","person_ids":["gerald_allen_parsons"]},"FT-0443":{"dir":"FT-0443-maine-vr-marriage-nelson-hattie-foss","photos":["photos/01-parents-side.png","photos/02-face.png"],"entry":true,"type":"vital","title":"Maine VR marriage — Nelson B. Parsons × Hattie B. Foss (23 Feb 1899, Fort Fairfield)"},"FT-0573":{"dir":"FT-0573-aroostook-potato-starch-industry","photos":[],"entry":true,"type":"place","title":"Aroostook potato starch industry — Nelson Parsons’s trade unpacked","person_ids":["nelson_b_parsons","harriet_b_foss_parsons","ambrose_foss","daniel_w_foss"]},"FT-0742":{"dir":"FT-0742-nhgr-vol3-darling-huntris-baptism","photos":[],"entry":true,"type":"church","title":"NHGR vol. 3 — Newington church baptisms (Darling son of Christopher × Mary)","person_ids":["darling_huntress","christopher_huntress","mary_chick_huntress","christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","george_huntress_newington"]},"FT-0743":{"dir":"FT-0743-nhgr-vol4-noah-elizabeth-huntris","photos":[],"entry":true,"type":"church","title":"NHGR vol. 4 — Newington baptisms Noah & Elizabeth Huntris; Darling × Love covenant","person_ids":["noah_huntress","elizabeth_huntress_stevens","christopher_huntress","mary_chick_huntress","darling_huntress"]},"FT-0745":{"dir":"FT-0745-athenaeum-christopher-huntress","photos":[],"entry":true,"type":"reference","title":"Portsmouth Athenaeum — Christopher Huntress 1703–1782 catalog","person_ids":["christopher_huntress","mary_chick_huntress","darling_huntress","christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","george_huntress_newington","david_huntress_newington","nathan_huntress_newington","noah_huntress","elizabeth_huntress_stevens"]},"FT-0744":{"dir":"FT-0744-stackpole-kittery-chick-huntress","photos":[],"entry":true,"type":"reference","title":"Stackpole Old Kittery p.319 — Mary Chick m. Christopher Huntress of Newington","person_ids":["mary_chick_huntress","christopher_huntress"]},"FT-0746":{"dir":"FT-0746-nehgr-1868-huntress-sib-marriages","photos":[],"entry":true,"type":"church","title":"NEHGR 22 (1868) Newington marriages — Huntress siblings; FAG negative","person_ids":["christopher_huntress_jr","martha_huntress_lord_berwick","mary_huntress_rollins","christopher_huntress"]},"FT-0575":{"dir":"FT-0575-barnstead-nh-bunker-pioneers","photos":[],"entry":true,"type":"place","title":"Barnstead, NH — Bunker pioneers and Parade ground (Harriet N. Bunker stem)","person_ids":["harriet_n_bunker_foss","joseph_s_bunker","olive_otis_bunker"]},"FT-0574":{"dir":"FT-0574-daniel-w-foss-11th-maine-appomattox","photos":[],"entry":true,"type":"military","title":"11th Maine Infantry — late-war Petersburg and Appomattox (Daniel W. Foss’s regiment)","person_ids":["daniel_w_foss"]},"FT-0572":{"dir":"FT-0572-swedish-colony-fort-fairfield-welcome-route","photos":[],"entry":true,"type":"place","title":"Swedish colonists — St. John River route and Fort Fairfield welcome (1870)","person_ids":["percy_parsons","kate_parsons","nelson_b_parsons"]},"FT-0571":{"dir":"FT-0571-new-sweden-maine-swedish-colony-founding","photos":[],"entry":true,"type":"place","title":"New Sweden — Maine Swedish Colony founding (1870)","person_ids":["percy_parsons","kate_parsons"]},"FT-0578":{"dir":"FT-0578-swedish-1872-labor-diversion-outer-colony","photos":[],"entry":true,"type":"place","title":"1871–72 Swedish influx — labor diversion and outer Aroostook settlement","person_ids":["percy_parsons","kate_parsons"]},"FT-0556":{"dir":"FT-0556-fag-inscription-anna-augusta-mclachlin","photos":[],"entry":true,"type":"memorial","title":"Find a Grave — Anna Augusta McLachlin inscription and gravesite","person_ids":["anna_augusta_olson_mclachlin"]},"FT-0542":{"dir":"FT-0542-fag-albin-edward-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Albin Edward Rudd memorial extract","person_ids":["albin_edward_rudd","margaret_emma_fuller_rudd","robert_fuller_rudd"],"subject_id":"albin_edward_rudd"},"FT-0544":{"dir":"FT-0544-fag-margaret-emma-fuller-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Margaret Emma Fuller Rudd memorial extract","person_ids":["margaret_emma_fuller_rudd","albin_edward_rudd","robert_fuller_rudd"],"subject_id":"margaret_emma_fuller_rudd"},"FT-0545":{"dir":"FT-0545-fag-robert-fuller-rudd-memorial","photos":["photos/01.jpg"],"entry":true,"type":"obituary","title":"Find A Grave — Robert Fuller Rudd memorial extract","person_ids":["robert_fuller_rudd","albin_edward_rudd","margaret_emma_fuller_rudd"],"subject_id":"robert_fuller_rudd"},"FT-0522":{"dir":"FT-0522-fag-negative-fritz-e-rudd-adult","photos":[],"entry":true,"type":"research_note","title":"Find a Grave — Fritz E. Rud/Rudd adult death/burial negative (~1892 MN)","person_ids":["fritz_e_rudd"]},"FT-0524":{"dir":"FT-0524-wwi-ssdi-negative-fritz-e-rudd","photos":[],"entry":true,"type":"research_note","title":"WWI draft + SSDI — Fritz E. Rud/Rudd negative (free indexes)","person_ids":["fritz_e_rudd"]},"FT-0526":{"dir":"FT-0526-newspaper-obit-negative-fritz-jennie-rudd","photos":[],"entry":true,"type":"research_note","title":"Newspaper / obituary — Fritz E. & Jennie L. Rud negative (no open text)","person_ids":["fritz_e_rudd","jennie_l_rudd"]},"FT-0392":{"dir":"FT-0392-young-man-in-us-navy-sailor-uniform-studio-portr","photos":["photos/01.jpg"],"entry":true,"type":"photo","title":"Young man in US Navy sailor uniform (studio portrait)","person_ids":["alexander"]},"FT-0396":{"dir":"FT-0396-school-open-house-photo-second-grade-audio-marke","photos":[],"entry":true,"type":"artifact","title":"School open-house photo (second grade) — audio marker only","person_ids":["alexander"]},"FT-0397":{"dir":"FT-0397-shorts-family-gazette-vol-1-no-4-holidays-at-the","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg"],"entry":true,"type":"artifact","title":"Shorts Family Gazette Vol. 1 No. 4 — Holidays at the Shorts’s (Dec 2005)","person_ids":["alexander","annabelle","earl","richard","gloria","dorland"]},"FT-0795":{"dir":"FT-0795-holman-family-bible-merritt-shorts-1874","photos":["photos/01.jpg","photos/02.jpg","photos/03.jpg","photos/04.jpg","photos/05.jpg","photos/06.jpg","photos/07.jpg","photos/08.jpg","photos/09.jpg"],"entry":true,"type":"book","title":"Holman Family Bible — Merritt / Shorts registry (1874)","person_ids":["george_merritt","belle_conant_merritt","helen_merritt","allen_merritt","annabelle","earl","richard","carla","don_shorts","effie","dorland","gloria","cornelius_b_conant","sally_a_conant","william_conant","myron_conant","emma_conant_wright_page","elizabeth_wright_black","william_mott","anna_robinson_merritt","frank_h_rodell","geraldine_f_rodell","kenneth_m_young","kenneth_c_young","richard_a_young","lawrence_a_young","annabelle_merritt_boxwell","donna_brumpton_shorts","kent_eugene_kilmer","bryce_eugene_kilmer","shelby_gatz_kilmer","kaitlin_marie_shorts","michael_earle_shorts","daniel_brian_shorts","gregory_john_shorts","william","heidi","gigi","alexander","nicholas","samuel"]}};

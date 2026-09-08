@@ -5,15 +5,17 @@ name: Albin Edward Rudd
 aka:
   - Albin Rudd
   - Albin E. Rudd
+  - Albin Evald Rudd
+  - Albin Edvard Rudd
 birth: "1887-07-11"
 death: "1949-08-16"
-birth_place: Värmland (Vermland), Sweden
+birth_place: Kila, Värmland, Sweden
 death_place: Riverside County, California, USA
 burial: Olivewood Cemetery (Memorial Park), Riverside, California; plot Q-1-241-4
 parents: [carl_j_rudd, maria_edison_rudd]
 spouses: [margaret_emma_fuller_rudd]
 children: [robert_fuller_rudd]
-object_ids: [FT-0470, FT-0507, FT-0512, FT-0513, FT-0514, FT-0515, FT-0516, FT-0521, FT-0525, FT-0542, FT-0544, FT-0545, FT-0593, FT-0594, FT-0595, FT-0654, FT-0655, FT-0678, FT-0679, FT-0693, FT-0762, FT-0763, FT-0764]
+object_ids: [FT-0470, FT-0507, FT-0512, FT-0513, FT-0514, FT-0515, FT-0516, FT-0521, FT-0525, FT-0542, FT-0544, FT-0545, FT-0593, FT-0594, FT-0595, FT-0654, FT-0655, FT-0678, FT-0679, FT-0693, FT-0762, FT-0763, FT-0764, FT-0802, FT-0812, FT-0816, FT-0817, FT-0818, FT-0840, FT-0846, FT-0849]
 media:
   - file: media/fag-74876188-01-headstone.jpg
     kind: headstone
@@ -39,6 +41,8 @@ spouse_links:
   - id: margaret_emma_fuller_rudd
     confidence: Probable
 sources:
+  - label: "Kila A I/24 p.384 — Albin Edvard 11 Jul 1887; utfl America 20 Feb 1891 with Maria and Dagmar (C0037902_00335)"
+    url: "https://sok.riksarkivet.se/bildvisning/C0037902_00335"
   - label: "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Claus brothers Fritz/Hugo/Albin; FT-0470"
     url: ""
   - label: "Find A Grave 74876188 — Albin Edward Rudd (1887–16 Aug 1949), Olivewood Q-1-241-4; spouse Margaret Emma Fuller; son Robert Fuller"
@@ -58,7 +62,7 @@ sources:
 ---
 ## Summary
 
-**Confirmed** brother of **Claus Y. Rudd** (`clause_rudd`) and the unnamed **1931 uncle** in George’s obituary (**FT-0008** / **C2248**). Locked **2026-08-17** — pack **C2300** / **C2392**. NUMIDENT (**FT-0507**) names parents **Carl J Rudd × Marie Edison**, b. **11 Jul 1887 Vermland, Sweden**. Not listed in the 1910 household (age ~23). CADI maiden **Edeson**. Spouse Margaret still Probable. **No open 1949 obit**.
+**Confirmed** brother of **Claus Y. Rudd** (`clause_rudd`) and the unnamed **1931 uncle** in George’s obituary (**FT-0008** / **C2248**). Locked **2026-08-17** — pack **C2300** / **C2392**. Kila HF 384 matches NUMIDENT: **Albin Edvard 11 Jul 1887** at Soldattorp 94, parents Karl Johan × Maria Ed. Left Sweden **20 Feb 1891**. NUMIDENT (**FT-0507**) names parents **Carl J Rudd × Marie Edison**, b. **11 Jul 1887 Vermland, Sweden**. Not listed in the 1910 household (age ~23). CADI maiden **Edeson**. Spouse Margaret still Probable. **No open 1949 obit**.
 
 ## Assertions
 
@@ -85,7 +89,7 @@ sources:
 
 - Open 1949 Riverside death notice — **not found** (no FT)
 - Not in Carl J’s 1910 Roberts SD household — expected if already out
-- Sweden household-exam similar record parked (do not merge)
+- Sweden household **found** 2026-08-21 — Kila A I/24 p.384 (FT-0802). Norra Råda / Gustav Adolf stays a miss.
 - CA death certificate 16 Aug 1949 still the civil-vital harden door
 - No open 1888–1891 passenger list with Carl × Maria (**FT-0693**); reject Fredrikstad Johan Albin Rudstrom b. **1856**
 ---

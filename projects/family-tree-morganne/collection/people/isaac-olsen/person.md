@@ -12,10 +12,10 @@ burial: Mountain View Cemetery, Vancouver, British Columbia, Canada
 parents: []
 spouses: [jennie_olsen]
 children: [anna_augusta_olson_mclachlin, william_theodore_olson, mabel_victoria_olson_sizer, pearl_olson_williams, carl_leonard_olson, della_elizabeth_rudd]
-object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445, FT-0480, FT-0487, FT-0503, FT-0504, FT-0509, FT-0511, FT-0543, FT-0552, FT-0554, FT-0555, FT-0596]
-confidence: Probable
-verified: false
-status: researching
+object_ids: [FT-0013, FT-0014, FT-0015, FT-0016, FT-0445, FT-0480, FT-0487, FT-0503, FT-0504, FT-0509, FT-0511, FT-0543, FT-0552, FT-0554, FT-0555, FT-0596, FT-0843, FT-0847]
+confidence: Confirmed
+verified: true
+status: cataloged
 spouse_links:
   - id: jennie_olsen
     confidence: Probable
@@ -26,6 +26,8 @@ sources:
     url: "https://www.familysearch.org/ark:/61903/1:1:QV9P-GGC7"
   - label: "Find A Grave 103950419 — daughter Della Elizabeth Olson Rudd (parents grid)"
     url: "https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd"
+  - label: "Lyman Co. SD delayed birth FT-0843 — father Isaac Olson of Della Elizabeth Olson, Oacoma 12 May 1902"
+    url: ""
   - label: "SDGenWeb Lyman County births 1891–1911 — OLSON,DELLA 12 May 1902; father ISAAC OLSON"
     url: "https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf"
   - label: "BC Archives death 1947-09-008902 — ISAAC OLSEN; Richmond 18 Oct 1947; parents not known"
@@ -67,13 +69,14 @@ media:
 ---
 ## Summary
 
-Proposed father of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Soft-ingest **Probable** / `verified: false` — pack **C505** / **C506**. FAG + Lyman SD birth + **BC death 1947-09-008902** (open JPEG) corroborate vitals. Spelling **Olsen** (FAG/BC) / **Olson** (SD + Della). Spouse **Jennie Olsen** (death form **Jennie Anderson**). Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Jennie. Soft children: FAG grid William, Mabel, Carl, Della (**C530–C534**); obit-named **Anna Augusta Olson McLachlin** and **Pearl Olson Williams** (**C2320–C2329**). **Parents Blocked (C535)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1947 death notice on FAG → **FT-0015** (names Mrs. C. Y. Rudd). FAG gravesite **FT-0552**: interred **22 Oct 1947**, **no marker** (MVC photo Feb 2006); plot photo unmarked grass only.
+**Confirmed** father of **Della Elizabeth (Olson) Rudd** — pack **C505** **LOCKED — legal vital** **FT-0843** (delayed birth names him). FAG + Lyman index **FT-0445** + **BC death 1947-09-008902** corroborate. Spelling **Olsen** (FAG/BC) / **Olson** (SD + Della cert). Spouse **Jennie Olsen** (death form **Jennie Anderson**). Plot **ABRAY-*-16-005-0007 (39)** Mountain View with Jennie. Children: FAG grid William, Mabel, Carl, Della (**C530–C534**); obit-named **Anna Augusta Olson McLachlin** and **Pearl Olson Williams** (**C2320–C2329**). **Parents Blocked (C535)** — BC death lists father/mother **not known**; FAG has no parent links. Open 1947 death notice on FAG → **FT-0015** (names Mrs. C. Y. Rudd). FAG gravesite **FT-0552**: interred **22 Oct 1947**, **no marker** (MVC photo Feb 2006); plot photo unmarked grass only.
 
 ## Assertions
 
 | Claim | Confidence | Source | Source URL | Notes |
 | --- | --- | --- | --- | --- |
-| Father of Della Elizabeth Olson Rudd | Probable | FAG Della parents + Lyman SD birth | https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd | Pack **C505** |
+| Father of Della Elizabeth Olson Rudd | Confirmed | FT-0843 delayed BC names Isaac Olson |  | Pack **C505** **LOCKED — legal vital** |
+| Birthplace Lyman County SD (1941 delayed BC) vs Sweden | Possible | FT-0843 father birthplace vs BC death/census Sweden |  | Do **not** overwrite Sweden; delayed informant field |
 | Spouse Jennie Olsen / Anderson | Probable | FAG + BC death spouse field | https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg | Pack **C507** / **C537** |
 | b. 15 Dec 1857 Sweden; d. 18 Oct 1947 Richmond BC; Mountain View | Probable | FAG + BC 1947-09-008902 | Same JPEG | Soft vitals **C506** / **C536** |
 | Parents unknown (not soft-ingested) | Blocked | BC death father/mother **not known** | Same | Pack **C535** |
@@ -83,6 +86,7 @@ Proposed father of **Della Elizabeth (Olson) Rudd** (Morganne ascent gen-4). Sof
 
 - [Find A Grave — Isaac Olsen (26322001)](https://www.findagrave.com/memorial/26322001/isaac-olsen)
 - [Find A Grave — Della Elizabeth Olson Rudd (103950419)](https://www.findagrave.com/memorial/103950419/della-elizabeth-rudd)
+- [FT-0843 — Lyman delayed birth, names father Isaac Olson](../../objects/FT-0843-lyman-delayed-birth-della-olson-1902/)
 - [SDGenWeb Lyman births PDF (OLSON,DELLA)](https://sdgenweb.atwebpages.com/lyman/Births/births_Lyman%20County%20South%20Dakota%20Births%201891-1911.pdf)
 - [BC Archives Genealogy — Isaac Olsen death 1947](https://search-collections.royalbcmuseum.bc.ca/Genealogy/Results?search=Search&as.type_death=true&as.last_name=Olsen&as.first_name=Isaac&as.start_year_str=1947&as.end_year_str=1947)
 - [BC Archives death image 004437672_00922.jpg](https://search-collections.royalbcmuseum.bc.ca/genealogy-images/004437672/004437672_00922.jpg)

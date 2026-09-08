@@ -12,7 +12,7 @@ burial: Private services at sea
 parents: [clause_rudd, della_elizabeth_rudd]
 spouses: [marion_orciere]
 children: [marcy_parsons, dan_rudd]
-object_ids: [FT-0008, FT-0455, FT-0457, FT-0470, FT-0497, FT-0498, FT-0501, FT-0502, FT-0590, FT-0591, FT-0592]
+object_ids: [FT-0008, FT-0455, FT-0457, FT-0470, FT-0497, FT-0498, FT-0501, FT-0502, FT-0590, FT-0591, FT-0592, FT-0839, FT-0840, FT-0845, FT-0848]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -27,6 +27,8 @@ spouse_links:
 sources:
   - label: "Family corroboration (Marcy via Alex, 2026-08-07) — George parents Clause × Della; Dan = Marcy half-brother via George"
     url: ""
+  - label: "Family corroboration (Dan Rudd email 2026-09-06) — George’s handwriting on pre-Rud name Fredrick Gillborg; FT-0845"
+    url: ""
   - label: "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Edmonton 1923; Corona store; FT-0470"
     url: ""
   - label: "Family corroboration (Alex, 2026-08-07) — Morganne Shorts ancestry"
@@ -35,7 +37,21 @@ sources:
     url: "https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/"
   - label: "SABR — Bill Parsons bio (married Marcy Rae Rudd 14 Jun 1969)"
     url: "https://sabr.org/bioproj/person/bill-parsons/"
-media: []
+media:
+  - file: media/portrait-edmonton-studio.jpg
+    kind: portrait
+    source: "Castor Ltd. Edmonton studio (Dan Rudd, 2026-09-06) — George cropped from FT-0848"
+    source_url: ""
+    captured_at: 2026-09-06
+  - file: media/edmonton-studio-castor.jpg
+    kind: photo
+    shared: true
+    tags: [ft-0848, edmonton-studio]
+    appears: [george_rudd, clause_rudd, della_elizabeth_rudd]
+    source: "Castor Ltd. Edmonton — Claus, Della, and George (FT-0848)"
+    source_url: ""
+    captured_at: 2026-09-06
+---
 ---
 ## Summary
 
@@ -64,6 +80,7 @@ Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **
 
 - Family corroboration (Marcy via Alex, 2026-08-07)
 - Family corroboration (Alex, 2026-08-07)
+- Family corroboration (Dan Rudd email **FT-0845**, 2026-09-06) — George’s handwriting; pre-Rud name Fredrick Gillborg
 - Family corroboration (Dan Rudd × Alex **FT-0470**, 2026-08-17) — Edmonton 1923; Corona store
 - [Press-Enterprise — George E. Rudd](https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/) — object **FT-0008**
 - [SABR — Bill Parsons](https://sabr.org/bioproj/person/bill-parsons/)
@@ -72,6 +89,6 @@ Maternal grandfather of Morganne Shorts (father of Marcy Parsons). **C442** + **
 
 - Marion living/deceased / marriage end
 - Dan’s birth mother name
-- Della’s parents — Dan does not independently know above Isaac × Jennie (**C505** still hold; FT-0470)
-- Parents of Clause (**C500** / **C2240** Blocked); brothers Fritz / Hugo / Albin named in FT-0470; **Albin Edward** + 1931 uncle/aunt/cousin Robert proposed **C2300–C2303**
+- Della’s parents **LOCKED — legal vital FT-0843** (Isaac × Jennie). People above them still unnamed.
+- Parents of Clause **LOCKED — legal vital FT-0844** (Carl Johan × Maria Ed). George’s **Fredrick Gillborg** note is surname lore (**FT-0845**), not a new ancestor.
 ---

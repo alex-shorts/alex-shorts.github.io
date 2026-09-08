@@ -13,7 +13,7 @@ burial:
 parents: [carl_j_rudd, maria_edison_rudd]
 spouses: []
 children: []
-object_ids: [FT-0506, FT-0570, FT-0661]
+object_ids: [FT-0506, FT-0570, FT-0661, FT-0849]
 confidence: Confirmed
 verified: true
 status: cataloged

@@ -7,6 +7,8 @@ aka:
   - Claus Rudd
   - Claus Young B Rudd
   - Claus Yugue Rud
+  - Claus Yngve Rudd
+  - Claus Yngve Rud
   - Klaus Jorgen Rud
   - Claus Rud
 birth: "1893-06-09"
@@ -17,7 +19,7 @@ burial: Olivewood Memorial Park, Riverside, California; dual stone with Della E.
 parents: [carl_j_rudd, maria_edison_rudd]
 spouses: [della_elizabeth_rudd]
 children: [george_rudd]
-object_ids: [FT-0008, FT-0020, FT-0444, FT-0454, FT-0455, FT-0456, FT-0470, FT-0493, FT-0494, FT-0495, FT-0496, FT-0497, FT-0498, FT-0500, FT-0501, FT-0506, FT-0508, FT-0510, FT-0525, FT-0562, FT-0568, FT-0569, FT-0570, FT-0587, FT-0588, FT-0589, FT-0590, FT-0591, FT-0592, FT-0593, FT-0594, FT-0595]
+object_ids: [FT-0008, FT-0020, FT-0444, FT-0454, FT-0455, FT-0456, FT-0470, FT-0493, FT-0494, FT-0495, FT-0496, FT-0497, FT-0498, FT-0500, FT-0501, FT-0506, FT-0508, FT-0510, FT-0525, FT-0562, FT-0568, FT-0569, FT-0570, FT-0587, FT-0588, FT-0589, FT-0590, FT-0591, FT-0592, FT-0593, FT-0594, FT-0595, FT-0839, FT-0840, FT-0844, FT-0845, FT-0846, FT-0848, FT-0849]
 confidence: Confirmed
 verified: true
 status: cataloged
@@ -34,6 +36,8 @@ sources:
     url: ""
   - label: "FamilySearch 1910 US Census — Claus Rud, 16, son of Carl J Rud × Maria Rud; Minnesota Twp, Roberts Co., SD (ark MPXD-SXJ)"
     url: "https://www.familysearch.org/ark:/61903/1:1:MPXD-SXJ"
+  - label: "Lac qui Parle certified birth register 6 Oct 1941 — Claus Yngve Rudd b. 9 Jun 1893 Louisburg; Carl Johan Rudd × Maria Ed (FT-0844)"
+    url: ""
   - label: "FamilySearch ELCA baptism 1893 — Klaus Jorgen Rud, Bellingham MN; parents Karl Rud × Marie (ark QVNB-CY88)"
     url: "https://www.familysearch.org/ark:/61903/1:1:QVNB-CY88"
   - label: "FamilySearch WWI draft — Claus Yugue Rud b. 9 Jun 1893 Louisburg MN; Phillips Co. MT (ark K8QJ-VBP)"
@@ -59,6 +63,17 @@ sources:
   - label: "Henderson Edmonton 1931 — Rudd Chas Y slsmn H B Co Whol, rooms 10995 126th St (householder Ernest E. Turner)"
     url: "https://archive.org/stream/P002962-25/P002962-25_djvu.txt"
 media:
+  - file: media/portrait-edmonton-studio.jpg
+    kind: portrait
+    source: "Castor Ltd. Edmonton studio (Dan Rudd, 2026-09-06) — Claus cropped from FT-0848"
+    source_url: ""
+    captured_at: 2026-09-06
+  - ref: george-rudd/media/edmonton-studio-castor.jpg
+    kind: photo
+    tags: [ft-0848, edmonton-studio]
+    source: "Castor Ltd. Edmonton — Claus, Della, and George (FT-0848)"
+    source_url: ""
+    captured_at: 2026-09-06
   - file: media/fag-103950403-01-headstone.jpg
     kind: headstone
     shared: true
@@ -77,7 +92,7 @@ media:
 ---
 ## Summary
 
-Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked**. Spouse **Della** Confirmed. WWI draft: **Claus Yugue Rud**, b. **9 Jun 1893 Louisburg**, Lac qui Parle Co., MN (**FT-0510**). ELCA: **Klaus Jorgen Rud** baptized 1893 Bellingham MN, parents **Karl Rud × Marie** (**FT-0508**). **1910** Roberts Co., SD: son of **Carl J Rud × Maria Rud** with siblings Fritz E, Jennie L, Hattie A, Carl H Jr (**FT-0506**). Parents **Confirmed** / `verified: true` — pack **C2390** locked 2026-08-17 (census/church/NUMIDENT indexes, not a CA DC). Brother **Albin Edward** shares those parents via NUMIDENT (**FT-0507**). CADI mother’s maiden still blank.
+Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked**. Spouse **Della** Confirmed. **Legal vital FT-0844:** **Claus Yngve Rudd**, b. **9 Jun 1893 Louisburg**, parents **Carl Johan Rudd × Maria Ed**. WWI draft: **Claus Yugue Rud** (**FT-0510**). ELCA: **Klaus Jorgen Rud** baptized 1893 Bellingham MN, parents **Karl Rud × Marie** (**FT-0508**). **1910** Roberts Co., SD: son of **Carl J Rud × Maria Rud** with siblings Fritz E, Jennie L, Hattie A, Carl H Jr (**FT-0506**). Parents **Confirmed** / `verified: true` — pack **C2390** (now with civil cert, not only indexes). Brother **Albin Edward** shares those parents via NUMIDENT (**FT-0507**). CADI mother’s maiden still blank.
 
 ## Assertions
 
@@ -85,8 +100,11 @@ Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked*
 | --- | --- | --- | --- | --- |
 | Father of George E. Rudd | Confirmed | Marcy via Alex 2026-08-07 + PE | https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/ | Pack **C448** Locked |
 | Spouse Della / Della Elizabeth Rudd | Confirmed | Same + FAG spouse link + dual stone | https://www.findagrave.com/memorial/103950403/claus-y-rudd | Pack **C448** |
-| Same person as Claus Y. Rudd (FAG/Olivewood) | Probable | FAG 103950403 + Olivewood + dual stone OCR | https://olivewoodcem.mykeeper.com/ClausYRudd | Spelling Clause (obit) vs Claus (stone) |
-| Birth 9 Jun 1893; death 23 Sep 1976 | Probable | Olivewood mykeeper + FAG death day | Same | Soft vitals |
+| Birth 9 Jun 1893 **Louisburg**; death 23 Sep 1976 | Confirmed | FT-0844 birth register (birth) + Olivewood/FAG (death day) |  | Birth **LOCKED — legal vital**; death day still cemetery/FAG |
+| Same person as Claus Y. Rudd (FAG/Olivewood) | Confirmed | FT-0844 **Yngve** + FAG/Olivewood **Y.** |  | Yngve explains Yugue / Young / Y |
+| Son of **Carl Johan Rudd × Maria Ed** | Confirmed | FT-0844 certified birth register |  | Pack **C2390** **LOCKED — legal vital** |
+| Birthplace **Louisburg**, Lac qui Parle Co., MN | Confirmed | FT-0844 + WWI draft |  | Pack **C2401** |
+| Same person as **Klaus Jorgen Rud** (1893 Bellingham baptism) | Probable | ELCA ark QVNB-CY88 | https://www.familysearch.org/ark:/61903/1:1:QVNB-CY88 | Pack **C2394**; Jorgen ≈ Yngve / Yugue / Young |
 | Lived Edmonton → Corona CA (with family, 1931+) | Probable | George obit | PE URL | Market 8th & Joy |
 | Dual headstone Olivewood with Della E. | Probable | Shared FAG photo OCR | https://images.findagrave.com/photos/2013/22/103950419_135900125629.jpg | Media via `ref:` |
 | SSDI identity match (b. 9 Jun 1893; d. Sep 1976; Riverside 92504) | Probable | LocateAncestors SSDI mirror | https://www.locateancestors.com/rudd-born-in-1893/ | Prefer death day from Olivewood/FAG |
@@ -94,12 +112,11 @@ Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked*
 | 1921 Edmonton: Claus T, clerk Revillon Wholesale | Probable | Henderson 1921 P002962-15 OCR | https://archive.org/stream/P002962-15/P002962-15_djvu.txt | Pack **C2331**; OCR T vs Y; not a parent household |
 | 1931 Edmonton: Chas Y, HBC wholesale salesman, rooms 10995 126th St (Turner) | Probable | Henderson 1931 P002962-25 OCR | https://archive.org/stream/P002962-25/P002962-25_djvu.txt | Pack **C2242**; not a Rudd parent household |
 | Proposed brother **Albin Edward Rudd** (Olivewood; CADI Edeson) | Probable | FAG 74876188 + CADI 6365809 + NUMIDENT same parents | https://www.findagrave.com/memorial/74876188/albin-edward-rudd | Pack **C2300** / **C2392** |
-| Son of **Carl J. Rud × Maria (Edison) Rud** | Confirmed | 1910 census + ELCA baptism | https://www.familysearch.org/ark:/61903/1:1:MPXD-SXJ | Pack **C2390** locked 2026-08-17 |
-| Birthplace **Louisburg**, Lac qui Parle Co., MN | Probable | WWI draft Claus Yugue Rud | https://www.familysearch.org/ark:/61903/1:1:K8QJ-VBP | Pack **C2401**; **FT-0510** |
-| Same person as **Klaus Jorgen Rud** (1893 Bellingham baptism) | Probable | ELCA ark QVNB-CY88 | https://www.familysearch.org/ark:/61903/1:1:QVNB-CY88 | Pack **C2394**; Jorgen ≈ Yugue/Young |
 
 ## Sources
 
+- [FT-0844 — Lac qui Parle birth register, Claus Yngve Rudd](../../objects/FT-0844-lqp-birth-register-claus-yngve-rudd/)
+- [FT-0845 — George Rudd name-before-Rud note](../../objects/FT-0845-george-rudd-fredrick-gillborg-name-note/)
 - [Press-Enterprise — George E. Rudd obituary](https://www.pressenterprise.com/obituaries/george-rudd-capistrano-beach-ca/)
 - [Find A Grave 103950403](https://www.findagrave.com/memorial/103950403/claus-y-rudd)
 - [Olivewood — Claus Y. Rudd](https://olivewoodcem.mykeeper.com/ClausYRudd)
@@ -115,8 +132,7 @@ Father of **George E. Rudd** (Morganne’s maternal grandfather). **C448 Locked*
 ## Open questions
 
 - Open newspaper obituary for Claus 1976 — **not found** (no FT mint)
-- Parents Carl J × Maria — **C2390 Locked** 2026-08-17; civil harden still Albin/Claus CA DC or Lac qui Parle ledger
-- Minnesota county now **Lac qui Parle** (Louisburg + Bellingham) — MNHS pre-1900 ledger still the civil-birth door
+- Parents Carl J × Maria — **C2390 LOCKED — legal vital FT-0844** (civil register; 1910/ELCA still corroborate)
 - Dan’s **Hugo** ≠ auto-rename of **Carl H. Rud Jr** (**C2400**)
 - CADI mother’s maiden still **blank** (do not copy Edeson onto Claus’s CADI)
 - Swedish **Rudd ← Anderson** lore still **C2293** / FT-0493–0496 (class only)

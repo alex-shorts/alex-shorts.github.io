@@ -23,7 +23,7 @@ uncategorized: false
 
 ## Catalog note
 
-County birth index row for **OLSON,DELLA** matching Della Elizabeth (Olson) Rudd’s Olivewood/FAG birth date **12 May 1902**. Names parents **ISAAC OLSON** × **JENNIE MATSON** — soft parents already Probable on graph (**C505**); maiden **Matson** vs FAG **Andersen** / BC **Anderson** remains open (**C509**).
+County birth index row for **OLSON,DELLA** matching Della Elizabeth (Olson) Rudd’s Olivewood/FAG birth date **12 May 1902**. Names parents **ISAAC OLSON** × **JENNIE MATSON**. Certificate image now **FT-0843** — pack **C505** / **C508** **LOCKED — legal vital**. Maiden **Matson** vs FAG **Andersen** / BC **Anderson** remains open on the attribute (**C509**).
 
 ## Full text
 
@@ -34,7 +34,7 @@ From *Lyman County South Dakota Births 1891–1911* (SDGenWeb PDF row):
 ## Notes
 
 - Surname **Olson** (SD) vs **Olsen** (FAG/BC death) — spelling variants held.
-- Do **not** soft-climb or lock parents from this index alone; pack **C505** hold for Dan remains.
+- Do **not** treat this index as the only proof; the delayed certificate is **FT-0843**.
 - Does not invent a certificate image — index transcript only.
 
 ### Supports (required — one short list)

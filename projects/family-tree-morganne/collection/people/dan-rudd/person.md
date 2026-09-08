@@ -11,7 +11,7 @@ burial:
 parents: [george_rudd]
 spouses: [nancy_rudd]
 children: [derek_rudd, matthew_rudd]
-object_ids: [FT-0008, FT-0470]
+object_ids: [FT-0008, FT-0470, FT-0843, FT-0844, FT-0845]
 confidence: Confirmed
 verified: true
 status: living-private
@@ -22,6 +22,8 @@ spouse_links:
   - id: nancy_rudd
     confidence: Confirmed
 sources:
+  - label: "Family corroboration (Dan Rudd email 2026-09-06) — boxes: Della delayed BC, Claus register, George’s Gillborg note (FT-0843–0845)"
+    url: ""
   - label: "Family corroboration (Marcy via Alex, 2026-08-07) — Marcy’s half-brother via George (worded step at ingest; Dan corrected 2026-08-17)"
     url: ""
   - label: "Family corroboration (Dan Rudd × Alex interview, 2026-08-17) — Marcy is half-sister, not step; FT-0470"
@@ -54,5 +56,4 @@ media: []
 ## Open questions
 
 - Birth mother’s name; vitals — family only (FT-0470 still silent)
-- Della’s parents — Dan does not independently know above Isaac × Jennie (**C505** still hold)
-- Photo tub (marked) — Dan to photograph after Catalina (~late Aug 2026)
+- Photo tub — first packet landed 2026-09-06 (**FT-0843–0845**); more promised as found

@@ -14,6 +14,7 @@
     expectedDnaShares,
     formatDnaShare,
     getFocusId,
+    getFamily,
     hasNonBloodParent,
     isBloodParent,
     parentLinkKind,
@@ -86,9 +87,18 @@ let visible = new Set();
 let showSiblings = false;
 /** Temporary sibling overlay: restore `prevVisible` on click-off. */
 let siblingPeek = null;
-const COMBINED_ROOTS = ["alexander", "morganne"];
 let combinedMode = false;
 let bootCombined = false;
+
+function familyPrimaries(people) {
+  const p = people || getPeople();
+  return (getFamily().primaries || []).filter((id) => p[id]);
+}
+
+function primaryFirstName(people, id) {
+  const name = people[id]?.name || id;
+  return String(name).split(/\s+/)[0] || id;
+}
 
 function queryParam(name) {
   try {
@@ -105,12 +115,13 @@ function detectCombinedMode(people) {
   if (c === "1" || c === "true" || p === "both" || p === "combined") return true;
   if (typeof window.__TREE_PRIMARY__ === "string" && window.__TREE_PRIMARY__.trim()) return false;
   if (p) return false;
-  return Boolean(people?.alexander && people?.morganne);
+  const roots = familyPrimaries(people);
+  return roots.length >= 2;
 }
 
 function visibleRoots(people, focusId) {
   const p = people || getPeople();
-  if (combinedMode) return COMBINED_ROOTS.filter((id) => p[id]);
+  if (combinedMode) return familyPrimaries(p);
   const focus = focusId || getFocusId();
   return p[focus] ? [focus] : [];
 }
@@ -482,7 +493,7 @@ function attachCardUi(d) {
     stallColor: stall?.color || "",
     adopted: hasNonBloodParent(d),
     why: d.blocker ? String(d.blocker) : "",
-    primary: combinedMode ? COMBINED_ROOTS.includes(d.id) : d.id === getFocusId(),
+    primary: combinedMode ? familyPrimaries().includes(d.id) : d.id === getFocusId(),
     unknown: d.confidence === "Unknown" || d.id === "anderson_grandma",
     fill: c.fill,
     soft: c.soft,
@@ -1085,8 +1096,10 @@ function fillPrimarySelect() {
     .slice()
     .sort((a, b) => String(a.name || a.id || "").localeCompare(String(b.name || b.id || "")));
   const both =
-    people.alexander && people.morganne
-      ? `<option value="both"${combinedMode ? " selected" : ""}>Both · Alexander + Morganne</option>`
+    familyPrimaries(people).length >= 2
+      ? `<option value="both"${combinedMode ? " selected" : ""}>Both · ${familyPrimaries(people)
+          .map((id) => primaryFirstName(people, id))
+          .join(" + ")}</option>`
       : "";
   sel.innerHTML =
     both +
@@ -1107,7 +1120,10 @@ function updatePrimaryLede() {
   if (!el || !p) return;
   const n = visible.size;
   if (combinedMode) {
-    el.textContent = `Alexander + Morganne combined (${n} people${
+    const labels = familyPrimaries(people)
+      .map((id) => primaryFirstName(people, id))
+      .join(" + ");
+    el.textContent = `${labels} combined (${n} people${
       showSiblings ? ", siblings on" : ""
     }) · DNA% vs ${p.name}`;
     return;
@@ -1120,8 +1136,9 @@ function updatePrimaryLede() {
 function setPrimaryPerson(id) {
   const people = getPeople();
   if (id === "both" || id === "combined") {
-    combinedMode = Boolean(people.alexander && people.morganne);
-    id = people.alexander ? "alexander" : "morganne";
+    const roots = familyPrimaries(people);
+    combinedMode = roots.length >= 2;
+    id = roots[0] || getFocusId();
   } else {
     combinedMode = false;
   }
@@ -1135,7 +1152,10 @@ function setPrimaryPerson(id) {
   fillPrimarySelect();
   updatePrimaryLede();
   if (combinedMode) {
-    document.title = "Alexander + Morganne — Living tree";
+    const labels = familyPrimaries(people)
+      .map((rid) => primaryFirstName(people, rid))
+      .join(" + ");
+    document.title = `${labels} — Living tree`;
     selectedId = null;
     render();
   } else {
@@ -1313,7 +1333,6 @@ function resetFocus() {
 }
 
 function buildLegend() {
-  const gens = [...new Set(simulation.nodes().map((n) => n.generation))].sort((a, b) => a - b);
   const lines = [
     `<span><i class="swatch line line-confirmed"></i>Confirmed</span>`,
     `<span><i class="swatch line line-probable"></i>Probable</span>`,
@@ -1323,12 +1342,6 @@ function buildLegend() {
     (t) => `<span><i class="swatch stall" style="--c:${t.color}"></i>${escapeHtml(t.label)}</span>`
   );
   legend.innerHTML =
-    `<span class="legend-group">${gens
-      .map((g) => {
-        const c = GEN_COLORS[g] || GEN_COLORS[0];
-        return `<span><i class="swatch" style="--c:${c.fill}"></i>${escapeHtml(c.label)}</span>`;
-      })
-      .join("")}</span>` +
     `<span class="legend-group">${lines.join("")}</span>` +
     `<span class="legend-group">${stalls.join("")}</span>`;
 }
@@ -1620,61 +1633,48 @@ async function boot() {
       console.assert((shares.get("adopt") || 0) === 0, "adoptive parent is 0% DNA");
       console.assert(Math.abs((shares.get("bio") || 0) - 25) < 0.2, "bio grandparent ~25%");
     }
-    if (people.elizabeth_allen && people.raymond_philip_allen) {
-      console.assert(
-        parentLinkKind(people.elizabeth_allen, "raymond_philip_allen") === "adoptive",
-        "Betty ← Raymond must be tagged adoptive"
-      );
-      if (people.morganne) {
-        const vis = defaultVisible(people, "morganne", { includeSiblings: false });
-        if (vis.has("elizabeth_allen")) {
-          console.assert(
-            !vis.has("raymond_philip_allen") && !vis.has("ina_louise_squier_allen"),
-            "Morganne tree must cut Betty’s adoptive line"
-          );
-          console.assert(
-            !vis.has("carl_addison_allen") && !vis.has("edwin_lorenzo_squier"),
-            "Morganne tree must not climb Allen/Squier as blood"
-          );
-        }
-        const shares = expectedDnaShares("morganne", people);
+    const fam = getFamily();
+    const adoptees = fam.known_adoptees || {};
+    for (const [childId, parentIds] of Object.entries(adoptees)) {
+      if (!people[childId]) continue;
+      for (const pid of parentIds) {
+        if (!people[pid]) continue;
+        const kind = parentLinkKind(people[childId], pid);
         console.assert(
-          (shares.get("raymond_philip_allen") || 0) === 0,
-          "Raymond shares 0% with Morganne (adoptive)"
+          kind === "adoptive" || kind === "step",
+          `${childId} ← ${pid} must be tagged adoptive|step`
         );
       }
-    }
-    if (people.charlotte_bowerman_aylesworth && people.david_bowerman) {
-      console.assert(
-        parentLinkKind(people.charlotte_bowerman_aylesworth, "david_bowerman") === "adoptive",
-        "Charlotte ← David must be tagged adoptive (adoption known, no blood proof)"
-      );
-      if (people.alexander) {
-        const vis = defaultVisible(people, "alexander", { includeSiblings: false });
-        if (vis.has("charlotte_bowerman_aylesworth")) {
-          console.assert(
-            !vis.has("david_bowerman") && !vis.has("catherine_bartlett_bowerman"),
-            "Alexander tree must cut Charlotte’s adoptive Bowerman line"
-          );
+      for (const root of fam.primaries || []) {
+        if (!people[root]) continue;
+        const vis = defaultVisible(people, root, { includeSiblings: false });
+        if (!vis.has(childId)) continue;
+        for (const pid of parentIds) {
+          console.assert(!vis.has(pid), `${root} tree must cut ${childId} adoptive parent ${pid}`);
         }
-        if (people.mayme) {
-          console.assert(!vis.has("mayme"), "Mayme has no blood path to Alexander");
-        }
-        if (people.william_parsons_ff) {
-          console.assert(!vis.has("william_parsons_ff"), "Kate’s later husband has no blood path");
+        const shares = expectedDnaShares(root, people);
+        for (const pid of parentIds) {
+          console.assert((shares.get(pid) || 0) === 0, `${pid} shares 0% with ${root} (adoptive)`);
         }
       }
     }
-    if (people.alexander && people.morganne) {
-      const aOnly = defaultVisible(people, "alexander", { includeSiblings: true });
-      const mOnly = defaultVisible(people, "morganne", { includeSiblings: true });
-      const both = defaultVisible(people, "alexander", {
-        includeSiblings: true,
-        roots: ["alexander", "morganne"],
-      });
-      console.assert(both.size >= aOnly.size && both.size >= mOnly.size, "combined covers each solo tree");
-      console.assert([...aOnly].every((id) => both.has(id)), "combined includes Alexander tree");
-      console.assert([...mOnly].every((id) => both.has(id)), "combined includes Morganne tree");
+    if (people.charlotte_bowerman_aylesworth && people.alexander) {
+      const vis = defaultVisible(people, "alexander", { includeSiblings: false });
+      if (people.mayme) {
+        console.assert(!vis.has("mayme"), "Mayme has no blood path to Alexander");
+      }
+      if (people.william_parsons_ff) {
+        console.assert(!vis.has("william_parsons_ff"), "Kate’s later husband has no blood path");
+      }
+    }
+    const roots = familyPrimaries(people);
+    if (roots.length >= 2) {
+      const solos = roots.map((id) => defaultVisible(people, id, { includeSiblings: true }));
+      const both = defaultVisible(people, roots[0], { includeSiblings: true, roots });
+      for (const solo of solos) {
+        console.assert(both.size >= solo.size, "combined covers each solo tree");
+        console.assert([...solo].every((id) => both.has(id)), "combined includes each primary tree");
+      }
     }
     // ponytail: card expand helpers — one generation vs full ascent vs children
     {
