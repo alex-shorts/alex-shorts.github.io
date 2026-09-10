@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="version" content="verses-only" />
   <title>The House · Build + Restore</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,11 +72,6 @@
       gap: 0.65rem 1rem;
       margin: 0.75rem 0 0;
       font-size: 0.9rem;
-    }
-    .hint {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin: 0.75rem 0 0;
     }
     .scale-row {
       display: flex;
@@ -261,30 +257,13 @@
     .well.tone-court { background: color-mix(in srgb, var(--life-bg) 55%, #fff); }
     .well.tone-temple { background: color-mix(in srgb, var(--life-block) 12%, white); }
     .well.tone-hoh { background: color-mix(in srgb, var(--peak) 22%, var(--spine-bg)); }
-    .well .kicker {
-      margin: 0;
-      font-size: 0.68rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--accent);
-    }
     .well h2 {
-      margin: 0.2rem 0 0;
+      margin: 0;
       font-family: Fraunces, Georgia, serif;
       font-size: 1.35rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.15;
-    }
-    .well .pic {
-      margin: 0.3rem 0 0.55rem;
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.4;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
     }
     .verse {
       margin: 0;
@@ -432,23 +411,11 @@
     const SCALES = {
       house: {
         name: "The House",
-        short: "Zion’s courts — the campus drawing",
-        era: "return",
-        season: "Zion · still the way in",
         enter: "↑ East · toward the ark",
-        purpose: "After the fall you do not start by filling the earth. You come from the east toward the Stone — the overlap locked behind the veil. The nations wait in the prayer. The day’s work is approach.",
-        vector: {
-          inn: "The land · east of Eden",
-          through: "Gate, wall, court",
-          out: "The house · priests this far",
-          fill: "The Stone · once a year"
-        },
         gate: "Gate",
         courts: {
           nation: {
             name: "Nation",
-            short: "The land · the mountain that fills the earth",
-            pic: "Enter from the east. The same house, widening to the nations.",
             verses: [
               { ref: "Psalm 24:7, 9", text: "Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in." },
               { ref: "Isaiah 2:2 · 9:7", text: "The mountain of the house of the Lord shall be established as the highest of the mountains, and all the nations shall flow to it. Of the increase of his government and of peace there will be no end." },
@@ -460,8 +427,6 @@
           },
           city: {
             name: "City",
-            short: "The wall · the gate of the elders",
-            pic: "A people joined. Streets to dwell in. The wall around the court.",
             verses: [
               { ref: "Nehemiah 4:6 · 2:18", text: "So we built the wall. And all the wall was joined together… for the people had a mind to work. Let us rise up and build." },
               { ref: "Isaiah 60:18", text: "You shall call your walls Salvation, and your gates Praise." },
@@ -475,8 +440,6 @@
           },
           court: {
             name: "Court",
-            short: "The pavement · nations this far",
-            pic: "The court inside the wall. Fellow citizens. The nations come near.",
             verses: [
               { ref: "Ephesians 2:19, 21", text: "Fellow citizens, members of the household of God; the whole structure, being joined together, grows into a holy temple in the Lord." },
               { ref: "Matthew 16:19", text: "I will give you the keys of the kingdom of heaven, and whatever you bind on earth shall be bound in heaven." }
@@ -484,8 +447,6 @@
           },
           temple: {
             name: "Temple",
-            short: "The house · rooms under one roof",
-            pic: "Wisdom builds. Unless the Lord builds, they labor in vain.",
             verses: [
               { ref: "Proverbs 24:3–4", text: "By wisdom a house is built, and by understanding it is established; by knowledge the rooms are filled with all precious and pleasant riches." },
               { ref: "Proverbs 9:1 · 14:1", text: "Wisdom has built her house; she has hewn her seven pillars. The wisest of women builds her house, but folly with her own hands tears it down." },
@@ -497,8 +458,6 @@
           },
           hoh: {
             name: "Holy of holies",
-            short: "The stone · His presence",
-            pic: "He builds all things. Tested. Rejected. Sure. The whole building sits here.",
             verses: [
               { ref: "Hebrews 9:7", text: "Into the second only the high priest goes, and he but once a year, and not without taking blood, which he offers for himself and for the unintentional sins of the people." },
               { ref: "Isaiah 28:16", text: "Behold, I am the one who has laid as a foundation in Zion, a stone, a tested stone, a precious cornerstone, of a sure foundation: “Whoever believes will not be in haste.”" },
@@ -512,23 +471,11 @@
       },
       creation: {
         name: "Creation",
-        short: "The cosmos as temple",
-        era: "garden",
-        season: "The first house · before the sword",
         enter: "↑ Fill the earth",
-        purpose: "The first temple extends the garden from the epicenter. God rests in the finished house; image-bearers stand in the midst to spread that order until the earth is full of his glory.",
-        vector: {
-          inn: "Seventh day · God at rest",
-          through: "Image-bearers in the midst",
-          out: "Fill and subdue",
-          fill: "Glory covering as waters"
-        },
         gate: "Fill",
         courts: {
           nation: {
             name: "The deep",
-            short: "Waters · then the filled earth",
-            pic: "The courtyard of the world. Formless, then filled.",
             verses: [
               { ref: "Genesis 1:2, 28", text: "The earth was without form and void, and darkness was over the face of the deep. Be fruitful and multiply and fill the earth and subdue it." },
               { ref: "Habakkuk 2:14", text: "The earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea." }
@@ -536,8 +483,6 @@
           },
           city: {
             name: "The world",
-            short: "Sky, land, and sea set in place",
-            pic: "A house with rooms. Image-bearers stand in the midst.",
             verses: [
               { ref: "Genesis 1:6–10", text: "God made the expanse and separated the waters. God called the dry land Earth, and the waters that were gathered together he called Seas." },
               { ref: "Genesis 1:26–27", text: "Let us make man in our image, after our likeness. So God created man in his own image." }
@@ -545,8 +490,6 @@
           },
           court: {
             name: "The land",
-            short: "Habitation · the rooms of the world",
-            pic: "What was empty is now a place to live and keep.",
             verses: [
               { ref: "Genesis 1:9–12", text: "Let the dry land appear. Let the earth sprout vegetation. And God saw that it was good." },
               { ref: "Isaiah 45:18", text: "He did not create it empty; he formed it to be inhabited." }
@@ -554,8 +497,6 @@
           },
           temple: {
             name: "Sky and land",
-            short: "The ordered house",
-            pic: "Lights, seasons, living things — furniture of the cosmic house.",
             verses: [
               { ref: "Genesis 1:14–22", text: "Lights in the expanse for signs and for seasons. Let the waters swarm. Let birds fly." },
               { ref: "Psalm 104:2–3", text: "He stretches out the heavens like a tent. He lays the beams of his chambers on the waters." }
@@ -563,8 +504,6 @@
           },
           hoh: {
             name: "Seventh day",
-            short: "Rest · God takes his seat",
-            pic: "The builder inhabits what he finished. Not collapse — presence.",
             verses: [
               { ref: "Genesis 2:1–3", text: "On the seventh day God finished his work that he had done, and he rested. So God blessed the seventh day and made it holy." },
               { ref: "Isaiah 66:1", text: "Heaven is my throne, and the earth is my footstool. What house will you build for me?" }
@@ -574,23 +513,11 @@
       },
       eden: {
         name: "Eden",
-        short: "The garden inside the cosmic temple",
-        era: "garden",
-        season: "The garden · the first epicenter",
         enter: "↑ The river goes out",
-        purpose: "This house is not a shrine to visit. From the midst a river goes out so the land becomes Eden. After the fall this east is no longer a river-mouth. It is a sword — and the next season begins.",
-        vector: {
-          inn: "The midst · God walking",
-          through: "Work and keep the garden",
-          out: "River to four corners",
-          fill: "The earth as garden"
-        },
         gate: "East",
         courts: {
           nation: {
             name: "The land",
-            short: "What the garden was meant to fill",
-            pic: "Four rivers. Spread the order of the garden outward.",
             verses: [
               { ref: "Genesis 2:10–14", text: "A river flowed out of Eden to water the garden, and there it divided and became four rivers." },
               { ref: "Genesis 1:28", text: "Fill the earth and subdue it, and have dominion." }
@@ -598,8 +525,6 @@
           },
           city: {
             name: "The east",
-            short: "Cherubim · the first veil",
-            pic: "Entrance facing east. After exile, a sword that turns every way.",
             verses: [
               { ref: "Genesis 3:24", text: "He placed the cherubim and a flaming sword that turned every way to guard the way to the tree of life." },
               { ref: "Genesis 2:8", text: "The LORD God planted a garden in Eden, in the east, and there he put the man whom he had formed." }
@@ -607,8 +532,6 @@
           },
           court: {
             name: "Outside the garden",
-            short: "Land to be kept and spread into",
-            pic: "The court of Eden is the rest of the earth.",
             verses: [
               { ref: "Genesis 2:15", text: "The LORD God took the man and put him in the garden of Eden to work it and keep it." },
               { ref: "Ezekiel 36:35", text: "This land that was desolate has become like the garden of Eden." }
@@ -616,8 +539,6 @@
           },
           temple: {
             name: "The garden",
-            short: "Work and keep · abad / shamar",
-            pic: "A holy place of trees, gold, and walking with God.",
             verses: [
               { ref: "Genesis 2:8–9", text: "Out of the ground the LORD God made to spring up every tree that is pleasant to the sight and good for food." },
               { ref: "Genesis 3:8", text: "They heard the sound of the LORD God walking in the garden in the cool of the day." }
@@ -625,8 +546,6 @@
           },
           hoh: {
             name: "The midst",
-            short: "Two trees · life and knowing",
-            pic: "The inner room of the land. Life given; knowing not to be seized.",
             verses: [
               { ref: "Genesis 2:9, 16–17", text: "The tree of life was in the midst of the garden, and the tree of the knowledge of good and evil. You may surely eat of every tree… but of that tree you shall not eat." },
               { ref: "Ezekiel 28:13–14", text: "You were in Eden, the garden of God… on the holy mountain of God." }
@@ -636,23 +555,11 @@
       },
       tabernacle: {
         name: "Tabernacle",
-        short: "The pattern on the mountain",
-        era: "return",
-        season: "After the fall · the way back",
         enter: "↑ Toward the ark",
-        purpose: "Glory dwells above the ark so a people in exile can draw near. The cherubim that blocked Eden now sit on the mercy seat. Come in. The light does not yet go out as it did from the garden.",
-        vector: {
-          inn: "Exile · east of the garden",
-          through: "The camp and the court",
-          out: "Holy place · the veil",
-          fill: "The ark · I will meet you there"
-        },
         gate: "Door",
         courts: {
           nation: {
             name: "The nations",
-            short: "A priestly people among peoples",
-            pic: "The court of the world around a moving house.",
             verses: [
               { ref: "Exodus 19:6", text: "You shall be to me a kingdom of priests and a holy nation." },
               { ref: "Genesis 12:3", text: "In you all the families of the earth shall be blessed." },
@@ -661,8 +568,6 @@
           },
           city: {
             name: "The camp",
-            short: "Israel around the tent",
-            pic: "Tribes as a wall. The cloud lifts; they move.",
             verses: [
               { ref: "Numbers 2:2", text: "The people of Israel shall camp each by his own standard, around the tent of meeting." },
               { ref: "Exodus 40:36–38", text: "Throughout all their journeys, whenever the cloud was taken up from over the tabernacle, the people of Israel would set out." }
@@ -670,8 +575,6 @@
           },
           court: {
             name: "The court",
-            short: "Bronze · altar · washing",
-            pic: "This far the congregation comes. Presence is still ahead.",
             verses: [
               { ref: "Exodus 27:9, 18", text: "You shall make the court of the tabernacle. The length of the court shall be a hundred cubits." },
               { ref: "Exodus 29:42–43", text: "It shall be a regular burnt offering throughout your generations at the entrance of the tent of meeting before the LORD." }
@@ -679,8 +582,6 @@
           },
           temple: {
             name: "Holy place",
-            short: "Lamp, bread, incense",
-            pic: "The tree as lampstand. Priests who work and keep.",
             verses: [
               { ref: "Exodus 25:8–9, 31", text: "Let them make me a sanctuary, that I may dwell in their midst. Make it after the pattern shown you. You shall make a lampstand of pure gold." },
               { ref: "Numbers 3:7–8", text: "They shall keep guard over him and over the whole congregation before the tent of meeting, as they minister at the tabernacle." }
@@ -688,8 +589,6 @@
           },
           hoh: {
             name: "Most holy",
-            short: "Ark · cloud so Moses cannot enter",
-            pic: "The pattern of heaven, copied in gold. Glory fills.",
             verses: [
               { ref: "Exodus 40:34–35", text: "The cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle. Moses was not able to enter." },
               { ref: "Exodus 25:22", text: "There I will meet with you, from above the mercy seat, from between the two cherubim." },
@@ -699,24 +598,12 @@
         }
       },
       body: {
-        name: "A man",
-        short: "Spirit, soul, body — the believer as house",
-        era: "sent",
-        season: "After Jesus · a man as house",
-        enter: "↑ Speech goes out",
-        purpose: "The Spirit within reopens the epicenter in a person. Unveiled and empowered, he carries the Light into the street — the garden-task restored in one life.",
-        vector: {
-          inn: "The Spirit within",
-          through: "Soul, body, unveiled face",
-          out: "Lips · the gate of the man",
-          fill: "The street meets the presence"
-        },
+        name: "A man", soul, body — the believer as house",
+        enter: "↑ Speech goes out", he carries the Light into the street — the garden-task restored in one life.",
         gate: "Lips",
         courts: {
           nation: {
             name: "The street",
-            short: "Fruit · what goes out",
-            pic: "The court of a man is the world that hears him.",
             verses: [
               { ref: "Proverbs 4:23", text: "Keep your heart with all vigilance, for from it flow the springs of life." },
               { ref: "Acts 1:8", text: "You will receive power when the Holy Spirit has come upon you, and you will be my witnesses." },
@@ -725,8 +612,6 @@
           },
           city: {
             name: "Body",
-            short: "What the street can see",
-            pic: "The wall of the person. Present it. Do not destroy the temple.",
             verses: [
               { ref: "Romans 12:1", text: "Present your bodies as a living sacrifice, holy and acceptable to God." },
               { ref: "1 Corinthians 3:16–17", text: "You people are God’s temple and God’s Spirit lives in you. If anyone destroys God’s temple, God will destroy him." }
@@ -734,8 +619,6 @@
           },
           court: {
             name: "Soul",
-            short: "The rooms of the life",
-            pic: "Mind, will, the pavement of a day. Fill the rooms.",
             verses: [
               { ref: "Proverbs 24:3–4", text: "By wisdom a house is built… by knowledge the rooms are filled with all precious and pleasant riches." },
               { ref: "1 Thessalonians 5:23", text: "May your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ." }
@@ -743,8 +626,6 @@
           },
           temple: {
             name: "Spirit",
-            short: "The inner rooms of the man",
-            pic: "The lips board: temple = human spirit. Access by a clean gate.",
             verses: [
               { ref: "Ephesians 3:16", text: "That according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being." },
               { ref: "Romans 8:16", text: "The Spirit himself bears witness with our spirit that we are children of God." }
@@ -752,8 +633,6 @@
           },
           hoh: {
             name: "Holy Spirit",
-            short: "The inner room · presence within",
-            pic: "You are not your own. The glory in a man.",
             verses: [
               { ref: "1 Corinthians 6:19–20", text: "Your body is a temple of the Holy Spirit within you. You were bought with a price. Glorify God in your body." },
               { ref: "2 Corinthians 3:16–17", text: "Whenever one turns to the Lord, the veil is taken away. Where the Spirit of the Lord is, there is freedom." }
@@ -762,24 +641,12 @@
         }
       },
       church: {
-        name: "The people",
-        short: "Many stones, one dwelling",
-        era: "sent",
-        season: "After Pentecost · the people sent",
-        enter: "↑ Go therefore",
-        purpose: "The veil is torn. The pattern reestablishes: from this overlap, go. He is the Light of the world; they are empowered to carry that light to the nations.",
-        vector: {
-          inn: "Christ the cornerstone",
-          through: "Living stones · one dwelling",
-          out: "Go therefore · in power",
-          fill: "All nations · the end of the earth"
-        },
+        name: "The people", one dwelling",
+        enter: "↑ Go therefore", go. He is the Light of the world; they are empowered to carry that light to the nations.",
         gate: "Open",
         courts: {
           nation: {
             name: "The nations",
-            short: "The court without a dividing wall",
-            pic: "Too light a thing to raise only the tribes. Light to the coastlands.",
             verses: [
               { ref: "John 8:12 · Matthew 5:14", text: "I am the light of the world. You are the light of the world. A city set on a hill cannot be hidden." },
               { ref: "Isaiah 49:6", text: "I will make you as a light for the nations, that my salvation may reach to the end of the earth." },
@@ -788,8 +655,6 @@
           },
           city: {
             name: "A people",
-            short: "Holy nation · royal priesthood",
-            pic: "Not a mountain, not a gilded hall. Unexpected men and women.",
             verses: [
               { ref: "1 Peter 2:9–10", text: "A chosen race, a royal priesthood, a holy nation… Once you were not a people, but now you are God’s people." },
               { ref: "Acts 2:1–4", text: "They were all filled with the Holy Spirit and began to speak in other tongues — fire on human temples." }
@@ -797,8 +662,6 @@
           },
           court: {
             name: "Citizens",
-            short: "Fellow heirs · wall of hostility down",
-            pic: "The pavement is now Jew and Gentile together.",
             verses: [
               { ref: "Ephesians 2:14, 19", text: "He has broken down in his flesh the dividing wall of hostility. You are fellow citizens with the saints and members of the household of God." },
               { ref: "Matthew 16:18–19", text: "On this rock I will build my church. I will give you the keys of the kingdom of heaven." }
@@ -806,8 +669,6 @@
           },
           temple: {
             name: "Living stones",
-            short: "Built together",
-            pic: "The house is people. Rooms filled with the Spirit.",
             verses: [
               { ref: "Ephesians 2:21–22", text: "The whole structure, being joined together, grows into a holy temple in the Lord… a dwelling place for God by the Spirit." },
               { ref: "1 Peter 2:5", text: "You yourselves like living stones are being built up as a spiritual house, to be a holy priesthood." }
@@ -815,8 +676,6 @@
           },
           hoh: {
             name: "Cornerstone",
-            short: "Christ · no other foundation",
-            pic: "The inner room of the people is the Person they sit on.",
             verses: [
               { ref: "Matthew 27:51", text: "The curtain of the temple was torn in two, from top to bottom." },
               { ref: "Ephesians 2:20", text: "Built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone." },
@@ -827,23 +686,11 @@
       },
       newcreation: {
         name: "New creation",
-        short: "No temple building — the Lamb is the temple",
-        era: "sent",
-        season: "The last house · the cycle at rest",
-        enter: "↑ No sun · the Lamb is the lamp",
-        purpose: "The shine is finished. What the garden began, the city completes: no outside left, no sun needed, for the glory of God is the light and its lamp is the Lamb.",
-        vector: {
-          inn: "God and the Lamb",
-          through: "The cube city is holy of holies",
-          out: "Open gates · river · leaves",
-          fill: "No sun · glory is the light"
-        },
+        enter: "↑ No sun · the Lamb is the lamp", the city completes: no outside left, no sun needed, for the glory of God is the light and its lamp is the Lamb.",
         gate: "Open",
         courts: {
           nation: {
             name: "The nations",
-            short: "Leaves for healing · kings bring glory in",
-            pic: "The court is gone because there is no outside.",
             verses: [
               { ref: "Revelation 21:24–26", text: "The nations will walk by its light, and the kings of the earth will bring their glory into it." },
               { ref: "Revelation 22:2", text: "The leaves of the tree were for the healing of the nations." }
@@ -851,8 +698,6 @@
           },
           city: {
             name: "The city",
-            short: "Bride · dwelling of God with man",
-            pic: "Twelve foundations. The wall is salvation still, but the gates never shut.",
             verses: [
               { ref: "Revelation 21:2–3, 25", text: "The holy city, new Jerusalem, coming down… the dwelling place of God is with man. Its gates will never be shut by day — and there will be no night there." },
               { ref: "Revelation 21:12–14", text: "A great, high wall, twelve gates, twelve foundations, the twelve names of the twelve apostles of the Lamb." }
@@ -860,8 +705,6 @@
           },
           court: {
             name: "The river",
-            short: "From the throne · tree of life",
-            pic: "Eden’s river and Ezekiel’s river, finished.",
             verses: [
               { ref: "Revelation 22:1–2", text: "The river of the water of life, bright as crystal, flowing from the throne of God and of the Lamb through the middle of the street of the city." },
               { ref: "Ezekiel 47:9", text: "Everything will live where the river goes." }
@@ -869,8 +712,6 @@
           },
           temple: {
             name: "The cube",
-            short: "The city is the holy of holies",
-            pic: "Length, width, height equal — 1 Kings 6:20 remembered at world-size.",
             verses: [
               { ref: "Revelation 21:16", text: "The city lies foursquare, its length the same as its width… its length and width and height are equal." },
               { ref: "1 Kings 6:20", text: "The inner sanctuary was twenty cubits long, twenty cubits wide, and twenty cubits high." }
@@ -878,8 +719,6 @@
           },
           hoh: {
             name: "The Lamb",
-            short: "God and the Lamb are the temple",
-            pic: "No lamp but the glory. Presence is the house.",
             verses: [
               { ref: "Revelation 21:22–23", text: "I saw no temple in the city, for its temple is the Lord God the Almighty and the Lamb. And the city has no need of sun or moon to shine on it, for the glory of God gives it light, and its lamp is the Lamb." },
               { ref: "Habakkuk 2:14", text: "The earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea." }
