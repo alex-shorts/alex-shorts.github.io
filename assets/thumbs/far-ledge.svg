@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Far Ledge">
+  <rect width="480" height="360" fill="#0a1218"/>
+  <circle cx="390" cy="72" r="36" fill="#dce6f0" opacity="0.9"/>
+  <circle cx="390" cy="72" r="52" fill="#8aa4c0" opacity="0.18"/>
+  <rect x="24" y="198" width="168" height="162" fill="#3a2a1c"/>
+  <rect x="24" y="198" width="168" height="8" fill="#c4a070"/>
+  <rect x="232" y="210" width="72" height="150" fill="#3a2a1c"/>
+  <rect x="232" y="210" width="72" height="8" fill="#c4a070"/>
+  <rect x="348" y="188" width="108" height="172" fill="#3a2a1c"/>
+  <rect x="348" y="188" width="108" height="8" fill="#c4a070"/>
+  <polygon points="200,340 212,300 224,340" fill="#b7c0c8"/>
+  <polygon points="224,340 236,296 248,340" fill="#9aa4b0"/>
+  <polygon points="248,340 258,304 270,340" fill="#b7c0c8"/>
+  <polygon points="312,340 244,318 256,340" fill="#8a9098"/>
+  <rect x="168" y="128" width="22" height="70" fill="#f4eee0"/>
+  <rect x="164" y="148" width="30" height="10" fill="#b80d1a"/>
+  <rect x="160" y="168" width="14" height="36" fill="#f4eee0"/>
+  <rect x="184" y="168" width="14" height="36" fill="#f4eee0"/>
+  <circle cx="179" cy="118" r="10" fill="#db9f6e"/>
+  <text x="28" y="42" fill="#e6c35c" font-family="Segoe UI, sans-serif" font-size="22" font-weight="800" letter-spacing="3">FAR LEDGE</text>
+  <text x="28" y="68" fill="#d8c8a0" font-family="Segoe UI, sans-serif" font-size="15">Type the product. Last digit leaps.</text>
+</svg>

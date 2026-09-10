@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Far Ledge</title>
+  <style>
+    :root {
+      --ink: #e8ece8;
+      --muted: #9aa7a0;
+      --gold: #e6c35c;
+      --ok: #7dcea0;
+      --bad: #e07a6a;
+      --panel: rgba(12, 14, 16, 0.72);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; height: 100%; background: #0a0c0e; color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif; overflow: hidden;
+    }
+    #wrap {
+      height: 100%; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 8px; padding: 8px;
+    }
+    canvas {
+      display: block; width: min(100vw - 16px, 1280px); height: auto;
+      background: #0e1218; border-radius: 6px;
+    }
+    #hud {
+      position: fixed; inset: 0; pointer-events: none;
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding: 14px 18px 12px;
+    }
+    .top, .bottom { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .brand { font-weight: 750; letter-spacing: 0.12em; font-size: 13px; color: var(--gold); }
+    .stats { display: flex; gap: 14px; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--muted); }
+    .stats b { color: var(--ink); font-weight: 650; }
+    #center {
+      text-align: center; pointer-events: none;
+      position: absolute; left: 0; right: 0; top: 58px;
+    }
+    #stem {
+      font-size: clamp(28px, 5vw, 52px); font-weight: 750; letter-spacing: 0.06em;
+      text-shadow: 0 2px 0 #000;
+    }
+    #slots {
+      font-size: clamp(36px, 7vw, 72px); font-weight: 800; letter-spacing: 0.28em;
+      font-variant-numeric: tabular-nums; color: var(--gold); min-height: 1.1em;
+      text-shadow: 0 3px 0 #000;
+      transition: transform 0.08s ease-out, color 0.12s;
+    }
+    #slots.ok { transform: scale(1.12); color: #ffe08a; }
+    #slots.bad { transform: translateX(6px); color: var(--bad); }
+    #coach { color: var(--muted); font-size: 15px; min-height: 1.3em; margin-top: 6px; }
+    #coach.ok { color: var(--ok); }
+    #coach.bad { color: var(--bad); }
+    #pad {
+      pointer-events: auto; display: flex; flex-wrap: nowrap; gap: 6px; justify-content: center;
+    }
+    #pad button {
+      width: 38px; height: 38px; font: inherit; font-weight: 750; cursor: pointer;
+      border-radius: 8px; border: 1px solid #3a4440; background: var(--panel); color: var(--ink);
+    }
+    #pad button:active { background: var(--gold); color: #111; }
+    .hint { font-size: 12px; color: var(--muted); }
+    #know {
+      position: fixed; inset: 0; z-index: 8;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(8, 10, 12, 0.72);
+      pointer-events: auto;
+    }
+    #know.hidden { display: none; }
+    #know .sheet {
+      width: min(92vw, 820px); max-height: 90vh; overflow: auto;
+      background: #121018; border: 3px solid var(--gold); border-radius: 10px;
+      padding: 12px 14px 16px; color: #fff6dc;
+    }
+    #know h2 { margin: 0 0 4px; font-size: clamp(1.15rem, 2.4vw, 1.7rem); letter-spacing: 0.06em; color: var(--gold); font-weight: 800; }
+    #know .dek { color: #c8b8e0; font-size: 15px; margin: 0 0 10px; }
+    #know table { width: 100%; border-collapse: collapse; table-layout: fixed; font-variant-numeric: tabular-nums; }
+    #know th, #know td {
+      text-align: center; font-weight: 800; font-size: clamp(11px, 1.7vw, 18px);
+      padding: 6px 2px; border: 2px solid #0a0614;
+    }
+    #know th { color: var(--gold); font-size: 12px; }
+    #know td.now { outline: 3px solid #ffe08a; outline-offset: -3px; z-index: 1; }
+    #know td.needed { box-shadow: inset 0 0 0 3px #e07a6a; }
+    #know td.needed.now { box-shadow: inset 0 0 0 4px #e07a6a, 0 0 0 2px #ffe08a; }
+    .know-legend { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 12px; font-size: 15px; }
+    .know-swatch { padding: 6px 12px; border-radius: 8px; font-weight: 800; }
+    .know-tally { margin-left: auto; color: #c8b8e0; font-weight: 700; }
+    #know-foot { margin: 8px 0 0; color: #a090c0; font-size: 14px; min-height: 1.2em; }
+    .know-bar { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+    .know-bar button {
+      font: inherit; font-weight: 800; padding: 10px 22px; border-radius: 10px;
+      border: 4px solid var(--gold); cursor: pointer; font-size: 18px;
+    }
+    .know-go { background: #1c3a9a; color: #fff6dc; }
+    .know-go:hover { background: #22c45a; color: #06140a; }
+    .know-reset { background: #241848; color: #fff6dc; }
+    .know-reset:hover { background: #5a2040; }
+    #mini {
+      pointer-events: none;
+      display: grid;
+      grid-template-columns: repeat(13, 13px);
+      gap: 1px;
+      opacity: 0.95;
+    }
+    #mini i {
+      width: 13px; height: 13px; border-radius: 2px; display: block;
+      background: rgb(36, 92, 220);
+    }
+    #mini i.lab { background: transparent; color: var(--gold); font-size: 8px; line-height: 13px; text-align: center; font-style: normal; font-weight: 700; }
+    #mini i.now { outline: 2px solid #ffe08a; outline-offset: -1px; }
+    #mini i.needed { box-shadow: inset 0 0 0 2px #e07a6a; }
+    #mini.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div id="wrap"><canvas id="view" width="1280" height="720"></canvas></div>
+  <div id="hud">
+    <div class="top">
+      <div>
+        <div class="brand">FAR LEDGE</div>
+        <div class="hint">Type the product. Last digit leaps.</div>
+      </div>
+      <div class="stats">
+        <span>Move <b id="zone">Leap</b></span>
+        <span>Time <b id="time">0:00</b></span>
+        <span>Combo <b id="combo">0</b></span>
+        <span>Acc <b id="acc">—</b></span>
+        <span>PB <b id="pb">—</b></span>
+      </div>
+      <div id="mini" aria-hidden="true"></div>
+    </div>
+    <div id="center">
+      <div id="stem">7 × 8</div>
+      <div id="slots">_ _</div>
+      <div id="coach">Digits move you. The last digit leaps.</div>
+    </div>
+    <div class="bottom">
+      <div id="pad"></div>
+      <div class="hint">0–9 · T table · R new run</div>
+    </div>
+  </div>
+  <div id="know">
+    <div class="sheet">
+      <h2 id="know-title">FILLED TABLE · review, then run</h2>
+      <p class="dek">Color is what the game thinks you know · gold = this gap · red inset = due (needed) · ENTER run · R reset</p>
+      <table id="know-table"></table>
+      <div class="know-legend" id="know-legend"></div>
+      <p id="know-foot"></p>
+      <div class="know-bar">
+        <button type="button" class="know-go" id="know-go">ENTER · RUN</button>
+        <button type="button" class="know-reset" id="know-reset">R · RESET KNOWLEDGE</button>
+      </div>
+    </div>
+  </div>
+  <script src="./game.js?v=look16"></script>
+</body>
+</html>

@@ -6,6 +6,15 @@
   },
   "projects": [
     {
+      "id": "far-ledge",
+      "name": "Far Ledge",
+      "desc": "Type the product. Each digit is a step; the last digit leaps the pit. Multiplication 1–12.",
+      "href": "projects/far-ledge/",
+      "image": "assets/thumbs/far-ledge.svg",
+      "lane": "school",
+      "updated": "2026-09-10"
+    },
+    {
       "id": "prefix-down",
       "name": "Prefix Down",
       "desc": "Street brawler that drills the metric chart — punch, hop rockets, then fill or tile the 13×4 grid.",
