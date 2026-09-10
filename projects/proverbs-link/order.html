@@ -133,6 +133,20 @@
     .col-heads .spine { color: var(--spine); }
     .col-heads .life { color: var(--life); }
     .col-heads .death { color: var(--death); text-align: right; }
+    .col-heads .house-link {
+      display: inline-block;
+      margin-left: 0.65rem;
+      color: var(--accent);
+      font-weight: 700;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      white-space: nowrap;
+    }
+    .col-heads .house-link:hover { color: var(--ink); }
     .climb {
       display: flex;
       flex-direction: column-reverse; /* data order; visual bottom→top so Rung 9 (throne) is first */
@@ -520,6 +534,10 @@
         writing-mode: horizontal-tb;
         transform: none;
       }
+      .col-heads .house-link {
+        display: block;
+        margin: 0.25rem 0 0;
+      }
     }
     @media (max-width: 860px) {
       .col-heads, .rung, .pair { grid-template-columns: 1fr; }
@@ -547,7 +565,11 @@
     <header class="page-head">
       <p class="eyebrow">Man &amp; Woman · Order under the throne</p>
       <h1>The Order</h1>
-      <p class="lede">A God of Order — the submission climb from family to throne.</p>
+      <p class="lede">A God of Order — the submission climb from family to throne. After Order, open <a href="./build.html">The House</a> for Build + Restore.</p>
+      <nav class="nav" aria-label="Campus">
+        <a href="./climb.html">The Climb</a>
+        <a href="./build.html">The House →</a>
+      </nav>
       <div class="foundation-banner theme">
         <strong>Romans 13:1–7</strong>
         <p>Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God.</p>
@@ -558,7 +580,7 @@
     <div class="col-heads" aria-hidden="true">
       <span class="spine">Office</span>
       <span class="life">Leads</span>
-      <span class="death">Submits</span>
+      <span class="death">Submits<a class="house-link" href="./build.html">The House →</a></span>
     </div>
 
     <div class="climb" id="climb"></div>
