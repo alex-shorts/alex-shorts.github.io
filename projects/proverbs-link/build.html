@@ -497,7 +497,7 @@
     <header class="page-head">
       <p class="eyebrow">Build + Restore · after Order</p>
       <h1>The House</h1>
-      <p class="lede">The first house extends the garden from the epicenter. After the fall the motion reverses: you come back toward the ark. After Jesus the pattern reestablishes — the Light of the world, and a people empowered to carry him to the nations. Each house has a season. The rooms stay. The purpose turns.</p>
+      <p class="lede">The earthly temple is a copy of the heavenly. Moses was shown the pattern. Men are caught up into it — Isaiah 6 — and Revelation opens it in full. After the fall the earthly motion is back toward the ark. After Jesus the pattern reestablishes: Light of the world to the nations.</p>
       <p class="cycle">Garden out · Fall in · Christ out · until the city needs no sun</p>
       <div class="ages" id="ages" role="tablist" aria-label="Season of the house"></div>
       <div class="vector" id="vector" aria-label="The purpose of this house in its season">
@@ -559,6 +559,74 @@
     const ALIAS = { altar: "city", holy: "temple", gentile: "court" };
 
     const SCALES = {
+      heavenly: {
+        name: "Heavenly temple",
+        short: "The pattern, not made with hands",
+        era: "pattern",
+        season: "The pattern · not made with hands",
+        enter: "↑ Caught up · the temple opened",
+        purpose: "The earthly house is a copy of this one. Moses was shown the pattern. Prophets are caught up into it. Revelation opens the true tent in full — then the copy can be understood.",
+        labels: ["Throne", "Sanctuary", "Altar", "Earth"],
+        vector: {
+          inn: "The throne · the train fills the temple",
+          through: "Seraphim · sea of glass · the true tent",
+          out: "The coal · send me",
+          fill: "The whole earth full of his glory"
+        },
+        gate: "Opened",
+        courts: {
+          nation: {
+            name: "The earth",
+            short: "His footstool · all flesh",
+            pic: "Heaven is the throne. The earth is the court of that house.",
+            verses: [
+              { ref: "Isaiah 6:3", text: "Holy, holy, holy is the LORD of hosts; the whole earth is full of his glory!" },
+              { ref: "Isaiah 66:1", text: "Heaven is my throne, and the earth is my footstool; what is the house that you would build for me?" },
+              { ref: "Revelation 5:13", text: "And I heard every creature in heaven and on earth and under the earth and in the sea… saying, “To him who sits on the throne and to the Lamb be blessing and honor and glory and might forever and ever!”" }
+            ]
+          },
+          city: {
+            name: "Zion above",
+            short: "The city of the living God",
+            pic: "You have come to the heavenly Jerusalem — not a copy in stone.",
+            verses: [
+              { ref: "Hebrews 12:22–24", text: "You have come to Mount Zion and to the city of the living God, the heavenly Jerusalem, and to innumerable angels in festal gathering, and to the assembly of the firstborn… and to Jesus, the mediator of a new covenant." },
+              { ref: "Revelation 4:4", text: "Around the throne were twenty-four thrones, and seated on the thrones were twenty-four elders, clothed in white garments, with golden crowns on their heads." }
+            ]
+          },
+          court: {
+            name: "The court of heaven",
+            short: "Sea of glass · seraphim · the altar",
+            pic: "Caught up, a man stands in the court: living creatures, an altar, a coal.",
+            verses: [
+              { ref: "Isaiah 6:2, 6–7", text: "Above him stood the seraphim. Then one of the seraphim flew to me, having in his hand a burning coal that he had taken with tongs from the altar. And he touched my mouth." },
+              { ref: "Revelation 4:6, 8", text: "Before the throne there was as it were a sea of glass, like crystal. And around the throne, on each side of the throne, are four living creatures… “Holy, holy, holy, is the Lord God Almighty.”" },
+              { ref: "Revelation 7:15", text: "Therefore they are before the throne of God, and serve him day and night in his temple." }
+            ]
+          },
+          temple: {
+            name: "The true tent",
+            short: "Not of this creation",
+            pic: "Moses copies what he was shown. Christ enters the original.",
+            verses: [
+              { ref: "Exodus 25:9, 40", text: "Exactly as I show you concerning the pattern of the tabernacle, and of all its furniture, so you shall make it. See that you make them after the pattern for them, which is being shown you on the mountain." },
+              { ref: "Hebrews 8:1–2, 5", text: "We have such a high priest, one who is seated at the right hand of the throne of the Majesty in heaven, a minister in the holy places, in the true tent that the Lord set up, not man. They serve a copy and shadow of the heavenly things." },
+              { ref: "Hebrews 9:11–12, 24", text: "Christ appeared as a high priest… he entered once for all into the holy places, not by means of the blood of goats and calves but by means of his own blood. For Christ has entered, not into holy places made with hands, which are copies of the true things, but into heaven itself." },
+              { ref: "Revelation 15:5 · 11:19", text: "The sanctuary of the tent of witness in heaven was opened. Then God’s temple in heaven was opened, and the ark of his covenant was seen within his temple." }
+            ]
+          },
+          hoh: {
+            name: "The throne",
+            short: "High and lifted up",
+            pic: "The inner room of heaven. The train fills the temple.",
+            verses: [
+              { ref: "Isaiah 6:1", text: "I saw the Lord sitting upon a throne, high and lifted up; and the train of his robe filled the temple." },
+              { ref: "Revelation 4:2–3", text: "Behold, a throne stood in heaven, with one seated on the throne. And he who sat there had the appearance of jasper and carnelian." },
+              { ref: "Ezekiel 1:26–28", text: "And above the expanse over their heads there was the likeness of a throne, in appearance like sapphire; and seated above the likeness of a throne was a likeness with a human appearance… Such was the appearance of the likeness of the glory of the LORD." }
+            ]
+          }
+        }
+      },
       house: {
         name: "The House",
         short: "Zion’s courts — the campus drawing",
@@ -956,7 +1024,7 @@
       }
     };
 
-    const ORDER = ["eden", "tabernacle", "house", "body", "church", "newcreation"];
+    const ORDER = ["heavenly", "eden", "tabernacle", "house", "body", "church", "newcreation"];
     const ERAS = [
       {
         id: "garden",
@@ -1034,7 +1102,14 @@
     }
 
     function eraOf(id) {
-      return ERAS.find((e) => e.id === (SCALES[id] || {}).era) || ERAS[1];
+      const scale = SCALES[id] || {};
+      return ERAS.find((e) => e.id === scale.era) || {
+        id: scale.era || "",
+        name: scale.name || "",
+        when: scale.season || "",
+        aim: "",
+        labels: scale.labels || ["In", "Through", "Out", "Fill"]
+      };
     }
 
     function renderPlan() {
