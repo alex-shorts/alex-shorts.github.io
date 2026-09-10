@@ -135,7 +135,7 @@
     .col-heads .death { color: var(--death); text-align: right; }
     .climb {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse; /* data order; visual bottom→top so Rung 9 (throne) is first */
       gap: 0.65rem;
     }
     .rung {
@@ -464,7 +464,6 @@
     }
     .side-door {
       position: fixed;
-      left: 0.75rem;
       top: 50%;
       transform: translateY(-50%);
       z-index: 20;
@@ -487,6 +486,12 @@
       line-height: 1.2;
       text-align: center;
     }
+    .side-door.back { left: 0.75rem; }
+    .side-door.forward { left: auto; right: 0.75rem; }
+    .side-door.forward .side-door-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
     .side-door:hover {
       background: #fff;
       color: var(--ink);
@@ -507,10 +512,13 @@
         transform: none;
         flex-direction: row;
         padding: 0.55rem 0.85rem;
-        left: 0.75rem;
       }
-      .side-door-label {
+      .side-door.back { left: 0.75rem; right: auto; }
+      .side-door.forward { right: 0.75rem; left: auto; }
+      .side-door-label,
+      .side-door.forward .side-door-label {
         writing-mode: horizontal-tb;
+        transform: none;
       }
     }
     @media (max-width: 860px) {
@@ -527,9 +535,13 @@
   </style>
 </head>
 <body>
-  <a class="side-door" href="./climb.html" aria-label="Back to The Climb">
+  <a class="side-door back" href="./climb.html" aria-label="Back to The Climb">
     <span class="side-door-arrow" aria-hidden="true">←</span>
     <span class="side-door-label">The Climb</span>
+  </a>
+  <a class="side-door forward" href="./build.html" aria-label="Open The House">
+    <span class="side-door-label">The House</span>
+    <span class="side-door-arrow" aria-hidden="true">→</span>
   </a>
   <div class="wrap">
     <header class="page-head">
@@ -561,6 +573,7 @@
       </p>
       <nav class="nav">
         <a href="./climb.html">The Climb</a>
+        <a href="./build.html">The House</a>
         <a href="./index.html">The Way of Life</a>
         <a href="./proverbs-1-9.html">Foundation</a>
         <a href="./verses.html">Verses</a>

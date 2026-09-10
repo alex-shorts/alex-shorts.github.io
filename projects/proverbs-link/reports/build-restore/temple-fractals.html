@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple fractals — the house that fills the earth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Literata:opsz,wght@7..72,400;7..72,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../_shared/report.css" />
+  <style>
+    :root { --theme: #8a4b1f; --peak: #c9a227; --life-bg: #e4efe7; --spine: #3d3428; --spine-bg: #ebe4d6; }
+    .page { width: min(1040px, calc(100% - 2rem)); }
+    .section h2 { scroll-margin-top: 1.25rem; }
+    .section ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+    .section li { margin: 0.28rem 0; }
+    .section a { color: var(--accent); font-weight: 600; }
+
+    .map-stage {
+      display: grid;
+      grid-template-columns: minmax(16rem, 1.15fr) minmax(14rem, 0.9fr);
+      gap: 0.7rem;
+      align-items: stretch;
+      margin: 1rem 0 0;
+    }
+    .nest {
+      min-height: 22rem;
+      display: flex;
+      border: 1.5px solid var(--rule);
+      background: color-mix(in srgb, var(--spine-bg) 55%, var(--paper));
+      padding: 0.45rem 0.5rem 0.55rem;
+    }
+    .band {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+      border: 2px solid rgba(61, 52, 40, 0.35);
+    }
+    .band .lbl {
+      margin: 0;
+      padding: 0.25rem 0.4rem 0.2rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .band .sub {
+      margin: 0;
+      padding: 0 0.4rem 0.35rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .band.court-band { background: color-mix(in srgb, var(--life-bg) 55%, #fff); padding: 0.2rem 0.35rem 0.3rem; }
+    .band.house-band {
+      flex: 0 0 auto;
+      width: 58%;
+      align-self: center;
+      background: #fff;
+      border-width: 2.5px;
+      border-color: var(--spine);
+      text-align: center;
+      margin-top: 0.15rem;
+    }
+    .band.inner-band {
+      flex: 0 0 auto;
+      min-height: 3.6rem;
+      margin: 0 0.35rem 0.15rem;
+      background: color-mix(in srgb, var(--peak) 32%, var(--spine-bg));
+      border-color: color-mix(in srgb, var(--peak) 55%, var(--spine));
+      justify-content: center;
+      text-align: center;
+    }
+    .pavement { flex: 1; min-height: 2.4rem; }
+    .east { margin: 0.35rem 0 0; text-align: center; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+    .legend-well {
+      border: 1.5px solid var(--rule);
+      background: var(--spine-bg);
+      padding: 0.75rem 0.85rem 1rem;
+      min-height: 0;
+    }
+    .legend-well .kicker {
+      margin: 0;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .legend-well h3 {
+      margin: 0.2rem 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+    .legend-well .pic {
+      margin: 0.3rem 0 0.55rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .legend-well .verse {
+      margin: 0;
+      padding: 0.55rem 0 0.5rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+    .legend-well .verse strong { color: var(--accent); margin-right: 0.3rem; }
+
+    .scale-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin: 0.75rem 0 0;
+    }
+    .scale-row button {
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid var(--rule);
+      background: #fff;
+      padding: 0.35rem 0.55rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+    .scale-row button.is-on {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+      background: color-mix(in srgb, var(--peak) 18%, #fff);
+    }
+
+    .shine {
+      display: grid;
+      gap: 0.2rem;
+      margin: 1rem 0 0;
+    }
+    .shine-row {
+      display: grid;
+      grid-template-columns: 7.2rem 1fr auto;
+      gap: 0.65rem;
+      align-items: center;
+      padding: 0.45rem 0.55rem;
+      border: 1px solid var(--rule);
+      background: rgba(255,255,255,0.45);
+    }
+    .shine-row:nth-child(1) { background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg)); }
+    .shine-row:nth-child(2) { background: color-mix(in srgb, var(--peak) 12%, #fff); margin-left: 0.7rem; }
+    .shine-row:nth-child(3) { background: color-mix(in srgb, var(--life-bg) 70%, #fff); margin-left: 1.4rem; }
+    .shine-row:nth-child(4) { background: color-mix(in srgb, var(--spine-bg) 80%, #fff); margin-left: 2.1rem; }
+    .shine-row strong { font-family: Fraunces, Georgia, serif; }
+    .shine-row span { color: var(--muted); font-size: 0.92rem; }
+    .shine-row em { font-style: normal; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+    .shine.cycle .shine-row { margin-left: 0; }
+    .shine.cycle .shine-row:nth-child(1) { background: color-mix(in srgb, var(--life-bg) 70%, #fff); }
+    .shine.cycle .shine-row:nth-child(2) { background: color-mix(in srgb, var(--peak) 22%, var(--spine-bg)); }
+    .shine.cycle .shine-row:nth-child(3) { background: color-mix(in srgb, var(--peak) 28%, #fff); }
+    .shine-row span { color: var(--muted); font-size: 0.92rem; }
+    .shine-row em { font-style: normal; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+
+    .src {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .nests-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.55rem;
+      margin: 1rem 0 0;
+    }
+    .worlds {
+      border: 1.5px solid var(--rule);
+      padding: 0.35rem;
+      background: color-mix(in srgb, var(--spine-bg) 70%, var(--paper));
+      min-height: 100%;
+    }
+    .worlds .kicker {
+      margin: 0 0 0.35rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .worlds .w {
+      border: 1.5px solid rgba(61, 52, 40, 0.28);
+      padding: 0.28rem 0.35rem 0.32rem;
+      margin-top: 0.28rem;
+      background: color-mix(in srgb, #fff 70%, transparent);
+    }
+    .worlds > .w { margin-top: 0; }
+    .worlds .w-lbl {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .worlds .w-sub {
+      margin: 0;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .lib-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+      margin: 0.85rem 0 0;
+    }
+    .lib-table th, .lib-table td {
+      border-top: 1px solid var(--rule);
+      padding: 0.4rem 0.3rem 0.45rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .lib-table th {
+      font-size: 0.68rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .lib-table td:nth-child(2) { font-variant-numeric: tabular-nums; width: 3.2rem; }
+
+    @media (max-width: 800px) {
+      .map-stage { grid-template-columns: 1fr; }
+      .nest { min-height: 18rem; }
+      .ladder-row, .shine-row { grid-template-columns: 1fr; }
+      .nests-grid { grid-template-columns: 1fr; }
+    }
+    @media print {
+      .scale-row { display: none !important; }
+      .map-stage { break-inside: avoid; }
+      .cover { break-after: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="site-nav" aria-label="Site">
+      <a href="../../index.html">Way of Life</a>
+      <a href="../../build.html">The House</a>
+      <a href="../../climb.html">Climb</a>
+      <a href="../index.html">All reports</a>
+    </nav>
+
+    <header class="cover">
+      <p class="eyebrow">Build + Restore · Temple typology</p>
+      <h1>The house that fills the earth</h1>
+      <p class="lede">The temple is not one building in Jerusalem. It is one of the Bible’s master fractals: the same three rooms, at every scale — and each house has a season. The first house extends the garden from the epicenter. After the fall you come back toward the ark. After Jesus the pattern reestablishes: Light of the world to the nations, until the city needs no sun.</p>
+      <div class="meta-line">
+        <span class="chip">Isaiah 6:3</span>
+        <span class="chip">Habakkuk 2:14</span>
+        <span class="chip">Genesis 2</span>
+        <span class="chip">Exodus 40</span>
+        <span class="chip">Ephesians 2</span>
+        <span class="chip">Revelation 21</span>
+      </div>
+      <div class="print-actions">
+        <button type="button" data-print>Print / Save PDF</button>
+        <a class="button" href="../../build.html">The House — live</a>
+        <a class="button" href="./verse-study.html">Print sheet</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Where this sits</h2>
+      <p class="intro">The House on campus is a first drawing: nation, city, court, temple, holy of holies. This report is the typology underneath that drawing. It reads the live plan as one instance of a pattern the whole canon repeats.</p>
+      <div class="callout">
+        <strong>The claim</strong>
+        <p>Heaven and earth were meant to overlap. A temple is any place God makes that overlap — then sends the overlap outward until there is no outside left. BibleProject’s own line: the whole biblical drama can be told as a story about God’s temple. They name it a <em>macro temple</em> and a <em>miniature cosmos</em>, a <em>micro-Eden</em>. This report keeps “fractal” as our word for the same nested three rooms at every scale.</p>
+      </div>
+      <div class="toc">
+        <a href="#big"><strong>0. Start big</strong><span>New creation wraps cosmos wraps Zion wraps a body wraps the lips.</span></a>
+        <a href="#grammar"><strong>1. The three rooms</strong><span>Inner · house · court. Cosmos in miniature; the house as cosmos.</span></a>
+        <a href="#shine"><strong>2. The seasons</strong><span>Garden out · Fall in · Christ out. Each house has a time.</span></a>
+        <a href="#stones"><strong>3. Repeating stones</strong><span>Gate, veil, tree, river, seven, glory, priest, foreigner, cube.</span></a>
+        <a href="#map"><strong>4. Live map</strong><span>Click a scale. The same rooms relabel. Big first.</span></a>
+        <a href="#instances"><strong>5. The temples of Scripture</strong><span>Heavenly pattern through covering-doors and false houses.</span></a>
+        <a href="#library"><strong>6. Library canvas</strong><span>Forty-four boards. The dump already asked how the temples relate.</span></a>
+        <a href="#bibleproject"><strong>7. BibleProject</strong><span>Macro temple, micro-Eden — live pages only, no dead study-guide link.</span></a>
+        <a href="#show"><strong>8. How to show it</strong><span>What the next House drawing can carry without clutter.</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="big">
+      <h2>0. Start with the largest house</h2>
+      <p class="intro">Find the pattern at full size before naming the small copies. Three nests, read outside-in. Space. Time. People. The same rooms, the same shine.</p>
+      <div class="nests-grid">
+        <div class="worlds">
+          <p class="kicker">Space</p>
+          <div class="w">
+            <p class="w-lbl">New creation</p>
+            <p class="w-sub">Cube city. God and the Lamb are the temple. No outside.</p>
+            <div class="w">
+              <p class="w-lbl">Creation</p>
+              <p class="w-sub">Seven-day house. Heaven / land / sea.</p>
+              <div class="w">
+                <p class="w-lbl">Earth · nations</p>
+                <p class="w-sub">Glory covering as the waters. Light to the coastlands.</p>
+                <div class="w">
+                  <p class="w-lbl">Israel · Zion</p>
+                  <p class="w-sub">Garden-called land. Mountain where heaven touches earth.</p>
+                  <div class="w">
+                    <p class="w-lbl">City · court · house</p>
+                    <p class="w-sub">The House page sits here — not at the outer rim.</p>
+                    <div class="w">
+                      <p class="w-lbl">A body</p>
+                      <p class="w-sub">Living stone. Spirit within.</p>
+                      <div class="w">
+                        <p class="w-lbl">Heart · face · lips</p>
+                        <p class="w-sub">The smallest gate. Veil or unveiled glory.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="worlds">
+          <p class="kicker">Time</p>
+          <div class="w">
+            <p class="w-lbl">The ages</p>
+            <p class="w-sub">Until the earth is full. Then no night.</p>
+            <div class="w">
+              <p class="w-lbl">Israel’s year</p>
+              <p class="w-sub">Appointed times. Pilgrim roads to Zion.</p>
+              <div class="w">
+                <p class="w-lbl">The week</p>
+                <p class="w-sub">Six days of work. Cathedral in time.</p>
+                <div class="w">
+                  <p class="w-lbl">Sabbath</p>
+                  <p class="w-sub">God takes his seat. Delight, not a lock.</p>
+                  <div class="w">
+                    <p class="w-lbl">Yom Kippur</p>
+                    <p class="w-sub">Sabbath of sabbaths. Once a year behind the veil.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="worlds">
+          <p class="kicker">People</p>
+          <div class="w">
+            <p class="w-lbl">Heavenly temple</p>
+            <p class="w-sub">The pattern. Not made with hands. Lips board: the template.</p>
+            <div class="w">
+              <p class="w-lbl">Jesus</p>
+              <p class="w-sub">The Word tabernacled. Strike this house — three days.</p>
+              <div class="w">
+                <p class="w-lbl">Church</p>
+                <p class="w-sub">Many stones, one dwelling. Wall of hostility down.</p>
+                <div class="w">
+                  <p class="w-lbl">Marriage · household</p>
+                  <p class="w-sub">One flesh. Wisdom’s seven pillars. A name in the gates.</p>
+                  <div class="w">
+                    <p class="w-lbl">One person</p>
+                    <p class="w-sub">Spirit / soul / body. Holy of holies = the Spirit within.</p>
+                    <div class="w">
+                      <p class="w-lbl">The mouth</p>
+                      <p class="w-sub">Heart portal, face portal, lips as gate. Access, then speech out.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="callout">
+        <strong>How to read the nests</strong>
+        <p>Do not flatten them into one ladder of rungs. Space, time, and people are the same house seen three ways. Sabbath is not a seventh court of Solomon. The lips are not a tiny Zion. They are the same grammar — inner, house, court, shine — at the size you are actually living.</p>
+      </div>
+    </section>
+
+    <section class="section" id="grammar">
+      <h2>1. The three rooms — one grammar</h2>
+      <p class="intro">BibleProject asks you to set Genesis 1 beside 1 Kings 6: creation finished in seven days, Solomon’s house finished in seven years; sky / land / sea beside holy of holies / holy place / court. The cosmos is a macro-temple. The temple is a miniature cosmos. Image-bearers stand in it the way a statue stood in a pagan shrine — except they walk.</p>
+      <div class="ladder">
+        <div class="ladder-row">
+          <strong>Inner</strong>
+          <span>Holy of holies. Rest. Glory. The ark. The tree in the midst. The Spirit in the man. The Lamb on the throne. East is away from here; you walk west toward presence.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>House</strong>
+          <span>Holy place. Lampstand as tree. Bread. Incense. Priests who work and keep (<em>abad</em> and <em>shamar</em> — Genesis 2:15, Numbers 3:7–8). The rooms of a household. The soul. The church as living stones around the cornerstone.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Court</strong>
+          <span>The pavement that faces the land. Nations this far. The body. The city around the house. The waters Noah’s ark rides. The world the garden was meant to fill.</span>
+        </div>
+      </div>
+      <div class="callout">
+        <strong>Not three gods, not three climbs</strong>
+        <p>The rooms are one house. The House page was right to refuse a second ladder. Build is not another ascent of rungs. It is the same presence, nested, then spreading. Covering’s grammar still holds: you come under before you become a roof. The inner room is not a prize at the top of the mountain. It is the source that fills the courts.</p>
+      </div>
+      <div class="callout">
+        <strong>BibleProject Classroom — the same three, named twice</strong>
+        <p>Mackie’s Heaven and Earth notes (session 24) line the rooms up: holy of holies / heaven / midst of the garden · holy place / the land / the garden in Eden · courtyard (bronze sea) / the waters / the land outside. Genesis 1 is not called “temple” in the Hebrew; they argue from literary design (seven-day dedication, image as statue). That caution stays.</p>
+      </div>
+    </section>
+
+    <section class="section" id="shine">
+      <h2>2. The seasons — a cycle, then a vector</h2>
+      <p class="intro">If you only draw nested boxes, you have a museum. If you only draw shine-out, you skip the long age when the way was <em>in</em>. Each house has a place in time and a purpose. The rooms stay. The motion turns.</p>
+      <div class="shine cycle" aria-label="Three seasons of the house">
+        <div class="shine-row">
+          <strong>Garden</strong>
+          <span>The first temple extends the garden from the epicenter. Fill the earth. The river leaves Eden. Dominion is a sending, not a visit.</span>
+          <em>Out</em>
+        </div>
+        <div class="shine-row">
+          <strong>After the fall</strong>
+          <span>The east is a sword. The goal reverses: come back toward the ark of the covenant. Cherubim that blocked the garden now sit on the mercy seat. High priest, once a year.</span>
+          <em>In</em>
+        </div>
+        <div class="shine-row">
+          <strong>After Jesus</strong>
+          <span>The veil is torn. The pattern reestablishes. He is the Light of the world; the Spirit empowers a people to carry that light to the nations — until the city needs no sun.</span>
+          <em>Out</em>
+        </div>
+      </div>
+      <p class="intro" style="margin-top:1.1rem">Inside a sending season the vector is still a fountain:</p>
+      <div class="shine" aria-label="Presence moving outward">
+        <div class="shine-row">
+          <strong>Presence</strong>
+          <span>The glory fills the inner room.</span>
+          <em>In</em>
+        </div>
+        <div class="shine-row">
+          <strong>House</strong>
+          <span>Priests carry it through the rooms.</span>
+          <em>Through</em>
+        </div>
+        <div class="shine-row">
+          <strong>Court</strong>
+          <span>The nations may come this far — then further.</span>
+          <em>Out</em>
+        </div>
+        <div class="shine-row">
+          <strong>Earth</strong>
+          <span>The knowledge of the glory covers as the waters cover the sea.</span>
+          <em>Fill</em>
+        </div>
+      </div>
+      <div class="callout">
+        <strong>Genesis 1:28 · Genesis 3:24 · Hebrews 9:7 · Matthew 27:51 · John 8:12 · Acts 1:8 · Revelation 21:23</strong>
+        <p>Holy, holy, holy — the whole earth is full of his glory. That hymn is the first house’s purpose. After the fall it becomes a pilgrimage: draw near. After the curtain tears it becomes a commission again: you will receive power, you will be witnesses. Ezekiel’s river, Isaiah’s mountain, and Pentecost are the sending grammar restored. Failure is always the same sin: keep the light, eat the tree for yourself, shut the court, refuse the nations, build a house while refusing the Builder.</p>
+      </div>
+    </section>
+
+    <section class="section" id="stones">
+      <h2>3. Repeating stones — how the houses talk to each other</h2>
+      <p class="intro">These are the joins. If a sacred space is missing more than two of them, it is probably a different metaphor. The fractal is this kit, reused.</p>
+      <div class="ladder">
+        <div class="ladder-row">
+          <strong>East / gate</strong>
+          <span>Eden’s cherubim, the tent door, the city gate, the lips. The way in — and the way the light goes out.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Veil</strong>
+          <span>Flaming sword, embroidered cherubim, torn at the cross, still over a heart until the Messiah (2 Corinthians 3 — already on the lips board). Portal, or portal blocker.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Tree / lamp</strong>
+          <span>Eden’s trees, the menorah, Psalm 1’s planted man, Revelation 22. Life in the midst, then fruit for the nations.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>River out</strong>
+          <span>Genesis 2:10, Ezekiel 47, John 7, Revelation 22, Isaiah 58’s spring on the covering/Build spine. The shine vector as water.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Seven</strong>
+          <span>Days of creation, years of Solomon, Wisdom’s pillars, the festivals. Dedication: God takes his seat.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Glory fills / leaves</strong>
+          <span>Exodus 40, 1 Kings 8, Ezekiel 10, Acts 2. The house is alive only if he is in it.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Work and keep</strong>
+          <span><em>Abad / shamar</em> in the garden and of the Levites. Isaiah 56: the foreigner who keeps sabbath is brought to the house of prayer.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Foreigner welcome</strong>
+          <span>1 Kings 8:41–43, Isaiah 56, Ephesians 2:14. The court was never meant to stay empty of nations.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Cube / inner</strong>
+          <span>1 Kings 6:20 beside Revelation 21:16. When the world is the inner room, the fractal completes.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <h2>4. Live map — the same rooms, many houses</h2>
+      <p class="intro">Click a scale. Start at new creation (the largest house), then come inward. The drawing does not change shape. The names do.</p>
+      <div class="scale-row" id="scales"></div>
+      <div class="map-stage">
+        <div>
+          <div class="nest" id="nest" aria-label="Three-room temple grammar">
+            <div class="band court-band" style="flex:1; padding: 0.25rem 0.4rem 0.35rem;">
+              <p class="lbl" id="lbl-court">Court</p>
+              <p class="sub" id="sub-court">The land · the nations</p>
+              <div class="band house-band">
+                <p class="lbl" id="lbl-house">House</p>
+                <p class="sub" id="sub-house">Holy place · the rooms</p>
+                <div class="band inner-band">
+                  <p class="lbl" id="lbl-inner">Holy of holies</p>
+                  <p class="sub" id="sub-inner">Presence · the stone</p>
+                </div>
+              </div>
+              <div class="pavement"></div>
+              <p class="east">↑ East · the light goes out this way</p>
+            </div>
+          </div>
+        </div>
+        <aside class="legend-well" id="well" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="section" id="instances">
+      <h2>5. The temples of Scripture</h2>
+      <p class="intro">Not every sacred space is called “temple.” The authors still build them with the same stones: east, cherubim, tree or lamp, water going out, a shut inner room, a people who work and keep, a glory that either fills or departs.</p>
+
+      <h3 class="ref" id="eden" style="margin-top:1.4rem;">Garden of Eden</h3>
+      <p>BibleProject: all creation is God’s temple; in the middle of that temple God plants another — a garden. Eastward entrance. Mountain (Ezekiel 28:13–14). Rivers that split to the four corners (Genesis 2:10–14) — the first shine-out. Cherubim at the gate after the exile (Genesis 3:24), later embroidered on the veil. Adam and Eve as royal priests: <em>abad</em> and <em>shamar</em>, the same pair used of Levites guarding the tent (Numbers 3:7–8). The tree of life becomes the lampstand (Exodus 25:31–40). The tree of knowing sits like Torah in the ark — wisdom and life that must not be seized.</p>
+      <p class="src">Library: purpose-of-blessings board already isolates Genesis 2:15. Exile theme on campus is humanity’s exile from this inner room.</p>
+
+      <h3 class="ref">Patriarch tents — mini Edens</h3>
+      <p>BibleProject names Abraham, Isaac, and Jacob’s altar-and-tree camps as informal temples: tent, altar, tree, mountain. Bethel is “house of God” (Genesis 28:16–19). These are not Solomon’s courts. They are small overlaps on the way to a people — presence meeting a man so blessing can reach families of the earth (Genesis 12:3).</p>
+
+      <h3 class="ref">Noah’s ark</h3>
+      <p>A three-deck house that rides the waters of un-creation. One door. The LORD shuts it (Genesis 7:16) — covering’s grammar: you enter, you remain. Eight souls, a remnant, then “be fruitful and fill the earth” again (Genesis 9:1). The ark is not a shrine with an altar court. It is a mobile holy place whose purpose is the same vector: presence preserving a people so the garden can start over. 1 Peter 3:20–21 reads baptism through that door.</p>
+      <p class="src">Library: covering report already names the ark, Passover house, Rahab, and the city of refuge as doors. Keep that list; add the three decks as the three rooms in wood.</p>
+
+      <h3 class="ref">Sinai and the tabernacle</h3>
+      <p>The mountain is already zoned: summit, mid-slope, camp — holy of holies, holy place, court. Then Exodus 25:9, 40: make everything after the pattern shown on the mountain. Heaven’s house copied in goat hair and gold. When it is finished, the cloud covers and Moses cannot enter (Exodus 40:34–35) — the same filling Solomon will see, and the same filling Acts 2 will relocate onto people. Israel is named a kingdom of priests, a holy nation (Exodus 19:6): the whole camp is a court around a house around a fire, aimed at the nations.</p>
+      <p class="src">Library: psalm-65-67-84-temple board quotes Exodus 40 in full. Understanding-Philip board: the temple’s purpose was to draw near, not merely to diagnose sin; in the new creation the world itself is the house.</p>
+
+      <h3 class="ref">Solomon’s temple — and its ruin</h3>
+      <p>Seven years (1 Kings 6:38). Garden carved into cedar. East. Inner oracle. Glory fills so the priests cannot stand (1 Kings 8:10–11; 2 Chronicles 7:1–3). The charge is the vector: this house is for the foreigner who hears of the Name (1 Kings 8:41–43). Failure is Solomon’s own: other gods, other courts. Then Ezekiel watches the glory leave eastward (Ezekiel 10–11). The House page’s court plan is this building remembered — nation, city, court, house, stone — after the glory has a new address.</p>
+
+      <h3 class="ref">Ezekiel’s river and the second house</h3>
+      <p>A future house on a very high mountain, facing east (Ezekiel 40). Water from under the threshold, to the ankles, knees, loins, a river to swim in, trees on both banks, the sea healed (Ezekiel 47). That is Eden’s river and Revelation 22’s river in one vision. Haggai 2:9: the latter glory greater than the former — not because Herod gilds more gold, but because the Presence will not stay behind a veil.</p>
+      <p class="src">Library: waters board and establishing-the-kingdom board already collect Isaiah’s desert rivers, Ezekiel 47, John 7, Revelation 22.</p>
+
+      <h3 class="ref">Jesus — the temple they could kill</h3>
+      <p>“Destroy this temple, and in three days I will raise it up… he spoke of the temple of his body” (John 2:19–21). The Word tabernacled among us (John 1:14). The veil tears (Matthew 27:51): the inner room opens, not so tourists can stroll in, but so the glory can get out. He is priest, sacrifice, and house. BibleProject: Pentecost is the dedication of new human temples beside Solomon’s fire on stone.</p>
+      <p class="src">Print sheet already joins Zechariah 6:12–13, John 2, Matthew 16:18.</p>
+
+      <h3 class="ref">Marriage — two, one body, one house</h3>
+      <p>“The two shall become one flesh. This mystery is profound, and I am saying that it refers to Christ and the church” (Ephesians 5:31–32). A marriage is a small temple: an inner union, a household of rooms, a gate that faces the city (Proverbs 31:23). Fruitfulness is the shine-out — children as arrows, hospitality, a name in the gates. Song of Songs in the library already sets Ephesians 5 beside Revelation 21: the bride-city coming down, dwelling of God with man.</p>
+      <p>Wisdom’s house belongs here too: “Wisdom has built her house; she has hewn her seven pillars” (Proverbs 9:1). Seven is temple-dedication time. Folly tears the same house down (Proverbs 14:1). That is already a House-page verse.</p>
+
+      <h3 class="ref">The human body — body, soul, spirit</h3>
+      <p>“Your body is a temple of the Holy Spirit within you” (1 Corinthians 6:19). “May your whole spirit and soul and body be kept blameless” (1 Thessalonians 5:23). The three rooms in a person: spirit as inner room (the Spirit bears witness with our spirit), soul as holy place (life, mind, the rooms filled — Proverbs 24:3–4), body as court (what the street can see, what can be presented as a living sacrifice — Romans 12:1). Defile the court and you have not left the inner room untouched. The library’s flesh-vs-spirit and lips-speech boards already park 1 Corinthians 3:16–17 and 6:19 here: you people are God’s temple; if anyone destroys it, God will destroy him.</p>
+
+      <h3 class="ref">The church — many members, one house</h3>
+      <p>Christ the cornerstone; apostles and prophets the foundation; living stones; the whole structure growing into a holy temple; a dwelling place for God by the Spirit (Ephesians 2:19–22; 1 Peter 2:4–6; 1 Corinthians 3:9–17). Israel among the nations was the first “kingdom of priests.” The church is that vocation after the veil: not a replacement of Israel’s story but its Messiah-shaped opening to the Gentiles — the court, at last, without a wall of hostility (Ephesians 2:14). Many members, one body (1 Corinthians 12) is the same fractal as many stones, one house.</p>
+
+      <h3 class="ref">Israel, the nations, the world</h3>
+      <p>Abraham: in you all families of the earth (Genesis 12:3). Isaiah 2: the mountain of the house lifted up, nations streaming in. Isaiah 49:6: too light a thing to raise up the tribes — I will make you a light to the nations. The House page already sits Daniel 2 here: the stone becomes a mountain and fills the whole earth. That is the fractal at civilizational scale: inner remnant, house of Jacob, court of the empires, then the earth as the Lord’s (Psalm 24:1) — the psalm that also lifts the gates.</p>
+
+      <h3 class="ref">Heavenly temple — the pattern</h3>
+      <p>The psalm-65-67-84 board already writes this in so many words: the earthly house is a copy; Jesus is priest of the heavenly temple not made with hands, after Melchizedek, not Levi. Hebrews 8–10 is the board’s spine beside Exodus 40. The lips board then lists the forms in order: heavenly (the template) → tabernacle (portable meeting) → temple (heartbeat of Israel) → Jesus (“strike me down”) → church → the individual. That is our fractal list, already in the dump, waiting to be drawn.</p>
+      <p class="src">Psalm 11:4 on the psalm-46-49 board: the LORD is in his holy temple; his throne is in heaven.</p>
+
+      <h3 class="ref">Sabbath — a temple that is a day</h3>
+      <p>BibleProject calls it a cathedral in time. The Rest board already has the load-bearing texts: creation rest, the sojourner inside your gates (Exodus 20), Isaiah 58 delight, and Isaiah 56 — foreigners kept from saying “the LORD will separate me,” brought to the holy mountain, made joyful in the house of prayer for all peoples. Sabbath is the inner room of the week. Yom Kippur is the inner room of the year. The shine is the same: the court of time includes the Gentile.</p>
+
+      <h3 class="ref">Advent — temple versus father’s house</h3>
+      <p>The Advent board sets Zechariah in the temple at the hour of incense, the people praying in the court, against Mary in a father’s house. Priestly line and Davidic line. Location is the point. “Veiled in flesh the Godhead see” is the hymn on that board: incarnation as tabernacle. The smallest house (a womb, a Nazareth room) is already the overlap.</p>
+
+      <h3 class="ref">Covering-doors — Passover, Rahab, refuge</h3>
+      <p>The covering report already names them as doors into a house. They are temples of rescue: inner (the blood, the cord, the altar), house (stay in, remain, flee here), court (Egypt, Jericho, the land of blood-guilt). Jonah looks toward the holy temple from inside a shut fish — same grammar from the waters board. You enter; you remain; you come out to fill a city (Nineveh) with a word.</p>
+
+      <h3 class="ref">Heart, face, lips — the smallest gate</h3>
+      <p>The lips board maps it: heart is the portal between body and spirit; face is the portal between people; veil is a portal blocker. 2 Corinthians 3: the veil lies on the heart until one turns to the Lord; unveiled faces behold glory and are changed. Proverbs 4:23: guard the heart, the springs. The mouth is the east gate of a personal temple. Purify the lips to enter; then speech is the river out. The Speech reports already work the fruit of that gate without naming it a court.</p>
+
+      <h3 class="ref">Psalm 1 — the planted man</h3>
+      <p>A tree by streams, fruit in season, leaf that does not wither: a micro-Eden of one life. The wicked are chaff — outside. Psalm 84 on the temple board: highways to Zion in the heart; Baca made springs. The covering/Build spring (Isaiah 58) is the same water under a man before he is a mason.</p>
+
+      <h3 class="ref">False houses — Folly and Dagon</h3>
+      <p>Wisdom calls from the heights; Folly sits in the same place and says the same words. Her house leads to Sheol (Proverbs 9). The government board parks the ark in Dagon’s temple: a captured glory that will not be housed; the idol falls, head and hands cut off on the threshold. Ezekiel’s departed glory is the same death in Solomon’s rooms. A perfect nested drawing with no presence is a tomb.</p>
+
+      <h3 class="ref">Cosmic close — no temple, because the Lamb is the temple</h3>
+      <p>Revelation 21–22: new heaven and new earth, holy city as bride, dwelling of God with man, no temple in it — the Lord God and the Lamb are its temple. The city’s cube matches the holy of holies (1 Kings 6:20; Revelation 21:16): the whole world has become the inner room. River from the throne. Tree of life for the healing of the nations. Night is gone; the glory is the lamp. The pattern completes when the outer court is gone because there is no outside. Understanding-Philip’s note is exact: not that the temple was abolished as a bad idea; its purpose was nearness, and in the new creation the creation itself is that nearness.</p>
+    </section>
+
+    <section class="section" id="library">
+      <h2>6. Library canvas — what the dump already holds</h2>
+      <p class="intro">Keyword pass across every theology Miro dump (temple, tabernacle, Zion, Eden, priest, glory, veil, ark, river, sabbath, garden). Business and electrical boards skipped. Hits are a flashlight, not a score. The library had already asked the question.</p>
+      <div class="callout">
+        <strong>Psalm 46–49, already on the board</strong>
+        <p>“There are multiple temples and locations of the temple described throughout scripture. How are they all related?” Its own list: earthly tabernacle/temple · heavenly temple · followers of Christ · temple in the earthly reign of Christ. It already links the BibleProject Temple video. The study-guide URL next to it is a 404.</p>
+      </div>
+      <div class="callout">
+        <strong>Lips &amp; speech, already on the board</strong>
+        <p>“The pattern of the tent and temple in the old covenant is the same pattern of the temple of the believer.” Holy of holies = Holy Spirit; temple = human spirit; grounds = the believer. Then the forms: heavenly (the template) → tabernacle → temple → Jesus → church → individuals. Access by purifying the lips.</p>
+      </div>
+      <table class="lib-table">
+        <thead>
+          <tr><th>Source</th><th>Hits</th><th>What it already feeds</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Psalm 65, 66, 67, 84 — Temple Narrative</td><td>180</td><td>Zion, courts, Exodus 40, Hebrews’ heavenly priest, all flesh comes, blessing so the earth fears (Ps 67).</td></tr>
+          <tr><td>Lips &amp; Speech — Flesh, Soul, Spirit</td><td>105</td><td>Body as temple, veil, 1 Cor 3 and 6, the forms-of-the-temple list, heart/face as portals.</td></tr>
+          <tr><td>Blessings &amp; Curses</td><td>98</td><td>Priest, presence, temple — vocation density.</td></tr>
+          <tr><td>Rest</td><td>65</td><td>Sabbath as delight; Isa 56 Gentiles in the house; Eden’s garden and river.</td></tr>
+          <tr><td>Mark</td><td>64</td><td>Temple conflict, sabbath, priests, cornerstone.</td></tr>
+          <tr><td>Advent</td><td>58</td><td>Temple vs father’s house. Incense hour. Veiled in flesh.</td></tr>
+          <tr><td>Psalm 50–55 · Psalm 46–49</td><td>57 / 56</td><td>Zion, mountain, city, citadels. Four-temple question. BibleProject link.</td></tr>
+          <tr><td>Understanding Philip</td><td>41</td><td>Nearness, not diagnosis. New creation is the house. Lamp is Christ; we are lamps.</td></tr>
+          <tr><td>Government</td><td>39</td><td>Ark in Dagon’s house — counterfeit temple.</td></tr>
+          <tr><td>Purpose of Blessings</td><td>33</td><td>Wisdom’s seven pillars. Folly’s door. Genesis 2:15.</td></tr>
+          <tr><td>Flesh vs Spirit · Song of Songs · Waters</td><td>31 / 29 / 25</td><td>Body-temple; bride-city (Eph 5 / Rev 21); Jonah, John 7, Rev 22, living water.</td></tr>
+          <tr><td>Proverbs 1–9 · Establishing the Kingdom</td><td>24 / 17</td><td>Wisdom’s house; water to dry land; highways to Zion; Ezek 47.</td></tr>
+          <tr><td>Covering report · The House</td><td>—</td><td>Doors (ark, Passover, Rahab, refuge). Live court plan. Do not clutter the drawing with every label on this page.</td></tr>
+        </tbody>
+      </table>
+      <p class="src">Also present, thinner: The Shepherd, Prayer (Spirit in the inner being), Towards Baptism (ark), Identity (priest), Colossians (glory / sabbath), Light (Isa 42 — servant as light to the nations, faintly burning wick). Proverbs 10–31 themes matrix still has no Temple column — house, king, and gate sit scattered. That join is still the work, not a new verse pile.</p>
+      <div class="ladder">
+        <div class="ladder-row">
+          <strong>The House</strong>
+          <span><a href="../../build.html">build.html</a> — nation, city, court, temple, holy of holies. First drawing of the fractal as a court plan, not a climb. Print: <a href="./verse-study.html">verse-study.html</a>.</span>
+        </div>
+        <div class="ladder-row">
+          <strong>Covering</strong>
+          <span>Ark, Passover, Rahab, city of refuge — doors into a house. Psalm 127 on the same spine as Build. <a href="../covering/man-under-covering.html">Man under covering</a>.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bibleproject">
+      <h2>7. BibleProject — macro temple, miniature cosmos</h2>
+      <p class="intro">The psalm-46-49 board already points at the Temple video. They do not say “fractal.” They say overlap, three-tiered, micro-Eden. The Miro “study guide” URL is dead (404). Use these live pages instead.</p>
+      <ul>
+        <li><a href="https://bibleproject.com/explore/video/temple/">Temple</a> — “God’s space and human space overlap… God creates a cosmic temple and, in Jesus, takes up residence in his temple-world. By the end… all of creation has become God’s sacred temple.” Reflect: Genesis 1 beside 1 Kings 6; Genesis 3 beside Solomon’s failure; 2 Chronicles 7 beside Acts 2; Ephesians 2 and 1 Peter 2.</li>
+        <li><a href="https://bibleproject.com/articles/were-adam-and-eve-priests-eden/">Were Adam and Eve Priests in Eden?</a> — seven-day dedication; “the cosmos is a macro temple, and the temple is a miniature cosmos”; garden inside that temple; <em>abad / shamar</em>; spread the garden into the rest of creation. They admit Genesis does not use the word temple.</li>
+        <li><a href="https://bibleproject.com/articles/king-david-priestly-role/">The Priestly Rule of a New Eden</a> — mini Edens of the patriarchs; Israel to spread presence to the nations; new creation: Yahweh and Jesus <em>are</em> the temple (Revelation 21:22).</li>
+        <li><a href="https://bibleproject.com/explore/video/heaven-and-earth/">Heaven &amp; Earth</a> — overlap as the point; tabernacle as reunion; John 1:14; Revelation 21. Classroom session 24 notes: <a href="https://documents.bibleproject.com/classroom/teacher-notes/heaven-and-earth-teacher-notes.pdf">teacher PDF</a>.</li>
+        <li><a href="https://bibleproject.com/articles/new-heaven-new-earth/">New Heaven and New Earth</a> — no temple building; the cube city as one giant holy of holies; presence on every square inch; nations healed.</li>
+        <li>Tabernacle as limited Eden: <a href="https://bibleproject.com/podcasts/whats-so-special-about-tabernacle/">What’s So Special About the Tabernacle?</a> — presence is “actually a reality,” not a mere symbol; “God’s purpose is to live among his people.” Furniture: <a href="https://bibleproject.com/podcasts/why-does-tabernacle-furniture-even-matter/">Why Does the Tabernacle Furniture Even Matter?</a></li>
+        <li>Royal priesthood: <a href="https://bibleproject.com/videos/priests-of-eden/">Royal Priests of Eden</a>, <a href="https://bibleproject.com/videos/royal-priesthood/">The Royal Priesthood</a>, <a href="https://bibleproject.com/podcasts/we-are-royal-priesthood/">We Are the Royal Priesthood</a>, <a href="https://bibleproject.com/articles/what-is-pentecost-and-why-is-it-important/">What Is Pentecost?</a></li>
+        <li>Same theme cluster: <a href="https://bibleproject.com/explore/video/holiness/">Holiness</a>, <a href="https://bibleproject.com/explore/video/water-of-life/">Water of Life</a>, <a href="https://bibleproject.com/explore/video/tree-of-life/">Tree of Life</a>, <a href="https://bibleproject.com/explore/video/sabbath/">Sabbath</a>, <a href="https://bibleproject.com/explore/video/the-mountain/">The Mountain</a>, <a href="https://bibleproject.com/explore/video/image-of-god/">Image of God</a>, <a href="https://bibleproject.com/explore/video/holy-spirit/">Holy Spirit</a>.</li>
+      </ul>
+      <div class="callout">
+        <strong>Where we agree — and where we keep our own spine</strong>
+        <p>Agree: overlap; nested three; garden as prototype; Israel as priests to the nations; Jesus as the house; church as living stones; new creation as the world become holy of holies; presence meant to spread, not stay boxed. They warn against “God cannot be near sin” as a half-truth. Keep: covering’s “under, then over”; Order’s offices; Build as court plan not a second climb; marriage and body as explicit temples in Paul. BibleProject is vast on cosmos and priesthood. Proverbs-Link still has to show the household and the gate as rooms of the same house.</p>
+      </div>
+    </section>
+
+    <section class="section" id="show">
+      <h2>8. How to show these fractals without clutter</h2>
+      <p class="intro">The live House should stay one plan. This report is the legend behind the plan. If the campus drawing tries to label Eden, ark, marriage, and body at once, it will lie. Do this instead:</p>
+      <ul>
+        <li><strong>One diagram, many names.</strong> Keep nation / city / court / temple / holy of holies as the default. A scale row (as above) relabels the three rooms. Do not add a second nested system.</li>
+        <li><strong>Always name the season.</strong> The same five courts mean garden-out, ark-in, or Christ-out depending on the house’s place in time. East at the bottom is the way in after the fall, and the way the light goes out after Jesus. The House page now leads with that cycle.</li>
+        <li><strong>Three rooms, not seven courts.</strong> Altar court and holy place as separate click-targets fought the fractal. Inner, house, court is the grammar. City and nation are the land the court faces.</li>
+        <li><strong>Pair this report to the print sheet.</strong> Front: the plan. Back: the verse well. This HTML: why the plan is allowed to mean a body, a marriage, a cosmos.</li>
+        <li><strong>Next campus move, if any:</strong> done on <a href="../../build.html">The House</a> — a scale row that does not change the geometry, only the names and the legend. Imagery first; method later. Still true.</li>
+      </ul>
+      <div class="callout">
+        <strong>The measure</strong>
+        <p>Does the inner room shine, or have we locked it? A house, a body, a church, a nation can be a perfect nested drawing and still be a tomb. The fractal is not complete until the court is full of nations and the earth is full of glory.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Build + Restore typology report. Live drawing: <code>build.html</code>. BibleProject Temple theme, Eden-priests article, and Heaven and Earth classroom notes as primary companions. The old Miro study-guide link is a 404.
+    </footer>
+  </div>
+  <script>
+    const FRACTALS = {
+      cosmos: {
+        name: "Creation",
+        short: "The cosmos as temple",
+        pic: "Seven days. Rest is God taking up residence. Image in the midst.",
+        inner: "Seventh day · rest",
+        innerSub: "Glory fills the finished house",
+        house: "Sky and land ordered",
+        houseSub: "The rooms of the world",
+        court: "The deep · the filled earth",
+        courtSub: "Fill and subdue",
+        verses: [
+          { ref: "Genesis 1:26–28, 2:1–3", text: "Image-bearers in the midst of a seven-day house. God rests: the builder takes his seat." },
+          { ref: "Isaiah 66:1", text: "Heaven is my throne, and the earth is my footstool. What house will you build for me?" }
+        ]
+      },
+      eden: {
+        name: "Garden of Eden",
+        short: "The inner temple of the land",
+        pic: "East gate. Mountain. River to the four corners. Priests who work and keep.",
+        inner: "The midst · the trees",
+        innerSub: "Life and knowing",
+        house: "The garden",
+        houseSub: "Work and keep · abad / shamar",
+        court: "The land",
+        courtSub: "Spread the garden outward",
+        verses: [
+          { ref: "Genesis 2:10, 15", text: "A river flowed out of Eden to water the garden. The LORD God took the man and put him in the garden to work it and keep it." },
+          { ref: "Genesis 3:24", text: "Cherubim and a flaming sword at the east of the garden — the first veil." }
+        ]
+      },
+      ark: {
+        name: "Noah’s ark",
+        short: "A house on the waters",
+        pic: "Three decks. One door. God shuts it. Then fill the earth again.",
+        inner: "The window · the remnant",
+        innerSub: "Eight souls preserved",
+        house: "Three decks",
+        houseSub: "One wood house",
+        court: "The waters · then the earth",
+        courtSub: "Be fruitful and fill",
+        verses: [
+          { ref: "Genesis 7:16 · 9:1", text: "The LORD shut him in. Be fruitful and multiply and fill the earth." },
+          { ref: "1 Peter 3:20–21", text: "Eight persons were brought safely through water. Baptism now saves you — an appeal to God." }
+        ]
+      },
+      tabernacle: {
+        name: "Tabernacle",
+        short: "The pattern on the mountain",
+        pic: "Sinai zoned. Then goat hair and gold. Cloud fills. Israel a priestly nation.",
+        inner: "Most holy · ark",
+        innerSub: "Cloud so Moses cannot enter",
+        house: "Holy place",
+        houseSub: "Lamp, bread, incense",
+        court: "The camp of Israel",
+        courtSub: "A kingdom of priests among nations",
+        verses: [
+          { ref: "Exodus 25:9 · 40:34–35", text: "Make it after the pattern shown you. The glory of the LORD filled the tabernacle." },
+          { ref: "Exodus 19:6", text: "You shall be to me a kingdom of priests and a holy nation." }
+        ]
+      },
+      solomon: {
+        name: "Solomon’s temple",
+        short: "The house in the city",
+        pic: "Seven years. Garden in cedar. Foreigner welcome. Glory fills — then departs.",
+        inner: "Inner sanctuary",
+        innerSub: "The stone · the Name",
+        house: "Holy place",
+        houseSub: "Priests who cannot stand to minister",
+        court: "Court · city · nations",
+        courtSub: "That all peoples may know",
+        verses: [
+          { ref: "1 Kings 8:10–11, 41–43", text: "The priests could not stand to minister because of the cloud. When a foreigner comes and prays toward this house…" },
+          { ref: "Ezekiel 10:18", text: "The glory of the LORD went out from the threshold of the house." }
+        ]
+      },
+      marriage: {
+        name: "Marriage",
+        short: "Two become one house",
+        pic: "One flesh. Rooms filled. A name in the gates. Mystery of Christ and the church.",
+        inner: "One flesh · the mystery",
+        innerSub: "Christ and the church",
+        house: "The household",
+        houseSub: "Wisdom’s rooms · seven pillars",
+        court: "The gate of the city",
+        courtSub: "Arrows and hospitality",
+        verses: [
+          { ref: "Ephesians 5:31–32", text: "The two shall become one flesh. This mystery is profound — it refers to Christ and the church." },
+          { ref: "Proverbs 24:3–4 · 9:1", text: "By wisdom a house is built… the rooms are filled. Wisdom has hewn her seven pillars." }
+        ]
+      },
+      body: {
+        name: "Human body",
+        short: "Spirit, soul, body",
+        pic: "You are not your own. The Spirit within. Present the body. Blameless in all three.",
+        inner: "Spirit",
+        innerSub: "Holy Spirit within",
+        house: "Soul",
+        houseSub: "The rooms of the life",
+        court: "Body",
+        courtSub: "What the street can see",
+        verses: [
+          { ref: "1 Corinthians 6:19–20", text: "Your body is a temple of the Holy Spirit within you. You were bought with a price. Glorify God in your body." },
+          { ref: "1 Thessalonians 5:23", text: "May your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ." }
+        ]
+      },
+      church: {
+        name: "Church",
+        short: "Many members, one temple",
+        pic: "Cornerstone. Living stones. Dwelling of God. Wall of hostility down.",
+        inner: "Christ the cornerstone",
+        innerSub: "No other foundation",
+        house: "Living stones",
+        houseSub: "Built together",
+        court: "The nations",
+        courtSub: "Fellow citizens",
+        verses: [
+          { ref: "Ephesians 2:19–22", text: "Christ Jesus himself being the cornerstone… a holy temple in the Lord… a dwelling place for God by the Spirit." },
+          { ref: "1 Peter 2:4–5", text: "A living stone. You yourselves like living stones are being built up as a spiritual house." }
+        ]
+      },
+      zion: {
+        name: "Zion / the nations",
+        short: "Mountain of the house",
+        pic: "City of God. Nations stream in. Name and praise to the end of the earth.",
+        inner: "Holy hill · the throne",
+        innerSub: "The LORD in his temple — throne in heaven",
+        house: "Zion · citadels",
+        houseSub: "Joy of all the earth",
+        court: "The nations",
+        courtSub: "Swords into plowshares",
+        verses: [
+          { ref: "Isaiah 2:2–3", text: "The mountain of the house of the LORD shall be established… all the nations shall stream to it. The law goes out from Zion." },
+          { ref: "Psalm 48:1–3, 10", text: "Great is the LORD in the city of our God. His holy mountain… Mount Zion, the city of the great King. Your name and your praise to the ends of the earth." }
+        ]
+      },
+      sabbath: {
+        name: "Sabbath",
+        short: "A temple that is a day",
+        pic: "Cathedral in time. The sojourner inside your gates. Gentiles in the house of prayer.",
+        inner: "Seventh day · delight",
+        innerSub: "God takes his seat",
+        house: "Six days of work",
+        houseSub: "The rooms of the week",
+        court: "The sojourner in your gates",
+        courtSub: "A house of prayer for all peoples",
+        verses: [
+          { ref: "Isaiah 56:6–7", text: "The foreigners who join themselves to the LORD… I will bring to my holy mountain, and make them joyful in my house of prayer… for all peoples." },
+          { ref: "Isaiah 58:13–14", text: "Call the Sabbath a delight… then you will take delight in the LORD." }
+        ]
+      },
+      heavenly: {
+        name: "Heavenly temple",
+        short: "The pattern, not made with hands",
+        pic: "Moses copies heaven. Christ enters once. Earthly rooms are shadow.",
+        inner: "True holy place",
+        innerSub: "Melchizedek, not Levi",
+        house: "The pattern shown",
+        houseSub: "Copied in goat hair and gold",
+        court: "The earthly shadow",
+        courtSub: "So that we may draw near",
+        verses: [
+          { ref: "Exodus 25:9 · Hebrews 8:5", text: "Make it after the pattern shown you. They serve a copy and shadow of the heavenly things." },
+          { ref: "Hebrews 9:11–12, 24", text: "Christ entered once for all into the holy places, not of this creation… into heaven itself." }
+        ]
+      },
+      jesus: {
+        name: "Jesus",
+        short: "The temple they could kill",
+        pic: "The Word tabernacled. Veil tears so glory gets out. Pentecost: fire on people.",
+        inner: "The Word made flesh",
+        innerSub: "God with us",
+        house: "His body",
+        houseSub: "Destroy this temple…",
+        court: "The world he came into",
+        courtSub: "Then the street, then the languages",
+        verses: [
+          { ref: "John 1:14 · 2:19–21", text: "The Word became flesh and tabernacled among us. He spoke of the temple of his body." },
+          { ref: "Matthew 27:51 · Acts 2:1–4", text: "The curtain of the temple was torn. Fire on human temples — then the nations hear." }
+        ]
+      },
+      lips: {
+        name: "Heart · face · lips",
+        short: "The smallest gate",
+        pic: "Heart portal, face portal, veil as blocker. Purify the lips. Speech is the river out.",
+        inner: "Heart",
+        innerSub: "Portal between body and spirit",
+        house: "Face",
+        houseSub: "Portal between people",
+        court: "Lips",
+        courtSub: "The east gate of a person",
+        verses: [
+          { ref: "2 Corinthians 3:16–18", text: "Whenever one turns to the Lord, the veil is taken away. Unveiled faces behold the glory and are changed." },
+          { ref: "Proverbs 4:23", text: "Keep your heart with all vigilance, for from it flow the springs of life." }
+        ]
+      },
+      wisdom: {
+        name: "Wisdom’s house",
+        short: "Seven pillars — or Folly’s door",
+        pic: "She calls from the heights. Turn in and live. Folly uses the same doorway toward Sheol.",
+        inner: "Fear of Adonai",
+        innerSub: "The table set",
+        house: "Seven pillars",
+        houseSub: "Dedication number",
+        court: "The heights of the city",
+        courtSub: "She sends out her girls",
+        verses: [
+          { ref: "Proverbs 9:1–6", text: "Wisdom has built her house; she has hewn her seven pillars… Turn in here, and live." },
+          { ref: "Proverbs 9:13–18", text: "The woman Folly sits at the door of her house… he does not know that the dead are there." }
+        ]
+      },
+      newcreation: {
+        name: "New creation",
+        short: "No temple — the Lamb is the temple",
+        pic: "City as cube — the holy of holies. River from the throne. No outside left.",
+        inner: "The throne",
+        innerSub: "God and the Lamb",
+        house: "The city",
+        houseSub: "Twelve foundations",
+        court: "The nations",
+        courtSub: "The leaves are for healing",
+        verses: [
+          { ref: "Revelation 21:3, 22", text: "The dwelling place of God is with man. I saw no temple in the city, for its temple is the Lord God the Almighty and the Lamb." },
+          { ref: "Habakkuk 2:14", text: "The earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea." }
+        ]
+      }
+    };
+
+    const order = ["newcreation", "cosmos", "zion", "eden", "ark", "tabernacle", "solomon", "sabbath", "heavenly", "jesus", "church", "marriage", "body", "lips", "wisdom"];
+    const scalesEl = document.getElementById("scales");
+    const wellEl = document.getElementById("well");
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function show(id) {
+      const f = FRACTALS[id];
+      if (!f) return;
+      document.getElementById("lbl-inner").textContent = f.inner;
+      document.getElementById("sub-inner").textContent = f.innerSub;
+      document.getElementById("lbl-house").textContent = f.house;
+      document.getElementById("sub-house").textContent = f.houseSub;
+      document.getElementById("lbl-court").textContent = f.court;
+      document.getElementById("sub-court").textContent = f.courtSub;
+      wellEl.innerHTML =
+        `<p class="kicker">${escapeHtml(f.short)}</p>` +
+        `<h3>${escapeHtml(f.name)}</h3>` +
+        `<p class="pic">${escapeHtml(f.pic)}</p>` +
+        f.verses.map((v) =>
+          `<p class="verse"><strong>${escapeHtml(v.ref)}</strong>${escapeHtml(v.text)}</p>`
+        ).join("");
+      scalesEl.querySelectorAll("button").forEach((b) => {
+        b.classList.toggle("is-on", b.dataset.id === id);
+      });
+    }
+
+    order.forEach((id) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.dataset.id = id;
+      b.textContent = FRACTALS[id].name;
+      b.addEventListener("click", () => show(id));
+      scalesEl.appendChild(b);
+    });
+
+    show("newcreation");
+
+    document.querySelectorAll("[data-print]").forEach((btn) => {
+      btn.addEventListener("click", () => window.print());
+    });
+  </script>
+</body>
+</html>

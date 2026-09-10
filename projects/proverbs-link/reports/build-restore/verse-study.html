@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Build — the house</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1612;
+      --muted: #5a5348;
+      --accent: #8a4b1f;
+      --line: rgba(26, 22, 18, 0.16);
+      --land: #e7dfcc;
+      --wall: #f3eee2;
+      --house: #fffdf8;
+      --stone: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      background: #cfc6b0;
+    }
+    .screen-bar {
+      width: 8.5in;
+      margin: 0 auto;
+      padding: 0.55rem 0;
+      display: flex;
+      gap: 0.85rem;
+      font-size: 0.88rem;
+    }
+    .screen-bar a, .screen-bar button {
+      font: inherit;
+      font-weight: 700;
+      color: #5c3014;
+      background: none;
+      border: 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+      padding: 0;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .sheet {
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto 1rem;
+      background: #fff;
+      padding: 0.26in 0.32in 0.22in;
+      display: flex;
+      flex-direction: column;
+    }
+    .mast {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 0.18rem;
+      margin-bottom: 0.22rem;
+    }
+    .eyebrow {
+      margin: 0;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0.04rem 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.48rem;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .names {
+      text-align: right;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    /* Front: court plan */
+    .plan {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+    }
+    .ring {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      border: 2px solid var(--ink);
+    }
+    .land {
+      flex: 1;
+      background: var(--land);
+      padding: 0.22rem 0.28rem 0.16rem;
+    }
+    .wall {
+      flex: 1;
+      background: var(--wall);
+      margin: 0.12rem 0.85rem 0;
+      padding: 0.18rem 0.28rem 0;
+      align-items: center;
+    }
+    .house {
+      flex: 1;
+      width: 78%;
+      background: var(--house);
+      margin-top: 0.12rem;
+      padding: 0.16rem 0.28rem 0.2rem;
+      align-items: center;
+    }
+    .stone {
+      flex: 0 0 auto;
+      width: 74%;
+      background: var(--stone);
+      border-color: var(--accent);
+      border-width: 2.5px;
+      margin: auto 0;
+      padding: 0.22rem 0.32rem 0.28rem;
+      text-align: center;
+    }
+    .gate {
+      flex: 0 0 auto;
+      width: 54%;
+      margin: 0.08rem 0 0;
+      background: var(--stone);
+      border-bottom: 0;
+      padding: 0.16rem 0.28rem 0.12rem;
+      text-align: center;
+      position: relative;
+      top: 2px;
+    }
+    .ring-label {
+      margin: 0;
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-align: center;
+    }
+    .stone .ring-label { font-size: 0.64rem; }
+    .stone h2 {
+      margin: 0.06rem 0 0.1rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.15rem;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .cap {
+      margin: 0.08rem 0 0;
+      font-size: 0.72rem;
+      line-height: 1.22;
+    }
+    .stone .cap, .gate .cap, .house .cap { text-align: center; }
+    .land > .caps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4rem 0.8rem;
+    }
+    .land > .caps .cap { margin-top: 0.06rem; }
+    .wall > .caps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.35rem 0.7rem;
+      width: 100%;
+    }
+    .wall > .caps, .house > .caps, .stone > .caps, .gate > .caps {
+      width: 100%;
+    }
+    .cap .ref {
+      display: block;
+      font-size: 0.56rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.02rem;
+    }
+    .enter {
+      margin: 0.12rem 0 0;
+      text-align: center;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .enter span { color: var(--accent); }
+
+    /* Back: legend */
+    .stone-band {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.4rem;
+      padding-bottom: 0.18rem;
+      border-bottom: 2px solid var(--ink);
+      flex: 0 0 auto;
+    }
+    .quad {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.28rem 0.42rem;
+      min-height: 0;
+      margin-top: 0.22rem;
+    }
+    .band { display: flex; flex-direction: column; min-height: 0; }
+    .band h2 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.92rem;
+      letter-spacing: -0.02em;
+    }
+    .band .pic {
+      margin: 0.02rem 0 0.06rem;
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .verses { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+    .v {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.06rem 0.04rem 0.06rem 0;
+      border-top: 1px solid var(--line);
+    }
+    .v .ref {
+      margin: 0 0 0.03rem;
+      font-size: 0.56rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .v p {
+      margin: 0;
+      font-size: 0.7rem;
+      line-height: 1.22;
+    }
+    .law {
+      margin-top: 0.14rem;
+      padding-top: 0.14rem;
+      border-top: 2px solid var(--ink);
+      font-size: 0.72rem;
+      line-height: 1.26;
+    }
+    .law strong { font-family: Fraunces, Georgia, serif; }
+    .muted { color: var(--muted); }
+    @media print {
+      body { background: #fff; }
+      .screen-bar { display: none !important; }
+      .sheet { margin: 0; }
+      .back { break-before: page; }
+      @page { size: letter; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-bar">
+    <button type="button" onclick="window.print()">Print duplex · 1 sheet</button>
+    <a href="../../build.html">The House</a>
+    <a href="../../order.html">Order</a>
+    <a href="../../climb.html">Climb</a>
+    <a href="../index.html">Reports</a>
+  </div>
+
+  <article class="sheet front">
+    <header class="mast">
+      <div>
+        <p class="eyebrow">Build + Restore · the picture</p>
+        <h1>The house</h1>
+      </div>
+      <p class="names">One Stone. Courts that widen.<br>Not a second climb.</p>
+    </header>
+    <div class="plan">
+      <div class="ring land">
+        <p class="ring-label">Nation · world</p>
+        <div class="caps">
+          <p class="cap"><span class="ref">Isaiah 2:2 · 9:7</span> The mountain of the house of the Lord shall be established as the highest of the mountains, and all the nations shall flow to it. Of the increase of his government and of peace there will be no end.</p>
+          <p class="cap"><span class="ref">Daniel 2:35, 44</span> The stone that struck the image became a great mountain and filled the whole earth. The God of heaven will set up a kingdom that shall never be destroyed.</p>
+        </div>
+        <div class="ring wall">
+          <p class="ring-label">Community · wall</p>
+          <div class="caps">
+            <p class="cap"><span class="ref">Isaiah 58:12</span> Ancient ruins rebuilt. Foundations of many generations. Repairer of the breach. Restorer of streets to dwell in.</p>
+            <p class="cap"><span class="ref">Nehemiah 4:6</span> So we built the wall. And all the wall was joined together, for the people had a mind to work.</p>
+          </div>
+          <div class="ring house">
+            <p class="ring-label">Family · house</p>
+            <div class="caps">
+              <p class="cap"><span class="ref">Proverbs 24:3–4</span> By wisdom a house is built, and by understanding it is established; by knowledge the rooms are filled with all precious and pleasant riches.</p>
+            </div>
+            <div class="ring stone">
+              <p class="ring-label">The Stone</p>
+              <h2>Head of the corner</h2>
+              <div class="caps">
+                <p class="cap"><span class="ref">Isaiah 28:16</span> A tested stone, a precious cornerstone, of a sure foundation.</p>
+                <p class="cap"><span class="ref">1 Corinthians 3:11</span> No one can lay a foundation other than that which is laid, which is Jesus Christ.</p>
+                <p class="cap"><span class="ref">Psalm 118:22</span> The stone that the builders rejected has become the cornerstone.</p>
+              </div>
+            </div>
+          </div>
+          <div class="gate">
+            <p class="ring-label">The gate</p>
+            <p class="cap"><span class="ref">Psalm 24:7</span> Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in.</p>
+            <p class="cap"><span class="ref">Matthew 16:19</span> I will give you the keys of the kingdom of heaven.</p>
+          </div>
+        </div>
+        <p class="enter"><span>↑</span> Enter from the land · walk toward His presence</p>
+      </div>
+    </div>
+    <p class="law">
+      <strong>The image.</strong> He is the image of the invisible God. Let us make man in our image… and let them have dominion. Every builder under him builds in a court of this house — not a second foundation.
+      <span class="muted"> Colossians 1:15 · Genesis 1:26</span>
+    </p>
+  </article>
+
+  <article class="sheet back">
+    <header class="mast">
+      <div>
+        <p class="eyebrow">Build + Restore · the legend</p>
+        <h1>Keyed to the plan</h1>
+      </div>
+      <p class="names">Stone · House · Wall · Gate · Land<br>Same picture, the verses</p>
+    </header>
+    <section class="stone-band">
+      <div class="band">
+        <h2>The Stone</h2>
+        <p class="pic">He builds all things. The foundation is a Person.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Hebrews 3:3–4</p>
+            <p>The builder of a house has more honor than the house itself. Every house is built by someone, but the builder of all things is God.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Hebrews 1:10 · Job 38:4, 6</p>
+            <p>You, Lord, laid the foundation of the earth… Who laid its cornerstone?</p>
+          </article>
+          <article class="v">
+            <p class="ref">Proverbs 3:19 · 8:30</p>
+            <p>The Lord by wisdom founded the earth. Then I was beside him, like a master workman, and I was daily his delight.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Psalm 78:69 · Hebrews 11:10</p>
+            <p>He built his sanctuary like the high heavens. He was looking forward to the city that has foundations, whose designer and builder is God.</p>
+          </article>
+        </div>
+      </div>
+      <div class="band">
+        <h2>Tested · rejected · sure</h2>
+        <p class="pic">The whole building sits here.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Isaiah 28:16</p>
+            <p>I am the one who has laid as a foundation in Zion, a stone, a tested stone, a precious cornerstone, of a sure foundation.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Psalm 118:22–23 · Acts 4:11</p>
+            <p>The stone that the builders rejected has become the cornerstone. This Jesus is the stone rejected by you, the builders.</p>
+          </article>
+          <article class="v">
+            <p class="ref">1 Corinthians 3:11 · 1 Peter 2:4, 6</p>
+            <p>No one can lay a foundation other than Jesus Christ. A living stone rejected by men but chosen and precious.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Matthew 7:24–25</p>
+            <p>A wise man who built his house on the rock. The rain fell, the floods came, the winds blew—and it did not fall, because it had been founded on the rock.</p>
+          </article>
+        </div>
+      </div>
+      <div class="band">
+        <h2>He raises the house</h2>
+        <p class="pic">Temple. Church. Living stones. His presence here.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Zechariah 6:12–13 · 2 Samuel 7:13</p>
+            <p>The Branch shall build the temple of the Lord and sit and rule on his throne. He shall build a house for my name, and I will establish the throne of his kingdom forever.</p>
+          </article>
+          <article class="v">
+            <p class="ref">John 2:19, 21 · Matthew 16:18</p>
+            <p>Destroy this temple, and in three days I will raise it up — the temple of his body. On this rock I will build my church, and the gates of hell shall not prevail against it.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Ephesians 2:20–22 · 1 Peter 2:5</p>
+            <p>Christ Jesus himself being the cornerstone… a dwelling place for God by the Spirit. You yourselves like living stones are being built up as a spiritual house.</p>
+          </article>
+          <article class="v">
+            <p class="ref">1 Corinthians 3:9, 16 · Haggai 2:9 · Hebrews 3:6</p>
+            <p>You are God’s building, God’s temple. The latter glory of this house shall be greater than the former. We are his house.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="quad">
+      <section class="band">
+        <h2>House</h2>
+        <p class="pic">Family. Rooms. Pillars. Arrows at the gate.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Proverbs 24:3–4 · 9:1 · 14:1</p>
+            <p>By wisdom a house is built… the rooms are filled. Wisdom has hewn her seven pillars. The wisest of women builds her house.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Genesis 18:19</p>
+            <p>That he may command his children and his household after him to keep the way of the Lord by doing righteousness and justice.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Psalm 127:1, 3–5</p>
+            <p>Unless the Lord builds the house… Children are a heritage from the Lord. Like arrows in the hand of a warrior… He shall not be put to shame when he speaks with his enemies in the gate.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Ruth 4:11 · Proverbs 24:27</p>
+            <p>Rachel and Leah, who together built up the house of Israel. Prepare your work outside… and after that build your house.</p>
+          </article>
+        </div>
+      </section>
+      <section class="band">
+        <h2>Wall</h2>
+        <p class="pic">Community. Breach. Streets. Stones joined.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Nehemiah 4:6 · 2:18</p>
+            <p>So we built the wall. And all the wall was joined together… for the people had a mind to work. Let us rise up and build.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Isaiah 58:12 · Ezekiel 22:30 · Amos 9:11</p>
+            <p>Repairer of the breach. Restorer of streets to dwell in. Stand in the breach before me for the land. I will raise up the booth of David that is fallen.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Isaiah 32:2 · 54:11 · Zechariah 8:4–5</p>
+            <p>The shade of a great rock. I will set your stones in antimony. The streets of the city shall be full of boys and girls playing.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Ephesians 2:19, 21</p>
+            <p>Fellow citizens, members of the household of God; the whole structure joined together.</p>
+          </article>
+        </div>
+      </section>
+      <section class="band">
+        <h2>Gate</h2>
+        <p class="pic">Keys. Ancient doors. Elders. The King comes in.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Matthew 16:19</p>
+            <p>I will give you the keys of the kingdom of heaven, and whatever you bind on earth shall be bound in heaven.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Psalm 24:7, 9 · 87:2 · Isaiah 60:18</p>
+            <p>Lift up your heads, O gates… that the King of glory may come in. The Lord loves the gates of Zion. You shall call your walls Salvation, and your gates Praise.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Ruth 4:1 · Deuteronomy 16:18</p>
+            <p>Boaz had gone up to the gate and sat down there. Appoint judges and officers in all your towns… they shall judge the people with righteous judgment.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Proverbs 31:23 · 11:10</p>
+            <p>Her husband is known in the gates when he sits among the elders of the land. When it goes well with the righteous, the city rejoices.</p>
+          </article>
+        </div>
+      </section>
+      <section class="band">
+        <h2>Land</h2>
+        <p class="pic">Nation. Ruined cities. A mountain that fills the earth.</p>
+        <div class="verses">
+          <article class="v">
+            <p class="ref">Isaiah 2:2 · 61:4 · Jeremiah 1:10</p>
+            <p>All the nations shall flow to it. They shall build up the ancient ruins… repair the ruined cities. To pluck up and to break down… to build and to plant.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Isaiah 32:1 · Proverbs 29:4</p>
+            <p>A king will reign in righteousness. By justice a king builds up the land, but he who exacts gifts tears it down.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Psalm 48:12–13 · Matthew 28:18</p>
+            <p>Walk about Zion, number her towers… that you may tell the next generation. All authority in heaven and on earth has been given to me.</p>
+          </article>
+          <article class="v">
+            <p class="ref">Revelation 21:2–3, 14</p>
+            <p>The holy city, new Jerusalem, coming down out of heaven from God. Behold, the dwelling place of God is with man. The wall of the city had twelve foundations.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+    <p class="law">
+      <strong>Establishing the kingdom</strong> — the same Builder, widening the same house, until the city whose designer is God comes down. Not a fifth hobby.
+    </p>
+  </article>
+</body>
+</html>

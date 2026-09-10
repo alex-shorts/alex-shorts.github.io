@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The House · Build + Restore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1612;
+      --muted: #5a5348;
+      --paper: #f7f2e8;
+      --line: rgba(26, 22, 18, 0.14);
+      --accent: #8a4b1f;
+      --life: #2f5d3a;
+      --life-bg: #e4efe7;
+      --life-block: #c5d9cb;
+      --death: #8a3b2a;
+      --death-bg: #f3e6e2;
+      --death-block: #e0c4bc;
+      --spine: #3d3428;
+      --spine-bg: #ebe4d6;
+      --peak: #c9a227;
+      --rule: rgba(61, 52, 40, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcfaf6, var(--paper));
+      min-height: 100vh;
+    }
+    .wrap {
+      width: min(1180px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 1.5rem 0 3rem;
+    }
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 0.3rem;
+    }
+    h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .lede {
+      margin: 0.55rem 0 0;
+      max-width: 46rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .lede a, .nav a, .well a, .site-foot a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1rem;
+      margin: 0.75rem 0 0;
+      font-size: 0.9rem;
+    }
+    .hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0.75rem 0 0;
+    }
+    .scale-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin: 0.75rem 0 0;
+    }
+    .scale-row button {
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 0.35rem 0.55rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+    .scale-row button.is-on {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+      background: color-mix(in srgb, var(--peak) 18%, #fff);
+    }
+    .page-head { margin-bottom: 0.75rem; }
+    .cycle {
+      margin: 0.65rem 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+    .ages {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.2rem;
+      margin: 0.55rem 0 0;
+    }
+    .age {
+      appearance: none;
+      font: inherit;
+      text-align: left;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.45);
+      padding: 0.45rem 0.55rem 0.5rem;
+      cursor: pointer;
+      color: var(--ink);
+      min-width: 0;
+    }
+    .age em {
+      display: block;
+      font-style: normal;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .age strong {
+      display: block;
+      margin: 0.15rem 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .age span {
+      display: block;
+      margin: 0.15rem 0 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+    .age.is-on {
+      outline: 2px solid var(--ink);
+      outline-offset: 1px;
+    }
+    .age[data-era="garden"].is-on {
+      background: color-mix(in srgb, var(--life-bg) 70%, #fff);
+    }
+    .age[data-era="return"].is-on {
+      background: color-mix(in srgb, var(--peak) 22%, var(--spine-bg));
+    }
+    .age[data-era="sent"].is-on {
+      background: color-mix(in srgb, var(--peak) 28%, #fff);
+    }
+    .vector {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.2rem;
+      margin: 0.75rem 0 0;
+    }
+    .vector-step {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.45);
+      padding: 0.45rem 0.5rem 0.5rem;
+      min-width: 0;
+    }
+    .vector.era-garden .vector-step:nth-child(1),
+    .vector.era-sent .vector-step:nth-child(3) {
+      background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg));
+    }
+    .vector.era-garden .vector-step:nth-child(4),
+    .vector.era-sent .vector-step:nth-child(4) {
+      background: color-mix(in srgb, var(--life-bg) 70%, #fff);
+    }
+    .vector.era-return .vector-step:nth-child(1) {
+      background: color-mix(in srgb, var(--death-bg) 55%, #fff);
+    }
+    .vector.era-return .vector-step:nth-child(4) {
+      background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg));
+    }
+    .vector-step em {
+      display: block;
+      font-style: normal;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .vector-step strong {
+      display: block;
+      margin: 0.2rem 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    .purpose {
+      margin: 0.55rem 0 0;
+      max-width: 48rem;
+      color: var(--ink);
+      font-size: 0.98rem;
+      line-height: 1.45;
+    }
+
+    .stage {
+      display: grid;
+      grid-template-columns: minmax(20rem, 1.2fr) minmax(16rem, 0.85fr);
+      gap: 0.65rem;
+      align-items: stretch;
+      min-height: calc(100vh - 16rem);
+    }
+
+    .plan {
+      min-height: 36rem;
+      display: flex;
+    }
+
+    .court {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+      cursor: pointer;
+    }
+    .court:hover { filter: brightness(1.03); }
+
+    .court-name {
+      margin: 0;
+      padding: 0.2rem 0.35rem 0.15rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .nation {
+      background: color-mix(in srgb, var(--spine-bg) 55%, var(--paper));
+      border: 1.5px solid var(--rule);
+      padding: 0.35rem 3.8rem 2.25rem;
+    }
+    .nation > .court-name { padding-bottom: 0.55rem; }
+
+    .city {
+      background: var(--spine-bg);
+      border: 10px solid var(--spine);
+      box-shadow: inset 0 0 0 3px color-mix(in srgb, var(--spine) 35%, var(--spine-bg));
+      padding: 0.3rem 0.4rem 0;
+    }
+    .city > .court-name { padding-bottom: 0.35rem; }
+
+    .forecourt {
+      flex: 1;
+      min-height: 0;
+      background: color-mix(in srgb, var(--life-bg) 55%, #fff);
+      border: 2px solid color-mix(in srgb, var(--life) 32%, var(--line));
+      padding: 0.15rem 0.3rem 0.1rem;
+    }
+
+    .temple {
+      flex: 0 0 auto;
+      align-self: center;
+      width: 34%;
+      margin-top: 0.1rem;
+      background: #fff;
+      border: 2.5px solid var(--spine);
+      text-align: center;
+    }
+    .temple > .court-name { text-align: center; }
+
+    .hoh {
+      flex: 0 0 auto;
+      min-height: 3.4rem;
+      margin: 0 0.3rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: color-mix(in srgb, var(--peak) 32%, var(--spine-bg));
+      border: 2px solid color-mix(in srgb, var(--peak) 55%, var(--spine));
+      box-shadow: 0 1px 0 rgba(255,255,255,0.55) inset;
+    }
+
+    .house-body {
+      min-height: 3.2rem;
+      pointer-events: none;
+    }
+
+    .door {
+      width: 22%;
+      height: 0.65rem;
+      margin: 0 auto -2.5px;
+      background: color-mix(in srgb, var(--life-bg) 55%, #fff);
+      border-left: 2.5px solid var(--spine);
+      border-right: 2.5px solid var(--spine);
+      pointer-events: none;
+    }
+
+    .pavement {
+      flex: 1;
+      min-height: 3rem;
+      pointer-events: none;
+    }
+
+    .gate {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin: 0 auto -10px;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .gate .post {
+      width: 0.85rem;
+      height: 2.25rem;
+      background: var(--spine);
+    }
+    .gate .mouth {
+      min-width: 6.4rem;
+      height: 1.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2.5px solid var(--spine);
+      border-bottom: 0;
+      background: color-mix(in srgb, var(--spine-bg) 55%, var(--paper));
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .enter {
+      margin: 0.45rem 0 0;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    .is-on {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px;
+    }
+
+    .well {
+      border: 1.5px solid var(--rule);
+      background: var(--spine-bg);
+      padding: 0.75rem 0.9rem 1rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      overflow: auto;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+    }
+    .well.tone-nation { background: color-mix(in srgb, var(--spine-bg) 55%, var(--paper)); }
+    .well.tone-city { background: var(--spine-bg); }
+    .well.tone-court { background: color-mix(in srgb, var(--life-bg) 55%, #fff); }
+    .well.tone-temple { background: color-mix(in srgb, var(--life-block) 12%, white); }
+    .well.tone-hoh { background: color-mix(in srgb, var(--peak) 22%, var(--spine-bg)); }
+    .well .kicker {
+      margin: 0;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .well h2 {
+      margin: 0.2rem 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .well .pic {
+      margin: 0.3rem 0 0.55rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.4;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .verse {
+      margin: 0;
+      padding: 0.65rem 0 0.7rem;
+      border-top: 1px solid var(--line);
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+    .verse .ref {
+      font-weight: 700;
+      color: var(--accent);
+      margin-right: 0.35rem;
+    }
+
+    .site-foot {
+      margin-top: 1.75rem;
+      padding: 1.35rem 0 0.5rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+    .site-foot .frame {
+      margin: 0.55rem auto 0;
+      max-width: 36rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .site-foot .nav { justify-content: center; margin-top: 0.9rem; }
+
+    .side-door {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.9rem 0.65rem;
+      min-width: 3.1rem;
+      background: color-mix(in srgb, var(--life-bg) 88%, white);
+      border: 2px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+      border-radius: 0.45rem;
+      box-shadow: 0 8px 24px rgba(40, 30, 18, 0.12);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .side-door.back { left: 0.75rem; }
+    .side-door:hover {
+      background: #fff;
+      color: var(--ink);
+      border-color: var(--accent);
+    }
+    .side-door-label { writing-mode: vertical-rl; }
+    .side-door-arrow { font-size: 1.25rem; line-height: 1; font-weight: 700; }
+
+    @media (max-width: 900px) {
+      .stage { grid-template-columns: 1fr; min-height: 0; }
+      .plan { min-height: 32rem; }
+      .nation { padding-left: 1.6rem; padding-right: 1.6rem; padding-bottom: 1.4rem; }
+      .city { padding-left: 0.35rem; padding-right: 0.35rem; }
+      .vector { grid-template-columns: 1fr 1fr; }
+      .ages { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .side-door.back {
+        top: auto;
+        bottom: 0.85rem;
+        transform: none;
+        flex-direction: row;
+        padding: 0.55rem 0.85rem;
+      }
+      .side-door-label { writing-mode: horizontal-tb; }
+      .court-name { font-size: 1.15rem; }
+      .city { border-width: 8px; }
+      .gate { margin-bottom: -8px; }
+      .hoh { min-height: 3rem; }
+      .house-body { min-height: 2.8rem; }
+      .vector { grid-template-columns: 1fr 1fr; }
+      .ages { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="side-door back" href="./order.html" aria-label="Back to The Order">
+    <span class="side-door-arrow" aria-hidden="true">←</span>
+    <span class="side-door-label">The Order</span>
+  </a>
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">Build + Restore · after Order</p>
+      <h1>The House</h1>
+      <p class="lede">The first house extends the garden from the epicenter. After the fall the motion reverses: you come back toward the ark. After Jesus the pattern reestablishes — the Light of the world, and a people empowered to carry him to the nations. Each house has a season. The rooms stay. The purpose turns.</p>
+      <p class="cycle">Garden out · Fall in · Christ out · until the city needs no sun</p>
+      <div class="ages" id="ages" role="tablist" aria-label="Season of the house"></div>
+      <div class="vector" id="vector" aria-label="The purpose of this house in its season">
+        <div class="vector-step"><em id="v-em1">In</em><strong id="v-in"></strong></div>
+        <div class="vector-step"><em id="v-em2">Through</em><strong id="v-through"></strong></div>
+        <div class="vector-step"><em id="v-em3">Out</em><strong id="v-out"></strong></div>
+        <div class="vector-step"><em id="v-em4">Fill</em><strong id="v-fill"></strong></div>
+      </div>
+      <p class="purpose" id="purpose"></p>
+      <div class="scale-row" id="scales" role="tablist" aria-label="Houses in time"></div>
+      <p class="hint">Seven houses in time. Same five courts. Click a season, then a court.</p>
+    </header>
+
+    <div class="stage">
+      <div class="plan" id="plan" aria-label="Temple court diagram">
+        <div class="court nation" data-court="nation">
+          <h2 class="court-name" data-slot="nation">Nation</h2>
+          <div class="court city" data-court="city">
+            <h2 class="court-name" data-slot="city">City</h2>
+            <div class="court forecourt" data-court="court">
+              <h2 class="court-name" data-slot="court">Court</h2>
+              <div class="court temple" data-court="temple">
+                <h2 class="court-name" data-slot="temple">Temple</h2>
+                <div class="court hoh" data-court="hoh">
+                  <h2 class="court-name" data-slot="hoh">Holy of holies</h2>
+                </div>
+                <div class="house-body" aria-hidden="true"></div>
+                <div class="door" aria-hidden="true"></div>
+              </div>
+              <div class="pavement" aria-hidden="true"></div>
+            </div>
+            <div class="gate" aria-hidden="true">
+              <span class="post"></span>
+              <span class="mouth" id="gate-mouth">Gate</span>
+              <span class="post"></span>
+            </div>
+          </div>
+          <p class="enter" id="enter-label">↑ East</p>
+        </div>
+      </div>
+      <aside class="well" id="well" aria-live="polite"></aside>
+    </div>
+
+    <footer class="site-foot">
+      <p class="frame">The first house extends the garden. After the fall, the way is back to the ark. After Jesus, the light goes out again — until the city needs no sun. Genesis 1:28 · Hebrews 9:7 · Matthew 28:19 · Revelation 21:23</p>
+      <p class="frame">Typology: <a href="./reports/build-restore/temple-fractals.html">the house that fills the earth</a>. Print: <a href="./reports/build-restore/verse-study.html">one sheet, duplex</a>.</p>
+      <nav class="nav">
+        <a href="./order.html">The Order</a>
+        <a href="./climb.html">The Climb</a>
+        <a href="./index.html">The Way of Life</a>
+        <a href="./reports/build-restore/verse-study.html">Print sheet</a>
+        <a href="./reports/">Reports</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    const SLOTS = ["nation", "city", "court", "temple", "hoh"];
+    const ALIAS = { altar: "city", holy: "temple", gentile: "court" };
+
+    const SCALES = {
+      house: {
+        name: "The House",
+        short: "Zion’s courts — the campus drawing",
+        era: "return",
+        season: "Zion · still the way in",
+        enter: "↑ East · toward the ark",
+        purpose: "After the fall you do not start by filling the earth. You come from the east toward the Stone — the overlap locked behind the veil. The nations wait in the prayer. The day’s work is approach.",
+        vector: {
+          inn: "The land · east of Eden",
+          through: "Gate, wall, court",
+          out: "The house · priests this far",
+          fill: "The Stone · once a year"
+        },
+        gate: "Gate",
+        courts: {
+          nation: {
+            name: "Nation",
+            short: "The land · the mountain that fills the earth",
+            pic: "Enter from the east. The same house, widening to the nations.",
+            verses: [
+              { ref: "Psalm 24:7, 9", text: "Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in." },
+              { ref: "Isaiah 2:2 · 9:7", text: "The mountain of the house of the Lord shall be established as the highest of the mountains, and all the nations shall flow to it. Of the increase of his government and of peace there will be no end." },
+              { ref: "Daniel 2:35, 44", text: "The stone that struck the image became a great mountain and filled the whole earth. The God of heaven will set up a kingdom that shall never be destroyed." },
+              { ref: "Isaiah 61:4 · Jeremiah 1:10", text: "They shall build up the ancient ruins… repair the ruined cities. I have set you this day over nations and over kingdoms… to build and to plant." },
+              { ref: "Genesis 12:3", text: "In you all the families of the earth shall be blessed." },
+              { ref: "Matthew 28:18–19", text: "All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations." }
+            ]
+          },
+          city: {
+            name: "City",
+            short: "The wall · the gate of the elders",
+            pic: "A people joined. Streets to dwell in. The wall around the court.",
+            verses: [
+              { ref: "Nehemiah 4:6 · 2:18", text: "So we built the wall. And all the wall was joined together… for the people had a mind to work. Let us rise up and build." },
+              { ref: "Isaiah 60:18", text: "You shall call your walls Salvation, and your gates Praise." },
+              { ref: "Isaiah 58:12", text: "Ancient ruins rebuilt. Foundations of many generations. Repairer of the breach. Restorer of streets to dwell in." },
+              { ref: "Ezekiel 22:30 · Amos 9:11", text: "Build up the wall and stand in the breach before me for the land. I will raise up the booth of David that is fallen and repair its breaches." },
+              { ref: "Zechariah 8:4–5", text: "Old men and old women shall again sit in the streets… the streets of the city shall be full of boys and girls playing in its streets." },
+              { ref: "Ruth 4:1 · Deuteronomy 16:18", text: "Boaz had gone up to the gate and sat down there. Appoint judges and officers in all your towns… they shall judge the people with righteous judgment." },
+              { ref: "Proverbs 31:23 · 11:10", text: "Her husband is known in the gates when he sits among the elders of the land. When it goes well with the righteous, the city rejoices." },
+              { ref: "Revelation 21:2–3, 14", text: "The holy city, new Jerusalem, coming down out of heaven from God. Behold, the dwelling place of God is with man. The wall of the city had twelve foundations." }
+            ]
+          },
+          court: {
+            name: "Court",
+            short: "The pavement · nations this far",
+            pic: "The court inside the wall. Fellow citizens. The nations come near.",
+            verses: [
+              { ref: "Ephesians 2:19, 21", text: "Fellow citizens, members of the household of God; the whole structure, being joined together, grows into a holy temple in the Lord." },
+              { ref: "Matthew 16:19", text: "I will give you the keys of the kingdom of heaven, and whatever you bind on earth shall be bound in heaven." }
+            ]
+          },
+          temple: {
+            name: "Temple",
+            short: "The house · rooms under one roof",
+            pic: "Wisdom builds. Unless the Lord builds, they labor in vain.",
+            verses: [
+              { ref: "Proverbs 24:3–4", text: "By wisdom a house is built, and by understanding it is established; by knowledge the rooms are filled with all precious and pleasant riches." },
+              { ref: "Proverbs 9:1 · 14:1", text: "Wisdom has built her house; she has hewn her seven pillars. The wisest of women builds her house, but folly with her own hands tears it down." },
+              { ref: "Psalm 127:1, 3–5", text: "Unless the Lord builds the house, those who build it labor in vain. Children are a heritage from the Lord… He shall not be put to shame when he speaks with his enemies in the gate." },
+              { ref: "Genesis 18:19", text: "That he may command his children and his household after him to keep the way of the Lord by doing righteousness and justice." },
+              { ref: "Ruth 4:11", text: "May the Lord make the woman who is coming into your house like Rachel and Leah, who together built up the house of Israel." },
+              { ref: "Ephesians 2:20–22", text: "Christ Jesus himself being the cornerstone, in whom the whole structure, being joined together, grows into a holy temple in the Lord. In him you also are being built together into a dwelling place for God by the Spirit." }
+            ]
+          },
+          hoh: {
+            name: "Holy of holies",
+            short: "The stone · His presence",
+            pic: "He builds all things. Tested. Rejected. Sure. The whole building sits here.",
+            verses: [
+              { ref: "Hebrews 9:7", text: "Into the second only the high priest goes, and he but once a year, and not without taking blood, which he offers for himself and for the unintentional sins of the people." },
+              { ref: "Isaiah 28:16", text: "Behold, I am the one who has laid as a foundation in Zion, a stone, a tested stone, a precious cornerstone, of a sure foundation: “Whoever believes will not be in haste.”" },
+              { ref: "1 Corinthians 3:11", text: "For no one can lay a foundation other than that which is laid, which is Jesus Christ." },
+              { ref: "Psalm 118:22–23 · Acts 4:11", text: "The stone that the builders rejected has become the cornerstone. This Jesus is the stone that was rejected by you, the builders, which has become the cornerstone." },
+              { ref: "Hebrews 3:3–4", text: "The builder of a house has more honor than the house itself. Every house is built by someone, but the builder of all things is God." },
+              { ref: "1 Peter 2:4–5", text: "A living stone rejected by men but chosen and precious. You yourselves like living stones are being built up as a spiritual house." }
+            ]
+          }
+        }
+      },
+      creation: {
+        name: "Creation",
+        short: "The cosmos as temple",
+        era: "garden",
+        season: "The first house · before the sword",
+        enter: "↑ Fill the earth",
+        purpose: "The first temple extends the garden from the epicenter. God rests in the finished house; image-bearers stand in the midst to spread that order until the earth is full of his glory.",
+        vector: {
+          inn: "Seventh day · God at rest",
+          through: "Image-bearers in the midst",
+          out: "Fill and subdue",
+          fill: "Glory covering as waters"
+        },
+        gate: "Fill",
+        courts: {
+          nation: {
+            name: "The deep",
+            short: "Waters · then the filled earth",
+            pic: "The courtyard of the world. Formless, then filled.",
+            verses: [
+              { ref: "Genesis 1:2, 28", text: "The earth was without form and void, and darkness was over the face of the deep. Be fruitful and multiply and fill the earth and subdue it." },
+              { ref: "Habakkuk 2:14", text: "The earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea." }
+            ]
+          },
+          city: {
+            name: "The world",
+            short: "Sky, land, and sea set in place",
+            pic: "A house with rooms. Image-bearers stand in the midst.",
+            verses: [
+              { ref: "Genesis 1:6–10", text: "God made the expanse and separated the waters. God called the dry land Earth, and the waters that were gathered together he called Seas." },
+              { ref: "Genesis 1:26–27", text: "Let us make man in our image, after our likeness. So God created man in his own image." }
+            ]
+          },
+          court: {
+            name: "The land",
+            short: "Habitation · the rooms of the world",
+            pic: "What was empty is now a place to live and keep.",
+            verses: [
+              { ref: "Genesis 1:9–12", text: "Let the dry land appear. Let the earth sprout vegetation. And God saw that it was good." },
+              { ref: "Isaiah 45:18", text: "He did not create it empty; he formed it to be inhabited." }
+            ]
+          },
+          temple: {
+            name: "Sky and land",
+            short: "The ordered house",
+            pic: "Lights, seasons, living things — furniture of the cosmic house.",
+            verses: [
+              { ref: "Genesis 1:14–22", text: "Lights in the expanse for signs and for seasons. Let the waters swarm. Let birds fly." },
+              { ref: "Psalm 104:2–3", text: "He stretches out the heavens like a tent. He lays the beams of his chambers on the waters." }
+            ]
+          },
+          hoh: {
+            name: "Seventh day",
+            short: "Rest · God takes his seat",
+            pic: "The builder inhabits what he finished. Not collapse — presence.",
+            verses: [
+              { ref: "Genesis 2:1–3", text: "On the seventh day God finished his work that he had done, and he rested. So God blessed the seventh day and made it holy." },
+              { ref: "Isaiah 66:1", text: "Heaven is my throne, and the earth is my footstool. What house will you build for me?" }
+            ]
+          }
+        }
+      },
+      eden: {
+        name: "Eden",
+        short: "The garden inside the cosmic temple",
+        era: "garden",
+        season: "The garden · the first epicenter",
+        enter: "↑ The river goes out",
+        purpose: "This house is not a shrine to visit. From the midst a river goes out so the land becomes Eden. After the fall this east is no longer a river-mouth. It is a sword — and the next season begins.",
+        vector: {
+          inn: "The midst · God walking",
+          through: "Work and keep the garden",
+          out: "River to four corners",
+          fill: "The earth as garden"
+        },
+        gate: "East",
+        courts: {
+          nation: {
+            name: "The land",
+            short: "What the garden was meant to fill",
+            pic: "Four rivers. Spread the order of the garden outward.",
+            verses: [
+              { ref: "Genesis 2:10–14", text: "A river flowed out of Eden to water the garden, and there it divided and became four rivers." },
+              { ref: "Genesis 1:28", text: "Fill the earth and subdue it, and have dominion." }
+            ]
+          },
+          city: {
+            name: "The east",
+            short: "Cherubim · the first veil",
+            pic: "Entrance facing east. After exile, a sword that turns every way.",
+            verses: [
+              { ref: "Genesis 3:24", text: "He placed the cherubim and a flaming sword that turned every way to guard the way to the tree of life." },
+              { ref: "Genesis 2:8", text: "The LORD God planted a garden in Eden, in the east, and there he put the man whom he had formed." }
+            ]
+          },
+          court: {
+            name: "Outside the garden",
+            short: "Land to be kept and spread into",
+            pic: "The court of Eden is the rest of the earth.",
+            verses: [
+              { ref: "Genesis 2:15", text: "The LORD God took the man and put him in the garden of Eden to work it and keep it." },
+              { ref: "Ezekiel 36:35", text: "This land that was desolate has become like the garden of Eden." }
+            ]
+          },
+          temple: {
+            name: "The garden",
+            short: "Work and keep · abad / shamar",
+            pic: "A holy place of trees, gold, and walking with God.",
+            verses: [
+              { ref: "Genesis 2:8–9", text: "Out of the ground the LORD God made to spring up every tree that is pleasant to the sight and good for food." },
+              { ref: "Genesis 3:8", text: "They heard the sound of the LORD God walking in the garden in the cool of the day." }
+            ]
+          },
+          hoh: {
+            name: "The midst",
+            short: "Two trees · life and knowing",
+            pic: "The inner room of the land. Life given; knowing not to be seized.",
+            verses: [
+              { ref: "Genesis 2:9, 16–17", text: "The tree of life was in the midst of the garden, and the tree of the knowledge of good and evil. You may surely eat of every tree… but of that tree you shall not eat." },
+              { ref: "Ezekiel 28:13–14", text: "You were in Eden, the garden of God… on the holy mountain of God." }
+            ]
+          }
+        }
+      },
+      tabernacle: {
+        name: "Tabernacle",
+        short: "The pattern on the mountain",
+        era: "return",
+        season: "After the fall · the way back",
+        enter: "↑ Toward the ark",
+        purpose: "Glory dwells above the ark so a people in exile can draw near. The cherubim that blocked Eden now sit on the mercy seat. Come in. The light does not yet go out as it did from the garden.",
+        vector: {
+          inn: "Exile · east of the garden",
+          through: "The camp and the court",
+          out: "Holy place · the veil",
+          fill: "The ark · I will meet you there"
+        },
+        gate: "Door",
+        courts: {
+          nation: {
+            name: "The nations",
+            short: "A priestly people among peoples",
+            pic: "The court of the world around a moving house.",
+            verses: [
+              { ref: "Exodus 19:6", text: "You shall be to me a kingdom of priests and a holy nation." },
+              { ref: "Genesis 12:3", text: "In you all the families of the earth shall be blessed." },
+              { ref: "1 Kings 8:41–43", text: "When a foreigner comes and prays toward this house… that all the peoples of the earth may know your name." }
+            ]
+          },
+          city: {
+            name: "The camp",
+            short: "Israel around the tent",
+            pic: "Tribes as a wall. The cloud lifts; they move.",
+            verses: [
+              { ref: "Numbers 2:2", text: "The people of Israel shall camp each by his own standard, around the tent of meeting." },
+              { ref: "Exodus 40:36–38", text: "Throughout all their journeys, whenever the cloud was taken up from over the tabernacle, the people of Israel would set out." }
+            ]
+          },
+          court: {
+            name: "The court",
+            short: "Bronze · altar · washing",
+            pic: "This far the congregation comes. Presence is still ahead.",
+            verses: [
+              { ref: "Exodus 27:9, 18", text: "You shall make the court of the tabernacle. The length of the court shall be a hundred cubits." },
+              { ref: "Exodus 29:42–43", text: "It shall be a regular burnt offering throughout your generations at the entrance of the tent of meeting before the LORD." }
+            ]
+          },
+          temple: {
+            name: "Holy place",
+            short: "Lamp, bread, incense",
+            pic: "The tree as lampstand. Priests who work and keep.",
+            verses: [
+              { ref: "Exodus 25:8–9, 31", text: "Let them make me a sanctuary, that I may dwell in their midst. Make it after the pattern shown you. You shall make a lampstand of pure gold." },
+              { ref: "Numbers 3:7–8", text: "They shall keep guard over him and over the whole congregation before the tent of meeting, as they minister at the tabernacle." }
+            ]
+          },
+          hoh: {
+            name: "Most holy",
+            short: "Ark · cloud so Moses cannot enter",
+            pic: "The pattern of heaven, copied in gold. Glory fills.",
+            verses: [
+              { ref: "Exodus 40:34–35", text: "The cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle. Moses was not able to enter." },
+              { ref: "Exodus 25:22", text: "There I will meet with you, from above the mercy seat, from between the two cherubim." },
+              { ref: "Hebrews 9:7", text: "Into the second only the high priest goes, and he but once a year, and not without taking blood." }
+            ]
+          }
+        }
+      },
+      body: {
+        name: "A man",
+        short: "Spirit, soul, body — the believer as house",
+        era: "sent",
+        season: "After Jesus · a man as house",
+        enter: "↑ Speech goes out",
+        purpose: "The Spirit within reopens the epicenter in a person. Unveiled and empowered, he carries the Light into the street — the garden-task restored in one life.",
+        vector: {
+          inn: "The Spirit within",
+          through: "Soul, body, unveiled face",
+          out: "Lips · the gate of the man",
+          fill: "The street meets the presence"
+        },
+        gate: "Lips",
+        courts: {
+          nation: {
+            name: "The street",
+            short: "Fruit · what goes out",
+            pic: "The court of a man is the world that hears him.",
+            verses: [
+              { ref: "Proverbs 4:23", text: "Keep your heart with all vigilance, for from it flow the springs of life." },
+              { ref: "Acts 1:8", text: "You will receive power when the Holy Spirit has come upon you, and you will be my witnesses." },
+              { ref: "2 Corinthians 3:18", text: "We all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image." }
+            ]
+          },
+          city: {
+            name: "Body",
+            short: "What the street can see",
+            pic: "The wall of the person. Present it. Do not destroy the temple.",
+            verses: [
+              { ref: "Romans 12:1", text: "Present your bodies as a living sacrifice, holy and acceptable to God." },
+              { ref: "1 Corinthians 3:16–17", text: "You people are God’s temple and God’s Spirit lives in you. If anyone destroys God’s temple, God will destroy him." }
+            ]
+          },
+          court: {
+            name: "Soul",
+            short: "The rooms of the life",
+            pic: "Mind, will, the pavement of a day. Fill the rooms.",
+            verses: [
+              { ref: "Proverbs 24:3–4", text: "By wisdom a house is built… by knowledge the rooms are filled with all precious and pleasant riches." },
+              { ref: "1 Thessalonians 5:23", text: "May your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ." }
+            ]
+          },
+          temple: {
+            name: "Spirit",
+            short: "The inner rooms of the man",
+            pic: "The lips board: temple = human spirit. Access by a clean gate.",
+            verses: [
+              { ref: "Ephesians 3:16", text: "That according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being." },
+              { ref: "Romans 8:16", text: "The Spirit himself bears witness with our spirit that we are children of God." }
+            ]
+          },
+          hoh: {
+            name: "Holy Spirit",
+            short: "The inner room · presence within",
+            pic: "You are not your own. The glory in a man.",
+            verses: [
+              { ref: "1 Corinthians 6:19–20", text: "Your body is a temple of the Holy Spirit within you. You were bought with a price. Glorify God in your body." },
+              { ref: "2 Corinthians 3:16–17", text: "Whenever one turns to the Lord, the veil is taken away. Where the Spirit of the Lord is, there is freedom." }
+            ]
+          }
+        }
+      },
+      church: {
+        name: "The people",
+        short: "Many stones, one dwelling",
+        era: "sent",
+        season: "After Pentecost · the people sent",
+        enter: "↑ Go therefore",
+        purpose: "The veil is torn. The pattern reestablishes: from this overlap, go. He is the Light of the world; they are empowered to carry that light to the nations.",
+        vector: {
+          inn: "Christ the cornerstone",
+          through: "Living stones · one dwelling",
+          out: "Go therefore · in power",
+          fill: "All nations · the end of the earth"
+        },
+        gate: "Open",
+        courts: {
+          nation: {
+            name: "The nations",
+            short: "The court without a dividing wall",
+            pic: "Too light a thing to raise only the tribes. Light to the coastlands.",
+            verses: [
+              { ref: "John 8:12 · Matthew 5:14", text: "I am the light of the world. You are the light of the world. A city set on a hill cannot be hidden." },
+              { ref: "Isaiah 49:6", text: "I will make you as a light for the nations, that my salvation may reach to the end of the earth." },
+              { ref: "Matthew 28:19 · Acts 1:8", text: "Make disciples of all nations. You will receive power when the Holy Spirit has come upon you, and you will be my witnesses… to the end of the earth." }
+            ]
+          },
+          city: {
+            name: "A people",
+            short: "Holy nation · royal priesthood",
+            pic: "Not a mountain, not a gilded hall. Unexpected men and women.",
+            verses: [
+              { ref: "1 Peter 2:9–10", text: "A chosen race, a royal priesthood, a holy nation… Once you were not a people, but now you are God’s people." },
+              { ref: "Acts 2:1–4", text: "They were all filled with the Holy Spirit and began to speak in other tongues — fire on human temples." }
+            ]
+          },
+          court: {
+            name: "Citizens",
+            short: "Fellow heirs · wall of hostility down",
+            pic: "The pavement is now Jew and Gentile together.",
+            verses: [
+              { ref: "Ephesians 2:14, 19", text: "He has broken down in his flesh the dividing wall of hostility. You are fellow citizens with the saints and members of the household of God." },
+              { ref: "Matthew 16:18–19", text: "On this rock I will build my church. I will give you the keys of the kingdom of heaven." }
+            ]
+          },
+          temple: {
+            name: "Living stones",
+            short: "Built together",
+            pic: "The house is people. Rooms filled with the Spirit.",
+            verses: [
+              { ref: "Ephesians 2:21–22", text: "The whole structure, being joined together, grows into a holy temple in the Lord… a dwelling place for God by the Spirit." },
+              { ref: "1 Peter 2:5", text: "You yourselves like living stones are being built up as a spiritual house, to be a holy priesthood." }
+            ]
+          },
+          hoh: {
+            name: "Cornerstone",
+            short: "Christ · no other foundation",
+            pic: "The inner room of the people is the Person they sit on.",
+            verses: [
+              { ref: "Matthew 27:51", text: "The curtain of the temple was torn in two, from top to bottom." },
+              { ref: "Ephesians 2:20", text: "Built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone." },
+              { ref: "1 Corinthians 3:11", text: "No one can lay a foundation other than that which is laid, which is Jesus Christ." }
+            ]
+          }
+        }
+      },
+      newcreation: {
+        name: "New creation",
+        short: "No temple building — the Lamb is the temple",
+        era: "sent",
+        season: "The last house · the cycle at rest",
+        enter: "↑ No sun · the Lamb is the lamp",
+        purpose: "The shine is finished. What the garden began, the city completes: no outside left, no sun needed, for the glory of God is the light and its lamp is the Lamb.",
+        vector: {
+          inn: "God and the Lamb",
+          through: "The cube city is holy of holies",
+          out: "Open gates · river · leaves",
+          fill: "No sun · glory is the light"
+        },
+        gate: "Open",
+        courts: {
+          nation: {
+            name: "The nations",
+            short: "Leaves for healing · kings bring glory in",
+            pic: "The court is gone because there is no outside.",
+            verses: [
+              { ref: "Revelation 21:24–26", text: "The nations will walk by its light, and the kings of the earth will bring their glory into it." },
+              { ref: "Revelation 22:2", text: "The leaves of the tree were for the healing of the nations." }
+            ]
+          },
+          city: {
+            name: "The city",
+            short: "Bride · dwelling of God with man",
+            pic: "Twelve foundations. The wall is salvation still, but the gates never shut.",
+            verses: [
+              { ref: "Revelation 21:2–3, 25", text: "The holy city, new Jerusalem, coming down… the dwelling place of God is with man. Its gates will never be shut by day — and there will be no night there." },
+              { ref: "Revelation 21:12–14", text: "A great, high wall, twelve gates, twelve foundations, the twelve names of the twelve apostles of the Lamb." }
+            ]
+          },
+          court: {
+            name: "The river",
+            short: "From the throne · tree of life",
+            pic: "Eden’s river and Ezekiel’s river, finished.",
+            verses: [
+              { ref: "Revelation 22:1–2", text: "The river of the water of life, bright as crystal, flowing from the throne of God and of the Lamb through the middle of the street of the city." },
+              { ref: "Ezekiel 47:9", text: "Everything will live where the river goes." }
+            ]
+          },
+          temple: {
+            name: "The cube",
+            short: "The city is the holy of holies",
+            pic: "Length, width, height equal — 1 Kings 6:20 remembered at world-size.",
+            verses: [
+              { ref: "Revelation 21:16", text: "The city lies foursquare, its length the same as its width… its length and width and height are equal." },
+              { ref: "1 Kings 6:20", text: "The inner sanctuary was twenty cubits long, twenty cubits wide, and twenty cubits high." }
+            ]
+          },
+          hoh: {
+            name: "The Lamb",
+            short: "God and the Lamb are the temple",
+            pic: "No lamp but the glory. Presence is the house.",
+            verses: [
+              { ref: "Revelation 21:22–23", text: "I saw no temple in the city, for its temple is the Lord God the Almighty and the Lamb. And the city has no need of sun or moon to shine on it, for the glory of God gives it light, and its lamp is the Lamb." },
+              { ref: "Habakkuk 2:14", text: "The earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea." }
+            ]
+          }
+        }
+      }
+    };
+
+    const ORDER = ["creation", "eden", "tabernacle", "house", "body", "church", "newcreation"];
+    const ERAS = [
+      {
+        id: "garden",
+        name: "Garden",
+        when: "The first house",
+        aim: "Extend the garden from the epicenter",
+        jump: "creation",
+        labels: ["Midst", "Through", "Out", "Fill"]
+      },
+      {
+        id: "return",
+        name: "After the fall",
+        when: "The way back",
+        aim: "Come in toward the ark",
+        jump: "tabernacle",
+        labels: ["Exile", "Approach", "Veil", "Ark"]
+      },
+      {
+        id: "sent",
+        name: "After Jesus",
+        when: "The light goes out again",
+        aim: "Take the Light to the nations, empowered",
+        jump: "church",
+        labels: ["Spirit", "Through", "Go", "Fill"]
+      }
+    ];
+    const wellEl = document.getElementById("well");
+    const planEl = document.getElementById("plan");
+    const scalesEl = document.getElementById("scales");
+    const agesEl = document.getElementById("ages");
+    const vectorEl = document.getElementById("vector");
+    const gateEl = document.getElementById("gate-mouth");
+    const enterEl = document.getElementById("enter-label");
+    const purposeEl = document.getElementById("purpose");
+    const vEm = [
+      document.getElementById("v-em1"),
+      document.getElementById("v-em2"),
+      document.getElementById("v-em3"),
+      document.getElementById("v-em4")
+    ];
+    const vIn = document.getElementById("v-in");
+    const vThrough = document.getElementById("v-through");
+    const vOut = document.getElementById("v-out");
+    const vFill = document.getElementById("v-fill");
+
+    let scaleId = "house";
+    let courtId = "nation";
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function normalizeCourt(id) {
+      id = ALIAS[id] || id;
+      return SLOTS.includes(id) ? id : "nation";
+    }
+
+    function parseHash() {
+      const raw = (location.hash || "").replace("#", "");
+      if (!raw) return { scale: "house", court: "nation" };
+      const parts = raw.split("/");
+      if (parts.length === 2 && SCALES[parts[0]]) {
+        return { scale: parts[0], court: normalizeCourt(parts[1]) };
+      }
+      if (SCALES[raw]) return { scale: raw, court: courtId };
+      return { scale: "house", court: normalizeCourt(raw) };
+    }
+
+    function hashFor(scale, court) {
+      return scale === "house" ? "#" + court : "#" + scale + "/" + court;
+    }
+
+    function eraOf(id) {
+      return ERAS.find((e) => e.id === (SCALES[id] || {}).era) || ERAS[1];
+    }
+
+    function renderPlan() {
+      const scale = SCALES[scaleId];
+      const era = eraOf(scaleId);
+      SLOTS.forEach((slot) => {
+        const el = planEl.querySelector('[data-slot="' + slot + '"]');
+        if (el) el.textContent = scale.courts[slot].name;
+      });
+      gateEl.textContent = scale.gate;
+      enterEl.textContent = scale.enter;
+      purposeEl.textContent = scale.purpose;
+      vectorEl.className = "vector era-" + scale.era;
+      vectorEl.setAttribute("aria-label", era.when + " — " + era.aim);
+      era.labels.forEach((label, i) => { vEm[i].textContent = label; });
+      vIn.textContent = scale.vector.inn;
+      vThrough.textContent = scale.vector.through;
+      vOut.textContent = scale.vector.out;
+      vFill.textContent = scale.vector.fill;
+      scalesEl.querySelectorAll("button").forEach((b) => {
+        b.classList.toggle("is-on", b.dataset.scale === scaleId);
+      });
+      agesEl.querySelectorAll("button").forEach((b) => {
+        b.classList.toggle("is-on", b.dataset.era === scale.era);
+      });
+      planEl.querySelectorAll("[data-court]").forEach((el) => {
+        el.classList.toggle("is-on", el.dataset.court === courtId);
+      });
+    }
+
+    function renderWell() {
+      const scale = SCALES[scaleId];
+      const era = eraOf(scaleId);
+      const court = scale.courts[courtId];
+      wellEl.className = "well tone-" + courtId;
+      wellEl.innerHTML =
+        `<p class="kicker">${escapeHtml(scale.season)}</p>` +
+        `<h2>${escapeHtml(court.name)}</h2>` +
+        `<p class="pic">${escapeHtml(era.when)}. ${escapeHtml(court.short)}. ${escapeHtml(court.pic)}</p>` +
+        `<p class="verse"><span class="ref">Season</span>${escapeHtml(era.name)} — ${escapeHtml(era.aim)}</p>` +
+        `<p class="verse"><span class="ref">Purpose</span>${escapeHtml(scale.purpose)}</p>` +
+        court.verses.map((v) =>
+          `<p class="verse"><span class="ref">${escapeHtml(v.ref)}</span>${escapeHtml(v.text)}</p>`
+        ).join("");
+    }
+
+    function show(nextScale, nextCourt, pushHash) {
+      if (!SCALES[nextScale]) nextScale = "house";
+      scaleId = nextScale;
+      courtId = normalizeCourt(nextCourt);
+      renderPlan();
+      renderWell();
+      if (pushHash) history.replaceState(null, "", hashFor(scaleId, courtId));
+    }
+
+    ERAS.forEach((era) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "age";
+      b.dataset.era = era.id;
+      b.setAttribute("role", "tab");
+      b.innerHTML =
+        `<em>${escapeHtml(era.when)}</em>` +
+        `<strong>${escapeHtml(era.name)}</strong>` +
+        `<span>${escapeHtml(era.aim)}</span>`;
+      b.addEventListener("click", () => show(era.jump, courtId, true));
+      agesEl.appendChild(b);
+    });
+
+    ORDER.forEach((id) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.dataset.scale = id;
+      b.textContent = SCALES[id].name;
+      b.setAttribute("role", "tab");
+      b.addEventListener("click", () => show(id, courtId, true));
+      scalesEl.appendChild(b);
+    });
+
+    planEl.addEventListener("click", (e) => {
+      const hit = e.target.closest("[data-court]");
+      if (!hit) return;
+      show(scaleId, hit.dataset.court, true);
+    });
+
+    window.addEventListener("hashchange", () => {
+      const p = parseHash();
+      show(p.scale, p.court, false);
+    });
+
+    const start = parseHash();
+    show(start.scale, start.court, false);
+  </script>
+</body>
+</html>
