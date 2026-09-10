@@ -166,6 +166,7 @@
     const b = ledges0[i + 1];
     if (b.left - a.right >= 36) addMove("leap", i, i + 1);
   }
+  traps.splice(16);
 
   const EASY = new Set([2, 5, 10]);
   const FAM_MID = new Set([3, 4, 6]);
@@ -180,8 +181,9 @@
   }
   const ALL = makeFacts();
   const KNOW_KEY = "far-ledge-know-v1";
+  const FLUENT_SEC = 5;
   function emptyKnow() {
-    return { seen: {}, misses: {}, due: {}, typed: {} };
+    return { seen: {}, misses: {}, due: {}, typed: {}, fast: {} };
   }
   function loadKnow() {
     try {
@@ -192,6 +194,7 @@
         misses: { ...b.misses, ...raw.misses },
         due: { ...b.due, ...raw.due },
         typed: { ...b.typed, ...raw.typed },
+        fast: { ...b.fast, ...(raw.fast || {}) },
       };
     } catch {
       return emptyKnow();
@@ -206,13 +209,16 @@
     if (v === true) return 1;
     return Number(v) || 0;
   }
+  function fastN(s, id) {
+    return Number(s.fast && s.fast[id]) || 0;
+  }
   function itemMastery(id) {
     const s = loadKnow();
     if (s.due[id]) return Math.max(0.12, 0.38 - 0.06 * Math.min(4, s.misses[id] || 1));
-    const n = typedN(s, id);
+    const n = fastN(s, id);
     if (n >= 2) return 1;
     if (n === 1) return 0.62;
-    if (s.seen[id]) return 0.4;
+    if (s.seen[id] || typedN(s, id)) return 0.4;
     if (s.misses[id]) return 0.22;
     return 0;
   }
@@ -221,12 +227,16 @@
     s.seen[id] = true;
     writeKnow(s);
   }
-  function markTyped(id) {
+  function markTyped(id, fluent) {
     const s = loadKnow();
     s.typed[id] = typedN(s, id) + 1;
     s.seen[id] = true;
     delete s.due[id];
     s.misses[id] = 0;
+    if (fluent) {
+      s.fast = s.fast || {};
+      s.fast[id] = fastN(s, id) + 1;
+    }
     writeKnow(s);
   }
   function bumpMiss(id) {
@@ -669,6 +679,7 @@
     acc: document.getElementById("acc"),
     pb: document.getElementById("pb"),
     zone: document.getElementById("zone"),
+    pace: document.getElementById("pace"),
     pad: document.getElementById("pad"),
   };
   for (let d = 0; d <= 9; d++) {
@@ -742,7 +753,17 @@
     strideFromIdle: false,
   };
   const cam = { x: 0 };
-  window.FL = { p, cam, step, get lap() { return lap; }, get trapI() { return trapI; }, get trapsN() { return traps.length; } };
+  window.FL = {
+    p, cam, step,
+    get lap() { return lap; },
+    get trapI() { return trapI; },
+    get trapsN() { return traps.length; },
+    get factRt() { return factRt; },
+    get factFluent() { return factFluent; },
+    get factClockOn() { return factClockOn; },
+    armFactClock,
+    backdateFact(sec) { factAt = performance.now() - sec * 1000; },
+  };
   const fx = { shake: 0, flash: 0, gold: 0, bits: [] };
 
   let trapI = 0;
@@ -798,6 +819,26 @@
   let hits = 0;
   let misses = 0;
   let startAt = performance.now();
+  let factAt = 0;
+  let factRt = 0;
+  let factFluent = false;
+  let factClockOn = false;
+  function armFactClock() {
+    factAt = performance.now();
+    factClockOn = true;
+    factRt = 0;
+    factFluent = false;
+  }
+  function factElapsed() {
+    if (!factClockOn) return factRt;
+    return (performance.now() - factAt) / 1000;
+  }
+  function paintPace() {
+    if (!el.pace) return;
+    const sec = factElapsed();
+    el.pace.textContent = sec.toFixed(1) + "s";
+    el.pace.style.color = sec > FLUENT_SEC ? "#e07a6a" : "";
+  }
   let keysOk = 0;
   let keysBad = 0;
   const PB_KEY = "far-ledge-run-pb";
@@ -828,6 +869,7 @@
     el.combo.textContent = String(combo);
     const tot = keysOk + keysBad;
     el.acc.textContent = tot ? Math.round((100 * keysOk) / tot) + "%" : "—";
+    paintPace();
     if (el.zone) {
       const t = activeTrap();
       const k = t && KIND[t.kind] ? KIND[t.kind] : KIND.leap;
@@ -880,6 +922,7 @@
     }
     hallShown = hallKey;
     phase = "play";
+    armFactClock();
   }
 
   function destForTyped() {
@@ -998,10 +1041,13 @@
       pulseSlots("ok");
       if (typed.length >= need.length) {
         pendingLeap = true;
+        factRt = factElapsed();
+        factFluent = factRt <= FLUENT_SEC;
+        factClockOn = false;
         combo++;
         fx.gold = 0.35;
         beep(880, 0.12, "square", 0.05);
-        coach((KIND[t.kind] || KIND.leap).verb, "ok");
+        coach((KIND[t.kind] || KIND.leap).verb, factFluent ? "ok" : "bad");
       } else {
         coach("Keep going — " + (need.length - typed.length) + " left.");
       }
@@ -1111,9 +1157,15 @@
     if (!t) return;
     t.cleared = true;
     traps[trapI].cleared = true;
-    markTyped(fact.id);
+    markTyped(fact.id, factFluent);
     paintKnow();
-    fact = nextFact();
+    const next = nextFact();
+    if (factFluent) {
+      coach("Yes · " + factRt.toFixed(1) + "s. Next: " + next.stem, "ok");
+    } else {
+      coach("Yes, but " + factRt.toFixed(1) + "s — under 5s to master. Next: " + next.stem, "bad");
+    }
+    fact = next;
     if (trapI + 1 < traps.length) {
       const nxt = traps[trapI + 1];
       const localP = p.x - lap * WORLD_W;
@@ -1134,7 +1186,6 @@
     p.strideU = 1;
     p.tilt = 0;
     fx.gold = 0.15;
-    coach("Yes. Next: " + fact.stem, "ok");
     refreshHud();
   }
 
@@ -1265,6 +1316,7 @@
     const m = Math.floor(elapsed / 60);
     const s = Math.floor(elapsed % 60);
     el.time.textContent = m + ":" + String(s).padStart(2, "0");
+    paintPace();
 
     if (phase === "chart") return;
 
@@ -1304,8 +1356,9 @@
         pendingLeap = false;
         p.strideU = 1;
         phase = "play";
+        armFactClock();
         refreshHud();
-        coach("Same obstacle. " + fact.stem + " — from memory.");
+        coach("Same obstacle. " + fact.stem + " — from memory. Under 5s to master.");
       }
       return;
     }
@@ -1873,6 +1926,9 @@
       startAt = performance.now();
       hallShown = lap * ROOM_N + (activeTrap() ? activeTrap().from.room : 0);
       markSeen(fact.id);
+      armFactClock();
+    } else if (!typed && !pendingLeap) {
+      armFactClock();
     }
     paintKnow();
   }
@@ -1918,7 +1974,7 @@
         [0, "unknown"],
         [0.35, "learning"],
         [0.62, "retrieved"],
-        [1, "mastered"],
+        [1, "mastered <5s ×2"],
       ].forEach(([t, lab]) => {
         const chip = document.createElement("span");
         chip.className = "know-swatch";
@@ -1962,7 +2018,7 @@
       } else if (dueN) {
         foot.textContent = dueN + " due (needed) · type those from memory · " + counts.unknown + " still unseen";
       } else {
-        foot.textContent = counts.unknown + " unseen · green is landed twice · gold outline is this gap";
+        foot.textContent = counts.unknown + " unseen · green is two fluent retrieves (under 5s)";
       }
     }
     const mini = document.getElementById("mini");
