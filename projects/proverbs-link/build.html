@@ -101,120 +101,6 @@
       background: color-mix(in srgb, var(--peak) 18%, #fff);
     }
     .page-head { margin-bottom: 0.75rem; }
-    .cycle {
-      margin: 0.65rem 0 0;
-      font-family: Fraunces, Georgia, serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.3;
-    }
-    .ages {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.2rem;
-      margin: 0.55rem 0 0;
-    }
-    .age {
-      appearance: none;
-      font: inherit;
-      text-align: left;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.45);
-      padding: 0.45rem 0.55rem 0.5rem;
-      cursor: pointer;
-      color: var(--ink);
-      min-width: 0;
-    }
-    .age em {
-      display: block;
-      font-style: normal;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .age strong {
-      display: block;
-      margin: 0.15rem 0 0;
-      font-family: Fraunces, Georgia, serif;
-      font-size: 0.98rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-    }
-    .age span {
-      display: block;
-      margin: 0.15rem 0 0;
-      font-size: 0.82rem;
-      color: var(--muted);
-      line-height: 1.3;
-    }
-    .age.is-on {
-      outline: 2px solid var(--ink);
-      outline-offset: 1px;
-    }
-    .age[data-era="garden"].is-on {
-      background: color-mix(in srgb, var(--life-bg) 70%, #fff);
-    }
-    .age[data-era="return"].is-on {
-      background: color-mix(in srgb, var(--peak) 22%, var(--spine-bg));
-    }
-    .age[data-era="sent"].is-on {
-      background: color-mix(in srgb, var(--peak) 28%, #fff);
-    }
-    .vector {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.2rem;
-      margin: 0.75rem 0 0;
-    }
-    .vector-step {
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.45);
-      padding: 0.45rem 0.5rem 0.5rem;
-      min-width: 0;
-    }
-    .vector.era-garden .vector-step:nth-child(1),
-    .vector.era-sent .vector-step:nth-child(3) {
-      background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg));
-    }
-    .vector.era-garden .vector-step:nth-child(4),
-    .vector.era-sent .vector-step:nth-child(4) {
-      background: color-mix(in srgb, var(--life-bg) 70%, #fff);
-    }
-    .vector.era-return .vector-step:nth-child(1) {
-      background: color-mix(in srgb, var(--death-bg) 55%, #fff);
-    }
-    .vector.era-return .vector-step:nth-child(4) {
-      background: color-mix(in srgb, var(--peak) 28%, var(--spine-bg));
-    }
-    .vector-step em {
-      display: block;
-      font-style: normal;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .vector-step strong {
-      display: block;
-      margin: 0.2rem 0 0;
-      font-family: Fraunces, Georgia, serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
-    }
-    .purpose {
-      margin: 0.55rem 0 0;
-      max-width: 48rem;
-      color: var(--ink);
-      font-size: 0.98rem;
-      line-height: 1.45;
-    }
 
     .stage {
       display: grid;
@@ -466,8 +352,6 @@
       .plan { min-height: 32rem; }
       .nation { padding-left: 1.6rem; padding-right: 1.6rem; padding-bottom: 1.4rem; }
       .city { padding-left: 0.35rem; padding-right: 0.35rem; }
-      .vector { grid-template-columns: 1fr 1fr; }
-      .ages { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .side-door.back {
@@ -483,8 +367,6 @@
       .gate { margin-bottom: -8px; }
       .hoh { min-height: 3rem; }
       .house-body { min-height: 2.8rem; }
-      .vector { grid-template-columns: 1fr 1fr; }
-      .ages { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -497,18 +379,8 @@
     <header class="page-head">
       <p class="eyebrow">Build + Restore · after Order</p>
       <h1>The House</h1>
-      <p class="lede">The first house extends the garden from the epicenter. After the fall the motion reverses: you come back toward the ark. After Jesus the pattern reestablishes — the Light of the world, and a people empowered to carry him to the nations. Each house has a season. The rooms stay. The purpose turns.</p>
-      <p class="cycle">Garden out · Fall in · Christ out · until the city needs no sun</p>
-      <div class="ages" id="ages" role="tablist" aria-label="Season of the house"></div>
-      <div class="vector" id="vector" aria-label="The purpose of this house in its season">
-        <div class="vector-step"><em id="v-em1">In</em><strong id="v-in"></strong></div>
-        <div class="vector-step"><em id="v-em2">Through</em><strong id="v-through"></strong></div>
-        <div class="vector-step"><em id="v-em3">Out</em><strong id="v-out"></strong></div>
-        <div class="vector-step"><em id="v-em4">Fill</em><strong id="v-fill"></strong></div>
-      </div>
-      <p class="purpose" id="purpose"></p>
-      <div class="scale-row" id="scales" role="tablist" aria-label="Houses in time"></div>
-      <p class="hint">Seven houses in time. Same five courts. Click a season, then a court.</p>
+      <p class="lede">Same five courts. Click a house to rename them. Click a court for the verses.</p>
+      <div class="scale-row" id="scales" role="tablist" aria-label="Houses"></div>
     </header>
 
     <div class="stage">
@@ -542,7 +414,6 @@
     </div>
 
     <footer class="site-foot">
-      <p class="frame">The first house extends the garden. After the fall, the way is back to the ark. After Jesus, the light goes out again — until the city needs no sun. Genesis 1:28 · Hebrews 9:7 · Matthew 28:19 · Revelation 21:23</p>
       <p class="frame">Typology: <a href="./reports/build-restore/temple-fractals.html">the house that fills the earth</a>. Print: <a href="./reports/build-restore/verse-study.html">one sheet, duplex</a>.</p>
       <nav class="nav">
         <a href="./order.html">The Order</a>
@@ -1019,50 +890,11 @@
     };
 
     const ORDER = ["creation", "eden", "tabernacle", "house", "body", "church", "newcreation"];
-    const ERAS = [
-      {
-        id: "garden",
-        name: "Garden",
-        when: "The first house",
-        aim: "Extend the garden from the epicenter",
-        jump: "creation",
-        labels: ["Midst", "Through", "Out", "Fill"]
-      },
-      {
-        id: "return",
-        name: "After the fall",
-        when: "The way back",
-        aim: "Come in toward the ark",
-        jump: "tabernacle",
-        labels: ["Exile", "Approach", "Veil", "Ark"]
-      },
-      {
-        id: "sent",
-        name: "After Jesus",
-        when: "The light goes out again",
-        aim: "Take the Light to the nations, empowered",
-        jump: "church",
-        labels: ["Spirit", "Through", "Go", "Fill"]
-      }
-    ];
     const wellEl = document.getElementById("well");
     const planEl = document.getElementById("plan");
     const scalesEl = document.getElementById("scales");
-    const agesEl = document.getElementById("ages");
-    const vectorEl = document.getElementById("vector");
     const gateEl = document.getElementById("gate-mouth");
     const enterEl = document.getElementById("enter-label");
-    const purposeEl = document.getElementById("purpose");
-    const vEm = [
-      document.getElementById("v-em1"),
-      document.getElementById("v-em2"),
-      document.getElementById("v-em3"),
-      document.getElementById("v-em4")
-    ];
-    const vIn = document.getElementById("v-in");
-    const vThrough = document.getElementById("v-through");
-    const vOut = document.getElementById("v-out");
-    const vFill = document.getElementById("v-fill");
 
     let scaleId = "house";
     let courtId = "nation";
@@ -1095,32 +927,16 @@
       return scale === "house" ? "#" + court : "#" + scale + "/" + court;
     }
 
-    function eraOf(id) {
-      return ERAS.find((e) => e.id === (SCALES[id] || {}).era) || ERAS[1];
-    }
-
     function renderPlan() {
       const scale = SCALES[scaleId];
-      const era = eraOf(scaleId);
       SLOTS.forEach((slot) => {
         const el = planEl.querySelector('[data-slot="' + slot + '"]');
         if (el) el.textContent = scale.courts[slot].name;
       });
       gateEl.textContent = scale.gate;
       enterEl.textContent = scale.enter;
-      purposeEl.textContent = scale.purpose;
-      vectorEl.className = "vector era-" + scale.era;
-      vectorEl.setAttribute("aria-label", era.when + " — " + era.aim);
-      era.labels.forEach((label, i) => { vEm[i].textContent = label; });
-      vIn.textContent = scale.vector.inn;
-      vThrough.textContent = scale.vector.through;
-      vOut.textContent = scale.vector.out;
-      vFill.textContent = scale.vector.fill;
       scalesEl.querySelectorAll("button").forEach((b) => {
         b.classList.toggle("is-on", b.dataset.scale === scaleId);
-      });
-      agesEl.querySelectorAll("button").forEach((b) => {
-        b.classList.toggle("is-on", b.dataset.era === scale.era);
       });
       planEl.querySelectorAll("[data-court]").forEach((el) => {
         el.classList.toggle("is-on", el.dataset.court === courtId);
@@ -1146,20 +962,6 @@
       renderWell();
       if (pushHash) history.replaceState(null, "", hashFor(scaleId, courtId));
     }
-
-    ERAS.forEach((era) => {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.className = "age";
-      b.dataset.era = era.id;
-      b.setAttribute("role", "tab");
-      b.innerHTML =
-        `<em>${escapeHtml(era.when)}</em>` +
-        `<strong>${escapeHtml(era.name)}</strong>` +
-        `<span>${escapeHtml(era.aim)}</span>`;
-      b.addEventListener("click", () => show(era.jump, courtId, true));
-      agesEl.appendChild(b);
-    });
 
     ORDER.forEach((id) => {
       const b = document.createElement("button");
