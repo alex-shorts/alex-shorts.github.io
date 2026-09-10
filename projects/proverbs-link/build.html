@@ -1129,15 +1129,10 @@
 
     function renderWell() {
       const scale = SCALES[scaleId];
-      const era = eraOf(scaleId);
       const court = scale.courts[courtId];
       wellEl.className = "well tone-" + courtId;
       wellEl.innerHTML =
-        `<p class="kicker">${escapeHtml(scale.season)}</p>` +
         `<h2>${escapeHtml(court.name)}</h2>` +
-        `<p class="pic">${escapeHtml(era.when)}. ${escapeHtml(court.short)}. ${escapeHtml(court.pic)}</p>` +
-        `<p class="verse"><span class="ref">Season</span>${escapeHtml(era.name)} — ${escapeHtml(era.aim)}</p>` +
-        `<p class="verse"><span class="ref">Purpose</span>${escapeHtml(scale.purpose)}</p>` +
         court.verses.map((v) =>
           `<p class="verse"><span class="ref">${escapeHtml(v.ref)}</span>${escapeHtml(v.text)}</p>`
         ).join("");
