@@ -36,7 +36,7 @@
     crawl: { label: "Crawl", verb: "Crawl!", coach: "Stay low. Last digit stands on the far side." },
     slide: { label: "Slide", verb: "Slide!", coach: "Last digit slides down." },
     swing: { label: "Swing", verb: "Swing!", coach: "Last digit grabs the bar and swings." },
-    boss: { label: "Basilisk", verb: "Strike!", coach: "Don't meet its eyes. Last digit strikes a scale." },
+    boss: { label: "Boss", verb: "Strike!", coach: "Last digit strikes." },
   };
 
   // Palace run: traced from the painted halls. Leaps only.
@@ -172,47 +172,72 @@
     const b = ledges0[i + 1];
     if (b.left - a.right >= 36) addMove("leap", i, i + 1);
   }
-  traps.splice(16);
+  traps.splice(12);
   const PALACE_N = traps.length;
   const BOSS_HITS = 10;
+  const BOSSES = [
+    { id: "basilisk", title: "THE BASILISK", hud: "Basilisk", strike: "Scale struck", fall: "The basilisk falls.", verb: "Don't meet its eyes.", chip: "#5a6a28", hall: "basilisk.png", hurt: "basilisk-hurt-snake.png", dying: "basilisk-dying-snake.png" },
+    { id: "sphinx", title: "THE SPHINX", hud: "Sphinx", strike: "Riddle struck", fall: "The sphinx yields.", verb: "Answer, then leap.", chip: "#c4a15a", hall: "sphinx.png", hurt: "sphinx-hurt-sprite.png", dying: "sphinx-dying-sprite.png" },
+    { id: "roc", title: "THE ROC", hud: "Roc", strike: "Feather struck", fall: "The roc drops.", verb: "Don't meet its eye.", chip: "#8a5a28", hall: "roc.png", hurt: "roc-hurt-sprite.png", dying: "roc-dying-sprite.png" },
+    { id: "colossus", title: "THE COLOSSUS", hud: "Colossus", strike: "Stone struck", fall: "The colossus breaks.", verb: "Keep off the helm until the last leap.", chip: "#8a7a58", hall: "colossus.png", hurt: "colossus-hurt-sprite.png", dying: "colossus-dying-sprite.png" },
+    { id: "scarab", title: "THE SCARAB", hud: "Scarab", strike: "Shell struck", fall: "The scarab stills.", verb: "Don't meet its horns.", chip: "#3a5a28", hall: "scarab.png", hurt: "scarab-hurt-sprite.png", dying: "scarab-dying-sprite.png" },
+  ];
+  const BOSS_PATHS = {
+    basilisk: [[80, 340], [200, 334], [340, 326], [480, 322], [620, 320], [760, 320], [880, 322], [980, 328], [1080, 336], [1140, 344], [1190, 350]],
+    sphinx: [[80, 346], [200, 338], [340, 324], [480, 310], [620, 300], [760, 292], [880, 286], [980, 292], [1080, 270], [1140, 300], [1200, 328]],
+    roc: [[80, 348], [200, 328], [340, 278], [480, 242], [620, 224], [760, 218], [880, 230], [980, 258], [1080, 292], [1140, 318], [1200, 342]],
+    colossus: [[80, 342], [200, 318], [340, 278], [480, 250], [620, 244], [760, 252], [880, 268], [980, 288], [1080, 312], [1140, 330], [1200, 346]],
+    scarab: [[90, 336], [200, 292], [320, 240], [440, 210], [560, 200], [680, 204], [800, 218], [920, 248], [1030, 278], [1120, 308], [1190, 332]],
+  };
   const extraLedges = [];
-  function addBossCourse() {
-    const y = 352;
-    const origin = WORLD_W + 40;
-    const w = 92;
-    const gap = 8;
-    let from = { room: 8, x: origin, y, w, left: origin, right: origin + w, top: y };
-    extraLedges.push(from);
+  let runBoss = 0;
+  let bossDmgX = 0;
+  function layoutBoss(b) {
+    runBoss = b;
+    bossDmgX = 0;
+    const spec = BOSSES[b];
+    const pts = BOSS_PATHS[spec.id];
+    extraLedges.length = 0;
+    traps.length = PALACE_N;
+    const w = 64;
+    const pads = pts.map((pt) => {
+      const x = WORLD_W + pt[0] - w * 0.5;
+      const y = pt[1];
+      const l = { room: 8, x, y, w, left: x, right: x + w, top: y };
+      extraLedges.push(l);
+      return l;
+    });
     for (let i = 0; i < BOSS_HITS; i++) {
-      const left = from.right + gap;
-      const yy = y + Math.round(Math.sin(i * 0.7) * 5);
-      const to = { room: 8, x: left, y: yy, w, left, right: left + w, top: yy };
-      extraLedges.push(to);
-      const takeoffX = Math.max(from.left + 14, from.right - 36);
-      const runupX = Math.max(from.left + 12, takeoffX - 56);
-      const land = landPoint(from, to);
+      const from = pads[i];
+      const to = pads[i + 1];
+      const takeoffX = Math.max(from.left + 14, from.right - 28);
+      const runupX = Math.max(from.left + 12, takeoffX - 48);
       traps.push({
-        id: "boss-" + i,
+        id: spec.id + "-" + i,
         kind: "leap",
         style: "boss",
         boss: true,
+        bossHall: b,
+        bossId: spec.id,
         bossI: i,
         from,
         to,
         gapLeft: from.right,
         gapRight: to.left,
-        gapW: to.left - from.right,
+        gapW: Math.max(8, to.left - from.right),
         takeoffX,
         runupX,
         takeoffY: from.y,
-        land,
-        path: null,
+        land: landPoint(from, to),
+        path: [
+          { x: runupX, y: from.y },
+          { x: takeoffX, y: from.y },
+        ],
         cleared: false,
       });
-      from = to;
     }
   }
-  addBossCourse();
+  layoutBoss(0);
 
   const EASY = new Set([2, 5, 10]);
   const FAM_MID = new Set([3, 4, 6]);
@@ -356,12 +381,15 @@
   }
   const SKY = new Image();
   SKY.src = "./assets/halls/sky.png?v=look8";
-  const BASILISK = new Image();
-  BASILISK.src = "./assets/boss/basilisk.png?v=boss4";
-  const BASILISK_HURT = new Image();
-  BASILISK_HURT.src = "./assets/boss/basilisk-hurt-snake.png?v=boss4";
-  const BASILISK_DYING = new Image();
-  BASILISK_DYING.src = "./assets/boss/basilisk-dying-snake.png?v=boss4";
+  const BOSS_ART = BOSSES.map((spec) => {
+    const hall = new Image();
+    hall.src = "./assets/boss/" + spec.hall + "?v=boss6";
+    const hurt = new Image();
+    hurt.src = "./assets/boss/" + spec.hurt + "?v=boss6";
+    const dying = new Image();
+    dying.src = "./assets/boss/" + spec.dying + "?v=boss6";
+    return { hall, hurt, dying };
+  });
   const SPR = {};
   const SPR_KEYS = ["idle", "rest", "gather", "contact", "down", "pass", "push", "jump", "hang", "pull", "crouch"];
   for (const k of SPR_KEYS) {
@@ -873,6 +901,8 @@
       style: t.style,
       boss: !!t.boss,
       bossI: t.bossI,
+      bossHall: t.bossHall,
+      bossId: t.bossId,
       from: offsetLedge(t.from, t.boss ? 0 : off),
       to: offsetLedge(t.to, t.boss ? 0 : off),
       gapLeft: t.gapLeft + (t.boss ? 0 : off),
@@ -969,8 +999,10 @@
     paintPace();
     if (el.zone) {
       const t = activeTrap();
-      if (t && t.boss) el.zone.textContent = "Basilisk " + ((t.bossI || 0) + 1) + "/" + BOSS_HITS;
-      else {
+      if (t && t.boss) {
+        const spec = BOSSES[t.bossHall] || BOSSES[0];
+        el.zone.textContent = spec.hud + " " + ((t.bossI || 0) + 1) + "/" + BOSS_HITS;
+      } else {
         const k = t && KIND[t.kind] ? KIND[t.kind] : KIND.leap;
         el.zone.textContent = k.label;
       }
@@ -980,12 +1012,12 @@
   coach("Type " + fact.stem + ". Last digit leaps.");
 
   function bindTrap(i, snap) {
-    let wrapped = false;
     if (i >= traps.length) {
-      lap += 1;
+      runBoss = (runBoss + 1) % BOSSES.length;
+      layoutBoss(runBoss);
       i = 0;
-      wrapped = true;
-      for (const tr of traps) tr.cleared = false;
+      for (const tr of traps) if (!tr.boss) tr.cleared = false;
+      snap = true;
     }
     trapI = i;
     const t = activeTrap();
@@ -995,8 +1027,9 @@
     wrongs = 0;
     reveal = "";
     const hall = t.from.room;
-    const hallKey = lap * ROOM_N + hall;
-    if (snap || (t.boss && (!traps[i - 1] || !traps[i - 1].boss))) {
+    const hallKey = hall;
+    const bossStart = t.boss && (!traps[i - 1] || traps[i - 1].bossHall !== t.bossHall);
+    if (snap || bossStart) {
       p.x = t.runupX;
       p.y = t.takeoffY;
       p.vx = 0;
@@ -1009,14 +1042,15 @@
       p.strideU = 1;
       p.ghosts = [];
       p.cloth = 0;
-      cam.x = WORLD_W;
+      cam.x = t.boss ? WORLD_W : Math.max(0, t.runupX - VIEW.w * 0.38);
     }
     refreshHud();
     if (t.boss) {
-      coach("Don't meet its eyes. " + fact.stem + ". Last digit strikes a scale.");
+      const spec = BOSSES[t.bossHall] || BOSSES[0];
+      coach(spec.verb + " " + fact.stem + ". Last digit strikes.");
       if (t.bossI === 0) {
         zoneBanner = 2.5;
-        zoneBannerText = "THE BASILISK";
+        zoneBannerText = spec.title;
         lastZone = 2;
       }
     } else {
@@ -1024,12 +1058,7 @@
     }
     markSeen(fact.id);
     paintKnow();
-    lastZone = 1;
-    if (wrapped && started) {
-      hallShown = hallKey;
-      openChart("LAP " + (lap + 1) + " · FILLED TABLE · review, then run");
-      return;
-    }
+    lastZone = t.boss ? 2 : 1;
     hallShown = hallKey;
     phase = "play";
     armFactClock();
@@ -1196,7 +1225,8 @@
     const t = activeTrap();
     if (t && t.boss) {
       fx.bossHit = 0.7;
-      coach("The gaze. The product was " + reveal + " — then it disappears.", "bad");
+      const spec = BOSSES[t.bossHall] || BOSSES[0];
+      coach(spec.verb + " The product was " + reveal + " — then it disappears.", "bad");
     } else {
       coach("The product was " + reveal + " — then it disappears.", "bad");
     }
@@ -1229,6 +1259,17 @@
     p.ghosts = [];
     p.dust = 0.4;
     p.facing = 1;
+    if (t.boss) {
+      p.onGround = false;
+      p.state = "slide";
+      p.loco = "run";
+      const span = Math.hypot(p.featTo.x - p.x, p.featTo.y - p.y);
+      p.featDur = clamp(span / 260, 0.22, 0.5);
+      p.squash = 1.08;
+      p.tilt = 0;
+      beep(520, 0.08, "sine", 0.04);
+      return;
+    }
     if (t.kind === "leap" || !t.kind) {
       p.onGround = false;
       p.state = "jump";
@@ -1276,6 +1317,8 @@
     markTyped(fact.id, factFluent);
     paintKnow();
     if (t.boss) {
+      bossDmgX = Math.max(bossDmgX, t.to.right - WORLD_W);
+      const spec = BOSSES[t.bossHall] || BOSSES[0];
       fx.bossHit = 0.9;
       fx.shake = 14;
       fx.gold = 0.28;
@@ -1289,6 +1332,7 @@
           vy: -180 - Math.random() * 220,
           life: 0.35 + Math.random() * 0.28,
           w: 3 + Math.random() * 4,
+          color: spec.chip,
         });
       }
     }
@@ -1299,25 +1343,17 @@
       return;
     }
     if (t.boss && t.bossI === BOSS_HITS - 1) {
-      fact = next;
-      coach("The basilisk falls. " + factRt.toFixed(1) + "s.", "ok");
-      openChart("BASILISK FALLEN · FILLED TABLE");
-      return;
-    }
-    if (factFluent) {
-      coach((t.boss ? "Scale struck · " : "Yes · ") + factRt.toFixed(1) + "s · locked. Next: " + next.stem, "ok");
+      const spec = BOSSES[t.bossHall] || BOSSES[0];
+      coach(spec.fall + " " + factRt.toFixed(1) + "s.", "ok");
+    } else if (factFluent) {
+      coach((t.boss ? ((BOSSES[t.bossHall] || BOSSES[0]).strike + " · ") : "Yes · ") + factRt.toFixed(1) + "s · locked. Next: " + next.stem, "ok");
     } else {
       coach("Yes, but " + factRt.toFixed(1) + "s — under 2s to lock. Next: " + next.stem, "bad");
     }
     fact = next;
     if (trapI + 1 < traps.length) {
       const nxt = traps[trapI + 1];
-      const localP = p.x - lap * WORLD_W;
-      nxt.runupX = Math.min(Math.max(localP, nxt.from.left + 16), nxt.takeoffX);
-    } else {
-      const nxt = traps[0];
-      const localP = p.x - (lap + 1) * WORLD_W;
-      nxt.runupX = Math.min(Math.max(localP, nxt.from.left + 16), nxt.takeoffX);
+      nxt.runupX = Math.min(Math.max(p.x, nxt.from.left + 16), nxt.takeoffX);
     }
     bindTrap(trapI + 1, false);
     p.state = "land";
@@ -1826,47 +1862,48 @@
     ctx.globalAlpha = 1;
   }
 
-  function bossCleared() {
+  function bossHits(hall) {
     let n = 0;
-    for (const t of traps) if (t.boss && t.cleared) n++;
+    for (const t of traps) if (t.boss && t.bossHall === hall && t.cleared) n++;
     return n;
   }
 
   function drawBossHall() {
     const x0 = WORLD_W - cam.x;
-    if (x0 > VIEW.w || x0 + VIEW.w < -80) return;
-    const hits = bossCleared();
-    const last = hits >= BOSS_HITS;
-    const face = VIEW.w * 0.78;
-    const flinch = fx.bossHit;
-    ctx.save();
-    ctx.translate(x0 + flinch * 10, flinch * 6);
-    function plate(img, a) {
-      if (!img || !img.complete || img.naturalWidth < 8 || a < 0.02) return;
-      ctx.globalAlpha = a;
-      ctx.drawImage(img, 0, 0, VIEW.w, VIEW.h);
-    }
-    function clipPlate(img, w) {
-      if (w < 4) return;
+    if (x0 <= VIEW.w && x0 + VIEW.w >= -80) {
+      const art = BOSS_ART[runBoss];
+      const hits = bossHits(runBoss);
+      const last = hits >= BOSS_HITS;
+      const here = activeTrap() && activeTrap().boss;
+      const flinch = here ? fx.bossHit : 0;
       ctx.save();
-      ctx.beginPath();
-      ctx.rect(0, 0, w, VIEW.h);
-      ctx.clip();
-      plate(img, 1);
+      ctx.translate(x0 + flinch * 10, flinch * 6);
+      function plate(img, a) {
+        if (!img || !img.complete || img.naturalWidth < 8 || a < 0.02) return;
+        ctx.globalAlpha = a;
+        ctx.drawImage(img, 0, 0, VIEW.w, VIEW.h);
+      }
+      function clipPlate(img, w) {
+        if (w < 4) return;
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, 0, w, VIEW.h);
+        ctx.clip();
+        plate(img, 1);
+        ctx.restore();
+      }
+      plate(art.hall, 1);
+      if (last) {
+        plate(art.dying, 1);
+      } else {
+        clipPlate(art.hurt, bossDmgX);
+      }
       ctx.restore();
     }
-    plate(BASILISK, 1);
-    if (last) {
-      plate(BASILISK_DYING, 1);
-    } else {
-      clipPlate(BASILISK_HURT, face * (hits / (BOSS_HITS - 1)));
-      clipPlate(BASILISK_DYING, face * clamp((hits - 4) / 5, 0, 1));
-    }
-    ctx.restore();
     ctx.globalAlpha = 1;
     for (const c of fx.bossChips) {
       ctx.globalAlpha = clamp(c.life * 3, 0, 1);
-      ctx.fillStyle = "#5a6a28";
+      ctx.fillStyle = c.color || "#5a6a28";
       ctx.fillRect(c.x - cam.x, c.y, c.w, c.w);
     }
     ctx.globalAlpha = 1;
@@ -2135,7 +2172,12 @@
       armFactClock();
     }
     paintKnow();
-    if (/[?&]boss=1(?:&|$)/.test(location.search)) bindTrap(PALACE_N, true);
+    const bossQ = location.search.match(/[?&]boss=(\d+)/);
+    if (bossQ) {
+      const n = clamp(Number(bossQ[1]) || 1, 1, BOSSES.length);
+      layoutBoss(n - 1);
+      bindTrap(PALACE_N, true);
+    }
   }
 
   function openChart(title) {
@@ -2287,7 +2329,7 @@
     else if (phase === "leap") look = p.x + 150;
     cam.x += (look - VIEW.w * 0.38 - cam.x) * (1 - Math.exp(-dt * 3.4));
     cam.x = Math.max(0, cam.x);
-    if (p.x >= WORLD_W - 8) cam.x = Math.max(cam.x, WORLD_W);
+    if (p.x >= WORLD_W - 8) cam.x = WORLD_W;
     if (window.FL && window.FL.holdCam != null) cam.x = window.FL.holdCam;
     drawWorld();
     requestAnimationFrame(frame);
