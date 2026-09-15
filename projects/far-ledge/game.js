@@ -4,7 +4,7 @@
   const FLOOR = 384;
   const ROOM_N = 8;
   const WORLD_W = VIEW.w * ROOM_N;
-  const JOIN = 96;
+  const JOIN = 48;
   const HI = 252;
   const MID = 384;
   const LOW = 520;
@@ -16,7 +16,7 @@
   );
   const BODY = {
     w: 52,
-    h: 156,
+    h: 176,
     walk: 210,
     run: 340,
     sprint: 420,
@@ -36,6 +36,7 @@
     crawl: { label: "Crawl", verb: "Crawl!", coach: "Stay low. Last digit stands on the far side." },
     slide: { label: "Slide", verb: "Slide!", coach: "Last digit slides down." },
     swing: { label: "Swing", verb: "Swing!", coach: "Last digit grabs the bar and swings." },
+    boss: { label: "Basilisk", verb: "Strike!", coach: "Don't meet its eyes. Last digit strikes a scale." },
   };
 
   // Palace run: traced from the painted halls. Leaps only.
@@ -58,11 +59,16 @@
     return { ...l, x: l.x + off, left: l.left + off, right: l.right + off };
   }
   function ledgesNear(wx) {
-    const lap0 = Math.floor(wx / WORLD_W);
     const out = [];
-    for (let L = Math.max(0, lap0 - 1); L <= lap0 + 1; L++) {
-      const off = L * WORLD_W;
-      for (const l of ledges0) out.push(offsetLedge(l, off));
+    if (wx < WORLD_W + 40) {
+      const lap0 = Math.floor(wx / WORLD_W);
+      for (let L = Math.max(0, lap0 - 1); L <= lap0 + 1; L++) {
+        const off = L * WORLD_W;
+        for (const l of ledges0) out.push(offsetLedge(l, off));
+      }
+    }
+    for (const l of extraLedges) {
+      if (wx > l.left - VIEW.w && wx < l.right + VIEW.w) out.push(l);
     }
     return out;
   }
@@ -167,6 +173,46 @@
     if (b.left - a.right >= 36) addMove("leap", i, i + 1);
   }
   traps.splice(16);
+  const PALACE_N = traps.length;
+  const BOSS_HITS = 10;
+  const extraLedges = [];
+  function addBossCourse() {
+    const y = 352;
+    const origin = WORLD_W + 40;
+    const w = 92;
+    const gap = 8;
+    let from = { room: 8, x: origin, y, w, left: origin, right: origin + w, top: y };
+    extraLedges.push(from);
+    for (let i = 0; i < BOSS_HITS; i++) {
+      const left = from.right + gap;
+      const yy = y + Math.round(Math.sin(i * 0.7) * 5);
+      const to = { room: 8, x: left, y: yy, w, left, right: left + w, top: yy };
+      extraLedges.push(to);
+      const takeoffX = Math.max(from.left + 14, from.right - 36);
+      const runupX = Math.max(from.left + 12, takeoffX - 56);
+      const land = landPoint(from, to);
+      traps.push({
+        id: "boss-" + i,
+        kind: "leap",
+        style: "boss",
+        boss: true,
+        bossI: i,
+        from,
+        to,
+        gapLeft: from.right,
+        gapRight: to.left,
+        gapW: to.left - from.right,
+        takeoffX,
+        runupX,
+        takeoffY: from.y,
+        land,
+        path: null,
+        cleared: false,
+      });
+      from = to;
+    }
+  }
+  addBossCourse();
 
   const EASY = new Set([2, 5, 10]);
   const FAM_MID = new Set([3, 4, 6]);
@@ -180,8 +226,8 @@
     return items;
   }
   const ALL = makeFacts();
-  const KNOW_KEY = "far-ledge-know-v1";
-  const FLUENT_SEC = 5;
+  const KNOW_KEY = "far-ledge-know-v2";
+  const FLUENT_SEC = 2;
   function emptyKnow() {
     return { seen: {}, misses: {}, due: {}, typed: {}, fast: {} };
   }
@@ -216,8 +262,7 @@
     const s = loadKnow();
     if (s.due[id]) return Math.max(0.12, 0.38 - 0.06 * Math.min(4, s.misses[id] || 1));
     const n = fastN(s, id);
-    if (n >= 2) return 1;
-    if (n === 1) return 0.62;
+    if (n >= 1) return 1;
     if (s.seen[id] || typedN(s, id)) return 0.4;
     if (s.misses[id]) return 0.22;
     return 0;
@@ -261,6 +306,11 @@
     return "unknown";
   }
 
+  function isMastered(id) {
+    const s = loadKnow();
+    if (s.due[id]) return false;
+    return fastN(s, id) >= 1;
+  }
   const due = [];
   const seen = new Set();
   let stage = 0;
@@ -271,7 +321,7 @@
   }
   function nextFact() {
     const k = loadKnow();
-    const dueId = Object.keys(k.due)[0];
+    const dueId = Object.keys(k.due).find((id) => !isMastered(id));
     if (dueId) {
       const f = ALL.find((x) => x.id === dueId);
       if (f) {
@@ -279,12 +329,17 @@
         return f;
       }
     }
-    if (due.length) return due.shift();
-    const pool = ALL.filter((f) => stageOk(f));
-    const unseen = pool.filter((f) => typedN(k, f.id) === 0 && !k.seen[f.id]);
-    const pickFrom = (unseen.length ? unseen : pool).slice();
+    while (due.length) {
+      const f = due.shift();
+      if (f && !isMastered(f.id)) return f;
+    }
+    const live = ALL.filter((f) => !isMastered(f.id));
+    const pool = live.filter((f) => stageOk(f));
+    const unseen = (pool.length ? pool : live).filter((f) => typedN(k, f.id) === 0 && !k.seen[f.id]);
+    const pickFrom = (unseen.length ? unseen : (pool.length ? pool : live)).slice();
+    if (!pickFrom.length) return null;
     pickFrom.sort((a, b) => itemMastery(a.id) - itemMastery(b.id) + (Math.random() - 0.5) * 0.08);
-    const pick = pickFrom[0] || ALL[Math.floor(Math.random() * ALL.length)];
+    const pick = pickFrom[0];
     seen.add(pick.id);
     if (seen.size > 18) stage = Math.max(stage, 1);
     if (seen.size > 40) stage = 2;
@@ -301,15 +356,21 @@
   }
   const SKY = new Image();
   SKY.src = "./assets/halls/sky.png?v=look8";
+  const BASILISK = new Image();
+  BASILISK.src = "./assets/boss/basilisk.png?v=boss4";
+  const BASILISK_HURT = new Image();
+  BASILISK_HURT.src = "./assets/boss/basilisk-hurt-snake.png?v=boss4";
+  const BASILISK_DYING = new Image();
+  BASILISK_DYING.src = "./assets/boss/basilisk-dying-snake.png?v=boss4";
   const SPR = {};
-  const SPR_KEYS = ["idle", "rest", "gather", "start", "plant", "pass", "run2", "run0", "jump", "hang", "pull", "crouch"];
+  const SPR_KEYS = ["idle", "rest", "gather", "contact", "down", "pass", "push", "jump", "hang", "pull", "crouch"];
   for (const k of SPR_KEYS) {
     const img = new Image();
-    img.src = "./assets/frames/" + k + ".png?v=look13";
+    img.src = "./assets/frames/" + k + ".png?v=look27";
     SPR[k] = img;
   }
-  // One planted cycle per typed stride. gather is the small first step.
-  const SPR_RUN = ["gather", "start", "plant", "pass", "run2"];
+  // Grounded stride. Push is takeoff, not a walk frame.
+  const SPR_RUN = ["gather", "contact", "down", "pass"];
 
   function sprReady(img) {
     return img && img.complete && img.naturalWidth > 8;
@@ -327,26 +388,33 @@
     const keys = runCycleKeys();
     if (!keys.length) return { a: restSprite(), b: null, k: 0 };
     const n = keys.length;
-    const u = p.strideU < 1 ? smoother(p.strideU) : 1;
-    const x = u * (n - 1);
-    const i0 = Math.min(n - 1, Math.floor(x));
-    const i1 = Math.min(n - 1, i0 + 1);
-    return { a: SPR[keys[i0]], b: SPR[keys[i1]], k: x - i0 };
+    const u = p.strideU < 1 ? p.strideU : 1;
+    const weights = keys.map((k) => {
+      if (k === "down") return 1.4;
+      if (k === "contact") return 1.2;
+      if (k === "pass") return 1.15;
+      return 0.9;
+    });
+    const sum = weights.reduce((a, b) => a + b, 0);
+    let t = u * sum;
+    for (let i = 0; i < n; i++) {
+      t -= weights[i];
+      if (t <= 0) return { a: SPR[keys[i]], b: null, k: 0 };
+    }
+    return { a: SPR[keys[n - 1]], b: null, k: 0 };
   }
 
   function posePair(st) {
     if (st === "run" || st === "sprint" || st === "walk") {
       const pair = gaitPair();
-      if (p.strideFromIdle && p.strideU < 0.3) {
-        const rest = restSprite();
-        if (rest) return { a: rest, b: pair.a, k: smoother(p.strideU / 0.3) };
-      }
       return pair;
     }
     if (st === "jump" || st === "fall") {
-      const air = sprReady(SPR.jump) ? SPR.jump : SPR.run0;
+      const air = sprReady(SPR.jump) ? SPR.jump : restSprite();
       const crouch = sprReady(SPR.crouch) ? SPR.crouch : null;
-      if (leapTime < 0.12 && crouch) return { a: crouch, b: air, k: clamp(leapTime / 0.12, 0, 1) };
+      const take = sprReady(SPR.push) ? SPR.push : air;
+      if (leapTime < 0.09 && crouch) return { a: crouch, b: take, k: clamp(leapTime / 0.09, 0, 1) };
+      if (leapTime < 0.2 && take) return { a: take, b: air, k: clamp((leapTime - 0.09) / 0.11, 0, 1) };
       if (p.vy > 220 && crouch) return { a: air, b: crouch, k: clamp((p.vy - 220) / 520, 0, 0.75) };
       return { a: air, b: null, k: 0 };
     }
@@ -392,8 +460,17 @@
     c.globalAlpha *= aMul;
     if (tilt) c.rotate(tilt);
     c.scale(facing, sq);
-    c.drawImage(img, -fx * w, -a.fy * h, w, h);
+    c.drawImage(img, -fx * w, hang ? -a.fy * h : -h, w, h);
     c.restore();
+  }
+
+  function poseSquash(pair) {
+    const img = pair && pair.a;
+    if (!img) return 1;
+    if (img === SPR.down || img === SPR.crouch) return 0.9;
+    if (img === SPR.contact) return 0.96;
+    if (img === SPR.pass || img === SPR.push) return 1.04;
+    return 1;
   }
 
   function drawSpriteBlend(c, pair, squash, facing, tilt) {
@@ -407,7 +484,8 @@
       drawSprite(c, pair.b, squash, facing, tilt, 1);
       return;
     }
-    drawSprite(c, pair.a, squash, facing, tilt, 1 - k);
+    // Opaque underlay — both sprites at partial alpha punched a hole to the hall.
+    drawSprite(c, pair.a, squash, facing, tilt, 1);
     drawSprite(c, pair.b, squash, facing, tilt, k);
   }
 
@@ -435,7 +513,6 @@
         if (y > y1) y1 = y;
         const r = data[i], gb = data[i + 1], b = data[i + 2];
         const sash = r > gb + 35 && r > b + 35 && r > 90;
-        if (!sash && y > yBoot) yBoot = y;
         if (y <= yHandHi) {
           handX += x;
           handN++;
@@ -448,6 +525,20 @@
             redN++;
           }
         }
+      }
+    }
+    for (let y = h - 1; y >= Math.floor(h * 0.45); y--) {
+      let n = 0;
+      for (let x = 0; x < w; x++) {
+        const i = (y * w + x) * 4;
+        if (data[i + 3] < 200) continue;
+        const r = data[i], gb = data[i + 1], b = data[i + 2];
+        if (r > gb + 35 && r > b + 35 && r > 90) continue;
+        n++;
+      }
+      if (n > 22) {
+        yBoot = y;
+        break;
       }
     }
     const fx = redN > 12 ? redX / redN / w : hipN ? hipX / hipN / w : 0.5;
@@ -763,8 +854,12 @@
     get factClockOn() { return factClockOn; },
     armFactClock,
     backdateFact(sec) { factAt = performance.now() - sec * 1000; },
+    get bossI() {
+      const t = activeTrap();
+      return t && t.boss ? t.bossI : -1;
+    },
   };
-  const fx = { shake: 0, flash: 0, gold: 0, bits: [] };
+  const fx = { shake: 0, flash: 0, gold: 0, bits: [], bossHit: 0, bossChips: [] };
 
   let trapI = 0;
   let lap = 0;
@@ -776,21 +871,23 @@
       id: t.id,
       kind: t.kind,
       style: t.style,
-      from: offsetLedge(t.from, off),
-      to: offsetLedge(t.to, off),
-      gapLeft: t.gapLeft + off,
-      gapRight: t.gapRight + off,
+      boss: !!t.boss,
+      bossI: t.bossI,
+      from: offsetLedge(t.from, t.boss ? 0 : off),
+      to: offsetLedge(t.to, t.boss ? 0 : off),
+      gapLeft: t.gapLeft + (t.boss ? 0 : off),
+      gapRight: t.gapRight + (t.boss ? 0 : off),
       gapW: t.gapW,
-      takeoffX: t.takeoffX + off,
-      runupX: t.runupX + off,
+      takeoffX: t.takeoffX + (t.boss ? 0 : off),
+      runupX: t.runupX + (t.boss ? 0 : off),
       takeoffY: t.takeoffY,
       ropeX: t.ropeX != null ? t.ropeX + off : null,
       barX: t.barX != null ? t.barX + off : null,
       barY: t.barY,
       barLen: t.barLen,
       beamY: t.beamY,
-      path: (t.path || []).map((pt) => ({ x: pt.x + off, y: pt.y })),
-      land: t.land ? { x: t.land.x + off, y: t.land.y } : null,
+      path: (t.path || []).map((pt) => ({ x: pt.x + (t.boss ? 0 : off), y: pt.y })),
+      land: t.land ? { x: t.land.x + (t.boss ? 0 : off), y: t.land.y } : null,
       cleared: t.cleared,
       lap: L,
     };
@@ -872,8 +969,11 @@
     paintPace();
     if (el.zone) {
       const t = activeTrap();
-      const k = t && KIND[t.kind] ? KIND[t.kind] : KIND.leap;
-      el.zone.textContent = k.label;
+      if (t && t.boss) el.zone.textContent = "Basilisk " + ((t.bossI || 0) + 1) + "/" + BOSS_HITS;
+      else {
+        const k = t && KIND[t.kind] ? KIND[t.kind] : KIND.leap;
+        el.zone.textContent = k.label;
+      }
     }
   }
   refreshHud();
@@ -896,7 +996,7 @@
     reveal = "";
     const hall = t.from.room;
     const hallKey = lap * ROOM_N + hall;
-    if (snap) {
+    if (snap || (t.boss && (!traps[i - 1] || !traps[i - 1].boss))) {
       p.x = t.runupX;
       p.y = t.takeoffY;
       p.vx = 0;
@@ -909,9 +1009,19 @@
       p.strideU = 1;
       p.ghosts = [];
       p.cloth = 0;
+      cam.x = WORLD_W;
     }
     refreshHud();
-    coach("Type " + fact.stem + ". Last digit leaps.");
+    if (t.boss) {
+      coach("Don't meet its eyes. " + fact.stem + ". Last digit strikes a scale.");
+      if (t.bossI === 0) {
+        zoneBanner = 2.5;
+        zoneBannerText = "THE BASILISK";
+        lastZone = 2;
+      }
+    } else {
+      coach("Type " + fact.stem + ". Last digit leaps.");
+    }
     markSeen(fact.id);
     paintKnow();
     lastZone = 1;
@@ -1083,7 +1193,13 @@
     p.state = "fall";
     beep(90, 0.25, "square", 0.06);
     refreshHud();
-    coach("The product was " + reveal + " — then it disappears.", "bad");
+    const t = activeTrap();
+    if (t && t.boss) {
+      fx.bossHit = 0.7;
+      coach("The gaze. The product was " + reveal + " — then it disappears.", "bad");
+    } else {
+      coach("The product was " + reveal + " — then it disappears.", "bad");
+    }
   }
 
   function jumpKind() {
@@ -1159,11 +1275,39 @@
     traps[trapI].cleared = true;
     markTyped(fact.id, factFluent);
     paintKnow();
+    if (t.boss) {
+      fx.bossHit = 0.9;
+      fx.shake = 14;
+      fx.gold = 0.28;
+      const cx = t.to.left + t.to.w * 0.5;
+      const cy = t.to.y - 12;
+      for (let i = 0; i < 12; i++) {
+        fx.bossChips.push({
+          x: cx + (Math.random() - 0.5) * 36,
+          y: cy,
+          vx: (Math.random() - 0.5) * 280,
+          vy: -180 - Math.random() * 220,
+          life: 0.35 + Math.random() * 0.28,
+          w: 3 + Math.random() * 4,
+        });
+      }
+    }
     const next = nextFact();
+    if (!next) {
+      coach("Yes · " + factRt.toFixed(1) + "s. Table locked.", "ok");
+      openChart("TABLE MASTERED · under 2s");
+      return;
+    }
+    if (t.boss && t.bossI === BOSS_HITS - 1) {
+      fact = next;
+      coach("The basilisk falls. " + factRt.toFixed(1) + "s.", "ok");
+      openChart("BASILISK FALLEN · FILLED TABLE");
+      return;
+    }
     if (factFluent) {
-      coach("Yes · " + factRt.toFixed(1) + "s. Next: " + next.stem, "ok");
+      coach((t.boss ? "Scale struck · " : "Yes · ") + factRt.toFixed(1) + "s · locked. Next: " + next.stem, "ok");
     } else {
-      coach("Yes, but " + factRt.toFixed(1) + "s — under 5s to master. Next: " + next.stem, "bad");
+      coach("Yes, but " + factRt.toFixed(1) + "s — under 2s to lock. Next: " + next.stem, "bad");
     }
     fact = next;
     if (trapI + 1 < traps.length) {
@@ -1280,14 +1424,22 @@
     } else if (p.state === "fall") {
       p.squash = 1.05;
     } else if (p.state === "idle" && p.landT <= 0 && p.loco === "rest") {
-      p.squash = 1 + Math.sin(p.anim * 2.4) * 0.028;
+      p.squash = 1;
     } else {
       p.squash += (1 - p.squash) * Math.min(1, dt * 9);
     }
     fx.shake *= Math.max(0, 1 - dt * 8);
+    if (fx.bossHit > 0) fx.bossHit = Math.max(0, fx.bossHit - dt * 1.5);
     fx.gold = Math.max(0, fx.gold - dt);
     fx.flash = Math.max(0, fx.flash - dt);
     if (zoneBanner > 0) zoneBanner = Math.max(0, zoneBanner - dt);
+    for (const c of fx.bossChips) {
+      c.x += c.vx * dt;
+      c.y += c.vy * dt;
+      c.vy += 1600 * dt;
+      c.life -= dt;
+    }
+    fx.bossChips = fx.bossChips.filter((c) => c.life > 0);
     for (const b of fx.bits) {
       b.y += b.vy * dt;
       b.life -= dt;
@@ -1304,13 +1456,7 @@
       p.ghosts = p.ghosts.filter((g) => g.life > 0);
     }
 
-    if (phase === "leap" && p.state !== "hang" && p.state !== "pull") {
-      const lastG = p.ghosts[p.ghosts.length - 1];
-      if (!lastG || Math.abs(p.x - lastG.x) > 18) {
-        p.ghosts.push({ x: p.x, y: p.y, st: animName(), ph: animPhase(), sq: p.squash, life: 0.18 });
-        if (p.ghosts.length > 7) p.ghosts.shift();
-      }
-    }
+    // Full-body afterimages read as holes. Dust on plant covers the same beat.
 
     const elapsed = started ? (performance.now() - startAt) / 1000 : 0;
     const m = Math.floor(elapsed / 60);
@@ -1358,7 +1504,7 @@
         phase = "play";
         armFactClock();
         refreshHud();
-        coach("Same obstacle. " + fact.stem + " — from memory. Under 5s to master.");
+        coach("Same obstacle. " + fact.stem + " — from memory. Under 2s to lock.");
       }
       return;
     }
@@ -1591,31 +1737,29 @@
     const hang = p.state === "hang" || p.state === "pull" || p.state === "climb" || p.state === "swing";
     const st = animName();
     const ph = animPhase();
-    for (const g of p.ghosts) {
-      drawHeirAt(c, g.x, g.y, g.st, g.ph, g.sq, Math.max(0, g.life / 0.18) * 0.32);
-    }
-    const bob = p.strideU < 1
-      ? Math.sin(p.strideU * Math.PI) * 6
-      : ((p.loco === "rest" && p.state === "idle") ? Math.sin(p.anim * 2.4) * 2.2 : 0);
-    c.save();
-    c.translate(p.x - cam.x, p.y + bob);
-    c.fillStyle = "rgba(0,0,0," + (p.onGround ? 0.4 : hang ? 0.12 : 0.18) + ")";
-    c.beginPath();
-    c.ellipse(4, 6, 28, p.onGround ? 7 : 4, 0, 0, Math.PI * 2);
-    c.fill();
     const pair = posePair(st);
+    const plant = (p.onGround && !hang) ? 10 : 0;
+    const sq = p.squash * (p.strideU < 1 ? poseSquash(pair) : 1);
+    c.save();
+    c.globalCompositeOperation = "source-over";
+    c.translate(p.x - cam.x, p.y + plant);
+    if (p.onGround) {
+      c.fillStyle = "rgba(0,0,0,0.38)";
+      c.beginPath();
+      c.ellipse(2, 3, 22, 6, 0, 0, Math.PI * 2);
+      c.fill();
+    }
     if (pair.a) {
-      drawSpriteBlend(c, pair, p.squash, p.facing, p.tilt || 0);
+      drawSpriteBlend(c, pair, sq, p.facing, p.tilt || 0);
     } else {
       c.scale(1.22, 1.22);
-      drawPuppet(c, st, ph, p.squash, p.facing);
+      drawPuppet(c, st, ph, sq, p.facing);
     }
-    if (p.dust > 0 || p.plantT > 0) {
-      const d = Math.max(p.dust, p.plantT * 2);
-      c.fillStyle = "rgba(190,155,100," + (d * 2.2) + ")";
-      for (let i = 0; i < 7; i++) {
-        const a = d * 40 + i * 9;
-        c.fillRect(-18 + (i * 7) % 28, -a * 0.35, 4, 4);
+    if (p.plantT > 0) {
+      const d = p.plantT * 2;
+      c.fillStyle = "rgba(190,155,100," + Math.min(0.7, d * 2) + ")";
+      for (let i = 0; i < 6; i++) {
+        c.fillRect(-16 + (i * 7) % 26, -d * 14 - (i % 3) * 3, 3, 3);
       }
     }
     c.restore();
@@ -1642,18 +1786,88 @@
     }
   }
 
+  function hallDrawY() {
+    const u = cam.x / VIEW.w;
+    const i0 = clamp(Math.floor(u), 0, ROOM_N - 1);
+    const i1 = Math.min(ROOM_N - 1, i0 + 1);
+    const f = clamp(u - i0, 0, 1);
+    const edge = 0.22;
+    const k = f > 1 - edge ? smoother((f - (1 - edge)) / edge) : 0;
+    return (ROOM_DY[i0] || 0) + ((ROOM_DY[i1] || 0) - (ROOM_DY[i0] || 0)) * k;
+  }
+
   function drawHalls() {
     const first = Math.floor(cam.x / VIEW.w) - 1;
     const last = first + 3;
+    const dy = hallDrawY();
     for (let i = first; i <= last; i++) {
-      if (i < 0) continue;
+      if (i < 0 || i >= ROOM_N) continue;
       const imgI = ((i % ROOM_N) + ROOM_N) % ROOM_N;
       const img = rooms[imgI];
       const dx = i * VIEW.w - cam.x;
-      const dy = ROOM_DY[imgI] || 0;
       if (img && img.complete && img.naturalWidth) {
-        drawPlate(img, dx, dy, i > 0 ? JOIN : 0);
+        drawPlate(img, dx, dy);
       }
+    }
+    for (let i = Math.max(1, first); i <= last && i < ROOM_N; i++) {
+      const img = rooms[i];
+      if (!img || !img.complete || img.naturalWidth < 8) continue;
+      const J = i * VIEW.w - cam.x;
+      const nw = img.naturalWidth;
+      const nh = img.naturalHeight;
+      const step = 2;
+      for (let x = 0; x < JOIN; x += step) {
+        const a = smoother(x / JOIN);
+        const sx = (x / VIEW.w) * nw;
+        const sw = (step / VIEW.w) * nw;
+        drawPlateColumn(img, sx, 0, sw, nh, J - JOIN + x, dy, step, VIEW.h, a);
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function bossCleared() {
+    let n = 0;
+    for (const t of traps) if (t.boss && t.cleared) n++;
+    return n;
+  }
+
+  function drawBossHall() {
+    const x0 = WORLD_W - cam.x;
+    if (x0 > VIEW.w || x0 + VIEW.w < -80) return;
+    const hits = bossCleared();
+    const last = hits >= BOSS_HITS;
+    const face = VIEW.w * 0.78;
+    const flinch = fx.bossHit;
+    ctx.save();
+    ctx.translate(x0 + flinch * 10, flinch * 6);
+    function plate(img, a) {
+      if (!img || !img.complete || img.naturalWidth < 8 || a < 0.02) return;
+      ctx.globalAlpha = a;
+      ctx.drawImage(img, 0, 0, VIEW.w, VIEW.h);
+    }
+    function clipPlate(img, w) {
+      if (w < 4) return;
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(0, 0, w, VIEW.h);
+      ctx.clip();
+      plate(img, 1);
+      ctx.restore();
+    }
+    plate(BASILISK, 1);
+    if (last) {
+      plate(BASILISK_DYING, 1);
+    } else {
+      clipPlate(BASILISK_HURT, face * (hits / (BOSS_HITS - 1)));
+      clipPlate(BASILISK_DYING, face * clamp((hits - 4) / 5, 0, 1));
+    }
+    ctx.restore();
+    ctx.globalAlpha = 1;
+    for (const c of fx.bossChips) {
+      ctx.globalAlpha = clamp(c.life * 3, 0, 1);
+      ctx.fillStyle = "#5a6a28";
+      ctx.fillRect(c.x - cam.x, c.y, c.w, c.w);
     }
     ctx.globalAlpha = 1;
   }
@@ -1803,25 +2017,9 @@
     ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh);
   }
 
-  function drawPlate(img, dx, dy, fadeLeft) {
-    const nw = img.naturalWidth;
-    const nh = img.naturalHeight;
-    const fade = fadeLeft > 0 ? JOIN : 0;
-    if (fade > 0) {
-        const step = 2;
-        for (let x = 0; x < fade; x += step) {
-          const a = Math.min(1, (x / fade) * (x / fade) * (3 - 2 * (x / fade)));
-        const sx = (x / VIEW.w) * nw;
-        const sw = (step / VIEW.w) * nw;
-        drawPlateColumn(img, sx, 0, sw, nh, dx + x, dy, step, VIEW.h, a);
-      }
-      ctx.globalAlpha = 1;
-      const srcX = (fade / VIEW.w) * nw;
-      ctx.drawImage(img, srcX, 0, nw - srcX, nh, dx + fade, dy, VIEW.w - fade, VIEW.h);
-    } else {
-      ctx.globalAlpha = 1;
-      ctx.drawImage(img, dx, dy, VIEW.w, VIEW.h);
-    }
+  function drawPlate(img, dx, dy) {
+    ctx.globalAlpha = 1;
+    ctx.drawImage(img, dx, dy, VIEW.w, VIEW.h);
   }
 
   function drawStoneLedge(l) {
@@ -1869,6 +2067,7 @@
     ctx.fillStyle = "#070b10";
     ctx.fillRect(0, 0, VIEW.w, VIEW.h);
     drawHalls();
+    drawBossHall();
 
     const t = activeTrap();
     if (t && !t.cleared) {
@@ -1918,6 +2117,11 @@
   }
 
   function beginRun() {
+    if (!fact || isMastered(fact.id)) fact = nextFact();
+    if (!fact) {
+      openChart("TABLE MASTERED · under 2s");
+      return;
+    }
     document.getElementById("know").classList.add("hidden");
     document.getElementById("mini").classList.remove("hidden");
     phase = "play";
@@ -1931,6 +2135,7 @@
       armFactClock();
     }
     paintKnow();
+    if (/[?&]boss=1(?:&|$)/.test(location.search)) bindTrap(PALACE_N, true);
   }
 
   function openChart(title) {
@@ -1974,7 +2179,7 @@
         [0, "unknown"],
         [0.35, "learning"],
         [0.62, "retrieved"],
-        [1, "mastered <5s ×2"],
+        [1, "mastered <2s"],
       ].forEach(([t, lab]) => {
         const chip = document.createElement("span");
         chip.className = "know-swatch";
@@ -2018,7 +2223,7 @@
       } else if (dueN) {
         foot.textContent = dueN + " due (needed) · type those from memory · " + counts.unknown + " still unseen";
       } else {
-        foot.textContent = counts.unknown + " unseen · green is two fluent retrieves (under 5s)";
+        foot.textContent = counts.unknown + " unseen · green is under 2s, once · locked out of the run";
       }
     }
     const mini = document.getElementById("mini");
@@ -2082,6 +2287,7 @@
     else if (phase === "leap") look = p.x + 150;
     cam.x += (look - VIEW.w * 0.38 - cam.x) * (1 - Math.exp(-dt * 3.4));
     cam.x = Math.max(0, cam.x);
+    if (p.x >= WORLD_W - 8) cam.x = Math.max(cam.x, WORLD_W);
     if (window.FL && window.FL.holdCam != null) cam.x = window.FL.holdCam;
     drawWorld();
     requestAnimationFrame(frame);
