@@ -199,6 +199,7 @@
     const pts = BOSS_PATHS[spec.id];
     extraLedges.length = 0;
     traps.length = PALACE_N;
+    for (const tr of traps) tr.cleared = false;
     const w = 64;
     const pads = pts.map((pt) => {
       const x = WORLD_W + pt[0] - w * 0.5;
@@ -1011,13 +1012,12 @@
   refreshHud();
   coach("Type " + fact.stem + ". Last digit leaps.");
 
+  let afterBoss = false;
   function bindTrap(i, snap) {
     if (i >= traps.length) {
-      runBoss = (runBoss + 1) % BOSSES.length;
-      layoutBoss(runBoss);
-      i = 0;
-      for (const tr of traps) if (!tr.boss) tr.cleared = false;
-      snap = true;
+      afterBoss = true;
+      openChart((BOSSES[runBoss] || BOSSES[0]).fall);
+      return;
     }
     trapI = i;
     const t = activeTrap();
@@ -1259,25 +1259,16 @@
     p.ghosts = [];
     p.dust = 0.4;
     p.facing = 1;
-    if (t.boss) {
-      p.onGround = false;
-      p.state = "slide";
-      p.loco = "run";
-      const span = Math.hypot(p.featTo.x - p.x, p.featTo.y - p.y);
-      p.featDur = clamp(span / 260, 0.22, 0.5);
-      p.squash = 1.08;
-      p.tilt = 0;
-      beep(520, 0.08, "sine", 0.04);
-      return;
-    }
     if (t.kind === "leap" || !t.kind) {
       p.onGround = false;
       p.state = "jump";
       p.loco = "run";
       const landX = p.featTo.x;
-      const span = clamp(t.gapW, 36, 480);
+      const rise = Math.max(0, p.y - t.to.y);
+      const span = clamp(Math.max(t.gapW, rise), 36, 480);
       const j = jumpKind();
-      const vy = span < 90 ? -500 : span < 150 ? -600 : span < 240 ? j.vy * 0.9 : j.vy;
+      let vy = span < 90 ? -500 : span < 150 ? -600 : span < 240 ? j.vy * 0.9 : j.vy;
+      if (rise > 12) vy = Math.min(vy, -Math.sqrt(2 * BODY.gravity * (rise + 36)));
       p.vy = vy;
       const a = 0.5 * BODY.gravity;
       const b = vy;
@@ -1345,6 +1336,10 @@
     if (t.boss && t.bossI === BOSS_HITS - 1) {
       const spec = BOSSES[t.bossHall] || BOSSES[0];
       coach(spec.fall + " " + factRt.toFixed(1) + "s.", "ok");
+      fact = next;
+      afterBoss = true;
+      openChart(spec.fall);
+      return;
     } else if (factFluent) {
       coach((t.boss ? ((BOSSES[t.bossHall] || BOSSES[0]).strike + " · ") : "Yes · ") + factRt.toFixed(1) + "s · locked. Next: " + next.stem, "ok");
     } else {
@@ -2162,22 +2157,28 @@
     document.getElementById("know").classList.add("hidden");
     document.getElementById("mini").classList.remove("hidden");
     phase = "play";
+    if (afterBoss) {
+      afterBoss = false;
+      runBoss = (runBoss + 1) % BOSSES.length;
+      layoutBoss(runBoss);
+      bindTrap(0, true);
+    }
     if (!started) {
       started = true;
       startAt = performance.now();
       hallShown = lap * ROOM_N + (activeTrap() ? activeTrap().from.room : 0);
       markSeen(fact.id);
       armFactClock();
+      const bossQ = location.search.match(/[?&]boss=(\d+)/);
+      if (bossQ) {
+        const n = clamp(Number(bossQ[1]) || 1, 1, BOSSES.length);
+        layoutBoss(n - 1);
+        bindTrap(PALACE_N, true);
+      }
     } else if (!typed && !pendingLeap) {
       armFactClock();
     }
     paintKnow();
-    const bossQ = location.search.match(/[?&]boss=(\d+)/);
-    if (bossQ) {
-      const n = clamp(Number(bossQ[1]) || 1, 1, BOSSES.length);
-      layoutBoss(n - 1);
-      bindTrap(PALACE_N, true);
-    }
   }
 
   function openChart(title) {
@@ -2309,6 +2310,7 @@
     drawWorld();
   };
   window.FL.type = typeDigit;
+  window.FL.bindTrap = bindTrap;
 
   document.getElementById("know-go").addEventListener("click", beginRun);
   document.getElementById("know-reset").addEventListener("click", () => {
