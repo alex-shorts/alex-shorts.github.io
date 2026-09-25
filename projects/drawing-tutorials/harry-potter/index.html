@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Harry Potter Drawing Tutorials</title>
+<style>
+:root { --ink: #1c1914; --paper: #f4efe6; --muted: #6b645a; --card: #fffdf8; --line: #ddd3c4; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; background: var(--paper); color: var(--ink); }
+header { max-width: 1200px; margin: 0 auto; padding: 1.6rem 1rem 0.6rem; }
+h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.3rem); }
+.lede { margin: 0.4rem 0 0; color: var(--muted); font-size: 1.05rem; }
+main { max-width: 1200px; margin: 0 auto; padding: 0.4rem 1rem 3rem; }
+h2 { margin: 2rem 0 0.7rem; font-size: 1.35rem; border-bottom: 2px solid var(--ink); padding-bottom: 0.3rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1rem; }
+a.card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 0.7rem; color: inherit; text-decoration: none; box-shadow: 0 1px 4px rgba(0,0,0,0.05); transition: transform 0.12s, box-shadow 0.12s; }
+a.card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
+a.card img { width: 100%; aspect-ratio: 1; object-fit: contain; display: block; background: #fff; border-radius: 8px; }
+.name { font-weight: 700; margin-top: 0.5rem; font-size: 1.05rem; }
+.sub { color: var(--muted); font-size: 0.9rem; }
+.crumb { color: var(--muted); }
+.crumb a { color: var(--muted); }
+.big { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+footer { max-width: 1200px; margin: 0 auto; padding: 0 1rem 2rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header><p class="crumb"><a href="../">Drawing Tutorials</a> ›</p><h1>Harry Potter Drawing Tutorials</h1><p class="lede">Pick a drawing. Watch the pencil guides go down, then follow the pen one step at a time.</p></header><main><h2>Creatures</h2>
+<div class="grid">
+<a class="card" href="hedwig-body-1/"><img src="hedwig-body-1/thumb.png" alt="Hedwig" loading="lazy" /><div class="name">Hedwig</div><div class="sub">Whole body · 55 steps</div></a>
+<a class="card" href="hedwig-face-1/"><img src="hedwig-face-1/thumb.png" alt="Hedwig" loading="lazy" /><div class="name">Hedwig</div><div class="sub">Face · 43 steps</div></a>
+</div><h2>Bad Guys</h2>
+<div class="grid">
+<a class="card" href="voldemort-face-1/"><img src="voldemort-face-1/thumb.png" alt="Lord Voldemort" loading="lazy" /><div class="name">Lord Voldemort</div><div class="sub">Face · 53 steps</div></a>
+</div><h2>Magical Objects</h2>
+<div class="grid">
+<a class="card" href="sorting-hat/"><img src="sorting-hat/thumb.png" alt="The Sorting Hat" loading="lazy" /><div class="name">The Sorting Hat</div><div class="sub">On the stool · 99 steps</div></a>
+</div></main>
+<footer>Fan-made drawing lessons for practice at home. Not affiliated with Warner Bros. or J.K. Rowling.</footer>
+</body>
+</html>

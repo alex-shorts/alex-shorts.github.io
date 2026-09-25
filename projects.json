@@ -6,6 +6,15 @@
   },
   "projects": [
     {
+      "id": "drawing-tutorials",
+      "name": "Drawing Tutorials",
+      "desc": "Harry Potter drawing lessons — pencil guides, then the pen, then the eraser.",
+      "href": "projects/drawing-tutorials/",
+      "image": "projects/drawing-tutorials/harry-potter/cover.png",
+      "lane": "school",
+      "updated": "2026-09-25"
+    },
+    {
       "id": "sands-of-math",
       "name": "Sands of Math",
       "desc": "A dungeon run powered by times tables — answer the fact and the Heir jumps, climbs, and duels guards. 2s, 5s, 10s first.",
