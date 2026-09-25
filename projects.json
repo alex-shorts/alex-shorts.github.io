@@ -6,6 +6,15 @@
   },
   "projects": [
     {
+      "id": "sands-of-math",
+      "name": "Sands of Math",
+      "desc": "A dungeon run powered by times tables — answer the fact and the Heir jumps, climbs, and duels guards. 2s, 5s, 10s first.",
+      "href": "projects/sands-of-math/",
+      "image": "assets/thumbs/sands-of-math.svg",
+      "lane": "school",
+      "updated": "2026-09-25"
+    },
+    {
       "id": "far-ledge",
       "name": "Far Ledge",
       "desc": "Type the product. Each digit is a step; the last digit leaps the pit. Multiplication 1–12.",
