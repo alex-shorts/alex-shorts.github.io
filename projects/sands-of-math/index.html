@@ -85,7 +85,7 @@
       <b>T</b><span>show the times table</span>
     </div>
     <p>The Heir runs on his own. Every pit, spike, wall, ledge and sword asks a fact — answer it and he
-      jumps, climbs, dashes or takes it. Answer early and he never breaks stride. Under two seconds locks the fact.
+      jumps, climbs, dashes or takes it. Answer early and he never breaks stride. Under four seconds locks the fact.
       Guards fight back: when one raises his blade, your answer parries; the next one strikes.</p>
     <button class="btn" id="go">ENTER · BEGIN</button>
   </div>
@@ -94,7 +94,7 @@
 <div id="know" class="ov hidden">
   <div class="sheet">
     <h2 id="know-title">FILLED TABLE</h2>
-    <p class="dek">Color is what the game thinks you know · gold = this fact · red inset = due · mastered = under 2s, once</p>
+    <p class="dek">Color is what the game thinks you know · gold = this fact · red inset = due · mastered = under 4s, once</p>
     <table id="know-table"></table>
     <div class="know-legend" id="know-legend"></div>
     <p id="know-foot"></p>
@@ -111,7 +111,7 @@
 
 /* ---------------------------------------------------------------- basics */
 const VW = 640, VH = 400, PH = 378, TW = 64, RH = 126, FO = 14;
-const RUN = 230, FLUENT_SEC = 2, GATE_TIME = 10, ANIM = 1.35;
+const RUN = 230, FLUENT_SEC = 4, GATE_TIME = 10, ANIM = 1.35;
 const D2R = Math.PI / 180;
 const cv = document.getElementById("view");
 const ctx = cv.getContext("2d");
@@ -176,7 +176,7 @@ function isMastered(id) { const s = loadKnow(); if (s.due[id]) return false; ret
 const dueQ = [];
 const seenSet = new Set();
 /* Family ladder: 2·5·10 → 3·4 → 6·9 → 7·8 (all × 1–10) → then 1·11·12 and everything × 11, × 12.
-   A stage opens only after the child has answered 75% of the facts so far and locked 40% under 2s. */
+   A stage opens only after the child has answered 75% of the facts so far and locked 40% under 4s. */
 const LADDER = [[2, 5, 10], [3, 4], [6, 9], [7, 8]];
 const LAST_STAGE = LADDER.length;
 let clears = 0, lastFamily = -1, lastId = null, stageNow = 0;
@@ -365,21 +365,21 @@ const LEVELS = [
 ];
 
 const GUARD_KINDS = {
-  guard1: { hp: 3, windup: 2.5, parry: 0.3, cool: [0.7, 1.3], style: "guard", scale: 1, name: "GUARD",
+  guard1: { hp: 3, windup: 5, parry: 0.3, cool: [0.7, 1.3], style: "guard", scale: 1, name: "GUARD",
     pal: { turban: "#b8322a", turbanL: "#dc5c4c", coat: "#34507e", coatD: "#233a5e", pants: "#cfc6b2", pantsD: "#a39a86",
       skin: "#b87a52", skinD: "#946042", boots: "#3a2616", beard: "#1e140c", belt: "#c9a13a" }, hpCol: "#4f86e0" },
-  captain: { hp: 5, windup: 2.35, parry: 0.4, cool: [0.6, 1.2], style: "guard", scale: 1.08, name: "THE CAPTAIN", boss: true,
+  captain: { hp: 5, windup: 4.7, parry: 0.4, cool: [0.6, 1.2], style: "guard", scale: 1.08, name: "THE CAPTAIN", boss: true,
     pal: { turban: "#e2b53a", turbanL: "#f6d673", coat: "#8c1f25", coatD: "#5f1218", pants: "#e0d6c0", pantsD: "#b3a992",
       skin: "#c08457", skinD: "#9a6642", boots: "#2a1a10", beard: "#140c08", belt: "#f0d060" }, hpCol: "#e2b53a" },
-  guard2: { hp: 3, windup: 2.3, parry: 0.35, cool: [0.6, 1.2], style: "guard", scale: 1, name: "JAILER",
+  guard2: { hp: 3, windup: 4.6, parry: 0.35, cool: [0.6, 1.2], style: "guard", scale: 1, name: "JAILER",
     pal: { turban: "#3f7a4c", turbanL: "#66a472", coat: "#5a3a1e", coatD: "#3d2712", pants: "#c7bca4", pantsD: "#9d937c",
       skin: "#a86f48", skinD: "#86573a", boots: "#2a1a10", beard: "#1a120a", belt: "#b98a3a" }, hpCol: "#58b06a" },
-  skeleton: { hp: 5, windup: 2.2, parry: 0.42, cool: [0.6, 1.1], style: "skeleton", scale: 1.04, name: "THE BONE WARDEN", boss: true,
+  skeleton: { hp: 5, windup: 4.4, parry: 0.42, cool: [0.6, 1.1], style: "skeleton", scale: 1.04, name: "THE BONE WARDEN", boss: true,
     pal: { bone: "#e6dfcc", boneD: "#aea58f", eye: "#ff6a2a" }, hpCol: "#e6dfcc" },
-  guard3: { hp: 3, windup: 2.15, parry: 0.4, cool: [0.6, 1.1], style: "guard", scale: 1, name: "PALACE GUARD",
+  guard3: { hp: 3, windup: 4.3, parry: 0.4, cool: [0.6, 1.1], style: "guard", scale: 1, name: "PALACE GUARD",
     pal: { turban: "#f0ece2", turbanL: "#ffffff", coat: "#2f6f6c", coatD: "#1f4c4a", pants: "#d8cdb4", pantsD: "#aca28a",
       skin: "#b98050", skinD: "#96623c", boots: "#2a1a10", beard: "#1c120a", belt: "#d8a83a" }, hpCol: "#4fc0b8" },
-  sorcerer: { hp: 6, windup: 2.05, parry: 0.45, cool: [0.5, 1.0], style: "sorcerer", scale: 1.12, name: "THE SAND SORCERER", boss: true,
+  sorcerer: { hp: 6, windup: 4.1, parry: 0.45, cool: [0.5, 1.0], style: "sorcerer", scale: 1.12, name: "THE SAND SORCERER", boss: true,
     pal: { robe: "#b8904e", robeD: "#8a6634", trim: "#2f7fb0", hood: "#6e4a22", hoodD: "#4a3016", skin: "#8a6a50",
       skinD: "#6a5040", eye: "#7ff0ff", boots: "#2a1a10" }, hpCol: "#7ff0ff" },
 };
@@ -751,7 +751,7 @@ function finishPrompt() {
   prompt = null; frozen = false;
   sfx.done();
   say(fluent ? `${p.fact.stem} = ${p.fact.product} · ${rt.toFixed(1)}s · locked` :
-    `${p.fact.stem} = ${p.fact.product} · ${rt.toFixed(1)}s — under 2s locks it`, 2.2);
+    `${p.fact.stem} = ${p.fact.product} · ${rt.toFixed(1)}s — under 4s locks it`, 2.2);
   if (p.data && p.data.step) stepReady = true;
   else doAction(p.kind, p.data);
 }
@@ -2246,7 +2246,7 @@ function paintKnow() {
     }
     table.dataset.built = "1";
     const legend = document.getElementById("know-legend");
-    [[0, "unknown"], [0.35, "learning"], [0.62, "retrieved"], [1, "mastered <2s"]].forEach(([t, lab]) => {
+    [[0, "unknown"], [0.35, "learning"], [0.62, "retrieved"], [1, "mastered <4s"]].forEach(([t, lab]) => {
       const chip = document.createElement("span"); chip.className = "know-swatch"; chip.style.background = lerpKnow(t);
       chip.style.color = inkKnow(t); chip.textContent = lab; legend.appendChild(chip);
     });
@@ -2263,7 +2263,7 @@ function paintKnow() {
     `${counts.unknown} unknown   ${counts.learning} learning   ${counts.warm} retrieved   ${counts.mastered} mastered`;
   const dueN = Object.keys(k.due).length;
   document.getElementById("know-foot").textContent = dueN ? `${dueN} due · they come back first next level` :
-    `${counts.unknown} unseen · green is under 2s, once`;
+    `${counts.unknown} unseen · green is under 4s, once`;
 }
 function openChart(title, next) {
   document.getElementById("know-title").textContent = title;
@@ -2284,7 +2284,7 @@ function levelComplete() {
   sfx.win();
   const last = L === LEVELS.length - 1;
   const head = last ? "THE PALACE IS YOURS" : `LEVEL ${L + 1} CLEAR`;
-  openChart(`${head} · ${mm}:${ss} · ${stats.facts} answers · ${stats.fluent} under 2s`, () => {
+  openChart(`${head} · ${mm}:${ss} · ${stats.facts} answers · ${stats.fluent} under 4s`, () => {
     loadLevel(last ? 0 : L + 1);
   });
 }
