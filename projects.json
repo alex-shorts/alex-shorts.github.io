@@ -6,6 +6,26 @@
   },
   "projects": [
     {
+      "id": "home-school-for-college-credit",
+      "name": "Home School For College Credit",
+      "desc": "Eight years of skill against six years of school. Time first.",
+      "href": "projects/family/home-school-for-college-credit/",
+      "image": "assets/thumbs/home-school.svg",
+      "lane": "personal",
+      "private": true,
+      "updated": "2026-09-28"
+    },
+    {
+      "id": "preparation-deck",
+      "name": "The Preparation",
+      "desc": "Do the skill first. The transcript comes after.",
+      "href": "projects/family/the-preparation/",
+      "image": "projects/family/the-preparation/deck-images/hunter-end.jpg",
+      "lane": "personal",
+      "private": true,
+      "updated": "2026-09-28"
+    },
+    {
       "id": "drawing-tutorials",
       "name": "Drawing Tutorials",
       "desc": "Harry Potter drawing lessons — pencil guides, then the pen, then the eraser.",
@@ -73,7 +93,7 @@
     },
     {
       "id": "the-preparation",
-      "name": "The Preparation",
+      "name": "Spark cycles",
       "desc": "Spark cycles — plans, checklists, CLEP catalog, and training links.",
       "href": "projects/the-preparation/",
       "image": "projects/the-preparation/thumb.svg",

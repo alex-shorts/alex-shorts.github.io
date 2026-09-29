@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#1C1915"/>
+  <rect x="36" y="48" width="274" height="304" rx="18" fill="#1D4ED8"/>
+  <rect x="330" y="48" width="274" height="304" rx="18" fill="#0F766E"/>
+  <text x="173" y="168" text-anchor="middle" fill="#F4EFE6" font-family="Georgia, serif" font-size="92">8</text>
+  <text x="173" y="230" text-anchor="middle" fill="#F4EFE6" font-family="Georgia, serif" font-size="28">years</text>
+  <text x="467" y="168" text-anchor="middle" fill="#F4EFE6" font-family="Georgia, serif" font-size="92">6</text>
+  <text x="467" y="230" text-anchor="middle" fill="#F4EFE6" font-family="Georgia, serif" font-size="28">years</text>
+</svg>
