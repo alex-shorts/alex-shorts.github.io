@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Preparation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&family=Instrument+Serif:ital@0;1&display=swap');
+
+  :root {
+    --ink: #1A2420;
+    --cream: #F2F5F0;
+    --paper: #FBFCF8;
+    --muted: #5A655C;
+    --line: #D5DDD4;
+    --pine: #1B6B43;
+    --pine-dk: #0E3D26;
+    --clay: #C45C32;
+    --clay-ink: #3A1A0C;
+    --sand: #E7D3C0;
+    --stage: #101612;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%; background: var(--stage); color: var(--ink);
+    font-family: "DM Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+  .deck {
+    position: absolute; width: 1600px; height: 900px;
+    transform-origin: top left; overflow: hidden; background: var(--cream);
+  }
+  .slide {
+    position: absolute; inset: 0;
+    padding: 36px 56px 96px;
+    display: none; flex-direction: column; gap: 8px;
+    background: var(--cream); color: var(--ink);
+  }
+  .slide.active { display: flex; animation: rise .28s ease; }
+  @keyframes rise { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .slide.active { animation: none; } }
+
+  .top { display: flex; justify-content: space-between; align-items: center; min-height: 28px; }
+  .kicker {
+    font-size: 15px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700;
+  }
+  .idx { font-size: 15px; letter-spacing: .14em; font-weight: 700; color: var(--muted); margin-left: auto; }
+  h1 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-weight: 400; font-size: 64px; line-height: .98; letter-spacing: -.02em;
+  }
+  .tagline { font-size: 24px; color: var(--muted); font-weight: 500; line-height: 1.3; max-width: 46ch; margin-top: 6px; }
+  .stage { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
+  .foot { font-size: 15px; line-height: 1.35; color: var(--muted); max-width: 1280px; }
+
+  /* —— 01 —— */
+  .title-slide { padding: 0; gap: 0; background: var(--pine-dk); }
+  .title-slide.active { display: grid; grid-template-columns: 1.05fr .95fr; }
+  .title-copy {
+    padding: 48px 56px 110px;
+    display: flex; flex-direction: column; justify-content: center; gap: 18px;
+    color: #F4F7F2;
+  }
+  .title-copy .kicker { color: rgba(244,247,242,.62); }
+  .title-copy h1 { font-size: 92px; color: #F4F7F2; max-width: 8ch; }
+  .title-copy p { font-size: 26px; font-weight: 550; line-height: 1.3; max-width: 22ch; color: rgba(244,247,242,.86); }
+  .stack-side {
+    background: #143526;
+    padding: 48px 56px 110px 36px;
+    display: flex; flex-direction: column; justify-content: center; gap: 14px;
+  }
+  .band {
+    border-radius: 18px; padding: 22px 26px;
+    display: flex; flex-direction: column; justify-content: center; gap: 4px;
+  }
+  .band b { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+  .band span { font-size: 16px; font-weight: 650; opacity: .85; }
+  .band.do { background: var(--pine); color: #fff; flex: 1.6; }
+  .band.proof { background: var(--clay); color: #fff; flex: .7; }
+  .band.paper { background: #E7EFE6; color: var(--pine-dk); flex: .45; }
+  .band.paper span { opacity: .75; }
+
+  /* —— 02 map —— */
+  .years { display: flex; flex-direction: column; gap: 12px; }
+  .year {
+    display: grid; grid-template-columns: 92px 1fr; gap: 14px; align-items: stretch;
+  }
+  .year-lab {
+    display: flex; align-items: center; justify-content: flex-end;
+    font-size: 15px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .quad { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .map-slide {
+    background: #131C2E; color: #F4EFE6;
+    padding: 14px 14px 108px; gap: 0;
+  }
+  .map-slide .top, .map-slide h1, .map-slide .tagline { display: none; }
+  .map-slide .stage { flex: 1; min-height: 0; justify-content: stretch; }
+  .cycle-grid {
+    flex: 1; height: 100%; min-height: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+  }
+  .map-slide .cycle {
+    background: #1B2740;
+    border: 1px solid #2A3651;
+    border-radius: 10px;
+    min-height: 0; height: 100%;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .map-slide .cycle .copy {
+    min-width: 0; min-height: 0;
+    padding: 8px 10px 8px 12px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .map-slide .cycle img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .map-slide .cycle em { display: none; }
+  .map-slide .cycle strong { color: #f6f1e4; }
+  .map-slide .cycle .skill { color: rgba(246,241,228,.82); }
+  .map-slide .cycle .exam { color: rgba(246,241,228,.9); }
+  .map-slide .c-medic { background: linear-gradient(165deg, #064a3f 0%, #0f6b5c 58%, #1a4a42 100%); border-color: transparent; }
+  .map-slide .c-pilot { background: linear-gradient(165deg, #062a4a 0%, #0b4f8a 58%, #1a3f5c 100%); border-color: transparent; }
+  .map-slide .c-cowboy { background: linear-gradient(165deg, #4a2a0a 0%, #8a4b12 58%, #5c3d1a 100%); border-color: transparent; }
+  .map-slide .c-builder { background: linear-gradient(165deg, #1f3d14 0%, #3d6b2a 58%, #2a4a1a 100%); border-color: transparent; }
+  .map-slide .c-chef { background: linear-gradient(165deg, #5a2040 0%, #8a3d5c 58%, #4a2a38 100%); border-color: transparent; }
+  .map-slide .c-heavy { background: linear-gradient(165deg, #4a2a0a 0%, #a66a2a 58%, #5c3d1a 100%); border-color: transparent; }
+  .map-slide .c-work { background: linear-gradient(165deg, #2a3340 0%, #5c6b7a 58%, #3a4450 100%); border-color: transparent; }
+  .map-slide .c-welder { background: linear-gradient(165deg, #4a1f0a 0%, #a65a32 58%, #5c2a12 100%); border-color: transparent; }
+  .map-slide .c-fighter { background: linear-gradient(165deg, #4a1f0a 0%, #8a3d1f 58%, #5c2a12 100%); border-color: transparent; }
+  .map-slide .c-sailor { background: linear-gradient(165deg, #062a4a 0%, #0b4f8a 58%, #1a3f5c 100%); border-color: transparent; }
+  .map-slide .c-survival { background: linear-gradient(165deg, #1f3d14 0%, #3d6b2a 58%, #2a4a1a 100%); border-color: transparent; }
+  .map-slide .c-farmer { background: linear-gradient(165deg, #2a4a18 0%, #3d6b2a 58%, #4a5c28 100%); border-color: transparent; }
+  .map-slide .c-ent { background: linear-gradient(165deg, #064a3f 0%, #0f6b5c 55%, #2a4a22 100%); border-color: transparent; }
+  .map-slide .c-maker { background: linear-gradient(165deg, #2a3340 0%, #5c6b7a 48%, #6b3a7a 100%); border-color: transparent; }
+  .map-slide .c-mission { background: linear-gradient(165deg, #053d34 0%, #0f6b5c 58%, #1a3d35 100%); border-color: transparent; }
+  .map-slide .c-ball { background: linear-gradient(165deg, #6a3010 0%, #c45c26 58%, #4a3018 100%); border-color: transparent; }
+  .map-slide .c-drive { background: linear-gradient(165deg, #0f2d4a 0%, #1f4e79 58%, #2a3f5c 100%); border-color: transparent; }
+  .map-slide .c-hunter { background: linear-gradient(165deg, #2a331d 0%, #3f4d2c 55%, #4a3a22 100%); border-color: transparent; }
+  .map-slide .cycle strong {
+    color: #f6f1e4;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 28px; font-weight: 400; margin-top: 0; line-height: .95;
+  }
+  .map-slide .cycle .skill {
+    color: rgba(246,241,228,.82); font-size: 13px; font-weight: 500; line-height: 1.2; margin-top: 4px;
+  }
+  .map-slide .cycle .exam {
+    margin-top: auto;
+    background: transparent; color: rgba(246,241,228,.92);
+    padding: 0; letter-spacing: .06em; font-size: 13px;
+  }
+  .cycle {
+    background: var(--pine); color: #fff;
+    border-radius: 14px; min-height: 112px;
+    display: flex; flex-direction: column; justify-content: flex-start;
+    padding: 10px 12px 10px;
+  }
+  .cycle em {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-style: italic; font-size: 13px; opacity: .7; font-weight: 400;
+  }
+  .cycle strong { font-size: 20px; font-weight: 750; letter-spacing: -.02em; line-height: 1.05; margin-top: 1px; }
+  .cycle .skill { font-size: 13px; font-weight: 550; line-height: 1.2; margin-top: 4px; opacity: .92; }
+  .cycle .exam {
+    margin-top: auto; align-self: flex-start;
+    font-size: 11px; font-weight: 800; letter-spacing: .03em;
+    background: rgba(255,255,255,.18); border-radius: 999px; padding: 3px 8px;
+  }
+  .ex {
+    display: grid; grid-template-columns: 480px 1fr; gap: 28px;
+    flex: 1; min-height: 0; align-items: stretch;
+  }
+  .ex-visual {
+    border-radius: 28px; color: #fff; padding: 0; overflow: hidden;
+    display: flex; flex-direction: column; min-height: 0;
+  }
+  .ex-visual .ex-top {
+    flex: 1 1 50%; min-height: 0;
+    padding: 28px 32px 18px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+  }
+  .ex-visual .ex-end {
+    flex: 1 1 50%; min-height: 0; width: 100%;
+    object-fit: cover; display: block;
+  }
+  .ex-visual.pine { background: linear-gradient(165deg, #1B6B43, #0E3D26); }
+  .ex-visual.clay { background: linear-gradient(165deg, #C45C32, #7A3014); }
+  .ex-visual.ink { background: linear-gradient(165deg, #24382C, #101612); }
+  .ex-visual.v-hunter { background: linear-gradient(165deg, #2a331d 0%, #3f4d2c 55%, #4a3a22 100%); }
+  .ex-visual.v-builder { background: linear-gradient(165deg, #1f3d14 0%, #3d6b2a 55%, #2a4a1a 100%); }
+  .ex-visual.v-farmer { background: linear-gradient(165deg, #2a4a18 0%, #3d6b2a 55%, #4a5c28 100%); }
+  .ex-visual.v-pilot { background: linear-gradient(165deg, #062a4a 0%, #0b4f8a 55%, #1a3f5c 100%); }
+  .ex-visual.v-sailor { background: linear-gradient(165deg, #062a4a 0%, #0b4f8a 55%, #1a3f5c 100%); }
+  .ex-visual.v-drive { background: linear-gradient(165deg, #0f2d4a 0%, #1f4e79 55%, #2a3f5c 100%); }
+  .ex-visual.v-chef { background: linear-gradient(165deg, #5a2040 0%, #8a3d5c 55%, #4a2a38 100%); }
+  .ex-visual.v-fighter { background: linear-gradient(165deg, #4a1f0a 0%, #8a3d1f 55%, #5c2a12 100%); }
+  .ex-visual .n {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 120px; line-height: .8; letter-spacing: -.04em;
+  }
+  .ex-visual h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 64px; font-weight: 400; line-height: .95; margin-top: 8px;
+  }
+  .ex-copy { display: flex; flex-direction: column; gap: 12px; justify-content: center; }
+  .ex-copy article {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 16px 20px;
+  }
+  .ex-copy .k {
+    font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+  }
+  .ex-copy p { font-size: 24px; font-weight: 650; line-height: 1.25; margin-top: 6px; }
+  .ex-copy article.test { background: #F8EBE3; border-color: #E7C2B0; }
+  .ex-copy article.test .k { color: var(--clay); }
+
+  .road-slide { background: #f3eee4; padding: 0 0 108px; gap: 0; }
+  .road-mast { padding: 26px 48px 20px; color: #f6f1e4; }
+  .road-mast .eye {
+    font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #e6dfce;
+  }
+  .road-mast h1 {
+    font-size: 64px; font-weight: 400; color: #f6f1e4; margin-top: 4px;
+  }
+  .road-mast p { color: #d9d0bb; font-size: 20px; font-weight: 550; max-width: 46ch; margin-top: 6px; line-height: 1.3; }
+  .road-slide.medic .road-mast { background: linear-gradient(115deg, #064a3f 0%, #0f6b5c 50%, #1a4a42 100%); }
+  .road-slide.builder .road-mast { background: linear-gradient(115deg, #1f3d14 0%, #3d6b2a 50%, #2a4a1a 100%); }
+  .road-slide.ent .road-mast { background: linear-gradient(115deg, #064a3f 0%, #0f6b5c 55%, #2a4a22 100%); }
+  .road {
+    flex: 1; min-height: 0;
+    display: grid; gap: 16px;
+    padding: 28px 40px 18px;
+    align-items: stretch;
+  }
+  .road.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .road.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .step {
+    background: #faf6ee;
+    border: 1px solid #ddd4c4;
+    border-radius: 14px;
+    padding: 22px 22px 26px;
+    display: flex; flex-direction: column; justify-content: flex-start;
+  }
+  .step .num {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 84px; line-height: .85; font-weight: 400;
+  }
+  .road-slide.medic .step .num { color: #5ab8a8; }
+  .road-slide.builder .step .num { color: #8ab86a; }
+  .road-slide.ent .step .num { color: #5ab8a8; }
+  .step .when {
+    margin-top: auto;
+    font-size: 14px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+  }
+  .step .what {
+    font-size: 32px; font-weight: 750; line-height: 1.12; margin-top: 12px; letter-spacing: -.02em;
+  }
+  .road-slide.medic .step .when { color: #0f6b5c; }
+  .road-slide.builder .step .when { color: #3d6b2a; }
+  .road-slide.ent .step .when { color: #0f6b5c; }
+  .road-slide.medic .step.finale { background: #e6f3f0; border-color: #0f6b5c; }
+  .road-slide.builder .step.finale { background: #e8f0e4; border-color: #3d6b2a; }
+  .road-slide.ent .step.finale { background: #e6f3f0; border-color: #0f6b5c; }
+  .step.finale .what { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 36px; }
+  .whisper {
+    margin: 0 40px 6px;
+    font-size: 16px; font-weight: 600; color: #6e675c; line-height: 1.35;
+  }
+  .whisper.acad { font-size: 14px; font-weight: 550; color: #b0a896; }
+  .whisper b {
+    font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; color: #b0a896;
+    margin-right: 8px;
+  }
+  .year:nth-child(2) .cycle { background: #1A5C3B; }
+  .year:nth-child(3) .cycle { background: #246B48; }
+  .year:nth-child(4) .cycle { background: #2F7A54; }
+
+  /* —— 03 anatomy —— */
+  .anatomy {
+    display: grid; grid-template-columns: 520px 1fr; gap: 56px; align-items: center;
+  }
+  .block {
+    height: 520px; border-radius: 28px; overflow: hidden;
+    display: flex; flex-direction: column;
+    box-shadow: 0 22px 50px rgba(16,22,18,.12);
+  }
+  .block .anchor, .block .side, .block .acad {
+    display: flex; flex-direction: column; justify-content: center; padding: 22px 32px;
+  }
+  .block .anchor { flex: 1.7; background: var(--pine); color: #fff; }
+  .block .side { flex: .7; background: #2F6F52; color: #fff; }
+  .block .acad { flex: .55; background: var(--clay); color: #fff; }
+  .block .big {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 56px; line-height: .95; font-weight: 400;
+  }
+  .block .sm { font-size: 20px; font-weight: 650; margin-top: 6px; opacity: .92; }
+  .facts { display: flex; flex-direction: column; gap: 16px; }
+  .fact {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+    padding: 18px 22px;
+  }
+  .fact b { display: block; font-size: 26px; letter-spacing: -.02em; margin-bottom: 4px; }
+  .fact span { font-size: 18px; font-weight: 550; color: var(--muted); line-height: 1.3; }
+  .fact.under { background: #F8EBE3; border-color: #E7C2B0; }
+  .fact.under b { color: var(--clay); }
+
+  /* —— 04 soft / hard —— */
+  .two {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 22px; flex: 1; min-height: 0;
+  }
+  .kind {
+    border-radius: 24px; padding: 28px 32px 24px;
+    display: flex; flex-direction: column; gap: 16px; min-height: 0;
+  }
+  .kind.soft { background: var(--pine); color: #fff; }
+  .kind.hard { background: var(--clay); color: #fff; }
+  .kind .lab {
+    font-size: 14px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; opacity: .75;
+  }
+  .kind h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 52px; font-weight: 400; line-height: .95;
+  }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pills i {
+    font-style: normal; font-size: 16px; font-weight: 750;
+    background: rgba(255,255,255,.16); border-radius: 999px; padding: 8px 14px;
+  }
+  .kind .how {
+    margin-top: auto; font-size: 20px; font-weight: 650; line-height: 1.3; max-width: 28ch;
+  }
+  .gap-row {
+    margin-top: 14px;
+    display: flex; align-items: center; gap: 14px;
+    background: transparent; border: 2px dashed #C5D0C4; border-radius: 14px;
+    padding: 12px 16px;
+  }
+  .gap-row b { font-size: 16px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .gap-row span { font-size: 18px; font-weight: 700; }
+
+  .hyear {
+    flex: 1; min-height: 0;
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px;
+  }
+  .hyear article {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 16px 14px 14px;
+    display: flex; flex-direction: column; min-height: 0;
+  }
+  .hyear .when {
+    font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+  }
+  .hyear h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 34px; font-weight: 400; line-height: .95; margin-top: 8px;
+  }
+  .hyear .do { font-size: 16px; font-weight: 650; line-height: 1.28; margin-top: 10px; }
+  .hyear .school {
+    margin-top: 16px; flex: 1;
+    background: #eef2ea; border-radius: 12px; padding: 14px 12px;
+    font-size: 15px; font-weight: 600; line-height: 1.3;
+  }
+  .hyear .school b {
+    display: block; margin-bottom: 4px;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+  }
+  .hyear article.exam { background: #F8EBE3; border-color: #E7C2B0; }
+  .hyear article.exam .school { background: #f3ddd2; }
+  .hyear article.exam .when, .hyear article.exam .school b { color: var(--clay); }
+  .year-stage { gap: 12px; }
+  .vtrack {
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 1.15fr 1.15fr 1.7fr;
+    gap: 10px;
+  }
+  .thumb {
+    margin: 0; min-width: 0;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .thumb img, .trio img {
+    width: 100%; height: 86px; object-fit: cover; display: block; background: #1a2420;
+  }
+  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .thumb figcaption { padding: 6px 8px 7px; }
+  .thumb b { display: block; font-size: 13px; font-weight: 750; line-height: 1.15; }
+  .thumb span { display: block; margin-top: 2px; font-size: 12px; font-weight: 600; color: var(--muted); line-height: 1.2; }
+
+  .nav {
+    position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%);
+    display: flex; gap: 8px; align-items: center;
+    background: rgba(251,252,248,.94);
+    padding: 8px 12px; border-radius: 999px;
+    border: 1px solid rgba(26,36,32,.08);
+    z-index: 20; box-shadow: 0 10px 28px rgba(0,0,0,.18);
+  }
+  .nav button {
+    background: var(--ink); color: #fff; border: 0; border-radius: 999px;
+    width: 46px; height: 46px; font-size: 26px; cursor: pointer; line-height: 1;
+  }
+  .nav button:hover { background: #2c3832; }
+  .nav button:focus-visible { outline: 3px solid var(--clay); outline-offset: 2px; }
+  .dots { display: flex; gap: 8px; padding: 0 8px; }
+  .dot {
+    width: 9px; height: 9px; border-radius: 50%; background: #D5DDD4;
+    cursor: pointer; border: 0; padding: 0;
+  }
+  .dot.on { background: var(--ink); width: 26px; border-radius: 999px; }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+  <section class="slide title-slide active" data-i="0">
+    <div class="title-copy">
+      <div class="kicker">The Preparation · 01 / 12</div>
+      <h1>The point is the doing.</h1>
+      <p>He learns a skill by doing it. The transcript comes after.</p>
+    </div>
+    <div class="stack-side" aria-label="Doing on top, paper underneath">
+      <div class="band do"><b>Do the cycle</b><span>One skill, hands on</span></div>
+      <div class="band proof"><b>Leave a proof</b><span>Something real exists when it ends</span></div>
+      <div class="band paper"><b>Then the paper</b><span>High school credit and college hours ride underneath</span></div>
+    </div>
+  </section>
+
+  <section class="slide map-slide" data-i="1">
+    <div class="top"><div class="kicker">02 · The map</div><div class="idx">02 / 12</div></div>
+    <h1>Four years. Sixteen cycles.</h1>
+    <p class="tagline">Sixteen cycles. The doing, nothing underneath.</p>
+    <div class="stage">
+      <div class="cycle-grid" aria-label="Preparation cycles">
+        <div class="cycle c-medic"><div class="copy"><strong>Medic</strong><div class="skill">Get certified as an EMT and learn to keep people alive.</div></div><img src="deck-images/medic-end.jpg" alt=""></div>
+        <div class="cycle c-pilot"><div class="copy"><strong>Pilot</strong><div class="skill">Preflight, take off, land, and pass the FAA written.</div></div><img src="deck-images/pilot-end.jpg" alt=""></div>
+        <div class="cycle c-cowboy"><div class="copy"><strong>Cowboy</strong><div class="skill">Ride, rope, shoe, and work livestock on real land.</div></div><img src="deck-images/cowboy-end.jpg" alt=""></div>
+        <div class="cycle c-builder"><div class="copy"><strong>Builder</strong><div class="skill">Frame, wire, and finish real construction.</div></div><img src="deck-images/builder-end.jpg" alt=""></div>
+        <div class="cycle c-chef"><div class="copy"><strong>Chef</strong><div class="skill">Learn to cook for real — knife work to a full service.</div></div><img src="deck-images/chef-end.jpg" alt=""></div>
+        <div class="cycle c-heavy"><div class="copy"><strong>Heavy Equipment</strong><div class="skill">Run the machines that move earth and build things.</div></div><img src="deck-images/heavy-end.jpg" alt=""></div>
+        <div class="cycle c-welder"><div class="copy"><strong>Welder</strong><div class="skill">Strike an arc and lay a bead that holds.</div></div><img src="deck-images/welder-end.jpg" alt=""></div>
+        <div class="cycle c-fighter"><div class="copy"><strong>Fighter</strong><div class="skill">Learn to take a hit, stay calm, and stand back up.</div></div><img src="deck-images/fighter-end.jpg" alt=""></div>
+        <div class="cycle c-sailor"><div class="copy"><strong>Sailor</strong><div class="skill">Read the wind and crew a boat through open water.</div></div><img src="deck-images/sailor-end.jpg" alt=""></div>
+        <div class="cycle c-survival"><div class="copy"><strong>Survivalist</strong><div class="skill">Make fire, shelter, and water with your hands.</div></div><img src="deck-images/survival-end.jpg" alt=""></div>
+        <div class="cycle c-farmer"><div class="copy"><strong>Farmer</strong><div class="skill">Grow food and raise animals the regenerative way.</div></div><img src="deck-images/farmer-end.jpg" alt=""></div>
+        <div class="cycle c-ent"><div class="copy"><strong>Entrepreneur · Investor</strong><div class="skill">Start something that takes real money, then know how to keep it.</div></div><img src="deck-images/entrepreneur-end.jpg" alt=""></div>
+        <div class="cycle c-maker"><div class="copy"><strong>Hacker · Maker</strong><div class="skill">Ship software, and make real things from raw materials.</div></div><img src="deck-images/maker-end.jpg" alt=""></div>
+        <div class="cycle c-mission"><div class="copy"><strong>Missionary</strong><div class="skill">Local service first, then a real disaster deploy.</div></div><img src="deck-images/mission-end.jpg" alt=""></div>
+        <div class="cycle c-ball"><div class="copy"><strong>Trainer / Coach</strong><div class="skill">Basketball</div></div><img src="deck-images/coach-end.jpg" alt=""></div>
+        <div class="cycle c-drive"><div class="copy"><strong>Drive</strong><div class="skill">Learn the machines, then take the wheel for real.</div></div><img src="deck-images/drive-end.jpg" alt=""></div>
+        <div class="cycle c-hunter"><div class="copy"><strong>Hunter</strong><div class="skill">Shoot the match, take the deer, and dress it.</div></div><img src="deck-images/hunter-end.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="2">
+    <div class="top"><div class="idx">03 / 12</div></div>
+    <h1>Hunter.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-hunter">
+          <div class="ex-top"><div class="n">25</div><h2>Take the deer.</h2></div>
+          <img class="ex-end" src="deck-images/hunter-end.jpg" alt="A shooter at a clays range, cheek on the stock">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Shotgun, rifle, and handgun.</p></article>
+          <article><div class="k">Summary</div><p>Hunter education, then weekly live-fire on all three.</p></article>
+          <article class="test"><div class="k">Test</div><p>A shooting competition.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="3">
+    <div class="top"><div class="idx">04 / 12</div></div>
+    <h1>Builder.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-builder">
+          <div class="ex-top"><div class="n">04</div><h2>Raise something real.</h2></div>
+          <img class="ex-end" src="deck-images/builder-end.jpg" alt="A weathertight cabin just finished on family land">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Frame, wire, and finish construction you can stand inside.</p></article>
+          <article><div class="k">Summary</div><p>Safety training and a drawn plan, then frame, wire, and dry-in with dad.</p></article>
+          <article class="test"><div class="k">Test</div><p>A building class and raising a house.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="4">
+    <div class="top"><div class="idx">05 / 12</div></div>
+    <h1>Farmer.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-farmer">
+          <div class="ex-top"><div class="n">12</div><h2>Bring in the harvest.</h2></div>
+          <img class="ex-end" src="deck-images/farmer-end.jpg" alt="A season's harvest carried in from the field">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Grow food and raise animals for a full season.</p></article>
+          <article><div class="k">Summary</div><p>A season of chores — garden, livestock, and a log of the work.</p></article>
+          <article class="test"><div class="k">Test</div><p>The season is the test.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="5">
+    <div class="top"><div class="idx">06 / 12</div></div>
+    <h1>Pilot.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-pilot">
+          <div class="ex-top"><div class="n">02</div><h2>Fly the plane.</h2></div>
+          <img class="ex-end" src="deck-images/pilot-end.jpg" alt="Hands on the yoke of a small plane in flight">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Preflight, take off, and land.</p></article>
+          <article><div class="k">Summary</div><p>Discovery flights and a logbook, then ground school and dual instruction.</p></article>
+          <article class="test"><div class="k">Test</div><p>A pilot's license.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="6">
+    <div class="top"><div class="idx">07 / 12</div></div>
+    <h1>Sailor.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-sailor">
+          <div class="ex-top"><div class="n">10</div><h2>Crew the ship.</h2></div>
+          <img class="ex-end" src="deck-images/sailor-end.jpg" alt="A crew member hauling a line on a ship at sea">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Read the wind and crew a boat through open water.</p></article>
+          <article><div class="k">Summary</div><p>Lake days first — knots, points of sail, and a basic keelboat class.</p></article>
+          <article class="test"><div class="k">Test</div><p>The passage is the test.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="7">
+    <div class="top"><div class="idx">08 / 12</div></div>
+    <h1>Drive.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-drive">
+          <div class="ex-top"><div class="n">24</div><h2>Sit the seat.</h2></div>
+          <img class="ex-end" src="deck-images/drive-end.jpg" alt="A driver in a helmet at the wheel of a rally car">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Control the machine, then take the wheel for real.</p></article>
+          <article><div class="k">Summary</div><p>Driver education, then beginner kart, dirt bike, and ATV, then logged road hours.</p></article>
+          <article class="test"><div class="k">Test</div><p>A driver's license and rally-car school.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="8">
+    <div class="top"><div class="idx">09 / 12</div></div>
+    <h1>Chef.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-chef">
+          <div class="ex-top"><div class="n">05</div><h2>Serve the room.</h2></div>
+          <img class="ex-end" src="deck-images/chef-end.jpg" alt="A cook plating during a real service">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Knife work through a real service.</p></article>
+          <article><div class="k">Summary</div><p>Knife skills and food safety, then kitchen hours on a real line.</p></article>
+          <article class="test"><div class="k">Test</div><p>The service is the test.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="9">
+    <div class="top"><div class="idx">10 / 12</div></div>
+    <h1>Fighter.</h1>
+    <div class="stage">
+      <div class="ex">
+        <div class="ex-visual v-fighter">
+          <div class="ex-top"><div class="n">09</div><h2>Stay standing.</h2></div>
+          <img class="ex-end" src="deck-images/fighter-end.jpg" alt="A fighter standing after a round, calm, gloves up">
+        </div>
+        <div class="ex-copy">
+          <article><div class="k">Skill</div><p>Take a hit, stay calm, and stand back up.</p></article>
+          <article><div class="k">Summary</div><p>Months in a gym — pads, sparring, and conditioning under a coach.</p></article>
+          <article class="test"><div class="k">Test</div><p>Muay Thai school.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="10">
+    <div class="top"><div class="kicker">11 · Inside one cycle</div><div class="idx">11 / 12</div></div>
+    <h1>One skill. Three layers.</h1>
+    <p class="tagline">The top layer is the point. The bottom layer writes it down.</p>
+    <div class="stage">
+      <div class="anatomy">
+        <div class="block" aria-label="Anchor, secondary practice, then academics">
+          <div class="anchor"><div class="big">Anchor</div><div class="sm">The hands-on skill</div></div>
+          <div class="side"><div class="big">Side work</div><div class="sm">A practice that supports it</div></div>
+          <div class="acad"><div class="big">Academics</div><div class="sm">Classes and exams, underneath</div></div>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>Do it.</b><span>Medic, Builder, Farmer — a real task with an end.</span></div>
+          <div class="fact"><b>Practice beside it.</b><span>Chess, music, strength, a log. Not the main thing.</span></div>
+          <div class="fact under"><b>Capture it after.</b><span>High school credit, then a CLEP or an AP, only where an exam exists.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-i="11">
+    <div class="top"><div class="kicker">12 · Hunter, the year</div><div class="idx">12 / 12</div></div>
+    <h1>Hunter, this year.</h1>
+    <p class="tagline">Events on top. Saturday films along the bottom. Then the CLEP.</p>
+    <div class="stage year-stage">
+      <div class="hyear">
+        <article>
+          <div class="when">Now → Sep</div>
+          <h2>Gate.</h2>
+          <p class="do">4-H, hunter education, youth license, and coaches.</p>
+          <p class="school"><b>Under it</b>American history class starts. Modern States lags one unit behind.</p>
+        </article>
+        <article>
+          <div class="when">Sep → Dec</div>
+          <h2>Range.</h2>
+          <p class="do">Weekly live-fire on rifle, shotgun, and handgun.</p>
+          <p class="school"><b>Under it</b>One or two Modern States lessons a week.</p>
+        </article>
+        <article>
+          <div class="when">Jan 4–17</div>
+          <h2>The hunt.</h2>
+          <p class="do">Mentored deer. He field-dresses it. Family meal.</p>
+          <p class="school"><b>Under it</b>Homework only through the hunt.</p>
+        </article>
+        <article>
+          <div class="when">Feb → Apr</div>
+          <h2>Toward April.</h2>
+          <p class="do">Weekly range continues, aimed at the match.</p>
+          <p class="school"><b>Under it</b>Modern States from the new nation through Reconstruction — most of the exam.</p>
+        </article>
+        <article>
+          <div class="when">April</div>
+          <h2>Competition.</h2>
+          <p class="do">District IV shooting sports. Official scorecard.</p>
+          <p class="school"><b>Under it</b>Homework only. No new lesson that week.</p>
+        </article>
+        <article class="exam">
+          <div class="when">Late May</div>
+          <h2>The CLEP.</h2>
+          <p class="do">History of the United States I.</p>
+          <p class="school"><b>Sit when</b>Two practice forms are 80% or better. A 50 posts HIST 1301.</p>
+        </article>
+      </div>
+      <div class="vtrack">
+        <figure class="thumb">
+          <img src="deck-images/history/colonial.jpg" alt="Hillsdale Colonial America">
+          <figcaption><b>Colonial America</b><span>Now → Thanksgiving · 6 episodes</span></figcaption>
+        </figure>
+        <figure class="thumb">
+          <img src="deck-images/history/revolution.jpg" alt="Hillsdale Revolutionary America">
+          <figcaption><b>Revolutionary America</b><span>Winter break · one night</span></figcaption>
+        </figure>
+        <figure class="thumb">
+          <img src="deck-images/history/constitution.jpg" alt="Hillsdale Constitution 101">
+          <figcaption><b>Constitution 101</b><span>Feb → Apr · one lecture a week</span></figcaption>
+        </figure>
+        <figure class="thumb">
+          <div class="trio">
+            <img src="deck-images/history/the-west.jpg" alt="Ken Burns The West">
+            <img src="deck-images/history/abolitionists.jpg" alt="American Experience The Abolitionists">
+            <img src="deck-images/history/eyes.jpg" alt="Eyes on the Prize">
+          </div>
+          <figcaption><b>The West · Abolitionists · Eyes on the Prize</b><span>When class hits it — that Saturday, instead of 101</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav" aria-label="Slides">
+    <button type="button" id="prev" aria-label="Previous">‹</button>
+    <div class="dots" id="dots"></div>
+    <button type="button" id="next" aria-label="Next">›</button>
+  </nav>
+</div>
+<script>
+  const DW = 1600, DH = 900;
+  const deck = document.getElementById('deck');
+  function fit() {
+    const s = Math.min(window.innerWidth / DW, window.innerHeight / DH);
+    deck.style.width = DW + 'px';
+    deck.style.height = DH + 'px';
+    deck.style.transform = 'scale(' + s + ')';
+    deck.style.left = ((window.innerWidth - DW * s) / 2) + 'px';
+    deck.style.top = ((window.innerHeight - DH * s) / 2) + 'px';
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  const slides = [...document.querySelectorAll('.slide')];
+  const dots = document.getElementById('dots');
+  let i = 0;
+  slides.forEach((_, n) => {
+    const d = document.createElement('button');
+    d.type = 'button';
+    d.className = 'dot' + (n === 0 ? ' on' : '');
+    d.setAttribute('aria-label', 'Slide ' + (n + 1));
+    d.onclick = () => go(n);
+    dots.appendChild(d);
+  });
+  function go(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
+  }
+  document.getElementById('prev').onclick = () => go(i - 1);
+  document.getElementById('next').onclick = () => go(i + 1);
+  window.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(i + 1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(i - 1); }
+    if (e.key === 'Home') { e.preventDefault(); go(0); }
+    if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  });
+</script>
+</body>
+</html>
