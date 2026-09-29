@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hunter · Time First · 8 vs 6</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,500&family=Instrument+Serif:ital@0;1&display=swap');
+
+  :root {
+    --ink: #1C1915;
+    --cream: #F4EFE6;
+    --paper: #FFFCF8;
+    --muted: #5E584E;
+    --line: #E4D9C8;
+    --hs: #1D4ED8;
+    --hs-dk: #1E3A8A;
+    --col: #0F766E;
+    --col-dk: #115E59;
+    --gold: #E2A322;
+    --gold-dk: #8A5A08;
+    --gold-ink: #2C2110;
+    --saved: #A39888;
+    --stage: #100E0C;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%; background: var(--stage); color: var(--ink);
+    font-family: "DM Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+
+  /* Fixed 1600×900 stage, scaled to the window */
+  .deck {
+    position: absolute;
+    width: 1600px; height: 900px;
+    transform-origin: top left;
+    background: var(--cream);
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute; inset: 0;
+    padding: 36px 56px 96px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--cream);
+    color: var(--ink);
+  }
+  .slide.active { display: flex; animation: rise .28s ease; }
+  @keyframes rise { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .slide.active { animation: none; }
+  }
+
+  .top {
+    display: flex; justify-content: space-between; align-items: center;
+    min-height: 28px;
+  }
+  .kicker {
+    font-size: 15px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700;
+  }
+  .idx {
+    font-size: 15px; letter-spacing: .14em; font-weight: 700;
+    color: var(--muted); font-variant-numeric: tabular-nums;
+  }
+  h1 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-weight: 400; font-size: 64px;
+    line-height: .98; letter-spacing: -.02em;
+  }
+  .tagline {
+    font-size: 24px; color: var(--muted); font-weight: 500;
+    line-height: 1.3; max-width: 46ch; margin-top: 6px;
+  }
+  .stage {
+    flex: 1; min-height: 0;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .foot {
+    font-size: 15px; line-height: 1.35; color: var(--muted);
+    max-width: 1200px;
+  }
+
+  /* —— Year tiles —— */
+  .tile {
+    border-radius: 12px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-weight: 800; color: #fff; min-width: 0; overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.28);
+  }
+  .tile .g { font-size: 22px; line-height: 1; letter-spacing: -.02em; }
+  .tile .n { font-size: 13px; font-weight: 700; opacity: .85; margin-top: 4px; letter-spacing: .04em; }
+  .tile.hs { background: var(--hs); }
+  .tile.col { background: var(--col); }
+  .tile.empty {
+    background: transparent;
+    border: 2.5px dashed #C9BFB0;
+    color: var(--saved);
+    box-shadow: none;
+  }
+  .tile.empty .g { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; font-weight: 800; }
+  .tile.split { background: var(--hs); padding: 0; align-items: stretch; justify-content: stretch; }
+  .tile.split .base {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .tile.split .strip {
+    background: var(--gold); color: var(--gold-ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 800; letter-spacing: .01em;
+    flex: 0 0 34%; min-height: 22px;
+    text-align: center; line-height: 1.05; padding: 0 4px;
+  }
+  .tile.split.s-light .strip { flex-basis: 22%; min-height: 16px; font-size: 12px; }
+  .tile.split.s-med .strip { flex-basis: 36%; min-height: 28px; }
+  .tile.split.s-heavy .strip { flex-basis: 48%; min-height: 40px; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 14px 26px; align-items: center; }
+  .leg {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 18px; font-weight: 700; color: var(--muted);
+  }
+  .sw { width: 22px; height: 22px; border-radius: 6px; display: inline-block; flex: none; }
+  .sw.hs { background: var(--hs); }
+  .sw.col { background: var(--col); }
+  .sw.gold { background: var(--gold); }
+  .sw.saved { background: transparent; border: 2.5px dashed #C9BFB0; }
+
+  /* —— 01 Title —— */
+  .title-slide { padding: 0; gap: 0; background: var(--stage); }
+  .title-slide.active { display: grid; grid-template-rows: auto 1fr; }
+  .mast {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    column-gap: 24px;
+    padding: 32px 56px 22px;
+    background: var(--stage);
+    color: #F6F1E8;
+  }
+  .mast .kicker { color: rgba(246,241,232,.62); grid-column: 1; }
+  .mast .idx { color: rgba(246,241,232,.5); grid-column: 2; grid-row: 1; align-self: center; }
+  .mast h1 { grid-column: 1 / -1; font-size: 72px; color: #F6F1E8; margin-top: 6px; }
+  .halves { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; position: relative; }
+  .half {
+    padding: 42px 64px 108px;
+    display: flex; flex-direction: column; justify-content: flex-start; gap: 14px;
+    color: #fff; min-width: 0;
+  }
+  .half-a { background: linear-gradient(165deg, #1A3E9A 0%, #12285F 100%); }
+  .half-b { background: linear-gradient(165deg, #9A6410 0%, #5C3A08 100%); padding-left: 112px; }
+  .half .path {
+    font-size: 15px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+    opacity: .8;
+  }
+  .half .yrs {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 148px; line-height: .8; letter-spacing: -.04em;
+  }
+  .half .yrs em { font-style: italic; font-size: .42em; margin-left: 10px; letter-spacing: 0; opacity: .9; }
+  .mini {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 14px repeat(4, 1fr);
+    gap: 8px; height: 78px; margin-top: 6px;
+  }
+  .mini .tile .g { font-size: 18px; }
+  .mini .tile.split .strip { font-size: 11px; }
+  .mini .gap { position: relative; }
+  .mini .gap::before {
+    content: ""; position: absolute; left: 50%; top: -6px; bottom: -6px;
+    border-left: 2px dashed rgba(255,255,255,.45);
+  }
+  .half p.blurb { font-size: 22px; font-weight: 600; line-height: 1.3; max-width: 28ch; opacity: .95; }
+  .pill {
+    display: inline-flex; align-self: flex-start;
+    background: rgba(0,0,0,.22); color: #fff;
+    border-radius: 999px; padding: 7px 14px;
+    font-size: 15px; font-weight: 800; letter-spacing: .04em;
+  }
+  .or-badge {
+    position: absolute; left: 50%; top: 118px;
+    transform: translate(-50%, 0);
+    width: 76px; height: 76px; border-radius: 50%;
+    background: #F4EFE6; color: var(--ink);
+    display: grid; place-items: center;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 32px; font-style: italic;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0,0,0,.28);
+  }
+
+  /* —— 02 Mechanism —— */
+  .mech {
+    display: grid; grid-template-columns: 460px 1fr; gap: 64px; align-items: center;
+  }
+  .year-stack {
+    height: 520px; border-radius: 28px; overflow: hidden;
+    display: flex; flex-direction: column;
+    box-shadow: 0 22px 50px rgba(28,25,21,.14);
+  }
+  .year-stack .hs-part {
+    flex: 1.45; background: var(--hs); color: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 8px; text-align: center; padding: 28px;
+  }
+  .year-stack .gold-part {
+    flex: 1; background: var(--gold); color: var(--gold-ink);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 6px; text-align: center; padding: 22px;
+  }
+  .year-stack .big {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 64px; line-height: .95; font-weight: 400;
+  }
+  .year-stack .sm { font-size: 22px; font-weight: 650; line-height: 1.25; max-width: 16ch; }
+  .facts { display: flex; flex-direction: column; gap: 18px; }
+  .fact {
+    display: grid; grid-template-columns: 150px 1fr; gap: 18px; align-items: center;
+    background: var(--paper); border-radius: 18px; padding: 16px 22px;
+    border: 1px solid var(--line);
+  }
+  .fact .num {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 64px; line-height: .85; letter-spacing: -.03em;
+  }
+  .fact .num small { display: block; font-family: "DM Sans", sans-serif; font-size: 14px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+  .fact p { font-size: 22px; font-weight: 650; line-height: 1.25; }
+  .fact p span { display: block; font-weight: 500; color: var(--muted); font-size: 18px; margin-top: 4px; }
+  .fact.punch { background: #FFF6DE; border-color: #E8C56A; }
+  .fact.punch .num { color: var(--gold-dk); }
+
+  /* —— 03 Compare —— */
+  .cmp { display: flex; flex-direction: column; gap: 16px; }
+  .axis, .row-years {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 28px repeat(4, 1fr);
+    gap: 8px; align-items: center;
+  }
+  .axis span {
+    text-align: center; font-size: 14px; font-weight: 800;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+  }
+  .axis .grad {
+    font-size: 11px; letter-spacing: .06em; color: var(--gold-dk);
+  }
+  .cmp-row {
+    display: grid; grid-template-columns: 210px 1fr 128px; gap: 22px; align-items: center;
+  }
+  .row-years { height: 108px; }
+  .who { display: flex; flex-direction: column; gap: 2px; }
+  .who b { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+  .who span { font-size: 16px; font-weight: 650; color: var(--muted); }
+  .total {
+    text-align: right; font-size: 58px; font-weight: 800;
+    letter-spacing: -.045em; line-height: .85;
+  }
+  .total span {
+    display: block; font-size: 15px; font-weight: 800; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); margin-top: 4px;
+  }
+  .total.t-hs { color: var(--hs-dk); }
+  .total.t-med { color: var(--col-dk); }
+  .total.t-heavy { color: var(--gold-dk); }
+  .aside {
+    font-size: 18px; font-weight: 650; color: var(--muted);
+  }
+
+  /* —— 04 Heavy —— */
+  .meter {
+    display: grid; grid-template-columns: 1fr 1fr;
+    height: 92px; border-radius: 18px; overflow: hidden;
+    box-shadow: 0 10px 28px rgba(28,25,21,.08);
+  }
+  .meter .done, .meter .left {
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+    padding: 0 28px; gap: 2px;
+  }
+  .meter .done { background: var(--gold); color: var(--gold-ink); }
+  .meter .left { background: var(--col); color: #fff; }
+  .meter b { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+  .meter span { font-size: 16px; font-weight: 700; opacity: .9; }
+  .mega {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 28px repeat(4, 1fr);
+    gap: 10px; height: 188px; margin-top: 8px;
+  }
+  .mega .tile .g { font-size: 32px; }
+  .mega .tile .n { font-size: 16px; }
+  .mega .tile.split .strip { font-size: 16px; }
+  .mega .gap { position: relative; }
+  .mega .gap::before {
+    content: ""; position: absolute; left: 50%; top: -8px; bottom: -8px;
+    border-left: 2px dashed rgba(28,25,21,.28);
+  }
+  .eq {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    margin-top: 4px;
+  }
+  .eq-sum {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 40px; line-height: 1;
+  }
+  .eq-sum b { font-family: "DM Sans", sans-serif; font-weight: 800; }
+
+  /* —— 05 Classes —— */
+  .class-top {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1; min-height: 0;
+  }
+  .panel {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 22px;
+    display: flex; flex-direction: column; overflow: hidden; min-height: 0;
+  }
+  .panel header {
+    background: var(--hs); color: #fff;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 18px 14px 20px;
+  }
+  .panel header .gd { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+  .panel header .gd small {
+    display: block; font-size: 14px; font-weight: 650; opacity: .85; margin-top: 3px; letter-spacing: 0;
+  }
+  .sch-pill {
+    background: var(--gold); color: var(--gold-ink);
+    border-radius: 999px; padding: 8px 14px;
+    font-size: 16px; font-weight: 800; letter-spacing: .02em;
+  }
+  .courses { display: flex; flex-direction: column; gap: 8px; padding: 12px; }
+  .course {
+    display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center;
+    background: #FFF6DE; border-radius: 12px; padding: 8px 10px 8px 14px;
+  }
+  .course .k {
+    font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--gold-dk);
+  }
+  .course .nm { font-size: 18px; font-weight: 750; line-height: 1.15; }
+  .course .id { font-size: 14px; font-weight: 600; color: var(--muted); }
+  .course .hrs {
+    min-width: 52px; height: 44px; border-radius: 10px;
+    background: var(--gold); color: var(--gold-ink);
+    display: grid; place-items: center;
+    font-size: 18px; font-weight: 800; padding: 0 6px;
+  }
+  .foundation {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 12px;
+  }
+  .foundation div {
+    background: #E7EEFB; border-radius: 14px; padding: 12px 16px;
+    font-size: 16px; font-weight: 600; color: var(--hs-dk); line-height: 1.3;
+  }
+  .foundation b { font-weight: 800; }
+  .result {
+    margin-top: 12px;
+    background: var(--ink); color: #F6F1E8;
+    border-radius: 14px; padding: 12px 18px;
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+  }
+  .result b {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 28px; font-weight: 400;
+  }
+  .result span { font-size: 16px; font-weight: 600; color: rgba(246,241,232,.72); }
+
+  /* —— 06 Choice —— */
+  .slide.dark { background: var(--stage); color: #F6F1E8; }
+  .slide.dark .kicker, .slide.dark .idx { color: rgba(246,241,232,.55); }
+  .slide.dark h1 { color: #F6F1E8; }
+  .slide.dark .tagline { color: rgba(246,241,232,.72); }
+  .slide.dark .foot { color: rgba(246,241,232,.48); }
+  .choices {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  }
+  .choice {
+    background: #F4EFE6; color: var(--ink);
+    border-radius: 24px; padding: 26px 26px 22px;
+    display: flex; flex-direction: column; gap: 8px;
+    min-height: 460px;
+  }
+  .choice .path {
+    font-size: 14px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .choice .big {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 108px; line-height: .82; letter-spacing: -.03em;
+  }
+  .choice .big i { font-style: italic; font-size: .38em; margin-left: 6px; }
+  .choice .line { font-size: 22px; font-weight: 700; line-height: 1.25; }
+  .choice .sub { font-size: 17px; font-weight: 550; color: var(--muted); line-height: 1.35; }
+  .pips { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; margin-top: auto; height: 36px; }
+  .pips i { border-radius: 6px; display: block; }
+  .pips i.hs { background: var(--hs); }
+  .pips i.col { background: var(--col); }
+  .pips i.split { background: linear-gradient(var(--gold) 42%, var(--hs) 42%); }
+  .pips i.off { background: transparent; border: 2px dashed #C9BFB0; }
+  .choice.heavy { background: #FFF6DE; }
+  .tag {
+    align-self: flex-start;
+    background: var(--ink); color: #F6F1E8;
+    border-radius: 999px; padding: 6px 12px;
+    font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  }
+
+  /* —— Diploma years —— */
+  .plan {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    flex: 1; min-height: 0;
+  }
+  .plan-col {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+    display: flex; flex-direction: column; overflow: hidden; min-height: 0;
+  }
+  .plan-col header {
+    background: var(--hs); color: #fff;
+    padding: 12px 14px 11px;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .plan-col header b { font-size: 24px; letter-spacing: -.02em; }
+  .plan-col header span { font-size: 13px; font-weight: 700; opacity: .88; }
+  .plan-list { display: flex; flex-direction: column; gap: 6px; padding: 8px; }
+  .req {
+    display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center;
+    background: #E7EEFB; border-radius: 10px; padding: 7px 8px 7px 12px;
+  }
+  .req .nm { font-size: 16px; font-weight: 750; line-height: 1.15; }
+  .req .sub { display: block; font-size: 12px; font-weight: 650; color: var(--hs-dk); margin-top: 2px; }
+  .req .cr {
+    min-width: 36px; height: 28px; padding: 0 6px; border-radius: 8px;
+    background: #fff; color: var(--hs-dk);
+    display: grid; place-items: center;
+    font-size: 14px; font-weight: 800;
+  }
+  .req.endo { background: #F6F0E4; }
+  .req.endo .sub, .req.endo .cr { color: var(--gold-dk); }
+  .req.dual { background: #FFF6DE; }
+  .req.dual .sub { color: var(--gold-dk); }
+  .req.quiet { background: #F3F0EA; }
+  .req.quiet .nm { color: #6E675C; }
+  .req.quiet .sub { color: #8A8175; }
+  .plan.exams .req { padding: 6px 8px 6px 10px; }
+  .plan.exams .req .nm { font-size: 15px; }
+  .plan.exams .req .sub { font-size: 12px; line-height: 1.25; color: var(--gold-dk); }
+  .plan.exams .req.quiet .sub { color: #8A8175; }
+  .plan.exams .plan-list { gap: 5px; }
+
+  /* —— Nav —— */
+  .nav {
+    position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%);
+    display: flex; gap: 8px; align-items: center;
+    background: rgba(255,252,248,.94);
+    padding: 8px 12px; border-radius: 999px;
+    border: 1px solid rgba(28,25,21,.08);
+    z-index: 20;
+    box-shadow: 0 10px 28px rgba(0,0,0,.18);
+  }
+  .nav button {
+    background: var(--ink); color: #fff; border: 0; border-radius: 999px;
+    width: 46px; height: 46px; font-size: 26px; cursor: pointer; line-height: 1;
+  }
+  .nav button:hover { background: #3a342c; }
+  .nav button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .dots { display: flex; gap: 8px; padding: 0 8px; }
+  .dot {
+    width: 9px; height: 9px; border-radius: 50%; background: #E4D9C8; cursor: pointer; border: 0; padding: 0;
+  }
+  .dot.on { background: var(--ink); width: 26px; border-radius: 999px; }
+
+  body.capture .nav { display: none !important; }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+  <!-- 01 -->
+  <section class="slide title-slide active" data-i="0">
+    <header class="mast">
+      <div class="kicker">For Hunter · Time first</div>
+      <div class="idx">01 / 05</div>
+      <h1>The point is time.</h1>
+    </header>
+    <div class="halves">
+      <div class="half half-a">
+        <div class="path">Path A · Stack</div>
+        <div class="yrs">8<em>years</em></div>
+        <div class="mini" aria-hidden="true">
+          <div class="tile hs"><span class="g">9</span></div>
+          <div class="tile hs"><span class="g">10</span></div>
+          <div class="tile hs"><span class="g">11</span></div>
+          <div class="tile hs"><span class="g">12</span></div>
+          <div class="gap"></div>
+          <div class="tile col"><span class="g">Fr</span></div>
+          <div class="tile col"><span class="g">So</span></div>
+          <div class="tile col"><span class="g">Jr</span></div>
+          <div class="tile col"><span class="g">Sr</span></div>
+        </div>
+        <p class="blurb">Four years of high school. Then four years of college. Nothing overlaps.</p>
+      </div>
+      <div class="half half-b">
+        <div class="path">Path B · Heavy HS4CC</div>
+        <div class="yrs">~6<em>years</em></div>
+        <div class="pill">In some circumstances</div>
+        <div class="mini" aria-hidden="true">
+          <div class="tile split s-light"><div class="base"><span class="g">9</span></div><div class="strip">SCH</div></div>
+          <div class="tile split s-med"><div class="base"><span class="g">10</span></div><div class="strip">SCH</div></div>
+          <div class="tile split s-heavy"><div class="base"><span class="g">11</span></div><div class="strip">SCH</div></div>
+          <div class="tile split"><div class="base"><span class="g">12</span></div><div class="strip">SCH</div></div>
+          <div class="gap"></div>
+          <div class="tile col"><span class="g">Jr</span></div>
+          <div class="tile col"><span class="g">Sr</span></div>
+          <div class="tile empty"><span class="g">—</span></div>
+          <div class="tile empty"><span class="g">—</span></div>
+        </div>
+        <p class="blurb">About 60 college hours during high school. About two years of the bachelor’s left.</p>
+      </div>
+      <div class="or-badge">or</div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="slide" data-i="1">
+    <div class="top"><div class="kicker">02 · Same eight slots</div><div class="idx">02 / 05</div></div>
+    <h1>Stack. Medium. Heavy.</h1>
+    <p class="tagline">Gold is college hours earned before graduation. The dashed line is the diploma.</p>
+    <div class="stage" style="justify-content:center; gap:18px;">
+      <div class="cmp">
+        <div class="cmp-row" aria-hidden="true">
+          <div></div>
+          <div class="axis">
+            <span>9th</span><span>10th</span><span>11th</span><span>12th</span>
+            <span class="grad">grad</span>
+            <span>Yr 5</span><span>Yr 6</span><span>Yr 7</span><span>Yr 8</span>
+          </div>
+          <div></div>
+        </div>
+
+        <div class="cmp-row">
+          <div class="who"><b>Stack</b><span>0 hours in HS</span></div>
+          <div class="row-years">
+            <div class="tile hs"><span class="g">9</span></div>
+            <div class="tile hs"><span class="g">10</span></div>
+            <div class="tile hs"><span class="g">11</span></div>
+            <div class="tile hs"><span class="g">12</span></div>
+            <div class="gap"></div>
+            <div class="tile col"><span class="g">Fr</span><span class="n">Yr 5</span></div>
+            <div class="tile col"><span class="g">So</span><span class="n">Yr 6</span></div>
+            <div class="tile col"><span class="g">Jr</span><span class="n">Yr 7</span></div>
+            <div class="tile col"><span class="g">Sr</span><span class="n">Yr 8</span></div>
+          </div>
+          <div class="total t-hs">8<span>years</span></div>
+        </div>
+
+        <div class="cmp-row">
+          <div class="who"><b>Medium</b><span>~30 hours in HS</span></div>
+          <div class="row-years">
+            <div class="tile hs"><span class="g">9</span></div>
+            <div class="tile hs"><span class="g">10</span></div>
+            <div class="tile split s-med"><div class="base"><span class="g">11</span></div><div class="strip">~15</div></div>
+            <div class="tile split s-med"><div class="base"><span class="g">12</span></div><div class="strip">~15</div></div>
+            <div class="gap"></div>
+            <div class="tile col"><span class="g">So</span><span class="n">Yr 5</span></div>
+            <div class="tile col"><span class="g">Jr</span><span class="n">Yr 6</span></div>
+            <div class="tile col"><span class="g">Sr</span><span class="n">Yr 7</span></div>
+            <div class="tile empty"><span class="g">saved</span></div>
+          </div>
+          <div class="total t-med">~7<span>years</span></div>
+        </div>
+
+        <div class="cmp-row">
+          <div class="who"><b>Heavy</b><span>~60 hours in HS</span></div>
+          <div class="row-years">
+            <div class="tile split s-light"><div class="base"><span class="g">9</span></div><div class="strip"></div></div>
+            <div class="tile split s-med"><div class="base"><span class="g">10</span></div><div class="strip"></div></div>
+            <div class="tile split s-heavy"><div class="base"><span class="g">11</span></div><div class="strip"></div></div>
+            <div class="tile split s-heavy"><div class="base"><span class="g">12</span></div><div class="strip"></div></div>
+            <div class="gap"></div>
+            <div class="tile col"><span class="g">Jr</span><span class="n">Yr 5</span></div>
+            <div class="tile col"><span class="g">Sr</span><span class="n">Yr 6</span></div>
+            <div class="tile empty"><span class="g">saved</span></div>
+            <div class="tile empty"><span class="g">saved</span></div>
+          </div>
+          <div class="total t-heavy">~6<span>years</span></div>
+        </div>
+      </div>
+      <div class="legend">
+        <div class="leg"><i class="sw hs"></i> High school</div>
+        <div class="leg"><i class="sw gold"></i> College hours during HS</div>
+        <div class="leg"><i class="sw col"></i> College after graduation</div>
+        <div class="leg"><i class="sw saved"></i> Year you don’t take</div>
+      </div>
+      <p class="aside">A light load (~15 hours) barely moves the calendar — still about 7–8 years. Fr / So / Jr / Sr is rough standing after hours already earned, not a locked sequence. Heavy is only in some circumstances.</p>
+    </div>
+    <p class="foot">Planning defaults: light 15 · medium 30 · heavy 60 semester hours. 30 hours ≈ one full-time year. Heavy matches TJC’s note that a student can earn up to 60 college hours, or an associate, by graduation.</p>
+  </section>
+
+  <!-- 03 -->
+  <section class="slide" data-i="2">
+    <div class="top"><div class="kicker">03 · Path B, up close</div><div class="idx">03 / 05</div></div>
+    <h1>Half the degree, during high school.</h1>
+    <p class="tagline">About 60 of 120 hours done before college standing starts. About two years left.</p>
+    <div class="stage" style="gap:22px;">
+      <div class="meter" aria-label="60 hours done in high school, 60 left in college">
+        <div class="done"><b>~60 done in high school</b><span>Dual credit and CLEP across grades 9–12</span></div>
+        <div class="left"><b>~60 left in college</b><span>About two full-time years · junior and senior</span></div>
+      </div>
+      <div class="mega" aria-label="Heavy path across eight calendar slots">
+        <div class="tile split s-light"><div class="base"><span class="g">9th</span><span class="n">Year 1</span></div><div class="strip">hours</div></div>
+        <div class="tile split s-med"><div class="base"><span class="g">10th</span><span class="n">Year 2</span></div><div class="strip">hours</div></div>
+        <div class="tile split s-heavy"><div class="base"><span class="g">11th</span><span class="n">Year 3</span></div><div class="strip">hours</div></div>
+        <div class="tile split s-heavy"><div class="base"><span class="g">12th</span><span class="n">Year 4</span></div><div class="strip">hours</div></div>
+        <div class="gap"></div>
+        <div class="tile col"><span class="g">Jr</span><span class="n">Year 5</span></div>
+        <div class="tile col"><span class="g">Sr</span><span class="n">Year 6</span></div>
+        <div class="tile empty"><span class="g">saved</span></div>
+        <div class="tile empty"><span class="g">saved</span></div>
+      </div>
+      <div class="eq">
+        <div class="legend">
+          <div class="leg"><i class="sw hs"></i> Diploma years</div>
+          <div class="leg"><i class="sw gold"></i> ~60 hours, spread across 9–12 — not one grade</div>
+          <div class="leg"><i class="sw col"></i> What’s left</div>
+        </div>
+        <div class="eq-sum">4 + 2 = <b>~6</b></div>
+      </div>
+    </div>
+    <p class="foot">In some circumstances. Early College / heavy HS4CC. TJC Dual Credit: students can earn up to 60 college credit hours, or an associate degree, by high school graduation. Gold band height shows intensity, not an official per-grade split.</p>
+  </section>
+
+  <!-- 04 -->
+  <section class="slide" data-i="3">
+    <div class="top"><div class="kicker">04 · Diploma yardstick</div><div class="idx">04 / 05</div></div>
+    <h1>What each high school year holds.</h1>
+    <p class="tagline">TEA Foundation, in the order a four-year plan usually runs. The number is a high school credit.</p>
+    <div class="stage" style="justify-content:stretch; padding-top:8px;">
+      <div class="plan">
+        <div class="plan-col">
+          <header><b>9th</b><span>6 credits</span></header>
+          <div class="plan-list">
+            <div class="req"><div><div class="nm">English I</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Algebra I</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Biology</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">World Geography or World History</div><div class="sub">One of the two, not both</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Language I</div><div class="sub">Same language both years</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Physical education</div></div><div class="cr">1</div></div>
+          </div>
+        </div>
+        <div class="plan-col">
+          <header><b>10th</b><span>5 credits</span></header>
+          <div class="plan-list">
+            <div class="req"><div><div class="nm">English II</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Geometry</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Chemistry, Physics, or IPC</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Language II</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Fine arts</div></div><div class="cr">1</div></div>
+          </div>
+        </div>
+        <div class="plan-col">
+          <header><b>11th</b><span>4 credits</span></header>
+          <div class="plan-list">
+            <div class="req"><div><div class="nm">English III</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Third math</div><div class="sub">Algebra II if Distinguished</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">Third science</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">U.S. History</div></div><div class="cr">1</div></div>
+          </div>
+        </div>
+        <div class="plan-col">
+          <header><b>12th</b><span>2 + endorsement</span></header>
+          <div class="plan-list">
+            <div class="req"><div><div class="nm">Fourth English</div></div><div class="cr">1</div></div>
+            <div class="req"><div><div class="nm">U.S. Government</div></div><div class="cr">0.5</div></div>
+            <div class="req"><div><div class="nm">Economics</div></div><div class="cr">0.5</div></div>
+            <div class="req endo"><div><div class="nm">Fourth math</div><div class="sub">Endorsement</div></div><div class="cr">1</div></div>
+            <div class="req endo"><div><div class="nm">Fourth science</div><div class="sub">Endorsement</div></div><div class="cr">1</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="foot">Foundation floor is 22 credits: the courses above, plus 5 electives placed in any year. An endorsement is 26: fourth math, fourth science, and 2 more electives. This grade order is the usual plan, not a rule that locks a course to a year. Homeschool: the parent sets the diploma. TEA is the yardstick.</p>
+  </section>
+
+  <!-- 05 -->
+  <section class="slide" data-i="4">
+    <div class="top"><div class="kicker">05 · Same plan, college layer</div><div class="idx">05 / 05</div></div>
+    <h1>Which pieces have a CLEP or an AP.</h1>
+    <p class="tagline">Gold is an exam Tyler Junior College actually posts. Gray has no CLEP and no AP on that chart.</p>
+    <div class="stage" style="justify-content:stretch; padding-top:6px;">
+      <div class="plan exams">
+        <div class="plan-col">
+          <header><b>9th</b><span>few exams</span></header>
+          <div class="plan-list">
+            <div class="req quiet"><div><div class="nm">English I</div><div class="sub">No CLEP · no AP</div></div></div>
+            <div class="req quiet"><div><div class="nm">Algebra I</div><div class="sub">No CLEP · no AP</div></div></div>
+            <div class="req dual"><div><div class="nm">Biology</div><div class="sub">CLEP Biology or AP Biology → BIOL 1406</div></div></div>
+            <div class="req dual"><div><div class="nm">World Geography or World History</div><div class="sub">AP Human Geography, or AP World History. No CLEP.</div></div></div>
+            <div class="req quiet"><div><div class="nm">Language I</div><div class="sub">No exam yet. Spanish CLEP is after both years.</div></div></div>
+            <div class="req quiet"><div><div class="nm">Physical education</div><div class="sub">No CLEP · no AP</div></div></div>
+          </div>
+        </div>
+        <div class="plan-col">
+          <header><b>10th</b><span>science and Spanish</span></header>
+          <div class="plan-list">
+            <div class="req quiet"><div><div class="nm">English II</div><div class="sub">No CLEP · no AP</div></div></div>
+            <div class="req quiet"><div><div class="nm">Geometry</div><div class="sub">No CLEP · no AP</div></div></div>
+            <div class="req dual"><div><div class="nm">Chemistry, Physics, or IPC</div><div class="sub">CLEP or AP Chemistry. AP Physics 1 only. IPC: none.</div></div></div>
+            <div class="req dual"><div><div class="nm">Language II</div><div class="sub">CLEP Spanish Language, or AP Spanish Language</div></div></div>
+            <div class="req quiet"><div><div class="nm">Fine arts</div><div class="sub">No CLEP · no AP on the TJC chart</div></div></div>
+          </div>
+        </div>
+        <div class="plan-col">
+          <header><b>11th</b><span>where the exams sit</span></header>
+          <div class="plan-list">
+            <div class="req dual"><div><div class="nm">English III</div><div class="sub">AP English Language → ENGL 1301. CLEP College Composition posts 1301 and 1302.</div></div></div>
+            <div class="req dual"><div><div class="nm">Third math</div><div class="sub">CLEP College Algebra → MATH 1314. Not Algebra II. Not MATH 1324.</div></div></div>
+            <div class="req dual"><div><div class="nm">Third science</div><div class="sub">CLEP or AP Biology or Chemistry. Physics is AP only.</div></div></div>
+            <div class="req dual"><div><div class="nm">U.S. History</div><div class="sub">Two CLEPs: US History I and II. AP U.S. History score 4 posts both.</div></div></div>
+          </div>
+        </div>
+        <div class="plan-col">
+          <header><b>12th</b><span>one exam is not the whole row</span></header>
+          <div class="plan-list">
+            <div class="req dual"><div><div class="nm">Fourth English</div><div class="sub">AP English Literature → ENGL 1302. Or CLEP Analyzing Literature.</div></div></div>
+            <div class="req dual"><div><div class="nm">U.S. Government</div><div class="sub">CLEP American Government or AP U.S. Government → GOVT 2305. Texas Gov: no exam.</div></div></div>
+            <div class="req dual"><div><div class="nm">Economics</div><div class="sub">CLEP or AP Macro → ECON 2301. Micro is a second exam.</div></div></div>
+            <div class="req dual"><div><div class="nm">Fourth math</div><div class="sub">CLEP Precalculus or Calculus, or AP Precalculus, Calculus, or Statistics.</div></div></div>
+            <div class="req dual"><div><div class="nm">Fourth science</div><div class="sub">Whichever of Biology, Chemistry, or AP Physics is still open.</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="foot">TJC chart: College Composition is one exam for both ENGL 1301 and 1302. U.S. History I and II are two exams. AP U.S. History score 3 posts HIST 1301 only. MATH 1324 and Texas Government (GOVT 2306) are dual credit only — no CLEP and no AP. CLEP Humanities is HUMA 1301, not the fine-arts credit.</p>
+  </section>
+
+  <nav class="nav" aria-label="Slides">
+    <button type="button" id="prev" aria-label="Previous">‹</button>
+    <div class="dots" id="dots"></div>
+    <button type="button" id="next" aria-label="Next">›</button>
+  </nav>
+</div>
+
+<script>
+  const DW = 1600, DH = 900;
+  const deck = document.getElementById('deck');
+  function fit() {
+    const s = Math.min(window.innerWidth / DW, window.innerHeight / DH);
+    deck.style.width = DW + 'px';
+    deck.style.height = DH + 'px';
+    deck.style.transform = 'scale(' + s + ')';
+    deck.style.left = ((window.innerWidth - DW * s) / 2) + 'px';
+    deck.style.top = ((window.innerHeight - DH * s) / 2) + 'px';
+  }
+  fit();
+  window.addEventListener('resize', fit);
+
+  const slides = [...document.querySelectorAll('.slide')];
+  const dots = document.getElementById('dots');
+  let i = 0;
+  slides.forEach((_, n) => {
+    const d = document.createElement('button');
+    d.type = 'button';
+    d.className = 'dot' + (n === 0 ? ' on' : '');
+    d.setAttribute('aria-label', 'Slide ' + (n + 1));
+    d.onclick = () => go(n);
+    dots.appendChild(d);
+  });
+  function go(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
+  }
+  document.getElementById('prev').onclick = () => go(i - 1);
+  document.getElementById('next').onclick = () => go(i + 1);
+  window.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(i + 1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(i - 1); }
+    if (e.key === 'Home') { e.preventDefault(); go(0); }
+    if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  });
+  window.__goSlide = go;
+  window.__slideCount = slides.length;
+</script>
+</body>
+</html>
