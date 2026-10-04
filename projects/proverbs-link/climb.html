@@ -33,7 +33,7 @@
       min-height: 100vh;
     }
     .wrap {
-      width: min(1180px, calc(100% - 1.5rem));
+      width: min(1330px, calc(100% - 1.5rem));
       margin: 0 auto;
       padding: 1.5rem 0 3rem;
     }
@@ -83,7 +83,7 @@
       top: 0;
       z-index: 6;
       display: grid;
-      grid-template-columns: 1fr minmax(180px, 220px) 1fr;
+      grid-template-columns: 1fr minmax(320px, 368px) 1fr;
       gap: 0.55rem;
       margin: 0 0 0.45rem;
       padding: 0.45rem 0 0.5rem;
@@ -121,7 +121,7 @@
 
     .band {
       display: grid;
-      grid-template-columns: 1fr minmax(180px, 220px) 1fr;
+      grid-template-columns: 1fr minmax(320px, 368px) 1fr;
       gap: 0.55rem;
       align-items: stretch;
     }
@@ -192,8 +192,8 @@
       border-color: color-mix(in srgb, var(--peak) 50%, var(--spine));
     }
     .axis .cover {
-      width: 148px;
-      height: 148px;
+      width: 296px;
+      height: 296px;
       object-fit: cover;
       border-radius: 3px;
       border: 2px solid rgba(61, 52, 40, 0.4);
@@ -226,7 +226,7 @@
       text-transform: uppercase;
       color: var(--muted);
       line-height: 1.25;
-      max-width: 9.5rem;
+      max-width: 18.5rem;
     }
     .axis .cover-label[data-report] {
       cursor: pointer;
@@ -731,7 +731,7 @@
           const foundation = st.id === "two-paths" ? " foundation-paths" : "";
           const cover = COVER[st.id];
           const coverHtml = cover
-            ? `<img class="cover" src="${escapeHtml(cover.src)}" alt="" width="148" height="148" loading="lazy" />
+            ? `<img class="cover" src="${escapeHtml(cover.src)}" alt="" width="296" height="296" loading="lazy" />
                <p class="cover-label"${cover.report ? ` data-report="${escapeHtml(cover.report)}"` : ""}>${escapeHtml(cover.label)}</p>`
             : "";
           const presentationOnly = PRESENTATION_ONLY_STAGES.has(st.id);
